@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-06-26T17:05:00+08:00",
+  "status": "manual-scout-v1",
+  "headline": "Soren 今天不是坐著等資料更新；我已經開始把新聞、社群搜尋結果和賽前敘事拉進判斷桌。",
+  "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。",
+  "items": [
+    {
+      "matchId": "m053",
+      "match": "Norway vs France",
+      "sourceType": "news + social search",
+      "title": "Haaland vs Mbappé 已經變成這場的主菜，但低賭注可能讓輪換變成最大陷阱。",
+      "sorenTake": "大家都在看雙神對決，我反而先盯輪換。兩隊都已出線時，最會把模型搞髒的不是誰比較強，是教練到底想不想保主力。",
+      "signals": [
+        "ESPN 賽前文列出 Norway 與 France 預測 XI，並把 Mbappé vs Haaland 作為主要 talking point。",
+        "ESPN 引述 Haaland 表示對 France 戰結果沒有太在意，因 Norway 已晉級；這讓輪換/動機成為必看的風險。",
+        "X 搜尋結果顯示這場被包裝成 Haaland vs Mbappé 的話題戰；社群熱點偏明星對決，不等於戰術事實。"
+      ],
+      "sources": [
+        { "label": "ESPN preview", "url": "https://www.espn.com/soccer/story/_/id/49162941/norway-vs-france-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" },
+        { "label": "FIFA match centre", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021489" },
+        { "label": "X public search result", "url": "https://x.com/SportsMole/status/2070266827075150322" }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m054",
+      "match": "Senegal vs Iraq",
+      "sourceType": "news context",
+      "title": "Senegal 是被逼到牆角的一方；這種隊伍很危險，也很容易急到自己爆。",
+      "sorenTake": "模型站 Senegal，但我不會把它講成穩。Guardian 賽後脈絡顯示 Senegal 對 Iraq 需要大結果，壓力會讓比賽變得更不像普通小組賽。",
+      "signals": [
+        "Guardian 在 Norway 3-2 Senegal live blog 提到 Senegal 對 Iraq 需要 big result 才能衝擊淘汰賽。",
+        "壓力情境意味 Senegal 可能更主動，但也更容易被 Iraq 的反擊拖進泥巴戰。"
+      ],
+      "sources": [
+        { "label": "Guardian Norway-Senegal live blog", "url": "https://www.theguardian.com/football/live/2026/jun/22/norway-v-senegal-world-cup-2026-live" }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m048",
+      "match": "Uruguay vs Spain",
+      "sourceType": "news + tactical preview",
+      "title": "Spain 看起來比較像答案，但 Uruguay 這種老派硬骨頭最適合把漂亮模型弄髒。",
+      "sorenTake": "我還是站 Spain，不過這場的真問題是 Pedri 停賽、Yamal 狀態回升、Uruguay 必須拿分。Spain 不是只要控球好看就能收工。",
+      "signals": [
+        "Al Jazeera 指出 Spain 對 Saudi Arabia 4-0 反彈，Lamine Yamal 從季末 hamstring 影響中回到狀態。",
+        "Al Jazeera 指出 Pedri 因前兩場黃牌累積缺陣，Spain 中場需要調整。",
+        "Al Jazeera 指出 Uruguay 缺 Ronald Araujo 與 Giorgian de Arrascaeta，且前兩場平局後可能調整陣容。",
+        "Opta via Al Jazeera 給 Spain 勝率 62.2%、平 22.1%、Uruguay 勝 15.8%。"
+      ],
+      "sources": [
+        { "label": "Al Jazeera preview", "url": "https://www.aljazeera.com/sports/2026/6/25/world-cup-2026-uruguay-vs-spain-knockouts-prediction-lineups" },
+        { "label": "Reuters search result/context", "url": "https://www.reuters.com/sports/soccer/unconvincing-uruguay-seek-first-win-against-revitalised-spain-2026-06-24/" }
+      ],
+      "confidence": "high"
+    }
+  ]
+}
