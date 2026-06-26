@@ -1,0 +1,78 @@
+import { mkdir, writeFile } from 'node:fs/promises'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+import { computeStandings, predictMatch, scorePrediction, canonicalTeam, TEAM_PRIORS } from '../src/lib/predictionEngine.js'
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url))
+const root = path.resolve(__dirname, '..')
+const MATCHES_URL = 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json'
+const GROUPS_URL = 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json'
+
+async function getJson(url) {
+  const response = await fetch(url, { headers: { 'user-agent': 'soren-worldcup-predictor/1.0' } })
+  if (!response.ok) throw new Error(`Fetch failed ${response.status} ${url}`)
+  return response.json()
+}
+
+function parseKickoff(date, time) {
+  if (!date) return null
+  const raw = String(time || '00:00 UTC+0')
+  const match = raw.match(/(\d{1,2}):(\d{2})\s*UTC([+-])(\d{1,2})?/)
+  const hh = match?.[1] || '00'
+  const mm = match?.[2] || '00'
+  const offset = Number(`${match?.[3] || '+'}${match?.[4] || 0}`)
+  const utcMs = Date.UTC(Number(date.slice(0, 4)), Number(date.slice(5, 7)) - 1, Number(date.slice(8, 10)), Number(hh) - offset, Number(mm), 0)
+  return new Date(utcMs).toISOString()
+}
+function stageLabel(match) { return match.group ? `${match.group.replace('Group ', '小組 ')} · ${match.round || '小組賽'}` : (match.round || '淘汰賽') }
+function normalizeMatch(match, index) {
+  const ft = match.score?.ft?.map(Number)
+  const hasScore = Array.isArray(ft) && ft.length === 2 && ft.every(Number.isFinite)
+  return { id: `m${String(index + 1).padStart(3, '0')}`, round: match.round || '', stage: stageLabel(match), group: match.group || null, date: match.date, time: match.time || '', kickoffUtc: parseKickoff(match.date, match.time), team1: canonicalTeam(match.team1), team2: canonicalTeam(match.team2), venue: match.ground || '待定', status: hasScore ? 'finished' : 'scheduled', score: hasScore ? ft : null, source: 'openfootball/worldcup.json' }
+}
+function normalizedToEngineMatch(m) { return { team1: m.team1, team2: m.team2, score: m.score ? { ft: m.score } : null } }
+function computeStandingsFromNormalized(groups, matches) { return computeStandings(groups, matches.map(normalizedToEngineMatch)) }
+function ratingBaseline(match) {
+  const r1 = TEAM_PRIORS[match.team1] ?? 67
+  const r2 = TEAM_PRIORS[match.team2] ?? 67
+  return { pick: Math.abs(r1 - r2) < 2 ? '平手' : r1 > r2 ? match.team1 : match.team2, score: Math.abs(r1 - r2) < 2 ? '1-1' : r1 > r2 ? '2-1' : '1-2' }
+}
+function buildLeaderboard(groups, matches) {
+  const rows = [
+    { id: 'soren', name: 'Soren Poisson', desc: '強度先驗 × 即時戰績 × Poisson 進球分布', points: 0, correct: 0, exact: 0, total: 0 },
+    { id: 'rating', name: 'Rating Baseline', desc: '只看隊伍強度先驗', points: 0, correct: 0, exact: 0, total: 0 },
+    { id: 'draw', name: 'Draw Baseline', desc: '保守押平局', points: 0, correct: 0, exact: 0, total: 0 },
+  ]
+  const finishedSoFar = []
+  for (const match of matches) {
+    if (match.status === 'finished') {
+      const standingsBefore = computeStandingsFromNormalized(groups, finishedSoFar)
+      const preds = [predictMatch(match, standingsBefore), ratingBaseline(match), { pick: '平手', score: '1-1' }]
+      preds.forEach((pred, idx) => {
+        const result = scorePrediction(pred, match)
+        if (!result) return
+        rows[idx].total += 1
+        rows[idx].points += result.points
+        if (result.pick) rows[idx].correct += 1
+        if (result.exact) rows[idx].exact += 1
+      })
+      finishedSoFar.push(match)
+    }
+  }
+  return rows.sort((a, b) => b.points - a.points || b.correct - a.correct).map((row, i) => ({ ...row, rank: i + 1, accuracy: row.total ? row.correct / row.total : 0 }))
+}
+function fixtureWindow(matches) {
+  const now = Date.now()
+  const upcoming = matches.filter((m) => m.status !== 'finished' && m.kickoffUtc && new Date(m.kickoffUtc).getTime() >= now).slice(0, 12)
+  return upcoming.length ? upcoming : matches.filter((m) => m.status !== 'finished').slice(0, 12)
+}
+
+const [rawMatches, rawGroups] = await Promise.all([getJson(MATCHES_URL), getJson(GROUPS_URL)])
+const groups = (rawGroups.groups || []).map((g) => ({ name: g.name, teams: g.teams.map(canonicalTeam) }))
+const matches = (rawMatches.matches || []).map(normalizeMatch).sort((a, b) => String(a.kickoffUtc).localeCompare(String(b.kickoffUtc)))
+const standings = computeStandingsFromNormalized(groups, matches)
+const predictions = Object.fromEntries(matches.map((match) => [match.id, predictMatch(match, standings)]))
+const data = { generatedAt: new Date().toISOString(), source: { matches: MATCHES_URL, groups: GROUPS_URL, note: 'Public openfootball data; predictions are deterministic research/entertainment estimates, not betting advice.' }, summary: { totalMatches: matches.length, finishedMatches: matches.filter((m) => m.status === 'finished').length, scheduledMatches: matches.filter((m) => m.status !== 'finished').length, nextWindow: fixtureWindow(matches).map((m) => m.id) }, groups, standings, matches, predictions, leaderboard: buildLeaderboard(groups, matches) }
+await mkdir(path.join(root, 'public/data'), { recursive: true })
+await writeFile(path.join(root, 'public/data/worldcup.json'), JSON.stringify(data, null, 2), 'utf8')
+console.log(`Generated public/data/worldcup.json with ${matches.length} matches at ${data.generatedAt}`)

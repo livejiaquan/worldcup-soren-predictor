@@ -1,23 +1,26 @@
 {
   "name": "worldcup-soren-predictor",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://livejiaquan.github.io/worldcup-soren-predictor/",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "update-data": "node scripts/update-data.mjs",
+    "validate": "node scripts/validate-data.mjs",
+    "build": "npm run validate && vite build",
     "lint": "oxlint",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^6.0.2",
+    "vite": "^8.1.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
   "devDependencies": {
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.2",
-    "oxlint": "^1.69.0",
-    "vite": "^8.1.0"
+    "oxlint": "^1.69.0"
   }
 }

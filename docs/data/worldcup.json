@@ -1,0 +1,4493 @@
+{
+  "generatedAt": "2026-06-26T07:14:31.493Z",
+  "source": {
+    "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+    "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
+    "note": "Public openfootball data; predictions are deterministic research/entertainment estimates, not betting advice."
+  },
+  "summary": {
+    "totalMatches": 104,
+    "finishedMatches": 60,
+    "scheduledMatches": 44,
+    "nextWindow": [
+      "m053",
+      "m054",
+      "m047",
+      "m048",
+      "m041",
+      "m042",
+      "m071",
+      "m072",
+      "m065",
+      "m066",
+      "m059",
+      "m060"
+    ]
+  },
+  "groups": [
+    {
+      "name": "Group A",
+      "teams": [
+        "Mexico",
+        "South Africa",
+        "South Korea",
+        "Czech Republic"
+      ]
+    },
+    {
+      "name": "Group B",
+      "teams": [
+        "Canada",
+        "Bosnia & Herzegovina",
+        "Qatar",
+        "Switzerland"
+      ]
+    },
+    {
+      "name": "Group C",
+      "teams": [
+        "Brazil",
+        "Morocco",
+        "Haiti",
+        "Scotland"
+      ]
+    },
+    {
+      "name": "Group D",
+      "teams": [
+        "USA",
+        "Paraguay",
+        "Australia",
+        "Turkey"
+      ]
+    },
+    {
+      "name": "Group E",
+      "teams": [
+        "Germany",
+        "Curaçao",
+        "Ivory Coast",
+        "Ecuador"
+      ]
+    },
+    {
+      "name": "Group F",
+      "teams": [
+        "Netherlands",
+        "Japan",
+        "Sweden",
+        "Tunisia"
+      ]
+    },
+    {
+      "name": "Group G",
+      "teams": [
+        "Belgium",
+        "Egypt",
+        "Iran",
+        "New Zealand"
+      ]
+    },
+    {
+      "name": "Group H",
+      "teams": [
+        "Spain",
+        "Cape Verde",
+        "Saudi Arabia",
+        "Uruguay"
+      ]
+    },
+    {
+      "name": "Group I",
+      "teams": [
+        "France",
+        "Senegal",
+        "Iraq",
+        "Norway"
+      ]
+    },
+    {
+      "name": "Group J",
+      "teams": [
+        "Argentina",
+        "Algeria",
+        "Austria",
+        "Jordan"
+      ]
+    },
+    {
+      "name": "Group K",
+      "teams": [
+        "Portugal",
+        "Democratic Republic of the Congo",
+        "Uzbekistan",
+        "Colombia"
+      ]
+    },
+    {
+      "name": "Group L",
+      "teams": [
+        "England",
+        "Croatia",
+        "Ghana",
+        "Panama"
+      ]
+    }
+  ],
+  "standings": {
+    "Group A": [
+      {
+        "team": "Mexico",
+        "group": "Group A",
+        "played": 3,
+        "won": 3,
+        "drawn": 0,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 0,
+        "goalDiff": 6,
+        "points": 9
+      },
+      {
+        "team": "South Africa",
+        "group": "Group A",
+        "played": 3,
+        "won": 1,
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 3,
+        "goalDiff": -1,
+        "points": 4
+      },
+      {
+        "team": "South Korea",
+        "group": "Group A",
+        "played": 3,
+        "won": 1,
+        "drawn": 0,
+        "lost": 2,
+        "goalsFor": 2,
+        "goalsAgainst": 3,
+        "goalDiff": -1,
+        "points": 3
+      },
+      {
+        "team": "Czech Republic",
+        "group": "Group A",
+        "played": 3,
+        "won": 0,
+        "drawn": 1,
+        "lost": 2,
+        "goalsFor": 2,
+        "goalsAgainst": 6,
+        "goalDiff": -4,
+        "points": 1
+      }
+    ],
+    "Group B": [
+      {
+        "team": "Switzerland",
+        "group": "Group B",
+        "played": 3,
+        "won": 2,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 7,
+        "goalsAgainst": 3,
+        "goalDiff": 4,
+        "points": 7
+      },
+      {
+        "team": "Canada",
+        "group": "Group B",
+        "played": 3,
+        "won": 1,
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 8,
+        "goalsAgainst": 3,
+        "goalDiff": 5,
+        "points": 4
+      },
+      {
+        "team": "Bosnia & Herzegovina",
+        "group": "Group B",
+        "played": 3,
+        "won": 1,
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 5,
+        "goalsAgainst": 6,
+        "goalDiff": -1,
+        "points": 4
+      },
+      {
+        "team": "Qatar",
+        "group": "Group B",
+        "played": 3,
+        "won": 0,
+        "drawn": 1,
+        "lost": 2,
+        "goalsFor": 2,
+        "goalsAgainst": 10,
+        "goalDiff": -8,
+        "points": 1
+      }
+    ],
+    "Group C": [
+      {
+        "team": "Brazil",
+        "group": "Group C",
+        "played": 3,
+        "won": 2,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 7,
+        "goalsAgainst": 1,
+        "goalDiff": 6,
+        "points": 7
+      },
+      {
+        "team": "Morocco",
+        "group": "Group C",
+        "played": 3,
+        "won": 2,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 3,
+        "goalDiff": 3,
+        "points": 7
+      },
+      {
+        "team": "Scotland",
+        "group": "Group C",
+        "played": 3,
+        "won": 1,
+        "drawn": 0,
+        "lost": 2,
+        "goalsFor": 1,
+        "goalsAgainst": 4,
+        "goalDiff": -3,
+        "points": 3
+      },
+      {
+        "team": "Haiti",
+        "group": "Group C",
+        "played": 3,
+        "won": 0,
+        "drawn": 0,
+        "lost": 3,
+        "goalsFor": 2,
+        "goalsAgainst": 8,
+        "goalDiff": -6,
+        "points": 0
+      }
+    ],
+    "Group D": [
+      {
+        "team": "USA",
+        "group": "Group D",
+        "played": 3,
+        "won": 2,
+        "drawn": 0,
+        "lost": 1,
+        "goalsFor": 8,
+        "goalsAgainst": 4,
+        "goalDiff": 4,
+        "points": 6
+      },
+      {
+        "team": "Australia",
+        "group": "Group D",
+        "played": 3,
+        "won": 1,
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
+        "goalDiff": 0,
+        "points": 4
+      },
+      {
+        "team": "Paraguay",
+        "group": "Group D",
+        "played": 3,
+        "won": 1,
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 4,
+        "goalDiff": -2,
+        "points": 4
+      },
+      {
+        "team": "Turkey",
+        "group": "Group D",
+        "played": 3,
+        "won": 1,
+        "drawn": 0,
+        "lost": 2,
+        "goalsFor": 3,
+        "goalsAgainst": 5,
+        "goalDiff": -2,
+        "points": 3
+      }
+    ],
+    "Group E": [
+      {
+        "team": "Germany",
+        "group": "Group E",
+        "played": 3,
+        "won": 2,
+        "drawn": 0,
+        "lost": 1,
+        "goalsFor": 10,
+        "goalsAgainst": 4,
+        "goalDiff": 6,
+        "points": 6
+      },
+      {
+        "team": "Ivory Coast",
+        "group": "Group E",
+        "played": 3,
+        "won": 2,
+        "drawn": 0,
+        "lost": 1,
+        "goalsFor": 4,
+        "goalsAgainst": 2,
+        "goalDiff": 2,
+        "points": 6
+      },
+      {
+        "team": "Ecuador",
+        "group": "Group E",
+        "played": 3,
+        "won": 1,
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
+        "goalDiff": 0,
+        "points": 4
+      },
+      {
+        "team": "Curaçao",
+        "group": "Group E",
+        "played": 3,
+        "won": 0,
+        "drawn": 1,
+        "lost": 2,
+        "goalsFor": 1,
+        "goalsAgainst": 9,
+        "goalDiff": -8,
+        "points": 1
+      }
+    ],
+    "Group F": [
+      {
+        "team": "Netherlands",
+        "group": "Group F",
+        "played": 3,
+        "won": 2,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 10,
+        "goalsAgainst": 4,
+        "goalDiff": 6,
+        "points": 7
+      },
+      {
+        "team": "Japan",
+        "group": "Group F",
+        "played": 3,
+        "won": 1,
+        "drawn": 2,
+        "lost": 0,
+        "goalsFor": 7,
+        "goalsAgainst": 3,
+        "goalDiff": 4,
+        "points": 5
+      },
+      {
+        "team": "Sweden",
+        "group": "Group F",
+        "played": 3,
+        "won": 1,
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 7,
+        "goalsAgainst": 7,
+        "goalDiff": 0,
+        "points": 4
+      },
+      {
+        "team": "Tunisia",
+        "group": "Group F",
+        "played": 3,
+        "won": 0,
+        "drawn": 0,
+        "lost": 3,
+        "goalsFor": 2,
+        "goalsAgainst": 12,
+        "goalDiff": -10,
+        "points": 0
+      }
+    ],
+    "Group G": [
+      {
+        "team": "Egypt",
+        "group": "Group G",
+        "played": 2,
+        "won": 1,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 4,
+        "goalsAgainst": 2,
+        "goalDiff": 2,
+        "points": 4
+      },
+      {
+        "team": "Iran",
+        "group": "Group G",
+        "played": 2,
+        "won": 0,
+        "drawn": 2,
+        "lost": 0,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
+        "goalDiff": 0,
+        "points": 2
+      },
+      {
+        "team": "Belgium",
+        "group": "Group G",
+        "played": 2,
+        "won": 0,
+        "drawn": 2,
+        "lost": 0,
+        "goalsFor": 1,
+        "goalsAgainst": 1,
+        "goalDiff": 0,
+        "points": 2
+      },
+      {
+        "team": "New Zealand",
+        "group": "Group G",
+        "played": 2,
+        "won": 0,
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 3,
+        "goalsAgainst": 5,
+        "goalDiff": -2,
+        "points": 1
+      }
+    ],
+    "Group H": [
+      {
+        "team": "Spain",
+        "group": "Group H",
+        "played": 2,
+        "won": 1,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 4,
+        "goalsAgainst": 0,
+        "goalDiff": 4,
+        "points": 4
+      },
+      {
+        "team": "Uruguay",
+        "group": "Group H",
+        "played": 2,
+        "won": 0,
+        "drawn": 2,
+        "lost": 0,
+        "goalsFor": 3,
+        "goalsAgainst": 3,
+        "goalDiff": 0,
+        "points": 2
+      },
+      {
+        "team": "Cape Verde",
+        "group": "Group H",
+        "played": 2,
+        "won": 0,
+        "drawn": 2,
+        "lost": 0,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
+        "goalDiff": 0,
+        "points": 2
+      },
+      {
+        "team": "Saudi Arabia",
+        "group": "Group H",
+        "played": 2,
+        "won": 0,
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 1,
+        "goalsAgainst": 5,
+        "goalDiff": -4,
+        "points": 1
+      }
+    ],
+    "Group I": [
+      {
+        "team": "France",
+        "group": "Group I",
+        "played": 2,
+        "won": 2,
+        "drawn": 0,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 1,
+        "goalDiff": 5,
+        "points": 6
+      },
+      {
+        "team": "Norway",
+        "group": "Group I",
+        "played": 2,
+        "won": 2,
+        "drawn": 0,
+        "lost": 0,
+        "goalsFor": 7,
+        "goalsAgainst": 3,
+        "goalDiff": 4,
+        "points": 6
+      },
+      {
+        "team": "Senegal",
+        "group": "Group I",
+        "played": 2,
+        "won": 0,
+        "drawn": 0,
+        "lost": 2,
+        "goalsFor": 3,
+        "goalsAgainst": 6,
+        "goalDiff": -3,
+        "points": 0
+      },
+      {
+        "team": "Iraq",
+        "group": "Group I",
+        "played": 2,
+        "won": 0,
+        "drawn": 0,
+        "lost": 2,
+        "goalsFor": 1,
+        "goalsAgainst": 7,
+        "goalDiff": -6,
+        "points": 0
+      }
+    ],
+    "Group J": [
+      {
+        "team": "Argentina",
+        "group": "Group J",
+        "played": 2,
+        "won": 2,
+        "drawn": 0,
+        "lost": 0,
+        "goalsFor": 5,
+        "goalsAgainst": 0,
+        "goalDiff": 5,
+        "points": 6
+      },
+      {
+        "team": "Austria",
+        "group": "Group J",
+        "played": 2,
+        "won": 1,
+        "drawn": 0,
+        "lost": 1,
+        "goalsFor": 3,
+        "goalsAgainst": 3,
+        "goalDiff": 0,
+        "points": 3
+      },
+      {
+        "team": "Algeria",
+        "group": "Group J",
+        "played": 2,
+        "won": 1,
+        "drawn": 0,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 4,
+        "goalDiff": -2,
+        "points": 3
+      },
+      {
+        "team": "Jordan",
+        "group": "Group J",
+        "played": 2,
+        "won": 0,
+        "drawn": 0,
+        "lost": 2,
+        "goalsFor": 2,
+        "goalsAgainst": 5,
+        "goalDiff": -3,
+        "points": 0
+      }
+    ],
+    "Group K": [
+      {
+        "team": "Colombia",
+        "group": "Group K",
+        "played": 2,
+        "won": 2,
+        "drawn": 0,
+        "lost": 0,
+        "goalsFor": 4,
+        "goalsAgainst": 1,
+        "goalDiff": 3,
+        "points": 6
+      },
+      {
+        "team": "Portugal",
+        "group": "Group K",
+        "played": 2,
+        "won": 1,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 1,
+        "goalDiff": 5,
+        "points": 4
+      },
+      {
+        "team": "Democratic Republic of the Congo",
+        "group": "Group K",
+        "played": 2,
+        "won": 0,
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 1,
+        "goalsAgainst": 2,
+        "goalDiff": -1,
+        "points": 1
+      },
+      {
+        "team": "Uzbekistan",
+        "group": "Group K",
+        "played": 2,
+        "won": 0,
+        "drawn": 0,
+        "lost": 2,
+        "goalsFor": 1,
+        "goalsAgainst": 8,
+        "goalDiff": -7,
+        "points": 0
+      }
+    ],
+    "Group L": [
+      {
+        "team": "England",
+        "group": "Group L",
+        "played": 2,
+        "won": 1,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 4,
+        "goalsAgainst": 2,
+        "goalDiff": 2,
+        "points": 4
+      },
+      {
+        "team": "Ghana",
+        "group": "Group L",
+        "played": 2,
+        "won": 1,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 1,
+        "goalsAgainst": 0,
+        "goalDiff": 1,
+        "points": 4
+      },
+      {
+        "team": "Croatia",
+        "group": "Group L",
+        "played": 2,
+        "won": 1,
+        "drawn": 0,
+        "lost": 1,
+        "goalsFor": 3,
+        "goalsAgainst": 4,
+        "goalDiff": -1,
+        "points": 3
+      },
+      {
+        "team": "Panama",
+        "group": "Group L",
+        "played": 2,
+        "won": 0,
+        "drawn": 0,
+        "lost": 2,
+        "goalsFor": 0,
+        "goalsAgainst": 2,
+        "goalDiff": -2,
+        "points": 0
+      }
+    ]
+  },
+  "matches": [
+    {
+      "id": "m001",
+      "round": "Matchday 1",
+      "stage": "小組 A · Matchday 1",
+      "group": "Group A",
+      "date": "2026-06-11",
+      "time": "13:00 UTC-6",
+      "kickoffUtc": "2026-06-11T19:00:00.000Z",
+      "team1": "Mexico",
+      "team2": "South Africa",
+      "venue": "Mexico City",
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m002",
+      "round": "Matchday 1",
+      "stage": "小組 A · Matchday 1",
+      "group": "Group A",
+      "date": "2026-06-11",
+      "time": "20:00 UTC-6",
+      "kickoffUtc": "2026-06-12T02:00:00.000Z",
+      "team1": "South Korea",
+      "team2": "Czech Republic",
+      "venue": "Guadalajara (Zapopan)",
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m007",
+      "round": "Matchday 2",
+      "stage": "小組 B · Matchday 2",
+      "group": "Group B",
+      "date": "2026-06-12",
+      "time": "15:00 UTC-4",
+      "kickoffUtc": "2026-06-12T19:00:00.000Z",
+      "team1": "Canada",
+      "team2": "Bosnia & Herzegovina",
+      "venue": "Toronto",
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m019",
+      "round": "Matchday 2",
+      "stage": "小組 D · Matchday 2",
+      "group": "Group D",
+      "date": "2026-06-12",
+      "time": "18:00 UTC-7",
+      "kickoffUtc": "2026-06-13T01:00:00.000Z",
+      "team1": "USA",
+      "team2": "Paraguay",
+      "venue": "Los Angeles (Inglewood)",
+      "status": "finished",
+      "score": [
+        4,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m008",
+      "round": "Matchday 3",
+      "stage": "小組 B · Matchday 3",
+      "group": "Group B",
+      "date": "2026-06-13",
+      "time": "12:00 UTC-7",
+      "kickoffUtc": "2026-06-13T19:00:00.000Z",
+      "team1": "Qatar",
+      "team2": "Switzerland",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m013",
+      "round": "Matchday 3",
+      "stage": "小組 C · Matchday 3",
+      "group": "Group C",
+      "date": "2026-06-13",
+      "time": "18:00 UTC-4",
+      "kickoffUtc": "2026-06-13T22:00:00.000Z",
+      "team1": "Brazil",
+      "team2": "Morocco",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m014",
+      "round": "Matchday 3",
+      "stage": "小組 C · Matchday 3",
+      "group": "Group C",
+      "date": "2026-06-13",
+      "time": "21:00 UTC-4",
+      "kickoffUtc": "2026-06-14T01:00:00.000Z",
+      "team1": "Haiti",
+      "team2": "Scotland",
+      "venue": "Boston (Foxborough)",
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m020",
+      "round": "Matchday 3",
+      "stage": "小組 D · Matchday 3",
+      "group": "Group D",
+      "date": "2026-06-13",
+      "time": "21:00 UTC-7",
+      "kickoffUtc": "2026-06-14T04:00:00.000Z",
+      "team1": "Australia",
+      "team2": "Turkey",
+      "venue": "Vancouver",
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m025",
+      "round": "Matchday 4",
+      "stage": "小組 E · Matchday 4",
+      "group": "Group E",
+      "date": "2026-06-14",
+      "time": "12:00 UTC-5",
+      "kickoffUtc": "2026-06-14T17:00:00.000Z",
+      "team1": "Germany",
+      "team2": "Curaçao",
+      "venue": "Houston",
+      "status": "finished",
+      "score": [
+        7,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m031",
+      "round": "Matchday 4",
+      "stage": "小組 F · Matchday 4",
+      "group": "Group F",
+      "date": "2026-06-14",
+      "time": "15:00 UTC-5",
+      "kickoffUtc": "2026-06-14T20:00:00.000Z",
+      "team1": "Netherlands",
+      "team2": "Japan",
+      "venue": "Dallas (Arlington)",
+      "status": "finished",
+      "score": [
+        2,
+        2
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m026",
+      "round": "Matchday 4",
+      "stage": "小組 E · Matchday 4",
+      "group": "Group E",
+      "date": "2026-06-14",
+      "time": "19:00 UTC-4",
+      "kickoffUtc": "2026-06-14T23:00:00.000Z",
+      "team1": "Ivory Coast",
+      "team2": "Ecuador",
+      "venue": "Philadelphia",
+      "status": "finished",
+      "score": [
+        1,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m032",
+      "round": "Matchday 4",
+      "stage": "小組 F · Matchday 4",
+      "group": "Group F",
+      "date": "2026-06-14",
+      "time": "20:00 UTC-6",
+      "kickoffUtc": "2026-06-15T02:00:00.000Z",
+      "team1": "Sweden",
+      "team2": "Tunisia",
+      "venue": "Monterrey (Guadalupe)",
+      "status": "finished",
+      "score": [
+        5,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m043",
+      "round": "Matchday 5",
+      "stage": "小組 H · Matchday 5",
+      "group": "Group H",
+      "date": "2026-06-15",
+      "time": "12:00 UTC-4",
+      "kickoffUtc": "2026-06-15T16:00:00.000Z",
+      "team1": "Spain",
+      "team2": "Cape Verde",
+      "venue": "Atlanta",
+      "status": "finished",
+      "score": [
+        0,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m037",
+      "round": "Matchday 5",
+      "stage": "小組 G · Matchday 5",
+      "group": "Group G",
+      "date": "2026-06-15",
+      "time": "12:00 UTC-7",
+      "kickoffUtc": "2026-06-15T19:00:00.000Z",
+      "team1": "Belgium",
+      "team2": "Egypt",
+      "venue": "Seattle",
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m044",
+      "round": "Matchday 5",
+      "stage": "小組 H · Matchday 5",
+      "group": "Group H",
+      "date": "2026-06-15",
+      "time": "18:00 UTC-4",
+      "kickoffUtc": "2026-06-15T22:00:00.000Z",
+      "team1": "Saudi Arabia",
+      "team2": "Uruguay",
+      "venue": "Miami (Miami Gardens)",
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m038",
+      "round": "Matchday 5",
+      "stage": "小組 G · Matchday 5",
+      "group": "Group G",
+      "date": "2026-06-15",
+      "time": "18:00 UTC-7",
+      "kickoffUtc": "2026-06-16T01:00:00.000Z",
+      "team1": "Iran",
+      "team2": "New Zealand",
+      "venue": "Los Angeles (Inglewood)",
+      "status": "finished",
+      "score": [
+        2,
+        2
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m049",
+      "round": "Matchday 6",
+      "stage": "小組 I · Matchday 6",
+      "group": "Group I",
+      "date": "2026-06-16",
+      "time": "15:00 UTC-4",
+      "kickoffUtc": "2026-06-16T19:00:00.000Z",
+      "team1": "France",
+      "team2": "Senegal",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "status": "finished",
+      "score": [
+        3,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m050",
+      "round": "Matchday 6",
+      "stage": "小組 I · Matchday 6",
+      "group": "Group I",
+      "date": "2026-06-16",
+      "time": "18:00 UTC-4",
+      "kickoffUtc": "2026-06-16T22:00:00.000Z",
+      "team1": "Iraq",
+      "team2": "Norway",
+      "venue": "Boston (Foxborough)",
+      "status": "finished",
+      "score": [
+        1,
+        4
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m055",
+      "round": "Matchday 6",
+      "stage": "小組 J · Matchday 6",
+      "group": "Group J",
+      "date": "2026-06-16",
+      "time": "20:00 UTC-5",
+      "kickoffUtc": "2026-06-17T01:00:00.000Z",
+      "team1": "Argentina",
+      "team2": "Algeria",
+      "venue": "Kansas City",
+      "status": "finished",
+      "score": [
+        3,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m056",
+      "round": "Matchday 6",
+      "stage": "小組 J · Matchday 6",
+      "group": "Group J",
+      "date": "2026-06-16",
+      "time": "21:00 UTC-7",
+      "kickoffUtc": "2026-06-17T04:00:00.000Z",
+      "team1": "Austria",
+      "team2": "Jordan",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "status": "finished",
+      "score": [
+        3,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m061",
+      "round": "Matchday 7",
+      "stage": "小組 K · Matchday 7",
+      "group": "Group K",
+      "date": "2026-06-17",
+      "time": "12:00 UTC-5",
+      "kickoffUtc": "2026-06-17T17:00:00.000Z",
+      "team1": "Portugal",
+      "team2": "Democratic Republic of the Congo",
+      "venue": "Houston",
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m067",
+      "round": "Matchday 7",
+      "stage": "小組 L · Matchday 7",
+      "group": "Group L",
+      "date": "2026-06-17",
+      "time": "15:00 UTC-5",
+      "kickoffUtc": "2026-06-17T20:00:00.000Z",
+      "team1": "England",
+      "team2": "Croatia",
+      "venue": "Dallas (Arlington)",
+      "status": "finished",
+      "score": [
+        4,
+        2
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m068",
+      "round": "Matchday 7",
+      "stage": "小組 L · Matchday 7",
+      "group": "Group L",
+      "date": "2026-06-17",
+      "time": "19:00 UTC-4",
+      "kickoffUtc": "2026-06-17T23:00:00.000Z",
+      "team1": "Ghana",
+      "team2": "Panama",
+      "venue": "Toronto",
+      "status": "finished",
+      "score": [
+        1,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m062",
+      "round": "Matchday 7",
+      "stage": "小組 K · Matchday 7",
+      "group": "Group K",
+      "date": "2026-06-17",
+      "time": "20:00 UTC-6",
+      "kickoffUtc": "2026-06-18T02:00:00.000Z",
+      "team1": "Uzbekistan",
+      "team2": "Colombia",
+      "venue": "Mexico City",
+      "status": "finished",
+      "score": [
+        1,
+        3
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m003",
+      "round": "Matchday 8",
+      "stage": "小組 A · Matchday 8",
+      "group": "Group A",
+      "date": "2026-06-18",
+      "time": "12:00 UTC-4",
+      "kickoffUtc": "2026-06-18T16:00:00.000Z",
+      "team1": "Czech Republic",
+      "team2": "South Africa",
+      "venue": "Atlanta",
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m009",
+      "round": "Matchday 8",
+      "stage": "小組 B · Matchday 8",
+      "group": "Group B",
+      "date": "2026-06-18",
+      "time": "12:00 UTC-7",
+      "kickoffUtc": "2026-06-18T19:00:00.000Z",
+      "team1": "Switzerland",
+      "team2": "Bosnia & Herzegovina",
+      "venue": "Los Angeles (Inglewood)",
+      "status": "finished",
+      "score": [
+        4,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m010",
+      "round": "Matchday 8",
+      "stage": "小組 B · Matchday 8",
+      "group": "Group B",
+      "date": "2026-06-18",
+      "time": "15:00 UTC-7",
+      "kickoffUtc": "2026-06-18T22:00:00.000Z",
+      "team1": "Canada",
+      "team2": "Qatar",
+      "venue": "Vancouver",
+      "status": "finished",
+      "score": [
+        6,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m004",
+      "round": "Matchday 8",
+      "stage": "小組 A · Matchday 8",
+      "group": "Group A",
+      "date": "2026-06-18",
+      "time": "19:00 UTC-6",
+      "kickoffUtc": "2026-06-19T01:00:00.000Z",
+      "team1": "Mexico",
+      "team2": "South Korea",
+      "venue": "Guadalajara (Zapopan)",
+      "status": "finished",
+      "score": [
+        1,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m021",
+      "round": "Matchday 9",
+      "stage": "小組 D · Matchday 9",
+      "group": "Group D",
+      "date": "2026-06-19",
+      "time": "12:00 UTC-7",
+      "kickoffUtc": "2026-06-19T19:00:00.000Z",
+      "team1": "USA",
+      "team2": "Australia",
+      "venue": "Seattle",
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m015",
+      "round": "Matchday 9",
+      "stage": "小組 C · Matchday 9",
+      "group": "Group C",
+      "date": "2026-06-19",
+      "time": "18:00 UTC-4",
+      "kickoffUtc": "2026-06-19T22:00:00.000Z",
+      "team1": "Scotland",
+      "team2": "Morocco",
+      "venue": "Boston (Foxborough)",
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m016",
+      "round": "Matchday 9",
+      "stage": "小組 C · Matchday 9",
+      "group": "Group C",
+      "date": "2026-06-19",
+      "time": "20:30 UTC-4",
+      "kickoffUtc": "2026-06-20T00:30:00.000Z",
+      "team1": "Brazil",
+      "team2": "Haiti",
+      "venue": "Philadelphia",
+      "status": "finished",
+      "score": [
+        3,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m022",
+      "round": "Matchday 9",
+      "stage": "小組 D · Matchday 9",
+      "group": "Group D",
+      "date": "2026-06-19",
+      "time": "20:00 UTC-7",
+      "kickoffUtc": "2026-06-20T03:00:00.000Z",
+      "team1": "Turkey",
+      "team2": "Paraguay",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m033",
+      "round": "Matchday 10",
+      "stage": "小組 F · Matchday 10",
+      "group": "Group F",
+      "date": "2026-06-20",
+      "time": "12:00 UTC-5",
+      "kickoffUtc": "2026-06-20T17:00:00.000Z",
+      "team1": "Netherlands",
+      "team2": "Sweden",
+      "venue": "Houston",
+      "status": "finished",
+      "score": [
+        5,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m027",
+      "round": "Matchday 10",
+      "stage": "小組 E · Matchday 10",
+      "group": "Group E",
+      "date": "2026-06-20",
+      "time": "16:00 UTC-4",
+      "kickoffUtc": "2026-06-20T20:00:00.000Z",
+      "team1": "Germany",
+      "team2": "Ivory Coast",
+      "venue": "Toronto",
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m028",
+      "round": "Matchday 10",
+      "stage": "小組 E · Matchday 10",
+      "group": "Group E",
+      "date": "2026-06-20",
+      "time": "19:00 UTC-5",
+      "kickoffUtc": "2026-06-21T00:00:00.000Z",
+      "team1": "Ecuador",
+      "team2": "Curaçao",
+      "venue": "Kansas City",
+      "status": "finished",
+      "score": [
+        0,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m034",
+      "round": "Matchday 10",
+      "stage": "小組 F · Matchday 10",
+      "group": "Group F",
+      "date": "2026-06-20",
+      "time": "22:00 UTC-6",
+      "kickoffUtc": "2026-06-21T04:00:00.000Z",
+      "team1": "Tunisia",
+      "team2": "Japan",
+      "venue": "Monterrey (Guadalupe)",
+      "status": "finished",
+      "score": [
+        0,
+        4
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m045",
+      "round": "Matchday 11",
+      "stage": "小組 H · Matchday 11",
+      "group": "Group H",
+      "date": "2026-06-21",
+      "time": "12:00 UTC-4",
+      "kickoffUtc": "2026-06-21T16:00:00.000Z",
+      "team1": "Spain",
+      "team2": "Saudi Arabia",
+      "venue": "Atlanta",
+      "status": "finished",
+      "score": [
+        4,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m039",
+      "round": "Matchday 11",
+      "stage": "小組 G · Matchday 11",
+      "group": "Group G",
+      "date": "2026-06-21",
+      "time": "12:00 UTC-7",
+      "kickoffUtc": "2026-06-21T19:00:00.000Z",
+      "team1": "Belgium",
+      "team2": "Iran",
+      "venue": "Los Angeles (Inglewood)",
+      "status": "finished",
+      "score": [
+        0,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m046",
+      "round": "Matchday 11",
+      "stage": "小組 H · Matchday 11",
+      "group": "Group H",
+      "date": "2026-06-21",
+      "time": "18:00 UTC-4",
+      "kickoffUtc": "2026-06-21T22:00:00.000Z",
+      "team1": "Uruguay",
+      "team2": "Cape Verde",
+      "venue": "Miami (Miami Gardens)",
+      "status": "finished",
+      "score": [
+        2,
+        2
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m040",
+      "round": "Matchday 11",
+      "stage": "小組 G · Matchday 11",
+      "group": "Group G",
+      "date": "2026-06-21",
+      "time": "18:00 UTC-7",
+      "kickoffUtc": "2026-06-22T01:00:00.000Z",
+      "team1": "New Zealand",
+      "team2": "Egypt",
+      "venue": "Vancouver",
+      "status": "finished",
+      "score": [
+        1,
+        3
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m057",
+      "round": "Matchday 12",
+      "stage": "小組 J · Matchday 12",
+      "group": "Group J",
+      "date": "2026-06-22",
+      "time": "12:00 UTC-5",
+      "kickoffUtc": "2026-06-22T17:00:00.000Z",
+      "team1": "Argentina",
+      "team2": "Austria",
+      "venue": "Dallas (Arlington)",
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m051",
+      "round": "Matchday 12",
+      "stage": "小組 I · Matchday 12",
+      "group": "Group I",
+      "date": "2026-06-22",
+      "time": "17:00 UTC-4",
+      "kickoffUtc": "2026-06-22T21:00:00.000Z",
+      "team1": "France",
+      "team2": "Iraq",
+      "venue": "Philadelphia",
+      "status": "finished",
+      "score": [
+        3,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m052",
+      "round": "Matchday 12",
+      "stage": "小組 I · Matchday 12",
+      "group": "Group I",
+      "date": "2026-06-22",
+      "time": "20:00 UTC-4",
+      "kickoffUtc": "2026-06-23T00:00:00.000Z",
+      "team1": "Norway",
+      "team2": "Senegal",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "status": "finished",
+      "score": [
+        3,
+        2
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m058",
+      "round": "Matchday 12",
+      "stage": "小組 J · Matchday 12",
+      "group": "Group J",
+      "date": "2026-06-22",
+      "time": "20:00 UTC-7",
+      "kickoffUtc": "2026-06-23T03:00:00.000Z",
+      "team1": "Jordan",
+      "team2": "Algeria",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "status": "finished",
+      "score": [
+        1,
+        2
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m063",
+      "round": "Matchday 13",
+      "stage": "小組 K · Matchday 13",
+      "group": "Group K",
+      "date": "2026-06-23",
+      "time": "12:00 UTC-5",
+      "kickoffUtc": "2026-06-23T17:00:00.000Z",
+      "team1": "Portugal",
+      "team2": "Uzbekistan",
+      "venue": "Houston",
+      "status": "finished",
+      "score": [
+        5,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m069",
+      "round": "Matchday 13",
+      "stage": "小組 L · Matchday 13",
+      "group": "Group L",
+      "date": "2026-06-23",
+      "time": "16:00 UTC-4",
+      "kickoffUtc": "2026-06-23T20:00:00.000Z",
+      "team1": "England",
+      "team2": "Ghana",
+      "venue": "Boston (Foxborough)",
+      "status": "finished",
+      "score": [
+        0,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m070",
+      "round": "Matchday 13",
+      "stage": "小組 L · Matchday 13",
+      "group": "Group L",
+      "date": "2026-06-23",
+      "time": "19:00 UTC-4",
+      "kickoffUtc": "2026-06-23T23:00:00.000Z",
+      "team1": "Panama",
+      "team2": "Croatia",
+      "venue": "Toronto",
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m064",
+      "round": "Matchday 13",
+      "stage": "小組 K · Matchday 13",
+      "group": "Group K",
+      "date": "2026-06-23",
+      "time": "20:00 UTC-6",
+      "kickoffUtc": "2026-06-24T02:00:00.000Z",
+      "team1": "Colombia",
+      "team2": "Democratic Republic of the Congo",
+      "venue": "Guadalajara (Zapopan)",
+      "status": "finished",
+      "score": [
+        1,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m011",
+      "round": "Matchday 14",
+      "stage": "小組 B · Matchday 14",
+      "group": "Group B",
+      "date": "2026-06-24",
+      "time": "12:00 UTC-7",
+      "kickoffUtc": "2026-06-24T19:00:00.000Z",
+      "team1": "Switzerland",
+      "team2": "Canada",
+      "venue": "Vancouver",
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m012",
+      "round": "Matchday 14",
+      "stage": "小組 B · Matchday 14",
+      "group": "Group B",
+      "date": "2026-06-24",
+      "time": "12:00 UTC-7",
+      "kickoffUtc": "2026-06-24T19:00:00.000Z",
+      "team1": "Bosnia & Herzegovina",
+      "team2": "Qatar",
+      "venue": "Seattle",
+      "status": "finished",
+      "score": [
+        3,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m017",
+      "round": "Matchday 14",
+      "stage": "小組 C · Matchday 14",
+      "group": "Group C",
+      "date": "2026-06-24",
+      "time": "18:00 UTC-4",
+      "kickoffUtc": "2026-06-24T22:00:00.000Z",
+      "team1": "Scotland",
+      "team2": "Brazil",
+      "venue": "Miami (Miami Gardens)",
+      "status": "finished",
+      "score": [
+        0,
+        3
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m018",
+      "round": "Matchday 14",
+      "stage": "小組 C · Matchday 14",
+      "group": "Group C",
+      "date": "2026-06-24",
+      "time": "18:00 UTC-4",
+      "kickoffUtc": "2026-06-24T22:00:00.000Z",
+      "team1": "Morocco",
+      "team2": "Haiti",
+      "venue": "Atlanta",
+      "status": "finished",
+      "score": [
+        4,
+        2
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m005",
+      "round": "Matchday 14",
+      "stage": "小組 A · Matchday 14",
+      "group": "Group A",
+      "date": "2026-06-24",
+      "time": "19:00 UTC-6",
+      "kickoffUtc": "2026-06-25T01:00:00.000Z",
+      "team1": "Czech Republic",
+      "team2": "Mexico",
+      "venue": "Mexico City",
+      "status": "finished",
+      "score": [
+        0,
+        3
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m006",
+      "round": "Matchday 14",
+      "stage": "小組 A · Matchday 14",
+      "group": "Group A",
+      "date": "2026-06-24",
+      "time": "19:00 UTC-6",
+      "kickoffUtc": "2026-06-25T01:00:00.000Z",
+      "team1": "South Africa",
+      "team2": "South Korea",
+      "venue": "Monterrey (Guadalupe)",
+      "status": "finished",
+      "score": [
+        1,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m029",
+      "round": "Matchday 15",
+      "stage": "小組 E · Matchday 15",
+      "group": "Group E",
+      "date": "2026-06-25",
+      "time": "16:00 UTC-4",
+      "kickoffUtc": "2026-06-25T20:00:00.000Z",
+      "team1": "Curaçao",
+      "team2": "Ivory Coast",
+      "venue": "Philadelphia",
+      "status": "finished",
+      "score": [
+        0,
+        2
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m030",
+      "round": "Matchday 15",
+      "stage": "小組 E · Matchday 15",
+      "group": "Group E",
+      "date": "2026-06-25",
+      "time": "16:00 UTC-4",
+      "kickoffUtc": "2026-06-25T20:00:00.000Z",
+      "team1": "Ecuador",
+      "team2": "Germany",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m035",
+      "round": "Matchday 15",
+      "stage": "小組 F · Matchday 15",
+      "group": "Group F",
+      "date": "2026-06-25",
+      "time": "18:00 UTC-5",
+      "kickoffUtc": "2026-06-25T23:00:00.000Z",
+      "team1": "Japan",
+      "team2": "Sweden",
+      "venue": "Dallas (Arlington)",
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m036",
+      "round": "Matchday 15",
+      "stage": "小組 F · Matchday 15",
+      "group": "Group F",
+      "date": "2026-06-25",
+      "time": "18:00 UTC-5",
+      "kickoffUtc": "2026-06-25T23:00:00.000Z",
+      "team1": "Tunisia",
+      "team2": "Netherlands",
+      "venue": "Kansas City",
+      "status": "finished",
+      "score": [
+        1,
+        3
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m023",
+      "round": "Matchday 15",
+      "stage": "小組 D · Matchday 15",
+      "group": "Group D",
+      "date": "2026-06-25",
+      "time": "19:00 UTC-7",
+      "kickoffUtc": "2026-06-26T02:00:00.000Z",
+      "team1": "Turkey",
+      "team2": "USA",
+      "venue": "Los Angeles (Inglewood)",
+      "status": "finished",
+      "score": [
+        3,
+        2
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m024",
+      "round": "Matchday 15",
+      "stage": "小組 D · Matchday 15",
+      "group": "Group D",
+      "date": "2026-06-25",
+      "time": "19:00 UTC-7",
+      "kickoffUtc": "2026-06-26T02:00:00.000Z",
+      "team1": "Paraguay",
+      "team2": "Australia",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "status": "finished",
+      "score": [
+        0,
+        0
+      ],
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m053",
+      "round": "Matchday 16",
+      "stage": "小組 I · Matchday 16",
+      "group": "Group I",
+      "date": "2026-06-26",
+      "time": "15:00 UTC-4",
+      "kickoffUtc": "2026-06-26T19:00:00.000Z",
+      "team1": "Norway",
+      "team2": "France",
+      "venue": "Boston (Foxborough)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m054",
+      "round": "Matchday 16",
+      "stage": "小組 I · Matchday 16",
+      "group": "Group I",
+      "date": "2026-06-26",
+      "time": "15:00 UTC-4",
+      "kickoffUtc": "2026-06-26T19:00:00.000Z",
+      "team1": "Senegal",
+      "team2": "Iraq",
+      "venue": "Toronto",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m047",
+      "round": "Matchday 16",
+      "stage": "小組 H · Matchday 16",
+      "group": "Group H",
+      "date": "2026-06-26",
+      "time": "19:00 UTC-5",
+      "kickoffUtc": "2026-06-27T00:00:00.000Z",
+      "team1": "Cape Verde",
+      "team2": "Saudi Arabia",
+      "venue": "Houston",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m048",
+      "round": "Matchday 16",
+      "stage": "小組 H · Matchday 16",
+      "group": "Group H",
+      "date": "2026-06-26",
+      "time": "18:00 UTC-6",
+      "kickoffUtc": "2026-06-27T00:00:00.000Z",
+      "team1": "Uruguay",
+      "team2": "Spain",
+      "venue": "Guadalajara (Zapopan)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m041",
+      "round": "Matchday 16",
+      "stage": "小組 G · Matchday 16",
+      "group": "Group G",
+      "date": "2026-06-26",
+      "time": "20:00 UTC-7",
+      "kickoffUtc": "2026-06-27T03:00:00.000Z",
+      "team1": "Egypt",
+      "team2": "Iran",
+      "venue": "Seattle",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m042",
+      "round": "Matchday 16",
+      "stage": "小組 G · Matchday 16",
+      "group": "Group G",
+      "date": "2026-06-26",
+      "time": "20:00 UTC-7",
+      "kickoffUtc": "2026-06-27T03:00:00.000Z",
+      "team1": "New Zealand",
+      "team2": "Belgium",
+      "venue": "Vancouver",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m071",
+      "round": "Matchday 17",
+      "stage": "小組 L · Matchday 17",
+      "group": "Group L",
+      "date": "2026-06-27",
+      "time": "17:00 UTC-4",
+      "kickoffUtc": "2026-06-27T21:00:00.000Z",
+      "team1": "Panama",
+      "team2": "England",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m072",
+      "round": "Matchday 17",
+      "stage": "小組 L · Matchday 17",
+      "group": "Group L",
+      "date": "2026-06-27",
+      "time": "17:00 UTC-4",
+      "kickoffUtc": "2026-06-27T21:00:00.000Z",
+      "team1": "Croatia",
+      "team2": "Ghana",
+      "venue": "Philadelphia",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m065",
+      "round": "Matchday 17",
+      "stage": "小組 K · Matchday 17",
+      "group": "Group K",
+      "date": "2026-06-27",
+      "time": "19:30 UTC-4",
+      "kickoffUtc": "2026-06-27T23:30:00.000Z",
+      "team1": "Colombia",
+      "team2": "Portugal",
+      "venue": "Miami (Miami Gardens)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m066",
+      "round": "Matchday 17",
+      "stage": "小組 K · Matchday 17",
+      "group": "Group K",
+      "date": "2026-06-27",
+      "time": "19:30 UTC-4",
+      "kickoffUtc": "2026-06-27T23:30:00.000Z",
+      "team1": "Democratic Republic of the Congo",
+      "team2": "Uzbekistan",
+      "venue": "Atlanta",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m059",
+      "round": "Matchday 17",
+      "stage": "小組 J · Matchday 17",
+      "group": "Group J",
+      "date": "2026-06-27",
+      "time": "21:00 UTC-5",
+      "kickoffUtc": "2026-06-28T02:00:00.000Z",
+      "team1": "Algeria",
+      "team2": "Austria",
+      "venue": "Kansas City",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m060",
+      "round": "Matchday 17",
+      "stage": "小組 J · Matchday 17",
+      "group": "Group J",
+      "date": "2026-06-27",
+      "time": "21:00 UTC-5",
+      "kickoffUtc": "2026-06-28T02:00:00.000Z",
+      "team1": "Jordan",
+      "team2": "Argentina",
+      "venue": "Dallas (Arlington)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m073",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-06-28",
+      "time": "12:00 UTC-7",
+      "kickoffUtc": "2026-06-28T19:00:00.000Z",
+      "team1": "South Africa",
+      "team2": "Canada",
+      "venue": "Los Angeles (Inglewood)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m076",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-06-29",
+      "time": "12:00 UTC-5",
+      "kickoffUtc": "2026-06-29T17:00:00.000Z",
+      "team1": "Brazil",
+      "team2": "2F",
+      "venue": "Houston",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m074",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-06-29",
+      "time": "16:30 UTC-4",
+      "kickoffUtc": "2026-06-29T20:30:00.000Z",
+      "team1": "Germany",
+      "team2": "3A/B/C/D/F",
+      "venue": "Boston (Foxborough)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m075",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-06-29",
+      "time": "19:00 UTC-6",
+      "kickoffUtc": "2026-06-30T01:00:00.000Z",
+      "team1": "1F",
+      "team2": "Morocco",
+      "venue": "Monterrey (Guadalupe)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m078",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-06-30",
+      "time": "12:00 UTC-5",
+      "kickoffUtc": "2026-06-30T17:00:00.000Z",
+      "team1": "2E",
+      "team2": "2I",
+      "venue": "Dallas (Arlington)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m077",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-06-30",
+      "time": "17:00 UTC-4",
+      "kickoffUtc": "2026-06-30T21:00:00.000Z",
+      "team1": "1I",
+      "team2": "3C/D/F/G/H",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m079",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-06-30",
+      "time": "19:00 UTC-6",
+      "kickoffUtc": "2026-07-01T01:00:00.000Z",
+      "team1": "Mexico",
+      "team2": "3C/E/F/H/I",
+      "venue": "Mexico City",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m080",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-07-01",
+      "time": "12:00 UTC-4",
+      "kickoffUtc": "2026-07-01T16:00:00.000Z",
+      "team1": "1L",
+      "team2": "3E/H/I/J/K",
+      "venue": "Atlanta",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m082",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-07-01",
+      "time": "13:00 UTC-7",
+      "kickoffUtc": "2026-07-01T20:00:00.000Z",
+      "team1": "1G",
+      "team2": "3A/E/H/I/J",
+      "venue": "Seattle",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m081",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-07-01",
+      "time": "17:00 UTC-7",
+      "kickoffUtc": "2026-07-02T00:00:00.000Z",
+      "team1": "USA",
+      "team2": "3B/E/F/I/J",
+      "venue": "San Francisco Bay Area (Santa Clara)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m084",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-07-02",
+      "time": "12:00 UTC-7",
+      "kickoffUtc": "2026-07-02T19:00:00.000Z",
+      "team1": "1H",
+      "team2": "2J",
+      "venue": "Los Angeles (Inglewood)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m083",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-07-02",
+      "time": "19:00 UTC-4",
+      "kickoffUtc": "2026-07-02T23:00:00.000Z",
+      "team1": "2K",
+      "team2": "2L",
+      "venue": "Toronto",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m085",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-07-02",
+      "time": "20:00 UTC-7",
+      "kickoffUtc": "2026-07-03T03:00:00.000Z",
+      "team1": "Switzerland",
+      "team2": "3E/F/G/I/J",
+      "venue": "Vancouver",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m088",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-07-03",
+      "time": "13:00 UTC-5",
+      "kickoffUtc": "2026-07-03T18:00:00.000Z",
+      "team1": "2D",
+      "team2": "2G",
+      "venue": "Dallas (Arlington)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m086",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-07-03",
+      "time": "18:00 UTC-4",
+      "kickoffUtc": "2026-07-03T22:00:00.000Z",
+      "team1": "1J",
+      "team2": "2H",
+      "venue": "Miami (Miami Gardens)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m087",
+      "round": "Round of 32",
+      "stage": "Round of 32",
+      "group": null,
+      "date": "2026-07-03",
+      "time": "20:30 UTC-5",
+      "kickoffUtc": "2026-07-04T01:30:00.000Z",
+      "team1": "1K",
+      "team2": "3D/E/I/J/L",
+      "venue": "Kansas City",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m090",
+      "round": "Round of 16",
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2026-07-04",
+      "time": "12:00 UTC-5",
+      "kickoffUtc": "2026-07-04T17:00:00.000Z",
+      "team1": "W73",
+      "team2": "W75",
+      "venue": "Houston",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m089",
+      "round": "Round of 16",
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2026-07-04",
+      "time": "17:00 UTC-4",
+      "kickoffUtc": "2026-07-04T21:00:00.000Z",
+      "team1": "W74",
+      "team2": "W77",
+      "venue": "Philadelphia",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m091",
+      "round": "Round of 16",
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2026-07-05",
+      "time": "16:00 UTC-4",
+      "kickoffUtc": "2026-07-05T20:00:00.000Z",
+      "team1": "W76",
+      "team2": "W78",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m092",
+      "round": "Round of 16",
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2026-07-05",
+      "time": "18:00 UTC-6",
+      "kickoffUtc": "2026-07-06T00:00:00.000Z",
+      "team1": "W79",
+      "team2": "W80",
+      "venue": "Mexico City",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m093",
+      "round": "Round of 16",
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2026-07-06",
+      "time": "14:00 UTC-5",
+      "kickoffUtc": "2026-07-06T19:00:00.000Z",
+      "team1": "W83",
+      "team2": "W84",
+      "venue": "Dallas (Arlington)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m094",
+      "round": "Round of 16",
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2026-07-06",
+      "time": "17:00 UTC-7",
+      "kickoffUtc": "2026-07-07T00:00:00.000Z",
+      "team1": "W81",
+      "team2": "W82",
+      "venue": "Seattle",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m095",
+      "round": "Round of 16",
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2026-07-07",
+      "time": "12:00 UTC-4",
+      "kickoffUtc": "2026-07-07T16:00:00.000Z",
+      "team1": "W86",
+      "team2": "W88",
+      "venue": "Atlanta",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m096",
+      "round": "Round of 16",
+      "stage": "Round of 16",
+      "group": null,
+      "date": "2026-07-07",
+      "time": "13:00 UTC-7",
+      "kickoffUtc": "2026-07-07T20:00:00.000Z",
+      "team1": "W85",
+      "team2": "W87",
+      "venue": "Vancouver",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m097",
+      "round": "Quarter-final",
+      "stage": "Quarter-final",
+      "group": null,
+      "date": "2026-07-09",
+      "time": "16:00 UTC-4",
+      "kickoffUtc": "2026-07-09T20:00:00.000Z",
+      "team1": "W89",
+      "team2": "W90",
+      "venue": "Boston (Foxborough)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m098",
+      "round": "Quarter-final",
+      "stage": "Quarter-final",
+      "group": null,
+      "date": "2026-07-10",
+      "time": "12:00 UTC-7",
+      "kickoffUtc": "2026-07-10T19:00:00.000Z",
+      "team1": "W93",
+      "team2": "W94",
+      "venue": "Los Angeles (Inglewood)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m099",
+      "round": "Quarter-final",
+      "stage": "Quarter-final",
+      "group": null,
+      "date": "2026-07-11",
+      "time": "17:00 UTC-4",
+      "kickoffUtc": "2026-07-11T21:00:00.000Z",
+      "team1": "W91",
+      "team2": "W92",
+      "venue": "Miami (Miami Gardens)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m100",
+      "round": "Quarter-final",
+      "stage": "Quarter-final",
+      "group": null,
+      "date": "2026-07-11",
+      "time": "20:00 UTC-5",
+      "kickoffUtc": "2026-07-12T01:00:00.000Z",
+      "team1": "W95",
+      "team2": "W96",
+      "venue": "Kansas City",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m101",
+      "round": "Semi-final",
+      "stage": "Semi-final",
+      "group": null,
+      "date": "2026-07-14",
+      "time": "14:00 UTC-5",
+      "kickoffUtc": "2026-07-14T19:00:00.000Z",
+      "team1": "W97",
+      "team2": "W98",
+      "venue": "Dallas (Arlington)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m102",
+      "round": "Semi-final",
+      "stage": "Semi-final",
+      "group": null,
+      "date": "2026-07-15",
+      "time": "15:00 UTC-4",
+      "kickoffUtc": "2026-07-15T19:00:00.000Z",
+      "team1": "W99",
+      "team2": "W100",
+      "venue": "Atlanta",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m103",
+      "round": "Match for third place",
+      "stage": "Match for third place",
+      "group": null,
+      "date": "2026-07-18",
+      "time": "17:00 UTC-4",
+      "kickoffUtc": "2026-07-18T21:00:00.000Z",
+      "team1": "L101",
+      "team2": "L102",
+      "venue": "Miami (Miami Gardens)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    },
+    {
+      "id": "m104",
+      "round": "Final",
+      "stage": "Final",
+      "group": null,
+      "date": "2026-07-19",
+      "time": "15:00 UTC-4",
+      "kickoffUtc": "2026-07-19T19:00:00.000Z",
+      "team1": "W101",
+      "team2": "W102",
+      "venue": "New York/New Jersey (East Rutherford)",
+      "status": "scheduled",
+      "score": null,
+      "source": "openfootball/worldcup.json"
+    }
+  ],
+  "predictions": {
+    "m001": {
+      "pick": "Mexico",
+      "confidence": 0.8181465620775425,
+      "probabilities": {
+        "home": 0.7070973954956487,
+        "draw": 0.20274502335255754,
+        "away": 0.09015758115179379
+      },
+      "expectedGoals": [
+        1.88,
+        0.5
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Mexico 評級 88.9；South Africa 評級 67.9",
+        "預期進球 1.88 : 0.50，以 0–6 球 Poisson 分布估算",
+        "強度差約 21.0 分，模型偏向 Mexico"
+      ]
+    },
+    "m002": {
+      "pick": "South Korea",
+      "confidence": 0.6112998405022804,
+      "probabilities": {
+        "home": 0.5481008504959234,
+        "draw": 0.2549037990434701,
+        "away": 0.1969953504606066
+      },
+      "expectedGoals": [
+        1.56,
+        0.82
+      ],
+      "score": "1-0",
+      "reasons": [
+        "South Korea 評級 72.0；Czech Republic 評級 66.3",
+        "預期進球 1.56 : 0.82，以 0–6 球 Poisson 分布估算",
+        "強度差約 5.7 分，模型偏向 South Korea"
+      ]
+    },
+    "m007": {
+      "pick": "Canada",
+      "confidence": 0.585351719501254,
+      "probabilities": {
+        "home": 0.5284308855604257,
+        "draw": 0.25936508410597203,
+        "away": 0.2122040303336022
+      },
+      "expectedGoals": [
+        1.52,
+        0.86
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Canada 評級 74.8；Bosnia & Herzegovina 評級 70.9",
+        "預期進球 1.52 : 0.86，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m019": {
+      "pick": "USA",
+      "confidence": 0.748791719333546,
+      "probabilities": {
+        "home": 0.653344543635234,
+        "draw": 0.22357299994237714,
+        "away": 0.12308245642238888
+      },
+      "expectedGoals": [
+        1.77,
+        0.61
+      ],
+      "score": "1-0",
+      "reasons": [
+        "USA 評級 85.9；Paraguay 評級 70.3",
+        "預期進球 1.77 : 0.61，以 0–6 球 Poisson 分布估算",
+        "強度差約 15.7 分，模型偏向 USA"
+      ]
+    },
+    "m008": {
+      "pick": "Switzerland",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.0885450819254818,
+        "draw": 0.20157760986965265,
+        "away": 0.7098773082048655
+      },
+      "expectedGoals": [
+        0.49,
+        1.89
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Qatar 評級 61.7；Switzerland 評級 85.8",
+        "預期進球 0.49 : 1.89，以 0–6 球 Poisson 分布估算",
+        "強度差約 24.1 分，模型偏向 Switzerland"
+      ]
+    },
+    "m013": {
+      "pick": "Brazil",
+      "confidence": 0.6982339101618263,
+      "probabilities": {
+        "home": 0.614444688873133,
+        "draw": 0.23660629607980851,
+        "away": 0.14894901504705862
+      },
+      "expectedGoals": [
+        1.69,
+        0.69
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Brazil 評級 100.1；Morocco 評級 88.2",
+        "預期進球 1.69 : 0.69，以 0–6 球 Poisson 分布估算",
+        "強度差約 12.0 分，模型偏向 Brazil"
+      ]
+    },
+    "m014": {
+      "pick": "Scotland",
+      "confidence": 0.6956149787221131,
+      "probabilities": {
+        "home": 0.15033082303629106,
+        "draw": 0.2372331372445178,
+        "away": 0.6124360397191911
+      },
+      "expectedGoals": [
+        0.69,
+        1.69
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Haiti 評級 56.1；Scotland 評級 70.7",
+        "預期進球 0.69 : 1.69，以 0–6 球 Poisson 分布估算",
+        "強度差約 14.6 分，模型偏向 Scotland"
+      ]
+    },
+    "m020": {
+      "pick": "Australia",
+      "confidence": 0.4772103803369039,
+      "probabilities": {
+        "home": 0.44711757212120584,
+        "draw": 0.2729471236225775,
+        "away": 0.27993530425621665
+      },
+      "expectedGoals": [
+        1.36,
+        1.02
+      ],
+      "score": "1-1",
+      "reasons": [
+        "Australia 評級 73.6；Turkey 評級 74.4",
+        "預期進球 1.36 : 1.02，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m025": {
+      "pick": "Germany",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.8331545388320675,
+        "draw": 0.1363729187338221,
+        "away": 0.030472542434110385
+      },
+      "expectedGoals": [
+        2.25,
+        0.25
+      ],
+      "score": "2-0",
+      "reasons": [
+        "Germany 評級 93.2；Curaçao 評級 54.7",
+        "預期進球 2.25 : 0.25，以 0–6 球 Poisson 分布估算",
+        "強度差約 38.5 分，模型偏向 Germany"
+      ]
+    },
+    "m031": {
+      "pick": "Netherlands",
+      "confidence": 0.6743448768268637,
+      "probabilities": {
+        "home": 0.5961455691609407,
+        "draw": 0.2421494598221349,
+        "away": 0.16170497101692444
+      },
+      "expectedGoals": [
+        1.65,
+        0.73
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Netherlands 評級 96.1；Japan 評級 83.0",
+        "預期進球 1.65 : 0.73，以 0–6 球 Poisson 分布估算",
+        "強度差約 13.1 分，模型偏向 Netherlands"
+      ]
+    },
+    "m026": {
+      "pick": "Ivory Coast",
+      "confidence": 0.47562390558523693,
+      "probabilities": {
+        "home": 0.44593278164453,
+        "draw": 0.2730851252704231,
+        "away": 0.2809820930850469
+      },
+      "expectedGoals": [
+        1.36,
+        1.02
+      ],
+      "score": "1-1",
+      "reasons": [
+        "Ivory Coast 評級 75.6；Ecuador 評級 76.6",
+        "預期進球 1.36 : 1.02，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m032": {
+      "pick": "Sweden",
+      "confidence": 0.7802520546447451,
+      "probabilities": {
+        "home": 0.677670622403703,
+        "draw": 0.21455560097616105,
+        "away": 0.10777377662013597
+      },
+      "expectedGoals": [
+        1.82,
+        0.56
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Sweden 評級 77.6；Tunisia 評級 59.5",
+        "預期進球 1.82 : 0.56，以 0–6 球 Poisson 分布估算",
+        "強度差約 18.1 分，模型偏向 Sweden"
+      ]
+    },
+    "m043": {
+      "pick": "Spain",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.8207380417945214,
+        "draw": 0.14630804126012947,
+        "away": 0.03295391694534915
+      },
+      "expectedGoals": [
+        2.16,
+        0.25
+      ],
+      "score": "2-0",
+      "reasons": [
+        "Spain 評級 98.9；Cape Verde 評級 64.7",
+        "預期進球 2.16 : 0.25，以 0–6 球 Poisson 分布估算",
+        "強度差約 34.3 分，模型偏向 Spain"
+      ]
+    },
+    "m037": {
+      "pick": "Belgium",
+      "confidence": 0.443104703408649,
+      "probabilities": {
+        "home": 0.4217002946949941,
+        "draw": 0.2755127923525392,
+        "away": 0.30278691295246674
+      },
+      "expectedGoals": [
+        1.31,
+        1.07
+      ],
+      "score": "1-1",
+      "reasons": [
+        "Belgium 評級 86.7；Egypt 評級 74.6",
+        "預期進球 1.31 : 1.07，以 0–6 球 Poisson 分布估算",
+        "強度差約 12.0 分，模型偏向 Belgium"
+      ]
+    },
+    "m044": {
+      "pick": "Uruguay",
+      "confidence": 0.7673756161141421,
+      "probabilities": {
+        "home": 0.113965489187599,
+        "draw": 0.2183316259243418,
+        "away": 0.6677028848880592
+      },
+      "expectedGoals": [
+        0.58,
+        1.8
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Saudi Arabia 評級 63.7；Uruguay 評級 83.7",
+        "預期進球 0.58 : 1.80，以 0–6 球 Poisson 分布估算",
+        "強度差約 19.9 分，模型偏向 Uruguay"
+      ]
+    },
+    "m038": {
+      "pick": "Iran",
+      "confidence": 0.6820457618955503,
+      "probabilities": {
+        "home": 0.6020388206891557,
+        "draw": 0.24040536532388082,
+        "away": 0.15755581398696344
+      },
+      "expectedGoals": [
+        1.67,
+        0.71
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Iran 評級 73.7；New Zealand 評級 60.0",
+        "預期進球 1.67 : 0.71，以 0–6 球 Poisson 分布估算",
+        "強度差約 13.6 分，模型偏向 Iran"
+      ]
+    },
+    "m049": {
+      "pick": "France",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.7934663508182439,
+        "draw": 0.1621369887588104,
+        "away": 0.04439666042294573
+      },
+      "expectedGoals": [
+        2.07,
+        0.31
+      ],
+      "score": "2-0",
+      "reasons": [
+        "France 評級 103.3；Senegal 評級 73.0",
+        "預期進球 2.07 : 0.31，以 0–6 球 Poisson 分布估算",
+        "強度差約 30.2 分，模型偏向 France"
+      ]
+    },
+    "m050": {
+      "pick": "Norway",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.08646662078941675,
+        "draw": 0.20004971527875218,
+        "away": 0.713483663931831
+      },
+      "expectedGoals": [
+        0.49,
+        1.89
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Iraq 評級 58.1；Norway 評級 82.6",
+        "預期進球 0.49 : 1.89，以 0–6 球 Poisson 分布估算",
+        "強度差約 24.5 分，模型偏向 Norway"
+      ]
+    },
+    "m055": {
+      "pick": "Argentina",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.8117053415859886,
+        "draw": 0.15235534092048889,
+        "away": 0.03593931749352259
+      },
+      "expectedGoals": [
+        2.12,
+        0.26
+      ],
+      "score": "2-0",
+      "reasons": [
+        "Argentina 評級 104.0；Algeria 評級 71.7",
+        "預期進球 2.12 : 0.26，以 0–6 球 Poisson 分布估算",
+        "強度差約 32.3 分，模型偏向 Argentina"
+      ]
+    },
+    "m056": {
+      "pick": "Austria",
+      "confidence": 0.7788699358821967,
+      "probabilities": {
+        "home": 0.6765999603091933,
+        "draw": 0.21496661034274334,
+        "away": 0.10843342934806338
+      },
+      "expectedGoals": [
+        1.82,
+        0.56
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Austria 評級 78.0；Jordan 評級 60.0",
+        "預期進球 1.82 : 0.56，以 0–6 球 Poisson 分布估算",
+        "強度差約 18.0 分，模型偏向 Austria"
+      ]
+    },
+    "m061": {
+      "pick": "Portugal",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.7996124548793264,
+        "draw": 0.1588905176903263,
+        "away": 0.04149702743034735
+      },
+      "expectedGoals": [
+        2.09,
+        0.29
+      ],
+      "score": "2-0",
+      "reasons": [
+        "Portugal 評級 97.6；Democratic Republic of the Congo 評級 66.7",
+        "預期進球 2.09 : 0.29，以 0–6 球 Poisson 分布估算",
+        "強度差約 30.9 分，模型偏向 Portugal"
+      ]
+    },
+    "m067": {
+      "pick": "England",
+      "confidence": 0.6890540020515856,
+      "probabilities": {
+        "home": 0.6074066931651123,
+        "draw": 0.23878277415018287,
+        "away": 0.15381053268470468
+      },
+      "expectedGoals": [
+        1.68,
+        0.7
+      ],
+      "score": "1-0",
+      "reasons": [
+        "England 評級 96.6；Croatia 評級 85.3",
+        "預期進球 1.68 : 0.70，以 0–6 球 Poisson 分布估算",
+        "強度差約 11.3 分，模型偏向 England"
+      ]
+    },
+    "m068": {
+      "pick": "Ghana",
+      "confidence": 0.7028093439748394,
+      "probabilities": {
+        "home": 0.6179554239502769,
+        "draw": 0.23549981890257102,
+        "away": 0.14654475714715212
+      },
+      "expectedGoals": [
+        1.7,
+        0.68
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Ghana 評級 75.0；Panama 評級 62.7",
+        "預期進球 1.70 : 0.68，以 0–6 球 Poisson 分布估算",
+        "強度差約 12.3 分，模型偏向 Ghana"
+      ]
+    },
+    "m062": {
+      "pick": "Colombia",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.07031412533247551,
+        "draw": 0.18720929425651267,
+        "away": 0.7424765804110118
+      },
+      "expectedGoals": [
+        0.42,
+        1.96
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Uzbekistan 評級 59.5；Colombia 評級 87.0",
+        "預期進球 0.42 : 1.96，以 0–6 球 Poisson 分布估算",
+        "強度差約 27.5 分，模型偏向 Colombia"
+      ]
+    },
+    "m003": {
+      "pick": "South Africa",
+      "confidence": 0.5119206618874158,
+      "probabilities": {
+        "home": 0.2574221227353768,
+        "draw": 0.26947902643429805,
+        "away": 0.4730988508303251
+      },
+      "expectedGoals": [
+        0.97,
+        1.41
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Czech Republic 評級 66.3；South Africa 評級 67.9",
+        "預期進球 0.97 : 1.41，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m009": {
+      "pick": "Switzerland",
+      "confidence": 0.7385844610633998,
+      "probabilities": {
+        "home": 0.6454719220428442,
+        "draw": 0.2263480393618429,
+        "away": 0.128180038595313
+      },
+      "expectedGoals": [
+        1.75,
+        0.63
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Switzerland 評級 85.8；Bosnia & Herzegovina 評級 70.9",
+        "預期進球 1.75 : 0.63，以 0–6 球 Poisson 分布估算",
+        "強度差約 14.9 分，模型偏向 Switzerland"
+      ]
+    },
+    "m010": {
+      "pick": "Canada",
+      "confidence": 0.7142036496900981,
+      "probabilities": {
+        "home": 0.6267066060643162,
+        "draw": 0.23268147468126749,
+        "away": 0.14061191925441627
+      },
+      "expectedGoals": [
+        1.72,
+        0.66
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Canada 評級 74.8；Qatar 評級 61.7",
+        "預期進球 1.72 : 0.66，以 0–6 球 Poisson 分布估算",
+        "強度差約 13.1 分，模型偏向 Canada"
+      ]
+    },
+    "m004": {
+      "pick": "Mexico",
+      "confidence": 0.764826251380229,
+      "probabilities": {
+        "home": 0.6657312663173168,
+        "draw": 0.21906516215932287,
+        "away": 0.11520357152336042
+      },
+      "expectedGoals": [
+        1.79,
+        0.59
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Mexico 評級 88.9；South Korea 評級 72.0",
+        "預期進球 1.79 : 0.59，以 0–6 球 Poisson 分布估算",
+        "強度差約 16.9 分，模型偏向 Mexico"
+      ]
+    },
+    "m021": {
+      "pick": "USA",
+      "confidence": 0.7041039090260146,
+      "probabilities": {
+        "home": 0.6189490920749611,
+        "draw": 0.23518413224481957,
+        "away": 0.14586677568021927
+      },
+      "expectedGoals": [
+        1.7,
+        0.68
+      ],
+      "score": "1-0",
+      "reasons": [
+        "USA 評級 85.9；Australia 評級 73.6",
+        "預期進球 1.70 : 0.68，以 0–6 球 Poisson 分布估算",
+        "強度差約 12.4 分，模型偏向 USA"
+      ]
+    },
+    "m015": {
+      "pick": "Morocco",
+      "confidence": 0.7342978685378397,
+      "probabilities": {
+        "home": 0.1303397141133211,
+        "draw": 0.22749162734579964,
+        "away": 0.6421686585408792
+      },
+      "expectedGoals": [
+        0.63,
+        1.75
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Scotland 評級 70.7；Morocco 評級 88.2",
+        "預期進球 0.63 : 1.75，以 0–6 球 Poisson 分布估算",
+        "強度差約 17.5 分，模型偏向 Morocco"
+      ]
+    },
+    "m016": {
+      "pick": "Brazil",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.8477717685018529,
+        "draw": 0.12465286579425473,
+        "away": 0.02757536570389242
+      },
+      "expectedGoals": [
+        2.36,
+        0.25
+      ],
+      "score": "2-0",
+      "reasons": [
+        "Brazil 評級 100.1；Haiti 評級 56.1",
+        "預期進球 2.36 : 0.25，以 0–6 球 Poisson 分布估算",
+        "強度差約 44.0 分，模型偏向 Brazil"
+      ]
+    },
+    "m022": {
+      "pick": "Turkey",
+      "confidence": 0.43879812431711984,
+      "probabilities": {
+        "home": 0.41849880307781595,
+        "draw": 0.2757764007293898,
+        "away": 0.3057247961927943
+      },
+      "expectedGoals": [
+        1.31,
+        1.07
+      ],
+      "score": "1-1",
+      "reasons": [
+        "Turkey 評級 74.4；Paraguay 評級 70.3",
+        "預期進球 1.31 : 1.07，以 0–6 球 Poisson 分布估算",
+        "強度差約 4.1 分，模型偏向 Turkey"
+      ]
+    },
+    "m033": {
+      "pick": "Netherlands",
+      "confidence": 0.7869244875571292,
+      "probabilities": {
+        "home": 0.6828420066926625,
+        "draw": 0.2125519914172679,
+        "away": 0.10460600189006962
+      },
+      "expectedGoals": [
+        1.83,
+        0.55
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Netherlands 評級 96.1；Sweden 評級 77.6",
+        "預期進球 1.83 : 0.55，以 0–6 球 Poisson 分布估算",
+        "強度差約 18.6 分，模型偏向 Netherlands"
+      ]
+    },
+    "m027": {
+      "pick": "Germany",
+      "confidence": 0.7742771883953697,
+      "probabilities": {
+        "home": 0.673043481665651,
+        "draw": 0.21632251850046924,
+        "away": 0.1106339998338798
+      },
+      "expectedGoals": [
+        1.81,
+        0.57
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Germany 評級 93.2；Ivory Coast 評級 75.6",
+        "預期進球 1.81 : 0.57，以 0–6 球 Poisson 分布估算",
+        "強度差約 17.6 分，模型偏向 Germany"
+      ]
+    },
+    "m028": {
+      "pick": "Ecuador",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.7156784966459867,
+        "draw": 0.19911239879227796,
+        "away": 0.08520910456173522
+      },
+      "expectedGoals": [
+        1.9,
+        0.48
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Ecuador 評級 76.6；Curaçao 評級 54.7",
+        "預期進球 1.90 : 0.48，以 0–6 球 Poisson 分布估算",
+        "強度差約 21.9 分，模型偏向 Ecuador"
+      ]
+    },
+    "m034": {
+      "pick": "Japan",
+      "confidence": 0.8142412975161745,
+      "probabilities": {
+        "home": 0.09193068370644807,
+        "draw": 0.20401099376530196,
+        "away": 0.7040583225282501
+      },
+      "expectedGoals": [
+        0.51,
+        1.87
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Tunisia 評級 59.5；Japan 評級 83.0",
+        "預期進球 0.51 : 1.87，以 0–6 球 Poisson 分布估算",
+        "強度差約 23.5 分，模型偏向 Japan"
+      ]
+    },
+    "m045": {
+      "pick": "Spain",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.8235257137303033,
+        "draw": 0.14407904861219886,
+        "away": 0.03239523765749785
+      },
+      "expectedGoals": [
+        2.18,
+        0.25
+      ],
+      "score": "2-0",
+      "reasons": [
+        "Spain 評級 98.9；Saudi Arabia 評級 63.7",
+        "預期進球 2.18 : 0.25，以 0–6 球 Poisson 分布估算",
+        "強度差約 35.2 分，模型偏向 Spain"
+      ]
+    },
+    "m039": {
+      "pick": "Belgium",
+      "confidence": 0.5657392151552058,
+      "probabilities": {
+        "home": 0.5136041334339828,
+        "draw": 0.2624310760277176,
+        "away": 0.2239647905382995
+      },
+      "expectedGoals": [
+        1.49,
+        0.89
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Belgium 評級 86.7；Iran 評級 73.7",
+        "預期進球 1.49 : 0.89，以 0–6 球 Poisson 分布估算",
+        "強度差約 13.0 分，模型偏向 Belgium"
+      ]
+    },
+    "m046": {
+      "pick": "Uruguay",
+      "confidence": 0.6506829236335471,
+      "probabilities": {
+        "home": 0.5780714121253547,
+        "draw": 0.2472544619059146,
+        "away": 0.17467412596873066
+      },
+      "expectedGoals": [
+        1.62,
+        0.76
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Uruguay 評級 83.7；Cape Verde 評級 64.7",
+        "預期進球 1.62 : 0.76，以 0–6 球 Poisson 分布估算",
+        "強度差約 19.0 分，模型偏向 Uruguay"
+      ]
+    },
+    "m040": {
+      "pick": "Egypt",
+      "confidence": 0.6953856720709695,
+      "probabilities": {
+        "home": 0.15045200564897926,
+        "draw": 0.237287796818999,
+        "away": 0.6122601975320218
+      },
+      "expectedGoals": [
+        0.69,
+        1.69
+      ],
+      "score": "0-1",
+      "reasons": [
+        "New Zealand 評級 60.0；Egypt 評級 74.6",
+        "預期進球 0.69 : 1.69，以 0–6 球 Poisson 分布估算",
+        "強度差約 14.6 分，模型偏向 Egypt"
+      ]
+    },
+    "m057": {
+      "pick": "Argentina",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.755271557404373,
+        "draw": 0.18122209277231308,
+        "away": 0.0635063498233139
+      },
+      "expectedGoals": [
+        1.99,
+        0.39
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Argentina 評級 104.0；Austria 評級 78.0",
+        "預期進球 1.99 : 0.39，以 0–6 球 Poisson 分布估算",
+        "強度差約 26.0 分，模型偏向 Argentina"
+      ]
+    },
+    "m051": {
+      "pick": "France",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.8506129713762662,
+        "draw": 0.12237165319563059,
+        "away": 0.02701537542810321
+      },
+      "expectedGoals": [
+        2.39,
+        0.25
+      ],
+      "score": "2-0",
+      "reasons": [
+        "France 評級 103.3；Iraq 評級 58.1",
+        "預期進球 2.39 : 0.25，以 0–6 球 Poisson 分布估算",
+        "強度差約 45.1 分，模型偏向 France"
+      ]
+    },
+    "m052": {
+      "pick": "Norway",
+      "confidence": 0.6650174761406179,
+      "probabilities": {
+        "home": 0.5890147946054155,
+        "draw": 0.24420753042918247,
+        "away": 0.166777674965402
+      },
+      "expectedGoals": [
+        1.64,
+        0.74
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Norway 評級 82.6；Senegal 評級 73.0",
+        "預期進球 1.64 : 0.74，以 0–6 球 Poisson 分布估算",
+        "強度差約 9.5 分，模型偏向 Norway"
+      ]
+    },
+    "m058": {
+      "pick": "Algeria",
+      "confidence": 0.5600635426814194,
+      "probabilities": {
+        "home": 0.22741104699161846,
+        "draw": 0.2632690113643893,
+        "away": 0.5093199416439922
+      },
+      "expectedGoals": [
+        0.9,
+        1.48
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Jordan 評級 60.0；Algeria 評級 71.7",
+        "預期進球 0.90 : 1.48，以 0–6 球 Poisson 分布估算",
+        "強度差約 11.7 分，模型偏向 Algeria"
+      ]
+    },
+    "m063": {
+      "pick": "Portugal",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.8320006591045144,
+        "draw": 0.13729697359135304,
+        "away": 0.030702367304132554
+      },
+      "expectedGoals": [
+        2.24,
+        0.25
+      ],
+      "score": "2-0",
+      "reasons": [
+        "Portugal 評級 97.6；Uzbekistan 評級 59.5",
+        "預期進球 2.24 : 0.25，以 0–6 球 Poisson 分布估算",
+        "強度差約 38.1 分，模型偏向 Portugal"
+      ]
+    },
+    "m069": {
+      "pick": "England",
+      "confidence": 0.7394810378279009,
+      "probabilities": {
+        "home": 0.6461630427946198,
+        "draw": 0.22610722015121118,
+        "away": 0.127729737054169
+      },
+      "expectedGoals": [
+        1.75,
+        0.63
+      ],
+      "score": "1-0",
+      "reasons": [
+        "England 評級 96.6；Ghana 評級 75.0",
+        "預期進球 1.75 : 0.63，以 0–6 球 Poisson 分布估算",
+        "強度差約 21.6 分，模型偏向 England"
+      ]
+    },
+    "m070": {
+      "pick": "Croatia",
+      "confidence": 0.7143334945895211,
+      "probabilities": {
+        "home": 0.14054476041027122,
+        "draw": 0.2326488400445001,
+        "away": 0.6268063995452288
+      },
+      "expectedGoals": [
+        0.66,
+        1.72
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Panama 評級 62.7；Croatia 評級 85.3",
+        "預期進球 0.66 : 1.72，以 0–6 球 Poisson 分布估算",
+        "強度差約 22.6 分，模型偏向 Croatia"
+      ]
+    },
+    "m064": {
+      "pick": "Colombia",
+      "confidence": 0.8088715096233147,
+      "probabilities": {
+        "home": 0.6998820051280596,
+        "draw": 0.20573323693974205,
+        "away": 0.09438475793219839
+      },
+      "expectedGoals": [
+        1.87,
+        0.51
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Colombia 評級 87.0；Democratic Republic of the Congo 評級 66.7",
+        "預期進球 1.87 : 0.51，以 0–6 球 Poisson 分布估算",
+        "強度差約 20.3 分，模型偏向 Colombia"
+      ]
+    },
+    "m011": {
+      "pick": "Switzerland",
+      "confidence": 0.48291235765071366,
+      "probabilities": {
+        "home": 0.45137781970577967,
+        "draw": 0.2724362380602964,
+        "away": 0.2761859422339241
+      },
+      "expectedGoals": [
+        1.37,
+        1.01
+      ],
+      "score": "1-1",
+      "reasons": [
+        "Switzerland 評級 85.8；Canada 評級 74.8",
+        "預期進球 1.37 : 1.01，以 0–6 球 Poisson 分布估算",
+        "強度差約 11.0 分，模型偏向 Switzerland"
+      ]
+    },
+    "m012": {
+      "pick": "Bosnia & Herzegovina",
+      "confidence": 0.6603692012613455,
+      "probabilities": {
+        "home": 0.5854641408418273,
+        "draw": 0.24521094286922418,
+        "away": 0.16932491628894852
+      },
+      "expectedGoals": [
+        1.63,
+        0.75
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Bosnia & Herzegovina 評級 70.9；Qatar 評級 61.7",
+        "預期進球 1.63 : 0.75，以 0–6 球 Poisson 分布估算",
+        "強度差約 9.2 分，模型偏向 Bosnia & Herzegovina"
+      ]
+    },
+    "m017": {
+      "pick": "Brazil",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.060843413644881,
+        "draw": 0.17877494250435108,
+        "away": 0.7603816438507679
+      },
+      "expectedGoals": [
+        0.38,
+        2
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Scotland 評級 70.7；Brazil 評級 100.1",
+        "預期進球 0.38 : 2.00，以 0–6 球 Poisson 分布估算",
+        "強度差約 29.4 分，模型偏向 Brazil"
+      ]
+    },
+    "m018": {
+      "pick": "Morocco",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.8097562309635773,
+        "draw": 0.1534220604502442,
+        "away": 0.03682170858617849
+      },
+      "expectedGoals": [
+        2.11,
+        0.27
+      ],
+      "score": "2-0",
+      "reasons": [
+        "Morocco 評級 88.2；Haiti 評級 56.1",
+        "預期進球 2.11 : 0.27，以 0–6 球 Poisson 分布估算",
+        "強度差約 32.1 分，模型偏向 Morocco"
+      ]
+    },
+    "m005": {
+      "pick": "Mexico",
+      "confidence": 0.8022933990098698,
+      "probabilities": {
+        "home": 0.09741622831239014,
+        "draw": 0.2078140088858301,
+        "away": 0.6947697628017797
+      },
+      "expectedGoals": [
+        0.53,
+        1.85
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Czech Republic 評級 66.3；Mexico 評級 88.9",
+        "預期進球 0.53 : 1.85，以 0–6 球 Poisson 分布估算",
+        "強度差約 22.6 分，模型偏向 Mexico"
+      ]
+    },
+    "m006": {
+      "pick": "South Korea",
+      "confidence": 0.3984161375371768,
+      "probabilities": {
+        "home": 0.3338565953804647,
+        "draw": 0.2775753328350773,
+        "away": 0.388568071784458
+      },
+      "expectedGoals": [
+        1.13,
+        1.25
+      ],
+      "score": "1-1",
+      "reasons": [
+        "South Africa 評級 67.9；South Korea 評級 72.0",
+        "預期進球 1.13 : 1.25，以 0–6 球 Poisson 分布估算",
+        "強度差約 4.1 分，模型偏向 South Korea"
+      ]
+    },
+    "m029": {
+      "pick": "Ivory Coast",
+      "confidence": 0.7806674558526473,
+      "probabilities": {
+        "home": 0.10757574872133244,
+        "draw": 0.2144318015985937,
+        "away": 0.6779924496800739
+      },
+      "expectedGoals": [
+        0.56,
+        1.82
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Curaçao 評級 54.7；Ivory Coast 評級 75.6",
+        "預期進球 0.56 : 1.82，以 0–6 球 Poisson 分布估算",
+        "強度差約 20.9 分，模型偏向 Ivory Coast"
+      ]
+    },
+    "m030": {
+      "pick": "Germany",
+      "confidence": 0.7237776669019724,
+      "probabilities": {
+        "home": 0.13568724145171787,
+        "draw": 0.23024380061329772,
+        "away": 0.6340689579349844
+      },
+      "expectedGoals": [
+        0.65,
+        1.73
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Ecuador 評級 76.6；Germany 評級 93.2",
+        "預期進球 0.65 : 1.73，以 0–6 球 Poisson 分布估算",
+        "強度差約 16.7 分，模型偏向 Germany"
+      ]
+    },
+    "m035": {
+      "pick": "Japan",
+      "confidence": 0.6079162430083249,
+      "probabilities": {
+        "home": 0.5455324629659577,
+        "draw": 0.25551162985901393,
+        "away": 0.19895590717502837
+      },
+      "expectedGoals": [
+        1.56,
+        0.82
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Japan 評級 83.0；Sweden 評級 77.6",
+        "預期進球 1.56 : 0.82，以 0–6 球 Poisson 分布估算",
+        "強度差約 5.5 分，模型偏向 Japan"
+      ]
+    },
+    "m036": {
+      "pick": "Netherlands",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.033258265720034305,
+        "draw": 0.14752043831286496,
+        "away": 0.8192212959671007
+      },
+      "expectedGoals": [
+        0.25,
+        2.15
+      ],
+      "score": "0-2",
+      "reasons": [
+        "Tunisia 評級 59.5；Netherlands 評級 96.1",
+        "預期進球 0.25 : 2.15，以 0–6 球 Poisson 分布估算",
+        "強度差約 36.6 分，模型偏向 Netherlands"
+      ]
+    },
+    "m023": {
+      "pick": "USA",
+      "confidence": 0.6532824027365871,
+      "probabilities": {
+        "home": 0.17323311559158774,
+        "draw": 0.24671233903292678,
+        "away": 0.5800545453754855
+      },
+      "expectedGoals": [
+        0.76,
+        1.62
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Turkey 評級 74.4；USA 評級 85.9",
+        "預期進球 0.76 : 1.62，以 0–6 球 Poisson 分布估算",
+        "強度差約 11.6 分，模型偏向 USA"
+      ]
+    },
+    "m024": {
+      "pick": "Australia",
+      "confidence": 0.49512996748680277,
+      "probabilities": {
+        "home": 0.2682199829150796,
+        "draw": 0.2712634370751601,
+        "away": 0.46051658000976026
+      },
+      "expectedGoals": [
+        0.99,
+        1.39
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Paraguay 評級 70.3；Australia 評級 73.6",
+        "預期進球 0.99 : 1.39，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m053": {
+      "pick": "France",
+      "confidence": 0.6868846905358263,
+      "probabilities": {
+        "home": 0.15496670890555445,
+        "draw": 0.2392886316547624,
+        "away": 0.6057446594396831
+      },
+      "expectedGoals": [
+        0.71,
+        1.67
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Norway 評級 82.6；France 評級 103.3",
+        "預期進球 0.71 : 1.67，以 0–6 球 Poisson 分布估算",
+        "強度差約 20.7 分，模型偏向 France"
+      ]
+    },
+    "m054": {
+      "pick": "Senegal",
+      "confidence": 0.7390328088593362,
+      "probabilities": {
+        "home": 0.6458175188905974,
+        "draw": 0.22622768426735443,
+        "away": 0.12795479684204822
+      },
+      "expectedGoals": [
+        1.75,
+        0.63
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Senegal 評級 73.0；Iraq 評級 58.1",
+        "預期進球 1.75 : 0.63，以 0–6 球 Poisson 分布估算",
+        "強度差約 14.9 分，模型偏向 Senegal"
+      ]
+    },
+    "m047": {
+      "pick": "Cape Verde",
+      "confidence": 0.5430187028522134,
+      "probabilities": {
+        "home": 0.49647160306052673,
+        "draw": 0.26565179272165024,
+        "away": 0.23787660421782306
+      },
+      "expectedGoals": [
+        1.46,
+        0.92
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Cape Verde 評級 64.7；Saudi Arabia 評級 63.7",
+        "預期進球 1.46 : 0.92，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m048": {
+      "pick": "Spain",
+      "confidence": 0.7045388756922432,
+      "probabilities": {
+        "home": 0.1456392030485231,
+        "draw": 0.23507780352691993,
+        "away": 0.6192829934245571
+      },
+      "expectedGoals": [
+        0.68,
+        1.7
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Uruguay 評級 83.7；Spain 評級 98.9",
+        "預期進球 0.68 : 1.70，以 0–6 球 Poisson 分布估算",
+        "強度差約 15.3 分，模型偏向 Spain"
+      ]
+    },
+    "m041": {
+      "pick": "Egypt",
+      "confidence": 0.5026215021902002,
+      "probabilities": {
+        "home": 0.4661271789430284,
+        "draw": 0.2704918823760089,
+        "away": 0.2633809386809627
+      },
+      "expectedGoals": [
+        1.4,
+        0.98
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Egypt 評級 74.6；Iran 評級 73.7",
+        "預期進球 1.40 : 0.98，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m042": {
+      "pick": "Belgium",
+      "confidence": 0.8171891425825984,
+      "probabilities": {
+        "home": 0.09059136591204948,
+        "draw": 0.2030564404889951,
+        "away": 0.7063521935989554
+      },
+      "expectedGoals": [
+        0.5,
+        1.88
+      ],
+      "score": "0-1",
+      "reasons": [
+        "New Zealand 評級 60.0；Belgium 評級 86.7",
+        "預期進球 0.50 : 1.88，以 0–6 球 Poisson 分布估算",
+        "強度差約 26.6 分，模型偏向 Belgium"
+      ]
+    },
+    "m071": {
+      "pick": "England",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.04077990777783674,
+        "draw": 0.15807101777451543,
+        "away": 0.8011490744476477
+      },
+      "expectedGoals": [
+        0.29,
+        2.09
+      ],
+      "score": "0-2",
+      "reasons": [
+        "Panama 評級 62.7；England 評級 96.6",
+        "預期進球 0.29 : 2.09，以 0–6 球 Poisson 分布估算",
+        "強度差約 33.9 分，模型偏向 England"
+      ]
+    },
+    "m072": {
+      "pick": "Croatia",
+      "confidence": 0.419477119998259,
+      "probabilities": {
+        "home": 0.40415804291718216,
+        "draw": 0.27678989794939585,
+        "away": 0.319052059133422
+      },
+      "expectedGoals": [
+        1.28,
+        1.1
+      ],
+      "score": "1-1",
+      "reasons": [
+        "Croatia 評級 85.3；Ghana 評級 75.0",
+        "預期進球 1.28 : 1.10，以 0–6 球 Poisson 分布估算",
+        "強度差約 10.4 分，模型偏向 Croatia"
+      ]
+    },
+    "m065": {
+      "pick": "Portugal",
+      "confidence": 0.5998350568384478,
+      "probabilities": {
+        "home": 0.20366583416044648,
+        "draw": 0.25693170229097034,
+        "away": 0.5394024635485832
+      },
+      "expectedGoals": [
+        0.84,
+        1.54
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Colombia 評級 87.0；Portugal 評級 97.6",
+        "預期進球 0.84 : 1.54，以 0–6 球 Poisson 分布估算",
+        "強度差約 10.6 分，模型偏向 Portugal"
+      ]
+    },
+    "m066": {
+      "pick": "Democratic Republic of the Congo",
+      "confidence": 0.6325602881698894,
+      "probabilities": {
+        "home": 0.5642626778236572,
+        "draw": 0.25090581294286396,
+        "away": 0.18483150923347869
+      },
+      "expectedGoals": [
+        1.59,
+        0.79
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Democratic Republic of the Congo 評級 66.7；Uzbekistan 評級 59.5",
+        "預期進球 1.59 : 0.79，以 0–6 球 Poisson 分布估算",
+        "強度差約 7.2 分，模型偏向 Democratic Republic of the Congo"
+      ]
+    },
+    "m059": {
+      "pick": "Austria",
+      "confidence": 0.5380477355305666,
+      "probabilities": {
+        "home": 0.2409616596593714,
+        "draw": 0.26630881977346454,
+        "away": 0.492729520567164
+      },
+      "expectedGoals": [
+        0.93,
+        1.45
+      ],
+      "score": "0-1",
+      "reasons": [
+        "Algeria 評級 71.7；Austria 評級 78.0",
+        "預期進球 0.93 : 1.45，以 0–6 球 Poisson 分布估算",
+        "強度差約 6.3 分，模型偏向 Austria"
+      ]
+    },
+    "m060": {
+      "pick": "Argentina",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.029087196405715582,
+        "draw": 0.13078551234510455,
+        "away": 0.8401272912491798
+      },
+      "expectedGoals": [
+        0.25,
+        2.3
+      ],
+      "score": "0-2",
+      "reasons": [
+        "Jordan 評級 60.0；Argentina 評級 104.0",
+        "預期進球 0.25 : 2.30，以 0–6 球 Poisson 分布估算",
+        "強度差約 44.0 分，模型偏向 Argentina"
+      ]
+    },
+    "m073": {
+      "pick": "Canada",
+      "confidence": 0.5873843373445757,
+      "probabilities": {
+        "home": 0.21099825055453403,
+        "draw": 0.25903223889937116,
+        "away": 0.5299695105460948
+      },
+      "expectedGoals": [
+        0.86,
+        1.52
+      ],
+      "score": "0-1",
+      "reasons": [
+        "South Africa 評級 67.9；Canada 評級 74.8",
+        "預期進球 0.86 : 1.52，以 0–6 球 Poisson 分布估算",
+        "強度差約 6.9 分，模型偏向 Canada"
+      ]
+    },
+    "m076": {
+      "pick": "Brazil",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.8172581246824226,
+        "draw": 0.14908929047474223,
+        "away": 0.033652584842835134
+      },
+      "expectedGoals": [
+        2.14,
+        0.25
+      ],
+      "score": "2-0",
+      "reasons": [
+        "Brazil 評級 100.1；2F 評級 67.0",
+        "預期進球 2.14 : 0.25，以 0–6 球 Poisson 分布估算",
+        "強度差約 33.1 分，模型偏向 Brazil"
+      ]
+    },
+    "m074": {
+      "pick": "Germany",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.7574500674713488,
+        "draw": 0.18018276900623714,
+        "away": 0.062367163522414136
+      },
+      "expectedGoals": [
+        1.99,
+        0.39
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Germany 評級 93.2；3A/B/C/D/F 評級 67.0",
+        "預期進球 1.99 : 0.39，以 0–6 球 Poisson 分布估算",
+        "強度差約 26.2 分，模型偏向 Germany"
+      ]
+    },
+    "m075": {
+      "pick": "Morocco",
+      "confidence": 0.7836442278355484,
+      "probabilities": {
+        "home": 0.10615983656927676,
+        "draw": 0.21354101222901287,
+        "away": 0.6802991512017104
+      },
+      "expectedGoals": [
+        0.56,
+        1.82
+      ],
+      "score": "0-1",
+      "reasons": [
+        "1F 評級 67.0；Morocco 評級 88.2",
+        "預期進球 0.56 : 1.82，以 0–6 球 Poisson 分布估算",
+        "強度差約 21.2 分，模型偏向 Morocco"
+      ]
+    },
+    "m078": {
+      "pick": "2E",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "2E 評級 67.0；2I 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m077": {
+      "pick": "1I",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "1I 評級 67.0；3C/D/F/G/H 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m079": {
+      "pick": "Mexico",
+      "confidence": 0.82,
+      "probabilities": {
+        "home": 0.7160049643085319,
+        "draw": 0.1989724970810162,
+        "away": 0.08502253861045184
+      },
+      "expectedGoals": [
+        1.9,
+        0.48
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Mexico 評級 88.9；3C/E/F/H/I 評級 67.0",
+        "預期進球 1.90 : 0.48，以 0–6 球 Poisson 分布估算",
+        "強度差約 21.9 分，模型偏向 Mexico"
+      ]
+    },
+    "m080": {
+      "pick": "1L",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "1L 評級 67.0；3E/H/I/J/K 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m082": {
+      "pick": "1G",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "1G 評級 67.0；3A/E/H/I/J 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m081": {
+      "pick": "USA",
+      "confidence": 0.79169057335876,
+      "probabilities": {
+        "home": 0.6865385125882493,
+        "draw": 0.21110109021522772,
+        "away": 0.10236039719652304
+      },
+      "expectedGoals": [
+        1.84,
+        0.54
+      ],
+      "score": "1-0",
+      "reasons": [
+        "USA 評級 85.9；3B/E/F/I/J 評級 67.0",
+        "預期進球 1.84 : 0.54，以 0–6 球 Poisson 分布估算",
+        "強度差約 18.9 分，模型偏向 USA"
+      ]
+    },
+    "m084": {
+      "pick": "1H",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "1H 評級 67.0；2J 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m083": {
+      "pick": "2K",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "2K 評級 67.0；2L 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m085": {
+      "pick": "Switzerland",
+      "confidence": 0.7902481485723986,
+      "probabilities": {
+        "home": 0.6854195588876586,
+        "draw": 0.2115419360287939,
+        "away": 0.10303850508354749
+      },
+      "expectedGoals": [
+        1.84,
+        0.54
+      ],
+      "score": "1-0",
+      "reasons": [
+        "Switzerland 評級 85.8；3E/F/G/I/J 評級 67.0",
+        "預期進球 1.84 : 0.54，以 0–6 球 Poisson 分布估算",
+        "強度差約 18.8 分，模型偏向 Switzerland"
+      ]
+    },
+    "m088": {
+      "pick": "2D",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "2D 評級 67.0；2G 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m086": {
+      "pick": "1J",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "1J 評級 67.0；2H 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m087": {
+      "pick": "1K",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "1K 評級 67.0；3D/E/I/J/L 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m090": {
+      "pick": "W73",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W73 評級 67.0；W75 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m089": {
+      "pick": "W74",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W74 評級 67.0；W77 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m091": {
+      "pick": "W76",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W76 評級 67.0；W78 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m092": {
+      "pick": "W79",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W79 評級 67.0；W80 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m093": {
+      "pick": "W83",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W83 評級 67.0；W84 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m094": {
+      "pick": "W81",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W81 評級 67.0；W82 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m095": {
+      "pick": "W86",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W86 評級 67.0；W88 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m096": {
+      "pick": "W85",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W85 評級 67.0；W87 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m097": {
+      "pick": "W89",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W89 評級 67.0；W90 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m098": {
+      "pick": "W93",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W93 評級 67.0；W94 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m099": {
+      "pick": "W91",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W91 評級 67.0；W92 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m100": {
+      "pick": "W95",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W95 評級 67.0；W96 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m101": {
+      "pick": "W97",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W97 評級 67.0；W98 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m102": {
+      "pick": "W99",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W99 評級 67.0；W100 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    },
+    "m103": {
+      "pick": "待定",
+      "confidence": 0.34,
+      "probabilities": {
+        "home": 0.33,
+        "draw": 0.34,
+        "away": 0.33
+      },
+      "expectedGoals": [
+        1.1,
+        1.1
+      ],
+      "score": "—",
+      "reasons": [
+        "淘汰賽席位尚未完全確定",
+        "等待最新晉級名單後重新計算"
+      ]
+    },
+    "m104": {
+      "pick": "W101",
+      "confidence": 0.3808352070799772,
+      "probabilities": {
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
+      },
+      "expectedGoals": [
+        1.22,
+        1.16
+      ],
+      "score": "1-1",
+      "reasons": [
+        "W101 評級 67.0；W102 評級 67.0",
+        "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
+        "雙方強度接近，平局與一球差風險偏高"
+      ]
+    }
+  },
+  "leaderboard": [
+    {
+      "id": "rating",
+      "name": "Rating Baseline",
+      "desc": "只看隊伍強度先驗",
+      "points": 48,
+      "correct": 38,
+      "exact": 5,
+      "total": 60,
+      "rank": 1,
+      "accuracy": 0.6333333333333333
+    },
+    {
+      "id": "soren",
+      "name": "Soren Poisson",
+      "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
+      "points": 47,
+      "correct": 35,
+      "exact": 5,
+      "total": 60,
+      "rank": 2,
+      "accuracy": 0.5833333333333334
+    },
+    {
+      "id": "draw",
+      "name": "Draw Baseline",
+      "desc": "保守押平局",
+      "points": 32,
+      "correct": 16,
+      "exact": 8,
+      "total": 60,
+      "rank": 3,
+      "accuracy": 0.26666666666666666
+    }
+  ]
+}
