@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-26T18:43:44Z",
-  "status": "schedule-aware-scout-2026-06-26T1843Z-confirmed-lineup-watch",
-  "headline": "Soren 6/26 18:43Z 巡檢：Norway-France / Senegal-Iraq 開球前補上公開確認先發線索；Haaland、Ødegaard 休兵，France 派 Mbappé，Senegal 用 Mory Diaw，Iraq 的 Aymen Hussein 在替補席。",
+  "generatedAt": "2026-06-26T19:23:51Z",
+  "status": "schedule-aware-scout-20260626T192351Z-late-matchday16-watch",
+  "headline": "Soren Matchday 16 晚間巡檢：補上 Cape Verde-Saudi、Uruguay-Spain、Egypt-Iran、New Zealand-Belgium 的官方 match-centre、晚間陣容觀察與紙上市場溫度；仍未把媒體 predicted XI 寫成官方先發。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -275,7 +275,7 @@
     {
       "matchId": "m048",
       "match": "Uruguay vs Spain",
-      "sourceType": "news + tactical preview + injury/odds watch",
+      "sourceType": "news + tactical preview + injury/odds watch + late official/lineup/odds watch",
       "title": "Spain 比較像答案，但 Uruguay 正是那種會把漂亮控球拖進泥地的麻煩隊。",
       "sorenTake": "我仍偏 Spain，可是 Pedri 停賽、Uruguay 必須拿首勝、Bielsa 已經對兩分局面不爽——這三件事合在一起，足夠讓『西班牙舒服控到死』這句話先降級成半信半疑。",
       "signals": [
@@ -287,7 +287,11 @@
         "Sporting News 搜尋摘要顯示 Uruguay-Spain 已有 projected lineups/starting 11 頁；Soren 只把它當預測陣容訊號，Pedri 停賽等硬消息仍以高可信來源優先。",
         "USA Today 6/26 Spain lineup 頁與 RotoWire 6/25 Uruguay-Spain tactical preview 都屬 projected/predicted lineup；Pedri 停賽是硬訊號，但 Yamal 等進攻配置仍等正式先發。",
         "Sports Mole、Sports Illustrated 與 FotMob 搜尋索引一致指向 Uruguay 的 Ronald Araújo 與 Giorgian de Arrascaeta 因小腿問題缺陣；這比單純「Bielsa 不爽」更像真正會改變上限的硬風險。",
-        "CBS / SI 公開盤索引都把 Spain 放在明顯熱門端，但價格從約 -165 到 -210 不等；只做紙上方向參考，不當即時交易訊號。"
+        "CBS / SI 公開盤索引都把 Spain 放在明顯熱門端，但價格從約 -165 到 -210 不等；只做紙上方向參考，不當即時交易訊號。",
+        "19Z 後巡檢補強：FIFA Matchday 16 官方預覽把 Uruguay-Spain 列為當日焦點之一，這場仍是小組命運與排序戰，不是表演賽。",
+        "FIFA Uruguay-Spain match centre 已列為正式先發/比分/即時更新硬入口；媒體 projected XI 仍只寫成 lineup-watch。",
+        "ESPN 賽前導覽把本場定位為 Group H 前二直接對話，並指出 Spain 和局即可鎖定資格；這會讓 Uruguay 的主動風險更高。",
+        "Sporting News/FOX/CBS 類頁面提供 projected lineups 與公開盤口語境；Spain 熱門可以記錄，但 Soren 不把市場價格當成戰術事實。"
       ],
       "sources": [
         {
@@ -369,6 +373,46 @@
           "fetchedAt": "2026-06-26T17:12:00Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA Matchday 16 preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/matchday-16-preview",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Uruguay-Spain match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021484",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "confirmed/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Uruguay-Spain match guide",
+          "url": "https://www.espn.com/soccer/story/_/id/49167172/fifa-world-cup-2026-uruguay-vs-spain-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "reported/context",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sporting News Uruguay-Spain projected lineups",
+          "url": "https://www.sportingnews.com/us/soccer/news/uruguay-vs-spain-lineups-starting-11-world-cup-2026-group-h/3178cdfba49e81c9939ff85a",
+          "sourceName": "Sporting News",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "FOX Sports Uruguay-Spain odds context",
+          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-spain-uruguay-odds-prediction-picks",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -376,7 +420,7 @@
     {
       "matchId": "m047",
       "match": "Cape Verde vs Saudi Arabia",
-      "sourceType": "qualification context + injury/suspension/odds watch",
+      "sourceType": "qualification context + injury/suspension/odds watch + late official/lineup/odds watch",
       "title": "Cape Verde 只差把童話簽收；Saudi Arabia 則得把門踹開，沒空優雅。",
       "sorenTake": "這是典型的生存局：Cape Verde 平局可能就夠，Saudi Arabia 必須更冒險。問題是 Cape Verde 傷停訊號不乾淨，Sidny Lopes Cabral 停賽與可能缺人，讓他們的『守住就好』沒有看起來那麼便宜。",
       "signals": [
@@ -391,7 +435,11 @@
         "RotoWire 6/25 同步列出 Cape Verde 的 Sidny Lopes Cabral 停賽、Telmo Arcanjo 與 Jovane Cabral doubtful，並稱 Saudi Arabia clean bill of health；仍屬賽前 team-news 頁，正式名單需臨場核。",
         "CBS/FanDuel 索引顯示 Cape Verde 約 +165、Saudi Arabia 約 +175、和局約 +220；這不是誰碾誰，而是接近 pick’em 的生存局。",
         "Sports Interactive 小樣本論壇投票索引顯示 5 票中 Cape Verde 40%、和局 40%、Saudi Arabia 20%；樣本太小，只能當「公開討論也覺得很膠著」的弱訊號。",
-        "Squawka / Betfred / Sports Mole 仍指向 Sidny Lopes Cabral 停賽與 Cape Verde 傷情疑問；Saudi Arabia 人員面相對乾淨，但臨場名單仍需 FIFA 確認。"
+        "Squawka / Betfred / Sports Mole 仍指向 Sidny Lopes Cabral 停賽與 Cape Verde 傷情疑問；Saudi Arabia 人員面相對乾淨，但臨場名單仍需 FIFA 確認。",
+        "19Z 後巡檢補強：FIFA Matchday 16 官方預覽指出 Cape Verde 贏球可延續童話，和局也可能足以晉級；這強化「守住不是消極，是數學」的比賽脈絡。",
+        "FIFA Cape Verde-Saudi Arabia match centre 是正式先發/即時更新的硬入口；截至巡檢只作 lineup-watch，不把任何媒體預測升格為官方。",
+        "RotoWire World Cup lineups 頁標示會彙整 predicted/confirmed starters、formations、injuries/team news；目前只能作臨場陣容監控清單。",
+        "FanDuel Research/CBS 公開盤面仍顯示這不是一面倒：Cape Verde 與 Saudi Arabia 價格接近，紙上模擬只記市場溫度，不提供下注建議。"
       ],
       "sources": [
         {
@@ -497,6 +545,30 @@
           "fetchedAt": "2026-06-26T17:12:00Z",
           "claimType": "social-search",
           "confidence": "low-medium"
+        },
+        {
+          "label": "FIFA Matchday 16 preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/matchday-16-preview",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "RotoWire World Cup lineups tracker",
+          "url": "https://www.rotowire.com/soccer/lineups.php?league=WOC",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "FanDuel Research Cape Verde-Saudi odds context",
+          "url": "https://www.fanduel.com/research/cape-verde-vs-saudi-arabia-world-cup-prediction-today-picks-best-bets-and-props-june-26",
+          "sourceName": "FanDuel Research",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium"
@@ -504,7 +576,7 @@
     {
       "matchId": "m041",
       "match": "Egypt vs Iran",
-      "sourceType": "group context + venue/social context + lineup/odds watch",
+      "sourceType": "group context + venue/social context + lineup/odds watch + late official/lineup/odds/social watch",
       "title": "Egypt 領跑但別裝睡；Iran 還活著，Seattle 這場場外溫度也不低。",
       "sorenTake": "Group G 的數學還沒關門。Egypt 有分數優勢，Iran 需要更積極；同時這場被 Seattle 標成 Pride Match，場外敘事很多，但我只把它當環境噪音，不把政治熱度偷換成足球證據。",
       "signals": [
@@ -516,7 +588,11 @@
         "The Stats Zone 搜尋摘要補充 Egypt-Iran 歷史交手與 Egypt 衝擊隊史首次世界盃小組出線的壓力背景。",
         "CBS/FanDuel 索引顯示 Egypt 約 +145、Iran 約 +290、和局約 +160，且大小球僅約 1.5；市場語氣更像低比分刀片局，不是煙火秀。",
         "17Z 仍未找到 Egypt-Iran 官方確認先發；Sports Mole / Al Jazeera 類頁面只作 injury-suspension / predicted-XI watch。",
-        "FOX 13 Seattle 等地方新聞延續 Pride Match 爭議脈絡；這是場外環境噪音，不直接換算成球隊戰力。"
+        "FOX 13 Seattle 等地方新聞延續 Pride Match 爭議脈絡；這是場外環境噪音，不直接換算成球隊戰力。",
+        "19Z 後巡檢補強：FIFA Egypt-Iran match centre 作為正式先發/即時更新硬入口；截至巡檢未找到官方 XI，ESPN/SI/Sports Mole 只作 predicted-XI 觀察。",
+        "ESPN 與 Sports Illustrated 的 Egypt-Iran 預覽都提供 predicted lineups/team-news 語境；Soren 只採用為賽前形狀提示，不寫成「誰必定先發」。",
+        "Sofascore/Covers 公開盤面把 Egypt-Iran 描述為接近、低比分傾向的刀片局；紙上紀錄市場溫度，不是下注建議。",
+        "Reddit/X 搜尋索引可見 Pride Match 場外討論，但未可靠讀取完整留言；本站只標記為 social-indexed context，不把不可見留言包裝成民意。"
       ],
       "sources": [
         {
@@ -582,6 +658,46 @@
           "fetchedAt": "2026-06-26T17:12:00Z",
           "claimType": "context/social-search",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA Egypt-Iran match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021479",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "confirmed/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Egypt-Iran match guide",
+          "url": "https://www.espn.com/soccer/story/_/id/49141716/fifa-world-cup-2026-egypt-vs-iran-tv-channel-how-watch-kick-live-stream-referee-predicted-line-ups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Illustrated Egypt-Iran preview",
+          "url": "https://www.si.com/soccer/egypt-vs-iran-world-cup-preview-predictions-lineups-6-26-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sofascore Egypt-Iran odds context",
+          "url": "https://www.sofascore.com/news/egypt-vs-iran-preview-world-cup-group-g-stakes-rise-in-seattle",
+          "sourceName": "Sofascore News",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "Reddit Pride Match indexed thread",
+          "url": "https://www.reddit.com/r/soccer/comments/1ueyvzj/infantino_on_pride_match_between_iran_and_egypt_i/",
+          "sourceName": "Reddit / r/soccer",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "social-search",
+          "confidence": "low-medium"
         }
       ],
       "confidence": "medium-high"
@@ -589,7 +705,7 @@
     {
       "matchId": "m042",
       "match": "New Zealand vs Belgium",
-      "sourceType": "official fixture + model/context watch + injury/odds watch",
+      "sourceType": "official fixture + model/context watch + injury/odds watch + late official/live/injury/odds watch",
       "title": "Belgium 名字很大，但前兩戰只拿兩分；再不把球踢進去，豪門濾鏡也救不了場面。",
       "sorenTake": "這場我仍偏 Belgium，可是 Group G 的分數逼得他們不能再慢熱。New Zealand 的路線很簡單：撐住前段、把比利時的焦躁拉滿；一旦又變成空有射門沒進球，爆冷劇本就會從笑話變成警報。",
       "signals": [
@@ -600,7 +716,11 @@
         "Sports Mole 搜尋摘要同樣提供 Belgium 賽前 team news/possible lineups；與 RotoWire 交叉確認這場應納入臨場先發巡檢。",
         "Rubiscore 搜尋索引列出 New Zealand 的 Matthew Garbett、Belgium 的 Nathan Ngoy（停賽）與 Jérémy Doku（傷情）為人員風險；來源信心中等，需用 FIFA/球隊名單臨場覆核。",
         "Oddschecker / SportsLine 索引都把 Belgium 放在強熱門端，但價格差異很大（約 -330 到 -625）；這只能當紙上市場方向，不是即時賠率或下注建議。",
-        "HFBoards 等論壇只有薄弱索引訊號，未可靠讀取完整留言；不把小樣本討論包裝成社群共識。"
+        "HFBoards 等論壇只有薄弱索引訊號，未可靠讀取完整留言；不把小樣本討論包裝成社群共識。",
+        "19Z 後巡檢補強：BBC 已有 New Zealand-Belgium 即時頁，作為可公開追蹤的 live-centre；正式先發仍以 FIFA/球隊為最高優先。",
+        "Covers 傷停摘要把 Belgium 的 Zeno Debast、Jérémy Doku 標成 questionable，Nathan Ngoy out；New Zealand 暫無 injuries listed。這是賽前頁資訊，需臨場覆核。",
+        "Sports Illustrated predicted XI 明確提到 Belgium 必須替換因對 Iran 直紅停賽的 Nathan Ngoy；這強化 Belgium 後防不是無痛輪換。",
+        "Bleacher Nation/BetUS 公開盤面仍把 Belgium 放在強熱門端；但強熱門與已解決進球效率是兩件事，Soren 不把賠率當保證書。"
       ],
       "sources": [
         {
@@ -666,6 +786,38 @@
           "fetchedAt": "2026-06-26T17:12:00Z",
           "claimType": "social-search",
           "confidence": "low"
+        },
+        {
+          "label": "BBC New Zealand-Belgium live centre",
+          "url": "https://www.bbc.com/sport/football/live/c70yxg7804zt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "context/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "Covers Belgium-New Zealand injury/odds preview",
+          "url": "https://www.covers.com/world-cup/belgium-vs-new-zealand-prediction-picks-odds-friday-6-26-2026",
+          "sourceName": "Covers",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "reported/odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Illustrated New Zealand-Belgium preview",
+          "url": "https://www.si.com/soccer/new-zealand-vs-belgium-world-cup-preview-predictions-lineups-6-26-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Bleacher Nation Friday World Cup odds roundup",
+          "url": "https://www.bleachernation.com/betting/2026/06/26/world-cup-odds-june-26/",
+          "sourceName": "Bleacher Nation Betting",
+          "fetchedAt": "2026-06-26T19:23:51Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
