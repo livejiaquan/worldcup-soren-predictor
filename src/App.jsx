@@ -113,6 +113,27 @@ function FixtureExplorer({ matches, predictions, onSelect }) {
   return <section className="panel" id="fixtures"><SectionHead kicker="FIXTURE EXPLORER" title="完整賽程：先收起來，不要砸你臉上" meta={showAll ? '全部' : '只看近期'} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc)}</span><b>{flag(m.team1)} {m.team1} vs {flag(m.team2)} {m.team2}</b><em>{m.status === 'finished' ? `${m.score[0]}-${m.score[1]}` : predictions[m.id]?.pick}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? '收起完整賽程' : '打開完整賽程'}</button></section>
 }
 
+function TacticalBoard({ match, prediction, intel }) {
+  const favorite = prediction.probabilities.home >= prediction.probabilities.away ? match.team1 : match.team2
+  const underdog = favorite === match.team1 ? match.team2 : match.team1
+  const lanes = [
+    { top: '18%', left: '18%', label: `${flag(favorite)} 高位壓迫`, note: '前 30 分鐘搶節奏' },
+    { top: '48%', left: '50%', label: '中場斷點', note: '誰先掉球誰先挨打' },
+    { top: '72%', left: '78%', label: `${flag(underdog)} 反擊出口`, note: '爆冷通常從這裡長出來' },
+  ]
+  return <section className="tactical-board">
+    <div className="pitch">
+      <div className="half-line"/><div className="center-circle"/>
+      {lanes.map((lane) => <div className="position-node" key={lane.label} style={{ top: lane.top, left: lane.left }}><b>{lane.label}</b><span>{lane.note}</span></div>)}
+    </div>
+    <div className="tactical-notes">
+      <b>站位 / 對位筆記</b>
+      <p>{intel ? '我會把確認過的傷停、預測先發、輪換與戰術線索放進這裡；沒有來源就不裝懂。' : '目前先用模型對位圖，等 scout 抓到可信先發/站位來源後再補細節。'}</p>
+      <small>不是幻想陣型：之後只接有來源的 expected XI、官方先發與戰術 preview。</small>
+    </div>
+  </section>
+}
+
 function MatchDeepDive({ match, prediction, paperBet, intel, onClose }) {
   if (!match || !prediction) return null
   const p = prediction.probabilities
@@ -125,6 +146,7 @@ function MatchDeepDive({ match, prediction, paperBet, intel, onClose }) {
       <h2>{match.team1} vs {match.team2}</h2>
       <div className="modal-scoreline"><Team name={match.team1}/><div className="score-pill big">{match.status === 'finished' ? `${match.score[0]}-${match.score[1]}` : prediction.score}<small>{match.status === 'finished' ? 'FT' : '我先押這個比分'}</small></div><Team name={match.team2}/></div>
       <div className="soren-roast"><b>銳評：</b>{prediction.commentary?.headline} {prediction.commentary?.story}</div>
+      <TacticalBoard match={match} prediction={prediction} intel={intel}/>
       <div className="deep-grid">
         <div><b>這場天秤怎麼歪</b><p>{match.team1} {pct(p.home)} · 平 {pct(p.draw)} · {match.team2} {pct(p.away)}</p></div>
         <div><b>弱隊偷雞路線</b><p>{upset} 要活下來，第一任務不是踢漂亮，是把 {favorite} 的前 30 分鐘熬過去。</p></div>
