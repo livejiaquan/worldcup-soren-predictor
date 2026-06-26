@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-26T13:46:37Z",
-  "status": "schedule-aware-scout-2026-06-26T13Z-second-pass-lineup-watch",
-  "headline": "Soren 二次巡檢 6/26 Matchday 16：補上 Norway-France、Uruguay-Spain、Egypt-Iran、New Zealand-Belgium 的預測陣容/賽前頁線索；仍堅持正式先發未出不硬編。",
+  "generatedAt": "2026-06-26T14:21:54Z",
+  "status": "schedule-aware-scout-2026-06-26T14Z-imminent-lineup-watch",
+  "headline": "Soren 6/26 14Z 巡檢：距 Norway-France / Senegal-Iraq 約 4.7 小時，未見官方先發；補強 Group H 預測陣容與 Saudi 傷停清單，繼續把 prediction 和 confirmed lineup 分開。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -84,7 +84,8 @@
         "Guardian 6/26 即時頁把本場列為 Haaland vs Mbappé 主軸並持續更新賽前動態；屬賽事直播脈絡，不等於官方先發。",
         "USA Today 6/26 刊出 France projected lineup；Soren 只把它當預測 XI 訊號，正式名單仍等 FIFA/球隊公布。",
         "Al Jazeera 6/26 賽程頁重申 Groups G/H/I 今日收官、France-Norway 爭 Group I 頭名，輪換與搶第一誘因同時存在。",
-        "Sports Illustrated 6/26 賽前頁列出 Norway-France 預測陣容（Norway 4-3-3、France 4-2-3-1 脈絡）；這是 predicted lineup，不是確認先發。"
+        "Sports Illustrated 6/26 賽前頁列出 Norway-France 預測陣容（Norway 4-3-3、France 4-2-3-1 脈絡）；這是 predicted lineup，不是確認先發。",
+        "RotoWire 6/24 賽前頁也列出 Norway-France predicted lineups/team news/tactical breakdown；距開球約 4.7 小時仍只能當預測陣容觀察，不是官方先發。"
       ],
       "sources": [
         {
@@ -142,6 +143,14 @@
           "fetchedAt": "2026-06-26T13:46:37Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "RotoWire Norway-France preview",
+          "url": "https://www.rotowire.com/soccer/article/norway-vs-france-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-i-119630",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-26T14:21:54Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -158,7 +167,8 @@
         "Reuters 指出 Uruguay 前兩戰只拿兩分，對 Spain 仍在追小組首勝。",
         "Reuters 另報導 Bielsa 對 Uruguay 兩場兩分而非六分感到困惑/不滿。",
         "RFEF 官方賽前文把 Uruguay-Spain 描述為經典對碰，並提供雙方歷史交手脈絡；這是 Spain 陣營官方背景，不等於確認先發。",
-        "Sporting News 搜尋摘要顯示 Uruguay-Spain 已有 projected lineups/starting 11 頁；Soren 只把它當預測陣容訊號，Pedri 停賽等硬消息仍以高可信來源優先。"
+        "Sporting News 搜尋摘要顯示 Uruguay-Spain 已有 projected lineups/starting 11 頁；Soren 只把它當預測陣容訊號，Pedri 停賽等硬消息仍以高可信來源優先。",
+        "USA Today 6/26 Spain lineup 頁與 RotoWire 6/25 Uruguay-Spain tactical preview 都屬 projected/predicted lineup；Pedri 停賽是硬訊號，但 Yamal 等進攻配置仍等正式先發。"
       ],
       "sources": [
         {
@@ -200,6 +210,22 @@
           "fetchedAt": "2026-06-26T13:46:37Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "USA Today Spain projected lineup",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/26/spain-lineup-today-world-cup-uruguay/90703270007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-06-26T14:21:54Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "RotoWire Uruguay-Spain preview",
+          "url": "https://www.rotowire.com/soccer/article/uruguay-vs-spain-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-h-119634",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-26T14:21:54Z",
+          "claimType": "reported/tactical",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -217,7 +243,9 @@
         "Sports Mole 報導 Cape Verde 對 Saudi Arabia 可能有三名球員缺陣。",
         "FotMob 傷停頁面同時列出 Cape Verde 的 Sidny Lopes Cabral 停賽與 Telmo Arcanjo 傷情，Saudi Arabia 暫無 unavailable players；此為賽前資料頁，仍需臨場確認。",
         "Al Jazeera 6/26 今日賽程頁確認 Group H 最後一輪仍有出線/名次壓力，Cape Verde 與 Saudi Arabia 都不是友誼賽心態。",
-        "USA Today 6/26 odds/picks 頁提供公開市場參考；本站只作紙上模擬校準，不提供下注建議。"
+        "USA Today 6/26 odds/picks 頁提供公開市場參考；本站只作紙上模擬校準，不提供下注建議。",
+        "Yahoo Sports / Football Faithful 6/26 指 Saudi Arabia 主帥 Donis 暫無新傷情，Hassan Al-Tambakti 腳傷已可用；選擇題更偏人員/陣型而非可用性。",
+        "RotoWire 6/25 同步列出 Cape Verde 的 Sidny Lopes Cabral 停賽、Telmo Arcanjo 與 Jovane Cabral doubtful，並稱 Saudi Arabia clean bill of health；仍屬賽前 team-news 頁，正式名單需臨場核。"
       ],
       "sources": [
         {
@@ -282,6 +310,22 @@
           "sourceName": "USA Today",
           "fetchedAt": "2026-06-26T13:09:43Z",
           "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "Yahoo Sports Saudi Arabia predicted XI",
+          "url": "https://sports.yahoo.com/articles/saudi-arabia-xi-vs-cape-060000478.html",
+          "sourceName": "Yahoo Sports / The Football Faithful",
+          "fetchedAt": "2026-06-26T14:21:54Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "RotoWire Cape Verde-Saudi Arabia preview",
+          "url": "https://www.rotowire.com/soccer/article/cape-verde-vs-saudi-arabia-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-h-119633",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-26T14:21:54Z",
+          "claimType": "reported/tactical",
           "confidence": "medium"
         }
       ],
