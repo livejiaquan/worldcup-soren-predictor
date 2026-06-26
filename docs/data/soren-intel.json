@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-26T11:23:58Z",
-  "status": "schedule-aware-scout-2026-06-26T11Z-imminent-provenance-refresh",
-  "headline": "Soren 補強賽前來源鏈：I/H 組最後一輪加上官方 match centre、Spain 官方預覽與 Cape Verde 傷停核對；沒有確認先發就不裝神。",
+  "generatedAt": "2026-06-26T12:05:00Z",
+  "status": "schedule-aware-scout-2026-06-26T12Z-added-m073-round32-coverage",
+  "headline": "Soren 補上淘汰賽開場戰：South Africa vs Canada 已有官方、場館、加拿大媒體、停賽與紙上市場來源鏈；初登淘汰賽，不裝穩。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -554,6 +554,105 @@
         }
       ],
       "confidence": "medium"
+    },
+    {
+      "matchId": "m073",
+      "match": "South Africa vs Canada",
+      "sourceType": "official fixture + knockout debutant context + suspension/injury watch",
+      "title": "兩個淘汰賽新面孔先開刀：Canada 名氣與市場較熱，South Africa 可不是來拍畢業照。",
+      "sorenTake": "Canada 是共同主辦國、公開市場也偏熱，但這場最有趣的不是國旗大小，而是兩隊都第一次站上世界盃淘汰賽。South Africa 少了 Themba Zwane 這種創造力，Canada 則帶著 Koné 重傷後的中場調整；Soren 會偏 Canada 一點，但把『初登淘汰賽的緊張』列成主要風險，不把主場敘事吹成護身符。",
+      "signals": [
+        "FIFA 官方預覽與 match centre 已核對可連線：South Africa vs Canada 是 6 月 28 日洛杉磯/SoFi Stadium 的 Round of 32 開場戰。",
+        "Canada Soccer 與 SoFi Stadium 頁面同樣列出本場地點與賽事資訊，作為官方/場館交叉核對。",
+        "Sportsnet/CBC 賽事脈絡指出 Canada 以 Group B 第二晉級，將在洛杉磯面對 South Africa；兩隊都是男足世界盃淘汰賽新面孔。",
+        "ESPN 報導 South Africa 中場 Themba Zwane 因對 Mexico 紅牌被禁賽三場；若未有新官方推翻，對 Canada 仍屬缺陣風險。",
+        "FIFA/CBC 脈絡顯示 Canada 曾 6-0 擊敗 Qatar，但該場也伴隨 Ismaël Koné 嚴重腿傷報導；中場輪廓需要臨場確認。",
+        "公開 odds-reference 頁面普遍把 Canada 放在熱門端；本站只拿來做紙上校準，不提供投注建議、下注連結或真金流。",
+        "Reddit 搜尋索引可見 CanadaSoccer 討論串標題確認本場在 LA，但頁面要求驗證，留言內容未可靠取得；不把不可見留言包裝成民意。"
+      ],
+      "sources": [
+        {
+          "label": "FIFA South Africa-Canada preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/south-africa-canada-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T12:05:00Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA South Africa-Canada match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021473",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T12:05:00Z",
+          "claimType": "confirmed",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Canada Soccer match page",
+          "url": "https://canadasoccer.com/match/6606/",
+          "sourceName": "Canada Soccer",
+          "fetchedAt": "2026-06-26T12:05:00Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "SoFi Stadium event page",
+          "url": "https://www.sofistadium.com/events/detail/fifa-world-cup-roundof32-june28",
+          "sourceName": "SoFi Stadium",
+          "fetchedAt": "2026-06-26T12:05:00Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "Sportsnet knockout matchup report",
+          "url": "https://www.sportsnet.ca/fifa-world-cup/article/canada-to-face-south-africa-in-world-cup-knockout-match/",
+          "sourceName": "Sportsnet",
+          "fetchedAt": "2026-06-26T12:05:00Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "CBC Canada-Switzerland recap",
+          "url": "https://www.cbc.ca/sports/soccer/worldcup/fifa-canada-world-cup-canada-switzerland-recap-june-24-9.7246842",
+          "sourceName": "CBC Sports",
+          "fetchedAt": "2026-06-26T12:05:00Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Zwane suspension report",
+          "url": "https://www.espn.com/espn/story/_/id/49097656/south-africa-themba-zwane-handed-three-match-ban-red-card-mexico-fifa-world-cup-opener",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-26T12:05:00Z",
+          "claimType": "reported",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Canada-Qatar match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/canada-qatar-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T12:05:00Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "SportsBettingDime odds reference",
+          "url": "https://www.sportsbettingdime.com/news/soccer/canada-vs-south-africa-odds-whos-favored-in-round-of-32/",
+          "sourceName": "SportsBettingDime",
+          "fetchedAt": "2026-06-26T12:05:00Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "Reddit CanadaSoccer indexed thread",
+          "url": "https://www.reddit.com/r/CanadaSoccer/comments/1uey3e5/round_of_32_vs_south_africa_confirmed_in_la/",
+          "sourceName": "Reddit / r/CanadaSoccer",
+          "fetchedAt": "2026-06-26T12:05:00Z",
+          "claimType": "social-search",
+          "confidence": "low-medium"
+        }
+      ],
+      "confidence": "medium-high"
     }
   ]
 }
