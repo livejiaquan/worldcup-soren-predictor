@@ -1,22 +1,23 @@
 {
-  "generatedAt": "2026-06-26T14:21:54Z",
-  "status": "schedule-aware-scout-2026-06-26T14Z-imminent-lineup-watch",
-  "headline": "Soren 6/26 14Z 巡檢：距 Norway-France / Senegal-Iraq 約 4.7 小時，未見官方先發；補強 Group H 預測陣容與 Saudi 傷停清單，繼續把 prediction 和 confirmed lineup 分開。",
+  "generatedAt": "2026-06-26T15:10:00Z",
+  "status": "schedule-aware-scout-2026-06-26T15Z-iraq-striker-fitness-watch",
+  "headline": "Soren 6/26 15Z 巡檢：距 Norway-France / Senegal-Iraq 不到 4 小時，仍未見官方先發；補上 Iraq Aymen Hussein 賽前傷情疑問，避免把 Senegal 優勢看得太乾淨。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
       "matchId": "m054",
       "match": "Senegal vs Iraq",
-      "sourceType": "confirmed injury + preview",
+      "sourceType": "confirmed injury + preview + lineup watch",
       "title": "Senegal 要追大結果，卻先丟了一號門將；這不是劇本，是壓力鍋。",
-      "sorenTake": "模型還是偏 Senegal，但我會把穩字先收起來。Mendy 缺陣讓後場容錯變薄，Senegal 又需要主動壓上，Iraq 的反擊只要咬到一次，這場就會從『該贏』變成『別翻車』。",
+      "sorenTake": "模型還是偏 Senegal，但我會把穩字先收起來。Mendy 缺陣讓 Senegal 後場容錯變薄；Iraq 這邊 Aymen Hussein 若真的帶傷或受限，反擊尖刀會鈍一截。兩邊都不是滿血，這場不是劇本，是壓力鍋。",
       "signals": [
         "ESPN 報導 Senegal 確認一號門將 Édouard Mendy 因對 Norway 受傷，將缺席對 Iraq 的小組決戰。",
         "ESPN 賽前頁重申 Mendy 膝傷，並提供賽前預測陣容脈絡。",
         "Sports Illustrated 預測 Senegal 可能由 Diaw 替代 Mendy 先發。",
         "Guardian 賽後脈絡曾指出 Senegal 對 Iraq 需要 big result 才能衝擊淘汰賽。",
         "FIFA match centre 已核對可連線，作為 Senegal-Iraq 臨場比分/陣容官方入口；正式先發未出前只保留傷停與預測陣容標籤。",
-        "Sports Mole 賽前專題提到 Senegal 教練 Pape Thiaw 承諾調整/「戰術革命」脈絡；屬媒體戰術觀察，不是官方先發。"
+        "Sports Mole 賽前專題提到 Senegal 教練 Pape Thiaw 承諾調整/「戰術革命」脈絡；屬媒體戰術觀察，不是官方先發。",
+        "Sports Illustrated 賽前頁新增/重申 Iraq 主力前鋒 Aymen Hussein 因對 France 傷退，對 Senegal 戰前仍在趕時間恢復；這是 reported fitness watch，不是正式缺陣名單。"
       ],
       "sources": [
         {
@@ -39,8 +40,8 @@
           "label": "SI preview",
           "url": "https://www.si.com/soccer/senegal-vs-iraq-world-cup-preview-predictions-lineups-6-26-26",
           "sourceName": "Sports Illustrated",
-          "fetchedAt": "2026-06-26T10:03:38Z",
-          "claimType": "reported",
+          "fetchedAt": "2026-06-26T15:10:00Z",
+          "claimType": "reported/lineup-watch",
           "confidence": "medium"
         },
         {
