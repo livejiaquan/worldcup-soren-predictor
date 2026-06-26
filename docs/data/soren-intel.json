@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-06-26T15:10:00Z",
-  "status": "schedule-aware-scout-2026-06-26T15Z-iraq-striker-fitness-watch",
-  "headline": "Soren 6/26 15Z 巡檢：距 Norway-France / Senegal-Iraq 不到 4 小時，仍未見官方先發；補上 Iraq Aymen Hussein 賽前傷情疑問，避免把 Senegal 優勢看得太乾淨。",
+  "generatedAt": "2026-06-26T17:12:00Z",
+  "status": "schedule-aware-scout-2026-06-26T17Z-imminent-lineup-odds-watch",
+  "headline": "Soren 6/26 17Z 巡檢：Norway-France / Senegal-Iraq 距開球約 2 小時，官方先發仍未公開；補上 Uruguay 傷停、New Zealand-Belgium 人員風險與紙上市場溫度。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
       "matchId": "m054",
       "match": "Senegal vs Iraq",
-      "sourceType": "confirmed injury + preview + lineup watch",
+      "sourceType": "confirmed injury + preview + lineup/odds watch",
       "title": "Senegal 要追大結果，卻先丟了一號門將；這不是劇本，是壓力鍋。",
       "sorenTake": "模型還是偏 Senegal，但我會把穩字先收起來。Mendy 缺陣讓 Senegal 後場容錯變薄；Iraq 這邊 Aymen Hussein 若真的帶傷或受限，反擊尖刀會鈍一截。兩邊都不是滿血，這場不是劇本，是壓力鍋。",
       "signals": [
@@ -17,7 +17,10 @@
         "Guardian 賽後脈絡曾指出 Senegal 對 Iraq 需要 big result 才能衝擊淘汰賽。",
         "FIFA match centre 已核對可連線，作為 Senegal-Iraq 臨場比分/陣容官方入口；正式先發未出前只保留傷停與預測陣容標籤。",
         "Sports Mole 賽前專題提到 Senegal 教練 Pape Thiaw 承諾調整/「戰術革命」脈絡；屬媒體戰術觀察，不是官方先發。",
-        "Sports Illustrated 賽前頁新增/重申 Iraq 主力前鋒 Aymen Hussein 因對 France 傷退，對 Senegal 戰前仍在趕時間恢復；這是 reported fitness watch，不是正式缺陣名單。"
+        "Sports Illustrated 賽前頁新增/重申 Iraq 主力前鋒 Aymen Hussein 因對 France 傷退，對 Senegal 戰前仍在趕時間恢復；這是 reported fitness watch，不是正式缺陣名單。",
+        "17Z 官方先發仍未見公開；CBS/FanDuel 索引顯示 Senegal 約 -450、Iraq 約 +1100、和局約 +550，市場很偏 Senegal，但 Mendy / Aymen Hussein 傷情讓「大熱」不能等同「無風險」。",
+        "SportsBettingDime 賽前頁把 Édouard Mendy 與 Aymen Hussein 都列為 critical injuries；這強化 Iraq 中鋒狀態與 Senegal 門將缺口同時影響比賽的判讀。",
+        "FootballMeister 搜尋摘要另提到 Iraq 前鋒 Mohannad Ali 也可能缺陣；來源等級較低，先列為低到中等信心的 attacking-depth watch，不寫成官方事實。"
       ],
       "sources": [
         {
@@ -67,6 +70,30 @@
           "fetchedAt": "2026-06-26T11:20:00Z",
           "claimType": "reported/tactical",
           "confidence": "medium"
+        },
+        {
+          "label": "CBS/FanDuel Senegal-Iraq odds reference",
+          "url": "https://www.cbssports.com/soccer/news/senegal-iraq-odds-prediction-time-2026-world-cup-picks-best-bets/",
+          "sourceName": "CBS Sports / FanDuel",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "SportsBettingDime Senegal-Iraq injuries and odds",
+          "url": "https://www.sportsbettingdime.com/news/soccer/predictions-goalscorer-picks-odds-senegal-vs-iraq/",
+          "sourceName": "SportsBettingDime",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "reported/odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "FootballMeister Senegal-Iraq team news",
+          "url": "https://footballmeister.com/world-cup-2026/senegal-iraq-2026-06-26/",
+          "sourceName": "FootballMeister",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-low"
         }
       ],
       "confidence": "high"
@@ -74,7 +101,7 @@
     {
       "matchId": "m053",
       "match": "Norway vs France",
-      "sourceType": "official fixture + team-news context",
+      "sourceType": "official fixture + team-news context + odds/social watch",
       "title": "Haaland vs Mbappé 很好賣，但真正會坑人的，是兩隊都已出線後的輪換慾望。",
       "sorenTake": "這場不是單純比誰名字大。Al Jazeera 和 News18 都把小組第一與可能輪換擺上桌；如果教練開始保腿，模型裡那些星光參數就要打折。Soren 會看強弱，也會看誰懶得踩滿油門。",
       "signals": [
@@ -86,7 +113,10 @@
         "USA Today 6/26 刊出 France projected lineup；Soren 只把它當預測 XI 訊號，正式名單仍等 FIFA/球隊公布。",
         "Al Jazeera 6/26 賽程頁重申 Groups G/H/I 今日收官、France-Norway 爭 Group I 頭名，輪換與搶第一誘因同時存在。",
         "Sports Illustrated 6/26 賽前頁列出 Norway-France 預測陣容（Norway 4-3-3、France 4-2-3-1 脈絡）；這是 predicted lineup，不是確認先發。",
-        "RotoWire 6/24 賽前頁也列出 Norway-France predicted lineups/team news/tactical breakdown；距開球約 4.7 小時仍只能當預測陣容觀察，不是官方先發。"
+        "RotoWire 6/24 賽前頁也列出 Norway-France predicted lineups/team news/tactical breakdown；距開球約 4.7 小時仍只能當預測陣容觀察，不是官方先發。",
+        "17Z 巡檢未找到 Norway-France 的官方確認先發；FIFA match centre 仍是臨場陣容唯一硬入口，Yahoo/Standard 類頁面只能當 expected-XI / injury-latest 觀察。",
+        "CBS/FanDuel 搜尋索引顯示 France 約 -160、Norway 約 +360、和局約 +360；僅作紙上市場溫度，不是下注建議，也不是即時盤承諾。",
+        "Sports Interactive / BigSoccer 等公開論壇有本場討論索引，但可見內容偏賽程與 Haaland vs Mbappé 敘事；未讀到可驗證的完整留言民意。"
       ],
       "sources": [
         {
@@ -152,6 +182,30 @@
           "fetchedAt": "2026-06-26T14:21:54Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "CBS/FanDuel Norway-France odds reference",
+          "url": "https://www.cbssports.com/soccer/news/france-norway-odds-prediction-time-2026-world-cup-picks-best-bets/",
+          "sourceName": "CBS Sports / FanDuel",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "Yahoo Sports / Standard Norway-France team-news page",
+          "url": "https://ca.sports.yahoo.com/news/norway-vs-france-xis-confirmed-170443806.html",
+          "sourceName": "Yahoo Sports / Evening Standard",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Interactive indexed discussion",
+          "url": "https://community.sports-interactive.com/forums/topic/602097-matches-61-62-norway-vs-france-and-senegal-vs-iraq/",
+          "sourceName": "Sports Interactive Community",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "social-search",
+          "confidence": "low-medium"
         }
       ],
       "confidence": "medium-high"
@@ -159,7 +213,7 @@
     {
       "matchId": "m048",
       "match": "Uruguay vs Spain",
-      "sourceType": "news + tactical preview",
+      "sourceType": "news + tactical preview + injury/odds watch",
       "title": "Spain 比較像答案，但 Uruguay 正是那種會把漂亮控球拖進泥地的麻煩隊。",
       "sorenTake": "我仍偏 Spain，可是 Pedri 停賽、Uruguay 必須拿首勝、Bielsa 已經對兩分局面不爽——這三件事合在一起，足夠讓『西班牙舒服控到死』這句話先降級成半信半疑。",
       "signals": [
@@ -169,7 +223,9 @@
         "Reuters 另報導 Bielsa 對 Uruguay 兩場兩分而非六分感到困惑/不滿。",
         "RFEF 官方賽前文把 Uruguay-Spain 描述為經典對碰，並提供雙方歷史交手脈絡；這是 Spain 陣營官方背景，不等於確認先發。",
         "Sporting News 搜尋摘要顯示 Uruguay-Spain 已有 projected lineups/starting 11 頁；Soren 只把它當預測陣容訊號，Pedri 停賽等硬消息仍以高可信來源優先。",
-        "USA Today 6/26 Spain lineup 頁與 RotoWire 6/25 Uruguay-Spain tactical preview 都屬 projected/predicted lineup；Pedri 停賽是硬訊號，但 Yamal 等進攻配置仍等正式先發。"
+        "USA Today 6/26 Spain lineup 頁與 RotoWire 6/25 Uruguay-Spain tactical preview 都屬 projected/predicted lineup；Pedri 停賽是硬訊號，但 Yamal 等進攻配置仍等正式先發。",
+        "Sports Mole、Sports Illustrated 與 FotMob 搜尋索引一致指向 Uruguay 的 Ronald Araújo 與 Giorgian de Arrascaeta 因小腿問題缺陣；這比單純「Bielsa 不爽」更像真正會改變上限的硬風險。",
+        "CBS / SI 公開盤索引都把 Spain 放在明顯熱門端，但價格從約 -165 到 -210 不等；只做紙上方向參考，不當即時交易訊號。"
       ],
       "sources": [
         {
@@ -227,6 +283,30 @@
           "fetchedAt": "2026-06-26T14:21:54Z",
           "claimType": "reported/tactical",
           "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole Uruguay-Spain team news",
+          "url": "https://www.sportsmole.co.uk/football/spain/world-cup-2026/preview/uruguay-vs-spain-prediction-team-news-lineups_599989.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "reported",
+          "confidence": "high"
+        },
+        {
+          "label": "SI Uruguay-Spain preview",
+          "url": "https://www.si.com/soccer/uruguay-vs-spain-world-cup-preview-predictions-lineups-6-26-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "CBS/FanDuel Spain-Uruguay odds reference",
+          "url": "https://www.cbssports.com/soccer/news/spain-uruguay-odds-prediction-time-2026-world-cup-picks-best-bets/",
+          "sourceName": "CBS Sports / FanDuel",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -234,7 +314,7 @@
     {
       "matchId": "m047",
       "match": "Cape Verde vs Saudi Arabia",
-      "sourceType": "qualification context + injury/suspension watch",
+      "sourceType": "qualification context + injury/suspension/odds watch",
       "title": "Cape Verde 只差把童話簽收；Saudi Arabia 則得把門踹開，沒空優雅。",
       "sorenTake": "這是典型的生存局：Cape Verde 平局可能就夠，Saudi Arabia 必須更冒險。問題是 Cape Verde 傷停訊號不乾淨，Sidny Lopes Cabral 停賽與可能缺人，讓他們的『守住就好』沒有看起來那麼便宜。",
       "signals": [
@@ -246,7 +326,10 @@
         "Al Jazeera 6/26 今日賽程頁確認 Group H 最後一輪仍有出線/名次壓力，Cape Verde 與 Saudi Arabia 都不是友誼賽心態。",
         "USA Today 6/26 odds/picks 頁提供公開市場參考；本站只作紙上模擬校準，不提供下注建議。",
         "Yahoo Sports / Football Faithful 6/26 指 Saudi Arabia 主帥 Donis 暫無新傷情，Hassan Al-Tambakti 腳傷已可用；選擇題更偏人員/陣型而非可用性。",
-        "RotoWire 6/25 同步列出 Cape Verde 的 Sidny Lopes Cabral 停賽、Telmo Arcanjo 與 Jovane Cabral doubtful，並稱 Saudi Arabia clean bill of health；仍屬賽前 team-news 頁，正式名單需臨場核。"
+        "RotoWire 6/25 同步列出 Cape Verde 的 Sidny Lopes Cabral 停賽、Telmo Arcanjo 與 Jovane Cabral doubtful，並稱 Saudi Arabia clean bill of health；仍屬賽前 team-news 頁，正式名單需臨場核。",
+        "CBS/FanDuel 索引顯示 Cape Verde 約 +165、Saudi Arabia 約 +175、和局約 +220；這不是誰碾誰，而是接近 pick’em 的生存局。",
+        "Sports Interactive 小樣本論壇投票索引顯示 5 票中 Cape Verde 40%、和局 40%、Saudi Arabia 20%；樣本太小，只能當「公開討論也覺得很膠著」的弱訊號。",
+        "Squawka / Betfred / Sports Mole 仍指向 Sidny Lopes Cabral 停賽與 Cape Verde 傷情疑問；Saudi Arabia 人員面相對乾淨，但臨場名單仍需 FIFA 確認。"
       ],
       "sources": [
         {
@@ -328,6 +411,30 @@
           "fetchedAt": "2026-06-26T14:21:54Z",
           "claimType": "reported/tactical",
           "confidence": "medium"
+        },
+        {
+          "label": "CBS/FanDuel Cape Verde-Saudi odds reference",
+          "url": "https://www.cbssports.com/soccer/news/cape-verde-saudi-arabia-odds-prediction-time-2026-world-cup-picks-best-bets/",
+          "sourceName": "CBS Sports / FanDuel",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "Squawka Cape Verde-Saudi team news",
+          "url": "https://www.squawka.com/en/news/world-cup/cape-verde-vs-saudi-arabia-team-news-predicted-lineups/",
+          "sourceName": "Squawka",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Interactive indexed poll",
+          "url": "https://community.sports-interactive.com/forums/topic/602098-matches-63-64-cape-verde-vs-saudi-arabia-and-uruguay-vs-spain/",
+          "sourceName": "Sports Interactive Community",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "social-search",
+          "confidence": "low-medium"
         }
       ],
       "confidence": "medium"
@@ -335,7 +442,7 @@
     {
       "matchId": "m041",
       "match": "Egypt vs Iran",
-      "sourceType": "group context + venue/social context + lineup watch",
+      "sourceType": "group context + venue/social context + lineup/odds watch",
       "title": "Egypt 領跑但別裝睡；Iran 還活著，Seattle 這場場外溫度也不低。",
       "sorenTake": "Group G 的數學還沒關門。Egypt 有分數優勢，Iran 需要更積極；同時這場被 Seattle 標成 Pride Match，場外敘事很多，但我只把它當環境噪音，不把政治熱度偷換成足球證據。",
       "signals": [
@@ -344,7 +451,10 @@
         "Reuters 報導 Seattle 將 Egypt vs Iran 設為 Pride Match 並持續推進相關安排。",
         "NBC News 報導 FIFA 將允許 Egypt vs Iran Pride Match 出現彩虹旗。",
         "Al Jazeera 6/26 Egypt-Iran 賽前頁把 Salah/Taremi、開球資訊、預測與 lineups 作為主要脈絡；屬賽前報導與預測，不等於 FIFA 確認先發。",
-        "The Stats Zone 搜尋摘要補充 Egypt-Iran 歷史交手與 Egypt 衝擊隊史首次世界盃小組出線的壓力背景。"
+        "The Stats Zone 搜尋摘要補充 Egypt-Iran 歷史交手與 Egypt 衝擊隊史首次世界盃小組出線的壓力背景。",
+        "CBS/FanDuel 索引顯示 Egypt 約 +145、Iran 約 +290、和局約 +160，且大小球僅約 1.5；市場語氣更像低比分刀片局，不是煙火秀。",
+        "17Z 仍未找到 Egypt-Iran 官方確認先發；Sports Mole / Al Jazeera 類頁面只作 injury-suspension / predicted-XI watch。",
+        "FOX 13 Seattle 等地方新聞延續 Pride Match 爭議脈絡；這是場外環境噪音，不直接換算成球隊戰力。"
       ],
       "sources": [
         {
@@ -394,6 +504,22 @@
           "fetchedAt": "2026-06-26T13:46:37Z",
           "claimType": "context",
           "confidence": "medium"
+        },
+        {
+          "label": "CBS/FanDuel Egypt-Iran odds reference",
+          "url": "https://www.cbssports.com/soccer/news/egypt-iran-odds-prediction-time-2026-world-cup-picks-best-bets/",
+          "sourceName": "CBS Sports / FanDuel",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "FOX 13 Seattle Pride Match context",
+          "url": "https://www.fox13seattle.com/news/seattle-pride-match-objections",
+          "sourceName": "FOX 13 Seattle",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "context/social-search",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -401,7 +527,7 @@
     {
       "matchId": "m042",
       "match": "New Zealand vs Belgium",
-      "sourceType": "official fixture + model/context watch + lineup watch",
+      "sourceType": "official fixture + model/context watch + injury/odds watch",
       "title": "Belgium 名字很大，但前兩戰只拿兩分；再不把球踢進去，豪門濾鏡也救不了場面。",
       "sorenTake": "這場我仍偏 Belgium，可是 Group G 的分數逼得他們不能再慢熱。New Zealand 的路線很簡單：撐住前段、把比利時的焦躁拉滿；一旦又變成空有射門沒進球，爆冷劇本就會從笑話變成警報。",
       "signals": [
@@ -409,7 +535,10 @@
         "FIFA 賽前頁提供本場官方賽事脈絡，但未見公開確認先發；不把預測陣容寫成事實。",
         "Opta Analyst 賽前模型明顯偏 Belgium，同時指出 Belgium 世界盃近期進球效率壓力，適合列為紙上校準參考而非投注建議。",
         "RotoWire 賽前頁列出 New Zealand-Belgium predicted lineups/team news/tactical breakdown；可作陣容觀察清單，但正式名單仍等 FIFA 或球隊公布。",
-        "Sports Mole 搜尋摘要同樣提供 Belgium 賽前 team news/possible lineups；與 RotoWire 交叉確認這場應納入臨場先發巡檢。"
+        "Sports Mole 搜尋摘要同樣提供 Belgium 賽前 team news/possible lineups；與 RotoWire 交叉確認這場應納入臨場先發巡檢。",
+        "Rubiscore 搜尋索引列出 New Zealand 的 Matthew Garbett、Belgium 的 Nathan Ngoy（停賽）與 Jérémy Doku（傷情）為人員風險；來源信心中等，需用 FIFA/球隊名單臨場覆核。",
+        "Oddschecker / SportsLine 索引都把 Belgium 放在強熱門端，但價格差異很大（約 -330 到 -625）；這只能當紙上市場方向，不是即時賠率或下注建議。",
+        "HFBoards 等論壇只有薄弱索引訊號，未可靠讀取完整留言；不把小樣本討論包裝成社群共識。"
       ],
       "sources": [
         {
@@ -451,6 +580,30 @@
           "fetchedAt": "2026-06-26T13:46:37Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "Rubiscore New Zealand-Belgium team news",
+          "url": "https://rubiscore.com/football/match/new-zealand-belgium-rUkbKDb",
+          "sourceName": "Rubiscore",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Oddschecker New Zealand-Belgium odds reference",
+          "url": "https://www.oddschecker.com/us/soccer/world-cup/new-zealand-v-belgium",
+          "sourceName": "Oddschecker",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "HFBoards indexed discussion",
+          "url": "https://forums.hfboards.com/forums/soccer.166/",
+          "sourceName": "HFBoards",
+          "fetchedAt": "2026-06-26T17:12:00Z",
+          "claimType": "social-search",
+          "confidence": "low"
         }
       ],
       "confidence": "medium-high"
