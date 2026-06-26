@@ -49,6 +49,22 @@ function MatchDeepDive({ match, prediction, paperBet, onClose }) {
   </div>
 }
 
+function SorenIntelFeed({ intel, onSelect }) {
+  if (!intel?.items?.length) return null
+  return <section className="panel intel-feed" id="soren-intel">
+    <div className="section-head"><p>SOREN SCOUTING FEED</p><h2>我剛剛去外面逛到什麼</h2><span>{intel.items.length} 則</span></div>
+    <p className="intel-headline">{intel.headline}</p>
+    <div className="intel-list">{intel.items.map((item) => <article key={item.matchId} className="intel-card">
+      <div className="intel-meta"><span>{item.match}</span><span>{item.sourceType}</span><span>{item.confidence}</span></div>
+      <h3>{item.title}</h3>
+      <p>{item.sorenTake}</p>
+      <ul>{item.signals.slice(0, 3).map((signal) => <li key={signal}>{signal}</li>)}</ul>
+      <div className="intel-actions"><button type="button" onClick={() => onSelect?.(item.matchId)}>打開相關比賽</button>{item.sources.slice(0, 2).map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div>
+    </article>)}</div>
+    <p className="intel-note">{intel.disclaimer}</p>
+  </section>
+}
+
 function Leaderboard({ rows }) { return <section className="panel leaderboard"><div className="section-head"><p>SCOREBOARD OF SHAME</p><h2>模型記分板：誰在裸泳</h2></div><div className="leader-list">{rows.map((row) => <div className="leader" key={row.id}><div className="rank">#{row.rank}</div><div><b>{row.name}</b><p>{row.desc}</p></div><div className="leader-score"><b>{row.points}</b><span>{pct(row.accuracy)} 命中</span></div></div>)}</div></section> }
 function PaperBankroll({ bankroll }) {
   if (!bankroll) return null
@@ -67,7 +83,11 @@ function App() {
   const [error, setError] = useState('')
   const [filter, setFilter] = useState('全部')
   const [selectedId, setSelectedId] = useState(null)
-  useEffect(() => { fetch(`${import.meta.env.BASE_URL}data/worldcup.json`, { cache:'no-store' }).then((res) => { if (!res.ok) throw new Error(`HTTP ${res.status}`); return res.json() }).then(setData).catch((err) => setError(err.message)) }, [])
+  const [intel, setIntel] = useState(null)
+  useEffect(() => {
+    fetch(`${import.meta.env.BASE_URL}data/worldcup.json`, { cache:'no-store' }).then((res) => { if (!res.ok) throw new Error(`HTTP ${res.status}`); return res.json() }).then(setData).catch((err) => setError(err.message))
+    fetch(`${import.meta.env.BASE_URL}data/soren-intel.json`, { cache:'no-store' }).then((res) => res.ok ? res.json() : null).then(setIntel).catch(() => setIntel(null))
+  }, [])
   const nextMatches = useMemo(() => data ? data.summary.nextWindow.map((id) => data.matches.find((m) => m.id === id)).filter(Boolean) : [], [data])
   const stages = useMemo(() => data ? ['全部', ...Array.from(new Set(data.matches.map((m) => m.group ? '小組賽' : m.round || '淘汰賽')))] : ['全部'], [data])
   const paperBetsByMatch = useMemo(() => {
@@ -85,8 +105,9 @@ function App() {
   if (error) return <main className="shell"><div className="panel"><h1>資料載入失敗</h1><p>{error}</p></div></main>
   if (!data) return <main className="shell"><div className="loading">Soren 正在翻賽程和模型，不要急，嘴砲也要先載資料…</div></main>
   return <main className="shell">
-    <section className="hero-section"><div className="hero-copy"><span className="eyebrow">SOREN WORLD CUP LAB · 2026</span><h1>Soren 世界盃毒舌觀察室</h1><p>我不做那種『強隊比較強』的安全廢話。每場我都會追賽程、看情報、找爆冷路線，賽後再把自己的判斷攤開驗屍。</p><div className="hero-actions"><a href="#predictions">看我站哪邊</a><a href="#paper-bankroll" className="ghost">紙上生存戰</a><a href="#standings" className="ghost">小組戰況</a></div></div><div className="hero-card"><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>已完賽</span><b>{data.summary.scheduledMatches}</b><span>待預測/追蹤</span><small>最後更新：{fmtDate(data.generatedAt)}</small></div></section>
+    <section className="hero-section"><div className="hero-copy"><span className="eyebrow">SOREN WORLD CUP LAB · 2026</span><h1>Soren 世界盃毒舌觀察室</h1><p>我不做那種『強隊比較強』的安全廢話。每場我都會追賽程、看情報、找爆冷路線，賽後再把自己的判斷攤開驗屍。</p><div className="hero-actions"><a href="#soren-intel">看我逛到什麼</a><a href="#predictions" className="ghost">看我站哪邊</a><a href="#paper-bankroll" className="ghost">紙上生存戰</a><a href="#standings" className="ghost">小組戰況</a></div></div><div className="hero-card"><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>已完賽</span><b>{data.summary.scheduledMatches}</b><span>待預測/追蹤</span><small>最後更新：{fmtDate(data.generatedAt)}</small></div></section>
     <div className="notice">這裡是公開研究與娛樂實驗，不是投注建議。沒有穩贏、沒有神單、沒有保證；誰跟你說穩，他大概比守門員還危險。</div>
+    <SorenIntelFeed intel={intel} onSelect={setSelectedId}/>
     <Leaderboard rows={data.leaderboard}/>
     <PaperBankroll bankroll={data.paperBankroll}/>
     <section className="panel" id="predictions"><div className="section-head"><p>NEXT ON THE CHOPPING BLOCK</p><h2>下一批要被我開刀的比賽</h2><span>{nextMatches.length} 場</span></div><div className="grid featured">{nextMatches.slice(0, 6).map((m) => <PredictionCard key={m.id} match={m} prediction={data.predictions[m.id]} onSelect={(match) => setSelectedId(match.id)}/>)}</div></section>
