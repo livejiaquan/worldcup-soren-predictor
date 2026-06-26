@@ -78,6 +78,41 @@ function poisson(k, lambda) {
 function clamp(value, min, max) { return Math.max(min, Math.min(max, value)) }
 function isUnresolved(team) { return /^(TBD|暫無|Winner|Loser|[A-L][1-4]|[A-L][123])/.test(String(team)) }
 
+function labelRisk(confidence, home, draw, away) {
+  const top = Math.max(home, draw, away)
+  if (confidence >= 0.72 && top >= 0.58) return '模型高信心'
+  if (Math.abs(home - away) < 0.08 || draw >= 0.29) return '膠著警報'
+  if (top < 0.48) return '高變數'
+  return '中等信心'
+}
+
+function buildNarrative({ team1, team2, pick, confidence, home, draw, away, lambda1, lambda2, r1, r2, best }) {
+  const gap = Math.abs(r1 - r2)
+  const underdog = r1 < r2 ? team1 : team2
+  const favorite = r1 >= r2 ? team1 : team2
+  const confidenceText = confidence >= 0.72 ? '偏明確' : confidence >= 0.58 ? '中等' : '保守'
+  const opener = pick === '平手'
+    ? `${team1} 對 ${team2} 被模型判定為五五波，平局權重偏高。`
+    : `Soren ${confidenceText}看好 ${pick}，但仍保留 ${pctForNarrative(draw)} 的平局風險。`
+  const angle = gap < 4
+    ? '兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。'
+    : `${favorite} 的強度先驗較佳；${underdog} 若想翻盤，關鍵會是先守住前 30 分鐘。`
+  const tempo = lambda1 + lambda2 >= 2.75
+    ? '總進球期望偏高，節奏可能比一般小組賽更開放。'
+    : '總進球期望偏低，模型傾向一球差或低比分收場。'
+  return {
+    headline: opener,
+    story: `${angle} ${tempo}`,
+    keyFactors: [
+      { label: '強度差', value: gap.toFixed(1), note: gap < 4 ? '接近' : `${favorite} 優勢` },
+      { label: '預期進球', value: `${lambda1.toFixed(2)} : ${lambda2.toFixed(2)}`, note: `最可能比分 ${best.g1}-${best.g2}` },
+      { label: '冷門風險', value: pctForNarrative(Math.min(home, away)), note: `${underdog} 的反擊窗口` },
+    ],
+  }
+}
+
+function pctForNarrative(v) { return `${Math.round((v || 0) * 100)}%` }
+
 export function predictMatch(match, standings = {}) {
   const team1 = canonicalTeam(match.team1)
   const team2 = canonicalTeam(match.team2)
@@ -109,9 +144,11 @@ export function predictMatch(match, standings = {}) {
   const entries = Object.entries({ home, draw, away }).sort((a, b) => b[1] - a[1])
   const pick = entries[0][0] === 'home' ? team1 : entries[0][0] === 'away' ? team2 : '平手'
   const confidence = clamp(entries[0][1] + Math.abs(home - away) * 0.18, 0.35, 0.82)
+  const tag = labelRisk(confidence, home, draw, away)
   return {
-    pick, confidence, probabilities: { home, draw, away },
+    pick, confidence, tag, probabilities: { home, draw, away },
     expectedGoals: [Number(lambda1.toFixed(2)), Number(lambda2.toFixed(2))], score: `${best.g1}-${best.g2}`,
+    commentary: buildNarrative({ team1, team2, pick, confidence, home, draw, away, lambda1, lambda2, r1, r2, best }),
     reasons: [
       `${team1} 評級 ${r1.toFixed(1)}；${team2} 評級 ${r2.toFixed(1)}`,
       `預期進球 ${lambda1.toFixed(2)} : ${lambda2.toFixed(2)}，以 0–6 球 Poisson 分布估算`,

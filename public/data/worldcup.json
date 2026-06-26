@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T07:18:11.991Z",
+  "generatedAt": "2026-06-26T07:32:16.528Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -2482,6 +2482,7 @@
     "m001": {
       "pick": "Mexico",
       "confidence": 0.8181465620775425,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.7070973954956487,
         "draw": 0.20274502335255754,
@@ -2492,6 +2493,27 @@
         0.5
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Mexico，但仍保留 20% 的平局風險。",
+        "story": "Mexico 的強度先驗較佳；South Africa 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "21.0",
+            "note": "Mexico 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.88 : 0.50",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "9%",
+            "note": "South Africa 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Mexico 評級 88.9；South Africa 評級 67.9",
         "預期進球 1.88 : 0.50，以 0–6 球 Poisson 分布估算",
@@ -2501,6 +2523,7 @@
     "m002": {
       "pick": "South Korea",
       "confidence": 0.6112998405022804,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.5481008504959234,
         "draw": 0.2549037990434701,
@@ -2511,6 +2534,27 @@
         0.82
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 South Korea，但仍保留 25% 的平局風險。",
+        "story": "South Korea 的強度先驗較佳；Czech Republic 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "5.7",
+            "note": "South Korea 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.56 : 0.82",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "20%",
+            "note": "Czech Republic 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "South Korea 評級 72.0；Czech Republic 評級 66.3",
         "預期進球 1.56 : 0.82，以 0–6 球 Poisson 分布估算",
@@ -2520,6 +2564,7 @@
     "m007": {
       "pick": "Canada",
       "confidence": 0.585351719501254,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.5284308855604257,
         "draw": 0.25936508410597203,
@@ -2530,6 +2575,27 @@
         0.86
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 Canada，但仍保留 26% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "3.9",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.52 : 0.86",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "21%",
+            "note": "Bosnia & Herzegovina 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Canada 評級 74.8；Bosnia & Herzegovina 評級 70.9",
         "預期進球 1.52 : 0.86，以 0–6 球 Poisson 分布估算",
@@ -2539,6 +2605,7 @@
     "m019": {
       "pick": "USA",
       "confidence": 0.748791719333546,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.653344543635234,
         "draw": 0.22357299994237714,
@@ -2549,6 +2616,27 @@
         0.61
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 USA，但仍保留 22% 的平局風險。",
+        "story": "USA 的強度先驗較佳；Paraguay 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "15.7",
+            "note": "USA 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.77 : 0.61",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "12%",
+            "note": "Paraguay 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "USA 評級 85.9；Paraguay 評級 70.3",
         "預期進球 1.77 : 0.61，以 0–6 球 Poisson 分布估算",
@@ -2558,6 +2646,7 @@
     "m008": {
       "pick": "Switzerland",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.0885450819254818,
         "draw": 0.20157760986965265,
@@ -2568,6 +2657,27 @@
         1.89
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Switzerland，但仍保留 20% 的平局風險。",
+        "story": "Switzerland 的強度先驗較佳；Qatar 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "24.1",
+            "note": "Switzerland 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.49 : 1.89",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "9%",
+            "note": "Qatar 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Qatar 評級 61.7；Switzerland 評級 85.8",
         "預期進球 0.49 : 1.89，以 0–6 球 Poisson 分布估算",
@@ -2577,6 +2687,7 @@
     "m013": {
       "pick": "Brazil",
       "confidence": 0.6982339101618263,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.614444688873133,
         "draw": 0.23660629607980851,
@@ -2587,6 +2698,27 @@
         0.69
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 Brazil，但仍保留 24% 的平局風險。",
+        "story": "Brazil 的強度先驗較佳；Morocco 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "12.0",
+            "note": "Brazil 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.69 : 0.69",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "15%",
+            "note": "Morocco 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Brazil 評級 100.1；Morocco 評級 88.2",
         "預期進球 1.69 : 0.69，以 0–6 球 Poisson 分布估算",
@@ -2596,6 +2728,7 @@
     "m014": {
       "pick": "Scotland",
       "confidence": 0.6956149787221131,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.15033082303629106,
         "draw": 0.2372331372445178,
@@ -2606,6 +2739,27 @@
         1.69
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 中等看好 Scotland，但仍保留 24% 的平局風險。",
+        "story": "Scotland 的強度先驗較佳；Haiti 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "14.6",
+            "note": "Scotland 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.69 : 1.69",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "15%",
+            "note": "Haiti 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Haiti 評級 56.1；Scotland 評級 70.7",
         "預期進球 0.69 : 1.69，以 0–6 球 Poisson 分布估算",
@@ -2615,6 +2769,7 @@
     "m020": {
       "pick": "Australia",
       "confidence": 0.4772103803369039,
+      "tag": "高變數",
       "probabilities": {
         "home": 0.44711757212120584,
         "draw": 0.2729471236225775,
@@ -2625,6 +2780,27 @@
         1.02
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 Australia，但仍保留 27% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.8",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.36 : 1.02",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "28%",
+            "note": "Australia 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Australia 評級 73.6；Turkey 評級 74.4",
         "預期進球 1.36 : 1.02，以 0–6 球 Poisson 分布估算",
@@ -2634,6 +2810,7 @@
     "m025": {
       "pick": "Germany",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.8331545388320675,
         "draw": 0.1363729187338221,
@@ -2644,6 +2821,27 @@
         0.25
       ],
       "score": "2-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Germany，但仍保留 14% 的平局風險。",
+        "story": "Germany 的強度先驗較佳；Curaçao 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "38.5",
+            "note": "Germany 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "2.25 : 0.25",
+            "note": "最可能比分 2-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "3%",
+            "note": "Curaçao 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Germany 評級 93.2；Curaçao 評級 54.7",
         "預期進球 2.25 : 0.25，以 0–6 球 Poisson 分布估算",
@@ -2653,6 +2851,7 @@
     "m031": {
       "pick": "Netherlands",
       "confidence": 0.6743448768268637,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.5961455691609407,
         "draw": 0.2421494598221349,
@@ -2663,6 +2862,27 @@
         0.73
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 Netherlands，但仍保留 24% 的平局風險。",
+        "story": "Netherlands 的強度先驗較佳；Japan 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "13.1",
+            "note": "Netherlands 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.65 : 0.73",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "16%",
+            "note": "Japan 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Netherlands 評級 96.1；Japan 評級 83.0",
         "預期進球 1.65 : 0.73，以 0–6 球 Poisson 分布估算",
@@ -2672,6 +2892,7 @@
     "m026": {
       "pick": "Ivory Coast",
       "confidence": 0.47562390558523693,
+      "tag": "高變數",
       "probabilities": {
         "home": 0.44593278164453,
         "draw": 0.2730851252704231,
@@ -2682,6 +2903,27 @@
         1.02
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 Ivory Coast，但仍保留 27% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.9",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.36 : 1.02",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "28%",
+            "note": "Ivory Coast 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Ivory Coast 評級 75.6；Ecuador 評級 76.6",
         "預期進球 1.36 : 1.02，以 0–6 球 Poisson 分布估算",
@@ -2691,6 +2933,7 @@
     "m032": {
       "pick": "Sweden",
       "confidence": 0.7802520546447451,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.677670622403703,
         "draw": 0.21455560097616105,
@@ -2701,6 +2944,27 @@
         0.56
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Sweden，但仍保留 21% 的平局風險。",
+        "story": "Sweden 的強度先驗較佳；Tunisia 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "18.1",
+            "note": "Sweden 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.82 : 0.56",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "11%",
+            "note": "Tunisia 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Sweden 評級 77.6；Tunisia 評級 59.5",
         "預期進球 1.82 : 0.56，以 0–6 球 Poisson 分布估算",
@@ -2710,6 +2974,7 @@
     "m043": {
       "pick": "Spain",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.8207380417945214,
         "draw": 0.14630804126012947,
@@ -2720,6 +2985,27 @@
         0.25
       ],
       "score": "2-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Spain，但仍保留 15% 的平局風險。",
+        "story": "Spain 的強度先驗較佳；Cape Verde 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "34.3",
+            "note": "Spain 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "2.16 : 0.25",
+            "note": "最可能比分 2-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "3%",
+            "note": "Cape Verde 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Spain 評級 98.9；Cape Verde 評級 64.7",
         "預期進球 2.16 : 0.25，以 0–6 球 Poisson 分布估算",
@@ -2729,6 +3015,7 @@
     "m037": {
       "pick": "Belgium",
       "confidence": 0.443104703408649,
+      "tag": "高變數",
       "probabilities": {
         "home": 0.4217002946949941,
         "draw": 0.2755127923525392,
@@ -2739,6 +3026,27 @@
         1.07
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 Belgium，但仍保留 28% 的平局風險。",
+        "story": "Belgium 的強度先驗較佳；Egypt 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "12.0",
+            "note": "Belgium 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.31 : 1.07",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "30%",
+            "note": "Egypt 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Belgium 評級 86.7；Egypt 評級 74.6",
         "預期進球 1.31 : 1.07，以 0–6 球 Poisson 分布估算",
@@ -2748,6 +3056,7 @@
     "m044": {
       "pick": "Uruguay",
       "confidence": 0.7673756161141421,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.113965489187599,
         "draw": 0.2183316259243418,
@@ -2758,6 +3067,27 @@
         1.8
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Uruguay，但仍保留 22% 的平局風險。",
+        "story": "Uruguay 的強度先驗較佳；Saudi Arabia 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "19.9",
+            "note": "Uruguay 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.58 : 1.80",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "11%",
+            "note": "Saudi Arabia 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Saudi Arabia 評級 63.7；Uruguay 評級 83.7",
         "預期進球 0.58 : 1.80，以 0–6 球 Poisson 分布估算",
@@ -2767,6 +3097,7 @@
     "m038": {
       "pick": "Iran",
       "confidence": 0.6820457618955503,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.6020388206891557,
         "draw": 0.24040536532388082,
@@ -2777,6 +3108,27 @@
         0.71
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 Iran，但仍保留 24% 的平局風險。",
+        "story": "Iran 的強度先驗較佳；New Zealand 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "13.6",
+            "note": "Iran 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.67 : 0.71",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "16%",
+            "note": "New Zealand 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Iran 評級 73.7；New Zealand 評級 60.0",
         "預期進球 1.67 : 0.71，以 0–6 球 Poisson 分布估算",
@@ -2786,6 +3138,7 @@
     "m049": {
       "pick": "France",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.7934663508182439,
         "draw": 0.1621369887588104,
@@ -2796,6 +3149,27 @@
         0.31
       ],
       "score": "2-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 France，但仍保留 16% 的平局風險。",
+        "story": "France 的強度先驗較佳；Senegal 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "30.2",
+            "note": "France 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "2.07 : 0.31",
+            "note": "最可能比分 2-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "4%",
+            "note": "Senegal 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "France 評級 103.3；Senegal 評級 73.0",
         "預期進球 2.07 : 0.31，以 0–6 球 Poisson 分布估算",
@@ -2805,6 +3179,7 @@
     "m050": {
       "pick": "Norway",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.08646662078941675,
         "draw": 0.20004971527875218,
@@ -2815,6 +3190,27 @@
         1.89
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Norway，但仍保留 20% 的平局風險。",
+        "story": "Norway 的強度先驗較佳；Iraq 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "24.5",
+            "note": "Norway 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.49 : 1.89",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "9%",
+            "note": "Iraq 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Iraq 評級 58.1；Norway 評級 82.6",
         "預期進球 0.49 : 1.89，以 0–6 球 Poisson 分布估算",
@@ -2824,6 +3220,7 @@
     "m055": {
       "pick": "Argentina",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.8117053415859886,
         "draw": 0.15235534092048889,
@@ -2834,6 +3231,27 @@
         0.26
       ],
       "score": "2-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Argentina，但仍保留 15% 的平局風險。",
+        "story": "Argentina 的強度先驗較佳；Algeria 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "32.3",
+            "note": "Argentina 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "2.12 : 0.26",
+            "note": "最可能比分 2-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "4%",
+            "note": "Algeria 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Argentina 評級 104.0；Algeria 評級 71.7",
         "預期進球 2.12 : 0.26，以 0–6 球 Poisson 分布估算",
@@ -2843,6 +3261,7 @@
     "m056": {
       "pick": "Austria",
       "confidence": 0.7788699358821967,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.6765999603091933,
         "draw": 0.21496661034274334,
@@ -2853,6 +3272,27 @@
         0.56
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Austria，但仍保留 21% 的平局風險。",
+        "story": "Austria 的強度先驗較佳；Jordan 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "18.0",
+            "note": "Austria 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.82 : 0.56",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "11%",
+            "note": "Jordan 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Austria 評級 78.0；Jordan 評級 60.0",
         "預期進球 1.82 : 0.56，以 0–6 球 Poisson 分布估算",
@@ -2862,6 +3302,7 @@
     "m061": {
       "pick": "Portugal",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.7996124548793264,
         "draw": 0.1588905176903263,
@@ -2872,6 +3313,27 @@
         0.29
       ],
       "score": "2-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Portugal，但仍保留 16% 的平局風險。",
+        "story": "Portugal 的強度先驗較佳；Democratic Republic of the Congo 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "30.9",
+            "note": "Portugal 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "2.09 : 0.29",
+            "note": "最可能比分 2-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "4%",
+            "note": "Democratic Republic of the Congo 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Portugal 評級 97.6；Democratic Republic of the Congo 評級 66.7",
         "預期進球 2.09 : 0.29，以 0–6 球 Poisson 分布估算",
@@ -2881,6 +3343,7 @@
     "m067": {
       "pick": "England",
       "confidence": 0.6890540020515856,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.6074066931651123,
         "draw": 0.23878277415018287,
@@ -2891,6 +3354,27 @@
         0.7
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 England，但仍保留 24% 的平局風險。",
+        "story": "England 的強度先驗較佳；Croatia 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "11.3",
+            "note": "England 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.68 : 0.70",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "15%",
+            "note": "Croatia 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "England 評級 96.6；Croatia 評級 85.3",
         "預期進球 1.68 : 0.70，以 0–6 球 Poisson 分布估算",
@@ -2900,6 +3384,7 @@
     "m068": {
       "pick": "Ghana",
       "confidence": 0.7028093439748394,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.6179554239502769,
         "draw": 0.23549981890257102,
@@ -2910,6 +3395,27 @@
         0.68
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 Ghana，但仍保留 24% 的平局風險。",
+        "story": "Ghana 的強度先驗較佳；Panama 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "12.3",
+            "note": "Ghana 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.70 : 0.68",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "15%",
+            "note": "Panama 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Ghana 評級 75.0；Panama 評級 62.7",
         "預期進球 1.70 : 0.68，以 0–6 球 Poisson 分布估算",
@@ -2919,6 +3425,7 @@
     "m062": {
       "pick": "Colombia",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.07031412533247551,
         "draw": 0.18720929425651267,
@@ -2929,6 +3436,27 @@
         1.96
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Colombia，但仍保留 19% 的平局風險。",
+        "story": "Colombia 的強度先驗較佳；Uzbekistan 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "27.5",
+            "note": "Colombia 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.42 : 1.96",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "7%",
+            "note": "Uzbekistan 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Uzbekistan 評級 59.5；Colombia 評級 87.0",
         "預期進球 0.42 : 1.96，以 0–6 球 Poisson 分布估算",
@@ -2938,6 +3466,7 @@
     "m003": {
       "pick": "South Africa",
       "confidence": 0.5119206618874158,
+      "tag": "高變數",
       "probabilities": {
         "home": 0.2574221227353768,
         "draw": 0.26947902643429805,
@@ -2948,6 +3477,27 @@
         1.41
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 保守看好 South Africa，但仍保留 27% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "1.6",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.97 : 1.41",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "26%",
+            "note": "Czech Republic 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Czech Republic 評級 66.3；South Africa 評級 67.9",
         "預期進球 0.97 : 1.41，以 0–6 球 Poisson 分布估算",
@@ -2957,6 +3507,7 @@
     "m009": {
       "pick": "Switzerland",
       "confidence": 0.7385844610633998,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.6454719220428442,
         "draw": 0.2263480393618429,
@@ -2967,6 +3518,27 @@
         0.63
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Switzerland，但仍保留 23% 的平局風險。",
+        "story": "Switzerland 的強度先驗較佳；Bosnia & Herzegovina 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "14.9",
+            "note": "Switzerland 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.75 : 0.63",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "13%",
+            "note": "Bosnia & Herzegovina 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Switzerland 評級 85.8；Bosnia & Herzegovina 評級 70.9",
         "預期進球 1.75 : 0.63，以 0–6 球 Poisson 分布估算",
@@ -2976,6 +3548,7 @@
     "m010": {
       "pick": "Canada",
       "confidence": 0.7142036496900981,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.6267066060643162,
         "draw": 0.23268147468126749,
@@ -2986,6 +3559,27 @@
         0.66
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 Canada，但仍保留 23% 的平局風險。",
+        "story": "Canada 的強度先驗較佳；Qatar 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "13.1",
+            "note": "Canada 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.72 : 0.66",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "14%",
+            "note": "Qatar 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Canada 評級 74.8；Qatar 評級 61.7",
         "預期進球 1.72 : 0.66，以 0–6 球 Poisson 分布估算",
@@ -2995,6 +3589,7 @@
     "m004": {
       "pick": "Mexico",
       "confidence": 0.764826251380229,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.6657312663173168,
         "draw": 0.21906516215932287,
@@ -3005,6 +3600,27 @@
         0.59
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Mexico，但仍保留 22% 的平局風險。",
+        "story": "Mexico 的強度先驗較佳；South Korea 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "16.9",
+            "note": "Mexico 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.79 : 0.59",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "12%",
+            "note": "South Korea 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Mexico 評級 88.9；South Korea 評級 72.0",
         "預期進球 1.79 : 0.59，以 0–6 球 Poisson 分布估算",
@@ -3014,6 +3630,7 @@
     "m021": {
       "pick": "USA",
       "confidence": 0.7041039090260146,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.6189490920749611,
         "draw": 0.23518413224481957,
@@ -3024,6 +3641,27 @@
         0.68
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 USA，但仍保留 24% 的平局風險。",
+        "story": "USA 的強度先驗較佳；Australia 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "12.4",
+            "note": "USA 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.70 : 0.68",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "15%",
+            "note": "Australia 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "USA 評級 85.9；Australia 評級 73.6",
         "預期進球 1.70 : 0.68，以 0–6 球 Poisson 分布估算",
@@ -3033,6 +3671,7 @@
     "m015": {
       "pick": "Morocco",
       "confidence": 0.7342978685378397,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.1303397141133211,
         "draw": 0.22749162734579964,
@@ -3043,6 +3682,27 @@
         1.75
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Morocco，但仍保留 23% 的平局風險。",
+        "story": "Morocco 的強度先驗較佳；Scotland 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "17.5",
+            "note": "Morocco 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.63 : 1.75",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "13%",
+            "note": "Scotland 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Scotland 評級 70.7；Morocco 評級 88.2",
         "預期進球 0.63 : 1.75，以 0–6 球 Poisson 分布估算",
@@ -3052,6 +3712,7 @@
     "m016": {
       "pick": "Brazil",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.8477717685018529,
         "draw": 0.12465286579425473,
@@ -3062,6 +3723,27 @@
         0.25
       ],
       "score": "2-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Brazil，但仍保留 12% 的平局風險。",
+        "story": "Brazil 的強度先驗較佳；Haiti 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "44.0",
+            "note": "Brazil 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "2.36 : 0.25",
+            "note": "最可能比分 2-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "3%",
+            "note": "Haiti 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Brazil 評級 100.1；Haiti 評級 56.1",
         "預期進球 2.36 : 0.25，以 0–6 球 Poisson 分布估算",
@@ -3071,6 +3753,7 @@
     "m022": {
       "pick": "Turkey",
       "confidence": 0.43879812431711984,
+      "tag": "高變數",
       "probabilities": {
         "home": 0.41849880307781595,
         "draw": 0.2757764007293898,
@@ -3081,6 +3764,27 @@
         1.07
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 Turkey，但仍保留 28% 的平局風險。",
+        "story": "Turkey 的強度先驗較佳；Paraguay 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "4.1",
+            "note": "Turkey 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.31 : 1.07",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "31%",
+            "note": "Paraguay 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Turkey 評級 74.4；Paraguay 評級 70.3",
         "預期進球 1.31 : 1.07，以 0–6 球 Poisson 分布估算",
@@ -3090,6 +3794,7 @@
     "m033": {
       "pick": "Netherlands",
       "confidence": 0.7869244875571292,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.6828420066926625,
         "draw": 0.2125519914172679,
@@ -3100,6 +3805,27 @@
         0.55
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Netherlands，但仍保留 21% 的平局風險。",
+        "story": "Netherlands 的強度先驗較佳；Sweden 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "18.6",
+            "note": "Netherlands 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.83 : 0.55",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "10%",
+            "note": "Sweden 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Netherlands 評級 96.1；Sweden 評級 77.6",
         "預期進球 1.83 : 0.55，以 0–6 球 Poisson 分布估算",
@@ -3109,6 +3835,7 @@
     "m027": {
       "pick": "Germany",
       "confidence": 0.7742771883953697,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.673043481665651,
         "draw": 0.21632251850046924,
@@ -3119,6 +3846,27 @@
         0.57
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Germany，但仍保留 22% 的平局風險。",
+        "story": "Germany 的強度先驗較佳；Ivory Coast 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "17.6",
+            "note": "Germany 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.81 : 0.57",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "11%",
+            "note": "Ivory Coast 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Germany 評級 93.2；Ivory Coast 評級 75.6",
         "預期進球 1.81 : 0.57，以 0–6 球 Poisson 分布估算",
@@ -3128,6 +3876,7 @@
     "m028": {
       "pick": "Ecuador",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.7156784966459867,
         "draw": 0.19911239879227796,
@@ -3138,6 +3887,27 @@
         0.48
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Ecuador，但仍保留 20% 的平局風險。",
+        "story": "Ecuador 的強度先驗較佳；Curaçao 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "21.9",
+            "note": "Ecuador 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.90 : 0.48",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "9%",
+            "note": "Curaçao 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Ecuador 評級 76.6；Curaçao 評級 54.7",
         "預期進球 1.90 : 0.48，以 0–6 球 Poisson 分布估算",
@@ -3147,6 +3917,7 @@
     "m034": {
       "pick": "Japan",
       "confidence": 0.8142412975161745,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.09193068370644807,
         "draw": 0.20401099376530196,
@@ -3157,6 +3928,27 @@
         1.87
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Japan，但仍保留 20% 的平局風險。",
+        "story": "Japan 的強度先驗較佳；Tunisia 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "23.5",
+            "note": "Japan 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.51 : 1.87",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "9%",
+            "note": "Tunisia 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Tunisia 評級 59.5；Japan 評級 83.0",
         "預期進球 0.51 : 1.87，以 0–6 球 Poisson 分布估算",
@@ -3166,6 +3958,7 @@
     "m045": {
       "pick": "Spain",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.8235257137303033,
         "draw": 0.14407904861219886,
@@ -3176,6 +3969,27 @@
         0.25
       ],
       "score": "2-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Spain，但仍保留 14% 的平局風險。",
+        "story": "Spain 的強度先驗較佳；Saudi Arabia 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "35.2",
+            "note": "Spain 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "2.18 : 0.25",
+            "note": "最可能比分 2-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "3%",
+            "note": "Saudi Arabia 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Spain 評級 98.9；Saudi Arabia 評級 63.7",
         "預期進球 2.18 : 0.25，以 0–6 球 Poisson 分布估算",
@@ -3185,6 +3999,7 @@
     "m039": {
       "pick": "Belgium",
       "confidence": 0.5657392151552058,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.5136041334339828,
         "draw": 0.2624310760277176,
@@ -3195,6 +4010,27 @@
         0.89
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 保守看好 Belgium，但仍保留 26% 的平局風險。",
+        "story": "Belgium 的強度先驗較佳；Iran 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "13.0",
+            "note": "Belgium 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.49 : 0.89",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "22%",
+            "note": "Iran 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Belgium 評級 86.7；Iran 評級 73.7",
         "預期進球 1.49 : 0.89，以 0–6 球 Poisson 分布估算",
@@ -3204,6 +4040,7 @@
     "m046": {
       "pick": "Uruguay",
       "confidence": 0.6506829236335471,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.5780714121253547,
         "draw": 0.2472544619059146,
@@ -3214,6 +4051,27 @@
         0.76
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 Uruguay，但仍保留 25% 的平局風險。",
+        "story": "Uruguay 的強度先驗較佳；Cape Verde 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "19.0",
+            "note": "Uruguay 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.62 : 0.76",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "17%",
+            "note": "Cape Verde 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Uruguay 評級 83.7；Cape Verde 評級 64.7",
         "預期進球 1.62 : 0.76，以 0–6 球 Poisson 分布估算",
@@ -3223,6 +4081,7 @@
     "m040": {
       "pick": "Egypt",
       "confidence": 0.6953856720709695,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.15045200564897926,
         "draw": 0.237287796818999,
@@ -3233,6 +4092,27 @@
         1.69
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 中等看好 Egypt，但仍保留 24% 的平局風險。",
+        "story": "Egypt 的強度先驗較佳；New Zealand 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "14.6",
+            "note": "Egypt 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.69 : 1.69",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "15%",
+            "note": "New Zealand 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "New Zealand 評級 60.0；Egypt 評級 74.6",
         "預期進球 0.69 : 1.69，以 0–6 球 Poisson 分布估算",
@@ -3242,6 +4122,7 @@
     "m057": {
       "pick": "Argentina",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.755271557404373,
         "draw": 0.18122209277231308,
@@ -3252,6 +4133,27 @@
         0.39
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Argentina，但仍保留 18% 的平局風險。",
+        "story": "Argentina 的強度先驗較佳；Austria 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "26.0",
+            "note": "Argentina 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.99 : 0.39",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "6%",
+            "note": "Austria 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Argentina 評級 104.0；Austria 評級 78.0",
         "預期進球 1.99 : 0.39，以 0–6 球 Poisson 分布估算",
@@ -3261,6 +4163,7 @@
     "m051": {
       "pick": "France",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.8506129713762662,
         "draw": 0.12237165319563059,
@@ -3271,6 +4174,27 @@
         0.25
       ],
       "score": "2-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 France，但仍保留 12% 的平局風險。",
+        "story": "France 的強度先驗較佳；Iraq 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "45.1",
+            "note": "France 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "2.39 : 0.25",
+            "note": "最可能比分 2-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "3%",
+            "note": "Iraq 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "France 評級 103.3；Iraq 評級 58.1",
         "預期進球 2.39 : 0.25，以 0–6 球 Poisson 分布估算",
@@ -3280,6 +4204,7 @@
     "m052": {
       "pick": "Norway",
       "confidence": 0.6650174761406179,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.5890147946054155,
         "draw": 0.24420753042918247,
@@ -3290,6 +4215,27 @@
         0.74
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 Norway，但仍保留 24% 的平局風險。",
+        "story": "Norway 的強度先驗較佳；Senegal 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "9.5",
+            "note": "Norway 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.64 : 0.74",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "17%",
+            "note": "Senegal 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Norway 評級 82.6；Senegal 評級 73.0",
         "預期進球 1.64 : 0.74，以 0–6 球 Poisson 分布估算",
@@ -3299,6 +4245,7 @@
     "m058": {
       "pick": "Algeria",
       "confidence": 0.5600635426814194,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.22741104699161846,
         "draw": 0.2632690113643893,
@@ -3309,6 +4256,27 @@
         1.48
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 保守看好 Algeria，但仍保留 26% 的平局風險。",
+        "story": "Algeria 的強度先驗較佳；Jordan 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "11.7",
+            "note": "Algeria 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.90 : 1.48",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "23%",
+            "note": "Jordan 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Jordan 評級 60.0；Algeria 評級 71.7",
         "預期進球 0.90 : 1.48，以 0–6 球 Poisson 分布估算",
@@ -3318,6 +4286,7 @@
     "m063": {
       "pick": "Portugal",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.8320006591045144,
         "draw": 0.13729697359135304,
@@ -3328,6 +4297,27 @@
         0.25
       ],
       "score": "2-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Portugal，但仍保留 14% 的平局風險。",
+        "story": "Portugal 的強度先驗較佳；Uzbekistan 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "38.1",
+            "note": "Portugal 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "2.24 : 0.25",
+            "note": "最可能比分 2-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "3%",
+            "note": "Uzbekistan 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Portugal 評級 97.6；Uzbekistan 評級 59.5",
         "預期進球 2.24 : 0.25，以 0–6 球 Poisson 分布估算",
@@ -3337,6 +4327,7 @@
     "m069": {
       "pick": "England",
       "confidence": 0.7394810378279009,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.6461630427946198,
         "draw": 0.22610722015121118,
@@ -3347,6 +4338,27 @@
         0.63
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 England，但仍保留 23% 的平局風險。",
+        "story": "England 的強度先驗較佳；Ghana 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "21.6",
+            "note": "England 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.75 : 0.63",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "13%",
+            "note": "Ghana 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "England 評級 96.6；Ghana 評級 75.0",
         "預期進球 1.75 : 0.63，以 0–6 球 Poisson 分布估算",
@@ -3356,6 +4368,7 @@
     "m070": {
       "pick": "Croatia",
       "confidence": 0.7143334945895211,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.14054476041027122,
         "draw": 0.2326488400445001,
@@ -3366,6 +4379,27 @@
         1.72
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 中等看好 Croatia，但仍保留 23% 的平局風險。",
+        "story": "Croatia 的強度先驗較佳；Panama 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "22.6",
+            "note": "Croatia 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.66 : 1.72",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "14%",
+            "note": "Panama 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Panama 評級 62.7；Croatia 評級 85.3",
         "預期進球 0.66 : 1.72，以 0–6 球 Poisson 分布估算",
@@ -3375,6 +4409,7 @@
     "m064": {
       "pick": "Colombia",
       "confidence": 0.8088715096233147,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.6998820051280596,
         "draw": 0.20573323693974205,
@@ -3385,6 +4420,27 @@
         0.51
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Colombia，但仍保留 21% 的平局風險。",
+        "story": "Colombia 的強度先驗較佳；Democratic Republic of the Congo 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "20.3",
+            "note": "Colombia 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.87 : 0.51",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "9%",
+            "note": "Democratic Republic of the Congo 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Colombia 評級 87.0；Democratic Republic of the Congo 評級 66.7",
         "預期進球 1.87 : 0.51，以 0–6 球 Poisson 分布估算",
@@ -3394,6 +4450,7 @@
     "m011": {
       "pick": "Switzerland",
       "confidence": 0.48291235765071366,
+      "tag": "高變數",
       "probabilities": {
         "home": 0.45137781970577967,
         "draw": 0.2724362380602964,
@@ -3404,6 +4461,27 @@
         1.01
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 Switzerland，但仍保留 27% 的平局風險。",
+        "story": "Switzerland 的強度先驗較佳；Canada 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "11.0",
+            "note": "Switzerland 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.37 : 1.01",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "28%",
+            "note": "Canada 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Switzerland 評級 85.8；Canada 評級 74.8",
         "預期進球 1.37 : 1.01，以 0–6 球 Poisson 分布估算",
@@ -3413,6 +4491,7 @@
     "m012": {
       "pick": "Bosnia & Herzegovina",
       "confidence": 0.6603692012613455,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.5854641408418273,
         "draw": 0.24521094286922418,
@@ -3423,6 +4502,27 @@
         0.75
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 Bosnia & Herzegovina，但仍保留 25% 的平局風險。",
+        "story": "Bosnia & Herzegovina 的強度先驗較佳；Qatar 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "9.2",
+            "note": "Bosnia & Herzegovina 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.63 : 0.75",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "17%",
+            "note": "Qatar 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Bosnia & Herzegovina 評級 70.9；Qatar 評級 61.7",
         "預期進球 1.63 : 0.75，以 0–6 球 Poisson 分布估算",
@@ -3432,6 +4532,7 @@
     "m017": {
       "pick": "Brazil",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.060843413644881,
         "draw": 0.17877494250435108,
@@ -3442,6 +4543,27 @@
         2
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Brazil，但仍保留 18% 的平局風險。",
+        "story": "Brazil 的強度先驗較佳；Scotland 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "29.4",
+            "note": "Brazil 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.38 : 2.00",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "6%",
+            "note": "Scotland 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Scotland 評級 70.7；Brazil 評級 100.1",
         "預期進球 0.38 : 2.00，以 0–6 球 Poisson 分布估算",
@@ -3451,6 +4573,7 @@
     "m018": {
       "pick": "Morocco",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.8097562309635773,
         "draw": 0.1534220604502442,
@@ -3461,6 +4584,27 @@
         0.27
       ],
       "score": "2-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Morocco，但仍保留 15% 的平局風險。",
+        "story": "Morocco 的強度先驗較佳；Haiti 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "32.1",
+            "note": "Morocco 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "2.11 : 0.27",
+            "note": "最可能比分 2-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "4%",
+            "note": "Haiti 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Morocco 評級 88.2；Haiti 評級 56.1",
         "預期進球 2.11 : 0.27，以 0–6 球 Poisson 分布估算",
@@ -3470,6 +4614,7 @@
     "m005": {
       "pick": "Mexico",
       "confidence": 0.8022933990098698,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.09741622831239014,
         "draw": 0.2078140088858301,
@@ -3480,6 +4625,27 @@
         1.85
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Mexico，但仍保留 21% 的平局風險。",
+        "story": "Mexico 的強度先驗較佳；Czech Republic 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "22.6",
+            "note": "Mexico 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.53 : 1.85",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "10%",
+            "note": "Czech Republic 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Czech Republic 評級 66.3；Mexico 評級 88.9",
         "預期進球 0.53 : 1.85，以 0–6 球 Poisson 分布估算",
@@ -3489,6 +4655,7 @@
     "m006": {
       "pick": "South Korea",
       "confidence": 0.3984161375371768,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.3338565953804647,
         "draw": 0.2775753328350773,
@@ -3499,6 +4666,27 @@
         1.25
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 South Korea，但仍保留 28% 的平局風險。",
+        "story": "South Korea 的強度先驗較佳；South Africa 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "4.1",
+            "note": "South Korea 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.13 : 1.25",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "33%",
+            "note": "South Africa 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "South Africa 評級 67.9；South Korea 評級 72.0",
         "預期進球 1.13 : 1.25，以 0–6 球 Poisson 分布估算",
@@ -3508,6 +4696,7 @@
     "m029": {
       "pick": "Ivory Coast",
       "confidence": 0.7806674558526473,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.10757574872133244,
         "draw": 0.2144318015985937,
@@ -3518,6 +4707,27 @@
         1.82
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Ivory Coast，但仍保留 21% 的平局風險。",
+        "story": "Ivory Coast 的強度先驗較佳；Curaçao 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "20.9",
+            "note": "Ivory Coast 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.56 : 1.82",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "11%",
+            "note": "Curaçao 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Curaçao 評級 54.7；Ivory Coast 評級 75.6",
         "預期進球 0.56 : 1.82，以 0–6 球 Poisson 分布估算",
@@ -3527,6 +4737,7 @@
     "m030": {
       "pick": "Germany",
       "confidence": 0.7237776669019724,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.13568724145171787,
         "draw": 0.23024380061329772,
@@ -3537,6 +4748,27 @@
         1.73
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Germany，但仍保留 23% 的平局風險。",
+        "story": "Germany 的強度先驗較佳；Ecuador 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "16.7",
+            "note": "Germany 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.65 : 1.73",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "14%",
+            "note": "Ecuador 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Ecuador 評級 76.6；Germany 評級 93.2",
         "預期進球 0.65 : 1.73，以 0–6 球 Poisson 分布估算",
@@ -3546,6 +4778,7 @@
     "m035": {
       "pick": "Japan",
       "confidence": 0.6079162430083249,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.5455324629659577,
         "draw": 0.25551162985901393,
@@ -3556,6 +4789,27 @@
         0.82
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 Japan，但仍保留 26% 的平局風險。",
+        "story": "Japan 的強度先驗較佳；Sweden 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "5.5",
+            "note": "Japan 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.56 : 0.82",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "20%",
+            "note": "Sweden 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Japan 評級 83.0；Sweden 評級 77.6",
         "預期進球 1.56 : 0.82，以 0–6 球 Poisson 分布估算",
@@ -3565,6 +4819,7 @@
     "m036": {
       "pick": "Netherlands",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.033258265720034305,
         "draw": 0.14752043831286496,
@@ -3575,6 +4830,27 @@
         2.15
       ],
       "score": "0-2",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Netherlands，但仍保留 15% 的平局風險。",
+        "story": "Netherlands 的強度先驗較佳；Tunisia 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "36.6",
+            "note": "Netherlands 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.25 : 2.15",
+            "note": "最可能比分 0-2"
+          },
+          {
+            "label": "冷門風險",
+            "value": "3%",
+            "note": "Tunisia 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Tunisia 評級 59.5；Netherlands 評級 96.1",
         "預期進球 0.25 : 2.15，以 0–6 球 Poisson 分布估算",
@@ -3584,6 +4860,7 @@
     "m023": {
       "pick": "USA",
       "confidence": 0.6532824027365871,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.17323311559158774,
         "draw": 0.24671233903292678,
@@ -3594,6 +4871,27 @@
         1.62
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 中等看好 USA，但仍保留 25% 的平局風險。",
+        "story": "USA 的強度先驗較佳；Turkey 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "11.6",
+            "note": "USA 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.76 : 1.62",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "17%",
+            "note": "Turkey 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Turkey 評級 74.4；USA 評級 85.9",
         "預期進球 0.76 : 1.62，以 0–6 球 Poisson 分布估算",
@@ -3603,6 +4901,7 @@
     "m024": {
       "pick": "Australia",
       "confidence": 0.49512996748680277,
+      "tag": "高變數",
       "probabilities": {
         "home": 0.2682199829150796,
         "draw": 0.2712634370751601,
@@ -3613,6 +4912,27 @@
         1.39
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 保守看好 Australia，但仍保留 27% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "3.3",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.99 : 1.39",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "27%",
+            "note": "Paraguay 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Paraguay 評級 70.3；Australia 評級 73.6",
         "預期進球 0.99 : 1.39，以 0–6 球 Poisson 分布估算",
@@ -3622,6 +4942,7 @@
     "m053": {
       "pick": "France",
       "confidence": 0.6868846905358263,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.15496670890555445,
         "draw": 0.2392886316547624,
@@ -3632,6 +4953,27 @@
         1.67
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 中等看好 France，但仍保留 24% 的平局風險。",
+        "story": "France 的強度先驗較佳；Norway 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "20.7",
+            "note": "France 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.71 : 1.67",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "15%",
+            "note": "Norway 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Norway 評級 82.6；France 評級 103.3",
         "預期進球 0.71 : 1.67，以 0–6 球 Poisson 分布估算",
@@ -3641,6 +4983,7 @@
     "m054": {
       "pick": "Senegal",
       "confidence": 0.7390328088593362,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.6458175188905974,
         "draw": 0.22622768426735443,
@@ -3651,6 +4994,27 @@
         0.63
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Senegal，但仍保留 23% 的平局風險。",
+        "story": "Senegal 的強度先驗較佳；Iraq 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "14.9",
+            "note": "Senegal 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.75 : 0.63",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "13%",
+            "note": "Iraq 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Senegal 評級 73.0；Iraq 評級 58.1",
         "預期進球 1.75 : 0.63，以 0–6 球 Poisson 分布估算",
@@ -3660,6 +5024,7 @@
     "m047": {
       "pick": "Cape Verde",
       "confidence": 0.5430187028522134,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.49647160306052673,
         "draw": 0.26565179272165024,
@@ -3670,6 +5035,27 @@
         0.92
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 保守看好 Cape Verde，但仍保留 27% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.9",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.46 : 0.92",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "24%",
+            "note": "Saudi Arabia 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Cape Verde 評級 64.7；Saudi Arabia 評級 63.7",
         "預期進球 1.46 : 0.92，以 0–6 球 Poisson 分布估算",
@@ -3679,6 +5065,7 @@
     "m048": {
       "pick": "Spain",
       "confidence": 0.7045388756922432,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.1456392030485231,
         "draw": 0.23507780352691993,
@@ -3689,6 +5076,27 @@
         1.7
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 中等看好 Spain，但仍保留 24% 的平局風險。",
+        "story": "Spain 的強度先驗較佳；Uruguay 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "15.3",
+            "note": "Spain 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.68 : 1.70",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "15%",
+            "note": "Uruguay 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Uruguay 評級 83.7；Spain 評級 98.9",
         "預期進球 0.68 : 1.70，以 0–6 球 Poisson 分布估算",
@@ -3698,6 +5106,7 @@
     "m041": {
       "pick": "Egypt",
       "confidence": 0.5026215021902002,
+      "tag": "高變數",
       "probabilities": {
         "home": 0.4661271789430284,
         "draw": 0.2704918823760089,
@@ -3708,6 +5117,27 @@
         0.98
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 保守看好 Egypt，但仍保留 27% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "1.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.40 : 0.98",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "26%",
+            "note": "Iran 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Egypt 評級 74.6；Iran 評級 73.7",
         "預期進球 1.40 : 0.98，以 0–6 球 Poisson 分布估算",
@@ -3717,6 +5147,7 @@
     "m042": {
       "pick": "Belgium",
       "confidence": 0.8171891425825984,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.09059136591204948,
         "draw": 0.2030564404889951,
@@ -3727,6 +5158,27 @@
         1.88
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Belgium，但仍保留 20% 的平局風險。",
+        "story": "Belgium 的強度先驗較佳；New Zealand 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "26.6",
+            "note": "Belgium 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.50 : 1.88",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "9%",
+            "note": "New Zealand 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "New Zealand 評級 60.0；Belgium 評級 86.7",
         "預期進球 0.50 : 1.88，以 0–6 球 Poisson 分布估算",
@@ -3736,6 +5188,7 @@
     "m071": {
       "pick": "England",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.04077990777783674,
         "draw": 0.15807101777451543,
@@ -3746,6 +5199,27 @@
         2.09
       ],
       "score": "0-2",
+      "commentary": {
+        "headline": "Soren 偏明確看好 England，但仍保留 16% 的平局風險。",
+        "story": "England 的強度先驗較佳；Panama 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "33.9",
+            "note": "England 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.29 : 2.09",
+            "note": "最可能比分 0-2"
+          },
+          {
+            "label": "冷門風險",
+            "value": "4%",
+            "note": "Panama 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Panama 評級 62.7；England 評級 96.6",
         "預期進球 0.29 : 2.09，以 0–6 球 Poisson 分布估算",
@@ -3755,6 +5229,7 @@
     "m072": {
       "pick": "Croatia",
       "confidence": 0.419477119998259,
+      "tag": "高變數",
       "probabilities": {
         "home": 0.40415804291718216,
         "draw": 0.27678989794939585,
@@ -3765,6 +5240,27 @@
         1.1
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 Croatia，但仍保留 28% 的平局風險。",
+        "story": "Croatia 的強度先驗較佳；Ghana 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "10.4",
+            "note": "Croatia 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.28 : 1.10",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "32%",
+            "note": "Ghana 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Croatia 評級 85.3；Ghana 評級 75.0",
         "預期進球 1.28 : 1.10，以 0–6 球 Poisson 分布估算",
@@ -3774,6 +5270,7 @@
     "m065": {
       "pick": "Portugal",
       "confidence": 0.5998350568384478,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.20366583416044648,
         "draw": 0.25693170229097034,
@@ -3784,6 +5281,27 @@
         1.54
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 中等看好 Portugal，但仍保留 26% 的平局風險。",
+        "story": "Portugal 的強度先驗較佳；Colombia 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "10.6",
+            "note": "Portugal 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.84 : 1.54",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "20%",
+            "note": "Colombia 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Colombia 評級 87.0；Portugal 評級 97.6",
         "預期進球 0.84 : 1.54，以 0–6 球 Poisson 分布估算",
@@ -3793,6 +5311,7 @@
     "m066": {
       "pick": "Democratic Republic of the Congo",
       "confidence": 0.6325602881698894,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.5642626778236572,
         "draw": 0.25090581294286396,
@@ -3803,6 +5322,27 @@
         0.79
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 中等看好 Democratic Republic of the Congo，但仍保留 25% 的平局風險。",
+        "story": "Democratic Republic of the Congo 的強度先驗較佳；Uzbekistan 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "7.2",
+            "note": "Democratic Republic of the Congo 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.59 : 0.79",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "18%",
+            "note": "Uzbekistan 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Democratic Republic of the Congo 評級 66.7；Uzbekistan 評級 59.5",
         "預期進球 1.59 : 0.79，以 0–6 球 Poisson 分布估算",
@@ -3812,6 +5352,7 @@
     "m059": {
       "pick": "Austria",
       "confidence": 0.5380477355305666,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.2409616596593714,
         "draw": 0.26630881977346454,
@@ -3822,6 +5363,27 @@
         1.45
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 保守看好 Austria，但仍保留 27% 的平局風險。",
+        "story": "Austria 的強度先驗較佳；Algeria 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "6.3",
+            "note": "Austria 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.93 : 1.45",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "24%",
+            "note": "Algeria 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Algeria 評級 71.7；Austria 評級 78.0",
         "預期進球 0.93 : 1.45，以 0–6 球 Poisson 分布估算",
@@ -3831,6 +5393,7 @@
     "m060": {
       "pick": "Argentina",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.029087196405715582,
         "draw": 0.13078551234510455,
@@ -3841,6 +5404,27 @@
         2.3
       ],
       "score": "0-2",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Argentina，但仍保留 13% 的平局風險。",
+        "story": "Argentina 的強度先驗較佳；Jordan 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "44.0",
+            "note": "Argentina 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.25 : 2.30",
+            "note": "最可能比分 0-2"
+          },
+          {
+            "label": "冷門風險",
+            "value": "3%",
+            "note": "Jordan 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Jordan 評級 60.0；Argentina 評級 104.0",
         "預期進球 0.25 : 2.30，以 0–6 球 Poisson 分布估算",
@@ -3850,6 +5434,7 @@
     "m073": {
       "pick": "Canada",
       "confidence": 0.5873843373445757,
+      "tag": "中等信心",
       "probabilities": {
         "home": 0.21099825055453403,
         "draw": 0.25903223889937116,
@@ -3860,6 +5445,27 @@
         1.52
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 中等看好 Canada，但仍保留 26% 的平局風險。",
+        "story": "Canada 的強度先驗較佳；South Africa 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "6.9",
+            "note": "Canada 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.86 : 1.52",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "21%",
+            "note": "South Africa 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "South Africa 評級 67.9；Canada 評級 74.8",
         "預期進球 0.86 : 1.52，以 0–6 球 Poisson 分布估算",
@@ -3869,6 +5475,7 @@
     "m076": {
       "pick": "Brazil",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.8172581246824226,
         "draw": 0.14908929047474223,
@@ -3879,6 +5486,27 @@
         0.25
       ],
       "score": "2-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Brazil，但仍保留 15% 的平局風險。",
+        "story": "Brazil 的強度先驗較佳；2F 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "33.1",
+            "note": "Brazil 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "2.14 : 0.25",
+            "note": "最可能比分 2-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "3%",
+            "note": "2F 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Brazil 評級 100.1；2F 評級 67.0",
         "預期進球 2.14 : 0.25，以 0–6 球 Poisson 分布估算",
@@ -3888,6 +5516,7 @@
     "m074": {
       "pick": "Germany",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.7574500674713488,
         "draw": 0.18018276900623714,
@@ -3898,6 +5527,27 @@
         0.39
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Germany，但仍保留 18% 的平局風險。",
+        "story": "Germany 的強度先驗較佳；3A/B/C/D/F 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "26.2",
+            "note": "Germany 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.99 : 0.39",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "6%",
+            "note": "3A/B/C/D/F 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Germany 評級 93.2；3A/B/C/D/F 評級 67.0",
         "預期進球 1.99 : 0.39，以 0–6 球 Poisson 分布估算",
@@ -3907,6 +5557,7 @@
     "m075": {
       "pick": "Morocco",
       "confidence": 0.7836442278355484,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.10615983656927676,
         "draw": 0.21354101222901287,
@@ -3917,6 +5568,27 @@
         1.82
       ],
       "score": "0-1",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Morocco，但仍保留 21% 的平局風險。",
+        "story": "Morocco 的強度先驗較佳；1F 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "21.2",
+            "note": "Morocco 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "0.56 : 1.82",
+            "note": "最可能比分 0-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "11%",
+            "note": "1F 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "1F 評級 67.0；Morocco 評級 88.2",
         "預期進球 0.56 : 1.82，以 0–6 球 Poisson 分布估算",
@@ -3926,6 +5598,7 @@
     "m078": {
       "pick": "2E",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -3936,6 +5609,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 2E，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "2I 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "2E 評級 67.0；2I 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -3945,6 +5639,7 @@
     "m077": {
       "pick": "1I",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -3955,6 +5650,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 1I，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "3C/D/F/G/H 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "1I 評級 67.0；3C/D/F/G/H 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -3964,6 +5680,7 @@
     "m079": {
       "pick": "Mexico",
       "confidence": 0.82,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.7160049643085319,
         "draw": 0.1989724970810162,
@@ -3974,6 +5691,27 @@
         0.48
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Mexico，但仍保留 20% 的平局風險。",
+        "story": "Mexico 的強度先驗較佳；3C/E/F/H/I 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "21.9",
+            "note": "Mexico 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.90 : 0.48",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "9%",
+            "note": "3C/E/F/H/I 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Mexico 評級 88.9；3C/E/F/H/I 評級 67.0",
         "預期進球 1.90 : 0.48，以 0–6 球 Poisson 分布估算",
@@ -3983,6 +5721,7 @@
     "m080": {
       "pick": "1L",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -3993,6 +5732,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 1L，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "3E/H/I/J/K 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "1L 評級 67.0；3E/H/I/J/K 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4002,6 +5762,7 @@
     "m082": {
       "pick": "1G",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4012,6 +5773,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 1G，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "3A/E/H/I/J 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "1G 評級 67.0；3A/E/H/I/J 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4021,6 +5803,7 @@
     "m081": {
       "pick": "USA",
       "confidence": 0.79169057335876,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.6865385125882493,
         "draw": 0.21110109021522772,
@@ -4031,6 +5814,27 @@
         0.54
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 USA，但仍保留 21% 的平局風險。",
+        "story": "USA 的強度先驗較佳；3B/E/F/I/J 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "18.9",
+            "note": "USA 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.84 : 0.54",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "10%",
+            "note": "3B/E/F/I/J 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "USA 評級 85.9；3B/E/F/I/J 評級 67.0",
         "預期進球 1.84 : 0.54，以 0–6 球 Poisson 分布估算",
@@ -4040,6 +5844,7 @@
     "m084": {
       "pick": "1H",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4050,6 +5855,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 1H，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "2J 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "1H 評級 67.0；2J 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4059,6 +5885,7 @@
     "m083": {
       "pick": "2K",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4069,6 +5896,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 2K，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "2L 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "2K 評級 67.0；2L 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4078,6 +5926,7 @@
     "m085": {
       "pick": "Switzerland",
       "confidence": 0.7902481485723986,
+      "tag": "模型高信心",
       "probabilities": {
         "home": 0.6854195588876586,
         "draw": 0.2115419360287939,
@@ -4088,6 +5937,27 @@
         0.54
       ],
       "score": "1-0",
+      "commentary": {
+        "headline": "Soren 偏明確看好 Switzerland，但仍保留 21% 的平局風險。",
+        "story": "Switzerland 的強度先驗較佳；3E/F/G/I/J 若想翻盤，關鍵會是先守住前 30 分鐘。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "18.8",
+            "note": "Switzerland 優勢"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.84 : 0.54",
+            "note": "最可能比分 1-0"
+          },
+          {
+            "label": "冷門風險",
+            "value": "10%",
+            "note": "3E/F/G/I/J 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "Switzerland 評級 85.8；3E/F/G/I/J 評級 67.0",
         "預期進球 1.84 : 0.54，以 0–6 球 Poisson 分布估算",
@@ -4097,6 +5967,7 @@
     "m088": {
       "pick": "2D",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4107,6 +5978,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 2D，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "2G 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "2D 評級 67.0；2G 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4116,6 +6008,7 @@
     "m086": {
       "pick": "1J",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4126,6 +6019,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 1J，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "2H 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "1J 評級 67.0；2H 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4135,6 +6049,7 @@
     "m087": {
       "pick": "1K",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4145,6 +6060,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 1K，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "3D/E/I/J/L 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "1K 評級 67.0；3D/E/I/J/L 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4154,6 +6090,7 @@
     "m090": {
       "pick": "W73",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4164,6 +6101,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W73，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W75 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W73 評級 67.0；W75 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4173,6 +6131,7 @@
     "m089": {
       "pick": "W74",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4183,6 +6142,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W74，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W77 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W74 評級 67.0；W77 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4192,6 +6172,7 @@
     "m091": {
       "pick": "W76",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4202,6 +6183,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W76，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W78 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W76 評級 67.0；W78 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4211,6 +6213,7 @@
     "m092": {
       "pick": "W79",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4221,6 +6224,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W79，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W80 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W79 評級 67.0；W80 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4230,6 +6254,7 @@
     "m093": {
       "pick": "W83",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4240,6 +6265,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W83，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W84 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W83 評級 67.0；W84 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4249,6 +6295,7 @@
     "m094": {
       "pick": "W81",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4259,6 +6306,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W81，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W82 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W81 評級 67.0；W82 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4268,6 +6336,7 @@
     "m095": {
       "pick": "W86",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4278,6 +6347,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W86，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W88 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W86 評級 67.0；W88 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4287,6 +6377,7 @@
     "m096": {
       "pick": "W85",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4297,6 +6388,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W85，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W87 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W85 評級 67.0；W87 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4306,6 +6418,7 @@
     "m097": {
       "pick": "W89",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4316,6 +6429,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W89，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W90 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W89 評級 67.0；W90 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4325,6 +6459,7 @@
     "m098": {
       "pick": "W93",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4335,6 +6470,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W93，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W94 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W93 評級 67.0；W94 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4344,6 +6500,7 @@
     "m099": {
       "pick": "W91",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4354,6 +6511,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W91，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W92 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W91 評級 67.0；W92 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4363,6 +6541,7 @@
     "m100": {
       "pick": "W95",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4373,6 +6552,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W95，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W96 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W95 評級 67.0；W96 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4382,6 +6582,7 @@
     "m101": {
       "pick": "W97",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4392,6 +6593,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W97，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W98 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W97 評級 67.0；W98 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4401,6 +6623,7 @@
     "m102": {
       "pick": "W99",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4411,6 +6634,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W99，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W100 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W99 評級 67.0；W100 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
@@ -4438,6 +6682,7 @@
     "m104": {
       "pick": "W101",
       "confidence": 0.3808352070799772,
+      "tag": "膠著警報",
       "probabilities": {
         "home": 0.37558853219027716,
         "draw": 0.27797112945111263,
@@ -4448,6 +6693,27 @@
         1.16
       ],
       "score": "1-1",
+      "commentary": {
+        "headline": "Soren 保守看好 W101，但仍保留 28% 的平局風險。",
+        "story": "兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。 總進球期望偏低，模型傾向一球差或低比分收場。",
+        "keyFactors": [
+          {
+            "label": "強度差",
+            "value": "0.0",
+            "note": "接近"
+          },
+          {
+            "label": "預期進球",
+            "value": "1.22 : 1.16",
+            "note": "最可能比分 1-1"
+          },
+          {
+            "label": "冷門風險",
+            "value": "35%",
+            "note": "W102 的反擊窗口"
+          }
+        ]
+      },
       "reasons": [
         "W101 評級 67.0；W102 評級 67.0",
         "預期進球 1.22 : 1.16，以 0–6 球 Poisson 分布估算",
