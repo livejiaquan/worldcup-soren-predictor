@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-26T10:03:38Z",
-  "status": "schedule-aware-scout-2026-06-26T10Z",
-  "headline": "Soren 已把 48 小時內的火線賽事重新掃過：不是只有模型，還要看誰傷、誰輪換、誰被逼到懸崖。",
+  "generatedAt": "2026-06-26T10:40:30Z",
+  "status": "schedule-aware-scout-2026-06-26T10Z-plus-next48h",
+  "headline": "Soren 補上 48 小時缺口：G/K/L/J 組最後一輪不是背景音，出線數學、輪換和小組頭名壓力都會咬人。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -102,6 +102,24 @@
       "confidence": "medium"
     },
     {
+      "matchId": "m042",
+      "match": "New Zealand vs Belgium",
+      "sourceType": "official fixture + model/context watch",
+      "title": "Belgium 名字很大，但前兩戰只拿兩分；再不把球踢進去，豪門濾鏡也救不了場面。",
+      "sorenTake": "這場我仍偏 Belgium，可是 Group G 的分數逼得他們不能再慢熱。New Zealand 的路線很簡單：撐住前段、把比利時的焦躁拉滿；一旦又變成空有射門沒進球，爆冷劇本就會從笑話變成警報。",
+      "signals": [
+        "FIFA match centre 確認 New Zealand vs Belgium 於溫哥華進行，是 Group G 最後一輪賽事。",
+        "FIFA 賽前頁提供本場官方賽事脈絡，但未見公開確認先發；不把預測陣容寫成事實。",
+        "Opta Analyst 賽前模型明顯偏 Belgium，同時指出 Belgium 世界盃近期進球效率壓力，適合列為紙上校準參考而非投注建議。"
+      ],
+      "sources": [
+        { "label": "FIFA match centre", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021481", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "confirmed", "confidence": "high" },
+        { "label": "FIFA New Zealand-Belgium preview", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/new-zealand-belgium-preview-live-stream-team-news-tickets", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "context", "confidence": "high" },
+        { "label": "Opta Analyst preview", "url": "https://theanalyst.com/articles/new-zealand-vs-belgium-prediction-world-cup-2026-match-preview", "sourceName": "Opta Analyst", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "odds-reference/context", "confidence": "medium" }
+      ],
+      "confidence": "medium-high"
+    },
+    {
       "matchId": "m060",
       "match": "Jordan vs Argentina",
       "sourceType": "rotation report",
@@ -140,6 +158,77 @@
         { "label": "NBC News Group L context", "url": "https://www.nbcnews.com/sports/soccer/live-blog/fifa-world-cup-games-2026-june-23-live-updates-rcna351348", "sourceName": "NBC News", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "high" }
       ],
       "confidence": "medium-high"
+    },
+    {
+      "matchId": "m072",
+      "match": "Croatia vs Ghana",
+      "sourceType": "official fixture + qualification context",
+      "title": "Croatia 對 Ghana 是 L 組真正的刀口：一邊搶第二，一邊不想把命交給第三名算術。",
+      "sorenTake": "England 那邊比較吵，但這場更像暗巷決鬥。Croatia 贏球就能把晉級路線踢得乾淨；Ghana 則帶著不敗分數進來，沒必要陪你打開放足球。Soren 會把它標成低容錯局，不是漂亮履歷展示。",
+      "signals": [
+        "FIFA 官方預覽確認 Croatia vs Ghana 為 Group L 賽事，地點 Philadelphia Stadium，並指出兩隊世界盃首次交手。",
+        "RotoWire 賽前頁將本場放在 Group L 晉級形勢中：Croatia 三分，勝 Ghana 可大幅改善直接晉級機會。",
+        "目前未見可公開確認先發；預測 XI 只作情境參考，不當成官方陣容。"
+      ],
+      "sources": [
+        { "label": "FIFA Croatia-Ghana preview", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/croatia-ghana-live-stream-team-news-tickets", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "confirmed/context", "confidence": "high" },
+        { "label": "RotoWire preview", "url": "https://www.rotowire.com/soccer/article/croatia-vs-ghana-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-l-119773", "sourceName": "RotoWire", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/context", "confidence": "medium" }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m065",
+      "match": "Colombia vs Portugal",
+      "sourceType": "qualification context + expected-XI watch",
+      "title": "Colombia 兩戰六分不是裝飾品；Portugal 想舒服晉級，先別把平局劇本演成自滿。",
+      "sorenTake": "這場可能不像淘汰賽那樣撕破臉，因為一分對雙方都有價值；但也正因如此，誰先失誤誰就會被迫改劇本。Colombia 的小組頭名籌碼很硬，Portugal 的前場選擇則讓輪換與火力平衡變成看點。",
+      "signals": [
+        "ABC News 賽事脈絡指出 Colombia 兩戰六分，對 Portugal 拿到平局即可鎖定小組第一；該平局也足以讓 Portugal 晉級。",
+        "The Stats Zone 預覽同樣強調 Colombia 只需一和可鎖定 Group K 第一。",
+        "Sports Mole 賽前摘要提到 Portugal 前場人選競爭，包括 Bernardo Silva、Rafael Leao、Joao Felix 等；屬預期陣容訊號，不是確認先發。"
+      ],
+      "sources": [
+        { "label": "ABC News Australia live context", "url": "https://www.abc.net.au/news/2026-06-24/fifa-world-cup-live-portugal-cristiano-ronaldo-england-ghana/106833962", "sourceName": "ABC News Australia", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "context", "confidence": "high" },
+        { "label": "The Stats Zone preview", "url": "https://www.thestatszone.com/colombia-vs-portugal-preview-team-news-prediction-fifa-world-cup-2026-group-stage-201363", "sourceName": "The Stats Zone", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "context/tactical", "confidence": "medium" },
+        { "label": "Sports Mole preview", "url": "https://www.sportsmole.co.uk/football/portugal/world-cup-2026/preview/colombia-vs-portugal-prediction-team-news-lineups_600099.html", "sourceName": "Sports Mole", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/lineup-watch", "confidence": "medium" }
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "matchId": "m066",
+      "match": "Democratic Republic of the Congo vs Uzbekistan",
+      "sourceType": "official fixture + tactical/player-form watch",
+      "title": "DR Congo 對 Uzbekistan 是 K 組地下室互砍：不是星光局，但錯一步就直接出局味。",
+      "sorenTake": "這場沒有豪門濾鏡可以遮醜。Uzbekistan 需要修補攻守平衡，DR Congo 則要把低比分拉進自己能活的區間；我會把它看成細節戰，門將、定位球和第一個失誤比名氣更值錢。",
+      "signals": [
+        "FIFA match centre 確認 Congo DR vs Uzbekistan 於 Atlanta Stadium 進行。",
+        "The Stats Zone 指 Uzbekistan 仍在尋找攻守平衡，並提到門將人選與上場表現成為觀察點。",
+        "Sports Mole 賽前摘要點出 Abbosbek Fayzullaev 是 Uzbekistan 目前本屆進球來源之一，屬球員狀態/進攻線索。"
+      ],
+      "sources": [
+        { "label": "FIFA match centre", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021500", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "confirmed", "confidence": "high" },
+        { "label": "The Stats Zone preview", "url": "https://www.thestatszone.com/congo-dr-vs-uzbekistan-preview-team-news-prediction-fifa-world-cup-2026-group-stage-201365", "sourceName": "The Stats Zone", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/tactical", "confidence": "medium" },
+        { "label": "Sports Mole preview", "url": "https://www.sportsmole.co.uk/football/congo-dr/world-cup-2026/preview/congo-dr-vs-uzbekistan-prediction-team-news-lineups_600068.html", "sourceName": "Sports Mole", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/player-form", "confidence": "medium" }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m059",
+      "match": "Algeria vs Austria",
+      "sourceType": "qualification context + injury/suspension watch",
+      "title": "Algeria 對 Austria 是 J 組第二名的正面互毆；Argentina 已上岸，剩下的人自己游。",
+      "sorenTake": "這場的重點不是誰名氣更順口，而是誰能把保證晉級名額搶下來。公開預覽暫未給出可靠確認傷停或先發，所以我只把它標成高壓對撞，不假裝知道更衣室答案。紙上賠率可做紀錄，不能拿來煽動下注。",
+      "signals": [
+        "Goal.com 預覽稱 Algeria vs Austria 是 Group J 爭奪保證晉級 32 強名額的直接對話，Argentina 已確定小組第一。",
+        "Goal.com/EuropeSays 摘要未顯示確認傷停或 probable XI；因此本站不填入未確認先發。",
+        "Oddspedia 顯示本場公開 odds 聚合，可作紙上模擬參考；不提供投注建議或真金流。"
+      ],
+      "sources": [
+        { "label": "Goal.com Algeria-Austria preview", "url": "https://www.goal.com/en-us/news/algeria-austria-world-cup-preview/bltd61a8ee4bb405624", "sourceName": "Goal.com", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/context", "confidence": "medium-high" },
+        { "label": "EuropeSays mirror/context", "url": "https://www.europesays.com/africa/299167/", "sourceName": "EuropeSays", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/context", "confidence": "low-medium" },
+        { "label": "Oddspedia odds reference", "url": "https://oddspedia.com/football/algeria-austria-1654588", "sourceName": "Oddspedia", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "odds-reference", "confidence": "medium" }
+      ],
+      "confidence": "medium"
     }
   ]
 }
