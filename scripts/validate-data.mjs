@@ -7,6 +7,8 @@ if (!Array.isArray(data.matches) || data.matches.length < 100) errors.push(`expe
 if (!Array.isArray(data.groups) || data.groups.length !== 12) errors.push(`expected 12 groups, got ${data.groups?.length}`)
 if (!data.predictions || Object.keys(data.predictions).length !== data.matches.length) errors.push('prediction count mismatch')
 if (!Array.isArray(data.leaderboard) || data.leaderboard.length < 3) errors.push('leaderboard missing')
+if (!data.paperBankroll || typeof data.paperBankroll.bankroll !== 'number') errors.push('paper bankroll missing')
+if (data.paperBankroll && data.paperBankroll.disclaimer && !data.paperBankroll.disclaimer.includes('純娛樂')) errors.push('paper bankroll disclaimer missing')
 for (const match of data.matches || []) {
   if (!match.id || !match.team1 || !match.team2) errors.push(`bad match identity ${JSON.stringify(match)}`)
   const pred = data.predictions?.[match.id]

@@ -67,12 +67,96 @@ function fixtureWindow(matches) {
   return upcoming.length ? upcoming : matches.filter((m) => m.status !== 'finished').slice(0, 12)
 }
 
+const PAPER_BANKROLL_START = '2026-06-26T08:00:00.000Z'
+const PAPER_INITIAL_BANKROLL = 100
+
+function impliedMarketProb(match, outcome) {
+  const r1 = TEAM_PRIORS[match.team1] ?? 67
+  const r2 = TEAM_PRIORS[match.team2] ?? 67
+  const diff = (r1 - r2) / 18
+  let home = 0.37 + diff * 0.08
+  let away = 0.34 - diff * 0.08
+  let draw = 0.29 - Math.min(Math.abs(diff), 1.6) * 0.025
+  home = Math.max(0.12, Math.min(0.76, home))
+  away = Math.max(0.12, Math.min(0.76, away))
+  draw = Math.max(0.16, Math.min(0.34, draw))
+  const total = home + draw + away
+  const probs = { home: home / total, draw: draw / total, away: away / total }
+  return probs[outcome]
+}
+
+function outcomeFromPick(match, pick) {
+  if (pick === match.team1) return 'home'
+  if (pick === match.team2) return 'away'
+  if (pick === '平手') return 'draw'
+  return null
+}
+
+function outcomeLabel(match, outcome) {
+  if (outcome === 'home') return match.team1
+  if (outcome === 'away') return match.team2
+  return '平手'
+}
+
+function actualOutcome(match) {
+  if (!Array.isArray(match.score)) return null
+  const [a, b] = match.score.map(Number)
+  if (a > b) return 'home'
+  if (b > a) return 'away'
+  return 'draw'
+}
+
+function buildPaperBankroll(matches, predictions) {
+  let bankroll = PAPER_INITIAL_BANKROLL
+  const settled = []
+  const pending = []
+  const candidates = []
+  for (const match of matches) {
+    if (!match.kickoffUtc || new Date(match.kickoffUtc) < new Date(PAPER_BANKROLL_START)) continue
+    const pred = predictions[match.id]
+    const outcome = outcomeFromPick(match, pred.pick)
+    if (!outcome) continue
+    const sorenProb = pred.probabilities[outcome]
+    const marketProb = impliedMarketProb(match, outcome)
+    const decimalOdds = Number(Math.max(1.25, Math.min(7.5, 0.94 / marketProb)).toFixed(2))
+    const edge = sorenProb * decimalOdds - 1
+    const stake = Number(Math.max(1, Math.min(8, PAPER_INITIAL_BANKROLL * Math.max(0.01, edge) * 0.22)).toFixed(2))
+    const bet = { matchId: match.id, kickoffUtc: match.kickoffUtc, stage: match.stage, team1: match.team1, team2: match.team2, pick: outcomeLabel(match, outcome), outcome, stake, decimalOdds, edge: Number(edge.toFixed(3)), modelProbability: Number(sorenProb.toFixed(3)), marketProxyProbability: Number(marketProb.toFixed(3)), reason: pred.commentary?.headline || pred.reasons?.[0] || '模型判讀' }
+    if (match.status === 'finished') {
+      const won = actualOutcome(match) === outcome
+      const profit = Number((won ? stake * (decimalOdds - 1) : -stake).toFixed(2))
+      bankroll = Number((bankroll + profit).toFixed(2))
+      settled.push({ ...bet, status: won ? 'won' : 'lost', score: match.score, profit })
+    } else if (edge > -0.08 && pending.length < 5) {
+      pending.push({ ...bet, status: 'pending' })
+    } else {
+      candidates.push({ ...bet, status: 'watchlist' })
+    }
+  }
+  const openStake = Number(pending.reduce((sum, bet) => sum + bet.stake, 0).toFixed(2))
+  return {
+    disclaimer: '純娛樂紙上模擬，不是真實金錢、不連結任何投注平台、不構成投注建議。',
+    startedAt: PAPER_BANKROLL_START,
+    currency: 'USD-paper',
+    initialBankroll: PAPER_INITIAL_BANKROLL,
+    bankroll,
+    openStake,
+    totalValue: Number((bankroll).toFixed(2)),
+    roi: Number(((bankroll - PAPER_INITIAL_BANKROLL) / PAPER_INITIAL_BANKROLL).toFixed(3)),
+    rules: 'Soren 只用紙上本金 100 美金；以模型機率對比 rating baseline 產生的「模擬市場價格」挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑。',
+    settled: settled.slice(-12),
+    pending,
+    watchlist: candidates.sort((a, b) => b.edge - a.edge).slice(0, 5),
+  }
+}
+
 const [rawMatches, rawGroups] = await Promise.all([getJson(MATCHES_URL), getJson(GROUPS_URL)])
 const groups = (rawGroups.groups || []).map((g) => ({ name: g.name, teams: g.teams.map(canonicalTeam) }))
 const matches = (rawMatches.matches || []).map(normalizeMatch).sort((a, b) => String(a.kickoffUtc).localeCompare(String(b.kickoffUtc)))
 const standings = computeStandingsFromNormalized(groups, matches)
 const predictions = Object.fromEntries(matches.map((match) => [match.id, predictMatch(match, standings)]))
-const data = { generatedAt: new Date().toISOString(), source: { matches: MATCHES_URL, groups: GROUPS_URL, note: 'Public openfootball data; predictions are deterministic research/entertainment estimates, not betting advice.' }, summary: { totalMatches: matches.length, finishedMatches: matches.filter((m) => m.status === 'finished').length, scheduledMatches: matches.filter((m) => m.status !== 'finished').length, nextWindow: fixtureWindow(matches).map((m) => m.id) }, groups, standings, matches, predictions, leaderboard: buildLeaderboard(groups, matches) }
+const paperBankroll = buildPaperBankroll(matches, predictions)
+const data = { generatedAt: new Date().toISOString(), source: { matches: MATCHES_URL, groups: GROUPS_URL, note: 'Public openfootball data; predictions are deterministic research/entertainment estimates, not betting advice.' }, summary: { totalMatches: matches.length, finishedMatches: matches.filter((m) => m.status === 'finished').length, scheduledMatches: matches.filter((m) => m.status !== 'finished').length, nextWindow: fixtureWindow(matches).map((m) => m.id) }, groups, standings, matches, predictions, leaderboard: buildLeaderboard(groups, matches), paperBankroll }
 await mkdir(path.join(root, 'public/data'), { recursive: true })
 await writeFile(path.join(root, 'public/data/worldcup.json'), JSON.stringify(data, null, 2), 'utf8')
 console.log(`Generated public/data/worldcup.json with ${matches.length} matches at ${data.generatedAt}`)

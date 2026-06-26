@@ -6,6 +6,7 @@ const fmt = (iso, opts) => iso ? new Intl.DateTimeFormat('zh-TW', { timeZone: 'A
 const fmtDate = (iso) => fmt(iso, { month:'numeric', day:'numeric', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false })
 const fmtDay = (iso) => fmt(iso, { month:'numeric', day:'numeric', weekday:'long' })
 const pct = (v) => `${Math.round((v || 0) * 100)}%`
+const money = (v) => `$${Number(v || 0).toFixed(2)}`
 const flag = (team) => FLAG[team] || '⚽'
 
 function Team({ name }) { return <div className="team"><span className="flag">{flag(name)}</span><span>{name}</span></div> }
@@ -23,6 +24,16 @@ function PredictionCard({ match, prediction, compact = false }) {
   </article>
 }
 function Leaderboard({ rows }) { return <section className="panel leaderboard"><div className="section-head"><p>MODEL TRACK RECORD</p><h2>預測追蹤榜</h2></div><div className="leader-list">{rows.map((row) => <div className="leader" key={row.id}><div className="rank">#{row.rank}</div><div><b>{row.name}</b><p>{row.desc}</p></div><div className="leader-score"><b>{row.points}</b><span>{pct(row.accuracy)} 命中</span></div></div>)}</div></section> }
+function PaperBankroll({ bankroll }) {
+  if (!bankroll) return null
+  const delta = bankroll.bankroll - bankroll.initialBankroll
+  return <section className="panel bankroll" id="paper-bankroll">
+    <div className="section-head"><p>PAPER BANKROLL</p><h2>Soren 紙上投注模擬</h2><span>{delta >= 0 ? '+' : ''}{money(delta)}</span></div>
+    <div className="bankroll-grid"><div className="bankroll-main"><b>{money(bankroll.bankroll)}</b><span>目前紙上本金</span><p>{bankroll.disclaimer}</p></div><div className="bankroll-rules"><b>規則</b><p>{bankroll.rules}</p><p>ROI：{pct(bankroll.roi)} · 未結算部位：{money(bankroll.openStake)}</p></div></div>
+    <div className="bet-columns"><div><h3>進行中</h3>{bankroll.pending.length ? bankroll.pending.map((b) => <BetRow key={b.matchId} bet={b}/>) : <p className="muted">目前沒有新部位。</p>}</div><div><h3>最近結算</h3>{bankroll.settled.length ? bankroll.settled.slice(-5).reverse().map((b) => <BetRow key={b.matchId} bet={b}/>) : <p className="muted">模擬起始後尚未結算。</p>}</div></div>
+  </section>
+}
+function BetRow({ bet }) { return <div className={`bet-row ${bet.status}`}><div><b>{bet.team1} vs {bet.team2}</b><p>{fmtDate(bet.kickoffUtc)} · 選擇 {bet.pick} · 模擬賠率 {bet.decimalOdds}</p></div><div><b>{money(bet.stake)}</b><span>{bet.profit == null ? '待結算' : `${bet.profit >= 0 ? '+' : ''}${money(bet.profit)}`}</span></div></div> }
 function Standings({ standings }) { return <section className="panel standings" id="standings"><div className="section-head"><p>GROUP TABLES</p><h2>小組積分榜</h2></div><div className="tables">{Object.entries(standings || {}).map(([name, rows]) => <div className="table-card" key={name}><h3>{name.replace('Group ', '小組 ')}</h3><table><thead><tr><th>隊伍</th><th>賽</th><th>淨</th><th>分</th></tr></thead><tbody>{rows.map((r, idx) => <tr key={r.team} className={idx < 2 ? 'qualified' : ''}><td>{flag(r.team)} {r.team}</td><td>{r.played}</td><td>{r.goalDiff}</td><td><b>{r.points}</b></td></tr>)}</tbody></table></div>)}</div></section> }
 
 function App() {
@@ -42,11 +53,12 @@ function App() {
   if (error) return <main className="shell"><div className="panel"><h1>資料載入失敗</h1><p>{error}</p></div></main>
   if (!data) return <main className="shell"><div className="loading">Soren 正在讀取最新賽事資料…</div></main>
   return <main className="shell">
-    <section className="hero-section"><div className="hero-copy"><span className="eyebrow">SOREN WORLD CUP LAB · 2026</span><h1>世界盃預測儀表板</h1><p>每次資料更新都重新計算賽程、積分、近期狀態與 Poisson 進球分布，公開追蹤 Soren 的預測表現。</p><div className="hero-actions"><a href="#predictions">查看預測</a><a href="#standings" className="ghost">積分榜</a></div></div><div className="hero-card"><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>已完賽</span><b>{data.summary.scheduledMatches}</b><span>待預測/追蹤</span><small>最後更新：{fmtDate(data.generatedAt)}</small></div></section>
+    <section className="hero-section"><div className="hero-copy"><span className="eyebrow">SOREN WORLD CUP LAB · 2026</span><h1>世界盃預測儀表板</h1><p>每次資料更新都重新計算賽程、積分、近期狀態與 Poisson 進球分布，公開追蹤 Soren 的預測表現。</p><div className="hero-actions"><a href="#predictions">查看預測</a><a href="#paper-bankroll" className="ghost">紙上模擬</a><a href="#standings" className="ghost">積分榜</a></div></div><div className="hero-card"><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>已完賽</span><b>{data.summary.scheduledMatches}</b><span>待預測/追蹤</span><small>最後更新：{fmtDate(data.generatedAt)}</small></div></section>
     <div className="notice">內容由程式模型自動產生，僅供研究與娛樂交流；不構成投注、投資或任何保證建議。反對非法博彩。</div>
     <Leaderboard rows={data.leaderboard}/>
+    <PaperBankroll bankroll={data.paperBankroll}/>
     <section className="panel" id="predictions"><div className="section-head"><p>NEXT PREDICTIONS</p><h2>接下來的預測</h2><span>{nextMatches.length} 場</span></div><div className="grid featured">{nextMatches.slice(0, 6).map((m) => <PredictionCard key={m.id} match={m} prediction={data.predictions[m.id]}/>)}</div></section>
-    <section className="panel method"><div><p>METHOD</p><h2>預測方法</h2></div><div className="method-grid"><div><b>1. 隊伍強度先驗</b><span>依國際競爭力設定初始分數。</span></div><div><b>2. 賽會即時狀態</b><span>用已完賽積分、淨勝球微調。</span></div><div><b>3. Poisson 進球模型</b><span>把強度差轉成預期進球與勝平負機率。</span></div><div><b>4. 公開記分</b><span>預測命中 1 分，比分精準 3 分。</span></div></div></section>
+    <section className="panel method"><div><p>METHOD</p><h2>預測方法</h2></div><div className="method-grid"><div><b>1. 隊伍強度先驗</b><span>依國際競爭力設定初始分數。</span></div><div><b>2. 賽會即時狀態</b><span>用已完賽積分、淨勝球微調。</span></div><div><b>3. Poisson 進球模型</b><span>把強度差轉成預期進球與勝平負機率。</span></div><div><b>4. 紙上模擬</b><span>100 美金虛擬本金，只追蹤決策過程。</span></div></div></section>
     <Standings standings={data.standings}/>
     <section className="panel"><div className="section-head"><p>MATCH CENTER</p><h2>全部賽程與預測</h2></div><div className="tabs">{stages.map((s) => <button className={filter === s ? 'active' : ''} key={s} onClick={() => setFilter(s)}>{s}</button>)}</div>{grouped.map(([day, matches]) => <div className="day" key={day}><h3>{day}<span>{matches.length} 場</span></h3><div className="grid">{matches.map((m) => <PredictionCard compact key={m.id} match={m} prediction={data.predictions[m.id]}/>)}</div></div>)}</section>
     <footer>資料來源：openfootball/worldcup.json · 自動部署於 GitHub Pages · Soren project owner</footer>
