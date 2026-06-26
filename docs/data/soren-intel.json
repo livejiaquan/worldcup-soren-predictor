@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-26T12:36:47Z",
-  "status": "schedule-aware-scout-2026-06-26T12Z-added-r32-m074-m075-m076-coverage",
-  "headline": "Soren 補上 6/29 三場 32 強早盤情報：Brazil-Japan、Germany 待第三名、Netherlands-Morocco；未知對手不硬編，市場資訊只作紙上校準。",
+  "generatedAt": "2026-06-26T13:09:43Z",
+  "status": "schedule-aware-scout-2026-06-26T13Z-refreshed-matchday16-live-watch",
+  "headline": "Soren 補強 6/26 Matchday 16 臨場巡檢：Norway-France 增加直播/預測 XI 脈絡，Cape Verde-Saudi 增加今日賽程與紙上市場參考；未確認先發一律不硬編。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -80,7 +80,10 @@
         "FIFA match centre 確認 Norway vs France 於 2026-06-26 19:00 UTC 在 Foxborough/Boston Stadium 開球。",
         "Al Jazeera 賽前文指出這是 Group I 頭名之戰，並提到短休與輪換可能。",
         "News18 預覽指出兩隊都已晉級淘汰賽，但小組第一仍待決。",
-        "FIFA match centre 已核對可連線，作為臨場比分/陣容官方入口；截至本次巡檢未見確認先發，仍不把預測 XI 寫成事實。"
+        "FIFA match centre 已核對可連線，作為臨場比分/陣容官方入口；截至本次巡檢未見確認先發，仍不把預測 XI 寫成事實。",
+        "Guardian 6/26 即時頁把本場列為 Haaland vs Mbappé 主軸並持續更新賽前動態；屬賽事直播脈絡，不等於官方先發。",
+        "USA Today 6/26 刊出 France projected lineup；Soren 只把它當預測 XI 訊號，正式名單仍等 FIFA/球隊公布。",
+        "Al Jazeera 6/26 賽程頁重申 Groups G/H/I 今日收官、France-Norway 爭 Group I 頭名，輪換與搶第一誘因同時存在。"
       ],
       "sources": [
         {
@@ -106,6 +109,30 @@
           "fetchedAt": "2026-06-26T10:03:38Z",
           "claimType": "context",
           "confidence": "medium"
+        },
+        {
+          "label": "Guardian tournament live blog",
+          "url": "https://www.theguardian.com/football/live/2026/jun/26/world-cup-2026-norway-france-senegal-iraq-cape-verde-saudi-arabia-uruguay-spain-egypt-iran-new-zealand-belgium-live",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-26T13:09:43Z",
+          "claimType": "context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "USA Today France projected lineup",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/26/france-lineup-norway-world-cup-group-match/90704022007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-06-26T13:09:43Z",
+          "claimType": "reported",
+          "confidence": "medium"
+        },
+        {
+          "label": "Al Jazeera Friday schedule tracker",
+          "url": "https://www.aljazeera.com/sports/2026/6/26/fifa-world-cup-friday-schedule-predictions-standings-knockout-race",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-26T13:09:43Z",
+          "claimType": "context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -170,7 +197,9 @@
         "Reuters/Straits Times 報導 Cape Verde defender Pico Lopes 表示 32 強席位在可及範圍內，但 Saudi Arabia 仍會被同等尊重。",
         "RotoWire 報導 Cape Verde 缺少停賽的 Sidny Lopes Cabral。",
         "Sports Mole 報導 Cape Verde 對 Saudi Arabia 可能有三名球員缺陣。",
-        "FotMob 傷停頁面同時列出 Cape Verde 的 Sidny Lopes Cabral 停賽與 Telmo Arcanjo 傷情，Saudi Arabia 暫無 unavailable players；此為賽前資料頁，仍需臨場確認。"
+        "FotMob 傷停頁面同時列出 Cape Verde 的 Sidny Lopes Cabral 停賽與 Telmo Arcanjo 傷情，Saudi Arabia 暫無 unavailable players；此為賽前資料頁，仍需臨場確認。",
+        "Al Jazeera 6/26 今日賽程頁確認 Group H 最後一輪仍有出線/名次壓力，Cape Verde 與 Saudi Arabia 都不是友誼賽心態。",
+        "USA Today 6/26 odds/picks 頁提供公開市場參考；本站只作紙上模擬校準，不提供下注建議。"
       ],
       "sources": [
         {
@@ -219,6 +248,22 @@
           "sourceName": "FotMob",
           "fetchedAt": "2026-06-26T11:20:00Z",
           "claimType": "reported",
+          "confidence": "medium"
+        },
+        {
+          "label": "Al Jazeera Friday schedule tracker",
+          "url": "https://www.aljazeera.com/sports/2026/6/26/fifa-world-cup-friday-schedule-predictions-standings-knockout-race",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-26T13:09:43Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "USA Today Cape Verde-Saudi odds reference",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/26/cape-verde-saudi-arabia-world-cup-prediction-analysis-odds/90703901007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-06-26T13:09:43Z",
+          "claimType": "odds-reference",
           "confidence": "medium"
         }
       ],
