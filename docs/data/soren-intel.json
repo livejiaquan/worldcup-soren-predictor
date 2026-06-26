@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-26T19:23:51Z",
-  "status": "schedule-aware-scout-20260626T192351Z-late-matchday16-watch",
-  "headline": "Soren Matchday 16 晚間巡檢：補上 Cape Verde-Saudi、Uruguay-Spain、Egypt-Iran、New Zealand-Belgium 的官方 match-centre、晚間陣容觀察與紙上市場溫度；仍未把媒體 predicted XI 寫成官方先發。",
+  "generatedAt": "2026-06-26T19:55:51Z",
+  "status": "schedule-aware-scout-20260626T195551Z-live-centre-and-md17-watch",
+  "headline": "Soren 19:55Z 巡檢：補上 Matchday 16 晚場 BBC/ESPN/FIFA live-centre 與 Matchday 17 的 Opta、RotoWire、FotMob、公開 odds 觀察；仍把 predicted XI 留在 lineup-watch，不冒充官方先發。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -275,7 +275,7 @@
     {
       "matchId": "m048",
       "match": "Uruguay vs Spain",
-      "sourceType": "news + tactical preview + injury/odds watch + late official/lineup/odds watch",
+      "sourceType": "news + tactical preview + injury/odds watch + live-centre watch",
       "title": "Spain 比較像答案，但 Uruguay 正是那種會把漂亮控球拖進泥地的麻煩隊。",
       "sorenTake": "我仍偏 Spain，可是 Pedri 停賽、Uruguay 必須拿首勝、Bielsa 已經對兩分局面不爽——這三件事合在一起，足夠讓『西班牙舒服控到死』這句話先降級成半信半疑。",
       "signals": [
@@ -291,7 +291,10 @@
         "19Z 後巡檢補強：FIFA Matchday 16 官方預覽把 Uruguay-Spain 列為當日焦點之一，這場仍是小組命運與排序戰，不是表演賽。",
         "FIFA Uruguay-Spain match centre 已列為正式先發/比分/即時更新硬入口；媒體 projected XI 仍只寫成 lineup-watch。",
         "ESPN 賽前導覽把本場定位為 Group H 前二直接對話，並指出 Spain 和局即可鎖定資格；這會讓 Uruguay 的主動風險更高。",
-        "Sporting News/FOX/CBS 類頁面提供 projected lineups 與公開盤口語境；Spain 熱門可以記錄，但 Soren 不把市場價格當成戰術事實。"
+        "Sporting News/FOX/CBS 類頁面提供 projected lineups 與公開盤口語境；Spain 熱門可以記錄，但 Soren 不把市場價格當成戰術事實。",
+        "19:55Z 補核：BBC 與 ESPN 都已開 Uruguay-Spain 即時/比分入口；FIFA match centre 仍是正式先發最高優先來源。",
+        "Evening Standard、LiveScore、Squawka 類頁面提供 expected/predicted XI 與公開 odds 脈絡；在官方名單前只列為 lineup-watch。",
+        "Chosun Daily 搜尋索引出現 Uruguay 更衣室不穩/球員與 Bielsa 對話的說法；尚未被官方或多家高可信來源交叉確認，先只作低到中等信心心理噪音。"
       ],
       "sources": [
         {
@@ -413,14 +416,46 @@
           "fetchedAt": "2026-06-26T19:23:51Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "BBC Uruguay-Spain live text",
+          "url": "https://www.bbc.com/sport/football/live/cx2kqd1ywzdt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "context/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Uruguay-Spain live coverage",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760479/spain-uruguay",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "context/live-stats",
+          "confidence": "high"
+        },
+        {
+          "label": "Evening Standard Spain XI watch",
+          "url": "https://www.standard.co.uk/sport/football/spain-vi-vs-uruguay-confirmed-team-news-predicted-lineup-injury-latest-for-world-cup-2026-b1287589.html",
+          "sourceName": "Evening Standard",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Chosun Uruguay locker-room report",
+          "url": "https://www.chosun.com/english/sports-en/2026/06/27/QCQVCYQPF5FZVFXNKTPQUDUYLI/",
+          "sourceName": "Chosun Daily",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/context",
+          "confidence": "low-medium"
         }
       ],
-      "confidence": "high"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m047",
       "match": "Cape Verde vs Saudi Arabia",
-      "sourceType": "qualification context + injury/suspension/odds watch + late official/lineup/odds watch",
+      "sourceType": "qualification context + injury/suspension/odds watch + live-centre watch",
       "title": "Cape Verde 只差把童話簽收；Saudi Arabia 則得把門踹開，沒空優雅。",
       "sorenTake": "這是典型的生存局：Cape Verde 平局可能就夠，Saudi Arabia 必須更冒險。問題是 Cape Verde 傷停訊號不乾淨，Sidny Lopes Cabral 停賽與可能缺人，讓他們的『守住就好』沒有看起來那麼便宜。",
       "signals": [
@@ -439,7 +474,9 @@
         "19Z 後巡檢補強：FIFA Matchday 16 官方預覽指出 Cape Verde 贏球可延續童話，和局也可能足以晉級；這強化「守住不是消極，是數學」的比賽脈絡。",
         "FIFA Cape Verde-Saudi Arabia match centre 是正式先發/即時更新的硬入口；截至巡檢只作 lineup-watch，不把任何媒體預測升格為官方。",
         "RotoWire World Cup lineups 頁標示會彙整 predicted/confirmed starters、formations、injuries/team news；目前只能作臨場陣容監控清單。",
-        "FanDuel Research/CBS 公開盤面仍顯示這不是一面倒：Cape Verde 與 Saudi Arabia 價格接近，紙上模擬只記市場溫度，不提供下注建議。"
+        "FanDuel Research/CBS 公開盤面仍顯示這不是一面倒：Cape Verde 與 Saudi Arabia 價格接近，紙上模擬只記市場溫度，不提供下注建議。",
+        "19:55Z 補核：BBC 已開 Cape Verde-Saudi Arabia 即時文字頁，ESPN/FOX 也有比分與數據入口；這些可作臨場追蹤，不等於本站已讀到官方先發。",
+        "USA Today 與 FanDuel Research 仍把本場當接近 pick’em 的公開市場參考；紙上模擬只記市場溫度，不提供下注建議。"
       ],
       "sources": [
         {
@@ -569,14 +606,38 @@
           "fetchedAt": "2026-06-26T19:23:51Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "BBC Cape Verde-Saudi live text",
+          "url": "https://www.bbc.com/sport/football/live/c0qylv2wdvvt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "context/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Cape Verde-Saudi live coverage",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760478/arabia-saudita-cabo-verde",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "context/live-stats",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Cape Verde-Saudi boxscore",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-cape-verde-vs-saudi-arabia-jun-26-2026-game-boxscore-647679",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "context/odds-reference",
+          "confidence": "medium-high"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m041",
       "match": "Egypt vs Iran",
-      "sourceType": "group context + venue/social context + lineup/odds watch + late official/lineup/odds/social watch",
+      "sourceType": "group context + venue/social context + lineup/odds watch + live-centre watch",
       "title": "Egypt 領跑但別裝睡；Iran 還活著，Seattle 這場場外溫度也不低。",
       "sorenTake": "Group G 的數學還沒關門。Egypt 有分數優勢，Iran 需要更積極；同時這場被 Seattle 標成 Pride Match，場外敘事很多，但我只把它當環境噪音，不把政治熱度偷換成足球證據。",
       "signals": [
@@ -592,7 +653,9 @@
         "19Z 後巡檢補強：FIFA Egypt-Iran match centre 作為正式先發/即時更新硬入口；截至巡檢未找到官方 XI，ESPN/SI/Sports Mole 只作 predicted-XI 觀察。",
         "ESPN 與 Sports Illustrated 的 Egypt-Iran 預覽都提供 predicted lineups/team-news 語境；Soren 只採用為賽前形狀提示，不寫成「誰必定先發」。",
         "Sofascore/Covers 公開盤面把 Egypt-Iran 描述為接近、低比分傾向的刀片局；紙上紀錄市場溫度，不是下注建議。",
-        "Reddit/X 搜尋索引可見 Pride Match 場外討論，但未可靠讀取完整留言；本站只標記為 social-indexed context，不把不可見留言包裝成民意。"
+        "Reddit/X 搜尋索引可見 Pride Match 場外討論，但未可靠讀取完整留言；本站只標記為 social-indexed context，不把不可見留言包裝成民意。",
+        "19:55Z 補核：BBC Egypt-Iran 即時頁已開，FIFA match centre 仍作正式先發與比分硬入口。",
+        "USA Today 公開 odds/picks 頁補上 Lumen Field 開球與市場觀察；本站只作紙上市場溫度，不提供下注建議。"
       ],
       "sources": [
         {
@@ -698,6 +761,22 @@
           "fetchedAt": "2026-06-26T19:23:51Z",
           "claimType": "social-search",
           "confidence": "low-medium"
+        },
+        {
+          "label": "BBC Egypt-Iran live build-up",
+          "url": "https://www.bbc.com/sport/football/live/cgmd2kpyvggt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "context/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "USA Today Egypt-Iran odds reference",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/26/egypt-iran-world-cup-prediction-analysis-odds/90703903007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -705,7 +784,7 @@
     {
       "matchId": "m042",
       "match": "New Zealand vs Belgium",
-      "sourceType": "official fixture + model/context watch + injury/odds watch + late official/live/injury/odds watch",
+      "sourceType": "official fixture + model/context watch + injury/odds watch + live-centre watch",
       "title": "Belgium 名字很大，但前兩戰只拿兩分；再不把球踢進去，豪門濾鏡也救不了場面。",
       "sorenTake": "這場我仍偏 Belgium，可是 Group G 的分數逼得他們不能再慢熱。New Zealand 的路線很簡單：撐住前段、把比利時的焦躁拉滿；一旦又變成空有射門沒進球，爆冷劇本就會從笑話變成警報。",
       "signals": [
@@ -720,7 +799,9 @@
         "19Z 後巡檢補強：BBC 已有 New Zealand-Belgium 即時頁，作為可公開追蹤的 live-centre；正式先發仍以 FIFA/球隊為最高優先。",
         "Covers 傷停摘要把 Belgium 的 Zeno Debast、Jérémy Doku 標成 questionable，Nathan Ngoy out；New Zealand 暫無 injuries listed。這是賽前頁資訊，需臨場覆核。",
         "Sports Illustrated predicted XI 明確提到 Belgium 必須替換因對 Iran 直紅停賽的 Nathan Ngoy；這強化 Belgium 後防不是無痛輪換。",
-        "Bleacher Nation/BetUS 公開盤面仍把 Belgium 放在強熱門端；但強熱門與已解決進球效率是兩件事，Soren 不把賠率當保證書。"
+        "Bleacher Nation/BetUS 公開盤面仍把 Belgium 放在強熱門端；但強熱門與已解決進球效率是兩件事，Soren 不把賠率當保證書。",
+        "19:55Z 補核：BBC New Zealand-Belgium live build-up 與 FotMob live-stats/lineups tracker 已可作臨場監控；仍未把任何搜尋片段升格成官方先發。",
+        "SportsLens 公開盤面把 Belgium 放在明顯熱門端；但 Belgium 的進球效率與防線停賽仍是 Soren 的爆冷警報，不是賠率能洗掉的問題。"
       ],
       "sources": [
         {
@@ -818,6 +899,22 @@
           "fetchedAt": "2026-06-26T19:23:51Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "FotMob New Zealand-Belgium live tracker",
+          "url": "https://www.fotmob.com/matches/new-zealand-vs-belgium/1n1sct",
+          "sourceName": "FotMob",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "context/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "SportsLens New Zealand-Belgium odds reference",
+          "url": "https://sportslens.com/news/new-zealand-v-belgium-predictions/",
+          "sourceName": "SportsLens",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -825,14 +922,16 @@
     {
       "matchId": "m060",
       "match": "Jordan vs Argentina",
-      "sourceType": "rotation report",
+      "sourceType": "rotation report + lineup/injury watch",
       "title": "Argentina 可能輪換，Messi 可能休；這種消息會讓大熱門比分預測直接少一層底氣。",
       "sorenTake": "如果 Scaloni 真把淘汰賽優先，Argentina 還是強，但不一定會用最殘忍的方式處理 Jordan。大熱門不是不能追，只是別拿完整主力的模型去套一場可能踩剎車的比賽。",
       "signals": [
         "Reuters 報導 Argentina 預計對已淘汰的 Jordan 輪換，Messi 可能休息。",
         "The Star 轉載 Reuters 同一脈絡，指出 Scaloni 可能在 32 強前保護主力。",
         "Rediff 報導輪換可能讓 Julián Álvarez、Nicolás Tagliafico 等回歸球員增加上場時間。",
-        "FIFA match report 確認 Jordan 6 月 22 日以 1-2 不敵 Algeria，已處在低位情境。"
+        "FIFA match report 確認 Jordan 6 月 22 日以 1-2 不敵 Algeria，已處在低位情境。",
+        "19:55Z 補核：RotoWire 與 ESPN 都已出 Jordan-Argentina predicted-lineup/team-news 頁；Scaloni 輪換仍是主線，但 Messi 是否維持比賽感不能用搜尋標題寫死。",
+        "Bolavip 搜尋索引稱 Cristian Romero 因對 Austria 受傷將缺席 Jordan；未見官方確認前先列為 reported availability watch。"
       ],
       "sources": [
         {
@@ -866,14 +965,38 @@
           "fetchedAt": "2026-06-26T10:03:38Z",
           "claimType": "confirmed",
           "confidence": "high"
+        },
+        {
+          "label": "RotoWire Jordan-Argentina preview",
+          "url": "https://www.rotowire.com/soccer/article/jordan-vs-argentina-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-j-119777",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "ESPN Jordan-Argentina predicted lineups",
+          "url": "https://www.espn.com/soccer/story/_/id/49173254/fifa-world-cup-2026-jordan-vs-argentina-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Bolavip Cristian Romero availability watch",
+          "url": "https://bolavip.com/en/world-cup/lionel-messi-argentina-lose-cristian-romero-vs-jordan-but-avoid-major-world-cup-scare",
+          "sourceName": "Bolavip",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/injury-watch",
+          "confidence": "medium"
         }
       ],
-      "confidence": "high"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m071",
       "match": "Panama vs England",
-      "sourceType": "injury watch + group context",
+      "sourceType": "injury watch + group context + lineup/odds watch",
       "title": "England 還是該拿下，但 Rice 和 Reece James 的訓練缺席讓『穩』字被我打了個問號。",
       "sorenTake": "Panama 不是紙糊的，但 England 的天花板仍明顯更高。真正要盯的是 Southgate 怎麼處理疑似傷情與小組頭名壓力；如果中場保護層少一塊，這場就不該只看隊徽大小。",
       "signals": [
@@ -881,7 +1004,8 @@
         "Goal.com 報導 Reece James 與 Declan Rice 缺席訓練，成為對 Panama 前的傷情疑問。",
         "Yahoo Sports 也刊出相同傷情脈絡，指兩人缺席訓練。",
         "NBC News 報導 England 前一場與 Ghana 0-0，Croatia 則 1-0 擊敗 Panama。",
-        "Sports Mole 6/26 賽前頁提供 Panama-England possible lineups/team news；Rice 是否輪休或保護仍是 predicted-XI 層級，不能當確認先發。"
+        "Sports Mole 6/26 賽前頁提供 Panama-England possible lineups/team news；Rice 是否輪休或保護仍是 predicted-XI 層級，不能當確認先發。",
+        "19:55Z 補核：FotMob 已列 Panama-England live-stats/predicted-lineups tracker；Radio Times 與 bet365 News 也提供 team-news/predicted-XI 入口。這些都不是官方先發。"
       ],
       "sources": [
         {
@@ -931,6 +1055,30 @@
           "claimType": "reported/tactical",
           "confidence": "medium",
           "fetchedAt": "2026-06-26T17:35:17Z"
+        },
+        {
+          "label": "FotMob Panama-England tracker",
+          "url": "https://www.fotmob.com/matches/panama-vs-england/1pukme",
+          "sourceName": "FotMob",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "context/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Radio Times Panama-England team news",
+          "url": "https://www.radiotimes.com/tv/sport/football/panama-england-world-cup-2026-team-news/",
+          "sourceName": "Radio Times",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "bet365 News Panama-England expected lineups",
+          "url": "https://news.bet365.com/en-us/article/panama-vs-england-how-to-watch-news-expected-lineups/2026062521333865105",
+          "sourceName": "bet365 News US",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -938,7 +1086,7 @@
     {
       "matchId": "m072",
       "match": "Croatia vs Ghana",
-      "sourceType": "official fixture + qualification context",
+      "sourceType": "official fixture + qualification context + tactical/model watch",
       "title": "Croatia 對 Ghana 是 L 組真正的刀口：一邊搶第二，一邊不想把命交給第三名算術。",
       "sorenTake": "England 那邊比較吵，但這場更像暗巷決鬥。Croatia 贏球就能把晉級路線踢得乾淨；Ghana 則帶著不敗分數進來，沒必要陪你打開放足球。Soren 會把它標成低容錯局，不是漂亮履歷展示。",
       "signals": [
@@ -946,7 +1094,9 @@
         "RotoWire 賽前頁將本場放在 Group L 晉級形勢中：Croatia 三分，勝 Ghana 可大幅改善直接晉級機會。",
         "目前未見可公開確認先發；預測 XI 只作情境參考，不當成官方陣容。",
         "Sports Mole 6/26 Croatia-Ghana preview 補上 possible lineups/team news 來源；這場仍是預測陣容觀察，不是官方先發。",
-        "The Stats Zone 將 Croatia-Ghana 定位為 Group L 出線壓力局；Croatia 可衝直接晉級，Ghana 帶四分進場更可能先控風險。"
+        "The Stats Zone 將 Croatia-Ghana 定位為 Group L 出線壓力局；Croatia 可衝直接晉級，Ghana 帶四分進場更可能先控風險。",
+        "19:55Z 補核：Opta supercomputer 賽前模擬偏 Croatia，但 Ghana 可能延續逼平 England 的低風險配置；這場仍是出線刀口，不是履歷展示。",
+        "Squawka / Betfred 類 team-news 頁只列 predicted XI 與情境，不當成官方先發。"
       ],
       "sources": [
         {
@@ -980,20 +1130,38 @@
           "claimType": "reported/context",
           "confidence": "medium",
           "fetchedAt": "2026-06-26T17:35:17Z"
+        },
+        {
+          "label": "Opta Analyst Croatia-Ghana preview",
+          "url": "https://theanalyst.com/articles/croatia-vs-ghana-prediction-world-cup-2026-match-preview",
+          "sourceName": "Opta Analyst",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/tactical",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Squawka Croatia-Ghana team news",
+          "url": "https://www.squawka.com/en/news/world-cup/croatia-vs-ghana-team-news-predicted-lineups/",
+          "sourceName": "Squawka",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m065",
       "match": "Colombia vs Portugal",
-      "sourceType": "qualification context + expected-XI watch",
+      "sourceType": "qualification context + expected-XI/odds watch",
       "title": "Colombia 兩戰六分不是裝飾品；Portugal 想舒服晉級，先別把平局劇本演成自滿。",
       "sorenTake": "這場可能不像淘汰賽那樣撕破臉，因為一分對雙方都有價值；但也正因如此，誰先失誤誰就會被迫改劇本。Colombia 的小組頭名籌碼很硬，Portugal 的前場選擇則讓輪換與火力平衡變成看點。",
       "signals": [
         "ABC News 賽事脈絡指出 Colombia 兩戰六分，對 Portugal 拿到平局即可鎖定小組第一；該平局也足以讓 Portugal 晉級。",
         "The Stats Zone 預覽同樣強調 Colombia 只需一和可鎖定 Group K 第一。",
-        "Sports Mole 賽前摘要提到 Portugal 前場人選競爭，包括 Bernardo Silva、Rafael Leao、Joao Felix 等；屬預期陣容訊號，不是確認先發。"
+        "Sports Mole 賽前摘要提到 Portugal 前場人選競爭，包括 Bernardo Silva、Rafael Leao、Joao Felix 等；屬預期陣容訊號，不是確認先發。",
+        "19:55Z 補核：RotoWire predicted XI 把 Colombia 拉成 Díaz/James/Luis Suárez 前場、Portugal 則是 Ronaldo 頂前的 4-2-3-1 形狀；這是戰術觀察，不是官方先發。",
+        "Oddschecker/Tips.gg 盤面與射手市場顯示 Ronaldo 仍是市場焦點，但 Colombia 兩戰六分的積分籌碼才是這場真正的底牌。"
       ],
       "sources": [
         {
@@ -1019,6 +1187,30 @@
           "fetchedAt": "2026-06-26T10:40:30Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "RotoWire Colombia-Portugal preview",
+          "url": "https://www.rotowire.com/soccer/article/colombia-vs-portugal-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-k-119775",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Oddschecker Colombia-Portugal odds",
+          "url": "https://www.oddschecker.com/us/soccer/world-cup/colombia-v-portugal",
+          "sourceName": "Oddschecker US",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "101 Great Goals Colombia-Portugal preview",
+          "url": "https://www.101greatgoals.com/match-previews/world-cup-matches/colombia-v-portugal-line-ups-stats-preview-tv-channel-live-online-stream-prediction/",
+          "sourceName": "101 Great Goals",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -1026,13 +1218,15 @@
     {
       "matchId": "m066",
       "match": "Democratic Republic of the Congo vs Uzbekistan",
-      "sourceType": "official fixture + tactical/player-form watch",
+      "sourceType": "official fixture + tactical/player-form/model watch",
       "title": "DR Congo 對 Uzbekistan 是 K 組地下室互砍：不是星光局，但錯一步就直接出局味。",
       "sorenTake": "這場沒有豪門濾鏡可以遮醜。Uzbekistan 需要修補攻守平衡，DR Congo 則要把低比分拉進自己能活的區間；我會把它看成細節戰，門將、定位球和第一個失誤比名氣更值錢。",
       "signals": [
         "FIFA match centre 確認 Congo DR vs Uzbekistan 於 Atlanta Stadium 進行。",
         "The Stats Zone 指 Uzbekistan 仍在尋找攻守平衡，並提到門將人選與上場表現成為觀察點。",
-        "Sports Mole 賽前摘要點出 Abbosbek Fayzullaev 是 Uzbekistan 目前本屆進球來源之一，屬球員狀態/進攻線索。"
+        "Sports Mole 賽前摘要點出 Abbosbek Fayzullaev 是 Uzbekistan 目前本屆進球來源之一，屬球員狀態/進攻線索。",
+        "19:55Z 補核：Opta Analyst 把 DR Congo 略偏熱門，並點出 Uzbekistan 前兩場用人幅度很大；這支持 Soren 把本場看成穩定性與第一失誤的比賽。",
+        "Squawka 與 101 Great Goals 提供 predicted-lineup/team-news 入口；正式先發仍等 FIFA/球隊。"
       ],
       "sources": [
         {
@@ -1058,6 +1252,30 @@
           "fetchedAt": "2026-06-26T10:40:30Z",
           "claimType": "reported/player-form",
           "confidence": "medium"
+        },
+        {
+          "label": "Opta Analyst DR Congo-Uzbekistan preview",
+          "url": "https://theanalyst.com/articles/dr-congo-vs-uzbekistan-prediction-world-cup-2026-match-preview",
+          "sourceName": "Opta Analyst",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/tactical",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Squawka DR Congo-Uzbekistan team news",
+          "url": "https://www.squawka.com/en/news/dr-congo-vs-uzbekistan-team-news-predicted-lineups/",
+          "sourceName": "Squawka",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "101 Great Goals DR Congo-Uzbekistan preview",
+          "url": "https://www.101greatgoals.com/match-previews/world-cup-matches/dr-congo-v-uzbekistan-line-ups-stats-preview-tv-channel-live-online-stream-prediction/",
+          "sourceName": "101 Great Goals",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium"
@@ -1065,13 +1283,15 @@
     {
       "matchId": "m059",
       "match": "Algeria vs Austria",
-      "sourceType": "qualification context + injury/suspension watch",
+      "sourceType": "qualification context + injury/suspension/odds watch",
       "title": "Algeria 對 Austria 是 J 組第二名的正面互毆；Argentina 已上岸，剩下的人自己游。",
       "sorenTake": "這場的重點不是誰名氣更順口，而是誰能把保證晉級名額搶下來。公開預覽暫未給出可靠確認傷停或先發，所以我只把它標成高壓對撞，不假裝知道更衣室答案。紙上賠率可做紀錄，不能拿來煽動下注。",
       "signals": [
         "Goal.com 預覽稱 Algeria vs Austria 是 Group J 爭奪保證晉級 32 強名額的直接對話，Argentina 已確定小組第一。",
         "Goal.com/EuropeSays 摘要未顯示確認傷停或 probable XI；因此本站不填入未確認先發。",
-        "Oddspedia 顯示本場公開 odds 聚合，可作紙上模擬參考；不提供投注建議或真金流。"
+        "Oddspedia 顯示本場公開 odds 聚合，可作紙上模擬參考；不提供投注建議或真金流。",
+        "19:55Z 補核：ESPN 與 Oddschecker 已有 Algeria-Austria 公開盤面入口；The SportsRush 再次確認兩隊同積三分、Austria 以淨勝球暫居第二的壓力局。",
+        "BetFanatics 類頁面提供 predicted XI/odds，但來源層級只適合作 lineup-watch 與紙上市場參考。"
       ],
       "sources": [
         {
@@ -1096,6 +1316,30 @@
           "sourceName": "Oddspedia",
           "fetchedAt": "2026-06-26T10:40:30Z",
           "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "ESPN Algeria-Austria odds",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760484",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Oddschecker Algeria-Austria winner odds",
+          "url": "https://www.oddschecker.com/football/world-cup/algeria-v-austria/winner",
+          "sourceName": "Oddschecker UK",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "The SportsRush Algeria-Austria preview",
+          "url": "https://thesportsrush.com/algeria-v-austria-predictions/",
+          "sourceName": "The SportsRush",
+          "fetchedAt": "2026-06-26T19:55:51Z",
+          "claimType": "reported/context",
           "confidence": "medium"
         }
       ],
