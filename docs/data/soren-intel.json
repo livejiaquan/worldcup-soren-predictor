@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-26T12:05:00Z",
-  "status": "schedule-aware-scout-2026-06-26T12Z-added-m073-round32-coverage",
-  "headline": "Soren 補上淘汰賽開場戰：South Africa vs Canada 已有官方、場館、加拿大媒體、停賽與紙上市場來源鏈；初登淘汰賽，不裝穩。",
+  "generatedAt": "2026-06-26T12:36:47Z",
+  "status": "schedule-aware-scout-2026-06-26T12Z-added-r32-m074-m075-m076-coverage",
+  "headline": "Soren 補上 6/29 三場 32 強早盤情報：Brazil-Japan、Germany 待第三名、Netherlands-Morocco；未知對手不硬編，市場資訊只作紙上校準。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -650,6 +650,123 @@
           "fetchedAt": "2026-06-26T12:05:00Z",
           "claimType": "social-search",
           "confidence": "low-medium"
+        }
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "matchId": "m076",
+      "match": "Brazil vs Japan",
+      "sourceType": "knockout fixture + form/context + odds-reference",
+      "title": "Brazil 抽到 Japan 不是免費午餐；五星招牌很亮，但日本最會把熱門隊拖進細節稅。",
+      "sorenTake": "Brazil 以 C 組第一進來，牌面與火力都該佔優；但 Japan 是 F 組第二，不是旅遊團。這場 Soren 會偏 Brazil，卻把『日本低失誤、反擊與定位球耐心』列成爆冷路徑——熱門可以贏，別用隊徽把風險蓋掉。",
+      "signals": [
+        "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
+        "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
+        "公開 odds-reference 頁面已出現 Brazil vs Japan 的市場比較；本站只作紙上校準，不提供投注建議或真金流。"
+      ],
+      "sources": [
+        {
+          "label": "USA Today Brazil opponent report",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/24/brazil-world-cup-round-of-32-possible-opponents/90675692007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-06-26T12:36:47Z",
+          "claimType": "reported",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera knockout qualifiers tracker",
+          "url": "https://www.aljazeera.com/sports/2026/6/26/which-teams-have-qualified-for-the-world-cup-2026-knockouts-round-of-32",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-26T12:36:47Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "BetHero Brazil-Japan odds reference",
+          "url": "https://betherosports.com/odds/soccer/world-cup/brazil-vs-japan/hgv6n2",
+          "sourceName": "BetHero Sports",
+          "fetchedAt": "2026-06-26T12:36:47Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "matchId": "m074",
+      "match": "Germany vs 3A/B/C/D/F",
+      "sourceType": "official bracket slot + third-place watch",
+      "title": "Germany 已在 Boston 等人；對手還沒定，這種『看似舒服』最容易養出輕敵病。",
+      "sorenTake": "Germany 是 E 組第一，但 32 強對手仍在第三名排序裡晃。這不是可以偷寫劇本的場：在對手確認前，Soren 只先標註德國的場地/時間與第三名池風險，不把未知對手硬編成戰術分析。",
+      "signals": [
+        "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
+        "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
+        "Goal.com 第三名晉級指南顯示本屆 48 隊賽制讓第三名配對仍需等待所有小組結果；此處保留 bracket-watch，不假裝對手已定。"
+      ],
+      "sources": [
+        {
+          "label": "AS USA Group E standings and Germany R32 slot",
+          "url": "https://en.as.com/soccer/world-cup/world-cup-2026-group-e-final-standings-results-and-teams-qualified-for-the-round-of-32-f202606-n/",
+          "sourceName": "AS USA",
+          "fetchedAt": "2026-06-26T12:36:47Z",
+          "claimType": "reported",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera knockout qualifiers tracker",
+          "url": "https://www.aljazeera.com/sports/2026/6/26/which-teams-have-qualified-for-the-world-cup-2026-knockouts-round-of-32",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-26T12:36:47Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "Goal.com third-place bracket guide",
+          "url": "https://www.goal.com/en-us/lists/2026-world-cup-bracket-which-third-placed-teams-are-currently-advancing-and-who-will-they-face-in-the-round-of-32-this-guide-covers-the-ranking-of-those-third-placed-sides-potential-round-of-32-match-ups-and-germany-s-prospective-opponents/blt5ce494c8ee0a7acc",
+          "sourceName": "Goal.com",
+          "fetchedAt": "2026-06-26T12:36:47Z",
+          "claimType": "context",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m075",
+      "match": "Netherlands vs Morocco",
+      "sourceType": "knockout fixture + qualification context",
+      "title": "Netherlands vs Morocco 很香，但別只看橙色濾鏡；Morocco 這隊就是專治『我比較像豪門』。",
+      "sorenTake": "Netherlands 以 F 組第一進來，進攻狀態漂亮；Morocco 從 C 組帶著七分晉級，抗壓履歷不差。這場我會先看 Netherlands 的控球能不能把 Morocco 拉開，如果拉不開，就會變成一場讓熱門隊很煩的耐心考。",
+      "signals": [
+        "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
+        "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
+        "Al Jazeera 淘汰賽資格整理指出 Netherlands 以 F 組第一晉級，Morocco 以 C 組第二晉級且同樣拿到七分。"
+      ],
+      "sources": [
+        {
+          "label": "Guardian knockout permutations",
+          "url": "https://www.theguardian.com/football/2026/jun/24/world-cup-groups-permutations-round-of-32-usa-mexico-canada",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-26T12:36:47Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "The Athletic Netherlands-Morocco report",
+          "url": "https://www.nytimes.com/athletic/7382706/2026/06/25/tunisia-v-netherlands-world-cup-forecast/",
+          "sourceName": "The Athletic / New York Times",
+          "fetchedAt": "2026-06-26T12:36:47Z",
+          "claimType": "reported",
+          "confidence": "medium"
+        },
+        {
+          "label": "Al Jazeera knockout qualifiers tracker",
+          "url": "https://www.aljazeera.com/sports/2026/6/26/which-teams-have-qualified-for-the-world-cup-2026-knockouts-round-of-32",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-26T12:36:47Z",
+          "claimType": "context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
