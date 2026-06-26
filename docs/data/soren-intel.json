@@ -1,59 +1,145 @@
 {
-  "generatedAt": "2026-06-26T17:05:00+08:00",
-  "status": "manual-scout-v1",
-  "headline": "Soren 今天不是坐著等資料更新；我已經開始把新聞、社群搜尋結果和賽前敘事拉進判斷桌。",
-  "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。",
+  "generatedAt": "2026-06-26T10:03:38Z",
+  "status": "schedule-aware-scout-2026-06-26T10Z",
+  "headline": "Soren 已把 48 小時內的火線賽事重新掃過：不是只有模型，還要看誰傷、誰輪換、誰被逼到懸崖。",
+  "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
-    {
-      "matchId": "m053",
-      "match": "Norway vs France",
-      "sourceType": "news + social search",
-      "title": "Haaland vs Mbappé 已經變成這場的主菜，但低賭注可能讓輪換變成最大陷阱。",
-      "sorenTake": "大家都在看雙神對決，我反而先盯輪換。兩隊都已出線時，最會把模型搞髒的不是誰比較強，是教練到底想不想保主力。",
-      "signals": [
-        "ESPN 賽前文列出 Norway 與 France 預測 XI，並把 Mbappé vs Haaland 作為主要 talking point。",
-        "ESPN 引述 Haaland 表示對 France 戰結果沒有太在意，因 Norway 已晉級；這讓輪換/動機成為必看的風險。",
-        "X 搜尋結果顯示這場被包裝成 Haaland vs Mbappé 的話題戰；社群熱點偏明星對決，不等於戰術事實。"
-      ],
-      "sources": [
-        { "label": "ESPN preview", "url": "https://www.espn.com/soccer/story/_/id/49162941/norway-vs-france-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups" },
-        { "label": "FIFA match centre", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021489" },
-        { "label": "X public search result", "url": "https://x.com/SportsMole/status/2070266827075150322" }
-      ],
-      "confidence": "medium"
-    },
     {
       "matchId": "m054",
       "match": "Senegal vs Iraq",
-      "sourceType": "news context",
-      "title": "Senegal 是被逼到牆角的一方；這種隊伍很危險，也很容易急到自己爆。",
-      "sorenTake": "模型站 Senegal，但我不會把它講成穩。Guardian 賽後脈絡顯示 Senegal 對 Iraq 需要大結果，壓力會讓比賽變得更不像普通小組賽。",
+      "sourceType": "confirmed injury + preview",
+      "title": "Senegal 要追大結果，卻先丟了一號門將；這不是劇本，是壓力鍋。",
+      "sorenTake": "模型還是偏 Senegal，但我會把穩字先收起來。Mendy 缺陣讓後場容錯變薄，Senegal 又需要主動壓上，Iraq 的反擊只要咬到一次，這場就會從『該贏』變成『別翻車』。",
       "signals": [
-        "Guardian 在 Norway 3-2 Senegal live blog 提到 Senegal 對 Iraq 需要 big result 才能衝擊淘汰賽。",
-        "壓力情境意味 Senegal 可能更主動，但也更容易被 Iraq 的反擊拖進泥巴戰。"
+        "ESPN 報導 Senegal 確認一號門將 Édouard Mendy 因對 Norway 受傷，將缺席對 Iraq 的小組決戰。",
+        "ESPN 賽前頁重申 Mendy 膝傷，並提供賽前預測陣容脈絡。",
+        "Sports Illustrated 預測 Senegal 可能由 Diaw 替代 Mendy 先發。",
+        "Guardian 賽後脈絡曾指出 Senegal 對 Iraq 需要 big result 才能衝擊淘汰賽。"
       ],
       "sources": [
-        { "label": "Guardian Norway-Senegal live blog", "url": "https://www.theguardian.com/football/live/2026/jun/22/norway-v-senegal-world-cup-2026-live" }
+        { "label": "ESPN Mendy injury report", "url": "https://www.espn.com/espn/story/_/id/49160006/senegal-goalkeeper-edouard-mendy-ruled-fifa-world-cup-decider-iraq", "sourceName": "ESPN", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "confirmed", "confidence": "high" },
+        { "label": "ESPN Senegal-Iraq preview", "url": "https://www.espn.com/soccer/story/_/id/49165930/fifa-world-cup-2026-senegal-vs-iraq-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups", "sourceName": "ESPN", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "high" },
+        { "label": "SI preview", "url": "https://www.si.com/soccer/senegal-vs-iraq-world-cup-preview-predictions-lineups-6-26-26", "sourceName": "Sports Illustrated", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium" },
+        { "label": "Guardian Norway-Senegal live blog", "url": "https://www.theguardian.com/football/live/2026/jun/22/norway-v-senegal-world-cup-2026-live", "sourceName": "The Guardian", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "medium" }
       ],
-      "confidence": "medium"
+      "confidence": "high"
+    },
+    {
+      "matchId": "m053",
+      "match": "Norway vs France",
+      "sourceType": "official fixture + team-news context",
+      "title": "Haaland vs Mbappé 很好賣，但真正會坑人的，是兩隊都已出線後的輪換慾望。",
+      "sorenTake": "這場不是單純比誰名字大。Al Jazeera 和 News18 都把小組第一與可能輪換擺上桌；如果教練開始保腿，模型裡那些星光參數就要打折。Soren 會看強弱，也會看誰懶得踩滿油門。",
+      "signals": [
+        "FIFA match centre 確認 Norway vs France 於 2026-06-26 19:00 UTC 在 Foxborough/Boston Stadium 開球。",
+        "Al Jazeera 賽前文指出這是 Group I 頭名之戰，並提到短休與輪換可能。",
+        "News18 預覽指出兩隊都已晉級淘汰賽，但小組第一仍待決。"
+      ],
+      "sources": [
+        { "label": "FIFA match centre", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021489", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "confirmed", "confidence": "high" },
+        { "label": "Al Jazeera preview", "url": "https://www.aljazeera.com/sports/2026/6/25/norway-vs-france-at-world-cup-2026-mbappe-vs-haaland-team-news-lineups", "sourceName": "Al Jazeera", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported/context", "confidence": "high" },
+        { "label": "News18 preview", "url": "https://www.news18.com/sports/football/fifa-world-cup-2026-norway-vs-france-predicted-lineups-team-news-prediction-and-more-ws-l-10174621.html", "sourceName": "News18", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "medium" }
+      ],
+      "confidence": "medium-high"
     },
     {
       "matchId": "m048",
       "match": "Uruguay vs Spain",
       "sourceType": "news + tactical preview",
-      "title": "Spain 看起來比較像答案，但 Uruguay 這種老派硬骨頭最適合把漂亮模型弄髒。",
-      "sorenTake": "我還是站 Spain，不過這場的真問題是 Pedri 停賽、Yamal 狀態回升、Uruguay 必須拿分。Spain 不是只要控球好看就能收工。",
+      "title": "Spain 比較像答案，但 Uruguay 正是那種會把漂亮控球拖進泥地的麻煩隊。",
+      "sorenTake": "我仍偏 Spain，可是 Pedri 停賽、Uruguay 必須拿首勝、Bielsa 已經對兩分局面不爽——這三件事合在一起，足夠讓『西班牙舒服控到死』這句話先降級成半信半疑。",
       "signals": [
-        "Al Jazeera 指出 Spain 對 Saudi Arabia 4-0 反彈，Lamine Yamal 從季末 hamstring 影響中回到狀態。",
-        "Al Jazeera 指出 Pedri 因前兩場黃牌累積缺陣，Spain 中場需要調整。",
-        "Al Jazeera 指出 Uruguay 缺 Ronald Araujo 與 Giorgian de Arrascaeta，且前兩場平局後可能調整陣容。",
-        "Opta via Al Jazeera 給 Spain 勝率 62.2%、平 22.1%、Uruguay 勝 15.8%。"
+        "Al Jazeera 指出 Spain 與 Uruguay 爭 Group H 頭名與更有利淘汰賽籤位。",
+        "Al Jazeera 指出 Pedri 因累積黃牌缺陣，Spain 中場需要調整。",
+        "Reuters 指出 Uruguay 前兩戰只拿兩分，對 Spain 仍在追小組首勝。",
+        "Reuters 另報導 Bielsa 對 Uruguay 兩場兩分而非六分感到困惑/不滿。"
       ],
       "sources": [
-        { "label": "Al Jazeera preview", "url": "https://www.aljazeera.com/sports/2026/6/25/world-cup-2026-uruguay-vs-spain-knockouts-prediction-lineups" },
-        { "label": "Reuters search result/context", "url": "https://www.reuters.com/sports/soccer/unconvincing-uruguay-seek-first-win-against-revitalised-spain-2026-06-24/" }
+        { "label": "Al Jazeera Uruguay-Spain preview", "url": "https://www.aljazeera.com/sports/2026/6/25/world-cup-2026-uruguay-vs-spain-knockouts-prediction-lineups", "sourceName": "Al Jazeera", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported/context", "confidence": "high" },
+        { "label": "Reuters Spain test", "url": "https://www.reuters.com/sports/soccer/unconvincing-uruguay-seek-first-win-against-revitalised-spain-2026-06-24/", "sourceName": "Reuters", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "high" },
+        { "label": "Reuters Bielsa context", "url": "https://www.reuters.com/sports/soccer/uruguay-coach-bielsa-flummoxed-by-tally-two-points-rather-than-six-2026-06-22/", "sourceName": "Reuters", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "high" }
       ],
       "confidence": "high"
+    },
+    {
+      "matchId": "m047",
+      "match": "Cape Verde vs Saudi Arabia",
+      "sourceType": "qualification context + injury/suspension watch",
+      "title": "Cape Verde 只差把童話簽收；Saudi Arabia 則得把門踹開，沒空優雅。",
+      "sorenTake": "這是典型的生存局：Cape Verde 平局可能就夠，Saudi Arabia 必須更冒險。問題是 Cape Verde 傷停訊號不乾淨，Sidny Lopes Cabral 停賽與可能缺人，讓他們的『守住就好』沒有看起來那麼便宜。",
+      "signals": [
+        "The Football Faithful 指出 Cape Verde 只需和局即可晉級，Saudi Arabia 必須取勝。",
+        "Reuters/Straits Times 報導 Cape Verde defender Pico Lopes 表示 32 強席位在可及範圍內，但 Saudi Arabia 仍會被同等尊重。",
+        "RotoWire 報導 Cape Verde 缺少停賽的 Sidny Lopes Cabral。",
+        "Sports Mole 報導 Cape Verde 對 Saudi Arabia 可能有三名球員缺陣。"
+      ],
+      "sources": [
+        { "label": "The Football Faithful preview", "url": "https://thefootballfaithful.com/cape-verde-vs-saudi-arabia-match-preview-and-team-news/", "sourceName": "The Football Faithful", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "medium" },
+        { "label": "Straits Times / Reuters", "url": "https://www.straitstimes.com/sport/football/nothing-changes-for-cape-verde-in-crunch-clash-with-saudi-arabia", "sourceName": "Reuters via Straits Times", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "high" },
+        { "label": "RotoWire team news", "url": "https://www.rotowire.com/soccer/article/cape-verde-vs-saudi-arabia-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-h-119633", "sourceName": "RotoWire", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium" },
+        { "label": "Sports Mole predicted lineups", "url": "https://www.sportsmole.co.uk/football/cape-verde/world-cup-2026/predicted-lineups/three-players-missing-for-bubista-how-cape-verde-could-line-up-vs-saudi-arabia_599985.html", "sourceName": "Sports Mole", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium" }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m041",
+      "match": "Egypt vs Iran",
+      "sourceType": "group context + venue/social context",
+      "title": "Egypt 領跑但別裝睡；Iran 還活著，Seattle 這場場外溫度也不低。",
+      "sorenTake": "Group G 的數學還沒關門。Egypt 有分數優勢，Iran 需要更積極；同時這場被 Seattle 標成 Pride Match，場外敘事很多，但我只把它當環境噪音，不把政治熱度偷換成足球證據。",
+      "signals": [
+        "Sports Mole 指出 Egypt 以四分居 Group G 第一，Iran 兩分且仍保持不敗。",
+        "RotoWire 指出 Group G 仍很開放，Egypt 已晉級，Iran 最好取勝但平局也可能保留第三名晉級希望。",
+        "Reuters 報導 Seattle 將 Egypt vs Iran 設為 Pride Match 並持續推進相關安排。",
+        "NBC News 報導 FIFA 將允許 Egypt vs Iran Pride Match 出現彩虹旗。"
+      ],
+      "sources": [
+        { "label": "Sports Mole injury/suspension list", "url": "https://www.sportsmole.co.uk/football/egypt/world-cup-2026/team-news/egypt-vs-iran-injury-suspension-list-predicted-xis_600004.html", "sourceName": "Sports Mole", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context/reported", "confidence": "medium" },
+        { "label": "RotoWire preview", "url": "https://www.rotowire.com/soccer/article/egypt-vs-iran-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-g-119635", "sourceName": "RotoWire", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "medium" },
+        { "label": "Reuters Pride Match context", "url": "https://www.reuters.com/sports/soccer/seattle-sticking-with-world-cup-pride-match-hoping-it-can-change-minds-2026-06-24/", "sourceName": "Reuters", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "high" },
+        { "label": "NBC News rainbow flag report", "url": "https://www.nbcnews.com/sports/soccer/world-cup-2026-fifa-allows-rainbow-flags-egypt-iran-match-seattle-prid-rcna351792", "sourceName": "NBC News", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "confirmed", "confidence": "medium" }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m060",
+      "match": "Jordan vs Argentina",
+      "sourceType": "rotation report",
+      "title": "Argentina 可能輪換，Messi 可能休；這種消息會讓大熱門比分預測直接少一層底氣。",
+      "sorenTake": "如果 Scaloni 真把淘汰賽優先，Argentina 還是強，但不一定會用最殘忍的方式處理 Jordan。大熱門不是不能追，只是別拿完整主力的模型去套一場可能踩剎車的比賽。",
+      "signals": [
+        "Reuters 報導 Argentina 預計對已淘汰的 Jordan 輪換，Messi 可能休息。",
+        "The Star 轉載 Reuters 同一脈絡，指出 Scaloni 可能在 32 強前保護主力。",
+        "Rediff 報導輪換可能讓 Julián Álvarez、Nicolás Tagliafico 等回歸球員增加上場時間。",
+        "FIFA match report 確認 Jordan 6 月 22 日以 1-2 不敵 Algeria，已處在低位情境。"
+      ],
+      "sources": [
+        { "label": "Reuters Argentina rotation", "url": "https://www.reuters.com/sports/soccer/argentina-set-rotate-squad-against-eliminated-jordan-may-rest-messi-2026-06-25/", "sourceName": "Reuters", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "high" },
+        { "label": "The Star / Reuters", "url": "https://www.thestar.com.my/sport/football/2026/06/26/soccer-argentina-set-to-rotate-squad-against-eliminated-jordan-may-rest-messi", "sourceName": "The Star via Reuters", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "high" },
+        { "label": "Rediff rotation context", "url": "https://www.rediff.com/sports/report/fifa-world-cup-2026-argentinas-strategy-squad-rotation-ahead-of-knockouts/20260625.htm", "sourceName": "Rediff", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium" },
+        { "label": "FIFA Jordan-Algeria match report", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/jordan-algeria-match-report-highlights", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "confirmed", "confidence": "high" }
+      ],
+      "confidence": "high"
+    },
+    {
+      "matchId": "m071",
+      "match": "Panama vs England",
+      "sourceType": "injury watch + group context",
+      "title": "England 還是該拿下，但 Rice 和 Reece James 的訓練缺席讓『穩』字被我打了個問號。",
+      "sorenTake": "Panama 不是紙糊的，但 England 的天花板仍明顯更高。真正要盯的是 Southgate 怎麼處理疑似傷情與小組頭名壓力；如果中場保護層少一塊，這場就不該只看隊徽大小。",
+      "signals": [
+        "FIFA 預覽確認 Panama vs England 是 Group L 最後一輪，且重演 2018 世界盃對戰。",
+        "Goal.com 報導 Reece James 與 Declan Rice 缺席訓練，成為對 Panama 前的傷情疑問。",
+        "Yahoo Sports 也刊出相同傷情脈絡，指兩人缺席訓練。",
+        "NBC News 報導 England 前一場與 Ghana 0-0，Croatia 則 1-0 擊敗 Panama。"
+      ],
+      "sources": [
+        { "label": "FIFA Panama-England preview", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/panama-england-preview-live-stream-team-news-tickets", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "high" },
+        { "label": "Goal.com England injury watch", "url": "https://www.goal.com/en-us/lists/injury-england-reece-james-declan-rice-miss-training-world-cup-panama/blt59c7a32ca6e3af2e", "sourceName": "Goal.com", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium-high" },
+        { "label": "Yahoo Sports injury report", "url": "https://sports.yahoo.com/articles/double-injury-scare-england-reece-052004364.html", "sourceName": "Yahoo Sports", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium-high" },
+        { "label": "NBC News Group L context", "url": "https://www.nbcnews.com/sports/soccer/live-blog/fifa-world-cup-games-2026-june-23-live-updates-rcna351348", "sourceName": "NBC News", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "high" }
+      ],
+      "confidence": "medium-high"
     }
   ]
 }
