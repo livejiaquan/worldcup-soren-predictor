@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-26T17:35:17Z",
-  "status": "schedule-aware-scout-2026-06-26T1735Z-live-text-lineup-watch",
-  "headline": "Soren 6/26 17:35Z 巡檢：Norway-France / Senegal-Iraq 進入 90 分鐘內，補上 Al Jazeera 與 BBC 臨場文字直播入口；Group L 明日兩場補強預測陣容來源，但確認先發仍待 FIFA。",
+  "generatedAt": "2026-06-26T18:43:44Z",
+  "status": "schedule-aware-scout-2026-06-26T1843Z-confirmed-lineup-watch",
+  "headline": "Soren 6/26 18:43Z 巡檢：Norway-France / Senegal-Iraq 開球前補上公開確認先發線索；Haaland、Ødegaard 休兵，France 派 Mbappé，Senegal 用 Mory Diaw，Iraq 的 Aymen Hussein 在替補席。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
       "matchId": "m054",
       "match": "Senegal vs Iraq",
-      "sourceType": "confirmed injury + preview + lineup/odds watch",
-      "title": "Senegal 要追大結果，卻先丟了一號門將；這不是劇本，是壓力鍋。",
-      "sorenTake": "模型還是偏 Senegal，但我會把穩字先收起來。Mendy 缺陣讓 Senegal 後場容錯變薄；Iraq 這邊 Aymen Hussein 若真的帶傷或受限，反擊尖刀會鈍一截。兩邊都不是滿血，這場不是劇本，是壓力鍋。",
+      "sourceType": "reported confirmed lineups + confirmed injury + preview/odds watch",
+      "title": "Mendy 缺陣已落到先發單上，Iraq 也把 Aymen Hussein 放替補；這場是兩邊鋒線與門將缺口的互相揭短。",
+      "sorenTake": "Senegal 的 Mory Diaw 取代 Mendy，這是已知最大結構風險；Iraq 則由 Ali Al Hamadi 頂中鋒，Aymen Hussein 先從替補席看局勢。Senegal 名氣與市場仍熱，但如果 Diaw 早段不穩，這場會從「補考」變成恐怖片。",
       "signals": [
         "ESPN 報導 Senegal 確認一號門將 Édouard Mendy 因對 Norway 受傷，將缺席對 Iraq 的小組決戰。",
         "ESPN 賽前頁重申 Mendy 膝傷，並提供賽前預測陣容脈絡。",
@@ -21,7 +21,9 @@
         "17Z 官方先發仍未見公開；CBS/FanDuel 索引顯示 Senegal 約 -450、Iraq 約 +1100、和局約 +550，市場很偏 Senegal，但 Mendy / Aymen Hussein 傷情讓「大熱」不能等同「無風險」。",
         "SportsBettingDime 賽前頁把 Édouard Mendy 與 Aymen Hussein 都列為 critical injuries；這強化 Iraq 中鋒狀態與 Senegal 門將缺口同時影響比賽的判讀。",
         "FootballMeister 搜尋摘要另提到 Iraq 前鋒 Mohannad Ali 也可能缺陣；來源等級較低，先列為低到中等信心的 attacking-depth watch，不寫成官方事實。",
-        "17:35Z 再核：BBC 已開 Senegal-Iraq 即時頁，標題明示會提供 score、lineups、commentary updates；正式名單未落地前，Mendy 缺陣與 Iraq 前鋒健康仍是已知主要風險。"
+        "17:35Z 再核：BBC 已開 Senegal-Iraq 即時頁，標題明示會提供 score、lineups、commentary updates；正式名單未落地前，Mendy 缺陣與 Iraq 前鋒健康仍是已知主要風險。",
+        "18:43Z 公開先發巡檢：Khel Now 報導 Senegal 4-3-3 為 Mory Diaw；Diatta、Abdoulaye Seck、Niakhaté、Ismail Jakobs；Gana Gueye、Lamine Camara、Pape Alassane Gueye；Ismaïla Sarr、Ibrahim Mbaye、Sadio Mané。Mendy 缺陣正式轉化為門將位置調整。",
+        "18:43Z 公開先發巡檢：Khel Now 報導 Iraq 4-1-2-3 為 Ahmed Basil；Frans Putros、Rebin Sulaka、Akam Hashem、Merchas Doski；Amir Al-Ammari；Zidane Iqbal、Ibrahim Bayesh；Ahmed Qasem、Ali Al Hamadi、Ali Jasim。Aymen Hussein 列替補，先不把他當滿血先發火力。"
       ],
       "sources": [
         {
@@ -103,6 +105,22 @@
           "claimType": "context/lineup-watch",
           "confidence": "high",
           "fetchedAt": "2026-06-26T17:35:17Z"
+        },
+        {
+          "label": "Khel Now Senegal confirmed lineup",
+          "url": "https://khelnow.com/football/world-football-senegal-starting-lineup-vs-iraq-fifa-world-cup-202606",
+          "sourceName": "Khel Now",
+          "fetchedAt": "2026-06-26T18:43:44Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Khel Now Iraq confirmed lineup",
+          "url": "https://khelnow.com/football/world-football-iraq-starting-lineup-vs-senegal-fifa-world-cup-202606",
+          "sourceName": "Khel Now",
+          "fetchedAt": "2026-06-26T18:43:44Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -110,9 +128,9 @@
     {
       "matchId": "m053",
       "match": "Norway vs France",
-      "sourceType": "official fixture + team-news context + odds/social watch",
-      "title": "Haaland vs Mbappé 很好賣，但真正會坑人的，是兩隊都已出線後的輪換慾望。",
-      "sorenTake": "這場不是單純比誰名字大。Al Jazeera 和 News18 都把小組第一與可能輪換擺上桌；如果教練開始保腿，模型裡那些星光參數就要打折。Soren 會看強弱，也會看誰懶得踩滿油門。",
+      "sourceType": "official fixture + reported confirmed lineups + odds/social watch",
+      "title": "Haaland 坐板凳、Mbappé 先發；這場星味還在，但 Norway 先把油門收了一格。",
+      "sorenTake": "Haaland 與 Ødegaard 被報導休兵後，這場從「雙神互砍」改成「France 主力火力對 Norway 輪換韌性」。France 派 Mbappé、Dembélé、Doué，Norway 用 Strand Larsen 頂前面；Soren 仍看 France 佔優，但輪換讓挪威的爆點變少、也讓法國若久攻不下會更尷尬。",
       "signals": [
         "FIFA match centre 確認 Norway vs France 於 2026-06-26 19:00 UTC 在 Foxborough/Boston Stadium 開球。",
         "Al Jazeera 賽前文指出這是 Group I 頭名之戰，並提到短休與輪換可能。",
@@ -126,7 +144,9 @@
         "17Z 巡檢未找到 Norway-France 的官方確認先發；FIFA match centre 仍是臨場陣容唯一硬入口，Yahoo/Standard 類頁面只能當 expected-XI / injury-latest 觀察。",
         "CBS/FanDuel 搜尋索引顯示 France 約 -160、Norway 約 +360、和局約 +360；僅作紙上市場溫度，不是下注建議，也不是即時盤承諾。",
         "Sports Interactive / BigSoccer 等公開論壇有本場討論索引，但可見內容偏賽程與 Haaland vs Mbappé 敘事；未讀到可驗證的完整留言民意。",
-        "17:35Z 再核：Al Jazeera 已開 Norway-France 即時文字直播，頁面承諾 lineups drop 後更新；截至本巡檢仍不能把任何 projected XI 寫成確認先發。"
+        "17:35Z 再核：Al Jazeera 已開 Norway-France 即時文字直播，頁面承諾 lineups drop 後更新；截至本巡檢仍不能把任何 projected XI 寫成確認先發。",
+        "18:43Z 公開先發巡檢：Khel Now 報導 Norway 4-2-3-1 由 Mathias Dyngeland Selvik 守門，Jørgen Strand Larsen 頂前，Erling Haaland 與 Martin Ødegaard 被休兵；因來源不是 FIFA 官方頁，本站標為 reported lineup。",
+        "18:43Z 公開先發巡檢：Khel Now / Morocco World News 報導 France 4-2-3-1，由 Mike Maignan；Koundé、Lacroix、Upamecano、Theo Hernández；Tchouaméni、Manu Koné；Dembélé、Olise、Doué；Mbappé 先發。這是公開媒體確認線索，仍以 FIFA/球隊正式頁為最高優先。"
       ],
       "sources": [
         {
@@ -224,9 +244,33 @@
           "claimType": "context/lineup-watch",
           "confidence": "high",
           "fetchedAt": "2026-06-26T17:35:17Z"
+        },
+        {
+          "label": "Khel Now Norway confirmed lineup",
+          "url": "https://khelnow.com/football/world-football-norway-starting-lineup-vs-france-fifa-world-cup-202606",
+          "sourceName": "Khel Now",
+          "fetchedAt": "2026-06-26T18:43:44Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Khel Now France confirmed lineup",
+          "url": "https://khelnow.com/football/world-football-france-starting-lineup-vs-norway-fifa-world-cup-202606",
+          "sourceName": "Khel Now",
+          "fetchedAt": "2026-06-26T18:43:44Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Morocco World News France lineup report",
+          "url": "https://www.moroccoworldnews.com/2026/06/325633/france-lineup-vs-norway-confirmed-for-world-cup-2026-clash/",
+          "sourceName": "Morocco World News",
+          "fetchedAt": "2026-06-26T18:43:44Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m048",
