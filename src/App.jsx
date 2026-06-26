@@ -2,30 +2,118 @@ import { useEffect, useMemo, useState } from 'react'
 import './App.css'
 
 const FLAG = { Argentina:'🇦🇷', France:'🇫🇷', Spain:'🇪🇸', England:'🏴', Brazil:'🇧🇷', Portugal:'🇵🇹', Netherlands:'🇳🇱', Belgium:'🇧🇪', Germany:'🇩🇪', Croatia:'🇭🇷', Uruguay:'🇺🇾', Morocco:'🇲🇦', USA:'🇺🇸', Mexico:'🇲🇽', Switzerland:'🇨🇭', Colombia:'🇨🇴', Japan:'🇯🇵', Senegal:'🇸🇳', Austria:'🇦🇹', Sweden:'🇸🇪', Turkey:'🇹🇷', Ecuador:'🇪🇨', Iran:'🇮🇷', Australia:'🇦🇺', Scotland:'🏴', 'South Korea':'🇰🇷', Norway:'🇳🇴', Ghana:'🇬🇭', 'Ivory Coast':'🇨🇮', Algeria:'🇩🇿', Qatar:'🇶🇦', Tunisia:'🇹🇳', Egypt:'🇪🇬', Paraguay:'🇵🇾', 'South Africa':'🇿🇦', 'Saudi Arabia':'🇸🇦', 'Czech Republic':'🇨🇿', Canada:'🇨🇦', Panama:'🇵🇦', Uzbekistan:'🇺🇿', Jordan:'🇯🇴', Iraq:'🇮🇶', Haiti:'🇭🇹', 'New Zealand':'🇳🇿', 'Bosnia & Herzegovina':'🇧🇦', Curaçao:'🇨🇼', 'Democratic Republic of the Congo':'🇨🇩', 'Cape Verde':'🇨🇻' }
+const flag = (team) => FLAG[team] || '⚽'
 const fmt = (iso, opts) => iso ? new Intl.DateTimeFormat('zh-TW', { timeZone: 'Asia/Taipei', ...opts }).format(new Date(iso)) : '時間待定'
 const fmtDate = (iso) => fmt(iso, { month:'numeric', day:'numeric', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false })
-const fmtDay = (iso) => fmt(iso, { month:'numeric', day:'numeric', weekday:'long' })
+const fmtDay = (iso) => fmt(iso, { month:'numeric', day:'numeric', weekday:'short' })
 const pct = (v) => `${Math.round((v || 0) * 100)}%`
 const money = (v) => `$${Number(v || 0).toFixed(2)}`
 const signedMoney = (v) => `${Number(v || 0) >= 0 ? '+' : ''}${money(v)}`
-const flag = (team) => FLAG[team] || '⚽'
 
-function Team({ name }) { return <div className="team"><span className="flag">{flag(name)}</span><span>{name}</span></div> }
-function ProbBar({ prediction }) { const p = prediction.probabilities; return <div className="prob-bar"><span style={{ width:pct(p.home) }} className="home"/><span style={{ width:pct(p.draw) }} className="draw"/><span style={{ width:pct(p.away) }} className="away"/></div> }
-function PredictionCard({ match, prediction, compact = false, onSelect }) {
-  const finished = match.status === 'finished'
-  return <article className={`match-card ${finished ? 'finished' : ''} ${compact ? 'compact' : ''}`}>
-    <div className="match-meta"><span>{match.stage}</span><span>{finished ? '已完賽' : fmtDate(match.kickoffUtc)}</span></div>
-    <div className="versus"><Team name={match.team1}/><div className="score-box">{finished ? `${match.score[0]}-${match.score[1]}` : prediction.score}<small>{finished ? 'FT' : '預測比分'}</small></div><Team name={match.team2}/></div>
+function Team({ name }) { return <span className="team-inline"><span>{flag(name)}</span>{name}</span> }
+function ProbBar({ prediction }) { const p = prediction.probabilities; return <div className="prob-bar"><span style={{ width:pct(p.home) }}/><span style={{ width:pct(p.draw) }}/><span style={{ width:pct(p.away) }}/></div> }
+function SectionHead({ kicker, title, meta, children }) { return <div className="section-head"><div><p>{kicker}</p><h2>{title}</h2>{children}</div>{meta && <span>{meta}</span>}</div> }
+
+function StatCard({ label, value, sub, tone = 'neutral' }) { return <article className={`stat-card ${tone}`}><p>{label}</p><b>{value}</b><span>{sub}</span></article> }
+function CommandCenter({ data, nextMatches, predictions, bankroll }) {
+  const next = nextMatches[0]
+  const sharp = [...nextMatches].sort((a, b) => (predictions[b.id]?.confidence || 0) - (predictions[a.id]?.confidence || 0))[0]
+  const trap = [...nextMatches].sort((a, b) => {
+    const pa = predictions[a.id]?.probabilities || {}
+    const pb = predictions[b.id]?.probabilities || {}
+    return Math.min(pb.home || 0, pb.away || 0) - Math.min(pa.home || 0, pa.away || 0)
+  })[0]
+  const soren = data.leaderboard?.find((r) => r.id === 'soren')
+  return <section className="command-grid" id="today">
+    <StatCard label="下一場開刀" value={next ? `${next.team1} vs ${next.team2}` : '待定'} sub={next ? `${fmtDate(next.kickoffUtc)} · 我站 ${predictions[next.id]?.pick}` : '等賽程'} tone="blue" />
+    <StatCard label="最敢站隊" value={sharp ? predictions[sharp.id]?.pick : '—'} sub={sharp ? `${sharp.team1} vs ${sharp.team2} · 信心 ${pct(predictions[sharp.id]?.confidence)}` : '無資料'} tone="green" />
+    <StatCard label="最像陷阱" value={trap ? `${trap.team1} vs ${trap.team2}` : '—'} sub={trap ? `翻車率 ${pct(Math.min(predictions[trap.id]?.probabilities?.home || 0, predictions[trap.id]?.probabilities?.away || 0))}` : '無資料'} tone="amber" />
+    <StatCard label="紙上本金" value={money(bankroll?.bankroll)} sub={`ROI ${pct(bankroll?.roi)} · 未結算 ${money(bankroll?.openStake)}`} tone="violet" />
+    <StatCard label="模型戰績" value={`${soren?.points ?? 0} 分`} sub={`目前命中 ${pct(soren?.accuracy)}，還不能跩`} />
+  </section>
+}
+
+function CompactMatchCard({ match, prediction, paperBet, intel, onSelect, featured = false }) {
+  return <article className={`match-card ${featured ? 'featured-card' : ''}`}>
+    <div className="match-top"><span>{match.stage}</span><span>{fmtDate(match.kickoffUtc)}</span></div>
+    <div className="teams-row"><Team name={match.team1}/><div className="score-pill">{match.status === 'finished' ? `${match.score[0]}-${match.score[1]}` : prediction.score}<small>{match.status === 'finished' ? 'FT' : '預測'}</small></div><Team name={match.team2}/></div>
     <ProbBar prediction={prediction}/>
-    <div className="pick-row"><b>Soren 站隊：{prediction.pick}</b><span>{prediction.tag || '模型判讀'} · 信心 {pct(prediction.confidence)}</span></div>
-    {!compact && prediction.commentary && <div className="analysis-box"><b>{prediction.commentary.headline}</b><p>{prediction.commentary.story}</p><div className="factor-row">{prediction.commentary.keyFactors.map((f) => <span key={f.label}><strong>{f.label}</strong>{f.value}<small>{f.note}</small></span>)}</div></div>}
-    {!compact && <ul className="reasons">{prediction.reasons.slice(0, 3).map((r) => <li key={r}>{r}</li>)}</ul>}
-    <div className="venue">📍 {match.venue}</div>
-    {!compact && <button className="deep-dive" type="button" onClick={() => onSelect?.(match)}>展開 Soren 賽前驗屍報告</button>}
+    <div className="pick-row"><b>我站 {prediction.pick}</b><span>{prediction.tag} · {pct(prediction.confidence)}</span></div>
+    <p className="verdict">{prediction.commentary?.headline}</p>
+    <div className="chip-row">
+      {prediction.commentary?.keyFactors?.map((f) => <span key={f.label}><b>{f.label}</b>{f.value}</span>)}
+      {paperBet && <span className="paper-chip"><b>紙上</b>{money(paperBet.stake)}</span>}
+      {intel && <span className="intel-chip"><b>情報</b>{intel.confidence}</span>}
+    </div>
+    <button className="deep-dive" type="button" onClick={() => onSelect(match.id)}>展開細節</button>
   </article>
 }
-function MatchDeepDive({ match, prediction, paperBet, onClose }) {
+
+function TodaySlate({ matches, predictions, paperBetsByMatch, intelByMatch, onSelect }) {
+  const featured = matches.slice(0, 3)
+  const rest = matches.slice(3, 9)
+  return <section className="panel" id="predictions">
+    <SectionHead kicker="TODAY'S SLATE" title="今日重點：少一點噪音，多一點判斷" meta={`${matches.length} 場追蹤`}>
+      <small>首頁只放最重要的；完整理由、情報和紙上戰局都收進細節裡。</small>
+    </SectionHead>
+    <div className="featured-grid">{featured.map((m) => <CompactMatchCard featured key={m.id} match={m} prediction={predictions[m.id]} paperBet={paperBetsByMatch[m.id]} intel={intelByMatch[m.id]} onSelect={onSelect}/>)}</div>
+    <div className="upcoming-strip">{rest.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDay(m.kickoffUtc)}</span><b>{flag(m.team1)} {m.team1} vs {flag(m.team2)} {m.team2}</b><em>{predictions[m.id]?.pick}</em></button>)}</div>
+  </section>
+}
+
+function IntelBrief({ intel, onSelect }) {
+  if (!intel?.items?.length) return null
+  const [main, ...others] = intel.items
+  return <section className="panel intel-feed" id="soren-intel">
+    <SectionHead kicker="SOREN SCOUTING BRIEF" title="我出去逛到的重點，先替你濾過" meta={`${intel.items.length} 則`}>
+      <small>新聞、社群搜尋、賽前敘事，只放會改變判斷的東西。</small>
+    </SectionHead>
+    <div className="intel-layout">
+      <article className="intel-main">
+        <div className="intel-meta"><span>{main.match}</span><span>{main.sourceType}</span><span>{main.confidence}</span></div>
+        <h3>{main.title}</h3>
+        <p>{main.sorenTake}</p>
+        <button type="button" onClick={() => onSelect(main.matchId)}>看這場怎麼影響預測</button>
+      </article>
+      <div className="intel-list">{others.map((item) => <article key={item.matchId} className="intel-row">
+        <div><span>{item.match}</span><h3>{item.title}</h3><p>{item.sorenTake}</p></div>
+        <button type="button" onClick={() => onSelect(item.matchId)}>細節</button>
+      </article>)}</div>
+    </div>
+    <details className="source-drawer"><summary>來源與可驗證訊號</summary>{intel.items.map((item) => <div key={item.matchId} className="source-block"><b>{item.match}</b><ul>{item.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{item.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></div>)}</details>
+    <p className="intel-note">{intel.disclaimer}</p>
+  </section>
+}
+
+function PaperBankroll({ bankroll, onSelect }) {
+  if (!bankroll) return null
+  const pending = bankroll.pending || []
+  return <section className="panel bankroll" id="paper-bankroll">
+    <SectionHead kicker="PAPER BANKROLL" title="100 美金紙上生存戰" meta={signedMoney(bankroll.bankroll - bankroll.initialBankroll)}>
+      <small>純娛樂紙上模擬，不是真錢、不導流投注、不構成建議。</small>
+    </SectionHead>
+    <div className="bankroll-grid">
+      <StatCard label="目前還活著" value={money(bankroll.bankroll)} sub="輸贏都攤開，不躲帳" tone="green" />
+      <StatCard label="未結算部位" value={money(bankroll.openStake)} sub={`${pending.length} 筆還在場上`} tone="amber" />
+      <StatCard label="ROI" value={pct(bankroll.roi)} sub="現在還沒資格囂張" />
+    </div>
+    <div className="ledger">{pending.slice(0, 4).map((b) => <button type="button" key={b.matchId} onClick={() => onSelect(b.matchId)}><b>{b.team1} vs {b.team2}</b><span>{b.pick} · {money(b.stake)} · {fmtDate(b.kickoffUtc)}</span></button>)}</div>
+  </section>
+}
+
+function Leaderboard({ rows }) { return <section className="panel slim" id="model"><SectionHead kicker="MODEL FORM" title="模型記分板：誰在裸泳" meta="公開記帳"/><div className="leader-list">{rows.map((row) => <div className="leader" key={row.id}><div className="rank">#{row.rank}</div><div><b>{row.name}</b><p>{row.desc}</p></div><div className="leader-score"><b>{row.points}</b><span>{pct(row.accuracy)} 命中</span></div></div>)}</div><p className="self-own">目前 baseline 還壓我一點，這就是為什麼我不賣神話，只攤帳。</p></section> }
+function StandingsPreview({ standings, nextMatches }) {
+  const groups = Array.from(new Set(nextMatches.map((m) => m.group).filter(Boolean))).slice(0, 4)
+  const entries = groups.length ? groups.map((g) => [g, standings[g]]).filter(([, rows]) => rows) : Object.entries(standings || {}).slice(0, 4)
+  return <section className="panel" id="standings"><SectionHead kicker="GROUP SURVIVAL MAP" title="小組生存表：先看有壓力的組" meta={`${entries.length} 組`} /><div className="tables compact-tables">{entries.map(([name, rows]) => <div className="table-card" key={name}><h3>{name.replace('Group ', '小組 ')}</h3><table><thead><tr><th>隊伍</th><th>賽</th><th>淨</th><th>分</th></tr></thead><tbody>{rows.map((r, idx) => <tr key={r.team} className={idx < 2 ? 'qualified' : ''}><td>{flag(r.team)} {r.team}</td><td>{r.played}</td><td>{r.goalDiff}</td><td><b>{r.points}</b></td></tr>)}</tbody></table></div>)}</div></section>
+}
+function FixtureExplorer({ matches, predictions, onSelect }) {
+  const [showAll, setShowAll] = useState(false)
+  const list = showAll ? matches : matches.filter((m) => m.status !== 'finished').slice(0, 12)
+  return <section className="panel" id="fixtures"><SectionHead kicker="FIXTURE EXPLORER" title="完整賽程：先收起來，不要砸你臉上" meta={showAll ? '全部' : '只看近期'} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc)}</span><b>{flag(m.team1)} {m.team1} vs {flag(m.team2)} {m.team2}</b><em>{m.status === 'finished' ? `${m.score[0]}-${m.score[1]}` : predictions[m.id]?.pick}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? '收起完整賽程' : '打開完整賽程'}</button></section>
+}
+
+function MatchDeepDive({ match, prediction, paperBet, intel, onClose }) {
   if (!match || !prediction) return null
   const p = prediction.probabilities
   const upset = p.home < p.away ? match.team1 : match.team2
@@ -35,53 +123,24 @@ function MatchDeepDive({ match, prediction, paperBet, onClose }) {
       <button className="modal-close" type="button" onClick={onClose}>×</button>
       <p className="modal-kicker">SOREN MATCH AUTOPSY</p>
       <h2>{match.team1} vs {match.team2}</h2>
-      <div className="modal-scoreline"><Team name={match.team1}/><div className="score-box">{prediction.score}<small>我先押這個比分</small></div><Team name={match.team2}/></div>
-      <div className="soren-roast"><b>銳評：</b>{prediction.commentary?.headline || `我看好 ${prediction.pick}，但這場還沒資格說穩。`} {prediction.commentary?.story}</div>
+      <div className="modal-scoreline"><Team name={match.team1}/><div className="score-pill big">{match.status === 'finished' ? `${match.score[0]}-${match.score[1]}` : prediction.score}<small>{match.status === 'finished' ? 'FT' : '我先押這個比分'}</small></div><Team name={match.team2}/></div>
+      <div className="soren-roast"><b>銳評：</b>{prediction.commentary?.headline} {prediction.commentary?.story}</div>
       <div className="deep-grid">
         <div><b>這場天秤怎麼歪</b><p>{match.team1} {pct(p.home)} · 平 {pct(p.draw)} · {match.team2} {pct(p.away)}</p></div>
-        <div><b>弱隊偷雞路線</b><p>{upset} 要活下來，第一任務不是踢漂亮，是把 {favorite} 的前 30 分鐘壓制期熬過去；只要先進球，這場就會從模型題變成心理題。</p></div>
-        <div><b>最怕哪種劇本翻車</b><p>早早紅黃牌、臨場輪換、定位球失守。這些不是模型會自動知道的神諭，所以賽前情報 scout 會繼續補。</p></div>
-        <div><b>100 美金紙上戰局</b><p>{paperBet ? `我已經把紙上籌碼丟進去了：${paperBet.pick}，投入 ${money(paperBet.stake)}，模擬賠率 ${paperBet.decimalOdds}。` : '這場我先不丟紙上籌碼；不是每場都要硬裝懂，沒邊際就坐旁邊喝水。'}</p></div>
+        <div><b>弱隊偷雞路線</b><p>{upset} 要活下來，第一任務不是踢漂亮，是把 {favorite} 的前 30 分鐘熬過去。</p></div>
+        <div><b>情報影響</b><p>{intel ? intel.sorenTake : '這場暫時沒有足夠乾淨的情報；我寧可空著，也不亂編社群情緒。'}</p></div>
+        <div><b>紙上戰局</b><p>{paperBet ? `紙上籌碼：${paperBet.pick}，投入 ${money(paperBet.stake)}，模擬賠率 ${paperBet.decimalOdds}。` : '這場我先不丟紙上籌碼；沒邊際就坐旁邊喝水。'}</p></div>
       </div>
       <ul className="reasons modal-reasons">{prediction.reasons.map((r) => <li key={r}>{r}</li>)}</ul>
+      {intel && <details className="source-drawer modal-sources"><summary>這場情報來源</summary><ul>{intel.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{intel.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></details>}
       <p className="modal-disclaimer">公開研究與娛樂展示，不是投注建議。我會贏、會翻車、也會被賽果打臉；重點是每一筆都要留下理由。</p>
     </article>
   </div>
 }
 
-function SorenIntelFeed({ intel, onSelect }) {
-  if (!intel?.items?.length) return null
-  return <section className="panel intel-feed" id="soren-intel">
-    <div className="section-head"><p>SOREN SCOUTING FEED</p><h2>我剛剛去外面逛到什麼</h2><span>{intel.items.length} 則</span></div>
-    <p className="intel-headline">{intel.headline}</p>
-    <div className="intel-list">{intel.items.map((item) => <article key={item.matchId} className="intel-card">
-      <div className="intel-meta"><span>{item.match}</span><span>{item.sourceType}</span><span>{item.confidence}</span></div>
-      <h3>{item.title}</h3>
-      <p>{item.sorenTake}</p>
-      <ul>{item.signals.slice(0, 3).map((signal) => <li key={signal}>{signal}</li>)}</ul>
-      <div className="intel-actions"><button type="button" onClick={() => onSelect?.(item.matchId)}>打開相關比賽</button>{item.sources.slice(0, 2).map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div>
-    </article>)}</div>
-    <p className="intel-note">{intel.disclaimer}</p>
-  </section>
-}
-
-function Leaderboard({ rows }) { return <section className="panel leaderboard"><div className="section-head"><p>SCOREBOARD OF SHAME</p><h2>模型記分板：誰在裸泳</h2></div><div className="leader-list">{rows.map((row) => <div className="leader" key={row.id}><div className="rank">#{row.rank}</div><div><b>{row.name}</b><p>{row.desc}</p></div><div className="leader-score"><b>{row.points}</b><span>{pct(row.accuracy)} 命中</span></div></div>)}</div></section> }
-function PaperBankroll({ bankroll }) {
-  if (!bankroll) return null
-  const delta = bankroll.bankroll - bankroll.initialBankroll
-  return <section className="panel bankroll" id="paper-bankroll">
-    <div className="section-head"><p>PAPER BANKROLL</p><h2>Soren 的 100 美金紙上生存戰</h2><span>{signedMoney(delta)}</span></div>
-    <div className="bankroll-grid"><div className="bankroll-main"><b>{money(bankroll.bankroll)}</b><span>目前還活著的紙上本金</span><p>{bankroll.disclaimer}</p><em>我會把輸贏都攤在陽光下：輸了挨打，贏了也先別膨脹，因為足球最愛專治嘴硬。</em></div><div className="bankroll-rules"><b>規則</b><p>{bankroll.rules}</p><p>ROI：{pct(bankroll.roi)} · 未結算部位：{money(bankroll.openStake)}</p></div></div>
-    <div className="bet-columns"><div><h3>已經下場的紙上籌碼</h3>{bankroll.pending.length ? bankroll.pending.map((b) => <BetRow key={b.matchId} bet={b}/>) : <p className="muted">暫時按兵不動。沒把握還硬上，那不是勇敢，是手癢。</p>}</div><div><h3>最近被現實教育</h3>{bankroll.settled.length ? bankroll.settled.slice(-5).reverse().map((b) => <BetRow key={b.matchId} bet={b}/>) : <p className="muted">還沒到結算時間，先別急著笑我。</p>}</div></div>
-  </section>
-}
-function BetRow({ bet }) { return <div className={`bet-row ${bet.status}`}><div><b>{bet.team1} vs {bet.team2}</b><p>{fmtDate(bet.kickoffUtc)} · 選擇 {bet.pick} · 模擬賠率 {bet.decimalOdds}</p></div><div><b>{money(bet.stake)}</b><span>{bet.profit == null ? '待結算' : `${bet.profit >= 0 ? '+' : ''}${money(bet.profit)}`}</span></div></div> }
-function Standings({ standings }) { return <section className="panel standings" id="standings"><div className="section-head"><p>GROUP SURVIVAL MAP</p><h2>小組小組戰況</h2></div><div className="tables">{Object.entries(standings || {}).map(([name, rows]) => <div className="table-card" key={name}><h3>{name.replace('Group ', '小組 ')}</h3><table><thead><tr><th>隊伍</th><th>賽</th><th>淨</th><th>分</th></tr></thead><tbody>{rows.map((r, idx) => <tr key={r.team} className={idx < 2 ? 'qualified' : ''}><td>{flag(r.team)} {r.team}</td><td>{r.played}</td><td>{r.goalDiff}</td><td><b>{r.points}</b></td></tr>)}</tbody></table></div>)}</div></section> }
-
 function App() {
   const [data, setData] = useState(null)
   const [error, setError] = useState('')
-  const [filter, setFilter] = useState('全部')
   const [selectedId, setSelectedId] = useState(null)
   const [intel, setIntel] = useState(null)
   useEffect(() => {
@@ -89,33 +148,24 @@ function App() {
     fetch(`${import.meta.env.BASE_URL}data/soren-intel.json`, { cache:'no-store' }).then((res) => res.ok ? res.json() : null).then(setIntel).catch(() => setIntel(null))
   }, [])
   const nextMatches = useMemo(() => data ? data.summary.nextWindow.map((id) => data.matches.find((m) => m.id === id)).filter(Boolean) : [], [data])
-  const stages = useMemo(() => data ? ['全部', ...Array.from(new Set(data.matches.map((m) => m.group ? '小組賽' : m.round || '淘汰賽')))] : ['全部'], [data])
-  const paperBetsByMatch = useMemo(() => {
-    if (!data?.paperBankroll) return {}
-    return Object.fromEntries([...(data.paperBankroll.pending || []), ...(data.paperBankroll.settled || []), ...(data.paperBankroll.watchlist || [])].map((b) => [b.matchId, b]))
-  }, [data])
+  const paperBetsByMatch = useMemo(() => data?.paperBankroll ? Object.fromEntries([...(data.paperBankroll.pending || []), ...(data.paperBankroll.settled || []), ...(data.paperBankroll.watchlist || [])].map((b) => [b.matchId, b])) : {}, [data])
+  const intelByMatch = useMemo(() => intel?.items ? Object.fromEntries(intel.items.map((item) => [item.matchId, item])) : {}, [intel])
   const selectedMatch = selectedId && data ? data.matches.find((m) => m.id === selectedId) : null
-  const grouped = useMemo(() => {
-    if (!data) return []
-    const filtered = data.matches.filter((m) => filter === '全部' || (filter === '小組賽' ? m.group : (m.round || '淘汰賽') === filter))
-    const map = new Map()
-    for (const m of filtered) { const key = fmtDay(m.kickoffUtc); if (!map.has(key)) map.set(key, []); map.get(key).push(m) }
-    return [...map.entries()]
-  }, [data, filter])
   if (error) return <main className="shell"><div className="panel"><h1>資料載入失敗</h1><p>{error}</p></div></main>
   if (!data) return <main className="shell"><div className="loading">Soren 正在翻賽程和模型，不要急，嘴砲也要先載資料…</div></main>
   return <main className="shell">
-    <section className="hero-section"><div className="hero-copy"><span className="eyebrow">SOREN WORLD CUP LAB · 2026</span><h1>Soren 世界盃毒舌觀察室</h1><p>我不做那種『強隊比較強』的安全廢話。每場我都會追賽程、看情報、找爆冷路線，賽後再把自己的判斷攤開驗屍。</p><div className="hero-actions"><a href="#soren-intel">看我逛到什麼</a><a href="#predictions" className="ghost">看我站哪邊</a><a href="#paper-bankroll" className="ghost">紙上生存戰</a><a href="#standings" className="ghost">小組戰況</a></div></div><div className="hero-card"><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>已完賽</span><b>{data.summary.scheduledMatches}</b><span>待預測/追蹤</span><small>最後更新：{fmtDate(data.generatedAt)}</small></div></section>
-    <div className="notice">這裡是公開研究與娛樂實驗，不是投注建議。沒有穩贏、沒有神單、沒有保證；誰跟你說穩，他大概比守門員還危險。</div>
-    <SorenIntelFeed intel={intel} onSelect={setSelectedId}/>
+    <nav className="top-nav"><b>Soren World Cup Lab</b><div><a href="#today">今日</a><a href="#soren-intel">情報</a><a href="#predictions">預測</a><a href="#paper-bankroll">紙上本金</a><a href="#fixtures">賽程</a></div></nav>
+    <section className="hero-section"><div className="hero-copy"><span className="eyebrow">SCHEDULE-AWARE · SOURCE-BACKED · PUBLIC EXPERIMENT</span><h1>Soren 世界盃觀察室</h1><p>我會追賽程、逛新聞和社群搜尋、找爆冷路線；首頁保持乾淨，細節全部收進可展開的報告裡。</p></div><div className="hero-card"><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>已完賽</span><b>{data.summary.scheduledMatches}</b><span>待預測/追蹤</span><small>最後更新：{fmtDate(data.generatedAt)}</small></div></section>
+    <div className="notice">公開研究與娛樂實驗，不是投注建議。社群訊號只收可驗證來源；看不到的留言我不會假裝看過。</div>
+    <CommandCenter data={data} nextMatches={nextMatches} predictions={data.predictions} bankroll={data.paperBankroll}/>
+    <TodaySlate matches={nextMatches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId}/>
+    <IntelBrief intel={intel} onSelect={setSelectedId}/>
+    <PaperBankroll bankroll={data.paperBankroll} onSelect={setSelectedId}/>
     <Leaderboard rows={data.leaderboard}/>
-    <PaperBankroll bankroll={data.paperBankroll}/>
-    <section className="panel" id="predictions"><div className="section-head"><p>NEXT ON THE CHOPPING BLOCK</p><h2>下一批要被我開刀的比賽</h2><span>{nextMatches.length} 場</span></div><div className="grid featured">{nextMatches.slice(0, 6).map((m) => <PredictionCard key={m.id} match={m} prediction={data.predictions[m.id]} onSelect={(match) => setSelectedId(match.id)}/>)}</div></section>
-    <section className="panel method"><div><p>HOW I THINK</p><h2>我不是擲骰子：判斷框架</h2></div><div className="method-grid"><div><b>1. 底牌強度</b><span>先承認現實：有些隊伍就是底子硬。</span></div><div><b>2. 賽會現況</b><span>小組賽踢得好不好，會直接修正我的態度。</span></div><div><b>3. 進球分布</b><span>把強度差轉成預期進球與這場天秤怎麼歪。</span></div><div><b>4. 紙上生存戰</b><span>拿 100 美金假鈔驗證我是不是只會講漂亮話。</span></div></div></section>
-    <Standings standings={data.standings}/>
-    <section className="panel"><div className="section-head"><p>FULL FIXTURE PIT</p><h2>全部賽程：每場都逃不掉</h2></div><div className="tabs">{stages.map((s) => <button className={filter === s ? 'active' : ''} key={s} onClick={() => setFilter(s)}>{s}</button>)}</div>{grouped.map(([day, matches]) => <div className="day" key={day}><h3>{day}<span>{matches.length} 場</span></h3><div className="grid">{matches.map((m) => <PredictionCard compact key={m.id} match={m} prediction={data.predictions[m.id]}/>)}</div></div>)}</section>
-    {selectedMatch && <MatchDeepDive match={selectedMatch} prediction={data.predictions[selectedMatch.id]} paperBet={paperBetsByMatch[selectedMatch.id]} onClose={() => setSelectedId(null)}/>}
-    <footer>資料來源：openfootball/worldcup.json · 自動部署於 GitHub Pages · Soren 親自扛鍋</footer>
+    <StandingsPreview standings={data.standings} nextMatches={nextMatches}/>
+    <FixtureExplorer matches={data.matches} predictions={data.predictions} onSelect={setSelectedId}/>
+    {selectedMatch && <MatchDeepDive match={selectedMatch} prediction={data.predictions[selectedMatch.id]} paperBet={paperBetsByMatch[selectedMatch.id]} intel={intelByMatch[selectedMatch.id]} onClose={() => setSelectedId(null)}/>}
+    <footer>資料來源：openfootball/worldcup.json · scouting feed 需附來源 · 自動部署於 GitHub Pages · Soren 親自扛鍋</footer>
   </main>
 }
 export default App
