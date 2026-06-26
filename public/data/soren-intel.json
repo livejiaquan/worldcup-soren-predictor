@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-26T10:40:30Z",
-  "status": "schedule-aware-scout-2026-06-26T10Z-plus-next48h",
-  "headline": "Soren 補上 48 小時缺口：G/K/L/J 組最後一輪不是背景音，出線數學、輪換和小組頭名壓力都會咬人。",
+  "generatedAt": "2026-06-26T11:23:58Z",
+  "status": "schedule-aware-scout-2026-06-26T11Z-imminent-provenance-refresh",
+  "headline": "Soren 補強賽前來源鏈：I/H 組最後一輪加上官方 match centre、Spain 官方預覽與 Cape Verde 傷停核對；沒有確認先發就不裝神。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -14,13 +14,59 @@
         "ESPN 報導 Senegal 確認一號門將 Édouard Mendy 因對 Norway 受傷，將缺席對 Iraq 的小組決戰。",
         "ESPN 賽前頁重申 Mendy 膝傷，並提供賽前預測陣容脈絡。",
         "Sports Illustrated 預測 Senegal 可能由 Diaw 替代 Mendy 先發。",
-        "Guardian 賽後脈絡曾指出 Senegal 對 Iraq 需要 big result 才能衝擊淘汰賽。"
+        "Guardian 賽後脈絡曾指出 Senegal 對 Iraq 需要 big result 才能衝擊淘汰賽。",
+        "FIFA match centre 已核對可連線，作為 Senegal-Iraq 臨場比分/陣容官方入口；正式先發未出前只保留傷停與預測陣容標籤。",
+        "Sports Mole 賽前專題提到 Senegal 教練 Pape Thiaw 承諾調整/「戰術革命」脈絡；屬媒體戰術觀察，不是官方先發。"
       ],
       "sources": [
-        { "label": "ESPN Mendy injury report", "url": "https://www.espn.com/espn/story/_/id/49160006/senegal-goalkeeper-edouard-mendy-ruled-fifa-world-cup-decider-iraq", "sourceName": "ESPN", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "confirmed", "confidence": "high" },
-        { "label": "ESPN Senegal-Iraq preview", "url": "https://www.espn.com/soccer/story/_/id/49165930/fifa-world-cup-2026-senegal-vs-iraq-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups", "sourceName": "ESPN", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "high" },
-        { "label": "SI preview", "url": "https://www.si.com/soccer/senegal-vs-iraq-world-cup-preview-predictions-lineups-6-26-26", "sourceName": "Sports Illustrated", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium" },
-        { "label": "Guardian Norway-Senegal live blog", "url": "https://www.theguardian.com/football/live/2026/jun/22/norway-v-senegal-world-cup-2026-live", "sourceName": "The Guardian", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "medium" }
+        {
+          "label": "ESPN Mendy injury report",
+          "url": "https://www.espn.com/espn/story/_/id/49160006/senegal-goalkeeper-edouard-mendy-ruled-fifa-world-cup-decider-iraq",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Senegal-Iraq preview",
+          "url": "https://www.espn.com/soccer/story/_/id/49165930/fifa-world-cup-2026-senegal-vs-iraq-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported",
+          "confidence": "high"
+        },
+        {
+          "label": "SI preview",
+          "url": "https://www.si.com/soccer/senegal-vs-iraq-world-cup-preview-predictions-lineups-6-26-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported",
+          "confidence": "medium"
+        },
+        {
+          "label": "Guardian Norway-Senegal live blog",
+          "url": "https://www.theguardian.com/football/live/2026/jun/22/norway-v-senegal-world-cup-2026-live",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "context",
+          "confidence": "medium"
+        },
+        {
+          "label": "FIFA Senegal-Iraq match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021493",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T11:20:00Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole Senegal tactical context",
+          "url": "https://www.sportsmole.co.uk/football/senegal/world-cup-2026/feature/thiaw-promises-revolution-as-lions-world-cup-2026-campaign-reaches-crisis-point_600104.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-26T11:20:00Z",
+          "claimType": "reported/tactical",
+          "confidence": "medium"
+        }
       ],
       "confidence": "high"
     },
@@ -33,12 +79,34 @@
       "signals": [
         "FIFA match centre 確認 Norway vs France 於 2026-06-26 19:00 UTC 在 Foxborough/Boston Stadium 開球。",
         "Al Jazeera 賽前文指出這是 Group I 頭名之戰，並提到短休與輪換可能。",
-        "News18 預覽指出兩隊都已晉級淘汰賽，但小組第一仍待決。"
+        "News18 預覽指出兩隊都已晉級淘汰賽，但小組第一仍待決。",
+        "FIFA match centre 已核對可連線，作為臨場比分/陣容官方入口；截至本次巡檢未見確認先發，仍不把預測 XI 寫成事實。"
       ],
       "sources": [
-        { "label": "FIFA match centre", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021489", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "confirmed", "confidence": "high" },
-        { "label": "Al Jazeera preview", "url": "https://www.aljazeera.com/sports/2026/6/25/norway-vs-france-at-world-cup-2026-mbappe-vs-haaland-team-news-lineups", "sourceName": "Al Jazeera", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported/context", "confidence": "high" },
-        { "label": "News18 preview", "url": "https://www.news18.com/sports/football/fifa-world-cup-2026-norway-vs-france-predicted-lineups-team-news-prediction-and-more-ws-l-10174621.html", "sourceName": "News18", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "medium" }
+        {
+          "label": "FIFA match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021489",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera preview",
+          "url": "https://www.aljazeera.com/sports/2026/6/25/norway-vs-france-at-world-cup-2026-mbappe-vs-haaland-team-news-lineups",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported/context",
+          "confidence": "high"
+        },
+        {
+          "label": "News18 preview",
+          "url": "https://www.news18.com/sports/football/fifa-world-cup-2026-norway-vs-france-predicted-lineups-team-news-prediction-and-more-ws-l-10174621.html",
+          "sourceName": "News18",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "context",
+          "confidence": "medium"
+        }
       ],
       "confidence": "medium-high"
     },
@@ -52,12 +120,42 @@
         "Al Jazeera 指出 Spain 與 Uruguay 爭 Group H 頭名與更有利淘汰賽籤位。",
         "Al Jazeera 指出 Pedri 因累積黃牌缺陣，Spain 中場需要調整。",
         "Reuters 指出 Uruguay 前兩戰只拿兩分，對 Spain 仍在追小組首勝。",
-        "Reuters 另報導 Bielsa 對 Uruguay 兩場兩分而非六分感到困惑/不滿。"
+        "Reuters 另報導 Bielsa 對 Uruguay 兩場兩分而非六分感到困惑/不滿。",
+        "RFEF 官方賽前文把 Uruguay-Spain 描述為經典對碰，並提供雙方歷史交手脈絡；這是 Spain 陣營官方背景，不等於確認先發。"
       ],
       "sources": [
-        { "label": "Al Jazeera Uruguay-Spain preview", "url": "https://www.aljazeera.com/sports/2026/6/25/world-cup-2026-uruguay-vs-spain-knockouts-prediction-lineups", "sourceName": "Al Jazeera", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported/context", "confidence": "high" },
-        { "label": "Reuters Spain test", "url": "https://www.reuters.com/sports/soccer/unconvincing-uruguay-seek-first-win-against-revitalised-spain-2026-06-24/", "sourceName": "Reuters", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "high" },
-        { "label": "Reuters Bielsa context", "url": "https://www.reuters.com/sports/soccer/uruguay-coach-bielsa-flummoxed-by-tally-two-points-rather-than-six-2026-06-22/", "sourceName": "Reuters", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "high" }
+        {
+          "label": "Al Jazeera Uruguay-Spain preview",
+          "url": "https://www.aljazeera.com/sports/2026/6/25/world-cup-2026-uruguay-vs-spain-knockouts-prediction-lineups",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Reuters Spain test",
+          "url": "https://www.reuters.com/sports/soccer/unconvincing-uruguay-seek-first-win-against-revitalised-spain-2026-06-24/",
+          "sourceName": "Reuters",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "Reuters Bielsa context",
+          "url": "https://www.reuters.com/sports/soccer/uruguay-coach-bielsa-flummoxed-by-tally-two-points-rather-than-six-2026-06-22/",
+          "sourceName": "Reuters",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "RFEF Uruguay-Spain official preview",
+          "url": "https://rfef.es/es/noticias/el-volcan-se-apaga-con-un-clasico-del-futbol-uruguay-y-espana-frente-frente",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-06-26T11:20:00Z",
+          "claimType": "context",
+          "confidence": "high"
+        }
       ],
       "confidence": "high"
     },
@@ -71,13 +169,58 @@
         "The Football Faithful 指出 Cape Verde 只需和局即可晉級，Saudi Arabia 必須取勝。",
         "Reuters/Straits Times 報導 Cape Verde defender Pico Lopes 表示 32 強席位在可及範圍內，但 Saudi Arabia 仍會被同等尊重。",
         "RotoWire 報導 Cape Verde 缺少停賽的 Sidny Lopes Cabral。",
-        "Sports Mole 報導 Cape Verde 對 Saudi Arabia 可能有三名球員缺陣。"
+        "Sports Mole 報導 Cape Verde 對 Saudi Arabia 可能有三名球員缺陣。",
+        "FotMob 傷停頁面同時列出 Cape Verde 的 Sidny Lopes Cabral 停賽與 Telmo Arcanjo 傷情，Saudi Arabia 暫無 unavailable players；此為賽前資料頁，仍需臨場確認。"
       ],
       "sources": [
-        { "label": "The Football Faithful preview", "url": "https://thefootballfaithful.com/cape-verde-vs-saudi-arabia-match-preview-and-team-news/", "sourceName": "The Football Faithful", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "medium" },
-        { "label": "Straits Times / Reuters", "url": "https://www.straitstimes.com/sport/football/nothing-changes-for-cape-verde-in-crunch-clash-with-saudi-arabia", "sourceName": "Reuters via Straits Times", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "high" },
-        { "label": "RotoWire team news", "url": "https://www.rotowire.com/soccer/article/cape-verde-vs-saudi-arabia-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-h-119633", "sourceName": "RotoWire", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium" },
-        { "label": "Sports Mole predicted lineups", "url": "https://www.sportsmole.co.uk/football/cape-verde/world-cup-2026/predicted-lineups/three-players-missing-for-bubista-how-cape-verde-could-line-up-vs-saudi-arabia_599985.html", "sourceName": "Sports Mole", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium" }
+        {
+          "label": "The Football Faithful preview",
+          "url": "https://thefootballfaithful.com/cape-verde-vs-saudi-arabia-match-preview-and-team-news/",
+          "sourceName": "The Football Faithful",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "context",
+          "confidence": "medium"
+        },
+        {
+          "label": "Straits Times / Reuters",
+          "url": "https://www.straitstimes.com/sport/football/nothing-changes-for-cape-verde-in-crunch-clash-with-saudi-arabia",
+          "sourceName": "Reuters via Straits Times",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported",
+          "confidence": "high"
+        },
+        {
+          "label": "RotoWire team news",
+          "url": "https://www.rotowire.com/soccer/article/cape-verde-vs-saudi-arabia-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-h-119633",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole predicted lineups",
+          "url": "https://www.sportsmole.co.uk/football/cape-verde/world-cup-2026/predicted-lineups/three-players-missing-for-bubista-how-cape-verde-could-line-up-vs-saudi-arabia_599985.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported",
+          "confidence": "medium"
+        },
+        {
+          "label": "FIFA Cape Verde-Saudi Arabia match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021485",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T11:20:00Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "FotMob Cape Verde-Saudi Arabia tracker",
+          "url": "https://www.fotmob.com/matches/cape-verde-vs-saudi-arabia/1jqqyp",
+          "sourceName": "FotMob",
+          "fetchedAt": "2026-06-26T11:20:00Z",
+          "claimType": "reported",
+          "confidence": "medium"
+        }
       ],
       "confidence": "medium"
     },
@@ -94,10 +237,38 @@
         "NBC News 報導 FIFA 將允許 Egypt vs Iran Pride Match 出現彩虹旗。"
       ],
       "sources": [
-        { "label": "Sports Mole injury/suspension list", "url": "https://www.sportsmole.co.uk/football/egypt/world-cup-2026/team-news/egypt-vs-iran-injury-suspension-list-predicted-xis_600004.html", "sourceName": "Sports Mole", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context/reported", "confidence": "medium" },
-        { "label": "RotoWire preview", "url": "https://www.rotowire.com/soccer/article/egypt-vs-iran-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-g-119635", "sourceName": "RotoWire", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "medium" },
-        { "label": "Reuters Pride Match context", "url": "https://www.reuters.com/sports/soccer/seattle-sticking-with-world-cup-pride-match-hoping-it-can-change-minds-2026-06-24/", "sourceName": "Reuters", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "high" },
-        { "label": "NBC News rainbow flag report", "url": "https://www.nbcnews.com/sports/soccer/world-cup-2026-fifa-allows-rainbow-flags-egypt-iran-match-seattle-prid-rcna351792", "sourceName": "NBC News", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "confirmed", "confidence": "medium" }
+        {
+          "label": "Sports Mole injury/suspension list",
+          "url": "https://www.sportsmole.co.uk/football/egypt/world-cup-2026/team-news/egypt-vs-iran-injury-suspension-list-predicted-xis_600004.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "context/reported",
+          "confidence": "medium"
+        },
+        {
+          "label": "RotoWire preview",
+          "url": "https://www.rotowire.com/soccer/article/egypt-vs-iran-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-g-119635",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "context",
+          "confidence": "medium"
+        },
+        {
+          "label": "Reuters Pride Match context",
+          "url": "https://www.reuters.com/sports/soccer/seattle-sticking-with-world-cup-pride-match-hoping-it-can-change-minds-2026-06-24/",
+          "sourceName": "Reuters",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "NBC News rainbow flag report",
+          "url": "https://www.nbcnews.com/sports/soccer/world-cup-2026-fifa-allows-rainbow-flags-egypt-iran-match-seattle-prid-rcna351792",
+          "sourceName": "NBC News",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "confirmed",
+          "confidence": "medium"
+        }
       ],
       "confidence": "medium"
     },
@@ -113,9 +284,30 @@
         "Opta Analyst 賽前模型明顯偏 Belgium，同時指出 Belgium 世界盃近期進球效率壓力，適合列為紙上校準參考而非投注建議。"
       ],
       "sources": [
-        { "label": "FIFA match centre", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021481", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "confirmed", "confidence": "high" },
-        { "label": "FIFA New Zealand-Belgium preview", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/new-zealand-belgium-preview-live-stream-team-news-tickets", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "context", "confidence": "high" },
-        { "label": "Opta Analyst preview", "url": "https://theanalyst.com/articles/new-zealand-vs-belgium-prediction-world-cup-2026-match-preview", "sourceName": "Opta Analyst", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "odds-reference/context", "confidence": "medium" }
+        {
+          "label": "FIFA match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021481",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA New Zealand-Belgium preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/new-zealand-belgium-preview-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "Opta Analyst preview",
+          "url": "https://theanalyst.com/articles/new-zealand-vs-belgium-prediction-world-cup-2026-match-preview",
+          "sourceName": "Opta Analyst",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "odds-reference/context",
+          "confidence": "medium"
+        }
       ],
       "confidence": "medium-high"
     },
@@ -132,10 +324,38 @@
         "FIFA match report 確認 Jordan 6 月 22 日以 1-2 不敵 Algeria，已處在低位情境。"
       ],
       "sources": [
-        { "label": "Reuters Argentina rotation", "url": "https://www.reuters.com/sports/soccer/argentina-set-rotate-squad-against-eliminated-jordan-may-rest-messi-2026-06-25/", "sourceName": "Reuters", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "high" },
-        { "label": "The Star / Reuters", "url": "https://www.thestar.com.my/sport/football/2026/06/26/soccer-argentina-set-to-rotate-squad-against-eliminated-jordan-may-rest-messi", "sourceName": "The Star via Reuters", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "high" },
-        { "label": "Rediff rotation context", "url": "https://www.rediff.com/sports/report/fifa-world-cup-2026-argentinas-strategy-squad-rotation-ahead-of-knockouts/20260625.htm", "sourceName": "Rediff", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium" },
-        { "label": "FIFA Jordan-Algeria match report", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/jordan-algeria-match-report-highlights", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "confirmed", "confidence": "high" }
+        {
+          "label": "Reuters Argentina rotation",
+          "url": "https://www.reuters.com/sports/soccer/argentina-set-rotate-squad-against-eliminated-jordan-may-rest-messi-2026-06-25/",
+          "sourceName": "Reuters",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported",
+          "confidence": "high"
+        },
+        {
+          "label": "The Star / Reuters",
+          "url": "https://www.thestar.com.my/sport/football/2026/06/26/soccer-argentina-set-to-rotate-squad-against-eliminated-jordan-may-rest-messi",
+          "sourceName": "The Star via Reuters",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported",
+          "confidence": "high"
+        },
+        {
+          "label": "Rediff rotation context",
+          "url": "https://www.rediff.com/sports/report/fifa-world-cup-2026-argentinas-strategy-squad-rotation-ahead-of-knockouts/20260625.htm",
+          "sourceName": "Rediff",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported",
+          "confidence": "medium"
+        },
+        {
+          "label": "FIFA Jordan-Algeria match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/jordan-algeria-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        }
       ],
       "confidence": "high"
     },
@@ -152,10 +372,38 @@
         "NBC News 報導 England 前一場與 Ghana 0-0，Croatia 則 1-0 擊敗 Panama。"
       ],
       "sources": [
-        { "label": "FIFA Panama-England preview", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/panama-england-preview-live-stream-team-news-tickets", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "high" },
-        { "label": "Goal.com England injury watch", "url": "https://www.goal.com/en-us/lists/injury-england-reece-james-declan-rice-miss-training-world-cup-panama/blt59c7a32ca6e3af2e", "sourceName": "Goal.com", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium-high" },
-        { "label": "Yahoo Sports injury report", "url": "https://sports.yahoo.com/articles/double-injury-scare-england-reece-052004364.html", "sourceName": "Yahoo Sports", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "reported", "confidence": "medium-high" },
-        { "label": "NBC News Group L context", "url": "https://www.nbcnews.com/sports/soccer/live-blog/fifa-world-cup-games-2026-june-23-live-updates-rcna351348", "sourceName": "NBC News", "fetchedAt": "2026-06-26T10:03:38Z", "claimType": "context", "confidence": "high" }
+        {
+          "label": "FIFA Panama-England preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/panama-england-preview-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "Goal.com England injury watch",
+          "url": "https://www.goal.com/en-us/lists/injury-england-reece-james-declan-rice-miss-training-world-cup-panama/blt59c7a32ca6e3af2e",
+          "sourceName": "Goal.com",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Yahoo Sports injury report",
+          "url": "https://sports.yahoo.com/articles/double-injury-scare-england-reece-052004364.html",
+          "sourceName": "Yahoo Sports",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "reported",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "NBC News Group L context",
+          "url": "https://www.nbcnews.com/sports/soccer/live-blog/fifa-world-cup-games-2026-june-23-live-updates-rcna351348",
+          "sourceName": "NBC News",
+          "fetchedAt": "2026-06-26T10:03:38Z",
+          "claimType": "context",
+          "confidence": "high"
+        }
       ],
       "confidence": "medium-high"
     },
@@ -171,8 +419,22 @@
         "目前未見可公開確認先發；預測 XI 只作情境參考，不當成官方陣容。"
       ],
       "sources": [
-        { "label": "FIFA Croatia-Ghana preview", "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/croatia-ghana-live-stream-team-news-tickets", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "confirmed/context", "confidence": "high" },
-        { "label": "RotoWire preview", "url": "https://www.rotowire.com/soccer/article/croatia-vs-ghana-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-l-119773", "sourceName": "RotoWire", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/context", "confidence": "medium" }
+        {
+          "label": "FIFA Croatia-Ghana preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/croatia-ghana-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "RotoWire preview",
+          "url": "https://www.rotowire.com/soccer/article/croatia-vs-ghana-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-l-119773",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "reported/context",
+          "confidence": "medium"
+        }
       ],
       "confidence": "medium"
     },
@@ -188,9 +450,30 @@
         "Sports Mole 賽前摘要提到 Portugal 前場人選競爭，包括 Bernardo Silva、Rafael Leao、Joao Felix 等；屬預期陣容訊號，不是確認先發。"
       ],
       "sources": [
-        { "label": "ABC News Australia live context", "url": "https://www.abc.net.au/news/2026-06-24/fifa-world-cup-live-portugal-cristiano-ronaldo-england-ghana/106833962", "sourceName": "ABC News Australia", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "context", "confidence": "high" },
-        { "label": "The Stats Zone preview", "url": "https://www.thestatszone.com/colombia-vs-portugal-preview-team-news-prediction-fifa-world-cup-2026-group-stage-201363", "sourceName": "The Stats Zone", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "context/tactical", "confidence": "medium" },
-        { "label": "Sports Mole preview", "url": "https://www.sportsmole.co.uk/football/portugal/world-cup-2026/preview/colombia-vs-portugal-prediction-team-news-lineups_600099.html", "sourceName": "Sports Mole", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/lineup-watch", "confidence": "medium" }
+        {
+          "label": "ABC News Australia live context",
+          "url": "https://www.abc.net.au/news/2026-06-24/fifa-world-cup-live-portugal-cristiano-ronaldo-england-ghana/106833962",
+          "sourceName": "ABC News Australia",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "The Stats Zone preview",
+          "url": "https://www.thestatszone.com/colombia-vs-portugal-preview-team-news-prediction-fifa-world-cup-2026-group-stage-201363",
+          "sourceName": "The Stats Zone",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "context/tactical",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole preview",
+          "url": "https://www.sportsmole.co.uk/football/portugal/world-cup-2026/preview/colombia-vs-portugal-prediction-team-news-lineups_600099.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        }
       ],
       "confidence": "medium-high"
     },
@@ -206,9 +489,30 @@
         "Sports Mole 賽前摘要點出 Abbosbek Fayzullaev 是 Uzbekistan 目前本屆進球來源之一，屬球員狀態/進攻線索。"
       ],
       "sources": [
-        { "label": "FIFA match centre", "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021500", "sourceName": "FIFA", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "confirmed", "confidence": "high" },
-        { "label": "The Stats Zone preview", "url": "https://www.thestatszone.com/congo-dr-vs-uzbekistan-preview-team-news-prediction-fifa-world-cup-2026-group-stage-201365", "sourceName": "The Stats Zone", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/tactical", "confidence": "medium" },
-        { "label": "Sports Mole preview", "url": "https://www.sportsmole.co.uk/football/congo-dr/world-cup-2026/preview/congo-dr-vs-uzbekistan-prediction-team-news-lineups_600068.html", "sourceName": "Sports Mole", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/player-form", "confidence": "medium" }
+        {
+          "label": "FIFA match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021500",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "The Stats Zone preview",
+          "url": "https://www.thestatszone.com/congo-dr-vs-uzbekistan-preview-team-news-prediction-fifa-world-cup-2026-group-stage-201365",
+          "sourceName": "The Stats Zone",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "reported/tactical",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole preview",
+          "url": "https://www.sportsmole.co.uk/football/congo-dr/world-cup-2026/preview/congo-dr-vs-uzbekistan-prediction-team-news-lineups_600068.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "reported/player-form",
+          "confidence": "medium"
+        }
       ],
       "confidence": "medium"
     },
@@ -224,9 +528,30 @@
         "Oddspedia 顯示本場公開 odds 聚合，可作紙上模擬參考；不提供投注建議或真金流。"
       ],
       "sources": [
-        { "label": "Goal.com Algeria-Austria preview", "url": "https://www.goal.com/en-us/news/algeria-austria-world-cup-preview/bltd61a8ee4bb405624", "sourceName": "Goal.com", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/context", "confidence": "medium-high" },
-        { "label": "EuropeSays mirror/context", "url": "https://www.europesays.com/africa/299167/", "sourceName": "EuropeSays", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "reported/context", "confidence": "low-medium" },
-        { "label": "Oddspedia odds reference", "url": "https://oddspedia.com/football/algeria-austria-1654588", "sourceName": "Oddspedia", "fetchedAt": "2026-06-26T10:40:30Z", "claimType": "odds-reference", "confidence": "medium" }
+        {
+          "label": "Goal.com Algeria-Austria preview",
+          "url": "https://www.goal.com/en-us/news/algeria-austria-world-cup-preview/bltd61a8ee4bb405624",
+          "sourceName": "Goal.com",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "reported/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "EuropeSays mirror/context",
+          "url": "https://www.europesays.com/africa/299167/",
+          "sourceName": "EuropeSays",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "reported/context",
+          "confidence": "low-medium"
+        },
+        {
+          "label": "Oddspedia odds reference",
+          "url": "https://oddspedia.com/football/algeria-austria-1654588",
+          "sourceName": "Oddspedia",
+          "fetchedAt": "2026-06-26T10:40:30Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        }
       ],
       "confidence": "medium"
     }
