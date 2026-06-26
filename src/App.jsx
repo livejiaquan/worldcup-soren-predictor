@@ -10,7 +10,7 @@ const pct = (v) => `${Math.round((v || 0) * 100)}%`
 const money = (v) => `$${Number(v || 0).toFixed(2)}`
 const signedMoney = (v) => `${Number(v || 0) >= 0 ? '+' : ''}${money(v)}`
 
-function Team({ name }) { return <span className="team-inline"><span>{flag(name)}</span>{name}</span> }
+function Team({ name }) { return <span className="team-inline"><span className="flag-emoji">{flag(name)}</span><span className="team-name">{name}</span></span> }
 function ProbBar({ prediction }) { const p = prediction.probabilities; return <div className="prob-bar"><span style={{ width:pct(p.home) }}/><span style={{ width:pct(p.draw) }}/><span style={{ width:pct(p.away) }}/></div> }
 function SectionHead({ kicker, title, meta, children }) { return <div className="section-head"><div><p>{kicker}</p><h2>{title}</h2>{children}</div>{meta && <span>{meta}</span>}</div> }
 
@@ -63,25 +63,17 @@ function TodaySlate({ matches, predictions, paperBetsByMatch, intelByMatch, onSe
 
 function IntelBrief({ intel, onSelect }) {
   if (!intel?.items?.length) return null
-  const [main, ...others] = intel.items
-  return <section className="panel intel-feed" id="soren-intel">
-    <SectionHead kicker="SOREN SCOUTING BRIEF" title="我出去逛到的重點，先替你濾過" meta={`${intel.items.length} 則`}>
-      <small>新聞、社群搜尋、賽前敘事，只放會改變判斷的東西。</small>
+  return <section className="panel intel-feed compact-intel" id="soren-intel">
+    <SectionHead kicker="SOREN SCOUTING BRIEF" title="賽前情報摘要" meta={`${intel.items.length} 則`}>
+      <small>公開頁只放會影響觀點的重點；完整來源與推理收進細節，底層方法不公開。</small>
     </SectionHead>
-    <div className="intel-layout">
-      <article className="intel-main">
-        <div className="intel-meta"><span>{main.match}</span><span>{main.sourceType}</span><span>{main.confidence}</span></div>
-        <h3>{main.title}</h3>
-        <p>{main.sorenTake}</p>
-        <button type="button" onClick={() => onSelect(main.matchId)}>看這場怎麼影響預測</button>
-      </article>
-      <div className="intel-list">{others.map((item) => <article key={item.matchId} className="intel-row">
-        <div><span>{item.match}</span><h3>{item.title}</h3><p>{item.sorenTake}</p></div>
-        <button type="button" onClick={() => onSelect(item.matchId)}>細節</button>
-      </article>)}</div>
-    </div>
-    <details className="source-drawer"><summary>來源與可驗證訊號</summary>{intel.items.map((item) => <div key={item.matchId} className="source-block"><b>{item.match}</b><ul>{item.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{item.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></div>)}</details>
-    <p className="intel-note">{intel.disclaimer}</p>
+    <div className="intel-compact-list">{intel.items.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row">
+      <span>{item.match}</span>
+      <b>{item.title}</b>
+      <em>{item.confidence} · 看細節</em>
+    </button>)}</div>
+    <details className="source-drawer compact-sources"><summary>來源與可驗證訊號</summary>{intel.items.map((item) => <div key={item.matchId} className="source-block"><b>{item.match}</b><ul>{item.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{item.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></div>)}</details>
+    <p className="intel-note compact-note">多來源情報只服務公開觀點，不公開我的完整下注/預測底層邏輯。</p>
   </section>
 }
 
