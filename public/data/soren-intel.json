@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-26T17:12:00Z",
-  "status": "schedule-aware-scout-2026-06-26T17Z-imminent-lineup-odds-watch",
-  "headline": "Soren 6/26 17Z 巡檢：Norway-France / Senegal-Iraq 距開球約 2 小時，官方先發仍未公開；補上 Uruguay 傷停、New Zealand-Belgium 人員風險與紙上市場溫度。",
+  "generatedAt": "2026-06-26T17:35:17Z",
+  "status": "schedule-aware-scout-2026-06-26T1735Z-live-text-lineup-watch",
+  "headline": "Soren 6/26 17:35Z 巡檢：Norway-France / Senegal-Iraq 進入 90 分鐘內，補上 Al Jazeera 與 BBC 臨場文字直播入口；Group L 明日兩場補強預測陣容來源，但確認先發仍待 FIFA。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -20,7 +20,8 @@
         "Sports Illustrated 賽前頁新增/重申 Iraq 主力前鋒 Aymen Hussein 因對 France 傷退，對 Senegal 戰前仍在趕時間恢復；這是 reported fitness watch，不是正式缺陣名單。",
         "17Z 官方先發仍未見公開；CBS/FanDuel 索引顯示 Senegal 約 -450、Iraq 約 +1100、和局約 +550，市場很偏 Senegal，但 Mendy / Aymen Hussein 傷情讓「大熱」不能等同「無風險」。",
         "SportsBettingDime 賽前頁把 Édouard Mendy 與 Aymen Hussein 都列為 critical injuries；這強化 Iraq 中鋒狀態與 Senegal 門將缺口同時影響比賽的判讀。",
-        "FootballMeister 搜尋摘要另提到 Iraq 前鋒 Mohannad Ali 也可能缺陣；來源等級較低，先列為低到中等信心的 attacking-depth watch，不寫成官方事實。"
+        "FootballMeister 搜尋摘要另提到 Iraq 前鋒 Mohannad Ali 也可能缺陣；來源等級較低，先列為低到中等信心的 attacking-depth watch，不寫成官方事實。",
+        "17:35Z 再核：BBC 已開 Senegal-Iraq 即時頁，標題明示會提供 score、lineups、commentary updates；正式名單未落地前，Mendy 缺陣與 Iraq 前鋒健康仍是已知主要風險。"
       ],
       "sources": [
         {
@@ -94,6 +95,14 @@
           "fetchedAt": "2026-06-26T17:12:00Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-low"
+        },
+        {
+          "label": "BBC Senegal-Iraq live text",
+          "url": "https://www.bbc.com/sport/football/live/ce953823kmjt",
+          "sourceName": "BBC Sport",
+          "claimType": "context/lineup-watch",
+          "confidence": "high",
+          "fetchedAt": "2026-06-26T17:35:17Z"
         }
       ],
       "confidence": "high"
@@ -116,7 +125,8 @@
         "RotoWire 6/24 賽前頁也列出 Norway-France predicted lineups/team news/tactical breakdown；距開球約 4.7 小時仍只能當預測陣容觀察，不是官方先發。",
         "17Z 巡檢未找到 Norway-France 的官方確認先發；FIFA match centre 仍是臨場陣容唯一硬入口，Yahoo/Standard 類頁面只能當 expected-XI / injury-latest 觀察。",
         "CBS/FanDuel 搜尋索引顯示 France 約 -160、Norway 約 +360、和局約 +360；僅作紙上市場溫度，不是下注建議，也不是即時盤承諾。",
-        "Sports Interactive / BigSoccer 等公開論壇有本場討論索引，但可見內容偏賽程與 Haaland vs Mbappé 敘事；未讀到可驗證的完整留言民意。"
+        "Sports Interactive / BigSoccer 等公開論壇有本場討論索引，但可見內容偏賽程與 Haaland vs Mbappé 敘事；未讀到可驗證的完整留言民意。",
+        "17:35Z 再核：Al Jazeera 已開 Norway-France 即時文字直播，頁面承諾 lineups drop 後更新；截至本巡檢仍不能把任何 projected XI 寫成確認先發。"
       ],
       "sources": [
         {
@@ -206,6 +216,14 @@
           "fetchedAt": "2026-06-26T17:12:00Z",
           "claimType": "social-search",
           "confidence": "low-medium"
+        },
+        {
+          "label": "Al Jazeera Norway-France live blog",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/6/26/norway-vs-france-live-fifa-world-cup-2026",
+          "sourceName": "Al Jazeera",
+          "claimType": "context/lineup-watch",
+          "confidence": "high",
+          "fetchedAt": "2026-06-26T17:35:17Z"
         }
       ],
       "confidence": "medium-high"
@@ -666,7 +684,8 @@
         "FIFA 預覽確認 Panama vs England 是 Group L 最後一輪，且重演 2018 世界盃對戰。",
         "Goal.com 報導 Reece James 與 Declan Rice 缺席訓練，成為對 Panama 前的傷情疑問。",
         "Yahoo Sports 也刊出相同傷情脈絡，指兩人缺席訓練。",
-        "NBC News 報導 England 前一場與 Ghana 0-0，Croatia 則 1-0 擊敗 Panama。"
+        "NBC News 報導 England 前一場與 Ghana 0-0，Croatia 則 1-0 擊敗 Panama。",
+        "Sports Mole 6/26 賽前頁提供 Panama-England possible lineups/team news；Rice 是否輪休或保護仍是 predicted-XI 層級，不能當確認先發。"
       ],
       "sources": [
         {
@@ -700,6 +719,22 @@
           "fetchedAt": "2026-06-26T10:03:38Z",
           "claimType": "context",
           "confidence": "high"
+        },
+        {
+          "label": "Sports Mole Panama-England preview",
+          "url": "https://www.sportsmole.co.uk/football/england/world-cup-2026/preview/panama-vs-england-prediction-team-news-lineups_600066.html",
+          "sourceName": "Sports Mole",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium",
+          "fetchedAt": "2026-06-26T17:35:17Z"
+        },
+        {
+          "label": "RotoWire Panama-England preview",
+          "url": "https://www.rotowire.com/soccer/article/panama-vs-england-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-l-119774",
+          "sourceName": "RotoWire",
+          "claimType": "reported/tactical",
+          "confidence": "medium",
+          "fetchedAt": "2026-06-26T17:35:17Z"
         }
       ],
       "confidence": "medium-high"
@@ -713,7 +748,9 @@
       "signals": [
         "FIFA 官方預覽確認 Croatia vs Ghana 為 Group L 賽事，地點 Philadelphia Stadium，並指出兩隊世界盃首次交手。",
         "RotoWire 賽前頁將本場放在 Group L 晉級形勢中：Croatia 三分，勝 Ghana 可大幅改善直接晉級機會。",
-        "目前未見可公開確認先發；預測 XI 只作情境參考，不當成官方陣容。"
+        "目前未見可公開確認先發；預測 XI 只作情境參考，不當成官方陣容。",
+        "Sports Mole 6/26 Croatia-Ghana preview 補上 possible lineups/team news 來源；這場仍是預測陣容觀察，不是官方先發。",
+        "The Stats Zone 將 Croatia-Ghana 定位為 Group L 出線壓力局；Croatia 可衝直接晉級，Ghana 帶四分進場更可能先控風險。"
       ],
       "sources": [
         {
@@ -731,6 +768,22 @@
           "fetchedAt": "2026-06-26T10:40:30Z",
           "claimType": "reported/context",
           "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole Croatia-Ghana preview",
+          "url": "https://www.sportsmole.co.uk/football/croatia/world-cup-2026/preview/croatia-vs-ghana-prediction-team-news-lineups_600073.html",
+          "sourceName": "Sports Mole",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium",
+          "fetchedAt": "2026-06-26T17:35:17Z"
+        },
+        {
+          "label": "The Stats Zone Croatia-Ghana preview",
+          "url": "https://www.thestatszone.com/croatia-vs-ghana-preview-team-news-prediction-fifa-world-cup-2026-group-stage-201354",
+          "sourceName": "The Stats Zone",
+          "claimType": "reported/context",
+          "confidence": "medium",
+          "fetchedAt": "2026-06-26T17:35:17Z"
         }
       ],
       "confidence": "medium"
