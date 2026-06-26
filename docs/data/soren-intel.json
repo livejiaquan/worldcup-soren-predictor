@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-26T13:09:43Z",
-  "status": "schedule-aware-scout-2026-06-26T13Z-refreshed-matchday16-live-watch",
-  "headline": "Soren 補強 6/26 Matchday 16 臨場巡檢：Norway-France 增加直播/預測 XI 脈絡，Cape Verde-Saudi 增加今日賽程與紙上市場參考；未確認先發一律不硬編。",
+  "generatedAt": "2026-06-26T13:46:37Z",
+  "status": "schedule-aware-scout-2026-06-26T13Z-second-pass-lineup-watch",
+  "headline": "Soren 二次巡檢 6/26 Matchday 16：補上 Norway-France、Uruguay-Spain、Egypt-Iran、New Zealand-Belgium 的預測陣容/賽前頁線索；仍堅持正式先發未出不硬編。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -83,7 +83,8 @@
         "FIFA match centre 已核對可連線，作為臨場比分/陣容官方入口；截至本次巡檢未見確認先發，仍不把預測 XI 寫成事實。",
         "Guardian 6/26 即時頁把本場列為 Haaland vs Mbappé 主軸並持續更新賽前動態；屬賽事直播脈絡，不等於官方先發。",
         "USA Today 6/26 刊出 France projected lineup；Soren 只把它當預測 XI 訊號，正式名單仍等 FIFA/球隊公布。",
-        "Al Jazeera 6/26 賽程頁重申 Groups G/H/I 今日收官、France-Norway 爭 Group I 頭名，輪換與搶第一誘因同時存在。"
+        "Al Jazeera 6/26 賽程頁重申 Groups G/H/I 今日收官、France-Norway 爭 Group I 頭名，輪換與搶第一誘因同時存在。",
+        "Sports Illustrated 6/26 賽前頁列出 Norway-France 預測陣容（Norway 4-3-3、France 4-2-3-1 脈絡）；這是 predicted lineup，不是確認先發。"
       ],
       "sources": [
         {
@@ -133,6 +134,14 @@
           "fetchedAt": "2026-06-26T13:09:43Z",
           "claimType": "context",
           "confidence": "high"
+        },
+        {
+          "label": "Sports Illustrated Norway-France preview",
+          "url": "https://www.si.com/soccer/norway-vs-france-world-cup-preview-predictions-lineups-6-26-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-06-26T13:46:37Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -148,7 +157,8 @@
         "Al Jazeera 指出 Pedri 因累積黃牌缺陣，Spain 中場需要調整。",
         "Reuters 指出 Uruguay 前兩戰只拿兩分，對 Spain 仍在追小組首勝。",
         "Reuters 另報導 Bielsa 對 Uruguay 兩場兩分而非六分感到困惑/不滿。",
-        "RFEF 官方賽前文把 Uruguay-Spain 描述為經典對碰，並提供雙方歷史交手脈絡；這是 Spain 陣營官方背景，不等於確認先發。"
+        "RFEF 官方賽前文把 Uruguay-Spain 描述為經典對碰，並提供雙方歷史交手脈絡；這是 Spain 陣營官方背景，不等於確認先發。",
+        "Sporting News 搜尋摘要顯示 Uruguay-Spain 已有 projected lineups/starting 11 頁；Soren 只把它當預測陣容訊號，Pedri 停賽等硬消息仍以高可信來源優先。"
       ],
       "sources": [
         {
@@ -182,6 +192,14 @@
           "fetchedAt": "2026-06-26T11:20:00Z",
           "claimType": "context",
           "confidence": "high"
+        },
+        {
+          "label": "Sporting News Uruguay-Spain projected lineups",
+          "url": "https://www.sportingnews.com/ca/soccer/news/uruguay-vs-spain-lineups-starting-11-world-cup-2026-group-h/3178cdfba49e81c9939ff85a",
+          "sourceName": "Sporting News",
+          "fetchedAt": "2026-06-26T13:46:37Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -272,14 +290,16 @@
     {
       "matchId": "m041",
       "match": "Egypt vs Iran",
-      "sourceType": "group context + venue/social context",
+      "sourceType": "group context + venue/social context + lineup watch",
       "title": "Egypt 領跑但別裝睡；Iran 還活著，Seattle 這場場外溫度也不低。",
       "sorenTake": "Group G 的數學還沒關門。Egypt 有分數優勢，Iran 需要更積極；同時這場被 Seattle 標成 Pride Match，場外敘事很多，但我只把它當環境噪音，不把政治熱度偷換成足球證據。",
       "signals": [
         "Sports Mole 指出 Egypt 以四分居 Group G 第一，Iran 兩分且仍保持不敗。",
         "RotoWire 指出 Group G 仍很開放，Egypt 已晉級，Iran 最好取勝但平局也可能保留第三名晉級希望。",
         "Reuters 報導 Seattle 將 Egypt vs Iran 設為 Pride Match 並持續推進相關安排。",
-        "NBC News 報導 FIFA 將允許 Egypt vs Iran Pride Match 出現彩虹旗。"
+        "NBC News 報導 FIFA 將允許 Egypt vs Iran Pride Match 出現彩虹旗。",
+        "Al Jazeera 6/26 Egypt-Iran 賽前頁把 Salah/Taremi、開球資訊、預測與 lineups 作為主要脈絡；屬賽前報導與預測，不等於 FIFA 確認先發。",
+        "The Stats Zone 搜尋摘要補充 Egypt-Iran 歷史交手與 Egypt 衝擊隊史首次世界盃小組出線的壓力背景。"
       ],
       "sources": [
         {
@@ -313,20 +333,38 @@
           "fetchedAt": "2026-06-26T10:03:38Z",
           "claimType": "confirmed",
           "confidence": "medium"
+        },
+        {
+          "label": "Al Jazeera Egypt-Iran preview",
+          "url": "https://www.aljazeera.com/sports/2026/6/26/egypt-vs-iran-world-cup-2026-prediction-kickoff-schedule-teams",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-26T13:46:37Z",
+          "claimType": "reported/context",
+          "confidence": "high"
+        },
+        {
+          "label": "The Stats Zone Egypt-Iran preview",
+          "url": "https://www.thestatszone.com/egypt-vs-ir-iran-preview-team-news-prediction-fifa-world-cup-2026-group-stage-201350",
+          "sourceName": "The Stats Zone",
+          "fetchedAt": "2026-06-26T13:46:37Z",
+          "claimType": "context",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m042",
       "match": "New Zealand vs Belgium",
-      "sourceType": "official fixture + model/context watch",
+      "sourceType": "official fixture + model/context watch + lineup watch",
       "title": "Belgium 名字很大，但前兩戰只拿兩分；再不把球踢進去，豪門濾鏡也救不了場面。",
       "sorenTake": "這場我仍偏 Belgium，可是 Group G 的分數逼得他們不能再慢熱。New Zealand 的路線很簡單：撐住前段、把比利時的焦躁拉滿；一旦又變成空有射門沒進球，爆冷劇本就會從笑話變成警報。",
       "signals": [
         "FIFA match centre 確認 New Zealand vs Belgium 於溫哥華進行，是 Group G 最後一輪賽事。",
         "FIFA 賽前頁提供本場官方賽事脈絡，但未見公開確認先發；不把預測陣容寫成事實。",
-        "Opta Analyst 賽前模型明顯偏 Belgium，同時指出 Belgium 世界盃近期進球效率壓力，適合列為紙上校準參考而非投注建議。"
+        "Opta Analyst 賽前模型明顯偏 Belgium，同時指出 Belgium 世界盃近期進球效率壓力，適合列為紙上校準參考而非投注建議。",
+        "RotoWire 賽前頁列出 New Zealand-Belgium predicted lineups/team news/tactical breakdown；可作陣容觀察清單，但正式名單仍等 FIFA 或球隊公布。",
+        "Sports Mole 搜尋摘要同樣提供 Belgium 賽前 team news/possible lineups；與 RotoWire 交叉確認這場應納入臨場先發巡檢。"
       ],
       "sources": [
         {
@@ -351,6 +389,22 @@
           "sourceName": "Opta Analyst",
           "fetchedAt": "2026-06-26T10:40:30Z",
           "claimType": "odds-reference/context",
+          "confidence": "medium"
+        },
+        {
+          "label": "RotoWire New Zealand-Belgium preview",
+          "url": "https://www.rotowire.com/soccer/article/new-zealand-vs-belgium-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-group-g-119636",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-26T13:46:37Z",
+          "claimType": "reported/tactical",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole New Zealand-Belgium preview",
+          "url": "https://www.sportsmole.co.uk/football/belgium/world-cup-2026/preview/new-zealand-vs-belgium-prediction-team-news-lineups_599916.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-26T13:46:37Z",
+          "claimType": "reported/lineup-watch",
           "confidence": "medium"
         }
       ],
