@@ -63,9 +63,10 @@ function TodaySlate({ matches, predictions, paperBetsByMatch, intelByMatch, onSe
 
 function IntelBrief({ intel, onSelect }) {
   if (!intel?.items?.length) return null
+  const updatedLabel = intel.generatedAt ? `更新 ${fmtDate(intel.generatedAt)}` : `${intel.items.length} 則`
   return <section className="panel intel-feed compact-intel" id="soren-intel">
-    <SectionHead kicker="SOREN SCOUTING BRIEF" title="賽前情報摘要" meta={`${intel.items.length} 則`}>
-      <small>公開頁只放會影響觀點的重點；完整來源與推理收進細節，底層方法不公開。</small>
+    <SectionHead kicker="SOREN SCOUTING BRIEF" title="賽前情報摘要" meta={updatedLabel}>
+      <small>{intel.items.length} 則公開來源觀察；首頁只放重點，完整訊號與來源收進細節，不把預測先發裝成官方名單。</small>
     </SectionHead>
     <div className="intel-compact-list">{intel.items.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row">
       <span>{item.match}</span>
