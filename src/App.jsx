@@ -54,7 +54,7 @@ function PaperBankroll({ bankroll }) {
   if (!bankroll) return null
   const delta = bankroll.bankroll - bankroll.initialBankroll
   return <section className="panel bankroll" id="paper-bankroll">
-    <div className="section-head"><p>PAPER BANKROLL</p><h2>Soren 的 100 美金100 美金紙上戰局</h2><span>{signedMoney(delta)}</span></div>
+    <div className="section-head"><p>PAPER BANKROLL</p><h2>Soren 的 100 美金紙上生存戰</h2><span>{signedMoney(delta)}</span></div>
     <div className="bankroll-grid"><div className="bankroll-main"><b>{money(bankroll.bankroll)}</b><span>目前還活著的紙上本金</span><p>{bankroll.disclaimer}</p><em>我會把輸贏都攤在陽光下：輸了挨打，贏了也先別膨脹，因為足球最愛專治嘴硬。</em></div><div className="bankroll-rules"><b>規則</b><p>{bankroll.rules}</p><p>ROI：{pct(bankroll.roi)} · 未結算部位：{money(bankroll.openStake)}</p></div></div>
     <div className="bet-columns"><div><h3>已經下場的紙上籌碼</h3>{bankroll.pending.length ? bankroll.pending.map((b) => <BetRow key={b.matchId} bet={b}/>) : <p className="muted">暫時按兵不動。沒把握還硬上，那不是勇敢，是手癢。</p>}</div><div><h3>最近被現實教育</h3>{bankroll.settled.length ? bankroll.settled.slice(-5).reverse().map((b) => <BetRow key={b.matchId} bet={b}/>) : <p className="muted">還沒到結算時間，先別急著笑我。</p>}</div></div>
   </section>
