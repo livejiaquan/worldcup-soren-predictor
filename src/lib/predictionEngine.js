@@ -80,10 +80,10 @@ function isUnresolved(team) { return /^(TBD|暫無|Winner|Loser|[A-L][1-4]|[A-L]
 
 function labelRisk(confidence, home, draw, away) {
   const top = Math.max(home, draw, away)
-  if (confidence >= 0.72 && top >= 0.58) return '模型高信心'
-  if (Math.abs(home - away) < 0.08 || draw >= 0.29) return '膠著警報'
-  if (top < 0.48) return '高變數'
-  return '中等信心'
+  if (confidence >= 0.72 && top >= 0.58) return '我敢站隊'
+  if (Math.abs(home - away) < 0.08 || draw >= 0.29) return '膠著到煩'
+  if (top < 0.48) return '這場有妖氣'
+  return '有邊但不裝穩'
 }
 
 function buildNarrative({ team1, team2, pick, confidence, home, draw, away, lambda1, lambda2, r1, r2, best }) {
@@ -92,21 +92,21 @@ function buildNarrative({ team1, team2, pick, confidence, home, draw, away, lamb
   const favorite = r1 >= r2 ? team1 : team2
   const confidenceText = confidence >= 0.72 ? '偏明確' : confidence >= 0.58 ? '中等' : '保守'
   const opener = pick === '平手'
-    ? `${team1} 對 ${team2} 被模型判定為五五波，平局權重偏高。`
-    : `Soren ${confidenceText}看好 ${pick}，但仍保留 ${pctForNarrative(draw)} 的平局風險。`
+    ? `${team1} 對 ${team2} 這場像在鋼索上踢球，平局味道濃到我都不想裝帥。`
+    : `我這場${confidenceText}站 ${pick}，但平局還有 ${pctForNarrative(draw)}；別急著開香檳，足球最會打臉。`
   const angle = gap < 4
-    ? '兩隊基礎強度接近，任何早段進球都可能改變比賽節奏。'
-    : `${favorite} 的強度先驗較佳；${underdog} 若想翻盤，關鍵會是先守住前 30 分鐘。`
+    ? '兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。'
+    : `${favorite} 底牌比較硬；${underdog} 想偷走比賽，前 30 分鐘不能先自爆。`
   const tempo = lambda1 + lambda2 >= 2.75
-    ? '總進球期望偏高，節奏可能比一般小組賽更開放。'
-    : '總進球期望偏低，模型傾向一球差或低比分收場。'
+    ? '進球期望偏高，這場有機會從試探變互捅。'
+    : '進球期望偏低，大概率是一球差、低比分、看誰先失手。'
   return {
     headline: opener,
     story: `${angle} ${tempo}`,
     keyFactors: [
-      { label: '強度差', value: gap.toFixed(1), note: gap < 4 ? '接近' : `${favorite} 優勢` },
-      { label: '預期進球', value: `${lambda1.toFixed(2)} : ${lambda2.toFixed(2)}`, note: `最可能比分 ${best.g1}-${best.g2}` },
-      { label: '冷門風險', value: pctForNarrative(Math.min(home, away)), note: `${underdog} 的反擊窗口` },
+      { label: '底牌差', value: gap.toFixed(1), note: gap < 4 ? '誰也別裝大哥' : `${favorite} 比較有本錢` },
+      { label: '進球味', value: `${lambda1.toFixed(2)} : ${lambda2.toFixed(2)}`, note: `最像 ${best.g1}-${best.g2}` },
+      { label: '翻車率', value: pctForNarrative(Math.min(home, away)), note: `${underdog} 的偷雞窗口` },
     ],
   }
 }
@@ -117,7 +117,7 @@ export function predictMatch(match, standings = {}) {
   const team1 = canonicalTeam(match.team1)
   const team2 = canonicalTeam(match.team2)
   if ([team1, team2].some(isUnresolved)) {
-    return { pick: '待定', confidence: 0.34, probabilities: { home: 0.33, draw: 0.34, away: 0.33 }, expectedGoals: [1.1, 1.1], score: '—', reasons: ['淘汰賽席位尚未完全確定', '等待最新晉級名單後重新計算'] }
+    return { pick: '待定', confidence: 0.34, probabilities: { home: 0.33, draw: 0.34, away: 0.33 }, expectedGoals: [1.1, 1.1], score: '—', reasons: ['這格還沒開獎，現在硬猜只是裝神', '等晉級名單落地，我再把刀磨起來'] }
   }
   const flat = flattenStandings(standings)
   const r1 = teamRating(team1, flat)
@@ -150,9 +150,9 @@ export function predictMatch(match, standings = {}) {
     expectedGoals: [Number(lambda1.toFixed(2)), Number(lambda2.toFixed(2))], score: `${best.g1}-${best.g2}`,
     commentary: buildNarrative({ team1, team2, pick, confidence, home, draw, away, lambda1, lambda2, r1, r2, best }),
     reasons: [
-      `${team1} 評級 ${r1.toFixed(1)}；${team2} 評級 ${r2.toFixed(1)}`,
-      `預期進球 ${lambda1.toFixed(2)} : ${lambda2.toFixed(2)}，以 0–6 球 Poisson 分布估算`,
-      Math.abs(r1 - r2) < 4 ? '雙方強度接近，平局與一球差風險偏高' : `強度差約 ${Math.abs(r1-r2).toFixed(1)} 分，模型偏向 ${pick}`,
+      `底牌分：${team1} ${r1.toFixed(1)}；${team2} ${r2.toFixed(1)}`,
+      `預期進球 ${lambda1.toFixed(2)} : ${lambda2.toFixed(2)}，先用 Poisson 把嘴砲壓成數字`,
+      Math.abs(r1 - r2) < 4 ? '兩邊差距薄，平局和一球差都很有戲' : `底牌差約 ${Math.abs(r1-r2).toFixed(1)} 分，我暫時站 ${pick}`,
     ],
   }
 }

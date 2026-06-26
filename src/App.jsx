@@ -18,11 +18,11 @@ function PredictionCard({ match, prediction, compact = false, onSelect }) {
     <div className="match-meta"><span>{match.stage}</span><span>{finished ? '已完賽' : fmtDate(match.kickoffUtc)}</span></div>
     <div className="versus"><Team name={match.team1}/><div className="score-box">{finished ? `${match.score[0]}-${match.score[1]}` : prediction.score}<small>{finished ? 'FT' : '預測比分'}</small></div><Team name={match.team2}/></div>
     <ProbBar prediction={prediction}/>
-    <div className="pick-row"><b>Soren 看好：{prediction.pick}</b><span>{prediction.tag || '模型判讀'} · 信心 {pct(prediction.confidence)}</span></div>
+    <div className="pick-row"><b>Soren 站隊：{prediction.pick}</b><span>{prediction.tag || '模型判讀'} · 信心 {pct(prediction.confidence)}</span></div>
     {!compact && prediction.commentary && <div className="analysis-box"><b>{prediction.commentary.headline}</b><p>{prediction.commentary.story}</p><div className="factor-row">{prediction.commentary.keyFactors.map((f) => <span key={f.label}><strong>{f.label}</strong>{f.value}<small>{f.note}</small></span>)}</div></div>}
     {!compact && <ul className="reasons">{prediction.reasons.slice(0, 3).map((r) => <li key={r}>{r}</li>)}</ul>}
     <div className="venue">📍 {match.venue}</div>
-    {!compact && <button className="deep-dive" type="button" onClick={() => onSelect?.(match)}>打開 Soren 毒舌拆解</button>}
+    {!compact && <button className="deep-dive" type="button" onClick={() => onSelect?.(match)}>展開 Soren 賽前驗屍報告</button>}
   </article>
 }
 function MatchDeepDive({ match, prediction, paperBet, onClose }) {
@@ -33,34 +33,34 @@ function MatchDeepDive({ match, prediction, paperBet, onClose }) {
   return <div className="modal-backdrop" onClick={onClose}>
     <article className="deep-modal" onClick={(e) => e.stopPropagation()}>
       <button className="modal-close" type="button" onClick={onClose}>×</button>
-      <p className="modal-kicker">SOREN DEEP DIVE</p>
+      <p className="modal-kicker">SOREN MATCH AUTOPSY</p>
       <h2>{match.team1} vs {match.team2}</h2>
-      <div className="modal-scoreline"><Team name={match.team1}/><div className="score-box">{prediction.score}<small>模型比分</small></div><Team name={match.team2}/></div>
+      <div className="modal-scoreline"><Team name={match.team1}/><div className="score-box">{prediction.score}<small>我先押這個比分</small></div><Team name={match.team2}/></div>
       <div className="soren-roast"><b>銳評：</b>{prediction.commentary?.headline || `我看好 ${prediction.pick}，但這場還沒資格說穩。`} {prediction.commentary?.story}</div>
       <div className="deep-grid">
-        <div><b>勝平負機率</b><p>{match.team1} {pct(p.home)} · 平 {pct(p.draw)} · {match.team2} {pct(p.away)}</p></div>
-        <div><b>爆冷劇本</b><p>{upset} 要活下來，第一任務不是踢漂亮，是把 {favorite} 的前 30 分鐘壓制期熬過去；只要先進球，這場就會從模型題變成心理題。</p></div>
-        <div><b>我最怕什麼</b><p>早早紅黃牌、臨場輪換、定位球失守。這些不是模型會自動知道的神諭，所以賽前情報 scout 會繼續補。</p></div>
-        <div><b>紙上戰局</b><p>{paperBet ? `已放入紙上模擬：${paperBet.pick}，投入 ${money(paperBet.stake)}，模擬賠率 ${paperBet.decimalOdds}。` : '暫未進入紙上模擬；我不會每場硬上，沒邊際就旁邊看。'}</p></div>
+        <div><b>這場天秤怎麼歪</b><p>{match.team1} {pct(p.home)} · 平 {pct(p.draw)} · {match.team2} {pct(p.away)}</p></div>
+        <div><b>弱隊偷雞路線</b><p>{upset} 要活下來，第一任務不是踢漂亮，是把 {favorite} 的前 30 分鐘壓制期熬過去；只要先進球，這場就會從模型題變成心理題。</p></div>
+        <div><b>最怕哪種劇本翻車</b><p>早早紅黃牌、臨場輪換、定位球失守。這些不是模型會自動知道的神諭，所以賽前情報 scout 會繼續補。</p></div>
+        <div><b>100 美金紙上戰局</b><p>{paperBet ? `我已經把紙上籌碼丟進去了：${paperBet.pick}，投入 ${money(paperBet.stake)}，模擬賠率 ${paperBet.decimalOdds}。` : '這場我先不丟紙上籌碼；不是每場都要硬裝懂，沒邊際就坐旁邊喝水。'}</p></div>
       </div>
       <ul className="reasons modal-reasons">{prediction.reasons.map((r) => <li key={r}>{r}</li>)}</ul>
-      <p className="modal-disclaimer">公開研究與娛樂展示；不是投注建議。Soren 會輸會贏，但每一筆都要留下理由。</p>
+      <p className="modal-disclaimer">公開研究與娛樂展示，不是投注建議。我會贏、會翻車、也會被賽果打臉；重點是每一筆都要留下理由。</p>
     </article>
   </div>
 }
 
-function Leaderboard({ rows }) { return <section className="panel leaderboard"><div className="section-head"><p>MODEL TRACK RECORD</p><h2>預測追蹤榜</h2></div><div className="leader-list">{rows.map((row) => <div className="leader" key={row.id}><div className="rank">#{row.rank}</div><div><b>{row.name}</b><p>{row.desc}</p></div><div className="leader-score"><b>{row.points}</b><span>{pct(row.accuracy)} 命中</span></div></div>)}</div></section> }
+function Leaderboard({ rows }) { return <section className="panel leaderboard"><div className="section-head"><p>SCOREBOARD OF SHAME</p><h2>模型記分板：誰在裸泳</h2></div><div className="leader-list">{rows.map((row) => <div className="leader" key={row.id}><div className="rank">#{row.rank}</div><div><b>{row.name}</b><p>{row.desc}</p></div><div className="leader-score"><b>{row.points}</b><span>{pct(row.accuracy)} 命中</span></div></div>)}</div></section> }
 function PaperBankroll({ bankroll }) {
   if (!bankroll) return null
   const delta = bankroll.bankroll - bankroll.initialBankroll
   return <section className="panel bankroll" id="paper-bankroll">
-    <div className="section-head"><p>PAPER BANKROLL</p><h2>Soren 的 100 美金紙上戰局</h2><span>{signedMoney(delta)}</span></div>
-    <div className="bankroll-grid"><div className="bankroll-main"><b>{money(bankroll.bankroll)}</b><span>目前紙上本金</span><p>{bankroll.disclaimer}</p><em>我會把輸贏都攤在陽光下。輸了就挨打，贏了也先別膨脹。</em></div><div className="bankroll-rules"><b>規則</b><p>{bankroll.rules}</p><p>ROI：{pct(bankroll.roi)} · 未結算部位：{money(bankroll.openStake)}</p></div></div>
-    <div className="bet-columns"><div><h3>進行中</h3>{bankroll.pending.length ? bankroll.pending.map((b) => <BetRow key={b.matchId} bet={b}/>) : <p className="muted">目前沒有新部位。</p>}</div><div><h3>最近結算</h3>{bankroll.settled.length ? bankroll.settled.slice(-5).reverse().map((b) => <BetRow key={b.matchId} bet={b}/>) : <p className="muted">模擬起始後尚未結算。</p>}</div></div>
+    <div className="section-head"><p>PAPER BANKROLL</p><h2>Soren 的 100 美金100 美金紙上戰局</h2><span>{signedMoney(delta)}</span></div>
+    <div className="bankroll-grid"><div className="bankroll-main"><b>{money(bankroll.bankroll)}</b><span>目前還活著的紙上本金</span><p>{bankroll.disclaimer}</p><em>我會把輸贏都攤在陽光下：輸了挨打，贏了也先別膨脹，因為足球最愛專治嘴硬。</em></div><div className="bankroll-rules"><b>規則</b><p>{bankroll.rules}</p><p>ROI：{pct(bankroll.roi)} · 未結算部位：{money(bankroll.openStake)}</p></div></div>
+    <div className="bet-columns"><div><h3>已經下場的紙上籌碼</h3>{bankroll.pending.length ? bankroll.pending.map((b) => <BetRow key={b.matchId} bet={b}/>) : <p className="muted">暫時按兵不動。沒把握還硬上，那不是勇敢，是手癢。</p>}</div><div><h3>最近被現實教育</h3>{bankroll.settled.length ? bankroll.settled.slice(-5).reverse().map((b) => <BetRow key={b.matchId} bet={b}/>) : <p className="muted">還沒到結算時間，先別急著笑我。</p>}</div></div>
   </section>
 }
 function BetRow({ bet }) { return <div className={`bet-row ${bet.status}`}><div><b>{bet.team1} vs {bet.team2}</b><p>{fmtDate(bet.kickoffUtc)} · 選擇 {bet.pick} · 模擬賠率 {bet.decimalOdds}</p></div><div><b>{money(bet.stake)}</b><span>{bet.profit == null ? '待結算' : `${bet.profit >= 0 ? '+' : ''}${money(bet.profit)}`}</span></div></div> }
-function Standings({ standings }) { return <section className="panel standings" id="standings"><div className="section-head"><p>GROUP TABLES</p><h2>小組積分榜</h2></div><div className="tables">{Object.entries(standings || {}).map(([name, rows]) => <div className="table-card" key={name}><h3>{name.replace('Group ', '小組 ')}</h3><table><thead><tr><th>隊伍</th><th>賽</th><th>淨</th><th>分</th></tr></thead><tbody>{rows.map((r, idx) => <tr key={r.team} className={idx < 2 ? 'qualified' : ''}><td>{flag(r.team)} {r.team}</td><td>{r.played}</td><td>{r.goalDiff}</td><td><b>{r.points}</b></td></tr>)}</tbody></table></div>)}</div></section> }
+function Standings({ standings }) { return <section className="panel standings" id="standings"><div className="section-head"><p>GROUP SURVIVAL MAP</p><h2>小組小組戰況</h2></div><div className="tables">{Object.entries(standings || {}).map(([name, rows]) => <div className="table-card" key={name}><h3>{name.replace('Group ', '小組 ')}</h3><table><thead><tr><th>隊伍</th><th>賽</th><th>淨</th><th>分</th></tr></thead><tbody>{rows.map((r, idx) => <tr key={r.team} className={idx < 2 ? 'qualified' : ''}><td>{flag(r.team)} {r.team}</td><td>{r.played}</td><td>{r.goalDiff}</td><td><b>{r.points}</b></td></tr>)}</tbody></table></div>)}</div></section> }
 
 function App() {
   const [data, setData] = useState(null)
@@ -83,18 +83,18 @@ function App() {
     return [...map.entries()]
   }, [data, filter])
   if (error) return <main className="shell"><div className="panel"><h1>資料載入失敗</h1><p>{error}</p></div></main>
-  if (!data) return <main className="shell"><div className="loading">Soren 正在讀取最新賽事資料…</div></main>
+  if (!data) return <main className="shell"><div className="loading">Soren 正在翻賽程和模型，不要急，嘴砲也要先載資料…</div></main>
   return <main className="shell">
-    <section className="hero-section"><div className="hero-copy"><span className="eyebrow">SOREN WORLD CUP LAB · 2026</span><h1>世界盃預測實驗室</h1><p>我不是來報隊名強弱的。我會追賽程、看情報、抓爆冷路徑，然後把自己每一次判斷攤給大家驗屍。</p><div className="hero-actions"><a href="#predictions">查看預測</a><a href="#paper-bankroll" className="ghost">紙上模擬</a><a href="#standings" className="ghost">積分榜</a></div></div><div className="hero-card"><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>已完賽</span><b>{data.summary.scheduledMatches}</b><span>待預測/追蹤</span><small>最後更新：{fmtDate(data.generatedAt)}</small></div></section>
-    <div className="notice">內容由程式模型自動產生，僅供研究與娛樂交流；不構成投注、投資或任何保證建議。反對非法博彩。</div>
+    <section className="hero-section"><div className="hero-copy"><span className="eyebrow">SOREN WORLD CUP LAB · 2026</span><h1>Soren 世界盃毒舌觀察室</h1><p>我不做那種『強隊比較強』的安全廢話。每場我都會追賽程、看情報、找爆冷路線，賽後再把自己的判斷攤開驗屍。</p><div className="hero-actions"><a href="#predictions">看我站哪邊</a><a href="#paper-bankroll" className="ghost">紙上生存戰</a><a href="#standings" className="ghost">小組戰況</a></div></div><div className="hero-card"><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>已完賽</span><b>{data.summary.scheduledMatches}</b><span>待預測/追蹤</span><small>最後更新：{fmtDate(data.generatedAt)}</small></div></section>
+    <div className="notice">這裡是公開研究與娛樂實驗，不是投注建議。沒有穩贏、沒有神單、沒有保證；誰跟你說穩，他大概比守門員還危險。</div>
     <Leaderboard rows={data.leaderboard}/>
     <PaperBankroll bankroll={data.paperBankroll}/>
-    <section className="panel" id="predictions"><div className="section-head"><p>NEXT PREDICTIONS</p><h2>接下來的預測</h2><span>{nextMatches.length} 場</span></div><div className="grid featured">{nextMatches.slice(0, 6).map((m) => <PredictionCard key={m.id} match={m} prediction={data.predictions[m.id]} onSelect={(match) => setSelectedId(match.id)}/>)}</div></section>
-    <section className="panel method"><div><p>METHOD</p><h2>預測方法</h2></div><div className="method-grid"><div><b>1. 隊伍強度先驗</b><span>依國際競爭力設定初始分數。</span></div><div><b>2. 賽會即時狀態</b><span>用已完賽積分、淨勝球微調。</span></div><div><b>3. Poisson 進球模型</b><span>把強度差轉成預期進球與勝平負機率。</span></div><div><b>4. 紙上模擬</b><span>100 美金虛擬本金，只追蹤決策過程。</span></div></div></section>
+    <section className="panel" id="predictions"><div className="section-head"><p>NEXT ON THE CHOPPING BLOCK</p><h2>下一批要被我開刀的比賽</h2><span>{nextMatches.length} 場</span></div><div className="grid featured">{nextMatches.slice(0, 6).map((m) => <PredictionCard key={m.id} match={m} prediction={data.predictions[m.id]} onSelect={(match) => setSelectedId(match.id)}/>)}</div></section>
+    <section className="panel method"><div><p>HOW I THINK</p><h2>我不是擲骰子：判斷框架</h2></div><div className="method-grid"><div><b>1. 底牌強度</b><span>先承認現實：有些隊伍就是底子硬。</span></div><div><b>2. 賽會現況</b><span>小組賽踢得好不好，會直接修正我的態度。</span></div><div><b>3. 進球分布</b><span>把強度差轉成預期進球與這場天秤怎麼歪。</span></div><div><b>4. 紙上生存戰</b><span>拿 100 美金假鈔驗證我是不是只會講漂亮話。</span></div></div></section>
     <Standings standings={data.standings}/>
-    <section className="panel"><div className="section-head"><p>MATCH CENTER</p><h2>全部賽程與預測</h2></div><div className="tabs">{stages.map((s) => <button className={filter === s ? 'active' : ''} key={s} onClick={() => setFilter(s)}>{s}</button>)}</div>{grouped.map(([day, matches]) => <div className="day" key={day}><h3>{day}<span>{matches.length} 場</span></h3><div className="grid">{matches.map((m) => <PredictionCard compact key={m.id} match={m} prediction={data.predictions[m.id]}/>)}</div></div>)}</section>
+    <section className="panel"><div className="section-head"><p>FULL FIXTURE PIT</p><h2>全部賽程：每場都逃不掉</h2></div><div className="tabs">{stages.map((s) => <button className={filter === s ? 'active' : ''} key={s} onClick={() => setFilter(s)}>{s}</button>)}</div>{grouped.map(([day, matches]) => <div className="day" key={day}><h3>{day}<span>{matches.length} 場</span></h3><div className="grid">{matches.map((m) => <PredictionCard compact key={m.id} match={m} prediction={data.predictions[m.id]}/>)}</div></div>)}</section>
     {selectedMatch && <MatchDeepDive match={selectedMatch} prediction={data.predictions[selectedMatch.id]} paperBet={paperBetsByMatch[selectedMatch.id]} onClose={() => setSelectedId(null)}/>}
-    <footer>資料來源：openfootball/worldcup.json · 自動部署於 GitHub Pages · Soren project owner</footer>
+    <footer>資料來源：openfootball/worldcup.json · 自動部署於 GitHub Pages · Soren 親自扛鍋</footer>
   </main>
 }
 export default App
