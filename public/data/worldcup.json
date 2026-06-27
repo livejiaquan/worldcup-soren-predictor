@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T05:46:29.000Z",
+  "generatedAt": "2026-06-27T05:58:50.997Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -1833,7 +1833,7 @@
         1,
         4
       ],
-      "source": "openfootball/worldcup.json + override: ESPN final score, gameId 760475"
+      "source": "openfootball/worldcup.json"
     },
     {
       "id": "m054",
@@ -1851,7 +1851,7 @@
         5,
         0
       ],
-      "source": "openfootball/worldcup.json + override: ESPN final score, gameId 760474"
+      "source": "openfootball/worldcup.json"
     },
     {
       "id": "m047",
@@ -1905,7 +1905,7 @@
         1,
         1
       ],
-      "source": "openfootball/worldcup.json + override: ESPN final score, gameId 760476"
+      "source": "openfootball/worldcup.json"
     },
     {
       "id": "m042",
@@ -1923,7 +1923,7 @@
         1,
         5
       ],
-      "source": "openfootball/worldcup.json + override: ESPN final score, gameId 760477"
+      "source": "openfootball/worldcup.json"
     },
     {
       "id": "m071",
