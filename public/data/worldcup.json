@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T20:40:21.473Z",
+  "generatedAt": "2026-06-27T03:23:08.996Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,13 +7,9 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 60,
-    "scheduledMatches": 44,
+    "finishedMatches": 64,
+    "scheduledMatches": 40,
     "nextWindow": [
-      "m047",
-      "m048",
-      "m041",
-      "m042",
       "m071",
       "m072",
       "m065",
@@ -21,7 +17,11 @@
       "m059",
       "m060",
       "m073",
-      "m076"
+      "m076",
+      "m074",
+      "m075",
+      "m078",
+      "m077"
     ]
   },
   "groups": [
@@ -489,99 +489,99 @@
       {
         "team": "Spain",
         "group": "Group H",
-        "played": 2,
-        "won": 1,
+        "played": 3,
+        "won": 2,
         "drawn": 1,
         "lost": 0,
-        "goalsFor": 4,
+        "goalsFor": 5,
         "goalsAgainst": 0,
-        "goalDiff": 4,
-        "points": 4
-      },
-      {
-        "team": "Uruguay",
-        "group": "Group H",
-        "played": 2,
-        "won": 0,
-        "drawn": 2,
-        "lost": 0,
-        "goalsFor": 3,
-        "goalsAgainst": 3,
-        "goalDiff": 0,
-        "points": 2
+        "goalDiff": 5,
+        "points": 7
       },
       {
         "team": "Cape Verde",
         "group": "Group H",
-        "played": 2,
+        "played": 3,
         "won": 0,
-        "drawn": 2,
+        "drawn": 3,
         "lost": 0,
         "goalsFor": 2,
         "goalsAgainst": 2,
         "goalDiff": 0,
+        "points": 3
+      },
+      {
+        "team": "Uruguay",
+        "group": "Group H",
+        "played": 3,
+        "won": 0,
+        "drawn": 2,
+        "lost": 1,
+        "goalsFor": 3,
+        "goalsAgainst": 4,
+        "goalDiff": -1,
         "points": 2
       },
       {
         "team": "Saudi Arabia",
         "group": "Group H",
-        "played": 2,
+        "played": 3,
         "won": 0,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 1,
         "goalsFor": 1,
         "goalsAgainst": 5,
         "goalDiff": -4,
-        "points": 1
+        "points": 2
       }
     ],
     "Group I": [
       {
         "team": "France",
         "group": "Group I",
-        "played": 2,
-        "won": 2,
+        "played": 3,
+        "won": 3,
         "drawn": 0,
         "lost": 0,
-        "goalsFor": 6,
-        "goalsAgainst": 1,
-        "goalDiff": 5,
-        "points": 6
+        "goalsFor": 10,
+        "goalsAgainst": 2,
+        "goalDiff": 8,
+        "points": 9
       },
       {
         "team": "Norway",
         "group": "Group I",
-        "played": 2,
+        "played": 3,
         "won": 2,
         "drawn": 0,
-        "lost": 0,
-        "goalsFor": 7,
-        "goalsAgainst": 3,
-        "goalDiff": 4,
+        "lost": 1,
+        "goalsFor": 8,
+        "goalsAgainst": 7,
+        "goalDiff": 1,
         "points": 6
       },
       {
         "team": "Senegal",
         "group": "Group I",
-        "played": 2,
-        "won": 0,
+        "played": 3,
+        "won": 1,
         "drawn": 0,
         "lost": 2,
-        "goalsFor": 3,
+        "goalsFor": 8,
         "goalsAgainst": 6,
-        "goalDiff": -3,
-        "points": 0
+        "goalDiff": 2,
+        "points": 3
       },
       {
         "team": "Iraq",
         "group": "Group I",
-        "played": 2,
+        "played": 3,
         "won": 0,
         "drawn": 0,
-        "lost": 2,
+        "lost": 3,
         "goalsFor": 1,
-        "goalsAgainst": 7,
-        "goalDiff": -6,
+        "goalsAgainst": 12,
+        "goalDiff": -11,
         "points": 0
       }
     ],
@@ -1828,9 +1828,12 @@
       "team1": "Norway",
       "team2": "France",
       "venue": "Boston (Foxborough)",
-      "status": "scheduled",
-      "score": null,
-      "source": "openfootball/worldcup.json"
+      "status": "finished",
+      "score": [
+        1,
+        4
+      ],
+      "source": "openfootball/worldcup.json + override: ESPN final score, gameId 760475"
     },
     {
       "id": "m054",
@@ -1843,9 +1846,12 @@
       "team1": "Senegal",
       "team2": "Iraq",
       "venue": "Toronto",
-      "status": "scheduled",
-      "score": null,
-      "source": "openfootball/worldcup.json"
+      "status": "finished",
+      "score": [
+        5,
+        0
+      ],
+      "source": "openfootball/worldcup.json + override: ESPN final score, gameId 760474"
     },
     {
       "id": "m047",
@@ -1858,8 +1864,11 @@
       "team1": "Cape Verde",
       "team2": "Saudi Arabia",
       "venue": "Houston",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        0
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -1873,8 +1882,11 @@
       "team1": "Uruguay",
       "team2": "Spain",
       "venue": "Guadalajara (Zapopan)",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -2976,27 +2988,27 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.8207380417945214,
-        "draw": 0.14630804126012947,
-        "away": 0.03295391694534915
+        "home": 0.8253105565296448,
+        "draw": 0.1426514328459675,
+        "away": 0.03203801062438772
       },
       "expectedGoals": [
-        2.16,
+        2.19,
         0.25
       ],
       "score": "2-0",
       "commentary": {
-        "headline": "我這場偏明確站 Spain，但平局還有 15%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Spain，但平局還有 14%；別急著開香檳，足球最會打臉。",
         "story": "Spain 底牌比較硬；Cape Verde 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "34.3",
+            "value": "35.8",
             "note": "Spain 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.16 : 0.25",
+            "value": "2.19 : 0.25",
             "note": "最像 2-0"
           },
           {
@@ -3007,9 +3019,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Spain 98.9；Cape Verde 64.7",
-        "預期進球 2.16 : 0.25，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 34.3 分，我暫時站 Spain"
+        "底牌分：Spain 100.5；Cape Verde 64.7",
+        "預期進球 2.19 : 0.25，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 35.8 分，我暫時站 Spain"
       ]
     },
     "m037": {
@@ -3055,43 +3067,43 @@
     },
     "m044": {
       "pick": "Uruguay",
-      "confidence": 0.7673756161141421,
+      "confidence": 0.7409529506588124,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.113965489187599,
-        "draw": 0.2183316259243418,
-        "away": 0.6677028848880592
+        "home": 0.12699153666611737,
+        "draw": 0.22571064362310844,
+        "away": 0.6472978197107742
       },
       "expectedGoals": [
-        0.58,
-        1.8
+        0.62,
+        1.76
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 Uruguay，但平局還有 22%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Uruguay，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "story": "Uruguay 底牌比較硬；Saudi Arabia 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "19.9",
+            "value": "18.0",
             "note": "Uruguay 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.58 : 1.80",
+            "value": "0.62 : 1.76",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "11%",
+            "value": "13%",
             "note": "Saudi Arabia 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Saudi Arabia 63.7；Uruguay 83.7",
-        "預期進球 0.58 : 1.80，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 19.9 分，我暫時站 Uruguay"
+        "底牌分：Saudi Arabia 64.2；Uruguay 82.1",
+        "預期進球 0.62 : 1.76，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 18.0 分，我暫時站 Uruguay"
       ]
     },
     "m038": {
@@ -3140,68 +3152,68 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.7934663508182439,
-        "draw": 0.1621369887588104,
-        "away": 0.04439666042294573
+        "home": 0.7461793256843244,
+        "draw": 0.18549711197502947,
+        "away": 0.068323562340646
       },
       "expectedGoals": [
-        2.07,
-        0.31
+        1.97,
+        0.41
       ],
-      "score": "2-0",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 France，但平局還有 16%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 France，但平局還有 19%；別急著開香檳，足球最會打臉。",
         "story": "France 底牌比較硬；Senegal 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "30.2",
+            "value": "25.0",
             "note": "France 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.07 : 0.31",
-            "note": "最像 2-0"
+            "value": "1.97 : 0.41",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "4%",
+            "value": "7%",
             "note": "Senegal 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：France 103.3；Senegal 73.0",
-        "預期進球 2.07 : 0.31，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 30.2 分，我暫時站 France"
+        "底牌分：France 104.0；Senegal 79.0",
+        "預期進球 1.97 : 0.41，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 25.0 分，我暫時站 France"
       ]
     },
     "m050": {
       "pick": "Norway",
-      "confidence": 0.82,
+      "confidence": 0.8089933620302969,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.08646662078941675,
-        "draw": 0.20004971527875218,
-        "away": 0.713483663931831
+        "home": 0.09432886427069788,
+        "draw": 0.2056943920013169,
+        "away": 0.6999767437279852
       },
       "expectedGoals": [
-        0.49,
-        1.89
+        0.51,
+        1.87
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 Norway，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Norway，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "story": "Norway 底牌比較硬；Iraq 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "24.5",
+            "value": "23.1",
             "note": "Norway 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.49 : 1.89",
+            "value": "0.51 : 1.87",
             "note": "最像 0-1"
           },
           {
@@ -3212,9 +3224,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Iraq 58.1；Norway 82.6",
-        "預期進球 0.49 : 1.89，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 24.5 分，我暫時站 Norway"
+        "底牌分：Iraq 54.9；Norway 78.0",
+        "預期進球 0.51 : 1.87，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 23.1 分，我暫時站 Norway"
       ]
     },
     "m055": {
@@ -3960,12 +3972,12 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.8235257137303033,
-        "draw": 0.14407904861219886,
-        "away": 0.03239523765749785
+        "home": 0.8267380027658771,
+        "draw": 0.14150941385444313,
+        "away": 0.03175258337967987
       },
       "expectedGoals": [
-        2.18,
+        2.2,
         0.25
       ],
       "score": "2-0",
@@ -3975,12 +3987,12 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "35.2",
+            "value": "36.3",
             "note": "Spain 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.18 : 0.25",
+            "value": "2.20 : 0.25",
             "note": "最像 2-0"
           },
           {
@@ -3991,9 +4003,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Spain 98.9；Saudi Arabia 63.7",
-        "預期進球 2.18 : 0.25，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 35.2 分，我暫時站 Spain"
+        "底牌分：Spain 100.5；Saudi Arabia 64.2",
+        "預期進球 2.20 : 0.25，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 36.3 分，我暫時站 Spain"
       ]
     },
     "m039": {
@@ -4039,43 +4051,43 @@
     },
     "m046": {
       "pick": "Uruguay",
-      "confidence": 0.6506829236335471,
+      "confidence": 0.5750318435803654,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.5780714121253547,
-        "draw": 0.2472544619059146,
-        "away": 0.17467412596873066
+        "home": 0.5206248606819125,
+        "draw": 0.26101129473869134,
+        "away": 0.2183638445793962
       },
       "expectedGoals": [
-        1.62,
-        0.76
+        1.51,
+        0.87
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場中等站 Uruguay，但平局還有 25%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Uruguay，但平局還有 26%；別急著開香檳，足球最會打臉。",
         "story": "Uruguay 底牌比較硬；Cape Verde 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "19.0",
+            "value": "17.5",
             "note": "Uruguay 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.62 : 0.76",
+            "value": "1.51 : 0.87",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "17%",
+            "value": "22%",
             "note": "Cape Verde 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Uruguay 83.7；Cape Verde 64.7",
-        "預期進球 1.62 : 0.76，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 19.0 分，我暫時站 Uruguay"
+        "底牌分：Uruguay 82.1；Cape Verde 64.7",
+        "預期進球 1.51 : 0.87，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 17.5 分，我暫時站 Uruguay"
       ]
     },
     "m040": {
@@ -4165,27 +4177,27 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.8506129713762662,
-        "draw": 0.12237165319563059,
-        "away": 0.02701537542810321
+        "home": 0.8602536943427547,
+        "draw": 0.11462312803962284,
+        "away": 0.02512317761762253
       },
       "expectedGoals": [
-        2.39,
+        2.47,
         0.25
       ],
       "score": "2-0",
       "commentary": {
-        "headline": "我這場偏明確站 France，但平局還有 12%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 France，但平局還有 11%；別急著開香檳，足球最會打臉。",
         "story": "France 底牌比較硬；Iraq 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "45.1",
+            "value": "49.1",
             "note": "France 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.39 : 0.25",
+            "value": "2.47 : 0.25",
             "note": "最像 2-0"
           },
           {
@@ -4196,50 +4208,50 @@
         ]
       },
       "reasons": [
-        "底牌分：France 103.3；Iraq 58.1",
-        "預期進球 2.39 : 0.25，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 45.1 分，我暫時站 France"
+        "底牌分：France 104.0；Iraq 54.9",
+        "預期進球 2.47 : 0.25，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 49.1 分，我暫時站 France"
       ]
     },
     "m052": {
-      "pick": "Norway",
-      "confidence": 0.6650174761406179,
-      "tag": "有邊但不裝穩",
+      "pick": "Senegal",
+      "confidence": 0.408014067191348,
+      "tag": "膠著到煩",
       "probabilities": {
-        "home": 0.5890147946054155,
-        "draw": 0.24420753042918247,
-        "away": 0.166777674965402
+        "home": 0.32707367426675316,
+        "draw": 0.27725909814056593,
+        "away": 0.39566722759268097
       },
       "expectedGoals": [
-        1.64,
-        0.74
+        1.12,
+        1.26
       ],
-      "score": "1-0",
+      "score": "1-1",
       "commentary": {
-        "headline": "我這場中等站 Norway，但平局還有 24%；別急著開香檳，足球最會打臉。",
-        "story": "Norway 底牌比較硬；Senegal 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場保守站 Senegal，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "9.5",
-            "note": "Norway 比較有本錢"
+            "value": "1.0",
+            "note": "誰也別裝大哥"
           },
           {
             "label": "進球味",
-            "value": "1.64 : 0.74",
-            "note": "最像 1-0"
+            "value": "1.12 : 1.26",
+            "note": "最像 1-1"
           },
           {
             "label": "翻車率",
-            "value": "17%",
-            "note": "Senegal 的偷雞窗口"
+            "value": "33%",
+            "note": "Norway 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Norway 82.6；Senegal 73.0",
-        "預期進球 1.64 : 0.74，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 9.5 分，我暫時站 Norway"
+        "底牌分：Norway 78.0；Senegal 79.0",
+        "預期進球 1.12 : 1.26，先用 Poisson 把嘴砲壓成數字",
+        "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
     "m058": {
@@ -4941,98 +4953,98 @@
     },
     "m053": {
       "pick": "France",
-      "confidence": 0.6868846905358263,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.82,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.15496670890555445,
-        "draw": 0.2392886316547624,
-        "away": 0.6057446594396831
+        "home": 0.07811056223656344,
+        "draw": 0.19363072585405852,
+        "away": 0.728258711909378
       },
       "expectedGoals": [
-        0.71,
-        1.67
+        0.45,
+        1.93
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場中等站 France，但平局還有 24%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 France，但平局還有 19%；別急著開香檳，足球最會打臉。",
         "story": "France 底牌比較硬；Norway 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "20.7",
+            "value": "26.0",
             "note": "France 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.71 : 1.67",
+            "value": "0.45 : 1.93",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "15%",
+            "value": "8%",
             "note": "Norway 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Norway 82.6；France 103.3",
-        "預期進球 0.71 : 1.67，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 20.7 分，我暫時站 France"
+        "底牌分：Norway 78.0；France 104.0",
+        "預期進球 0.45 : 1.93，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 26.0 分，我暫時站 France"
       ]
     },
     "m054": {
       "pick": "Senegal",
-      "confidence": 0.7390328088593362,
+      "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6458175188905974,
-        "draw": 0.22622768426735443,
-        "away": 0.12795479684204822
+        "home": 0.7374602100821585,
+        "draw": 0.1895025387650125,
+        "away": 0.073037251152829
       },
       "expectedGoals": [
-        1.75,
-        0.63
+        1.95,
+        0.43
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Senegal，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Senegal，但平局還有 19%；別急著開香檳，足球最會打臉。",
         "story": "Senegal 底牌比較硬；Iraq 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "14.9",
+            "value": "24.1",
             "note": "Senegal 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.75 : 0.63",
+            "value": "1.95 : 0.43",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "13%",
+            "value": "7%",
             "note": "Iraq 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Senegal 73.0；Iraq 58.1",
-        "預期進球 1.75 : 0.63，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 14.9 分，我暫時站 Senegal"
+        "底牌分：Senegal 79.0；Iraq 54.9",
+        "預期進球 1.95 : 0.43，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 24.1 分，我暫時站 Senegal"
       ]
     },
     "m047": {
       "pick": "Cape Verde",
-      "confidence": 0.5430187028522134,
+      "confidence": 0.536662905194479,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.49647160306052673,
-        "draw": 0.26565179272165024,
-        "away": 0.23787660421782306
+        "home": 0.49168744194952685,
+        "draw": 0.2664888007951251,
+        "away": 0.24182375725534808
       },
       "expectedGoals": [
-        1.46,
-        0.92
+        1.45,
+        0.93
       ],
       "score": "1-0",
       "commentary": {
@@ -5041,12 +5053,12 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "0.9",
+            "value": "0.5",
             "note": "誰也別裝大哥"
           },
           {
             "label": "進球味",
-            "value": "1.46 : 0.92",
+            "value": "1.45 : 0.93",
             "note": "最像 1-0"
           },
           {
@@ -5057,50 +5069,50 @@
         ]
       },
       "reasons": [
-        "底牌分：Cape Verde 64.7；Saudi Arabia 63.7",
-        "預期進球 1.46 : 0.92，先用 Poisson 把嘴砲壓成數字",
+        "底牌分：Cape Verde 64.7；Saudi Arabia 64.2",
+        "預期進球 1.45 : 0.93，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
     "m048": {
       "pick": "Spain",
-      "confidence": 0.7045388756922432,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.7462431939369292,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.1456392030485231,
-        "draw": 0.23507780352691993,
-        "away": 0.6192829934245571
+        "home": 0.12434925282397374,
+        "draw": 0.22427273069700548,
+        "away": 0.6513780164790207
       },
       "expectedGoals": [
-        0.68,
-        1.7
+        0.61,
+        1.77
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場中等站 Spain，但平局還有 24%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Spain，但平局還有 22%；別急著開香檳，足球最會打臉。",
         "story": "Spain 底牌比較硬；Uruguay 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "15.3",
+            "value": "18.3",
             "note": "Spain 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.68 : 1.70",
+            "value": "0.61 : 1.77",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "15%",
+            "value": "12%",
             "note": "Uruguay 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Uruguay 83.7；Spain 98.9",
-        "預期進球 0.68 : 1.70，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 15.3 分，我暫時站 Spain"
+        "底牌分：Uruguay 82.1；Spain 100.5",
+        "預期進球 0.61 : 1.77，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 18.3 分，我暫時站 Spain"
       ]
     },
     "m041": {
@@ -6723,37 +6735,37 @@
   },
   "leaderboard": [
     {
-      "id": "rating",
-      "name": "Rating Baseline",
-      "desc": "只看隊伍強度先驗",
-      "points": 48,
-      "correct": 38,
-      "exact": 5,
-      "total": 60,
-      "rank": 1,
-      "accuracy": 0.6333333333333333
-    },
-    {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 47,
-      "correct": 35,
+      "points": 52,
+      "correct": 38,
+      "exact": 6,
+      "total": 64,
+      "rank": 1,
+      "accuracy": 0.59375
+    },
+    {
+      "id": "rating",
+      "name": "Rating Baseline",
+      "desc": "只看隊伍強度先驗",
+      "points": 51,
+      "correct": 41,
       "exact": 5,
-      "total": 60,
+      "total": 64,
       "rank": 2,
-      "accuracy": 0.5833333333333334
+      "accuracy": 0.640625
     },
     {
       "id": "draw",
       "name": "Draw Baseline",
       "desc": "保守押平局",
-      "points": 32,
-      "correct": 16,
+      "points": 33,
+      "correct": 17,
       "exact": 8,
-      "total": 60,
+      "total": 64,
       "rank": 3,
-      "accuracy": 0.26666666666666666
+      "accuracy": 0.265625
     }
   ],
   "paperBankroll": {
@@ -6761,13 +6773,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 100,
-    "openStake": 33.88,
-    "totalValue": 100,
-    "roi": 0,
+    "bankroll": 123.26,
+    "openStake": 34.76,
+    "totalValue": 123.26,
+    "roi": 0.233,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比 rating baseline 產生的「模擬市場價格」挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑。",
-    "settled": [],
-    "pending": [
+    "settled": [
       {
         "matchId": "m053",
         "kickoffUtc": "2026-06-26T19:00:00.000Z",
@@ -6776,13 +6787,18 @@
         "team2": "France",
         "pick": "France",
         "outcome": "away",
-        "stake": 6.39,
+        "stake": 8,
         "decimalOdds": 2.13,
-        "edge": 0.29,
-        "modelProbability": 0.606,
+        "edge": 0.551,
+        "modelProbability": 0.728,
         "marketProxyProbability": 0.441,
-        "reason": "我這場中等站 France，但平局還有 24%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
+        "reason": "我這場偏明確站 France，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          1,
+          4
+        ],
+        "profit": 9.04
       },
       {
         "matchId": "m054",
@@ -6794,11 +6810,16 @@
         "outcome": "home",
         "stake": 8,
         "decimalOdds": 2.16,
-        "edge": 0.395,
-        "modelProbability": 0.646,
+        "edge": 0.593,
+        "modelProbability": 0.737,
         "marketProxyProbability": 0.436,
-        "reason": "我這場偏明確站 Senegal，但平局還有 23%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
+        "reason": "我這場偏明確站 Senegal，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          5,
+          0
+        ],
+        "profit": 9.28
       },
       {
         "matchId": "m047",
@@ -6808,13 +6829,18 @@
         "team2": "Saudi Arabia",
         "pick": "Cape Verde",
         "outcome": "home",
-        "stake": 6.62,
+        "stake": 6.34,
         "decimalOdds": 2.62,
-        "edge": 0.301,
-        "modelProbability": 0.496,
+        "edge": 0.288,
+        "modelProbability": 0.492,
         "marketProxyProbability": 0.358,
         "reason": "我這場保守站 Cape Verde，但平局還有 27%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
+        "status": "lost",
+        "score": [
+          0,
+          0
+        ],
+        "profit": -6.34
       },
       {
         "matchId": "m048",
@@ -6826,12 +6852,19 @@
         "outcome": "away",
         "stake": 8,
         "decimalOdds": 2.41,
-        "edge": 0.492,
-        "modelProbability": 0.619,
+        "edge": 0.57,
+        "modelProbability": 0.651,
         "marketProxyProbability": 0.39,
-        "reason": "我這場中等站 Spain，但平局還有 24%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "reason": "我這場偏明確站 Spain，但平局還有 22%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          0,
+          1
+        ],
+        "profit": 11.28
+      }
+    ],
+    "pending": [
       {
         "matchId": "m041",
         "kickoffUtc": "2026-06-27T03:00:00.000Z",
@@ -6847,9 +6880,23 @@
         "marketProxyProbability": 0.358,
         "reason": "我這場保守站 Egypt，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "status": "pending"
-      }
-    ],
-    "watchlist": [
+      },
+      {
+        "matchId": "m042",
+        "kickoffUtc": "2026-06-27T03:00:00.000Z",
+        "stage": "小組 G · Matchday 16",
+        "team1": "New Zealand",
+        "team2": "Belgium",
+        "pick": "Belgium",
+        "outcome": "away",
+        "stake": 8,
+        "decimalOdds": 2.03,
+        "edge": 0.434,
+        "modelProbability": 0.706,
+        "marketProxyProbability": 0.462,
+        "reason": "我這場偏明確站 Belgium，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
+      },
       {
         "matchId": "m071",
         "kickoffUtc": "2026-06-27T21:00:00.000Z",
@@ -6864,8 +6911,42 @@
         "modelProbability": 0.801,
         "marketProxyProbability": 0.473,
         "reason": "我這場偏明確站 England，但平局還有 16%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
+        "status": "pending"
       },
+      {
+        "matchId": "m065",
+        "kickoffUtc": "2026-06-27T23:30:00.000Z",
+        "stage": "小組 K · Matchday 17",
+        "team1": "Colombia",
+        "team2": "Portugal",
+        "pick": "Portugal",
+        "outcome": "away",
+        "stake": 5.89,
+        "decimalOdds": 2.35,
+        "edge": 0.268,
+        "modelProbability": 0.539,
+        "marketProxyProbability": 0.4,
+        "reason": "我這場中等站 Portugal，但平局還有 26%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
+      },
+      {
+        "matchId": "m066",
+        "kickoffUtc": "2026-06-27T23:30:00.000Z",
+        "stage": "小組 K · Matchday 17",
+        "team1": "Democratic Republic of the Congo",
+        "team2": "Uzbekistan",
+        "pick": "Democratic Republic of the Congo",
+        "outcome": "home",
+        "stake": 8,
+        "decimalOdds": 2.47,
+        "edge": 0.394,
+        "modelProbability": 0.564,
+        "marketProxyProbability": 0.38,
+        "reason": "我這場中等站 Democratic Republic of the Congo，但平局還有 25%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
+      }
+    ],
+    "watchlist": [
       {
         "matchId": "m060",
         "kickoffUtc": "2026-06-28T02:00:00.000Z",
@@ -6928,6 +7009,22 @@
         "modelProbability": 0.685,
         "marketProxyProbability": 0.441,
         "reason": "我這場偏明確站 Switzerland，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m081",
+        "kickoffUtc": "2026-07-02T00:00:00.000Z",
+        "stage": "Round of 32",
+        "team1": "USA",
+        "team2": "3B/E/F/I/J",
+        "pick": "USA",
+        "outcome": "home",
+        "stake": 8,
+        "decimalOdds": 2.11,
+        "edge": 0.449,
+        "modelProbability": 0.687,
+        "marketProxyProbability": 0.446,
+        "reason": "我這場偏明確站 USA，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]

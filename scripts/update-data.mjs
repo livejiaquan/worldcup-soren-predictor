@@ -8,6 +8,16 @@ const root = path.resolve(__dirname, '..')
 const MATCHES_URL = 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json'
 const GROUPS_URL = 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json'
 
+// Some public fixture feeds lag final-score updates by hours. Keep a tiny,
+// source-backed override list so the public scoreboard/paper bankroll does not
+// look asleep after matches finish. Remove entries once upstream catches up.
+const RESULT_OVERRIDES = new Map([
+  ['2026-06-26|Norway|France', { score: [1, 4], source: 'ESPN final score, gameId 760475' }],
+  ['2026-06-26|Senegal|Iraq', { score: [5, 0], source: 'ESPN final score, gameId 760474' }],
+  ['2026-06-27|Cape Verde|Saudi Arabia', { score: [0, 0], source: 'ESPN final score, gameId 760478' }],
+  ['2026-06-27|Uruguay|Spain', { score: [0, 1], source: 'USA Today/Yahoo final score summary' }],
+])
+
 async function getJson(url) {
   const response = await fetch(url, { headers: { 'user-agent': 'soren-worldcup-predictor/1.0' } })
   if (!response.ok) throw new Error(`Fetch failed ${response.status} ${url}`)
@@ -26,9 +36,11 @@ function parseKickoff(date, time) {
 }
 function stageLabel(match) { return match.group ? `${match.group.replace('Group ', '小組 ')} · ${match.round || '小組賽'}` : (match.round || '淘汰賽') }
 function normalizeMatch(match, index) {
-  const ft = match.score?.ft?.map(Number)
+  const overrideKey = `${match.date}|${canonicalTeam(match.team1)}|${canonicalTeam(match.team2)}`
+  const override = RESULT_OVERRIDES.get(overrideKey)
+  const ft = override?.score || match.score?.ft?.map(Number)
   const hasScore = Array.isArray(ft) && ft.length === 2 && ft.every(Number.isFinite)
-  return { id: `m${String(index + 1).padStart(3, '0')}`, round: match.round || '', stage: stageLabel(match), group: match.group || null, date: match.date, time: match.time || '', kickoffUtc: parseKickoff(match.date, match.time), team1: canonicalTeam(match.team1), team2: canonicalTeam(match.team2), venue: match.ground || '待定', status: hasScore ? 'finished' : 'scheduled', score: hasScore ? ft : null, source: 'openfootball/worldcup.json' }
+  return { id: `m${String(index + 1).padStart(3, '0')}`, round: match.round || '', stage: stageLabel(match), group: match.group || null, date: match.date, time: match.time || '', kickoffUtc: parseKickoff(match.date, match.time), team1: canonicalTeam(match.team1), team2: canonicalTeam(match.team2), venue: match.ground || '待定', status: hasScore ? 'finished' : 'scheduled', score: hasScore ? ft : null, source: override ? `openfootball/worldcup.json + override: ${override.source}` : 'openfootball/worldcup.json' }
 }
 function normalizedToEngineMatch(m) { return { team1: m.team1, team2: m.team2, score: m.score ? { ft: m.score } : null } }
 function computeStandingsFromNormalized(groups, matches) { return computeStandings(groups, matches.map(normalizedToEngineMatch)) }
