@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T04:35:27Z",
-  "status": "schedule-aware-scout-20260627T043600Z-md16-live-score-watch",
-  "headline": "Soren 04:36Z 巡檢：補上 Group G 兩場進行中 ESPN live-score 訊號；Egypt-Iran 仍卡 1-1，Belgium 已把 New Zealand 打到 0-3。正式完場前不寫結果覆蓋。",
+  "generatedAt": "2026-06-27T05:08:10Z",
+  "status": "schedule-aware-scout-20260627T050800Z-r32-bracket-watch",
+  "headline": "Soren 05:08Z 巡檢：補上 6/30 兩場 Round of 32 早期情報缺口；Ivory Coast 的 2I 對手按現有積分指向 Norway，France 的 3C/D/F/G/H 對手仍需等第三名排序收口。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -1980,6 +1980,120 @@
         }
       ],
       "confidence": "medium-high"
+    },
+    {
+      "matchId": "m078",
+      "match": "Ivory Coast vs 2I / Norway watch",
+      "sourceType": "official bracket slot + reported opponent projection + knockout context",
+      "title": "Ivory Coast 的淘汰賽首秀不再只是「對 2I」：按現有 I 組積分，Norway 這堵北歐牆已浮上檯面。",
+      "sorenTake": "資料源仍把對手寫作 2I，所以公開頁先保守標成 bracket watch；但 Group I 已由 France 領跑、Norway 第二，若官方括號確認不變，Ivory Coast 要面對的不是流量隊，而是能把節奏拖成體能稅的 Norway。Soren 的早期提醒：Ivory Coast 有 Pépé 這種一腳改命的火花，但淘汰賽第一刀最怕情緒衝太快、定位球和轉身防守被挪威慢慢割。",
+      "signals": [
+        "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
+        "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
+        "The Analyst 在 Ivory Coast 擊敗 Curaçao 後指出他們將面對 France 或 Norway，並強調這是隊史首次晉級淘汰賽的脈絡。",
+        "AS 報導 Ivory Coast 首度闖進世界盃淘汰賽，這讓這場不只是對手分析，也是心理高度測試：第一次站上淘汰賽燈光，腳會不會先硬掉。",
+        "第三方賽事頁已開始把本場寫作 Ivory Coast vs Norway；來源等級低於官方/主流媒體，本站只作低到中等信心的 bracket-projection 訊號。"
+      ],
+      "sources": [
+        {
+          "label": "FIFA official fixture schedule",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-27T05:08:10Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "The Analyst Curaçao-Ivory Coast stats/context",
+          "url": "https://theanalyst.com/articles/curacao-vs-ivory-coast-stats-2026-world-cup",
+          "sourceName": "The Analyst",
+          "fetchedAt": "2026-06-27T05:08:10Z",
+          "claimType": "reported/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "AS Group E final standings context",
+          "url": "https://en.as.com/soccer/world-cup/world-cup-2026-group-e-final-standings-results-and-teams-qualified-for-the-round-of-32-f202606-n/",
+          "sourceName": "AS",
+          "fetchedAt": "2026-06-27T05:08:10Z",
+          "claimType": "reported/context",
+          "confidence": "medium"
+        },
+        {
+          "label": "WorldCupLocalTime Ivory Coast-Norway projection",
+          "url": "https://worldcuplocaltime.com/match/ivory-coast-norway-2026-06-30/",
+          "sourceName": "WorldCupLocalTime",
+          "fetchedAt": "2026-06-27T05:08:10Z",
+          "claimType": "reported/bracket-projection",
+          "confidence": "medium-low"
+        },
+        {
+          "label": "Sporting News live bracket explainer",
+          "url": "https://www.sportingnews.com/us/soccer/news/world-cup-live-bracket-2026-standings-scenarios-knockouts/20a041481c20c2b87e13384d",
+          "sourceName": "Sporting News",
+          "fetchedAt": "2026-06-27T05:08:10Z",
+          "claimType": "context",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m077",
+      "match": "1I / France vs 3C/D/F/G/H watch",
+      "sourceType": "official bracket slot + third-place sorting watch + live bracket context",
+      "title": "France 的 1I 門牌已掛上，但對面那張 3C/D/F/G/H 還沒簽名；熱門隊最容易先跟空氣踢一場。",
+      "sorenTake": "Soren 先不替 FIFA 把對手亂填：站內積分顯示 France 已是 I 組第一，m077 則等 C/D/F/G/H 的第三名排序落定。這種資訊真空期對強隊其實危險——外界開始討論「下一輪」，球隊卻還得準備好完全不同的對手模型：Scotland 的低位、Sweden 的身材、Iran/Cape Verde 的耐性，都不是同一把鎖。",
+      "signals": [
+        "openfootball 賽程目前列 m077 為 1I vs 3C/D/F/G/H，2026-06-30 21:00Z 於 New York/New Jersey 開球；本站不把未定第三名寫成確認對手。",
+        "站內 Group I 完賽積分顯示 France 第一，因此 1I 指向 France；但對手端仍取決於最佳第三名組合與剩餘小組結果。",
+        "Olympics.com 的 Round of 32 bracket 更新頁說明淘汰賽從 6/28 開始，並持續補齊 confirmed match-ups；這類頁面適合做括號核對，不等於本站自行推翻官方資料。",
+        "Sporting News / Daily Jagran 類即時 bracket 與第三名排序頁提醒：48 隊制下第三名配對是滾動變數，未收口前只能稱為 third-place sorting watch。",
+        "公開分析重點先放在「France 對未知第三名」的準備風險：熱門隊若把對手當背景板，淘汰賽通常會拿出帳單。"
+      ],
+      "sources": [
+        {
+          "label": "FIFA official fixture schedule",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-27T05:08:10Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Olympics.com Round of 32 bracket tracker",
+          "url": "https://www.olympics.com/en/news/fifa-world-cup-2026-bracket-round-32-full-schedule-live-updates",
+          "sourceName": "Olympics.com",
+          "fetchedAt": "2026-06-27T05:08:10Z",
+          "claimType": "context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sporting News live bracket explainer",
+          "url": "https://www.sportingnews.com/us/soccer/news/world-cup-live-bracket-2026-standings-scenarios-knockouts/20a041481c20c2b87e13384d",
+          "sourceName": "Sporting News",
+          "fetchedAt": "2026-06-27T05:08:10Z",
+          "claimType": "context",
+          "confidence": "medium"
+        },
+        {
+          "label": "Daily Jagran third-place standings",
+          "url": "https://www.thedailyjagran.com/sports/fifa-world-cup-2026-third-place-standings-round-of-32-knockout-stage-groups-fifa-wc-team-rankings-full-list-10318092",
+          "sourceName": "Daily Jagran",
+          "fetchedAt": "2026-06-27T05:08:10Z",
+          "claimType": "context/third-place-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "USA Today round-of-32 standings tracker",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/24/world-cup-standings-live-round-of-32-knockout-round-updates/90676403007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-06-27T05:08:10Z",
+          "claimType": "context",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "medium"
     }
   ]
 }
