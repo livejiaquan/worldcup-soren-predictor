@@ -64,19 +64,29 @@ function TodaySlate({ matches, predictions, paperBetsByMatch, intelByMatch, onSe
   </section>
 }
 
-function IntelBrief({ intel, onSelect }) {
+function IntelBrief({ intel, matches = [], onSelect }) {
   if (!intel?.items?.length) return null
+  const matchById = Object.fromEntries(matches.map((m) => [m.id, m]))
+  const now = Date.now()
+  const prioritized = [...intel.items].sort((a, b) => {
+    const ma = matchById[a.matchId]
+    const mb = matchById[b.matchId]
+    const ta = ma?.kickoffUtc ? new Date(ma.kickoffUtc).getTime() : Number.MAX_SAFE_INTEGER
+    const tb = mb?.kickoffUtc ? new Date(mb.kickoffUtc).getTime() : Number.MAX_SAFE_INTEGER
+    const bucket = (m, t) => m?.status === 'scheduled' ? 0 : t > now - 12 * 60 * 60 * 1000 ? 1 : 2
+    return bucket(ma, ta) - bucket(mb, tb) || Math.abs(ta - now) - Math.abs(tb - now)
+  })
   const updatedLabel = intel.generatedAt ? `更新 ${fmtDate(intel.generatedAt)}` : `${intel.items.length} 則`
   return <section className="panel intel-feed compact-intel" id="soren-intel">
     <SectionHead kicker="SOREN SCOUTING BRIEF" title="賽前情報摘要" meta={updatedLabel}>
-      <small>{intel.items.length} 則公開來源觀察；首頁只放重點，完整訊號與來源收進細節，不把預測先發裝成官方名單。</small>
+      <small>{intel.items.length} 則公開來源觀察；首頁優先顯示最近要踢的刀口，完整訊號與來源收進細節，不把預測先發裝成官方名單。</small>
     </SectionHead>
-    <div className="intel-compact-list">{intel.items.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row">
+    <div className="intel-compact-list">{prioritized.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row">
       <span>{item.match}</span>
       <b>{item.title}</b>
       <em>{item.confidence} · 看細節</em>
     </button>)}</div>
-    <details className="source-drawer compact-sources"><summary>來源與可驗證訊號</summary>{intel.items.map((item) => <div key={item.matchId} className="source-block"><b>{item.match}</b><ul>{item.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{item.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></div>)}</details>
+    <details className="source-drawer compact-sources"><summary>來源與可驗證訊號</summary>{prioritized.map((item) => <div key={item.matchId} className="source-block"><b>{item.match}</b><ul>{item.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{item.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></div>)}</details>
     <p className="intel-note compact-note">多來源情報只服務公開觀點，不公開我的完整下注/預測底層邏輯。</p>
   </section>
 }
@@ -188,7 +198,7 @@ function App() {
     <div className="notice">公開研究與娛樂實驗，不是投注建議。社群訊號只收可驗證來源；看不到的留言我不會假裝看過。</div>
     <CommandCenter data={data} nextMatches={nextMatches} predictions={data.predictions} bankroll={data.paperBankroll}/>
     <TodaySlate matches={nextMatches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId}/>
-    <IntelBrief intel={intel} onSelect={setSelectedId}/>
+    <IntelBrief intel={intel} matches={data.matches} onSelect={setSelectedId}/>
     <PaperBankroll bankroll={data.paperBankroll} onSelect={setSelectedId}/>
     <Leaderboard rows={data.leaderboard}/>
     <StandingsPreview standings={data.standings} nextMatches={nextMatches}/>
