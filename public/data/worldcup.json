@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T23:02:05.889Z",
+  "generatedAt": "2026-06-27T23:33:06.354Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.groups.json",
@@ -7,11 +7,9 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 67,
-    "scheduledMatches": 37,
+    "finishedMatches": 68,
+    "scheduledMatches": 36,
     "nextWindow": [
-      "m065",
-      "m066",
       "m059",
       "m060",
       "m073",
@@ -21,7 +19,9 @@
       "m078",
       "m077",
       "m079",
-      "m080"
+      "m080",
+      "m082",
+      "m081"
     ]
   },
   "groups": [
@@ -699,28 +699,28 @@
         "points": 7
       },
       {
-        "team": "Ghana",
-        "group": "Group L",
-        "played": 2,
-        "won": 1,
-        "drawn": 1,
-        "lost": 0,
-        "goalsFor": 1,
-        "goalsAgainst": 0,
-        "goalDiff": 1,
-        "points": 4
-      },
-      {
         "team": "Croatia",
         "group": "Group L",
-        "played": 2,
-        "won": 1,
+        "played": 3,
+        "won": 2,
         "drawn": 0,
         "lost": 1,
-        "goalsFor": 3,
-        "goalsAgainst": 4,
-        "goalDiff": -1,
-        "points": 3
+        "goalsFor": 5,
+        "goalsAgainst": 5,
+        "goalDiff": 0,
+        "points": 6
+      },
+      {
+        "team": "Ghana",
+        "group": "Group L",
+        "played": 3,
+        "won": 1,
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
+        "goalDiff": 0,
+        "points": 4
       },
       {
         "team": "Panama",
@@ -1954,8 +1954,11 @@
       "team1": "Croatia",
       "team2": "Ghana",
       "venue": "Philadelphia",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        1
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -3363,84 +3366,84 @@
     },
     "m067": {
       "pick": "England",
-      "confidence": 0.7190452773378211,
+      "confidence": 0.6918885206614305,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.6304287304056874,
-        "draw": 0.2314566888115904,
-        "away": 0.13811458078272223
+        "home": 0.6095790253834493,
+        "draw": 0.23811692299966344,
+        "away": 0.15230405161688723
       },
       "expectedGoals": [
-        1.72,
-        0.66
+        1.68,
+        0.7
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場中等站 England，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 England，但平局還有 24%；別急著開香檳，足球最會打臉。",
         "story": "England 底牌比較硬；Croatia 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "13.5",
+            "value": "11.5",
             "note": "England 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.72 : 0.66",
+            "value": "1.68 : 0.70",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "14%",
+            "value": "15%",
             "note": "Croatia 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：England 98.8；Croatia 85.3",
-        "預期進球 1.72 : 0.66，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 13.5 分，我暫時站 England"
+        "底牌分：England 98.8；Croatia 87.3",
+        "預期進球 1.68 : 0.70，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 11.5 分，我暫時站 England"
       ]
     },
     "m068": {
       "pick": "Ghana",
-      "confidence": 0.7205557678126118,
-      "tag": "我敢站隊",
+      "confidence": 0.6872902223911033,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.6315903992161778,
-        "draw": 0.23107124932561116,
-        "away": 0.137338351458211
+        "home": 0.6060553280801443,
+        "draw": 0.23919431223392804,
+        "away": 0.15475035968592765
       },
       "expectedGoals": [
-        1.73,
-        0.65
+        1.67,
+        0.71
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Ghana，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Ghana，但平局還有 24%；別急著開香檳，足球最會打臉。",
         "story": "Ghana 底牌比較硬；Panama 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "13.6",
+            "value": "11.2",
             "note": "Ghana 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.73 : 0.65",
+            "value": "1.67 : 0.71",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "14%",
+            "value": "15%",
             "note": "Panama 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Ghana 75.0；Panama 61.4",
-        "預期進球 1.73 : 0.65，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 13.6 分，我暫時站 Ghana"
+        "底牌分：Ghana 72.6；Panama 61.4",
+        "預期進球 1.67 : 0.71，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 11.2 分，我暫時站 Ghana"
       ]
     },
     "m062": {
@@ -4350,81 +4353,81 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.7347998784354074,
-        "draw": 0.19070646071118885,
-        "away": 0.07449366085340374
+        "home": 0.7577607625651644,
+        "draw": 0.18003406669493968,
+        "away": 0.0622051707398958
       },
       "expectedGoals": [
-        1.94,
-        0.44
+        1.99,
+        0.39
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 England，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 England，但平局還有 18%；別急著開香檳，足球最會打臉。",
         "story": "England 底牌比較硬；Ghana 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "23.8",
+            "value": "26.3",
             "note": "England 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.94 : 0.44",
+            "value": "1.99 : 0.39",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "7%",
+            "value": "6%",
             "note": "Ghana 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：England 98.8；Ghana 75.0",
-        "預期進球 1.94 : 0.44，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 23.8 分，我暫時站 England"
+        "底牌分：England 98.8；Ghana 72.6",
+        "預期進球 1.99 : 0.39，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 26.3 分，我暫時站 England"
       ]
     },
     "m070": {
       "pick": "Croatia",
-      "confidence": 0.8193950290178595,
+      "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.0895928202463831,
-        "draw": 0.20233791139581317,
-        "away": 0.7080692683578038
+        "home": 0.07855959486072647,
+        "draw": 0.19398740555446728,
+        "away": 0.7274529995848062
       },
       "expectedGoals": [
-        0.5,
-        1.88
+        0.46,
+        1.92
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 Croatia，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Croatia，但平局還有 19%；別急著開香檳，足球最會打臉。",
         "story": "Croatia 底牌比較硬；Panama 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "23.9",
+            "value": "25.9",
             "note": "Croatia 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.50 : 1.88",
+            "value": "0.46 : 1.92",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "9%",
+            "value": "8%",
             "note": "Panama 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Panama 61.4；Croatia 85.3",
-        "預期進球 0.50 : 1.88，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 23.9 分，我暫時站 Croatia"
+        "底牌分：Panama 61.4；Croatia 87.3",
+        "預期進球 0.46 : 1.92，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 25.9 分，我暫時站 Croatia"
       ]
     },
     "m064": {
@@ -5249,43 +5252,43 @@
     },
     "m072": {
       "pick": "Croatia",
-      "confidence": 0.419477119998259,
-      "tag": "這場有妖氣",
+      "confidence": 0.5910638466200442,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.40415804291718216,
-        "draw": 0.27678989794939585,
-        "away": 0.319052059133422
+        "home": 0.5327557306615992,
+        "draw": 0.2584225162237178,
+        "away": 0.2088217531146829
       },
       "expectedGoals": [
-        1.28,
-        1.1
+        1.53,
+        0.85
       ],
-      "score": "1-1",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 Croatia，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Croatia，但平局還有 26%；別急著開香檳，足球最會打臉。",
         "story": "Croatia 底牌比較硬；Ghana 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "10.4",
+            "value": "14.8",
             "note": "Croatia 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.28 : 1.10",
-            "note": "最像 1-1"
+            "value": "1.53 : 0.85",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "32%",
+            "value": "21%",
             "note": "Ghana 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Croatia 85.3；Ghana 75.0",
-        "預期進球 1.28 : 1.10，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 10.4 分，我暫時站 Croatia"
+        "底牌分：Croatia 87.3；Ghana 72.6",
+        "預期進球 1.53 : 0.85，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 14.8 分，我暫時站 Croatia"
       ]
     },
     "m065": {
@@ -6747,23 +6750,23 @@
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 56,
-      "correct": 40,
+      "points": 57,
+      "correct": 41,
       "exact": 7,
-      "total": 67,
+      "total": 68,
       "rank": 1,
-      "accuracy": 0.5970149253731343
+      "accuracy": 0.6029411764705882
     },
     {
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 53,
-      "correct": 43,
-      "exact": 5,
-      "total": 67,
+      "points": 56,
+      "correct": 44,
+      "exact": 6,
+      "total": 68,
       "rank": 2,
-      "accuracy": 0.6417910447761194
+      "accuracy": 0.6470588235294118
     },
     {
       "id": "draw",
@@ -6772,9 +6775,9 @@
       "points": 36,
       "correct": 18,
       "exact": 9,
-      "total": 67,
+      "total": 68,
       "rank": 3,
-      "accuracy": 0.26865671641791045
+      "accuracy": 0.2647058823529412
     }
   ],
   "paperBankroll": {
@@ -6782,10 +6785,10 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 135.1,
+    "bankroll": 138.95,
     "openStake": 35.86,
-    "totalValue": 135.1,
-    "roi": 0.351,
+    "totalValue": 138.95,
+    "roi": 0.389,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
       {
@@ -6955,6 +6958,30 @@
           2
         ],
         "profit": 7.92
+      },
+      {
+        "matchId": "m072",
+        "kickoffUtc": "2026-06-27T21:00:00.000Z",
+        "stage": "小組 L · Matchday 17",
+        "team1": "Croatia",
+        "team2": "Ghana",
+        "pick": "Croatia",
+        "outcome": "home",
+        "stake": 3.32,
+        "decimalOdds": 2.16,
+        "edge": 0.151,
+        "modelProbability": 0.533,
+        "marketProxyProbability": 0.436,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-27T20:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場中等站 Croatia，但平局還有 26%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          2,
+          1
+        ],
+        "profit": 3.85
       }
     ],
     "pending": [
