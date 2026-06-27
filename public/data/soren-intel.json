@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T07:02:45Z",
+  "generatedAt": "2026-06-27T08:18:00Z",
   "status": "schedule-aware-scout-20260627T070245Z-r32-m086-m088-bracket-actualization",
   "headline": "Soren 07:02 巡檢：補上 m086–m088 Round of 32 缺口；Argentina-Cape Verde 與 Australia-Egypt 已有媒體 bracket actualization，1K 仍是第三名盲盒。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
@@ -1077,9 +1077,9 @@
     {
       "matchId": "m071",
       "match": "Panama vs England",
-      "sourceType": "injury watch + official live-centre + group context + lineup/odds watch",
+      "sourceType": "injury watch + official live-centre + group context + lineup/odds watch + official team update",
       "title": "Reece James 已從「疑問」變成缺席；England 仍是該贏的一方，但右路保險絲被拔掉了。",
-      "sorenTake": "BBC 27 日賽前更新把 Reece James 缺席 Panama 戰寫明，Declan Rice 則偏向可用；England 的牌面仍重，但這不是可以閉眼輾過的無風險局。Panama 若想偷東西，第一件事就是把英格蘭臨時右路安排逼到露怯。",
+      "sorenTake": "英格蘭的優勢還在，但現在不是「陣容表還沒出就先開香檳」的局。FA 官方已把 Reece James 缺席釘牢，Rice/Anderson 回到可用討論；Panama 也按部就班抵達 New Jersey。Soren 的讀法很簡單：熱門隊可以贏，但右路替代方案若被 Panama 早早拷問，比分就未必像市場想得那麼乾淨。",
       "signals": [
         "FIFA 預覽確認 Panama vs England 是 Group L 最後一輪，且重演 2018 世界盃對戰。",
         "Goal.com 報導 Reece James 與 Declan Rice 缺席訓練，成為對 Panama 前的傷情疑問。",
@@ -1093,7 +1093,10 @@
         "Oddschecker 公開盤面只作紙上參考，本站不提供下注建議。",
         "27日賽前再核：BBC 報導 Thomas Tuchel 已確認 Reece James 將缺席對 Panama 的小組賽，這比前一輪「訓練缺席/待評估」更硬。",
         "BBC Panama-England live centre 與 FIFA match centre 皆已可作臨場比分、官方名單與文字更新入口；正式 XI 未出前仍只稱 live-centre/lineup-watch。",
-        "Opta/The Analyst 賽前模型把 England 勝率列為明顯大熱（搜尋摘要顯示約 78.5%），但這只作外部市場/模型參照，不替代 Soren 自家判讀。"
+        "Opta/The Analyst 賽前模型把 England 勝率列為明顯大熱（搜尋摘要顯示約 78.5%），但這只作外部市場/模型參照，不替代 Soren 自家判讀。",
+        "27日早場補核：England Football/FA 官方 daily briefing 與 Tuchel 賽前記者會把 Reece James 缺席寫成硬訊號，同時 Declan Rice、Elliot Anderson 回到可用討論；這比單純媒體傷情摘要更可靠。",
+        "FEPAFUT 官方訓練/行程頁顯示 Panama 已完成基地營最後訓練並轉往 New Jersey；這是備戰節奏訊號，不代表官方先發。",
+        "SI / Evening Standard 類頁面開始列出具體 England predicted XI；仍只標記 lineup-watch，正式 XI 以 FIFA/球隊臨場公告為準。"
       ],
       "sources": [
         {
@@ -1223,6 +1226,46 @@
           "fetchedAt": "2026-06-27T04:03:00Z",
           "claimType": "reported/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "England Football daily briefing",
+          "url": "https://www.englandfootball.com/articles/2026/Jun/27/england-men-world-cup-2026-daily-briefing",
+          "sourceName": "England Football / FA",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "confirmed/team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "Tuchel pre-Panama press conference",
+          "url": "https://www.englandfootball.com/articles/2026/Jun/26/thomas-tuchel-pre-panama-match-press-conference-quotes-20262606",
+          "sourceName": "England Football / FA",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "confirmed/press-conference",
+          "confidence": "high"
+        },
+        {
+          "label": "FEPAFUT final base-camp training",
+          "url": "https://www.fepafut.com/blog/2026/06/25/panama-completa-su-ultimo-entrenamiento-en-su-campamento-base-y-se-alista-para-viajar-a-nueva-jersey/",
+          "sourceName": "FEPAFUT",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "FEPAFUT recovery session before England",
+          "url": "https://www.fepafut.com/blog/2026/06/24/jornada-de-activacion-y-recuperacion-para-panama-pensando-en-inglaterra/",
+          "sourceName": "FEPAFUT",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "confirmed/training-update",
+          "confidence": "high"
+        },
+        {
+          "label": "SI England predicted lineup vs Panama",
+          "url": "https://www.si.com/soccer/england-predicted-lineup-vs-panama-world-cup-6-27-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -1230,9 +1273,9 @@
     {
       "matchId": "m072",
       "match": "Croatia vs Ghana",
-      "sourceType": "official fixture + official live-centre + qualification context + tactical/model watch",
+      "sourceType": "official fixture + official live-centre + qualification context + tactical/model watch + official team updates + injury watch",
       "title": "Croatia 對 Ghana 是 L 組真正的刀口：一邊搶第二，一邊不想把命交給第三名算術。",
-      "sorenTake": "England 那邊比較吵，但這場更像暗巷決鬥。Croatia 贏球就能把晉級路線踢得乾淨；Ghana 則帶著不敗分數進來，沒必要陪你打開放足球。Soren 會把它標成低容錯局，不是漂亮履歷展示。",
+      "sorenTake": "這場的聲音比 England 那邊小，但壓力更髒。GFA 直接把它叫成 win-or-bust，HNS 則透露 Croatia 不只看首發，還要靠收尾球員把局面掰回來。Ghana 的乾淨防守樣本是真的，Croatia 的控場名氣也是真的；兩件事撞在一起，最怕的就是誰先把一個定位球或門將細節送出去。",
       "signals": [
         "FIFA 官方預覽確認 Croatia vs Ghana 為 Group L 賽事，地點 Philadelphia Stadium，並指出兩隊世界盃首次交手。",
         "RotoWire 賽前頁將本場放在 Group L 晉級形勢中：Croatia 三分，勝 Ghana 可大幅改善直接晉級機會。",
@@ -1246,7 +1289,10 @@
         "FanDuel/DraftKings/Oddschecker 盤口頁只列為 odds-reference；市場偏 Croatia 不能取代 Ghana 逼平 England 後的防守韌性。",
         "27日再核：BBC Croatia-Ghana live centre、ESPN live page 與 FIFA match centre 均可作臨場入口；正式名單未落地前，FotMob 類頁面仍只當 predicted/lineup-watch。",
         "ESPN team-news/permutations 頁與 Opta preview 都把這場定位成 L 組刀口戰：Ghana 防守樣本很硬，Croatia 仍是外部模型較看好的一方，但不能把名字當通行證。",
-        "FOX/ESPN 公開 odds/live 頁可作 paper bankroll 的市場參照；不寫成投注建議，也不引用未親核的精確盤口。"
+        "FOX/ESPN 公開 odds/live 頁可作 paper bankroll 的市場參照；不寫成投注建議，也不引用未親核的精確盤口。",
+        "27日早場補核：GFA 官方稱 Ghana 已抵達 Philadelphia，並把對 Croatia 定位為 win-or-bust / Round-of-32 qualification fight；這不是普通末輪，是直接把命運拿上桌。",
+        "HNS 官方賽前動態提供 Croatia 內部語氣：Dalić 強調不只誰先發，誰收尾同樣重要；Moro/Gvardiol 媒體日則顯示 Panama 勝利後士氣回升。",
+        "SI/ESPN 類 predicted-XI 開始給出具體 Ghana/Croatia 名單，Covers 則把 Ati-Zigi 標為 questionable；全部仍是 reported/lineup-watch，不升級成確認先發。"
       ],
       "sources": [
         {
@@ -1360,6 +1406,54 @@
           "fetchedAt": "2026-06-27T04:03:00Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "GFA Black Stars arrive in Philadelphia",
+          "url": "https://www.ghanafa.org/black-stars-arrive-in-philadelphia-for-win-or-bust-croatia-world-cup-clash",
+          "sourceName": "Ghana Football Association",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "confirmed/team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "GFA depart Rhode Island for Philadelphia",
+          "url": "https://www.ghanafa.org/black-stars-depart-rhode-island-for-philadelphia-ahead-of-croatia-decider",
+          "sourceName": "Ghana Football Association",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "HNS Dalic press conference after Panama",
+          "url": "https://hns.team/en/news/31410/dalic-its-not-important-who-starts-but-who-finishes-the-match/",
+          "sourceName": "Croatian Football Federation / HNS",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "confirmed/coach-update",
+          "confidence": "high"
+        },
+        {
+          "label": "HNS Moro before Ghana",
+          "url": "https://hns.team/en/news/31422/moro-the-win-against-panama-gave-us-a-boost/",
+          "sourceName": "Croatian Football Federation / HNS",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "confirmed/team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "HNS Gvardiol before Ghana",
+          "url": "https://hns.team/en/news/31421/gvardiol-even-though-im-young-the-time-has-come-for-me-to-start-taking-responsibility/",
+          "sourceName": "Croatian Football Federation / HNS",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "confirmed/player-update",
+          "confidence": "high"
+        },
+        {
+          "label": "Covers Croatia-Ghana odds/weather/injury note",
+          "url": "https://www.covers.com/world-cup/croatia-vs-ghana-prediction-picks-odds-saturday-6-27-2026",
+          "sourceName": "Covers",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "reported/injury-weather-odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -1367,7 +1461,7 @@
     {
       "matchId": "m065",
       "match": "Colombia vs Portugal",
-      "sourceType": "qualification context + official live-centre + expected-XI/odds watch",
+      "sourceType": "qualification context + official live-centre + expected-XI/odds watch + injury/market/weather watch",
       "title": "Colombia 兩戰六分不是裝飾品；Portugal 想舒服晉級，先別把平局劇本演成自滿。",
       "sorenTake": "這場可能不像淘汰賽那樣撕破臉，因為一分對雙方都有價值；但也正因如此，誰先失誤誰就會被迫改劇本。Colombia 的小組頭名籌碼很硬，Portugal 的前場選擇則讓輪換與火力平衡變成看點。",
       "signals": [
@@ -1381,7 +1475,10 @@
         "Sports Illustrated 的 Portugal predicted lineup 與 FanDuel/BetMGM/Oddschecker 公開盤口只作 lineup-watch / odds-reference，不提供投注建議。",
         "27日再核：FIFA、BBC、ESPN、FotMob 均有 Colombia-Portugal 臨場/預測陣容入口；這場是 K 組頭名正面交火，不只是一場例行賽。",
         "ESPN 賽前頁標示 kickoff/how-to-watch/referee/predicted lineups；在官方 XI 之前，只作媒體 predicted-XI 與 tactical watch。",
-        "ESPN/FOX odds 頁可作 paper bankroll 市場參照；不把搜尋摘要中的盤口當已核定價格。"
+        "ESPN/FOX odds 頁可作 paper bankroll 市場參照；不把搜尋摘要中的盤口當已核定價格。",
+        "27日早場補核：Sports Mole injury/suspension roundup 稱 Colombia 無明確缺席但 Luis Suárez 肩傷存疑，Portugal 無明確缺席但 Tomás Araújo fitness 存疑；仍屬媒體 team-news，非官方名單。",
+        "FOX Sports 與 OddsTrader 提供 Colombia-Portugal 公開市場入口；Portugal 略熱只作 paper bankroll 參照，不代表 Soren 建議下注。",
+        "Miami Stadium 開放式場館與六月濕熱是節奏背景；這不是精準逐小時天氣預報，但足以提醒高強度逼搶可能付出體能稅。"
       ],
       "sources": [
         {
@@ -1495,6 +1592,46 @@
           "fetchedAt": "2026-06-27T04:03:00Z",
           "claimType": "reported/live-centre",
           "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole Colombia-Portugal injury/suspension list",
+          "url": "https://www.sportsmole.co.uk/football/portugal/world-cup-2026/team-news/colombia-vs-portugal-injury-suspension-list-predicted-xis_600100.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "reported/injury-suspension-lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "BeSoccer Matchday 3 probable lineups",
+          "url": "https://www.besoccer.com/new/2026-world-cup-matchday-3-probable-lineups-and-selection-calls-possible-lineups-1416101",
+          "sourceName": "BeSoccer",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "FOX Sports Colombia-Portugal odds tab",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-colombia-vs-portugal-jun-27-2026-game-boxscore-647684?tab=odds",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
+        },
+        {
+          "label": "OddsTrader Colombia-Portugal market reference",
+          "url": "https://www.oddstrader.com/world-cup/matchups/colombia-vs-portugal-2026-06-27-e4788698/odds/",
+          "sourceName": "OddsTrader",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "Independent Miami Stadium weather context",
+          "url": "https://www.independent.co.uk/bulletin/sport/miami-stadium-weather-scotland-brazil-world-cup-2026-b3002473.html",
+          "sourceName": "The Independent",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "context/venue-weather",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -1502,7 +1639,7 @@
     {
       "matchId": "m066",
       "match": "Democratic Republic of the Congo vs Uzbekistan",
-      "sourceType": "official fixture + official live-centre + tactical/player-form/model watch",
+      "sourceType": "official fixture + official live-centre + tactical/player-form/model watch + lineup/market/venue watch",
       "title": "DR Congo 對 Uzbekistan 是 K 組地下室互砍：不是星光局，但錯一步就直接出局味。",
       "sorenTake": "這場沒有豪門濾鏡可以遮醜。Uzbekistan 需要修補攻守平衡，DR Congo 則要把低比分拉進自己能活的區間；我會把它看成細節戰，門將、定位球和第一個失誤比名氣更值錢。",
       "signals": [
@@ -1516,7 +1653,10 @@
         "FanDuel/Oddschecker 公開盤口只作紙上模擬參考，不是投注建議，也不代表本站掌握即時交易邊。",
         "27日再核：FIFA、BBC、ESPN、FotMob/Sofascore 類臨場頁已覆蓋 DR Congo-Uzbekistan；官方 XI 未出前只保留 lineup-watch。",
         "ESPN 賽前頁主打 injury/predicted line-ups/referee；這場低星度但高壓，任何一個傷停/定位球細節都可能決定誰被淘汰。",
-        "AZCentral/365Scores/RotoWire 類公開頁可補足 odds、H2H 與 pre-game context，但來源層級低於 FIFA/BBC/ESPN。"
+        "AZCentral/365Scores/RotoWire 類公開頁可補足 odds、H2H 與 pre-game context，但來源層級低於 FIFA/BBC/ESPN。",
+        "27日早場補核：Sports Mole 有 DR Congo-Uzbekistan injury/suspension/predicted-XI 入口，但可公開摘要未露完整傷停名單；保守記為 lineup-watch，不把未知寫成確定。",
+        "APWin / WorldCupPass 類頁面提供 Uzbekistan 三中衛與 DR Congo 邊後衛配置的 probable-XI 線索；來源層級低於 FIFA/BBC/ESPN，只作戰術假設。",
+        "FOX Sports、Oddschecker 已有本場市場頁；Atlanta/Mercedes-Benz Stadium 是可開合屋頂與臨時草皮場，天氣影響需等臨場屋頂/場地資訊，不先腦補。"
       ],
       "sources": [
         {
@@ -1613,6 +1753,46 @@
           "sourceName": "365Scores",
           "fetchedAt": "2026-06-27T04:03:00Z",
           "claimType": "reported/context",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole Congo DR-Uzbekistan injury/suspension list",
+          "url": "https://www.sportsmole.co.uk/football/congo-dr/world-cup-2026/team-news/congo-dr-vs-uzbekistan-injury-suspension-list-predicted-xis--world-cup-2026_600078.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "reported/injury-suspension-lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "APWin Congo DR-Uzbekistan probable XI",
+          "url": "https://www.apwin.com/predictions/congo-dr-vs-uzbekistan-prediction-world-cup-28-06-2026/",
+          "sourceName": "APWin",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-low"
+        },
+        {
+          "label": "WorldCupPass Congo DR-Uzbekistan expected lineups",
+          "url": "https://worldcuppass.com/match/congo-dr-uzbekistan-2026-06-27/",
+          "sourceName": "WorldCupPass",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-low"
+        },
+        {
+          "label": "FOX Sports Congo DR-Uzbekistan odds tab",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-congo-dr-vs-uzbekistan-jun-27-2026-game-boxscore-647685?tab=odds",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC World Cup stadium guide - Atlanta",
+          "url": "https://www.bbc.com/sport/extra/i4yxbkxake/world-cup-2026-stadium-guide",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-27T08:18:00Z",
+          "claimType": "context/venue",
           "confidence": "medium"
         }
       ],
