@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T08:18:00Z",
-  "status": "schedule-aware-scout-20260627T070245Z-r32-m086-m088-bracket-actualization",
-  "headline": "Soren 07:02 巡檢：補上 m086–m088 Round of 32 缺口；Argentina-Cape Verde 與 Australia-Egypt 已有媒體 bracket actualization，1K 仍是第三名盲盒。",
+  "generatedAt": "2026-06-27T08:49:23Z",
+  "status": "schedule-aware-scout-20260627T0855Z-md17-official-team-refresh",
+  "headline": "Soren 08:55 巡檢：補上 Matchday 17 官方隊伍/足協訊號；Colombia、Argentina、Algeria、Uzbekistan 只升級來源，不假裝拿到官方先發。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -940,7 +940,7 @@
     {
       "matchId": "m060",
       "match": "Jordan vs Argentina",
-      "sourceType": "rotation report + official live-centre + lineup/injury watch",
+      "sourceType": "rotation report + official live-centre + lineup/injury watch + official AFA context",
       "title": "Argentina 可能輪換，Messi 可能休；這種消息會讓大熱門比分預測直接少一層底氣。",
       "sorenTake": "如果 Scaloni 真把淘汰賽優先，Argentina 還是強，但不一定會用最殘忍的方式處理 Jordan。大熱門不是不能追，只是別拿完整主力的模型去套一場可能踩剎車的比賽。",
       "signals": [
@@ -956,7 +956,9 @@
         "Opta Analyst 給 Jordan upset path 低但非零；如果 Argentina 真收油，Soren 的比分敘事要從「屠殺」降級成「輪換控局」。",
         "27日再核：FIFA、ESPN、FotMob/Sofascore 均有 Jordan-Argentina 臨場入口；Argentina 是大熱，但輪換與節奏管理仍會改變盤面溫度。",
         "ESPN 賽前頁提供 predicted line-ups / referee / how-to-watch；正式 XI 未出前，Messi 或主力休息只能寫成 lineup-watch/rotation watch。",
-        "Oddschecker/ESPN/BetUS 等公開 odds 頁只供 paper bankroll 參照；不把 sportsbook 文案寫成 Soren 投注指令。"
+        "Oddschecker/ESPN/BetUS 等公開 odds 頁只供 paper bankroll 參照；不把 sportsbook 文案寫成 Soren 投注指令。",
+        "08:55Z 同日補核：AFA 官方確認 Argentina 已鎖定 Group J 第一，對 Jordan 前已知道 32 強對手將來自 Group H 第二；這強化輪換誘因，但不等於官方先發名單。",
+        "AFA 另有閉門訓練、Kansas 最後訓練與前往 Dallas 的官方行程更新；Soren 只把它寫成備戰節奏與輪換背景，不把媒體「Messi 替補」標題升級成確認。"
       ],
       "sources": [
         {
@@ -1070,6 +1072,22 @@
           "fetchedAt": "2026-06-27T04:03:00Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "AFA Argentina secured Group J top spot",
+          "url": "https://www.afa.com.ar/es/posts/argentina-aseguro-el-primer-puesto-del-grupo-j-y-ya-espera-rival-para-los-16avos-de-final",
+          "sourceName": "Asociación del Fútbol Argentino",
+          "fetchedAt": "2026-06-27T08:49:23Z",
+          "claimType": "confirmed/qualification-context",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA final Kansas training and Dallas travel",
+          "url": "https://www.afa.com.ar/es/posts/ultimo-entrenamiento-en-kansas-y-viaje-hacia-dallas",
+          "sourceName": "Asociación del Fútbol Argentino",
+          "fetchedAt": "2026-06-27T08:49:23Z",
+          "claimType": "confirmed/team-preparation",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -1461,7 +1479,7 @@
     {
       "matchId": "m065",
       "match": "Colombia vs Portugal",
-      "sourceType": "qualification context + official live-centre + expected-XI/odds watch + injury/market/weather watch",
+      "sourceType": "qualification context + official live-centre + expected-XI/odds watch + injury/market/weather watch + official team-prep",
       "title": "Colombia 兩戰六分不是裝飾品；Portugal 想舒服晉級，先別把平局劇本演成自滿。",
       "sorenTake": "這場可能不像淘汰賽那樣撕破臉，因為一分對雙方都有價值；但也正因如此，誰先失誤誰就會被迫改劇本。Colombia 的小組頭名籌碼很硬，Portugal 的前場選擇則讓輪換與火力平衡變成看點。",
       "signals": [
@@ -1478,7 +1496,8 @@
         "ESPN/FOX odds 頁可作 paper bankroll 市場參照；不把搜尋摘要中的盤口當已核定價格。",
         "27日早場補核：Sports Mole injury/suspension roundup 稱 Colombia 無明確缺席但 Luis Suárez 肩傷存疑，Portugal 無明確缺席但 Tomás Araújo fitness 存疑；仍屬媒體 team-news，非官方名單。",
         "FOX Sports 與 OddsTrader 提供 Colombia-Portugal 公開市場入口；Portugal 略熱只作 paper bankroll 參照，不代表 Soren 建議下注。",
-        "Miami Stadium 開放式場館與六月濕熱是節奏背景；這不是精準逐小時天氣預報，但足以提醒高強度逼搶可能付出體能稅。"
+        "Miami Stadium 開放式場館與六月濕熱是節奏背景；這不是精準逐小時天氣預報，但足以提醒高強度逼搶可能付出體能稅。",
+        "08:55Z 同日補核：Colombian FA 官方稱 Colombia 在已確定晉級後，針對 Portugal 進行恢復與負荷調整訓練；這支持「可能管理節奏但不是默契球」的讀法，沒有揭露官方先發。"
       ],
       "sources": [
         {
@@ -1632,6 +1651,14 @@
           "fetchedAt": "2026-06-27T08:18:00Z",
           "claimType": "context/venue-weather",
           "confidence": "medium"
+        },
+        {
+          "label": "FCF Colombia preparation focused on Portugal",
+          "url": "https://fcf.com.co/2026/06/24/tras-asegurar-la-clasificacion-la-seleccion-colombia-inicia-su-preparacion-enfocada-en-portugal/",
+          "sourceName": "Federación Colombiana de Fútbol",
+          "fetchedAt": "2026-06-27T08:49:23Z",
+          "claimType": "confirmed/team-preparation",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -1639,7 +1666,7 @@
     {
       "matchId": "m066",
       "match": "Democratic Republic of the Congo vs Uzbekistan",
-      "sourceType": "official fixture + official live-centre + tactical/player-form/model watch + lineup/market/venue watch",
+      "sourceType": "official fixture + official live-centre + tactical/player-form/model watch + lineup/market/venue watch + AFC qualification context",
       "title": "DR Congo 對 Uzbekistan 是 K 組地下室互砍：不是星光局，但錯一步就直接出局味。",
       "sorenTake": "這場沒有豪門濾鏡可以遮醜。Uzbekistan 需要修補攻守平衡，DR Congo 則要把低比分拉進自己能活的區間；我會把它看成細節戰，門將、定位球和第一個失誤比名氣更值錢。",
       "signals": [
@@ -1656,7 +1683,9 @@
         "AZCentral/365Scores/RotoWire 類公開頁可補足 odds、H2H 與 pre-game context，但來源層級低於 FIFA/BBC/ESPN。",
         "27日早場補核：Sports Mole 有 DR Congo-Uzbekistan injury/suspension/predicted-XI 入口，但可公開摘要未露完整傷停名單；保守記為 lineup-watch，不把未知寫成確定。",
         "APWin / WorldCupPass 類頁面提供 Uzbekistan 三中衛與 DR Congo 邊後衛配置的 probable-XI 線索；來源層級低於 FIFA/BBC/ESPN，只作戰術假設。",
-        "FOX Sports、Oddschecker 已有本場市場頁；Atlanta/Mercedes-Benz Stadium 是可開合屋頂與臨時草皮場，天氣影響需等臨場屋頂/場地資訊，不先腦補。"
+        "FOX Sports、Oddschecker 已有本場市場頁；Atlanta/Mercedes-Benz Stadium 是可開合屋頂與臨時草皮場，天氣影響需等臨場屋頂/場地資訊，不先腦補。",
+        "08:55Z 同日補核：AFC 賽前頁把 Uzbekistan 對 DR Congo 定位為仍要爭取出線希望的最後一戰；這和部分市場頁的「dead rubber」說法衝突，Soren 保守採用 confederation/source-aware bracket watch。",
+        "AFC 另引 Cannavaro 說 Uzbekistan 會 fight till the end；這是教練公開語氣與心理面訊號，不是陣容或傷停確認。"
       ],
       "sources": [
         {
@@ -1794,6 +1823,22 @@
           "fetchedAt": "2026-06-27T08:18:00Z",
           "claimType": "context/venue",
           "confidence": "medium"
+        },
+        {
+          "label": "AFC Congo DR-Uzbekistan preview",
+          "url": "https://www.the-afc.com/en/national/fifa_world_cup.html/news/preview-group-k-congo-dr-v-uzbekistan",
+          "sourceName": "Asian Football Confederation",
+          "fetchedAt": "2026-06-27T08:49:23Z",
+          "claimType": "reported/context",
+          "confidence": "high"
+        },
+        {
+          "label": "AFC Cannavaro Uzbekistan fight-till-end quote",
+          "url": "https://www.the-afc.com/en/national/fifa_world_cup.html/news/cannavaro-uzbekistan-will-fight-till-the-end",
+          "sourceName": "Asian Football Confederation",
+          "fetchedAt": "2026-06-27T08:49:23Z",
+          "claimType": "reported/coach-quote",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -1801,7 +1846,7 @@
     {
       "matchId": "m059",
       "match": "Algeria vs Austria",
-      "sourceType": "qualification context + official live-centre + injury/suspension/odds watch",
+      "sourceType": "qualification context + official live-centre + injury/suspension/odds watch + official federation updates",
       "title": "Algeria 對 Austria 是 J 組第二名的正面互毆；Argentina 已上岸，剩下的人自己游。",
       "sorenTake": "這場的重點不是誰名氣更順口，而是誰能把保證晉級名額搶下來。公開預覽暫未給出可靠確認傷停或先發，所以我只把它標成高壓對撞，不假裝知道更衣室答案。紙上賠率可做紀錄，不能拿來煽動下注。",
       "signals": [
@@ -1815,7 +1860,9 @@
         "RotoWire 新預覽提供 predicted lineups/team news/tactical breakdown；只作 expected-XI 觀察，不寫成確認首發。",
         "27日再核：FIFA match centre、ESPN live/odds 與 FotMob/Flashscore 均可追 Algeria-Austria；官方先發仍以 FIFA 或隊伍正式發布為準。",
         "ESPN 與 RotoWire 賽前頁提供 predicted lineups / referee / tactical watch，適合放在細節層，不應在首頁短評中裝成已確認先發。",
-        "Oddschecker/ESPN odds 頁只作 paper simulation 市場參照；目前不引用未親核的精確盤口。"
+        "Oddschecker/ESPN odds 頁只作 paper simulation 市場參照；目前不引用未親核的精確盤口。",
+        "08:55Z 同日補核：FAF 官方確認 Algeria-Austria 由烏茲別克裁判組執法，並列出 Kansas City 開球時間；這是賽事行政硬訊號，不是戰術或先發。",
+        "FAF 訓練動態顯示 Les Verts 回到 Lawrence/Kansas City 區域後持續備戰 Austria；仍未見可公開確認的官方先發或新增傷停。"
       ],
       "sources": [
         {
@@ -1913,6 +1960,22 @@
           "fetchedAt": "2026-06-27T04:03:00Z",
           "claimType": "reported/live-centre",
           "confidence": "medium"
+        },
+        {
+          "label": "FAF Algeria-Austria referee appointment",
+          "url": "https://www.faf.dz/coupe-du-monde-de-la-fifa-2026-un-trio-arbitral-ouzbek-pour-diriger-la-rencontre-algerie-autriche/",
+          "sourceName": "Fédération Algérienne de Football",
+          "fetchedAt": "2026-06-27T08:49:23Z",
+          "claimType": "confirmed/match-admin",
+          "confidence": "high"
+        },
+        {
+          "label": "FAF Algeria preparation before Austria",
+          "url": "https://www.faf.dz/coupe-du-monde-de-la-fifa-2026-les-verts-poursuivent-leur-preparation-en-vue-de-lautriche/",
+          "sourceName": "Fédération Algérienne de Football",
+          "fetchedAt": "2026-06-27T08:49:23Z",
+          "claimType": "confirmed/team-preparation",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
