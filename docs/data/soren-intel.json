@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T04:03:00Z",
-  "status": "schedule-aware-scout-20260627T040300Z-md17-live-centres-r32-preview",
-  "headline": "Soren 04:03Z 巡檢：補強 Matchday 17 六場近開賽 live-centre / 傷停 / predicted-XI / odds-reference，並更新 South Africa-Canada 淘汰賽首戰預覽；Reece James 已由 BBC 確認缺席 Panama 戰，媒體陣容仍不冒充官方先發。",
+  "generatedAt": "2026-06-27T04:35:27Z",
+  "status": "schedule-aware-scout-20260627T043600Z-md16-live-score-watch",
+  "headline": "Soren 04:36Z 巡檢：補上 Group G 兩場進行中 ESPN live-score 訊號；Egypt-Iran 仍卡 1-1，Belgium 已把 New Zealand 打到 0-3。正式完場前不寫結果覆蓋。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -637,9 +637,9 @@
     {
       "matchId": "m041",
       "match": "Egypt vs Iran",
-      "sourceType": "group context + venue/social context + lineup/odds watch + live-centre watch",
-      "title": "Egypt 領跑但別裝睡；Iran 還活著，Seattle 這場場外溫度也不低。",
-      "sorenTake": "Group G 的數學還沒關門。Egypt 有分數優勢，Iran 需要更積極；同時這場被 Seattle 標成 Pride Match，場外敘事很多，但我只把它當環境噪音，不把政治熱度偷換成足球證據。",
+      "sourceType": "group context + venue/social context + lineup/odds watch + live-centre/live-score watch",
+      "title": "Egypt-Iran 70 分鐘仍 1-1：這不是巡遊，是一場把第三名算術拖到神經線上的刀片局。",
+      "sorenTake": "ESPN live coverage 顯示 70 分鐘 Egypt 1-1 Iran。Egypt 的領跑姿勢還在，但比分沒有讓他們舒服；Iran 至少把比賽咬住了。Soren 先把它當進行中 live-score 訊號，不在終場哨前寫死晉級結論。",
       "signals": [
         "Sports Mole 指出 Egypt 以四分居 Group G 第一，Iran 兩分且仍保持不敗。",
         "RotoWire 指出 Group G 仍很開放，Egypt 已晉級，Iran 最好取勝但平局也可能保留第三名晉級希望。",
@@ -655,7 +655,8 @@
         "Sofascore/Covers 公開盤面把 Egypt-Iran 描述為接近、低比分傾向的刀片局；紙上紀錄市場溫度，不是下注建議。",
         "Reddit/X 搜尋索引可見 Pride Match 場外討論，但未可靠讀取完整留言；本站只標記為 social-indexed context，不把不可見留言包裝成民意。",
         "19:55Z 補核：BBC Egypt-Iran 即時頁已開，FIFA match centre 仍作正式先發與比分硬入口。",
-        "USA Today 公開 odds/picks 頁補上 Lumen Field 開球與市場觀察；本站只作紙上市場溫度，不提供下注建議。"
+        "USA Today 公開 odds/picks 頁補上 Lumen Field 開球與市場觀察；本站只作紙上市場溫度，不提供下注建議。",
+        "04:36Z ESPN public live coverage / site API 顯示 Egypt-Iran 進入下半場約 70 分鐘，比分 1-1；這是進行中比分，不是完場結果。"
       ],
       "sources": [
         {
@@ -777,16 +778,24 @@
           "fetchedAt": "2026-06-26T19:55:51Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "ESPN Egypt-Iran live score",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760476",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-27T04:35:27Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m042",
       "match": "New Zealand vs Belgium",
-      "sourceType": "official fixture + model/context watch + injury/odds watch + live-centre watch",
-      "title": "Belgium 名字很大，但前兩戰只拿兩分；再不把球踢進去，豪門濾鏡也救不了場面。",
-      "sorenTake": "這場我仍偏 Belgium，可是 Group G 的分數逼得他們不能再慢熱。New Zealand 的路線很簡單：撐住前段、把比利時的焦躁拉滿；一旦又變成空有射門沒進球，爆冷劇本就會從笑話變成警報。",
+      "sourceType": "official fixture + model/context watch + injury/odds watch + live-centre/live-score watch",
+      "title": "Belgium 72 分鐘 3-0 New Zealand：豪門濾鏡這次終於不是濾鏡，是把門踢開了。",
+      "sorenTake": "ESPN live coverage 顯示 New Zealand 0-3 Belgium（約 72 分鐘）。Belgium 前兩戰的進球焦慮暫時被三球拆掉；但 Soren 仍等 full-time，再把它寫進結果與紙上 postmortem。",
       "signals": [
         "FIFA match centre 確認 New Zealand vs Belgium 於溫哥華進行，是 Group G 最後一輪賽事。",
         "FIFA 賽前頁提供本場官方賽事脈絡，但未見公開確認先發；不把預測陣容寫成事實。",
@@ -801,7 +810,8 @@
         "Sports Illustrated predicted XI 明確提到 Belgium 必須替換因對 Iran 直紅停賽的 Nathan Ngoy；這強化 Belgium 後防不是無痛輪換。",
         "Bleacher Nation/BetUS 公開盤面仍把 Belgium 放在強熱門端；但強熱門與已解決進球效率是兩件事，Soren 不把賠率當保證書。",
         "19:55Z 補核：BBC New Zealand-Belgium live build-up 與 FotMob live-stats/lineups tracker 已可作臨場監控；仍未把任何搜尋片段升格成官方先發。",
-        "SportsLens 公開盤面把 Belgium 放在明顯熱門端；但 Belgium 的進球效率與防線停賽仍是 Soren 的爆冷警報，不是賠率能洗掉的問題。"
+        "SportsLens 公開盤面把 Belgium 放在明顯熱門端；但 Belgium 的進球效率與防線停賽仍是 Soren 的爆冷警報，不是賠率能洗掉的問題。",
+        "04:36Z ESPN public live coverage / site API 顯示 New Zealand-Belgium 進入下半場約 72 分鐘，Belgium 3-0 領先；這是進行中比分，不是完場結果。"
       ],
       "sources": [
         {
@@ -915,9 +925,17 @@
           "fetchedAt": "2026-06-26T19:55:51Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "ESPN New Zealand-Belgium live score",
+          "url": "https://www.espn.com/football/match/_/gameId/760477/belgium-new-zealand",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-27T04:35:27Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m060",
