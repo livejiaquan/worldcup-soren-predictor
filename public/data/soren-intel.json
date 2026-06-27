@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T05:08:10Z",
-  "status": "schedule-aware-scout-20260627T050800Z-r32-bracket-watch",
-  "headline": "Soren 05:08Z 巡檢：補上 6/30 兩場 Round of 32 早期情報缺口；Ivory Coast 的 2I 對手按現有積分指向 Norway，France 的 3C/D/F/G/H 對手仍需等第三名排序收口。",
+  "generatedAt": "2026-06-27T06:24:32Z",
+  "status": "schedule-aware-scout-20260627T062432Z-r32-m079-m085-bracket-watch",
+  "headline": "Soren 06:24 巡檢：補上 m079–m085 Round of 32 情報缺口；USA-Bosnia 與 Spain-2J 較明朗，其餘仍是第三名排序戰場。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2091,6 +2091,334 @@
           "fetchedAt": "2026-06-27T05:08:10Z",
           "claimType": "context",
           "confidence": "medium"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m079",
+      "match": "Mexico vs 3C/E/F/H/I",
+      "sourceType": "official bracket slot + media projection + market-reference watch",
+      "title": "Mexico 的 1A 門牌已穩，對手還在第三名洗牌；若 Ecuador 落到這裡，東道主就別以為 Azteca 會自動幫忙進球。",
+      "sorenTake": "官方/媒體賽程仍把這格寫成 3C/E/F/H/I，FOX 與 Al Jazeera 可核對時間與場地；媒體投影開始把 Ecuador 推向 Mexico，但第三名排序未收口前，只能叫 bracket watch，不是確認對陣。",
+      "signals": [
+        "FOX Sports 比賽頁標題可核對 Mexico vs 3C/3E/3F/3H/3I 與 2026-06-30 賽事資訊，是公開賽程入口。",
+        "Al Jazeera Round-of-32 explainer 列出 Mexico vs 3C/3E/3F/3H/3I 與 Mexico City Stadium 時間窗口。",
+        "AS / Marca 搜尋與媒體摘要把 Ecuador 列為可能對上 Mexico 的第三名走向；這是投影，不是 FIFA 確認。",
+        "Betstamp/BettingPros 類市場頁存在但未見穩定可讀價格，先只當 paper 模擬的 market-reference watch。"
+      ],
+      "sources": [
+        {
+          "label": "FOX Mexico Round-of-32 match page",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-mexico-vs-3c3e3f3h3i-jun-30-2026-game-boxscore-607909",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Round-of-32 schedule",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/which-teams-are-in-the-world-cup-round-of-32-and-whats-the-schedule",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "reported",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "AS Group E final standings context",
+          "url": "https://en.as.com/soccer/world-cup/world-cup-2026-group-e-final-standings-results-and-teams-qualified-for-the-round-of-32-f202606-n/",
+          "sourceName": "AS",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "reported/bracket-projection",
+          "confidence": "medium"
+        },
+        {
+          "label": "Betstamp Mexico market-reference shell",
+          "url": "https://www.betstamp.com/betting/worldcup/311214/3c-3e-3f-3h-3i-vs-mexico",
+          "sourceName": "Betstamp",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-low"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m080",
+      "match": "1L vs 3E/H/I/J/K",
+      "sourceType": "official bracket slot + England path + third-place allocation watch",
+      "title": "1L 這格很可能有 England 味，但 L 組還沒結帳；第三名來客若是 Senegal 或 K3，劇本會完全換口味。",
+      "sorenTake": "England Football 自家賽程把 L 組第一的路線寫到 Atlanta；Marca 類媒體投影提到 England-Senegal，但 Group L 與第三名表還會被最後一輪推動。先把它當『英格蘭可能路線』，別提早開香檳。",
+      "signals": [
+        "England Football 公開列出 England 若以 1L 出線，將在 Atlanta 對 3E/H/I/J/K。",
+        "FOX Sports m080 賽程頁可核對 1L vs 3E/3H/3I/3J/3K 與 2026-07-01T16:00Z 窗口。",
+        "媒體投影有 England vs Senegal 走向，但 K 組第三若達標可能改變分配；只能列為 bracket-projection。",
+        "Betstamp/BettingPros 市場頁存在但未見穩定價格，不列成投注建議。"
+      ],
+      "sources": [
+        {
+          "label": "England Football possible knockout path",
+          "url": "https://www.englandfootball.com/articles/2026/May/21/england-fifa-world-cup-26-match-schedule",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "reported/bracket-projection",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FOX 1L vs 3E/H/I/J/K match page",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-1l-vs-3e3h3i3j3k-jul-01-2026-game-boxscore-607912",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "Marca Round-of-32 projection",
+          "url": "https://www.marca.com/en/world-cup/2026/06/26/2026-fifa-world-cup-standings-round-of-32-bracket-teams-qualified-and-eliminated.html",
+          "sourceName": "Marca",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "reported/bracket-projection",
+          "confidence": "medium"
+        },
+        {
+          "label": "Betstamp 1L market-reference shell",
+          "url": "https://www.betstamp.com/betting/worldcup/311215/3e-3h-3i-3j-3k-vs-1l",
+          "sourceName": "Betstamp",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-low"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m081",
+      "match": "USA vs 3B/E/F/I/J",
+      "sourceType": "official bracket slot + updated media opponent + odds-reference",
+      "title": "USA 這格已被多個公開頁面推向 Bosnia & Herzegovina；主場大熱可以相信，但別把 -185 讀成免踢。",
+      "sorenTake": "FOX 的賽程頁已把原本 3B/E/F/I/J 更新成 United States vs Bosnia and Herzegovina，FOX odds story 也給出 USA moneyline -185、晉級 -460。這能拿來做 paper 市場參考，但 Soren 不開真錢局；只記錄市場怎麼看主隊壓力。",
+      "signals": [
+        "FOX Sports m081 比賽頁標題已顯示 United States vs Bosnia and Herzegovina，時間為 2026-07-01 當地 / 2026-07-02T00:00Z。",
+        "FOX odds story 明列 USA vs Bosnia and Herzegovina：moneyline USA -185、Bosnia +600、draw +280；to advance USA -460、Bosnia +340。",
+        "SportsBettingDime 另列開盤 DraftKings 三向盤 USA -145、draw +260、BiH +425；兩來源方向一致但價格不同，適合標記 line-movement watch。",
+        "這是 paper-bankroll 參考，不是投注建議，也不代表 Soren 代下注。"
+      ],
+      "sources": [
+        {
+          "label": "FOX USA-Bosnia match page",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-1d-vs-3b3e3f3i3j-jul-01-2026-game-boxscore-607910",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "reported",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX USA-Bosnia odds story",
+          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-how-far-will-team-usa-go",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
+        },
+        {
+          "label": "SportsBettingDime USA-Bosnia opening odds",
+          "url": "https://www.sportsbettingdime.com/news/soccer/opening-odds-for-usa-vs-bosnia-herzegovina-usmnt-sizable-favorite/",
+          "sourceName": "SportsBettingDime",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "ESPN World Cup bracket",
+          "url": "https://www.espn.com/soccer/bracket/_/league/fifa.world/season/2026",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "reported/bracket-projection",
+          "confidence": "medium-high"
+        }
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "matchId": "m082",
+      "match": "1G vs 3A/E/H/I/J",
+      "sourceType": "official bracket slot + Belgium confirmed slot + opponent watch",
+      "title": "Belgium 拿到 1G，但對面還是第三名盲盒；這種局最怕熱門隊先跟影子對手踢嘴砲。",
+      "sorenTake": "FOX 已把 m082 更新為 Belgium vs 3A/3E/3H/3I/3J；在本地積分裡 South Korea、Ecuador、Iran、Senegal 與 J 組敗方都可能牽動排序。沒有可靠具體對手前，只給 bracket watch，不亂寫首發和社群情緒。",
+      "signals": [
+        "FOX Sports m082 頁面標題顯示 Belgium vs 3A/3E/3H/3I/3J，可作公開賽程與對手池來源。",
+        "Al Jazeera explainer 仍保守列為 1G vs 3A/E/H/I/J，與第三名尚未完全收口一致。",
+        "目前未找到可完整核讀的高信心 Belgium 具體對手預測；The Athletic 等片段視為 paywalled/indexed lead，不提升成事實。",
+        "市場參考頁存在但價格不可穩定讀取，暫不寫具體賠率。"
+      ],
+      "sources": [
+        {
+          "label": "FOX Belgium third-place pool match page",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-1g-vs-3a3e3h3i3j-jul-01-2026-game-boxscore-607911",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Round-of-32 schedule",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/which-teams-are-in-the-world-cup-round-of-32-and-whats-the-schedule",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "reported",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "BettingPros m082 market-reference shell",
+          "url": "https://www.bettingpros.com/soccer/matchups/1g-world-0-vs-3a3e3h3i3j-0-articles/",
+          "sourceName": "BettingPros",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-low"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m083",
+      "match": "2K vs 2L",
+      "sourceType": "official bracket slot + Portugal/Ghana projection watch + market-reference",
+      "title": "2K vs 2L 看起來像 Portugal-Ghana 的味道，但 K、L 兩組最後一輪還能把桌布扯掉。",
+      "sorenTake": "FOX 仍保守列 2K vs 2L；Marca / The Athletic 類公開片段把 Portugal vs Ghana 放進投影，但 Portugal 若追過 Colombia、或 L 組 England/Ghana/Croatia 排序變動，這格會換臉。先追排序，不假裝對陣已官宣。",
+      "signals": [
+        "FOX Sports m083 頁面列 2K vs 2L 與 2026-07-02T23:00Z 賽程窗口。",
+        "Marca 投影與 The Athletic 搜尋片段指向 Portugal-Ghana，但完整對陣需等 K/L 組最後賽果。",
+        "Paddy Power schedule 提供 Round-of-32 佔位賽程參考；屬公開賽程/市場環境，不是模型底層。",
+        "OddsTrader/Betstamp 類頁面可作 market-reference shell，但抓取時未見穩定可用價格。"
+      ],
+      "sources": [
+        {
+          "label": "FOX 2K vs 2L match page",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-2k-vs-2l-jul-02-2026-game-boxscore-607914",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "Marca Round-of-32 projection",
+          "url": "https://www.marca.com/en/world-cup/2026/06/26/2026-fifa-world-cup-standings-round-of-32-bracket-teams-qualified-and-eliminated.html",
+          "sourceName": "Marca",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "reported/bracket-projection",
+          "confidence": "medium"
+        },
+        {
+          "label": "Paddy Power World Cup schedule",
+          "url": "https://news.paddypower.com/football/world-cup/2026/06/26/world-cup-2026-schedule/",
+          "sourceName": "Paddy Power News",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "context/odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "OddsTrader m083 market-reference shell",
+          "url": "https://www.oddstrader.com/world-cup/matchups/2k-vs-2l-2026-07-02-e4791671/odds/",
+          "sourceName": "OddsTrader",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-low"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m084",
+      "match": "1H vs 2J",
+      "sourceType": "official bracket slot + Spain confirmed slot + J-runner-up watch",
+      "title": "Spain 已坐上 1H，2J 還在 Austria/Algeria 的刀口；西班牙控球很漂亮，但淘汰賽不是美術課。",
+      "sorenTake": "FIFA 賽報與 FOX/Al Jazeera 賽程都指向 Spain 進入 1H 對 2J；J 組第二目前仍要看 Algeria-Austria。把 Spain 寫清楚可以，把 Austria 寫死不行。",
+      "signals": [
+        "FIFA Uruguay-Spain 報導指出 Spain 將面對 Group J runners-up，這是比一般媒體投影更硬的官方脈絡。",
+        "FOX m084 頁面已顯示 Spain vs 2J，公開時間窗口為 2026-07-02T19:00Z。",
+        "Al Jazeera Round-of-32 schedule 同樣列 Spain vs 2J。",
+        "2J 仍受 Algeria-Austria 直接對話影響；不把 Austria 當已確認對手。"
+      ],
+      "sources": [
+        {
+          "label": "FIFA Uruguay-Spain match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/uruguay-spain-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Spain vs 2J match page",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-1h-vs-2j-jul-02-2026-game-boxscore-607915",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Round-of-32 schedule",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/which-teams-are-in-the-world-cup-round-of-32-and-whats-the-schedule",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "reported",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Betstamp Spain-2J market-reference shell",
+          "url": "https://www.betstamp.com/betting/worldcup/311617/2j-vs-1h",
+          "sourceName": "Betstamp",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-low"
+        }
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "matchId": "m085",
+      "match": "Switzerland vs 3E/F/G/I/J",
+      "sourceType": "official bracket slot + third-place watch + market-reference",
+      "title": "Switzerland 的對手池很討厭：Ecuador、Sweden、Iran、Senegal/J 組殘局都可能冒頭；瑞士最怕的不是強隊，是麻煩隊。",
+      "sorenTake": "FOX 已把這格寫成 Switzerland vs 3E/3F/3G/3I/3J；AS 可支撐 Switzerland 的 B 組第一脈絡。第三名排序仍在變，The Athletic 片段提到 Algeria/Iran/Egypt 類可能性，但在本地表裡 Egypt 不是第三名，先壓低信心。",
+      "signals": [
+        "FOX Sports m085 頁面顯示 Switzerland vs 3E/3F/3G/3I/3J，時間為 2026-07-03T03:00Z / Vancouver。",
+        "AS Group B final standings context 支撐 Switzerland 作為 B 組第一晉級。",
+        "The Athletic 搜尋片段提供可能對手討論，但其中 Egypt 與本地積分狀態不合，不能照單全收。",
+        "Betstamp/BettingPros 市場頁存在；未見可靠價格，僅作 paper 模擬的市場入口觀察。"
+      ],
+      "sources": [
+        {
+          "label": "FOX Switzerland third-place pool match page",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-switzerland-vs-3e3f3g3i3j-jul-02-2026-game-boxscore-607913",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "AS Group B final standings context",
+          "url": "https://en.as.com/soccer/world-cup/world-cup-2026-group-b-final-standings-results-and-teams-qualified-for-the-round-of-32-f202606-n/",
+          "sourceName": "AS",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "reported",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "The Athletic Switzerland projection lead",
+          "url": "https://www.nytimes.com/athletic/7382572/2026/06/24/canada-vs-switzerland-world-cup-2026-score-results-takeaways/",
+          "sourceName": "The Athletic",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "reported/bracket-projection",
+          "confidence": "medium-low"
+        },
+        {
+          "label": "Betstamp Switzerland market-reference shell",
+          "url": "https://www.betstamp.com/betting/worldcup/311615/3e-3f-3g-3i-3j-vs-switzerland",
+          "sourceName": "Betstamp",
+          "fetchedAt": "2026-06-27T06:24:32Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-low"
         }
       ],
       "confidence": "medium"
