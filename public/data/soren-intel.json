@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T11:11:00Z",
-  "status": "schedule-aware-scout-20260627T1111Z-saturday-opta-official-refresh",
-  "headline": "Soren 11:11 巡檢：六場小組收官補上 Al Jazeera/Opta 公開機率框架；Algeria 官方賽前訓練與 South Africa-Canada 晉級機率也入庫。",
+  "generatedAt": "2026-06-27T11:54:42Z",
+  "status": "schedule-aware-scout-20260627T1154Z-official-press-refresh",
+  "headline": "Soren 11:54 巡檢：補上 Colombia / Argentina 官方賽前發布會、Ghana 官方營區打氣與 Austria 教練回應 Gijón 陰影；仍把首發與市場訊號守在保守標籤內。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -962,7 +962,9 @@
         "09:22Z 同日補核：AFA 官方公布 Argentina-Jordan 由羅馬尼亞裁判 István Kovács 執法；這是行政硬訊號，和輪換推測分開看。",
         "Reuters 系列報導稱 Cristian Romero 已回到場上訓練但仍可能缺席 Jordan 戰；列為 injury-watch，正式可用性等 FIFA/Argentina 臨場名單。",
         "10:12Z 補核：公開搜尋索引與 The Athletic/AS USA 報導均指 Scaloni 已說 Messi 對 Jordan 將從板凳出發；這比「可能休」更硬，但仍等 FIFA/Argentina 正式 XI 才寫成 confirmed lineup。",
-        "Al Jazeera 6/27 賽程/Opta 摘要寫明 Messi 確認從替補席開始，Argentina 仍有 77.9% 勝率、和局 13.3%、Jordan 8.8%；Soren 會把輪換折價，但不把替補 Messi 解讀成爆冷保證。"
+        "Al Jazeera 6/27 賽程/Opta 摘要寫明 Messi 確認從替補席開始，Argentina 仍有 77.9% 勝率、和局 13.3%、Jordan 8.8%；Soren 會把輪換折價，但不把替補 Messi 解讀成爆冷保證。",
+        "11:54Z 補核：AFA 官方發布 Scaloni / Tagliafico 賽前記者會，讓 Messi 替補與輪換語境有官方發布會可回查；正式 XI 仍等 FIFA/Argentina 臨場名單。",
+        "AFA 另公布閉門晨訓：30 分鐘位置戰術演練，Cristian Romero 在體能師與物理治療師陪同下於健身房另訓；Romero 狀態維持 injury-watch，不寫成確定缺席或先發。"
       ],
       "sources": [
         {
@@ -1131,6 +1133,22 @@
           "sourceName": "Al Jazeera / Opta",
           "fetchedAt": "2026-06-27T11:11:00Z",
           "claimType": "context/odds-reference",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA Scaloni and Tagliafico pre-Jordan press conference",
+          "url": "https://www.afa.com.ar/es/posts/conferencia-de-prensa-de-lionel-scaloni-y-nicolas-tagliafic",
+          "sourceName": "Asociación del Fútbol Argentino",
+          "fetchedAt": "2026-06-27T11:54:42Z",
+          "claimType": "confirmed/press-conference",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA closed morning training before Jordan",
+          "url": "https://www.afa.com.ar/es/posts/ensayo-matutino-a-puertas-cerradas",
+          "sourceName": "Asociación del Fútbol Argentino",
+          "fetchedAt": "2026-06-27T11:54:42Z",
+          "claimType": "confirmed/training-update",
           "confidence": "high"
         }
       ],
@@ -1384,7 +1402,8 @@
         "SI/ESPN 類 predicted-XI 開始給出具體 Ghana/Croatia 名單，Covers 則把 Ati-Zigi 標為 questionable；全部仍是 reported/lineup-watch，不升級成確認先發。",
         "09:22Z 同日補核：Yahoo / The Football Faithful 的 Ghana XI watch 把 Ghana 描述為拿到和局即可鎖定 32 強；Soren 把它當出線情境與 expected-XI 觀察，不當官方隊報。",
         "Opta Analyst 賽前頁提供 Croatia-Ghana 的中立預測/晉級脈絡；可用來校正「非友誼賽、是真刀局」的敘事，但不引用未即時核對的百分比。",
-        "Al Jazeera 6/27 賽程/Opta 摘要指出 Croatia-Ghana 是首次交手，Opta 模擬給 Croatia 56.3%、Ghana 17.6%、和局 26.2%；Ghana 手握積分優勢但市場/模型仍偏 Croatia。"
+        "Al Jazeera 6/27 賽程/Opta 摘要指出 Croatia-Ghana 是首次交手，Opta 模擬給 Croatia 56.3%、Ghana 17.6%、和局 26.2%；Ghana 手握積分優勢但市場/模型仍偏 Croatia。",
+        "11:54Z 補核：Ghana FA 報導部長與大使到 Black Stars 營區打氣，話術是「no team can intimidate you」；這是士氣/心理面訊號，不是戰術或首發確認。"
       ],
       "sources": [
         {
@@ -1562,6 +1581,14 @@
           "fetchedAt": "2026-06-27T11:11:00Z",
           "claimType": "context/odds-reference",
           "confidence": "high"
+        },
+        {
+          "label": "GFA ministers and ambassador visit Black Stars camp",
+          "url": "https://www.ghanafa.org/no-team-can-intimidate-you-ghana-ministers-ambassador-visit-black-stars-camp-ahead-of-croatia-decider",
+          "sourceName": "Ghana Football Association",
+          "fetchedAt": "2026-06-27T11:54:42Z",
+          "claimType": "confirmed/team-camp-context",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -1591,7 +1618,9 @@
         "09:22Z 同日補核：FIFA 官方預覽已把 Colombia-Portugal 定位為 Group K 收官焦點；可作官方賽前脈絡，但正式先發仍等 match centre。",
         "NOAA/NWS Miami-South Florida 同日熱風險頁可作 Miami Gardens 天氣/體能背景；Soren 只把它寫成濕熱與節奏稅，不硬寫精準球場內體感。",
         "10:12Z 補核：FPF 官方索引顯示 Tomás Araújo 已「reintegrado em pleno」並隨 Portugal 開始備戰 Colombia；這是可用性利多，但不等於已鎖定先發。",
-        "Al Jazeera 6/27 賽程/Opta 摘要把 Colombia-Portugal 定位為 K 組榜首戰；Opta 模擬 Portugal 51.6%、Colombia 23.9%、和局 25.2%，且 Colombia 拿 1 分即可鎖定小組第一。"
+        "Al Jazeera 6/27 賽程/Opta 摘要把 Colombia-Portugal 定位為 K 組榜首戰；Opta 模擬 Portugal 51.6%、Colombia 23.9%、和局 25.2%，且 Colombia 拿 1 分即可鎖定小組第一。",
+        "11:54Z 補核：FCF 官方發布 Néstor Lorenzo 賽前記者會，明確說 Colombia 認為爭取小組第一對自己有利；這把「拿一分即可」修正成「有動機踢第一」，不是放水劇本。",
+        "Al Jazeera 同日 Colombia-Portugal 賽前頁稱兩隊未回報傷病並列出 predicted lineups；這和 Sports Mole 的 Luis Suárez 肩傷疑慮形成來源差異，Soren 保守寫成 availability watch，不硬判滿血。"
       ],
       "sources": [
         {
@@ -1785,6 +1814,22 @@
           "fetchedAt": "2026-06-27T11:11:00Z",
           "claimType": "context/odds-reference",
           "confidence": "high"
+        },
+        {
+          "label": "FCF Néstor Lorenzo pre-Portugal press conference",
+          "url": "https://fcf.com.co/2026/06/26/nestor-lorenzo-creemos-que-nos-conviene-y-trataremos-de-terminar-primeros/",
+          "sourceName": "Federación Colombiana de Fútbol",
+          "fetchedAt": "2026-06-27T11:54:42Z",
+          "claimType": "confirmed/press-conference",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Colombia-Portugal preview",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/colombia-portugal-fifa-world-cup-2026-schedule-ronaldo-prediction",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-27T11:54:42Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -2002,7 +2047,8 @@
         "Sports Mole 同日 injury/suspension/predicted XI 彙整可作 lineup-watch；正式陣容未出前，Soren 不把媒體 predicted XI 寫成事實。",
         "10:12Z 補核：Guardian/France 24 把 Algeria-Austria 拉回 1982「Gijón」陰影；這是情緒與賽事敘事，不是陰謀判決，Soren 只把它用作心理壓力背景。",
         "Al Jazeera 6/27 賽程/Opta 摘要重提 1982 Algeria-Austria 脈絡，Opta 模擬最可能是和局 42.1%，Austria 勝率 31.2%、Algeria 26.7%；這場不是「誰比較有名誰就穩」。",
-        "FAF 官方 6/27 賽前文稱 Algeria 已在 Kansas 的 Rock Chalk Park 完成最後訓練，重點放在對 Austria 的技戰術微調與爭取出線；這是官方備戰訊號，不等於確認先發。"
+        "FAF 官方 6/27 賽前文稱 Algeria 已在 Kansas 的 Rock Chalk Park 完成最後訓練，重點放在對 Austria 的技戰術微調與爭取出線；這是官方備戰訊號，不等於確認先發。",
+        "11:54Z 補核：Yahoo/AFP 報導 Rangnick 在 Austria 賽前記者會淡化 Algeria-Austria 的默契陰謀敘事；Soren 把它當壓力管理與輿論背景，不當作比賽意圖證據。"
       ],
       "sources": [
         {
@@ -2164,6 +2210,14 @@
           "fetchedAt": "2026-06-27T11:11:00Z",
           "claimType": "confirmed/team-preparation",
           "confidence": "high"
+        },
+        {
+          "label": "AFP/Yahoo Rangnick conspiracy-talk response",
+          "url": "https://ca.sports.yahoo.com/news/austria-coach-dismisses-conspiracy-talk-094354083.html",
+          "sourceName": "Yahoo Sports / AFP",
+          "fetchedAt": "2026-06-27T11:54:42Z",
+          "claimType": "reported/coach-quote",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
