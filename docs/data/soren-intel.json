@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T06:24:32Z",
-  "status": "schedule-aware-scout-20260627T062432Z-r32-m079-m085-bracket-watch",
-  "headline": "Soren 06:24 巡檢：補上 m079–m085 Round of 32 情報缺口；USA-Bosnia 與 Spain-2J 較明朗，其餘仍是第三名排序戰場。",
+  "generatedAt": "2026-06-27T07:02:45Z",
+  "status": "schedule-aware-scout-20260627T070245Z-r32-m086-m088-bracket-actualization",
+  "headline": "Soren 07:02 巡檢：補上 m086–m088 Round of 32 缺口；Argentina-Cape Verde 與 Australia-Egypt 已有媒體 bracket actualization，1K 仍是第三名盲盒。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2419,6 +2419,126 @@
           "fetchedAt": "2026-06-27T06:24:32Z",
           "claimType": "odds-reference",
           "confidence": "medium-low"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m088",
+      "match": "Australia vs Egypt",
+      "sourceType": "reported bracket actualization + schedule context",
+      "title": "Australia 的 2G 盲盒被 ESPN 推到 Egypt；袋鼠軍團可以先準備北非硬仗，但別把媒體頁當 FIFA 官宣。",
+      "sorenTake": "Al Jazeera 的賽程仍寫 Australia vs 2G，ESPN 賽前頁與 bracket 已把這格呈現為 Australia vs Egypt。這足夠讓 Soren 開始追蹤 Egypt 的低位防守與轉換威脅，但在 FIFA 官方頁未核到前，本站只標成媒體 bracket actualization，不把「2G=Egypt」升級成官方事實。",
+      "signals": [
+        "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
+        "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
+        "ESPN bracket 頁可見 Australia 與 Egypt 同格；目前作公開 bracket context，不替代 FIFA 官方確認。",
+        "Soren 的首頁短評保留 compact 版本：對手趨勢明朗，但 claimType 仍停在 reported/bracket-actualization。"
+      ],
+      "sources": [
+        {
+          "label": "Al Jazeera Round of 32 schedule",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/which-teams-are-in-the-world-cup-round-of-32-and-whats-the-schedule",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-27T07:02:45Z",
+          "claimType": "reported/schedule",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Australia-Egypt match page",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760499/group-g-2nd-place-group-d-2nd-place",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-27T07:02:45Z",
+          "claimType": "reported/bracket-actualization",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN World Cup bracket",
+          "url": "https://www.espn.com/soccer/bracket/_/season/2026/league/fifa.world",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-27T07:02:45Z",
+          "claimType": "reported/bracket-context",
+          "confidence": "medium-high"
+        }
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "matchId": "m086",
+      "match": "Argentina vs Cape Verde",
+      "sourceType": "reported bracket actualization + odds-reference watch",
+      "title": "Argentina–Cape Verde 已被多個公開賽程頁面寫實；童話很漂亮，但淘汰賽碰到阿根廷不是旅遊明信片。",
+      "sorenTake": "Al Jazeera、FOX 與 ESPN bracket 都把 1J vs 2H 寫成 Argentina vs Cape Verde，時間落在 22:00 UTC、Miami Stadium。FOX odds 頁只能當 paper-simulation 的市場溫度，不是下注建議；Soren 先看 Cape Verde 的低位生存路線，而不是幫大熱門提前辦晉級派對。",
+      "signals": [
+        "Al Jazeera Round of 32 賽程列出 Argentina vs Cape Verde，22:00 GMT，Miami Stadium。",
+        "FOX live score 頁已把此格呈現為 Argentina vs Cape Verde，並標示 July 03, 2026 賽事。",
+        "FOX odds 頁也以 Argentina vs Cape Verde 命名；本站只拿來做紙上市場參考，不提供真金流向或投注操作。",
+        "ESPN bracket 可見 Argentina / Cape Verde；多家媒體 bracket actualization 已一致，但正式優先級仍低於 FIFA/球隊官方頁。"
+      ],
+      "sources": [
+        {
+          "label": "Al Jazeera Round of 32 schedule",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/which-teams-are-in-the-world-cup-round-of-32-and-whats-the-schedule",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-27T07:02:45Z",
+          "claimType": "reported/schedule",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Argentina-Cape Verde live page",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-argentina-vs-2h-jul-03-2026-game-boxscore-607918",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T07:02:45Z",
+          "claimType": "reported/bracket-actualization",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FOX Argentina-Cape Verde odds page",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-1j-vs-2h-jul-03-2026-game-boxscore-607918?tab=odds",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T07:02:45Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "ESPN World Cup bracket",
+          "url": "https://www.espn.com/soccer/bracket/_/season/2026/league/fifa.world",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-27T07:02:45Z",
+          "claimType": "reported/bracket-context",
+          "confidence": "medium-high"
+        }
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "matchId": "m087",
+      "match": "1K vs 3D/3E/3I/3J/3L",
+      "sourceType": "official bracket slot watch + placeholder schedule context",
+      "title": "1K 這格還是第三名盲盒；Kansas City 的門牌有了，對手名字還在積分表裡打架。",
+      "sorenTake": "Al Jazeera 與 FOX 都還把這場保留為 1K vs 3D/3E/3I/3J/3L。可以記時間、場地與可能路徑，但不能腦補成具體對陣；這種格子最容易被第三名排序最後一腳改劇本。Soren 先盯 bracket，不演算成假確定。",
+      "signals": [
+        "Al Jazeera Round of 32 賽程列出 1K vs 3DEIJL，Kansas City Stadium，顯示對手仍是第三名排序池。",
+        "FOX boxscore/live page 仍使用 1K vs 3D/3E/3I/3J/3L placeholder，未 actualize 成具體隊名。",
+        "FOX title 以美國本地 July 03 顯示；repo kickoffUtc 仍應保留 2026-07-04T01:30:00Z，不把本地日期誤寫成 UTC。",
+        "這張卡只做 bracket watch：不寫 odds、不猜隊、不把第三名池包裝成確認對陣。"
+      ],
+      "sources": [
+        {
+          "label": "Al Jazeera Round of 32 schedule",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/which-teams-are-in-the-world-cup-round-of-32-and-whats-the-schedule",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-27T07:02:45Z",
+          "claimType": "reported/schedule",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX 1K placeholder match page",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-1k-vs-3d3e3i3j3l-jul-02-2026-game-boxscore-607917?tab=boxscore",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-27T07:02:45Z",
+          "claimType": "context/bracket-placeholder",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium"
