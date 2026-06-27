@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { computeStandings, predictMatch, scorePrediction, canonicalTeam, TEAM_PRIORS } from '../src/lib/predictionEngine.js'
@@ -8,15 +8,25 @@ const root = path.resolve(__dirname, '..')
 const MATCHES_URL = 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json'
 const GROUPS_URL = 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json'
 
-// Some public fixture feeds lag final-score updates by hours. Keep a tiny,
-// source-backed override list so the public scoreboard/paper bankroll does not
-// look asleep after matches finish. Remove entries once upstream catches up.
-const RESULT_OVERRIDES = new Map([
-  ['2026-06-26|Norway|France', { score: [1, 4], source: 'ESPN final score, gameId 760475' }],
-  ['2026-06-26|Senegal|Iraq', { score: [5, 0], source: 'ESPN final score, gameId 760474' }],
-  ['2026-06-27|Cape Verde|Saudi Arabia', { score: [0, 0], source: 'ESPN final score, gameId 760478' }],
-  ['2026-06-27|Uruguay|Spain', { score: [0, 1], source: 'USA Today/Yahoo final score summary' }],
-])
+const RESULT_OVERRIDES = new Map()
+
+async function loadResultOverrides() {
+  const file = path.join(root, 'data/result-overrides.json')
+  try {
+    const parsed = JSON.parse(await readFile(file, 'utf8'))
+    for (const item of parsed.overrides || []) {
+      const team1 = canonicalTeam(item.team1)
+      const team2 = canonicalTeam(item.team2)
+      if (!item.date || !team1 || !team2 || !Array.isArray(item.score) || item.score.length !== 2) continue
+      RESULT_OVERRIDES.set(`${item.date}|${team1}|${team2}`, {
+        score: item.score.map(Number),
+        source: item.source || 'source-backed override',
+      })
+    }
+  } catch (error) {
+    if (error.code !== 'ENOENT') throw error
+  }
+}
 
 async function getJson(url) {
   const response = await fetch(url, { headers: { 'user-agent': 'soren-worldcup-predictor/1.0' } })
@@ -109,6 +119,9 @@ function outcomeLabel(match, outcome) {
   if (outcome === 'away') return match.team2
   return '平手'
 }
+function kickoffMinus(match, minutes) {
+  return match.kickoffUtc ? new Date(new Date(match.kickoffUtc).getTime() - minutes * 60 * 1000).toISOString() : null
+}
 
 function actualOutcome(match) {
   if (!Array.isArray(match.score)) return null
@@ -133,7 +146,7 @@ function buildPaperBankroll(matches, predictions) {
     const decimalOdds = Number(Math.max(1.25, Math.min(7.5, 0.94 / marketProb)).toFixed(2))
     const edge = sorenProb * decimalOdds - 1
     const stake = Number(Math.max(1, Math.min(8, PAPER_INITIAL_BANKROLL * Math.max(0.01, edge) * 0.22)).toFixed(2))
-    const bet = { matchId: match.id, kickoffUtc: match.kickoffUtc, stage: match.stage, team1: match.team1, team2: match.team2, pick: outcomeLabel(match, outcome), outcome, stake, decimalOdds, edge: Number(edge.toFixed(3)), modelProbability: Number(sorenProb.toFixed(3)), marketProxyProbability: Number(marketProb.toFixed(3)), reason: pred.commentary?.headline || pred.reasons?.[0] || '模型判讀' }
+    const bet = { matchId: match.id, kickoffUtc: match.kickoffUtc, stage: match.stage, team1: match.team1, team2: match.team2, pick: outcomeLabel(match, outcome), outcome, stake, decimalOdds, edge: Number(edge.toFixed(3)), modelProbability: Number(sorenProb.toFixed(3)), marketProxyProbability: Number(marketProb.toFixed(3)), marketReference: '主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）', lockedAtUtc: kickoffMinus(match, 60), cutoffRule: '開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。', reason: pred.commentary?.headline || pred.reasons?.[0] || '模型判讀' }
     if (match.status === 'finished') {
       const won = actualOutcome(match) === outcome
       const profit = Number((won ? stake * (decimalOdds - 1) : -stake).toFixed(2))
@@ -155,13 +168,14 @@ function buildPaperBankroll(matches, predictions) {
     openStake,
     totalValue: Number((bankroll).toFixed(2)),
     roi: Number(((bankroll - PAPER_INITIAL_BANKROLL) / PAPER_INITIAL_BANKROLL).toFixed(3)),
-    rules: 'Soren 只用紙上本金 100 美金；以模型機率對比 rating baseline 產生的「模擬市場價格」挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑。',
+    rules: 'Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。',
     settled: settled.slice(-12),
     pending,
     watchlist: candidates.sort((a, b) => b.edge - a.edge).slice(0, 5),
   }
 }
 
+await loadResultOverrides()
 const [rawMatches, rawGroups] = await Promise.all([getJson(MATCHES_URL), getJson(GROUPS_URL)])
 const groups = (rawGroups.groups || []).map((g) => ({ name: g.name, teams: g.teams.map(canonicalTeam) }))
 const matches = (rawMatches.matches || []).map(normalizeMatch).sort((a, b) => String(a.kickoffUtc).localeCompare(String(b.kickoffUtc)))

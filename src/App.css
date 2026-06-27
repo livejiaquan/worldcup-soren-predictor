@@ -19,3 +19,17 @@
 .compact-note{margin:10px 0 0!important;font-size:12px!important}
 @media (max-width:1050px){.intel-compact-list{grid-template-columns:1fr 1fr}.teams-row .flag-emoji,.modal-scoreline .flag-emoji{font-size:2em}}
 @media (max-width:720px){.intel-compact-list{grid-template-columns:1fr}.team-inline{font-size:16px}.teams-row .flag-emoji,.modal-scoreline .flag-emoji{font-size:2.25em}.match-card{padding:14px}.score-pill{min-width:86px}.compact-intel{padding:14px}}
+
+/* public postmortem / settlement */
+.postmortem-block{margin-top:14px;padding:12px;border:1px solid #dbe6f6;border-radius:18px;background:#f8fbff}
+.mini-head{display:flex;justify-content:space-between;gap:10px;align-items:center;margin-bottom:10px}
+.mini-head b{color:#0f172a}.mini-head span{color:#64748b;font-size:12px;font-weight:850}
+.settled-ledger{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.settled-ledger button{display:grid;gap:5px;text-align:left;border:1px solid #dbe6f6;border-radius:15px;padding:11px 12px;background:#fff;color:#172033;cursor:pointer}
+.settled-ledger button.won{border-color:#bbf7d0;background:#f0fdf4}.settled-ledger button.lost{border-color:#fecaca;background:#fff7f7}
+.settled-ledger span{color:#526074;font-size:13px}.settled-ledger em{color:#64748b;font-size:11px;font-style:normal}
+.match-postmortem{margin:12px 0;padding:14px;border:1px solid #bfdbfe;border-radius:18px;background:#eff6ff}
+.match-postmortem b{color:#0f172a}.match-postmortem p{margin:8px 0;color:#526074;line-height:1.6}
+.compare-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:10px}
+.compare-grid span{padding:9px 10px;border-radius:12px;background:#fff;border:1px solid #dbe6f6;color:#172033;font-size:13px;font-weight:850}
+@media (max-width:720px){.settled-ledger,.compare-grid{grid-template-columns:1fr}.mini-head{align-items:flex-start;flex-direction:column}}

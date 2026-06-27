@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T03:23:08.996Z",
+  "generatedAt": "2026-06-27T03:34:29.575Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -6777,7 +6777,7 @@
     "openStake": 34.76,
     "totalValue": 123.26,
     "roi": 0.233,
-    "rules": "Soren 只用紙上本金 100 美金；以模型機率對比 rating baseline 產生的「模擬市場價格」挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑。",
+    "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
       {
         "matchId": "m053",
@@ -6792,6 +6792,9 @@
         "edge": 0.551,
         "modelProbability": 0.728,
         "marketProxyProbability": 0.441,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-26T18:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 France，但平局還有 19%；別急著開香檳，足球最會打臉。",
         "status": "won",
         "score": [
@@ -6813,6 +6816,9 @@
         "edge": 0.593,
         "modelProbability": 0.737,
         "marketProxyProbability": 0.436,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-26T18:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Senegal，但平局還有 19%；別急著開香檳，足球最會打臉。",
         "status": "won",
         "score": [
@@ -6834,6 +6840,9 @@
         "edge": 0.288,
         "modelProbability": 0.492,
         "marketProxyProbability": 0.358,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-26T23:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 Cape Verde，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "status": "lost",
         "score": [
@@ -6855,6 +6864,9 @@
         "edge": 0.57,
         "modelProbability": 0.651,
         "marketProxyProbability": 0.39,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-26T23:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Spain，但平局還有 22%；別急著開香檳，足球最會打臉。",
         "status": "won",
         "score": [
@@ -6878,6 +6890,9 @@
         "edge": 0.221,
         "modelProbability": 0.466,
         "marketProxyProbability": 0.358,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-27T02:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 Egypt，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "status": "pending"
       },
@@ -6894,6 +6909,9 @@
         "edge": 0.434,
         "modelProbability": 0.706,
         "marketProxyProbability": 0.462,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-27T02:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Belgium，但平局還有 20%；別急著開香檳，足球最會打臉。",
         "status": "pending"
       },
@@ -6910,6 +6928,9 @@
         "edge": 0.594,
         "modelProbability": 0.801,
         "marketProxyProbability": 0.473,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-27T20:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 England，但平局還有 16%；別急著開香檳，足球最會打臉。",
         "status": "pending"
       },
@@ -6926,6 +6947,9 @@
         "edge": 0.268,
         "modelProbability": 0.539,
         "marketProxyProbability": 0.4,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-27T22:30:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場中等站 Portugal，但平局還有 26%；別急著開香檳，足球最會打臉。",
         "status": "pending"
       },
@@ -6942,6 +6966,9 @@
         "edge": 0.394,
         "modelProbability": 0.564,
         "marketProxyProbability": 0.38,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-27T22:30:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場中等站 Democratic Republic of the Congo，但平局還有 25%；別急著開香檳，足球最會打臉。",
         "status": "pending"
       }
@@ -6960,6 +6987,9 @@
         "edge": 0.588,
         "modelProbability": 0.84,
         "marketProxyProbability": 0.498,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-28T01:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Argentina，但平局還有 13%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       },
@@ -6976,6 +7006,9 @@
         "edge": 0.525,
         "modelProbability": 0.716,
         "marketProxyProbability": 0.441,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-01T00:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Mexico，但平局還有 20%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       },
@@ -6992,6 +7025,9 @@
         "edge": 0.492,
         "modelProbability": 0.757,
         "marketProxyProbability": 0.477,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-29T19:30:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Germany，但平局還有 18%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       },
@@ -7008,6 +7044,9 @@
         "edge": 0.46,
         "modelProbability": 0.685,
         "marketProxyProbability": 0.441,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-03T02:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Switzerland，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       },
@@ -7024,6 +7063,9 @@
         "edge": 0.449,
         "modelProbability": 0.687,
         "marketProxyProbability": 0.446,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-01T23:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 USA，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }

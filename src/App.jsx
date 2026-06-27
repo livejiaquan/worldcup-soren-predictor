@@ -10,6 +10,9 @@ const pct = (v) => `${Math.round((v || 0) * 100)}%`
 const money = (v) => `$${Number(v || 0).toFixed(2)}`
 const signedMoney = (v) => `${Number(v || 0) >= 0 ? '+' : ''}${money(v)}`
 
+const actualPick = (match) => !match?.score ? null : match.score[0] > match.score[1] ? match.team1 : match.score[1] > match.score[0] ? match.team2 : '平手'
+const resultText = (bet) => bet?.status === 'won' ? `贏 ${money(bet.profit)}` : bet?.status === 'lost' ? `輸 ${money(Math.abs(bet.profit))}` : '未結算'
+
 function Team({ name }) { return <span className="team-inline"><span className="flag-emoji">{flag(name)}</span><span className="team-name">{name}</span></span> }
 function ProbBar({ prediction }) { const p = prediction.probabilities; return <div className="prob-bar"><span style={{ width:pct(p.home) }}/><span style={{ width:pct(p.draw) }}/><span style={{ width:pct(p.away) }}/></div> }
 function SectionHead({ kicker, title, meta, children }) { return <div className="section-head"><div><p>{kicker}</p><h2>{title}</h2>{children}</div>{meta && <span>{meta}</span>}</div> }
@@ -81,15 +84,18 @@ function IntelBrief({ intel, onSelect }) {
 function PaperBankroll({ bankroll, onSelect }) {
   if (!bankroll) return null
   const pending = bankroll.pending || []
+  const settled = bankroll.settled || []
+  const last = settled.slice(-4).reverse()
   return <section className="panel bankroll" id="paper-bankroll">
     <SectionHead kicker="PAPER BANKROLL" title="100 美金紙上生存戰" meta={signedMoney(bankroll.bankroll - bankroll.initialBankroll)}>
-      <small>純娛樂紙上模擬，不是真錢、不導流投注、不構成建議。</small>
+      <small>純娛樂紙上模擬，不是真錢、不導流投注、不構成建議；賽後會公開結算與復盤。</small>
     </SectionHead>
     <div className="bankroll-grid">
       <StatCard label="目前還活著" value={money(bankroll.bankroll)} sub="輸贏都攤開，不躲帳" tone="green" />
+      <StatCard label="已結算損益" value={signedMoney(bankroll.bankroll - bankroll.initialBankroll)} sub={`${settled.length} 筆已復盤`} tone="violet" />
       <StatCard label="未結算部位" value={money(bankroll.openStake)} sub={`${pending.length} 筆還在場上`} tone="amber" />
-      <StatCard label="ROI" value={pct(bankroll.roi)} sub="現在還沒資格囂張" />
     </div>
+    {last.length > 0 && <div className="postmortem-block"><div className="mini-head"><b>賽後復盤</b><span>點進去看預測 vs 實際</span></div><div className="settled-ledger">{last.map((b) => <button type="button" key={b.matchId} onClick={() => onSelect(b.matchId)} className={b.status}><b>{b.team1} vs {b.team2}</b><span>押 {b.pick} · 賽果 {b.score?.[0]}-{b.score?.[1]} · {resultText(b)}</span><em>{b.marketReference || '主流 1X2 紙上盤'}</em></button>)}</div></div>}
     <div className="ledger">{pending.slice(0, 4).map((b) => <button type="button" key={b.matchId} onClick={() => onSelect(b.matchId)}><b>{b.team1} vs {b.team2}</b><span>{b.pick} · {money(b.stake)} · {fmtDate(b.kickoffUtc)}</span></button>)}</div>
   </section>
 }
@@ -132,6 +138,13 @@ function MatchDeepDive({ match, prediction, paperBet, intel, onClose }) {
   const p = prediction.probabilities
   const upset = p.home < p.away ? match.team1 : match.team2
   const favorite = p.home >= p.away ? match.team1 : match.team2
+  const actual = actualPick(match)
+  const predictionHit = actual && (prediction.pick === actual || (prediction.pick === '平手' && actual === '平手'))
+  const postmortem = match.status === 'finished'
+    ? predictionHit
+      ? `這場方向有抓到：我站 ${prediction.pick}，實際也是 ${actual}。下一步要檢查的是比分誤差與是不是被偶發事件灌水。`
+      : `這場被賽果打臉：我站 ${prediction.pick}，實際是 ${actual}。復盤重點放在我高估哪一邊、低估平局/爆冷路線，不能裝沒事。`
+    : '比賽還沒踢完；這裡會在賽後補上預測 vs 實際、紙上損益與錯因。'
   return <div className="modal-backdrop" onClick={onClose}>
     <article className="deep-modal" onClick={(e) => e.stopPropagation()}>
       <button className="modal-close" type="button" onClick={onClose}>×</button>
@@ -144,8 +157,9 @@ function MatchDeepDive({ match, prediction, paperBet, intel, onClose }) {
         <div><b>這場天秤怎麼歪</b><p>{match.team1} {pct(p.home)} · 平 {pct(p.draw)} · {match.team2} {pct(p.away)}</p></div>
         <div><b>弱隊偷雞路線</b><p>{upset} 要活下來，第一任務不是踢漂亮，是把 {favorite} 的前 30 分鐘熬過去。</p></div>
         <div><b>情報影響</b><p>{intel ? intel.sorenTake : '這場暫時沒有足夠乾淨的情報；我寧可空著，也不亂編社群情緒。'}</p></div>
-        <div><b>紙上戰局</b><p>{paperBet ? `紙上籌碼：${paperBet.pick}，投入 ${money(paperBet.stake)}，模擬賠率 ${paperBet.decimalOdds}。` : '這場我先不丟紙上籌碼；沒邊際就坐旁邊喝水。'}</p></div>
+        <div><b>紙上戰局</b><p>{paperBet ? `紙上盤：${paperBet.marketReference || '主流 1X2 賽前盤'}。鎖單：${paperBet.lockedAtUtc ? fmtDate(paperBet.lockedAtUtc) : '開賽前'}；押 ${paperBet.pick}，投入 ${money(paperBet.stake)}，模擬賠率 ${paperBet.decimalOdds}。${paperBet.profit !== undefined ? `結算：${resultText(paperBet)}。` : ''}` : '這場我先不丟紙上籌碼；沒邊際就坐旁邊喝水。'}</p></div>
       </div>
+      <section className="match-postmortem"><b>賽後復盤</b><p>{postmortem}</p>{match.status === 'finished' && <div className="compare-grid"><span>預測：{prediction.pick} / {prediction.score}</span><span>實際：{actual} / {match.score[0]}-{match.score[1]}</span><span>紙上：{paperBet ? resultText(paperBet) : '未下注'}</span></div>}</section>
       <ul className="reasons modal-reasons">{prediction.reasons.map((r) => <li key={r}>{r}</li>)}</ul>
       {intel && <details className="source-drawer modal-sources"><summary>這場情報來源</summary><ul>{intel.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{intel.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></details>}
       <p className="modal-disclaimer">公開研究與娛樂展示，不是投注建議。我會贏、會翻車、也會被賽果打臉；重點是每一筆都要留下理由。</p>
