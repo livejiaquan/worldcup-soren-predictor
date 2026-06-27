@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T09:22:42Z",
-  "status": "schedule-aware-scout-20260627T0922Z-md17-same-day-refresh",
-  "headline": "Soren 09:22 巡檢：補上 Matchday 17 同日官方/可信媒體訊號；England 已鎖淘汰賽席位、Saka 可用，Colombia-Portugal 有 FIFA 官方預覽，Argentina-Jordan 補裁判與 Romero 傷情觀察。",
+  "generatedAt": "2026-06-27T10:12:00Z",
+  "status": "schedule-aware-scout-20260627T1012Z-md17-same-day-refresh",
+  "headline": "Soren 10:12 巡檢：補上 Matchday 17 臨場訊號；Messi 替補報導更硬、Portugal 的 Tomás Araújo 回到完整訓練，Algeria-Austria 則多一層 Gijón 歷史壓力。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -960,7 +960,8 @@
         "08:55Z 同日補核：AFA 官方確認 Argentina 已鎖定 Group J 第一，對 Jordan 前已知道 32 強對手將來自 Group H 第二；這強化輪換誘因，但不等於官方先發名單。",
         "AFA 另有閉門訓練、Kansas 最後訓練與前往 Dallas 的官方行程更新；Soren 只把它寫成備戰節奏與輪換背景，不把媒體「Messi 替補」標題升級成確認。",
         "09:22Z 同日補核：AFA 官方公布 Argentina-Jordan 由羅馬尼亞裁判 István Kovács 執法；這是行政硬訊號，和輪換推測分開看。",
-        "Reuters 系列報導稱 Cristian Romero 已回到場上訓練但仍可能缺席 Jordan 戰；列為 injury-watch，正式可用性等 FIFA/Argentina 臨場名單。"
+        "Reuters 系列報導稱 Cristian Romero 已回到場上訓練但仍可能缺席 Jordan 戰；列為 injury-watch，正式可用性等 FIFA/Argentina 臨場名單。",
+        "10:12Z 補核：公開搜尋索引與 The Athletic/AS USA 報導均指 Scaloni 已說 Messi 對 Jordan 將從板凳出發；這比「可能休」更硬，但仍等 FIFA/Argentina 正式 XI 才寫成 confirmed lineup。"
       ],
       "sources": [
         {
@@ -1106,6 +1107,22 @@
           "fetchedAt": "2026-06-27T09:22:42Z",
           "claimType": "reported/injury-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "The Athletic Messi bench report",
+          "url": "https://www.nytimes.com/athletic/7399159/2026/06/26/lionel-messi-argentina-jordan-world-cup/",
+          "sourceName": "The Athletic",
+          "fetchedAt": "2026-06-27T10:12:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "AS USA Messi bench explainer",
+          "url": "https://en.as.com/soccer/why-isnt-lionel-messi-playing-for-argentina-against-jordan-f202606-n/",
+          "sourceName": "AS USA",
+          "fetchedAt": "2026-06-27T10:12:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -1545,7 +1562,8 @@
         "Miami Stadium 開放式場館與六月濕熱是節奏背景；這不是精準逐小時天氣預報，但足以提醒高強度逼搶可能付出體能稅。",
         "08:55Z 同日補核：Colombian FA 官方稱 Colombia 在已確定晉級後，針對 Portugal 進行恢復與負荷調整訓練；這支持「可能管理節奏但不是默契球」的讀法，沒有揭露官方先發。",
         "09:22Z 同日補核：FIFA 官方預覽已把 Colombia-Portugal 定位為 Group K 收官焦點；可作官方賽前脈絡，但正式先發仍等 match centre。",
-        "NOAA/NWS Miami-South Florida 同日熱風險頁可作 Miami Gardens 天氣/體能背景；Soren 只把它寫成濕熱與節奏稅，不硬寫精準球場內體感。"
+        "NOAA/NWS Miami-South Florida 同日熱風險頁可作 Miami Gardens 天氣/體能背景；Soren 只把它寫成濕熱與節奏稅，不硬寫精準球場內體感。",
+        "10:12Z 補核：FPF 官方索引顯示 Tomás Araújo 已「reintegrado em pleno」並隨 Portugal 開始備戰 Colombia；這是可用性利多，但不等於已鎖定先發。"
       ],
       "sources": [
         {
@@ -1722,6 +1740,14 @@
           "sourceName": "NOAA / National Weather Service",
           "fetchedAt": "2026-06-27T09:22:42Z",
           "claimType": "context/weather",
+          "confidence": "high"
+        },
+        {
+          "label": "FPF Portugal preparation for Colombia",
+          "url": "https://www.fpf.pt/pt/News/Todas-as-not%C3%ADcias/Not%C3%ADcia/news/56994",
+          "sourceName": "Federação Portuguesa de Futebol",
+          "fetchedAt": "2026-06-27T10:12:00Z",
+          "claimType": "confirmed/team-preparation",
           "confidence": "high"
         }
       ],
@@ -1928,7 +1954,8 @@
         "08:55Z 同日補核：FAF 官方確認 Algeria-Austria 由烏茲別克裁判組執法，並列出 Kansas City 開球時間；這是賽事行政硬訊號，不是戰術或先發。",
         "FAF 訓練動態顯示 Les Verts 回到 Lawrence/Kansas City 區域後持續備戰 Austria；仍未見可公開確認的官方先發或新增傷停。",
         "09:22Z 同日補核：FAF 國家隊頁與賽前訓練文持續把 Algeria-Austria 指向出線戰備戰；官方只給訓練/行政脈絡，沒有公開確認 XI。",
-        "Sports Mole 同日 injury/suspension/predicted XI 彙整可作 lineup-watch；正式陣容未出前，Soren 不把媒體 predicted XI 寫成事實。"
+        "Sports Mole 同日 injury/suspension/predicted XI 彙整可作 lineup-watch；正式陣容未出前，Soren 不把媒體 predicted XI 寫成事實。",
+        "10:12Z 補核：Guardian/France 24 把 Algeria-Austria 拉回 1982「Gijón」陰影；這是情緒與賽事敘事，不是陰謀判決，Soren 只把它用作心理壓力背景。"
       ],
       "sources": [
         {
@@ -2058,6 +2085,22 @@
           "fetchedAt": "2026-06-27T09:22:42Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "Guardian Algeria-Austria Gijón context",
+          "url": "https://www.theguardian.com/football/2026/jun/26/algeria-austria-1982-world-cup-shame-of-gijon-west-germany",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-27T10:12:00Z",
+          "claimType": "context/history",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "France 24 Gijón context",
+          "url": "https://www.france24.com/en/sport/20260625-fears-of-world-cup-collusion-algeria-austria-clash-stirs-ghosts-disgrace-of-gijon",
+          "sourceName": "France 24",
+          "fetchedAt": "2026-06-27T10:12:00Z",
+          "claimType": "context/history",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
