@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T10:12:00Z",
-  "status": "schedule-aware-scout-20260627T1012Z-md17-same-day-refresh",
-  "headline": "Soren 10:12 巡檢：補上 Matchday 17 臨場訊號；Messi 替補報導更硬、Portugal 的 Tomás Araújo 回到完整訓練，Algeria-Austria 則多一層 Gijón 歷史壓力。",
+  "generatedAt": "2026-06-27T11:11:00Z",
+  "status": "schedule-aware-scout-20260627T1111Z-saturday-opta-official-refresh",
+  "headline": "Soren 11:11 巡檢：六場小組收官補上 Al Jazeera/Opta 公開機率框架；Algeria 官方賽前訓練與 South Africa-Canada 晉級機率也入庫。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -961,7 +961,8 @@
         "AFA 另有閉門訓練、Kansas 最後訓練與前往 Dallas 的官方行程更新；Soren 只把它寫成備戰節奏與輪換背景，不把媒體「Messi 替補」標題升級成確認。",
         "09:22Z 同日補核：AFA 官方公布 Argentina-Jordan 由羅馬尼亞裁判 István Kovács 執法；這是行政硬訊號，和輪換推測分開看。",
         "Reuters 系列報導稱 Cristian Romero 已回到場上訓練但仍可能缺席 Jordan 戰；列為 injury-watch，正式可用性等 FIFA/Argentina 臨場名單。",
-        "10:12Z 補核：公開搜尋索引與 The Athletic/AS USA 報導均指 Scaloni 已說 Messi 對 Jordan 將從板凳出發；這比「可能休」更硬，但仍等 FIFA/Argentina 正式 XI 才寫成 confirmed lineup。"
+        "10:12Z 補核：公開搜尋索引與 The Athletic/AS USA 報導均指 Scaloni 已說 Messi 對 Jordan 將從板凳出發；這比「可能休」更硬，但仍等 FIFA/Argentina 正式 XI 才寫成 confirmed lineup。",
+        "Al Jazeera 6/27 賽程/Opta 摘要寫明 Messi 確認從替補席開始，Argentina 仍有 77.9% 勝率、和局 13.3%、Jordan 8.8%；Soren 會把輪換折價，但不把替補 Messi 解讀成爆冷保證。"
       ],
       "sources": [
         {
@@ -1123,6 +1124,14 @@
           "fetchedAt": "2026-06-27T10:12:00Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "Al Jazeera Saturday Opta Jordan-Argentina",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/fifa-world-cup-2026-saturday-schedule-round-of-32-standings-predictions",
+          "sourceName": "Al Jazeera / Opta",
+          "fetchedAt": "2026-06-27T11:11:00Z",
+          "claimType": "context/odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -1151,7 +1160,8 @@
         "FEPAFUT 官方訓練/行程頁顯示 Panama 已完成基地營最後訓練並轉往 New Jersey；這是備戰節奏訊號，不代表官方先發。",
         "SI / Evening Standard 類頁面開始列出具體 England predicted XI；仍只標記 lineup-watch，正式 XI 以 FIFA/球隊臨場公告為準。",
         "09:22Z 同日補核：England Football 官方確認 England 對 Panama 前已確定至少以最佳第三名路徑進入淘汰賽；這讓輪換/風險管理更合理，但小組名次仍要踢出來。",
-        "Sky Sports 賽前報導稱 Bukayo Saka 已無痛並準備好先發；Reece James 缺席訊號不變，Declan Rice / Elliot Anderson 屬可用性觀察，不升級成官方先發。"
+        "Sky Sports 賽前報導稱 Bukayo Saka 已無痛並準備好先發；Reece James 缺席訊號不變，Declan Rice / Elliot Anderson 屬可用性觀察，不升級成官方先發。",
+        "Al Jazeera 6/27 賽程/Opta 摘要把 England 對 Panama 列為 21:00Z 開球，並引述 Opta 25,000 次賽前模擬：England 勝率 78.5%、Panama 8.9%、和局 12.6%；這是公開機率參照，不是 Soren 下注建議。"
       ],
       "sources": [
         {
@@ -1337,6 +1347,14 @@
           "fetchedAt": "2026-06-27T09:22:42Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Al Jazeera Saturday Opta Panama-England",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/fifa-world-cup-2026-saturday-schedule-round-of-32-standings-predictions",
+          "sourceName": "Al Jazeera / Opta",
+          "fetchedAt": "2026-06-27T11:11:00Z",
+          "claimType": "context/odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -1365,7 +1383,8 @@
         "HNS 官方賽前動態提供 Croatia 內部語氣：Dalić 強調不只誰先發，誰收尾同樣重要；Moro/Gvardiol 媒體日則顯示 Panama 勝利後士氣回升。",
         "SI/ESPN 類 predicted-XI 開始給出具體 Ghana/Croatia 名單，Covers 則把 Ati-Zigi 標為 questionable；全部仍是 reported/lineup-watch，不升級成確認先發。",
         "09:22Z 同日補核：Yahoo / The Football Faithful 的 Ghana XI watch 把 Ghana 描述為拿到和局即可鎖定 32 強；Soren 把它當出線情境與 expected-XI 觀察，不當官方隊報。",
-        "Opta Analyst 賽前頁提供 Croatia-Ghana 的中立預測/晉級脈絡；可用來校正「非友誼賽、是真刀局」的敘事，但不引用未即時核對的百分比。"
+        "Opta Analyst 賽前頁提供 Croatia-Ghana 的中立預測/晉級脈絡；可用來校正「非友誼賽、是真刀局」的敘事，但不引用未即時核對的百分比。",
+        "Al Jazeera 6/27 賽程/Opta 摘要指出 Croatia-Ghana 是首次交手，Opta 模擬給 Croatia 56.3%、Ghana 17.6%、和局 26.2%；Ghana 手握積分優勢但市場/模型仍偏 Croatia。"
       ],
       "sources": [
         {
@@ -1535,6 +1554,14 @@
           "fetchedAt": "2026-06-27T09:22:42Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "Al Jazeera Saturday Opta Croatia-Ghana",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/fifa-world-cup-2026-saturday-schedule-round-of-32-standings-predictions",
+          "sourceName": "Al Jazeera / Opta",
+          "fetchedAt": "2026-06-27T11:11:00Z",
+          "claimType": "context/odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -1563,7 +1590,8 @@
         "08:55Z 同日補核：Colombian FA 官方稱 Colombia 在已確定晉級後，針對 Portugal 進行恢復與負荷調整訓練；這支持「可能管理節奏但不是默契球」的讀法，沒有揭露官方先發。",
         "09:22Z 同日補核：FIFA 官方預覽已把 Colombia-Portugal 定位為 Group K 收官焦點；可作官方賽前脈絡，但正式先發仍等 match centre。",
         "NOAA/NWS Miami-South Florida 同日熱風險頁可作 Miami Gardens 天氣/體能背景；Soren 只把它寫成濕熱與節奏稅，不硬寫精準球場內體感。",
-        "10:12Z 補核：FPF 官方索引顯示 Tomás Araújo 已「reintegrado em pleno」並隨 Portugal 開始備戰 Colombia；這是可用性利多，但不等於已鎖定先發。"
+        "10:12Z 補核：FPF 官方索引顯示 Tomás Araújo 已「reintegrado em pleno」並隨 Portugal 開始備戰 Colombia；這是可用性利多，但不等於已鎖定先發。",
+        "Al Jazeera 6/27 賽程/Opta 摘要把 Colombia-Portugal 定位為 K 組榜首戰；Opta 模擬 Portugal 51.6%、Colombia 23.9%、和局 25.2%，且 Colombia 拿 1 分即可鎖定小組第一。"
       ],
       "sources": [
         {
@@ -1749,6 +1777,14 @@
           "fetchedAt": "2026-06-27T10:12:00Z",
           "claimType": "confirmed/team-preparation",
           "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Saturday Opta Colombia-Portugal",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/fifa-world-cup-2026-saturday-schedule-round-of-32-standings-predictions",
+          "sourceName": "Al Jazeera / Opta",
+          "fetchedAt": "2026-06-27T11:11:00Z",
+          "claimType": "context/odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -1775,7 +1811,8 @@
         "APWin / WorldCupPass 類頁面提供 Uzbekistan 三中衛與 DR Congo 邊後衛配置的 probable-XI 線索；來源層級低於 FIFA/BBC/ESPN，只作戰術假設。",
         "FOX Sports、Oddschecker 已有本場市場頁；Atlanta/Mercedes-Benz Stadium 是可開合屋頂與臨時草皮場，天氣影響需等臨場屋頂/場地資訊，不先腦補。",
         "08:55Z 同日補核：AFC 賽前頁把 Uzbekistan 對 DR Congo 定位為仍要爭取出線希望的最後一戰；這和部分市場頁的「dead rubber」說法衝突，Soren 保守採用 confederation/source-aware bracket watch。",
-        "AFC 另引 Cannavaro 說 Uzbekistan 會 fight till the end；這是教練公開語氣與心理面訊號，不是陣容或傷停確認。"
+        "AFC 另引 Cannavaro 說 Uzbekistan 會 fight till the end；這是教練公開語氣與心理面訊號，不是陣容或傷停確認。",
+        "Al Jazeera 6/27 賽程/Opta 摘要指出 DR Congo 與 Uzbekistan 首次交手且都仍在追淘汰賽；Opta 模擬 DR Congo 48.9%、Uzbekistan 26.8%、和局 24.3%，Uzbekistan 仍有外線晉級路徑。"
       ],
       "sources": [
         {
@@ -1929,6 +1966,14 @@
           "fetchedAt": "2026-06-27T08:49:23Z",
           "claimType": "reported/coach-quote",
           "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Saturday Opta DR Congo-Uzbekistan",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/fifa-world-cup-2026-saturday-schedule-round-of-32-standings-predictions",
+          "sourceName": "Al Jazeera / Opta",
+          "fetchedAt": "2026-06-27T11:11:00Z",
+          "claimType": "context/odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -1955,7 +2000,9 @@
         "FAF 訓練動態顯示 Les Verts 回到 Lawrence/Kansas City 區域後持續備戰 Austria；仍未見可公開確認的官方先發或新增傷停。",
         "09:22Z 同日補核：FAF 國家隊頁與賽前訓練文持續把 Algeria-Austria 指向出線戰備戰；官方只給訓練/行政脈絡，沒有公開確認 XI。",
         "Sports Mole 同日 injury/suspension/predicted XI 彙整可作 lineup-watch；正式陣容未出前，Soren 不把媒體 predicted XI 寫成事實。",
-        "10:12Z 補核：Guardian/France 24 把 Algeria-Austria 拉回 1982「Gijón」陰影；這是情緒與賽事敘事，不是陰謀判決，Soren 只把它用作心理壓力背景。"
+        "10:12Z 補核：Guardian/France 24 把 Algeria-Austria 拉回 1982「Gijón」陰影；這是情緒與賽事敘事，不是陰謀判決，Soren 只把它用作心理壓力背景。",
+        "Al Jazeera 6/27 賽程/Opta 摘要重提 1982 Algeria-Austria 脈絡，Opta 模擬最可能是和局 42.1%，Austria 勝率 31.2%、Algeria 26.7%；這場不是「誰比較有名誰就穩」。",
+        "FAF 官方 6/27 賽前文稱 Algeria 已在 Kansas 的 Rock Chalk Park 完成最後訓練，重點放在對 Austria 的技戰術微調與爭取出線；這是官方備戰訊號，不等於確認先發。"
       ],
       "sources": [
         {
@@ -2101,6 +2148,22 @@
           "fetchedAt": "2026-06-27T10:12:00Z",
           "claimType": "context/history",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Al Jazeera Saturday Opta Algeria-Austria",
+          "url": "https://www.aljazeera.com/sports/2026/6/27/fifa-world-cup-2026-saturday-schedule-round-of-32-standings-predictions",
+          "sourceName": "Al Jazeera / Opta",
+          "fetchedAt": "2026-06-27T11:11:00Z",
+          "claimType": "context/odds-reference",
+          "confidence": "high"
+        },
+        {
+          "label": "FAF Algeria-Austria final training note",
+          "url": "https://www.faf.dz/coupe-du-monde-de-la-fifa-2026-algerie-autriche-ce-dimanche-a-03h00-les-verts-ne-jurent-que-par-la-qualification/",
+          "sourceName": "Fédération algérienne de football (FAF)",
+          "fetchedAt": "2026-06-27T11:11:00Z",
+          "claimType": "confirmed/team-preparation",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -2122,7 +2185,8 @@
         "FIFA 官方賽程確認 Match 73 為 South Africa v Canada，6月28日 Los Angeles Stadium；這是 Round of 32 開局戰。",
         "ESPN 12-18小時內賽前頁提供 kickoff/team-news/how-to-watch/injury/predicted line-ups；仍屬媒體預測，不升格為官方 XI。",
         "Olympics.com 把這場定位為兩隊首次世界盃淘汰賽，Sporting News 也標示 28日 15:00 ET；敘事層面是「歷史首關」而不是普通冷門素材。",
-        "SportsBettingDime/SportsGambler/Squawka 公開 odds 頁一致顯示 Canada 市場較熱；只作 paper simulation odds-reference，不構成投注建議。"
+        "SportsBettingDime/SportsGambler/Squawka 公開 odds 頁一致顯示 Canada 市場較熱；只作 paper simulation odds-reference，不構成投注建議。",
+        "Opta Analyst 的 South Africa-Canada 淘汰賽預覽給 Canada 67.8% 晉級機率、South Africa 32.2%；90 分鐘模型為 Canada 55.0%、South Africa 20.0%、和局 24.9%，主辦國熱度之外仍有加時/點球風險。"
       ],
       "sources": [
         {
@@ -2228,6 +2292,14 @@
           "fetchedAt": "2026-06-27T04:03:00Z",
           "claimType": "reported/context",
           "confidence": "medium"
+        },
+        {
+          "label": "Opta Analyst South Africa-Canada preview",
+          "url": "https://theanalyst.com/articles/south-africa-vs-canada-prediction-world-cup-2026-match-preview",
+          "sourceName": "Opta Analyst",
+          "fetchedAt": "2026-06-27T11:11:00Z",
+          "claimType": "reported/context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
