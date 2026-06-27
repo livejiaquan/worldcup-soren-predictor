@@ -5,7 +5,10 @@
       "date": "2026-06-26",
       "team1": "Norway",
       "team2": "France",
-      "score": [1, 4],
+      "score": [
+        1,
+        4
+      ],
       "source": "ESPN final score, gameId 760475",
       "url": "https://www.espn.com/soccer/match/_/gameId/760475/france-norway"
     },
@@ -13,7 +16,10 @@
       "date": "2026-06-26",
       "team1": "Senegal",
       "team2": "Iraq",
-      "score": [5, 0],
+      "score": [
+        5,
+        0
+      ],
       "source": "ESPN final score, gameId 760474",
       "url": "https://www.espn.com/soccer/match/_/gameId/760474/iraq-senegal"
     },
@@ -21,7 +27,10 @@
       "date": "2026-06-27",
       "team1": "Cape Verde",
       "team2": "Saudi Arabia",
-      "score": [0, 0],
+      "score": [
+        0,
+        0
+      ],
       "source": "ESPN final score, gameId 760478",
       "url": "https://www.espn.com/football/match/_/gameId/760478/saudi-arabia-cape-verde"
     },
@@ -29,9 +38,36 @@
       "date": "2026-06-27",
       "team1": "Uruguay",
       "team2": "Spain",
-      "score": [0, 1],
+      "score": [
+        0,
+        1
+      ],
       "source": "USA Today/Yahoo final score summary",
       "url": "https://sports.yahoo.com/soccer/live/world-cup-schedule-scores-live-updates-results-group-g-group-h-group-i-160927428.html"
+    },
+    {
+      "date": "2026-06-26",
+      "team1": "Egypt",
+      "team2": "Iran",
+      "score": [
+        1,
+        1
+      ],
+      "source": "ESPN final score, gameId 760476",
+      "url": "https://www.espn.com/soccer/match/_/gameId/760476/iran-egypt",
+      "fetchedAt": "2026-06-27T05:05:32.871382Z"
+    },
+    {
+      "date": "2026-06-26",
+      "team1": "New Zealand",
+      "team2": "Belgium",
+      "score": [
+        1,
+        5
+      ],
+      "source": "ESPN final score, gameId 760477",
+      "url": "https://www.espn.com/football/match/_/gameId/760477/belgium-new-zealand",
+      "fetchedAt": "2026-06-27T05:05:32.871382Z"
     }
   ]
 }

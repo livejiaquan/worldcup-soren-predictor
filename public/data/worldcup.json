@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-27T04:56:48.527Z",
+  "generatedAt": "2026-06-27T05:06:21.899Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,8 +7,8 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 64,
-    "scheduledMatches": 40,
+    "finishedMatches": 66,
+    "scheduledMatches": 38,
     "nextWindow": [
       "m071",
       "m072",
@@ -437,51 +437,51 @@
     ],
     "Group G": [
       {
+        "team": "Belgium",
+        "group": "Group G",
+        "played": 3,
+        "won": 1,
+        "drawn": 2,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 2,
+        "goalDiff": 4,
+        "points": 5
+      },
+      {
         "team": "Egypt",
         "group": "Group G",
-        "played": 2,
+        "played": 3,
         "won": 1,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 0,
-        "goalsFor": 4,
-        "goalsAgainst": 2,
+        "goalsFor": 5,
+        "goalsAgainst": 3,
         "goalDiff": 2,
-        "points": 4
+        "points": 5
       },
       {
         "team": "Iran",
         "group": "Group G",
-        "played": 2,
+        "played": 3,
         "won": 0,
-        "drawn": 2,
+        "drawn": 3,
         "lost": 0,
-        "goalsFor": 2,
-        "goalsAgainst": 2,
+        "goalsFor": 3,
+        "goalsAgainst": 3,
         "goalDiff": 0,
-        "points": 2
-      },
-      {
-        "team": "Belgium",
-        "group": "Group G",
-        "played": 2,
-        "won": 0,
-        "drawn": 2,
-        "lost": 0,
-        "goalsFor": 1,
-        "goalsAgainst": 1,
-        "goalDiff": 0,
-        "points": 2
+        "points": 3
       },
       {
         "team": "New Zealand",
         "group": "Group G",
-        "played": 2,
+        "played": 3,
         "won": 0,
         "drawn": 1,
-        "lost": 1,
-        "goalsFor": 3,
-        "goalsAgainst": 5,
-        "goalDiff": -2,
+        "lost": 2,
+        "goalsFor": 4,
+        "goalsAgainst": 10,
+        "goalDiff": -6,
         "points": 1
       }
     ],
@@ -1900,9 +1900,12 @@
       "team1": "Egypt",
       "team2": "Iran",
       "venue": "Seattle",
-      "status": "scheduled",
-      "score": null,
-      "source": "openfootball/worldcup.json"
+      "status": "finished",
+      "score": [
+        1,
+        1
+      ],
+      "source": "openfootball/worldcup.json + override: ESPN final score, gameId 760476"
     },
     {
       "id": "m042",
@@ -1915,9 +1918,12 @@
       "team1": "New Zealand",
       "team2": "Belgium",
       "venue": "Vancouver",
-      "status": "scheduled",
-      "score": null,
-      "source": "openfootball/worldcup.json"
+      "status": "finished",
+      "score": [
+        1,
+        5
+      ],
+      "source": "openfootball/worldcup.json + override: ESPN final score, gameId 760477"
     },
     {
       "id": "m071",
@@ -3026,43 +3032,43 @@
     },
     "m037": {
       "pick": "Belgium",
-      "confidence": 0.443104703408649,
-      "tag": "這場有妖氣",
+      "confidence": 0.732198803346666,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.4217002946949941,
-        "draw": 0.2755127923525392,
-        "away": 0.30278691295246674
+        "home": 0.6405517322003528,
+        "draw": 0.22804693085659014,
+        "away": 0.13140133694305717
       },
       "expectedGoals": [
-        1.31,
-        1.07
+        1.74,
+        0.64
       ],
-      "score": "1-1",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 Belgium，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Belgium，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "story": "Belgium 底牌比較硬；Egypt 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "12.0",
+            "value": "17.3",
             "note": "Belgium 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.31 : 1.07",
-            "note": "最像 1-1"
+            "value": "1.74 : 0.64",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "30%",
+            "value": "13%",
             "note": "Egypt 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Belgium 86.7；Egypt 74.6",
-        "預期進球 1.31 : 1.07，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 12.0 分，我暫時站 Belgium"
+        "底牌分：Belgium 91.0；Egypt 73.7",
+        "預期進球 1.74 : 0.64，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 17.3 分，我暫時站 Belgium"
       ]
     },
     "m044": {
@@ -3108,43 +3114,43 @@
     },
     "m038": {
       "pick": "Iran",
-      "confidence": 0.6820457618955503,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.7621041658673361,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6020388206891557,
-        "draw": 0.24040536532388082,
-        "away": 0.15755581398696344
+        "home": 0.6636267460078169,
+        "draw": 0.21984328498169486,
+        "away": 0.11652996901048815
       },
       "expectedGoals": [
-        1.67,
-        0.71
+        1.79,
+        0.59
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場中等站 Iran，但平局還有 24%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Iran，但平局還有 22%；別急著開香檳，足球最會打臉。",
         "story": "Iran 底牌比較硬；New Zealand 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "13.6",
+            "value": "16.7",
             "note": "Iran 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.67 : 0.71",
+            "value": "1.79 : 0.59",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "16%",
+            "value": "12%",
             "note": "New Zealand 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Iran 73.7；New Zealand 60.0",
-        "預期進球 1.67 : 0.71，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 13.6 分，我暫時站 Iran"
+        "底牌分：Iran 73.7；New Zealand 57.0",
+        "預期進球 1.79 : 0.59，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 16.7 分，我暫時站 Iran"
       ]
     },
     "m049": {
@@ -4010,43 +4016,43 @@
     },
     "m039": {
       "pick": "Belgium",
-      "confidence": 0.5657392151552058,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.7713533213076873,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.5136041334339828,
-        "draw": 0.2624310760277176,
-        "away": 0.2239647905382995
+        "home": 0.670780374806253,
+        "draw": 0.21717784206212914,
+        "away": 0.11204178313161783
       },
       "expectedGoals": [
-        1.49,
-        0.89
+        1.8,
+        0.58
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 Belgium，但平局還有 26%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Belgium，但平局還有 22%；別急著開香檳，足球最會打臉。",
         "story": "Belgium 底牌比較硬；Iran 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "13.0",
+            "value": "17.4",
             "note": "Belgium 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.49 : 0.89",
+            "value": "1.80 : 0.58",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "22%",
+            "value": "11%",
             "note": "Iran 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Belgium 86.7；Iran 73.7",
-        "預期進球 1.49 : 0.89，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 13.0 分，我暫時站 Belgium"
+        "底牌分：Belgium 91.0；Iran 73.7",
+        "預期進球 1.80 : 0.58，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 17.4 分，我暫時站 Belgium"
       ]
     },
     "m046": {
@@ -4092,43 +4098,43 @@
     },
     "m040": {
       "pick": "Egypt",
-      "confidence": 0.6953856720709695,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.724832454489453,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.15045200564897926,
-        "draw": 0.237287796818999,
-        "away": 0.6122601975320218
+        "home": 0.1351480616713209,
+        "draw": 0.22997134037080558,
+        "away": 0.6348805979578735
       },
       "expectedGoals": [
-        0.69,
-        1.69
+        0.65,
+        1.73
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場中等站 Egypt，但平局還有 24%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Egypt，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "story": "Egypt 底牌比較硬；New Zealand 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "14.6",
+            "value": "16.8",
             "note": "Egypt 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.69 : 1.69",
+            "value": "0.65 : 1.73",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "15%",
+            "value": "14%",
             "note": "New Zealand 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：New Zealand 60.0；Egypt 74.6",
-        "預期進球 0.69 : 1.69，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 14.6 分，我暫時站 Egypt"
+        "底牌分：New Zealand 57.0；Egypt 73.7",
+        "預期進球 0.65 : 1.73，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 16.8 分，我暫時站 Egypt"
       ]
     },
     "m057": {
@@ -5117,16 +5123,16 @@
     },
     "m041": {
       "pick": "Egypt",
-      "confidence": 0.5026215021902002,
+      "confidence": 0.48991039404047687,
       "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.4661271789430284,
-        "draw": 0.2704918823760089,
-        "away": 0.2633809386809627
+        "home": 0.45661062343851805,
+        "draw": 0.271777478689402,
+        "away": 0.27161189787208
       },
       "expectedGoals": [
-        1.4,
-        0.98
+        1.38,
+        1
       ],
       "score": "1-0",
       "commentary": {
@@ -5135,66 +5141,66 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "1.0",
+            "value": "0.1",
             "note": "誰也別裝大哥"
           },
           {
             "label": "進球味",
-            "value": "1.40 : 0.98",
+            "value": "1.38 : 1.00",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "26%",
+            "value": "27%",
             "note": "Iran 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Egypt 74.6；Iran 73.7",
-        "預期進球 1.40 : 0.98，先用 Poisson 把嘴砲壓成數字",
+        "底牌分：Egypt 73.7；Iran 73.7",
+        "預期進球 1.38 : 1.00，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
     "m042": {
       "pick": "Belgium",
-      "confidence": 0.8171891425825984,
+      "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.09059136591204948,
-        "draw": 0.2030564404889951,
-        "away": 0.7063521935989554
+        "home": 0.040285444855996076,
+        "draw": 0.1575020056653494,
+        "away": 0.8022125494786545
       },
       "expectedGoals": [
-        0.5,
-        1.88
+        0.28,
+        2.1
       ],
-      "score": "0-1",
+      "score": "0-2",
       "commentary": {
-        "headline": "我這場偏明確站 Belgium，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Belgium，但平局還有 16%；別急著開香檳，足球最會打臉。",
         "story": "Belgium 底牌比較硬；New Zealand 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "26.6",
+            "value": "34.1",
             "note": "Belgium 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.50 : 1.88",
-            "note": "最像 0-1"
+            "value": "0.28 : 2.10",
+            "note": "最像 0-2"
           },
           {
             "label": "翻車率",
-            "value": "9%",
+            "value": "4%",
             "note": "New Zealand 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：New Zealand 60.0；Belgium 86.7",
-        "預期進球 0.50 : 1.88，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 26.6 分，我暫時站 Belgium"
+        "底牌分：New Zealand 57.0；Belgium 91.0",
+        "預期進球 0.28 : 2.10，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 34.1 分，我暫時站 Belgium"
       ]
     },
     "m071": {
@@ -6738,34 +6744,34 @@
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 52,
-      "correct": 38,
+      "points": 53,
+      "correct": 39,
       "exact": 6,
-      "total": 64,
+      "total": 66,
       "rank": 1,
-      "accuracy": 0.59375
+      "accuracy": 0.5909090909090909
     },
     {
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 51,
-      "correct": 41,
+      "points": 52,
+      "correct": 42,
       "exact": 5,
-      "total": 64,
+      "total": 66,
       "rank": 2,
-      "accuracy": 0.640625
+      "accuracy": 0.6363636363636364
     },
     {
       "id": "draw",
       "name": "Draw Baseline",
       "desc": "保守押平局",
-      "points": 33,
-      "correct": 17,
-      "exact": 8,
-      "total": 64,
+      "points": 36,
+      "correct": 18,
+      "exact": 9,
+      "total": 66,
       "rank": 3,
-      "accuracy": 0.265625
+      "accuracy": 0.2727272727272727
     }
   ],
   "paperBankroll": {
@@ -6773,10 +6779,10 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 123.26,
-    "openStake": 34.76,
-    "totalValue": 123.26,
-    "roi": 0.233,
+    "bankroll": 127.18,
+    "openStake": 35.86,
+    "totalValue": 127.18,
+    "roi": 0.272,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
       {
@@ -6874,9 +6880,7 @@
           1
         ],
         "profit": 11.28
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m041",
         "kickoffUtc": "2026-06-27T03:00:00.000Z",
@@ -6885,16 +6889,21 @@
         "team2": "Iran",
         "pick": "Egypt",
         "outcome": "home",
-        "stake": 4.87,
+        "stake": 4.32,
         "decimalOdds": 2.62,
-        "edge": 0.221,
-        "modelProbability": 0.466,
+        "edge": 0.196,
+        "modelProbability": 0.457,
         "marketProxyProbability": 0.358,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-06-27T02:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 Egypt，但平局還有 27%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
+        "status": "lost",
+        "score": [
+          1,
+          1
+        ],
+        "profit": -4.32
       },
       {
         "matchId": "m042",
@@ -6906,15 +6915,22 @@
         "outcome": "away",
         "stake": 8,
         "decimalOdds": 2.03,
-        "edge": 0.434,
-        "modelProbability": 0.706,
+        "edge": 0.628,
+        "modelProbability": 0.802,
         "marketProxyProbability": 0.462,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-06-27T02:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 Belgium，但平局還有 20%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "reason": "我這場偏明確站 Belgium，但平局還有 16%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          1,
+          5
+        ],
+        "profit": 8.24
+      }
+    ],
+    "pending": [
       {
         "matchId": "m071",
         "kickoffUtc": "2026-06-27T21:00:00.000Z",
@@ -6971,9 +6987,26 @@
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場中等站 Democratic Republic of the Congo，但平局還有 25%；別急著開香檳，足球最會打臉。",
         "status": "pending"
-      }
-    ],
-    "watchlist": [
+      },
+      {
+        "matchId": "m059",
+        "kickoffUtc": "2026-06-28T02:00:00.000Z",
+        "stage": "小組 J · Matchday 17",
+        "team1": "Algeria",
+        "team2": "Austria",
+        "pick": "Austria",
+        "outcome": "away",
+        "stake": 5.97,
+        "decimalOdds": 2.58,
+        "edge": 0.271,
+        "modelProbability": 0.493,
+        "marketProxyProbability": 0.365,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-28T01:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 Austria，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
+      },
       {
         "matchId": "m060",
         "kickoffUtc": "2026-06-28T02:00:00.000Z",
@@ -6991,8 +7024,10 @@
         "lockedAtUtc": "2026-06-28T01:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Argentina，但平局還有 13%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
+        "status": "pending"
+      }
+    ],
+    "watchlist": [
       {
         "matchId": "m079",
         "kickoffUtc": "2026-07-01T01:00:00.000Z",
@@ -7067,6 +7102,25 @@
         "lockedAtUtc": "2026-07-01T23:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 USA，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m073",
+        "kickoffUtc": "2026-06-28T19:00:00.000Z",
+        "stage": "Round of 32",
+        "team1": "South Africa",
+        "team2": "Canada",
+        "pick": "Canada",
+        "outcome": "away",
+        "stake": 8,
+        "decimalOdds": 2.65,
+        "edge": 0.404,
+        "modelProbability": 0.53,
+        "marketProxyProbability": 0.355,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-06-28T18:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場中等站 Canada，但平局還有 26%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
