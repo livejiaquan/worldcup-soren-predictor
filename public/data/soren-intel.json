@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T08:49:23Z",
-  "status": "schedule-aware-scout-20260627T0855Z-md17-official-team-refresh",
-  "headline": "Soren 08:55 巡檢：補上 Matchday 17 官方隊伍/足協訊號；Colombia、Argentina、Algeria、Uzbekistan 只升級來源，不假裝拿到官方先發。",
+  "generatedAt": "2026-06-27T09:22:42Z",
+  "status": "schedule-aware-scout-20260627T0922Z-md17-same-day-refresh",
+  "headline": "Soren 09:22 巡檢：補上 Matchday 17 同日官方/可信媒體訊號；England 已鎖淘汰賽席位、Saka 可用，Colombia-Portugal 有 FIFA 官方預覽，Argentina-Jordan 補裁判與 Romero 傷情觀察。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -958,7 +958,9 @@
         "ESPN 賽前頁提供 predicted line-ups / referee / how-to-watch；正式 XI 未出前，Messi 或主力休息只能寫成 lineup-watch/rotation watch。",
         "Oddschecker/ESPN/BetUS 等公開 odds 頁只供 paper bankroll 參照；不把 sportsbook 文案寫成 Soren 投注指令。",
         "08:55Z 同日補核：AFA 官方確認 Argentina 已鎖定 Group J 第一，對 Jordan 前已知道 32 強對手將來自 Group H 第二；這強化輪換誘因，但不等於官方先發名單。",
-        "AFA 另有閉門訓練、Kansas 最後訓練與前往 Dallas 的官方行程更新；Soren 只把它寫成備戰節奏與輪換背景，不把媒體「Messi 替補」標題升級成確認。"
+        "AFA 另有閉門訓練、Kansas 最後訓練與前往 Dallas 的官方行程更新；Soren 只把它寫成備戰節奏與輪換背景，不把媒體「Messi 替補」標題升級成確認。",
+        "09:22Z 同日補核：AFA 官方公布 Argentina-Jordan 由羅馬尼亞裁判 István Kovács 執法；這是行政硬訊號，和輪換推測分開看。",
+        "Reuters 系列報導稱 Cristian Romero 已回到場上訓練但仍可能缺席 Jordan 戰；列為 injury-watch，正式可用性等 FIFA/Argentina 臨場名單。"
       ],
       "sources": [
         {
@@ -1088,9 +1090,25 @@
           "fetchedAt": "2026-06-27T08:49:23Z",
           "claimType": "confirmed/team-preparation",
           "confidence": "high"
+        },
+        {
+          "label": "AFA Argentina-Jordan referee appointment",
+          "url": "https://www.afa.com.ar/es/posts/el-rumano-istvan-kovacs-sera-el-arbitro-en-argentina-jordania",
+          "sourceName": "Asociación del Fútbol Argentino",
+          "fetchedAt": "2026-06-27T09:22:42Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Reuters-syndicated Romero recovery report",
+          "url": "https://news.webindia123.com/news/Articles/Sports/20260627/4467831.html",
+          "sourceName": "Reuters / WebIndia123",
+          "fetchedAt": "2026-06-27T09:22:42Z",
+          "claimType": "reported/injury-watch",
+          "confidence": "medium-high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m071",
@@ -1114,7 +1132,9 @@
         "Opta/The Analyst 賽前模型把 England 勝率列為明顯大熱（搜尋摘要顯示約 78.5%），但這只作外部市場/模型參照，不替代 Soren 自家判讀。",
         "27日早場補核：England Football/FA 官方 daily briefing 與 Tuchel 賽前記者會把 Reece James 缺席寫成硬訊號，同時 Declan Rice、Elliot Anderson 回到可用討論；這比單純媒體傷情摘要更可靠。",
         "FEPAFUT 官方訓練/行程頁顯示 Panama 已完成基地營最後訓練並轉往 New Jersey；這是備戰節奏訊號，不代表官方先發。",
-        "SI / Evening Standard 類頁面開始列出具體 England predicted XI；仍只標記 lineup-watch，正式 XI 以 FIFA/球隊臨場公告為準。"
+        "SI / Evening Standard 類頁面開始列出具體 England predicted XI；仍只標記 lineup-watch，正式 XI 以 FIFA/球隊臨場公告為準。",
+        "09:22Z 同日補核：England Football 官方確認 England 對 Panama 前已確定至少以最佳第三名路徑進入淘汰賽；這讓輪換/風險管理更合理，但小組名次仍要踢出來。",
+        "Sky Sports 賽前報導稱 Bukayo Saka 已無痛並準備好先發；Reece James 缺席訊號不變，Declan Rice / Elliot Anderson 屬可用性觀察，不升級成官方先發。"
       ],
       "sources": [
         {
@@ -1284,9 +1304,25 @@
           "fetchedAt": "2026-06-27T08:18:00Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "England Football knockout-stage confirmation",
+          "url": "https://www.englandfootball.com/articles/2026/Jun/27/england-place-in-world-cup-knockout-stage-confirmed-20262706",
+          "sourceName": "England Football / FA",
+          "fetchedAt": "2026-06-27T09:22:42Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Sky Sports England team news vs Panama",
+          "url": "https://www.skysports.com/football/news/12016/13558175/england-vs-panama-bukayo-saka-fit-and-ready-to-start-in-three-lions-final-group-game-plus-reece-james-elliot-anderson-declan-rice-injury-news",
+          "sourceName": "Sky Sports",
+          "fetchedAt": "2026-06-27T09:22:42Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m072",
@@ -1310,7 +1346,9 @@
         "FOX/ESPN 公開 odds/live 頁可作 paper bankroll 的市場參照；不寫成投注建議，也不引用未親核的精確盤口。",
         "27日早場補核：GFA 官方稱 Ghana 已抵達 Philadelphia，並把對 Croatia 定位為 win-or-bust / Round-of-32 qualification fight；這不是普通末輪，是直接把命運拿上桌。",
         "HNS 官方賽前動態提供 Croatia 內部語氣：Dalić 強調不只誰先發，誰收尾同樣重要；Moro/Gvardiol 媒體日則顯示 Panama 勝利後士氣回升。",
-        "SI/ESPN 類 predicted-XI 開始給出具體 Ghana/Croatia 名單，Covers 則把 Ati-Zigi 標為 questionable；全部仍是 reported/lineup-watch，不升級成確認先發。"
+        "SI/ESPN 類 predicted-XI 開始給出具體 Ghana/Croatia 名單，Covers 則把 Ati-Zigi 標為 questionable；全部仍是 reported/lineup-watch，不升級成確認先發。",
+        "09:22Z 同日補核：Yahoo / The Football Faithful 的 Ghana XI watch 把 Ghana 描述為拿到和局即可鎖定 32 強；Soren 把它當出線情境與 expected-XI 觀察，不當官方隊報。",
+        "Opta Analyst 賽前頁提供 Croatia-Ghana 的中立預測/晉級脈絡；可用來校正「非友誼賽、是真刀局」的敘事，但不引用未即時核對的百分比。"
       ],
       "sources": [
         {
@@ -1472,9 +1510,17 @@
           "fetchedAt": "2026-06-27T08:18:00Z",
           "claimType": "reported/injury-weather-odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "Yahoo/The Football Faithful Ghana predicted XI",
+          "url": "https://sports.yahoo.com/articles/ghana-xi-vs-croatia-predicted-073000353.html",
+          "sourceName": "Yahoo Sports / The Football Faithful",
+          "fetchedAt": "2026-06-27T09:22:42Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m065",
@@ -1497,7 +1543,9 @@
         "27日早場補核：Sports Mole injury/suspension roundup 稱 Colombia 無明確缺席但 Luis Suárez 肩傷存疑，Portugal 無明確缺席但 Tomás Araújo fitness 存疑；仍屬媒體 team-news，非官方名單。",
         "FOX Sports 與 OddsTrader 提供 Colombia-Portugal 公開市場入口；Portugal 略熱只作 paper bankroll 參照，不代表 Soren 建議下注。",
         "Miami Stadium 開放式場館與六月濕熱是節奏背景；這不是精準逐小時天氣預報，但足以提醒高強度逼搶可能付出體能稅。",
-        "08:55Z 同日補核：Colombian FA 官方稱 Colombia 在已確定晉級後，針對 Portugal 進行恢復與負荷調整訓練；這支持「可能管理節奏但不是默契球」的讀法，沒有揭露官方先發。"
+        "08:55Z 同日補核：Colombian FA 官方稱 Colombia 在已確定晉級後，針對 Portugal 進行恢復與負荷調整訓練；這支持「可能管理節奏但不是默契球」的讀法，沒有揭露官方先發。",
+        "09:22Z 同日補核：FIFA 官方預覽已把 Colombia-Portugal 定位為 Group K 收官焦點；可作官方賽前脈絡，但正式先發仍等 match centre。",
+        "NOAA/NWS Miami-South Florida 同日熱風險頁可作 Miami Gardens 天氣/體能背景；Soren 只把它寫成濕熱與節奏稅，不硬寫精準球場內體感。"
       ],
       "sources": [
         {
@@ -1659,9 +1707,25 @@
           "fetchedAt": "2026-06-27T08:49:23Z",
           "claimType": "confirmed/team-preparation",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA Colombia-Portugal official preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/colombia-portugal-preview-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-27T09:22:42Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "NWS Miami-South Florida weather context",
+          "url": "https://www.weather.gov/mfl/",
+          "sourceName": "NOAA / National Weather Service",
+          "fetchedAt": "2026-06-27T09:22:42Z",
+          "claimType": "context/weather",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m066",
@@ -1862,7 +1926,9 @@
         "ESPN 與 RotoWire 賽前頁提供 predicted lineups / referee / tactical watch，適合放在細節層，不應在首頁短評中裝成已確認先發。",
         "Oddschecker/ESPN odds 頁只作 paper simulation 市場參照；目前不引用未親核的精確盤口。",
         "08:55Z 同日補核：FAF 官方確認 Algeria-Austria 由烏茲別克裁判組執法，並列出 Kansas City 開球時間；這是賽事行政硬訊號，不是戰術或先發。",
-        "FAF 訓練動態顯示 Les Verts 回到 Lawrence/Kansas City 區域後持續備戰 Austria；仍未見可公開確認的官方先發或新增傷停。"
+        "FAF 訓練動態顯示 Les Verts 回到 Lawrence/Kansas City 區域後持續備戰 Austria；仍未見可公開確認的官方先發或新增傷停。",
+        "09:22Z 同日補核：FAF 國家隊頁與賽前訓練文持續把 Algeria-Austria 指向出線戰備戰；官方只給訓練/行政脈絡，沒有公開確認 XI。",
+        "Sports Mole 同日 injury/suspension/predicted XI 彙整可作 lineup-watch；正式陣容未出前，Soren 不把媒體 predicted XI 寫成事實。"
       ],
       "sources": [
         {
@@ -1976,6 +2042,22 @@
           "fetchedAt": "2026-06-27T08:49:23Z",
           "claimType": "confirmed/team-preparation",
           "confidence": "high"
+        },
+        {
+          "label": "FAF national-team feed before Austria",
+          "url": "https://www.faf.dz/category/equipe-nationale-a/",
+          "sourceName": "Fédération Algérienne de Football",
+          "fetchedAt": "2026-06-27T09:22:42Z",
+          "claimType": "confirmed/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Mole Algeria-Austria team news",
+          "url": "https://www.sportsmole.co.uk/football/algeria/world-cup-2026/team-news/algeria-vs-austria-injury-suspension-list-predicted-xis_600063.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-27T09:22:42Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
