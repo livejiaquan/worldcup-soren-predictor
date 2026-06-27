@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-27T13:06:51.403Z",
+  "generatedAt": "2026-06-27T13:13:41.587Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-    "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
+    "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.groups.json",
     "note": "Public openfootball data; predictions are deterministic research/entertainment estimates, not betting advice."
   },
   "summary": {
