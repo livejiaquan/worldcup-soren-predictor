@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-27T12:32:24Z",
-  "status": "schedule-aware-scout-20260627T1230Z-r32-bracket-preview-refresh",
-  "headline": "Soren 12:30 巡檢：補強 Brazil-Japan、Netherlands-Morocco 與多張 32 強 bracket-watch；Japan 逆轉巴西記憶、Morocco 抵達 Monterrey、France/Germany/Ivory Coast 格子都加上保守來源標籤。",
+  "generatedAt": "2026-06-28T23:51:55Z",
+  "status": "schedule-aware-scout-20260628T2351Z-r32-late-official-refresh",
+  "headline": "Soren 23:51 巡檢：M74/M77/M78 對陣從 bracket-watch 推進到公開確認脈絡；補上 Germany-Paraguay、Brazil-Japan、France-Sweden、Ivory Coast-Norway 的官方/傷停/市場線索。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2361,9 +2361,9 @@
     {
       "matchId": "m076",
       "match": "Brazil vs Japan",
-      "sourceType": "official fixture + official context + tactical/odds watch",
+      "sourceType": "official fixture + official team logistics + injury/tactical/odds watch",
       "title": "Brazil-Japan 不是五星隊的散步局；日本剛有逆轉巴西記憶，Houston 這餐有刺。",
-      "sorenTake": "FIFA 已把 M76 落到 Brazil vs Japan；官方賽前脈絡還提醒日本近期曾從兩球落後翻掉巴西。Brazil 仍是市場較熱的一邊，但日本最擅長把豪門拖進傳控細節和反擊紀律，這張牌不能只靠隊徽下注。",
+      "sorenTake": "FIFA/CBF/JFA 都把 Brazil-Japan 的官方賽事脈絡收齊：巴西已到 Houston，日本官方賽事頁也可核對。Brazil 仍是較熱一方，但 Reuters 把這場寫成 2025 日本逆轉巴西的重賽脈絡，且 Japan 已公開準備點球劇本；若 Itakura 傷情讓後防少一塊，才是巴西真正可以下刀的位置。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2371,7 +2371,14 @@
         "FIFA match centre / hospitality 頁面確認 M76 為 Brazil vs Japan，6/29 17:00Z 在 Houston Stadium 開球。",
         "FIFA 官方專文回顧 Japan 首次擊敗 Brazil：日本曾從兩球落後反勝，並把該場勢頭視為通往世界盃的心理燃料；這是 H2H/心理脈絡，不等於淘汰賽戰術答案。",
         "Goal.com 與 The Stats Zone 已出 Brazil-Japan 淘汰賽 preview/team-news 類頁；目前只作戰術與 expected-XI watch，正式先發仍等 FIFA/球隊臨場名單。",
-        "Squawka / OddsChecker / SportsBettingDime 等公開市場頁顯示 Brazil 較熱；本站僅作 paper simulation odds-reference，不構成投注建議。"
+        "Squawka / OddsChecker / SportsBettingDime 等公開市場頁顯示 Brazil 較熱；本站僅作 paper simulation odds-reference，不構成投注建議。",
+        "CBF 官方消息稱巴西隊已抵達 Houston，準備 6/29 對 Japan 的 32 強賽；這是球隊 logistics 確認，不等於先發名單。",
+        "JFA 官方 World Cup 賽事頁列出 Brazil vs Japan 與日本隊名單入口，可作官方賽程/名單基準。",
+        "FIFA 早前官方 team-news 指出 Japan 隊長 Wataru Endo 因傷退出世界盃，Mitoma 也未入選；這是已知結構缺口，不是臨場新傷。",
+        "Reuters 賽前脈絡把本場寫成 Brazil 對 Japan 的 rematch，提到日本 2025 年曾從 0-2 逆轉巴西；這支撐「Brazil 優勢但不等於散步」的 upset path。",
+        "Reuters / Straits Times 報導 Moriyasu 可能親自指定點球手，顯示 Japan 已把拖入長局與點球的劇本納入準備。",
+        "Ko Itakura 對 Sweden 傷退後，RotoWire/Chosun 等公開報導稱他對 Brazil 出戰存疑或不太可能；先標 injury watch，等官方 XI 才能定案。",
+        "Opta / Squawka / BetMonitor 類公開市場與模型參照仍給 Brazil 明顯優勢，但價格不是免踢證明，只作 paper simulation 校準。"
       ],
       "sources": [
         {
@@ -2437,23 +2444,93 @@
           "fetchedAt": "2026-06-27T12:32:24Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA Brazil-Japan preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-japan-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "CBF Brazil arrives in Houston",
+          "url": "https://www.cbf.com.br/selecao-brasileira/noticias/selecao-masculina/a/selecao-chega-em-houston-para-duelo-dos-16-avos-da-copa",
+          "sourceName": "CBF",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "JFA Brazil-Japan match hub",
+          "url": "https://www.jfa.jp/samuraiblue/worldcup_2026/canadamexicousa2026/",
+          "sourceName": "Japan Football Association",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Endo ruled out for Japan",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/japan-captain-endo-ruled-out-injury",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed/injury",
+          "confidence": "high"
+        },
+        {
+          "label": "Reuters Brazil-Japan rematch preview",
+          "url": "https://www.reuters.com/sports/soccer/brazil-get-japan-rematch-ancelottis-world-cup-crash-course-faces-knockout-test-2026-06-27/",
+          "sourceName": "Reuters",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "reported/tactical",
+          "confidence": "high"
+        },
+        {
+          "label": "Reuters/Straits Times Japan penalty prep",
+          "url": "https://www.straitstimes.com/sport/football/japan-coach-vows-to-pick-penalty-shootout-takers-against-brazil",
+          "sourceName": "Reuters / The Straits Times",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "reported/coach-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "RotoWire Ko Itakura injury watch",
+          "url": "https://www.rotowire.com/soccer/headlines/ko-itakura-injury-unlikely-to-play-vs-brazil-521473",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "reported/injury-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Opta Brazil-Japan prediction reference",
+          "url": "https://theanalyst.com/articles/brazil-vs-japan-prediction-world-cup-2026-match-preview",
+          "sourceName": "Opta Analyst",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "odds-reference/context",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
     },
     {
       "matchId": "m074",
-      "match": "Germany vs 3A/B/C/D/F",
-      "sourceType": "confirmed Germany qualification + bracket-watch + market shell",
-      "title": "Germany 等的可能不只是代號；Paraguay 線索升溫，但官方格子還沒全部蓋章。",
-      "sorenTake": "FIFA 已確認 Germany 進 32 強，官方 match centre 仍保留 3A/B/C/D/F placeholder；FOX/Kalshi 類公開頁已出 Germany vs Paraguay 殼。Soren 先把 Paraguay 當 bracket-watch，不把 URL slug 當官方聖旨。",
+      "match": "Germany vs Paraguay",
+      "sourceType": "official fixture confirmed + official team context + injury/suspension/odds watch",
+      "title": "Germany-Paraguay 終於從代號變成真名；德國是大熱，但後防補丁和巴拉圭低位局會考耐心。",
+      "sorenTake": "DFB 已確認 Germany 32 強對手是 Paraguay，早前 bracket-watch 可以降落了。德國市場面很熱，但 Schlotterbeck 長傷讓中衛組合不是滿血，Brown 狀態仍需看名單；Paraguay 端 Diego Gómez 停賽、Alderete 傷疑，Alfaro 的低位硬殼會把這場變成耐心測驗。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
         "Goal.com 第三名晉級指南顯示本屆 48 隊賽制讓第三名配對仍需等待所有小組結果；此處保留 bracket-watch，不假裝對手已定。",
         "FIFA 官方賽報確認 Germany 擊敗 Ivory Coast 後晉級 Round of 32。",
         "FIFA match centre 對 M74 仍以 Germany vs TBD / 第三名路徑呈現，官方層級尚未完全把對手寫死。",
-        "FOX Sports 已出 Germany vs Paraguay 比賽頁，Kalshi 市場也以 Germany vs Paraguay 作參照；這提高 Paraguay 實際化機率，但本站仍標 bracket-watch，不寫成官方確認。"
+        "FOX Sports 已出 Germany vs Paraguay 比賽頁，Kalshi 市場也以 Germany vs Paraguay 作參照；這提高 Paraguay 實際化機率，但本站仍標 bracket-watch，不寫成官方確認。",
+        "DFB 官方確認 Paraguay 以最佳第三名之一晉級，將在 32 強對上 Julian Nagelsmann 的 Germany。",
+        "DFB 賽前訪談中 Rudi Völler 談到 Monday night Boston 對 Paraguay，以及 Kimmich、Nathaniel Brown 等球員狀態脈絡。",
+        "多家賽前頁一致把 Nico Schlotterbeck 列為因韌帶傷勢長期缺陣；Antonio Rüdiger 可能補進防線，但這仍等官方先發。",
+        "Paraguay 的 Diego Gómez 被多家預覽列為停賽，Omar Alderete 則是 knee/fitness doubt；Soren 先標 availability watch，不寫成官方 XI。",
+        "RotoWire/Covers/ESPN 類預覽指向 Paraguay 可能用 Gustavo Alfaro 式緊湊低位與 Enciso/Almirón 反擊出口，德國若早段急躁會被拖進低事件局。",
+        "DraftKings Network / Covers 市場參照顯示 Germany 明顯大熱；本站只作 paper simulation odds-reference，不提供投注建議。"
       ],
       "sources": [
         {
@@ -2511,9 +2588,57 @@
           "fetchedAt": "2026-06-27T12:32:24Z",
           "claimType": "odds-reference/bracket-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "DFB Germany to face Paraguay",
+          "url": "https://www.dfb.de/news/germany-to-face-paraguay-in-round-of-32",
+          "sourceName": "DFB",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "DFB Völler pre-Paraguay comments",
+          "url": "https://www.dfb.de/news/voeller-we-want-to-deliver-a-really-strong-showing",
+          "sourceName": "DFB",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed/coach-reaction",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Germany-Paraguay preview",
+          "url": "https://www.espn.com/soccer/story/_/id/49197785/germany-vs-paraguay-fifa-world-cup-2026-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "RotoWire Germany-Paraguay tactical preview",
+          "url": "https://www.rotowire.com/soccer/article/germany-vs-paraguay-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-round-of-32-120070",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "reported/tactical",
+          "confidence": "medium"
+        },
+        {
+          "label": "Covers Germany-Paraguay odds/injury reference",
+          "url": "https://www.covers.com/world-cup/germany-vs-paraguay-prediction-picks-odds-monday-6-29-2026",
+          "sourceName": "Covers",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "reported/odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "DraftKings Network Germany-Paraguay opening odds",
+          "url": "https://dknetwork.draftkings.com/2026/06/27/opening-odds-for-germany-vs-paraguay-in-the-2026-fifa-world-cup-round-of-32/",
+          "sourceName": "DraftKings Network",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m075",
@@ -2529,7 +2654,9 @@
         "FRMF 官方消息稱 Morocco 代表團 6/26 晚抵達 Monterrey，備戰對 Netherlands 的 16 強賽。",
         "OnsOranje/KNVB 賽後引述 Koeman：「We are not where we need to be」，荷蘭雖小組第一但教練公開提醒狀態仍需提高。",
         "BBC / Guardian / Al Jazeera 均以 Tunisia 1-3 Netherlands 後 Netherlands 小組第一、將對 Morocco 作為資格脈絡；這是結果背景，不是新先發消息。",
-        "OddsChecker 等公開盤頁已開 Netherlands-Morocco 市場；僅作紙上市場溫度，不是真金投注建議。"
+        "OddsChecker 等公開盤頁已開 Netherlands-Morocco 市場；僅作紙上市場溫度，不是真金投注建議。",
+        "DraftKings Network / OddsChecker 市場參照把 Netherlands 列為 90 分鐘小熱，Morocco 不是長賠陪襯；這場更像細節局，不是橙軍巡遊。",
+        "FIFA Tunisia-Netherlands 賽報確認 Netherlands 3-1 擊敗 Tunisia 並以 Group F 第一進入 Morocco 對戰；此為官方 form context。"
       ],
       "sources": [
         {
@@ -2595,16 +2722,32 @@
           "fetchedAt": "2026-06-27T12:32:24Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA Tunisia-Netherlands match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/tunisia-netherlands-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "DraftKings Network Netherlands-Morocco opening odds",
+          "url": "https://dknetwork.draftkings.com/2026/06/26/opening-odds-for-netherlands-vs-morocco-in-the-fifa-2026-world-cup/",
+          "sourceName": "DraftKings Network",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
     },
     {
       "matchId": "m078",
-      "match": "Ivory Coast vs 2I / Norway watch",
-      "sourceType": "confirmed Ivory Coast qualification + bracket-watch + odds reference",
-      "title": "Ivory Coast 已拿到淘汰賽門票；2I 很像 Norway，但 Soren 還是先把膠帶貼在「bracket watch」。",
-      "sorenTake": "Al Jazeera 賽報稱 Ivory Coast 首次進入世界盃淘汰賽，並點出他們將在 Texas 對 Group I 第二。ESPN/FOX 公開頁已出 Ivory Coast vs Norway 殼，但在官方資料完全改名前，本站只把 Norway 當高機率對手線索。",
+      "match": "Ivory Coast vs Norway",
+      "sourceType": "official/credible bracket actualization + team-rest context + odds watch",
+      "title": "Ivory Coast-Norway 不再只是 2I 影子；Haaland/Ødegaard 休過電，非洲象第一次淘汰賽就要撞北歐重卡。",
+      "sorenTake": "公開賽程與 ESPN/FOX 頁面已把 M78 推向 Ivory Coast vs Norway；FIFA 的 Solbakken 訪談也明確談到對 Côte d’Ivoire 的 32 強戰。Norway 小組末輪大幅輪換、Haaland/Ødegaard 休息後理論上該回來，這讓 Ivory Coast 的歷史首場淘汰賽更像壓力測試。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -2613,7 +2756,11 @@
         "第三方賽事頁已開始把本場寫作 Ivory Coast vs Norway；來源等級低於官方/主流媒體，本站只作低到中等信心的 bracket-projection 訊號。",
         "Al Jazeera 報導 Nicolas Pepe 梅開二度送 Ivory Coast 首次晉級世界盃淘汰賽，且下一場將在 Texas 對 Group I 第二。",
         "FIFA matchday 16 roundup 確認 France 擊敗 Norway 並以 Group I 第一晉級；搭配小組格局，Norway 落到 2I 的推論升溫。",
-        "ESPN odds 與 FOX 比賽頁已出 Ivory Coast vs Norway 參照；這是 market/reference + bracket-watch，不是官方先發或正式賽果。"
+        "ESPN odds 與 FOX 比賽頁已出 Ivory Coast vs Norway 參照；這是 market/reference + bracket-watch，不是官方先發或正式賽果。",
+        "FIFA 官方 Solbakken 訪談已寫到 Norway 接下來對 Côte d’Ivoire 的 Round of 32，對手脈絡比單純 bracket projection 更硬。",
+        "BBC/Metro/Fantasy Football Scout 等賽後脈絡指出 Norway 對 France 大幅輪換，Haaland、Ødegaard 休兵或未出場；這較像體能管理，不等於對 Ivory Coast 缺陣。",
+        "ESPN/Goal/Stats Zone 已出 Ivory Coast-Norway 賽前頁與 predicted-lineup 類資訊；先作 lineup watch，正式名單仍等 FIFA/球隊。",
+        "Betfair/Polymarket/Tips.gg 類市場參照顯示 Norway 較熱；本站只作 paper simulation odds-reference，不構成投注建議。"
       ],
       "sources": [
         {
@@ -2687,16 +2834,48 @@
           "fetchedAt": "2026-06-27T12:32:24Z",
           "claimType": "odds-reference/bracket-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA Solbakken Norway-Ivory Coast context",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/stale-solbakken-norway-france",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Norway-France team rotation context",
+          "url": "https://www.bbc.com/sport/football/articles/cp3xd37np9po",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "reported/team-news",
+          "confidence": "medium"
+        },
+        {
+          "label": "ESPN Ivory Coast-Norway preview",
+          "url": "https://www.espn.com/soccer/story/_/id/49205092/fifa-world-cup-2026-ivory-coast-vs-norway-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Betfair Ivory Coast-Norway market reference",
+          "url": "https://www.betfair.com/exchange/plus/en/football/fifa-world-cup/ivory-coast-v-norway-betting-35764745",
+          "sourceName": "Betfair",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
     },
     {
       "matchId": "m077",
-      "match": "1I / France vs 3C/D/F/G/H watch",
-      "sourceType": "confirmed Group I winner + bracket-placeholder watch",
-      "title": "France 已拿 Group I 第一；下一個對手還是第三名迷宮，別急著把 Sweden 寫上門牌。",
-      "sorenTake": "FIFA matchday roundup 已確認 France 擊敗 Norway 拿下 Group I 第一；M77 的另一邊仍是 3C/D/F/G/H 這種第三名配對迷宮。FOX 頁面出現 France vs Sweden 殼，但 Soren 先當 bracket-watch，不把媒體 slug 包裝成官方確認。",
+      "match": "France vs Sweden",
+      "sourceType": "official fixture actualization + official injury/form + odds watch",
+      "title": "France-Sweden 已落地；法國火力正冒煙，瑞典少了 Hien，後防不是少一顆螺絲而是少一根樑。",
+      "sorenTake": "FFF 與瑞典足協都已把 France vs Sweden 32 強對戰寫明。France 剛用 4-1 Norway 與 Dembélé hat-trick 把進攻狀態拉高；Sweden 則有官方確認 Isak Hien 因 Japan 戰傷勢退出世界盃。這場法國是重熱門，但 Soren 仍等正式 XI，不把 ESPN/FOX 的預測頁當首發聖旨。",
       "signals": [
         "openfootball 賽程目前列 m077 為 1I vs 3C/D/F/G/H，2026-06-30 21:00Z 於 New York/New Jersey 開球；本站不把未定第三名寫成確認對手。",
         "站內 Group I 完賽積分顯示 France 第一，因此 1I 指向 France；但對手端仍取決於最佳第三名組合與剩餘小組結果。",
@@ -2705,7 +2884,12 @@
         "公開分析重點先放在「France 對未知第三名」的準備風險：熱門隊若把對手當背景板，淘汰賽通常會拿出帳單。",
         "FIFA matchday 16 roundup 確認 France beat Norway to finish as Group I winners，M77 的 1I 因此可寫 France。",
         "FOX Sports schedule / match shell 對 M77 呈現 France vs 3C/3D/3F/3G/3H 或 France vs Sweden；在 FIFA/官方 bracket 完全更新前，Sweden 只列 bracket-watch。",
-        "本卡不加入任何確認先發或傷停判斷；距離 6/30 開球仍應等待官方 team news。"
+        "本卡不加入任何確認先發或傷停判斷；距離 6/30 開球仍應等待官方 team news。",
+        "Svensk Fotboll 官方確認 Sweden 將在 New Jersey 對 France，Graham Potter 稱這是 fantastic match；對陣已可從 bracket-watch 轉為官方/足協確認脈絡。",
+        "Svensk Fotboll 官方宣布中衛 Isak Hien 因對 Japan 受傷，無法再參與本屆世界盃；這是高信心傷停。",
+        "FFF 官方文章確認 Sweden 是 Les Bleus 32 強對手；另一篇 FFF 賽報稱 France 4-1 Norway，Ousmane Dembélé hat-trick。",
+        "FFF 曾公告 Deschamps 因喪親缺席 Norway 戰；本巡檢不延伸推定他會缺席 Sweden，除非官方再更新。",
+        "FOX/ESPN/OddsChecker 公開盤頁顯示 France 為重熱門；本站僅作 paper simulation 市場溫度，不提供投注建議。"
       ],
       "sources": [
         {
@@ -2771,9 +2955,65 @@
           "fetchedAt": "2026-06-27T12:32:24Z",
           "claimType": "context/bracket-reference",
           "confidence": "high"
+        },
+        {
+          "label": "Svensk Fotboll France awaits Sweden",
+          "url": "https://www.svenskfotboll.se/nyheter/landslag/2026/06/frankrike-vantar-i-sextondelen/",
+          "sourceName": "Svensk Fotboll",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "Svensk Fotboll Hien leaves World Cup",
+          "url": "https://www.svenskfotboll.se/nyheter/landslag/2026/06/hien-lamnar-vm/",
+          "sourceName": "Svensk Fotboll",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed/injury",
+          "confidence": "high"
+        },
+        {
+          "label": "FFF Sweden on France route",
+          "url": "https://www.fff.fr/article/17033-la-suede-sur-la-route-des-bleus.html",
+          "sourceName": "FFF",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed",
+          "confidence": "high"
+        },
+        {
+          "label": "FFF France 4-1 Norway report",
+          "url": "https://www.fff.fr/article/17028-dembele-fait-fondre-la-glace-4-1-.html",
+          "sourceName": "FFF",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "FFF Deschamps bereavement absence vs Norway",
+          "url": "https://www.fff.fr/article/17015-didier-deschamps-endeuille.html",
+          "sourceName": "FFF",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN France-Sweden preview",
+          "url": "https://www.espn.com/soccer/story/_/id/49204105/france-vs-sweden-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "FOX France-Sweden odds reference",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-france-vs-3c3d3f3g3h-jun-30-2026-game-boxscore-607907?tab=odds",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-28T23:51:55Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m079",
