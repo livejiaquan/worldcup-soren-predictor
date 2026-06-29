@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T12:30:39.208Z",
+  "generatedAt": "2026-06-29T12:42:25.908Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.groups.json",
@@ -2284,7 +2284,7 @@
       "date": "2026-07-04",
       "time": "12:00 UTC-5",
       "kickoffUtc": "2026-07-04T17:00:00.000Z",
-      "team1": "W73",
+      "team1": "Canada",
       "team2": "W75",
       "venue": "Houston",
       "status": "scheduled",
@@ -6127,44 +6127,44 @@
       ]
     },
     "m090": {
-      "pick": "W73",
-      "confidence": 0.3808352070799772,
-      "tag": "膠著到煩",
+      "pick": "Canada",
+      "confidence": 0.6652496820033964,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.37558853219027716,
-        "draw": 0.27797112945111263,
-        "away": 0.3464403383586102
+        "home": 0.5891922197770251,
+        "draw": 0.24415701725912414,
+        "away": 0.16665076296385076
       },
       "expectedGoals": [
-        1.22,
-        1.16
+        1.64,
+        0.74
       ],
-      "score": "1-1",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 W73，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場中等站 Canada，但平局還有 24%；別急著開香檳，足球最會打臉。",
+        "story": "Canada 底牌比較硬；W75 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "0.0",
-            "note": "誰也別裝大哥"
+            "value": "9.6",
+            "note": "Canada 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.22 : 1.16",
-            "note": "最像 1-1"
+            "value": "1.64 : 0.74",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "35%",
+            "value": "17%",
             "note": "W75 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：W73 67.0；W75 67.0",
-        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：Canada 76.6；W75 67.0",
+        "預期進球 1.64 : 0.74，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 9.6 分，我暫時站 Canada"
       ]
     },
     "m089": {
