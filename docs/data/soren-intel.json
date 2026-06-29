@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T11:51:51Z",
-  "status": "淘汰賽賽日巡檢更新：M76 補上 WhoScored/Polymarket 臨場溫度，M74 加入德國傷停與 Paraguay 防守風險，M75 補 KNVB 近況與 Morocco lineup-watch；全部保留預測陣容與紙上市場邊界。",
-  "headline": "Soren 賽日雷達：Brazil-Japan 先開火；Germany-Paraguay、Netherlands-Morocco 都補到新的公開風險訊號，但沒有把任何預測 XI 冒充官方先發。",
+  "generatedAt": "2026-06-29T12:41:30Z",
+  "status": "賽日微刷新：M75 補 Morocco 教練賽前調整語境，M77 加 WhoScored France-Sweden expected-XI/傷停入口，M79 補 Opta 公開機率與戰術預覽，M80 補 BBC 的 DR Congo 對手 scouting；全部維持預測陣容、模型機率與紙上市場邊界。",
+  "headline": "Soren 賽日雷達：Brazil-Japan 即將開火；Netherlands-Morocco、France-Sweden、Mexico-Ecuador、England-DR Congo 補到新公開訊號，但沒有把 preview/概率/expected XI 冒充官方先發。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3075,8 +3075,8 @@
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
       "sourceType": "official federation form + FIFA/BBC route + reported lineup/odds watch",
-      "title": "Netherlands-Morocco 補上 KNVB 近況與賽日追蹤：Oranje 小組第一是真本事，但摩洛哥的回歸主力與淘汰賽韌性不是背景板。",
-      "sorenTake": "Netherlands 的小組第一有官方戰報背書，開局爆擊 Tunisia 不是幻覺；Morocco 這邊，SI 類 preview 指向 Mazraoui、Ounahi 等人可能回到更完整配置。Soren 仍偏橘軍小優，但如果荷蘭把這場踢成控球展示，摩洛哥最愛的就是把展示會拆成街鬥。",
+      "title": "Netherlands-Morocco 再補 Ouahbi 賽前語境：摩洛哥教練說淘汰賽要 different solutions；橙軍小優，但別把 Atlas Lions 當小組賽剪貼簿。",
+      "sorenTake": "Netherlands 的小組第一與 KNVB 狀態脈絡仍在；新增 Oman Observer/Reuters 引述 Morocco 教練 Nabil Ouahbi，明講不敗小組賽進淘汰賽不夠，對 Netherlands 要換解法。這不是確認先發，也不是摩洛哥突然變熱門；它只是提醒橙軍：你面前不是只會複製上一場劇本的背景板。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -3114,7 +3114,8 @@
         "OnsOranje/KNVB 官方戰報確認 Netherlands 以小組第一進入淘汰賽，對 Tunisia 快速 2-0 開局、Brobbey 與 Van Hecke 進球脈絡可作近期狀態參考。",
         "Bundesliga World Cup match centre 已開 Netherlands-Morocco live/line-ups 入口；正式 XI 未由 FIFA/球隊落地前只當追蹤入口。",
         "Sports Illustrated Netherlands-Morocco preview 指出 Mazraoui、Ounahi 與 Bouaddi 等 Morocco 配置可能回歸/調整；屬 expected-XI 訊號，不是官方先發。",
-        "USA Today 刊出 Netherlands-Morocco prediction/odds 頁，補充公開盤與專家預測語境；只作紙上市場溫度，不構成下注建議。"
+        "USA Today 刊出 Netherlands-Morocco prediction/odds 頁，補充公開盤與專家預測語境；只作紙上市場溫度，不構成下注建議。",
+        "Oman Observer/Reuters 6/29 引述 Morocco 教練 Nabil Ouahbi：小組不敗不足以直接帶進淘汰賽，對 Netherlands 需要 different solutions；這是 coach/tactical context，不是 confirmed lineup。"
       ],
       "sources": [
         {
@@ -3388,6 +3389,14 @@
           "fetchedAt": "2026-06-29T11:51:51Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "Oman Observer / Reuters Morocco coach quote",
+          "url": "https://www.omanobserver.om/article/1192001/sports/morocco-need-different-solutions-against-netherlands",
+          "sourceName": "Oman Observer / Reuters",
+          "fetchedAt": "2026-06-29T12:41:30Z",
+          "claimType": "reported/coach-player-quote",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -3567,8 +3576,8 @@
       "matchId": "m077",
       "match": "France vs Sweden",
       "sourceType": "official fixture actualization + official injury/form + training availability watch + odds watch",
-      "title": "France-Sweden 又冒一個小火點：Hien 已確定報銷，Kanté/Thuram 訓練不完整；法國大熱但別把板凳當保險箱。",
-      "sorenTake": "Sweden 的 Isak Hien 傷退仍是官方高信心訊號；新增法媒訓練線索顯示 Kanté 分開訓練、Thuram 小腿不適且可能缺席。這還不是官方 XI，也不是 France 崩盤預言；只是提醒：淘汰賽熱門隊的麻煩，通常先從「應該沒事」四個字開始。Gyökeres 也公開喊話瑞典必須相信自己，Soren 把它當 upset-path 心理訊號，不當比分保證。",
+      "title": "France-Sweden 再補 WhoScored 隊訊入口：Saliba 回歸預期與 probable XI 都只能算 lineup-watch；法國大熱，但瑞典中衛缺口不是唯一變數。",
+      "sorenTake": "Hien 傷退仍是 Sweden 端最硬的已知缺口；新增 WhoScored France-Sweden 頁可追 team news、injuries/suspensions、probable line-ups，頁面文字提到 Saliba 有望從背傷回歸。Soren 只把它列為 reported lineup-watch：法國可能更完整，但 official XI 沒出前，誰把「預計」講成「確定」誰就是在賽前自爆。",
       "signals": [
         "openfootball 賽程目前列 m077 為 1I vs 3C/D/F/G/H，2026-06-30 21:00Z 於 New York/New Jersey 開球；本站不把未定第三名寫成確認對手。",
         "站內 Group I 完賽積分顯示 France 第一，因此 1I 指向 France；但對手端仍取決於最佳第三名組合與剩餘小組結果。",
@@ -3585,7 +3594,8 @@
         "FOX/ESPN/OddsChecker 公開盤頁顯示 France 為重熱門；本站僅作 paper simulation 市場溫度，不提供投注建議。",
         "Foot-National 6/28 報導 Kanté 分開訓練、Thuram 因狀況未完成全隊訓練；後續篇幅稱 Thuram 對 Sweden 可能缺席，但本站只標為 reported availability watch，等待 FFF/正式名單。",
         "FootMercato 6/29 摘錄 Gyökeres 賽前語氣：瑞典承認是 outsider，但強調要相信自己、冷門不是童話書才有；這是心理/敘事訊號，不是可量化傷停。",
-        "Svensk Fotboll 官方頁已可父層核對：Isak Hien 因對 Japan 受傷離開本屆世界盃，France-Sweden 卡上的中衛缺口維持 very-high confidence。"
+        "Svensk Fotboll 官方頁已可父層核對：Isak Hien 因對 Japan 受傷離開本屆世界盃，France-Sweden 卡上的中衛缺口維持 very-high confidence。",
+        "WhoScored France-Sweden statistical preview 標示 team news、injuries/suspensions、probable line-ups，並指向 Saliba 從背傷回歸的預期；此為 reported expected-XI/availability watch，正式先發仍等 FIFA/球隊。"
       ],
       "sources": [
         {
@@ -3731,6 +3741,14 @@
           "fetchedAt": "2026-06-29T09:17:12Z",
           "claimType": "reported/coach-player-quote",
           "confidence": "medium"
+        },
+        {
+          "label": "WhoScored France-Sweden statistical preview",
+          "url": "https://www.whoscored.com/matches/1990969/preview/international-fifa-world-cup-2026-france-sweden",
+          "sourceName": "WhoScored",
+          "fetchedAt": "2026-06-29T12:41:30Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -3739,8 +3757,8 @@
       "matchId": "m079",
       "match": "Mexico vs Ecuador",
       "sourceType": "official-adjacent fixture actualization + media confirmation + reported lineup-watch + market-reference watch",
-      "title": "Mexico-Ecuador 再補隊訊層：本土媒體與 fantasy 頁都端出 probable XI；Azteca 很吵，但 Ecuador 不是來觀光。",
-      "sorenTake": "M79 對陣已由 FIFA hospitality/FOX/USA Today 寫實；新增 El Siglo de Torreón 與 Comuniate 的 probable-lineup/傷停頁，只能當隊訊觀察，不是官方首發。Mexico 主場氣壓會很足，Ecuador 的反擊也不會因為觀眾大聲就自動斷線。Soren 先記下 lineup-watch，等正式 XI 再動刀。",
+      "title": "Mexico-Ecuador 補 Opta 公開模型：主場墨西哥 90 分鐘約 46.4%，Ecuador 約 24.4%；Azteca 很吵，但模型也沒說這是免踢。",
+      "sorenTake": "本土 probable XI 與 fixture actualization 已在卡上；新增 Opta Analyst 公開預覽給 Mexico 90 分鐘優勢，但 Ecuador 的 24.4% 不是紙糊冷門。Soren 把這當 public model/context calibration，不當本站底層模型，也不當下注口令。主場聲浪會幫忙，但不會替後防解圍。",
       "signals": [
         "FOX Sports 比賽頁標題可核對 Mexico vs 3C/3E/3F/3H/3I 與 2026-06-30 賽事資訊，是公開賽程入口。",
         "Al Jazeera Round-of-32 explainer 列出 Mexico vs 3C/3E/3F/3H/3I 與 Mexico City Stadium 時間窗口。",
@@ -3750,7 +3768,8 @@
         "FOX Sports 與 USA Today 均報導 Mexico 32 強對手為 Ecuador；本站將對手從 third-place watch 升級為 media-confirmed / FIFA-hospitality-listed。",
         "Sports Mole 賽前隊訊稱 Mexico 暫無傷病疑慮並預期 Raúl Jiménez 回到先發；這只作 expected-XI lead，正式名單仍等官方。",
         "El Siglo de Torreón 6/29 預覽 Mexico vs Ecuador 的開球時間、轉播與 probable lineups；這是本土媒體隊訊，不升級為 confirmed lineup。",
-        "Comuniate 的 Mundial fantasy 頁列出 probable lineups、suspensions/injuries 與 TV/time 資訊；可作第二層 lineup-watch，但可信度低於官方/主流賽前記者會。"
+        "Comuniate 的 Mundial fantasy 頁列出 probable lineups、suspensions/injuries 與 TV/time 資訊；可作第二層 lineup-watch，但可信度低於官方/主流賽前記者會。",
+        "Opta Analyst Mexico-Ecuador preview 給 Mexico 90 分鐘 46.4%、Ecuador 24.4% 的公開 supercomputer 參照；只作 public model/tactical context，不公開或替代本站預測公式。"
       ],
       "sources": [
         {
@@ -3832,6 +3851,14 @@
           "fetchedAt": "2026-06-29T09:17:12Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-low"
+        },
+        {
+          "label": "Opta Analyst Mexico-Ecuador preview",
+          "url": "https://theanalyst.com/articles/mexico-vs-ecuador-prediction-world-cup-2026-match-preview",
+          "sourceName": "Opta Analyst",
+          "fetchedAt": "2026-06-29T12:41:30Z",
+          "claimType": "context/public-model-probability",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -3840,15 +3867,16 @@
       "matchId": "m080",
       "match": "England vs Democratic Republic of the Congo",
       "sourceType": "reported bracket actualization + injury/availability watch + odds-reference",
-      "title": "England-DR Congo 已成形，但 Reece James 傷退讓右路深度先被拆一顆螺絲。",
-      "sorenTake": "England 這格不再只是 1L 影子：本地資料已指向 DR Congo。真正的新風險是 Guardian 報導 Reece James 腿筋傷勢至少缺兩場，Tuchel 右路選項要從 Quansah、Konsa、Spence、Chalobah 等人裡重配。對 DR Congo 仍是英格蘭熱門，但淘汰賽最愛懲罰「陣容深度沒事啦」這種嘴硬。",
+      "title": "England-DR Congo 補 BBC 對手 scouting：英格蘭還是熱門，但對手不是維基百科佔位符；剛果民主共和國的 redemption 敘事有牙。",
+      "sorenTake": "Reece James 傷退仍是 England 右路重配的風險；新增 BBC 對 DR Congo 的低down，把這支 52 年後重返淘汰賽的隊伍從括號代碼拉回球場。England 名氣與深度都佔優，但如果把對手當 3E/H/I/J/K 的行政代碼，淘汰賽會很樂意寄帳單。",
       "signals": [
         "England Football 公開列出 England 若以 1L 出線，將在 Atlanta 對 3E/H/I/J/K。",
         "FOX Sports m080 賽程頁可核對 1L vs 3E/3H/3I/3J/3K 與 2026-07-01T16:00Z 窗口。",
         "媒體投影有 England vs Senegal 走向，但 K 組第三若達標可能改變分配；只能列為 bracket-projection。",
         "Betstamp/BettingPros 市場頁存在但未見穩定價格，不列成投注建議。",
         "Guardian 6/27 live blog 報導 Reece James 因腿筋傷勢至少缺席兩場，並列出 Quansah/Konsa/Spence/Chalobah 等右後衛替代選項。",
-        "本地 worldcup.json 已把 m080 actualize 為 England vs Democratic Republic of the Congo；舊卡的 Senegal/K3 對手池敘事已更新。"
+        "本地 worldcup.json 已把 m080 actualize 為 England vs Democratic Republic of the Congo；舊卡的 Senegal/K3 對手池敘事已更新。",
+        "BBC Sport England-opponent explainer 確認 England 將在 32 強面對 DR Congo，並提供對手背景/first knockout-stage run context；這是 opponent-scout，不是 England confirmed XI。"
       ],
       "sources": [
         {
@@ -3889,6 +3917,14 @@
           "sourceName": "The Guardian",
           "fetchedAt": "2026-06-29T04:11:38Z",
           "claimType": "reported/injury",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC DR Congo opponent scout",
+          "url": "https://www.bbc.com/sport/football/articles/c39ypw34gwjo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-29T12:41:30Z",
+          "claimType": "context/opponent-scout",
           "confidence": "high"
         }
       ],
