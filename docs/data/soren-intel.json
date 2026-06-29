@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T03:36:00Z",
-  "status": "schedule-aware-scout-20260629T0336Z-r32-official-training-micro-refresh",
-  "headline": "Soren 03:36 巡檢：M74 補上 APF 官方最終訓練與賽前記者會，M75 補一條荷蘭防線風險戰術觀察；其他近賽卡片剛更新，避免灌水。",
+  "generatedAt": "2026-06-29T04:11:38Z",
+  "status": "schedule-aware-scout-20260629T0418Z-r32-late-availability-actualization",
+  "headline": "Soren 04:18 巡檢：M76 補 Kubo 缺陣與日本後防 watch，M75 補 Morocco 賽前訓練/記者會，M79/M80/M82 依最新公開賽程與傷停脈絡更新成具體淘汰賽卡。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2389,9 +2389,9 @@
     {
       "matchId": "m076",
       "match": "Brazil vs Japan",
-      "sourceType": "official fixture + official team logistics + late injury/lineup/market watch",
-      "title": "Brazil-Japan 不是五星隊的散步局；日本剛有逆轉巴西記憶，Houston 這餐有刺。",
-      "sorenTake": "FIFA/CBF/JFA 的官方框架已穩，Brazil-Japan 現在進入賽日細節：USA Today/SI 類預覽把 Raphinha 腿筋、Rayan 右路選擇、日本高壓與後防傷情擺上桌。Brazil 還是優勢方，但這不是五星隊拍形象照；若日本把節奏壓慢、逼到點球劇本，Houston 的汗會先從巴西後衛脖子流下來。",
+      "sourceType": "official/media availability + tactical/odds watch",
+      "title": "Brazil-Japan 臨場刺點更明確：Kubo 連三場缺陣，森保一還得處理後防選擇題。",
+      "sorenTake": "Brazil 仍是紙面強隊，但 Japan 不是來當背景板。ESPN 與 ge 都指向 Takefusa Kubo 對 Brazil 缺陣；ge 另提到 Itakura 可能替補、Taniguchi 有機會進入三中衛。這不是官方先發，卻足夠提醒 Soren：日本的反擊靈感少一顆主腦，防線還要臨場拼裝。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2413,7 +2413,9 @@
         "Covers 的紙上市場參照反而提示 draw 價格有討論空間：Brazil 品牌熱度可能把 90 分鐘勝率推得太甜；本站只作 paper simulation，不是投注建議。",
         "賽日再核：USA Today 的 Brazil projected XI 仍把 Raphinha hamstring/Rayan 右路選擇列為關鍵，Alisson 預計把關；這是 media predicted XI，不是官方先發。",
         "Sports Illustrated 賽前頁把 Japan 高壓能否干擾 Brazil 組織列為 upset path，並提到 Houston 大場面；先作 tactical/context watch。",
-        "Covers 賠率/傷停頁同時列 Brazil Raphinha out、Japan Endo out、Itakura/Kubo doubtful 等市場資訊；本站只作 paper simulation 與 availability watch，不寫成醫療官宣。"
+        "Covers 賠率/傷停頁同時列 Brazil Raphinha out、Japan Endo out、Itakura/Kubo doubtful 等市場資訊；本站只作 paper simulation 與 availability watch，不寫成醫療官宣。",
+        "ESPN 6/28 報導 Takefusa Kubo 將因傷連續第三場缺席，Japan 對 Brazil 的創造力與定位球選擇因此打折。",
+        "ge/Globo 賽前隊訊同樣寫明 Kubo 缺陣，並稱 Ko Itakura 可能先坐板凳、Shogo Taniguchi 有機會進入 3-4-2-1；本站只標為 reported lineup watch，不寫成確認 XI。"
       ],
       "sources": [
         {
@@ -2591,9 +2593,25 @@
           "fetchedAt": "2026-06-29T01:49:36Z",
           "claimType": "reported/tactical",
           "confidence": "medium"
+        },
+        {
+          "label": "ESPN Kubo out vs Brazil",
+          "url": "https://www.espn.com/soccer/story/_/id/49210627/takefusa-kubo-vs-brazil-japan-eager-change-history-world-cup",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-29T04:11:38Z",
+          "claimType": "reported/injury",
+          "confidence": "high"
+        },
+        {
+          "label": "ge Japan team news vs Brazil",
+          "url": "https://ge.globo.com/futebol/copa-do-mundo/noticia/2026/06/28/escalacao-do-japao-kubo-desfalca-selecao-e-treinador-tem-duvida-na-zaga-para-enfrentar-o-brasil.ghtml",
+          "sourceName": "ge / Globo Esporte",
+          "fetchedAt": "2026-06-29T04:11:38Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m074",
@@ -2833,9 +2851,9 @@
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
-      "sourceType": "official match preview + federation travel/training context + late lineup/odds/social watch",
-      "title": "Netherlands-Morocco 是淘汰賽第一批真香局：橙軍火力很亮，Atlas Lions 已經到 Monterrey 磨刀。",
-      "sorenTake": "Netherlands-Morocco 的官方賽程與備戰脈絡已齊，賽日前補上 KNVB/OnsOranje 賽事頁、Opta 小熱、Sports Mole 的 Van de Ven/Aké 左路變化與球衣對位。這場不是橙軍展覽賽，是一場半空間、身體對抗與反擊決策的壓力測試；Morocco 若把節奏咬住，荷蘭的漂亮控球會開始冒冷汗。",
+      "sourceType": "official/media training + press conference + tactical/odds watch",
+      "title": "Netherlands-Morocco 賽前更有火藥味：Le360 指 Atlas Lions 人齊到位，Bounou 與 Ouahbi 已開賽前會。",
+      "sorenTake": "Netherlands 的火力和防線漏水都已被寫爛，Morocco 這邊的新訊號是「陣容完整、氣氛穩」。Le360 報導 Atlas Lions 在 Monterrey 第二次訓練且人員齊整，Ouahbi 與 Bounou 也完成賽前記者會。Soren 的翻譯：這不是荷蘭自動過關局，這是橙軍一失誤就會被放大鏡公開處刑的局。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -2856,7 +2874,9 @@
         "Sports Mole 最新預覽稱 Micky van de Ven 可能回到左後衛、Nathan Aké 可能退出首發；這是 predicted XI/lineup-watch，不是官方確認。",
         "Opta supercomputer 公開參照給 Netherlands 90 分鐘約 47.6%，Morocco 不是被市場完全打成陪跑；Soren 把它當 paper/context calibration。",
         "Footy Headlines 搜尋可核對第一批淘汰賽球衣對位，Netherlands 橙色主場對 Morocco 白色客場；屬視覺/kit context，和勝負無直接因果。",
-        "Sports Mole 新增戰術專欄把 Netherlands 的高進球與後防漏水並列：Van Dijk 防線仍是 Morocco 反擊與二點球可攻擊的入口；此為 tactical context，不是先發確認。"
+        "Sports Mole 新增戰術專欄把 Netherlands 的高進球與後防漏水並列：Van Dijk 防線仍是 Morocco 反擊與二點球可攻擊的入口；此為 tactical context，不是先發確認。",
+        "Sport Le360 6/28 報導 Morocco 在 Monterrey 完成第二次訓練，標題與內文稱 Lions de l’Atlas au complet；本站把它列為高信心 availability watch，但正式先發仍等官方名單。",
+        "Sport Le360 6/29 報導 Mohamed Ouahbi 與 Yassine Bounou 已出席對 Netherlands 賽前記者會，提供 Morocco 陣營心態與備戰脈絡。"
       ],
       "sources": [
         {
@@ -3018,6 +3038,22 @@
           "fetchedAt": "2026-06-29T03:36:00Z",
           "claimType": "reported/tactical",
           "confidence": "medium"
+        },
+        {
+          "label": "Le360 Morocco full-squad training watch",
+          "url": "https://sport.le360.ma/coupe-du-monde/mondial-2026-les-lions-de-latlas-au-complet-avant-le-rendez-vous-decisif-face-aux-pays-bas_MXEEL3KZNVBTBEUAYK6E3GGMB4/",
+          "sourceName": "Sport Le360",
+          "fetchedAt": "2026-06-29T04:11:38Z",
+          "claimType": "reported/availability",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Le360 Ouahbi-Bounou press conference",
+          "url": "https://sport.le360.ma/coupe-du-monde/mondial-2026-lessentiel-de-la-conf-de-mohamed-ouahbi-et-yassine-bounou-avant-maroc-pays-bas_D6NP4ZYUCJBJREE2LFFFII5QMQ/",
+          "sourceName": "Sport Le360",
+          "fetchedAt": "2026-06-29T04:11:38Z",
+          "claimType": "reported/press-conference",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -3297,15 +3333,18 @@
     },
     {
       "matchId": "m079",
-      "match": "Mexico vs 3C/E/F/H/I",
-      "sourceType": "official bracket slot + media projection + market-reference watch",
-      "title": "Mexico 的 1A 門牌已穩，對手還在第三名洗牌；若 Ecuador 落到這裡，東道主就別以為 Azteca 會自動幫忙進球。",
-      "sorenTake": "官方/媒體賽程仍把這格寫成 3C/E/F/H/I，FOX 與 Al Jazeera 可核對時間與場地；媒體投影開始把 Ecuador 推向 Mexico，但第三名排序未收口前，只能叫 bracket watch，不是確認對陣。",
+      "match": "Mexico vs Ecuador",
+      "sourceType": "official-adjacent fixture actualization + media confirmation + market-reference watch",
+      "title": "Mexico-Ecuador 終於不只是第三名盲盒：FIFA hospitality 與主流媒體都把 M79 寫實了。",
+      "sorenTake": "M79 的門牌現在比昨晚硬很多：FIFA/On Location 的官方貴賓套票頁直接寫 Mexico vs Ecuador，FOX 與 USA Today 也都把 Ecuador 列為 El Tri 的 32 強對手。Soren 仍保留一點 provenance 潔癖：這不是我親眼在 FIFA match centre 抄到的正式 XI，但作為對陣 actualization 已足夠公開更新。主場 Azteca 很大聲，Ecuador 的防守反擊也不會因為觀眾大聲就自動當機。",
       "signals": [
         "FOX Sports 比賽頁標題可核對 Mexico vs 3C/3E/3F/3H/3I 與 2026-06-30 賽事資訊，是公開賽程入口。",
         "Al Jazeera Round-of-32 explainer 列出 Mexico vs 3C/3E/3F/3H/3I 與 Mexico City Stadium 時間窗口。",
         "AS / Marca 搜尋與媒體摘要把 Ecuador 列為可能對上 Mexico 的第三名走向；這是投影，不是 FIFA 確認。",
-        "Betstamp/BettingPros 類市場頁存在但未見穩定可讀價格，先只當 paper 模擬的 market-reference watch。"
+        "Betstamp/BettingPros 類市場頁存在但未見穩定可讀價格，先只當 paper 模擬的 market-reference watch。",
+        "FIFA World Cup 26 Suites / On Location 頁面已把 M79 寫成 Mexico vs Ecuador，時間為 6/30 Mexico City；這是官方-adjacent fixture actualization，不是首發或戰術來源。",
+        "FOX Sports 與 USA Today 均報導 Mexico 32 強對手為 Ecuador；本站將對手從 third-place watch 升級為 media-confirmed / FIFA-hospitality-listed。",
+        "Sports Mole 賽前隊訊稱 Mexico 暫無傷病疑慮並預期 Raúl Jiménez 回到先發；這只作 expected-XI lead，正式名單仍等官方。"
       ],
       "sources": [
         {
@@ -3339,21 +3378,55 @@
           "fetchedAt": "2026-06-27T06:24:32Z",
           "claimType": "odds-reference",
           "confidence": "medium-low"
+        },
+        {
+          "label": "FIFA/On Location M79 Mexico-Ecuador suites",
+          "url": "https://fifaworldcup26.suites.fifa.com/events/Mexico-vs-Ecuador-111652/",
+          "sourceName": "FIFA World Cup 26 Suites / On Location",
+          "fetchedAt": "2026-06-29T04:11:38Z",
+          "claimType": "confirmed/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FOX Mexico-Ecuador Round of 32 report",
+          "url": "https://www.foxsports.com/stories/soccer/mexico-world-cup-ecuador-round-of-32",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-29T04:11:38Z",
+          "claimType": "reported/bracket-actualization",
+          "confidence": "high"
+        },
+        {
+          "label": "USA Today Mexico-Ecuador matchup report",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/27/mexico-national-team-round-of-32-matchup-ecuador/90726249007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-06-29T04:11:38Z",
+          "claimType": "reported/bracket-actualization",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole Mexico-Ecuador team news",
+          "url": "https://www.sportsmole.co.uk/football/mexico/world-cup-2026/preview/mexico-vs-ecuador-prediction-team-news-lineups_600278.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-29T04:11:38Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m080",
-      "match": "1L vs 3E/H/I/J/K",
-      "sourceType": "official bracket slot + England path + third-place allocation watch",
-      "title": "1L 這格很可能有 England 味，但 L 組還沒結帳；第三名來客若是 Senegal 或 K3，劇本會完全換口味。",
-      "sorenTake": "England Football 自家賽程把 L 組第一的路線寫到 Atlanta；Marca 類媒體投影提到 England-Senegal，但 Group L 與第三名表還會被最後一輪推動。先把它當『英格蘭可能路線』，別提早開香檳。",
+      "match": "England vs Democratic Republic of the Congo",
+      "sourceType": "reported bracket actualization + injury/availability watch + odds-reference",
+      "title": "England-DR Congo 已成形，但 Reece James 傷退讓右路深度先被拆一顆螺絲。",
+      "sorenTake": "England 這格不再只是 1L 影子：本地資料已指向 DR Congo。真正的新風險是 Guardian 報導 Reece James 腿筋傷勢至少缺兩場，Tuchel 右路選項要從 Quansah、Konsa、Spence、Chalobah 等人裡重配。對 DR Congo 仍是英格蘭熱門，但淘汰賽最愛懲罰「陣容深度沒事啦」這種嘴硬。",
       "signals": [
         "England Football 公開列出 England 若以 1L 出線，將在 Atlanta 對 3E/H/I/J/K。",
         "FOX Sports m080 賽程頁可核對 1L vs 3E/3H/3I/3J/3K 與 2026-07-01T16:00Z 窗口。",
         "媒體投影有 England vs Senegal 走向，但 K 組第三若達標可能改變分配；只能列為 bracket-projection。",
-        "Betstamp/BettingPros 市場頁存在但未見穩定價格，不列成投注建議。"
+        "Betstamp/BettingPros 市場頁存在但未見穩定價格，不列成投注建議。",
+        "Guardian 6/27 live blog 報導 Reece James 因腿筋傷勢至少缺席兩場，並列出 Quansah/Konsa/Spence/Chalobah 等右後衛替代選項。",
+        "本地 worldcup.json 已把 m080 actualize 為 England vs Democratic Republic of the Congo；舊卡的 Senegal/K3 對手池敘事已更新。"
       ],
       "sources": [
         {
@@ -3387,9 +3460,17 @@
           "fetchedAt": "2026-06-27T06:24:32Z",
           "claimType": "odds-reference",
           "confidence": "medium-low"
+        },
+        {
+          "label": "Guardian Reece James hamstring update",
+          "url": "https://www.theguardian.com/football/live/2026/jun/27/world-cup-2026-news-live-england-panama-croatia-ghana-colombia-portugal-dr-congo-uzbekistan-live?page=with:block-6a3fb02f8f08da44aac3b8cd",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-29T04:11:38Z",
+          "claimType": "reported/injury",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m081",
@@ -3441,15 +3522,17 @@
     },
     {
       "matchId": "m082",
-      "match": "1G vs 3A/E/H/I/J",
-      "sourceType": "official bracket slot + Belgium confirmed slot + opponent watch",
-      "title": "Belgium 拿到 1G，但對面還是第三名盲盒；這種局最怕熱門隊先跟影子對手踢嘴砲。",
-      "sorenTake": "FOX 已把 m082 更新為 Belgium vs 3A/3E/3H/3I/3J；在本地積分裡 South Korea、Ecuador、Iran、Senegal 與 J 組敗方都可能牽動排序。沒有可靠具體對手前，只給 bracket watch，不亂寫首發和社群情緒。",
+      "match": "Belgium vs Senegal",
+      "sourceType": "reported bracket actualization + confirmed/reported injury watch",
+      "title": "Belgium-Senegal 這格落地了；Senegal 進攻火力剛開張，但 Mendy 傷缺仍是門前警報。",
+      "sorenTake": "Belgium 對 Senegal 已從第三名盲盒變成具體淘汰賽題目。Senegal 5-0 Iraq 很漂亮，但 Guardian 賽事脈絡與先前 ESPN 傷情報導都指向 Édouard Mendy 受傷缺陣；強隊最怕以為對手只有「非洲激情」，結果被速度和定位球拷問。Belgium 是熱門，熱門不等於不用防反擊。",
       "signals": [
         "FOX Sports m082 頁面標題顯示 Belgium vs 3A/3E/3H/3I/3J，可作公開賽程與對手池來源。",
         "Al Jazeera explainer 仍保守列為 1G vs 3A/E/H/I/J，與第三名尚未完全收口一致。",
         "目前未找到可完整核讀的高信心 Belgium 具體對手預測；The Athletic 等片段視為 paywalled/indexed lead，不提升成事實。",
-        "市場參考頁存在但價格不可穩定讀取，暫不寫具體賠率。"
+        "市場參考頁存在但價格不可穩定讀取，暫不寫具體賠率。",
+        "本地 worldcup.json 已把 m082 actualize 為 Belgium vs Senegal；舊卡的 3A/3E/3H/3I/3J 對手池敘事已更新。",
+        "Guardian Senegal-Iraq live report 記錄 Senegal 5-0 大勝脈絡；結合既有 ESPN 傷情報導，Mendy 缺陣仍是 Senegal 淘汰賽門將風險。"
       ],
       "sources": [
         {
@@ -3475,9 +3558,17 @@
           "fetchedAt": "2026-06-27T06:24:32Z",
           "claimType": "odds-reference",
           "confidence": "medium-low"
+        },
+        {
+          "label": "Guardian Senegal-Iraq live report",
+          "url": "https://www.theguardian.com/football/live/2026/jun/26/senegal-v-iraq-world-cup-2026-live-updates?page=with:block-6a3abe738f0857cd81607908",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-29T04:11:38Z",
+          "claimType": "context/injury-watch",
+          "confidence": "medium-high"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m083",

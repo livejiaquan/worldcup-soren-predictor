@@ -111,18 +111,22 @@ function PaperBankroll({ bankroll, onSelect }) {
 }
 
 
-function resolveBracketTeam(token, matchByNumber, predictions, depth = 0) {
+function resolveActualBracketTeam(token, matchByNumber, depth = 0) {
   if (!token || depth > 6) return token || '待定'
   const m = String(token).match(/^W(\d+)$/)
   if (!m) return token
   const source = matchByNumber[m[1].padStart(3, '0')]
   if (!source) return token
-  const pick = predictions[source.id]?.pick
-  if (!pick || pick === '平手') return `W${m[1]}`
-  return resolveBracketTeam(pick, matchByNumber, predictions, depth + 1)
+  if (source.status === 'finished') {
+    const winner = actualPick(source)
+    return resolveActualBracketTeam(winner, matchByNumber, depth + 1)
+  }
+  const left = resolveActualBracketTeam(source.team1, matchByNumber, depth + 1)
+  const right = resolveActualBracketTeam(source.team2, matchByNumber, depth + 1)
+  return `${left} / ${right}`
 }
 
-function BracketSnapshot({ matches, predictions, onSelect }) {
+function BracketSnapshot({ matches, onSelect }) {
   const knockouts = matches.filter((m) => !m.group)
   if (!knockouts.length) return null
   const matchByNumber = Object.fromEntries(matches.map((m) => [m.id.replace('m', ''), m]))
@@ -132,23 +136,32 @@ function BracketSnapshot({ matches, predictions, onSelect }) {
     ['Quarter-final', '8 強'],
     ['Semi-final', '4 強'],
     ['Final', 'FINAL'],
-  ].map(([round, label]) => ({ label, items: knockouts.filter((m) => m.round === round).map((m) => ({ ...m, resolvedTeam1: resolveBracketTeam(m.team1, matchByNumber, predictions), resolvedTeam2: resolveBracketTeam(m.team2, matchByNumber, predictions), resolvedPick: resolveBracketTeam(predictions[m.id]?.pick, matchByNumber, predictions) })) })).filter((r) => r.items.length)
+  ].map(([round, label]) => ({
+    label,
+    items: knockouts.filter((m) => m.round === round).map((m) => {
+      const team1 = resolveActualBracketTeam(m.team1, matchByNumber)
+      const team2 = resolveActualBracketTeam(m.team2, matchByNumber)
+      const winner = m.status === 'finished' ? actualPick(m) : null
+      return { ...m, bracketTeam1: team1, bracketTeam2: team2, bracketWinner: winner ? resolveActualBracketTeam(winner, matchByNumber) : null }
+    }),
+  })).filter((r) => r.items.length)
   const finalMatch = rounds.find((r) => r.label === 'FINAL')?.items?.[0]
-  const champion = finalMatch?.resolvedPick || rounds.at(-1)?.items?.[0]?.resolvedPick || '待定'
+  const champion = finalMatch?.bracketWinner || '未定'
+  const completedKnockouts = knockouts.filter((m) => m.status === 'finished').length
   return <section className="panel bracket-panel" id="bracket">
-    <SectionHead kicker="SOREN BRACKET MAP" title="目前淘汰賽樹狀圖" meta={`冠軍路線：${champion}`}>
-      <small>這不是賽果，是我目前依模型與已完賽資訊推演的晉級路線；比賽更新後會自動重算。</small>
+    <SectionHead kicker="TOURNAMENT BRACKET" title="淘汰賽目前進度圖" meta={`淘汰賽已完成 ${completedKnockouts}/${knockouts.length}`}>
+      <small>這張只放目前賽事進度：已完賽亮出晉級者，未開賽保留對戰/待定；我的預測留在單場分析，不混進主樹狀圖。</small>
     </SectionHead>
-    <div className="bracket-stage">
+    <div className="bracket-stage progress-bracket">
       {rounds.map((round) => <div className="bracket-round" key={round.label}>
         <h3>{round.label}</h3>
-        <div className="bracket-matches">{round.items.slice(0, round.label === '32 強' ? 16 : 8).map((m) => <button type="button" key={m.id} className={`bracket-match ${m.resolvedPick === m.resolvedTeam1 ? 'top-win' : m.resolvedPick === m.resolvedTeam2 ? 'bottom-win' : ''}`} onClick={() => onSelect(m.id)}>
-          <span className="bracket-team"><b>{flag(m.resolvedTeam1)}</b><em>{m.resolvedTeam1}</em></span>
-          <span className="bracket-team"><b>{flag(m.resolvedTeam2)}</b><em>{m.resolvedTeam2}</em></span>
-          <strong>{flag(m.resolvedPick)} {m.resolvedPick}</strong>
+        <div className="bracket-matches">{round.items.slice(0, round.label === '32 強' ? 16 : 8).map((m) => <button type="button" key={m.id} className={`bracket-match ${m.status === 'finished' ? 'finished' : 'scheduled'} ${m.bracketWinner === m.bracketTeam1 ? 'top-win' : m.bracketWinner === m.bracketTeam2 ? 'bottom-win' : ''}`} onClick={() => onSelect(m.id)}>
+          <span className="bracket-team"><b>{flag(m.bracketTeam1)}</b><em>{m.bracketTeam1}</em></span>
+          <span className="bracket-team"><b>{flag(m.bracketTeam2)}</b><em>{m.bracketTeam2}</em></span>
+          <strong>{m.status === 'finished' ? `${m.score[0]}-${m.score[1]} · ${flag(m.bracketWinner)} ${m.bracketWinner} 晉級` : fmtDay(m.kickoffUtc)}</strong>
         </button>)}</div>
       </div>)}
-      <div className="bracket-trophy"><span>🏆</span><b>{champion}</b><small>Soren 目前冠軍籤</small></div>
+      <div className="bracket-trophy"><span>{champion === '未定' ? '🏟️' : '🏆'}</span><b>{champion}</b><small>{champion === '未定' ? '冠軍尚未產生' : '世界盃冠軍'}</small></div>
     </div>
   </section>
 }
