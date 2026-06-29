@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T01:49:36Z",
-  "status": "schedule-aware-scout-20260629T0148Z-r32-matchday-market-lineup-refresh",
-  "headline": "Soren 01:48 巡檢：M76/M74/M75 補入當日預測先發、官方轉播/隊務、教練嘴砲與紙上市場參照；仍把 XI/賠率/社群搜尋清楚留在非官方欄位。",
+  "generatedAt": "2026-06-29T03:36:00Z",
+  "status": "schedule-aware-scout-20260629T0336Z-r32-official-training-micro-refresh",
+  "headline": "Soren 03:36 巡檢：M74 補上 APF 官方最終訓練與賽前記者會，M75 補一條荷蘭防線風險戰術觀察；其他近賽卡片剛更新，避免灌水。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2598,9 +2598,9 @@
     {
       "matchId": "m074",
       "match": "Germany vs Paraguay",
-      "sourceType": "official fixture confirmed + federation training context + late injury/suspension/odds watch",
-      "title": "Germany-Paraguay 終於從代號變成真名；德國是大熱，但後防補丁和巴拉圭低位局會考耐心。",
-      "sorenTake": "DFB/APF/FIFA 已把 Germany-Paraguay 從代號釘成真門牌；賽日新料是 DFB 轉播/白衣確認、Alfaro 對德國準備「厚厚一疊檔案」的嘴砲，以及 Diego Gómez 停賽後的反擊重分工。德國是大熱沒錯，但淘汰賽最會懲罰「我比較強所以先散步」的人。",
+      "sourceType": "official fixture confirmed + federation final-training/press context + late injury/suspension/odds watch",
+      "title": "Germany-Paraguay 賽前資料更硬了：APF 已完成 Boston 最後訓練，Alfaro/Gómez 把爆冷話講到桌上。",
+      "sorenTake": "Germany 仍是牌面大熱，但 APF 官方把 Paraguay 的最後訓練、賽前記者會與「歷史一戰」情緒都放上檯面。這不是把德國降級，而是提醒模型：淘汰賽遇到 Alfaro 這種把低位、反擊、心理戰都裝進行李箱的隊，熱門方只要前 25 分鐘踢得像觀光客，Boston 會立刻變成警報器。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2621,7 +2621,10 @@
         "DFB 6/28 官方消息確認 Germany-Paraguay 由 ZDF/MagentaTV 直播，德國將穿白色主場球衣；這是 logistics/kit context，不是先發。",
         "CNA/Reuters 報導 Paraguay 教練 Gustavo Alfaro 表示已為 Germany 準備大量 dossier，但賽前只剩一次訓練；屬 coach-quote/tactical context。",
         "SportsLine/FanDuel 公開盤面列 Germany 90 分鐘 -280、Paraguay +800、draw +400，晉級 Germany -700；本站只作 paper simulation odds-reference，不是投注建議。",
-        "Opta supercomputer 公開參照給 Germany 90 分鐘約 54.7%、Paraguay 約 23.1%；這只能說德國優勢明顯，不能把 Paraguay 低位反擊刪掉。"
+        "Opta supercomputer 公開參照給 Germany 90 分鐘約 54.7%、Paraguay 約 23.1%；這只能說德國優勢明顯，不能把 Paraguay 低位反擊刪掉。",
+        "APF 官方賽前稿確認 Paraguay 已在 New England Revolution Training Center 完成 Boston 最後一練，準備對 Germany 爭取晉級；這是 team-logistics/ readiness 確認，不是先發名單。",
+        "APF 官方另刊 Gustavo Alfaro 與隊長 Gustavo Gómez 賽前記者會；內容可作 coach/captain quote 與心理準備脈絡，仍不推論確認 XI。",
+        "RTL Today/AFP 也引用 Alfaro 盯上「life-changing」爆冷敘事；Soren 把它當賽前動機與媒體語境，不當成勝率公式。"
       ],
       "sources": [
         {
@@ -2799,6 +2802,30 @@
           "fetchedAt": "2026-06-29T01:49:36Z",
           "claimType": "odds-reference/context",
           "confidence": "medium"
+        },
+        {
+          "label": "APF Paraguay final training in Boston",
+          "url": "https://www.apf.org.py/noticias/todo-listo-para-una-nueva-cita-con-la-historia",
+          "sourceName": "APF",
+          "fetchedAt": "2026-06-29T03:36:00Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "APF Alfaro and Gustavo Gómez press conference",
+          "url": "https://www.apf.org.py/noticias/las-palabras-de-gustavo-alfaro-y-gustavo-gomez-antes-del-juego-con-alemania",
+          "sourceName": "APF",
+          "fetchedAt": "2026-06-29T03:36:00Z",
+          "claimType": "confirmed/coach-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "RTL Today/AFP Paraguay upset context",
+          "url": "https://today.rtl.lu/sport/international/paraguay-eye-life-changing-germany-world-cup-upset-1392608849",
+          "sourceName": "RTL Today / AFP",
+          "fetchedAt": "2026-06-29T03:36:00Z",
+          "claimType": "reported/coach-quote",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -2828,7 +2855,8 @@
         "OnsOranje 官方賽事頁列 Netherlands vs Morocco 為 1/16e finale，提供荷蘭官方賽程入口；正式先發仍等臨場名單。",
         "Sports Mole 最新預覽稱 Micky van de Ven 可能回到左後衛、Nathan Aké 可能退出首發；這是 predicted XI/lineup-watch，不是官方確認。",
         "Opta supercomputer 公開參照給 Netherlands 90 分鐘約 47.6%，Morocco 不是被市場完全打成陪跑；Soren 把它當 paper/context calibration。",
-        "Footy Headlines 搜尋可核對第一批淘汰賽球衣對位，Netherlands 橙色主場對 Morocco 白色客場；屬視覺/kit context，和勝負無直接因果。"
+        "Footy Headlines 搜尋可核對第一批淘汰賽球衣對位，Netherlands 橙色主場對 Morocco 白色客場；屬視覺/kit context，和勝負無直接因果。",
+        "Sports Mole 新增戰術專欄把 Netherlands 的高進球與後防漏水並列：Van Dijk 防線仍是 Morocco 反擊與二點球可攻擊的入口；此為 tactical context，不是先發確認。"
       ],
       "sources": [
         {
@@ -2981,6 +3009,14 @@
           "sourceName": "Footy Headlines",
           "fetchedAt": "2026-06-29T01:49:36Z",
           "claimType": "context",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole Netherlands defensive risk feature",
+          "url": "https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/feature/why-netherlands-leaky-defence-could-cost-them-against-morocco_600290.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-29T03:36:00Z",
+          "claimType": "reported/tactical",
           "confidence": "medium"
         }
       ],
