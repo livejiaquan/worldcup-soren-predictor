@@ -10,7 +10,8 @@ const pct = (v) => `${Math.round((v || 0) * 100)}%`
 const money = (v) => `$${Number(v || 0).toFixed(2)}`
 const signedMoney = (v) => `${Number(v || 0) >= 0 ? '+' : ''}${money(v)}`
 
-const actualPick = (match) => !match?.score ? null : match.score[0] > match.score[1] ? match.team1 : match.score[1] > match.score[0] ? match.team2 : '平手'
+const actualPick = (match) => !match?.score ? null : match.winner || (match.score[0] > match.score[1] ? match.team1 : match.score[1] > match.score[0] ? match.team2 : '平手')
+const scoreLabel = (match) => match?.shootoutScore ? `${match.score[0]}-${match.score[1]} (PK ${match.shootoutScore[0]}-${match.shootoutScore[1]})` : match?.score ? `${match.score[0]}-${match.score[1]}` : ''
 const resultText = (bet) => bet?.status === 'won' ? `贏 ${money(bet.profit)}` : bet?.status === 'lost' ? `輸 ${money(Math.abs(bet.profit))}` : '未結算'
 
 function Team({ name }) { return <span className="team-inline"><span className="flag-emoji">{flag(name)}</span><span className="team-name">{name}</span></span> }
@@ -39,7 +40,7 @@ function CommandCenter({ data, nextMatches, predictions, bankroll }) {
 function CompactMatchCard({ match, prediction, paperBet, intel, onSelect, featured = false }) {
   return <article className={`match-card ${featured ? 'featured-card' : ''}`}>
     <div className="match-top"><span>{match.stage}</span><span>{fmtDate(match.kickoffUtc)}</span></div>
-    <div className="teams-row"><Team name={match.team1}/><div className="score-pill">{match.status === 'finished' ? `${match.score[0]}-${match.score[1]}` : prediction.score}<small>{match.status === 'finished' ? 'FT' : '預測'}</small></div><Team name={match.team2}/></div>
+    <div className="teams-row"><Team name={match.team1}/><div className="score-pill">{match.status === 'finished' ? scoreLabel(match) : prediction.score}<small>{match.status === 'finished' ? (match.shootoutScore ? 'FT+PK' : 'FT') : '預測'}</small></div><Team name={match.team2}/></div>
     <ProbBar prediction={prediction}/>
     <div className="pick-row"><b>我站 {prediction.pick}</b><span>{prediction.tag} · {pct(prediction.confidence)}</span></div>
     <p className="verdict">{prediction.commentary?.headline}</p>
@@ -158,7 +159,7 @@ function BracketSnapshot({ matches, onSelect }) {
         <div className="bracket-matches">{round.items.slice(0, round.label === '32 強' ? 16 : 8).map((m) => <button type="button" key={m.id} className={`bracket-match ${m.status === 'finished' ? 'finished' : 'scheduled'} ${m.bracketWinner === m.bracketTeam1 ? 'top-win' : m.bracketWinner === m.bracketTeam2 ? 'bottom-win' : ''}`} onClick={() => onSelect(m.id)}>
           <span className="bracket-team"><b>{flag(m.bracketTeam1)}</b><em>{m.bracketTeam1}</em></span>
           <span className="bracket-team"><b>{flag(m.bracketTeam2)}</b><em>{m.bracketTeam2}</em></span>
-          <strong>{m.status === 'finished' ? `${m.score[0]}-${m.score[1]} · ${flag(m.bracketWinner)} ${m.bracketWinner} 晉級` : fmtDay(m.kickoffUtc)}</strong>
+          <strong>{m.status === 'finished' ? `${scoreLabel(m)} · ${flag(m.bracketWinner)} ${m.bracketWinner} 晉級` : fmtDay(m.kickoffUtc)}</strong>
         </button>)}</div>
       </div>)}
       <div className="bracket-trophy"><span>{champion === '未定' ? '🏟️' : '🏆'}</span><b>{champion}</b><small>{champion === '未定' ? '冠軍尚未產生' : '世界盃冠軍'}</small></div>
@@ -175,7 +176,7 @@ function StandingsPreview({ standings, nextMatches }) {
 function FixtureExplorer({ matches, predictions, onSelect }) {
   const [showAll, setShowAll] = useState(false)
   const list = showAll ? matches : matches.filter((m) => m.status !== 'finished').slice(0, 12)
-  return <section className="panel" id="fixtures"><SectionHead kicker="FIXTURE EXPLORER" title="完整賽程：先收起來，不要砸你臉上" meta={showAll ? '全部' : '只看近期'} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc)}</span><b>{flag(m.team1)} {m.team1} vs {flag(m.team2)} {m.team2}</b><em>{m.status === 'finished' ? `${m.score[0]}-${m.score[1]}` : predictions[m.id]?.pick}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? '收起完整賽程' : '打開完整賽程'}</button></section>
+  return <section className="panel" id="fixtures"><SectionHead kicker="FIXTURE EXPLORER" title="完整賽程：先收起來，不要砸你臉上" meta={showAll ? '全部' : '只看近期'} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc)}</span><b>{flag(m.team1)} {m.team1} vs {flag(m.team2)} {m.team2}</b><em>{m.status === 'finished' ? scoreLabel(m) : predictions[m.id]?.pick}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? '收起完整賽程' : '打開完整賽程'}</button></section>
 }
 
 function TacticalBoard({ match, prediction, intel }) {
@@ -216,7 +217,7 @@ function MatchDeepDive({ match, prediction, paperBet, intel, onClose }) {
       <button className="modal-close" type="button" onClick={onClose}>×</button>
       <p className="modal-kicker">SOREN MATCH AUTOPSY</p>
       <h2>{match.team1} vs {match.team2}</h2>
-      <div className="modal-scoreline"><Team name={match.team1}/><div className="score-pill big">{match.status === 'finished' ? `${match.score[0]}-${match.score[1]}` : prediction.score}<small>{match.status === 'finished' ? 'FT' : '我先押這個比分'}</small></div><Team name={match.team2}/></div>
+      <div className="modal-scoreline"><Team name={match.team1}/><div className="score-pill big">{match.status === 'finished' ? scoreLabel(match) : prediction.score}<small>{match.status === 'finished' ? (match.shootoutScore ? 'FT+PK' : 'FT') : '我先押這個比分'}</small></div><Team name={match.team2}/></div>
       <div className="soren-roast"><b>銳評：</b>{prediction.commentary?.headline} {prediction.commentary?.story}</div>
       <TacticalBoard match={match} prediction={prediction} intel={intel}/>
       <div className="deep-grid">
@@ -225,7 +226,7 @@ function MatchDeepDive({ match, prediction, paperBet, intel, onClose }) {
         <div><b>情報影響</b><p>{intel ? intel.sorenTake : '這場暫時沒有足夠乾淨的情報；我寧可空著，也不亂編社群情緒。'}</p></div>
         <div><b>紙上戰局</b><p>{paperBet ? `紙上盤：${paperBet.marketReference || '主流 1X2 賽前盤'}。鎖單：${paperBet.lockedAtUtc ? fmtDate(paperBet.lockedAtUtc) : '開賽前'}；押 ${paperBet.pick}，投入 ${money(paperBet.stake)}，模擬賠率 ${paperBet.decimalOdds}。${paperBet.profit !== undefined ? `結算：${resultText(paperBet)}。` : ''}` : '這場我先不丟紙上籌碼；沒邊際就坐旁邊喝水。'}</p></div>
       </div>
-      <section className="match-postmortem"><b>賽後復盤</b><p>{postmortem}</p>{match.status === 'finished' && <div className="compare-grid"><span>預測：{prediction.pick} / {prediction.score}</span><span>實際：{actual} / {match.score[0]}-{match.score[1]}</span><span>紙上：{paperBet ? resultText(paperBet) : '未下注'}</span></div>}</section>
+      <section className="match-postmortem"><b>賽後復盤</b><p>{postmortem}</p>{match.status === 'finished' && <div className="compare-grid"><span>預測：{prediction.pick} / {prediction.score}</span><span>實際：{actual} / {scoreLabel(match)}</span><span>紙上：{paperBet ? resultText(paperBet) : '未下注'}</span></div>}</section>
       <ul className="reasons modal-reasons">{prediction.reasons.map((r) => <li key={r}>{r}</li>)}</ul>
       {intel && <details className="source-drawer modal-sources"><summary>這場情報來源</summary><ul>{intel.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{intel.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></details>}
       <p className="modal-disclaimer">公開研究與娛樂展示，不是投注建議。我會贏、會翻車、也會被賽果打臉；重點是每一筆都要留下理由。</p>

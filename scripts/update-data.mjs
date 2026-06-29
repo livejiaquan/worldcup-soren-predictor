@@ -20,6 +20,8 @@ async function loadResultOverrides() {
       if (!item.date || !team1 || !team2 || !Array.isArray(item.score) || item.score.length !== 2) continue
       RESULT_OVERRIDES.set(`${item.date}|${team1}|${team2}`, {
         score: item.score.map(Number),
+        shootoutScore: Array.isArray(item.shootoutScore) && item.shootoutScore.length === 2 ? item.shootoutScore.map(Number) : null,
+        winner: item.winner ? canonicalTeam(item.winner) : null,
         source: item.source || 'source-backed override',
       })
     }
@@ -49,8 +51,13 @@ function normalizeMatch(match, index) {
   const overrideKey = `${match.date}|${canonicalTeam(match.team1)}|${canonicalTeam(match.team2)}`
   const override = RESULT_OVERRIDES.get(overrideKey)
   const ft = override?.score || match.score?.ft?.map(Number)
+  const shootoutScore = override?.shootoutScore || match.score?.penalties?.map(Number) || null
+  const winner = override?.winner || (match.winner ? canonicalTeam(match.winner) : null)
   const hasScore = Array.isArray(ft) && ft.length === 2 && ft.every(Number.isFinite)
-  return { id: `m${String(index + 1).padStart(3, '0')}`, round: match.round || '', stage: stageLabel(match), group: match.group || null, date: match.date, time: match.time || '', kickoffUtc: parseKickoff(match.date, match.time), team1: canonicalTeam(match.team1), team2: canonicalTeam(match.team2), venue: match.ground || '待定', status: hasScore ? 'finished' : 'scheduled', score: hasScore ? ft : null, source: override ? `openfootball/worldcup.json + override: ${override.source}` : 'openfootball/worldcup.json' }
+  const normalized = { id: `m${String(index + 1).padStart(3, '0')}`, round: match.round || '', stage: stageLabel(match), group: match.group || null, date: match.date, time: match.time || '', kickoffUtc: parseKickoff(match.date, match.time), team1: canonicalTeam(match.team1), team2: canonicalTeam(match.team2), venue: match.ground || '待定', status: hasScore ? 'finished' : 'scheduled', score: hasScore ? ft : null, source: override ? `openfootball/worldcup.json + override: ${override.source}` : 'openfootball/worldcup.json' }
+  if (hasScore && shootoutScore) normalized.shootoutScore = shootoutScore
+  if (hasScore && winner) normalized.winner = winner
+  return normalized
 }
 function normalizedToEngineMatch(m) { return { team1: m.team1, team2: m.team2, score: m.score ? { ft: m.score } : null } }
 function computeStandingsFromNormalized(groups, matches) { return computeStandings(groups, matches.map(normalizedToEngineMatch)) }
