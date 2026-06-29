@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T10:35:56Z",
-  "status": "Matchday scout refresh: Round-of-32 near-kickoff source pass",
-  "headline": "賽日前哨更新：Brazil-Japan / Germany-Paraguay 已進入直播監控，Ivory Coast-Norway 補上 FIFA 官方預覽與隊訊線。",
+  "generatedAt": "2026-06-29T11:15:14Z",
+  "status": "淘汰賽賽日巡檢更新：M73 已補 FIFA 賽後來源；M74/M75/M76 加上官方/主流賽日入口與 lineup-watch，未把預測陣容冒充確認 XI。",
+  "headline": "Soren 賽日雷達：Canada 補時過關已官方落槌；Brazil、Germany、Netherlands 三場進入 live/lineup-watch 模式。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2225,9 +2225,9 @@
     {
       "matchId": "m073",
       "match": "South Africa vs Canada",
-      "sourceType": "final result + postmatch context + pregame suspension/injury/odds watch",
-      "title": "Canada 1-0 South Africa：主辦國不是散步通關，是靠 Eustáquio 補時一刀把劇本撕開。",
-      "sorenTake": "Canada 終於把隊史世界盃淘汰賽第一勝拿到手，但過程不是模型爽文：South Africa 把比賽拖成低比分泥地，直到 Stephen Eustáquio 補時遠射才分勝負。這種勝法對 Canada 是腎上腺素，也是警告——下一輪若還要靠 90+ 分鐘抽刀，運氣女神不一定每晚值班。",
+      "sourceType": "final result + official postmatch report/interview + paper-risk review",
+      "title": "Canada 1-0 South Africa 後續補強：FIFA 官方賽報與 Eustáquio 訪談都指向同一件事——主辦國贏了，但靠的是補時抽刀，不是全場碾壓。",
+      "sorenTake": "FIFA 賽報已把 South Africa 0-1 Canada 與 Stephen Eustáquio 制勝球釘牢，後續訪談也說出那腳遠射的情緒重量。Soren 的復盤很簡單：Canada 方向押對，但熱門隊只靠補時絕殺過關，這不是「模型英明」，是風險差點來收屍。下一輪若還想靠最後一刀，最好先問問刀會不會鈍。",
       "signals": [
         "FIFA 官方預覽與 match centre 已核對可連線：South Africa vs Canada 是 6 月 28 日洛杉磯/SoFi Stadium 的 Round of 32 開場戰。",
         "Canada Soccer 與 SoFi Stadium 頁面同樣列出本場地點與賽事資訊，作為官方/場館交叉核對。",
@@ -2244,7 +2244,9 @@
         "Openfootball 已把 M73 更新為 South Africa 0-1 Canada，Canada 晉級 Round of 16；本卡同步從賽前 scouting 轉為賽後結果脈絡。",
         "Al Jazeera 賽後報導標題與描述確認 Canada 1-0 South Africa，Stephen Eustaquio 在補時破門，Canada 首次贏得世界盃淘汰賽。",
         "ESPN 賽後 live/update 頁同樣寫明 Stephen Eustáquio 補時制勝，Canada 以 1-0 擊敗 South Africa 進入 last 16。",
-        "賽前 Canada 市場與 Opta 皆偏熱，但實際只靠一球補時勝出；Soren 對紙上 bankroll 的復盤要記住：熱門方向對了，不代表風險被低估。"
+        "賽前 Canada 市場與 Opta 皆偏熱，但實際只靠一球補時勝出；Soren 對紙上 bankroll 的復盤要記住：熱門方向對了，不代表風險被低估。",
+        "FIFA 官方賽報確認 South Africa 0-1 Canada，Stephen Eustáquio 的進球成為勝負分水嶺；這補上比搜尋摘要更硬的結果來源。",
+        "FIFA 後續 Eustáquio 訪談把這球描述為集體情緒爆點，適合作為 postmatch human/context 層，不拿來誇大 Canada 全場統治力。"
       ],
       "sources": [
         {
@@ -2382,6 +2384,22 @@
           "fetchedAt": "2026-06-29T00:30:22Z",
           "claimType": "reported/final-score",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA South Africa-Canada match report/highlights",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/south-africa-canada-review-highlights",
+          "sourceName": "FIFA",
+          "claimType": "confirmed",
+          "confidence": "high",
+          "fetchedAt": "2026-06-29T11:15:14Z"
+        },
+        {
+          "label": "FIFA Eustáquio postmatch interview",
+          "url": "https://www.fifa.com/en/articles/canada-eustaquio",
+          "sourceName": "FIFA",
+          "claimType": "context",
+          "confidence": "high",
+          "fetchedAt": "2026-06-29T11:15:14Z"
         }
       ],
       "confidence": "high"
@@ -2390,8 +2408,8 @@
       "matchId": "m076",
       "match": "Brazil vs Japan",
       "sourceType": "official/team news + live-centre + statistical preview + lineup/odds watch",
-      "title": "Brazil-Japan 賽日前 7 小時再加硬入口：BBC/Guardian/FIFA 都開賽日線，Opta 說巴西 90 分鐘勝率 57.3%；日本爆冷劇本不能靠想像，得靠 Kubo 缺口以外的執行力。",
-      "sorenTake": "Raphinha/Kubo 傷情與 Neymar 替補劇本已不是新鮮瓜；真正有用的是賽日監控入口齊了。BBC 與 Guardian 會追 build-up/lineups，FIFA 官方頁提供比賽資訊，Opta 給巴西 57.3% 的 90 分鐘勝率。Soren 仍看 Brazil 佔優，但這不是「桑巴自動晉級」：日本若能把節奏拖進窄空間與定位球細節，熱門隊會開始冒汗。",
+      "title": "Brazil-Japan 臨場再補兩條可用線：Al Jazeera 賽日預覽 + SI 預測 XI；Brazil 仍是熱門，但 Japan 的爆冷路線要靠壓迫、傷停管理與長局耐心。",
+      "sorenTake": "Al Jazeera 的賽日頁把 Brazil-Japan 的時間、地點、直播 build-up 與 predicted-lineup 框架補齊；SI 也給出 Brazil predicted XI。這些都還不是官方先發，但足夠提醒 Soren：Brazil 的牌面很亮，Japan 的路徑很窄；窄不等於不存在，尤其 Raphinha/Kubo/Itakura 這些 availability watch 還在牽動比賽形狀。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2424,7 +2442,9 @@
         "BBC 已開 Brazil-Japan Round of 32 即時頁，標題明示 build-up、team news、BBC Radio 5 Live commentary 與 live text updates；這是臨場名單/比分更新入口，不等於本站已讀到官方先發。",
         "Guardian 6/29 世界盃即時頁已把 Canada 賽後反應與 Brazil-Japan / Germany-Paraguay build-up 串在一起；可作賽日敘事與臨場更新交叉參考。",
         "FIFA Brazil-Japan 官方賽事資訊頁可連線，頁面路徑明示 live stream、team news、tickets 等賽日資訊；前端文字有限，先作官方入口而非具體陣容聲明。",
-        "Opta Analyst 賽前模型頁給 Brazil 90 分鐘內勝率 57.3%；這只作公開量化背景，不公開本站底層模型，也不是下注建議。"
+        "Opta Analyst 賽前模型頁給 Brazil 90 分鐘內勝率 57.3%；這只作公開量化背景，不公開本站底層模型，也不是下注建議。",
+        "Al Jazeera 6/29 賽日預覽列出 Brazil vs Japan 的 Houston 32 強脈絡、賽前 live build-up 與 prediction/lineups；本站只當主流媒體賽日入口與 lineup-watch，不升格為官方 XI。",
+        "Sports Illustrated Brazil predicted lineup 頁把 Alisson 與一組巴西預測先發列為賽前方案；仍屬 media predicted XI，正式名單等 FIFA/球隊公告。"
       ],
       "sources": [
         {
@@ -2666,16 +2686,24 @@
           "fetchedAt": "2026-06-29T09:55:31Z",
           "claimType": "context",
           "confidence": "high"
+        },
+        {
+          "label": "Sports Illustrated Brazil predicted XI vs Japan",
+          "url": "https://www.si.com/soccer/brazil-predicted-lineup-vs-japan-world-cup-6-29-26",
+          "sourceName": "Sports Illustrated",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high",
+          "fetchedAt": "2026-06-29T11:15:14Z"
         }
       ],
-      "confidence": "high"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m074",
       "match": "Germany vs Paraguay",
       "sourceType": "official/team updates + tactical/lineup/odds watch",
-      "title": "Germany-Paraguay 又補 BBC 賽日直播入口：德國仍是大熱，但這場要盯的是 Nagelsmann 變招落地，而不是賽前紙面吹風。",
-      "sorenTake": "DFB/APF、FIFA、WhoScored、Sportschau 已經把這場鋪厚；現在 BBC 也開了 Round of 32 即時頁，表示臨場名單與轉播更新有主流入口可盯。Soren 的判讀不變：Germany 比較像答案，但 Paraguay 若把比賽切碎、拖慢、逼德國邊路傳中，熱門隊會被迫交作業，不是交履歷。",
+      "title": "Germany-Paraguay 補到雙方官方聲音：DFB Völler 談 Kimmich/Brown，APF 顯示 Paraguay 已抵 Boston；德國熱門，但這不是履歷面試，是低位反擊考試。",
+      "sorenTake": "DFB 官方訪談讓 Germany 端的狀態敘事更清楚，APF 則確認 Paraguay 已把隊伍帶到 Boston。Soren 還是看 Germany 比較像答案，但 Paraguay 若把節奏切碎、把二點球和 Enciso/Almirón 出口做乾淨，德國會被迫踢出品質，而不是靠國旗自動晉級。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2709,7 +2737,9 @@
         "WhoScored Germany-Paraguay 統計前瞻可連線，頁面 metadata 明示包含 injuries/suspensions、probable line-ups、facts and odds；這是 reported lineup/availability + odds-reference，不是官方名單。",
         "Tagesschau/Sportschau 賽日頁可連並以「DFB 最後細節」定位 Germany-Paraguay；文內引述 Nagelsmann 承認可能為淘汰賽調整戰術。這是德國賽日戰術訊號，不是確認先發。",
         "BBC 已開 Germany-Paraguay Round of 32 即時頁，標題明示 team news、TV coverage、Radio 5 Live commentary 與 live text updates；正式先發仍待官方/現場更新。",
-        "Guardian 6/29 世界盃即時頁同時追 Germany-Paraguay build-up；作賽日上下文補充，避免只靠單一德語或官方來源看風向。"
+        "Guardian 6/29 世界盃即時頁同時追 Germany-Paraguay build-up；作賽日上下文補充，避免只靠單一德語或官方來源看風向。",
+        "DFB 官方 Völler 訪談確認 Germany 週一晚在 Boston 對 Paraguay，並談到 Kimmich、Nathaniel Brown 等球員脈絡；這是官方隊內聲音，不是先發名單。",
+        "APF 官方影片/頁面顯示 Paraguay 已抵達 Boston，準備面對 Germany；屬 team logistics/readiness 訊號，不代表戰術或 XI 已確認。"
       ],
       "sources": [
         {
@@ -2975,16 +3005,24 @@
           "fetchedAt": "2026-06-29T09:55:31Z",
           "claimType": "context",
           "confidence": "high"
+        },
+        {
+          "label": "APF Paraguay arrived in Boston",
+          "url": "https://www.apf.org.py/videos/la-garra-mbarete-llego-a-boston-xklfyi7qtme",
+          "sourceName": "Asociación Paraguaya de Fútbol",
+          "claimType": "confirmed/context",
+          "confidence": "high",
+          "fetchedAt": "2026-06-29T11:15:14Z"
         }
       ],
-      "confidence": "high"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
       "sourceType": "official/live-centre + coach quotes + training/availability + predicted-XI watch",
-      "title": "Netherlands-Morocco 補到真正有用的荷蘭訓練線：NOS 說 complete Oranje 備戰，Sports Mole 也把 Dumfries/Brobbey 雙健康回補寫進預測 XI。",
-      "sorenTake": "Ouahbi 的「different solutions」已經讓 Morocco 不是紙老虎；現在荷蘭端也更清楚：NOS 的完整 Oranje 訓練語境，加上 Sports Mole 對 Dumfries/Brobbey 可用性的預測，讓 Koeman 至少不像被迫拼殘陣。Soren 仍偏 Netherlands 的結構穩定，但 Morocco 的反擊和邊路對抗足以把橘色控球拆成壓力測試。",
+      "title": "Netherlands-Morocco 再補官方入口與摩洛哥最後備戰線：FIFA/BBC/FRMF 都有賽日路標；橘軍小熱，但 Morocco 不是來陪拍明信片。",
+      "sorenTake": "荷蘭端已有 NOS complete Oranje 與 Sports Mole fitness boost，現在再加 FIFA 官方賽事入口、BBC live centre，以及 FRMF 最後訓練/備戰頁作摩洛哥端交叉參照。Soren 的判斷不變：Netherlands 結構較穩，Morocco 的反擊與邊路對抗足以把它拖成神經局；別把「小熱」翻譯成「輕鬆」。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -3016,7 +3054,9 @@
         "Reuters / Straits Times 引述 Morocco 教練 Ouahbi：淘汰賽對 Netherlands 需要「different solutions」，小組不敗不能直接搬進 16 強。這強化 Morocco 不是只靠情緒，而是準備換題型。",
         "BBC 已開 Netherlands-Morocco 即時文字/比分入口，明示會提供 build-up、team news、radio commentary 與 live text；正式陣容仍等官方/可信即時頁落地。",
         "NOS 荷蘭語賽日前線標題稱 complete Oranje 正在家人朋友環繞下備戰 Morocco；這是荷蘭訓練/availability 正面訊號，但不等於官方先發。",
-        "Sports Mole 預測荷蘭 XI 並以 double fitness boost 為題，指向 Dumfries、Brobbey 等可用性回補；仍屬媒體 predicted XI，不升格為 confirmed lineup。"
+        "Sports Mole 預測荷蘭 XI 並以 double fitness boost 為題，指向 Dumfries、Brobbey 等可用性回補；仍屬媒體 predicted XI，不升格為 confirmed lineup。",
+        "FIFA Netherlands-Morocco 官方賽事資訊頁可連線，作賽日入口與 fixture/team-news hub；具體 lineup 仍需等正式名單。",
+        "FRMF 官方頁面（搜尋與 URL 可核）指向 Morocco 對 Netherlands 前最後備戰/訓練；父層直連遇 403，因此本站只保守標為 official team preparation lead。"
       ],
       "sources": [
         {
@@ -3250,9 +3290,17 @@
           "fetchedAt": "2026-06-29T09:55:31Z",
           "claimType": "reported/availability-watch",
           "confidence": "high"
+        },
+        {
+          "label": "FRMF Morocco pre-Netherlands preparation lead",
+          "url": "https://frmf.ma/articles/les-lions-de-latlas-prets-a-relever-le-defi-des-pays-bas",
+          "sourceName": "FRMF",
+          "claimType": "reported/official-team-preparation",
+          "confidence": "medium-high",
+          "fetchedAt": "2026-06-29T11:15:14Z"
         }
       ],
-      "confidence": "high"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m078",
@@ -3446,7 +3494,8 @@
         "FFF 曾公告 Deschamps 因喪親缺席 Norway 戰；本巡檢不延伸推定他會缺席 Sweden，除非官方再更新。",
         "FOX/ESPN/OddsChecker 公開盤頁顯示 France 為重熱門；本站僅作 paper simulation 市場溫度，不提供投注建議。",
         "Foot-National 6/28 報導 Kanté 分開訓練、Thuram 因狀況未完成全隊訓練；後續篇幅稱 Thuram 對 Sweden 可能缺席，但本站只標為 reported availability watch，等待 FFF/正式名單。",
-        "FootMercato 6/29 摘錄 Gyökeres 賽前語氣：瑞典承認是 outsider，但強調要相信自己、冷門不是童話書才有；這是心理/敘事訊號，不是可量化傷停。"
+        "FootMercato 6/29 摘錄 Gyökeres 賽前語氣：瑞典承認是 outsider，但強調要相信自己、冷門不是童話書才有；這是心理/敘事訊號，不是可量化傷停。",
+        "Svensk Fotboll 官方頁已可父層核對：Isak Hien 因對 Japan 受傷離開本屆世界盃，France-Sweden 卡上的中衛缺口維持 very-high confidence。"
       ],
       "sources": [
         {
@@ -3594,7 +3643,7 @@
           "confidence": "medium"
         }
       ],
-      "confidence": "high"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m079",
