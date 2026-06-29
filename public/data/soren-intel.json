@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T04:50:41Z",
-  "status": "schedule-aware-scout-20260629T0455Z-r32-matchday-source-refresh",
-  "headline": "Soren 04:55 巡檢：M74 補 Goal/SI Germany-Paraguay predicted-XI 與 Alderete/Gómez 風險，M75 補 Guardian/Morocco World News 的 Monterrey 敘事與 Bounou/Ouahbi 賽前會；M76 再核 SI 仍指 Kubo/Raphinha 缺陣 watch。",
+  "generatedAt": "2026-06-29T06:05:00Z",
+  "status": "schedule-aware-scout-20260629T0605Z-r32-matchday-late-refresh",
+  "headline": "Soren 06:05 巡檢：M76 補 ge Brazil 最後一練與 Neymar 板凳可用性，M74 補 Boston Globe/Nagelsmann 對 Paraguay 二點球與肉搏風險，M75 補 FIFA live centre 與 WhoScored/Opta 賽前參照。所有先發仍等官方名單。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2390,8 +2390,8 @@
       "matchId": "m076",
       "match": "Brazil vs Japan",
       "sourceType": "official/media availability + tactical/odds watch",
-      "title": "Brazil-Japan 臨場刺點更明確：Kubo 連三場缺陣，森保一還得處理後防選擇題。",
-      "sorenTake": "Brazil 仍是紙面強隊，但 Japan 不是來當背景板。ESPN 與 ge 都指向 Takefusa Kubo 對 Brazil 缺陣；ge 另提到 Itakura 可能替補、Taniguchi 有機會進入三中衛。這不是官方先發，卻足夠提醒 Soren：日本的反擊靈感少一顆主腦，防線還要臨場拼裝。",
+      "title": "Brazil-Japan 賽日再加熱：巴西最後一練傾向續用骨架，Neymar 仍是板凳核彈，不是開場答案。",
+      "sorenTake": "Brazil 仍是大熱，但 ge 的賽日資訊把重點說清楚：Ancelotti 預計不亂拆主架構，Neymar 則先從板凳提供變速。Japan 端 Kubo 缺陣、Itakura watch 還在，爆冷劇本更像「先扛住、拖長、靠轉換偷刀」，不是幻想巴西會自己把球門鑰匙交出來。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2416,7 +2416,10 @@
         "Covers 賠率/傷停頁同時列 Brazil Raphinha out、Japan Endo out、Itakura/Kubo doubtful 等市場資訊；本站只作 paper simulation 與 availability watch，不寫成醫療官宣。",
         "ESPN 6/28 報導 Takefusa Kubo 將因傷連續第三場缺席，Japan 對 Brazil 的創造力與定位球選擇因此打折。",
         "ge/Globo 賽前隊訊同樣寫明 Kubo 缺陣，並稱 Ko Itakura 可能先坐板凳、Shogo Taniguchi 有機會進入 3-4-2-1；本站只標為 reported lineup watch，不寫成確認 XI。",
-        "04:55Z 再核 Sports Illustrated 賽前頁：Brazil predicted XI 仍傾向 Alisson；Danilo、Marquinhos、Gabriel、Santos；Guimarães、Casemiro；Rayan、Paquetá、Vinícius；Cunha；Japan 端 Kubo 膝傷缺陣、Itakura 傷情仍是後防 watch。這仍是 media predicted XI，不是確認先發。"
+        "04:55Z 再核 Sports Illustrated 賽前頁：Brazil predicted XI 仍傾向 Alisson；Danilo、Marquinhos、Gabriel、Santos；Guimarães、Casemiro；Rayan、Paquetá、Vinícius；Cunha；Japan 端 Kubo 膝傷缺陣、Itakura 傷情仍是後防 watch。這仍是 media predicted XI，不是確認先發。",
+        "ge 6/28 報導 Brazil 完成對 Japan 前最後一練，賽前預計延續主體陣容；這是 media lineup-watch，不是官方先發。",
+        "ge 另引述 Ancelotti：Neymar 將從替補席開始，但狀態已有進展、可依比賽情境踢超過 15 分鐘；Soren 把它標成 availability/tactical bench weapon，不寫成固定換人腳本。",
+        "CBF 賽前訪談中 Rayan 強調 Brazil 團隊厚度，支撐右路 Rayan/Raphinha 選擇仍是賽前焦點；正式 XI 仍等 FIFA/球隊名單。"
       ],
       "sources": [
         {
@@ -2610,6 +2613,30 @@
           "fetchedAt": "2026-06-29T04:11:38Z",
           "claimType": "reported/lineup-watch",
           "confidence": "high"
+        },
+        {
+          "label": "ge / Globo Esporte",
+          "url": "https://ge.globo.com/futebol/copa-do-mundo/noticia/2026/06/28/selecao-brasileira-faz-ultimo-treino-antes-de-jogo-contra-o-japao-na-copa-do-mundo.ghtml",
+          "sourceName": "ge / Globo Esporte",
+          "fetchedAt": "2026-06-29T06:05:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "ge / Globo Esporte",
+          "url": "https://ge.globo.com/futebol/copa-do-mundo/noticia/2026/06/28/ancelotti-diz-que-neymar-pode-jogar-por-mais-de-15-minutos-depende-do-contexto-do-jogo.ghtml",
+          "sourceName": "ge / Globo Esporte",
+          "fetchedAt": "2026-06-29T06:05:00Z",
+          "claimType": "reported/availability",
+          "confidence": "high"
+        },
+        {
+          "label": "CBF",
+          "url": "https://www.cbf.com.br/selecao-brasileira/noticias/selecao-masculina/a/rayan-valoriza-forca-do-elenco-brasileiro-antes-de-duelo-eliminatorio-da-copa-grupo-e-muito-forte",
+          "sourceName": "CBF",
+          "fetchedAt": "2026-06-29T06:05:00Z",
+          "claimType": "confirmed/team-quote",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -2618,8 +2645,8 @@
       "matchId": "m074",
       "match": "Germany vs Paraguay",
       "sourceType": "official fixture confirmed + federation final-training/press context + late injury/suspension/predicted-XI/odds watch",
-      "title": "Germany-Paraguay 臨場 watch 再加一層：Paraguay 想用低位搏命，但 Gómez 停賽與 Alderete 傷疑讓爆冷劇本少了螺絲。",
-      "sorenTake": "Germany 仍是大熱，可是淘汰賽最怕把「大熱」踢成「大意」。Goal 與 SI 的賽前頁都把 Paraguay 的 Diego Gómez 停賽、Omar Alderete 傷疑列成關鍵風險；這讓 Alfaro 的低位反擊少一點完整度。Soren 的判讀：德國不需要華麗，只需要前半小時別自爆。",
+      "title": "Germany-Paraguay 賽日口徑更硬：Nagelsmann 怕的不是名氣，是 Paraguay 的二點球與低事件泥巴仗。",
+      "sorenTake": "Germany 還是該贏的一方，但 Boston Globe 與 Opta 把陷阱畫得比賠率更清楚：Paraguay 會直接、會搶第二落點、會把比賽拖成難看的肉搏。Soren 的銳評：德國若前 30 分鐘只想優雅傳控，這場會被 Paraguay 拖去泥地裡摔角。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2645,7 +2672,10 @@
         "APF 官方另刊 Gustavo Alfaro 與隊長 Gustavo Gómez 賽前記者會；內容可作 coach/captain quote 與心理準備脈絡，仍不推論確認 XI。",
         "RTL Today/AFP 也引用 Alfaro 盯上「life-changing」爆冷敘事；Soren 把它當賽前動機與媒體語境，不當成勝率公式。",
         "Goal.com Australia 賽前頁列出 Germany-Paraguay likely XI，並把 Paraguay 可能以緊湊中後場與 Enciso/Sanabria 出口應戰；仍屬 media predicted XI，不是官方先發。",
-        "Sports Illustrated 賽前頁再次把 Diego Gómez 停賽與 Omar Alderete 傷疑列為 Paraguay 的結構風險；此為 reported availability watch，正式缺陣/先發仍等官方名單。"
+        "Sports Illustrated 賽前頁再次把 Diego Gómez 停賽與 Omar Alderete 傷疑列為 Paraguay 的結構風險；此為 reported availability watch，正式缺陣/先發仍等官方名單。",
+        "Boston Globe 賽前稿引述 Nagelsmann 形容 Paraguay direct、physical、second balls 強，並要求 Germany 踢出「perfect game」；這是 coach/tactical context。",
+        "SI 賽前頁再把 Nico Schlotterbeck 缺陣後的 Rüdiger/Tah 中衛組合、Undav 推 Havertz 的位置壓力列為 predicted-XI watch；仍非官方先發。",
+        "Opta Analyst 公開模型給 Germany 90 分鐘約 54.7%、Paraguay 約 23.1%；這是紙上市場/概率參照，不是晉級保證。"
       ],
       "sources": [
         {
@@ -2863,6 +2893,14 @@
           "fetchedAt": "2026-06-29T04:50:41Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "Boston Globe",
+          "url": "https://www.bostonglobe.com/2026/06/28/sports/world-cup-germany-paraguay-preview/",
+          "sourceName": "Boston Globe",
+          "fetchedAt": "2026-06-29T06:05:00Z",
+          "claimType": "reported/tactical",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -2871,8 +2909,8 @@
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
       "sourceType": "official/media training + press conference + human-context/tactical/odds watch",
-      "title": "Netherlands-Morocco 不只是對戰表：Guardian 把 Monterrey 寫成情緒場，Bounou/Ouahbi 也已把賽前話筒拿穩。",
-      "sorenTake": "Netherlands 還是有更高個體上限，但 Morocco 這張牌的危險在於它不是純防守弱旅，而是有歷史、移民連結與門將領袖感的情緒隊。Guardian 把這場稱為 Monterrey 的 clash of titans，Morocco World News 也確認 Bounou 隨 Ouahbi 出席賽前會。Soren 翻譯：荷蘭若只用名氣踢，這場很快會變成自尊心壓力測試。",
+      "title": "Netherlands-Morocco 臨場風向：FIFA live centre 已就位，Morocco 不是故事配角，是會把荷蘭後防逼出汗的細節題。",
+      "sorenTake": "Netherlands 紙面還是小熱，但這不是「橙色過場動畫」。FIFA live centre、WhoScored/Opta 類賽前參照都指向一場細節局：荷蘭進攻上限高，後場失誤也真；Morocco 有 Bounou 的門線權威與情緒加成。Soren 翻譯：這場誰先把自尊心當戰術板，誰就先掉坑。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -2897,7 +2935,10 @@
         "Sport Le360 6/28 報導 Morocco 在 Monterrey 完成第二次訓練，標題與內文稱 Lions de l’Atlas au complet；本站把它列為高信心 availability watch，但正式先發仍等官方名單。",
         "Sport Le360 6/29 報導 Mohamed Ouahbi 與 Yassine Bounou 已出席對 Netherlands 賽前記者會，提供 Morocco 陣營心態與備戰脈絡。",
         "The Guardian 6/29 preview 把 Netherlands-Morocco 描述為 Monterrey 的「clash of titans」，強調兩隊連結、歷史記憶與場地氛圍；這是 human/context layer，不是先發確認。",
-        "Morocco World News 賽前稿確認 Yassine Bounou 將與 Mohamed Ouahbi 出席對 Netherlands 的記者會，並稱摩洛哥正完成最後備戰；屬 team readiness/press context。"
+        "Morocco World News 賽前稿確認 Yassine Bounou 將與 Mohamed Ouahbi 出席對 Netherlands 的記者會，並稱摩洛哥正完成最後備戰；屬 team readiness/press context。",
+        "FIFA match centre 已為 Netherlands-Morocco 建立官方 live centre；正式 lineup/比賽事件應以該處與球隊官方為準。",
+        "WhoScored 賽前頁標示 team news、injuries/suspensions、probable line-ups、facts and odds；可作 media lineup/stat watch，不能升格為確認先發。",
+        "Opta Analyst 公開預覽把 Netherlands 視為較可能晉級的一方，但 Morocco 並非長賠陪襯；Soren 把它作 paper/context calibration。"
       ],
       "sources": [
         {
@@ -3090,6 +3131,22 @@
           "sourceName": "Morocco World News",
           "fetchedAt": "2026-06-29T04:50:41Z",
           "claimType": "reported/team-readiness",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Match Centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021522",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-29T06:05:00Z",
+          "claimType": "confirmed/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "WhoScored",
+          "url": "https://www.whoscored.com/matches/1990731/preview/international-fifa-world-cup-2026-netherlands-morocco",
+          "sourceName": "WhoScored",
+          "fetchedAt": "2026-06-29T06:05:00Z",
+          "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
         }
       ],
