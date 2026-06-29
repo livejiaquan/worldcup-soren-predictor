@@ -1,4 +1,17 @@
 {
   "note": "Source-backed final-score overrides used when upstream openfootball data lags. The official-results verifier cron may append new entries; remove entries after upstream catches up if desired.",
-  "overrides": []
+  "overrides": [
+    {
+      "date": "2026-06-29",
+      "team1": "Brazil",
+      "team2": "Japan",
+      "score": [
+        2,
+        1
+      ],
+      "source": "ESPN public FIFA World Cup summary endpoint reports Full Time (event 760487)",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760487",
+      "fetchedAt": "2026-06-29T19:04:11.957937Z"
+    }
+  ]
 }
