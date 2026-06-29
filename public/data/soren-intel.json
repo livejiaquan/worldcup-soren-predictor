@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T12:41:30Z",
-  "status": "賽日微刷新：M75 補 Morocco 教練賽前調整語境，M77 加 WhoScored France-Sweden expected-XI/傷停入口，M79 補 Opta 公開機率與戰術預覽，M80 補 BBC 的 DR Congo 對手 scouting；全部維持預測陣容、模型機率與紙上市場邊界。",
-  "headline": "Soren 賽日雷達：Brazil-Japan 即將開火；Netherlands-Morocco、France-Sweden、Mexico-Ecuador、England-DR Congo 補到新公開訊號，但沒有把 preview/概率/expected XI 冒充官方先發。",
+  "generatedAt": "2026-06-29T13:04:28Z",
+  "status": "賽日前哨微刷新：M76 Brazil-Japan 補 Kyodo 森保發布會、ge 巴西賽日陣容入口、JFA 官方名單/賽程與 Bundesliga 先發追蹤；維持「預測/追蹤」邊界，不把媒體與資料頁冒充官方先發。",
+  "headline": "Soren 賽日雷達：Brazil-Japan 四小時內開踢，補上日本端發布會與巴西端賽日陣容入口；巴西仍熱，但日本不是來拍紀念照的。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2407,9 +2407,9 @@
     {
       "matchId": "m076",
       "match": "Brazil vs Japan",
-      "sourceType": "official/team updates + live-centre + reported lineup/stat watch + public market reference",
-      "title": "Brazil-Japan 再加臨場數據與市場溫度：WhoScored 傷停/ probable XI、Polymarket 成交量都在升溫；巴西熱門，但日本的壓迫劇本還沒被判死刑。",
-      "sorenTake": "Brazil 牌面仍硬，Vini Jr. 與前場深度讓日本不能只靠熱血防守；但 WhoScored 的 probable-XI/傷停頁和 Polymarket 的公開交易熱度提醒一件事：淘汰賽不是履歷審查，Japan 若能把比賽拖進高壓與轉換，熱門也會開始冒汗。",
+      "sourceType": "official fixture + matchday live/lineup watch + tactical/odds/public context",
+      "title": "Brazil-Japan 臨場再加日本發布會與巴西陣容入口：森保想破隊史淘汰賽魔咒，巴西熱門但不能把日本當旅遊團。",
+      "sorenTake": "Kyodo 的森保發布會把這場拉回一個很簡單的問題：日本要不要第一次在世界盃淘汰賽真的跨過門檻。巴西有天分、有市場熱度，也有 ge/Globo 與 Bundesliga 類頁面盯著賽日陣容；但正式 XI 落地前，Soren 只把它寫成 lineup-watch。強隊可以高傲，資料不能高傲。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2446,7 +2446,11 @@
         "Al Jazeera 6/29 賽日預覽列出 Brazil vs Japan 的 Houston 32 強脈絡、賽前 live build-up 與 prediction/lineups；本站只當主流媒體賽日入口與 lineup-watch，不升格為官方 XI。",
         "Sports Illustrated Brazil predicted lineup 頁把 Alisson 與一組巴西預測先發列為賽前方案；仍屬 media predicted XI，正式名單等 FIFA/球隊公告。",
         "WhoScored 賽前頁提供 Brazil-Japan 傷停、停賽、probable line-ups、facts and odds；這是統計/預測陣容入口，不是官方先發。",
-        "Polymarket Brazil-Japan 頁面顯示截至 6/29 約 649 萬美元公開交易量；只作紙上市場/群眾溫度觀察，不是下注建議，也不等於 Soren 盤口。"
+        "Polymarket Brazil-Japan 頁面顯示截至 6/29 約 649 萬美元公開交易量；只作紙上市場/群眾溫度觀察，不是下注建議，也不等於 Soren 盤口。",
+        "Kyodo 賽前稿記錄森保一日前發布會：日本面對五冠 Brazil，目標是衝擊隊史首次世界盃淘汰賽勝利；這是日本端心理與戰術語境，不是先發名單。",
+        "ge/Globo 6/29 賽日頁提供 Brazil-Japan 直播、時間、缺陣與「escalações」入口；可作巴西端臨場陣容追蹤，但正式 XI 仍需等官方/可靠 live centre 落地。",
+        "JFA 英文官方頁提供 SAMURAI BLUE 世界盃名單與賽程基準，可用來核對日本隊名單/時間線；它不是傷停更新本身。",
+        "Bundesliga 賽事頁標示 Brazil-Japan 的最新更新與 lineup 追蹤；Soren 把它當臨場 formation/lineup centre，不提前升格為 confirmed lineup。"
       ],
       "sources": [
         {
@@ -2712,6 +2716,38 @@
           "fetchedAt": "2026-06-29T11:51:51Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "Kyodo Moriyasu pre-match press conference",
+          "url": "https://english.kyodonews.net/articles/-/78846",
+          "sourceName": "Kyodo News",
+          "fetchedAt": "2026-06-29T13:04:28Z",
+          "claimType": "reported/coach-player-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "ge Brazil-Japan matchday lineups guide",
+          "url": "https://ge.globo.com/futebol/copa-do-mundo/noticia/2026/06/29/brasil-x-japao-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "sourceName": "ge / Globo Esporte",
+          "fetchedAt": "2026-06-29T13:04:28Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "JFA Samurai Blue squad and schedule",
+          "url": "https://www.jfa.jp/eng/national_team_2026/news/00036338/",
+          "sourceName": "Japan Football Association",
+          "fetchedAt": "2026-06-29T13:04:28Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Bundesliga Brazil-Japan lineup tracker",
+          "url": "https://www.bundesliga.com/en/world-cup/matchday/2026-2027/round-of-32/brazil-vs-japan/lineup",
+          "sourceName": "Bundesliga.com",
+          "fetchedAt": "2026-06-29T13:04:28Z",
+          "claimType": "context/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
