@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T04:11:38Z",
-  "status": "schedule-aware-scout-20260629T0418Z-r32-late-availability-actualization",
-  "headline": "Soren 04:18 巡檢：M76 補 Kubo 缺陣與日本後防 watch，M75 補 Morocco 賽前訓練/記者會，M79/M80/M82 依最新公開賽程與傷停脈絡更新成具體淘汰賽卡。",
+  "generatedAt": "2026-06-29T04:50:41Z",
+  "status": "schedule-aware-scout-20260629T0455Z-r32-matchday-source-refresh",
+  "headline": "Soren 04:55 巡檢：M74 補 Goal/SI Germany-Paraguay predicted-XI 與 Alderete/Gómez 風險，M75 補 Guardian/Morocco World News 的 Monterrey 敘事與 Bounou/Ouahbi 賽前會；M76 再核 SI 仍指 Kubo/Raphinha 缺陣 watch。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2415,7 +2415,8 @@
         "Sports Illustrated 賽前頁把 Japan 高壓能否干擾 Brazil 組織列為 upset path，並提到 Houston 大場面；先作 tactical/context watch。",
         "Covers 賠率/傷停頁同時列 Brazil Raphinha out、Japan Endo out、Itakura/Kubo doubtful 等市場資訊；本站只作 paper simulation 與 availability watch，不寫成醫療官宣。",
         "ESPN 6/28 報導 Takefusa Kubo 將因傷連續第三場缺席，Japan 對 Brazil 的創造力與定位球選擇因此打折。",
-        "ge/Globo 賽前隊訊同樣寫明 Kubo 缺陣，並稱 Ko Itakura 可能先坐板凳、Shogo Taniguchi 有機會進入 3-4-2-1；本站只標為 reported lineup watch，不寫成確認 XI。"
+        "ge/Globo 賽前隊訊同樣寫明 Kubo 缺陣，並稱 Ko Itakura 可能先坐板凳、Shogo Taniguchi 有機會進入 3-4-2-1；本站只標為 reported lineup watch，不寫成確認 XI。",
+        "04:55Z 再核 Sports Illustrated 賽前頁：Brazil predicted XI 仍傾向 Alisson；Danilo、Marquinhos、Gabriel、Santos；Guimarães、Casemiro；Rayan、Paquetá、Vinícius；Cunha；Japan 端 Kubo 膝傷缺陣、Itakura 傷情仍是後防 watch。這仍是 media predicted XI，不是確認先發。"
       ],
       "sources": [
         {
@@ -2616,9 +2617,9 @@
     {
       "matchId": "m074",
       "match": "Germany vs Paraguay",
-      "sourceType": "official fixture confirmed + federation final-training/press context + late injury/suspension/odds watch",
-      "title": "Germany-Paraguay 賽前資料更硬了：APF 已完成 Boston 最後訓練，Alfaro/Gómez 把爆冷話講到桌上。",
-      "sorenTake": "Germany 仍是牌面大熱，但 APF 官方把 Paraguay 的最後訓練、賽前記者會與「歷史一戰」情緒都放上檯面。這不是把德國降級，而是提醒模型：淘汰賽遇到 Alfaro 這種把低位、反擊、心理戰都裝進行李箱的隊，熱門方只要前 25 分鐘踢得像觀光客，Boston 會立刻變成警報器。",
+      "sourceType": "official fixture confirmed + federation final-training/press context + late injury/suspension/predicted-XI/odds watch",
+      "title": "Germany-Paraguay 臨場 watch 再加一層：Paraguay 想用低位搏命，但 Gómez 停賽與 Alderete 傷疑讓爆冷劇本少了螺絲。",
+      "sorenTake": "Germany 仍是大熱，可是淘汰賽最怕把「大熱」踢成「大意」。Goal 與 SI 的賽前頁都把 Paraguay 的 Diego Gómez 停賽、Omar Alderete 傷疑列成關鍵風險；這讓 Alfaro 的低位反擊少一點完整度。Soren 的判讀：德國不需要華麗，只需要前半小時別自爆。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2642,7 +2643,9 @@
         "Opta supercomputer 公開參照給 Germany 90 分鐘約 54.7%、Paraguay 約 23.1%；這只能說德國優勢明顯，不能把 Paraguay 低位反擊刪掉。",
         "APF 官方賽前稿確認 Paraguay 已在 New England Revolution Training Center 完成 Boston 最後一練，準備對 Germany 爭取晉級；這是 team-logistics/ readiness 確認，不是先發名單。",
         "APF 官方另刊 Gustavo Alfaro 與隊長 Gustavo Gómez 賽前記者會；內容可作 coach/captain quote 與心理準備脈絡，仍不推論確認 XI。",
-        "RTL Today/AFP 也引用 Alfaro 盯上「life-changing」爆冷敘事；Soren 把它當賽前動機與媒體語境，不當成勝率公式。"
+        "RTL Today/AFP 也引用 Alfaro 盯上「life-changing」爆冷敘事；Soren 把它當賽前動機與媒體語境，不當成勝率公式。",
+        "Goal.com Australia 賽前頁列出 Germany-Paraguay likely XI，並把 Paraguay 可能以緊湊中後場與 Enciso/Sanabria 出口應戰；仍屬 media predicted XI，不是官方先發。",
+        "Sports Illustrated 賽前頁再次把 Diego Gómez 停賽與 Omar Alderete 傷疑列為 Paraguay 的結構風險；此為 reported availability watch，正式缺陣/先發仍等官方名單。"
       ],
       "sources": [
         {
@@ -2844,6 +2847,22 @@
           "fetchedAt": "2026-06-29T03:36:00Z",
           "claimType": "reported/coach-quote",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Goal.com Germany-Paraguay preview",
+          "url": "https://www.goal.com/en-au/news/germany-paraguay-world-cup-preview/blt69845ea4b54b1ac0",
+          "sourceName": "Goal.com Australia",
+          "fetchedAt": "2026-06-29T04:50:41Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Illustrated Germany-Paraguay preview",
+          "url": "https://www.si.com/soccer/germany-vs-paraguay-world-cup-preview-predictions-lineups-6-29-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-06-29T04:50:41Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -2851,9 +2870,9 @@
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
-      "sourceType": "official/media training + press conference + tactical/odds watch",
-      "title": "Netherlands-Morocco 賽前更有火藥味：Le360 指 Atlas Lions 人齊到位，Bounou 與 Ouahbi 已開賽前會。",
-      "sorenTake": "Netherlands 的火力和防線漏水都已被寫爛，Morocco 這邊的新訊號是「陣容完整、氣氛穩」。Le360 報導 Atlas Lions 在 Monterrey 第二次訓練且人員齊整，Ouahbi 與 Bounou 也完成賽前記者會。Soren 的翻譯：這不是荷蘭自動過關局，這是橙軍一失誤就會被放大鏡公開處刑的局。",
+      "sourceType": "official/media training + press conference + human-context/tactical/odds watch",
+      "title": "Netherlands-Morocco 不只是對戰表：Guardian 把 Monterrey 寫成情緒場，Bounou/Ouahbi 也已把賽前話筒拿穩。",
+      "sorenTake": "Netherlands 還是有更高個體上限，但 Morocco 這張牌的危險在於它不是純防守弱旅，而是有歷史、移民連結與門將領袖感的情緒隊。Guardian 把這場稱為 Monterrey 的 clash of titans，Morocco World News 也確認 Bounou 隨 Ouahbi 出席賽前會。Soren 翻譯：荷蘭若只用名氣踢，這場很快會變成自尊心壓力測試。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -2876,7 +2895,9 @@
         "Footy Headlines 搜尋可核對第一批淘汰賽球衣對位，Netherlands 橙色主場對 Morocco 白色客場；屬視覺/kit context，和勝負無直接因果。",
         "Sports Mole 新增戰術專欄把 Netherlands 的高進球與後防漏水並列：Van Dijk 防線仍是 Morocco 反擊與二點球可攻擊的入口；此為 tactical context，不是先發確認。",
         "Sport Le360 6/28 報導 Morocco 在 Monterrey 完成第二次訓練，標題與內文稱 Lions de l’Atlas au complet；本站把它列為高信心 availability watch，但正式先發仍等官方名單。",
-        "Sport Le360 6/29 報導 Mohamed Ouahbi 與 Yassine Bounou 已出席對 Netherlands 賽前記者會，提供 Morocco 陣營心態與備戰脈絡。"
+        "Sport Le360 6/29 報導 Mohamed Ouahbi 與 Yassine Bounou 已出席對 Netherlands 賽前記者會，提供 Morocco 陣營心態與備戰脈絡。",
+        "The Guardian 6/29 preview 把 Netherlands-Morocco 描述為 Monterrey 的「clash of titans」，強調兩隊連結、歷史記憶與場地氛圍；這是 human/context layer，不是先發確認。",
+        "Morocco World News 賽前稿確認 Yassine Bounou 將與 Mohamed Ouahbi 出席對 Netherlands 的記者會，並稱摩洛哥正完成最後備戰；屬 team readiness/press context。"
       ],
       "sources": [
         {
@@ -3053,6 +3074,22 @@
           "sourceName": "Sport Le360",
           "fetchedAt": "2026-06-29T04:11:38Z",
           "claimType": "reported/press-conference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Guardian Netherlands-Morocco human-context preview",
+          "url": "https://www.theguardian.com/football/2026/jun/28/morocco-netherlands-world-cup-2026-preview",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-29T04:50:41Z",
+          "claimType": "reported/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Morocco World News Bounou-Ouahbi press conference",
+          "url": "https://www.moroccoworldnews.com/2026/06/326129/bounou-joins-coach-ouahbi-for-press-conference-ahead-of-morocco-netherlands-match/",
+          "sourceName": "Morocco World News",
+          "fetchedAt": "2026-06-29T04:50:41Z",
+          "claimType": "reported/team-readiness",
           "confidence": "medium-high"
         }
       ],
