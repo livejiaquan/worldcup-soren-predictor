@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T14:19:04Z",
-  "status": "賽日前哨源頭微刷新：M76 補 FIFA/AFC/Al Jazeera 官方與即時頁，M74 補 FIFA 官方頁與 Opta 公開機率，M78 補 Bundesliga live ticker；所有首發仍維持預測/追蹤邊界。",
-  "headline": "Soren 賽日雷達：Brazil-Japan 進入倒數三小時，Germany-Paraguay 接著上桌；官方頁可當硬入口，媒體 XI 仍不能冒充裁判簽名。",
+  "generatedAt": "2026-06-29T15:00:38Z",
+  "status": "matchday-refresh",
+  "headline": "Soren 賽日雷達：Brazil-Japan 已接近開球，Germany-Paraguay 補 DFB 賽前聲音；Netherlands-Morocco 再加 Koeman 對摩洛哥的公開警報。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2776,9 +2776,9 @@
     {
       "matchId": "m074",
       "match": "Germany vs Paraguay",
-      "sourceType": "official federation updates + official FIFA context + reported lineup-watch + public probability/odds context",
-      "title": "Germany-Paraguay 補 FIFA 官方入口與 Opta 冷水：德國是 54.7% 熱門，但淘汰賽不是 Excel 自動晉級按鈕。",
-      "sorenTake": "FIFA 官方頁給 Germany-Paraguay 的硬入口，Opta 給德國 90 分鐘 54.7% 勝率；這支持德國佔優，但也明白寫著 Paraguay 有活路。Soren 的翻譯：德國若以為牌面會自己踢球，就會被巴拉圭的低位與反擊拖去照妖鏡。",
+      "sourceType": "official/team-mood + public-probability + lineup-watch",
+      "title": "Germany-Paraguay 再補 DFB/Havertz 賽前聲音：德國人都說準備上場燒起來了，但淘汰賽不是口號比大聲。",
+      "sorenTake": "DFB 的 Havertz 訪談確認德國更衣室語氣很熱，APF 端則早就把 Paraguay 包裝成歷史任務。Soren 的翻譯：德國是熱門，但如果只靠名牌過人，這場會被南美紀律拖進泥巴。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2823,7 +2823,8 @@
         "APF 官方稿確認 Paraguay 在 Boston 完成對 Germany 賽前最後訓練，內容包含啟動、反應速度、rondo 與 tactical work；屬官方備戰訊號。",
         "APF 另有 Alfaro 與隊長 Gustavo Gómez 官方發布會稿，確認對 Germany 的賽前語境；可支撐 Paraguay 以心理/紀律戰進入淘汰賽，而非只看賠率。",
         "FIFA Germany-Paraguay preview/live-stream/team-news 頁已可連線，作為賽前官方入口；正式先發仍等 FIFA/球隊/可信 live centre 落地。",
-        "Opta Analyst 公開模型把 Germany 90 分鐘勝率列為 54.7%、Paraguay 23.1%；這是公開機率/戰術脈絡，不是 Soren 內部模型配方，也不是下注建議。"
+        "Opta Analyst 公開模型把 Germany 90 分鐘勝率列為 54.7%、Paraguay 23.1%；這是公開機率/戰術脈絡，不是 Soren 內部模型配方，也不是下注建議。",
+        "DFB 6/29 Havertz 官方訪談指出他期待首次真正踏上世界盃淘汰賽，並說隊內「每個人都渴望上場」；這是官方 team-mood/賽前語境，不是先發確認。"
       ],
       "sources": [
         {
@@ -3129,6 +3130,14 @@
           "fetchedAt": "2026-06-29T11:51:51Z",
           "claimType": "reported/tactical",
           "confidence": "medium"
+        },
+        {
+          "label": "DFB Havertz pre-Paraguay interview",
+          "url": "https://www.dfb.de/news/havertz-jeder-brennt-darauf-auf-den-platz-zu-gehen",
+          "sourceName": "DFB",
+          "fetchedAt": "2026-06-29T15:00:38Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -3136,9 +3145,9 @@
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
-      "sourceType": "reported team-news + official preparation + tactical/odds context",
-      "title": "Netherlands-Morocco 補 Al Jazeera 與 Yahoo team-news：這是前十等級互砍，不是橙軍自動過關的剪綵儀式。",
-      "sorenTake": "Al Jazeera 把這場定調成少見的 top-10 ranked 對撞，Yahoo 的 team-news 則把荷蘭端小傷情放回「可用但要觀察」的框架。Morocco 有速度和轉換，Netherlands 有結構和深度；Soren 只提醒一句：淘汰賽裡，最貴的錯覺叫「我以為他們只會防守」。",
+      "sourceType": "coach-quote + official-training + lineup-watch + odds-reference",
+      "title": "Netherlands-Morocco 再補 Koeman 警報：荷蘭不是沒牌，但教練自己都知道 Morocco 不是觀光團。",
+      "sorenTake": "CNA/Reuters 與 The National 都把 Koeman 的謹慎語氣擺上桌：荷蘭小組第一是真的，摩洛哥的強度也是真的。這場最怕的不是冷門本身，是強隊把對手當故事背景板。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -3179,7 +3188,9 @@
         "USA Today 刊出 Netherlands-Morocco prediction/odds 頁，補充公開盤與專家預測語境；只作紙上市場溫度，不構成下注建議。",
         "Oman Observer/Reuters 6/29 引述 Morocco 教練 Nabil Ouahbi：小組不敗不足以直接帶進淘汰賽，對 Netherlands 需要 different solutions；這是 coach/tactical context，不是 confirmed lineup。",
         "Al Jazeera 賽前稿把 Netherlands-Morocco 描述為罕見前十等級對決，並提供 team-news / prediction 入口；屬可信媒體賽事情境，不是官方先發。",
-        "Yahoo Sports 預測陣容頁指出 Netherlands 對 Morocco 的勝者將接 Brazil/Japan 勝方，並提到荷蘭端有小傷情/可用性觀察；仍按 reported lineup-watch 處理。"
+        "Yahoo Sports 預測陣容頁指出 Netherlands 對 Morocco 的勝者將接 Brazil/Japan 勝方，並提到荷蘭端有小傷情/可用性觀察；仍按 reported lineup-watch 處理。",
+        "CNA/Reuters 6/25 指出 Koeman 在鎖定 F 組第一後仍警告 Morocco 會是 formidable test；屬 coach-quote/context，不等於荷蘭自認弱勢或先發資訊。",
+        "The National 6/26 以 Koeman 稱 Netherlands 對 Morocco 會是 underdogs 為主軸；可作心理戰與輿論溫度，但需與官方/即時頁分開標註。"
       ],
       "sources": [
         {
@@ -3477,6 +3488,22 @@
           "fetchedAt": "2026-06-29T13:42:25Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "CNA/Reuters Koeman Morocco warning",
+          "url": "https://www.channelnewsasia.com/sport/koeman-wary-morocco-threat-despite-topping-group-6211976",
+          "sourceName": "Channel NewsAsia / Reuters",
+          "fetchedAt": "2026-06-29T15:00:38Z",
+          "claimType": "reported/coach-player-quote",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "The National Koeman underdogs framing",
+          "url": "https://www.thenationalnews.com/sport/world-cup-2026/2026/06/26/world-cup-2026-ronald-koeman-says-netherlands-will-be-underdogs-against-morocco-in-last-32/",
+          "sourceName": "The National",
+          "fetchedAt": "2026-06-29T15:00:38Z",
+          "claimType": "reported/context",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
