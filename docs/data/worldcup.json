@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T19:04:19.229Z",
+  "generatedAt": "2026-06-29T19:26:43.592Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -2067,7 +2067,7 @@
         2,
         1
       ],
-      "source": "openfootball/worldcup.json + override: ESPN public FIFA World Cup summary endpoint reports Full Time (event 760487)"
+      "source": "openfootball/worldcup.json"
     },
     {
       "id": "m074",
