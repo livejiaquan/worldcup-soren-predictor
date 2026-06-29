@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T00:30:22Z",
-  "status": "schedule-aware-scout-20260629T0030Z-m073-result-and-r32-watch",
-  "headline": "Soren 00:30 巡檢：M73 已由 Canada 1-0 South Africa 收口，補上 Al Jazeera/ESPN 賽後來源；M76/M74/M75 已有近時官方/傷停/市場 watch，先不灌水。",
+  "generatedAt": "2026-06-29T01:08:36Z",
+  "status": "schedule-aware-scout-20260629T0108Z-r32-late-lineup-watch",
+  "headline": "Soren 01:08 巡檢：補強 M76/M74/M75 的官方隊務、公開傷停/預測先發、紙上市場與社群搜尋脈絡；仍未把任何預測 XI 寫成官方先發。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2389,9 +2389,9 @@
     {
       "matchId": "m076",
       "match": "Brazil vs Japan",
-      "sourceType": "official fixture + official team logistics + injury/tactical/odds watch",
+      "sourceType": "official fixture + official team logistics + late injury/lineup/market watch",
       "title": "Brazil-Japan 不是五星隊的散步局；日本剛有逆轉巴西記憶，Houston 這餐有刺。",
-      "sorenTake": "FIFA/CBF/JFA 都把 Brazil-Japan 的官方賽事脈絡收齊：巴西已到 Houston，日本官方賽事頁也可核對。Brazil 仍是較熱一方，但 Reuters 把這場寫成 2025 日本逆轉巴西的重賽脈絡，且 Japan 已公開準備點球劇本；若 Itakura 傷情讓後防少一塊，才是巴西真正可以下刀的位置。",
+      "sorenTake": "FIFA/CBF/JFA 都把 Brazil-Japan 的官方賽事脈絡收齊：巴西已到 Houston，日本官方賽事頁也可核對。Brazil 仍是較熱一方，但 Reuters 把這場寫成 2025 日本逆轉巴西的重賽脈絡；最新公開 team-news 又把 Raphinha 的小傷、Rayan/Raphinha 右路選擇與 Japan 後防傷情擺上桌。Soren 的結論不變：巴西是優勢方，但如果日本把比賽拖慢再拖進點球，五星隊的臉色會比 Houston 天氣還悶。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2406,7 +2406,11 @@
         "Reuters 賽前脈絡把本場寫成 Brazil 對 Japan 的 rematch，提到日本 2025 年曾從 0-2 逆轉巴西；這支撐「Brazil 優勢但不等於散步」的 upset path。",
         "Reuters / Straits Times 報導 Moriyasu 可能親自指定點球手，顯示 Japan 已把拖入長局與點球的劇本納入準備。",
         "Ko Itakura 對 Sweden 傷退後，RotoWire/Chosun 等公開報導稱他對 Brazil 出戰存疑或不太可能；先標 injury watch，等官方 XI 才能定案。",
-        "Opta / Squawka / BetMonitor 類公開市場與模型參照仍給 Brazil 明顯優勢，但價格不是免踢證明，只作 paper simulation 校準。"
+        "Opta / Squawka / BetMonitor 類公開市場與模型參照仍給 Brazil 明顯優勢，但價格不是免踢證明，只作 paper simulation 校準。",
+        "CBF 官方確認 Japan 是 Brazil 32 強對手，並稱巴西隊已於 6/27 抵達 Houston；這是賽程與球隊 logistics，不是先發名單。",
+        "Sports Mole 最新 injury/suspension 與 predicted-XI 頁把 Brazil 右路寫成 Rayan 或 Raphinha 的選擇，並提到 Raphinha 傷情仍需留意；先標 reported/lineup-watch。",
+        "同一批公開預覽也把 Japan 後防傷情列為關鍵風險；若 Ko Itakura 無法首發，Japan 的低位防守會少一個抗壓點。",
+        "Covers 的紙上市場參照反而提示 draw 價格有討論空間：Brazil 品牌熱度可能把 90 分鐘勝率推得太甜；本站只作 paper simulation，不是投注建議。"
       ],
       "sources": [
         {
@@ -2536,6 +2540,38 @@
           "fetchedAt": "2026-06-28T23:51:55Z",
           "claimType": "odds-reference/context",
           "confidence": "medium-high"
+        },
+        {
+          "label": "CBF Japan is Brazil R32 opponent",
+          "url": "https://www.cbf.com.br/selecao-brasileira/noticias/selecao-masculina/a/japao-e-o-adversario-do-brasil-nos-16-avos-de-final-da-copa",
+          "sourceName": "CBF",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole Brazil-Japan injury and predicted XIs",
+          "url": "https://www.sportsmole.co.uk/football/brazil/world-cup-2026/team-news/brazil-vs-japan-injury-suspension-list-predicted-xis_600208.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Mole Brazil predicted XI Rayan or Raphinha",
+          "url": "https://www.sportsmole.co.uk/football/brazil/world-cup-2026/predicted-lineups/rayan-or-raphinha-predicted-brazil-xi-vs-japan_600205.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Covers Brazil-Japan odds and draw angle",
+          "url": "https://www.covers.com/world-cup/brazil-vs-japan-prediction-picks-odds-monday-6-29-2026",
+          "sourceName": "Covers",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -2543,9 +2579,9 @@
     {
       "matchId": "m074",
       "match": "Germany vs Paraguay",
-      "sourceType": "official fixture confirmed + official team context + injury/suspension/odds watch",
+      "sourceType": "official fixture confirmed + federation training context + late injury/suspension/odds watch",
       "title": "Germany-Paraguay 終於從代號變成真名；德國是大熱，但後防補丁和巴拉圭低位局會考耐心。",
-      "sorenTake": "DFB 已確認 Germany 32 強對手是 Paraguay，早前 bracket-watch 可以降落了。德國市場面很熱，但 Schlotterbeck 長傷讓中衛組合不是滿血，Brown 狀態仍需看名單；Paraguay 端 Diego Gómez 停賽、Alderete 傷疑，Alfaro 的低位硬殼會把這場變成耐心測驗。",
+      "sorenTake": "DFB 與 APF 都把 Germany-Paraguay 的門牌釘牢：Boston 等著 Albirroja，德國也公開講要端出更強表現。市場面仍偏德國，但這場真正要看兩件事：Brown 是否能讓德國左路少漏風、Paraguay 少了 Diego Gómez 後還能不能用 Enciso/Almirón 把反擊跑出刀口。德國若把大熱當巡遊，Paraguay 的低位會把比賽煮成一鍋難喝但有效的湯。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2558,7 +2594,11 @@
         "多家賽前頁一致把 Nico Schlotterbeck 列為因韌帶傷勢長期缺陣；Antonio Rüdiger 可能補進防線，但這仍等官方先發。",
         "Paraguay 的 Diego Gómez 被多家預覽列為停賽，Omar Alderete 則是 knee/fitness doubt；Soren 先標 availability watch，不寫成官方 XI。",
         "RotoWire/Covers/ESPN 類預覽指向 Paraguay 可能用 Gustavo Alfaro 式緊湊低位與 Enciso/Almirón 反擊出口，德國若早段急躁會被拖進低事件局。",
-        "DraftKings Network / Covers 市場參照顯示 Germany 明顯大熱；本站只作 paper simulation odds-reference，不提供投注建議。"
+        "DraftKings Network / Covers 市場參照顯示 Germany 明顯大熱；本站只作 paper simulation odds-reference，不提供投注建議。",
+        "APF 官方稱 Paraguay 已恢復訓練並把全部能量轉向 Germany；後續又寫「Boston espera a la Albirroja」，確認球隊完成 San José 最後訓練、移往淘汰賽目標。",
+        "Sports Mole team-news 頁把 Nathaniel Brown 的肌肉問題列為德國左路觀察點，並給出 predicted XI；這是 reported/lineup-watch，不是確認先發。",
+        "Sports Mole Paraguay predicted-XI 頁標題直指 key absence confirmed，配合既有 Diego Gómez 停賽脈絡；Paraguay 的反擊出口要重新分工。",
+        "William Hill/Covers 等公開盤面把德國列為明顯大熱；本站只把它當紙上市場溫度，提醒 Soren 別把熱門價當晉級章。"
       ],
       "sources": [
         {
@@ -2664,6 +2704,46 @@
           "fetchedAt": "2026-06-28T23:51:55Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "APF Paraguay prepares R32 challenge",
+          "url": "https://www.apf.org.py/noticias/la-albirroja-ya-prepara-el-desafio-de-los-16avos-de-final",
+          "sourceName": "APF",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "APF Boston awaits Albirroja",
+          "url": "https://www.apf.org.py/noticias/boston-espera-a-la-albirroja",
+          "sourceName": "APF",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole Germany-Paraguay injury and predicted XIs",
+          "url": "https://www.sportsmole.co.uk/football/germany/world-cup-2026/team-news/germany-vs-paraguay-injury-suspension-list-predicted-xis_600233.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Mole Paraguay predicted XI key absence",
+          "url": "https://www.sportsmole.co.uk/football/germany/world-cup-2026/predicted-lineups/key-absence-confirmed-how-paraguay-could-line-up-vs-germany_600235.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "William Hill Germany-Paraguay odds preview",
+          "url": "https://news.williamhill.com/football/world-cup/germany-v-paraguay-prediction-odds-and-best-bets/",
+          "sourceName": "William Hill News",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -2671,9 +2751,9 @@
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
-      "sourceType": "official match preview + federation travel/coach context + odds watch",
+      "sourceType": "official match preview + federation travel/training context + late lineup/odds/social watch",
       "title": "Netherlands-Morocco 是淘汰賽第一批真香局：橙軍火力很亮，Atlas Lions 已經到 Monterrey 磨刀。",
-      "sorenTake": "FIFA 官方 preview 已把焦點放到 Monterrey，FRMF 顯示 Morocco 已抵達備戰，Koeman 也承認荷蘭「還沒到該到的位置」。Netherlands 小組火力漂亮，但 Morocco 的節奏和身體對抗會專治豪門濾鏡；Soren 不把這場寫成橙色遊行。",
+      "sorenTake": "FIFA/FRMF/KNVB 的框架已夠清楚：Morocco 已到 Monterrey 並持續備戰，Netherlands 也知道自己還沒到滿格。最新公開 team-news 把 Dumfries、Brobbey 可用寫成荷蘭雙重補血，但 Morocco 不是陪襯；這場若變成肢體對抗與半空間反擊，橙軍那條看似名牌的防線會被 Atlas Lions 試穿到拉鍊爆。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -2684,7 +2764,12 @@
         "BBC / Guardian / Al Jazeera 均以 Tunisia 1-3 Netherlands 後 Netherlands 小組第一、將對 Morocco 作為資格脈絡；這是結果背景，不是新先發消息。",
         "OddsChecker 等公開盤頁已開 Netherlands-Morocco 市場；僅作紙上市場溫度，不是真金投注建議。",
         "DraftKings Network / OddsChecker 市場參照把 Netherlands 列為 90 分鐘小熱，Morocco 不是長賠陪襯；這場更像細節局，不是橙軍巡遊。",
-        "FIFA Tunisia-Netherlands 賽報確認 Netherlands 3-1 擊敗 Tunisia 並以 Group F 第一進入 Morocco 對戰；此為官方 form context。"
+        "FIFA Tunisia-Netherlands 賽報確認 Netherlands 3-1 擊敗 Tunisia 並以 Group F 第一進入 Morocco 對戰；此為官方 form context。",
+        "FRMF 官方更新稱 Morocco 持續備戰 Netherlands；這是球隊準備狀態，不等於確認先發。",
+        "Sports Mole Netherlands predicted-XI 頁稱 Dumfries 與 Brobbey 可出戰，並預期 Van de Ven 可能回到左後衛；全部先標 reported/lineup-watch。",
+        "Sports Mole Morocco predicted-XI 頁提示 Ouahbi 可能調整陣容，Morocco 的輪換與對抗配置是賽前關鍵。",
+        "Covers/ Yahoo Sports 類公開市場把 Netherlands 視為晉級小熱，但也提示可能要踢到加時、總進球偏低；本站僅作 paper simulation odds-reference。",
+        "公開 Reddit 討論把這場框成淘汰賽第一波高熱度對戰；只能作 social-search 氣氛，不代表可量化民意。"
       ],
       "sources": [
         {
@@ -2765,6 +2850,54 @@
           "sourceName": "DraftKings Network",
           "fetchedAt": "2026-06-28T23:51:55Z",
           "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "FRMF Morocco continues Netherlands prep",
+          "url": "https://frmf.ma/articles/lequipe-nationale-poursuit-sa-preparation-en-vue-du-match-contre-les-pays-bas",
+          "sourceName": "FRMF",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole Netherlands-Morocco preview",
+          "url": "https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/preview/netherlands-vs-morocco-prediction-team-news-lineups_600222.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "reported/tactical",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Mole Netherlands predicted XI double fitness boost",
+          "url": "https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/predicted-lineups/double-fitness-boost-how-netherlands-could-line-up-vs-morocco_600224.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Mole Morocco predicted XI changes watch",
+          "url": "https://www.sportsmole.co.uk/football/netherlands/world-cup-2026/predicted-lineups/ouahbi-to-make-changes-how-morocco-could-line-up-vs-netherlands_600225.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Covers Netherlands-Morocco odds reference",
+          "url": "https://www.covers.com/world-cup/netherlands-vs-morocco-prediction-picks-odds-monday-6-29-2026",
+          "sourceName": "Covers",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "Reddit Netherlands-Morocco public discussion",
+          "url": "https://www.reddit.com/r/worldcup/comments/1ug686w/its_frustrating_that_morocco_or_the_netherlands/",
+          "sourceName": "Reddit r/worldcup",
+          "fetchedAt": "2026-06-29T01:08:36Z",
+          "claimType": "social-search",
           "confidence": "medium"
         }
       ],
