@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T17:47:22Z",
-  "status": "brazil-japan-live-score-watch-not-final",
-  "headline": "Soren 臨場雷達：Brazil-Japan 半場前後公開 live centre 顯示 Japan 1-0 領先；只作 in-progress 情報，未吹完不結算、不寫墓誌銘。",
+  "generatedAt": "2026-06-29T19:55:00Z",
+  "status": "Matchday live: Brazil-Japan now flagged as in-progress 1-1; Germany-Paraguay and Netherlands-Morocco refreshed with late official/live-centre leads.",
+  "headline": "Soren live watch: Japan punched first, Brazil answered; Germany/Netherlands beware the upset tax.",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2408,8 +2408,8 @@
       "matchId": "m076",
       "match": "Brazil vs Japan",
       "sourceType": "official lineups + live-score watch + live-centre + tactical/availability context",
-      "title": "Brazil-Japan 即時警報：Japan 先靠 Kaishu Sano 進球 1-0 壓住巴西；比賽還活著，別急著替任何人辦葬禮。",
-      "sorenTake": "Al Jazeera 與 AS USA 的公開即時頁在上半場尾聲都顯示 Japan 1-0 Brazil，Kaishu Sano 約 28–29 分鐘破門；Guardian 也開了逐分鐘直播入口。這是 live-score/context，不是 final。Soren 的解讀很簡單：巴西紙面火力還在，但一旦被日本先手拖進低節奏淘汰賽，豪華前場就會開始像塞車的高速公路。",
+      "title": "Brazil-Japan 即時警報改寫：Kaishu Sano 先捅刀、Casemiro 把巴西拉回 1-1；未見 full-time 前，誰都別急著開香檳。",
+      "sorenTake": "Guardian 19:51 BST live text 與 Al Jazeera 90 分鐘狀態都指向 Brazil 1-1 Japan：Sano 29 分鐘破門，Casemiro 55–56 分鐘扳平。這仍是 in-progress live-score，不是 final；Soren 的白話是：巴西從懸崖邊爬回來了，但日本已證明這場不是品牌巡遊，是淘汰賽拆招。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2464,7 +2464,9 @@
         "FotMob live tracker 同步顯示 Brazil 4-3-3、Japan 3-4-2-1，並列 Raphinha hamstring injury；這適合當臨場陣型/傷停追蹤，不等於官方戰術意圖已被公開。",
         "AS USA live page 也標出 “BRAZIL XI CONFIRMED / JAPAN XI REVEALED”，補強 Kaishu Sano 取代 Ao Tanaka、Ancelotti 延續上一場主架構的公開報導脈絡。",
         "17:45Z live-score 再核：Al Jazeera 頁面顯示 Brazil 0-1 Japan、Kaishu Sano 29 分鐘進球並接近半場；AS USA 也顯示 Brazil 0 Japan 1、Kaishu Sano 28 分鐘。標記為 in-progress live-score，未見 full-time 前不結算結果或紙上 bankroll。",
-        "Guardian 已開 Brazil v Japan last-32 逐分鐘直播，作為第三個可信 live-centre 入口；目前只用來支撐「比賽進行中、需持續監控」這件事，不從摘要外推完整戰術細節。"
+        "Guardian 已開 Brazil v Japan last-32 逐分鐘直播，作為第三個可信 live-centre 入口；目前只用來支撐「比賽進行中、需持續監控」這件事，不從摘要外推完整戰術細節。",
+        "19:51 BST 父層核對 Guardian Brazil-Japan live text：關鍵事件列 Brazil 1-1 Japan、Casemiro 55 分鐘扳平，並在 88 分鐘仍描述比賽進行中；此為 in-progress live-score，不作 final/result settlement。",
+        "19:55Z 父層核對 Al Jazeera liveblog metadata：Brazil 1-1 Japan、90 分鐘、Casemiro 56 分鐘與 Kaishu Sano 29 分鐘；仍標 live match，未見 full-time 前不結算結果或紙上 bankroll。"
       ],
       "sources": [
         {
@@ -2783,8 +2785,8 @@
           "label": "Al Jazeera Brazil-Japan liveblog",
           "url": "https://www.aljazeera.com/sports/liveblog/2026/6/29/brazil-vs-japan-live-fifa-world-cup-2026",
           "sourceName": "Al Jazeera",
-          "fetchedAt": "2026-06-29T15:40:27Z",
-          "claimType": "context/live-centre",
+          "fetchedAt": "2026-06-29T19:55:00Z",
+          "claimType": "context/live-score",
           "confidence": "high"
         },
         {
@@ -2799,9 +2801,9 @@
           "label": "CBS Brazil-Japan live updates",
           "url": "https://www.cbssports.com/soccer/news/brazil-vs-japan-live-updates-world-cup-2026-score-result/live/",
           "sourceName": "CBS Sports",
-          "fetchedAt": "2026-06-29T15:54:42Z",
-          "claimType": "context/live-centre",
-          "confidence": "medium"
+          "fetchedAt": "2026-06-29T19:55:00Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
         },
         {
           "label": "Football Italia Brazil-Japan official line-ups",
@@ -2831,8 +2833,8 @@
           "label": "Guardian Brazil-Japan live text",
           "url": "https://www.theguardian.com/football/live/2026/jun/29/brazil-v-japan-world-cup-2026-last-32-live",
           "sourceName": "The Guardian",
-          "fetchedAt": "2026-06-29T17:47:22Z",
-          "claimType": "context/live-centre",
+          "fetchedAt": "2026-06-29T19:55:00Z",
+          "claimType": "context/live-score",
           "confidence": "high"
         }
       ],
@@ -2892,7 +2894,9 @@
         "DFB 6/29 Havertz 官方訪談指出他期待首次真正踏上世界盃淘汰賽，並說隊內「每個人都渴望上場」；這是官方 team-mood/賽前語境，不是先發確認。",
         "Sports Illustrated Germany-Paraguay preview 與 Germany predicted lineup 頁面均已父層核對可連線；內容屬預測/賽前判讀，不是官方先發。",
         "USA Today Germany-Paraguay prediction/odds 頁可連線，作為紙上模擬的公開市場與專家觀點參考；不得解讀為投注建議。",
-        "15:50Z 父層探針核到 DFB 官方 Nagelsmann 訪談：德國小組末輪輸 Ecuador 後，主帥明說要 learn from it，並把焦點轉向 22:30 CEST 對 Paraguay；這是心態/修正脈絡，不是陣容官宣。"
+        "15:50Z 父層探針核到 DFB 官方 Nagelsmann 訪談：德國小組末輪輸 Ecuador 後，主帥明說要 learn from it，並把焦點轉向 22:30 CEST 對 Paraguay；這是心態/修正脈絡，不是陣容官宣。",
+        "APF 6/29 官方賽日稿「Cita con la historia」確認 Paraguay 17:30 對 Germany，並把這場定位為 Albirroja 爭取歷史席位；屬官方 matchday context，不是先發名單。",
+        "Bundesliga Germany-Paraguay lineup/live page 可連線，標題明示最新更新；Soren 把它當臨場 lineups/live-centre 追蹤入口，正式 XI 未落地前不升格。"
       ],
       "sources": [
         {
@@ -3230,6 +3234,22 @@
           "fetchedAt": "2026-06-29T15:54:42Z",
           "claimType": "confirmed/coach-quote",
           "confidence": "high"
+        },
+        {
+          "label": "APF Paraguay matchday history article",
+          "url": "https://www.apf.org.py/noticias/cita-con-la-historia-para-la-albirroja",
+          "sourceName": "Asociación Paraguaya de Fútbol",
+          "fetchedAt": "2026-06-29T19:55:00Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Bundesliga Germany-Paraguay lineup centre",
+          "url": "https://www.bundesliga.com/en/world-cup/matchday/2026-2027/round-of-32/germany-vs-paraguay/lineup",
+          "sourceName": "Bundesliga.com",
+          "fetchedAt": "2026-06-29T19:55:00Z",
+          "claimType": "context/lineup-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -3238,8 +3258,8 @@
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
       "sourceType": "coach-quote + official-training + lineup-watch + odds-reference + official context + low-score market watch",
-      "title": "Netherlands-Morocco 補 KNVB 官方脈絡與低比分市場警訊：賽前握手很漂亮，開球後邊路對撞才是真的。",
-      "sorenTake": "KNVB/OnsOranje 給了官方賽事與足協脈絡，Covers 的公開市場口徑偏低比分。Soren 的毒舌版翻譯：這不是荷蘭控球練習賽，Morocco 若把節奏壓碎，Oranje 的天賦也得先證明自己不是只會踢漂亮簡報。",
+      "title": "Netherlands-Morocco 再補 ESPN/FotMob 臨場面板：橙軍小熱，但這種低比分局最愛把天賦隊拖進泥巴。",
+      "sorenTake": "ESPN 賽日前瞻補上轉播、裁判與 predicted lineups，FotMob live centre 則提供 01:00Z 開球、H2H、lineups 與即時數據入口。這些都不是官方 XI；Soren 只把它們當臨場校準。荷蘭若被 Morocco 把節奏壓碎，漂亮控球會瞬間變成高級版繞圈。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -3285,7 +3305,9 @@
         "The National 6/26 以 Koeman 稱 Netherlands 對 Morocco 會是 underdogs 為主軸；可作心理戰與輿論溫度，但需與官方/即時頁分開標註。",
         "KNVB 官方頁已核對：荷蘭足協與摩洛哥足協賽前在 Monterrey 會面，屬官方脈絡/外交溫度，不代表場上會客氣。",
         "OnsOranje 官方比賽頁已核對：列出 Netherlands-Morocco 賽事與歷史對戰資訊，是後續官方名單/賽事資訊監控入口。",
-        "Covers Netherlands-Morocco odds/prediction 頁可連線，摘要指向低比分預期；只作紙上模擬市場/天氣脈絡參考，不是投注建議。"
+        "Covers Netherlands-Morocco odds/prediction 頁可連線，摘要指向低比分預期；只作紙上模擬市場/天氣脈絡參考，不是投注建議。",
+        "ESPN Netherlands-Morocco 賽日前瞻頁可連線，標題列 TV/how to watch/kickoff/referee/predicted line-ups，父層 metadata 核到 Wilton Sampaio；屬 media predicted-XI/referee context，不是官方先發。",
+        "FotMob Netherlands-Morocco live centre 可連線，metadata 列 2026-06-30 01:00 UTC、live results、H2H、match stats、lineups、player ratings 與 insights；作臨場追蹤入口，不提前確認 XI。"
       ],
       "sources": [
         {
@@ -3606,6 +3628,22 @@
           "sourceName": "KNVB",
           "fetchedAt": "2026-06-29T15:40:27Z",
           "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Netherlands-Morocco matchday guide",
+          "url": "https://www.espn.com/soccer/story/_/id/49199529/fifa-world-cup-2026-netherlands-vs-morocco-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-29T19:55:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FotMob Netherlands-Morocco live tracker",
+          "url": "https://www.fotmob.com/en-GB/matches/1f-vs-morocco/jps8z",
+          "sourceName": "FotMob",
+          "fetchedAt": "2026-06-29T19:55:00Z",
+          "claimType": "context/live-centre",
           "confidence": "high"
         }
       ],
