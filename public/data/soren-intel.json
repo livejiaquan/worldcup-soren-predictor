@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-28T23:51:55Z",
-  "status": "schedule-aware-scout-20260628T2351Z-r32-late-official-refresh",
-  "headline": "Soren 23:51 巡檢：M74/M77/M78 對陣從 bracket-watch 推進到公開確認脈絡；補上 Germany-Paraguay、Brazil-Japan、France-Sweden、Ivory Coast-Norway 的官方/傷停/市場線索。",
+  "generatedAt": "2026-06-29T00:30:22Z",
+  "status": "schedule-aware-scout-20260629T0030Z-m073-result-and-r32-watch",
+  "headline": "Soren 00:30 巡檢：M73 已由 Canada 1-0 South Africa 收口，補上 Al Jazeera/ESPN 賽後來源；M76/M74/M75 已有近時官方/傷停/市場 watch，先不灌水。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2225,9 +2225,9 @@
     {
       "matchId": "m073",
       "match": "South Africa vs Canada",
-      "sourceType": "official fixture + knockout debutant context + suspension/injury watch",
-      "title": "South Africa-Canada 是淘汰賽開門第一刀：Canada 較熱，但這不是主辦國自動通關券。",
-      "sorenTake": "兩隊都在追隊史世界盃淘汰賽突破，Canada 有主場/市場熱度，South Africa 則有「反正沒人想先被我拖進泥地」的壓力價值。Soren 會把 Canada 當較高基準，但這種單場淘汰賽最怕早段一球把模型教訓到閉嘴。",
+      "sourceType": "final result + postmatch context + pregame suspension/injury/odds watch",
+      "title": "Canada 1-0 South Africa：主辦國不是散步通關，是靠 Eustáquio 補時一刀把劇本撕開。",
+      "sorenTake": "Canada 終於把隊史世界盃淘汰賽第一勝拿到手，但過程不是模型爽文：South Africa 把比賽拖成低比分泥地，直到 Stephen Eustáquio 補時遠射才分勝負。這種勝法對 Canada 是腎上腺素，也是警告——下一輪若還要靠 90+ 分鐘抽刀，運氣女神不一定每晚值班。",
       "signals": [
         "FIFA 官方預覽與 match centre 已核對可連線：South Africa vs Canada 是 6 月 28 日洛杉磯/SoFi Stadium 的 Round of 32 開場戰。",
         "Canada Soccer 與 SoFi Stadium 頁面同樣列出本場地點與賽事資訊，作為官方/場館交叉核對。",
@@ -2240,7 +2240,11 @@
         "ESPN 12-18小時內賽前頁提供 kickoff/team-news/how-to-watch/injury/predicted line-ups；仍屬媒體預測，不升格為官方 XI。",
         "Olympics.com 把這場定位為兩隊首次世界盃淘汰賽，Sporting News 也標示 28日 15:00 ET；敘事層面是「歷史首關」而不是普通冷門素材。",
         "SportsBettingDime/SportsGambler/Squawka 公開 odds 頁一致顯示 Canada 市場較熱；只作 paper simulation odds-reference，不構成投注建議。",
-        "Opta Analyst 的 South Africa-Canada 淘汰賽預覽給 Canada 67.8% 晉級機率、South Africa 32.2%；90 分鐘模型為 Canada 55.0%、South Africa 20.0%、和局 24.9%，主辦國熱度之外仍有加時/點球風險。"
+        "Opta Analyst 的 South Africa-Canada 淘汰賽預覽給 Canada 67.8% 晉級機率、South Africa 32.2%；90 分鐘模型為 Canada 55.0%、South Africa 20.0%、和局 24.9%，主辦國熱度之外仍有加時/點球風險。",
+        "Openfootball 已把 M73 更新為 South Africa 0-1 Canada，Canada 晉級 Round of 16；本卡同步從賽前 scouting 轉為賽後結果脈絡。",
+        "Al Jazeera 賽後報導標題與描述確認 Canada 1-0 South Africa，Stephen Eustaquio 在補時破門，Canada 首次贏得世界盃淘汰賽。",
+        "ESPN 賽後 live/update 頁同樣寫明 Stephen Eustáquio 補時制勝，Canada 以 1-0 擊敗 South Africa 進入 last 16。",
+        "賽前 Canada 市場與 Opta 皆偏熱，但實際只靠一球補時勝出；Soren 對紙上 bankroll 的復盤要記住：熱門方向對了，不代表風險被低估。"
       ],
       "sources": [
         {
@@ -2354,9 +2358,33 @@
           "fetchedAt": "2026-06-27T11:11:00Z",
           "claimType": "reported/context",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA South Africa-Canada match centre final",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021518",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-29T00:30:22Z",
+          "claimType": "confirmed/final-score",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Canada 1-0 South Africa report",
+          "url": "https://www.aljazeera.com/sports/2026/6/28/canada-score-late-to-beat-south-africa-and-reach-last-16-at-world-cup-2026",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-29T00:30:22Z",
+          "claimType": "reported/final-score",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Canada-South Africa live/result recap",
+          "url": "https://www.espn.com/soccer/story/_/id/49208003/canada-south-africa-live-world-cup-2026-latest-updates-commentary-score-result",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-29T00:30:22Z",
+          "claimType": "reported/final-score",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m076",
