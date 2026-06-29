@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T07:59:20Z",
-  "status": "schedule-aware-scout-20260629T0800Z-m074-source-refresh",
-  "headline": "Soren 08Z 巡檢：Brazil-Japan 既有 28 個來源已夠厚，Netherlands-Morocco 也已有 Opta/Covers/FIFA；本輪只補 Germany-Paraguay 的 FIFA 官方賽日前瞻與 WhoScored 傷停/可能 XI/賠率統計哨，避免把通稿灌成噪音。",
+  "generatedAt": "2026-06-29T08:39:30Z",
+  "status": "schedule-aware-scout-20260629T0835Z-m074-m075-matchday-refresh",
+  "headline": "Soren 08:35Z 巡檢：近 17 小時三場淘汰賽已有厚底，Brazil-Japan 不灌重複料；本輪只補 Germany-Paraguay 的德國賽日戰術哨，以及 Netherlands-Morocco 的 Ouahbi 戰術引言與 BBC 即時入口。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2653,9 +2653,9 @@
     {
       "matchId": "m074",
       "match": "Germany vs Paraguay",
-      "sourceType": "official fixture confirmed + federation final-training/press context + late injury/suspension/predicted-XI/odds watch",
-      "title": "Germany-Paraguay 賽日再補官方與數據哨：FIFA 預覽可連，WhoScored 把傷停/可能 XI/賠率集中到同一張戰術表。",
-      "sorenTake": "Germany 仍是明顯熱門，但最新補強的價值不是再喊一次「德國比較強」，而是把風險釘在細節：FIFA 賽日前瞻確認官方入口，WhoScored 提供傷停、可能先發與市場參照。Paraguay 要偷的不是控球率，是定位球、二點球與德國急躁時的第一刀。",
+      "sourceType": "official/team updates + tactical/lineup/odds watch",
+      "title": "Germany-Paraguay 賽日再補一刀：DFB/APF 官方線都熱了，Nagelsmann 還暗示可能換招；別把德國大熱看成免踢。",
+      "sorenTake": "Germany 仍是紙面與市場熱門，但 Paraguay 的劇本不是來拍照：Alfaro/Gómez 賽前話術把「對抗強隊」推到台前，Tagesschau 又抓到 Nagelsmann 可能改戰術。Soren 的結論不變——德國佔優；但淘汰賽最討厭的，就是熱門隊以為自己只要準時到場。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2686,7 +2686,8 @@
         "SI 賽前頁再把 Nico Schlotterbeck 缺陣後的 Rüdiger/Tah 中衛組合、Undav 推 Havertz 的位置壓力列為 predicted-XI watch；仍非官方先發。",
         "Opta Analyst 公開模型給 Germany 90 分鐘約 54.7%、Paraguay 約 23.1%；這是紙上市場/概率參照，不是晉級保證。",
         "08Z 巡檢：FIFA Germany-Paraguay 賽日前瞻頁可連線，作為官方賽事資訊/臨場更新入口；正式 XI 未公布前，不把任何媒體預測陣容升級成 confirmed。",
-        "WhoScored Germany-Paraguay 統計前瞻可連線，頁面 metadata 明示包含 injuries/suspensions、probable line-ups、facts and odds；這是 reported lineup/availability + odds-reference，不是官方名單。"
+        "WhoScored Germany-Paraguay 統計前瞻可連線，頁面 metadata 明示包含 injuries/suspensions、probable line-ups、facts and odds；這是 reported lineup/availability + odds-reference，不是官方名單。",
+        "Tagesschau/Sportschau 賽日頁可連並以「DFB 最後細節」定位 Germany-Paraguay；文內引述 Nagelsmann 承認可能為淘汰賽調整戰術。這是德國賽日戰術訊號，不是確認先發。"
       ],
       "sources": [
         {
@@ -2928,6 +2929,14 @@
           "fetchedAt": "2026-06-29T07:59:20Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Tagesschau Germany-Paraguay matchday liveblog",
+          "url": "https://www.tagesschau.de/sport/bereit-fuer-paraguay-nathaniel-brown-kehrt-zurueck,wm-liveblog-dfb-team-100.html",
+          "sourceName": "Tagesschau / Sportschau",
+          "fetchedAt": "2026-06-29T08:39:30Z",
+          "claimType": "reported/tactical",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -2935,9 +2944,9 @@
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
-      "sourceType": "official/media training + press conference + human-context/tactical/odds watch",
-      "title": "Netherlands-Morocco 臨場風向：FIFA live centre 已就位，Morocco 不是故事配角，是會把荷蘭後防逼出汗的細節題。",
-      "sorenTake": "Netherlands 紙面還是小熱，但這不是「橙色過場動畫」。FIFA live centre、WhoScored/Opta 類賽前參照都指向一場細節局：荷蘭進攻上限高，後場失誤也真；Morocco 有 Bounou 的門線權威與情緒加成。Soren 翻譯：這場誰先把自尊心當戰術板，誰就先掉坑。",
+      "sourceType": "official/live centre + coach quote + tactical/odds watch",
+      "title": "Netherlands-Morocco 賽日味道更濃：Ouahbi 說要 different solutions，BBC live text 已開；荷蘭別以為這只是橘色巡遊。",
+      "sorenTake": "Netherlands 的火力和控場仍讓它站在熱門端，但 Morocco 的訊號越來越像「準備拆題」而不是「祈禱爆冷」：FRMF/Le360 有備戰線，Reuters 抓到 Ouahbi 要不同解法，BBC 即時頁也已待命。Soren 仍偏荷蘭，但這場的 upset path 已經有骨架。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -2965,7 +2974,9 @@
         "Morocco World News 賽前稿確認 Yassine Bounou 將與 Mohamed Ouahbi 出席對 Netherlands 的記者會，並稱摩洛哥正完成最後備戰；屬 team readiness/press context。",
         "FIFA match centre 已為 Netherlands-Morocco 建立官方 live centre；正式 lineup/比賽事件應以該處與球隊官方為準。",
         "WhoScored 賽前頁標示 team news、injuries/suspensions、probable line-ups、facts and odds；可作 media lineup/stat watch，不能升格為確認先發。",
-        "Opta Analyst 公開預覽把 Netherlands 視為較可能晉級的一方，但 Morocco 並非長賠陪襯；Soren 把它作 paper/context calibration。"
+        "Opta Analyst 公開預覽把 Netherlands 視為較可能晉級的一方，但 Morocco 並非長賠陪襯；Soren 把它作 paper/context calibration。",
+        "Reuters / Straits Times 引述 Morocco 教練 Ouahbi：淘汰賽對 Netherlands 需要「different solutions」，小組不敗不能直接搬進 16 強。這強化 Morocco 不是只靠情緒，而是準備換題型。",
+        "BBC 已開 Netherlands-Morocco 即時文字/比分入口，明示會提供 build-up、team news、radio commentary 與 live text；正式陣容仍等官方/可信即時頁落地。"
       ],
       "sources": [
         {
@@ -3175,6 +3186,22 @@
           "fetchedAt": "2026-06-29T06:05:00Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Reuters / Straits Times Ouahbi different solutions quote",
+          "url": "https://www.straitstimes.com/sport/football/morocco-need-different-solutions-against-the-netherlands-says-coach-ouahbi",
+          "sourceName": "Reuters / The Straits Times",
+          "fetchedAt": "2026-06-29T08:39:30Z",
+          "claimType": "reported/tactical",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Netherlands-Morocco live text",
+          "url": "https://www.bbc.com/sport/football/live/c8023x0d3g9t",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-29T08:39:30Z",
+          "claimType": "context/lineup-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
