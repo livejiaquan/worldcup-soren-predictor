@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T06:42:09Z",
-  "status": "schedule-aware-scout-20260629T0642Z-r32-actualization-refresh",
-  "headline": "Soren 06:42 巡檢：M83/M84/M85 已從淘汰賽佔位更新為 Portugal-Croatia、Spain-Austria、Switzerland-Algeria；補 BBC/ESPN/Goal/TSN/FIFA/FAF 等公開來源。仍保守標記：正式先發、傷停與市場價格等臨場名單/盤面再核。",
+  "generatedAt": "2026-06-29T07:25:00Z",
+  "status": "schedule-aware-scout-20260629T0725Z-brazil-japan-aljazeera-refresh",
+  "headline": "Soren 07:25 巡檢：Brazil-Japan 距開球約 9.5 小時，補 Al Jazeera 賽日預覽/預測 XI 與 live-build-up 入口；Raphinha、Kubo 傷缺與 Neymar 替補時間仍只作 availability watch，正式先發等 FIFA/球隊名單。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2390,8 +2390,8 @@
       "matchId": "m076",
       "match": "Brazil vs Japan",
       "sourceType": "official/media availability + tactical/odds watch",
-      "title": "Brazil-Japan 賽日再加熱：巴西最後一練傾向續用骨架，Neymar 仍是板凳核彈，不是開場答案。",
-      "sorenTake": "Brazil 仍是大熱，但 ge 的賽日資訊把重點說清楚：Ancelotti 預計不亂拆主架構，Neymar 則先從板凳提供變速。Japan 端 Kubo 缺陣、Itakura watch 還在，爆冷劇本更像「先扛住、拖長、靠轉換偷刀」，不是幻想巴西會自己把球門鑰匙交出來。",
+      "title": "Brazil-Japan 賽日前哨再補一層：Al Jazeera 也把 Raphinha/Kubo 傷缺與 Neymar 替補增量寫進劇本。",
+      "sorenTake": "Brazil 仍是紙面強隊，但右路 Rayan/Raphinha、Neymar 替補時間與 Japan 缺 Kubo 後的反擊質量，都是淘汰賽會放大的細節。Al Jazeera 的預測 XI 與 live build-up 是新的公開參照；Soren 不把它當官宣，只把它當「開球前最後幾小時的風向」。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2419,7 +2419,8 @@
         "04:55Z 再核 Sports Illustrated 賽前頁：Brazil predicted XI 仍傾向 Alisson；Danilo、Marquinhos、Gabriel、Santos；Guimarães、Casemiro；Rayan、Paquetá、Vinícius；Cunha；Japan 端 Kubo 膝傷缺陣、Itakura 傷情仍是後防 watch。這仍是 media predicted XI，不是確認先發。",
         "ge 6/28 報導 Brazil 完成對 Japan 前最後一練，賽前預計延續主體陣容；這是 media lineup-watch，不是官方先發。",
         "ge 另引述 Ancelotti：Neymar 將從替補席開始，但狀態已有進展、可依比賽情境踢超過 15 分鐘；Soren 把它標成 availability/tactical bench weapon，不寫成固定換人腳本。",
-        "CBF 賽前訪談中 Rayan 強調 Brazil 團隊厚度，支撐右路 Rayan/Raphinha 選擇仍是賽前焦點；正式 XI 仍等 FIFA/球隊名單。"
+        "CBF 賽前訪談中 Rayan 強調 Brazil 團隊厚度，支撐右路 Rayan/Raphinha 選擇仍是賽前焦點；正式 XI 仍等 FIFA/球隊名單。",
+        "07:25Z 再核 Al Jazeera 賽日預覽：頁面列 Brazil-Japan 17:00 GMT 開球、14:00 GMT 起 live build-up，並寫明 Raphinha 仍因腿筋傷缺、Japan 的 Takefusa Kubo 因膝傷缺陣、Neymar 可望增加替補時間；其預測 XI 仍屬 media lineup-watch，不是官方先發。"
       ],
       "sources": [
         {
@@ -2636,6 +2637,14 @@
           "sourceName": "CBF",
           "fetchedAt": "2026-06-29T06:05:00Z",
           "claimType": "confirmed/team-quote",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Al Jazeera Brazil-Japan matchday preview and lineups",
+          "url": "https://www.aljazeera.com/sports/2026/6/29/brazil-play-japan-at-world-cup-knockouts-vinicius-prediction-and-lineups",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-29T07:25:00Z",
+          "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
         }
       ],
