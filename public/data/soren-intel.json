@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T13:04:28Z",
-  "status": "賽日前哨微刷新：M76 Brazil-Japan 補 Kyodo 森保發布會、ge 巴西賽日陣容入口、JFA 官方名單/賽程與 Bundesliga 先發追蹤；維持「預測/追蹤」邊界，不把媒體與資料頁冒充官方先發。",
-  "headline": "Soren 賽日雷達：Brazil-Japan 四小時內開踢，補上日本端發布會與巴西端賽日陣容入口；巴西仍熱，但日本不是來拍紀念照的。",
+  "generatedAt": "2026-06-29T13:42:25Z",
+  "status": "賽日前哨微刷新：M76 補 CBF 官方賽日/球員談話，M74 補 DFB 與 APF 官方發布會/最後訓練，M75 補 Al Jazeera 與 Yahoo team-news，M78 補 Opta 公開機率脈絡；所有首發仍維持預測/追蹤邊界。",
+  "headline": "Soren 賽日雷達：Brazil-Japan 三個半小時內開踢，Germany-Paraguay 同日壓軸；官方隊訊加一層，媒體 XI 不升格成聖旨。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2407,9 +2407,9 @@
     {
       "matchId": "m076",
       "match": "Brazil vs Japan",
-      "sourceType": "official fixture + matchday live/lineup watch + tactical/odds/public context",
-      "title": "Brazil-Japan 臨場再加日本發布會與巴西陣容入口：森保想破隊史淘汰賽魔咒，巴西熱門但不能把日本當旅遊團。",
-      "sorenTake": "Kyodo 的森保發布會把這場拉回一個很簡單的問題：日本要不要第一次在世界盃淘汰賽真的跨過門檻。巴西有天分、有市場熱度，也有 ge/Globo 與 Bundesliga 類頁面盯著賽日陣容；但正式 XI 落地前，Soren 只把它寫成 lineup-watch。強隊可以高傲，資料不能高傲。",
+      "sourceType": "official team update + reported lineup-watch + odds/live-centre context",
+      "title": "Brazil-Japan 補 CBF 官方賽日與球員談話：巴西說得很滿，但淘汰賽不是海報拍攝，Japan 的反擊劇本還活著。",
+      "sorenTake": "CBF 官方賽日稿確認巴西在 Houston 對日本、並強調小組賽後的整體修正；Rayan 也把這場講成「matar ou morrer」的淘汰賽壓力測試。Soren 的讀法很簡單：巴西紙面仍熱，但只要日本把節奏拖進半場攻防，熱門隊就得靠耐心，不是靠球衣重量通關。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2450,7 +2450,9 @@
         "Kyodo 賽前稿記錄森保一日前發布會：日本面對五冠 Brazil，目標是衝擊隊史首次世界盃淘汰賽勝利；這是日本端心理與戰術語境，不是先發名單。",
         "ge/Globo 6/29 賽日頁提供 Brazil-Japan 直播、時間、缺陣與「escalações」入口；可作巴西端臨場陣容追蹤，但正式 XI 仍需等官方/可靠 live centre 落地。",
         "JFA 英文官方頁提供 SAMURAI BLUE 世界盃名單與賽程基準，可用來核對日本隊名單/時間線；它不是傷停更新本身。",
-        "Bundesliga 賽事頁標示 Brazil-Japan 的最新更新與 lineup 追蹤；Soren 把它當臨場 formation/lineup centre，不提前升格為 confirmed lineup。"
+        "Bundesliga 賽事頁標示 Brazil-Japan 的最新更新與 lineup 追蹤；Soren 把它當臨場 formation/lineup centre，不提前升格為 confirmed lineup。",
+        "CBF 官方賽日稿確認 Brazil 將於 Houston Stadium 對 Japan 爭取十六強席位，並提到巴西小組賽從對 Morocco 1-1 後連續 3-0 調整回穩；這是官方賽事情境，不是正式先發。",
+        "CBF 球員談話中 Rayan 稱淘汰賽是「matar ou morrer」，並承認 Japan 有很多高品質球員；屬官方球員語境，支撐日本不能被當作儀式感對手。"
       ],
       "sources": [
         {
@@ -2748,6 +2750,14 @@
           "fetchedAt": "2026-06-29T13:04:28Z",
           "claimType": "context/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "CBF Brazil-Japan matchday official update",
+          "url": "https://www.cbf.com.br/selecao-brasileira/noticias/selecao-masculina/a/brasil-e-japao-duelam-nesta-segunda-pelos-16-avos-de-final-da-copa",
+          "sourceName": "Confederação Brasileira de Futebol",
+          "fetchedAt": "2026-06-29T13:42:25Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -2755,9 +2765,9 @@
     {
       "matchId": "m074",
       "match": "Germany vs Paraguay",
-      "sourceType": "official team prep + reported lineup/injury watch + public tactical/market context",
-      "title": "Germany-Paraguay 又多兩個雷點：德國傷停/預測 XI 已被主流頁面放大，Kroos 也公開敲防守警鐘；Paraguay 的低位不是漂亮，是難啃。",
-      "sorenTake": "Germany 還是比較像答案，但 Schlotterbeck/Karl 等傷停與 Neuer 復出話題讓這場不像數學題。Paraguay 連續零封後，真正的爆冷路線不是控球，而是把德國拖進「久攻不下＋一次反擊」的老套陷阱——老套，所以有效。",
+      "sourceType": "official federation updates + reported lineup-watch + tactical/odds context",
+      "title": "Germany-Paraguay 補雙邊官方話筒：Völler 要德國交出強勢表演，APF 說巴拉圭最後訓練已收工；這不是友誼賽，是誰先犯蠢誰回家。",
+      "sorenTake": "DFB 的 Völler 公開把德國壓力講出來，APF 則確認 Alfaro 帶隊完成 Boston 最後訓練並開賽前記者會。德國有控球和天賦，Paraguay 有低位、對抗和拖慢節奏的壞笑；Soren 仍看德國小優，但這種淘汰賽最怕的不是弱隊，是耐心先斷電。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2797,7 +2807,10 @@
         "Sporting News Germany-Paraguay 預測先發頁列出 Germany 傷停觀察（Schlotterbeck 膝傷、Karl 大腿）且無停賽；屬 public projected lineup，不是官方 XI。",
         "The Standard 的 Germany predicted lineup 把 Havertz 領銜前場、Neuer 守門與 Schlotterbeck 傷缺放進賽日脈絡；標題有 confirmed team news，但先發仍按 predicted lineup 處理。",
         "Goal 報導 Toni Kroos 警告 Germany 若不修正防守漏洞與核心狀態，對 Paraguay 可能翻車；這是高可見度評論/風險敘事，不是隊內官方結論。",
-        "Boston Globe 賽前分析把 Paraguay 的反彈寫成 back-to-back shutouts 與 stingy game，強化「低位防守＋耐心折磨」的戰術風險。"
+        "Boston Globe 賽前分析把 Paraguay 的反彈寫成 back-to-back shutouts 與 stingy game，強化「低位防守＋耐心折磨」的戰術風險。",
+        "DFB 官方訪談指出 Germany 將在 Boston 對 Paraguay，Völler 表示球隊想交出 really strong showing，並談到 Kimmich、Nathaniel Brown 等人；這是官方隊內語境，不是首發確認。",
+        "APF 官方稿確認 Paraguay 在 Boston 完成對 Germany 賽前最後訓練，內容包含啟動、反應速度、rondo 與 tactical work；屬官方備戰訊號。",
+        "APF 另有 Alfaro 與隊長 Gustavo Gómez 官方發布會稿，確認對 Germany 的賽前語境；可支撐 Paraguay 以心理/紀律戰進入淘汰賽，而非只看賠率。"
       ],
       "sources": [
         {
@@ -3110,9 +3123,9 @@
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
-      "sourceType": "official federation form + FIFA/BBC route + reported lineup/odds watch",
-      "title": "Netherlands-Morocco 再補 Ouahbi 賽前語境：摩洛哥教練說淘汰賽要 different solutions；橙軍小優，但別把 Atlas Lions 當小組賽剪貼簿。",
-      "sorenTake": "Netherlands 的小組第一與 KNVB 狀態脈絡仍在；新增 Oman Observer/Reuters 引述 Morocco 教練 Nabil Ouahbi，明講不敗小組賽進淘汰賽不夠，對 Netherlands 要換解法。這不是確認先發，也不是摩洛哥突然變熱門；它只是提醒橙軍：你面前不是只會複製上一場劇本的背景板。",
+      "sourceType": "reported team-news + official preparation + tactical/odds context",
+      "title": "Netherlands-Morocco 補 Al Jazeera 與 Yahoo team-news：這是前十等級互砍，不是橙軍自動過關的剪綵儀式。",
+      "sorenTake": "Al Jazeera 把這場定調成少見的 top-10 ranked 對撞，Yahoo 的 team-news 則把荷蘭端小傷情放回「可用但要觀察」的框架。Morocco 有速度和轉換，Netherlands 有結構和深度；Soren 只提醒一句：淘汰賽裡，最貴的錯覺叫「我以為他們只會防守」。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -3151,7 +3164,9 @@
         "Bundesliga World Cup match centre 已開 Netherlands-Morocco live/line-ups 入口；正式 XI 未由 FIFA/球隊落地前只當追蹤入口。",
         "Sports Illustrated Netherlands-Morocco preview 指出 Mazraoui、Ounahi 與 Bouaddi 等 Morocco 配置可能回歸/調整；屬 expected-XI 訊號，不是官方先發。",
         "USA Today 刊出 Netherlands-Morocco prediction/odds 頁，補充公開盤與專家預測語境；只作紙上市場溫度，不構成下注建議。",
-        "Oman Observer/Reuters 6/29 引述 Morocco 教練 Nabil Ouahbi：小組不敗不足以直接帶進淘汰賽，對 Netherlands 需要 different solutions；這是 coach/tactical context，不是 confirmed lineup。"
+        "Oman Observer/Reuters 6/29 引述 Morocco 教練 Nabil Ouahbi：小組不敗不足以直接帶進淘汰賽，對 Netherlands 需要 different solutions；這是 coach/tactical context，不是 confirmed lineup。",
+        "Al Jazeera 賽前稿把 Netherlands-Morocco 描述為罕見前十等級對決，並提供 team-news / prediction 入口；屬可信媒體賽事情境，不是官方先發。",
+        "Yahoo Sports 預測陣容頁指出 Netherlands 對 Morocco 的勝者將接 Brazil/Japan 勝方，並提到荷蘭端有小傷情/可用性觀察；仍按 reported lineup-watch 處理。"
       ],
       "sources": [
         {
@@ -3433,6 +3448,22 @@
           "fetchedAt": "2026-06-29T12:41:30Z",
           "claimType": "reported/coach-player-quote",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Al Jazeera Netherlands-Morocco team-news preview",
+          "url": "https://www.aljazeera.com/sports/2026/6/29/netherlands-vs-morocco-fifa-world-cup-round-of-32-prediction-team-news",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-29T13:42:25Z",
+          "claimType": "reported/team-news",
+          "confidence": "high"
+        },
+        {
+          "label": "Yahoo Netherlands-Morocco predicted lineup and team news",
+          "url": "https://sports.yahoo.com/articles/netherlands-vs-morocco-predicted-lineup-072000601.html",
+          "sourceName": "Yahoo Sports",
+          "fetchedAt": "2026-06-29T13:42:25Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -3440,9 +3471,9 @@
     {
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
-      "sourceType": "official/credible bracket actualization + team-rest context + odds watch",
-      "title": "Ivory Coast-Norway 補上官方預覽與隊訊層：FIFA 已把 Dallas 這場寫成 Côte d’Ivoire 對 Norway，Haaland 不只是海報，是非洲象防線的壓力秤。",
-      "sorenTake": "這張卡終於從 bracket 影子長出肉：FIFA 官方預覽把 Côte d’Ivoire v Norway、Dallas、Round of 32 寫清楚；WhoScored / Sports Mole / Goal 再補 injuries、probable lineups 與戰術框架。Soren 的重點不變——Norway 的 Haaland/Ødegaard 讓紙面更硬，但 Côte d’Ivoire 第一次淘汰賽不該被當成陪跑。先看官方 XI，再決定這是北歐重卡碾過去，還是非洲象把路面掀起來。",
+      "sourceType": "official preview + reported lineup-watch + public probability context",
+      "title": "Ivory Coast-Norway 補 Opta 公開機率：Haaland 劇本很大聲，但象隊第一次淘汰賽不等於自動簽收淘汰通知。",
+      "sorenTake": "Opta Analyst 的公開預覽給 Norway 90 分鐘勝率 56.1%，這和 Haaland 的敘事一致；但它同時提醒 Ivory Coast 是首次踢世界盃淘汰賽，情緒與轉換速度會放大變數。Soren 讀法：Norway 是熱門，不是免死金牌。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -3458,7 +3489,8 @@
         "Betfair/Polymarket/Tips.gg 類市場參照顯示 Norway 較熱；本站只作 paper simulation odds-reference，不構成投注建議。",
         "FIFA 官方預覽已明確列出 Côte d’Ivoire v Norway：6/30 Dallas Stadium 的 Round of 32 對戰，並把非洲象首次打進淘汰賽作為核心脈絡。",
         "WhoScored 新增 Ivory Coast-Norway 統計預覽入口，標示 team news、injuries/suspensions、probable line-ups 與 odds facts；這是隊訊監控，不是官方首發。",
-        "Sports Mole 與 Goal.com 的 match preview 均把焦點放在 team news / possible lineups / tactics；挪威端 Haaland 火力是主軸，但仍須等正式 XI 才能升級判斷。"
+        "Sports Mole 與 Goal.com 的 match preview 均把焦點放在 team news / possible lineups / tactics；挪威端 Haaland 火力是主軸，但仍須等正式 XI 才能升級判斷。",
+        "Opta Analyst 公開預覽顯示 Norway 在 25,000 次賽前模擬中 90 分鐘勝率 56.1%，Ivory Coast 21.6%，和局進延長約 22.3%；這是 public probability context，不是 Soren 模型配方。"
       ],
       "sources": [
         {
@@ -3604,6 +3636,14 @@
           "fetchedAt": "2026-06-29T10:35:56Z",
           "claimType": "reported/tactical",
           "confidence": "medium"
+        },
+        {
+          "label": "Opta Analyst Ivory Coast-Norway public probability preview",
+          "url": "https://theanalyst.com/articles/ivory-coast-vs-norway-prediction-world-cup-2026-match-preview",
+          "sourceName": "The Analyst / Opta",
+          "fetchedAt": "2026-06-29T13:42:25Z",
+          "claimType": "context/public-probability",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
