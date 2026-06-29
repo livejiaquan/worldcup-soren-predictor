@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T20:03:02Z",
-  "status": "Round-of-32 live scout: Brazil-Japan 已由公開來源確認 2-1；Germany-Paraguay 補上 match-specific live centres，Netherlands-Morocco 保留 projected-XI 邊界。",
-  "headline": "Soren live watch: Brazil 靠 Martinelli 96 分鐘逃出生天；下一刀輪到 Germany/Netherlands，小心淘汰賽的討債鬼。",
+  "generatedAt": "2026-06-29T21:09:37Z",
+  "status": "Round-of-32 live scout: Germany-Paraguay 由 ESPN 公開比分源確認上半場 39 分鐘仍 0-0；Brazil-Japan 已完成賽後，Netherlands-Morocco 保留賽前 lineup-watch 邊界。",
+  "headline": "Soren live watch: 德國 39 分鐘還撬不開 Paraguay，淘汰賽的門不是自動門；Netherlands-Morocco 等 01:00Z 開刀。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2862,9 +2862,9 @@
     {
       "matchId": "m074",
       "match": "Germany vs Paraguay",
-      "sourceType": "official/team-mood + public-probability + lineup-watch + late projected-XI + odds-reference",
-      "title": "Germany-Paraguay 臨場再加三個 live-centre：德國仍該贏，但淘汰賽最愛把「該」字拿去碎紙機。",
-      "sorenTake": "SI 把德國 predicted XI 與賽前故事補上，USA Today 提供公開 odds/picks 參考。Soren 仍把德國放在優勢端，但 Paraguay 的低位抗壓若撐過前 25 分鐘，這場就會從「德國恢復秩序」變成「Nagelsmann 開始皺眉」。",
+      "sourceType": "official/team-mood + live-score + lineup-watch + late projected-XI + odds-reference",
+      "title": "Germany-Paraguay live：ESPN 39 分鐘仍 0-0；德國有優勢，但這扇門暫時不是自動門。",
+      "sorenTake": "ESPN 公開比分源在上半場 39 分鐘顯示 Germany 0-0 Paraguay，狀態仍是 First Half、completed=false。這不是最終比分，Soren 也不提前結算；但它很誠實地提醒：德國紙面優勢遇到 Paraguay 低位與時間壓力，豪門光環暫時只能照明，不能進球。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2918,7 +2918,8 @@
         "Bundesliga Germany-Paraguay lineup/live page 可連線，標題明示最新更新；Soren 把它當臨場 lineups/live-centre 追蹤入口，正式 XI 未落地前不升格。",
         "20Z 父層 metadata probe 核對 Guardian match-specific live：標題為 Germany v Paraguay last 32 – live，描述為逐分鐘報導；只作臨場 live-centre，不外推確認先發或最終比分。",
         "20Z 父層 metadata probe 核對 ESPN live score：頁面承諾 live score、highlights、updated stats；未見 full-time marker，正式結果仍等 FIFA/ESPN/BBC 顯示 FT。",
-        "Sporting News live article 標題/metadata 顯示會追蹤 Germany-Paraguay live score、result、highlights；可作輔助 live-centre，但不取代官方 match centre。"
+        "Sporting News live article 標題/metadata 顯示會追蹤 Germany-Paraguay live score、result、highlights；可作輔助 live-centre，但不取代官方 match centre。",
+        "21:09Z 父層以 ESPN 公開 summary/scoreboard API 複核 M74：Germany 0-0 Paraguay，上半場 39 分鐘、completed=false；此為 in-progress live-score，不作最終結果或 paper-bankroll 結算。"
       ],
       "sources": [
         {
@@ -3282,11 +3283,11 @@
           "confidence": "high"
         },
         {
-          "label": "ESPN Germany-Paraguay live score",
+          "label": "ESPN Germany-Paraguay live score (39 min 0-0 probe)",
           "url": "https://www.espn.com/soccer/match/_/gameId/760489",
           "sourceName": "ESPN",
-          "fetchedAt": "2026-06-29T20:03:02Z",
-          "claimType": "context/live-centre",
+          "fetchedAt": "2026-06-29T21:09:37Z",
+          "claimType": "context/live-score",
           "confidence": "high"
         },
         {
