@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T09:55:31Z",
-  "status": "schedule-aware-scout-20260629T0955Z-r32-live-centre-training-refresh",
-  "headline": "Soren 09:55Z 巡檢：Brazil-Japan 補上 BBC/Guardian/FIFA/Opta 賽日硬入口，Germany-Paraguay 補 BBC 直播入口；Netherlands-Morocco 則加 NOS 完整 Oranje 訓練與 Sports Mole 雙健康回補。",
+  "generatedAt": "2026-06-29T10:35:56Z",
+  "status": "Matchday scout refresh: Round-of-32 near-kickoff source pass",
+  "headline": "賽日前哨更新：Brazil-Japan / Germany-Paraguay 已進入直播監控，Ivory Coast-Norway 補上 FIFA 官方預覽與隊訊線。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3258,8 +3258,8 @@
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
       "sourceType": "official/credible bracket actualization + team-rest context + odds watch",
-      "title": "Ivory Coast-Norway 不再只是 2I 影子；Haaland/Ødegaard 休過電，非洲象第一次淘汰賽就要撞北歐重卡。",
-      "sorenTake": "公開賽程與 ESPN/FOX 頁面已把 M78 推向 Ivory Coast vs Norway；FIFA 的 Solbakken 訪談也明確談到對 Côte d’Ivoire 的 32 強戰。Norway 小組末輪大幅輪換、Haaland/Ødegaard 休息後理論上該回來，這讓 Ivory Coast 的歷史首場淘汰賽更像壓力測試。",
+      "title": "Ivory Coast-Norway 補上官方預覽與隊訊層：FIFA 已把 Dallas 這場寫成 Côte d’Ivoire 對 Norway，Haaland 不只是海報，是非洲象防線的壓力秤。",
+      "sorenTake": "這張卡終於從 bracket 影子長出肉：FIFA 官方預覽把 Côte d’Ivoire v Norway、Dallas、Round of 32 寫清楚；WhoScored / Sports Mole / Goal 再補 injuries、probable lineups 與戰術框架。Soren 的重點不變——Norway 的 Haaland/Ødegaard 讓紙面更硬，但 Côte d’Ivoire 第一次淘汰賽不該被當成陪跑。先看官方 XI，再決定這是北歐重卡碾過去，還是非洲象把路面掀起來。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -3272,7 +3272,10 @@
         "FIFA 官方 Solbakken 訪談已寫到 Norway 接下來對 Côte d’Ivoire 的 Round of 32，對手脈絡比單純 bracket projection 更硬。",
         "BBC/Metro/Fantasy Football Scout 等賽後脈絡指出 Norway 對 France 大幅輪換，Haaland、Ødegaard 休兵或未出場；這較像體能管理，不等於對 Ivory Coast 缺陣。",
         "ESPN/Goal/Stats Zone 已出 Ivory Coast-Norway 賽前頁與 predicted-lineup 類資訊；先作 lineup watch，正式名單仍等 FIFA/球隊。",
-        "Betfair/Polymarket/Tips.gg 類市場參照顯示 Norway 較熱；本站只作 paper simulation odds-reference，不構成投注建議。"
+        "Betfair/Polymarket/Tips.gg 類市場參照顯示 Norway 較熱；本站只作 paper simulation odds-reference，不構成投注建議。",
+        "FIFA 官方預覽已明確列出 Côte d’Ivoire v Norway：6/30 Dallas Stadium 的 Round of 32 對戰，並把非洲象首次打進淘汰賽作為核心脈絡。",
+        "WhoScored 新增 Ivory Coast-Norway 統計預覽入口，標示 team news、injuries/suspensions、probable line-ups 與 odds facts；這是隊訊監控，不是官方首發。",
+        "Sports Mole 與 Goal.com 的 match preview 均把焦點放在 team news / possible lineups / tactics；挪威端 Haaland 火力是主軸，但仍須等正式 XI 才能升級判斷。"
       ],
       "sources": [
         {
@@ -3377,6 +3380,46 @@
           "sourceName": "Betfair",
           "fetchedAt": "2026-06-28T23:51:55Z",
           "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "FIFA Côte d’Ivoire-Norway match preview",
+          "url": "https://www.fifa.com/en/articles/cote-divoire-norway-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-29T10:35:56Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "WhoScored Ivory Coast-Norway statistical preview",
+          "url": "https://www.whoscored.com/matches/1990967/preview/international-fifa-world-cup-2026-ivory-coast-norway",
+          "sourceName": "WhoScored",
+          "fetchedAt": "2026-06-29T10:35:56Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole Ivory Coast-Norway team-news preview",
+          "url": "https://www.sportsmole.co.uk/football/ivory-coast/world-cup-2026/preview/ivory-coast-vs-norway-prediction-team-news-lineups_600294.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-29T10:35:56Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole Norway predicted XI vs Ivory Coast",
+          "url": "https://www.sportsmole.co.uk/football/norway/world-cup-2026/predicted-lineups/who-joins-haaland-up-top-in-round-of-32-predicted-norway-xi-vs-ivory-coast_600305.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-29T10:35:56Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Goal.com Ivory Coast-Norway tactical preview",
+          "url": "https://www.goal.com/en-gb/news/ivory-coast-norway-world-cup-preview/bltc20cf346c3521000",
+          "sourceName": "Goal.com",
+          "fetchedAt": "2026-06-29T10:35:56Z",
+          "claimType": "reported/tactical",
           "confidence": "medium"
         }
       ],
