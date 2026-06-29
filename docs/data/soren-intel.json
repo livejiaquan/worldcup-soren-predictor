@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T07:25:00Z",
-  "status": "schedule-aware-scout-20260629T0725Z-brazil-japan-aljazeera-refresh",
-  "headline": "Soren 07:25 巡檢：Brazil-Japan 距開球約 9.5 小時，補 Al Jazeera 賽日預覽/預測 XI 與 live-build-up 入口；Raphinha、Kubo 傷缺與 Neymar 替補時間仍只作 availability watch，正式先發等 FIFA/球隊名單。",
+  "generatedAt": "2026-06-29T07:59:20Z",
+  "status": "schedule-aware-scout-20260629T0800Z-m074-source-refresh",
+  "headline": "Soren 08Z 巡檢：Brazil-Japan 既有 28 個來源已夠厚，Netherlands-Morocco 也已有 Opta/Covers/FIFA；本輪只補 Germany-Paraguay 的 FIFA 官方賽日前瞻與 WhoScored 傷停/可能 XI/賠率統計哨，避免把通稿灌成噪音。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2654,8 +2654,8 @@
       "matchId": "m074",
       "match": "Germany vs Paraguay",
       "sourceType": "official fixture confirmed + federation final-training/press context + late injury/suspension/predicted-XI/odds watch",
-      "title": "Germany-Paraguay 賽日口徑更硬：Nagelsmann 怕的不是名氣，是 Paraguay 的二點球與低事件泥巴仗。",
-      "sorenTake": "Germany 還是該贏的一方，但 Boston Globe 與 Opta 把陷阱畫得比賠率更清楚：Paraguay 會直接、會搶第二落點、會把比賽拖成難看的肉搏。Soren 的銳評：德國若前 30 分鐘只想優雅傳控，這場會被 Paraguay 拖去泥地裡摔角。",
+      "title": "Germany-Paraguay 賽日再補官方與數據哨：FIFA 預覽可連，WhoScored 把傷停/可能 XI/賠率集中到同一張戰術表。",
+      "sorenTake": "Germany 仍是明顯熱門，但最新補強的價值不是再喊一次「德國比較強」，而是把風險釘在細節：FIFA 賽日前瞻確認官方入口，WhoScored 提供傷停、可能先發與市場參照。Paraguay 要偷的不是控球率，是定位球、二點球與德國急躁時的第一刀。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2684,7 +2684,9 @@
         "Sports Illustrated 賽前頁再次把 Diego Gómez 停賽與 Omar Alderete 傷疑列為 Paraguay 的結構風險；此為 reported availability watch，正式缺陣/先發仍等官方名單。",
         "Boston Globe 賽前稿引述 Nagelsmann 形容 Paraguay direct、physical、second balls 強，並要求 Germany 踢出「perfect game」；這是 coach/tactical context。",
         "SI 賽前頁再把 Nico Schlotterbeck 缺陣後的 Rüdiger/Tah 中衛組合、Undav 推 Havertz 的位置壓力列為 predicted-XI watch；仍非官方先發。",
-        "Opta Analyst 公開模型給 Germany 90 分鐘約 54.7%、Paraguay 約 23.1%；這是紙上市場/概率參照，不是晉級保證。"
+        "Opta Analyst 公開模型給 Germany 90 分鐘約 54.7%、Paraguay 約 23.1%；這是紙上市場/概率參照，不是晉級保證。",
+        "08Z 巡檢：FIFA Germany-Paraguay 賽日前瞻頁可連線，作為官方賽事資訊/臨場更新入口；正式 XI 未公布前，不把任何媒體預測陣容升級成 confirmed。",
+        "WhoScored Germany-Paraguay 統計前瞻可連線，頁面 metadata 明示包含 injuries/suspensions、probable line-ups、facts and odds；這是 reported lineup/availability + odds-reference，不是官方名單。"
       ],
       "sources": [
         {
@@ -2909,6 +2911,22 @@
           "sourceName": "Boston Globe",
           "fetchedAt": "2026-06-29T06:05:00Z",
           "claimType": "reported/tactical",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Germany-Paraguay matchday preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/germany-paraguay-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-29T07:59:20Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "WhoScored Germany-Paraguay statistical preview",
+          "url": "https://www.whoscored.com/matches/1990970/preview/international-fifa-world-cup-2026-germany-paraguay",
+          "sourceName": "WhoScored",
+          "fetchedAt": "2026-06-29T07:59:20Z",
+          "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
         }
       ],
