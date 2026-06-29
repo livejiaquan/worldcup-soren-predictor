@@ -110,6 +110,49 @@ function PaperBankroll({ bankroll, onSelect }) {
   </section>
 }
 
+
+function resolveBracketTeam(token, matchByNumber, predictions, depth = 0) {
+  if (!token || depth > 6) return token || '待定'
+  const m = String(token).match(/^W(\d+)$/)
+  if (!m) return token
+  const source = matchByNumber[m[1].padStart(3, '0')]
+  if (!source) return token
+  const pick = predictions[source.id]?.pick
+  if (!pick || pick === '平手') return `W${m[1]}`
+  return resolveBracketTeam(pick, matchByNumber, predictions, depth + 1)
+}
+
+function BracketSnapshot({ matches, predictions, onSelect }) {
+  const knockouts = matches.filter((m) => !m.group)
+  if (!knockouts.length) return null
+  const matchByNumber = Object.fromEntries(matches.map((m) => [m.id.replace('m', ''), m]))
+  const rounds = [
+    ['Round of 32', '32 強'],
+    ['Round of 16', '16 強'],
+    ['Quarter-final', '8 強'],
+    ['Semi-final', '4 強'],
+    ['Final', 'FINAL'],
+  ].map(([round, label]) => ({ label, items: knockouts.filter((m) => m.round === round).map((m) => ({ ...m, resolvedTeam1: resolveBracketTeam(m.team1, matchByNumber, predictions), resolvedTeam2: resolveBracketTeam(m.team2, matchByNumber, predictions), resolvedPick: resolveBracketTeam(predictions[m.id]?.pick, matchByNumber, predictions) })) })).filter((r) => r.items.length)
+  const finalMatch = rounds.find((r) => r.label === 'FINAL')?.items?.[0]
+  const champion = finalMatch?.resolvedPick || rounds.at(-1)?.items?.[0]?.resolvedPick || '待定'
+  return <section className="panel bracket-panel" id="bracket">
+    <SectionHead kicker="SOREN BRACKET MAP" title="目前淘汰賽樹狀圖" meta={`冠軍路線：${champion}`}>
+      <small>這不是賽果，是我目前依模型與已完賽資訊推演的晉級路線；比賽更新後會自動重算。</small>
+    </SectionHead>
+    <div className="bracket-stage">
+      {rounds.map((round) => <div className="bracket-round" key={round.label}>
+        <h3>{round.label}</h3>
+        <div className="bracket-matches">{round.items.slice(0, round.label === '32 強' ? 16 : 8).map((m) => <button type="button" key={m.id} className={`bracket-match ${m.resolvedPick === m.resolvedTeam1 ? 'top-win' : m.resolvedPick === m.resolvedTeam2 ? 'bottom-win' : ''}`} onClick={() => onSelect(m.id)}>
+          <span className="bracket-team"><b>{flag(m.resolvedTeam1)}</b><em>{m.resolvedTeam1}</em></span>
+          <span className="bracket-team"><b>{flag(m.resolvedTeam2)}</b><em>{m.resolvedTeam2}</em></span>
+          <strong>{flag(m.resolvedPick)} {m.resolvedPick}</strong>
+        </button>)}</div>
+      </div>)}
+      <div className="bracket-trophy"><span>🏆</span><b>{champion}</b><small>Soren 目前冠軍籤</small></div>
+    </div>
+  </section>
+}
+
 function Leaderboard({ rows }) { return <section className="panel slim" id="model"><SectionHead kicker="MODEL FORM" title="模型記分板：誰在裸泳" meta="公開記帳"/><div className="leader-list">{rows.map((row) => <div className="leader" key={row.id}><div className="rank">#{row.rank}</div><div><b>{row.name}</b><p>{row.desc}</p></div><div className="leader-score"><b>{row.points}</b><span>{pct(row.accuracy)} 命中</span></div></div>)}</div><p className="self-own">目前 baseline 還壓我一點，這就是為什麼我不賣神話，只攤帳。</p></section> }
 function StandingsPreview({ standings, nextMatches }) {
   const groups = Array.from(new Set(nextMatches.map((m) => m.group).filter(Boolean))).slice(0, 4)
@@ -193,11 +236,12 @@ function App() {
   if (error) return <main className="shell"><div className="panel"><h1>資料載入失敗</h1><p>{error}</p></div></main>
   if (!data) return <main className="shell"><div className="loading">Soren 正在翻賽程和模型，不要急，嘴砲也要先載資料…</div></main>
   return <main className="shell">
-    <nav className="top-nav"><b>Soren World Cup Lab</b><div><a href="#today">今日</a><a href="#soren-intel">情報</a><a href="#predictions">預測</a><a href="#paper-bankroll">紙上本金</a><a href="#fixtures">賽程</a></div></nav>
+    <nav className="top-nav"><b>Soren World Cup Lab</b><div><a href="#today">今日</a><a href="#soren-intel">情報</a><a href="#predictions">預測</a><a href="#bracket">樹狀圖</a><a href="#paper-bankroll">紙上本金</a><a href="#fixtures">賽程</a></div></nav>
     <section className="hero-section"><div className="hero-copy"><span className="eyebrow">SCHEDULE-AWARE · SOURCE-BACKED · PUBLIC EXPERIMENT</span><h1>Soren 世界盃觀察室</h1><p>我會追賽程、逛新聞和社群搜尋、找爆冷路線；首頁保持乾淨，細節全部收進可展開的報告裡。</p></div><div className="hero-card"><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>已完賽</span><b>{data.summary.scheduledMatches}</b><span>待預測/追蹤</span><small>最後更新：{fmtDate(data.generatedAt)}</small></div></section>
     <div className="notice">公開研究與娛樂實驗，不是投注建議。社群訊號只收可驗證來源；看不到的留言我不會假裝看過。</div>
     <CommandCenter data={data} nextMatches={nextMatches} predictions={data.predictions} bankroll={data.paperBankroll}/>
     <TodaySlate matches={nextMatches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId}/>
+    <BracketSnapshot matches={data.matches} predictions={data.predictions} onSelect={setSelectedId}/>
     <IntelBrief intel={intel} matches={data.matches} onSelect={setSelectedId}/>
     <PaperBankroll bankroll={data.paperBankroll} onSelect={setSelectedId}/>
     <Leaderboard rows={data.leaderboard}/>
