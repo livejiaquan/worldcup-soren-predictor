@@ -78,8 +78,8 @@ function IntelBrief({ intel, matches = [], onSelect }) {
   })
   const updatedLabel = intel.generatedAt ? `更新 ${fmtDate(intel.generatedAt)}` : `${intel.items.length} 則`
   return <section className="panel intel-feed compact-intel" id="soren-intel">
-    <SectionHead kicker="SOREN SCOUTING BRIEF" title="賽前情報摘要" meta={updatedLabel}>
-      <small>{intel.items.length} 則公開來源觀察；首頁優先顯示最近要踢的刀口，完整訊號與來源收進細節，不把預測先發裝成官方名單。</small>
+    <SectionHead kicker="SOREN SCOUTING BRIEF" title="賽前情報雷達" meta={updatedLabel}>
+      <small>{intel.items.length} 則公開來源觀察；首頁只亮最近要踢的紅燈，完整訊號與來源收進細節，不把預測先發裝成官方名單。</small>
     </SectionHead>
     <div className="intel-compact-list">{prioritized.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row">
       <span>{item.match}</span>

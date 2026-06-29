@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T15:40:27Z",
-  "status": "late-matchday-source-refresh",
-  "headline": "Soren 臨場雷達：Brazil-Japan 補 live centre / Neymar 狀態與 projected XI；Germany-Paraguay 補 SI/USA Today 賽前與市場參考；Netherlands-Morocco 補 KNVB/OnsOranje 官方脈絡與低比分市場警訊。",
+  "generatedAt": "2026-06-29T15:54:42Z",
+  "status": "near-kickoff-live-centre-and-coach-context-refresh",
+  "headline": "Soren 臨場雷達：Brazil-Japan 補 CBS live centre；Germany-Paraguay 補 DFB/Nagelsmann 小組敗仗後修正語境。其餘近戰卡已夠厚，沒有硬塞重複來源。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2408,7 +2408,7 @@
       "matchId": "m076",
       "match": "Brazil vs Japan",
       "sourceType": "official preview + confederation context + reported live-centre/lineup-watch + odds context + live-centre + availability-watch",
-      "title": "Brazil-Japan 臨場再補 live centre 與 Neymar/Rayan 選擇題：巴西牌面很亮，但正式 XI 沒出前，別把 projected lineup 當聖旨。",
+      "title": "Brazil-Japan 再補 CBS live centre：巴西星味很亮，日本也不是布景板；正式 XI 沒出前，誰把 projected lineup 當聖旨誰先出糗。",
       "sorenTake": "Al Jazeera 已開即時頁，beIN/USA Today 都把 Neymar 是否先發、Rayan 是否續用拉成焦點。Soren 的讀法：Brazil 仍是主線，但 Japan 的反擊與換位紀律夠煩；如果巴西把「誰先發」變成更衣室連續劇，森保一不會替他們收拾劇本。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
@@ -2458,7 +2458,8 @@
         "AFC 官方日本側 preview 已可連線，補上亞洲足聯脈絡；它能支撐日本備戰/對戰背景，不等於公布正式首發。",
         "15:40Z 父層核對 Al Jazeera liveblog 可連線：頁面承諾 Brazil-Japan build-up、analysis 與 text commentary；這是臨場觀察入口，不等於正式先發已公布。",
         "beIN SPORTS 賽前訪談頁可連線，標題與摘要聚焦 Ancelotti 談 Neymar 對 Japan 是否先發/身體狀態；先標為 reported availability-watch，避免把教練口風寫成官方 XI。",
-        "USA Today projected XI 頁可連線，明確標為 projected lineup；可用來對照 Raphinha 缺席與 Rayan/Neymar 選擇，但正式名單仍以 FIFA/球隊入口為準。"
+        "USA Today projected XI 頁可連線，明確標為 projected lineup；可用來對照 Raphinha 缺席與 Rayan/Neymar 選擇，但正式名單仍以 FIFA/球隊入口為準。",
+        "15:50Z 父層探針核到 CBS Brazil-Japan live updates 可連線，頁面描述為 lineups/news/live score；它只能作為臨場 live-centre 監控，不等於官方先發已確認。"
       ],
       "sources": [
         {
@@ -2788,6 +2789,14 @@
           "fetchedAt": "2026-06-29T15:40:27Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "CBS Brazil-Japan live updates",
+          "url": "https://www.cbssports.com/soccer/news/brazil-vs-japan-live-updates-world-cup-2026-score-result/live/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-06-29T15:54:42Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -2796,7 +2805,7 @@
       "matchId": "m074",
       "match": "Germany vs Paraguay",
       "sourceType": "official/team-mood + public-probability + lineup-watch + late projected-XI + odds-reference",
-      "title": "Germany-Paraguay 補 SI projected XI 與 USA Today 市場參考：德國該贏，但淘汰賽最愛把「該」字拿去餵狗。",
+      "title": "Germany-Paraguay 再補 DFB Nagelsmann 修正語境：德國該贏，但淘汰賽專治「該」字，Paraguay 也不是來參觀 Boston。",
       "sorenTake": "SI 把德國 predicted XI 與賽前故事補上，USA Today 提供公開 odds/picks 參考。Soren 仍把德國放在優勢端，但 Paraguay 的低位抗壓若撐過前 25 分鐘，這場就會從「德國恢復秩序」變成「Nagelsmann 開始皺眉」。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
@@ -2845,7 +2854,8 @@
         "Opta Analyst 公開模型把 Germany 90 分鐘勝率列為 54.7%、Paraguay 23.1%；這是公開機率/戰術脈絡，不是 Soren 內部模型配方，也不是下注建議。",
         "DFB 6/29 Havertz 官方訪談指出他期待首次真正踏上世界盃淘汰賽，並說隊內「每個人都渴望上場」；這是官方 team-mood/賽前語境，不是先發確認。",
         "Sports Illustrated Germany-Paraguay preview 與 Germany predicted lineup 頁面均已父層核對可連線；內容屬預測/賽前判讀，不是官方先發。",
-        "USA Today Germany-Paraguay prediction/odds 頁可連線，作為紙上模擬的公開市場與專家觀點參考；不得解讀為投注建議。"
+        "USA Today Germany-Paraguay prediction/odds 頁可連線，作為紙上模擬的公開市場與專家觀點參考；不得解讀為投注建議。",
+        "15:50Z 父層探針核到 DFB 官方 Nagelsmann 訪談：德國小組末輪輸 Ecuador 後，主帥明說要 learn from it，並把焦點轉向 22:30 CEST 對 Paraguay；這是心態/修正脈絡，不是陣容官宣。"
       ],
       "sources": [
         {
@@ -3175,6 +3185,14 @@
           "fetchedAt": "2026-06-29T15:40:27Z",
           "claimType": "odds-reference",
           "confidence": "medium-high"
+        },
+        {
+          "label": "DFB Nagelsmann learn-from-it interview",
+          "url": "https://www.dfb.de/news/nagelsmann-we-need-to-learn-from-it",
+          "sourceName": "DFB",
+          "fetchedAt": "2026-06-29T15:54:42Z",
+          "claimType": "confirmed/coach-quote",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
