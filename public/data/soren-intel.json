@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-29T08:39:30Z",
+  "generatedAt": "2026-06-29T09:17:12Z",
   "status": "schedule-aware-scout-20260629T0835Z-m074-m075-matchday-refresh",
   "headline": "Soren 08:35Z 巡檢：近 17 小時三場淘汰賽已有厚底，Brazil-Japan 不灌重複料；本輪只補 Germany-Paraguay 的德國賽日戰術哨，以及 Netherlands-Morocco 的 Ouahbi 戰術引言與 BBC 即時入口。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
@@ -3337,9 +3337,9 @@
     {
       "matchId": "m077",
       "match": "France vs Sweden",
-      "sourceType": "official fixture actualization + official injury/form + odds watch",
-      "title": "France-Sweden 已落地；法國火力正冒煙，瑞典少了 Hien，後防不是少一顆螺絲而是少一根樑。",
-      "sorenTake": "FFF 與瑞典足協都已把 France vs Sweden 32 強對戰寫明。France 剛用 4-1 Norway 與 Dembélé hat-trick 把進攻狀態拉高；Sweden 則有官方確認 Isak Hien 因 Japan 戰傷勢退出世界盃。這場法國是重熱門，但 Soren 仍等正式 XI，不把 ESPN/FOX 的預測頁當首發聖旨。",
+      "sourceType": "official fixture actualization + official injury/form + training availability watch + odds watch",
+      "title": "France-Sweden 又冒一個小火點：Hien 已確定報銷，Kanté/Thuram 訓練不完整；法國大熱但別把板凳當保險箱。",
+      "sorenTake": "Sweden 的 Isak Hien 傷退仍是官方高信心訊號；新增法媒訓練線索顯示 Kanté 分開訓練、Thuram 小腿不適且可能缺席。這還不是官方 XI，也不是 France 崩盤預言；只是提醒：淘汰賽熱門隊的麻煩，通常先從「應該沒事」四個字開始。Gyökeres 也公開喊話瑞典必須相信自己，Soren 把它當 upset-path 心理訊號，不當比分保證。",
       "signals": [
         "openfootball 賽程目前列 m077 為 1I vs 3C/D/F/G/H，2026-06-30 21:00Z 於 New York/New Jersey 開球；本站不把未定第三名寫成確認對手。",
         "站內 Group I 完賽積分顯示 France 第一，因此 1I 指向 France；但對手端仍取決於最佳第三名組合與剩餘小組結果。",
@@ -3353,7 +3353,9 @@
         "Svensk Fotboll 官方宣布中衛 Isak Hien 因對 Japan 受傷，無法再參與本屆世界盃；這是高信心傷停。",
         "FFF 官方文章確認 Sweden 是 Les Bleus 32 強對手；另一篇 FFF 賽報稱 France 4-1 Norway，Ousmane Dembélé hat-trick。",
         "FFF 曾公告 Deschamps 因喪親缺席 Norway 戰；本巡檢不延伸推定他會缺席 Sweden，除非官方再更新。",
-        "FOX/ESPN/OddsChecker 公開盤頁顯示 France 為重熱門；本站僅作 paper simulation 市場溫度，不提供投注建議。"
+        "FOX/ESPN/OddsChecker 公開盤頁顯示 France 為重熱門；本站僅作 paper simulation 市場溫度，不提供投注建議。",
+        "Foot-National 6/28 報導 Kanté 分開訓練、Thuram 因狀況未完成全隊訓練；後續篇幅稱 Thuram 對 Sweden 可能缺席，但本站只標為 reported availability watch，等待 FFF/正式名單。",
+        "FootMercato 6/29 摘錄 Gyökeres 賽前語氣：瑞典承認是 outsider，但強調要相信自己、冷門不是童話書才有；這是心理/敘事訊號，不是可量化傷停。"
       ],
       "sources": [
         {
@@ -3475,6 +3477,30 @@
           "fetchedAt": "2026-06-28T23:51:55Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "Foot-National France training availability watch",
+          "url": "https://www.foot-national.com/equipe-de-france/equipe-de-france-kante-a-part-thuram-menage-ce-dimanche-a-lentrainement-949539",
+          "sourceName": "Foot-National",
+          "fetchedAt": "2026-06-29T09:17:12Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Foot-National Thuram possible absence report",
+          "url": "https://www.foot-national.com/coupe-du-monde/equipe-de-france-un-cadre-des-bleus-forfait-pour-le-seizieme-de-finale-face-a-la-suede-949554",
+          "sourceName": "Foot-National",
+          "fetchedAt": "2026-06-29T09:17:12Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "FootMercato Gyökeres pre-France quote",
+          "url": "https://www.footmercato.net/a6204728377463217762-suede-la-sortie-osee-de-viktor-gyokeres-avant-le-choc-contre-lequipe-de-france",
+          "sourceName": "FootMercato",
+          "fetchedAt": "2026-06-29T09:17:12Z",
+          "claimType": "reported/coach-player-quote",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -3482,9 +3508,9 @@
     {
       "matchId": "m079",
       "match": "Mexico vs Ecuador",
-      "sourceType": "official-adjacent fixture actualization + media confirmation + market-reference watch",
-      "title": "Mexico-Ecuador 終於不只是第三名盲盒：FIFA hospitality 與主流媒體都把 M79 寫實了。",
-      "sorenTake": "M79 的門牌現在比昨晚硬很多：FIFA/On Location 的官方貴賓套票頁直接寫 Mexico vs Ecuador，FOX 與 USA Today 也都把 Ecuador 列為 El Tri 的 32 強對手。Soren 仍保留一點 provenance 潔癖：這不是我親眼在 FIFA match centre 抄到的正式 XI，但作為對陣 actualization 已足夠公開更新。主場 Azteca 很大聲，Ecuador 的防守反擊也不會因為觀眾大聲就自動當機。",
+      "sourceType": "official-adjacent fixture actualization + media confirmation + reported lineup-watch + market-reference watch",
+      "title": "Mexico-Ecuador 再補隊訊層：本土媒體與 fantasy 頁都端出 probable XI；Azteca 很吵，但 Ecuador 不是來觀光。",
+      "sorenTake": "M79 對陣已由 FIFA hospitality/FOX/USA Today 寫實；新增 El Siglo de Torreón 與 Comuniate 的 probable-lineup/傷停頁，只能當隊訊觀察，不是官方首發。Mexico 主場氣壓會很足，Ecuador 的反擊也不會因為觀眾大聲就自動斷線。Soren 先記下 lineup-watch，等正式 XI 再動刀。",
       "signals": [
         "FOX Sports 比賽頁標題可核對 Mexico vs 3C/3E/3F/3H/3I 與 2026-06-30 賽事資訊，是公開賽程入口。",
         "Al Jazeera Round-of-32 explainer 列出 Mexico vs 3C/3E/3F/3H/3I 與 Mexico City Stadium 時間窗口。",
@@ -3492,7 +3518,9 @@
         "Betstamp/BettingPros 類市場頁存在但未見穩定可讀價格，先只當 paper 模擬的 market-reference watch。",
         "FIFA World Cup 26 Suites / On Location 頁面已把 M79 寫成 Mexico vs Ecuador，時間為 6/30 Mexico City；這是官方-adjacent fixture actualization，不是首發或戰術來源。",
         "FOX Sports 與 USA Today 均報導 Mexico 32 強對手為 Ecuador；本站將對手從 third-place watch 升級為 media-confirmed / FIFA-hospitality-listed。",
-        "Sports Mole 賽前隊訊稱 Mexico 暫無傷病疑慮並預期 Raúl Jiménez 回到先發；這只作 expected-XI lead，正式名單仍等官方。"
+        "Sports Mole 賽前隊訊稱 Mexico 暫無傷病疑慮並預期 Raúl Jiménez 回到先發；這只作 expected-XI lead，正式名單仍等官方。",
+        "El Siglo de Torreón 6/29 預覽 Mexico vs Ecuador 的開球時間、轉播與 probable lineups；這是本土媒體隊訊，不升級為 confirmed lineup。",
+        "Comuniate 的 Mundial fantasy 頁列出 probable lineups、suspensions/injuries 與 TV/time 資訊；可作第二層 lineup-watch，但可信度低於官方/主流賽前記者會。"
       ],
       "sources": [
         {
@@ -3558,6 +3586,22 @@
           "fetchedAt": "2026-06-29T04:11:38Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "El Siglo Mexico-Ecuador probable lineups",
+          "url": "https://www.elsiglodetorreon.com.mx/noticia/2026/mexico-vs-ecuador-a-que-hora-es-donde-ver-y-alineaciones-probables-del-mundial-2026.html",
+          "sourceName": "El Siglo de Torreón",
+          "fetchedAt": "2026-06-29T09:17:12Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Comuniate Mexico-Ecuador fantasy lineup watch",
+          "url": "https://mundial.comuniate.com/partido/6/4/mexico-ecuador",
+          "sourceName": "Comuniate Mundial",
+          "fetchedAt": "2026-06-29T09:17:12Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-low"
         }
       ],
       "confidence": "medium-high"
