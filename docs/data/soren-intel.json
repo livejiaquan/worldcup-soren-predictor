@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T13:42:25Z",
-  "status": "賽日前哨微刷新：M76 補 CBF 官方賽日/球員談話，M74 補 DFB 與 APF 官方發布會/最後訓練，M75 補 Al Jazeera 與 Yahoo team-news，M78 補 Opta 公開機率脈絡；所有首發仍維持預測/追蹤邊界。",
-  "headline": "Soren 賽日雷達：Brazil-Japan 三個半小時內開踢，Germany-Paraguay 同日壓軸；官方隊訊加一層，媒體 XI 不升格成聖旨。",
+  "generatedAt": "2026-06-29T14:19:04Z",
+  "status": "賽日前哨源頭微刷新：M76 補 FIFA/AFC/Al Jazeera 官方與即時頁，M74 補 FIFA 官方頁與 Opta 公開機率，M78 補 Bundesliga live ticker；所有首發仍維持預測/追蹤邊界。",
+  "headline": "Soren 賽日雷達：Brazil-Japan 進入倒數三小時，Germany-Paraguay 接著上桌；官方頁可當硬入口，媒體 XI 仍不能冒充裁判簽名。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2407,9 +2407,9 @@
     {
       "matchId": "m076",
       "match": "Brazil vs Japan",
-      "sourceType": "official team update + reported lineup-watch + odds/live-centre context",
-      "title": "Brazil-Japan 補 CBF 官方賽日與球員談話：巴西說得很滿，但淘汰賽不是海報拍攝，Japan 的反擊劇本還活著。",
-      "sorenTake": "CBF 官方賽日稿確認巴西在 Houston 對日本、並強調小組賽後的整體修正；Rayan 也把這場講成「matar ou morrer」的淘汰賽壓力測試。Soren 的讀法很簡單：巴西紙面仍熱，但只要日本把節奏拖進半場攻防，熱門隊就得靠耐心，不是靠球衣重量通關。",
+      "sourceType": "official preview + confederation context + reported live-centre/lineup-watch + odds context",
+      "title": "Brazil-Japan 再補 FIFA/AFC/Al Jazeera：官方入口與即時頁都已升溫，但 Japan 的反擊劇本仍不是被巴西海報直接撕掉。",
+      "sorenTake": "Brazil 的火力牌面漂亮，CBF/Al Jazeera/FIFA 都把這場推成淘汰賽焦點；但 AFC 的日本視角提醒 Soren：Moriyasu 的隊伍最擅長把強隊拖進節奏泥地。巴西是熱門，不是免死金牌。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2452,7 +2452,10 @@
         "JFA 英文官方頁提供 SAMURAI BLUE 世界盃名單與賽程基準，可用來核對日本隊名單/時間線；它不是傷停更新本身。",
         "Bundesliga 賽事頁標示 Brazil-Japan 的最新更新與 lineup 追蹤；Soren 把它當臨場 formation/lineup centre，不提前升格為 confirmed lineup。",
         "CBF 官方賽日稿確認 Brazil 將於 Houston Stadium 對 Japan 爭取十六強席位，並提到巴西小組賽從對 Morocco 1-1 後連續 3-0 調整回穩；這是官方賽事情境，不是正式先發。",
-        "CBF 球員談話中 Rayan 稱淘汰賽是「matar ou morrer」，並承認 Japan 有很多高品質球員；屬官方球員語境，支撐日本不能被當作儀式感對手。"
+        "CBF 球員談話中 Rayan 稱淘汰賽是「matar ou morrer」，並承認 Japan 有很多高品質球員；屬官方球員語境，支撐日本不能被當作儀式感對手。",
+        "FIFA 官方 Brazil-Japan preview/live-stream/team-news 頁已可連線，作為賽前官方入口；在正式先發落地前只當 fixture/team-news hub，不把頁名寫成確認 XI。",
+        "Al Jazeera Brazil-Japan 預覽/即時頁確認休士頓 Round-of-32 對戰與賽前 build-up；可追蹤臨場更新，但文中 lineups/prediction 仍屬媒體賽前判讀。",
+        "AFC 官方日本側 preview 已可連線，補上亞洲足聯脈絡；它能支撐日本備戰/對戰背景，不等於公布正式首發。"
       ],
       "sources": [
         {
@@ -2758,6 +2761,14 @@
           "fetchedAt": "2026-06-29T13:42:25Z",
           "claimType": "confirmed/context",
           "confidence": "high"
+        },
+        {
+          "label": "AFC Brazil-Japan official preview",
+          "url": "https://www.the-afc.com/en/national/fifa_world_cup.html/news/preview-r32-brazil-v-japan",
+          "sourceName": "Asian Football Confederation",
+          "claimType": "confirmed/context",
+          "confidence": "high",
+          "fetchedAt": "2026-06-29T14:19:04Z"
         }
       ],
       "confidence": "high"
@@ -2765,9 +2776,9 @@
     {
       "matchId": "m074",
       "match": "Germany vs Paraguay",
-      "sourceType": "official federation updates + reported lineup-watch + tactical/odds context",
-      "title": "Germany-Paraguay 補雙邊官方話筒：Völler 要德國交出強勢表演，APF 說巴拉圭最後訓練已收工；這不是友誼賽，是誰先犯蠢誰回家。",
-      "sorenTake": "DFB 的 Völler 公開把德國壓力講出來，APF 則確認 Alfaro 帶隊完成 Boston 最後訓練並開賽前記者會。德國有控球和天賦，Paraguay 有低位、對抗和拖慢節奏的壞笑；Soren 仍看德國小優，但這種淘汰賽最怕的不是弱隊，是耐心先斷電。",
+      "sourceType": "official federation updates + official FIFA context + reported lineup-watch + public probability/odds context",
+      "title": "Germany-Paraguay 補 FIFA 官方入口與 Opta 冷水：德國是 54.7% 熱門，但淘汰賽不是 Excel 自動晉級按鈕。",
+      "sorenTake": "FIFA 官方頁給 Germany-Paraguay 的硬入口，Opta 給德國 90 分鐘 54.7% 勝率；這支持德國佔優，但也明白寫著 Paraguay 有活路。Soren 的翻譯：德國若以為牌面會自己踢球，就會被巴拉圭的低位與反擊拖去照妖鏡。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2810,7 +2821,9 @@
         "Boston Globe 賽前分析把 Paraguay 的反彈寫成 back-to-back shutouts 與 stingy game，強化「低位防守＋耐心折磨」的戰術風險。",
         "DFB 官方訪談指出 Germany 將在 Boston 對 Paraguay，Völler 表示球隊想交出 really strong showing，並談到 Kimmich、Nathaniel Brown 等人；這是官方隊內語境，不是首發確認。",
         "APF 官方稿確認 Paraguay 在 Boston 完成對 Germany 賽前最後訓練，內容包含啟動、反應速度、rondo 與 tactical work；屬官方備戰訊號。",
-        "APF 另有 Alfaro 與隊長 Gustavo Gómez 官方發布會稿，確認對 Germany 的賽前語境；可支撐 Paraguay 以心理/紀律戰進入淘汰賽，而非只看賠率。"
+        "APF 另有 Alfaro 與隊長 Gustavo Gómez 官方發布會稿，確認對 Germany 的賽前語境；可支撐 Paraguay 以心理/紀律戰進入淘汰賽，而非只看賠率。",
+        "FIFA Germany-Paraguay preview/live-stream/team-news 頁已可連線，作為賽前官方入口；正式先發仍等 FIFA/球隊/可信 live centre 落地。",
+        "Opta Analyst 公開模型把 Germany 90 分鐘勝率列為 54.7%、Paraguay 23.1%；這是公開機率/戰術脈絡，不是 Soren 內部模型配方，也不是下注建議。"
       ],
       "sources": [
         {
@@ -3471,9 +3484,9 @@
     {
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
-      "sourceType": "official preview + reported lineup-watch + public probability context",
-      "title": "Ivory Coast-Norway 補 Opta 公開機率：Haaland 劇本很大聲，但象隊第一次淘汰賽不等於自動簽收淘汰通知。",
-      "sorenTake": "Opta Analyst 的公開預覽給 Norway 90 分鐘勝率 56.1%，這和 Haaland 的敘事一致；但它同時提醒 Ivory Coast 是首次踢世界盃淘汰賽，情緒與轉換速度會放大變數。Soren 讀法：Norway 是熱門，不是免死金牌。",
+      "sourceType": "official preview + reported lineup-watch + public probability context + live-centre context",
+      "title": "Ivory Coast-Norway 補 live ticker：Haaland 流量很大，但象隊進球先手與即時頁才是臨場該盯的東西。",
+      "sorenTake": "Norway 有 Haaland，市場與敘事自然會往北歐巨獸傾斜；但 Côte d’Ivoire 小組賽多次先開紀錄，這不是背景板。Bundesliga live ticker 可做臨場追蹤，正式 XI 未出前，任何 predicted lineup 都只放在觀察欄。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -3490,7 +3503,8 @@
         "FIFA 官方預覽已明確列出 Côte d’Ivoire v Norway：6/30 Dallas Stadium 的 Round of 32 對戰，並把非洲象首次打進淘汰賽作為核心脈絡。",
         "WhoScored 新增 Ivory Coast-Norway 統計預覽入口，標示 team news、injuries/suspensions、probable line-ups 與 odds facts；這是隊訊監控，不是官方首發。",
         "Sports Mole 與 Goal.com 的 match preview 均把焦點放在 team news / possible lineups / tactics；挪威端 Haaland 火力是主軸，但仍須等正式 XI 才能升級判斷。",
-        "Opta Analyst 公開預覽顯示 Norway 在 25,000 次賽前模擬中 90 分鐘勝率 56.1%，Ivory Coast 21.6%，和局進延長約 22.3%；這是 public probability context，不是 Soren 模型配方。"
+        "Opta Analyst 公開預覽顯示 Norway 在 25,000 次賽前模擬中 90 分鐘勝率 56.1%，Ivory Coast 21.6%，和局進延長約 22.3%；這是 public probability context，不是 Soren 模型配方。",
+        "Bundesliga.com 已開 Côte d’Ivoire-Norway Round-of-32 liveticker，適合作為臨場比分/事件追蹤入口；它不是賽前確認首發來源。"
       ],
       "sources": [
         {
@@ -3644,9 +3658,17 @@
           "fetchedAt": "2026-06-29T13:42:25Z",
           "claimType": "context/public-probability",
           "confidence": "high"
+        },
+        {
+          "label": "Bundesliga Ivory Coast-Norway live ticker",
+          "url": "https://www.bundesliga.com/en/world-cup/matchday/2026-2027/round-of-32/cote-d-ivoire-vs-norway/liveticker",
+          "sourceName": "Bundesliga.com",
+          "claimType": "context",
+          "confidence": "high",
+          "fetchedAt": "2026-06-29T14:19:04Z"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m077",
