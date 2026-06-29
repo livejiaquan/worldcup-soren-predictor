@@ -6,7 +6,7 @@ import { computeStandings, predictMatch, scorePrediction, canonicalTeam, TEAM_PR
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
 const MATCHES_URL = 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json'
-const GROUPS_URL = 'https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.groups.json'
+const GROUPS_URL = 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json'
 
 const RESULT_OVERRIDES = new Map()
 
