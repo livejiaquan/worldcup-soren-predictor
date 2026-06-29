@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T21:09:37Z",
-  "status": "Round-of-32 live scout: Germany-Paraguay 由 ESPN 公開比分源確認上半場 39 分鐘仍 0-0；Brazil-Japan 已完成賽後，Netherlands-Morocco 保留賽前 lineup-watch 邊界。",
-  "headline": "Soren live watch: 德國 39 分鐘還撬不開 Paraguay，淘汰賽的門不是自動門；Netherlands-Morocco 等 01:00Z 開刀。",
+  "generatedAt": "2026-06-29T22:19:27Z",
+  "status": "Live scout refresh: Germany-Paraguay 86 分鐘 1-1 仍未完成；Netherlands-Morocco 補 BBC/Bundesliga 臨場入口；Ivory Coast-Norway 與 France-Sweden 補次日可信公開訊號。",
+  "headline": "Soren live watch: Germany-Paraguay 還在 1-1 拉扯；Netherlands-Morocco 的直播/市場入口已補上，明天兩場再盯傷停與公開概率。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2863,8 +2863,8 @@
       "matchId": "m074",
       "match": "Germany vs Paraguay",
       "sourceType": "official/team-mood + live-score + lineup-watch + late projected-XI + odds-reference",
-      "title": "Germany-Paraguay live：ESPN 39 分鐘仍 0-0；德國有優勢，但這扇門暫時不是自動門。",
-      "sorenTake": "ESPN 公開比分源在上半場 39 分鐘顯示 Germany 0-0 Paraguay，狀態仍是 First Half、completed=false。這不是最終比分，Soren 也不提前結算；但它很誠實地提醒：德國紙面優勢遇到 Paraguay 低位與時間壓力，豪門光環暫時只能照明，不能進球。",
+      "title": "Germany-Paraguay live 又升溫：ESPN 公開 API 顯示 86 分鐘 1-1，仍 completed=false；別急著替德國寫訃聞或賀詞。",
+      "sorenTake": "父層重查 ESPN 公開 summary/scoreboard：Germany 1-1 Paraguay、86 分鐘、completed=false；The Standard live blog 也在 22:15Z 左右出現 Germany 1-1 Paraguay。這仍不是 FT，Soren 不結算也不裝先知；但 Paraguay 已把熱門隊拖進最後段泥潭，德國的品牌價值現在不能代替防守與加時體能。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2919,7 +2919,9 @@
         "20Z 父層 metadata probe 核對 Guardian match-specific live：標題為 Germany v Paraguay last 32 – live，描述為逐分鐘報導；只作臨場 live-centre，不外推確認先發或最終比分。",
         "20Z 父層 metadata probe 核對 ESPN live score：頁面承諾 live score、highlights、updated stats；未見 full-time marker，正式結果仍等 FIFA/ESPN/BBC 顯示 FT。",
         "Sporting News live article 標題/metadata 顯示會追蹤 Germany-Paraguay live score、result、highlights；可作輔助 live-centre，但不取代官方 match centre。",
-        "21:09Z 父層以 ESPN 公開 summary/scoreboard API 複核 M74：Germany 0-0 Paraguay，上半場 39 分鐘、completed=false；此為 in-progress live-score，不作最終結果或 paper-bankroll 結算。"
+        "21:09Z 父層以 ESPN 公開 summary/scoreboard API 複核 M74：Germany 0-0 Paraguay，上半場 39 分鐘、completed=false；此為 in-progress live-score，不作最終結果或 paper-bankroll 結算。",
+        "22:19Z 父層重查 ESPN 公開 summary/scoreboard API：M74 Germany 1-1 Paraguay、86 分鐘、Second Half、completed=false；此為 in-progress live-score，不作最終結果或 paper-bankroll 結算。",
+        "The Standard live blog metadata/body JSON-LD 可見 22:15Z 左右的「Germany 1-1 Paraguay」headline；作輔助 live-centre 交叉檢查，仍需 ESPN/FIFA/BBC/Guardian FT 才能寫最終比分。"
       ],
       "sources": [
         {
@@ -3283,10 +3285,10 @@
           "confidence": "high"
         },
         {
-          "label": "ESPN Germany-Paraguay live score (39 min 0-0 probe)",
+          "label": "ESPN Germany-Paraguay live score (86 min 1-1 API probe)",
           "url": "https://www.espn.com/soccer/match/_/gameId/760489",
           "sourceName": "ESPN",
-          "fetchedAt": "2026-06-29T21:09:37Z",
+          "fetchedAt": "2026-06-29T22:19:27Z",
           "claimType": "context/live-score",
           "confidence": "high"
         },
@@ -3297,6 +3299,14 @@
           "fetchedAt": "2026-06-29T20:03:02Z",
           "claimType": "context/live-centre",
           "confidence": "medium-high"
+        },
+        {
+          "label": "The Standard Germany-Paraguay live blog (1-1 probe)",
+          "url": "https://www.standard.co.uk/sport/football/germany-vs-paraguay-live-stream-latest-score-updates-result-world-cup-2026-b1288075.html",
+          "sourceName": "The Standard",
+          "fetchedAt": "2026-06-29T22:19:27Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -3304,9 +3314,9 @@
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
-      "sourceType": "coach-quote + official-training + lineup-watch + odds-reference + official context + low-score market watch",
-      "title": "Netherlands-Morocco 再補 ESPN/FotMob 臨場面板：橙軍小熱，但這種低比分局最愛把天賦隊拖進泥巴。",
-      "sorenTake": "ESPN 賽日前瞻補上轉播、裁判與 predicted lineups，FotMob live centre 則提供 01:00Z 開球、H2H、lineups 與即時數據入口。這些都不是官方 XI；Soren 只把它們當臨場校準。荷蘭若被 Morocco 把節奏壓碎，漂亮控球會瞬間變成高級版繞圈。",
+      "sourceType": "official/federation + live-centre + lineup-watch + odds-reference + coach-player quote",
+      "title": "Netherlands-Morocco 臨場再加 BBC/Bundesliga/CBS：直播入口齊了，橙軍小熱；但摩洛哥最會把漂亮足球拖成心理測驗。",
+      "sorenTake": "BBC 與 Bundesliga 已開 live text / liveticker，CBS 補一個主流公開市場參照；WhoScored 搜尋結果也指向 probable line-ups，但父層 403，本站只把它當 lineup-watch lead。正式 XI 未落地前，不把 SEO 標題當神諭。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -3355,7 +3365,11 @@
         "Covers Netherlands-Morocco odds/prediction 頁可連線，摘要指向低比分預期；只作紙上模擬市場/天氣脈絡參考，不是投注建議。",
         "ESPN Netherlands-Morocco 賽日前瞻頁可連線，標題列 TV/how to watch/kickoff/referee/predicted line-ups，父層 metadata 核到 Wilton Sampaio；屬 media predicted-XI/referee context，不是官方先發。",
         "FotMob Netherlands-Morocco live centre 可連線，metadata 列 2026-06-30 01:00 UTC、live results、H2H、match stats、lineups、player ratings 與 insights；作臨場追蹤入口，不提前確認 XI。",
-        "Sporting News metadata 顯示 Netherlands-Morocco 為 projected lineups / team news；這能補臨場陣容觀察，但標籤仍是 predicted-XI，官方首發未落地前不升級成 confirmed。"
+        "Sporting News metadata 顯示 Netherlands-Morocco 為 projected lineups / team news；這能補臨場陣容觀察，但標籤仍是 predicted-XI，官方首發未落地前不升級成 confirmed。",
+        "BBC Netherlands-Morocco live page 父層核到標題/metadata：build-up、team news、radio commentary、live text updates，且描述會追 score updates 與 match stats；作高可信 live-centre，不提前確認 XI。",
+        "Bundesliga Netherlands-Morocco liveticker 父層核到標題與 metadata「latest updates」；作 line-ups/stats/live-tracker 入口，正式名單仍等官方或現場更新。",
+        "CBS Sports Netherlands-Morocco odds/prediction 頁父層可連，metadata 為公開 odds / line / time；只作 paper-market temperature，不是投注建議。",
+        "WhoScored 搜尋片段顯示 Netherlands-Morocco 頁含 injuries/suspensions、probable line-ups、facts and odds；父層遭 403，保守列為 reported lineup-watch lead，不寫成已讀全文。"
       ],
       "sources": [
         {
@@ -3559,12 +3573,12 @@
           "confidence": "high"
         },
         {
-          "label": "WhoScored",
+          "label": "WhoScored Netherlands-Morocco statistical preview lead",
           "url": "https://www.whoscored.com/matches/1990731/preview/international-fifa-world-cup-2026-netherlands-morocco",
           "sourceName": "WhoScored",
-          "fetchedAt": "2026-06-29T06:05:00Z",
+          "fetchedAt": "2026-06-29T22:18:20Z",
           "claimType": "reported/lineup-watch",
-          "confidence": "medium-high"
+          "confidence": "medium"
         },
         {
           "label": "Reuters / Straits Times Ouahbi different solutions quote",
@@ -3575,11 +3589,11 @@
           "confidence": "high"
         },
         {
-          "label": "BBC Netherlands-Morocco live text",
+          "label": "BBC Netherlands-Morocco live text (22Z metadata probe)",
           "url": "https://www.bbc.com/sport/football/live/c8023x0d3g9t",
           "sourceName": "BBC Sport",
-          "fetchedAt": "2026-06-29T08:39:30Z",
-          "claimType": "context/lineup-watch",
+          "fetchedAt": "2026-06-29T22:18:20Z",
+          "claimType": "context/live-centre",
           "confidence": "high"
         },
         {
@@ -3701,6 +3715,22 @@
           "fetchedAt": "2026-06-29T20:03:02Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Bundesliga Netherlands-Morocco liveticker",
+          "url": "https://www.bundesliga.com/en/world-cup/matchday/2026-2027/round-of-32/netherlands-vs-morocco/liveticker",
+          "sourceName": "Bundesliga.com",
+          "fetchedAt": "2026-06-29T22:18:20Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "CBS Netherlands-Morocco odds reference",
+          "url": "https://www.cbssports.com/soccer/news/netherlands-morocco-odds-prediction-line-start-time-2026-world-cup-round-of-32-picks/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-06-29T22:18:20Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -3708,9 +3738,9 @@
     {
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
-      "sourceType": "official preview + reported lineup-watch + public probability context + live-centre/stat tracker",
-      "title": "Ivory Coast-Norway 補 ESPN/FotMob 臨場面板：Haaland 很吵，但 Pépé/Kessié 與 Ryerson 疑問才是這場的真按鈕。",
-      "sorenTake": "這張卡不需要再吹 Haaland，地球人都知道他會射門。更有價值的是 ESPN 把兩隊賽事資訊、數據入口與 odds tab 放齊，FotMob 另列 Dallas Stadium、裁判與 predicted lineup/傷停區；Julian Ryerson thigh injury 標成 doubtful 時，Norway 右路保護就不能當成自動駕駛。",
+      "sourceType": "official-preview + public-probability + live-centre + availability-watch + odds-reference + team-media context",
+      "title": "Ivory Coast-Norway 補 NRK/CBS/SofaScore lead：Haaland 是招牌，但 Yan Diomandé、Ryerson/Singo 傷疑才是淘汰賽暗門。",
+      "sorenTake": "NRK 把焦點拉到 Yan Diomandé 這個科特迪瓦爆點，CBS 補主流市場參照；SofaScore 搜尋片段列 Singo hamstring、Ryerson thigh doubt，但父層 403，所以只當 availability-watch lead。紙面 Norway 較熱，真球場不會替熱門隊自動開門。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -3731,7 +3761,10 @@
         "Bundesliga.com 已開 Côte d’Ivoire-Norway Round-of-32 liveticker，適合作為臨場比分/事件追蹤入口；它不是賽前確認首發來源。",
         "ESPN Gamecast 已可追 Ivory Coast-Norway，即時頁列出 Arlington 場地、FOX 轉播、top scorers/assists 與 team stats，適合作為比賽日比分/數據入口。",
         "FotMob match page 列 Dallas Stadium、裁判 Jesús Noel Valenzuela Sáez、predicted lineup 與傷停區；Ryerson thigh injury / doubtful 屬 live tracker 的 availability-watch，不寫成官方缺陣。",
-        "The Standard Norway XI 頁面標題寫 confirmed team news，但 metadata/body probe 仍以 predicted lineup、injury latest 呈現；Ryerson/Heggem 疑問只能當 reported availability-watch，不當正式首發。"
+        "The Standard Norway XI 頁面標題寫 confirmed team news，但 metadata/body probe 仍以 predicted lineup、injury latest 呈現；Ryerson/Heggem 疑問只能當 reported availability-watch，不當正式首發。",
+        "NRK 6/29 專題父層核到 title/meta：Yan Diomandé 被寫成 Ivory Coast 對 Norway 的主要威脅之一；這是可信 team-media/tactical context，不是勝率公式。",
+        "CBS Sports Norway-Ivory Coast odds/prediction 頁父層可連，metadata 指向公開 odds / line / time；本站只作 paper-market temperature，不提供投注建議。",
+        "SofaScore 搜尋片段列 Wilfried Singo hamstring missing、Julian Ryerson thigh doubtful；父層 403，保守作 reported availability-watch lead，等官方/隊媒或 live tracker 再升級。"
       ],
       "sources": [
         {
@@ -3917,6 +3950,30 @@
           "fetchedAt": "2026-06-29T20:03:02Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "NRK Yan Diomandé Norway preview",
+          "url": "https://www.nrk.no/fotballvm2026/fotball-vm-2026_-kometen-fra-elfenbenskysten-yan-diomande-setter-antonio-nusa-i-skyggen-1.17940019",
+          "sourceName": "NRK",
+          "fetchedAt": "2026-06-29T22:18:20Z",
+          "claimType": "reported/tactical",
+          "confidence": "high"
+        },
+        {
+          "label": "CBS Norway-Ivory Coast odds reference",
+          "url": "https://www.cbssports.com/soccer/news/norway-ivory-coast-odds-prediction-time-2026-world-cup-round-of-32-picks/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-06-29T22:18:20Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "SofaScore Ivory Coast-Norway availability lead",
+          "url": "https://www.sofascore.com/news/contrasting-styles-collide-as-cote-divoire-face-norway-in-knockout-clash",
+          "sourceName": "SofaScore",
+          "fetchedAt": "2026-06-29T22:18:20Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -3924,9 +3981,9 @@
     {
       "matchId": "m077",
       "match": "France vs Sweden",
-      "sourceType": "official fixture actualization + official injury/form + training availability watch + credible preview/lineup-watch",
-      "title": "France-Sweden 補 Goal 戰術/可能 XI：法國火力像豪華自助餐，Sweden 的任務是把它變成排隊塞車。",
-      "sorenTake": "Goal 的賽前頁把 France 完美小組賽、Dembélé 狀態與 Sweden 顛簸晉級路徑放在同一張桌上，並提供 probable XI。這不是官方先發；但搭配 WhoScored 與既有 FFF/SvFF 脈絡，可以更清楚看到 Sweden 若想爆冷，必須同時處理 Mbappé、Dembélé 與二線插上的多點壓力。",
+      "sourceType": "official federation + official tournament preview + availability-watch + public-probability + lineup-watch + odds-reference",
+      "title": "France-Sweden 補 FIFA/SvFF/Opta：法國像豪華火力展示間，瑞典少 Hien 還要硬扛 75.1% 的 public-probability 壓力。",
+      "sorenTake": "FIFA matchday preview 把 France 完美小組戰績與雙方 17 球火力放在台面；SvFF 官方確認對法國賽程脈絡；Opta 公開模型給 France 90 分鐘 75.1%。這些是公開參照，不是 Soren 私房配方。瑞典的冷門路徑很窄，但窄門也會割人。",
       "signals": [
         "openfootball 賽程目前列 m077 為 1I vs 3C/D/F/G/H，2026-06-30 21:00Z 於 New York/New Jersey 開球；本站不把未定第三名寫成確認對手。",
         "站內 Group I 完賽積分顯示 France 第一，因此 1I 指向 France；但對手端仍取決於最佳第三名組合與剩餘小組結果。",
@@ -3946,7 +4003,10 @@
         "Svensk Fotboll 官方頁已可父層核對：Isak Hien 因對 Japan 受傷離開本屆世界盃，France-Sweden 卡上的中衛缺口維持 very-high confidence。",
         "WhoScored France-Sweden statistical preview 標示 team news、injuries/suspensions、probable line-ups，並指向 Saliba 從背傷回歸的預期；此為 reported expected-XI/availability watch，正式先發仍等 FIFA/球隊。",
         "Goal France-Sweden preview 提供 team news、tactical framing 與 probable XI，描述 France 小組賽 3 戰全勝、對 Norway 4-1 收尾，Sweden 則從 Netherlands 重敗後靠 Japan 戰拿到晉級位置。",
-        "Goal probable XI 仍只屬 reported/lineup-watch；正式先發未出前，不把 Saliba/Upamecano 或 Isak/Gyökeres 組合寫成確認。"
+        "Goal probable XI 仍只屬 reported/lineup-watch；正式先發未出前，不把 Saliba/Upamecano 或 Isak/Gyökeres 組合寫成確認。",
+        "FIFA matchday-20 preview 搜尋片段/官方 URL 指向 France-Sweden：France 帶完美戰績進 New York/New Jersey，兩隊小組合計 17 球；作 official tournament preview/context。",
+        "Svensk Fotboll 官方 France-Sweden 頁父層核到標題與 metadata：Sweden 將於 6/30 23:00 瑞典時間、New Jersey 對 France；這是官方賽程/路線確認。",
+        "Opta Analyst France-Sweden preview 父層核到 title/meta；搜尋片段列 France 90 分鐘勝率 75.1%，作 public probability context，不公開或替代 Soren 模型。"
       ],
       "sources": [
         {
@@ -4014,11 +4074,11 @@
           "confidence": "high"
         },
         {
-          "label": "Svensk Fotboll France awaits Sweden",
+          "label": "Svensk Fotboll France awaits Sweden (22Z metadata probe)",
           "url": "https://www.svenskfotboll.se/nyheter/landslag/2026/06/frankrike-vantar-i-sextondelen/",
           "sourceName": "Svensk Fotboll",
-          "fetchedAt": "2026-06-28T23:51:55Z",
-          "claimType": "confirmed",
+          "fetchedAt": "2026-06-29T22:18:20Z",
+          "claimType": "confirmed/context",
           "confidence": "high"
         },
         {
@@ -4108,6 +4168,22 @@
           "fetchedAt": "2026-06-29T16:22:44Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA matchday 20 France-Sweden preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/matchday-20-preview-round-of-32",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-29T22:18:20Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Opta France-Sweden public probability preview",
+          "url": "https://theanalyst.com/articles/france-vs-sweden-prediction-world-cup-2026-match-preview",
+          "sourceName": "The Analyst / Opta",
+          "fetchedAt": "2026-06-29T22:18:20Z",
+          "claimType": "context/public-probability",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
