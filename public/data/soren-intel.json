@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T22:19:27Z",
-  "status": "Live scout refresh: Germany-Paraguay 86 分鐘 1-1 仍未完成；Netherlands-Morocco 補 BBC/Bundesliga 臨場入口；Ivory Coast-Norway 與 France-Sweden 補次日可信公開訊號。",
-  "headline": "Soren live watch: Germany-Paraguay 還在 1-1 拉扯；Netherlands-Morocco 的直播/市場入口已補上，明天兩場再盯傷停與公開概率。",
+  "generatedAt": "2026-06-29T23:41:48Z",
+  "status": "Postmatch + matchday scout refresh: Paraguay 1-1 Germany 後點球 4-3 爆冷晉級；Netherlands-Morocco 補 Al Jazeera/SI 臨場與冷門路徑；Ivory Coast-Norway 補 ESPN/Yahoo matchday team-news context。",
+  "headline": "Soren scout: 德國被 Paraguay 點球送走；Netherlands-Morocco 進入最後 90 分鐘，明天 Ivory Coast-Norway 也補上 Diomandé vs Haaland 的主線。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2862,9 +2862,9 @@
     {
       "matchId": "m074",
       "match": "Germany vs Paraguay",
-      "sourceType": "official/team-mood + live-score + lineup-watch + late projected-XI + odds-reference",
-      "title": "Germany-Paraguay live 又升溫：ESPN 公開 API 顯示 86 分鐘 1-1，仍 completed=false；別急著替德國寫訃聞或賀詞。",
-      "sorenTake": "父層重查 ESPN 公開 summary/scoreboard：Germany 1-1 Paraguay、86 分鐘、completed=false；The Standard live blog 也在 22:15Z 左右出現 Germany 1-1 Paraguay。這仍不是 FT，Soren 不結算也不裝先知；但 Paraguay 已把熱門隊拖進最後段泥潭，德國的品牌價值現在不能代替防守與加時體能。",
+      "sourceType": "postmatch/final-after-penalties + official/API result + live-centre reaction + tactical postmortem",
+      "title": "Paraguay 1-1（4-3 pens）Germany：德國品牌在點球點斷電，Paraguay 把最大冷門直接塞進淘汰賽履歷。",
+      "sorenTake": "ESPN 公開 summary 已從 86 分鐘 live 狀態翻成 completed=true / FT-Pens：Paraguay 1-1 Germany 後點球 4-3 晉級；The Athletic 標題也寫 Paraguay stun Germany on penalties。Soren 這張卡正式從 live-watch 改 postmatch：德國不是輸在 xG 美學不夠，而是被 Paraguay 的低位韌性、Enciso 先手、Gill 撐住局面和點球壓力拆掉。熱門隊出局，紙上盤面只能拿去擦眼淚。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2921,7 +2921,11 @@
         "Sporting News live article 標題/metadata 顯示會追蹤 Germany-Paraguay live score、result、highlights；可作輔助 live-centre，但不取代官方 match centre。",
         "21:09Z 父層以 ESPN 公開 summary/scoreboard API 複核 M74：Germany 0-0 Paraguay，上半場 39 分鐘、completed=false；此為 in-progress live-score，不作最終結果或 paper-bankroll 結算。",
         "22:19Z 父層重查 ESPN 公開 summary/scoreboard API：M74 Germany 1-1 Paraguay、86 分鐘、Second Half、completed=false；此為 in-progress live-score，不作最終結果或 paper-bankroll 結算。",
-        "The Standard live blog metadata/body JSON-LD 可見 22:15Z 左右的「Germany 1-1 Paraguay」headline；作輔助 live-centre 交叉檢查，仍需 ESPN/FIFA/BBC/Guardian FT 才能寫最終比分。"
+        "The Standard live blog metadata/body JSON-LD 可見 22:15Z 左右的「Germany 1-1 Paraguay」headline；作輔助 live-centre 交叉檢查，仍需 ESPN/FIFA/BBC/Guardian FT 才能寫最終比分。",
+        "ESPN 公開 FIFA World Cup summary endpoint 回傳 event 760489 為 STATUS_FINAL_PEN / completed=true：常規與加時後 Germany 1-1 Paraguay，Paraguay 點球 4-3 晉級。",
+        "The Athletic live reaction 標題明確寫 Paraguay stun Germany on penalties，摘要稱這是 one of the greatest upsets of recent times；這是賽後反應來源，不是賽前猜測。",
+        "BBC live page metadata 仍以 Germany vs Paraguay penalties / score / commentary 更新呈現，可作點球戰與現場更新輔助來源；最終勝負以 ESPN completed=true 與多家賽後頁交叉確認。",
+        "Soren postmortem：Paraguay 的冷門路徑不是玄學，是先進球、拖低節奏、讓德國在 VAR/加時/點球壓力裡把豪門履歷變成負重。下次遇到大熱低賠，先問「誰有能力把比賽拖成醜球？」"
       ],
       "sources": [
         {
@@ -3307,6 +3311,22 @@
           "fetchedAt": "2026-06-29T22:19:27Z",
           "claimType": "context/live-centre",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN public summary final after penalties",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-06-29T23:41:48Z",
+          "claimType": "confirmed/final-score",
+          "confidence": "high"
+        },
+        {
+          "label": "The Athletic Germany-Paraguay upset reaction",
+          "url": "https://www.nytimes.com/athletic/live-blogs/germany-vs-paraguay-live-updates-world-cup-2026-score-result/MwjKp8C1Omtc/",
+          "sourceName": "The Athletic",
+          "fetchedAt": "2026-06-29T23:41:48Z",
+          "claimType": "reported/postmatch-reaction",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -3315,8 +3335,8 @@
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
       "sourceType": "official/federation + live-centre + lineup-watch + odds-reference + coach-player quote",
-      "title": "Netherlands-Morocco 臨場再加 BBC/Bundesliga/CBS：直播入口齊了，橙軍小熱；但摩洛哥最會把漂亮足球拖成心理測驗。",
-      "sorenTake": "BBC 與 Bundesliga 已開 live text / liveticker，CBS 補一個主流公開市場參照；WhoScored 搜尋結果也指向 probable line-ups，但父層 403，本站只把它當 lineup-watch lead。正式 XI 未落地前，不把 SEO 標題當神諭。",
+      "title": "Netherlands-Morocco 賽前最後 90 分鐘：Al Jazeera live 開台、SI 給摩洛哥點球冷門劇本；橙軍小熱但別演自信過敏。",
+      "sorenTake": "Al Jazeera 已開 Netherlands-Morocco live blog，metadata 明示 live build-up、team news coverage 與文字直播；Sports Illustrated 預覽則把比分寫成 1-1、Morocco 點球晉級的冷門路徑。這不是確認先發，也不是 Soren 跟風押冷；只是提醒：這場若被拖到低比分，荷蘭的控球美感會開始冒冷汗。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -3369,7 +3389,9 @@
         "BBC Netherlands-Morocco live page 父層核到標題/metadata：build-up、team news、radio commentary、live text updates，且描述會追 score updates 與 match stats；作高可信 live-centre，不提前確認 XI。",
         "Bundesliga Netherlands-Morocco liveticker 父層核到標題與 metadata「latest updates」；作 line-ups/stats/live-tracker 入口，正式名單仍等官方或現場更新。",
         "CBS Sports Netherlands-Morocco odds/prediction 頁父層可連，metadata 為公開 odds / line / time；只作 paper-market temperature，不是投注建議。",
-        "WhoScored 搜尋片段顯示 Netherlands-Morocco 頁含 injuries/suspensions、probable line-ups、facts and odds；父層遭 403，保守列為 reported lineup-watch lead，不寫成已讀全文。"
+        "WhoScored 搜尋片段顯示 Netherlands-Morocco 頁含 injuries/suspensions、probable line-ups、facts and odds；父層遭 403，保守列為 reported lineup-watch lead，不寫成已讀全文。",
+        "Al Jazeera 6/29 live blog 已開 Netherlands-Morocco 文字直播，metadata 明示會提供 live build-up、team news coverage 與 text commentary；正式 XI 仍待官方/可信即時頁確認。",
+        "Sports Illustrated Netherlands-Morocco preview 可連線，標題明示 preview/predictions/lineups，文中預測 1-1 且 Morocco 點球晉級；本站只把它當 upset-path/lineup-watch context，不當作確認陣容或本站模型。"
       ],
       "sources": [
         {
@@ -3731,6 +3753,14 @@
           "fetchedAt": "2026-06-29T22:18:20Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "Al Jazeera Netherlands-Morocco live blog",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/6/29/live-netherlands-vs-morocco-fifa-world-cup-2026",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-29T23:41:48Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -3739,8 +3769,8 @@
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
       "sourceType": "official-preview + public-probability + live-centre + availability-watch + odds-reference + team-media context",
-      "title": "Ivory Coast-Norway 補 NRK/CBS/SofaScore lead：Haaland 是招牌，但 Yan Diomandé、Ryerson/Singo 傷疑才是淘汰賽暗門。",
-      "sorenTake": "NRK 把焦點拉到 Yan Diomandé 這個科特迪瓦爆點，CBS 補主流市場參照；SofaScore 搜尋片段列 Singo hamstring、Ryerson thigh doubt，但父層 403，所以只當 availability-watch lead。紙面 Norway 較熱，真球場不會替熱門隊自動開門。",
+      "title": "Ivory Coast-Norway 再補 ESPN/Yahoo：Diomandé 對 Haaland 是招牌，但真正風險在傷疑、節奏和誰先被淘汰賽燈光刺眼。",
+      "sorenTake": "ESPN 新預覽把 Yan Diomandé vs Haaland/Ødegaard 拉成主線，Yahoo/Sports Mole 系列頁則補 team news、lineups、prediction 語境。挪威紙面較熱，可是 Ivory Coast 第一次淘汰賽不會自動跪下；Soren 只把這些列為 team-news / tactical context，正式先發照樣等 FIFA/球隊。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -3764,7 +3794,9 @@
         "The Standard Norway XI 頁面標題寫 confirmed team news，但 metadata/body probe 仍以 predicted lineup、injury latest 呈現；Ryerson/Heggem 疑問只能當 reported availability-watch，不當正式首發。",
         "NRK 6/29 專題父層核到 title/meta：Yan Diomandé 被寫成 Ivory Coast 對 Norway 的主要威脅之一；這是可信 team-media/tactical context，不是勝率公式。",
         "CBS Sports Norway-Ivory Coast odds/prediction 頁父層可連，metadata 指向公開 odds / line / time；本站只作 paper-market temperature，不提供投注建議。",
-        "SofaScore 搜尋片段列 Wilfried Singo hamstring missing、Julian Ryerson thigh doubtful；父層 403，保守作 reported availability-watch lead，等官方/隊媒或 live tracker 再升級。"
+        "SofaScore 搜尋片段列 Wilfried Singo hamstring missing、Julian Ryerson thigh doubtful；父層 403，保守作 reported availability-watch lead，等官方/隊媒或 live tracker 再升級。",
+        "ESPN 6/29 預覽標題明示 kick-off time、team news、how to watch，並把 Yan Diomandé 對上 Haaland/Ødegaard 作為核心敘事；這是可信 matchday context，不是確認先發。",
+        "Yahoo Sports 預覽頁 metadata 顯示 Ivory Coast vs Norway team news、lineups、predictions，並回顧 Ivory Coast 2-0 Curaçao、Norway 1-4 France；屬 media lineup-watch 與 form context。"
       ],
       "sources": [
         {
@@ -3973,6 +4005,22 @@
           "sourceName": "SofaScore",
           "fetchedAt": "2026-06-29T22:18:20Z",
           "claimType": "reported/availability-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "ESPN Ivory Coast-Norway matchday guide",
+          "url": "https://www.espn.com/espn/story/_/id/49213630/ivory-coast-vs-norway-kick-team-news-how-watch-diomande-faces-haaland",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-29T23:41:48Z",
+          "claimType": "reported/team-news-context",
+          "confidence": "high"
+        },
+        {
+          "label": "Yahoo Sports Ivory Coast-Norway preview",
+          "url": "https://sports.yahoo.com/articles/preview-ivory-coast-vs-norway-170000026.html",
+          "sourceName": "Yahoo Sports",
+          "fetchedAt": "2026-06-29T23:41:48Z",
+          "claimType": "reported/lineup-watch",
           "confidence": "medium"
         }
       ],
