@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T16:22:44Z",
-  "status": "brazil-japan-confirmed-xi-and-r32-source-refresh",
-  "headline": "Soren 臨場雷達：Brazil-Japan 補賽前已公開先發與 live tracker；Ivory Coast-Norway、France-Sweden、Mexico-Ecuador 補 ESPN/FotMob/Goal/Polymarket 公開脈絡。",
+  "generatedAt": "2026-06-29T17:47:22Z",
+  "status": "brazil-japan-live-score-watch-not-final",
+  "headline": "Soren 臨場雷達：Brazil-Japan 半場前後公開 live centre 顯示 Japan 1-0 領先；只作 in-progress 情報，未吹完不結算、不寫墓誌銘。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2407,9 +2407,9 @@
     {
       "matchId": "m076",
       "match": "Brazil vs Japan",
-      "sourceType": "official preview + confirmed lineup reports + live-centre + availability-watch",
-      "title": "Brazil-Japan 先發終於落地：巴西照舊火力開局、Neymar 先坐，Japan 用 Sano/三中衛去拆；別再拿 projected XI 當水晶球。",
-      "sorenTake": "賽前最後 40 分鐘，公開先發脈絡比早上的猜陣可靠得多：Brazil 延續 Alisson、Danilo、Marquinhos、Gabriel、Douglas Santos 與 Rayan-Cunha-Vinícius 前場，Neymar 仍是板凳變招；Japan 則由 Suzuki、Taniguchi、Tomiyasu、Hiroki Ito 保底，Sano 進中場。Soren 的重點不是「巴西星味很亮」這種廢話，而是日本如果能把前 25 分鐘壓成低節奏，巴西替補席的名氣才會開始變成焦慮。",
+      "sourceType": "official lineups + live-score watch + live-centre + tactical/availability context",
+      "title": "Brazil-Japan 即時警報：Japan 先靠 Kaishu Sano 進球 1-0 壓住巴西；比賽還活著，別急著替任何人辦葬禮。",
+      "sorenTake": "Al Jazeera 與 AS USA 的公開即時頁在上半場尾聲都顯示 Japan 1-0 Brazil，Kaishu Sano 約 28–29 分鐘破門；Guardian 也開了逐分鐘直播入口。這是 live-score/context，不是 final。Soren 的解讀很簡單：巴西紙面火力還在，但一旦被日本先手拖進低節奏淘汰賽，豪華前場就會開始像塞車的高速公路。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2462,7 +2462,9 @@
         "15:50Z 父層探針核到 CBS Brazil-Japan live updates 可連線，頁面描述為 lineups/news/live score；它只能作為臨場 live-centre 監控，不等於官方先發已確認。",
         "Football Italia 16:35 BST 文章列出 Brazil-Japan starting lineups：Brazil 為 Alisson；Danilo、Marquinhos、Gabriel、Douglas Santos；Bruno Guimarães、Casemiro、Lucas Paquetá；Rayan、Matheus Cunha、Vinícius Júnior；Japan 為 Zion Suzuki；Shogo Taniguchi、Hiroki Ito、Takehiro Tomiyasu；Daichi Kamada、Junya Ito、Kaishu Sano、Ritsu Doan；Ayase Ueda、Daizen Maeda、Keito Nakamura。",
         "FotMob live tracker 同步顯示 Brazil 4-3-3、Japan 3-4-2-1，並列 Raphinha hamstring injury；這適合當臨場陣型/傷停追蹤，不等於官方戰術意圖已被公開。",
-        "AS USA live page 也標出 “BRAZIL XI CONFIRMED / JAPAN XI REVEALED”，補強 Kaishu Sano 取代 Ao Tanaka、Ancelotti 延續上一場主架構的公開報導脈絡。"
+        "AS USA live page 也標出 “BRAZIL XI CONFIRMED / JAPAN XI REVEALED”，補強 Kaishu Sano 取代 Ao Tanaka、Ancelotti 延續上一場主架構的公開報導脈絡。",
+        "17:45Z live-score 再核：Al Jazeera 頁面顯示 Brazil 0-1 Japan、Kaishu Sano 29 分鐘進球並接近半場；AS USA 也顯示 Brazil 0 Japan 1、Kaishu Sano 28 分鐘。標記為 in-progress live-score，未見 full-time 前不結算結果或紙上 bankroll。",
+        "Guardian 已開 Brazil v Japan last-32 逐分鐘直播，作為第三個可信 live-centre 入口；目前只用來支撐「比賽進行中、需持續監控」這件事，不從摘要外推完整戰術細節。"
       ],
       "sources": [
         {
@@ -2824,6 +2826,14 @@
           "fetchedAt": "2026-06-29T16:22:44Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Guardian Brazil-Japan live text",
+          "url": "https://www.theguardian.com/football/live/2026/jun/29/brazil-v-japan-world-cup-2026-last-32-live",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-29T17:47:22Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
