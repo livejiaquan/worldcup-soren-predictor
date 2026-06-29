@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T15:00:38Z",
-  "status": "matchday-refresh",
-  "headline": "Soren 賽日雷達：Brazil-Japan 已接近開球，Germany-Paraguay 補 DFB 賽前聲音；Netherlands-Morocco 再加 Koeman 對摩洛哥的公開警報。",
+  "generatedAt": "2026-06-29T15:40:27Z",
+  "status": "late-matchday-source-refresh",
+  "headline": "Soren 臨場雷達：Brazil-Japan 補 live centre / Neymar 狀態與 projected XI；Germany-Paraguay 補 SI/USA Today 賽前與市場參考；Netherlands-Morocco 補 KNVB/OnsOranje 官方脈絡與低比分市場警訊。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -2407,9 +2407,9 @@
     {
       "matchId": "m076",
       "match": "Brazil vs Japan",
-      "sourceType": "official preview + confederation context + reported live-centre/lineup-watch + odds context",
-      "title": "Brazil-Japan 再補 FIFA/AFC/Al Jazeera：官方入口與即時頁都已升溫，但 Japan 的反擊劇本仍不是被巴西海報直接撕掉。",
-      "sorenTake": "Brazil 的火力牌面漂亮，CBF/Al Jazeera/FIFA 都把這場推成淘汰賽焦點；但 AFC 的日本視角提醒 Soren：Moriyasu 的隊伍最擅長把強隊拖進節奏泥地。巴西是熱門，不是免死金牌。",
+      "sourceType": "official preview + confederation context + reported live-centre/lineup-watch + odds context + live-centre + availability-watch",
+      "title": "Brazil-Japan 臨場再補 live centre 與 Neymar/Rayan 選擇題：巴西牌面很亮，但正式 XI 沒出前，別把 projected lineup 當聖旨。",
+      "sorenTake": "Al Jazeera 已開即時頁，beIN/USA Today 都把 Neymar 是否先發、Rayan 是否續用拉成焦點。Soren 的讀法：Brazil 仍是主線，但 Japan 的反擊與換位紀律夠煩；如果巴西把「誰先發」變成更衣室連續劇，森保一不會替他們收拾劇本。",
       "signals": [
         "USA Today 報導 Brazil 將在 6 月 29 日 Houston/NRG Stadium 對上 F 組第二 Japan，並指出 Brazil 以七分、C 組第一晉級。",
         "Al Jazeera 淘汰賽資格整理指出 Brazil 3-0 擊敗 Scotland 後以 C 組第一晉級，Japan 則以 F 組第二晉級。",
@@ -2455,7 +2455,10 @@
         "CBF 球員談話中 Rayan 稱淘汰賽是「matar ou morrer」，並承認 Japan 有很多高品質球員；屬官方球員語境，支撐日本不能被當作儀式感對手。",
         "FIFA 官方 Brazil-Japan preview/live-stream/team-news 頁已可連線，作為賽前官方入口；在正式先發落地前只當 fixture/team-news hub，不把頁名寫成確認 XI。",
         "Al Jazeera Brazil-Japan 預覽/即時頁確認休士頓 Round-of-32 對戰與賽前 build-up；可追蹤臨場更新，但文中 lineups/prediction 仍屬媒體賽前判讀。",
-        "AFC 官方日本側 preview 已可連線，補上亞洲足聯脈絡；它能支撐日本備戰/對戰背景，不等於公布正式首發。"
+        "AFC 官方日本側 preview 已可連線，補上亞洲足聯脈絡；它能支撐日本備戰/對戰背景，不等於公布正式首發。",
+        "15:40Z 父層核對 Al Jazeera liveblog 可連線：頁面承諾 Brazil-Japan build-up、analysis 與 text commentary；這是臨場觀察入口，不等於正式先發已公布。",
+        "beIN SPORTS 賽前訪談頁可連線，標題與摘要聚焦 Ancelotti 談 Neymar 對 Japan 是否先發/身體狀態；先標為 reported availability-watch，避免把教練口風寫成官方 XI。",
+        "USA Today projected XI 頁可連線，明確標為 projected lineup；可用來對照 Raphinha 缺席與 Rayan/Neymar 選擇，但正式名單仍以 FIFA/球隊入口為準。"
       ],
       "sources": [
         {
@@ -2769,6 +2772,22 @@
           "claimType": "confirmed/context",
           "confidence": "high",
           "fetchedAt": "2026-06-29T14:19:04Z"
+        },
+        {
+          "label": "Al Jazeera Brazil-Japan liveblog",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/6/29/brazil-vs-japan-live-fifa-world-cup-2026",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-29T15:40:27Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "beIN SPORTS Neymar availability update",
+          "url": "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/will-neymar-start-for-brazil-against-japan-carlo-ancelotti-addresses-the-question-2026-06-29",
+          "sourceName": "beIN SPORTS",
+          "fetchedAt": "2026-06-29T15:40:27Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -2776,9 +2795,9 @@
     {
       "matchId": "m074",
       "match": "Germany vs Paraguay",
-      "sourceType": "official/team-mood + public-probability + lineup-watch",
-      "title": "Germany-Paraguay 再補 DFB/Havertz 賽前聲音：德國人都說準備上場燒起來了，但淘汰賽不是口號比大聲。",
-      "sorenTake": "DFB 的 Havertz 訪談確認德國更衣室語氣很熱，APF 端則早就把 Paraguay 包裝成歷史任務。Soren 的翻譯：德國是熱門，但如果只靠名牌過人，這場會被南美紀律拖進泥巴。",
+      "sourceType": "official/team-mood + public-probability + lineup-watch + late projected-XI + odds-reference",
+      "title": "Germany-Paraguay 補 SI projected XI 與 USA Today 市場參考：德國該贏，但淘汰賽最愛把「該」字拿去餵狗。",
+      "sorenTake": "SI 把德國 predicted XI 與賽前故事補上，USA Today 提供公開 odds/picks 參考。Soren 仍把德國放在優勢端，但 Paraguay 的低位抗壓若撐過前 25 分鐘，這場就會從「德國恢復秩序」變成「Nagelsmann 開始皺眉」。",
       "signals": [
         "AS USA 報導 Germany 以 Group E 第一晉級，將於 6 月 29 日在 Boston 對上一支尚未確認的第三名球隊。",
         "Al Jazeera 淘汰賽資格整理確認 Germany 已晉級 32 強，並回顧其小組賽脈絡。",
@@ -2824,7 +2843,9 @@
         "APF 另有 Alfaro 與隊長 Gustavo Gómez 官方發布會稿，確認對 Germany 的賽前語境；可支撐 Paraguay 以心理/紀律戰進入淘汰賽，而非只看賠率。",
         "FIFA Germany-Paraguay preview/live-stream/team-news 頁已可連線，作為賽前官方入口；正式先發仍等 FIFA/球隊/可信 live centre 落地。",
         "Opta Analyst 公開模型把 Germany 90 分鐘勝率列為 54.7%、Paraguay 23.1%；這是公開機率/戰術脈絡，不是 Soren 內部模型配方，也不是下注建議。",
-        "DFB 6/29 Havertz 官方訪談指出他期待首次真正踏上世界盃淘汰賽，並說隊內「每個人都渴望上場」；這是官方 team-mood/賽前語境，不是先發確認。"
+        "DFB 6/29 Havertz 官方訪談指出他期待首次真正踏上世界盃淘汰賽，並說隊內「每個人都渴望上場」；這是官方 team-mood/賽前語境，不是先發確認。",
+        "Sports Illustrated Germany-Paraguay preview 與 Germany predicted lineup 頁面均已父層核對可連線；內容屬預測/賽前判讀，不是官方先發。",
+        "USA Today Germany-Paraguay prediction/odds 頁可連線，作為紙上模擬的公開市場與專家觀點參考；不得解讀為投注建議。"
       ],
       "sources": [
         {
@@ -3138,6 +3159,22 @@
           "fetchedAt": "2026-06-29T15:00:38Z",
           "claimType": "confirmed/context",
           "confidence": "high"
+        },
+        {
+          "label": "SI Germany predicted lineup vs Paraguay",
+          "url": "https://www.si.com/soccer/germany-predicted-lineup-vs-paraguay-world-cup-round-of-32-6-29-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-06-29T15:40:27Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "USA Today Germany-Paraguay odds/predictions",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/29/germany-paraguay-world-cup-prediction-analysis-odds/90734640007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-06-29T15:40:27Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -3145,9 +3182,9 @@
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
-      "sourceType": "coach-quote + official-training + lineup-watch + odds-reference",
-      "title": "Netherlands-Morocco 再補 Koeman 警報：荷蘭不是沒牌，但教練自己都知道 Morocco 不是觀光團。",
-      "sorenTake": "CNA/Reuters 與 The National 都把 Koeman 的謹慎語氣擺上桌：荷蘭小組第一是真的，摩洛哥的強度也是真的。這場最怕的不是冷門本身，是強隊把對手當故事背景板。",
+      "sourceType": "coach-quote + official-training + lineup-watch + odds-reference + official context + low-score market watch",
+      "title": "Netherlands-Morocco 補 KNVB 官方脈絡與低比分市場警訊：賽前握手很漂亮，開球後邊路對撞才是真的。",
+      "sorenTake": "KNVB/OnsOranje 給了官方賽事與足協脈絡，Covers 的公開市場口徑偏低比分。Soren 的毒舌版翻譯：這不是荷蘭控球練習賽，Morocco 若把節奏壓碎，Oranje 的天賦也得先證明自己不是只會踢漂亮簡報。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -3190,7 +3227,10 @@
         "Al Jazeera 賽前稿把 Netherlands-Morocco 描述為罕見前十等級對決，並提供 team-news / prediction 入口；屬可信媒體賽事情境，不是官方先發。",
         "Yahoo Sports 預測陣容頁指出 Netherlands 對 Morocco 的勝者將接 Brazil/Japan 勝方，並提到荷蘭端有小傷情/可用性觀察；仍按 reported lineup-watch 處理。",
         "CNA/Reuters 6/25 指出 Koeman 在鎖定 F 組第一後仍警告 Morocco 會是 formidable test；屬 coach-quote/context，不等於荷蘭自認弱勢或先發資訊。",
-        "The National 6/26 以 Koeman 稱 Netherlands 對 Morocco 會是 underdogs 為主軸；可作心理戰與輿論溫度，但需與官方/即時頁分開標註。"
+        "The National 6/26 以 Koeman 稱 Netherlands 對 Morocco 會是 underdogs 為主軸；可作心理戰與輿論溫度，但需與官方/即時頁分開標註。",
+        "KNVB 官方頁已核對：荷蘭足協與摩洛哥足協賽前在 Monterrey 會面，屬官方脈絡/外交溫度，不代表場上會客氣。",
+        "OnsOranje 官方比賽頁已核對：列出 Netherlands-Morocco 賽事與歷史對戰資訊，是後續官方名單/賽事資訊監控入口。",
+        "Covers Netherlands-Morocco odds/prediction 頁可連線，摘要指向低比分預期；只作紙上模擬市場/天氣脈絡參考，不是投注建議。"
       ],
       "sources": [
         {
@@ -3504,6 +3544,14 @@
           "fetchedAt": "2026-06-29T15:00:38Z",
           "claimType": "reported/context",
           "confidence": "medium"
+        },
+        {
+          "label": "KNVB Netherlands-Morocco federation context",
+          "url": "https://www.knvb.nl/nieuws/oranje/nederlands-elftal-m/71954/knvb-en-marokkaanse-bond-onderstrepen-bijzondere-band",
+          "sourceName": "KNVB",
+          "fetchedAt": "2026-06-29T15:40:27Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
