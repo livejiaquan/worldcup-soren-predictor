@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T06:05:00Z",
-  "status": "schedule-aware-scout-20260629T0605Z-r32-matchday-late-refresh",
-  "headline": "Soren 06:05 巡檢：M76 補 ge Brazil 最後一練與 Neymar 板凳可用性，M74 補 Boston Globe/Nagelsmann 對 Paraguay 二點球與肉搏風險，M75 補 FIFA live centre 與 WhoScored/Opta 賽前參照。所有先發仍等官方名單。",
+  "generatedAt": "2026-06-29T06:42:09Z",
+  "status": "schedule-aware-scout-20260629T0642Z-r32-actualization-refresh",
+  "headline": "Soren 06:42 巡檢：M83/M84/M85 已從淘汰賽佔位更新為 Portugal-Croatia、Spain-Austria、Switzerland-Algeria；補 BBC/ESPN/Goal/TSN/FIFA/FAF 等公開來源。仍保守標記：正式先發、傷停與市場價格等臨場名單/盤面再核。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3666,15 +3666,20 @@
     },
     {
       "matchId": "m083",
-      "match": "2K vs 2L",
-      "sourceType": "official bracket slot + Portugal/Ghana projection watch + market-reference",
-      "title": "2K vs 2L 看起來像 Portugal-Ghana 的味道，但 K、L 兩組最後一輪還能把桌布扯掉。",
-      "sorenTake": "FOX 仍保守列 2K vs 2L；Marca / The Athletic 類公開片段把 Portugal vs Ghana 放進投影，但 Portugal 若追過 Colombia、或 L 組 England/Ghana/Croatia 排序變動，這格會換臉。先追排序，不假裝對陣已官宣。",
+      "match": "Portugal vs Croatia",
+      "sourceType": "reported/bracket-actualization + tactical/context watch + paper-market watch",
+      "title": "Portugal-Croatia 不是 2K/2L 影子了：Ronaldo vs Modrić 的最後舞池，年紀很大、火藥味也很大。",
+      "sorenTake": "本地賽程已把 M83 actualize 為 Portugal vs Croatia，BBC/AS/Yahoo/Paddy Power 等公開賽程與分析頁同步列出多倫多對戰；FIFA 賽後頁搜尋片段也指向 Portugal 將在 Toronto 對 Croatia。這場不只看 C 羅和 Modrić 的懷舊濾鏡——兩隊都老辣，也都可能被轉換速度扯開皺紋。Soren 的暫判：Portugal 小熱，但別把「名字比較響」當成戰術。",
       "signals": [
         "FOX Sports m083 頁面列 2K vs 2L 與 2026-07-02T23:00Z 賽程窗口。",
         "Marca 投影與 The Athletic 搜尋片段指向 Portugal-Ghana，但完整對陣需等 K/L 組最後賽果。",
         "Paddy Power schedule 提供 Round-of-32 佔位賽程參考；屬公開賽程/市場環境，不是模型底層。",
-        "OddsTrader/Betstamp 類頁面可作 market-reference shell，但抓取時未見穩定可用價格。"
+        "OddsTrader/Betstamp 類頁面可作 market-reference shell，但抓取時未見穩定可用價格。",
+        "本地 worldcup.json 已把 m083 從 2K vs 2L actualize 為 Portugal vs Croatia，開球為 2026-07-02 23:00Z / Toronto 晚場；舊 Portugal-Ghana 投影已不再適用。",
+        "FIFA Colombia-Portugal 賽後頁的公開搜尋片段寫到 Portugal 將在 Toronto 對 Croatia；父層已核 URL 可連線，但 FIFA 頁面正文由前端渲染，未直接抽到完整內文，故以 official lead/context 標記。",
+        "BBC last-32 觀賽理由頁可直接核讀 Portugal v Croatia，並把敘事焦點放在 41 歲 Cristiano Ronaldo 與 40 歲 Luka Modrić 的可能最後舞台。",
+        "BBC Chris Sutton 預測頁與 Sporting News/AS/Yahoo 類 bracket 頁同樣列 Portugal-Croatia；這些是媒體賽程與戰術敘事，不是官方先發。",
+        "目前未找到可直接核讀的高信心 FPF/HNS 傷停或確認 XI；先發、停賽與紙上市場價格等臨場再核。"
       ],
       "sources": [
         {
@@ -3708,21 +3713,74 @@
           "fetchedAt": "2026-06-27T06:24:32Z",
           "claimType": "odds-reference",
           "confidence": "medium-low"
+        },
+        {
+          "label": "FIFA Colombia-Portugal match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/colombia-portugal-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "confirmed/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "BBC last-32 reasons to watch",
+          "url": "https://www.bbc.com/sport/football/articles/cn59l9y636go",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/tactical",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Chris Sutton predictions",
+          "url": "https://www.bbc.com/sport/football/articles/c0ry947p1qjo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/prediction",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "AS Group L standings context",
+          "url": "https://en.as.com/soccer/world-cup/world-cup-2026-group-l-final-standings-results-and-teams-qualified-for-the-round-of-32-f202606-n/",
+          "sourceName": "AS",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/bracket-actualization",
+          "confidence": "medium"
+        },
+        {
+          "label": "Yahoo Sports Round of 32 bracket",
+          "url": "https://sports.yahoo.com/articles/world-cup-round-32-bracket-045347594.html",
+          "sourceName": "Yahoo Sports",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/bracket-actualization",
+          "confidence": "medium"
+        },
+        {
+          "label": "Paddy Power schedule",
+          "url": "https://news.paddypower.com/football/world-cup/2026/06/28/world-cup-2026-schedule/",
+          "sourceName": "Paddy Power News",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "context/odds-reference",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m084",
-      "match": "1H vs 2J",
-      "sourceType": "official bracket slot + Spain confirmed slot + J-runner-up watch",
-      "title": "Spain 已坐上 1H，2J 還在 Austria/Algeria 的刀口；西班牙控球很漂亮，但淘汰賽不是美術課。",
-      "sorenTake": "FIFA 賽報與 FOX/Al Jazeera 賽程都指向 Spain 進入 1H 對 2J；J 組第二目前仍要看 Algeria-Austria。把 Spain 寫清楚可以，把 Austria 寫死不行。",
+      "match": "Spain vs Austria",
+      "sourceType": "reported/bracket-actualization + injury/lineup watch + tactical/context watch",
+      "title": "Spain-Austria 已落地：西班牙控球像手術刀，奧地利的高壓像電鋸；這不是美術課，是風格互砍。",
+      "sorenTake": "ESPN match page 與 Goal 賽事資訊已清楚列 Spain vs Austria / Inglewood，BBC last-32 頁也把它寫成「size and styles」對撞。Spain 還是熱門，但 Guardian 賽後脈絡提到邊路傷情檢查，Lamine Yamal 雖被多家預覽寫成 fit-again，Soren 仍等官方名單：淘汰賽最會懲罰「看起來應該沒事」。",
       "signals": [
         "FIFA Uruguay-Spain 報導指出 Spain 將面對 Group J runners-up，這是比一般媒體投影更硬的官方脈絡。",
         "FOX m084 頁面已顯示 Spain vs 2J，公開時間窗口為 2026-07-02T19:00Z。",
         "Al Jazeera Round-of-32 schedule 同樣列 Spain vs 2J。",
-        "2J 仍受 Algeria-Austria 直接對話影響；不把 Austria 當已確認對手。"
+        "2J 仍受 Algeria-Austria 直接對話影響；不把 Austria 當已確認對手。",
+        "本地 worldcup.json 已把 m084 從 Spain vs 2J actualize 為 Spain vs Austria；舊 Austria/Algeria 刀口敘事更新為具體對戰。",
+        "ESPN match page 可直接核讀 Spain vs Austria (Jul 2, 2026) Live Score，並列 Inglewood, California；這是高信心公開賽程頁。",
+        "Goal.com 賽事票務/資訊頁標題與描述寫明 Spain vs Austria、Round of 32、Los Angeles/Inglewood；可作 venue/context，不作官方 XI。",
+        "BBC last-32 觀賽理由頁把 Spain v Austria 寫作 fit-again Lamine Yamal 與歐洲冠軍面對身材/風格更硬的 Austria；屬媒體 tactical/context。",
+        "Guardian live blog 提到 Spain 返回 Chattanooga 後將檢查兩名邊鋒傷情；這是 injury-watch lead，不足以直接宣告缺陣或先發。"
       ],
       "sources": [
         {
@@ -3756,21 +3814,75 @@
           "fetchedAt": "2026-06-27T06:24:32Z",
           "claimType": "odds-reference",
           "confidence": "medium-low"
+        },
+        {
+          "label": "ESPN match page",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760497",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/bracket-actualization",
+          "confidence": "high"
+        },
+        {
+          "label": "Goal.com Spain-Austria tickets/info",
+          "url": "https://www.goal.com/en-us/news/spain-austria-world-cup-tickets/bltdc51150c03262598",
+          "sourceName": "Goal.com",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "BBC last-32 reasons to watch",
+          "url": "https://www.bbc.com/sport/football/articles/cn59l9y636go",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/tactical",
+          "confidence": "high"
+        },
+        {
+          "label": "The Guardian live blog",
+          "url": "https://www.theguardian.com/football/live/2026/jun/27/world-cup-2026-news-live-england-panama-croatia-ghana-colombia-portugal-dr-congo-uzbekistan-live",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/injury-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Algeria-Austria match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/algeria-austria-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "confirmed/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sporting News expert picks",
+          "url": "https://www.sportingnews.com/us/soccer/news/world-cup-bracket-predictions-2026-expert-picks/99f6a4b4205c8dae2ce539cb",
+          "sourceName": "Sporting News",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/prediction",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
     },
     {
       "matchId": "m085",
-      "match": "Switzerland vs 3E/F/G/I/J",
-      "sourceType": "official bracket slot + third-place watch + market-reference",
-      "title": "Switzerland 的對手池很討厭：Ecuador、Sweden、Iran、Senegal/J 組殘局都可能冒頭；瑞士最怕的不是強隊，是麻煩隊。",
-      "sorenTake": "FOX 已把這格寫成 Switzerland vs 3E/3F/3G/3I/3J；AS 可支撐 Switzerland 的 B 組第一脈絡。第三名排序仍在變，The Athletic 片段提到 Algeria/Iran/Egypt 類可能性，但在本地表裡 Egypt 不是第三名，先壓低信心。",
+      "match": "Switzerland vs Algeria",
+      "sourceType": "reported/bracket-actualization + federation lead + lineup-tracker watch",
+      "title": "Switzerland-Algeria 盲盒拆完：瑞士穩得像鐘，阿爾及利亞亂得有牙；Vancouver 這場不是散步，是耐心考試。",
+      "sorenTake": "FIFA/FAF 搜尋片段、TSN 可核讀頁與 FotMob/SofaScore/LiveScore 賽事頁都指向 Switzerland vs Algeria。Switzerland 的安全感很瑞士，但 Algeria 3-3 Austria 這種混亂晉級方式提醒你：這隊可能防線漏風，也可能把比賽拖成開放式拳擊。Soren 先給瑞士小優，正式傷停與先發仍等足協/FIFA match centre。",
       "signals": [
         "FOX Sports m085 頁面顯示 Switzerland vs 3E/3F/3G/3I/3J，時間為 2026-07-03T03:00Z / Vancouver。",
         "AS Group B final standings context 支撐 Switzerland 作為 B 組第一晉級。",
         "The Athletic 搜尋片段提供可能對手討論，但其中 Egypt 與本地積分狀態不合，不能照單全收。",
-        "Betstamp/BettingPros 市場頁存在；未見可靠價格，僅作 paper 模擬的市場入口觀察。"
+        "Betstamp/BettingPros 市場頁存在；未見可靠價格，僅作 paper 模擬的市場入口觀察。",
+        "本地 worldcup.json 已把 m085 從 Switzerland vs 3E/F/G/I/J actualize 為 Switzerland vs Algeria，開球為 2026-07-03 03:00Z / Vancouver 7月2日晚場。",
+        "FIFA Algeria-Austria 賽後頁公開搜尋片段稱 Algeria 以最佳第三名晉級並將在 Vancouver 對 Switzerland；父層已核 FIFA URL 可連線，但正文未能直接抽取，故保守列 official lead/context。",
+        "FAF 官方頁搜尋片段以法文寫明 Algeria 將在 Vancouver 對 Switzerland；父層 HTTPS 憑證鏈未通過 urllib 驗證，未直接引用正文，只列為 federation lead。",
+        "TSN 頁面可直接核讀 Switzerland, Algeria meet Thursday in World Cup round of 32 in Vancouver，並寫 Algeria 將在 Vancouver 對 Switzerland。",
+        "FotMob/SofaScore/LiveScore 已有 Switzerland-Algeria 賽事/lineups 入口；這些只作臨場 lineup tracker，不是確認先發。",
+        "目前未找到可直接核讀的具體傷停/停賽；先以 no verified injury update found 標記，等待官方賽前記者會與 match centre。"
       ],
       "sources": [
         {
@@ -3804,9 +3916,65 @@
           "fetchedAt": "2026-06-27T06:24:32Z",
           "claimType": "odds-reference",
           "confidence": "medium-low"
+        },
+        {
+          "label": "FIFA Algeria-Austria match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/algeria-austria-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "confirmed/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FAF qualification report",
+          "url": "https://www.faf.dz/coupe-du-monde-de-la-fifa-2026-algerie-3-autriche-3-les-verts-decrochent-leur-qualification-pour-les-seiziemes-de-finale/",
+          "sourceName": "Fédération Algérienne de Football",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "confirmed/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "TSN Switzerland-Algeria preview",
+          "url": "https://www.tsn.ca/soccer/fifa-world-cup/article/switzerland-algeria-meet-thursday-in-world-cups-round-of-32-in-vancouver/",
+          "sourceName": "TSN",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/bracket-actualization",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC last-32 reasons to watch",
+          "url": "https://www.bbc.com/sport/football/articles/cn59l9y636go",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/tactical",
+          "confidence": "high"
+        },
+        {
+          "label": "FotMob match page",
+          "url": "https://www.fotmob.com/en-GB/matches/algeria-vs-switzerland/1ekwbo",
+          "sourceName": "FotMob",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "SofaScore match page",
+          "url": "https://www.sofascore.com/football/match/switzerland-algeria/QTbsZTb",
+          "sourceName": "SofaScore",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "LiveScore match page",
+          "url": "https://www.livescore.com/en/football/international/world-cup-2026/switzerland-vs-algeria/1691879/",
+          "sourceName": "LiveScore",
+          "fetchedAt": "2026-06-29T06:42:09Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m088",
