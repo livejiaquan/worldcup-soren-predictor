@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T03:07:58Z",
-  "status": "Live knockout refresh: Netherlands-Morocco 93’ 仍 1-1、completed=false；另補 Ivory Coast-Norway、France-Sweden 與 7/1 淘汰賽官方/隊媒/lineup-watch 線索。",
-  "headline": "Soren scout: Morocco 90+1 把 Netherlands 拖進延長賽；今天後面的淘汰賽卡也補上官方與隊媒線索，先別把熱門當免死金牌。",
+  "generatedAt": "2026-06-30T04:15:34Z",
+  "status": "Matchday R32 micro-refresh: 補 Ivory Coast-Norway、France-Sweden、England-DR Congo 的 live-centre、官方 bracket path 與 paper-market 線索；未見可升級為 confirmed XI 的公開來源。",
+  "headline": "Soren scout: 今天 R32 不是熱門隊排隊蓋章；BBC/FIFA/市場頁都補上了，正式首發未出前先盯 team-news 而不是自嗨劇本。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3831,9 +3831,9 @@
     {
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
-      "sourceType": "official-preview + public-probability + live-centre + availability-watch + odds-reference + team-media context",
-      "title": "Ivory Coast-Norway 再補 ESPN/Yahoo：Diomandé 對 Haaland 是招牌，但真正風險在傷疑、節奏和誰先被淘汰賽燈光刺眼。",
-      "sorenTake": "ESPN 新預覽把 Yan Diomandé vs Haaland/Ødegaard 拉成主線，Yahoo/Sports Mole 系列頁則補 team news、lineups、prediction 語境。挪威紙面較熱，可是 Ivory Coast 第一次淘汰賽不會自動跪下；Soren 只把這些列為 team-news / tactical context，正式先發照樣等 FIFA/球隊。",
+      "sourceType": "official/media preview + live-centre/lineup-watch + paper odds reference",
+      "title": "Ivory Coast-Norway 補 BBC live build-up：Diomandé 對 Haaland 很上鏡，但臨場 team news 和紙上市場才是今天真正的刮鬍刀。",
+      "sorenTake": "BBC 已開即時頁，Covers 也把 Norway 放在市場偏熱那側；Soren 的翻譯：Haaland 劇本很好賣，但 Ivory Coast 的速度和身體對抗不是裝飾品。正式首發未落地前，只把 live-centre/odds 當風險雷達，不把預測 XI 冒充聖旨。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -3862,7 +3862,9 @@
         "Yahoo Sports 預覽頁 metadata 顯示 Ivory Coast vs Norway team news、lineups、predictions，並回顧 Ivory Coast 2-0 Curaçao、Norway 1-4 France；屬 media lineup-watch 與 form context。",
         "Football365 賽前頁把 Ivory Coast 描述為 clean bill of health，並指出小組賽單黃不帶入淘汰賽停賽；Norway 端則預期 Haaland/Ødegaard 等主力回到首發框架。",
         "Complete Sports 引述/整理 Solbakken 對 Ivory Coast 身體對抗的賽前回應，並提到 Norway 對 France 曾輪休 Haaland、Ødegaard 等主力；屬 coach-quote/team-context，不等於本場確認先發。",
-        "RotoWire Ivory Coast-Norway 頁父層 metadata 明示 predicted lineups、team news、tactical breakdown；可作 expected-XI/tactical watch，正式 XI 仍等 FIFA/球隊。"
+        "RotoWire Ivory Coast-Norway 頁父層 metadata 明示 predicted lineups、team news、tactical breakdown；可作 expected-XI/tactical watch，正式 XI 仍等 FIFA/球隊。",
+        "BBC Sport 已開 Ivory Coast-Norway 即時文字/轉播頁，標題明示 build-up、team news、TV/radio/live text；這是臨場更新入口，不把尚未公布的首發偷寫成 confirmed。",
+        "Covers 賽前 odds/picks 頁把 Norway 當紙上市場較熱一方；Soren 只拿它當 paper-market 溫度計，不當投注建議，也不讓 Haaland 名字替防線犯錯買單。"
       ],
       "sources": [
         {
@@ -4112,6 +4114,22 @@
           "fetchedAt": "2026-06-30T03:07:58Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "BBC Ivory Coast-Norway live text",
+          "url": "https://www.bbc.com/sport/football/live/c3ryj7r4972t",
+          "sourceName": "BBC Sport",
+          "claimType": "context/lineup-watch",
+          "confidence": "high",
+          "fetchedAt": "2026-06-30T04:15:34Z"
+        },
+        {
+          "label": "Covers Norway-Ivory Coast odds reference",
+          "url": "https://www.covers.com/world-cup/ivory-coast-vs-norway-prediction-picks-odds-tuesday-6-30-2026",
+          "sourceName": "Covers",
+          "claimType": "odds-reference",
+          "confidence": "medium",
+          "fetchedAt": "2026-06-30T04:15:34Z"
         }
       ],
       "confidence": "high"
@@ -4119,9 +4137,9 @@
     {
       "matchId": "m077",
       "match": "France vs Sweden",
-      "sourceType": "official federation + official tournament preview + availability-watch + public-probability + lineup-watch + odds-reference",
-      "title": "France-Sweden 補 FIFA/SvFF/Opta：法國像豪華火力展示間，瑞典少 Hien 還要硬扛 75.1% 的 public-probability 壓力。",
-      "sorenTake": "FIFA matchday preview 把 France 完美小組戰績與雙方 17 球火力放在台面；SvFF 官方確認對法國賽程脈絡；Opta 公開模型給 France 90 分鐘 75.1%。這些是公開參照，不是 Soren 私房配方。瑞典的冷門路徑很窄，但窄門也會割人。",
+      "sourceType": "official/team context + reported lineup/availability watch + public probability/odds reference",
+      "title": "France-Sweden 補 Standard/Oddslot：法國仍是大熱，但瑞典的 upset path 不會因賠率難看就自動消失。",
+      "sorenTake": "法國完美小組賽與 Opta/市場熱度都站在同一邊；The Standard 的 team-news/odds 頁和 Oddslot 市場比較只是把壓力再寫粗一點。Soren 仍看法國佔優，但 Hien 缺陣後的瑞典更需要把比賽拖成低比分泥地戰；如果早丟球，劇本會很醜。",
       "signals": [
         "openfootball 賽程目前列 m077 為 1I vs 3C/D/F/G/H，2026-06-30 21:00Z 於 New York/New Jersey 開球；本站不把未定第三名寫成確認對手。",
         "站內 Group I 完賽積分顯示 France 第一，因此 1I 指向 France；但對手端仍取決於最佳第三名組合與剩餘小組結果。",
@@ -4148,7 +4166,9 @@
         "The Standard 6/30 賽前隊訊把 Saliba（背部）與 Thuram（小腿）列為 France 傷疑，並預測 Lacroix 可能續搭 Upamecano；這與先前 Hien 缺陣形成兩邊中衛風險對照。",
         "Football365 補充 Thuram 小腿疑慮被描述為 minor fatigue、Lindelöf 對 Japan 退場後稱是抽筋；Soren 先把它們放在 availability-watch，不寫成正式缺陣。",
         "Sports Mole Sweden predicted-XI 頁父層標題明示 Isak Hien ruled out of tournament，並聚焦誰頂替中衛位置；本站列為 reported injury/lineup-watch，等官方賽前名單再升級。",
-        "BBC France-Sweden live centre 已開 last-32 stats / head-to-head / live text 入口；作比賽日追蹤，不把任何預測 XI 寫成正式先發。"
+        "BBC France-Sweden live centre 已開 last-32 stats / head-to-head / live text 入口；作比賽日追蹤，不把任何預測 XI 寫成正式先發。",
+        "The Standard 30 日賽前頁確認 France-Sweden 是 New Jersey 的 last-32 歐洲對撞，並聚合 prediction、team news、H2H 與 odds；屬媒體賽前/傷停觀察，不是官方先發。",
+        "Oddslot 可讀 metadata 顯示 France-Sweden odds comparison / head-to-head / form preview；1.27 類法國熱門盤只代表公眾市場壓力，不代表瑞典會自動投降。"
       ],
       "sources": [
         {
@@ -4358,9 +4378,25 @@
           "fetchedAt": "2026-06-30T03:07:58Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "The Standard France-Sweden preview",
+          "url": "https://www.standard.co.uk/sport/football/france-vs-sweden-prediction-kick-off-time-tv-live-stream-team-news-latest-h2h-results-odds-world-cup-2026-preview-b1288004.html",
+          "sourceName": "The Standard",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high",
+          "fetchedAt": "2026-06-30T04:15:34Z"
+        },
+        {
+          "label": "Oddslot France-Sweden odds comparison",
+          "url": "https://oddslot.com/football/match/world-cup/france/sweden/30-jun-2026/",
+          "sourceName": "Oddslot",
+          "claimType": "odds-reference",
+          "confidence": "medium",
+          "fetchedAt": "2026-06-30T04:15:34Z"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m079",
@@ -4502,9 +4538,9 @@
     {
       "matchId": "m080",
       "match": "England vs Democratic Republic of the Congo",
-      "sourceType": "reported bracket actualization + injury/availability watch + odds-reference",
-      "title": "England-DR Congo 補 BBC 對手 scouting：英格蘭還是熱門，但對手不是維基百科佔位符；剛果民主共和國的 redemption 敘事有牙。",
-      "sorenTake": "Reece James 傷退仍是 England 右路重配的風險；新增 BBC 對 DR Congo 的低down，把這支 52 年後重返淘汰賽的隊伍從括號代碼拉回球場。England 名氣與深度都佔優，但如果把對手當 3E/H/I/J/K 的行政代碼，淘汰賽會很樂意寄帳單。",
+      "sourceType": "official match preview + opponent context + paper odds watch",
+      "title": "England-DR Congo 補 FIFA 官方路徑：英格蘭還是大熱，但剛果民主共和國第一次淘汰賽不是來拍紀念照。",
+      "sorenTake": "FIFA 把這場的 bracket path 講清楚：贏家去 Mexico City 等 Mexico/Ecuador。England 的星味和市場優勢很大；但 Congo DR 帶著首次淘汰賽與逆轉 Uzbekistan 後的情緒進場，這種隊最討厭的地方就是不懂「照劇本輸球」。Soren 看英格蘭佔優，但會盯開局壓迫與定位球防守。",
       "signals": [
         "England Football 公開列出 England 若以 1L 出線，將在 Atlanta 對 3E/H/I/J/K。",
         "FOX Sports m080 賽程頁可核對 1L vs 3E/3H/3I/3J/3K 與 2026-07-01T16:00Z 窗口。",
@@ -4513,7 +4549,10 @@
         "Guardian 6/27 live blog 報導 Reece James 因腿筋傷勢至少缺席兩場，並列出 Quansah/Konsa/Spence/Chalobah 等右後衛替代選項。",
         "本地 worldcup.json 已把 m080 actualize 為 England vs Democratic Republic of the Congo；舊卡的 Senegal/K3 對手池敘事已更新。",
         "BBC Sport England-opponent explainer 確認 England 將在 32 強面對 DR Congo，並提供對手背景/first knockout-stage run context；這是 opponent-scout，不是 England confirmed XI。",
-        "England Football 官方 opponent profile 確認 England 7/1 Atlanta 對 DR Congo，並補 DR Congo 52 年後重返世界盃淘汰賽的背景；這比單純 bracket shell 更適合給首頁觀眾理解對手不是佔位符。"
+        "England Football 官方 opponent profile 確認 England 7/1 Atlanta 對 DR Congo，並補 DR Congo 52 年後重返世界盃淘汰賽的背景；這比單純 bracket shell 更適合給首頁觀眾理解對手不是佔位符。",
+        "FIFA England-Congo DR 官方 match preview/資訊頁已可連線，明示 winner 將在 Mexico City 對 Mexico/Ecuador 勝方；這讓 England 這格不只是熱門碾壓，而是 bracket path 壓力測試。",
+        "FIFA matchday 21 preview 把 Congo DR 標成首次進入世界盃淘汰賽、以最佳第三名之一晉級；這是官方敘事，不是 Soren 幫弱隊亂加雞血。",
+        "USA Today 賽後脈絡寫到 Congo DR 擊敗 Uzbekistan 後跳舞慶祝、下一站對 Kane/Bellingham 的 England；屬對手狀態與情緒/context，不是技戰術硬證據。"
       ],
       "sources": [
         {
@@ -4571,9 +4610,33 @@
           "fetchedAt": "2026-06-30T03:07:58Z",
           "claimType": "confirmed/team-context",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA England-Congo DR match preview",
+          "url": "https://www.fifa.com/en/articles/england-congo-dr-live-stream-team-news-tickets-and-more",
+          "sourceName": "FIFA",
+          "claimType": "confirmed/context",
+          "confidence": "high",
+          "fetchedAt": "2026-06-30T04:15:34Z"
+        },
+        {
+          "label": "FIFA matchday 21 Round-of-32 preview",
+          "url": "https://www.fifa.com/en/articles/matchday-21-preview-round-of-32",
+          "sourceName": "FIFA",
+          "claimType": "confirmed/context",
+          "confidence": "high",
+          "fetchedAt": "2026-06-30T04:15:34Z"
+        },
+        {
+          "label": "USA Today Congo DR knockout context",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/28/congo-dr-world-cup-round-of-32-dance-party/90727886007/",
+          "sourceName": "USA Today",
+          "claimType": "context",
+          "confidence": "medium-high",
+          "fetchedAt": "2026-06-30T04:15:34Z"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m081",
