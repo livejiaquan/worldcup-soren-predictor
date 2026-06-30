@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T00:54:20Z",
-  "status": "Late lineup + matchday scout refresh: Netherlands-Morocco 補 BBC/ESPN/101GG 確認先發與 ESPN odds；France-Sweden 補 France 傷疑；Ivory Coast-Norway 補 Football365 傷停/停賽脈絡。",
-  "headline": "Soren scout: Netherlands-Morocco 開球前先發落地，Brobbey 繼續頂前、Depay 仍板凳；Morocco 召回 Hakimi/Mazraoui/Ounahi，這不是模型散步，是淘汰賽互相拆台。",
+  "generatedAt": "2026-06-30T01:58:51Z",
+  "status": "Live-score micro refresh: Netherlands-Morocco 半場 0-0（ESPN public API completed=false）；只作 in-progress context，不結算賽果或 paper bankroll。",
+  "headline": "Soren scout: Netherlands-Morocco 半場還是 0-0；先發豪華但比分很摳，荷蘭紙面小熱已經被摩洛哥拖進細節局。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3334,9 +3334,9 @@
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
-      "sourceType": "confirmed lineup + live centre + odds/social watch",
-      "title": "Netherlands-Morocco 先發落地：Brobbey 續扛中鋒、Depay 繼續板凳；Hakimi/Mazraoui/Ounahi 回來，摩洛哥不是來拍合照。",
-      "sorenTake": "BBC 與 ESPN 都已把先發攤開：Koeman 用 3-4-2-1/3-4-3 味道把 Brobbey、Gakpo、Summerville 推上去，Depay 還是替補武器；Morocco 4-2-3-1 召回 Hakimi、Mazraoui、Ounahi，Saibari 頂前。荷蘭紙面小熱，但這種邊翼衛互撞的淘汰賽，一次 Hakimi 反推就能把橙軍的自信拆成交通事故。",
+      "sourceType": "confirmed lineup + in-progress live score + live centre + odds/social watch",
+      "title": "Netherlands-Morocco 半場 0-0：先發豪華、比分很摳；Hakimi 的反推還沒開獎，橙軍也別急著擺勝利姿勢。",
+      "sorenTake": "ESPN public summary API 在 01:58Z 顯示 Netherlands-Morocco 半場 0-0、completed=false；這只能寫成 in-progress live-score，不是賽果結算。先發脈絡仍是 Brobbey/Gakpo/Summerville 對 Hakimi/Mazraoui/Ounahi/El Khannouss 的邊路與肋部互砍。Soren 銳評：荷蘭紙面小熱，但 45 分鐘沒有破門，這場已經從「橙軍巡遊」變成「誰先犯低級錯誰上頭條」。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -3395,7 +3395,8 @@
         "00:40Z BBC live text 發布 team news：Netherlands 變兩人，Micky van de Ven、Crysencio Summerville 進先發；Morocco 換四人，Hakimi、Mazraoui、Ounahi 等回到 XI。",
         "ESPN Gamecast 靜態頁可讀到 formations & lineups：Netherlands 3-4-2-1，Brobbey、Gakpo、Summerville 前場；Morocco 4-2-3-1，Bounou；Hakimi、Diop、Riad、Mazraoui；Bouaddi、El Aynaoui；Díaz、Ounahi、El Khannouss；Saibari。",
         "The Standard/101 Great Goals 補荷蘭隊內脈絡：Depay 傷後三場都替補出場，Brobbey 近兩場進球後續任先發；這是 selection context，不是保證他能複製小組賽效率。",
-        "ESPN odds 頁顯示 Netherlands -0.5 並列出進球球員市場；本站只作紙上盤溫度/closing-line 參考，不是下注建議。"
+        "ESPN odds 頁顯示 Netherlands -0.5 並列出進球球員市場；本站只作紙上盤溫度/closing-line 參考，不是下注建議。",
+        "ESPN public summary API 01:58Z 顯示 Netherlands-Morocco 半場 0-0、completed=false；本站只作 in-progress live-score/context，絕不提前結算賽果或 paper bankroll。"
       ],
       "sources": [
         {
@@ -3797,6 +3798,14 @@
           "fetchedAt": "2026-06-30T00:54:20Z",
           "claimType": "odds-reference",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN public summary API halftime state",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-06-30T01:58:51Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
