@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T04:15:34Z",
-  "status": "Matchday R32 micro-refresh: 補 Ivory Coast-Norway、France-Sweden、England-DR Congo 的 live-centre、官方 bracket path 與 paper-market 線索；未見可升級為 confirmed XI 的公開來源。",
-  "headline": "Soren scout: 今天 R32 不是熱門隊排隊蓋章；BBC/FIFA/市場頁都補上了，正式首發未出前先盯 team-news 而不是自嗨劇本。",
+  "generatedAt": "2026-06-30T05:24:13Z",
+  "status": "Matchday R32 near-kickoff micro-refresh: 補 Norway 官方 Haaland 脈絡、France-Sweden FIFA match-centre，以及 Mexico-Ecuador 的 ESPN/TUDN/FotMob/FOX 臨場資訊；仍未把任何預測 XI 升級成 confirmed XI。",
+  "headline": "Soren scout: 30/6 三場淘汰賽都進臨場模式；Haaland 回到聚光燈、法瑞有官方 match-centre，Mexico 主場熱但 Ecuador 不會自己退賽。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3832,8 +3832,8 @@
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
       "sourceType": "official/media preview + live-centre/lineup-watch + paper odds reference",
-      "title": "Ivory Coast-Norway 補 BBC live build-up：Diomandé 對 Haaland 很上鏡，但臨場 team news 和紙上市場才是今天真正的刮鬍刀。",
-      "sorenTake": "BBC 已開即時頁，Covers 也把 Norway 放在市場偏熱那側；Soren 的翻譯：Haaland 劇本很好賣，但 Ivory Coast 的速度和身體對抗不是裝飾品。正式首發未落地前，只把 live-centre/odds 當風險雷達，不把預測 XI 冒充聖旨。",
+      "title": "Ivory Coast-Norway 補 FIFA Haaland 脈絡：Diomandé 對 Haaland 夠有戲，但先發正式落地前，這仍是 team-news watch，不是挪威自動晉級券。",
+      "sorenTake": "FIFA 另把 Haaland 的淘汰賽故事線拉出來：他被視為回到首發火力核心，Solbakken 的挪威也不會把 Ivory Coast 當熱身賽。Soren 的讀法很簡單——挪威紙面更熱，但 Dallas 這場如果被 Diomandé/轉換速度先咬一口，Haaland 再大隻也得自己把門踹開。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -3864,7 +3864,8 @@
         "Complete Sports 引述/整理 Solbakken 對 Ivory Coast 身體對抗的賽前回應，並提到 Norway 對 France 曾輪休 Haaland、Ødegaard 等主力；屬 coach-quote/team-context，不等於本場確認先發。",
         "RotoWire Ivory Coast-Norway 頁父層 metadata 明示 predicted lineups、team news、tactical breakdown；可作 expected-XI/tactical watch，正式 XI 仍等 FIFA/球隊。",
         "BBC Sport 已開 Ivory Coast-Norway 即時文字/轉播頁，標題明示 build-up、team news、TV/radio/live text；這是臨場更新入口，不把尚未公布的首發偷寫成 confirmed。",
-        "Covers 賽前 odds/picks 頁把 Norway 當紙上市場較熱一方；Soren 只拿它當 paper-market 溫度計，不當投注建議，也不讓 Haaland 名字替防線犯錯買單。"
+        "Covers 賽前 odds/picks 頁把 Norway 當紙上市場較熱一方；Soren 只拿它當 paper-market 溫度計，不當投注建議，也不讓 Haaland 名字替防線犯錯買單。",
+        "05:24Z 父層 URL 探針確認 FIFA Haaland 專題可連線；搜尋摘要稱 Haaland 預期重回對 Ivory Coast 的首發脈絡。這是官方敘事/lineup-watch，不是已公布的正式 XI。"
       ],
       "sources": [
         {
@@ -4130,6 +4131,14 @@
           "claimType": "odds-reference",
           "confidence": "medium",
           "fetchedAt": "2026-06-30T04:15:34Z"
+        },
+        {
+          "label": "FIFA Haaland knockout-stage feature",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/erling-haaland-norway-goalscoring-machine",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-30T05:24:13Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -4138,8 +4147,8 @@
       "matchId": "m077",
       "match": "France vs Sweden",
       "sourceType": "official/team context + reported lineup/availability watch + public probability/odds reference",
-      "title": "France-Sweden 補 Standard/Oddslot：法國仍是大熱，但瑞典的 upset path 不會因賠率難看就自動消失。",
-      "sorenTake": "法國完美小組賽與 Opta/市場熱度都站在同一邊；The Standard 的 team-news/odds 頁和 Oddslot 市場比較只是把壓力再寫粗一點。Soren 仍看法國佔優，但 Hien 缺陣後的瑞典更需要把比賽拖成低比分泥地戰；如果早丟球，劇本會很醜。",
+      "title": "France-Sweden 補 FIFA match-centre：法國氣勢很滿，但瑞典這種淘汰賽老油條，不會因為模型和賠率翻白眼就自動躺平。",
+      "sorenTake": "FIFA match-centre 已可連線，配上 BBC/FFF/Svensk Fotboll 既有來源，這場的官方賽事入口齊了。France 還是主敘事，但 Sweden 的定位很清楚：撐住前 25 分鐘、把比賽拖進犯錯區，才有資格讓大熱開始冒汗。",
       "signals": [
         "openfootball 賽程目前列 m077 為 1I vs 3C/D/F/G/H，2026-06-30 21:00Z 於 New York/New Jersey 開球；本站不把未定第三名寫成確認對手。",
         "站內 Group I 完賽積分顯示 France 第一，因此 1I 指向 France；但對手端仍取決於最佳第三名組合與剩餘小組結果。",
@@ -4168,7 +4177,8 @@
         "Sports Mole Sweden predicted-XI 頁父層標題明示 Isak Hien ruled out of tournament，並聚焦誰頂替中衛位置；本站列為 reported injury/lineup-watch，等官方賽前名單再升級。",
         "BBC France-Sweden live centre 已開 last-32 stats / head-to-head / live text 入口；作比賽日追蹤，不把任何預測 XI 寫成正式先發。",
         "The Standard 30 日賽前頁確認 France-Sweden 是 New Jersey 的 last-32 歐洲對撞，並聚合 prediction、team news、H2H 與 odds；屬媒體賽前/傷停觀察，不是官方先發。",
-        "Oddslot 可讀 metadata 顯示 France-Sweden odds comparison / head-to-head / form preview；1.27 類法國熱門盤只代表公眾市場壓力，不代表瑞典會自動投降。"
+        "Oddslot 可讀 metadata 顯示 France-Sweden odds comparison / head-to-head / form preview；1.27 類法國熱門盤只代表公眾市場壓力，不代表瑞典會自動投降。",
+        "05:24Z 父層探針確認 FIFA France-Sweden match-centre 可連線；作為臨場比分/陣容官方入口，正式首發仍需賽前再核。"
       ],
       "sources": [
         {
@@ -4394,6 +4404,14 @@
           "claimType": "odds-reference",
           "confidence": "medium",
           "fetchedAt": "2026-06-30T04:15:34Z"
+        },
+        {
+          "label": "FIFA France-Sweden match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021523?date=2026-07-01",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-30T05:24:13Z",
+          "claimType": "confirmed",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -4401,9 +4419,9 @@
     {
       "matchId": "m079",
       "match": "Mexico vs Ecuador",
-      "sourceType": "official-adjacent fixture actualization + media confirmation + reported lineup-watch + market/probability context",
-      "title": "Mexico-Ecuador 再補 Goal + Polymarket：主場與市場都偏 Mexico，但 44¢ 常規勝不是「不用踢」的同義詞。",
-      "sorenTake": "Goal 補上 Mexico City 場景、team news 與 probable XI；Polymarket 則提供公開市場快照：晉級 Mexico 約 63¢、Ecuador 約 38¢，常規時間 Mexico 約 44¢、和局 34¢、Ecuador 24¢。這是紙上模擬的市場溫度計，不是叫人下注；真正的雷點是 Ecuador 若把比賽拖進低比分長夜，Azteca 的音量也不能自己進球。",
+      "sourceType": "official preview + live-centre + predicted-lineup watch + odds-reference",
+      "title": "Mexico-Ecuador 進臨場模式：ESPN/TUDN/FotMob 都把資訊台架好，FOX 市場說 Mexico 熱，但主場不是護身符。",
+      "sorenTake": "Mexico 的故事很好賣：主場、三連勝、零失球，劇本像已經印好；問題是 Ecuador 剛從 Germany 那格逃出來，不是來當剪綵嘉賓。ESPN 給 predicted-lineup/裁判/轉播框架，TUDN 與 FotMob 補 live-centre，FOX 補紙上市場熱度——Soren 只提醒一句：熱度可以當參考，不能當免死金牌。",
       "signals": [
         "FOX Sports 比賽頁標題可核對 Mexico vs 3C/3E/3F/3H/3I 與 2026-06-30 賽事資訊，是公開賽程入口。",
         "Al Jazeera Round-of-32 explainer 列出 Mexico vs 3C/3E/3F/3H/3I 與 Mexico City Stadium 時間窗口。",
@@ -4417,7 +4435,11 @@
         "Opta Analyst Mexico-Ecuador preview 給 Mexico 90 分鐘 46.4%、Ecuador 24.4% 的公開 supercomputer 參照；只作 public model/tactical context，不公開或替代本站預測公式。",
         "Goal Mexico-Ecuador preview 提供賽前脈絡、team news 與 probable XI，屬媒體 predicted/probable lineup 來源，不是官方名單。",
         "Polymarket 公開頁在 16:21Z 抓到 Team to Advance 約 Mexico 63¢ / Ecuador 38¢，regulation moneyline 約 Mexico 44¢ / Draw 34¢ / Ecuador 24¢；只作 public odds/probability context 與紙上模擬參考。",
-        "FIFA Mexico-Ecuador 官方 preview 已開，確認 Mexico City Stadium 的 R32 脈絡與兩隊小組火力背景；這是官方 fixture/context，不是本站模型配方。"
+        "FIFA Mexico-Ecuador 官方 preview 已開，確認 Mexico City Stadium 的 R32 脈絡與兩隊小組火力背景；這是官方 fixture/context，不是本站模型配方。",
+        "ESPN Mexico-Ecuador 賽前頁已可連線，標題明示含 referee、predicted line-ups 與觀賽資訊；只列為 reported/lineup-watch，不升級成 confirmed XI。",
+        "TUDN Mexico-Ecuador match page 已可連線，提供西語臨場資訊入口；適合作為主場語境與 live-centre 線索。",
+        "FotMob Mexico-Ecuador live tracker 已可連線，metadata 明示 live score、predicted lineups、H2H、stats、player ratings；屬 live-centre/lineup-watch，不是官方名單。",
+        "FOX Sports odds article 已可連線，標題稱 Mexico favored over Ecuador；這只作 paper-market reference，不是投注建議，也不是 Soren 的模型配方。"
       ],
       "sources": [
         {
@@ -4530,6 +4552,38 @@
           "sourceName": "FIFA",
           "fetchedAt": "2026-06-30T03:07:58Z",
           "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Mexico-Ecuador predicted-lineup preview",
+          "url": "https://www.espn.com/soccer/story/_/id/49212810/mexico-vs-ecuador-fifa-world-cup-2026-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-30T05:24:13Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "TUDN Mexico-Ecuador match centre",
+          "url": "https://www.tudn.com/mundial-2026/mexico-vs-ecuador",
+          "sourceName": "TUDN",
+          "fetchedAt": "2026-06-30T05:24:13Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "FotMob Mexico-Ecuador live tracker",
+          "url": "https://www.fotmob.com/matches/ecuador-vs-mexico/1hlgxf",
+          "sourceName": "FotMob",
+          "fetchedAt": "2026-06-30T05:24:13Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Sports Mexico odds reference",
+          "url": "https://www.foxsports.com/stories/soccer/world-cup-mexico-odds",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-30T05:24:13Z",
+          "claimType": "odds-reference",
           "confidence": "high"
         }
       ],
