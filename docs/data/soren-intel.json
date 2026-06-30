@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T19:45:53Z",
-  "status": "Late matchday source alignment: France-Sweden 補 FIFA/Sky 臨場入口，Mexico-Ecuador 補 ESPN/FotMob 賽前與 live-score 入口，England-DR Congo 補官方 match centre；全部仍是開賽前/賽前情報，不結算結果。",
-  "headline": "Soren scout: 開賽前 80 分鐘不是裝神時間，是把入口備齊——France-Sweden 看 FIFA/Sky，Mexico-Ecuador 看 ESPN/FotMob；Live ≠ Final，終場哨前別把劇本刻墓碑。",
+  "generatedAt": "2026-06-30T20:55:04Z",
+  "status": "Postmatch correction: Ivory Coast-Norway 已由 ESPN public summary 與本地 openfootball 狀態核成 FT 1-2；m078 從 live-score 卡改為賽後拆解。France-Sweden / Mexico-Ecuador 仍維持臨場入口與賽前情報，不提前結算。",
+  "headline": "Soren scout: Norway 2-1 把 Ivory Coast 踢出局——75 分鐘的 1-1 只是中場幻覺，FT 才是刀落下的聲音；France-Sweden、Mexico-Ecuador 繼續看 live centre，別把預測當終場哨。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3831,9 +3831,9 @@
     {
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
-      "sourceType": "in-progress live-score + official match-centre + reported confirmed lineups + preview/odds watch",
-      "title": "Ivory Coast-Norway 75’ 拉回 1-1：ESPN 公開摘要確認 completed=false，淘汰賽現在開始咬人。",
-      "sorenTake": "父層重查 ESPN public summary API：75 分鐘 Ivory Coast 1-1 Norway，status=Second Half、completed=false。這只更新 live-score 語境，不偷跑完賽、不結算 bracket/紙上本金；Norway 剛把劇本寫得像強隊，Ivory Coast 立刻把稿子搶回來改。",
+      "sourceType": "postmatch final-score + official match-centre + reported lineups + preview/odds watch",
+      "title": "Norway 2-1 收掉 Ivory Coast：75 分鐘的 1-1 只是煙霧，ESPN public summary 已標 FT，Soren 的挪威 pick 活下來。",
+      "sorenTake": "這場最狠的教訓：淘汰賽不要把 live-score 當墓誌銘。Ivory Coast 一度把比分拉回 1-1，但 ESPN public summary 最終標示 completed=true / FT，Norway 2-1 晉級。Soren 原本看 Norway 小優，方向對了；但過程提醒我們，紙面概率不是護身符，終場前每一次「看起來穩了」都可能被下一波反擊打臉。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -3880,7 +3880,8 @@
         "Sporting News 頁面 metadata 顯示 Ivory Coast vs Norway confirmed lineups / starting 11 for Round of 32 game in Dallas；可作 reported/lineup-watch 補強，但仍以官方/FIFA/ESPN live centre 為臨場校驗主軸。",
         "2026-06-30T17:26:13Z 父層重查 ESPN public summary API：Ivory Coast 0-0 Norway，status=First Half / 25’，completed=false；只作 in-progress live-score context，不是完賽結果，不結算 bracket、postmortem 或紙上本金。",
         "18:32Z 再核 ESPN public summary：Ivory Coast 0-1 Norway、73 分鐘、completed=false；這是 in-progress live-score，不是 final，也不觸發結果/紙上本金結算。",
-        "18:34Z 再核 ESPN public summary：Ivory Coast 1-1 Norway、75 分鐘、completed=false；比分已從 0-1 變平，仍是 in-progress live-score，不觸發結果/紙上本金結算。"
+        "18:34Z 再核 ESPN public summary：Ivory Coast 1-1 Norway、75 分鐘、completed=false；比分已從 0-1 變平，仍是 in-progress live-score，不觸發結果/紙上本金結算。",
+        "20:55Z 父層重查 ESPN public summary API：Ivory Coast 1-2 Norway，status=FT，completed=true；m078 可從 in-progress live-score 改為 postmatch/final-score，不再停留在 75 分鐘 1-1。"
       ],
       "sources": [
         {
@@ -4233,6 +4234,14 @@
           "sourceName": "FIFA",
           "fetchedAt": "2026-06-30T18:34:57Z",
           "claimType": "confirmed/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN public summary Ivory Coast-Norway FT",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760490",
+          "sourceName": "ESPN public summary API",
+          "fetchedAt": "2026-06-30T20:55:04Z",
+          "claimType": "confirmed/final-score",
           "confidence": "high"
         }
       ],
