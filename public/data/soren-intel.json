@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T07:40:27Z",
-  "status": "Next-day knockout scout refresh: 補 USA-Bosnia 的雙方官方備戰、England-DR Congo 的 BBC/Sports Mole 對手與陣容觀察、Belgium-Senegal 的 Belga/Sports Mole 隊訊；預測 XI 仍只作 reported lineup-watch。",
-  "headline": "Soren scout: 明天三場淘汰賽補上更硬的對手側訊號——Bosnia 有足協訓練動態，DR Congo 不是英格蘭的背景板，Senegal 也不是比利時控球秀的道具。",
+  "generatedAt": "2026-06-30T08:48:43Z",
+  "status": "Matchday R32 micro-refresh: 補 m078 Norway 近開球 NRK/VG 隊訊、m077 Guardian/SI 戰術與預測 XI、m079 Mexico-Ecuador 雙方 predicted-XI；全部維持 reported/lineup-watch 或 context，不升級成官方首發。",
+  "headline": "Soren scout: 今天三場淘汰賽進臨場模式——Norway 的 Aursnes/Ryerson、France 的 Saliba/Deschamps、Mexico-Ecuador 的 probable XI 都補上，但正式先發還沒落地，別把預測稿當聖旨。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3832,8 +3832,8 @@
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
       "sourceType": "official/media preview + live-centre/lineup-watch + paper odds reference",
-      "title": "Ivory Coast-Norway 補 FIFA Haaland 脈絡：Diomandé 對 Haaland 夠有戲，但先發正式落地前，這仍是 team-news watch，不是挪威自動晉級券。",
-      "sorenTake": "FIFA 另把 Haaland 的淘汰賽故事線拉出來：他被視為回到首發火力核心，Solbakken 的挪威也不會把 Ivory Coast 當熱身賽。Soren 的讀法很簡單——挪威紙面更熱，但 Dallas 這場如果被 Diomandé/轉換速度先咬一口，Haaland 再大隻也得自己把門踹開。",
+      "title": "Ivory Coast-Norway 近開球補 NRK/VG：Aursnes 可能先坐板凳、Ryerson 還在傷情陰影裡；挪威熱門，但不是免檢通道。",
+      "sorenTake": "NRK 的近開球線索把 Norway 中場/右路選擇拉到檯面上：Aursnes 可能從板凳開始，Patrick Berg 進入首發想像；VG 仍把 Ryerson 當傷情疑雲。這不等於官方 XI，但足夠提醒 Soren——Norway 如果右側保險絲不穩，Ivory Coast 的轉換速度會專挑那條縫鑽。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -3866,7 +3866,9 @@
         "BBC Sport 已開 Ivory Coast-Norway 即時文字/轉播頁，標題明示 build-up、team news、TV/radio/live text；這是臨場更新入口，不把尚未公布的首發偷寫成 confirmed。",
         "Covers 賽前 odds/picks 頁把 Norway 當紙上市場較熱一方；Soren 只拿它當 paper-market 溫度計，不當投注建議，也不讓 Haaland 名字替防線犯錯買單。",
         "05:24Z 父層 URL 探針確認 FIFA Haaland 專題可連線；搜尋摘要稱 Haaland 預期重回對 Ivory Coast 的首發脈絡。這是官方敘事/lineup-watch，不是已公布的正式 XI。",
-        "Sports Mole Ivory Coast predicted XI 專文聚焦 Yan Diomandé 與 Les Éléphants 如何排兵；這是 predicted XI，不是 official lineup。"
+        "Sports Mole Ivory Coast predicted XI 專文聚焦 Yan Diomandé 與 Les Éléphants 如何排兵；這是 predicted XI，不是 official lineup。",
+        "NRK 近開球報導稱 Fredrik Aursnes 可能先從替補席開始、Patrick Berg 獲得首發機會；這是挪威媒體 reported lineup-watch，不是 FIFA/球隊官方 XI。",
+        "VG 賽前訓練稿仍把 Julian Ryerson 放在傷情觀察脈絡，並提到 Solbakken 對他能否趕上 Ivory Coast 戰態度不樂觀；本站維持 reported availability-watch，不寫成正式缺陣。"
       ],
       "sources": [
         {
@@ -4148,6 +4150,22 @@
           "fetchedAt": "2026-06-30T06:31:39Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "NRK Aursnes reported bench watch",
+          "url": "https://www.nrk.no/fotballvm2026/nrk-erfarer_-fredrik-aursnes-pa-benken-mot-elfenbenskysten-1.17941158",
+          "sourceName": "NRK",
+          "fetchedAt": "2026-06-30T08:48:43Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "VG Ryerson availability watch",
+          "url": "https://www.vg.no/sport/i/PdnLee/vm-2023-dagen-etter-tapet-mot-frankrike-var-norge-tilbake-i-greensboro",
+          "sourceName": "VG",
+          "fetchedAt": "2026-06-30T08:48:43Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -4156,8 +4174,8 @@
       "matchId": "m077",
       "match": "France vs Sweden",
       "sourceType": "official/team context + reported lineup/availability watch + public probability/odds reference",
-      "title": "France-Sweden 補 FIFA match-centre：法國氣勢很滿，但瑞典這種淘汰賽老油條，不會因為模型和賠率翻白眼就自動躺平。",
-      "sorenTake": "FIFA match-centre 已可連線，配上 BBC/FFF/Svensk Fotboll 既有來源，這場的官方賽事入口齊了。France 還是主敘事，但 Sweden 的定位很清楚：撐住前 25 分鐘、把比賽拖進犯錯區，才有資格讓大熱開始冒汗。",
+      "title": "France-Sweden 補 Deschamps 與 SI predicted XI：法國火力像開燈，瑞典中衛缺口是真洞；但淘汰賽不是簡報自動播放。",
+      "sorenTake": "Guardian 的 Deschamps 訪談把 France 的主旋律說白：他想保留進攻危險性；Sports Illustrated 則把 Saliba 回歸預期與 Sweden 的 Isak Hien 缺陣放進 predicted-XI 框架。Soren 的翻譯：法國上限很亮，但如果一早只顧秀火力，瑞典最喜歡把熱門拖進泥地。",
       "signals": [
         "openfootball 賽程目前列 m077 為 1I vs 3C/D/F/G/H，2026-06-30 21:00Z 於 New York/New Jersey 開球；本站不把未定第三名寫成確認對手。",
         "站內 Group I 完賽積分顯示 France 第一，因此 1I 指向 France；但對手端仍取決於最佳第三名組合與剩餘小組結果。",
@@ -4187,7 +4205,9 @@
         "BBC France-Sweden live centre 已開 last-32 stats / head-to-head / live text 入口；作比賽日追蹤，不把任何預測 XI 寫成正式先發。",
         "The Standard 30 日賽前頁確認 France-Sweden 是 New Jersey 的 last-32 歐洲對撞，並聚合 prediction、team news、H2H 與 odds；屬媒體賽前/傷停觀察，不是官方先發。",
         "Oddslot 可讀 metadata 顯示 France-Sweden odds comparison / head-to-head / form preview；1.27 類法國熱門盤只代表公眾市場壓力，不代表瑞典會自動投降。",
-        "05:24Z 父層探針確認 FIFA France-Sweden match-centre 可連線；作為臨場比分/陣容官方入口，正式首發仍需賽前再核。"
+        "05:24Z 父層探針確認 FIFA France-Sweden match-centre 可連線；作為臨場比分/陣容官方入口，正式首發仍需賽前再核。",
+        "Guardian 6/29 訪談引述 Deschamps 賽前談 France 的「capacity for danger」與 favourite 標籤；這是可信媒體的教練/戰術語氣，不是先發名單。",
+        "Sports Illustrated France-Sweden preview 將 Saliba 回歸、Deschamps 回到場邊，以及 Sweden 後防 Hien 缺陣放入 predicted-lineup 敘事；仍屬 reported/lineup-watch，正式 XI 等 FIFA match centre。"
       ],
       "sources": [
         {
@@ -4421,6 +4441,22 @@
           "fetchedAt": "2026-06-30T05:24:13Z",
           "claimType": "confirmed",
           "confidence": "high"
+        },
+        {
+          "label": "Guardian Deschamps danger quote",
+          "url": "https://www.theguardian.com/football/2026/jun/29/didier-deschamps-france-sweden-world-cup-2026-round-of-32",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-30T08:48:43Z",
+          "claimType": "reported/coach-player-quote",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Illustrated France-Sweden preview",
+          "url": "https://www.si.com/soccer/france-vs-sweden-world-cup-preview-predictions-lineups-6-30-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-06-30T08:48:43Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -4429,8 +4465,8 @@
       "matchId": "m079",
       "match": "Mexico vs Ecuador",
       "sourceType": "official preview + live-centre + predicted-lineup watch + odds-reference",
-      "title": "Mexico-Ecuador 進臨場模式：ESPN/TUDN/FotMob 都把資訊台架好，FOX 市場說 Mexico 熱，但主場不是護身符。",
-      "sorenTake": "Mexico 的故事很好賣：主場、三連勝、零失球，劇本像已經印好；問題是 Ecuador 剛從 Germany 那格逃出來，不是來當剪綵嘉賓。ESPN 給 predicted-lineup/裁判/轉播框架，TUDN 與 FotMob 補 live-centre，FOX 補紙上市場熱度——Soren 只提醒一句：熱度可以當參考，不能當免死金牌。",
+      "title": "Mexico-Ecuador 補雙方 predicted XI：El Tri 主場劇本很香，但 Ecuador 的 Caicedo/Pacho 骨架不是來當背景板。",
+      "sorenTake": "Sports Mole 把兩邊可能 XI 攤開：Mexico 仍看 Jiménez/Quiñones 與中場雙保險，Ecuador 則是 Pacho-Hincapié、Caicedo、Valencia 的硬骨架。這只是預測陣容，但足夠提醒主場敘事別太油——Mexico City 會很吵，Ecuador 不一定會很乖。",
       "signals": [
         "FOX Sports 比賽頁標題可核對 Mexico vs 3C/3E/3F/3H/3I 與 2026-06-30 賽事資訊，是公開賽程入口。",
         "Al Jazeera Round-of-32 explainer 列出 Mexico vs 3C/3E/3F/3H/3I 與 Mexico City Stadium 時間窗口。",
@@ -4450,7 +4486,9 @@
         "FotMob Mexico-Ecuador live tracker 已可連線，metadata 明示 live score、predicted lineups、H2H、stats、player ratings；屬 live-centre/lineup-watch，不是官方名單。",
         "FOX Sports odds article 已可連線，標題稱 Mexico favored over Ecuador；這只作 paper-market reference，不是投注建議，也不是 Soren 的模型配方。",
         "Sports Illustrated Mexico-Ecuador preview 把 Mexico 主場夢幻開局與 Ecuador 危險性放在同一頁；屬 reported preview/lineup-watch，不是確認先發。",
-        "bet365 News Mexico-Ecuador 預覽列出 odds 與 predicted lineups；僅作 paper-market 與 lineup-watch 參照，不作投注建議。"
+        "bet365 News Mexico-Ecuador 預覽列出 odds 與 predicted lineups；僅作 paper-market 與 lineup-watch 參照，不作投注建議。",
+        "Sports Mole Mexico predicted-XI 專文列出 Rangel；Sánchez、Montes、Vásquez、Gallardo；Lira、Romo；Gutiérrez、Alvarado；Jiménez、Quiñones 的可能首發；此為媒體預測，不是官方 XI。",
+        "Sports Mole Ecuador predicted-XI 專文列出 Galíndez；Franco、Ordóñez、Pacho、Hincapié；Yeboah、Caicedo、Vite、Angulo；Plata、Valencia 的可能首發；此為 lineup-watch，正式名單仍等賽前。"
       ],
       "sources": [
         {
@@ -4611,6 +4649,22 @@
           "sourceName": "bet365 News",
           "fetchedAt": "2026-06-30T06:31:39Z",
           "claimType": "reported/odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole Mexico predicted XI",
+          "url": "https://www.sportsmole.co.uk/football/mexico/world-cup-2026/predicted-lineups/can-el-tri-continue-perfect-run-predicted-mexico-xi-vs-ecuador_600283.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-30T08:48:43Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole Ecuador predicted XI",
+          "url": "https://www.sportsmole.co.uk/football/ecuador/world-cup-2026/predicted-lineups/can-la-tri-spring-another-upset-predicted-ecuador-xi-vs-mexico_600285.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-30T08:48:43Z",
+          "claimType": "reported/lineup-watch",
           "confidence": "medium"
         }
       ],
