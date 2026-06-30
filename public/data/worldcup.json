@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T22:51:46.702Z",
+  "generatedAt": "2026-06-30T22:58:46.923Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,8 +7,8 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 77,
-    "scheduledMatches": 27,
+    "finishedMatches": 78,
+    "scheduledMatches": 26,
     "nextWindow": [
       "m079",
       "m080",
@@ -413,13 +413,13 @@
       {
         "team": "Sweden",
         "group": "Group F",
-        "played": 3,
+        "played": 4,
         "won": 1,
         "drawn": 1,
-        "lost": 1,
+        "lost": 2,
         "goalsFor": 7,
-        "goalsAgainst": 7,
-        "goalDiff": 0,
+        "goalsAgainst": 10,
+        "goalDiff": -3,
         "points": 4
       },
       {
@@ -539,14 +539,14 @@
       {
         "team": "France",
         "group": "Group I",
-        "played": 3,
-        "won": 3,
+        "played": 4,
+        "won": 4,
         "drawn": 0,
         "lost": 0,
-        "goalsFor": 10,
+        "goalsFor": 13,
         "goalsAgainst": 2,
-        "goalDiff": 8,
-        "points": 9
+        "goalDiff": 11,
+        "points": 12
       },
       {
         "team": "Norway",
@@ -2144,8 +2144,11 @@
       "team1": "France",
       "team2": "Sweden",
       "venue": "New York/New Jersey (East Rutherford)",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        0
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -2993,43 +2996,43 @@
     },
     "m032": {
       "pick": "Sweden",
-      "confidence": 0.7802520546447451,
+      "confidence": 0.7426152941355281,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.677670622403703,
-        "draw": 0.21455560097616105,
-        "away": 0.10777377662013597
+        "home": 0.6485796519416355,
+        "draw": 0.22526093052724347,
+        "away": 0.126159417531121
       },
       "expectedGoals": [
-        1.82,
-        0.56
+        1.76,
+        0.62
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Sweden，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Sweden，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "story": "Sweden 底牌比較硬；Tunisia 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "18.1",
+            "value": "15.2",
             "note": "Sweden 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.82 : 0.56",
+            "value": "1.76 : 0.62",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "11%",
+            "value": "13%",
             "note": "Tunisia 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Sweden 77.6；Tunisia 59.5",
-        "預期進球 1.82 : 0.56，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 18.1 分，我暫時站 Sweden"
+        "底牌分：Sweden 74.7；Tunisia 59.5",
+        "預期進球 1.76 : 0.62，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 15.2 分，我暫時站 Sweden"
       ]
     },
     "m043": {
@@ -3854,43 +3857,43 @@
     },
     "m033": {
       "pick": "Netherlands",
-      "confidence": 0.7752991100809696,
+      "confidence": 0.8120659636163818,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6738346521240909,
-        "draw": 0.21602212884558886,
-        "away": 0.11014321903032023
+        "home": 0.7023661302140486,
+        "draw": 0.20471125847375446,
+        "away": 0.092922611312197
       },
       "expectedGoals": [
-        1.81,
-        0.57
+        1.87,
+        0.51
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Netherlands，但平局還有 22%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Netherlands，但平局還有 20%；別急著開香檳，足球最會打臉。",
         "story": "Netherlands 底牌比較硬；Sweden 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "17.7",
+            "value": "20.5",
             "note": "Netherlands 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.81 : 0.57",
+            "value": "1.87 : 0.51",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "11%",
+            "value": "9%",
             "note": "Sweden 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Netherlands 95.2；Sweden 77.6",
-        "預期進球 1.81 : 0.57，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 17.7 分，我暫時站 Netherlands"
+        "底牌分：Netherlands 95.2；Sweden 74.7",
+        "預期進球 1.87 : 0.51，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 20.5 分，我暫時站 Netherlands"
       ]
     },
     "m027": {
@@ -4838,43 +4841,43 @@
     },
     "m035": {
       "pick": "Japan",
-      "confidence": 0.5829003885966499,
+      "confidence": 0.6231604082848282,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.5265758068515779,
-        "draw": 0.25976272932502226,
-        "away": 0.21366146382339982
+        "home": 0.5571120176906598,
+        "draw": 0.2527114679196162,
+        "away": 0.19017651438972397
       },
       "expectedGoals": [
-        1.52,
-        0.86
+        1.58,
+        0.8
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場中等站 Japan，但平局還有 26%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場中等站 Japan，但平局還有 25%；別急著開香檳，足球最會打臉。",
+        "story": "Japan 底牌比較硬；Sweden 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "3.7",
-            "note": "誰也別裝大哥"
+            "value": "6.6",
+            "note": "Japan 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.52 : 0.86",
+            "value": "1.58 : 0.80",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "21%",
+            "value": "19%",
             "note": "Sweden 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Japan 81.3；Sweden 77.6",
-        "預期進球 1.52 : 0.86，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：Japan 81.3；Sweden 74.7",
+        "預期進球 1.58 : 0.80，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 6.6 分，我暫時站 Japan"
       ]
     },
     "m036": {
@@ -5702,40 +5705,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.75941559369498,
-        "draw": 0.1792400396288614,
-        "away": 0.06134436667615861
+        "home": 0.7853199901802017,
+        "draw": 0.1663636430097516,
+        "away": 0.04831636681004671
       },
       "expectedGoals": [
-        2,
-        0.38
+        2.05,
+        0.33
       ],
-      "score": "1-0",
+      "score": "2-0",
       "commentary": {
-        "headline": "我這場偏明確站 France，但平局還有 18%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 France，但平局還有 17%；別急著開香檳，足球最會打臉。",
         "story": "France 底牌比較硬；Sweden 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "26.4",
+            "value": "29.3",
             "note": "France 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.00 : 0.38",
-            "note": "最像 1-0"
+            "value": "2.05 : 0.33",
+            "note": "最像 2-0"
           },
           {
             "label": "翻車率",
-            "value": "6%",
+            "value": "5%",
             "note": "Sweden 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：France 104.0；Sweden 77.6",
-        "預期進球 2.00 : 0.38，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 26.4 分，我暫時站 France"
+        "底牌分：France 104.0；Sweden 74.7",
+        "預期進球 2.05 : 0.33，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 29.3 分，我暫時站 France"
       ]
     },
     "m079": {
@@ -6787,23 +6790,23 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 65,
-      "correct": 49,
+      "points": 66,
+      "correct": 50,
       "exact": 8,
-      "total": 77,
+      "total": 78,
       "rank": 1,
-      "accuracy": 0.6363636363636364
+      "accuracy": 0.6410256410256411
     },
     {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 63,
-      "correct": 45,
+      "points": 64,
+      "correct": 46,
       "exact": 8,
-      "total": 77,
+      "total": 78,
       "rank": 2,
-      "accuracy": 0.5844155844155844
+      "accuracy": 0.5897435897435898
     },
     {
       "id": "draw",
@@ -6812,9 +6815,9 @@
       "points": 44,
       "correct": 22,
       "exact": 11,
-      "total": 77,
+      "total": 78,
       "rank": 3,
-      "accuracy": 0.2857142857142857
+      "accuracy": 0.28205128205128205
     }
   ],
   "paperBankroll": {
@@ -6822,36 +6825,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 158.65,
+    "bankroll": 166.97,
     "openStake": 39.11,
-    "totalValue": 158.65,
-    "roi": 0.587,
+    "totalValue": 166.97,
+    "roi": 0.67,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m042",
-        "kickoffUtc": "2026-06-27T03:00:00.000Z",
-        "stage": "小組 G · Matchday 16",
-        "team1": "New Zealand",
-        "team2": "Belgium",
-        "pick": "Belgium",
-        "outcome": "away",
-        "stake": 8,
-        "decimalOdds": 2.03,
-        "edge": 0.628,
-        "modelProbability": 0.802,
-        "marketProxyProbability": 0.462,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-06-27T02:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 Belgium，但平局還有 16%；別急著開香檳，足球最會打臉。",
-        "status": "won",
-        "score": [
-          1,
-          5
-        ],
-        "profit": 8.24
-      },
       {
         "matchId": "m071",
         "kickoffUtc": "2026-06-27T21:00:00.000Z",
@@ -7115,9 +7094,7 @@
           2
         ],
         "profit": 6.5
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m077",
         "kickoffUtc": "2026-06-30T21:00:00.000Z",
@@ -7128,15 +7105,22 @@
         "outcome": "home",
         "stake": 8,
         "decimalOdds": 2.04,
-        "edge": 0.549,
-        "modelProbability": 0.759,
+        "edge": 0.602,
+        "modelProbability": 0.785,
         "marketProxyProbability": 0.462,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-06-30T20:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 France，但平局還有 18%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "reason": "我這場偏明確站 France，但平局還有 17%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          3,
+          0
+        ],
+        "profit": 8.32
+      }
+    ],
+    "pending": [
       {
         "matchId": "m079",
         "kickoffUtc": "2026-07-01T01:00:00.000Z",
@@ -7212,9 +7196,7 @@
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 USA，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "status": "pending"
-      }
-    ],
-    "watchlist": [
+      },
       {
         "matchId": "m084",
         "kickoffUtc": "2026-07-02T19:00:00.000Z",
@@ -7232,8 +7214,10 @@
         "lockedAtUtc": "2026-07-02T18:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Spain，但平局還有 19%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
+        "status": "pending"
+      }
+    ],
+    "watchlist": [
       {
         "matchId": "m086",
         "kickoffUtc": "2026-07-03T22:00:00.000Z",
@@ -7308,6 +7292,25 @@
         "lockedAtUtc": "2026-07-04T16:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場中等站 Canada，但平局還有 24%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m083",
+        "kickoffUtc": "2026-07-02T23:00:00.000Z",
+        "stage": "Round of 32",
+        "team1": "Portugal",
+        "team2": "Croatia",
+        "pick": "Portugal",
+        "outcome": "home",
+        "stake": 7.96,
+        "decimalOdds": 2.32,
+        "edge": 0.362,
+        "modelProbability": 0.587,
+        "marketProxyProbability": 0.405,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-02T22:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場中等站 Portugal，但平局還有 24%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
