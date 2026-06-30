@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T13:29:52Z",
-  "status": "Near-kickoff micro-refresh: 補 m078 FIFA/Guardian，m077 ESPN/Svensk Fotboll/CBS，m079 FIFA/Sporting News/Opta；全部保守標為官方入口、live-centre、projected XI 或紙上盤口參考，未把任何媒體預測寫成官宣先發。",
-  "headline": "Soren scout: 6/30 三場淘汰賽進入臨場模式——Ivory Coast-Norway 先盯 FIFA 官方入口與 Guardian live blog；France-Sweden 補 ESPN live centre、瑞典足協晉級口徑與 CBS 市場大熱；Mexico-Ecuador 補 FIFA Match Centre、Sporting News projected XI 與 Opta 模型脈絡。紙上盤口只當市場溫度，不是投注建議。",
+  "generatedAt": "2026-06-30T14:44:11Z",
+  "status": "Matchday micro-refresh: m078 補 Olympics/USA Today 臨場頁，m077 補 Al Jazeera/NBC/Rotowire/OddsShark/Polymarket，m079 補 FIFA Aguirre、FOX 高海拔拆解與 Squawka/RotoWire lineup-watch，m080 補 ESPN、Olympics、FOX5 Atlanta 與 FIFA/DR Congo 官方入口；所有 lineup/odds/social-market 線索都保守標籤。",
+  "headline": "Soren scout: 6/30 淘汰賽不只看名氣——Ivory Coast-Norway 補 live-score 與主流盤口，France-Sweden 加上 Al Jazeera/NBC/Rotowire 與公開市場溫度，Mexico-Ecuador 盯 Aguirre 發言和高海拔是否被 Ecuador 抹平，England-DR Congo 則補首次交手與 underdog 現場敘事。紙上盤口只當市場溫度，不是投注建議。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3832,8 +3832,8 @@
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
       "sourceType": "official/live-centre + reported lineup/availability/odds watch",
-      "title": "Ivory Coast-Norway 臨場補 FIFA/Guardian：Haaland 劇本很亮，但淘汰賽第一刀先看官方入口與 live blog，不把市場大熱當免死金牌。",
-      "sorenTake": "Norway 仍是紙面與進球敘事主角；但 Ivory Coast 這種身體對抗和轉換速度，最會把「熱門隊」拖進泥地摔跤。最新補強只確認 FIFA 官方賽事/預覽入口與 Guardian 即時脈絡可追；任何 predicted XI 仍只是 lineup-watch，正式先發要等官方/可信 live centre 落地。",
+      "title": "Ivory Coast-Norway 臨場補 Olympics/USA Today：Haaland 的聚光燈很亮，但 Diomande 和 live-score 線索提醒我們——淘汰賽不是球星海報，是 90 分鐘拆招。",
+      "sorenTake": "FIFA/BBC/Guardian 的官方與 live-centre 底座已經夠厚，這次只補兩個材料：Olympics.com 的即時比分/歷史脈絡與 USA Today 的主流 odds/picks。Norway 仍被 Haaland 敘事推高，但 Ivory Coast 第一次走到這裡，反而更像一支沒包袱的拆台隊。市場熱度可以看，不能跪。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -3873,7 +3873,9 @@
         "CBS/SportsLine 30日頁提供 Norway-Ivory Coast 賠率與專家 picks，僅作紙上市場溫度；Soren 不把它當下注建議。",
         "Norges Fotballforbund 的 VM 2026 專頁列出 Norway 晉級脈絡與 6/30 對 Ivory Coast 賽程，是官方隊伍/賽程背景補強。",
         "13:29Z 臨場巡檢：FIFA 的 Côte d’Ivoire v Norway 預覽/隊伍消息頁可連線，作為官方賽事與可能先發資訊入口；頁面本身為動態渲染，先不摘成「已確認先發」。",
-        "Guardian 6/30 World Cup live blog 已開，標題/描述聚焦淘汰賽大冷與 Ivory Coast-Norway build-up；可作臨場 team-news/context 觀察，但不是官方先發來源。"
+        "Guardian 6/30 World Cup live blog 已開，標題/描述聚焦淘汰賽大冷與 Ivory Coast-Norway build-up；可作臨場 team-news/context 觀察，但不是官方先發來源。",
+        "Olympics.com 30 June live-score 頁把 Côte d’Ivoire-Norway 放入當日即時更新，標明 Dallas Stadium、17:00 GMT，並補上 Ivory Coast 首度小組出線與 Norway 1998 後再進淘汰賽的歷史脈絡。",
+        "USA Today 新增 Ivory Coast-Norway expert predictions / odds 頁；只當 public odds-reference，不把任何 picks 寫成投注建議或模型內幕。"
       ],
       "sources": [
         {
@@ -4195,6 +4197,22 @@
           "fetchedAt": "2026-06-30T13:29:52Z",
           "claimType": "context/live-centre",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Olympics.com 30 June live scores",
+          "url": "https://www.olympics.com/en/news/fifa-world-cup-2026-every-match-result-30-june-live-scores",
+          "sourceName": "Olympics.com",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
+        },
+        {
+          "label": "USA Today Ivory Coast-Norway odds/picks",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/30/ivory-coast-norway-world-cup-prediction-analysis-odds/90748651007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -4203,8 +4221,8 @@
       "matchId": "m077",
       "match": "France vs Sweden",
       "sourceType": "official federation + live-centre + reported lineup/availability/odds watch",
-      "title": "France-Sweden 臨場補 ESPN/瑞典足協/CBS：法國被盤口捧到天花板，瑞典的工作就是把天花板拆成落石。",
-      "sorenTake": "France 的人才厚度仍像作弊碼，CBS/FanDuel 盤口也把它推成重熱門；但 Swedish FA 已把「最佳小組第三晉級」寫進官方敘事，這種隊最適合踢低姿態偷刀。ESPN live centre 是賽前到臨場狀態的乾淨入口；先發未由官方落地前，所有 predicted XI 都只當風向，不當判決書。",
+      "title": "France-Sweden 再補 Al Jazeera/NBC/Rotowire：法國是大熱沒錯，但 Sweden 的任務不是投降，是把 Mbappé 劇本拖進泥地。",
+      "sorenTake": "FIFA、FFF、Svensk Fotboll、BBC、Opta 已經把底座搭好；新增 Al Jazeera 的比賽預覽、NBC 當日 live blog、RotoWire lineup/team-news 與 OddsShark/Polymarket 的公開市場溫度。Hien 缺陣仍是瑞典後防硬傷；但市場把法國捧太高時，Soren 只提醒一句：淘汰賽最愛打臉「應該」。",
       "signals": [
         "openfootball 賽程目前列 m077 為 1I vs 3C/D/F/G/H，2026-06-30 21:00Z 於 New York/New Jersey 開球；本站不把未定第三名寫成確認對手。",
         "站內 Group I 完賽積分顯示 France 第一，因此 1I 指向 France；但對手端仍取決於最佳第三名組合與剩餘小組結果。",
@@ -4239,7 +4257,11 @@
         "Sports Illustrated France-Sweden preview 將 Saliba 回歸、Deschamps 回到場邊，以及 Sweden 後防 Hien 缺陣放入 predicted-lineup 敘事；仍屬 reported/lineup-watch，正式 XI 等 FIFA match centre。",
         "ESPN France-Sweden live page 可連線，metadata 明示提供 live score、highlights 與 updated stats；適合作為臨場比分/陣容更新的非官方 live-centre 交叉檢查。",
         "Svensk Fotboll 官方票務/晉級頁 metadata 表示 Sweden 以最佳小組第三之一進入淘汰賽；這是官方晉級脈絡，不是戰術或先發消息。",
-        "CBS/SportsLine France-Sweden 頁可連線，metadata 為 knockout-round odds/prediction；搜尋摘要顯示 FanDuel 90 分鐘盤 France 約 -380、Sweden 約 +1000、draw 約 +500。這只做紙上市場溫度，不是投注建議。"
+        "CBS/SportsLine France-Sweden 頁可連線，metadata 為 knockout-round odds/prediction；搜尋摘要顯示 FanDuel 90 分鐘盤 France 約 -380、Sweden 約 +1000、draw 約 +500。這只做紙上市場溫度，不是投注建議。",
+        "Al Jazeera 將 France-Sweden 包裝為 Mbappé vs Isak 的 Round-of-32 preview，含賽程、預測與 lineup 語境；屬媒體預覽，不是官方先發。",
+        "NBC News 6/30 World Cup live blog 同時覆蓋 Ivory Coast-Norway、France-Sweden、Mexico-Ecuador，可作當日 team news/highlights 補充入口。",
+        "RotoWire 提供 France-Sweden predicted lineups / team news / tactical analysis；保守標為 reported lineup-watch。",
+        "OddsShark 與 Polymarket 只作公開 odds / prediction-market 溫度計；紙上模擬參考，不是投注建議，也不代表 Soren 下注。"
       ],
       "sources": [
         {
@@ -4513,6 +4535,46 @@
           "fetchedAt": "2026-06-30T13:29:52Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "Al Jazeera France-Sweden preview",
+          "url": "https://www.aljazeera.com/sports/2026/6/30/france-sweden-fifa-world-cup-round-of-32-prediction-schedule-lineups-mbappe-dembele",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "reported/tactical",
+          "confidence": "high"
+        },
+        {
+          "label": "NBC News June 30 live updates",
+          "url": "https://www.nbcnews.com/sports/soccer/live-blog/fifa-world-cup-games-2026-june-30-live-updates-rcna352364",
+          "sourceName": "NBC News",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "RotoWire France-Sweden lineups/team news",
+          "url": "https://www.rotowire.com/soccer/article/france-vs-sweden-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-round-of-32-120217",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "OddsShark France-Sweden odds",
+          "url": "https://www.oddsshark.com/soccer/world-cup/france-sweden-odds-june-30-2026-2538315",
+          "sourceName": "OddsShark",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
+        },
+        {
+          "label": "Polymarket France-Sweden market",
+          "url": "https://polymarket.com/sports/world-cup/fifwc-fra-swe-2026-06-30",
+          "sourceName": "Polymarket",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "odds-reference/social-search",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -4520,9 +4582,9 @@
     {
       "matchId": "m079",
       "match": "Mexico vs Ecuador",
-      "sourceType": "official match-centre + projected lineup/tactical/odds watch",
-      "title": "Mexico-Ecuador 臨場補 FIFA Match Centre / Sporting News / Opta：主場音量很大，但 Ecuador 的低節奏不是背景音，是拆台工具。",
-      "sorenTake": "Mexico 在主場與 Opta 脈絡下仍稍占敘事優勢，可 Ecuador 這種會把比賽壓成硬幣邊緣的隊，專治「氣氛已經贏了」的錯覺。Sporting News 只提供 projected lineups/team news，FIFA Match Centre 才是正式先發與比分入口；紙面優勢要等開場後能不能穿透低位，別賽前自己開香檳。",
+      "sourceType": "official match-centre + coach quote + tactical/venue + projected lineup/odds watch",
+      "title": "Mexico-Ecuador 補 Aguirre 與高海拔拆解：主場海拔不是外掛，Ecuador 也不是來拍旅遊片。",
+      "sorenTake": "FIFA Match Centre、Sporting News、Opta 已有基本盤；這次加上 FIFA 的 Aguirre knockout-pain 訪談、FOX 對 Mexico City altitude 是否被 Ecuador 抹平的拆解，以及 RotoWire/Squawka lineup-watch。Mexico 的主場聲量很真，但 Ecuador 對高海拔不陌生，這場如果變成慢節奏絞肉機，主隊光靠音量不會自動過關。",
       "signals": [
         "FOX Sports 比賽頁標題可核對 Mexico vs 3C/3E/3F/3H/3I 與 2026-06-30 賽事資訊，是公開賽程入口。",
         "Al Jazeera Round-of-32 explainer 列出 Mexico vs 3C/3E/3F/3H/3I 與 Mexico City Stadium 時間窗口。",
@@ -4548,7 +4610,11 @@
         "Covers 30日盤口/預測文主張 Ecuador 有機會抵消 Mexico 主場優勢並晉級；這是公開市場與戰術角度，不是 Soren 的下注指令。",
         "FIFA Match Centre for Match 79 可連線；這是 Mexico-Ecuador 官方 line-ups/score/live updates 入口。因頁面動態渲染，先標官方入口，不宣稱已看到正式名單。",
         "Sporting News Mexico-Ecuador projected lineups 頁 metadata 明示「latest team news and projected starting lineups」；這是媒體預測與隊伍消息，不是 confirmed XI。",
-        "Opta Analyst Mexico-Ecuador preview metadata 表示 co-hosts Mexico 想延續 World Cup campaign，並以模型/賽事預覽提供公開機率脈絡；這是外部公開模型參考，不是 Soren 底層方法外洩。"
+        "Opta Analyst Mexico-Ecuador preview metadata 表示 co-hosts Mexico 想延續 World Cup campaign，並以模型/賽事預覽提供公開機率脈絡；這是外部公開模型參考，不是 Soren 底層方法外洩。",
+        "FIFA Aguirre preview 指向 Mexico 想終結長期淘汰賽心魔；這是官方 coach/narrative context，可用但不當作模型保證。",
+        "FOX Sports 專題指出 Ecuador 對高海拔環境的熟悉可能削弱 Mexico City 優勢；這是重要 venue/tactical context。",
+        "RotoWire 與 Squawka 都提供 Mexico-Ecuador predicted lineups/team news；只列為 reported lineup-watch，正式 XI 仍等 FIFA/官方。",
+        "USA Today odds/picks 補主流市場語境；紙上模擬只看 public reference，不導向真金流。"
       ],
       "sources": [
         {
@@ -4750,16 +4816,56 @@
           "fetchedAt": "2026-06-30T13:29:52Z",
           "claimType": "reported/lineup-watch",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA Aguirre knockout-pain preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/aguirre-mexico-knockout-pain-ecuador-preview",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "confirmed/coach-player-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX altitude analysis",
+          "url": "https://www.foxsports.com/stories/soccer/2026-fifa-world-cup-mexico-ecuador-altitude",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "context/tactical",
+          "confidence": "high"
+        },
+        {
+          "label": "RotoWire Mexico-Ecuador lineups/team news",
+          "url": "https://www.rotowire.com/soccer/article/mexico-vs-ecuador-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-round-of-32-120218",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Squawka Mexico-Ecuador team news",
+          "url": "https://www.squawka.com/en/news/world-cup/mexico-vs-ecuador-team-news-predicted-lineups/",
+          "sourceName": "Squawka",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "USA Today Mexico-Ecuador odds/picks",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/30/mexico-ecuador-world-cup-prediction-analysis-odds/90748653007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m080",
       "match": "England vs Democratic Republic of the Congo",
       "sourceType": "official fixture/team context + opponent scout + reported lineup/live-centre + paper market watch",
-      "title": "England-DR Congo 補 FA 日報與 Opta：英格蘭大熱，但首次交手與剛果淘汰賽新鮮感，會考驗 Tuchel 的耐心。",
-      "sorenTake": "England Football 的官方入口讓賽事框架夠清楚；BBC 補上 DR Congo 的首次淘汰賽背景與陣容/體能疑問，Sports Mole 則給 possible lineups 與 team-news 角度。Soren 仍把英格蘭列為強方，但這種比賽最怕熱門隊先把自己演成巡迴表演。",
+      "title": "England-DR Congo 補 ESPN/Olympics/FOX5：英格蘭紙面很厚，但剛果的 underdog 劇本不會自己把門打開讓你進。",
+      "sorenTake": "FA、FIFA、Opta 和 FotMob 已有骨架；新增 ESPN 的裁判/預測陣容/觀賽資訊、Olympics 的首次交手與 DR Congo 世界盃歷史脈絡、FOX5 Atlanta 的現場 underdog 敘事，以及 FIFA DR Congo team-news hub。England 仍是大熱，但這類比賽最怕把第一次交手當熱身賽。",
       "signals": [
         "England Football 公開列出 England 若以 1L 出線，將在 Atlanta 對 3E/H/I/J/K。",
         "FOX Sports m080 賽程頁可核對 1L vs 3E/3H/3I/3J/3K 與 2026-07-01T16:00Z 窗口。",
@@ -4780,7 +4886,11 @@
         "BBC Sport 對手專題確認 England 32 強面對 DR Congo，並點出剛果多名常規主力 2025-26 俱樂部上場時間不足，這是 conditioning/depth watch，不是正式傷停。",
         "Sports Mole England-DR Congo preview 提供 team news / possible lineups；先列 reported lineup-watch，正式 XI 仍等 FIFA/球隊。",
         "England Football 6/30 daily briefing 提供英格蘭隊內當日行程/備戰脈絡，屬官方 camp context，不等於首發。",
-        "The Analyst / Opta 賽前模型與預覽指出 England-DR Congo 是首次交手，提供數據視角補足 matchup 背景；公開概率只作脈絡，不公開底層模型。"
+        "The Analyst / Opta 賽前模型與預覽指出 England-DR Congo 是首次交手，提供數據視角補足 matchup 背景；公開概率只作脈絡，不公開底層模型。",
+        "ESPN England-Congo DR 頁提供 kickoff、referee、predicted lineups 與 how-to-watch；lineup 只作 reported watch，不是官宣。",
+        "Olympics.com 指出雙方從未交手，並補 DR Congo 第二次世界盃、1974 Zaire 之後首度回到此舞台的歷史背景。",
+        "FOX5 Atlanta 從主辦城市角度寫 DR Congo underdog 敘事，補 venue/public-interest context。",
+        "FIFA Congo DR team-news hub 可作後續官方更新入口，避免只看英格蘭側消息。"
       ],
       "sources": [
         {
@@ -4918,6 +5028,38 @@
           "claimType": "reported/tactical",
           "confidence": "high",
           "fetchedAt": "2026-06-30T11:04:55Z"
+        },
+        {
+          "label": "ESPN England-Congo DR preview/logistics",
+          "url": "https://www.espn.com/soccer/story/_/id/49212815/fifa-world-cup-2026-england-vs-congo-dr-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "Olympics.com England-DR Congo watch/live context",
+          "url": "https://www.olympics.com/en/news/england-dr-congo-world-cup-2026-watch-live",
+          "sourceName": "Olympics.com",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "context",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX5 Atlanta DR Congo underdog preview",
+          "url": "https://www.fox5atlanta.com/news/world-cup-atlanta-underdog-dr-congo-looks-shock-england",
+          "sourceName": "FOX 5 Atlanta",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "context/opponent-scout",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Congo DR team-news hub",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/teams/congo-dr/team-news",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-30T14:44:11Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
