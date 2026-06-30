@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T01:58:51Z",
-  "status": "Live-score micro refresh: Netherlands-Morocco 半場 0-0（ESPN public API completed=false）；只作 in-progress context，不結算賽果或 paper bankroll。",
-  "headline": "Soren scout: Netherlands-Morocco 半場還是 0-0；先發豪華但比分很摳，荷蘭紙面小熱已經被摩洛哥拖進細節局。",
+  "generatedAt": "2026-06-30T03:07:58Z",
+  "status": "Live knockout refresh: Netherlands-Morocco 93’ 仍 1-1、completed=false；另補 Ivory Coast-Norway、France-Sweden 與 7/1 淘汰賽官方/隊媒/lineup-watch 線索。",
+  "headline": "Soren scout: Morocco 90+1 把 Netherlands 拖進延長賽；今天後面的淘汰賽卡也補上官方與隊媒線索，先別把熱門當免死金牌。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3334,9 +3334,9 @@
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
-      "sourceType": "confirmed lineup + in-progress live score + live centre + odds/social watch",
-      "title": "Netherlands-Morocco 半場 0-0：先發豪華、比分很摳；Hakimi 的反推還沒開獎，橙軍也別急著擺勝利姿勢。",
-      "sorenTake": "ESPN public summary API 在 01:58Z 顯示 Netherlands-Morocco 半場 0-0、completed=false；這只能寫成 in-progress live-score，不是賽果結算。先發脈絡仍是 Brobbey/Gakpo/Summerville 對 Hakimi/Mazraoui/Ounahi/El Khannouss 的邊路與肋部互砍。Soren 銳評：荷蘭紙面小熱，但 45 分鐘沒有破門，這場已經從「橙軍巡遊」變成「誰先犯低級錯誰上頭條」。",
+      "sourceType": "confirmed lineup + in-progress extra-time score + live centre + odds/social watch",
+      "title": "Netherlands-Morocco 1-1 進延長：Gakpo 先開門、Diop 90+1 拆門，橙軍現在真的不能擺勝利姿勢。",
+      "sorenTake": "ESPN public summary API 03:06Z 顯示 Netherlands-Morocco 93’ 延長賽、1-1、completed=false；Gakpo 72’ 破門後，Issa Diop 90+1 頭槌把比賽拖回沸點。這仍是 live-score context，不結算賽果或 paper bankroll。Soren 銳評：荷蘭把「小熱」踢成加班，摩洛哥這記補時耳光很響，但十二碼/終局未落地前誰都還不能開香檳。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -3396,7 +3396,9 @@
         "ESPN Gamecast 靜態頁可讀到 formations & lineups：Netherlands 3-4-2-1，Brobbey、Gakpo、Summerville 前場；Morocco 4-2-3-1，Bounou；Hakimi、Diop、Riad、Mazraoui；Bouaddi、El Aynaoui；Díaz、Ounahi、El Khannouss；Saibari。",
         "The Standard/101 Great Goals 補荷蘭隊內脈絡：Depay 傷後三場都替補出場，Brobbey 近兩場進球後續任先發；這是 selection context，不是保證他能複製小組賽效率。",
         "ESPN odds 頁顯示 Netherlands -0.5 並列出進球球員市場；本站只作紙上盤溫度/closing-line 參考，不是下注建議。",
-        "ESPN public summary API 01:58Z 顯示 Netherlands-Morocco 半場 0-0、completed=false；本站只作 in-progress live-score/context，絕不提前結算賽果或 paper bankroll。"
+        "ESPN public summary API 01:58Z 顯示 Netherlands-Morocco 半場 0-0、completed=false；本站只作 in-progress live-score/context，絕不提前結算賽果或 paper bankroll。",
+        "ESPN public summary API 03:06Z 顯示 Netherlands-Morocco 延長賽 93’、比分 1-1、completed=false；Gakpo 72’ 進球，Issa Diop 90+1 頭槌扳平，尚無十二碼資訊，本站只作 in-progress live-score/context，不結算賽果或 paper bankroll。",
+        "Al Jazeera live blog 同步呈現 Netherlands 1-1 Morocco / Extra Time；這是可信 live-centre 對 ESPN API 的交叉確認，但仍不是全場賽果。"
       ],
       "sources": [
         {
@@ -3806,6 +3808,22 @@
           "fetchedAt": "2026-06-30T01:58:51Z",
           "claimType": "context/live-score",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN public summary API extra-time state",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-06-30T03:07:58Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Netherlands-Morocco extra-time live blog",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/6/29/live-netherlands-vs-morocco-fifa-world-cup-2026",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-06-30T03:07:58Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -3842,7 +3860,9 @@
         "SofaScore 搜尋片段列 Wilfried Singo hamstring missing、Julian Ryerson thigh doubtful；父層 403，保守作 reported availability-watch lead，等官方/隊媒或 live tracker 再升級。",
         "ESPN 6/29 預覽標題明示 kick-off time、team news、how to watch，並把 Yan Diomandé 對上 Haaland/Ødegaard 作為核心敘事；這是可信 matchday context，不是確認先發。",
         "Yahoo Sports 預覽頁 metadata 顯示 Ivory Coast vs Norway team news、lineups、predictions，並回顧 Ivory Coast 2-0 Curaçao、Norway 1-4 France；屬 media lineup-watch 與 form context。",
-        "Football365 賽前頁把 Ivory Coast 描述為 clean bill of health，並指出小組賽單黃不帶入淘汰賽停賽；Norway 端則預期 Haaland/Ødegaard 等主力回到首發框架。"
+        "Football365 賽前頁把 Ivory Coast 描述為 clean bill of health，並指出小組賽單黃不帶入淘汰賽停賽；Norway 端則預期 Haaland/Ødegaard 等主力回到首發框架。",
+        "Complete Sports 引述/整理 Solbakken 對 Ivory Coast 身體對抗的賽前回應，並提到 Norway 對 France 曾輪休 Haaland、Ødegaard 等主力；屬 coach-quote/team-context，不等於本場確認先發。",
+        "RotoWire Ivory Coast-Norway 頁父層 metadata 明示 predicted lineups、team news、tactical breakdown；可作 expected-XI/tactical watch，正式 XI 仍等 FIFA/球隊。"
       ],
       "sources": [
         {
@@ -4076,6 +4096,22 @@
           "fetchedAt": "2026-06-30T00:45:41Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Complete Sports Solbakken physical-approach quote",
+          "url": "https://www.completesports.com/world-cup-2026-norway-is-ready-for-ivory-coast-physical-approach-solbakken/",
+          "sourceName": "Complete Sports",
+          "fetchedAt": "2026-06-30T03:07:58Z",
+          "claimType": "reported/coach-player-quote",
+          "confidence": "medium"
+        },
+        {
+          "label": "RotoWire Ivory Coast-Norway predicted lineups",
+          "url": "https://www.rotowire.com/soccer/article/ivory-coast-vs-norway-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-round-of-32-120216",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-06-30T03:07:58Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -4110,7 +4146,9 @@
         "Svensk Fotboll 官方 France-Sweden 頁父層核到標題與 metadata：Sweden 將於 6/30 23:00 瑞典時間、New Jersey 對 France；這是官方賽程/路線確認。",
         "Opta Analyst France-Sweden preview 父層核到 title/meta；搜尋片段列 France 90 分鐘勝率 75.1%，作 public probability context，不公開或替代 Soren 模型。",
         "The Standard 6/30 賽前隊訊把 Saliba（背部）與 Thuram（小腿）列為 France 傷疑，並預測 Lacroix 可能續搭 Upamecano；這與先前 Hien 缺陣形成兩邊中衛風險對照。",
-        "Football365 補充 Thuram 小腿疑慮被描述為 minor fatigue、Lindelöf 對 Japan 退場後稱是抽筋；Soren 先把它們放在 availability-watch，不寫成正式缺陣。"
+        "Football365 補充 Thuram 小腿疑慮被描述為 minor fatigue、Lindelöf 對 Japan 退場後稱是抽筋；Soren 先把它們放在 availability-watch，不寫成正式缺陣。",
+        "Sports Mole Sweden predicted-XI 頁父層標題明示 Isak Hien ruled out of tournament，並聚焦誰頂替中衛位置；本站列為 reported injury/lineup-watch，等官方賽前名單再升級。",
+        "BBC France-Sweden live centre 已開 last-32 stats / head-to-head / live text 入口；作比賽日追蹤，不把任何預測 XI 寫成正式先發。"
       ],
       "sources": [
         {
@@ -4304,6 +4342,22 @@
           "fetchedAt": "2026-06-30T00:45:41Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Mole Sweden predicted XI / Hien injury watch",
+          "url": "https://www.sportsmole.co.uk/football/sweden/world-cup-2026/predicted-lineups/who-replaces-hien-predicted-sweden-xi-vs-france_600279.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-30T03:07:58Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "BBC France-Sweden live centre",
+          "url": "https://www.bbc.com/sport/football/live/cpd326dj9xvt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-06-30T03:07:58Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -4326,7 +4380,8 @@
         "Comuniate 的 Mundial fantasy 頁列出 probable lineups、suspensions/injuries 與 TV/time 資訊；可作第二層 lineup-watch，但可信度低於官方/主流賽前記者會。",
         "Opta Analyst Mexico-Ecuador preview 給 Mexico 90 分鐘 46.4%、Ecuador 24.4% 的公開 supercomputer 參照；只作 public model/tactical context，不公開或替代本站預測公式。",
         "Goal Mexico-Ecuador preview 提供賽前脈絡、team news 與 probable XI，屬媒體 predicted/probable lineup 來源，不是官方名單。",
-        "Polymarket 公開頁在 16:21Z 抓到 Team to Advance 約 Mexico 63¢ / Ecuador 38¢，regulation moneyline 約 Mexico 44¢ / Draw 34¢ / Ecuador 24¢；只作 public odds/probability context 與紙上模擬參考。"
+        "Polymarket 公開頁在 16:21Z 抓到 Team to Advance 約 Mexico 63¢ / Ecuador 38¢，regulation moneyline 約 Mexico 44¢ / Draw 34¢ / Ecuador 24¢；只作 public odds/probability context 與紙上模擬參考。",
+        "FIFA Mexico-Ecuador 官方 preview 已開，確認 Mexico City Stadium 的 R32 脈絡與兩隊小組火力背景；這是官方 fixture/context，不是本站模型配方。"
       ],
       "sources": [
         {
@@ -4432,6 +4487,14 @@
           "fetchedAt": "2026-06-29T16:22:44Z",
           "claimType": "odds-reference",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Mexico-Ecuador official preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/mexico-ecuador-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-30T03:07:58Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -4449,7 +4512,8 @@
         "Betstamp/BettingPros 市場頁存在但未見穩定價格，不列成投注建議。",
         "Guardian 6/27 live blog 報導 Reece James 因腿筋傷勢至少缺席兩場，並列出 Quansah/Konsa/Spence/Chalobah 等右後衛替代選項。",
         "本地 worldcup.json 已把 m080 actualize 為 England vs Democratic Republic of the Congo；舊卡的 Senegal/K3 對手池敘事已更新。",
-        "BBC Sport England-opponent explainer 確認 England 將在 32 強面對 DR Congo，並提供對手背景/first knockout-stage run context；這是 opponent-scout，不是 England confirmed XI。"
+        "BBC Sport England-opponent explainer 確認 England 將在 32 強面對 DR Congo，並提供對手背景/first knockout-stage run context；這是 opponent-scout，不是 England confirmed XI。",
+        "England Football 官方 opponent profile 確認 England 7/1 Atlanta 對 DR Congo，並補 DR Congo 52 年後重返世界盃淘汰賽的背景；這比單純 bracket shell 更適合給首頁觀眾理解對手不是佔位符。"
       ],
       "sources": [
         {
@@ -4499,13 +4563,21 @@
           "fetchedAt": "2026-06-29T12:41:30Z",
           "claimType": "context/opponent-scout",
           "confidence": "high"
+        },
+        {
+          "label": "England Football DR Congo opponent profile",
+          "url": "https://www.englandfootball.com/articles/2026/Jun/28/dr-congo-in-profile-fifa-world-cup-20262806",
+          "sourceName": "England Football / The FA",
+          "fetchedAt": "2026-06-30T03:07:58Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
     },
     {
       "matchId": "m081",
-      "match": "USA vs 3B/E/F/I/J",
+      "match": "USA vs Bosnia & Herzegovina",
       "sourceType": "official bracket slot + updated media opponent + odds-reference",
       "title": "USA 這格已被多個公開頁面推向 Bosnia & Herzegovina；主場大熱可以相信，但別把 -185 讀成免踢。",
       "sorenTake": "FOX 的賽程頁已把原本 3B/E/F/I/J 更新成 United States vs Bosnia and Herzegovina，FOX odds story 也給出 USA moneyline -185、晉級 -460。這能拿來做 paper 市場參考，但 Soren 不開真錢局；只記錄市場怎麼看主隊壓力。",
@@ -4513,7 +4585,8 @@
         "FOX Sports m081 比賽頁標題已顯示 United States vs Bosnia and Herzegovina，時間為 2026-07-01 當地 / 2026-07-02T00:00Z。",
         "FOX odds story 明列 USA vs Bosnia and Herzegovina：moneyline USA -185、Bosnia +600、draw +280；to advance USA -460、Bosnia +340。",
         "SportsBettingDime 另列開盤 DraftKings 三向盤 USA -145、draw +260、BiH +425；兩來源方向一致但價格不同，適合標記 line-movement watch。",
-        "這是 paper-bankroll 參考，不是投注建議，也不代表 Soren 代下注。"
+        "這是 paper-bankroll 參考，不是投注建議，也不代表 Soren 代下注。",
+        "U.S. Soccer 官方賽前稿確認 USMNT 在 Round of 32 對 Bosnia and Herzegovina，並以 Balogun / Dest 媒體日語境包裝「crunch time」；屬 official team update，不是保證晉級。"
       ],
       "sources": [
         {
@@ -4547,6 +4620,14 @@
           "fetchedAt": "2026-06-27T06:24:32Z",
           "claimType": "reported/bracket-projection",
           "confidence": "medium-high"
+        },
+        {
+          "label": "U.S. Soccer USMNT crunch-time knockout update",
+          "url": "https://www.ussoccer.com/stories/2026/06/usmnt/vs-bosnia-herzegovina-round-of-32-knockout-stage-world-cup",
+          "sourceName": "U.S. Soccer",
+          "fetchedAt": "2026-06-30T03:07:58Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -4563,7 +4644,8 @@
         "目前未找到可完整核讀的高信心 Belgium 具體對手預測；The Athletic 等片段視為 paywalled/indexed lead，不提升成事實。",
         "市場參考頁存在但價格不可穩定讀取，暫不寫具體賠率。",
         "本地 worldcup.json 已把 m082 actualize 為 Belgium vs Senegal；舊卡的 3A/3E/3H/3I/3J 對手池敘事已更新。",
-        "Guardian Senegal-Iraq live report 記錄 Senegal 5-0 大勝脈絡；結合既有 ESPN 傷情報導，Mendy 缺陣仍是 Senegal 淘汰賽門將風險。"
+        "Guardian Senegal-Iraq live report 記錄 Senegal 5-0 大勝脈絡；結合既有 ESPN 傷情報導，Mendy 缺陣仍是 Senegal 淘汰賽門將風險。",
+        "FIFA Belgium-Senegal 官方 preview 已開，確認 Seattle R32 對戰並把兩隊慢熱後爆發列為敘事主軸；Senegal 門將風險與 Belgium 火力仍需等正式名單落地。"
       ],
       "sources": [
         {
@@ -4597,6 +4679,14 @@
           "fetchedAt": "2026-06-29T04:11:38Z",
           "claimType": "context/injury-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Belgium-Senegal official preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/belgium-senegal-live-stream-team-news-tickets-and-more",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-30T03:07:58Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
