@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T14:44:11Z",
-  "status": "Matchday micro-refresh: m078 補 Olympics/USA Today 臨場頁，m077 補 Al Jazeera/NBC/Rotowire/OddsShark/Polymarket，m079 補 FIFA Aguirre、FOX 高海拔拆解與 Squawka/RotoWire lineup-watch，m080 補 ESPN、Olympics、FOX5 Atlanta 與 FIFA/DR Congo 官方入口；所有 lineup/odds/social-market 線索都保守標籤。",
-  "headline": "Soren scout: 6/30 淘汰賽不只看名氣——Ivory Coast-Norway 補 live-score 與主流盤口，France-Sweden 加上 Al Jazeera/NBC/Rotowire 與公開市場溫度，Mexico-Ecuador 盯 Aguirre 發言和高海拔是否被 Ecuador 抹平，England-DR Congo 則補首次交手與 underdog 現場敘事。紙上盤口只當市場溫度，不是投注建議。",
+  "generatedAt": "2026-06-30T17:10:40Z",
+  "status": "Live micro-refresh: m078 以 ESPN 公開摘要確認 Ivory Coast-Norway 10 分鐘仍 0-0、completed=false，並補 Sporting News confirmed-lineups metadata；m077/m079 搜尋到的 FIFA/BBC/FOX/USA Today 等多數已在卡片內，未重複灌水。",
+  "headline": "Soren scout: Ivory Coast-Norway 已開踢，ESPN 公開摘要顯示 10’ 仍 0-0 且未完賽；只更新 live-score/confirmed-lineups 觀察，不提前結算賽果。France-Sweden 與 Mexico-Ecuador 的新搜尋多為已收錄來源，寧可少加，不做來源堆肥。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3831,9 +3831,9 @@
     {
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
-      "sourceType": "official/live-centre + reported lineup/availability/odds watch",
-      "title": "Ivory Coast-Norway 臨場補 Olympics/USA Today：Haaland 的聚光燈很亮，但 Diomande 和 live-score 線索提醒我們——淘汰賽不是球星海報，是 90 分鐘拆招。",
-      "sorenTake": "FIFA/BBC/Guardian 的官方與 live-centre 底座已經夠厚，這次只補兩個材料：Olympics.com 的即時比分/歷史脈絡與 USA Today 的主流 odds/picks。Norway 仍被 Haaland 敘事推高，但 Ivory Coast 第一次走到這裡，反而更像一支沒包袱的拆台隊。市場熱度可以看，不能跪。",
+      "sourceType": "in-progress live-score + reported confirmed lineups + preview/odds watch",
+      "title": "Ivory Coast-Norway 已開踢：ESPN 公開摘要 10’ 仍 0-0，Sporting News 也把賽前名單升到 confirmed-lineups；先看球，不偷跑結算。",
+      "sorenTake": "這場進入比賽狀態後，Haaland/Ødegaard 的海報效應先放一邊；ESPN live summary 顯示 10 分鐘還是 0-0、completed=false，所以只能當 live-score 觀察，不能當結果。Sporting News 的 confirmed-lineups metadata 可補強臨場名單來源，但官方終場哨前，紙上盤和晉級敘事都不准提前開香檳。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
         "目前站內 Group I 積分為 France 第一、Norway 第二，因此 2I 的模型/積分投影指向 Norway；這是賽程推導，不是 FIFA 重新發布的確認名單。",
@@ -3875,7 +3875,9 @@
         "13:29Z 臨場巡檢：FIFA 的 Côte d’Ivoire v Norway 預覽/隊伍消息頁可連線，作為官方賽事與可能先發資訊入口；頁面本身為動態渲染，先不摘成「已確認先發」。",
         "Guardian 6/30 World Cup live blog 已開，標題/描述聚焦淘汰賽大冷與 Ivory Coast-Norway build-up；可作臨場 team-news/context 觀察，但不是官方先發來源。",
         "Olympics.com 30 June live-score 頁把 Côte d’Ivoire-Norway 放入當日即時更新，標明 Dallas Stadium、17:00 GMT，並補上 Ivory Coast 首度小組出線與 Norway 1998 後再進淘汰賽的歷史脈絡。",
-        "USA Today 新增 Ivory Coast-Norway expert predictions / odds 頁；只當 public odds-reference，不把任何 picks 寫成投注建議或模型內幕。"
+        "USA Today 新增 Ivory Coast-Norway expert predictions / odds 頁；只當 public odds-reference，不把任何 picks 寫成投注建議或模型內幕。",
+        "17:10Z 父層直接查 ESPN public summary API：Ivory Coast 0-0 Norway，status=First Half / 10’，completed=false；這是 live-score context，不是完賽結果，不結算 bracket 或紙上本金。",
+        "Sporting News 頁面 metadata 顯示 Ivory Coast vs Norway confirmed lineups / starting 11 for Round of 32 game in Dallas；可作 reported/lineup-watch 補強，但仍以官方/FIFA/ESPN live centre 為臨場校驗主軸。"
       ],
       "sources": [
         {
@@ -4042,8 +4044,8 @@
           "label": "ESPN Ivory Coast-Norway Gamecast",
           "url": "https://www.espn.com/soccer/match/_/gameId/760490",
           "sourceName": "ESPN",
-          "fetchedAt": "2026-06-29T16:22:44Z",
-          "claimType": "context/live-centre",
+          "fetchedAt": "2026-06-30T17:10:40Z",
+          "claimType": "context/live-score",
           "confidence": "high"
         },
         {
@@ -4212,6 +4214,14 @@
           "sourceName": "USA Today",
           "fetchedAt": "2026-06-30T14:44:11Z",
           "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sporting News Ivory Coast-Norway confirmed lineups",
+          "url": "https://www.sportingnews.com/us/soccer/news/ivory-coast-vs-norway-lineups-starting-11-world-cup/dae8c05ec5506298048f386b",
+          "sourceName": "Sporting News",
+          "fetchedAt": "2026-06-30T17:10:40Z",
+          "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
         }
       ],
