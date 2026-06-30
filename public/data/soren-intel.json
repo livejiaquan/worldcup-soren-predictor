@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T08:48:43Z",
-  "status": "Matchday R32 micro-refresh: 補 m078 Norway 近開球 NRK/VG 隊訊、m077 Guardian/SI 戰術與預測 XI、m079 Mexico-Ecuador 雙方 predicted-XI；全部維持 reported/lineup-watch 或 context，不升級成官方首發。",
-  "headline": "Soren scout: 今天三場淘汰賽進臨場模式——Norway 的 Aursnes/Ryerson、France 的 Saliba/Deschamps、Mexico-Ecuador 的 probable XI 都補上，但正式先發還沒落地，別把預測稿當聖旨。",
+  "generatedAt": "2026-06-30T11:04:55Z",
+  "status": "Matchday R32 selective refresh: 補 m078 Goal/CBS/NFF 臨場戰術與紙上市場、m079 Covers 逆襲角度、m080 FA/Opta、m082 Opta、m081 U.S. Soccer 對手檔案；全部維持公開來源觀察，不升級成官方先發。",
+  "headline": "Soren scout: 同日三戰已很厚，這輪只補真正有料的公開訊號——Haaland 敘事、Ecuador 反客劇本、England/Belgium/USMNT 官方或 Opta 脈絡；紙上盤口只當溫度計，不是下注按鈕。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3832,7 +3832,7 @@
       "matchId": "m078",
       "match": "Ivory Coast vs Norway",
       "sourceType": "official/media preview + live-centre/lineup-watch + paper odds reference",
-      "title": "Ivory Coast-Norway 近開球補 NRK/VG：Aursnes 可能先坐板凳、Ryerson 還在傷情陰影裡；挪威熱門，但不是免檢通道。",
+      "title": "Ivory Coast-Norway 再補 Goal/CBS/NFF：Haaland 火力是主旋律，但 Aursnes/Ryerson 與市場大熱讓挪威不能裝成免檢隊。",
       "sorenTake": "NRK 的近開球線索把 Norway 中場/右路選擇拉到檯面上：Aursnes 可能從板凳開始，Patrick Berg 進入首發想像；VG 仍把 Ryerson 當傷情疑雲。這不等於官方 XI，但足夠提醒 Soren——Norway 如果右側保險絲不穩，Ivory Coast 的轉換速度會專挑那條縫鑽。",
       "signals": [
         "openfootball 賽程目前仍列 m078 為 Ivory Coast vs 2I，開球 2026-06-30 17:00Z，地點 Dallas/Arlington；官方括號未完全收口前不改成確認對陣。",
@@ -3868,7 +3868,10 @@
         "05:24Z 父層 URL 探針確認 FIFA Haaland 專題可連線；搜尋摘要稱 Haaland 預期重回對 Ivory Coast 的首發脈絡。這是官方敘事/lineup-watch，不是已公布的正式 XI。",
         "Sports Mole Ivory Coast predicted XI 專文聚焦 Yan Diomandé 與 Les Éléphants 如何排兵；這是 predicted XI，不是 official lineup。",
         "NRK 近開球報導稱 Fredrik Aursnes 可能先從替補席開始、Patrick Berg 獲得首發機會；這是挪威媒體 reported lineup-watch，不是 FIFA/球隊官方 XI。",
-        "VG 賽前訓練稿仍把 Julian Ryerson 放在傷情觀察脈絡，並提到 Solbakken 對他能否趕上 Ivory Coast 戰態度不樂觀；本站維持 reported availability-watch，不寫成正式缺陣。"
+        "VG 賽前訓練稿仍把 Julian Ryerson 放在傷情觀察脈絡，並提到 Solbakken 對他能否趕上 Ivory Coast 戰態度不樂觀；本站維持 reported availability-watch，不寫成正式缺陣。",
+        "Goal 30日賽前文把本場包成戰術/team-news 預覽，主軸仍是 Ivory Coast 如何處理 Haaland；屬媒體 tactical preview，不是官方陣容。",
+        "CBS/SportsLine 30日頁提供 Norway-Ivory Coast 賠率與專家 picks，僅作紙上市場溫度；Soren 不把它當下注建議。",
+        "Norges Fotballforbund 的 VM 2026 專頁列出 Norway 晉級脈絡與 6/30 對 Ivory Coast 賽程，是官方隊伍/賽程背景補強。"
       ],
       "sources": [
         {
@@ -4166,6 +4169,22 @@
           "fetchedAt": "2026-06-30T08:48:43Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Goal Ivory Coast-Norway preview",
+          "url": "https://www.goal.com/en-us/news/ivory-coast-norway-world-cup-preview/bltc20cf346c3521000",
+          "sourceName": "Goal.com",
+          "claimType": "reported/tactical",
+          "confidence": "medium-high",
+          "fetchedAt": "2026-06-30T11:04:55Z"
+        },
+        {
+          "label": "NFF World Cup 2026 hub",
+          "url": "https://www.fotball.no/Mesterskap/",
+          "sourceName": "Norges Fotballforbund",
+          "claimType": "confirmed/team-context",
+          "confidence": "high",
+          "fetchedAt": "2026-06-30T11:04:55Z"
         }
       ],
       "confidence": "high"
@@ -4465,7 +4484,7 @@
       "matchId": "m079",
       "match": "Mexico vs Ecuador",
       "sourceType": "official preview + live-centre + predicted-lineup watch + odds-reference",
-      "title": "Mexico-Ecuador 補雙方 predicted XI：El Tri 主場劇本很香，但 Ecuador 的 Caicedo/Pacho 骨架不是來當背景板。",
+      "title": "Mexico-Ecuador 再補 Covers：主場糖衣很甜，但 Ecuador 壓低節奏、拆掉氣氛的劇本值得放大。",
       "sorenTake": "Sports Mole 把兩邊可能 XI 攤開：Mexico 仍看 Jiménez/Quiñones 與中場雙保險，Ecuador 則是 Pacho-Hincapié、Caicedo、Valencia 的硬骨架。這只是預測陣容，但足夠提醒主場敘事別太油——Mexico City 會很吵，Ecuador 不一定會很乖。",
       "signals": [
         "FOX Sports 比賽頁標題可核對 Mexico vs 3C/3E/3F/3H/3I 與 2026-06-30 賽事資訊，是公開賽程入口。",
@@ -4488,7 +4507,8 @@
         "Sports Illustrated Mexico-Ecuador preview 把 Mexico 主場夢幻開局與 Ecuador 危險性放在同一頁；屬 reported preview/lineup-watch，不是確認先發。",
         "bet365 News Mexico-Ecuador 預覽列出 odds 與 predicted lineups；僅作 paper-market 與 lineup-watch 參照，不作投注建議。",
         "Sports Mole Mexico predicted-XI 專文列出 Rangel；Sánchez、Montes、Vásquez、Gallardo；Lira、Romo；Gutiérrez、Alvarado；Jiménez、Quiñones 的可能首發；此為媒體預測，不是官方 XI。",
-        "Sports Mole Ecuador predicted-XI 專文列出 Galíndez；Franco、Ordóñez、Pacho、Hincapié；Yeboah、Caicedo、Vite、Angulo；Plata、Valencia 的可能首發；此為 lineup-watch，正式名單仍等賽前。"
+        "Sports Mole Ecuador predicted-XI 專文列出 Galíndez；Franco、Ordóñez、Pacho、Hincapié；Yeboah、Caicedo、Vite、Angulo；Plata、Valencia 的可能首發；此為 lineup-watch，正式名單仍等賽前。",
+        "Covers 30日盤口/預測文主張 Ecuador 有機會抵消 Mexico 主場優勢並晉級；這是公開市場與戰術角度，不是 Soren 的下注指令。"
       ],
       "sources": [
         {
@@ -4666,6 +4686,14 @@
           "fetchedAt": "2026-06-30T08:48:43Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "Covers Mexico-Ecuador odds and upset angle",
+          "url": "https://www.covers.com/world-cup/mexico-vs-ecuador-prediction-picks-odds-tuesday-6-30-2026",
+          "sourceName": "Covers",
+          "claimType": "odds-reference/context",
+          "confidence": "medium-high",
+          "fetchedAt": "2026-06-30T11:04:55Z"
         }
       ],
       "confidence": "medium-high"
@@ -4674,7 +4702,7 @@
       "matchId": "m080",
       "match": "England vs Democratic Republic of the Congo",
       "sourceType": "official fixture/team context + opponent scout + reported lineup/live-centre + paper market watch",
-      "title": "England-DR Congo 補 BBC 對手拆解與 Sports Mole 隊訊：英格蘭大熱沒錯，但剛果的體能/深度弱點要用球踢出來，不是靠標題嚇出來。",
+      "title": "England-DR Congo 補 FA 日報與 Opta：英格蘭大熱，但首次交手與剛果淘汰賽新鮮感，會考驗 Tuchel 的耐心。",
       "sorenTake": "England Football 的官方入口讓賽事框架夠清楚；BBC 補上 DR Congo 的首次淘汰賽背景與陣容/體能疑問，Sports Mole 則給 possible lineups 與 team-news 角度。Soren 仍把英格蘭列為強方，但這種比賽最怕熱門隊先把自己演成巡迴表演。",
       "signals": [
         "England Football 公開列出 England 若以 1L 出線，將在 Atlanta 對 3E/H/I/J/K。",
@@ -4694,7 +4722,9 @@
         "FotMob England-DR Congo live hub 確認 2026-07-01 16:00 UTC 並提供 live score / predicted lineups / H2H；先列 reported/live-centre，正式 XI 仍等官方。",
         "Polymarket England-DR Congo 市場頁只作紙上公眾預期參照；不作下注建議，也不代表 Soren 模型底層邏輯。",
         "BBC Sport 對手專題確認 England 32 強面對 DR Congo，並點出剛果多名常規主力 2025-26 俱樂部上場時間不足，這是 conditioning/depth watch，不是正式傷停。",
-        "Sports Mole England-DR Congo preview 提供 team news / possible lineups；先列 reported lineup-watch，正式 XI 仍等 FIFA/球隊。"
+        "Sports Mole England-DR Congo preview 提供 team news / possible lineups；先列 reported lineup-watch，正式 XI 仍等 FIFA/球隊。",
+        "England Football 6/30 daily briefing 提供英格蘭隊內當日行程/備戰脈絡，屬官方 camp context，不等於首發。",
+        "The Analyst / Opta 賽前模型與預覽指出 England-DR Congo 是首次交手，提供數據視角補足 matchup 背景；公開概率只作脈絡，不公開底層模型。"
       ],
       "sources": [
         {
@@ -4816,6 +4846,22 @@
           "fetchedAt": "2026-06-30T07:40:27Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "England Football daily briefing",
+          "url": "https://www.englandfootball.com/articles/2026/Jun/30/england-men-world-cup-2026-daily-briefing",
+          "sourceName": "England Football / The FA",
+          "claimType": "confirmed/team-context",
+          "confidence": "high",
+          "fetchedAt": "2026-06-30T11:04:55Z"
+        },
+        {
+          "label": "Opta Analyst England-DR Congo preview",
+          "url": "https://theanalyst.com/articles/england-vs-dr-congo-prediction-world-cup-2026-match-preview",
+          "sourceName": "The Analyst / Opta",
+          "claimType": "reported/tactical",
+          "confidence": "high",
+          "fetchedAt": "2026-06-30T11:04:55Z"
         }
       ],
       "confidence": "high"
@@ -4824,7 +4870,7 @@
       "matchId": "m081",
       "match": "USA vs Bosnia & Herzegovina",
       "sourceType": "official fixture/team/federation context + reported pressure/lineup/odds watch",
-      "title": "USA-Bosnia 補雙方官方備戰：USMNT 主場很熱，Bosnia 足協訓練也在加溫；這不是給美國隊排隊拍照的淘汰賽。",
+      "title": "USA-Bosnia 補 U.S. Soccer 對手檔案：主場聲浪會很吵，但 Bosnia 不是來觀光，這是美國隊淘汰賽膽量測試。",
       "sorenTake": "U.S. Soccer 另外確認 Bosnia 對戰、Santa Clara 場地與淘汰賽路線；Bosnia 足協也放出 Salt Lake City 訓練動態。主場、市場與牌面都偏 USA，但 Soren 最討厭「熱門隊以為氣氛能代替防守」——Bosnia 的冷門路徑至少是真有備戰痕跡。",
       "signals": [
         "FOX Sports m081 比賽頁標題已顯示 United States vs Bosnia and Herzegovina，時間為 2026-07-01 當地 / 2026-07-02T00:00Z。",
@@ -4838,7 +4884,8 @@
         "CBS/SportsLine 賠率文提供 USA-Bosnia 市場與總進球參考；本站只用作 paper simulation odds-reference，不輸出下注建議。",
         "U.S. Soccer 對戰公告確認 USMNT 以 D 組第一進 32 強，將在 Santa Clara 對 Bosnia and Herzegovina。",
         "Bosnia and Herzegovina 足協報導球隊在 Salt Lake City 完成面向 USA 的訓練，屬官方備戰訊號；不等於公開先發。",
-        "FIFA USA-Bosnia 資訊頁已可連線作官方賽事入口，但本次 probe 未讀到完整頁面文字；先只作 match-info lead，不拿來硬寫隊訊。"
+        "FIFA USA-Bosnia 資訊頁已可連線作官方賽事入口，但本次 probe 未讀到完整頁面文字；先只作 match-info lead，不拿來硬寫隊訊。",
+        "U.S. Soccer 6/30 opponent profile 梳理 Bosnia 近況、歷史與 Santa Clara 淘汰賽背景；屬官方對手檔案/賽前脈絡，不是官方先發。"
       ],
       "sources": [
         {
@@ -4936,6 +4983,14 @@
           "fetchedAt": "2026-06-30T07:40:27Z",
           "claimType": "confirmed/context",
           "confidence": "medium"
+        },
+        {
+          "label": "U.S. Soccer Bosnia opponent profile",
+          "url": "https://www.ussoccer.com/stories/2026/06/usmnt/opponent-profile-bosnia-herzegovina-san-francisco-bay-area-california-world-cup-preview",
+          "sourceName": "U.S. Soccer",
+          "claimType": "confirmed/context",
+          "confidence": "high",
+          "fetchedAt": "2026-06-30T11:04:55Z"
         }
       ],
       "confidence": "high"
@@ -4944,7 +4999,7 @@
       "matchId": "m082",
       "match": "Belgium vs Senegal",
       "sourceType": "official fixture/federation context + Belgium-side report + reported tactical/lineup watch",
-      "title": "Belgium-Senegal 補 Belga 與 Sports Mole：比利時路線清楚了，但 Debast 傷勢與 Senegal 反擊牙口還在，這場不是控球率自助餐。",
+      "title": "Belgium-Senegal 補 Opta：比利時仍是紙面熱門，但 Senegal 的反擊和淘汰賽混亂值，專治「控球率自信」。",
       "sorenTake": "Belga 從比利時側確認 Seattle 對 Senegal 與後續路線，Sports Mole 補 Zeno Debast 仍有腿傷疑問但已恢復訓練的 team-news watch。Belgium 紙面更整齊，但 Senegal 的速度與身體對抗會專挑慢熱隊下刀。",
       "signals": [
         "FOX Sports m082 頁面標題顯示 Belgium vs 3A/3E/3H/3I/3J，可作公開賽程與對手池來源。",
@@ -4958,7 +5013,8 @@
         "FotMob Belgium-Senegal live hub 標示 2026-07-01 20:00 UTC，提供 live results、predicted lineups、H2H 與球員評分入口；仍不是 confirmed XI。",
         "Goal.com Belgium-Senegal preview 明示會談 tactics/team news；可作戰術與隊訊觀察，但先發正式名單仍等 FIFA/球隊。",
         "Belga News Agency 確認 Belgium 7 月 1 日在 Seattle 對 Senegal，並點出勝方將面對 USA/Bosnia 勝者；這補上比利時側 bracket context。",
-        "Sports Mole Belgium-Senegal preview 提到 Zeno Debast 腿傷仍存疑、但已參與本屆首次訓練；這是 reported availability-watch，不是官方傷停結論。"
+        "Sports Mole Belgium-Senegal preview 提到 Zeno Debast 腿傷仍存疑、但已參與本屆首次訓練；這是 reported availability-watch，不是官方傷停結論。",
+        "The Analyst / Opta 6/30 賽前預覽提供 Belgium-Senegal 的數據化勝率與 matchup 脈絡；這是公開模型/戰術參照，不是本站底層配方。"
       ],
       "sources": [
         {
@@ -5040,6 +5096,14 @@
           "fetchedAt": "2026-06-30T07:40:27Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "Opta Analyst Belgium-Senegal preview",
+          "url": "https://theanalyst.com/articles/belgium-vs-senegal-prediction-world-cup-2026-match-preview",
+          "sourceName": "The Analyst / Opta",
+          "claimType": "reported/tactical",
+          "confidence": "high",
+          "fetchedAt": "2026-06-30T11:04:55Z"
         }
       ],
       "confidence": "medium-high"
