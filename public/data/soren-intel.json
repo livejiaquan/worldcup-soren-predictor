@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T11:04:55Z",
-  "status": "Matchday R32 selective refresh: 補 m078 Goal/CBS/NFF 臨場戰術與紙上市場、m079 Covers 逆襲角度、m080 FA/Opta、m082 Opta、m081 U.S. Soccer 對手檔案；全部維持公開來源觀察，不升級成官方先發。",
-  "headline": "Soren scout: 同日三戰已很厚，這輪只補真正有料的公開訊號——Haaland 敘事、Ecuador 反客劇本、England/Belgium/USMNT 官方或 Opta 脈絡；紙上盤口只當溫度計，不是下注按鈕。",
+  "generatedAt": "2026-06-30T12:19:31Z",
+  "status": "Sparse-card enrichment: 補 m088 Socceroos/FIFA 傷情與官方賽事入口、m086 AFA/Guardian 阿根廷與 Cape Verde 脈絡、m087 Ghana FA 官方對戰與 Queiroz 賽後心態；避開已很厚的同日三戰重複洗版。",
+  "headline": "Soren scout: 同日戰卡已夠厚，這輪把手電筒照向 7/3 薄卡——Salah 傷情、阿根廷對 Cape Verde 的童話壓力、Ghana 對 Colombia 的官方對戰口徑；全部是公開來源觀察，不是先發官宣。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5423,14 +5423,18 @@
     {
       "matchId": "m088",
       "match": "Australia vs Egypt",
-      "sourceType": "reported bracket actualization + schedule context",
-      "title": "Australia 的 2G 盲盒被 ESPN 推到 Egypt；袋鼠軍團可以先準備北非硬仗，但別把媒體頁當 FIFA 官宣。",
-      "sorenTake": "Al Jazeera 的賽程仍寫 Australia vs 2G，ESPN 賽前頁與 bracket 已把這格呈現為 Australia vs Egypt。這足夠讓 Soren 開始追蹤 Egypt 的低位防守與轉換威脅，但在 FIFA 官方頁未核到前，本站只標成媒體 bracket actualization，不把「2G=Egypt」升級成官方事實。",
+      "sourceType": "official match hub + reported injury watch + bracket context",
+      "title": "Australia-Egypt 不再只是 ESPN 空殼：Socceroos 官方入口落地，FIFA 把 Salah 傷情拉成最大警報。",
+      "sorenTake": "Australia 的官方 match centre / 收看資訊已把 Dallas 這場釘牢；Egypt 這邊 FIFA 的 Salah injury worries 讓比賽重心很清楚——如果 Salah 不是滿血，這支埃及的上限會被直接打折。Soren 先把它當 availability watch，不把「擔心」偷換成「缺陣」。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
         "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
         "ESPN bracket 頁可見 Australia 與 Egypt 同格；目前作公開 bracket context，不替代 FIFA 官方確認。",
-        "Soren 的首頁短評保留 compact 版本：對手趨勢明朗，但 claimType 仍停在 reported/bracket-actualization。"
+        "Soren 的首頁短評保留 compact 版本：對手趨勢明朗，但 claimType 仍停在 reported/bracket-actualization。",
+        "Socceroos 官方 match centre 已列 Australia vs Egypt、FIFA World Cup 2026 Round of 32、Dallas Stadium 與 2026-07-04（澳洲時間）賽事資訊；這是球隊官方賽事入口，不是第三方 bracket 猜測。",
+        "Socceroos 官方 how-to-watch 頁確認 Australia 對 Egypt 的 Round of 32 觀賽資訊與澳洲時間 7/4 04:00 AEST；可作球隊官方賽程/轉播脈絡。",
+        "FIFA 搜尋與頁面 URL 指向 Egypt injury worries / Mohamed Salah 主題；父層探針可連線但 metadata 空白，所以只列為官方傷情觀察入口，不寫成已確認缺陣。",
+        "Soren 判讀：這張薄卡真正要追的是 Salah 的可用性與 Egypt 是否被迫降低轉換速度；Australia 的任務是把比賽拖進身體對抗與定位球，而不是跟 Salah 打對攻名片戰。"
       ],
       "sources": [
         {
@@ -5456,6 +5460,30 @@
           "fetchedAt": "2026-06-27T07:02:45Z",
           "claimType": "reported/bracket-context",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Socceroos Australia-Egypt match centre",
+          "url": "https://socceroos.com.au/match/australia-v-egypt-fifa-world-cuptm-2026-04-07-2026/22278824",
+          "sourceName": "Socceroos",
+          "fetchedAt": "2026-06-30T12:19:31Z",
+          "claimType": "confirmed/official-team-match-hub",
+          "confidence": "high"
+        },
+        {
+          "label": "Socceroos Australia-Egypt how-to-watch",
+          "url": "https://socceroos.com.au/news/how-watch-australia-vs-egypt-fifa-world-cup-2026tm-round-32",
+          "sourceName": "Socceroos",
+          "fetchedAt": "2026-06-30T12:19:31Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Egypt Salah injury worries",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/egypt-injury-worries-australia-mohamed-salah",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-30T12:19:31Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -5463,14 +5491,18 @@
     {
       "matchId": "m086",
       "match": "Argentina vs Cape Verde",
-      "sourceType": "reported bracket actualization + odds-reference watch",
-      "title": "Argentina–Cape Verde 已被多個公開賽程頁面寫實；童話很漂亮，但淘汰賽碰到阿根廷不是旅遊明信片。",
-      "sorenTake": "Al Jazeera、FOX 與 ESPN bracket 都把 1J vs 2H 寫成 Argentina vs Cape Verde，時間落在 22:00 UTC、Miami Stadium。FOX odds 頁只能當 paper-simulation 的市場溫度，不是下注建議；Soren 先看 Cape Verde 的低位生存路線，而不是幫大熱門提前辦晉級派對。",
+      "sourceType": "official team update + qualification context + bracket context",
+      "title": "Argentina-Cape Verde 補 AFA 與 Guardian：衛冕軍滿血敘事很香，但童話隊不是明信片背景板。",
+      "sorenTake": "AFA 自己把「已在想 Cape Verde」寫進 Jordan 戰報，又另開文確認 16 強對手；Guardian 則把 Cape Verde 0-0 Saudi 後進淘汰賽的脈絡補上。這場紙面差距巨大，但 Soren 不會把 Cape Verde 寫成旅遊景點——能從小組活下來，就有資格被當成對手。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Argentina vs Cape Verde，22:00 GMT，Miami Stadium。",
         "FOX live score 頁已把此格呈現為 Argentina vs Cape Verde，並標示 July 03, 2026 賽事。",
         "FOX odds 頁也以 Argentina vs Cape Verde 命名；本站只拿來做紙上市場參考，不提供真金流向或投注操作。",
-        "ESPN bracket 可見 Argentina / Cape Verde；多家媒體 bracket actualization 已一致，但正式優先級仍低於 FIFA/球隊官方頁。"
+        "ESPN bracket 可見 Argentina / Cape Verde；多家媒體 bracket actualization 已一致，但正式優先級仍低於 FIFA/球隊官方頁。",
+        "AFA 賽後文寫 Argentina 3-1 Jordan、Messi 狀態火熱，並標題點出已在想 Cape Verde；屬阿根廷官方狀態與對手聚焦。",
+        "AFA 另文確認 Argentina 的 16 強對手為 Cape Verde，並把 Cape Verde 描述為小組賽驚奇之一；這是官方對戰實名化，不再只是 FOX/ESPN 賽程殼。",
+        "Guardian Cape Verde-Saudi Arabia live report 指出 Cape Verde 0-0 後取得小組第二晉級；提供對手晉級方式與低比分韌性脈絡。",
+        "Soren 判讀：Argentina 的天花板不用多講，真正的 upset path 是 Cape Verde 把節奏鎖低、拖到定位球與焦躁；童話要續命，先得把比賽變難看。"
       ],
       "sources": [
         {
@@ -5504,21 +5536,46 @@
           "fetchedAt": "2026-06-27T07:02:45Z",
           "claimType": "reported/bracket-context",
           "confidence": "medium-high"
+        },
+        {
+          "label": "AFA Argentina beats Jordan and thinks of Cape Verde",
+          "url": "https://www.afa.com.ar/es/posts/invicta-contundente-y-con-messi-encendido-argentina-vencio-3-1-a-jordania-y-ya-piensa-en-cabo-verde",
+          "sourceName": "Asociación del Fútbol Argentino",
+          "fetchedAt": "2026-06-30T12:19:31Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA Cape Verde opponent confirmation",
+          "url": "https://www.afa.com.ar/es/posts/argentina-ya-tiene-rival-cabo-verde-espera-en-los-16avos-de-final",
+          "sourceName": "Asociación del Fútbol Argentino",
+          "fetchedAt": "2026-06-30T12:19:31Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "Guardian Cape Verde reach last 32 live report",
+          "url": "https://www.theguardian.com/football/live/2026/jun/26/cape-verde-v-saudi-arabia-world-cup-2026-live",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-30T12:19:31Z",
+          "claimType": "context/qualification-report",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
     },
     {
       "matchId": "m087",
-      "match": "1K vs 3D/3E/3I/3J/3L",
-      "sourceType": "official bracket slot watch + placeholder schedule context",
-      "title": "1K 這格還是第三名盲盒；Kansas City 的門牌有了，對手名字還在積分表裡打架。",
-      "sorenTake": "Al Jazeera 與 FOX 都還把這場保留為 1K vs 3D/3E/3I/3J/3L。可以記時間、場地與可能路徑，但不能腦補成具體對陣；這種格子最容易被第三名排序最後一腳改劇本。Soren 先盯 bracket，不演算成假確定。",
+      "match": "Colombia vs Ghana",
+      "sourceType": "official team update + coach quote + ticket/logistics context",
+      "title": "Colombia-Ghana 薄卡補上 Ghana FA：對手與地點已實名，Queiroz 的「win or learn」是漂亮話也是警訊。",
+      "sorenTake": "Ghana FA 已把 Colombia vs Ghana、Kansas City、Ghana 以第三名驚險過關寫清楚；Queiroz 把 Croatia 敗仗包成「we win or we learn」。Soren 的翻譯：學費已經繳了，淘汰賽再犯同樣錯就不是學習，是重修。",
       "signals": [
-        "Al Jazeera Round of 32 賽程列出 1K vs 3DEIJL，Kansas City Stadium，顯示對手仍是第三名排序池。",
-        "FOX boxscore/live page 仍使用 1K vs 3D/3E/3I/3J/3L placeholder，未 actualize 成具體隊名。",
-        "FOX title 以美國本地 July 03 顯示；repo kickoffUtc 仍應保留 2026-07-04T01:30:00Z，不把本地日期誤寫成 UTC。",
-        "這張卡只做 bracket watch：不寫 odds、不猜隊、不把第三名池包裝成確認對陣。"
+        "Ghana FA 官方對戰文確認 Colombia 以 Group K 頭名對 Ghana，地點為 Kansas City Stadium；Ghana 以 Group L 第三名/淨勝球脈絡晉級。",
+        "Ghana FA ticket note 再次確認 Colombia vs Ghana 這張 Round of 32 對戰與 Kansas City 賽事安排；可作官方 logistics 脈絡，不涉及競技預測。",
+        "Ghana FA Queiroz quote 把 Croatia 2-1 敗仗 framing 為「we win or we learn」，並強調真正的 World Championship 從淘汰賽開始；屬教練心態/反彈敘事。",
+        "早前 Al Jazeera / FOX 仍以 1K vs 第三名池呈現；本次只因 Ghana FA 可驗證官方頁才把卡片升級為 Colombia-Ghana，不把其他未核來源硬升級。",
+        "Soren 判讀：Colombia 小組第一的穩定性對上 Ghana 的生存劇本，關鍵不是誰故事更熱血，而是 Ghana 能不能把學到的防守細節真的交出作業。"
       ],
       "sources": [
         {
@@ -5536,9 +5593,33 @@
           "fetchedAt": "2026-06-27T07:02:45Z",
           "claimType": "context/bracket-placeholder",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Ghana FA Colombia-Ghana Round of 32 confirmation",
+          "url": "https://www.ghanafa.org/ghana-battle-colombia-in-round-of-32-knockout-clash-set-for-kansas-city",
+          "sourceName": "Ghana Football Association",
+          "fetchedAt": "2026-06-30T12:19:31Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "Ghana FA Colombia-Ghana ticket/logistics note",
+          "url": "https://www.ghanafa.org/ticket-prices-released-for-ghana-vs-colombia-round-of-32-clash-in-kansas-city",
+          "sourceName": "Ghana Football Association",
+          "fetchedAt": "2026-06-30T12:19:31Z",
+          "claimType": "confirmed/logistics-context",
+          "confidence": "high"
+        },
+        {
+          "label": "Ghana FA Carlos Queiroz win-or-learn quote",
+          "url": "https://www.ghanafa.org/we-win-or-we-learn-carlos-queiroz",
+          "sourceName": "Ghana Football Association",
+          "fetchedAt": "2026-06-30T12:19:31Z",
+          "claimType": "reported/coach-quote",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     }
   ]
 }
