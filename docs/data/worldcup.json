@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T03:55:51.857Z",
+  "generatedAt": "2026-06-30T03:57:48.938Z",
   "source": {
-    "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
+    "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
     "note": "Public openfootball data; predictions are deterministic research/entertainment estimates, not betting advice."
   },
@@ -2108,7 +2108,7 @@
         1,
         1
       ],
-      "source": "openfootball/worldcup.json + override: ESPN public FIFA World Cup summary API",
+      "source": "openfootball/worldcup.json",
       "shootoutScore": [
         2,
         3

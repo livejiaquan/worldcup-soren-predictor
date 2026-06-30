@@ -1,22 +1,4 @@
 {
   "note": "Source-backed final-score overrides used when upstream openfootball data lags. The official-results verifier cron may append new entries; remove entries after upstream catches up if desired.",
-  "overrides": [
-    {
-      "date": "2026-06-29",
-      "team1": "Netherlands",
-      "team2": "Morocco",
-      "score": [
-        1,
-        1
-      ],
-      "shootoutScore": [
-        2,
-        3
-      ],
-      "winner": "Morocco",
-      "source": "ESPN public FIFA World Cup summary API",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760488",
-      "fetchedAt": "2026-06-30T03:55:17.932Z"
-    }
-  ]
+  "overrides": []
 }
