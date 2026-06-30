@@ -85,7 +85,7 @@ function IntelBrief({ intel, matches = [], onSelect }) {
     <div className="intel-compact-list">{prioritized.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row">
       <span>{item.match}</span>
       <b>{item.title}</b>
-      <em>{item.confidence} · 看細節</em>
+      <em>{item.confidence} · {item.sources?.length || 0} 個來源 · 看細節</em>
     </button>)}</div>
     <details className="source-drawer compact-sources"><summary>來源與可驗證訊號</summary>{prioritized.map((item) => <div key={item.matchId} className="source-block"><b>{item.match}</b><ul>{item.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{item.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></div>)}</details>
     <p className="intel-note compact-note">多來源情報只服務公開觀點，不公開我的完整下注/預測底層邏輯。</p>
