@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T06:31:39Z",
-  "status": "Matchday R32 scout refresh: 補 England-DR Congo、Belgium-Senegal、USA-Bosnia 的官方/媒體臨場脈絡，並給 Mexico-Ecuador、Ivory Coast-Norway 加上非重複 lineup-watch；所有預測 XI 仍只標 reported。",
-  "headline": "Soren scout: 淘汰賽前夜不只看大名氣——England 有官方賽前聲量、Senegal 官網確認晉級氣勢，USA-Bosnia 已進抗壓敘事；預測陣容還是預測，別把 SEO 標題當裁判哨。",
+  "generatedAt": "2026-06-30T07:40:27Z",
+  "status": "Next-day knockout scout refresh: 補 USA-Bosnia 的雙方官方備戰、England-DR Congo 的 BBC/Sports Mole 對手與陣容觀察、Belgium-Senegal 的 Belga/Sports Mole 隊訊；預測 XI 仍只作 reported lineup-watch。",
+  "headline": "Soren scout: 明天三場淘汰賽補上更硬的對手側訊號——Bosnia 有足協訓練動態，DR Congo 不是英格蘭的背景板，Senegal 也不是比利時控球秀的道具。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -4619,9 +4619,9 @@
     {
       "matchId": "m080",
       "match": "England vs Democratic Republic of the Congo",
-      "sourceType": "official fixture/team context + reported lineup/live-centre + paper market watch",
-      "title": "England-DR Congo 補上 FA 官方 match centre 與 Madueke 賽前聲量；英格蘭是大熱，但剛果不是來幫英媒寫童話結尾。",
-      "sorenTake": "England Football 的 match centre、對手 profile 與 Madueke 記者會把這場推進正式備戰模式；FotMob live hub 可作臨場陣容入口。Soren 仍把英格蘭列為紙面強方，但 DR Congo 第一次淘汰賽的未知性，會專門懲罰「覺得名字贏了就能收工」的球隊。",
+      "sourceType": "official fixture/team context + opponent scout + reported lineup/live-centre + paper market watch",
+      "title": "England-DR Congo 補 BBC 對手拆解與 Sports Mole 隊訊：英格蘭大熱沒錯，但剛果的體能/深度弱點要用球踢出來，不是靠標題嚇出來。",
+      "sorenTake": "England Football 的官方入口讓賽事框架夠清楚；BBC 補上 DR Congo 的首次淘汰賽背景與陣容/體能疑問，Sports Mole 則給 possible lineups 與 team-news 角度。Soren 仍把英格蘭列為強方，但這種比賽最怕熱門隊先把自己演成巡迴表演。",
       "signals": [
         "England Football 公開列出 England 若以 1L 出線，將在 Atlanta 對 3E/H/I/J/K。",
         "FOX Sports m080 賽程頁可核對 1L vs 3E/3H/3I/3J/3K 與 2026-07-01T16:00Z 窗口。",
@@ -4638,7 +4638,9 @@
         "England Football 對手 profile 重申 DR Congo 是 7 月 1 日 Atlanta 對手，並把這場包裝成兩隊首次交手的淘汰賽；可作官方背景來源。",
         "Madueke 官方訪談強調自己準備在淘汰賽提供 big moment；這是球員狀態/角色敘事，不是首發承諾。",
         "FotMob England-DR Congo live hub 確認 2026-07-01 16:00 UTC 並提供 live score / predicted lineups / H2H；先列 reported/live-centre，正式 XI 仍等官方。",
-        "Polymarket England-DR Congo 市場頁只作紙上公眾預期參照；不作下注建議，也不代表 Soren 模型底層邏輯。"
+        "Polymarket England-DR Congo 市場頁只作紙上公眾預期參照；不作下注建議，也不代表 Soren 模型底層邏輯。",
+        "BBC Sport 對手專題確認 England 32 強面對 DR Congo，並點出剛果多名常規主力 2025-26 俱樂部上場時間不足，這是 conditioning/depth watch，不是正式傷停。",
+        "Sports Mole England-DR Congo preview 提供 team news / possible lineups；先列 reported lineup-watch，正式 XI 仍等 FIFA/球隊。"
       ],
       "sources": [
         {
@@ -4752,6 +4754,14 @@
           "fetchedAt": "2026-06-30T06:31:39Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole England-DR Congo preview",
+          "url": "https://www.sportsmole.co.uk/football/england/world-cup-2026/preview/england-vs-dr-congo-prediction-team-news-lineups_600329.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-30T07:40:27Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -4759,9 +4769,9 @@
     {
       "matchId": "m081",
       "match": "USA vs Bosnia & Herzegovina",
-      "sourceType": "official fixture/team context + reported pressure/odds watch",
-      "title": "USA-Bosnia 補 U.S. Soccer 淘汰賽指南、Tim Ream 抗壓脈絡與 Guardian/CBS 外部視角；主場熱度很大，但點球和冷門路徑已經在敲門。",
-      "sorenTake": "U.S. Soccer 官方指南把 Bosnia & Herzegovina 對手身分、Santa Clara 場地與淘汰賽路線講清楚；Tim Ream 的「calm」敘事和 Guardian 的 surprises 框架，提醒這不是主場巡遊。CBS 賠率只能當紙上市場溫度——美國大熱，但淘汰賽從不替熱門隊寫保證書。",
+      "sourceType": "official fixture/team/federation context + reported pressure/lineup/odds watch",
+      "title": "USA-Bosnia 補雙方官方備戰：USMNT 主場很熱，Bosnia 足協訓練也在加溫；這不是給美國隊排隊拍照的淘汰賽。",
+      "sorenTake": "U.S. Soccer 另外確認 Bosnia 對戰、Santa Clara 場地與淘汰賽路線；Bosnia 足協也放出 Salt Lake City 訓練動態。主場、市場與牌面都偏 USA，但 Soren 最討厭「熱門隊以為氣氛能代替防守」——Bosnia 的冷門路徑至少是真有備戰痕跡。",
       "signals": [
         "FOX Sports m081 比賽頁標題已顯示 United States vs Bosnia and Herzegovina，時間為 2026-07-01 當地 / 2026-07-02T00:00Z。",
         "FOX odds story 明列 USA vs Bosnia and Herzegovina：moneyline USA -185、Bosnia +600、draw +280；to advance USA -460、Bosnia +340。",
@@ -4771,7 +4781,10 @@
         "U.S. Soccer 淘汰賽指南確認 USMNT 將在 San Francisco Bay Area 對 Bosnia & Herzegovina，並把本屆 32 隊淘汰賽路線整理為官方背景。",
         "U.S. Soccer Tim Ream feature 強調老將 calm / leadership 與淘汰賽抗壓；這是更衣室與心理層面的公開訊號，不是陣容鎖定。",
         "Guardian 賽前文稱 USA 準備面對 Bosnia 的 surprises；這補上外部媒體對冷門路徑的提醒。",
-        "CBS/SportsLine 賠率文提供 USA-Bosnia 市場與總進球參考；本站只用作 paper simulation odds-reference，不輸出下注建議。"
+        "CBS/SportsLine 賠率文提供 USA-Bosnia 市場與總進球參考；本站只用作 paper simulation odds-reference，不輸出下注建議。",
+        "U.S. Soccer 對戰公告確認 USMNT 以 D 組第一進 32 強，將在 Santa Clara 對 Bosnia and Herzegovina。",
+        "Bosnia and Herzegovina 足協報導球隊在 Salt Lake City 完成面向 USA 的訓練，屬官方備戰訊號；不等於公開先發。",
+        "FIFA USA-Bosnia 資訊頁已可連線作官方賽事入口，但本次 probe 未讀到完整頁面文字；先只作 match-info lead，不拿來硬寫隊訊。"
       ],
       "sources": [
         {
@@ -4845,6 +4858,30 @@
           "fetchedAt": "2026-06-30T06:31:39Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "U.S. Soccer Bosnia matchup announcement",
+          "url": "https://www.ussoccer.com/stories/2026/06/usmnt/opponent-round-of-32-world-cup-bosnia-and-herzegovina",
+          "sourceName": "U.S. Soccer",
+          "fetchedAt": "2026-06-30T07:40:27Z",
+          "claimType": "confirmed/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Bosnia FA training update",
+          "url": "https://www.nfsbih.ba/en/news/football-m/a-national-team-m/fifa-wc-2026/focus-on-the-united-states-bih-completes-another-training-session-in-salt-lake-city/",
+          "sourceName": "Football Federation of Bosnia and Herzegovina",
+          "fetchedAt": "2026-06-30T07:40:27Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA USA-Bosnia match information",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-bosnia-and-herzegovina-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-06-30T07:40:27Z",
+          "claimType": "confirmed/context",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -4852,9 +4889,9 @@
     {
       "matchId": "m082",
       "match": "Belgium vs Senegal",
-      "sourceType": "official fixture/federation context + reported tactical/live-centre watch",
-      "title": "Belgium-Senegal 補 FSF 官方晉級文與 FotMob/Goal 臨場脈絡；Belgium 有控球刀，Senegal 有反擊牙，門將缺口仍是火警鈴。",
-      "sorenTake": "FIFA 已給官方預覽，Senegal 足協也確認晉級十六分之一決賽；FotMob 與 Goal 則補上 live hub / tactical-team-news 入口。Belgium 紙面更完整，但如果把 Senegal 當成只會慶祝的對手，De Bruyne 也得先替後防擦汗。",
+      "sourceType": "official fixture/federation context + Belgium-side report + reported tactical/lineup watch",
+      "title": "Belgium-Senegal 補 Belga 與 Sports Mole：比利時路線清楚了，但 Debast 傷勢與 Senegal 反擊牙口還在，這場不是控球率自助餐。",
+      "sorenTake": "Belga 從比利時側確認 Seattle 對 Senegal 與後續路線，Sports Mole 補 Zeno Debast 仍有腿傷疑問但已恢復訓練的 team-news watch。Belgium 紙面更整齊，但 Senegal 的速度與身體對抗會專挑慢熱隊下刀。",
       "signals": [
         "FOX Sports m082 頁面標題顯示 Belgium vs 3A/3E/3H/3I/3J，可作公開賽程與對手池來源。",
         "Al Jazeera explainer 仍保守列為 1G vs 3A/E/H/I/J，與第三名尚未完全收口一致。",
@@ -4865,7 +4902,9 @@
         "FIFA Belgium-Senegal 官方 preview 已開，確認 Seattle R32 對戰並把兩隊慢熱後爆發列為敘事主軸；Senegal 門將風險與 Belgium 火力仍需等正式名單落地。",
         "Senegal 足協官網確認 Senegal 取得 2026 世界盃十六分之一決賽席位；這補強 Belgium-Senegal 對戰的官方晉級脈絡。",
         "FotMob Belgium-Senegal live hub 標示 2026-07-01 20:00 UTC，提供 live results、predicted lineups、H2H 與球員評分入口；仍不是 confirmed XI。",
-        "Goal.com Belgium-Senegal preview 明示會談 tactics/team news；可作戰術與隊訊觀察，但先發正式名單仍等 FIFA/球隊。"
+        "Goal.com Belgium-Senegal preview 明示會談 tactics/team news；可作戰術與隊訊觀察，但先發正式名單仍等 FIFA/球隊。",
+        "Belga News Agency 確認 Belgium 7 月 1 日在 Seattle 對 Senegal，並點出勝方將面對 USA/Bosnia 勝者；這補上比利時側 bracket context。",
+        "Sports Mole Belgium-Senegal preview 提到 Zeno Debast 腿傷仍存疑、但已參與本屆首次訓練；這是 reported availability-watch，不是官方傷停結論。"
       ],
       "sources": [
         {
@@ -4930,6 +4969,22 @@
           "sourceName": "Goal.com",
           "fetchedAt": "2026-06-30T06:31:39Z",
           "claimType": "reported/tactical",
+          "confidence": "medium"
+        },
+        {
+          "label": "Belga Belgium-Senegal fixture context",
+          "url": "https://www.belganewsagency.eu/2026-world-cup-belgium-to-face-senegal-in-round-of-32",
+          "sourceName": "Belga News Agency",
+          "fetchedAt": "2026-06-30T07:40:27Z",
+          "claimType": "reported/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole Belgium-Senegal preview",
+          "url": "https://www.sportsmole.co.uk/football/belgium/world-cup-2026/preview/belgium-vs-senegal-prediction-team-news-lineups_600358.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-06-30T07:40:27Z",
+          "claimType": "reported/availability-watch",
           "confidence": "medium"
         }
       ],
