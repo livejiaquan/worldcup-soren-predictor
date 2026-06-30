@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T22:02:30Z",
-  "status": "Live-score micro refresh: ESPN public scoreboard 已核到 France-Sweden 半場 France 1-0 Sweden（completed=false），只作 live-score intel，不結算結果、籤表或 paper bankroll；Mexico-Ecuador 仍是賽前/臨場入口。",
-  "headline": "Soren scout: France 1-0 Sweden at HT——這不是終場哨，只是法國暫時把門關上；Sweden 還有 45 分鐘撬鎖，Mexico-Ecuador 進入倒數。",
+  "generatedAt": "2026-06-30T23:06:22Z",
+  "status": "Postmatch correction: France-Sweden 已由 ESPN public scoreboard 與 openfootball 標成 FT，Soren 把原本 HT live-score 卡改成賽後結論；Mexico-Ecuador 仍維持賽前/臨場入口，等待官方先發。",
+  "headline": "Soren scout: France 3-0 Sweden——半場門縫變成鐵閘；France 過關，Mexico-Ecuador 進入倒數，Live ≠ Final 但 FT 就要收帳。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -4250,9 +4250,9 @@
     {
       "matchId": "m077",
       "match": "France vs Sweden",
-      "sourceType": "official match centre + live-score halftime snapshot + live centre + reported lineups/tactical + paper odds watch",
-      "title": "France 1-0 Sweden 半場：ESPN public scoreboard 標 HT / completed=false；法國先領先，但 Soren 不把中場哨當終場哨。",
-      "sorenTake": "ESPN public scoreboard 在 22:00Z 前後顯示 France 1-0 Sweden、狀態 Halftime、completed=false。這是高信心的即時比分快照，不是晉級宣判。法國暫時把比賽拖進自己熟悉的劇本；瑞典如果下半場不能把定位球與反擊效率拉高，就會被慢慢悶死。",
+      "sourceType": "confirmed final score + postmatch correction + live-centre archive",
+      "title": "France 3-0 Sweden 終場：ESPN public scoreboard 已標 FT / completed=true；半場不是終場，但這次法國下半場把門焊死。",
+      "sorenTake": "上一版只敢說 France 1-0 HT，這版收帳：ESPN public scoreboard 顯示 France 3-0 Sweden、FT、completed=true，openfootball 本地資料也已是 3-0。Soren 的修正很簡單——直播快照不能結算，但終場哨響後就別裝矜持。瑞典下半場沒把定位球與反擊效率拉回來，法國把比賽從「可追」磨成「請下車」。",
       "signals": [
         "openfootball 賽程目前列 m077 為 1I vs 3C/D/F/G/H，2026-06-30 21:00Z 於 New York/New Jersey 開球；本站不把未定第三名寫成確認對手。",
         "站內 Group I 完賽積分顯示 France 第一，因此 1I 指向 France；但對手端仍取決於最佳第三名組合與剩餘小組結果。",
@@ -4295,7 +4295,8 @@
         "FIFA match centre 已可連線作為 France-Sweden 官方比分/陣容入口；父層 metadata 未讀到完整頁內文字，所以只標 confirmed match-centre，不把先發寫成已確認。",
         "Sky Sports 已開 France-Sweden live blog，標題明示 score、live updates、team news；這是臨場資訊入口，不是正式結果。",
         "22:00Z 親核 ESPN public scoreboard：event 760492（Sweden at France）狀態為 STATUS_HALFTIME / HT，completed=false，比分 France 1-0 Sweden。此訊號只作 live-score snapshot，不結算淘汰、籤表或紙上 bankroll。",
-        "BBC、Guardian、RTE 均有可連線的 France-Sweden live text/live updates 入口；它們是臨場追蹤來源，不替代正式終場確認。"
+        "BBC、Guardian、RTE 均有可連線的 France-Sweden live text/live updates 入口；它們是臨場追蹤來源，不替代正式終場確認。",
+        "2026-06-30T23:06:22Z 親核 ESPN public scoreboard：event 760492（Sweden at France）狀態為 FT / completed=true，比分 France 3-0 Sweden；本地 openfootball worldcup.json 同步標為 finished 3-0。此訊號可作 postmatch/final-score correction，但不新增任何未核實先發或社群留言。"
       ],
       "sources": [
         {
@@ -4649,6 +4650,14 @@
           "fetchedAt": "2026-06-30T22:02:30Z",
           "claimType": "context/live-centre",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN public scoreboard France-Sweden FT snapshot",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260630",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-06-30T23:06:22Z",
+          "claimType": "confirmed/final-score",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
