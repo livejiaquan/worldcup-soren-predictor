@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T00:58:30Z",
+  "generatedAt": "2026-06-30T00:54:20Z",
   "status": "Late lineup + matchday scout refresh: Netherlands-Morocco 補 BBC/ESPN/101GG 確認先發與 ESPN odds；France-Sweden 補 France 傷疑；Ivory Coast-Norway 補 Football365 傷停/停賽脈絡。",
   "headline": "Soren scout: Netherlands-Morocco 開球前先發落地，Brobbey 繼續頂前、Depay 仍板凳；Morocco 召回 Hakimi/Mazraoui/Ounahi，這不是模型散步，是淘汰賽互相拆台。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
@@ -3618,7 +3618,7 @@
           "label": "BBC Netherlands-Morocco live text lineups",
           "url": "https://www.bbc.com/sport/football/live/c8023x0d3g9t",
           "sourceName": "BBC Sport",
-          "fetchedAt": "2026-06-30T00:58:30Z",
+          "fetchedAt": "2026-06-30T00:54:20Z",
           "claimType": "confirmed/lineup-watch",
           "confidence": "high"
         },
@@ -3770,7 +3770,7 @@
           "label": "ESPN Netherlands-Morocco Gamecast lineups",
           "url": "https://www.espn.com/soccer/match/_/gameId/760488/marrocos-holanda",
           "sourceName": "ESPN",
-          "fetchedAt": "2026-06-30T00:58:30Z",
+          "fetchedAt": "2026-06-30T00:54:20Z",
           "claimType": "confirmed/lineup-watch",
           "confidence": "high"
         },
@@ -3778,7 +3778,7 @@
           "label": "The Standard Netherlands XI team news",
           "url": "https://www.standard.co.uk/sport/football/netherlands-xi-vs-morocco-starting-lineup-confirmed-team-news-injury-latest-world-cup-2026-today-b1288024.html",
           "sourceName": "The Standard",
-          "fetchedAt": "2026-06-30T00:58:30Z",
+          "fetchedAt": "2026-06-30T00:54:20Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
         },
@@ -3786,7 +3786,7 @@
           "label": "101 Great Goals confirmed lineups",
           "url": "https://www.101greatgoals.com/football/world-cup-news/netherlands-v-morocco-confirmed-line-ups-team-news/",
           "sourceName": "101 Great Goals",
-          "fetchedAt": "2026-06-30T00:58:30Z",
+          "fetchedAt": "2026-06-30T00:54:20Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
         },
@@ -3794,7 +3794,7 @@
           "label": "ESPN Netherlands-Morocco odds reference",
           "url": "https://www.espn.com/soccer/odds/_/gameId/760488",
           "sourceName": "ESPN Odds",
-          "fetchedAt": "2026-06-30T00:58:30Z",
+          "fetchedAt": "2026-06-30T00:54:20Z",
           "claimType": "odds-reference",
           "confidence": "medium-high"
         }
