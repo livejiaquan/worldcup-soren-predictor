@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T20:55:04Z",
-  "status": "Postmatch correction: Ivory Coast-Norway 已由 ESPN public summary 與本地 openfootball 狀態核成 FT 1-2；m078 從 live-score 卡改為賽後拆解。France-Sweden / Mexico-Ecuador 仍維持臨場入口與賽前情報，不提前結算。",
-  "headline": "Soren scout: Norway 2-1 把 Ivory Coast 踢出局——75 分鐘的 1-1 只是中場幻覺，FT 才是刀落下的聲音；France-Sweden、Mexico-Ecuador 繼續看 live centre，別把預測當終場哨。",
+  "generatedAt": "2026-06-30T22:02:30Z",
+  "status": "Live-score micro refresh: ESPN public scoreboard 已核到 France-Sweden 半場 France 1-0 Sweden（completed=false），只作 live-score intel，不結算結果、籤表或 paper bankroll；Mexico-Ecuador 仍是賽前/臨場入口。",
+  "headline": "Soren scout: France 1-0 Sweden at HT——這不是終場哨，只是法國暫時把門關上；Sweden 還有 45 分鐘撬鎖，Mexico-Ecuador 進入倒數。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -4250,9 +4250,9 @@
     {
       "matchId": "m077",
       "match": "France vs Sweden",
-      "sourceType": "official match centre + live centre + reported lineups/tactical + paper odds watch",
-      "title": "France-Sweden 臨場入口補齊 FIFA/Sky：大熱法國仍要過瑞典這關，賽前情報夠多，但終場哨前都只是刀口上的推理。",
-      "sorenTake": "FIFA match centre 與 Sky live blog 補上後，這張卡現在有官方入口也有媒體即時頁；但沒有可靠來源顯示已開踢或有正式結果。France 紙面很凶，Sweden 的活路仍是把節奏拖慢、把 Mbappé 劇本弄髒。",
+      "sourceType": "official match centre + live-score halftime snapshot + live centre + reported lineups/tactical + paper odds watch",
+      "title": "France 1-0 Sweden 半場：ESPN public scoreboard 標 HT / completed=false；法國先領先，但 Soren 不把中場哨當終場哨。",
+      "sorenTake": "ESPN public scoreboard 在 22:00Z 前後顯示 France 1-0 Sweden、狀態 Halftime、completed=false。這是高信心的即時比分快照，不是晉級宣判。法國暫時把比賽拖進自己熟悉的劇本；瑞典如果下半場不能把定位球與反擊效率拉高，就會被慢慢悶死。",
       "signals": [
         "openfootball 賽程目前列 m077 為 1I vs 3C/D/F/G/H，2026-06-30 21:00Z 於 New York/New Jersey 開球；本站不把未定第三名寫成確認對手。",
         "站內 Group I 完賽積分顯示 France 第一，因此 1I 指向 France；但對手端仍取決於最佳第三名組合與剩餘小組結果。",
@@ -4293,7 +4293,9 @@
         "RotoWire 提供 France-Sweden predicted lineups / team news / tactical analysis；保守標為 reported lineup-watch。",
         "OddsShark 與 Polymarket 只作公開 odds / prediction-market 溫度計；紙上模擬參考，不是投注建議，也不代表 Soren 下注。",
         "FIFA match centre 已可連線作為 France-Sweden 官方比分/陣容入口；父層 metadata 未讀到完整頁內文字，所以只標 confirmed match-centre，不把先發寫成已確認。",
-        "Sky Sports 已開 France-Sweden live blog，標題明示 score、live updates、team news；這是臨場資訊入口，不是正式結果。"
+        "Sky Sports 已開 France-Sweden live blog，標題明示 score、live updates、team news；這是臨場資訊入口，不是正式結果。",
+        "22:00Z 親核 ESPN public scoreboard：event 760492（Sweden at France）狀態為 STATUS_HALFTIME / HT，completed=false，比分 France 1-0 Sweden。此訊號只作 live-score snapshot，不結算淘汰、籤表或紙上 bankroll。",
+        "BBC、Guardian、RTE 均有可連線的 France-Sweden live text/live updates 入口；它們是臨場追蹤來源，不替代正式終場確認。"
       ],
       "sources": [
         {
@@ -4621,6 +4623,30 @@
           "url": "https://www.skysports.com/football/live-blog/11095/13558860/france-vs-sweden-live-world-cup-2026-last-32-fixture-score-live-updates-and-team-news",
           "sourceName": "Sky Sports",
           "fetchedAt": "2026-06-30T19:45:53Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN public scoreboard France-Sweden HT snapshot",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260630",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-06-30T22:02:30Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
+        },
+        {
+          "label": "Guardian France-Sweden live blog",
+          "url": "https://www.theguardian.com/football/live/2026/jun/30/france-v-sweden-world-cup-2026-last-32-live",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-06-30T22:02:30Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "RTE France-Sweden live updates",
+          "url": "https://www.rte.ie/sport/world-cup-2026/2026/0630/1581159-world-cup-2026-france-v-sweden-updates/",
+          "sourceName": "RTE Sport",
+          "fetchedAt": "2026-06-30T22:02:30Z",
           "claimType": "context/live-centre",
           "confidence": "medium-high"
         }
