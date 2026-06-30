@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-30T18:43:44.681Z",
+  "generatedAt": "2026-06-30T19:06:26.979Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,8 +7,8 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 76,
-    "scheduledMatches": 28,
+    "finishedMatches": 77,
+    "scheduledMatches": 27,
     "nextWindow": [
       "m077",
       "m079",
@@ -351,13 +351,13 @@
       {
         "team": "Ivory Coast",
         "group": "Group E",
-        "played": 3,
+        "played": 4,
         "won": 2,
         "drawn": 0,
-        "lost": 1,
-        "goalsFor": 4,
-        "goalsAgainst": 2,
-        "goalDiff": 2,
+        "lost": 2,
+        "goalsFor": 5,
+        "goalsAgainst": 4,
+        "goalDiff": 1,
         "points": 6
       },
       {
@@ -551,14 +551,14 @@
       {
         "team": "Norway",
         "group": "Group I",
-        "played": 3,
-        "won": 2,
+        "played": 4,
+        "won": 3,
         "drawn": 0,
         "lost": 1,
-        "goalsFor": 8,
-        "goalsAgainst": 7,
-        "goalDiff": 1,
-        "points": 6
+        "goalsFor": 10,
+        "goalsAgainst": 8,
+        "goalDiff": 2,
+        "points": 9
       },
       {
         "team": "Senegal",
@@ -2126,8 +2126,11 @@
       "team1": "Ivory Coast",
       "team2": "Norway",
       "venue": "Dallas (Arlington)",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        2
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -2949,42 +2952,42 @@
     },
     "m026": {
       "pick": "Ivory Coast",
-      "confidence": 0.47562390558523693,
-      "tag": "這場有妖氣",
+      "confidence": 0.3934991704768627,
+      "tag": "膠著到煩",
       "probabilities": {
-        "home": 0.44593278164453,
-        "draw": 0.2730851252704231,
-        "away": 0.2809820930850469
+        "home": 0.3849348240077224,
+        "draw": 0.2777100545908903,
+        "away": 0.33735512140138724
       },
       "expectedGoals": [
-        1.36,
-        1.02
+        1.24,
+        1.14
       ],
       "score": "1-1",
       "commentary": {
-        "headline": "我這場保守站 Ivory Coast，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Ivory Coast，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "0.9",
+            "value": "2.9",
             "note": "誰也別裝大哥"
           },
           {
             "label": "進球味",
-            "value": "1.36 : 1.02",
+            "value": "1.24 : 1.14",
             "note": "最像 1-1"
           },
           {
             "label": "翻車率",
-            "value": "28%",
+            "value": "34%",
             "note": "Ivory Coast 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Ivory Coast 75.6；Ecuador 76.6",
-        "預期進球 1.36 : 1.02，先用 Poisson 把嘴砲壓成數字",
+        "底牌分：Ivory Coast 73.7；Ecuador 76.6",
+        "預期進球 1.24 : 1.14，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
@@ -3236,30 +3239,30 @@
     },
     "m050": {
       "pick": "Norway",
-      "confidence": 0.8089933620302969,
+      "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.09432886427069788,
-        "draw": 0.2056943920013169,
-        "away": 0.6999767437279852
+        "home": 0.0867487110234603,
+        "draw": 0.20025863139303354,
+        "away": 0.7129926575835062
       },
       "expectedGoals": [
-        0.51,
-        1.87
+        0.49,
+        1.89
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 Norway，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Norway，但平局還有 20%；別急著開香檳，足球最會打臉。",
         "story": "Norway 底牌比較硬；Iraq 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "23.1",
+            "value": "24.4",
             "note": "Norway 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.51 : 1.87",
+            "value": "0.49 : 1.89",
             "note": "最像 0-1"
           },
           {
@@ -3270,9 +3273,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Iraq 54.9；Norway 78.0",
-        "預期進球 0.51 : 1.87，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 23.1 分，我暫時站 Norway"
+        "底牌分：Iraq 54.9；Norway 79.3",
+        "預期進球 0.49 : 1.89，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 24.4 分，我暫時站 Norway"
       ]
     },
     "m055": {
@@ -3892,43 +3895,43 @@
     },
     "m027": {
       "pick": "Germany",
-      "confidence": 0.7654876236180447,
+      "confidence": 0.7914743123706359,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6662426971023785,
-        "draw": 0.21887530866005525,
-        "away": 0.1148819942375663
+        "home": 0.6863707364709205,
+        "draw": 0.21116728205657784,
+        "away": 0.10246198147250163
       },
       "expectedGoals": [
-        1.8,
-        0.58
+        1.84,
+        0.54
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Germany，但平局還有 22%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Germany，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "story": "Germany 底牌比較硬；Ivory Coast 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "16.9",
+            "value": "18.9",
             "note": "Germany 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.80 : 0.58",
+            "value": "1.84 : 0.54",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "11%",
+            "value": "10%",
             "note": "Ivory Coast 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Germany 92.6；Ivory Coast 75.6",
-        "預期進球 1.80 : 0.58，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 16.9 分，我暫時站 Germany"
+        "底牌分：Germany 92.6；Ivory Coast 73.7",
+        "預期進球 1.84 : 0.54，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 18.9 分，我暫時站 Germany"
       ]
     },
     "m028": {
@@ -4260,43 +4263,43 @@
       ]
     },
     "m052": {
-      "pick": "Senegal",
-      "confidence": 0.408014067191348,
+      "pick": "Norway",
+      "confidence": 0.3854988343609536,
       "tag": "膠著到煩",
       "probabilities": {
-        "home": 0.32707367426675316,
-        "draw": 0.27725909814056593,
-        "away": 0.39566722759268097
+        "home": 0.37902848064947053,
+        "draw": 0.27788944820929845,
+        "away": 0.34308207114123107
       },
       "expectedGoals": [
-        1.12,
-        1.26
+        1.23,
+        1.15
       ],
       "score": "1-1",
       "commentary": {
-        "headline": "我這場保守站 Senegal，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Norway，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "1.0",
+            "value": "0.3",
             "note": "誰也別裝大哥"
           },
           {
             "label": "進球味",
-            "value": "1.12 : 1.26",
+            "value": "1.23 : 1.15",
             "note": "最像 1-1"
           },
           {
             "label": "翻車率",
-            "value": "33%",
-            "note": "Norway 的偷雞窗口"
+            "value": "34%",
+            "note": "Senegal 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Norway 78.0；Senegal 79.0",
-        "預期進球 1.12 : 1.26，先用 Poisson 把嘴砲壓成數字",
+        "底牌分：Norway 79.3；Senegal 79.0",
+        "預期進球 1.23 : 1.15，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
@@ -4753,43 +4756,43 @@
     },
     "m029": {
       "pick": "Ivory Coast",
-      "confidence": 0.7806674558526473,
+      "confidence": 0.7544793379571263,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.10757574872133244,
-        "draw": 0.2144318015985937,
-        "away": 0.6779924496800739
+        "home": 0.12026964922801626,
+        "draw": 0.22199486363794196,
+        "away": 0.6577354871340417
       },
       "expectedGoals": [
-        0.56,
-        1.82
+        0.6,
+        1.78
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 Ivory Coast，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Ivory Coast，但平局還有 22%；別急著開香檳，足球最會打臉。",
         "story": "Ivory Coast 底牌比較硬；Curaçao 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "20.9",
+            "value": "19.0",
             "note": "Ivory Coast 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.56 : 1.82",
+            "value": "0.60 : 1.78",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "11%",
+            "value": "12%",
             "note": "Curaçao 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Curaçao 54.7；Ivory Coast 75.6",
-        "預期進球 0.56 : 1.82，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 20.9 分，我暫時站 Ivory Coast"
+        "底牌分：Curaçao 54.7；Ivory Coast 73.7",
+        "預期進球 0.60 : 1.78，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 19.0 分，我暫時站 Ivory Coast"
       ]
     },
     "m030": {
@@ -5002,40 +5005,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.07811056223656344,
-        "draw": 0.19363072585405852,
-        "away": 0.728258711909378
+        "home": 0.08534248083783721,
+        "draw": 0.19921228094174032,
+        "away": 0.7154452382204225
       },
       "expectedGoals": [
-        0.45,
-        1.93
+        0.48,
+        1.9
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 France，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 France，但平局還有 20%；別急著開香檳，足球最會打臉。",
         "story": "France 底牌比較硬；Norway 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "26.0",
+            "value": "24.7",
             "note": "France 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.45 : 1.93",
+            "value": "0.48 : 1.90",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "8%",
+            "value": "9%",
             "note": "Norway 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Norway 78.0；France 104.0",
-        "預期進球 0.45 : 1.93，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 26.0 分，我暫時站 France"
+        "底牌分：Norway 79.3；France 104.0",
+        "預期進球 0.48 : 1.90，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 24.7 分，我暫時站 France"
       ]
     },
     "m054": {
@@ -5654,44 +5657,44 @@
       ]
     },
     "m078": {
-      "pick": "Ivory Coast",
-      "confidence": 0.40130725963983227,
-      "tag": "膠著到煩",
+      "pick": "Norway",
+      "confidence": 0.4742756064374536,
+      "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.3907055259225274,
-        "draw": 0.27748746880663894,
-        "away": 0.33180700527083373
+        "home": 0.2818729612505942,
+        "draw": 0.2732009883574054,
+        "away": 0.44492605039200045
       },
       "expectedGoals": [
-        1.25,
-        1.13
+        1.02,
+        1.36
       ],
       "score": "1-1",
       "commentary": {
-        "headline": "我這場保守站 Ivory Coast，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場保守站 Norway，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "story": "Norway 底牌比較硬；Ivory Coast 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "2.4",
-            "note": "誰也別裝大哥"
+            "value": "5.6",
+            "note": "Norway 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.25 : 1.13",
+            "value": "1.02 : 1.36",
             "note": "最像 1-1"
           },
           {
             "label": "翻車率",
-            "value": "33%",
+            "value": "28%",
             "note": "Ivory Coast 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Ivory Coast 75.6；Norway 78.0",
-        "預期進球 1.25 : 1.13，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：Ivory Coast 73.7；Norway 79.3",
+        "預期進球 1.02 : 1.36，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 5.6 分，我暫時站 Norway"
       ]
     },
     "m077": {
@@ -6781,26 +6784,26 @@
   },
   "leaderboard": [
     {
+      "id": "rating",
+      "name": "Rating Baseline",
+      "desc": "只看隊伍強度先驗",
+      "points": 65,
+      "correct": 49,
+      "exact": 8,
+      "total": 77,
+      "rank": 1,
+      "accuracy": 0.6363636363636364
+    },
+    {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
       "points": 63,
       "correct": 45,
       "exact": 8,
-      "total": 76,
-      "rank": 1,
-      "accuracy": 0.5921052631578947
-    },
-    {
-      "id": "rating",
-      "name": "Rating Baseline",
-      "desc": "只看隊伍強度先驗",
-      "points": 62,
-      "correct": 48,
-      "exact": 7,
-      "total": 76,
+      "total": 77,
       "rank": 2,
-      "accuracy": 0.631578947368421
+      "accuracy": 0.5844155844155844
     },
     {
       "id": "draw",
@@ -6809,9 +6812,9 @@
       "points": 44,
       "correct": 22,
       "exact": 11,
-      "total": 76,
+      "total": 77,
       "rank": 3,
-      "accuracy": 0.2894736842105263
+      "accuracy": 0.2857142857142857
     }
   ],
   "paperBankroll": {
@@ -6819,36 +6822,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 152.15,
-    "openStake": 32.11,
-    "totalValue": 152.15,
-    "roi": 0.522,
+    "bankroll": 158.65,
+    "openStake": 39.11,
+    "totalValue": 158.65,
+    "roi": 0.587,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m041",
-        "kickoffUtc": "2026-06-27T03:00:00.000Z",
-        "stage": "小組 G · Matchday 16",
-        "team1": "Egypt",
-        "team2": "Iran",
-        "pick": "Egypt",
-        "outcome": "home",
-        "stake": 4.32,
-        "decimalOdds": 2.62,
-        "edge": 0.196,
-        "modelProbability": 0.457,
-        "marketProxyProbability": 0.358,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-06-27T02:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 Egypt，但平局還有 27%；別急著開香檳，足球最會打臉。",
-        "status": "lost",
-        "score": [
-          1,
-          1
-        ],
-        "profit": -4.32
-      },
       {
         "matchId": "m042",
         "kickoffUtc": "2026-06-27T03:00:00.000Z",
@@ -7112,28 +7091,33 @@
           1
         ],
         "profit": -7.57
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m078",
         "kickoffUtc": "2026-06-30T17:00:00.000Z",
         "stage": "Round of 32",
         "team1": "Ivory Coast",
         "team2": "Norway",
-        "pick": "Ivory Coast",
-        "outcome": "home",
-        "stake": 1,
-        "decimalOdds": 2.62,
-        "edge": 0.024,
-        "modelProbability": 0.391,
-        "marketProxyProbability": 0.358,
+        "pick": "Norway",
+        "outcome": "away",
+        "stake": 3.94,
+        "decimalOdds": 2.65,
+        "edge": 0.179,
+        "modelProbability": 0.445,
+        "marketProxyProbability": 0.355,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-06-30T16:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 Ivory Coast，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "reason": "我這場保守站 Norway，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          1,
+          2
+        ],
+        "profit": 6.5
+      }
+    ],
+    "pending": [
       {
         "matchId": "m077",
         "kickoffUtc": "2026-06-30T21:00:00.000Z",
@@ -7209,6 +7193,25 @@
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場中等站 Belgium，但平局還有 25%；別急著開香檳，足球最會打臉。",
         "status": "pending"
+      },
+      {
+        "matchId": "m081",
+        "kickoffUtc": "2026-07-02T00:00:00.000Z",
+        "stage": "Round of 32",
+        "team1": "USA",
+        "team2": "Bosnia & Herzegovina",
+        "pick": "USA",
+        "outcome": "home",
+        "stake": 8,
+        "decimalOdds": 2.24,
+        "edge": 0.448,
+        "modelProbability": 0.647,
+        "marketProxyProbability": 0.42,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-01T23:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場偏明確站 USA，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
       }
     ],
     "watchlist": [
@@ -7270,25 +7273,6 @@
         "status": "watchlist"
       },
       {
-        "matchId": "m081",
-        "kickoffUtc": "2026-07-02T00:00:00.000Z",
-        "stage": "Round of 32",
-        "team1": "USA",
-        "team2": "Bosnia & Herzegovina",
-        "pick": "USA",
-        "outcome": "home",
-        "stake": 8,
-        "decimalOdds": 2.24,
-        "edge": 0.448,
-        "modelProbability": 0.647,
-        "marketProxyProbability": 0.42,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-01T23:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 USA，但平局還有 23%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
         "matchId": "m087",
         "kickoffUtc": "2026-07-04T01:30:00.000Z",
         "stage": "Round of 32",
@@ -7305,6 +7289,25 @@
         "lockedAtUtc": "2026-07-04T00:30:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場中等站 Colombia，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m090",
+        "kickoffUtc": "2026-07-04T17:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "Canada",
+        "team2": "W75",
+        "pick": "Canada",
+        "outcome": "home",
+        "stake": 8,
+        "decimalOdds": 2.38,
+        "edge": 0.402,
+        "modelProbability": 0.589,
+        "marketProxyProbability": 0.395,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-04T16:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場中等站 Canada，但平局還有 24%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
