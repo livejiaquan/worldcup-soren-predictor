@@ -51,8 +51,12 @@ function normalizeMatch(match, index) {
   const overrideKey = `${match.date}|${canonicalTeam(match.team1)}|${canonicalTeam(match.team2)}`
   const override = RESULT_OVERRIDES.get(overrideKey)
   const ft = override?.score || match.score?.ft?.map(Number)
-  const shootoutScore = override?.shootoutScore || match.score?.penalties?.map(Number) || null
-  const winner = override?.winner || (match.winner ? canonicalTeam(match.winner) : null)
+  const rawShootout = match.score?.penalties || match.score?.p
+  const shootoutScore = override?.shootoutScore || rawShootout?.map(Number) || null
+  const shootoutWinner = Array.isArray(shootoutScore) && shootoutScore.length === 2 && shootoutScore[0] !== shootoutScore[1]
+    ? (shootoutScore[0] > shootoutScore[1] ? canonicalTeam(match.team1) : canonicalTeam(match.team2))
+    : null
+  const winner = override?.winner || (match.winner ? canonicalTeam(match.winner) : null) || shootoutWinner
   const hasScore = Array.isArray(ft) && ft.length === 2 && ft.every(Number.isFinite)
   const normalized = { id: `m${String(index + 1).padStart(3, '0')}`, round: match.round || '', stage: stageLabel(match), group: match.group || null, date: match.date, time: match.time || '', kickoffUtc: parseKickoff(match.date, match.time), team1: canonicalTeam(match.team1), team2: canonicalTeam(match.team2), venue: match.ground || '待定', status: hasScore ? 'finished' : 'scheduled', score: hasScore ? ft : null, source: override ? `openfootball/worldcup.json + override: ${override.source}` : 'openfootball/worldcup.json' }
   if (hasScore && shootoutScore) normalized.shootoutScore = shootoutScore

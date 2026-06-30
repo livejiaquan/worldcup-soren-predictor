@@ -1,22 +1,4 @@
 {
   "note": "Source-backed final-score overrides used when upstream openfootball data lags. The official-results verifier cron may append new entries; remove entries after upstream catches up if desired.",
-  "overrides": [
-    {
-      "date": "2026-06-29",
-      "team1": "Germany",
-      "team2": "Paraguay",
-      "score": [
-        1,
-        1
-      ],
-      "shootoutScore": [
-        3,
-        4
-      ],
-      "winner": "Paraguay",
-      "source": "ESPN public FIFA World Cup summary endpoint reports Final Score - After Penalties (event 760489), Paraguay wins 4-3 on penalties after 1-1 AET",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760489",
-      "fetchedAt": "2026-06-29T23:30:35.094722Z"
-    }
-  ]
+  "overrides": []
 }
