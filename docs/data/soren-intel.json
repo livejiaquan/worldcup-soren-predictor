@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-29T23:41:48Z",
-  "status": "Postmatch + matchday scout refresh: Paraguay 1-1 Germany 後點球 4-3 爆冷晉級；Netherlands-Morocco 補 Al Jazeera/SI 臨場與冷門路徑；Ivory Coast-Norway 補 ESPN/Yahoo matchday team-news context。",
-  "headline": "Soren scout: 德國被 Paraguay 點球送走；Netherlands-Morocco 進入最後 90 分鐘，明天 Ivory Coast-Norway 也補上 Diomandé vs Haaland 的主線。",
+  "generatedAt": "2026-06-30T00:58:30Z",
+  "status": "Late lineup + matchday scout refresh: Netherlands-Morocco 補 BBC/ESPN/101GG 確認先發與 ESPN odds；France-Sweden 補 France 傷疑；Ivory Coast-Norway 補 Football365 傷停/停賽脈絡。",
+  "headline": "Soren scout: Netherlands-Morocco 開球前先發落地，Brobbey 繼續頂前、Depay 仍板凳；Morocco 召回 Hakimi/Mazraoui/Ounahi，這不是模型散步，是淘汰賽互相拆台。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -3334,9 +3334,9 @@
     {
       "matchId": "m075",
       "match": "Netherlands vs Morocco",
-      "sourceType": "official/federation + live-centre + lineup-watch + odds-reference + coach-player quote",
-      "title": "Netherlands-Morocco 賽前最後 90 分鐘：Al Jazeera live 開台、SI 給摩洛哥點球冷門劇本；橙軍小熱但別演自信過敏。",
-      "sorenTake": "Al Jazeera 已開 Netherlands-Morocco live blog，metadata 明示 live build-up、team news coverage 與文字直播；Sports Illustrated 預覽則把比分寫成 1-1、Morocco 點球晉級的冷門路徑。這不是確認先發，也不是 Soren 跟風押冷；只是提醒：這場若被拖到低比分，荷蘭的控球美感會開始冒冷汗。",
+      "sourceType": "confirmed lineup + live centre + odds/social watch",
+      "title": "Netherlands-Morocco 先發落地：Brobbey 續扛中鋒、Depay 繼續板凳；Hakimi/Mazraoui/Ounahi 回來，摩洛哥不是來拍合照。",
+      "sorenTake": "BBC 與 ESPN 都已把先發攤開：Koeman 用 3-4-2-1/3-4-3 味道把 Brobbey、Gakpo、Summerville 推上去，Depay 還是替補武器；Morocco 4-2-3-1 召回 Hakimi、Mazraoui、Ounahi，Saibari 頂前。荷蘭紙面小熱，但這種邊翼衛互撞的淘汰賽，一次 Hakimi 反推就能把橙軍的自信拆成交通事故。",
       "signals": [
         "The Guardian 晉級形勢整理指出 Morocco 已晉級，將在 Monterrey 對上 F 組第一 Netherlands。",
         "The Athletic 搜尋摘要指出 Netherlands 以小組第一晉級，將於 6 月 29 日在 Monterrey 對 Morocco。",
@@ -3391,7 +3391,11 @@
         "CBS Sports Netherlands-Morocco odds/prediction 頁父層可連，metadata 為公開 odds / line / time；只作 paper-market temperature，不是投注建議。",
         "WhoScored 搜尋片段顯示 Netherlands-Morocco 頁含 injuries/suspensions、probable line-ups、facts and odds；父層遭 403，保守列為 reported lineup-watch lead，不寫成已讀全文。",
         "Al Jazeera 6/29 live blog 已開 Netherlands-Morocco 文字直播，metadata 明示會提供 live build-up、team news coverage 與 text commentary；正式 XI 仍待官方/可信即時頁確認。",
-        "Sports Illustrated Netherlands-Morocco preview 可連線，標題明示 preview/predictions/lineups，文中預測 1-1 且 Morocco 點球晉級；本站只把它當 upset-path/lineup-watch context，不當作確認陣容或本站模型。"
+        "Sports Illustrated Netherlands-Morocco preview 可連線，標題明示 preview/predictions/lineups，文中預測 1-1 且 Morocco 點球晉級；本站只把它當 upset-path/lineup-watch context，不當作確認陣容或本站模型。",
+        "00:40Z BBC live text 發布 team news：Netherlands 變兩人，Micky van de Ven、Crysencio Summerville 進先發；Morocco 換四人，Hakimi、Mazraoui、Ounahi 等回到 XI。",
+        "ESPN Gamecast 靜態頁可讀到 formations & lineups：Netherlands 3-4-2-1，Brobbey、Gakpo、Summerville 前場；Morocco 4-2-3-1，Bounou；Hakimi、Diop、Riad、Mazraoui；Bouaddi、El Aynaoui；Díaz、Ounahi、El Khannouss；Saibari。",
+        "The Standard/101 Great Goals 補荷蘭隊內脈絡：Depay 傷後三場都替補出場，Brobbey 近兩場進球後續任先發；這是 selection context，不是保證他能複製小組賽效率。",
+        "ESPN odds 頁顯示 Netherlands -0.5 並列出進球球員市場；本站只作紙上盤溫度/closing-line 參考，不是下注建議。"
       ],
       "sources": [
         {
@@ -3611,11 +3615,11 @@
           "confidence": "high"
         },
         {
-          "label": "BBC Netherlands-Morocco live text (22Z metadata probe)",
+          "label": "BBC Netherlands-Morocco live text lineups",
           "url": "https://www.bbc.com/sport/football/live/c8023x0d3g9t",
           "sourceName": "BBC Sport",
-          "fetchedAt": "2026-06-29T22:18:20Z",
-          "claimType": "context/live-centre",
+          "fetchedAt": "2026-06-30T00:58:30Z",
+          "claimType": "confirmed/lineup-watch",
           "confidence": "high"
         },
         {
@@ -3761,6 +3765,38 @@
           "fetchedAt": "2026-06-29T23:41:48Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN Netherlands-Morocco Gamecast lineups",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760488/marrocos-holanda",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-06-30T00:58:30Z",
+          "claimType": "confirmed/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "The Standard Netherlands XI team news",
+          "url": "https://www.standard.co.uk/sport/football/netherlands-xi-vs-morocco-starting-lineup-confirmed-team-news-injury-latest-world-cup-2026-today-b1288024.html",
+          "sourceName": "The Standard",
+          "fetchedAt": "2026-06-30T00:58:30Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "101 Great Goals confirmed lineups",
+          "url": "https://www.101greatgoals.com/football/world-cup-news/netherlands-v-morocco-confirmed-line-ups-team-news/",
+          "sourceName": "101 Great Goals",
+          "fetchedAt": "2026-06-30T00:58:30Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "ESPN Netherlands-Morocco odds reference",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760488",
+          "sourceName": "ESPN Odds",
+          "fetchedAt": "2026-06-30T00:58:30Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -3796,7 +3832,8 @@
         "CBS Sports Norway-Ivory Coast odds/prediction 頁父層可連，metadata 指向公開 odds / line / time；本站只作 paper-market temperature，不提供投注建議。",
         "SofaScore 搜尋片段列 Wilfried Singo hamstring missing、Julian Ryerson thigh doubtful；父層 403，保守作 reported availability-watch lead，等官方/隊媒或 live tracker 再升級。",
         "ESPN 6/29 預覽標題明示 kick-off time、team news、how to watch，並把 Yan Diomandé 對上 Haaland/Ødegaard 作為核心敘事；這是可信 matchday context，不是確認先發。",
-        "Yahoo Sports 預覽頁 metadata 顯示 Ivory Coast vs Norway team news、lineups、predictions，並回顧 Ivory Coast 2-0 Curaçao、Norway 1-4 France；屬 media lineup-watch 與 form context。"
+        "Yahoo Sports 預覽頁 metadata 顯示 Ivory Coast vs Norway team news、lineups、predictions，並回顧 Ivory Coast 2-0 Curaçao、Norway 1-4 France；屬 media lineup-watch 與 form context。",
+        "Football365 賽前頁把 Ivory Coast 描述為 clean bill of health，並指出小組賽單黃不帶入淘汰賽停賽；Norway 端則預期 Haaland/Ødegaard 等主力回到首發框架。"
       ],
       "sources": [
         {
@@ -4022,6 +4059,14 @@
           "fetchedAt": "2026-06-29T23:41:48Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "Football365 Ivory Coast-Norway team-news preview",
+          "url": "https://www.football365.com/match-preview/ivory-coast-v-norway-prediction-preview",
+          "sourceName": "Football365",
+          "fetchedAt": "2026-06-30T00:45:41Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -4054,7 +4099,9 @@
         "Goal probable XI 仍只屬 reported/lineup-watch；正式先發未出前，不把 Saliba/Upamecano 或 Isak/Gyökeres 組合寫成確認。",
         "FIFA matchday-20 preview 搜尋片段/官方 URL 指向 France-Sweden：France 帶完美戰績進 New York/New Jersey，兩隊小組合計 17 球；作 official tournament preview/context。",
         "Svensk Fotboll 官方 France-Sweden 頁父層核到標題與 metadata：Sweden 將於 6/30 23:00 瑞典時間、New Jersey 對 France；這是官方賽程/路線確認。",
-        "Opta Analyst France-Sweden preview 父層核到 title/meta；搜尋片段列 France 90 分鐘勝率 75.1%，作 public probability context，不公開或替代 Soren 模型。"
+        "Opta Analyst France-Sweden preview 父層核到 title/meta；搜尋片段列 France 90 分鐘勝率 75.1%，作 public probability context，不公開或替代 Soren 模型。",
+        "The Standard 6/30 賽前隊訊把 Saliba（背部）與 Thuram（小腿）列為 France 傷疑，並預測 Lacroix 可能續搭 Upamecano；這與先前 Hien 缺陣形成兩邊中衛風險對照。",
+        "Football365 補充 Thuram 小腿疑慮被描述為 minor fatigue、Lindelöf 對 Japan 退場後稱是抽筋；Soren 先把它們放在 availability-watch，不寫成正式缺陣。"
       ],
       "sources": [
         {
@@ -4232,6 +4279,22 @@
           "fetchedAt": "2026-06-29T22:18:20Z",
           "claimType": "context/public-probability",
           "confidence": "high"
+        },
+        {
+          "label": "The Standard France predicted XI and injury latest",
+          "url": "https://www.standard.co.uk/sport/football/france-xi-vs-sweden-confirmed-team-news-predicted-lineup-injury-latest-world-cup-2026-b1288051.html",
+          "sourceName": "The Standard",
+          "fetchedAt": "2026-06-30T00:45:41Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Football365 France-Sweden injury and team-news preview",
+          "url": "https://www.football365.com/match-preview/france-v-sweden-prediction-preview",
+          "sourceName": "Football365",
+          "fetchedAt": "2026-06-30T00:45:41Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
