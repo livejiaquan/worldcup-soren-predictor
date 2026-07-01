@@ -1,4 +1,16 @@
 {
   "note": "Source-backed final-score overrides used when upstream openfootball data lags. The official-results verifier cron may append new entries; remove entries after upstream catches up if desired.",
-  "overrides": []
+  "overrides": [
+    {
+      "date": "2026-07-01",
+      "team1": "Belgium",
+      "team2": "Senegal",
+      "score": [
+        3,
+        2
+      ],
+      "winner": "Belgium",
+      "source": "ESPN public summary event 760493 showed STATUS_FINAL_AET / completed=true, Belgium 3-2 Senegal, fetched 2026-07-01T23:27:39Z"
+    }
+  ]
 }
