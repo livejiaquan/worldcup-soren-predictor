@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T22:50:37.890Z",
+  "generatedAt": "2026-07-01T23:10:10.880Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,8 +7,8 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 80,
-    "scheduledMatches": 24,
+    "finishedMatches": 81,
+    "scheduledMatches": 23,
     "nextWindow": [
       "m081",
       "m084",
@@ -439,14 +439,14 @@
       {
         "team": "Belgium",
         "group": "Group G",
-        "played": 3,
+        "played": 4,
         "won": 1,
-        "drawn": 2,
+        "drawn": 3,
         "lost": 0,
-        "goalsFor": 6,
-        "goalsAgainst": 2,
+        "goalsFor": 8,
+        "goalsAgainst": 4,
         "goalDiff": 4,
-        "points": 5
+        "points": 6
       },
       {
         "team": "Egypt",
@@ -563,14 +563,14 @@
       {
         "team": "Senegal",
         "group": "Group I",
-        "played": 3,
+        "played": 4,
         "won": 1,
-        "drawn": 0,
+        "drawn": 1,
         "lost": 2,
-        "goalsFor": 8,
-        "goalsAgainst": 6,
+        "goalsFor": 10,
+        "goalsAgainst": 8,
         "goalDiff": 2,
-        "points": 3
+        "points": 4
       },
       {
         "team": "Iraq",
@@ -2198,8 +2198,11 @@
       "team1": "Belgium",
       "team2": "Senegal",
       "venue": "Seattle",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        2
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -3084,16 +3087,16 @@
     },
     "m037": {
       "pick": "Belgium",
-      "confidence": 0.732198803346666,
+      "confidence": 0.7261877175186452,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6405517322003528,
-        "draw": 0.22804693085659014,
-        "away": 0.13140133694305717
+        "home": 0.6359235989492404,
+        "draw": 0.2296201274871011,
+        "away": 0.13445627356365844
       },
       "expectedGoals": [
-        1.74,
-        0.64
+        1.73,
+        0.65
       ],
       "score": "1-0",
       "commentary": {
@@ -3102,12 +3105,12 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "17.3",
+            "value": "16.9",
             "note": "Belgium 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.74 : 0.64",
+            "value": "1.73 : 0.65",
             "note": "最像 1-0"
           },
           {
@@ -3118,9 +3121,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Belgium 91.0；Egypt 73.7",
-        "預期進球 1.74 : 0.64，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 17.3 分，我暫時站 Belgium"
+        "底牌分：Belgium 90.6；Egypt 73.7",
+        "預期進球 1.73 : 0.65，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 16.9 分，我暫時站 Belgium"
       ]
     },
     "m044": {
@@ -4068,12 +4071,12 @@
     },
     "m039": {
       "pick": "Belgium",
-      "confidence": 0.7713533213076873,
+      "confidence": 0.7654876236180442,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.670780374806253,
-        "draw": 0.21717784206212914,
-        "away": 0.11204178313161783
+        "home": 0.6662426971023782,
+        "draw": 0.2188753086600553,
+        "away": 0.11488199423756644
       },
       "expectedGoals": [
         1.8,
@@ -4086,7 +4089,7 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "17.4",
+            "value": "16.9",
             "note": "Belgium 比較有本錢"
           },
           {
@@ -4102,9 +4105,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Belgium 91.0；Iran 73.7",
+        "底牌分：Belgium 90.6；Iran 73.7",
         "預期進球 1.80 : 0.58，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 17.4 分，我暫時站 Belgium"
+        "底牌差約 16.9 分，我暫時站 Belgium"
       ]
     },
     "m046": {
@@ -5219,13 +5222,13 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.040285444855996076,
-        "draw": 0.1575020056653494,
-        "away": 0.8022125494786545
+        "home": 0.042095269220079244,
+        "draw": 0.15956904297881894,
+        "away": 0.7983356878011018
       },
       "expectedGoals": [
-        0.28,
-        2.1
+        0.29,
+        2.09
       ],
       "score": "0-2",
       "commentary": {
@@ -5234,12 +5237,12 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "34.1",
+            "value": "33.6",
             "note": "Belgium 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.28 : 2.10",
+            "value": "0.29 : 2.09",
             "note": "最像 0-2"
           },
           {
@@ -5250,9 +5253,9 @@
         ]
       },
       "reasons": [
-        "底牌分：New Zealand 57.0；Belgium 91.0",
-        "預期進球 0.28 : 2.10，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 34.1 分，我暫時站 Belgium"
+        "底牌分：New Zealand 57.0；Belgium 90.6",
+        "預期進球 0.29 : 2.09，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 33.6 分，我暫時站 Belgium"
       ]
     },
     "m071": {
@@ -5831,16 +5834,16 @@
     },
     "m082": {
       "pick": "Belgium",
-      "confidence": 0.6604245839381675,
+      "confidence": 0.6542149934004344,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.5855064342151732,
-        "draw": 0.24519907447517705,
-        "away": 0.1692944913096496
+        "home": 0.5807661642728095,
+        "draw": 0.24651672216340892,
+        "away": 0.1727171135637817
       },
       "expectedGoals": [
-        1.63,
-        0.75
+        1.62,
+        0.76
       ],
       "score": "1-0",
       "commentary": {
@@ -5849,12 +5852,12 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "12.1",
+            "value": "11.6",
             "note": "Belgium 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.63 : 0.75",
+            "value": "1.62 : 0.76",
             "note": "最像 1-0"
           },
           {
@@ -5865,9 +5868,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Belgium 91.0；Senegal 79.0",
-        "預期進球 1.63 : 0.75，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 12.1 分，我暫時站 Belgium"
+        "底牌分：Belgium 90.6；Senegal 79.0",
+        "預期進球 1.62 : 0.76，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 11.6 分，我暫時站 Belgium"
       ]
     },
     "m081": {
@@ -6799,9 +6802,9 @@
       "points": 70,
       "correct": 52,
       "exact": 9,
-      "total": 80,
+      "total": 81,
       "rank": 1,
-      "accuracy": 0.65
+      "accuracy": 0.6419753086419753
     },
     {
       "id": "soren",
@@ -6810,20 +6813,20 @@
       "points": 66,
       "correct": 48,
       "exact": 8,
-      "total": 80,
+      "total": 81,
       "rank": 2,
-      "accuracy": 0.6
+      "accuracy": 0.5925925925925926
     },
     {
       "id": "draw",
       "name": "Draw Baseline",
       "desc": "保守押平局",
-      "points": 44,
-      "correct": 22,
+      "points": 45,
+      "correct": 23,
       "exact": 11,
-      "total": 80,
+      "total": 81,
       "rank": 3,
-      "accuracy": 0.275
+      "accuracy": 0.2839506172839506
     }
   ],
   "paperBankroll": {
@@ -6831,36 +6834,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 185.53,
-    "openStake": 39.07,
-    "totalValue": 185.53,
-    "roi": 0.855,
+    "bankroll": 178.65,
+    "openStake": 36.57,
+    "totalValue": 178.65,
+    "roi": 0.787,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m065",
-        "kickoffUtc": "2026-06-27T23:30:00.000Z",
-        "stage": "小組 K · Matchday 17",
-        "team1": "Colombia",
-        "team2": "Portugal",
-        "pick": "Portugal",
-        "outcome": "away",
-        "stake": 6.38,
-        "decimalOdds": 2.35,
-        "edge": 0.29,
-        "modelProbability": 0.549,
-        "marketProxyProbability": 0.4,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-06-27T22:30:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Portugal，但平局還有 25%；別急著開香檳，足球最會打臉。",
-        "status": "lost",
-        "score": [
-          0,
-          0
-        ],
-        "profit": -6.38
-      },
       {
         "matchId": "m066",
         "kickoffUtc": "2026-06-27T23:30:00.000Z",
@@ -7124,9 +7103,7 @@
           1
         ],
         "profit": 7.28
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m082",
         "kickoffUtc": "2026-07-01T20:00:00.000Z",
@@ -7135,17 +7112,24 @@
         "team2": "Senegal",
         "pick": "Belgium",
         "outcome": "home",
-        "stake": 7.11,
+        "stake": 6.88,
         "decimalOdds": 2.26,
-        "edge": 0.323,
-        "modelProbability": 0.586,
+        "edge": 0.313,
+        "modelProbability": 0.581,
         "marketProxyProbability": 0.415,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-01T19:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場中等站 Belgium，但平局還有 25%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "status": "lost",
+        "score": [
+          2,
+          2
+        ],
+        "profit": -6.88
+      }
+    ],
+    "pending": [
       {
         "matchId": "m081",
         "kickoffUtc": "2026-07-02T00:00:00.000Z",
@@ -7220,6 +7204,25 @@
         "lockedAtUtc": "2026-07-03T02:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Switzerland，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
+      },
+      {
+        "matchId": "m088",
+        "kickoffUtc": "2026-07-03T18:00:00.000Z",
+        "stage": "Round of 32",
+        "team1": "Australia",
+        "team2": "Egypt",
+        "pick": "Egypt",
+        "outcome": "away",
+        "stake": 4.61,
+        "decimalOdds": 2.83,
+        "edge": 0.209,
+        "modelProbability": 0.427,
+        "marketProxyProbability": 0.332,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-03T17:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 Egypt，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "pending"
       }
     ],
