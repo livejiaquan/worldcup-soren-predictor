@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T11:21:34.263Z",
+  "generatedAt": "2026-07-01T11:44:36.074Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -2357,7 +2357,7 @@
       "date": "2026-07-05",
       "time": "18:00 UTC-6",
       "kickoffUtc": "2026-07-06T00:00:00.000Z",
-      "team1": "W79",
+      "team1": "Mexico",
       "team2": "W80",
       "venue": "Mexico City",
       "status": "scheduled",
@@ -6278,44 +6278,44 @@
       ]
     },
     "m092": {
-      "pick": "W79",
-      "confidence": 0.3808352070799772,
-      "tag": "膠著到煩",
+      "pick": "Mexico",
+      "confidence": 0.82,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.37558853219027716,
-        "draw": 0.27797112945111263,
-        "away": 0.3464403383586102
+        "home": 0.7286497961053964,
+        "draw": 0.19345731974869537,
+        "away": 0.07789288414590827
       },
       "expectedGoals": [
-        1.22,
-        1.16
+        1.93,
+        0.45
       ],
-      "score": "1-1",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 W79，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場偏明確站 Mexico，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "story": "Mexico 底牌比較硬；W80 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "0.0",
-            "note": "誰也別裝大哥"
+            "value": "23.2",
+            "note": "Mexico 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.22 : 1.16",
-            "note": "最像 1-1"
+            "value": "1.93 : 0.45",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "35%",
+            "value": "8%",
             "note": "W80 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：W79 67.0；W80 67.0",
-        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：Mexico 90.2；W80 67.0",
+        "預期進球 1.93 : 0.45，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 23.2 分，我暫時站 Mexico"
       ]
     },
     "m093": {
@@ -7241,6 +7241,25 @@
         "status": "watchlist"
       },
       {
+        "matchId": "m092",
+        "kickoffUtc": "2026-07-06T00:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "Mexico",
+        "team2": "W80",
+        "pick": "Mexico",
+        "outcome": "home",
+        "stake": 8,
+        "decimalOdds": 2.13,
+        "edge": 0.552,
+        "modelProbability": 0.729,
+        "marketProxyProbability": 0.441,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-05T23:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場偏明確站 Mexico，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
         "matchId": "m086",
         "kickoffUtc": "2026-07-03T22:00:00.000Z",
         "stage": "Round of 32",
@@ -7295,25 +7314,6 @@
         "lockedAtUtc": "2026-07-05T19:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Brazil，但平局還有 20%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
-        "matchId": "m087",
-        "kickoffUtc": "2026-07-04T01:30:00.000Z",
-        "stage": "Round of 32",
-        "team1": "Colombia",
-        "team2": "Ghana",
-        "pick": "Colombia",
-        "outcome": "home",
-        "stake": 8,
-        "decimalOdds": 2.29,
-        "edge": 0.423,
-        "modelProbability": 0.621,
-        "marketProxyProbability": 0.41,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-04T00:30:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Colombia，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
