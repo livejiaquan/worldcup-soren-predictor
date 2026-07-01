@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T05:46:27Z",
-  "status": "Matchday R32 micro-refresh: parent-verified SI/NBC/ESPN/Bundesliga/Sounders/FCF pages plus official FIFA entry points. England-DR Congo, Belgium-Senegal, USA-Bosnia keep lineup-watch boundaries; next-day thin cards get official context without pretending confirmed XIs.",
-  "headline": "Soren scout: R32 臨場入口補齊；英格蘭、比利時、美國先別把熱門寫成通關密碼，薄卡也補上官方火種。",
+  "generatedAt": "2026-07-01T08:00:47Z",
+  "status": "R16 next-wave scout: sparse Canada-Morocco, Paraguay-France, Brazil-Norway cards now have parent-verified public media/official/live-tracker sources; lineup and odds boundaries stay conservative.",
+  "headline": "Soren scout: 7/4–7/5 三張薄卡補上火種；熱門可以熱，但別把 Morocco、Paraguay、Haaland 當背景板。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -6160,6 +6160,177 @@
           "fetchedAt": "2026-07-01T05:46:27Z",
           "claimType": "confirmed/official-team-update",
           "confidence": "high"
+        }
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "matchId": "m090",
+      "match": "Canada vs Morocco",
+      "sourceType": "official pathway + media confirmation + lineup tracker",
+      "title": "Canada-Morocco 補 CBC/FIFA/FotMob：地主光環很亮，但 Morocco 的點球刀口剛磨完。",
+      "sorenTake": "CBC 可讀 metadata 確認 Canada 16 強碰 Morocco；FIFA Morocco/Netherlands 報告與 Mazraoui 訪談頁可連線，Morocco 是剛從 Netherlands 點球戰活下來的隊伍。Canada 有主場敘事，但 Morocco 的淘汰賽肌肉不是旅遊紀念品，這場要追體能恢復、Mazraoui 側翼對位與正式 XI。",
+      "signals": [
+        "CBC metadata 直接寫明 Canada 將在 Round of 16 對 Morocco，且 Morocco 於 Netherlands 戰後經點球 3-2 晉級；這是可讀媒體確認，不是模型猜測。",
+        "FIFA Morocco-Netherlands review URL 父層核可連線；搜尋片段指出 Morocco 經點球淘汰 Netherlands，作官方晉級脈絡。",
+        "FIFA Mazraoui 訪談 URL 父層核可連線；搜尋片段提到 Morocco 即將對 co-host Canada，並引用 Mazraoui 說 Canada 會是 difficult match。",
+        "Al Jazeera live blog metadata 顯示 Morocco come from behind to beat Netherlands on penalties；作淘汰賽心理/體能背景，不當成 Canada 戰先發資訊。",
+        "FotMob Canada-Morocco 頁可讀 metadata，提供 2026-07-04T17:00Z live score / predicted lineups / H2H 入口；正式先發仍等官方。"
+      ],
+      "sources": [
+        {
+          "label": "CBC Canada-Morocco R16 confirmation",
+          "url": "https://www.cbc.ca/sports/soccer/worldcup/fifa-world-cup-netherlands-morocco-june-29-9.7252630",
+          "sourceName": "CBC Sports",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "reported/bracket-actualization",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Netherlands-Morocco match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/netherlands-morocco-review-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "confirmed/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Noussair Mazraoui interview lead",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/noussair-mazraoui-morocco-netherlands-interview",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "reported/player-quote",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Al Jazeera Netherlands-Morocco live centre",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/6/29/live-netherlands-vs-morocco-fifa-world-cup-2026",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "FotMob Canada-Morocco lineup tracker",
+          "url": "https://www.fotmob.com/matches/canada-vs-netherlandsmorocco/r3oon2sh",
+          "sourceName": "FotMob",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        }
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "matchId": "m089",
+      "match": "Paraguay vs France",
+      "sourceType": "official pathway + bracket confirmation + lineup tracker",
+      "title": "Paraguay-France 補 FIFA/CBS/LiveScore：Mbappé 的刀很亮，Paraguay 剛把 Germany 拖進點球泥潭。",
+      "sorenTake": "FIFA France-Sweden 與 Germany-Paraguay 報告頁都可連線，搜尋片段分別給出 France 3-0 與 Paraguay 點球淘汰 Germany 的路徑。CBS 與 LiveScore/FotMob 補上 Philadelphia 這場的公開賽程/臨場入口。Soren 的警報：France 是熱門，但 Paraguay 的 upset path 很清楚——把節奏打碎、把比賽拖到十二碼恐懼症。",
+      "signals": [
+        "FIFA France-Sweden review URL 父層核可連線；搜尋片段指出 France 3-0 Sweden 後將在 Philadelphia 對 Paraguay，並提到 Mbappé 淘汰賽進球脈絡。",
+        "FIFA Germany-Paraguay review URL 父層核可連線；搜尋片段指出 Paraguay 對 Germany 120 分鐘後點球勝出，這給 France 戰疲勞與點球韌性兩條線索。",
+        "CBS Sports bracket metadata 可讀，列出淘汰賽進入 Round of 32/16 路徑；搜尋片段列 July 4 5 p.m. ET Paraguay vs France at Lincoln Financial Field。",
+        "FotMob Paraguay-France metadata 可讀，提供 2026-07-04T21:00Z live score / predicted lineups / H2H；正式 XI 仍未確認。",
+        "LiveScore 頁 metadata 可讀，標示 Paraguay vs France R16 live score / line-ups 入口；用作 matchday tracker，不當成賽前結論。"
+      ],
+      "sources": [
+        {
+          "label": "FIFA France-Sweden match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-sweden-review-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "confirmed/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Germany-Paraguay match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/germany-paraguay-review-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "confirmed/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "CBS World Cup bracket and R16 schedule",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "reported/schedule",
+          "confidence": "high"
+        },
+        {
+          "label": "FotMob Paraguay-France lineup tracker",
+          "url": "https://www.fotmob.com/matches/paraguay-vs-francesweden/r649pg3j",
+          "sourceName": "FotMob",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "LiveScore Paraguay-France live centre",
+          "url": "https://www.livescore.com/en/football/international/world-cup-2026/paraguay-vs-france/1417901/",
+          "sourceName": "LiveScore",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
+        }
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "matchId": "m091",
+      "match": "Brazil vs Norway",
+      "sourceType": "official pathway + team update + live/market watch",
+      "title": "Brazil-Norway 補 NFF/FIFA/LiveScore：Haaland 不是彩蛋，他是 Brazil 防線的壓力測試。",
+      "sorenTake": "Norwegian FA metadata 可讀，寫明 Nusa 與 Haaland 幫 Norway 2-1 過 Ivory Coast，下一戰 New York/New Jersey 對 Brazil；FIFA Norway-Ivory Coast 報告頁也可連線。Brazil 當然有招牌，但 Norway 的 upset path 不玄學：Haaland 拉開第一腳、Nusa 攻轉守縫隙，然後逼 Brazil 先急。",
+      "signals": [
+        "Norges Fotballforbund 頁面 metadata 可讀，標題為 16 強先發，並由搜尋片段提供 Nusa/Haaland 進球、Norway 2-1 Ivory Coast、下一戰 Brazil 的脈絡。",
+        "FIFA Côte d’Ivoire-Norway review URL 父層核可連線；搜尋片段指向 Haaland 進球與 Norway 淘汰賽晉級，作官方路徑資訊。",
+        "CBS Sports bracket metadata 可讀，搜尋片段列 Brazil vs Norway 於 2026-07-05 4 p.m. ET / MetLife Stadium；可作賽程交叉驗證。",
+        "LiveScore Brazil-Norway metadata 可讀，標示 R16 live score / line-ups 入口；正式先發仍未公布。",
+        "Oddschecker odds 頁父層 403，但搜尋片段顯示 Brazil v Norway winner 市場比較頁存在；只能列為低揭露度 paper-only market lead，不引用價格、不提供投注建議。"
+      ],
+      "sources": [
+        {
+          "label": "Norwegian FA Brazil next-match context",
+          "url": "https://www.fotball.no/Mesterskap/artikkeloversikt/kamp/disse-starter-i-16-delsfinalen/",
+          "sourceName": "Norges Fotballforbund",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Côte d’Ivoire-Norway match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cote-divoire-norway-review-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "confirmed/context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "CBS World Cup bracket and R16 schedule",
+          "url": "https://www.cbssports.com/soccer/news/2026-fifa-world-cup-bracket-round-of-32-results-round-of-16-matchups-final/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "reported/schedule",
+          "confidence": "high"
+        },
+        {
+          "label": "LiveScore Brazil-Norway live centre",
+          "url": "https://www.livescore.com/en/football/international/world-cup-2026/brazil-vs-norway/1417903/",
+          "sourceName": "LiveScore",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Oddschecker Brazil-Norway market page",
+          "url": "https://www.oddschecker.com/football/world-cup/brazil-v-norway/winner",
+          "sourceName": "Oddschecker",
+          "fetchedAt": "2026-07-01T08:00:47Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-low"
         }
       ],
       "confidence": "medium-high"
