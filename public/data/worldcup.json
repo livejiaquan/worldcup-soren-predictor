@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T06:36:52.433Z",
+  "generatedAt": "2026-07-01T06:37:48.986Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -2167,7 +2167,7 @@
         2,
         0
       ],
-      "source": "openfootball/worldcup.json + override: ESPN public scoreboard/summary API reported Full Time"
+      "source": "openfootball/worldcup.json + override: FIFA match report plus ESPN public scoreboard/summary API reported Full Time"
     },
     {
       "id": "m080",

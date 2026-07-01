@@ -9,9 +9,10 @@
         2,
         0
       ],
-      "source": "ESPN public scoreboard/summary API reported Full Time",
-      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760491",
-      "fetchedAt": "2026-07-01T04:05:00.000Z"
+      "source": "FIFA match report plus ESPN public scoreboard/summary API reported Full Time",
+      "url": "https://www.fifa.com/en/articles/mexico-ecuador-review-highlights",
+      "fetchedAt": "2026-07-01T06:37:38Z",
+      "secondaryUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760491"
     }
   ]
 }
