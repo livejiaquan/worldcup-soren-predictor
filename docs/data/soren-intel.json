@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T12:02:56Z",
-  "status": "Matchday scout refresh: m080/m081 near-kickoff injury and official-preview rails strengthened; m082 public lineup/odds watch refreshed; m084 official match-centre plus Opta tactical probability added.",
-  "headline": "Soren scout: England 右路傷情變成真壓力，USA 傷停名單要盯；Belgium 夜場補 team-news，Spain-Austria 先把官方入口和 Opta 風險貼上。",
+  "generatedAt": "2026-07-01T13:11:42Z",
+  "status": "Matchday scout refresh: m080 live-centre/scoreboard rails added; m082/m081 ESPN and FIFA match-centre/odds anchors refreshed for near-kickoff verification.",
+  "headline": "Soren scout: England-DR Congo 進入 live mode；Belgium-Senegal、USA-Bosnia 都補上官方/ESPN 臨場入口，今晚別把預測 XI 當聖旨。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5002,9 +5002,9 @@
     {
       "matchId": "m080",
       "match": "England vs Democratic Republic of the Congo",
-      "sourceType": "official match centre + official/team update + tactical preview + reported injury/lineup watch + paper odds watch",
-      "title": "England-DR Congo 補 Sky/ESPN 近開球傷情與預測 XI：右後衛不是小洞，是 Tuchel 今晚第一個火警。",
-      "sorenTake": "England 還是熱門，但 Sky 已把 Reece James、Jarell Quansah 缺陣寫成明牌，ESPN 也把右後衛危機放進 predicted XI。Soren 的翻譯：DR Congo 不必踢成巴西，只要把 England 右路壓成臨時工考場，熱門就會開始出汗。",
+      "sourceType": "official match-centre + live-centre + reported availability/lineup watch + odds reference",
+      "title": "England-DR Congo 進入 live mode：右路傷情還是火警，現在要盯的是正式名單與比賽節奏，不是賽前嘴炮。",
+      "sorenTake": "England 仍是牌面更硬的一方，但 Reece James / Quansah 缺口讓右路防線沒有裝甲。Al Jazeera 與 LiveScore 已開臨場入口，接下來 Soren 只認正式名單與比賽實況；預測 XI 再像真的，也只是上菜前的菜單照片。",
       "signals": [
         "England Football 公開列出 England 若以 1L 出線，將在 Atlanta 對 3E/H/I/J/K。",
         "FOX Sports m080 賽程頁可核對 1L vs 3E/3H/3I/3J/3K 與 2026-07-01T16:00Z 窗口。",
@@ -5044,7 +5044,9 @@
         "Guardian 7/1 戰術文指出 Opta 給 England 正常時間勝率 73.9%，同時提醒 Sébastien Desabre 對強隊會改變方法；Soren 讀成「熱門沒錯，但 DRC 不是 NPC」。",
         "ESPN 7/1 賽前 guide 可連線，標題明示 referee / predicted line-ups / viewing info；本站保守列為 reported lineup-watch，不升級 confirmed XI。",
         "Sky Sports 可讀 metadata 指出 Reece James 與 Jarell Quansah 將因傷缺席對 DR Congo 的 16 強戰，Djed Spence 被預期頂上；這是比早前泛稱 James hamstring 更具體的右路傷情更新。",
-        "ESPN predicted XI 文可讀 metadata 與正文片段確認它是在預測 England 對 Congo DR 先發，並提到 Quansah 腳踝傷退後右後衛位置成為 crisis；仍屬 reported/lineup-watch，不是官方 XI。"
+        "ESPN predicted XI 文可讀 metadata 與正文片段確認它是在預測 England 對 Congo DR 先發，並提到 Quansah 腳踝傷退後右後衛位置成為 crisis；仍屬 reported/lineup-watch，不是官方 XI。",
+        "13:11Z 親核 Al Jazeera England-DR Congo live blog 可連線，頁面明示提供 build-up、analysis、live text commentary；這是臨場觀察入口，不是確認先發。",
+        "13:11Z 親核 LiveScore England-DR Congo live score page 可連線，描述為 R32 live score；用於比分/事件交叉檢查，正式結果仍等可靠 full-time 來源。"
       ],
       "sources": [
         {
@@ -5334,6 +5336,22 @@
           "fetchedAt": "2026-07-01T12:02:56Z",
           "claimType": "reported/lineup-watch",
           "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera England-DR Congo live blog",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/7/1/england-vs-dr-congo-live-fifa-world-cup-2026",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-01T13:11:42Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "LiveScore England-DR Congo live score",
+          "url": "https://www.livescore.com/en/football/international/world-cup-2026/england-vs-dr-congo/1691876/",
+          "sourceName": "LiveScore",
+          "fetchedAt": "2026-07-01T13:11:42Z",
+          "claimType": "context/live-score",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -5341,9 +5359,9 @@
     {
       "matchId": "m081",
       "match": "USA vs Bosnia & Herzegovina",
-      "sourceType": "official preview + official fixture/team context + reported injury/lineup/odds watch + live-centre rails",
-      "title": "USA-Bosnia 補 FIFA 官方 preview 與 USA Today 傷停：Pochettino 可以喊決賽，但後防健康不能靠口號補位。",
-      "sorenTake": "FIFA 官方 preview 入口就位，USA Today 則把 Trusty、Roldan、McKenzie 的可用性分層。USA 仍有主場與 Pulisic 敘事，但 Bosnia 的定位球與老狐狸 Džeko 不會因為 Levi’s Stadium 很吵就自動消失。",
+      "sourceType": "official federation/press + official match-centre + live-centre + reported lineup/availability watch + odds reference",
+      "title": "USA-Bosnia 補 FIFA/ESPN 臨場錨點：Pochettino 可以喊決賽，但淘汰賽會先檢查後防健康。",
+      "sorenTake": "USA 是主場敘事與市場更熱的一邊，但 Bosnia 不是來當背景板。U.S. Soccer 與 N/FSBiH 的賽前脈絡已在，現在補 FIFA/ESPN 臨場與 odds 入口；Soren 會把 Pulisic/後防健康當第一風險，而不是把主場光環當護身符。",
       "signals": [
         "FOX Sports m081 比賽頁標題已顯示 United States vs Bosnia and Herzegovina，時間為 2026-07-01 當地 / 2026-07-02T00:00Z。",
         "FOX odds story 明列 USA vs Bosnia and Herzegovina：moneyline USA -185、Bosnia +600、draw +280；to advance USA -460、Bosnia +340。",
@@ -5369,7 +5387,10 @@
         "FOX USA-Bosnia live score 可連線，meta 明示 live score、stats、odds；只當臨場雷達與紙上市場溫度。",
         "CBS/SportsLine odds preview 可連線；本站只列 odds-reference for paper simulation，不作下注建議。",
         "FIFA USA-Bosnia official preview URL 可連線，作為本場賽前 team-news / live-stream / tickets 的官方入口；正式先發仍等 match centre 或球隊發布。",
-        "USA Today 可讀 metadata 與正文片段指出 Auston Trusty 可用性較 Mark McKenzie、Cristian Roldan 更樂觀，Pochettino 也談到 Trusty 對 Bosnia 前的恢復狀態；這是 reported injury watch，不寫成 confirmed lineup。"
+        "USA Today 可讀 metadata 與正文片段指出 Auston Trusty 可用性較 Mark McKenzie、Cristian Roldan 更樂觀，Pochettino 也談到 Trusty 對 Bosnia 前的恢復狀態；這是 reported injury watch，不寫成 confirmed lineup。",
+        "13:11Z 親核 FIFA USA-Bosnia match centre 可連線，作為正式陣容、比分與事件的官方優先入口。",
+        "13:11Z 親核 ESPN USA-Bosnia live page 可連線，標示提供 live score、highlights、updated stats；可作臨場交叉檢查。",
+        "13:11Z 親核 ESPN odds page 可連線，提供 odds/spread/score prediction；只當紙上市場參考，不導向真金下注。"
       ],
       "sources": [
         {
@@ -5563,6 +5584,30 @@
           "fetchedAt": "2026-07-01T12:02:56Z",
           "claimType": "reported/availability-watch",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA USA-Bosnia match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021524",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-01T13:11:42Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN USA-Bosnia live centre",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760494",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-01T13:11:42Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN USA-Bosnia odds",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760494",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-01T13:11:42Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -5570,9 +5615,9 @@
     {
       "matchId": "m082",
       "match": "Belgium vs Senegal",
-      "sourceType": "official fixture/federation context + live-centre rails + reported tactical/lineup/odds watch",
-      "title": "Belgium-Senegal 補 USA Today 與 Yahoo team-news：紅魔數字漂亮，但 Senegal 這種對手最會把慢熱變事故。",
-      "sorenTake": "Yahoo 的 predicted lineup/team-news 與 USA Today 的專家 pick/odds 讓 Belgium-Senegal 賽前盤更完整，但 Soren 不會把 SEO 先發當聖旨。Belgium 若前 20 分鐘還在優雅散步，Senegal 會把比賽直接改成身體對抗考。",
+      "sourceType": "official match-centre + live-centre + reported tactical/lineup watch + odds reference",
+      "title": "Belgium-Senegal 補 FIFA/ESPN 臨場入口：紅魔數字好看，但 Senegal 最擅長把慢熱隊拖進肉搏。",
+      "sorenTake": "Belgium 的模型面與進攻天花板仍佔優，但 Senegal 的身體對抗與轉換會專打慢半拍。FIFA match centre 與 ESPN live/odds 已補上；這場不要只看名氣，要看 Belgium 前 20 分鐘能不能把節奏搶走。",
       "signals": [
         "FOX Sports m082 頁面標題顯示 Belgium vs 3A/3E/3H/3I/3J，可作公開賽程與對手池來源。",
         "Al Jazeera explainer 仍保守列為 1G vs 3A/E/H/I/J，與第三名尚未完全收口一致。",
@@ -5596,7 +5641,10 @@
         "Bundesliga Belgium-Senegal lineup hub 可連線，頁面描述為最新 updates；正式 XI 通常仍等賽前約一小時。",
         "WhoScored Belgium-Senegal 統計 preview 可連線，meta 明示 injuries/suspensions、probable line-ups、facts and odds；屬 public context / lineup-watch，不是下注建議。",
         "USA Today Belgium-Senegal 頁面可讀 metadata，定位為專家 prediction / picks / analysis；本站只作 public expectation 與 paper-market 參考，不當投注建議。",
-        "Yahoo Sports Belgium-Senegal predicted lineup/team-news metadata 可讀，提到 Belgium 16 場不敗與 Senegal 對戰背景；仍標記為 reported/lineup-watch，正式 XI 未公布前不升級。"
+        "Yahoo Sports Belgium-Senegal predicted lineup/team-news metadata 可讀，提到 Belgium 16 場不敗與 Senegal 對戰背景；仍標記為 reported/lineup-watch，正式 XI 未公布前不升級。",
+        "13:11Z 親核 ESPN Belgium-Senegal live page 可連線，標示提供 live score、highlights、updated stats；作為非官方但高可信臨場交叉檢查。",
+        "13:11Z 親核 ESPN odds page 可連線，提供 odds/spread/score prediction；本站只作紙上市場溫度，不是下注建議。",
+        "13:11Z 親核 FIFA Belgium-Senegal match centre 可連線；雖頁面動態內容未在 HTML metadata 直接吐出，仍作官方陣容/比分最高優先入口。"
       ],
       "sources": [
         {
@@ -5758,6 +5806,30 @@
           "fetchedAt": "2026-07-01T12:02:56Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Belgium-Senegal match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021525",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-01T13:11:42Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Belgium-Senegal live centre",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760493/senegal-belgium",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-01T13:11:42Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Belgium-Senegal odds",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760493",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-01T13:11:42Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
