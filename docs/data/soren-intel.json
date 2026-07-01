@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T18:05:54Z",
-  "status": "Postmatch scout correction: ESPN public summary 已把 m080 England 2-1 Congo DR 標為 Full Time；更新舊 live-score 卡為 FT/postmatch，仍不把任何未完賽來源寫成結算。",
-  "headline": "Soren scout: England 2-1 熬過 DR Congo，冷門刀差點割到大動脈；Live 終於變 Final，賽後卡已補上。",
+  "generatedAt": "2026-07-01T20:16:18Z",
+  "status": "Live-score micro refresh: ESPN public summary 顯示 Belgium-Senegal 已開踢但 completed=false；本站只更新 live context，不做結果、括號或紙上 bankroll 結算。",
+  "headline": "Soren scout: Belgium-Senegal 已進行到 16'，ESPN 顯示 0-0；Live ≠ Final，先看紅魔慢熱病會不會被 Senegal 放大。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5689,9 +5689,9 @@
     {
       "matchId": "m082",
       "match": "Belgium vs Senegal",
-      "sourceType": "official match-centre + live-centre + reported tactical/lineup watch + odds reference",
-      "title": "Belgium-Senegal 開賽前再加 Guardian 針眼：Garcia 被「過氣」標籤刺到，紅魔若急著證明自己，反而可能給 Senegal 反擊空間。",
-      "sorenTake": "FIFA/ESPN/FOX 的臨場入口已在，RotoWire 再補 predicted lineups、team news 與 tactical analysis。Soren 的重點不變：Belgium 是合理熱門，但 Senegal 的身體對抗與轉換會把比利時慢熱病放大；正式 XI 未出前，只能把這些當 lineup-watch。",
+      "sourceType": "live score + official/live-centre + lineup/odds watch",
+      "title": "Belgium-Senegal 即時針更新：ESPN 16' 顯示 0-0、completed=false；這不是結算，只是把現場溫度貼上牆。",
+      "sorenTake": "ESPN public summary 在 2026-07-01T20:16:18Z 把 Belgium-Senegal 標成 In Progress（16'），比分 0-0，completed=false。Soren 的翻譯：Belgium 仍是紙面熱門，但比賽已進入活體樣本；任何門前慌張、轉換漏人或 Senegal 身體對抗，都只能先寫成 live context，不能偷跑成賽果。",
       "signals": [
         "FOX Sports m082 頁面標題顯示 Belgium vs 3A/3E/3H/3I/3J，可作公開賽程與對手池來源。",
         "Al Jazeera explainer 仍保守列為 1G vs 3A/E/H/I/J，與第三名尚未完全收口一致。",
@@ -5721,7 +5721,8 @@
         "13:11Z 親核 FIFA Belgium-Senegal match centre 可連線；雖頁面動態內容未在 HTML metadata 直接吐出，仍作官方陣容/比分最高優先入口。",
         "RotoWire 7/1 Belgium-Senegal preview 可讀 metadata，定位為 predicted lineups、team news、tactical analysis，並稱這場 could go either way；列為 team-news/tactical watch，不當 confirmed XI。",
         "Guardian 賽前專題寫到 Rudi Garcia 對 Belgium「has-beens」批評反應強烈，且球隊帶著 5-1 擊敗 New Zealand 後的反彈氣勢進入對 Senegal 的 32 強戰；這是心理/敘事脈絡，不是陣容官宣。",
-        "ESPN public summary API 在 16:47Z 仍顯示 Belgium-Senegal scheduled/completed=false；正式先發尚未落地前，Guardian/Rotowire/Yahoo 都只能當賽前與 lineup-watch，不可寫成 confirmed XI。"
+        "ESPN public summary API 在 16:47Z 仍顯示 Belgium-Senegal scheduled/completed=false；正式先發尚未落地前，Guardian/Rotowire/Yahoo 都只能當賽前與 lineup-watch，不可寫成 confirmed XI。",
+        "2026-07-01T20:16:18Z 再核 ESPN public summary：Belgium-Senegal 為 In Progress / 16'，比分 0-0，completed=false；這是 context/live-score，不觸發結果、bracket 或 paper-bankroll 結算。"
       ],
       "sources": [
         {
@@ -5925,11 +5926,11 @@
           "confidence": "high"
         },
         {
-          "label": "ESPN Belgium-Senegal public summary API",
+          "label": "ESPN public API Belgium-Senegal live score",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760493",
           "sourceName": "ESPN public API",
-          "fetchedAt": "2026-07-01T16:47:24Z",
-          "claimType": "context/live-status",
+          "fetchedAt": "2026-07-01T20:16:18Z",
+          "claimType": "context/live-score",
           "confidence": "high"
         }
       ],
