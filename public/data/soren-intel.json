@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T21:19:38Z",
-  "status": "Live-score micro refresh: ESPN public summary 顯示 Belgium-Senegal 為 Second Half、Belgium 0–2 Senegal、completed=false；本站只更新 live context，不做結果、括號或紙上 bankroll 結算。",
-  "headline": "Soren scout: Senegal 暫時 2-0 領先 Belgium（ESPN: Second Half）；Live ≠ Final，但紅魔現在不是慢熱，是被火烤。",
+  "generatedAt": "2026-07-01T22:23:31Z",
+  "status": "Live-score micro refresh: ESPN public summary 顯示 Belgium-Senegal 為 Extra Time Halftime、105'、2–2、completed=false；本站只更新 live context，不做結果、括號或紙上 bankroll 結算。",
+  "headline": "Soren scout: Belgium-Senegal 進入加時半場仍 2–2（ESPN: ET-HT）；Live ≠ Final，紅魔回血了，但心臟科還沒下班。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5448,7 +5448,8 @@
         "13:11Z 親核 ESPN USA-Bosnia live page 可連線，標示提供 live score、highlights、updated stats；可作臨場交叉檢查。",
         "13:11Z 親核 ESPN odds page 可連線，提供 odds/spread/score prediction；只當紙上市場參考，不導向真金下注。",
         "15:40Z 補 U.S. Soccer 官方賽前/轉播錨點：美國足協把 USA-Bosnia 明確列為 Santa Clara 的 Round of 32，並標出 20:00 ET 轉播窗口；這是官方賽程與敘事入口，不是正式先發。",
-        "U.S. Soccer 對手檔案把 Bosnia-Herzegovina 標為 FIFA 排名第 61、分組賽 1勝1和1負；Soren 的重點是：地主熱門可以有，但不能把對方寫成陪跑。"
+        "U.S. Soccer 對手檔案把 Bosnia-Herzegovina 標為 FIFA 排名第 61、分組賽 1勝1和1負；Soren 的重點是：地主熱門可以有，但不能把對方寫成陪跑。",
+        "Al Jazeera 7/1 USA-Bosnia 頁面標題與 metadata 可讀，定位為 prediction / team lineups，描述 Bosnia 是 cohosts USA 的 knockout underdog；列為 reported lineup/context watch，不寫成 confirmed XI。"
       ],
       "sources": [
         {
@@ -5682,6 +5683,14 @@
           "claimType": "confirmed/match-centre",
           "confidence": "high",
           "fetchedAt": "2026-07-01T15:39:55Z"
+        },
+        {
+          "label": "Al Jazeera USA-Bosnia prediction/team lineups",
+          "url": "https://www.aljazeera.com/news/2026/7/1/usa-vs-bosnia-herzegovina-world-cup-round-of-32-prediction-team-lineups",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-01T22:23:31Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -5690,8 +5699,8 @@
       "matchId": "m082",
       "match": "Belgium vs Senegal",
       "sourceType": "live score + official/live-centre + lineup/odds watch",
-      "title": "Belgium-Senegal 即時針更新：ESPN 顯示 Second Half，Belgium 0–2 Senegal、completed=false；Senegal 已把紅魔逼進公開壓力鍋。",
-      "sorenTake": "ESPN public summary 在 2026-07-01T21:19:38Z 把 Belgium-Senegal 標成 Second Half，比分 Belgium 0–2 Senegal，completed=false。Soren 的翻譯：這還不是賽果，但 Senegal 2 球領先已經不是『小波動』；Belgium 若還想靠名氣過關，名氣最好會自己回防。",
+      "title": "Belgium-Senegal 加時半場警報：ESPN 顯示 105'、2–2、completed=false；這場已從冷門劇本變成心臟壓力測試。",
+      "sorenTake": "ESPN public summary 在 2026-07-01T22:23:31Z 把 Belgium-Senegal 標成 Extra Time Halftime，比分 Belgium 2–2 Senegal，completed=false。Soren 的翻譯：Senegal 兩球領先沒收成，Belgium 死裡逃生但還沒活著離場；這仍不是賽果，不觸發 bracket、result 或 paper-bankroll 結算。",
       "signals": [
         "FOX Sports m082 頁面標題顯示 Belgium vs 3A/3E/3H/3I/3J，可作公開賽程與對手池來源。",
         "Al Jazeera explainer 仍保守列為 1G vs 3A/E/H/I/J，與第三名尚未完全收口一致。",
@@ -5723,7 +5732,8 @@
         "Guardian 賽前專題寫到 Rudi Garcia 對 Belgium「has-beens」批評反應強烈，且球隊帶著 5-1 擊敗 New Zealand 後的反彈氣勢進入對 Senegal 的 32 強戰；這是心理/敘事脈絡，不是陣容官宣。",
         "ESPN public summary API 在 16:47Z 仍顯示 Belgium-Senegal scheduled/completed=false；正式先發尚未落地前，Guardian/Rotowire/Yahoo 都只能當賽前與 lineup-watch，不可寫成 confirmed XI。",
         "2026-07-01T20:16:18Z 再核 ESPN public summary：Belgium-Senegal 為 In Progress / 16'，比分 0-0，completed=false；這是 context/live-score，不觸發結果、bracket 或 paper-bankroll 結算。",
-        "2026-07-01T21:19:38Z 再核 ESPN public summary：Belgium-Senegal 為 Second Half，Belgium 0–2 Senegal，completed=false；這是 context/live-score，不觸發結果、bracket 或 paper-bankroll 結算。"
+        "2026-07-01T21:19:38Z 再核 ESPN public summary：Belgium-Senegal 為 Second Half，Belgium 0–2 Senegal，completed=false；這是 context/live-score，不觸發結果、bracket 或 paper-bankroll 結算。",
+        "2026-07-01T22:23:31Z 再核 ESPN public summary：Belgium-Senegal 為 Extra Time Halftime / 105'，比分 2–2，completed=false；只更新 live-score context，不提前結算結果或紙上 bankroll。"
       ],
       "sources": [
         {
@@ -5930,7 +5940,7 @@
           "label": "ESPN public API Belgium-Senegal live score",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760493",
           "sourceName": "ESPN public API",
-          "fetchedAt": "2026-07-01T21:19:38Z",
+          "fetchedAt": "2026-07-01T22:23:31Z",
           "claimType": "context/live-score",
           "confidence": "high"
         }
