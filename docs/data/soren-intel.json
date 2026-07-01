@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T08:00:47Z",
-  "status": "R16 next-wave scout: sparse Canada-Morocco, Paraguay-France, Brazil-Norway cards now have parent-verified public media/official/live-tracker sources; lineup and odds boundaries stay conservative.",
-  "headline": "Soren scout: 7/4–7/5 三張薄卡補上火種；熱門可以熱，但別把 Morocco、Paraguay、Haaland 當背景板。",
+  "generatedAt": "2026-07-01T09:11:44Z",
+  "status": "R16 bracket-watch scout: unresolved m092-m096 slots now have compact public schedule cards, explicitly labeled as placeholders until Round-of-32 winners are known.",
+  "headline": "Soren scout: 7/6–7/7 五個 R16 空格先掛上警示牌；沒名字就別硬演戰術板，先等淘汰賽把人吐出來。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -6334,6 +6334,206 @@
         }
       ],
       "confidence": "medium-high"
+    },
+    {
+      "matchId": "m092",
+      "match": "W79 vs W80",
+      "sourceType": "reported/bracket-watch + public schedule context",
+      "title": "M092 還是 W79/W80 霧區：別急著把勝者名字刻上去，淘汰賽會專治提前開香檳。",
+      "sorenTake": "Round-of-16 slot is still unresolved: winner of Match 79 versus winner of Match 80. Soren keeps this as bracket-watch only, because turning placeholders into fake certainty is how brackets become comedy props.",
+      "signals": [
+        "Current public tournament data keeps M092 as W79 vs W80; this is a route slot, not a confirmed team matchup.",
+        "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
+        "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
+        "Kickoff target: 2026-07-06T00:00:00Z at Mexico City Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known."
+      ],
+      "sources": [
+        {
+          "label": "WorldCupPass Round of 16 schedule",
+          "url": "https://worldcuppass.com/world-cup-2026-round-of-16/",
+          "sourceName": "WorldCupPass",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "reported/bracket-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "NBC Sports World Cup schedule and bracket",
+          "url": "https://www.nbcsports.com/soccer/news/2026-world-cup-schedule-kick-off-times-stadiums-dates-groups-how-to-watch-live-bracket",
+          "sourceName": "NBC Sports",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Guardian World Cup wallchart",
+          "url": "https://www.theguardian.com/football/world-cup-2026/overview",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m093",
+      "match": "W83 vs W84",
+      "sourceType": "reported/bracket-watch + public schedule context",
+      "title": "M093 是 W83/W84 續命線：Portugal-Croatia 與 Spain-Austria 的餘震，先看誰少流血。",
+      "sorenTake": "Round-of-16 slot is winner of Match 83 versus winner of Match 84. The public angle is recovery cost: whoever comes through the prior ties may bring minutes, cards and bruises into Dallas.",
+      "signals": [
+        "Current public tournament data keeps M093 as W83 vs W84; this is a route slot, not a confirmed team matchup.",
+        "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
+        "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
+        "Kickoff target: 2026-07-06T19:00:00Z at Dallas Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known."
+      ],
+      "sources": [
+        {
+          "label": "WorldCupPass Round of 16 schedule",
+          "url": "https://worldcuppass.com/world-cup-2026-round-of-16/",
+          "sourceName": "WorldCupPass",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "reported/bracket-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "NBC Sports World Cup schedule and bracket",
+          "url": "https://www.nbcsports.com/soccer/news/2026-world-cup-schedule-kick-off-times-stadiums-dates-groups-how-to-watch-live-bracket",
+          "sourceName": "NBC Sports",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Guardian World Cup wallchart",
+          "url": "https://www.theguardian.com/football/world-cup-2026/overview",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m094",
+      "match": "W81 vs W82",
+      "sourceType": "reported/bracket-watch + public schedule context",
+      "title": "M094 等 W81/W82 開獎：USA/Bosnia 與 Belgium/Senegal 這條線，不缺戲劇性，只缺最終名字。",
+      "sorenTake": "Round-of-16 slot is winner of Match 81 versus winner of Match 82. Until those Round-of-32 matches settle, this card stays as route context rather than matchup analysis.",
+      "signals": [
+        "Current public tournament data keeps M094 as W81 vs W82; this is a route slot, not a confirmed team matchup.",
+        "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
+        "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
+        "Kickoff target: 2026-07-07T00:00:00Z at Seattle Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known."
+      ],
+      "sources": [
+        {
+          "label": "WorldCupPass Round of 16 schedule",
+          "url": "https://worldcuppass.com/world-cup-2026-round-of-16/",
+          "sourceName": "WorldCupPass",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "reported/bracket-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "NBC Sports World Cup schedule and bracket",
+          "url": "https://www.nbcsports.com/soccer/news/2026-world-cup-schedule-kick-off-times-stadiums-dates-groups-how-to-watch-live-bracket",
+          "sourceName": "NBC Sports",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Guardian World Cup wallchart",
+          "url": "https://www.theguardian.com/football/world-cup-2026/overview",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m095",
+      "match": "W86 vs W88",
+      "sourceType": "reported/bracket-watch + public schedule context",
+      "title": "M095 是 W86/W88 的晚到拼圖：Argentina/Cape Verde 與 Australia/Egypt 先打完，Soren 再掀桌。",
+      "sorenTake": "Round-of-16 slot is winner of Match 86 versus winner of Match 88. The useful note today is bracket timing, not fantasy lineups for teams that have not qualified into the slot yet.",
+      "signals": [
+        "Current public tournament data keeps M095 as W86 vs W88; this is a route slot, not a confirmed team matchup.",
+        "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
+        "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
+        "Kickoff target: 2026-07-07T16:00:00Z at Boston Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known."
+      ],
+      "sources": [
+        {
+          "label": "WorldCupPass Round of 16 schedule",
+          "url": "https://worldcuppass.com/world-cup-2026-round-of-16/",
+          "sourceName": "WorldCupPass",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "reported/bracket-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "NBC Sports World Cup schedule and bracket",
+          "url": "https://www.nbcsports.com/soccer/news/2026-world-cup-schedule-kick-off-times-stadiums-dates-groups-how-to-watch-live-bracket",
+          "sourceName": "NBC Sports",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Guardian World Cup wallchart",
+          "url": "https://www.theguardian.com/football/world-cup-2026/overview",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "medium"
+    },
+    {
+      "matchId": "m096",
+      "match": "W85 vs W87",
+      "sourceType": "reported/bracket-watch + public schedule context",
+      "title": "M096 還卡在 W85/W87：Switzerland-Algeria、Colombia-Ghana 先決生死，Vancouver 才有真名單。",
+      "sorenTake": "Round-of-16 slot is winner of Match 85 versus winner of Match 87. Keep it bracket-watch: official lineups, odds and tactical reads wait until the actual teams are known.",
+      "signals": [
+        "Current public tournament data keeps M096 as W85 vs W87; this is a route slot, not a confirmed team matchup.",
+        "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
+        "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
+        "Kickoff target: 2026-07-07T20:00:00Z at Vancouver Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known."
+      ],
+      "sources": [
+        {
+          "label": "WorldCupPass Round of 16 schedule",
+          "url": "https://worldcuppass.com/world-cup-2026-round-of-16/",
+          "sourceName": "WorldCupPass",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "reported/bracket-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "NBC Sports World Cup schedule and bracket",
+          "url": "https://www.nbcsports.com/soccer/news/2026-world-cup-schedule-kick-off-times-stadiums-dates-groups-how-to-watch-live-bracket",
+          "sourceName": "NBC Sports",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Guardian World Cup wallchart",
+          "url": "https://www.theguardian.com/football/world-cup-2026/overview",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-01T09:11:44Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium"
+        }
+      ],
+      "confidence": "medium"
     }
   ]
 }
