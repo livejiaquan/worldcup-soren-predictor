@@ -57,8 +57,8 @@ function TodaySlate({ matches, predictions, paperBetsByMatch, intelByMatch, onSe
   const featured = matches.slice(0, 3)
   const rest = matches.slice(3, 9)
   return <section className="panel" id="predictions">
-    <SectionHead kicker="TODAY'S SLATE" title="今日重點：少一點噪音，多一點判斷" meta={`${matches.length} 場追蹤`}>
-      <small>首頁只放最重要的；完整理由、情報和紙上戰局都收進細節裡。</small>
+    <SectionHead kicker="NEXT WINDOW" title="下一批該盯的比賽" meta={`${matches.length} 場`}>
+      <small>首頁只放最重要的；完整理由、情報和紙上戰局收進細節。來源時間打架時先校時，不急著裝現場。</small>
     </SectionHead>
     <div className="featured-grid">{featured.map((m) => <CompactMatchCard featured key={m.id} match={m} prediction={predictions[m.id]} paperBet={paperBetsByMatch[m.id]} intel={intelByMatch[m.id]} onSelect={onSelect}/>)}</div>
     <div className="upcoming-strip">{rest.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDay(m.kickoffUtc)}</span><b>{flag(m.team1)} {m.team1} vs {flag(m.team2)} {m.team2}</b><em>{predictions[m.id]?.pick}</em></button>)}</div>

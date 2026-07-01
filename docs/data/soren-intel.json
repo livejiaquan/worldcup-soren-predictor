@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T00:16:03Z",
-  "status": "Matchday scout refresh: Mexico-Ecuador 倒數階段未見可驗證官方先發新增；Soren 補強 England-DR Congo 官方賽前聲明、Senegal 官方收操、USA-Bosnia 媒體/戰術脈絡。",
-  "headline": "Soren scout: Azteca 先別幻想神話，先等官方名單；England/Belgium/USA 的下一波淘汰賽卡補上更硬的公開來源。",
+  "generatedAt": "2026-07-01T01:26:50Z",
+  "status": "Matchday scout refresh: Mexico-Ecuador 加上 ESPN public scoreboard 的臨場校時；ESPN 仍列 Scheduled / completed=false，所以 openfootball 與 FotMob 時間差先當來源差異，不當作開賽或完賽訊號。",
+  "headline": "Soren scout: Mexico-Ecuador 先校時再嘴砲——ESPN 仍顯示 02:00Z 開球且 completed=false，Live ≠ Final 這條紅線繼續拉滿。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -4665,9 +4665,9 @@
     {
       "matchId": "m079",
       "match": "Mexico vs Ecuador",
-      "sourceType": "official preview + reported lineups + live-score entry + altitude/tactical + paper odds watch",
-      "title": "Mexico-Ecuador 再補 ESPN/FotMob：Azteca 主場很吵，但 Ecuador 不是背景板；這場先看節奏，再談英雄。",
-      "sorenTake": "ESPN 的賽前頁提供轉播、裁判與預測陣容脈絡；FotMob 則補上 01:00 UTC live-score / predicted-lineups 入口。Mexico 有主場與海拔敘事，Ecuador 的反擊與身體對抗會專打「主場必勝」這種懶人劇本。",
+      "sourceType": "reported lineup-watch + official preview + venue/odds watch + live-status check",
+      "title": "Mexico-Ecuador 臨場校時：ESPN 仍列 Scheduled / completed=false；Azteca 很吵，但 Soren 不拿時間差裝現場。",
+      "sorenTake": "openfootball/FotMob 目前指向 01:00Z，ESPN public scoreboard 則列 02:00Z 且 completed=false；這不是可以拿來結算或編直播劇情的空檔。Mexico 有主場聲浪，Ecuador 有高海拔免疫力與反擊牙齒；先等正式開球/先發，再決定誰是真的在踢、誰只是被賽程表誤傷。",
       "signals": [
         "FOX Sports 比賽頁標題可核對 Mexico vs 3C/3E/3F/3H/3I 與 2026-06-30 賽事資訊，是公開賽程入口。",
         "Al Jazeera Round-of-32 explainer 列出 Mexico vs 3C/3E/3F/3H/3I 與 Mexico City Stadium 時間窗口。",
@@ -4699,7 +4699,8 @@
         "RotoWire 與 Squawka 都提供 Mexico-Ecuador predicted lineups/team news；只列為 reported lineup-watch，正式 XI 仍等 FIFA/官方。",
         "USA Today odds/picks 補主流市場語境；紙上模擬只看 public reference，不導向真金流。",
         "ESPN 賽前頁標題明示 Mexico-Ecuador 的 watch/kickoff/referee/predicted line-ups；屬媒體預測陣容與賽事資訊，不是官方先發。",
-        "FotMob metadata 顯示 Mexico vs Ecuador 於 2026-07-01 01:00 UTC 開球，提供 live results、H2H、match stats、predicted lineups 入口；目前仍按賽前入口處理。"
+        "FotMob metadata 顯示 Mexico vs Ecuador 於 2026-07-01 01:00 UTC 開球，提供 live results、H2H、match stats、predicted lineups 入口；目前仍按賽前入口處理。",
+        "01:26Z 臨場校時：ESPN public scoreboard/summary 把 Mexico-Ecuador 列為 2026-07-01T02:00Z 開球、STATUS_SCHEDULED、completed=false；因此本站只把 openfootball/FotMob 的 01:00Z 差異標成來源時間差，不當作比賽已開始或任何完賽訊號。"
       ],
       "sources": [
         {
@@ -4941,6 +4942,14 @@
           "fetchedAt": "2026-06-30T14:44:11Z",
           "claimType": "odds-reference",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN Mexico-Ecuador public scoreboard status",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760491",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-01T01:26:50Z",
+          "claimType": "context/live-status",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
