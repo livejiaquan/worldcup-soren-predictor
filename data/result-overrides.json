@@ -1,18 +1,4 @@
 {
   "note": "Source-backed final-score overrides used when upstream openfootball data lags. The official-results verifier cron may append new entries; remove entries after upstream catches up if desired.",
-  "overrides": [
-    {
-      "date": "2026-07-01",
-      "team1": "England",
-      "team2": "Democratic Republic of the Congo",
-      "score": [
-        2,
-        1
-      ],
-      "source": "ESPN final score",
-      "url": "https://www.espn.com/soccer/match/_/gameId/760495/congo-dr-england",
-      "fetchedAt": "2026-07-01T18:02:12.919398Z",
-      "winner": "England"
-    }
-  ]
+  "overrides": []
 }
