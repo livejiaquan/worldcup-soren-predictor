@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T04:01:50.672Z",
+  "generatedAt": "2026-07-01T04:04:55.631Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,8 +7,8 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 78,
-    "scheduledMatches": 26,
+    "finishedMatches": 79,
+    "scheduledMatches": 25,
     "nextWindow": [
       "m080",
       "m082",
@@ -139,14 +139,14 @@
       {
         "team": "Mexico",
         "group": "Group A",
-        "played": 3,
-        "won": 3,
+        "played": 4,
+        "won": 4,
         "drawn": 0,
         "lost": 0,
-        "goalsFor": 6,
+        "goalsFor": 8,
         "goalsAgainst": 0,
-        "goalDiff": 6,
-        "points": 9
+        "goalDiff": 8,
+        "points": 12
       },
       {
         "team": "South Africa",
@@ -363,13 +363,13 @@
       {
         "team": "Ecuador",
         "group": "Group E",
-        "played": 3,
+        "played": 4,
         "won": 1,
         "drawn": 1,
-        "lost": 1,
+        "lost": 2,
         "goalsFor": 2,
-        "goalsAgainst": 2,
-        "goalDiff": 0,
+        "goalsAgainst": 4,
+        "goalDiff": -2,
         "points": 4
       },
       {
@@ -2162,9 +2162,12 @@
       "team1": "Mexico",
       "team2": "Ecuador",
       "venue": "Mexico City",
-      "status": "scheduled",
-      "score": null,
-      "source": "openfootball/worldcup.json"
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
+      "source": "openfootball/worldcup.json + override: ESPN public scoreboard/summary API reported Full Time"
     },
     {
       "id": "m080",
@@ -2548,40 +2551,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.7221867665136392,
-        "draw": 0.19629978776061224,
-        "away": 0.08151344572574852
+        "home": 0.7347465869103981,
+        "draw": 0.19073049106452855,
+        "away": 0.07452292202507334
       },
       "expectedGoals": [
-        1.91,
-        0.47
+        1.94,
+        0.44
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Mexico，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Mexico，但平局還有 19%；別急著開香檳，足球最會打臉。",
         "story": "Mexico 底牌比較硬；South Africa 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "22.5",
+            "value": "23.8",
             "note": "Mexico 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.91 : 0.47",
+            "value": "1.94 : 0.44",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "8%",
+            "value": "7%",
             "note": "South Africa 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Mexico 88.9；South Africa 66.4",
-        "預期進球 1.91 : 0.47，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 22.5 分，我暫時站 Mexico"
+        "底牌分：Mexico 90.2；South Africa 66.4",
+        "預期進球 1.94 : 0.44，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 23.8 分，我暫時站 Mexico"
       ]
     },
     "m002": {
@@ -2955,42 +2958,42 @@
     },
     "m026": {
       "pick": "Ivory Coast",
-      "confidence": 0.3934991704768627,
-      "tag": "膠著到煩",
+      "confidence": 0.5194155525996034,
+      "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.3849348240077224,
-        "draw": 0.2777100545908903,
-        "away": 0.33735512140138724
+        "home": 0.47872370187469426,
+        "draw": 0.2686184336112176,
+        "away": 0.2526578645140881
       },
       "expectedGoals": [
-        1.24,
-        1.14
+        1.42,
+        0.96
       ],
-      "score": "1-1",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 Ivory Coast，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Ivory Coast，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "2.9",
+            "value": "0.7",
             "note": "誰也別裝大哥"
           },
           {
             "label": "進球味",
-            "value": "1.24 : 1.14",
-            "note": "最像 1-1"
+            "value": "1.42 : 0.96",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "34%",
+            "value": "25%",
             "note": "Ivory Coast 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Ivory Coast 73.7；Ecuador 76.6",
-        "預期進球 1.24 : 1.14，先用 Poisson 把嘴砲壓成數字",
+        "底牌分：Ivory Coast 73.7；Ecuador 74.4",
+        "預期進球 1.42 : 0.96，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
@@ -3652,43 +3655,43 @@
     },
     "m004": {
       "pick": "Mexico",
-      "confidence": 0.764826251380229,
+      "confidence": 0.7819232714628237,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6657312663173168,
-        "draw": 0.21906516215932287,
-        "away": 0.11520357152336042
+        "home": 0.6789654783971907,
+        "draw": 0.21405678245913523,
+        "away": 0.10697773914367414
       },
       "expectedGoals": [
-        1.79,
-        0.59
+        1.82,
+        0.56
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Mexico，但平局還有 22%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Mexico，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "story": "Mexico 底牌比較硬；South Korea 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "16.9",
+            "value": "18.2",
             "note": "Mexico 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.79 : 0.59",
+            "value": "1.82 : 0.56",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "12%",
+            "value": "11%",
             "note": "South Korea 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Mexico 88.9；South Korea 72.0",
-        "預期進球 1.79 : 0.59，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 16.9 分，我暫時站 Mexico"
+        "底牌分：Mexico 90.2；South Korea 72.0",
+        "預期進球 1.82 : 0.56，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 18.2 分，我暫時站 Mexico"
       ]
     },
     "m021": {
@@ -3939,43 +3942,43 @@
     },
     "m028": {
       "pick": "Ecuador",
-      "confidence": 0.82,
+      "confidence": 0.8013127903489323,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.7156784966459867,
-        "draw": 0.19911239879227796,
-        "away": 0.08520910456173522
+        "home": 0.6940080339670092,
+        "draw": 0.20812146752111005,
+        "away": 0.09787049851188075
       },
       "expectedGoals": [
-        1.9,
-        0.48
+        1.85,
+        0.53
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Ecuador，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Ecuador，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "story": "Ecuador 底牌比較硬；Curaçao 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "21.9",
+            "value": "19.7",
             "note": "Ecuador 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.90 : 0.48",
+            "value": "1.85 : 0.53",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "9%",
+            "value": "10%",
             "note": "Curaçao 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Ecuador 76.6；Curaçao 54.7",
-        "預期進球 1.90 : 0.48，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 21.9 分，我暫時站 Ecuador"
+        "底牌分：Ecuador 74.4；Curaçao 54.7",
+        "預期進球 1.85 : 0.53，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 19.7 分，我暫時站 Ecuador"
       ]
     },
     "m034": {
@@ -4677,43 +4680,43 @@
     },
     "m005": {
       "pick": "Mexico",
-      "confidence": 0.8022933990098698,
+      "confidence": 0.8189018482515635,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.09741622831239014,
-        "draw": 0.2078140088858301,
-        "away": 0.6947697628017797
+        "home": 0.0898157966838007,
+        "draw": 0.202498871405481,
+        "away": 0.7076853319107184
       },
       "expectedGoals": [
-        0.53,
-        1.85
+        0.5,
+        1.88
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 Mexico，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Mexico，但平局還有 20%；別急著開香檳，足球最會打臉。",
         "story": "Mexico 底牌比較硬；Czech Republic 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "22.6",
+            "value": "23.9",
             "note": "Mexico 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.53 : 1.85",
+            "value": "0.50 : 1.88",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "10%",
+            "value": "9%",
             "note": "Czech Republic 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Czech Republic 66.3；Mexico 88.9",
-        "預期進球 0.53 : 1.85，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 22.6 分，我暫時站 Mexico"
+        "底牌分：Czech Republic 66.3；Mexico 90.2",
+        "預期進球 0.50 : 1.88，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 23.9 分，我暫時站 Mexico"
       ]
     },
     "m006": {
@@ -4800,43 +4803,43 @@
     },
     "m030": {
       "pick": "Germany",
-      "confidence": 0.7147121594139896,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.7443078926845885,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.14034896394859495,
-        "draw": 0.2325536013694249,
-        "away": 0.6270974346819802
+        "home": 0.1253138846876094,
+        "draw": 0.2248010374070023,
+        "away": 0.6498850779053883
       },
       "expectedGoals": [
-        0.66,
-        1.72
+        0.62,
+        1.76
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場中等站 Germany，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Germany，但平局還有 22%；別急著開香檳，足球最會打臉。",
         "story": "Germany 底牌比較硬；Ecuador 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "16.0",
+            "value": "18.2",
             "note": "Germany 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.66 : 1.72",
+            "value": "0.62 : 1.76",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "14%",
+            "value": "13%",
             "note": "Ecuador 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Ecuador 76.6；Germany 92.6",
-        "預期進球 0.66 : 1.72，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 16.0 分，我暫時站 Germany"
+        "底牌分：Ecuador 74.4；Germany 92.6",
+        "預期進球 0.62 : 1.76，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 18.2 分，我暫時站 Germany"
       ]
     },
     "m035": {
@@ -5743,43 +5746,43 @@
     },
     "m079": {
       "pick": "Mexico",
-      "confidence": 0.7036470957348002,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.7508700178324799,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.618598438823216,
-        "draw": 0.23529566075125835,
-        "away": 0.14610590042552568
+        "home": 0.6549486767304282,
+        "draw": 0.22299898599498572,
+        "away": 0.12205233727458599
       },
       "expectedGoals": [
-        1.7,
-        0.68
+        1.77,
+        0.61
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場中等站 Mexico，但平局還有 24%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Mexico，但平局還有 22%；別急著開香檳，足球最會打臉。",
         "story": "Mexico 底牌比較硬；Ecuador 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "12.3",
+            "value": "15.8",
             "note": "Mexico 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.70 : 0.68",
+            "value": "1.77 : 0.61",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "15%",
+            "value": "12%",
             "note": "Ecuador 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Mexico 88.9；Ecuador 76.6",
-        "預期進球 1.70 : 0.68，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 12.3 分，我暫時站 Mexico"
+        "底牌分：Mexico 90.2；Ecuador 74.4",
+        "預期進球 1.77 : 0.61，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 15.8 分，我暫時站 Mexico"
       ]
     },
     "m080": {
@@ -6790,23 +6793,23 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 66,
-      "correct": 50,
+      "points": 67,
+      "correct": 51,
       "exact": 8,
-      "total": 78,
+      "total": 79,
       "rank": 1,
-      "accuracy": 0.6410256410256411
+      "accuracy": 0.6455696202531646
     },
     {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 64,
-      "correct": 46,
+      "points": 65,
+      "correct": 47,
       "exact": 8,
-      "total": 78,
+      "total": 79,
       "rank": 2,
-      "accuracy": 0.5897435897435898
+      "accuracy": 0.5949367088607594
     },
     {
       "id": "draw",
@@ -6815,9 +6818,9 @@
       "points": 44,
       "correct": 22,
       "exact": 11,
-      "total": 78,
+      "total": 79,
       "rank": 3,
-      "accuracy": 0.28205128205128205
+      "accuracy": 0.27848101265822783
     }
   ],
   "paperBankroll": {
@@ -6825,36 +6828,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 166.97,
-    "openStake": 39.11,
-    "totalValue": 166.97,
-    "roi": 0.67,
+    "bankroll": 178.25,
+    "openStake": 39.07,
+    "totalValue": 178.25,
+    "roi": 0.782,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m071",
-        "kickoffUtc": "2026-06-27T21:00:00.000Z",
-        "stage": "小組 L · Matchday 17",
-        "team1": "Panama",
-        "team2": "England",
-        "pick": "England",
-        "outcome": "away",
-        "stake": 8,
-        "decimalOdds": 1.99,
-        "edge": 0.635,
-        "modelProbability": 0.822,
-        "marketProxyProbability": 0.473,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-06-27T20:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 England，但平局還有 15%；別急著開香檳，足球最會打臉。",
-        "status": "won",
-        "score": [
-          0,
-          2
-        ],
-        "profit": 7.92
-      },
       {
         "matchId": "m072",
         "kickoffUtc": "2026-06-27T21:00:00.000Z",
@@ -7118,9 +7097,7 @@
           0
         ],
         "profit": 8.32
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m079",
         "kickoffUtc": "2026-07-01T01:00:00.000Z",
@@ -7131,15 +7108,22 @@
         "outcome": "home",
         "stake": 8,
         "decimalOdds": 2.41,
-        "edge": 0.491,
-        "modelProbability": 0.619,
+        "edge": 0.578,
+        "modelProbability": 0.655,
         "marketProxyProbability": 0.39,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-01T00:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Mexico，但平局還有 24%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "reason": "我這場偏明確站 Mexico，但平局還有 22%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          2,
+          0
+        ],
+        "profit": 11.28
+      }
+    ],
+    "pending": [
       {
         "matchId": "m080",
         "kickoffUtc": "2026-07-01T16:00:00.000Z",
@@ -7214,6 +7198,25 @@
         "lockedAtUtc": "2026-07-02T18:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Spain，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
+      },
+      {
+        "matchId": "m083",
+        "kickoffUtc": "2026-07-02T23:00:00.000Z",
+        "stage": "Round of 32",
+        "team1": "Portugal",
+        "team2": "Croatia",
+        "pick": "Portugal",
+        "outcome": "home",
+        "stake": 7.96,
+        "decimalOdds": 2.32,
+        "edge": 0.362,
+        "modelProbability": 0.587,
+        "marketProxyProbability": 0.405,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-02T22:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場中等站 Portugal，但平局還有 24%；別急著開香檳，足球最會打臉。",
         "status": "pending"
       }
     ],
@@ -7295,22 +7298,22 @@
         "status": "watchlist"
       },
       {
-        "matchId": "m083",
-        "kickoffUtc": "2026-07-02T23:00:00.000Z",
+        "matchId": "m088",
+        "kickoffUtc": "2026-07-03T18:00:00.000Z",
         "stage": "Round of 32",
-        "team1": "Portugal",
-        "team2": "Croatia",
-        "pick": "Portugal",
-        "outcome": "home",
-        "stake": 7.96,
-        "decimalOdds": 2.32,
-        "edge": 0.362,
-        "modelProbability": 0.587,
-        "marketProxyProbability": 0.405,
+        "team1": "Australia",
+        "team2": "Egypt",
+        "pick": "Egypt",
+        "outcome": "away",
+        "stake": 4.61,
+        "decimalOdds": 2.83,
+        "edge": 0.209,
+        "modelProbability": 0.427,
+        "marketProxyProbability": 0.332,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-02T22:00:00.000Z",
+        "lockedAtUtc": "2026-07-03T17:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Portugal，但平局還有 24%；別急著開香檳，足球最會打臉。",
+        "reason": "我這場保守站 Egypt，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
