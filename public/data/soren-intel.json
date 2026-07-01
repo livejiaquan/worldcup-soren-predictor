@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-06-30T23:06:22Z",
-  "status": "Postmatch correction: France-Sweden 已由 ESPN public scoreboard 與 openfootball 標成 FT，Soren 把原本 HT live-score 卡改成賽後結論；Mexico-Ecuador 仍維持賽前/臨場入口，等待官方先發。",
-  "headline": "Soren scout: France 3-0 Sweden——半場門縫變成鐵閘；France 過關，Mexico-Ecuador 進入倒數，Live ≠ Final 但 FT 就要收帳。",
+  "generatedAt": "2026-07-01T00:16:03Z",
+  "status": "Matchday scout refresh: Mexico-Ecuador 倒數階段未見可驗證官方先發新增；Soren 補強 England-DR Congo 官方賽前聲明、Senegal 官方收操、USA-Bosnia 媒體/戰術脈絡。",
+  "headline": "Soren scout: Azteca 先別幻想神話，先等官方名單；England/Belgium/USA 的下一波淘汰賽卡補上更硬的公開來源。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -4948,9 +4948,9 @@
     {
       "matchId": "m080",
       "match": "England vs Democratic Republic of the Congo",
-      "sourceType": "official match centre + tactical/lineup watch + underdog context + paper odds watch",
-      "title": "England-DR Congo 補官方 match centre：英格蘭厚得像字典，但剛果的逆轉履歷提醒你——紙面優勢不是免死金牌。",
-      "sorenTake": "England Football match centre 補上官方賽事頁，FIFA match centre 也可作為臨場入口；DR Congo 從落後翻回來才撞上 England，這種 underdog 不會被隊徽嚇到。英格蘭可以是大熱，但若把節奏交給混亂，劇本會開始咬人。",
+      "sourceType": "official match centre + official press conference + tactical/lineup watch + underdog context + paper odds watch",
+      "title": "England-DR Congo 補 Tuchel 官方賽前：英格蘭厚得像字典，但剛果不是插圖；「難打」不是客套，是警告。",
+      "sorenTake": "Tuchel 官方先把「難打」講出來，這比空喊熱門更有用：England 的厚度仍是主線，但 DR Congo 的低包袱與轉換衝擊，是淘汰賽最愛的麻煩製造機。",
       "signals": [
         "England Football 公開列出 England 若以 1L 出線，將在 Atlanta 對 3E/H/I/J/K。",
         "FOX Sports m080 賽程頁可核對 1L vs 3E/3H/3I/3J/3K 與 2026-07-01T16:00Z 窗口。",
@@ -4977,7 +4977,8 @@
         "FOX5 Atlanta 從主辦城市角度寫 DR Congo underdog 敘事，補 venue/public-interest context。",
         "FIFA Congo DR team-news hub 可作後續官方更新入口，避免只看英格蘭側消息。",
         "England Football 官方 match centre 確認 Round of 32 對 DR Congo 的賽事入口與 Atlanta Stadium / 17:00 BST 脈絡。",
-        "FIFA match centre 已可連線作為 England-DR Congo 官方比分/陣容入口；另有 FIFA 背景稿提到 Congo DR come from behind set up England tie，強化 underdog 韌性脈絡。"
+        "FIFA match centre 已可連線作為 England-DR Congo 官方比分/陣容入口；另有 FIFA 背景稿提到 Congo DR come from behind set up England tie，強化 underdog 韌性脈絡。",
+        "England Football 官方賽前稿引述 Tuchel：面對 DR Congo 會是 difficult test，英格蘭不能把紙面優勢當通關密碼。"
       ],
       "sources": [
         {
@@ -5171,6 +5172,14 @@
           "fetchedAt": "2026-06-30T19:45:53Z",
           "claimType": "context/team-form",
           "confidence": "medium-high"
+        },
+        {
+          "label": "England Football Tuchel press conference",
+          "url": "https://www.englandfootball.com/articles/2026/Jun/30/thomas-tuchel-england-v-DR-Congo-press-conference-20263006",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-01T00:16:03Z",
+          "claimType": "confirmed/coach-player-quote",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -5178,9 +5187,9 @@
     {
       "matchId": "m081",
       "match": "USA vs Bosnia & Herzegovina",
-      "sourceType": "official fixture/team/federation context + reported pressure/lineup/odds watch",
-      "title": "USA-Bosnia 補 U.S. Soccer 對手檔案：主場聲浪會很吵，但 Bosnia 不是來觀光，這是美國隊淘汰賽膽量測試。",
-      "sorenTake": "U.S. Soccer 另外確認 Bosnia 對戰、Santa Clara 場地與淘汰賽路線；Bosnia 足協也放出 Salt Lake City 訓練動態。主場、市場與牌面都偏 USA，但 Soren 最討厭「熱門隊以為氣氛能代替防守」——Bosnia 的冷門路徑至少是真有備戰痕跡。",
+      "sourceType": "official fixture/team/federation context + reported pressure/lineup/odds watch + manager-media context",
+      "title": "USA-Bosnia 補 Guardian/RotoWire：Pochettino 的媒體火花不是比分，但壓力是真的；Bosnia 不會被主場噪音自動消音。",
+      "sorenTake": "USA 有主場與深度，但 Guardian 的 Pochettino 壓力敘事提醒：淘汰賽不是公關秀。Bosnia 的訓練與對手檔案已足夠清楚，這場先看美國能不能把噪音轉成控制，而不是焦躁。",
       "signals": [
         "FOX Sports m081 比賽頁標題已顯示 United States vs Bosnia and Herzegovina，時間為 2026-07-01 當地 / 2026-07-02T00:00Z。",
         "FOX odds story 明列 USA vs Bosnia and Herzegovina：moneyline USA -185、Bosnia +600、draw +280；to advance USA -460、Bosnia +340。",
@@ -5194,7 +5203,9 @@
         "U.S. Soccer 對戰公告確認 USMNT 以 D 組第一進 32 強，將在 Santa Clara 對 Bosnia and Herzegovina。",
         "Bosnia and Herzegovina 足協報導球隊在 Salt Lake City 完成面向 USA 的訓練，屬官方備戰訊號；不等於公開先發。",
         "FIFA USA-Bosnia 資訊頁已可連線作官方賽事入口，但本次 probe 未讀到完整頁面文字；先只作 match-info lead，不拿來硬寫隊訊。",
-        "U.S. Soccer 6/30 opponent profile 梳理 Bosnia 近況、歷史與 Santa Clara 淘汰賽背景；屬官方對手檔案/賽前脈絡，不是官方先發。"
+        "U.S. Soccer 6/30 opponent profile 梳理 Bosnia 近況、歷史與 Santa Clara 淘汰賽背景；屬官方對手檔案/賽前脈絡，不是官方先發。",
+        "Guardian 賽前長文聚焦 Pochettino 與美國媒體互動、淘汰賽壓力與主場敘事；這是心理/輿論背景，不是陣容確認。",
+        "RotoWire 可連線預覽提供 USA-Bosnia predicted lineups、team news 與 tactical breakdown；仍維持 reported/lineup-watch，官方 XI 待賽前公布。"
       ],
       "sources": [
         {
@@ -5300,6 +5311,22 @@
           "claimType": "confirmed/context",
           "confidence": "high",
           "fetchedAt": "2026-06-30T11:04:55Z"
+        },
+        {
+          "label": "Guardian Pochettino media context",
+          "url": "https://www.theguardian.com/football/2026/jun/30/mauricio-pochettino-press-conferences-usmnt-world-cup",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-01T00:16:03Z",
+          "claimType": "context/media-pressure",
+          "confidence": "medium"
+        },
+        {
+          "label": "RotoWire USA-Bosnia preview",
+          "url": "https://www.rotowire.com/soccer/article/usa-vs-bosnia-and-herzegovina-preview-predicted-lineups-team-news-tactical-analysis-2026-world-cup-round-of-32-120374",
+          "sourceName": "RotoWire",
+          "fetchedAt": "2026-07-01T00:16:03Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -5307,9 +5334,9 @@
     {
       "matchId": "m082",
       "match": "Belgium vs Senegal",
-      "sourceType": "official fixture/federation context + Belgium-side report + reported tactical/lineup watch",
-      "title": "Belgium-Senegal 補 Opta：比利時仍是紙面熱門，但 Senegal 的反擊和淘汰賽混亂值，專治「控球率自信」。",
-      "sorenTake": "Belga 從比利時側確認 Seattle 對 Senegal 與後續路線，Sports Mole 補 Zeno Debast 仍有腿傷疑問但已恢復訓練的 team-news watch。Belgium 紙面更整齊，但 Senegal 的速度與身體對抗會專挑慢熱隊下刀。",
+      "sourceType": "official fixture/federation context + official Senegal training update + Belgium-side report + reported tactical/lineup watch",
+      "title": "Belgium-Senegal 補 Senegal 官方收操：比利時有紙面火力，Senegal 則把 Rutgers 收操當成開刀前磨刀。",
+      "sorenTake": "Senegal 官方收操確認備戰節奏已進 Seattle 模式；Belgium 如果只用控球率自我安慰，會被 Senegal 的反擊把臉打得很響。先發未官宣前，不把媒體 XI 當聖旨。",
       "signals": [
         "FOX Sports m082 頁面標題顯示 Belgium vs 3A/3E/3H/3I/3J，可作公開賽程與對手池來源。",
         "Al Jazeera explainer 仍保守列為 1G vs 3A/E/H/I/J，與第三名尚未完全收口一致。",
@@ -5323,7 +5350,8 @@
         "Goal.com Belgium-Senegal preview 明示會談 tactics/team news；可作戰術與隊訊觀察，但先發正式名單仍等 FIFA/球隊。",
         "Belga News Agency 確認 Belgium 7 月 1 日在 Seattle 對 Senegal，並點出勝方將面對 USA/Bosnia 勝者；這補上比利時側 bracket context。",
         "Sports Mole Belgium-Senegal preview 提到 Zeno Debast 腿傷仍存疑、但已參與本屆首次訓練；這是 reported availability-watch，不是官方傷停結論。",
-        "The Analyst / Opta 6/30 賽前預覽提供 Belgium-Senegal 的數據化勝率與 matchup 脈絡；這是公開模型/戰術參照，不是本站底層配方。"
+        "The Analyst / Opta 6/30 賽前預覽提供 Belgium-Senegal 的數據化勝率與 matchup 脈絡；這是公開模型/戰術參照，不是本站底層配方。",
+        "Senegal FA 官方稿表示 Lions 已在 Rutgers 完成對 Belgium 前最後準備並轉往 Seattle；這是可驗證官方備戰訊號，不是先發確認。"
       ],
       "sources": [
         {
@@ -5413,6 +5441,14 @@
           "claimType": "reported/tactical",
           "confidence": "high",
           "fetchedAt": "2026-06-30T11:04:55Z"
+        },
+        {
+          "label": "Senegal FA final training before Belgium",
+          "url": "https://fsfoot.sn/actualites/mondial-2026-les-lions-bouclent-leur-preparation-a-rutgers-avant-le-defi-belge/",
+          "sourceName": "Fédération Sénégalaise de Football",
+          "fetchedAt": "2026-07-01T00:16:03Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
