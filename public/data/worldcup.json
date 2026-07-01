@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T07:07:52.549Z",
+  "generatedAt": "2026-07-01T07:25:24.488Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -2167,7 +2167,7 @@
         2,
         0
       ],
-      "source": "openfootball/worldcup.json + override: FIFA match report plus ESPN public scoreboard/summary API reported Full Time"
+      "source": "openfootball/worldcup.json"
     },
     {
       "id": "m080",
@@ -2313,7 +2313,7 @@
       "time": "12:00 UTC-5",
       "kickoffUtc": "2026-07-04T17:00:00.000Z",
       "team1": "Canada",
-      "team2": "W75",
+      "team2": "Morocco",
       "venue": "Houston",
       "status": "scheduled",
       "score": null,
@@ -2327,8 +2327,8 @@
       "date": "2026-07-04",
       "time": "17:00 UTC-4",
       "kickoffUtc": "2026-07-04T21:00:00.000Z",
-      "team1": "W74",
-      "team2": "W77",
+      "team1": "Paraguay",
+      "team2": "France",
       "venue": "Philadelphia",
       "status": "scheduled",
       "score": null,
@@ -2342,8 +2342,8 @@
       "date": "2026-07-05",
       "time": "16:00 UTC-4",
       "kickoffUtc": "2026-07-05T20:00:00.000Z",
-      "team1": "W76",
-      "team2": "W78",
+      "team1": "Brazil",
+      "team2": "Norway",
       "venue": "New York/New Jersey (East Rutherford)",
       "status": "scheduled",
       "score": null,
@@ -6156,125 +6156,125 @@
     },
     "m090": {
       "pick": "Canada",
-      "confidence": 0.6652496820033964,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.3774753642442237,
+      "tag": "膠著到煩",
       "probabilities": {
-        "home": 0.5891922197770251,
-        "draw": 0.24415701725912414,
-        "away": 0.16665076296385076
+        "home": 0.3731116620348084,
+        "draw": 0.27801946598269034,
+        "away": 0.3488688719825013
       },
       "expectedGoals": [
-        1.64,
-        0.74
+        1.21,
+        1.17
       ],
-      "score": "1-0",
+      "score": "1-1",
       "commentary": {
-        "headline": "我這場中等站 Canada，但平局還有 24%；別急著開香檳，足球最會打臉。",
-        "story": "Canada 底牌比較硬；W75 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場保守站 Canada，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "story": "Morocco 底牌比較硬；Canada 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "9.6",
-            "note": "Canada 比較有本錢"
+            "value": "10.7",
+            "note": "Morocco 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.64 : 0.74",
+            "value": "1.21 : 1.17",
+            "note": "最像 1-1"
+          },
+          {
+            "label": "翻車率",
+            "value": "35%",
+            "note": "Canada 的偷雞窗口"
+          }
+        ]
+      },
+      "reasons": [
+        "底牌分：Canada 76.6；Morocco 87.3",
+        "預期進球 1.21 : 1.17，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 10.7 分，我暫時站 Canada"
+      ]
+    },
+    "m089": {
+      "pick": "France",
+      "confidence": 0.82,
+      "tag": "我敢站隊",
+      "probabilities": {
+        "home": 0.04064481078308495,
+        "draw": 0.15791587525429465,
+        "away": 0.8014393139626205
+      },
+      "expectedGoals": [
+        0.29,
+        2.09
+      ],
+      "score": "0-2",
+      "commentary": {
+        "headline": "我這場偏明確站 France，但平局還有 16%；別急著開香檳，足球最會打臉。",
+        "story": "France 底牌比較硬；Paraguay 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "keyFactors": [
+          {
+            "label": "底牌差",
+            "value": "34.0",
+            "note": "France 比較有本錢"
+          },
+          {
+            "label": "進球味",
+            "value": "0.29 : 2.09",
+            "note": "最像 0-2"
+          },
+          {
+            "label": "翻車率",
+            "value": "4%",
+            "note": "Paraguay 的偷雞窗口"
+          }
+        ]
+      },
+      "reasons": [
+        "底牌分：Paraguay 70.0；France 104.0",
+        "預期進球 0.29 : 2.09，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 34.0 分，我暫時站 France"
+      ]
+    },
+    "m091": {
+      "pick": "Brazil",
+      "confidence": 0.82,
+      "tag": "我敢站隊",
+      "probabilities": {
+        "home": 0.7161681569105304,
+        "draw": 0.19890251708722387,
+        "away": 0.08492932600224576
+      },
+      "expectedGoals": [
+        1.9,
+        0.48
+      ],
+      "score": "1-0",
+      "commentary": {
+        "headline": "我這場偏明確站 Brazil，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "story": "Brazil 底牌比較硬；Norway 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "keyFactors": [
+          {
+            "label": "底牌差",
+            "value": "21.9",
+            "note": "Brazil 比較有本錢"
+          },
+          {
+            "label": "進球味",
+            "value": "1.90 : 0.48",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "17%",
-            "note": "W75 的偷雞窗口"
+            "value": "8%",
+            "note": "Norway 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Canada 76.6；W75 67.0",
-        "預期進球 1.64 : 0.74，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 9.6 分，我暫時站 Canada"
-      ]
-    },
-    "m089": {
-      "pick": "W74",
-      "confidence": 0.3808352070799772,
-      "tag": "膠著到煩",
-      "probabilities": {
-        "home": 0.37558853219027716,
-        "draw": 0.27797112945111263,
-        "away": 0.3464403383586102
-      },
-      "expectedGoals": [
-        1.22,
-        1.16
-      ],
-      "score": "1-1",
-      "commentary": {
-        "headline": "我這場保守站 W74，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
-        "keyFactors": [
-          {
-            "label": "底牌差",
-            "value": "0.0",
-            "note": "誰也別裝大哥"
-          },
-          {
-            "label": "進球味",
-            "value": "1.22 : 1.16",
-            "note": "最像 1-1"
-          },
-          {
-            "label": "翻車率",
-            "value": "35%",
-            "note": "W77 的偷雞窗口"
-          }
-        ]
-      },
-      "reasons": [
-        "底牌分：W74 67.0；W77 67.0",
-        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
-      ]
-    },
-    "m091": {
-      "pick": "W76",
-      "confidence": 0.3808352070799772,
-      "tag": "膠著到煩",
-      "probabilities": {
-        "home": 0.37558853219027716,
-        "draw": 0.27797112945111263,
-        "away": 0.3464403383586102
-      },
-      "expectedGoals": [
-        1.22,
-        1.16
-      ],
-      "score": "1-1",
-      "commentary": {
-        "headline": "我這場保守站 W76，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
-        "keyFactors": [
-          {
-            "label": "底牌差",
-            "value": "0.0",
-            "note": "誰也別裝大哥"
-          },
-          {
-            "label": "進球味",
-            "value": "1.22 : 1.16",
-            "note": "最像 1-1"
-          },
-          {
-            "label": "翻車率",
-            "value": "35%",
-            "note": "W78 的偷雞窗口"
-          }
-        ]
-      },
-      "reasons": [
-        "底牌分：W76 67.0；W78 67.0",
-        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：Brazil 101.2；Norway 79.3",
+        "預期進球 1.90 : 0.48，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 21.9 分，我暫時站 Brazil"
       ]
     },
     "m092": {
@@ -7222,6 +7222,25 @@
     ],
     "watchlist": [
       {
+        "matchId": "m089",
+        "kickoffUtc": "2026-07-04T21:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "Paraguay",
+        "team2": "France",
+        "pick": "France",
+        "outcome": "away",
+        "stake": 8,
+        "decimalOdds": 2.03,
+        "edge": 0.627,
+        "modelProbability": 0.801,
+        "marketProxyProbability": 0.462,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-04T20:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場偏明確站 France，但平局還有 16%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
         "matchId": "m086",
         "kickoffUtc": "2026-07-03T22:00:00.000Z",
         "stage": "Round of 32",
@@ -7260,6 +7279,25 @@
         "status": "watchlist"
       },
       {
+        "matchId": "m091",
+        "kickoffUtc": "2026-07-05T20:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "Brazil",
+        "team2": "Norway",
+        "pick": "Brazil",
+        "outcome": "home",
+        "stake": 8,
+        "decimalOdds": 2.04,
+        "edge": 0.461,
+        "modelProbability": 0.716,
+        "marketProxyProbability": 0.462,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-05T19:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場偏明確站 Brazil，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
         "matchId": "m087",
         "kickoffUtc": "2026-07-04T01:30:00.000Z",
         "stage": "Round of 32",
@@ -7276,44 +7314,6 @@
         "lockedAtUtc": "2026-07-04T00:30:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場中等站 Colombia，但平局還有 23%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
-        "matchId": "m090",
-        "kickoffUtc": "2026-07-04T17:00:00.000Z",
-        "stage": "Round of 16",
-        "team1": "Canada",
-        "team2": "W75",
-        "pick": "Canada",
-        "outcome": "home",
-        "stake": 8,
-        "decimalOdds": 2.38,
-        "edge": 0.402,
-        "modelProbability": 0.589,
-        "marketProxyProbability": 0.395,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-04T16:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Canada，但平局還有 24%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
-        "matchId": "m088",
-        "kickoffUtc": "2026-07-03T18:00:00.000Z",
-        "stage": "Round of 32",
-        "team1": "Australia",
-        "team2": "Egypt",
-        "pick": "Egypt",
-        "outcome": "away",
-        "stake": 4.61,
-        "decimalOdds": 2.83,
-        "edge": 0.209,
-        "modelProbability": 0.427,
-        "marketProxyProbability": 0.332,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-03T17:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 Egypt，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
