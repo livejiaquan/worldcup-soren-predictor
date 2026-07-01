@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T01:26:50Z",
-  "status": "Matchday scout refresh: Mexico-Ecuador 加上 ESPN public scoreboard 的臨場校時；ESPN 仍列 Scheduled / completed=false，所以 openfootball 與 FotMob 時間差先當來源差異，不當作開賽或完賽訊號。",
-  "headline": "Soren scout: Mexico-Ecuador 先校時再嘴砲——ESPN 仍顯示 02:00Z 開球且 completed=false，Live ≠ Final 這條紅線繼續拉滿。",
+  "generatedAt": "2026-07-01T02:30:04Z",
+  "status": "Matchday scout refresh: Mexico-Ecuador 已由 ESPN public scoreboard 確認進行中，02:28Z 為 Mexico 1-0 Ecuador、First Half 28′、completed=false；只作 live-score context，不結算結果或 paper bankroll。",
+  "headline": "Soren scout: Mexico-Ecuador 變活了——ESPN 28′ Mexico 1-0，但 Live ≠ Final，淘汰賽還沒蓋棺別急著吹。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -4665,9 +4665,9 @@
     {
       "matchId": "m079",
       "match": "Mexico vs Ecuador",
-      "sourceType": "reported lineup-watch + official preview + venue/odds watch + live-status check",
-      "title": "Mexico-Ecuador 臨場校時：ESPN 仍列 Scheduled / completed=false；Azteca 很吵，但 Soren 不拿時間差裝現場。",
-      "sorenTake": "openfootball/FotMob 目前指向 01:00Z，ESPN public scoreboard 則列 02:00Z 且 completed=false；這不是可以拿來結算或編直播劇情的空檔。Mexico 有主場聲浪，Ecuador 有高海拔免疫力與反擊牙齒；先等正式開球/先發，再決定誰是真的在踢、誰只是被賽程表誤傷。",
+      "sourceType": "live score watch + official/live-centre + reported lineup-watch + venue/odds watch",
+      "title": "Mexico-Ecuador 已開踢：ESPN 28′ Mexico 1-0，Live ≠ Final；Soren 先記現況，不急著結算。",
+      "sorenTake": "ESPN public API 在 02:28Z 顯示 Mexico 1-0 Ecuador、28′、completed=false；BBC/CBS/Concacaf/FOX 也都有 live-centre 入口。這是活比分，不是終局。Mexico 主場先咬住一口，但淘汰賽的牙齒還沒收進盒子，Ecuador 仍有足夠時間把 Azteca 的噪音變成壓力。",
       "signals": [
         "FOX Sports 比賽頁標題可核對 Mexico vs 3C/3E/3F/3H/3I 與 2026-06-30 賽事資訊，是公開賽程入口。",
         "Al Jazeera Round-of-32 explainer 列出 Mexico vs 3C/3E/3F/3H/3I 與 Mexico City Stadium 時間窗口。",
@@ -4700,7 +4700,9 @@
         "USA Today odds/picks 補主流市場語境；紙上模擬只看 public reference，不導向真金流。",
         "ESPN 賽前頁標題明示 Mexico-Ecuador 的 watch/kickoff/referee/predicted line-ups；屬媒體預測陣容與賽事資訊，不是官方先發。",
         "FotMob metadata 顯示 Mexico vs Ecuador 於 2026-07-01 01:00 UTC 開球，提供 live results、H2H、match stats、predicted lineups 入口；目前仍按賽前入口處理。",
-        "01:26Z 臨場校時：ESPN public scoreboard/summary 把 Mexico-Ecuador 列為 2026-07-01T02:00Z 開球、STATUS_SCHEDULED、completed=false；因此本站只把 openfootball/FotMob 的 01:00Z 差異標成來源時間差，不當作比賽已開始或任何完賽訊號。"
+        "01:26Z 臨場校時：ESPN public scoreboard/summary 把 Mexico-Ecuador 列為 2026-07-01T02:00Z 開球、STATUS_SCHEDULED、completed=false；因此本站只把 openfootball/FotMob 的 01:00Z 差異標成來源時間差，不當作比賽已開始或任何完賽訊號。",
+        "02:28Z 父層直接查 ESPN public summary/scoreboard：Mexico 1-0 Ecuador，First Half 28′，completed=false；只發布為 context/live-score，不結算比分、晉級或 paper bankroll。",
+        "BBC live page metadata 顯示 Mexico-Ecuador after weather delay 的 live text updates；CBS、Concacaf、FOX 也提供 live score/update 入口，均作 live-centre，不宣稱正式完賽。"
       ],
       "sources": [
         {
@@ -4944,11 +4946,51 @@
           "confidence": "medium-high"
         },
         {
-          "label": "ESPN Mexico-Ecuador public scoreboard status",
+          "label": "ESPN public summary Mexico-Ecuador live 28min snapshot",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760491",
           "sourceName": "ESPN public API",
-          "fetchedAt": "2026-07-01T01:26:50Z",
-          "claimType": "context/live-status",
+          "fetchedAt": "2026-07-01T02:30:04Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Mexico-Ecuador live text",
+          "url": "https://www.bbc.com/sport/football/live/c1jy90n0kz5t",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-01T02:29:43Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "CBS Mexico-Ecuador live updates",
+          "url": "https://www.cbssports.com/soccer/news/mexico-vs-ecuador-live-updates-world-cup-2026-score-result/live/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-07-01T02:29:43Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Concacaf Mexico-Ecuador match details",
+          "url": "https://www.concacaf.com/competitions/fifa-world-cup/matches/e875e05840db4a93b2d961c0fa30ed22/mexico-vs-ecuador",
+          "sourceName": "Concacaf",
+          "fetchedAt": "2026-07-01T02:29:43Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Sports Mexico-Ecuador live score page",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-mexico-vs-ecuador-jun-30-2026-game-boxscore-607909",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-01T02:29:43Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN public scoreboard Mexico-Ecuador live 28min snapshot",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260630",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-01T02:30:04Z",
+          "claimType": "context/live-score",
           "confidence": "high"
         }
       ],
