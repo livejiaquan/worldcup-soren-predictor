@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T03:35:41Z",
-  "status": "Matchday scout refresh: Mexico-Ecuador 由 ESPN public summary 再核為 73′ Mexico 2-0 Ecuador、Second Half、completed=false；另補 England-DR Congo / Belgium-Senegal BBC live text 與多場 R32 官方/媒體賽前入口。Live ≠ Final，不結算結果或 paper bankroll。",
-  "headline": "Soren scout: Mexico-Ecuador 73′ 變 2-0，但別急著把墓碑刻好；英格蘭、比利時、美國與下一批 R32 入口也補上臨場雷達。",
+  "generatedAt": "2026-07-01T04:39:26Z",
+  "status": "Postmatch scout correction: ESPN public summary/event 760491 與本地 worldcup.json 均顯示 Mexico 2-0 Ecuador Full Time、Mexico advance；m079 scouting card 已從 73′ live-score watch 改為終場復盤。England-DR Congo、Belgium-Senegal、USA-Bosnia 仍維持賽前/臨場入口監看。",
+  "headline": "Soren scout: Mexico 2-0 Ecuador 已終場；主場隊先把淘汰賽心魔踢走，下一輪等 England/DR Congo 勝方。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -4665,9 +4665,9 @@
     {
       "matchId": "m079",
       "match": "Mexico vs Ecuador",
-      "sourceType": "official/public live score + live-centre context, not final",
-      "title": "Mexico-Ecuador 進入下半場：ESPN 73′ Mexico 2-0，completed=false；Soren 記分，不急著結算。",
-      "sorenTake": "ESPN public summary 03:35Z 顯示 Mexico 2-0 Ecuador、約第 73 分鐘、Second Half、completed=false。這能說明墨西哥暫時把方向盤握緊，但還不能寫成終場、晉級、淘汰或 paper bankroll 結算；淘汰賽最愛在你準備收工時翻桌。",
+      "sourceType": "confirmed final score + postmatch context + paper-risk review",
+      "title": "Mexico 2-0 Ecuador 已終場：主場隊把淘汰賽心魔先踢到下一輪；Soren 收起 live 警報，改寫復盤。",
+      "sorenTake": "ESPN public summary 與本地 openfootball 更新均顯示 Mexico 2-0 Ecuador、Full Time、Mexico advance。這次不用再「73′ 不急著結算」：墨西哥把前場效率與主場壓力管理做成了勝利。Soren 的復盤重點是別被 2-0 騙到以為風險消失——下一輪面對 England/DR Congo 勝方，墨西哥需要的是同樣乾淨的 box control，而不是只靠主場情緒續命。",
       "signals": [
         "FOX Sports 比賽頁標題可核對 Mexico vs 3C/3E/3F/3H/3I 與 2026-06-30 賽事資訊，是公開賽程入口。",
         "Al Jazeera Round-of-32 explainer 列出 Mexico vs 3C/3E/3F/3H/3I 與 Mexico City Stadium 時間窗口。",
@@ -4703,7 +4703,9 @@
         "01:26Z 臨場校時：ESPN public scoreboard/summary 把 Mexico-Ecuador 列為 2026-07-01T02:00Z 開球、STATUS_SCHEDULED、completed=false；因此本站只把 openfootball/FotMob 的 01:00Z 差異標成來源時間差，不當作比賽已開始或任何完賽訊號。",
         "02:28Z 父層直接查 ESPN public summary/scoreboard：Mexico 1-0 Ecuador，First Half 28′，completed=false；只發布為 context/live-score，不結算比分、晉級或 paper bankroll。",
         "BBC live page metadata 顯示 Mexico-Ecuador after weather delay 的 live text updates；CBS、Concacaf、FOX 也提供 live score/update 入口，均作 live-centre，不宣稱正式完賽。",
-        "03:35Z ESPN public summary 再核：Mexico 2-0 Ecuador、Second Half 73′、completed=false；只更新 live-score context，不結算最終結果、晉級或 paper bankroll。"
+        "04:39Z ESPN public summary/event 760491 顯示 Mexico 2-0 Ecuador、STATUS_FULL_TIME、completed=true，Mexico winner/advance=true；這是可結算的終場訊號，不再只是 live-score context。",
+        "本地 public/data/worldcup.json 已同步 m079 finished、score [2,0]；scout card 從 live-score watch 改為 postmatch review，避免首頁繼續顯示 73′ 舊狀態。",
+        "Paper simulation 只更新為賽後風險筆記：Polymarket/FOX/USA Today 等先前市場來源可用來回看市場是否低估主場效率，但本站不導向真金下注。"
       ],
       "sources": [
         {
