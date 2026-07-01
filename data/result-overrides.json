@@ -1,18 +1,4 @@
 {
   "note": "Source-backed final-score overrides used when upstream openfootball data lags. The official-results verifier cron may append new entries; remove entries after upstream catches up if desired.",
-  "overrides": [
-    {
-      "date": "2026-06-30",
-      "team1": "Mexico",
-      "team2": "Ecuador",
-      "score": [
-        2,
-        0
-      ],
-      "source": "FIFA match report plus ESPN public scoreboard/summary API reported Full Time",
-      "url": "https://www.fifa.com/en/articles/mexico-ecuador-review-highlights",
-      "fetchedAt": "2026-07-01T06:37:38Z",
-      "secondaryUrl": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760491"
-    }
-  ]
+  "overrides": []
 }
