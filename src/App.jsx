@@ -2,7 +2,13 @@ import { useEffect, useMemo, useState } from 'react'
 import './App.css'
 
 const FLAG = { Argentina:'🇦🇷', France:'🇫🇷', Spain:'🇪🇸', England:'🏴', Brazil:'🇧🇷', Portugal:'🇵🇹', Netherlands:'🇳🇱', Belgium:'🇧🇪', Germany:'🇩🇪', Croatia:'🇭🇷', Uruguay:'🇺🇾', Morocco:'🇲🇦', USA:'🇺🇸', Mexico:'🇲🇽', Switzerland:'🇨🇭', Colombia:'🇨🇴', Japan:'🇯🇵', Senegal:'🇸🇳', Austria:'🇦🇹', Sweden:'🇸🇪', Turkey:'🇹🇷', Ecuador:'🇪🇨', Iran:'🇮🇷', Australia:'🇦🇺', Scotland:'🏴', 'South Korea':'🇰🇷', Norway:'🇳🇴', Ghana:'🇬🇭', 'Ivory Coast':'🇨🇮', Algeria:'🇩🇿', Qatar:'🇶🇦', Tunisia:'🇹🇳', Egypt:'🇪🇬', Paraguay:'🇵🇾', 'South Africa':'🇿🇦', 'Saudi Arabia':'🇸🇦', 'Czech Republic':'🇨🇿', Canada:'🇨🇦', Panama:'🇵🇦', Uzbekistan:'🇺🇿', Jordan:'🇯🇴', Iraq:'🇮🇶', Haiti:'🇭🇹', 'New Zealand':'🇳🇿', 'Bosnia & Herzegovina':'🇧🇦', Curaçao:'🇨🇼', 'Democratic Republic of the Congo':'🇨🇩', 'Cape Verde':'🇨🇻' }
+const FLAG_CODE = { Argentina:'ar', France:'fr', Spain:'es', England:'gb-eng', Brazil:'br', Portugal:'pt', Netherlands:'nl', Belgium:'be', Germany:'de', Croatia:'hr', Uruguay:'uy', Morocco:'ma', USA:'us', Mexico:'mx', Switzerland:'ch', Colombia:'co', Japan:'jp', Senegal:'sn', Austria:'at', Sweden:'se', Turkey:'tr', Ecuador:'ec', Iran:'ir', Australia:'au', Scotland:'gb-sct', 'South Korea':'kr', Norway:'no', Ghana:'gh', 'Ivory Coast':'ci', Algeria:'dz', Qatar:'qa', Tunisia:'tn', Egypt:'eg', Paraguay:'py', 'South Africa':'za', 'Saudi Arabia':'sa', 'Czech Republic':'cz', Canada:'ca', Panama:'pa', Uzbekistan:'uz', Jordan:'jo', Iraq:'iq', Haiti:'ht', 'New Zealand':'nz', 'Bosnia & Herzegovina':'ba', Curaçao:'cw', 'Democratic Republic of the Congo':'cd', 'Cape Verde':'cv' }
 const flag = (team) => FLAG[team] || '⚽'
+function FlagIcon({ name, className = '' }) {
+  const code = FLAG_CODE[name]
+  if (!code) return <span className={`flag-emoji ${className}`.trim()}>{flag(name)}</span>
+  return <img className={`flag-img ${className}`.trim()} src={`https://flagcdn.com/w40/${code}.png`} srcSet={`https://flagcdn.com/w80/${code}.png 2x`} alt={`${name} flag`} decoding="async" />
+}
 const fmt = (iso, opts) => iso ? new Intl.DateTimeFormat('zh-TW', { timeZone: 'Asia/Taipei', ...opts }).format(new Date(iso)) : '時間待定'
 const fmtDate = (iso) => fmt(iso, { month:'numeric', day:'numeric', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false })
 const fmtDay = (iso) => fmt(iso, { month:'numeric', day:'numeric', weekday:'short' })
@@ -14,7 +20,8 @@ const actualPick = (match) => !match?.score ? null : match.winner || (match.scor
 const scoreLabel = (match) => match?.shootoutScore ? `${match.score[0]}-${match.score[1]} (PK ${match.shootoutScore[0]}-${match.shootoutScore[1]})` : match?.score ? `${match.score[0]}-${match.score[1]}` : ''
 const resultText = (bet) => bet?.status === 'won' ? `贏 ${money(bet.profit)}` : bet?.status === 'lost' ? `輸 ${money(Math.abs(bet.profit))}` : '未結算'
 
-function Team({ name }) { return <span className="team-inline"><span className="flag-emoji">{flag(name)}</span><span className="team-name">{name}</span></span> }
+function Team({ name }) { return <span className="team-inline"><FlagIcon name={name}/><span className="team-name">{name}</span></span> }
+function InlineTeam({ name }) { return <span className="inline-team"><FlagIcon name={name}/><span>{name}</span></span> }
 function ProbBar({ prediction }) { const p = prediction.probabilities; return <div className="prob-bar"><span style={{ width:pct(p.home) }}/><span style={{ width:pct(p.draw) }}/><span style={{ width:pct(p.away) }}/></div> }
 function SectionHead({ kicker, title, meta, children }) { return <div className="section-head"><div><p>{kicker}</p><h2>{title}</h2>{children}</div>{meta && <span>{meta}</span>}</div> }
 
@@ -61,7 +68,7 @@ function TodaySlate({ matches, predictions, paperBetsByMatch, intelByMatch, onSe
       <small>首頁只放最重要的；完整理由、情報和紙上戰局收進細節。來源時間打架時先校時，不急著裝現場。</small>
     </SectionHead>
     <div className="featured-grid">{featured.map((m) => <CompactMatchCard featured key={m.id} match={m} prediction={predictions[m.id]} paperBet={paperBetsByMatch[m.id]} intel={intelByMatch[m.id]} onSelect={onSelect}/>)}</div>
-    <div className="upcoming-strip">{rest.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDay(m.kickoffUtc)}</span><b>{flag(m.team1)} {m.team1} vs {flag(m.team2)} {m.team2}</b><em>{predictions[m.id]?.pick}</em></button>)}</div>
+    <div className="upcoming-strip">{rest.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDay(m.kickoffUtc)}</span><b><InlineTeam name={m.team1}/> vs <InlineTeam name={m.team2}/></b><em>{predictions[m.id]?.pick}</em></button>)}</div>
   </section>
 }
 
@@ -157,9 +164,9 @@ function BracketSnapshot({ matches, onSelect }) {
       {rounds.map((round) => <div className="bracket-round" key={round.label}>
         <h3>{round.label}</h3>
         <div className="bracket-matches">{round.items.slice(0, round.label === '32 強' ? 16 : 8).map((m) => <button type="button" key={m.id} className={`bracket-match ${m.status === 'finished' ? 'finished' : 'scheduled'} ${m.bracketWinner === m.bracketTeam1 ? 'top-win' : m.bracketWinner === m.bracketTeam2 ? 'bottom-win' : ''}`} onClick={() => onSelect(m.id)}>
-          <span className="bracket-team"><b>{flag(m.bracketTeam1)}</b><em>{m.bracketTeam1}</em></span>
-          <span className="bracket-team"><b>{flag(m.bracketTeam2)}</b><em>{m.bracketTeam2}</em></span>
-          <strong>{m.status === 'finished' ? `${scoreLabel(m)} · ${flag(m.bracketWinner)} ${m.bracketWinner} 晉級` : fmtDay(m.kickoffUtc)}</strong>
+          <span className="bracket-team"><b><FlagIcon name={m.bracketTeam1}/></b><em>{m.bracketTeam1}</em></span>
+          <span className="bracket-team"><b><FlagIcon name={m.bracketTeam2}/></b><em>{m.bracketTeam2}</em></span>
+          <strong>{m.status === 'finished' ? <><span>{scoreLabel(m)} · </span><InlineTeam name={m.bracketWinner}/><span> 晉級</span></> : fmtDay(m.kickoffUtc)}</strong>
         </button>)}</div>
       </div>)}
       <div className="bracket-trophy"><span>{champion === '未定' ? '🏟️' : '🏆'}</span><b>{champion}</b><small>{champion === '未定' ? '冠軍尚未產生' : '世界盃冠軍'}</small></div>
@@ -171,12 +178,12 @@ function Leaderboard({ rows }) { return <section className="panel slim" id="mode
 function StandingsPreview({ standings, nextMatches }) {
   const groups = Array.from(new Set(nextMatches.map((m) => m.group).filter(Boolean))).slice(0, 4)
   const entries = groups.length ? groups.map((g) => [g, standings[g]]).filter(([, rows]) => rows) : Object.entries(standings || {}).slice(0, 4)
-  return <section className="panel" id="standings"><SectionHead kicker="GROUP SURVIVAL MAP" title="小組生存表：先看有壓力的組" meta={`${entries.length} 組`} /><div className="tables compact-tables">{entries.map(([name, rows]) => <div className="table-card" key={name}><h3>{name.replace('Group ', '小組 ')}</h3><table><thead><tr><th>隊伍</th><th>賽</th><th>淨</th><th>分</th></tr></thead><tbody>{rows.map((r, idx) => <tr key={r.team} className={idx < 2 ? 'qualified' : ''}><td>{flag(r.team)} {r.team}</td><td>{r.played}</td><td>{r.goalDiff}</td><td><b>{r.points}</b></td></tr>)}</tbody></table></div>)}</div></section>
+  return <section className="panel" id="standings"><SectionHead kicker="GROUP SURVIVAL MAP" title="小組生存表：先看有壓力的組" meta={`${entries.length} 組`} /><div className="tables compact-tables">{entries.map(([name, rows]) => <div className="table-card" key={name}><h3>{name.replace('Group ', '小組 ')}</h3><table><thead><tr><th>隊伍</th><th>賽</th><th>淨</th><th>分</th></tr></thead><tbody>{rows.map((r, idx) => <tr key={r.team} className={idx < 2 ? 'qualified' : ''}><td><InlineTeam name={r.team}/></td><td>{r.played}</td><td>{r.goalDiff}</td><td><b>{r.points}</b></td></tr>)}</tbody></table></div>)}</div></section>
 }
 function FixtureExplorer({ matches, predictions, onSelect }) {
   const [showAll, setShowAll] = useState(false)
   const list = showAll ? matches : matches.filter((m) => m.status !== 'finished').slice(0, 12)
-  return <section className="panel" id="fixtures"><SectionHead kicker="FIXTURE EXPLORER" title="完整賽程：先收起來，不要砸你臉上" meta={showAll ? '全部' : '只看近期'} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc)}</span><b>{flag(m.team1)} {m.team1} vs {flag(m.team2)} {m.team2}</b><em>{m.status === 'finished' ? scoreLabel(m) : predictions[m.id]?.pick}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? '收起完整賽程' : '打開完整賽程'}</button></section>
+  return <section className="panel" id="fixtures"><SectionHead kicker="FIXTURE EXPLORER" title="完整賽程：先收起來，不要砸你臉上" meta={showAll ? '全部' : '只看近期'} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc)}</span><b><InlineTeam name={m.team1}/> vs <InlineTeam name={m.team2}/></b><em>{m.status === 'finished' ? scoreLabel(m) : predictions[m.id]?.pick}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? '收起完整賽程' : '打開完整賽程'}</button></section>
 }
 
 function TacticalBoard({ match, prediction, intel }) {

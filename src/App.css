@@ -2,8 +2,9 @@
 
 /* compact scouting + clearer flags */
 .flag-emoji{font-size:1.65em;line-height:1;filter:saturate(1.08)}
-.team-name{min-width:0;overflow:hidden;text-overflow:ellipsis}
-.teams-row .flag-emoji,.modal-scoreline .flag-emoji{font-size:2.15em}
+.flag-img{display:inline-block;width:1.65em;height:1.16em;min-width:1.65em;object-fit:cover;border-radius:.16em;vertical-align:-.14em;box-shadow:0 0 0 1px rgba(15,23,42,.10)}
+.team-inline,.inline-team{display:inline-flex;align-items:center;gap:.4em;min-width:0;vertical-align:middle}.inline-team span:last-child{min-width:0;overflow:hidden;text-overflow:ellipsis}.team-name{min-width:0;overflow:hidden;text-overflow:ellipsis}
+.teams-row .flag-img,.modal-scoreline .flag-img{width:2.15em;height:1.5em;min-width:2.15em}.teams-row .flag-emoji,.modal-scoreline .flag-emoji{font-size:2.15em}
 .upcoming-strip b,.fixture-list b{font-size:15px}
 .compact-intel{padding:16px;background:rgba(255,255,255,.88)}
 .compact-intel .section-head{margin-bottom:10px}
@@ -17,8 +18,8 @@
 .compact-sources{margin-top:10px;padding:8px}
 .compact-sources summary{padding:9px 10px}
 .compact-note{margin:10px 0 0!important;font-size:12px!important}
-@media (max-width:1050px){.intel-compact-list{grid-template-columns:1fr 1fr}.teams-row .flag-emoji,.modal-scoreline .flag-emoji{font-size:2em}}
-@media (max-width:720px){.intel-compact-list{grid-template-columns:1fr}.team-inline{font-size:16px}.teams-row .flag-emoji,.modal-scoreline .flag-emoji{font-size:2.25em}.match-card{padding:14px}.score-pill{min-width:86px}.compact-intel{padding:14px}}
+@media (max-width:1050px){.intel-compact-list{grid-template-columns:1fr 1fr}.teams-row .flag-img,.modal-scoreline .flag-img{width:2em;height:1.4em;min-width:2em}.teams-row .flag-emoji,.modal-scoreline .flag-emoji{font-size:2em}}
+@media (max-width:720px){.intel-compact-list{grid-template-columns:1fr}.team-inline{font-size:16px}.teams-row .flag-img,.modal-scoreline .flag-img{width:2.25em;height:1.58em;min-width:2.25em}.teams-row .flag-emoji,.modal-scoreline .flag-emoji{font-size:2.25em}.match-card{padding:14px}.score-pill{min-width:86px}.compact-intel{padding:14px}}
 
 /* public postmortem / settlement */
 .postmortem-block{margin-top:14px;padding:12px;border:1px solid #dbe6f6;border-radius:18px;background:#f8fbff}
