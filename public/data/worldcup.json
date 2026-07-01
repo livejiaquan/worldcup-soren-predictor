@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-01T23:12:44.694Z",
+  "generatedAt": "2026-07-01T23:30:14.117Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -440,13 +440,13 @@
         "team": "Belgium",
         "group": "Group G",
         "played": 4,
-        "won": 1,
-        "drawn": 3,
+        "won": 2,
+        "drawn": 2,
         "lost": 0,
-        "goalsFor": 8,
+        "goalsFor": 9,
         "goalsAgainst": 4,
-        "goalDiff": 4,
-        "points": 6
+        "goalDiff": 5,
+        "points": 8
       },
       {
         "team": "Egypt",
@@ -565,12 +565,12 @@
         "group": "Group I",
         "played": 4,
         "won": 1,
-        "drawn": 1,
-        "lost": 2,
+        "drawn": 0,
+        "lost": 3,
         "goalsFor": 10,
-        "goalsAgainst": 8,
-        "goalDiff": 2,
-        "points": 4
+        "goalsAgainst": 9,
+        "goalDiff": 1,
+        "points": 3
       },
       {
         "team": "Iraq",
@@ -2200,10 +2200,11 @@
       "venue": "Seattle",
       "status": "finished",
       "score": [
-        2,
+        3,
         2
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json + override: ESPN public summary event 760493 showed STATUS_FINAL_AET / completed=true, Belgium 3-2 Senegal, fetched 2026-07-01T23:27:39Z",
+      "winner": "Belgium"
     },
     {
       "id": "m081",
@@ -3087,43 +3088,43 @@
     },
     "m037": {
       "pick": "Belgium",
-      "confidence": 0.7261877175186452,
+      "confidence": 0.790464614903,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6359235989492404,
-        "draw": 0.2296201274871011,
-        "away": 0.13445627356365844
+        "home": 0.6855874687832642,
+        "draw": 0.21147587420978214,
+        "away": 0.10293665700695376
       },
       "expectedGoals": [
-        1.73,
-        0.65
+        1.84,
+        0.54
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Belgium，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Belgium，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "story": "Belgium 底牌比較硬；Egypt 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "16.9",
+            "value": "18.8",
             "note": "Belgium 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.73 : 0.65",
+            "value": "1.84 : 0.54",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "13%",
+            "value": "10%",
             "note": "Egypt 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Belgium 90.6；Egypt 73.7",
-        "預期進球 1.73 : 0.65，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 16.9 分，我暫時站 Belgium"
+        "底牌分：Belgium 92.6；Egypt 73.7",
+        "預期進球 1.84 : 0.54，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 18.8 分，我暫時站 Belgium"
       ]
     },
     "m044": {
@@ -3213,40 +3214,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.7461793256843244,
-        "draw": 0.18549711197502947,
-        "away": 0.068323562340646
+        "home": 0.7585369285834663,
+        "draw": 0.17966206463759357,
+        "away": 0.06180100677894011
       },
       "expectedGoals": [
-        1.97,
-        0.41
+        1.99,
+        0.39
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 France，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 France，但平局還有 18%；別急著開香檳，足球最會打臉。",
         "story": "France 底牌比較硬；Senegal 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "25.0",
+            "value": "26.3",
             "note": "France 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.97 : 0.41",
+            "value": "1.99 : 0.39",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "7%",
+            "value": "6%",
             "note": "Senegal 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：France 104.0；Senegal 79.0",
-        "預期進球 1.97 : 0.41，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 25.0 分，我暫時站 France"
+        "底牌分：France 104.0；Senegal 77.7",
+        "預期進球 1.99 : 0.39，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 26.3 分，我暫時站 France"
       ]
     },
     "m050": {
@@ -4071,43 +4072,43 @@
     },
     "m039": {
       "pick": "Belgium",
-      "confidence": 0.7654876236180442,
+      "confidence": 0.7914743123706359,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6662426971023782,
-        "draw": 0.2188753086600553,
-        "away": 0.11488199423756644
+        "home": 0.6863707364709205,
+        "draw": 0.21116728205657784,
+        "away": 0.10246198147250163
       },
       "expectedGoals": [
-        1.8,
-        0.58
+        1.84,
+        0.54
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Belgium，但平局還有 22%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Belgium，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "story": "Belgium 底牌比較硬；Iran 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "16.9",
+            "value": "18.9",
             "note": "Belgium 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.80 : 0.58",
+            "value": "1.84 : 0.54",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "11%",
+            "value": "10%",
             "note": "Iran 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Belgium 90.6；Iran 73.7",
-        "預期進球 1.80 : 0.58，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 16.9 分，我暫時站 Belgium"
+        "底牌分：Belgium 92.6；Iran 73.7",
+        "預期進球 1.84 : 0.54，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 18.9 分，我暫時站 Belgium"
       ]
     },
     "m046": {
@@ -4276,42 +4277,42 @@
     },
     "m052": {
       "pick": "Norway",
-      "confidence": 0.3854988343609536,
-      "tag": "膠著到煩",
+      "confidence": 0.4579771766583092,
+      "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.37902848064947053,
-        "draw": 0.27788944820929845,
-        "away": 0.34308207114123107
+        "home": 0.43277026697896526,
+        "draw": 0.27449785314953606,
+        "away": 0.2927318798714987
       },
       "expectedGoals": [
-        1.23,
-        1.15
+        1.33,
+        1.05
       ],
       "score": "1-1",
       "commentary": {
-        "headline": "我這場保守站 Norway，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Norway，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "0.3",
+            "value": "1.6",
             "note": "誰也別裝大哥"
           },
           {
             "label": "進球味",
-            "value": "1.23 : 1.15",
+            "value": "1.33 : 1.05",
             "note": "最像 1-1"
           },
           {
             "label": "翻車率",
-            "value": "34%",
+            "value": "29%",
             "note": "Senegal 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Norway 79.3；Senegal 79.0",
-        "預期進球 1.23 : 1.15，先用 Poisson 把嘴砲壓成數字",
+        "底牌分：Norway 79.3；Senegal 77.7",
+        "預期進球 1.33 : 1.05，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
@@ -5058,40 +5059,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.7374602100821585,
-        "draw": 0.1895025387650125,
-        "away": 0.073037251152829
+        "home": 0.7247774803946332,
+        "draw": 0.19516631160730255,
+        "away": 0.08005620799806414
       },
       "expectedGoals": [
-        1.95,
-        0.43
+        1.92,
+        0.46
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Senegal，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Senegal，但平局還有 20%；別急著開香檳，足球最會打臉。",
         "story": "Senegal 底牌比較硬；Iraq 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "24.1",
+            "value": "22.8",
             "note": "Senegal 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.95 : 0.43",
+            "value": "1.92 : 0.46",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "7%",
+            "value": "8%",
             "note": "Iraq 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Senegal 79.0；Iraq 54.9",
-        "預期進球 1.95 : 0.43，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 24.1 分，我暫時站 Senegal"
+        "底牌分：Senegal 77.7；Iraq 54.9",
+        "預期進球 1.92 : 0.46，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 22.8 分，我暫時站 Senegal"
       ]
     },
     "m047": {
@@ -5222,40 +5223,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.042095269220079244,
-        "draw": 0.15956904297881894,
-        "away": 0.7983356878011018
+        "home": 0.0342689260204117,
+        "draw": 0.15030402804510512,
+        "away": 0.8154270459344831
       },
       "expectedGoals": [
-        0.29,
-        2.09
+        0.25,
+        2.13
       ],
       "score": "0-2",
       "commentary": {
-        "headline": "我這場偏明確站 Belgium，但平局還有 16%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Belgium，但平局還有 15%；別急著開香檳，足球最會打臉。",
         "story": "Belgium 底牌比較硬；New Zealand 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "33.6",
+            "value": "35.6",
             "note": "Belgium 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.29 : 2.09",
+            "value": "0.25 : 2.13",
             "note": "最像 0-2"
           },
           {
             "label": "翻車率",
-            "value": "4%",
+            "value": "3%",
             "note": "New Zealand 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：New Zealand 57.0；Belgium 90.6",
-        "預期進球 0.29 : 2.09，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 33.6 分，我暫時站 Belgium"
+        "底牌分：New Zealand 57.0；Belgium 92.6",
+        "預期進球 0.25 : 2.13，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 35.6 分，我暫時站 Belgium"
       ]
     },
     "m071": {
@@ -5834,43 +5835,43 @@
     },
     "m082": {
       "pick": "Belgium",
-      "confidence": 0.6542149934004344,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.7388086498004073,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.5807661642728095,
-        "draw": 0.24651672216340892,
-        "away": 0.1727171135637817
+        "home": 0.6456447295729524,
+        "draw": 0.22628787545106688,
+        "away": 0.12806739497598083
       },
       "expectedGoals": [
-        1.62,
-        0.76
+        1.75,
+        0.63
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場中等站 Belgium，但平局還有 25%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Belgium，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "story": "Belgium 底牌比較硬；Senegal 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "11.6",
+            "value": "14.9",
             "note": "Belgium 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.62 : 0.76",
+            "value": "1.75 : 0.63",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "17%",
+            "value": "13%",
             "note": "Senegal 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Belgium 90.6；Senegal 79.0",
-        "預期進球 1.62 : 0.76，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 11.6 分，我暫時站 Belgium"
+        "底牌分：Belgium 92.6；Senegal 77.7",
+        "預期進球 1.75 : 0.63，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 14.9 分，我暫時站 Belgium"
       ]
     },
     "m081": {
@@ -6799,34 +6800,34 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 70,
-      "correct": 52,
+      "points": 71,
+      "correct": 53,
       "exact": 9,
       "total": 81,
       "rank": 1,
-      "accuracy": 0.6419753086419753
+      "accuracy": 0.654320987654321
     },
     {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 66,
-      "correct": 48,
+      "points": 67,
+      "correct": 49,
       "exact": 8,
       "total": 81,
       "rank": 2,
-      "accuracy": 0.5925925925925926
+      "accuracy": 0.6049382716049383
     },
     {
       "id": "draw",
       "name": "Draw Baseline",
       "desc": "保守押平局",
-      "points": 45,
-      "correct": 23,
+      "points": 44,
+      "correct": 22,
       "exact": 11,
       "total": 81,
       "rank": 3,
-      "accuracy": 0.2839506172839506
+      "accuracy": 0.2716049382716049
     }
   ],
   "paperBankroll": {
@@ -6834,10 +6835,10 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 178.65,
+    "bankroll": 195.61,
     "openStake": 36.57,
-    "totalValue": 178.65,
-    "roi": 0.787,
+    "totalValue": 195.61,
+    "roi": 0.956,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
       {
@@ -7112,21 +7113,21 @@
         "team2": "Senegal",
         "pick": "Belgium",
         "outcome": "home",
-        "stake": 6.88,
+        "stake": 8,
         "decimalOdds": 2.26,
-        "edge": 0.313,
-        "modelProbability": 0.581,
+        "edge": 0.459,
+        "modelProbability": 0.646,
         "marketProxyProbability": 0.415,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-01T19:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Belgium，但平局還有 25%；別急著開香檳，足球最會打臉。",
-        "status": "lost",
+        "reason": "我這場偏明確站 Belgium，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "status": "won",
         "score": [
-          2,
+          3,
           2
         ],
-        "profit": -6.88
+        "profit": 10.08
       }
     ],
     "pending": [
