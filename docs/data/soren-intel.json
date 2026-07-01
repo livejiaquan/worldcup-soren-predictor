@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T09:34:51Z",
-  "status": "Matchday live-centre refresh: m080/m082/m081 enriched with parent-verified public live-centre and lineup-watch sources; no fabricated social sentiment.",
-  "headline": "Soren scout: 7/1 淘汰賽先把 live-centre 雷達架好；熱門可以很吵，但正式先發沒出前誰都別裝神。",
+  "generatedAt": "2026-07-01T10:51:28Z",
+  "status": "Matchday scout refresh: m080 near-kickoff official/tactical sources added; m081/m082 live-centre and team-news rails strengthened; next-day m083/m084/m085 received light official/probable-XI context.",
+  "headline": "Soren scout: England 場先把官方入口與 DRC 戰術雷達補齊；USA/Belgium 夜場也上 live-centre，別把預測先發當聖旨。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5003,8 +5003,8 @@
       "matchId": "m080",
       "match": "England vs Democratic Republic of the Congo",
       "sourceType": "official match centre + official press conference + tactical/lineup watch + underdog context + paper odds watch",
-      "title": "England-DR Congo 補 Guardian/Bundesliga 臨場入口：Kane 的熱門劇本很亮，但 DRC 的反擊不會照劇本跪下。",
-      "sorenTake": "臨場重點不是再吹英格蘭厚度，而是盯住官方/可信 live centre 的先發落點與 DRC 反擊出口。Guardian 已開 matchday build-up，Bundesliga live ticker 也掛上陣容/即時入口；正式名單前，Soren 只把它們當臨場雷達，不當已確認 XI。",
+      "title": "England-DR Congo 補官方 match centre 與 Guardian 戰術文：熱門有 73.9% 光環，但 Desabre 不是來幫 England 走紅毯。",
+      "sorenTake": "England 的賽前敘事很順：Kane、Tuchel、淘汰賽主角光環都在。但 Guardian 直接提醒 Desabre 對強隊會調整結構，DR Congo 不是純靠熱血亂衝；Soren 把 England 仍列優勢方，但正式先發未落地前，這張卡只說「熱門但別飄」。",
       "signals": [
         "England Football 公開列出 England 若以 1L 出線，將在 Atlanta 對 3E/H/I/J/K。",
         "FOX Sports m080 賽程頁可核對 1L vs 3E/3H/3I/3J/3K 與 2026-07-01T16:00Z 窗口。",
@@ -5038,7 +5038,11 @@
         "CBS Sports / FanDuel 賽前盤把 England 列重度熱門（搜尋與頁面標題均為 odds/prediction），但本站只作紙上市場溫度，不給真金白銀建議。",
         "Sports Illustrated 7/1 賽前頁可讀到 England vs DR Congo preview / predictions / lineups，父層探針確認標題與 og:title；仍是 predicted-lineup watch，不是正式 XI。",
         "Guardian 7/1 matchday live blog 已把 England v DR Congo build-up 放進滾動更新，適合追賽前消息；它是 live-centre/context，不是官方先發證明。",
-        "Bundesliga World Cup liveticker 可連線，標題為 England - Congo DR；作為第二線即時比分/陣容入口，正式 XI 仍等官方或賽前約 60 分鐘來源落地。"
+        "Bundesliga World Cup liveticker 可連線，標題為 England - Congo DR；作為第二線即時比分/陣容入口，正式 XI 仍等官方或賽前約 60 分鐘來源落地。",
+        "10:51Z parent probe 核到 FIFA m080 match centre 可連線，作為臨場事件/陣容最高優先入口；頁面動態渲染未吐 title，所以只標官方入口不臆測內容。",
+        "England Football 官方 match centre 與 7/1 Three Lions Daily briefing 均可連線，提供本隊賽前資訊與 matchday agenda；這比二手 rumor 可靠，但仍不是確認先發。",
+        "Guardian 7/1 戰術文指出 Opta 給 England 正常時間勝率 73.9%，同時提醒 Sébastien Desabre 對強隊會改變方法；Soren 讀成「熱門沒錯，但 DRC 不是 NPC」。",
+        "ESPN 7/1 賽前 guide 可連線，標題明示 referee / predicted line-ups / viewing info；本站保守列為 reported lineup-watch，不升級 confirmed XI。"
       ],
       "sources": [
         {
@@ -5288,6 +5292,30 @@
           "claimType": "context/live-centre",
           "confidence": "medium",
           "fetchedAt": "2026-07-01T09:34:51Z"
+        },
+        {
+          "label": "FIFA England-DR Congo match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289273/400021500",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "Guardian DRC tactical preview",
+          "url": "https://www.theguardian.com/football/2026/jul/01/dr-congo-tactics-england-sebastien-desabre-world-cup-last-32",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "reported/tactical",
+          "confidence": "high"
+        },
+        {
+          "label": "England Football Three Lions daily briefing",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/01/england-men-world-cup-2026-daily-briefing",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -5296,8 +5324,8 @@
       "matchId": "m081",
       "match": "USA vs Bosnia & Herzegovina",
       "sourceType": "official fixture/team/federation context + reported pressure/lineup/odds watch + manager-media context",
-      "title": "USA-Bosnia 補 Bundesliga/FOX 臨場雷達：主場很吵，但 Bosnia 的硬度不會被國歌音量嚇退。",
-      "sorenTake": "USA 的主場敘事很好賣，但淘汰賽不是行銷片。Bundesliga liveticker 提供即時入口，FOX 補 storyline/projected lineup；正式 XI 前，這些只作 reported lineup-watch 與 matchday context。",
+      "title": "USA-Bosnia 補 Pochettino「像決賽」與 BBC/FOX live rails：主場很大聲，但 Bosnia 不是觀眾席道具。",
+      "sorenTake": "Pochettino 把這場講成決賽，Pulisic readiness 也有官方說法；這會讓 USA 敘事升溫，但淘汰賽不接受情緒保送。BBC、FOX、CBS 市場參考都已掛上，Soren 會盯正式先發，不把 projected lineup 當出生證明。",
       "signals": [
         "FOX Sports m081 比賽頁標題已顯示 United States vs Bosnia and Herzegovina，時間為 2026-07-01 當地 / 2026-07-02T00:00Z。",
         "FOX odds story 明列 USA vs Bosnia and Herzegovina：moneyline USA -185、Bosnia +600、draw +280；to advance USA -460、Bosnia +340。",
@@ -5317,7 +5345,11 @@
         "Sports Illustrated 7/1 賽前頁提供 USMNT vs Bosnia preview / predictions / lineups 脈絡，描述美國握有主場與狀態優勢；本站仍把它標為 predicted lineup，不寫成確認 XI。",
         "NBC Sports 7/1 頁面可讀到 USA vs Bosnia live stream / TV / team news / prediction，並把 Pochettino 帶隊衝 Round of 16 與 Bosnia 的 stubborn/情緒敘事放進預覽；屬媒體 team-news context。",
         "Bundesliga USA-Bosnia liveticker 可連線，標題明示 USA - Bosnia and Herzegovina FIFA World Cup；作為臨場比分/陣容入口，不提前宣稱官方 XI。",
-        "FOX Sports USA-Bosnia 頁以 storylines、projected lineup、predictions 為主；可補主隊敘事與預測先發比較，但 claimType 保持 reported/lineup-watch。"
+        "FOX Sports USA-Bosnia 頁以 storylines、projected lineup、predictions 為主；可補主隊敘事與預測先發比較，但 claimType 保持 reported/lineup-watch。",
+        "U.S. Soccer 文章可連線，標題把 Pochettino 對 Bosnia 的 Round of 32 說法定調為「Is a Final」，meta 並稱 Christian Pulisic is ready to go；屬官方隊伍更新。",
+        "BBC USA-Bosnia live text 可連線，提供 score updates / match stats 入口；正式名單仍需等賽前。",
+        "FOX USA-Bosnia live score 可連線，meta 明示 live score、stats、odds；只當臨場雷達與紙上市場溫度。",
+        "CBS/SportsLine odds preview 可連線；本站只列 odds-reference for paper simulation，不作下注建議。"
       ],
       "sources": [
         {
@@ -5471,6 +5503,38 @@
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high",
           "fetchedAt": "2026-07-01T09:34:51Z"
+        },
+        {
+          "label": "U.S. Soccer Pochettino Bosnia remarks",
+          "url": "https://www.ussoccer.com/stories/2026/06/usmnt/mauricio-pochettino-vs-bosnia-and-herzegovina-round-of-32-knockouts-world-cup",
+          "sourceName": "U.S. Soccer",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "confirmed/coach-player-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC USA-Bosnia live text",
+          "url": "https://www.bbc.com/sport/football/live/cx2j51v3veet",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX USA-Bosnia live score",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-united-states-vs-bosnia-and-herzegovina-jul-01-2026-game-boxscore-607910",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "CBS USA-Bosnia odds reference",
+          "url": "https://www.cbssports.com/soccer/news/usmnt-bosnia-and-herzegovina-odds-prediction-start-time-2026-world-cup-round-of-32-picks/",
+          "sourceName": "CBS Sports / SportsLine",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -5479,8 +5543,8 @@
       "matchId": "m082",
       "match": "Belgium vs Senegal",
       "sourceType": "official fixture/federation context + official Senegal training update + Belgium-side report + reported tactical/lineup watch",
-      "title": "Belgium-Senegal 補 FOX live centre：Seattle 壓力鍋開火，慢熱隊伍再慢就會被淘汰賽收走。",
-      "sorenTake": "Belgium 與 Senegal 都有慢熱履歷，這場更需要盯 live-centre 的即時節奏、射門品質與定位球。FOX boxscore/live score 可當公開比分與統計入口；它不是賭盤建議，也不替正式先發背書。",
+      "title": "Belgium-Senegal 補 FIFA/Bundesliga/WhoScored 三條線：紅魔若慢熱，Senegal 會把壓力鍋直接轉大火。",
+      "sorenTake": "Belgium 的紙面火力還是漂亮，但淘汰賽不頒審美分。FIFA 官方 preview、Bundesliga lineup hub 與 WhoScored 傷停/概率頁都已就位；Soren 目前只把 probable XI 當觀察，不把它包裝成正式名單。",
       "signals": [
         "FOX Sports m082 頁面標題顯示 Belgium vs 3A/3E/3H/3I/3J，可作公開賽程與對手池來源。",
         "Al Jazeera explainer 仍保守列為 1G vs 3A/E/H/I/J，與第三名尚未完全收口一致。",
@@ -5499,7 +5563,10 @@
         "BBC Sport 已開 Belgium v Senegal live text / stats 頁，描述會提供 live text commentary、score updates、match stats；正式 XI 未落地前仍只作臨場資訊入口。",
         "Seattle Sounders host-city preview 可讀到 Belgium faces Senegal in FIFA World Cup 2026 in Seattle，確認 Seattle Stadium / local match context；這是場地與觀賽脈絡，不是戰術結論。",
         "ESPN Belgium-Senegal 賽前頁可讀到 how-to-watch、kickoff、referee、predicted line-ups；正式 XI 未公布前只作 reported lineup-watch。",
-        "FOX Sports Belgium-Senegal live score/boxscore 頁可連線，標題明示提供 live score、highlights、updated stats 與 odds；本站只把 odds 當 paper-market reference，不當投注建議。"
+        "FOX Sports Belgium-Senegal live score/boxscore 頁可連線，標題明示提供 live score、highlights、updated stats 與 odds；本站只把 odds 當 paper-market reference，不當投注建議。",
+        "10:51Z parent probe 核到 FIFA Belgium-Senegal 官方 preview 可連線，補上比賽資訊/隊伍新聞入口。",
+        "Bundesliga Belgium-Senegal lineup hub 可連線，頁面描述為最新 updates；正式 XI 通常仍等賽前約一小時。",
+        "WhoScored Belgium-Senegal 統計 preview 可連線，meta 明示 injuries/suspensions、probable line-ups、facts and odds；屬 public context / lineup-watch，不是下注建議。"
       ],
       "sources": [
         {
@@ -5629,6 +5696,22 @@
           "claimType": "context/live-centre",
           "confidence": "high",
           "fetchedAt": "2026-07-01T09:34:51Z"
+        },
+        {
+          "label": "Bundesliga Belgium-Senegal lineup hub",
+          "url": "https://www.bundesliga.com/en/world-cup/matchday/2026-2027/round-of-32/belgium-vs-senegal/lineup",
+          "sourceName": "Bundesliga.com",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "WhoScored Belgium-Senegal statistical preview",
+          "url": "https://www.whoscored.com/matches/1992065/preview/international-fifa-world-cup-2026-belgium-senegal",
+          "sourceName": "WhoScored",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -5637,7 +5720,7 @@
       "matchId": "m083",
       "match": "Portugal vs Croatia",
       "sourceType": "reported/bracket-actualization + tactical/context watch + paper-market watch",
-      "title": "Portugal-Croatia 不是 2K/2L 影子了：Ronaldo vs Modrić 的最後舞池，年紀很大、火藥味也很大。",
+      "title": "Portugal-Croatia 補 WhoScored 傷停/可能先發頁：Ronaldo-Modrić 名氣很大，腿也都不是 22 歲。",
       "sorenTake": "本地賽程已把 M83 actualize 為 Portugal vs Croatia，BBC/AS/Yahoo/Paddy Power 等公開賽程與分析頁同步列出多倫多對戰；FIFA 賽後頁搜尋片段也指向 Portugal 將在 Toronto 對 Croatia。這場不只看 C 羅和 Modrić 的懷舊濾鏡——兩隊都老辣，也都可能被轉換速度扯開皺紋。Soren 的暫判：Portugal 小熱，但別把「名字比較響」當成戰術。",
       "signals": [
         "FOX Sports m083 頁面列 2K vs 2L 與 2026-07-02T23:00Z 賽程窗口。",
@@ -5649,7 +5732,8 @@
         "BBC last-32 觀賽理由頁可直接核讀 Portugal v Croatia，並把敘事焦點放在 41 歲 Cristiano Ronaldo 與 40 歲 Luka Modrić 的可能最後舞台。",
         "BBC Chris Sutton 預測頁與 Sporting News/AS/Yahoo 類 bracket 頁同樣列 Portugal-Croatia；這些是媒體賽程與戰術敘事，不是官方先發。",
         "目前未找到可直接核讀的高信心 FPF/HNS 傷停或確認 XI；先發、停賽與紙上市場價格等臨場再核。",
-        "FIFA 已建立 Portugal-Croatia 官方 preview，並指向 match centre / team news / statistics；Ronaldo-Modrić 敘事之外，正式 XI 仍等官方頁。"
+        "FIFA 已建立 Portugal-Croatia 官方 preview，並指向 match centre / team news / statistics；Ronaldo-Modrić 敘事之外，正式 XI 仍等官方頁。",
+        "WhoScored Portugal-Croatia statistical preview 可連線，meta 明示 injuries/suspensions、probable line-ups、facts and odds；本站保守列為 availability/lineup-watch。"
       ],
       "sources": [
         {
@@ -5739,6 +5823,14 @@
           "fetchedAt": "2026-07-01T03:35:41Z",
           "claimType": "confirmed/context",
           "confidence": "high"
+        },
+        {
+          "label": "WhoScored Portugal-Croatia statistical preview",
+          "url": "https://www.whoscored.com/matches/1992063/preview/international-fifa-world-cup-2026-portugal-croatia",
+          "sourceName": "WhoScored",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -5747,7 +5839,7 @@
       "matchId": "m084",
       "match": "Spain vs Austria",
       "sourceType": "reported/bracket-actualization + injury/lineup watch + tactical/context watch",
-      "title": "Spain-Austria 補 Bundesliga live lineup hub：高壓對控球，正式名單還是要等賽前。",
+      "title": "Spain-Austria 補 RFEF 洛杉磯落地訊號：控球機器已到場，但低位防守不會自動讓路。",
       "sorenTake": "Bundesliga lineup hub 已掛上，Spain-Austria 的風格互砍有了臨場入口。控球碰高壓很好看，但正式名單沒出前，Soren 不把任何 predicted XI 寫成聖旨。",
       "signals": [
         "FIFA Uruguay-Spain 報導指出 Spain 將面對 Group J runners-up，這是比一般媒體投影更硬的官方脈絡。",
@@ -5760,7 +5852,8 @@
         "BBC last-32 觀賽理由頁把 Spain v Austria 寫作 fit-again Lamine Yamal 與歐洲冠軍面對身材/風格更硬的 Austria；屬媒體 tactical/context。",
         "Guardian live blog 提到 Spain 返回 Chattanooga 後將檢查兩名邊鋒傷情；這是 injury-watch lead，不足以直接宣告缺陣或先發。",
         "FIFA 已建立 Spain-Austria Round-of-32 官方 preview / team-news 入口；作為官方賽前脈絡與臨場資訊監看，不把 possible XI 當正式先發。",
-        "Bundesliga 世界盃頁可讀到 Spain-Austria latest updates / lineup hub；父層探針確認頁面與 FIFA World Cup 標題，作為 live-centre / lineup-watch，不提前宣稱正式先發。"
+        "Bundesliga 世界盃頁可讀到 Spain-Austria latest updates / lineup hub；父層探針確認頁面與 FIFA World Cup 標題，作為 live-centre / lineup-watch，不提前宣稱正式先發。",
+        "RFEF 7/1 官方更新可連線，標題為 Los Ángeles, territorio inexplorado，確認 Spain 已進入洛杉磯/淘汰賽場景；屬官方隊伍動態，不是正式先發。"
       ],
       "sources": [
         {
@@ -5858,6 +5951,14 @@
           "fetchedAt": "2026-07-01T05:46:27Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "RFEF Spain in Los Angeles update",
+          "url": "https://rfef.es/es/noticias/los-angeles-territorio-inexplorado",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -5866,7 +5967,7 @@
       "matchId": "m085",
       "match": "Switzerland vs Algeria",
       "sourceType": "reported/bracket-actualization + federation lead + lineup-tracker watch",
-      "title": "Switzerland-Algeria 補 FIFA match centre：鐘錶匠與綠軍的正式入口已掛牌，先發仍未開獎。",
+      "title": "Switzerland-Algeria 補 RTS/Squawka：Petkovic 反打舊主，瑞士不能只靠鐘錶精準就想過關。",
       "sorenTake": "FIFA match centre 已作官方入口；Switzerland 的穩與 Algeria 的亂會在 Vancouver 做耐心測試。先發未開獎前，只追入口與狀態，不演半夜神諭。",
       "signals": [
         "FOX Sports m085 頁面顯示 Switzerland vs 3E/3F/3G/3I/3J，時間為 2026-07-03T03:00Z / Vancouver。",
@@ -5880,7 +5981,9 @@
         "FotMob/SofaScore/LiveScore 已有 Switzerland-Algeria 賽事/lineups 入口；這些只作臨場 lineup tracker，不是確認先發。",
         "目前未找到可直接核讀的具體傷停/停賽；先以 no verified injury update found 標記，等待官方賽前記者會與 match centre。",
         "FIFA 已建立 Switzerland-Algeria 官方 preview / team-news 入口，補足 Vancouver 這場的官方賽前監看來源。",
-        "FIFA match centre URL 可連線，作 Switzerland-Algeria 官方比分/陣容入口；頁面文字由前端載入，父層僅核可連線與 URL，不把它當已公布先發。"
+        "FIFA match centre URL 可連線，作 Switzerland-Algeria 官方比分/陣容入口；頁面文字由前端載入，父層僅核可連線與 URL，不把它當已公布先發。",
+        "RTS 瑞士公共媒體可連線，確認 Switzerland 將面對前瑞士主帥 Vladimir Petkovic 帶領的 Algeria；這是 matchup/tactical context。",
+        "Squawka Switzerland-Algeria team news / predicted lineups 可連線；屬 predicted XI 觀察，不是 confirmed lineup。"
       ],
       "sources": [
         {
@@ -5985,6 +6088,22 @@
           "sourceName": "FIFA",
           "fetchedAt": "2026-07-01T05:46:27Z",
           "claimType": "confirmed/match-centre",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "RTS Switzerland face Petkovic Algeria",
+          "url": "https://www.rts.ch/sport/football/coupe-du-monde-de-la-fifa/2026/article/mondial-2026-la-suisse-affrontera-l-algerie-de-vladimir-petkovic-29288306.html",
+          "sourceName": "RTS",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "reported/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Squawka Switzerland-Algeria team news",
+          "url": "https://www.squawka.com/en/news/world-cup/switzerland-vs-algeria-team-news-predicted-lineups/",
+          "sourceName": "Squawka",
+          "fetchedAt": "2026-07-01T10:51:28Z",
+          "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
         }
       ],
