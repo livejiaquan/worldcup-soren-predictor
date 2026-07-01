@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T14:18:03Z",
-  "status": "Matchday scout refresh: m080 補 BBC 傷停、ESPN live/odds/API scheduled 錨點與預測先發邊界；m082 補 RotoWire team-news/tactical 入口。",
-  "headline": "Soren scout: England-DR Congo 開賽前約兩小時仍是 Scheduled；James/Quansah 缺陣有 BBC/ESPN/Sky 多源交叉，正式 XI 還沒落地，別把預測名單當聖旨。",
+  "generatedAt": "2026-07-01T15:39:55Z",
+  "status": "Matchday scout refresh: m081 補 U.S. Soccer 官方賽前/轉播/對手檔案；m084 補 RFEF Austria 對手確認、恢復備戰與小組零封脈絡。",
+  "headline": "Soren scout: England-DR Congo 開賽前 ESPN 仍 Scheduled；下一波先把 USA-Bosnia 與 Spain-Austria 的官方賽前錨點補齊，避免靠預測 XI 和市場熱度腦補。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5404,8 +5404,8 @@
       "matchId": "m081",
       "match": "USA vs Bosnia & Herzegovina",
       "sourceType": "official federation/press + official match-centre + live-centre + reported lineup/availability watch + odds reference",
-      "title": "USA-Bosnia 補 FIFA/ESPN 臨場錨點：Pochettino 可以喊決賽，但淘汰賽會先檢查後防健康。",
-      "sorenTake": "USA 是主場敘事與市場更熱的一邊，但 Bosnia 不是來當背景板。U.S. Soccer 與 N/FSBiH 的賽前脈絡已在，現在補 FIFA/ESPN 臨場與 odds 入口；Soren 會把 Pulisic/後防健康當第一風險，而不是把主場光環當護身符。",
+      "title": "USA-Bosnia 補官方賽前錨點：Pochettino 可以把淘汰賽喊成決賽，但 Bosnia 不是被邀來當背景板。",
+      "sorenTake": "美國足協自己的賽前頁、轉播頁與對手檔案把時間、場地、對手輪廓釘牢：20:00 ET，Santa Clara，Bosnia 排名不高但剛從小組賽活下來。Soren 的毒舌版翻譯：地主光環很亮，可是淘汰賽第一刀通常先砍自信過剩。",
       "signals": [
         "FOX Sports m081 比賽頁標題已顯示 United States vs Bosnia and Herzegovina，時間為 2026-07-01 當地 / 2026-07-02T00:00Z。",
         "FOX odds story 明列 USA vs Bosnia and Herzegovina：moneyline USA -185、Bosnia +600、draw +280；to advance USA -460、Bosnia +340。",
@@ -5434,7 +5434,9 @@
         "USA Today 可讀 metadata 與正文片段指出 Auston Trusty 可用性較 Mark McKenzie、Cristian Roldan 更樂觀，Pochettino 也談到 Trusty 對 Bosnia 前的恢復狀態；這是 reported injury watch，不寫成 confirmed lineup。",
         "13:11Z 親核 FIFA USA-Bosnia match centre 可連線，作為正式陣容、比分與事件的官方優先入口。",
         "13:11Z 親核 ESPN USA-Bosnia live page 可連線，標示提供 live score、highlights、updated stats；可作臨場交叉檢查。",
-        "13:11Z 親核 ESPN odds page 可連線，提供 odds/spread/score prediction；只當紙上市場參考，不導向真金下注。"
+        "13:11Z 親核 ESPN odds page 可連線，提供 odds/spread/score prediction；只當紙上市場參考，不導向真金下注。",
+        "15:40Z 補 U.S. Soccer 官方賽前/轉播錨點：美國足協把 USA-Bosnia 明確列為 Santa Clara 的 Round of 32，並標出 20:00 ET 轉播窗口；這是官方賽程與敘事入口，不是正式先發。",
+        "U.S. Soccer 對手檔案把 Bosnia-Herzegovina 標為 FIFA 排名第 61、分組賽 1勝1和1負；Soren 的重點是：地主熱門可以有，但不能把對方寫成陪跑。"
       ],
       "sources": [
         {
@@ -5652,6 +5654,22 @@
           "fetchedAt": "2026-07-01T13:11:42Z",
           "claimType": "odds-reference",
           "confidence": "high"
+        },
+        {
+          "label": "U.S. Soccer USA-Bosnia match preview",
+          "url": "https://www.ussoccer.com/stories/2026/06/usmnt/match-preview-vs-bosnia-herzegovina-san-francisco-bay-california-fifa-world-cup",
+          "sourceName": "U.S. Soccer",
+          "claimType": "confirmed/match-preview",
+          "confidence": "high",
+          "fetchedAt": "2026-07-01T15:39:55Z"
+        },
+        {
+          "label": "U.S. Soccer USA-Bosnia how to watch",
+          "url": "https://www.ussoccer.com/stories/2026/06/usmnt/how-to-watch-vs-bosnia-herzegovina-fifa-world-cup-livestream-tv-listen-san-francisco",
+          "sourceName": "U.S. Soccer",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high",
+          "fetchedAt": "2026-07-01T15:39:55Z"
         }
       ],
       "confidence": "high"
@@ -6010,8 +6028,8 @@
       "matchId": "m084",
       "match": "Spain vs Austria",
       "sourceType": "official match centre + official preview + reported tactical/probability/lineup watch",
-      "title": "Spain-Austria 補 FIFA match centre 與 Opta Analyst：70.6% 不是免死金牌，Austria 的破局題得先被尊重。",
-      "sorenTake": "FIFA match centre 給 Spain-Austria 臨場官方入口，Opta Analyst 則把 Spain 90 分鐘勝率放到 70.6%、Austria 12.2%。Soren 的態度：Spain 是合理熱門，但 70.6% 還有三成空氣能讓冷門鑽進來，尤其淘汰賽最愛修理「控球等於過關」的懶人想法。",
+      "title": "Spain-Austria 補 RFEF 官方備戰線：零失球很漂亮，但淘汰賽不會給西班牙頒「傳控免死金牌」。",
+      "sorenTake": "RFEF 已把 Austria、洛杉磯開球時間與恢復課題講清楚，也提醒 Spain 小組賽不敗零封。這些都讓西班牙站在熱門位，但 Soren 不買「漂亮數據自動晉級」：Austria 只要把比賽切碎，這場就會從藝術展變成巷戰。",
       "signals": [
         "FIFA Uruguay-Spain 報導指出 Spain 將面對 Group J runners-up，這是比一般媒體投影更硬的官方脈絡。",
         "FOX m084 頁面已顯示 Spain vs 2J，公開時間窗口為 2026-07-02T19:00Z。",
@@ -6026,7 +6044,9 @@
         "Bundesliga 世界盃頁可讀到 Spain-Austria latest updates / lineup hub；父層探針確認頁面與 FIFA World Cup 標題，作為 live-centre / lineup-watch，不提前宣稱正式先發。",
         "RFEF 7/1 官方更新可連線，標題為 Los Ángeles, territorio inexplorado，確認 Spain 已進入洛杉磯/淘汰賽場景；屬官方隊伍動態，不是正式先發。",
         "FIFA Spain-Austria match centre URL 可連線，作為本場官方臨場比分、lineups、match updates 入口；正式先發未出前只列 official live-centre。",
-        "Opta Analyst 可讀正文片段指出 Spain 90 分鐘勝率 70.6%、Austria 12.2%、draw 17.3%，並提供 predicted lineups；這是 public probability/tactical context，不是 Soren 底層模型。"
+        "Opta Analyst 可讀正文片段指出 Spain 90 分鐘勝率 70.6%、Austria 12.2%、draw 17.3%，並提供 predicted lineups；這是 public probability/tactical context，不是 Soren 底層模型。",
+        "15:40Z 補 RFEF 官方連發：西班牙足協確認 Austria 是 dieciseisavos 對手、比賽在洛杉磯 7/2 12:00 local / 21:00 西班牙時間，並把「恢復」列為備戰主題。",
+        "RFEF 另強調 Spain 小組第一、不敗且零失球；這支持「西班牙是熱門」的公開敘事，但 Soren 仍把 Austria 反擊/定位球破局當風險標籤。"
       ],
       "sources": [
         {
@@ -6148,6 +6168,30 @@
           "fetchedAt": "2026-07-01T12:02:56Z",
           "claimType": "reported/tactical-probability",
           "confidence": "high"
+        },
+        {
+          "label": "RFEF confirms Austria opponent",
+          "url": "https://rfef.es/es/noticias/austria-rival-en-dieciseisavos",
+          "sourceName": "RFEF",
+          "claimType": "confirmed/opponent",
+          "confidence": "high",
+          "fetchedAt": "2026-07-01T15:39:55Z"
+        },
+        {
+          "label": "RFEF Spain recovery focus",
+          "url": "https://rfef.es/es/noticias/la-recuperacion-clave-para-lograr-el-gran-objetivo",
+          "sourceName": "RFEF",
+          "claimType": "confirmed/team-update",
+          "confidence": "high",
+          "fetchedAt": "2026-07-01T15:39:55Z"
+        },
+        {
+          "label": "RFEF Spain unbeaten group note",
+          "url": "https://rfef.es/es/noticias/espana-lider-invicta-e-imbatida",
+          "sourceName": "RFEF",
+          "claimType": "context/team-form",
+          "confidence": "high",
+          "fetchedAt": "2026-07-01T15:39:55Z"
         }
       ],
       "confidence": "medium-high"
