@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T16:47:24Z",
-  "status": "Live scout refresh: m080 更新 ESPN 上半場 live-score（Congo DR 1-0 England，completed=false）；m082 補 Guardian Belgium-Senegal 賽前敘事與 ESPN scheduled 狀態。",
-  "headline": "Soren scout: England-DR Congo 已從紙上冷門風險變成半場 live alert；Belgium-Senegal 先補 Guardian 脈絡，仍等官方首發。",
+  "generatedAt": "2026-07-01T17:46:35Z",
+  "status": "Live scout refresh: m080 再核 ESPN 83 分 live-score（England 1-1 Congo DR，completed=false）；不結算、不改 bracket，只更新公開現場脈絡。",
+  "headline": "Soren scout: England-DR Congo 83 分還在 1-1，熱門隊已經被拖進泥地；等 Full Time 前不演神算。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5003,8 +5003,8 @@
       "matchId": "m080",
       "match": "England vs Democratic Republic of the Congo",
       "sourceType": "official match-centre + live-status + live-centre + reported availability/lineup watch + odds reference",
-      "title": "England-DR Congo 半場警報：ESPN 顯示 Congo DR 45+2 領先 1-0；Live ≠ Final，但冷門路徑已經不是紙上談兵。",
-      "sorenTake": "賽前說 James/Quansah 缺陣不能腦補成小事，現在 ESPN 公開 API 到上半場補時仍顯示 England 0-1 Congo DR。這不是結算、不是改 bracket、也不是下注建議；只是 Soren 必須把「熱門被拖進泥地」從風險標籤升級成即時觀察。",
+      "title": "England-DR Congo 83 分仍是 1-1：冷門警報還活著，但 Live ≠ Final，先別把 bracket/紙上盤提前結算。",
+      "sorenTake": "ESPN public summary 從半場 Congo DR 1-0，更新到 83 分 England 1-1 Congo DR、completed=false。這正是 Soren 要守的邊界：熱門隊被拖進泥地是真訊號，但未完賽就不是賽果、不是 bracket、也不是紙上本金結算。",
       "signals": [
         "England Football 公開列出 England 若以 1L 出線，將在 Atlanta 對 3E/H/I/J/K。",
         "FOX Sports m080 賽程頁可核對 1L vs 3E/3H/3I/3J/3K 與 2026-07-01T16:00Z 窗口。",
@@ -5051,7 +5051,8 @@
         "BBC 7/1 傷停稿以標題與 meta 明確寫到 Jarell Quansah 和 Reece James 因傷缺席 England 對 DR Congo；這把右後衛危機從單一媒體訊號升級為多源高信心 availability-watch。",
         "Sports Mole 7/1 predicted-XI 專頁稱 Tuchel 需要做右後衛決策，頁面本身仍用 could line up / predicted XI 語氣；因此只加入 lineup-watch，不升級 confirmed lineup。",
         "ESPN live score 與 odds 頁均可連線：live 頁提供比分/事件交叉檢查，odds 頁只作 paper simulation 市場溫度，不導向真金白銀下注。",
-        "16:47Z ESPN public summary API 顯示 England-Congo DR 為 STATUS_FIRST_HALF / 45'+2'，Congo DR 1-0 領先；completed=false，所以只作 live-score/context，不寫成最終賽果、不觸發紙上金流結算。"
+        "16:47Z ESPN public summary API 顯示 England-Congo DR 為 STATUS_FIRST_HALF / 45'+2'，Congo DR 1-0 領先；completed=false，所以只作 live-score/context，不寫成最終賽果、不觸發紙上金流結算。",
+        "17:46Z 再核 ESPN public summary API：England-Congo DR 83 分仍為 STATUS_SECOND_HALF，比分 1-1、completed=false；冷門壓力仍在，但只能作 context/live-score，不寫成 FT 或結算。"
       ],
       "sources": [
         {
@@ -5362,7 +5363,7 @@
           "label": "ESPN England-Congo DR live summary API",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760495",
           "sourceName": "ESPN public API",
-          "fetchedAt": "2026-07-01T16:47:24Z",
+          "fetchedAt": "2026-07-01T17:46:35Z",
           "claimType": "context/live-score",
           "confidence": "high"
         },
