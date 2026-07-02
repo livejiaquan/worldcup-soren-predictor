@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T19:58:05Z",
-  "status": "live-score micro refresh: Spain-Austria 已開踢；ESPN 半場顯示 1-0 且 completed=false，僅作 live context。",
-  "headline": "Soren 補上 Spain-Austria 半場 live context：1-0 不是終局，只是 Austria 爆冷路徑被先擠進窄巷。",
+  "generatedAt": "2026-07-02T21:01:54Z",
+  "status": "postmatch correction: Spain-Austria 已由 ESPN public summary 確認 FT 3-0；m084 scouting card 從半場 live context 改為 final/postmatch。",
+  "headline": "Soren 補上 Spain-Austria 全場：3-0 不是刮痧，是 Spain 把 Austria 的爆冷劇本直接收進碎紙機。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -6182,9 +6182,9 @@
     {
       "matchId": "m084",
       "match": "Spain vs Austria",
-      "sourceType": "official match centre + RFEF/ÖFB official context + Reuters/Al Jazeera live-centre + ESPN in-progress live-score context + reported tactical/probability/lineup watch + paper-market watch + AP availability watch",
-      "title": "Spain-Austria 半場 1-0：Yamal 體能線還在，Austria 的爆冷路徑先被壓到窄巷。",
-      "sorenTake": "ESPN 公開 summary 在半場顯示 Spain 1-0 Austria、completed=false。這只能當 live context，不是賽果結算；Spain 的控球劇本暫時領先，但 Austria 前一輪靠補時把劇本撕開過，Soren 還不替任何人提前蓋棺。",
+      "sourceType": "official match centre + RFEF/ÖFB official context + Reuters/Al Jazeera live-centre + ESPN confirmed final-score context + reported tactical/probability/lineup watch + paper-market watch + AP availability watch",
+      "title": "Spain-Austria FT 3-0：Yamal 體能線過關，Austria 的爆冷路徑被 Spain 直接鎖門。",
+      "sorenTake": "ESPN public summary event 760497 已從半場 completed=false 翻成 STATUS_FULL_TIME / completed=true，Spain 3-0 Austria。這是 final-score context，可把 scouting card 改成 postmatch；result/bracket/paper bankroll 則由資料層 override 另行結算。Soren 的毒舌版：Austria 帶了逆襲故事來，Spain 帶了碎紙機。",
       "signals": [
         "FIFA Uruguay-Spain 報導指出 Spain 將面對 Group J runners-up，這是比一般媒體投影更硬的官方脈絡。",
         "FOX m084 頁面已顯示 Spain vs 2J，公開時間窗口為 2026-07-02T19:00Z。",
@@ -6217,7 +6217,7 @@
         "ÖFB 官方賽後文可連線，確認 Austria 靠對 Algeria 的 96 分鐘追平闖進淘汰賽；這強化 Austria 的 resilience/upset-path 語境，但不是 Spain 戰正式先發。",
         "Al Jazeera 7/2 Spain-Austria preview/live rail 可連線，提供 19:00 GMT 賽程、Los Angeles 場地與 live build-up；本站列為臨場入口與 H2H/context，不宣稱官方 XI。",
         "AP News 7/1 報導 De la Fuente 表示 Lamine Yamal 健康到可在淘汰賽踢滿全場；本站列為 reported/availability-watch，提升 Spain 邊路上限，但不等於官方先發已公布。",
-        "ESPN public summary event 760497 於半場顯示 Spain 1-0 Austria，狀態為 STATUS_HALFTIME / completed=false；本站只列為 context/live-score，不寫 final、不結算 bracket 或 paper bankroll。"
+        "ESPN public summary event 760497 於 21:00Z 後再核已顯示 STATUS_FULL_TIME / completed=true，Spain 3-0 Austria；本站把 m084 scouting card 從 live-score context 改為 postmatch/final-score context。"
       ],
       "sources": [
         {
@@ -6469,15 +6469,15 @@
           "confidence": "medium-high"
         },
         {
-          "label": "ESPN public summary halftime live state: Spain 1-0 Austria",
+          "label": "ESPN Spain-Austria public summary FT",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760497",
           "sourceName": "ESPN public API",
-          "fetchedAt": "2026-07-02T19:58:05Z",
-          "claimType": "context/live-score",
+          "fetchedAt": "2026-07-02T21:01:54Z",
+          "claimType": "confirmed/final-score",
           "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m085",
