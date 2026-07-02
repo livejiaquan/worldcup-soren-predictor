@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T20:52:44.835Z",
+  "generatedAt": "2026-07-02T21:01:54.436Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,8 +7,8 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 82,
-    "scheduledMatches": 22,
+    "finishedMatches": 83,
+    "scheduledMatches": 21,
     "nextWindow": [
       "m083",
       "m085",
@@ -489,14 +489,14 @@
       {
         "team": "Spain",
         "group": "Group H",
-        "played": 3,
-        "won": 2,
+        "played": 4,
+        "won": 3,
         "drawn": 1,
         "lost": 0,
-        "goalsFor": 5,
+        "goalsFor": 8,
         "goalsAgainst": 0,
-        "goalDiff": 5,
-        "points": 7
+        "goalDiff": 8,
+        "points": 10
       },
       {
         "team": "Cape Verde",
@@ -599,18 +599,6 @@
         "points": 9
       },
       {
-        "team": "Austria",
-        "group": "Group J",
-        "played": 3,
-        "won": 1,
-        "drawn": 1,
-        "lost": 1,
-        "goalsFor": 6,
-        "goalsAgainst": 6,
-        "goalDiff": 0,
-        "points": 4
-      },
-      {
         "team": "Algeria",
         "group": "Group J",
         "played": 3,
@@ -620,6 +608,18 @@
         "goalsFor": 5,
         "goalsAgainst": 7,
         "goalDiff": -2,
+        "points": 4
+      },
+      {
+        "team": "Austria",
+        "group": "Group J",
+        "played": 4,
+        "won": 1,
+        "drawn": 1,
+        "lost": 2,
+        "goalsFor": 6,
+        "goalsAgainst": 9,
+        "goalDiff": -3,
         "points": 4
       },
       {
@@ -2234,9 +2234,13 @@
       "team1": "Spain",
       "team2": "Austria",
       "venue": "Los Angeles (Inglewood)",
-      "status": "scheduled",
-      "score": null,
-      "source": "openfootball/worldcup.json"
+      "status": "finished",
+      "score": [
+        3,
+        0
+      ],
+      "source": "openfootball/worldcup.json + override: ESPN public summary event 760497 confirmed STATUS_FULL_TIME / completed=true on 2026-07-02",
+      "winner": "Spain"
     },
     {
       "id": "m083",
@@ -3052,12 +3056,12 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.8253105565296448,
-        "draw": 0.1426514328459675,
-        "away": 0.03203801062438772
+        "home": 0.8321883314920849,
+        "draw": 0.1371466919352562,
+        "away": 0.030664976572658813
       },
       "expectedGoals": [
-        2.19,
+        2.24,
         0.25
       ],
       "score": "2-0",
@@ -3067,12 +3071,12 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "35.8",
+            "value": "38.2",
             "note": "Spain 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.19 : 0.25",
+            "value": "2.24 : 0.25",
             "note": "最像 2-0"
           },
           {
@@ -3083,9 +3087,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Spain 100.5；Cape Verde 64.7",
-        "預期進球 2.19 : 0.25，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 35.8 分，我暫時站 Spain"
+        "底牌分：Spain 102.9；Cape Verde 64.7",
+        "預期進球 2.24 : 0.25，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 38.2 分，我暫時站 Spain"
       ]
     },
     "m037": {
@@ -3336,43 +3340,43 @@
     },
     "m056": {
       "pick": "Austria",
-      "confidence": 0.7900316460935585,
-      "tag": "我敢站隊",
+      "confidence": 0.7141062603379026,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.6852516254576957,
-        "draw": 0.21160797483940164,
-        "away": 0.1031403997029027
+        "home": 0.6266317576053111,
+        "draw": 0.23270594441488587,
+        "away": 0.140662297979803
       },
       "expectedGoals": [
-        1.83,
-        0.55
+        1.72,
+        0.66
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Austria，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Austria，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "story": "Austria 底牌比較硬；Jordan 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "18.8",
+            "value": "16.0",
             "note": "Austria 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.83 : 0.55",
+            "value": "1.72 : 0.66",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "10%",
+            "value": "14%",
             "note": "Jordan 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Austria 77.6；Jordan 58.8",
-        "預期進球 1.83 : 0.55，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 18.8 分，我暫時站 Austria"
+        "底牌分：Austria 74.7；Jordan 58.8",
+        "預期進球 1.72 : 0.66，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 16.0 分，我暫時站 Austria"
       ]
     },
     "m061": {
@@ -4036,12 +4040,12 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.8267380027658771,
-        "draw": 0.14150941385444313,
-        "away": 0.03175258337967987
+        "home": 0.8335580156398713,
+        "draw": 0.13604976673917388,
+        "away": 0.030392217620954773
       },
       "expectedGoals": [
-        2.2,
+        2.25,
         0.25
       ],
       "score": "2-0",
@@ -4051,12 +4055,12 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "36.3",
+            "value": "38.7",
             "note": "Spain 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.20 : 0.25",
+            "value": "2.25 : 0.25",
             "note": "最像 2-0"
           },
           {
@@ -4067,9 +4071,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Spain 100.5；Saudi Arabia 64.2",
-        "預期進球 2.20 : 0.25，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 36.3 分，我暫時站 Spain"
+        "底牌分：Spain 102.9；Saudi Arabia 64.2",
+        "預期進球 2.25 : 0.25，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 38.7 分，我暫時站 Spain"
       ]
     },
     "m039": {
@@ -4200,40 +4204,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.75941559369498,
-        "draw": 0.1792400396288614,
-        "away": 0.06134436667615861
+        "home": 0.7853199901802017,
+        "draw": 0.1663636430097516,
+        "away": 0.04831636681004671
       },
       "expectedGoals": [
-        2,
-        0.38
+        2.05,
+        0.33
       ],
-      "score": "1-0",
+      "score": "2-0",
       "commentary": {
-        "headline": "我這場偏明確站 Argentina，但平局還有 18%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Argentina，但平局還有 17%；別急著開香檳，足球最會打臉。",
         "story": "Argentina 底牌比較硬；Austria 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "26.4",
+            "value": "29.3",
             "note": "Argentina 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.00 : 0.38",
-            "note": "最像 1-0"
+            "value": "2.05 : 0.33",
+            "note": "最像 2-0"
           },
           {
             "label": "翻車率",
-            "value": "6%",
+            "value": "5%",
             "note": "Austria 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Argentina 104.0；Austria 77.6",
-        "預期進球 2.00 : 0.38，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 26.4 分，我暫時站 Argentina"
+        "底牌分：Argentina 104.0；Austria 74.7",
+        "預期進球 2.05 : 0.33，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 29.3 分，我暫時站 Argentina"
       ]
     },
     "m051": {
@@ -5140,16 +5144,16 @@
     },
     "m048": {
       "pick": "Spain",
-      "confidence": 0.7462431939369292,
+      "confidence": 0.7779754927361957,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.12434925282397374,
-        "draw": 0.22427273069700548,
-        "away": 0.6513780164790207
+        "home": 0.10886096180284242,
+        "draw": 0.21523186373893102,
+        "away": 0.6759071744582266
       },
       "expectedGoals": [
-        0.61,
-        1.77
+        0.56,
+        1.82
       ],
       "score": "0-1",
       "commentary": {
@@ -5158,25 +5162,25 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "18.3",
+            "value": "20.7",
             "note": "Spain 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.61 : 1.77",
+            "value": "0.56 : 1.82",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "12%",
+            "value": "11%",
             "note": "Uruguay 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Uruguay 82.1；Spain 100.5",
-        "預期進球 0.61 : 1.77，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 18.3 分，我暫時站 Spain"
+        "底牌分：Uruguay 82.1；Spain 102.9",
+        "預期進球 0.56 : 1.82，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 20.7 分，我暫時站 Spain"
       ]
     },
     "m041": {
@@ -5426,44 +5430,44 @@
       ]
     },
     "m059": {
-      "pick": "Austria",
-      "confidence": 0.5380477355305666,
-      "tag": "有邊但不裝穩",
+      "pick": "Algeria",
+      "confidence": 0.3857099808404637,
+      "tag": "膠著到煩",
       "probabilities": {
-        "home": 0.2409616596593714,
-        "draw": 0.26630881977346454,
-        "away": 0.492729520567164
+        "home": 0.37918427782358544,
+        "draw": 0.2778853500021528,
+        "away": 0.34293037217426176
       },
       "expectedGoals": [
-        0.93,
-        1.45
+        1.23,
+        1.15
       ],
-      "score": "0-1",
+      "score": "1-1",
       "commentary": {
-        "headline": "我這場保守站 Austria，但平局還有 27%；別急著開香檳，足球最會打臉。",
-        "story": "Austria 底牌比較硬；Algeria 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場保守站 Algeria，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "6.3",
-            "note": "Austria 比較有本錢"
+            "value": "3.5",
+            "note": "誰也別裝大哥"
           },
           {
             "label": "進球味",
-            "value": "0.93 : 1.45",
-            "note": "最像 0-1"
+            "value": "1.23 : 1.15",
+            "note": "最像 1-1"
           },
           {
             "label": "翻車率",
-            "value": "24%",
+            "value": "34%",
             "note": "Algeria 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Algeria 71.3；Austria 77.6",
-        "預期進球 0.93 : 1.45，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 6.3 分，我暫時站 Austria"
+        "底牌分：Algeria 71.3；Austria 74.7",
+        "預期進球 1.23 : 1.15，先用 Poisson 把嘴砲壓成數字",
+        "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
     "m060": {
@@ -5922,40 +5926,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.7259086201319161,
-        "draw": 0.1946689345444048,
-        "away": 0.07942244532367894
+        "home": 0.7750984858725107,
+        "draw": 0.17154580359038463,
+        "away": 0.05335571053710474
       },
       "expectedGoals": [
-        1.92,
-        0.46
+        2.03,
+        0.35
       ],
-      "score": "1-0",
+      "score": "2-0",
       "commentary": {
-        "headline": "我這場偏明確站 Spain，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Spain，但平局還有 17%；別急著開香檳，足球最會打臉。",
         "story": "Spain 底牌比較硬；Austria 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "22.9",
+            "value": "28.2",
             "note": "Spain 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.92 : 0.46",
-            "note": "最像 1-0"
+            "value": "2.03 : 0.35",
+            "note": "最像 2-0"
           },
           {
             "label": "翻車率",
-            "value": "8%",
+            "value": "5%",
             "note": "Austria 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Spain 100.5；Austria 77.6",
-        "預期進球 1.92 : 0.46，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 22.9 分，我暫時站 Spain"
+        "底牌分：Spain 102.9；Austria 74.7",
+        "預期進球 2.03 : 0.35，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 28.2 分，我暫時站 Spain"
       ]
     },
     "m083": {
@@ -6802,23 +6806,23 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 72,
-      "correct": 54,
+      "points": 73,
+      "correct": 55,
       "exact": 9,
-      "total": 82,
+      "total": 83,
       "rank": 1,
-      "accuracy": 0.6585365853658537
+      "accuracy": 0.6626506024096386
     },
     {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 68,
-      "correct": 50,
+      "points": 69,
+      "correct": 51,
       "exact": 8,
-      "total": 82,
+      "total": 83,
       "rank": 2,
-      "accuracy": 0.6097560975609756
+      "accuracy": 0.6144578313253012
     },
     {
       "id": "draw",
@@ -6827,9 +6831,9 @@
       "points": 44,
       "correct": 22,
       "exact": 11,
-      "total": 82,
+      "total": 83,
       "rank": 3,
-      "accuracy": 0.2682926829268293
+      "accuracy": 0.26506024096385544
     }
   ],
   "paperBankroll": {
@@ -6837,36 +6841,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 205.53,
+    "bankroll": 218.98,
     "openStake": 36.57,
-    "totalValue": 205.53,
-    "roi": 1.055,
+    "totalValue": 218.98,
+    "roi": 1.19,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m059",
-        "kickoffUtc": "2026-06-28T02:00:00.000Z",
-        "stage": "小組 J · Matchday 17",
-        "team1": "Algeria",
-        "team2": "Austria",
-        "pick": "Austria",
-        "outcome": "away",
-        "stake": 5.97,
-        "decimalOdds": 2.58,
-        "edge": 0.271,
-        "modelProbability": 0.493,
-        "marketProxyProbability": 0.365,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-06-28T01:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 Austria，但平局還有 27%；別急著開香檳，足球最會打臉。",
-        "status": "lost",
-        "score": [
-          3,
-          3
-        ],
-        "profit": -5.97
-      },
       {
         "matchId": "m060",
         "kickoffUtc": "2026-06-28T02:00:00.000Z",
@@ -7130,9 +7110,7 @@
           0
         ],
         "profit": 9.92
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m084",
         "kickoffUtc": "2026-07-02T19:00:00.000Z",
@@ -7143,15 +7121,22 @@
         "outcome": "home",
         "stake": 8,
         "decimalOdds": 2.06,
-        "edge": 0.495,
-        "modelProbability": 0.726,
+        "edge": 0.597,
+        "modelProbability": 0.775,
         "marketProxyProbability": 0.456,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-02T18:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 Spain，但平局還有 19%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "reason": "我這場偏明確站 Spain，但平局還有 17%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          3,
+          0
+        ],
+        "profit": 8.48
+      }
+    ],
+    "pending": [
       {
         "matchId": "m083",
         "kickoffUtc": "2026-07-02T23:00:00.000Z",
@@ -7227,6 +7212,25 @@
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Argentina，但平局還有 13%；別急著開香檳，足球最會打臉。",
         "status": "pending"
+      },
+      {
+        "matchId": "m087",
+        "kickoffUtc": "2026-07-04T01:30:00.000Z",
+        "stage": "Round of 32",
+        "team1": "Colombia",
+        "team2": "Ghana",
+        "pick": "Colombia",
+        "outcome": "home",
+        "stake": 8,
+        "decimalOdds": 2.29,
+        "edge": 0.423,
+        "modelProbability": 0.621,
+        "marketProxyProbability": 0.41,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-04T00:30:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場中等站 Colombia，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
       }
     ],
     "watchlist": [
@@ -7269,25 +7273,6 @@
         "status": "watchlist"
       },
       {
-        "matchId": "m087",
-        "kickoffUtc": "2026-07-04T01:30:00.000Z",
-        "stage": "Round of 32",
-        "team1": "Colombia",
-        "team2": "Ghana",
-        "pick": "Colombia",
-        "outcome": "home",
-        "stake": 8,
-        "decimalOdds": 2.29,
-        "edge": 0.423,
-        "modelProbability": 0.621,
-        "marketProxyProbability": 0.41,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-04T00:30:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Colombia，但平局還有 23%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
         "matchId": "m092",
         "kickoffUtc": "2026-07-06T00:00:00.000Z",
         "stage": "Round of 16",
@@ -7323,6 +7308,25 @@
         "lockedAtUtc": "2026-07-04T16:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 Canada，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m094",
+        "kickoffUtc": "2026-07-07T00:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "USA",
+        "team2": "Belgium",
+        "pick": "USA",
+        "outcome": "home",
+        "stake": 1,
+        "decimalOdds": 2.72,
+        "edge": -0.003,
+        "modelProbability": 0.367,
+        "marketProxyProbability": 0.346,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-06T23:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 USA，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
