@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T00:38:46Z",
-  "status": "Live-score micro refresh: ESPN public summary shows USA-Bosnia in the first half at 0-0; Australia-Egypt and Argentina-Cape Verde cards were topped up with parent-verified match-centre/odds/lineup-watch sources. Live ≠ Final.",
-  "headline": "Soren scout: USA-Bosnia 先當 0-0 live watch，不結算；下一波 Australia-Egypt / Argentina-Cape Verde 補上官方與市場錨點。",
+  "generatedAt": "2026-07-02T01:48:44Z",
+  "status": "Live-score correction + sparse-card top-up: ESPN public summary recheck moved USA-Bosnia to 82′ at USA 2-0, completed=false; Colombia-Ghana gained FIFA/Sports Mole scouting anchors, and Portugal-Croatia added an ESPN paper-odds reference. Live ≠ Final.",
+  "headline": "Soren scout: USA-Bosnia 82′ 變 2-0 但仍不是終場；Colombia-Ghana 補官方/隊訊線，Portugal-Croatia 只把 ESPN odds 當紙上市場溫度。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5416,8 +5416,8 @@
       "matchId": "m081",
       "match": "USA vs Bosnia & Herzegovina",
       "sourceType": "official federation/press + official match-centre + ESPN live-score context + reported lineup/availability watch + odds reference",
-      "title": "USA-Bosnia live watch：ESPN 38′ 仍是 0-0；地主熱門先別急著開香檳。",
-      "sorenTake": "ESPN public summary 在父層重查時顯示 USA-Bosnia 38′ 0-0、completed=false。這只能當 live-score context，不是終場、不結算 bankroll，也不改 bracket；Soren 的重點是：地主如果只靠氣勢壓人，Bosnia 會很樂意把比賽拖成焦躁測驗。",
+      "title": "USA-Bosnia live watch：ESPN 82′ USA 2-0，但 completed=false 就不能急著結算。",
+      "sorenTake": "ESPN public summary 在父層二次重查時顯示 USA-Bosnia 82′，USA 2-0 Bosnia-Herzegovina，completed=false / Second Half。這仍然只能當 live-score context，不是終場、不結算 bankroll，也不改 bracket；地主把安全墊加厚了，但 Soren 不會把尚未吹完的比賽包裝成已過關。",
       "signals": [
         "FOX Sports m081 比賽頁標題已顯示 United States vs Bosnia and Herzegovina，時間為 2026-07-01 當地 / 2026-07-02T00:00Z。",
         "FOX odds story 明列 USA vs Bosnia and Herzegovina：moneyline USA -185、Bosnia +600、draw +280；to advance USA -460、Bosnia +340。",
@@ -5450,7 +5450,9 @@
         "15:40Z 補 U.S. Soccer 官方賽前/轉播錨點：美國足協把 USA-Bosnia 明確列為 Santa Clara 的 Round of 32，並標出 20:00 ET 轉播窗口；這是官方賽程與敘事入口，不是正式先發。",
         "U.S. Soccer 對手檔案把 Bosnia-Herzegovina 標為 FIFA 排名第 61、分組賽 1勝1和1負；Soren 的重點是：地主熱門可以有，但不能把對方寫成陪跑。",
         "Al Jazeera 7/1 USA-Bosnia 頁面標題與 metadata 可讀，定位為 prediction / team lineups，描述 Bosnia 是 cohosts USA 的 knockout underdog；列為 reported lineup/context watch，不寫成 confirmed XI。",
-        "00:38Z 父層用 ESPN public summary 重查：USA-Bosnia 38′ 0-0、STATUS_FIRST_HALF、completed=false；這是 live context，不是 final score，不能用來結算結果或紙上 bankroll。"
+        "00:38Z 父層用 ESPN public summary 重查：USA-Bosnia 38′ 0-0、STATUS_FIRST_HALF、completed=false；這是 live context，不是 final score，不能用來結算結果或紙上 bankroll。",
+        "01:47Z 父層用 ESPN public summary 重查：USA-Bosnia 81′，USA 1-0 Bosnia-Herzegovina，STATUS_IN_PROGRESS，completed=false；這是 live context，不是 final score，不能用來結算結果、bracket 或紙上 bankroll。",
+        "01:48Z 父層二次重查 ESPN public summary：USA-Bosnia 82′，USA 2-0 Bosnia-Herzegovina，STATUS_SECOND_HALF，completed=false；比分已變但仍不是 final，不結算結果、bracket 或紙上 bankroll。"
       ],
       "sources": [
         {
@@ -5657,7 +5659,7 @@
           "label": "ESPN USA-Bosnia live centre",
           "url": "https://www.espn.com/soccer/match/_/gameId/760494",
           "sourceName": "ESPN",
-          "fetchedAt": "2026-07-02T00:38:46Z",
+          "fetchedAt": "2026-07-02T01:48:44Z",
           "claimType": "context/live-score",
           "confidence": "high"
         },
@@ -5966,7 +5968,8 @@
         "BBC Chris Sutton 預測頁與 Sporting News/AS/Yahoo 類 bracket 頁同樣列 Portugal-Croatia；這些是媒體賽程與戰術敘事，不是官方先發。",
         "目前未找到可直接核讀的高信心 FPF/HNS 傷停或確認 XI；先發、停賽與紙上市場價格等臨場再核。",
         "FIFA 已建立 Portugal-Croatia 官方 preview，並指向 match centre / team news / statistics；Ronaldo-Modrić 敘事之外，正式 XI 仍等官方頁。",
-        "WhoScored Portugal-Croatia statistical preview 可連線，meta 明示 injuries/suspensions、probable line-ups、facts and odds；本站保守列為 availability/lineup-watch。"
+        "WhoScored Portugal-Croatia statistical preview 可連線，meta 明示 injuries/suspensions、probable line-ups、facts and odds；本站保守列為 availability/lineup-watch。",
+        "ESPN Portugal-Croatia odds page metadata 可讀，提供 odds/spread/score prediction；本站只作 paper-market reference，不當下注建議，也不把盤口當戰術事實。"
       ],
       "sources": [
         {
@@ -6064,6 +6067,14 @@
           "fetchedAt": "2026-07-01T10:51:28Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN Portugal-Croatia odds",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760496",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-02T01:47:21Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6612,16 +6623,18 @@
     {
       "matchId": "m087",
       "match": "Colombia vs Ghana",
-      "sourceType": "official team update + coach quote + ticket/logistics context",
-      "title": "Colombia-Ghana 補哥倫比亞足協：Ghana 不是只會講學習，Colombia 也不是只靠名聲。",
-      "sorenTake": "Ghana FA 之外，Colombia FA 也補上官方晉級/備戰口徑。Queiroz 說 win or learn 很漂亮；Colombia 則用小組第一提醒你，淘汰賽沒有免費補考。",
+      "sourceType": "official federation/FIFA preview + reported team-news + odds/bracket watch",
+      "title": "Colombia-Ghana 補 FIFA 與 Sports Mole：Colombia 是熱門，但 Ghana 這種「先學再揍」的隊最會讓劇本髒掉。",
+      "sorenTake": "Colombia 足協與 FIFA 都把這場 Round of 32 路線釘牢，Ghana FA 的 Queiroz 語境則是「we win or we learn」那種不怕輸臉的淘汰賽心態。Sports Mole 的 team-news / possible-lineups 只能當 reported watch，不是官方 XI；Soren 的重點：Colombia 技術面更順，但 Ghana 若把比賽拖成身體對抗與定位球，熱門兩字會開始冒汗。",
       "signals": [
         "Ghana FA 官方對戰文確認 Colombia 以 Group K 頭名對 Ghana，地點為 Kansas City Stadium；Ghana 以 Group L 第三名/淨勝球脈絡晉級。",
         "Ghana FA ticket note 再次確認 Colombia vs Ghana 這張 Round of 32 對戰與 Kansas City 賽事安排；可作官方 logistics 脈絡，不涉及競技預測。",
         "Ghana FA Queiroz quote 把 Croatia 2-1 敗仗 framing 為「we win or we learn」，並強調真正的 World Championship 從淘汰賽開始；屬教練心態/反彈敘事。",
         "早前 Al Jazeera / FOX 仍以 1K vs 第三名池呈現；本次只因 Ghana FA 可驗證官方頁才把卡片升級為 Colombia-Ghana，不把其他未核來源硬升級。",
         "Soren 判讀：Colombia 小組第一的穩定性對上 Ghana 的生存劇本，關鍵不是誰故事更熱血，而是 Ghana 能不能把學到的防守細節真的交出作業。",
-        "Colombia FA 官方頁可讀到 Colombia 為 Group K 頭名並準備 16 強對 Ghana，並提到 Néstor Lorenzo 球隊 7 分晉級；這補上哥倫比亞側官方狀態，不替代正式 XI。"
+        "Colombia FA 官方頁可讀到 Colombia 為 Group K 頭名並準備 16 強對 Ghana，並提到 Néstor Lorenzo 球隊 7 分晉級；這補上哥倫比亞側官方狀態，不替代正式 XI。",
+        "FIFA Colombia-Ghana 官方預覽頁可連線，作為本場 team news / tickets / match-centre 入口；正式先發仍等 FIFA match centre 或球隊公布。",
+        "Sports Mole Colombia-Ghana preview 的 metadata 明示 prediction、team news、possible lineups；本站只標 reported/lineup-watch，不寫成 confirmed XI。"
       ],
       "sources": [
         {
@@ -6671,6 +6684,22 @@
           "fetchedAt": "2026-07-01T05:46:27Z",
           "claimType": "confirmed/official-team-update",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA Colombia-Ghana match preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/colombia-ghana-live-stream-team-news-tickets-and-more",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-02T01:47:21Z",
+          "claimType": "confirmed/match-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole Colombia-Ghana preview",
+          "url": "https://www.sportsmole.co.uk/football/colombia/world-cup-2026/preview/colombia-vs-ghana-prediction-team-news-lineups_600509.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-02T01:47:21Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
