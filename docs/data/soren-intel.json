@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T13:10:29Z",
-  "status": "Matchday scout refreshed: official FIFA/CAF/team mood, Australia-Egypt referee/fitness context, and Colombia-Ghana travel rails added; predicted XIs remain unconfirmed until official sheets land.",
-  "headline": "Soren 補上 Portugal-Croatia 巨星淘汰敘事、Australia-Egypt 的 Circati/裁判/Salah 風險、Argentina-Cape Verde 的 underdog 心理戰，以及 Colombia-Ghana 雙方抵達 Kansas City。",
+  "generatedAt": "2026-07-02T14:22:25Z",
+  "status": "Matchday scout refreshed: Switzerland-Algeria ESPN referee/projected-XI and GOAL/Sporting News lineup-watch rails added; official starters still pending.",
+  "headline": "Soren 補上 Switzerland-Algeria 的 ESPN 裁判/預測 XI、GOAL team-news 與 Sporting News projected lineup：Petković 很懂瑞士，但正式先發還沒落槌。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -6464,9 +6464,9 @@
     {
       "matchId": "m085",
       "match": "Switzerland vs Algeria",
-      "sourceType": "official FIFA/FAF match context + BBC live-centre + reported injury/lineup watch + federation logistics + source alignment",
-      "title": "Switzerland-Algeria 補 FAF 抵達與 BBC live rail：Petković 熟門熟路，Algeria 也已把行李搬到 Vancouver。",
-      "sorenTake": "FAF 官方確認 Algeria 已抵達 Vancouver，BBC live rail 補上臨場 stats/head-to-head，101 Great Goals 給出 Widmer/Amoura 傷勢與可能調整線索。Soren 的警告很簡單：Petković 的熟悉度是武器，但正式先發沒出來前，任何 XI 都只是鉛筆稿，不是刻碑。",
+      "sourceType": "official FIFA/FAF match context + BBC live-centre + ESPN/GOAL projected-lineup watch + federation logistics + source alignment",
+      "title": "Switzerland-Algeria 補 ESPN 裁判/預測 XI 與 GOAL tactical rail：Petković 熟門熟路，但先發仍未官宣。",
+      "sorenTake": "FAF 抵達、BBC live rail 之外，ESPN 補上 Yael Falcón Pérez 執法與 projected XI，GOAL/ Sporting News 再把 Amoura availability 與預測陣容放到檯面。Soren 的底線不變：這些是 lineup-watch，不是官方名單；Petković 熟悉瑞士結構很麻煩，但鉛筆稿不能冒充石碑。",
       "signals": [
         "FOX Sports m085 頁面顯示 Switzerland vs 3E/3F/3G/3I/3J，時間為 2026-07-03T03:00Z / Vancouver。",
         "AS Group B final standings context 支撐 Switzerland 作為 B 組第一晉級。",
@@ -6489,7 +6489,10 @@
         "FIFA Switzerland-Algeria match centre 已核對可連線，作為官方 lineups / score / live updates 入口；Yakin-Petković 敘事可寫，正式 XI 仍等官方。",
         "FAF 官方 7/2 文可連線，確認 Algeria squad 已抵達 Vancouver 並標示對 Switzerland 的淘汰賽時間；這是隊伍物流/備戰語境，不是陣容確認。",
         "BBC Switzerland-Algeria live centre 可連線，提供 score updates、match stats 與 head-to-head；作為臨場資訊入口，正式 lineups 仍等 FIFA/隊伍發布。",
-        "101 Great Goals 預覽提出 Widmer doubtful、Jaquez 可能代打以及 Amoura availability-watch；本站以 reported injury/lineup-watch 處理，不升格為官方醫療或先發。"
+        "101 Great Goals 預覽提出 Widmer doubtful、Jaquez 可能代打以及 Amoura availability-watch；本站以 reported injury/lineup-watch 處理，不升格為官方醫療或先發。",
+        "ESPN 7/2 match guide 已可直接核讀 Switzerland-Algeria 的 TV/live stream、BC Place、referee Yael Falcón Pérez 與 predicted line-ups；本站僅作 reported lineup/referee watch，不升格 official XI。",
+        "GOAL Uganda preview metadata/body 可核讀 tactical/team-news framing，並提到 Amoura serious doubt 與 Mahrez/Aouar 角色線；屬媒體 availability/tactical watch，不是球隊醫療公告。",
+        "Sporting News 7/2 article metadata 可核讀 projected lineups / latest team news；適合當臨場交叉檢查入口，但 confirmed starters 仍等 FIFA/team sheets。"
       ],
       "sources": [
         {
@@ -6674,6 +6677,30 @@
           "sourceName": "101 Great Goals",
           "fetchedAt": "2026-07-02T11:59:05Z",
           "claimType": "reported/availability-lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "ESPN Switzerland-Algeria match guide and referee/predicted-XI watch",
+          "url": "https://www.espn.com/soccer/story/_/id/49223711/fifa-world-cup-2026-switzerland-vs-algeria-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-02T14:22:25Z",
+          "claimType": "reported/referee-lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "GOAL Switzerland-Algeria tactical and team-news preview",
+          "url": "https://www.goal.com/en-ug/news/switzerland-algeria-world-cup-preview/bltba78215ee1eaa8d1",
+          "sourceName": "GOAL",
+          "fetchedAt": "2026-07-02T14:22:25Z",
+          "claimType": "reported/tactical-availability-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sporting News Switzerland-Algeria projected lineups",
+          "url": "https://www.sportingnews.com/us/soccer/news/switzerland-vs-algeria-lineups-starting-11-world-cup/dfed6ce8254f3223272e6a76",
+          "sourceName": "Sporting News",
+          "fetchedAt": "2026-07-02T14:22:25Z",
+          "claimType": "reported/lineup-watch",
           "confidence": "medium"
         }
       ],
