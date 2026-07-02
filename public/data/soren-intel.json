@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T09:44:19Z",
-  "status": "matchday scout refresh: official Austria context, Salah/Messi matchup context, and M092 bracket-market watch updated",
-  "headline": "Soren 補了四張臨近卡：ÖFB 讓 Spain-Austria 更有對抗感，Guardian/BBC 補 Salah 與 Pico Lopes 角度，M092 繼續守 W79/W80 但追蹤 Mexico-England 外部敘事。",
+  "generatedAt": "2026-07-02T10:53:09Z",
+  "status": "matchday scout refresh: HNS/BBC Portugal-Croatia, RFEF/Reuters Spain-Austria, and BBC Salah fitness watch updated",
+  "headline": "Soren 補了三張臨近卡：Portugal-Croatia 加 HNS Dalić 與 BBC live centre；Spain-Austria 加 RFEF/Reuters 臨場入口；Australia-Egypt 補 BBC Salah fitness watch。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5954,9 +5954,9 @@
     {
       "matchId": "m083",
       "match": "Portugal vs Croatia",
-      "sourceType": "official FIFA preview + reported tactical/probability/lineup watch + paper-market watch + source alignment",
-      "title": "Portugal-Croatia 補 FIFA match centre 與 GOAL 戰術頁：Ronaldo-Modrić 是海報，Toronto 的中場耐力才是刀口。",
-      "sorenTake": "FIFA match centre 給了正式臨場入口，GOAL 則把 team news 與 tactics 放到同一張桌上。這場不要只看兩位老神仙的鏡頭量；Portugal 若被 Croatia 把節奏拖慢，紙面優勢會被磨成體力題。Soren 仍偏 Portugal，但爆冷路徑不是玄學，是中場把比賽變老。",
+      "sourceType": "official FIFA/HNS preview + live-centre + reported tactical/probability/lineup watch + paper-market watch + source alignment",
+      "title": "Portugal-Croatia 補 HNS Dalić 與 BBC live centre：老神仙是海報，少犯錯才是 Croatia 的續命氧氣。",
+      "sorenTake": "HNS 官方賽前文把 Dalić 的重點講得很白：對 Portugal，Croatia 先要把錯誤降到最低。BBC live centre 補上臨場 stats/head-to-head 入口。Soren 的讀法沒變：Portugal 紙面更亮，但如果 Croatia 把 Toronto 晚場磨成低失誤、慢節奏、老骨頭互毆，Ronaldo-Modrić 海報下面會藏著一把鈍刀。",
       "signals": [
         "FOX Sports m083 頁面列 2K vs 2L 與 2026-07-02T23:00Z 賽程窗口。",
         "Marca 投影與 The Athletic 搜尋片段指向 Portugal-Ghana，但完整對陣需等 K/L 組最後賽果。",
@@ -5976,7 +5976,9 @@
         "Sports Mole Portugal-Croatia preview 可連線，標題/描述明示 team news and possible lineups；其中 Gvardiol 回左閘屬 reported expected-XI watch，正式先發仍等官方。",
         "Covers 7/1 賽前頁提供 Portugal-Croatia 的公開 odds / picks 脈絡；屬紙上市場參考，不能寫成 Soren 模型邏輯或投注建議。",
         "FIFA match centre 已作為 Portugal-Croatia 官方 lineups / score / live updates 入口；正式名單未落地前，所有媒體 XI 仍只當 lineup-watch。",
-        "GOAL 7/2 公開預覽明示涵蓋 tactics 與 team news；可用來補 Portugal-Croatia 的戰術敘事，但不升格為官方先發。"
+        "GOAL 7/2 公開預覽明示涵蓋 tactics 與 team news；可用來補 Portugal-Croatia 的戰術敘事，但不升格為官方先發。",
+        "HNS 官方賽前文可直接核讀，Dalić 將重點放在對 Portugal 必須把 mistakes to a minimum；這是 Croatia 官方教練語境，不是正式先發。",
+        "BBC Portugal-Croatia live centre 可讀，提供 live text、score updates、match stats 與 head-to-head；本站用作臨場資訊入口，不提前宣稱 lineups。"
       ],
       "sources": [
         {
@@ -6130,6 +6132,22 @@
           "fetchedAt": "2026-07-02T08:34:25Z",
           "claimType": "reported/tactical-lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "HNS Dalić Portugal-Croatia MD-1 comments",
+          "url": "https://hns.team/en/news/31464/dalic-the-most-important-thing-is-to-keep-mistakes-to-a-minimum/",
+          "sourceName": "Croatian Football Federation",
+          "fetchedAt": "2026-07-02T10:53:09Z",
+          "claimType": "confirmed/coach-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Portugal-Croatia live centre",
+          "url": "https://www.bbc.com/sport/football/live/cvgl19we7v9t",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-02T10:53:09Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6137,9 +6155,9 @@
     {
       "matchId": "m084",
       "match": "Spain vs Austria",
-      "sourceType": "official match centre + official preview + reported tactical/probability/lineup watch + source alignment",
-      "title": "Spain-Austria 再補 ÖFB 官方賽前聲音：Austria 不是來合照的，Alaba/Rangnick 線讓 Spain 的熱門身份更燙手。",
-      "sorenTake": "ÖFB 的 matchday 文與 Alaba 專題把 Austria 的信心與領袖線補上：Spain 還是大熱，但現在這張卡更像真正的淘汰賽，不是西班牙的品牌展示。Soren 的讀法很簡單：La Roja 要把零失球履歷踢成控制力；Austria 只要把第一波壓迫踢成混亂，冷門路線就有氧氣。",
+      "sourceType": "official match centre + RFEF/ÖFB official preview + Reuters live-centre + reported tactical/probability/lineup watch + source alignment",
+      "title": "Spain-Austria 補 RFEF 與 Reuters 臨場入口：Spain 要當洛杉磯星光，先別被 Austria 逼成災難片。",
+      "sorenTake": "RFEF 官方預覽把 Spain 的淘汰賽開場寫成洛杉磯星光場，Reuters 則補上可追的 live score / Opta stats 入口。Spain 仍是熱門；但淘汰賽不頒「小組零失球紀念獎」。Austria 的任務很粗暴：讓西班牙從控球詩變成搶第二點的散文。",
       "signals": [
         "FIFA Uruguay-Spain 報導指出 Spain 將面對 Group J runners-up，這是比一般媒體投影更硬的官方脈絡。",
         "FOX m084 頁面已顯示 Spain vs 2J，公開時間窗口為 2026-07-02T19:00Z。",
@@ -6166,7 +6184,9 @@
         "CBS/SportsLine 的公開 FanDuel odds 顯示 Spain 90 分鐘約 -300、Austria 約 +900、和局約 +425；Soren 只把它當紙上市場溫度計，不當投注建議。",
         "Al Jazeera 7/2 賽前頁確認 Spain-Austria 在 Los Angeles 開打，並提供 live build-up / team-news 入口；頁面標題把 Spain 的 rough patch 與 Austria 淘汰賽考題放在同一框，適合作為非模型、公開敘事校準。",
         "ÖFB 7/2 官方 matchday 文可連線，標題為 Last-Minute-Aufstieg beflügelt Nationalteam，metadata 寫明 Austria 對 Spain 仍信任自身強項；這是 Austria 官方賽前心態/備戰更新。",
-        "ÖFB Alaba 專題可連線，描述 leadership、life dream 與 setbacks；它補強 Austria 更衣室/領袖語境，但不是正式先發或醫療確認。"
+        "ÖFB Alaba 專題可連線，描述 leadership、life dream 與 setbacks；它補強 Austria 更衣室/領袖語境，但不是正式先發或醫療確認。",
+        "RFEF 官方 7/2 preview 可直接核讀，確認 Spain 在 Los Angeles 對 Austria 開啟淘汰賽階段；這是 Spain 官方賽前語境，不是正式 XI。",
+        "Reuters Spain-Austria live match centre 可讀，提供 live scores、stats、commentary/analysis 與 Opta data；本站列為高信心 live-centre，不提前寫先發。"
       ],
       "sources": [
         {
@@ -6384,6 +6404,22 @@
           "fetchedAt": "2026-07-02T09:44:19Z",
           "claimType": "confirmed/team-context",
           "confidence": "high"
+        },
+        {
+          "label": "RFEF Spain-Austria official preview",
+          "url": "https://rfef.es/es/noticias/espana-quiere-ser-la-estrella-que-mas-brille-en-los-angeles",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-02T10:53:09Z",
+          "claimType": "confirmed/official-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "Reuters Spain-Austria live match centre",
+          "url": "https://www.reuters.com/graphics/SOCCER-WORLDCUP/mopaoglqkpa/matches/spain-austria-07-02/",
+          "sourceName": "Reuters",
+          "fetchedAt": "2026-07-02T10:53:09Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6582,9 +6618,9 @@
     {
       "matchId": "m088",
       "match": "Australia vs Egypt",
-      "sourceType": "official match hub + official FIFA match-centre + reported injury/lineup watch + odds reference + bracket context + revenge-context refresh + source alignment",
-      "title": "Australia-Egypt 補 Guardian Salah 專題：Socceroos 的問題不是「知道 Salah 很強」，是能不能讓他少碰到舒服球。",
-      "sorenTake": "Ahram 的傷情線之外，Guardian 把 Salah 對 Australia 的威脅寫得很清楚：就算鋒利度有起伏，他仍能把一場平衡戰切開。Soren 仍把這場看成體能、定位球與邊路保護的拉鋸；Australia 若只把防守計畫寫成「盯 Salah」，那就太像賽前 PowerPoint 了。",
+      "sourceType": "official match hub + official FIFA match-centre + BBC/reported injury watch + odds reference + bracket context + tactical/motivation refresh + source alignment",
+      "title": "Australia-Egypt 補 BBC Salah fitness：Salah 可能趕得上，但 Socceroos 不能把戰術寫成「祈禱腿筋」。",
+      "sorenTake": "BBC 直接把 Salah hamstring race 放到台面：埃及營內樂觀，但這仍是 fitness watch，不是 90 分鐘保證。Australia 的安全路線不是盯著傷情報告發呆，而是把 Egypt 的第一腳轉換與 Marmoush/Salah 接球區切斷。Soren 會繼續把這場當身體對抗、定位球與邊路保護的考題。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
         "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
@@ -6602,7 +6638,8 @@
         "Guardian 6/29 feature 以東京奧運對 Egypt 失利作為 Socceroos motivation context，並明確說明這是 last-32 前的心理/敘事線，不等於戰術或先發確認。",
         "Nine 可見 metadata 把焦點放在 Salah injury concern、Marmoush threat 與澳洲球員信心；作 mainstream media availability/context，不提升為 confirmed XI。",
         "Ahram Online 引述 Egypt team doctor Mohamed Abu El-Ela：Salah 已開始復健，Mohamed Abdelmonem 同步治療，Ahmed Fatouh 對 Australia 戰前可能缺席；這是 availability watch，不是正式先發。",
-        "Guardian 7/1 專題可連線，描述 Salah 雖有狀態/國家隊遺憾包袱，但仍預期會給 Australia 製造問題；這是 mainstream tactical/context，不是官方傷停。"
+        "Guardian 7/1 專題可連線，描述 Salah 雖有狀態/國家隊遺憾包袱，但仍預期會給 Australia 製造問題；這是 mainstream tactical/context，不是官方傷停。",
+        "BBC Sport 可直接核讀 Egypt camp 對 Salah hamstring recovery 保持樂觀，並提到 Hamdi Fathi / Hossam Abdelmaguid 也有 fitness issues；本站保守列 availability-watch，不寫成 confirmed starter。"
       ],
       "sources": [
         {
@@ -6731,6 +6768,14 @@
           "sourceName": "The Guardian",
           "fetchedAt": "2026-07-02T09:44:19Z",
           "claimType": "reported/tactical-context",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Salah fitness latest before Australia",
+          "url": "https://www.bbc.com/sport/football/articles/ce8kwpgkpeno",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-02T10:53:09Z",
+          "claimType": "reported/availability-watch",
           "confidence": "high"
         }
       ],
