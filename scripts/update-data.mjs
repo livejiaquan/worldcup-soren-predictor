@@ -50,7 +50,8 @@ function stageLabel(match) { return match.group ? `${match.group.replace('Group 
 function normalizeMatch(match, index) {
   const overrideKey = `${match.date}|${canonicalTeam(match.team1)}|${canonicalTeam(match.team2)}`
   const override = RESULT_OVERRIDES.get(overrideKey)
-  const ft = override?.score || match.score?.ft?.map(Number)
+  const upstreamFinalScore = match.score?.et || match.score?.ft
+  const ft = override?.score || upstreamFinalScore?.map(Number)
   const rawShootout = match.score?.penalties || match.score?.p
   const shootoutScore = override?.shootoutScore || rawShootout?.map(Number) || null
   const shootoutWinner = Array.isArray(shootoutScore) && shootoutScore.length === 2 && shootoutScore[0] !== shootoutScore[1]
