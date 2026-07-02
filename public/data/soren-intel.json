@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T11:59:05Z",
-  "status": "Matchday scout refreshed: official federation context and live-centre rails added for the next knockout wave; lineups remain unconfirmed until FIFA/team sheets land.",
-  "headline": "Soren 補上 Spain-Austria、Portugal-Croatia、Switzerland-Algeria 的臨場來源護欄：官方隊伍動態、BBC/Al Jazeera live rails，先別把 predicted XI 當聖旨。",
+  "generatedAt": "2026-07-02T13:10:29Z",
+  "status": "Matchday scout refreshed: official FIFA/CAF/team mood, Australia-Egypt referee/fitness context, and Colombia-Ghana travel rails added; predicted XIs remain unconfirmed until official sheets land.",
+  "headline": "Soren 補上 Portugal-Croatia 巨星淘汰敘事、Australia-Egypt 的 Circati/裁判/Salah 風險、Argentina-Cape Verde 的 underdog 心理戰，以及 Colombia-Ghana 雙方抵達 Kansas City。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5955,8 +5955,8 @@
       "matchId": "m083",
       "match": "Portugal vs Croatia",
       "sourceType": "official FIFA/HNS preview + BBC/Al Jazeera live-centre + reported tactical/probability/lineup watch + paper-market watch + source alignment",
-      "title": "Portugal-Croatia 補 Al Jazeera 淘汰賽 live/context：Ronaldo-Modrić 是海報，低失誤才是真門票。",
-      "sorenTake": "HNS 已把 Croatia 的生存守則講成「少犯錯」，Al Jazeera 又補上淘汰賽當日 live/context。Portugal 的名氣比較大聲；但這種老巨星對撞，誰先把中場丟成公益空間，誰就先把海報撕成告別信。",
+      "title": "Portugal-Croatia 補 FIFA Ronaldo/Modrić 終站敘事與 Livaković 訪談：海報很浪漫，門將與低失誤才是現實。",
+      "sorenTake": "Ronaldo vs Modrić 會吸光鏡頭，但淘汰賽不是紀念賽。FIFA 的賽前敘事與 Livaković 訪談把壓力、經驗、門將穩定性拉到檯面；Soren 仍把公開 predicted XI 當線索，不把它包裝成官方先發。",
       "signals": [
         "FOX Sports m083 頁面列 2K vs 2L 與 2026-07-02T23:00Z 賽程窗口。",
         "Marca 投影與 The Athletic 搜尋片段指向 Portugal-Ghana，但完整對陣需等 K/L 組最後賽果。",
@@ -5979,7 +5979,9 @@
         "GOAL 7/2 公開預覽明示涵蓋 tactics 與 team news；可用來補 Portugal-Croatia 的戰術敘事，但不升格為官方先發。",
         "HNS 官方賽前文可直接核讀，Dalić 將重點放在對 Portugal 必須把 mistakes to a minimum；這是 Croatia 官方教練語境，不是正式先發。",
         "BBC Portugal-Croatia live centre 可讀，提供 live text、score updates、match stats 與 head-to-head；本站用作臨場資訊入口，不提前宣稱 lineups。",
-        "Al Jazeera 7/2 knockout-day page 可連線，將 Portugal-Croatia 放在當日淘汰賽與 Round-of-16 race 脈絡；可作 live/context rail，不提供官方先發確認。"
+        "Al Jazeera 7/2 knockout-day page 可連線，將 Portugal-Croatia 放在當日淘汰賽與 Round-of-16 race 脈絡；可作 live/context rail，不提供官方先發確認。",
+        "FIFA 官方賽前 feature 把 Portugal-Croatia 寫成 Ronaldo 或 Modrić 的世界盃旅程可能到站；這是敘事與壓力訊號，不是先發確認。",
+        "FIFA 另有 Livaković 專訪線索，補上 Croatia 更衣室/門將穩定性脈絡；Soren 只把它當球隊氣氛與大賽經驗參考。"
       ],
       "sources": [
         {
@@ -6157,6 +6159,22 @@
           "fetchedAt": "2026-07-02T11:59:05Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA Ronaldo-Modrić feature",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/ronaldo-modric-journey-ends-portugal-croatia",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-02T13:10:29Z",
+          "claimType": "context/official-feature",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Livaković Croatia interview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/dominik-livakovic-croatia-interview",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-02T13:10:29Z",
+          "claimType": "context/official-interview",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -6665,8 +6683,8 @@
       "matchId": "m088",
       "match": "Australia vs Egypt",
       "sourceType": "official match hub + official FIFA match-centre + BBC/reported injury watch + odds reference + bracket context + tactical/motivation refresh + source alignment",
-      "title": "Australia-Egypt 補 BBC Salah fitness：Salah 可能趕得上，但 Socceroos 不能把戰術寫成「祈禱腿筋」。",
-      "sorenTake": "BBC 直接把 Salah hamstring race 放到台面：埃及營內樂觀，但這仍是 fitness watch，不是 90 分鐘保證。Australia 的安全路線不是盯著傷情報告發呆，而是把 Egypt 的第一腳轉換與 Marmoush/Salah 接球區切斷。Soren 會繼續把這場當身體對抗、定位球與邊路保護的考題。",
+      "title": "Australia-Egypt 補 Circati 自信、EFA 裁判與 Reuters Salah fitness：Salah 是聚光燈，裁判尺度和澳洲膽量也會咬人。",
+      "sorenTake": "Egypt 的故事仍從 Salah 腿筋開始，但不能只看一條腿。Australia 官方聲音很清楚：他們想把淘汰賽當證明題；EFA 裁判資訊也讓比賽尺度成為風險項。Soren 把 Salah 標成 availability watch，不替隊醫或官方先發單搶筆。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
         "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
@@ -6685,7 +6703,10 @@
         "Nine 可見 metadata 把焦點放在 Salah injury concern、Marmoush threat 與澳洲球員信心；作 mainstream media availability/context，不提升為 confirmed XI。",
         "Ahram Online 引述 Egypt team doctor Mohamed Abu El-Ela：Salah 已開始復健，Mohamed Abdelmonem 同步治療，Ahmed Fatouh 對 Australia 戰前可能缺席；這是 availability watch，不是正式先發。",
         "Guardian 7/1 專題可連線，描述 Salah 雖有狀態/國家隊遺憾包袱，但仍預期會給 Australia 製造問題；這是 mainstream tactical/context，不是官方傷停。",
-        "BBC Sport 可直接核讀 Egypt camp 對 Salah hamstring recovery 保持樂觀，並提到 Hamdi Fathi / Hossam Abdelmaguid 也有 fitness issues；本站保守列 availability-watch，不寫成 confirmed starter。"
+        "BBC Sport 可直接核讀 Egypt camp 對 Salah hamstring recovery 保持樂觀，並提到 Hamdi Fathi / Hossam Abdelmaguid 也有 fitness issues；本站保守列 availability-watch，不寫成 confirmed starter。",
+        "Socceroos 官方引述 Alessandro Circati：Australia 想在對 Egypt 的淘汰賽證明自己能做什麼；這是隊內情緒/自信訊號，不等於戰術或先發確認。",
+        "埃及足協頁面確認 Uruguay 裁判 Gustavo Tejera 執法 Egypt-Australia；裁判尺度是紙上風險參數，不是比賽結論。",
+        "CNA/Reuters 再框定 Salah hamstring watch：EFA 已承認傷勢但未明確保證淘汰賽可用；所以 Egypt 的上限和 Plan B 都要一起看。"
       ],
       "sources": [
         {
@@ -6823,6 +6844,30 @@
           "fetchedAt": "2026-07-02T10:53:09Z",
           "claimType": "reported/availability-watch",
           "confidence": "high"
+        },
+        {
+          "label": "Socceroos Circati press quote",
+          "url": "https://socceroos.com.au/news/alessandro-circati-we-are-willing-prove-what-australia-can-do",
+          "sourceName": "Socceroos",
+          "fetchedAt": "2026-07-02T13:10:29Z",
+          "claimType": "confirmed/team-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "EFA referee appointment",
+          "url": "https://efa.com.eg/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D9%85%D9%86-%D9%87%D9%88-%D8%AC%D9%88%D8%B3%D8%AA%D8%A7%D9%81%D9%88-%D8%AA%D9%8A%D8%AC%D9%8A%D8%B1%D8%A7-%D8%AD%D9%83%D9%85-%D9%84%D9%82%D8%A7%D8%A1-%D8%A7%D9%84%D9%81%D8%B1%D8%A7%D8%B9%D9%86%D8%A9-%D8%A3%D9%85%D8%A7%D9%85-%D8%A3%D8%B3%D8%AA%D8%B1%D8%A7%D9%84%D9%8A%D8%A7/",
+          "sourceName": "Egyptian Football Association",
+          "fetchedAt": "2026-07-02T13:10:29Z",
+          "claimType": "confirmed/match-official",
+          "confidence": "high"
+        },
+        {
+          "label": "Reuters/CNA Salah fitness watch",
+          "url": "https://www.channelnewsasia.com/sport/egypt-sweat-salah-fitness-after-hamstring-strain-6215686",
+          "sourceName": "CNA / Reuters",
+          "fetchedAt": "2026-07-02T13:10:29Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6831,8 +6876,8 @@
       "matchId": "m086",
       "match": "Argentina vs Cape Verde",
       "sourceType": "official team update + official FIFA preview/match-centre + reported lineup watch + odds reference + qualification context + source alignment",
-      "title": "Argentina-Cape Verde 補 BBC Pico Lopes 角度：Messi 是海浪，Cape Verde 至少有一塊敢站著的礁石。",
-      "sorenTake": "BBC 的 Roberto “Pico” Lopes 線讓 Cape Verde 這張童話卡不只剩門將 Vozinha：面對 Messi，低位防線需要有人敢把第一下對抗扛住。Argentina 仍是明顯強隊；但 Soren 會盯 Cape Verde 能否把比賽拖成低比分、低節奏、低氧氣的泥地。",
+      "title": "Argentina-Cape Verde 補 CAF squad 背景與總統 1-0 豪語：童話可以吼很大，但 Messi 不會因為童話自動退場。",
+      "sorenTake": "Cape Verde 的 upset path 更像心理戰加速度感：CAF 描述的是一支相信能咬人的新軍，BBC 則記下總統 1-0 的狠話。Soren 喜歡膽子，但膽子不是防守結構；Argentina 仍是大山，藍鯊要先證明自己不是只會寫標語。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Argentina vs Cape Verde，22:00 GMT，Miami Stadium。",
         "FOX live score 頁已把此格呈現為 Argentina vs Cape Verde，並標示 July 03, 2026 賽事。",
@@ -6848,7 +6893,9 @@
         "Squawka 可見描述顯示此頁為 Argentina vs Cape Verde team news and predicted lineups；屬 reported lineup-watch。",
         "AFA 官方頁顯示 Lionel Scaloni 與 Nicolás Tagliafico 賽前記者會；先作官方 press-conference 入口與賽前語境，不從標題推導具體首發。",
         "Al Jazeera 7/1 專題整理 Cape Verde 對 Argentina 的 Round of 32 背景，聚焦門將 Vozinha 與隊史大賽經驗；這是 credible context，不是戰術內幕。",
-        "BBC Sport 可連線，描述 Cape Verde 後衛 Roberto Lopes 將面對 Messi，並確認 Cape Verde 以 Group H runner-up 身分在 Miami 對 Argentina；屬球員/戰術故事線，不是 confirmed XI。"
+        "BBC Sport 可連線，描述 Cape Verde 後衛 Roberto Lopes 將面對 Messi，並確認 Cape Verde 以 Group H runner-up 身分在 Miami 對 Argentina；屬球員/戰術故事線，不是 confirmed XI。",
+        "CAF 背景文把 Cape Verde 首次世界盃陣容描述為經驗、速度與相信能衝擊強隊的組合；這補強 underdog upset path，但不是 Argentina 弱點清單。",
+        "BBC 報導 Cape Verde 總統公開預測 1-0 擊敗 Argentina；這是心理戰與國內情緒訊號，不是模型預測或可驗證戰術事實。"
       ],
       "sources": [
         {
@@ -6970,6 +7017,22 @@
           "fetchedAt": "2026-07-02T09:44:19Z",
           "claimType": "reported/tactical-context",
           "confidence": "high"
+        },
+        {
+          "label": "CAF Cape Verde squad background",
+          "url": "https://www.cafonline.com/news/cape-verde-name-historic-world-cup-squad-as-blue-sharks-prepare-for-debut/",
+          "sourceName": "CAF",
+          "fetchedAt": "2026-07-02T13:10:29Z",
+          "claimType": "context/squad-background",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "BBC Cape Verde president quote",
+          "url": "https://www.bbc.com/news/articles/c4gyez6z34do",
+          "sourceName": "BBC",
+          "fetchedAt": "2026-07-02T13:10:29Z",
+          "claimType": "context/public-quote",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -6978,8 +7041,8 @@
       "matchId": "m087",
       "match": "Colombia vs Ghana",
       "sourceType": "official federation/FIFA preview + reported team-news + odds/bracket watch + source alignment",
-      "title": "Colombia-Ghana 補 Ghana FA 官方預覽：Black Stars 不只換城市，是把小組賽劇本整個推進淘汰賽。",
-      "sorenTake": "Ghana FA 把這場寫成 win-or-go-home 的 Kansas City 考題，並明講勝者會接 Switzerland/Algeria。Colombia 的技術上限仍漂亮，但 Ghana 不是來當背景板；如果 Black Stars 把轉場後的身體對抗和反擊第一腳踢乾淨，這場會比牌面更髒、更難看、也更危險。",
+      "title": "Colombia-Ghana 補雙方 Kansas City 抵達線：這不是旅行社公告，是淘汰賽最後備戰的真門檻。",
+      "sorenTake": "FCF 與 Ghana FA 都把球隊帶到 Kansas City 的脈絡補齊了：訓練、移動、落地，代表賽前雜音開始收斂成比賽問題。Colombia 的控球才華和 Ghana 的反擊身體感都還在，但 Soren 先看誰把跨城備戰變成場上節奏，而不是把官方抵達照當勝利宣言。",
       "signals": [
         "Ghana FA 官方對戰文確認 Colombia 以 Group K 頭名對 Ghana，地點為 Kansas City Stadium；Ghana 以 Group L 第三名/淨勝球脈絡晉級。",
         "Ghana FA ticket note 再次確認 Colombia vs Ghana 這張 Round of 32 對戰與 Kansas City 賽事安排；可作官方 logistics 脈絡，不涉及競技預測。",
@@ -6992,7 +7055,9 @@
         "FCF 官方 6/30 更新顯示 Colombia 持續針對 Ghana 備戰，並移往 Inter Miami 訓練設施調整。",
         "FotMob 可見描述提供 Colombia-Ghana live score、predicted lineups、H2H、team forms 等；用作 availability/lineup-watch，不寫成官方缺陣。",
         "Ghana FA 官方報導 Black Stars 7/1 16:00 離開 Rhode Island 前往 Kansas City，結束三週基地並準備對 Colombia 的 Round of 32；這是 official preparation / travel context。",
-        "Ghana FA 7/2 官方預覽確認 Black Stars 對 Colombia 的 Round-of-32 脈絡，並指出勝者將面對 Switzerland-Algeria 勝方；這是比先前 camp-move 更直接的賽前官方來源。"
+        "Ghana FA 7/2 官方預覽確認 Black Stars 對 Colombia 的 Round-of-32 脈絡，並指出勝者將面對 Switzerland-Algeria 勝方；這是比先前 camp-move 更直接的賽前官方來源。",
+        "Colombia 足協確認 7/1 完成 Fort Lauderdale 最後訓練後轉往 Kansas City，備戰對 Ghana 的 Round of 32；這是官方 travel/training rail。",
+        "Ghana FA 確認 Black Stars 已抵達 Kansas City，對 Colombia 的淘汰賽時間與場地脈絡明確；雙方都已進入最後備戰，不再只是賽程占位。"
       ],
       "sources": [
         {
@@ -7089,6 +7154,22 @@
           "sourceName": "Ghana Football Association",
           "fetchedAt": "2026-07-02T08:34:25Z",
           "claimType": "confirmed/official-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "FCF Colombia arrives Kansas City",
+          "url": "https://fcf.com.co/2026/07/01/ya-estamos-en-kansas-city/",
+          "sourceName": "Federación Colombiana de Fútbol",
+          "fetchedAt": "2026-07-02T13:10:29Z",
+          "claimType": "confirmed/travel-training",
+          "confidence": "high"
+        },
+        {
+          "label": "Ghana FA Kansas City arrival",
+          "url": "https://www.ghanafa.org/black-stars-arrive-in-kansas-city-for-decisive-world-cup-round-of-32-clash-with-colombia",
+          "sourceName": "Ghana Football Association",
+          "fetchedAt": "2026-07-02T13:10:29Z",
+          "claimType": "confirmed/travel-training",
           "confidence": "high"
         }
       ],
