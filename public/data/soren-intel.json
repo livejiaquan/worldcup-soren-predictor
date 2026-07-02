@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-01T23:29:11Z",
-  "status": "Postmatch correction: ESPN public summary 顯示 Belgium-Senegal 已 AET 終場，Belgium 3-2 Senegal；openfootball 仍停在 2-2，因此新增 source-backed override 並把 scout card 從 live-score 改成 final-score。",
-  "headline": "Soren scout: Belgium 3-2 AET 翻過 Senegal，紅魔從 0-2 坑裡爬回來；Live ≠ Final，這次終於是 Final。",
+  "generatedAt": "2026-07-02T00:38:46Z",
+  "status": "Live-score micro refresh: ESPN public summary shows USA-Bosnia in the first half at 0-0; Australia-Egypt and Argentina-Cape Verde cards were topped up with parent-verified match-centre/odds/lineup-watch sources. Live ≠ Final.",
+  "headline": "Soren scout: USA-Bosnia 先當 0-0 live watch，不結算；下一波 Australia-Egypt / Argentina-Cape Verde 補上官方與市場錨點。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5415,9 +5415,9 @@
     {
       "matchId": "m081",
       "match": "USA vs Bosnia & Herzegovina",
-      "sourceType": "official federation/press + official match-centre + live-centre + reported lineup/availability watch + odds reference",
-      "title": "USA-Bosnia 補官方賽前錨點：Pochettino 可以把淘汰賽喊成決賽，但 Bosnia 不是被邀來當背景板。",
-      "sorenTake": "美國足協自己的賽前頁、轉播頁與對手檔案把時間、場地、對手輪廓釘牢：20:00 ET，Santa Clara，Bosnia 排名不高但剛從小組賽活下來。Soren 的毒舌版翻譯：地主光環很亮，可是淘汰賽第一刀通常先砍自信過剩。",
+      "sourceType": "official federation/press + official match-centre + ESPN live-score context + reported lineup/availability watch + odds reference",
+      "title": "USA-Bosnia live watch：ESPN 38′ 仍是 0-0；地主熱門先別急著開香檳。",
+      "sorenTake": "ESPN public summary 在父層重查時顯示 USA-Bosnia 38′ 0-0、completed=false。這只能當 live-score context，不是終場、不結算 bankroll，也不改 bracket；Soren 的重點是：地主如果只靠氣勢壓人，Bosnia 會很樂意把比賽拖成焦躁測驗。",
       "signals": [
         "FOX Sports m081 比賽頁標題已顯示 United States vs Bosnia and Herzegovina，時間為 2026-07-01 當地 / 2026-07-02T00:00Z。",
         "FOX odds story 明列 USA vs Bosnia and Herzegovina：moneyline USA -185、Bosnia +600、draw +280；to advance USA -460、Bosnia +340。",
@@ -5449,7 +5449,8 @@
         "13:11Z 親核 ESPN odds page 可連線，提供 odds/spread/score prediction；只當紙上市場參考，不導向真金下注。",
         "15:40Z 補 U.S. Soccer 官方賽前/轉播錨點：美國足協把 USA-Bosnia 明確列為 Santa Clara 的 Round of 32，並標出 20:00 ET 轉播窗口；這是官方賽程與敘事入口，不是正式先發。",
         "U.S. Soccer 對手檔案把 Bosnia-Herzegovina 標為 FIFA 排名第 61、分組賽 1勝1和1負；Soren 的重點是：地主熱門可以有，但不能把對方寫成陪跑。",
-        "Al Jazeera 7/1 USA-Bosnia 頁面標題與 metadata 可讀，定位為 prediction / team lineups，描述 Bosnia 是 cohosts USA 的 knockout underdog；列為 reported lineup/context watch，不寫成 confirmed XI。"
+        "Al Jazeera 7/1 USA-Bosnia 頁面標題與 metadata 可讀，定位為 prediction / team lineups，描述 Bosnia 是 cohosts USA 的 knockout underdog；列為 reported lineup/context watch，不寫成 confirmed XI。",
+        "00:38Z 父層用 ESPN public summary 重查：USA-Bosnia 38′ 0-0、STATUS_FIRST_HALF、completed=false；這是 live context，不是 final score，不能用來結算結果或紙上 bankroll。"
       ],
       "sources": [
         {
@@ -5656,8 +5657,8 @@
           "label": "ESPN USA-Bosnia live centre",
           "url": "https://www.espn.com/soccer/match/_/gameId/760494",
           "sourceName": "ESPN",
-          "fetchedAt": "2026-07-01T13:11:42Z",
-          "claimType": "context/live-centre",
+          "fetchedAt": "2026-07-02T00:38:46Z",
+          "claimType": "context/live-score",
           "confidence": "high"
         },
         {
@@ -6388,9 +6389,9 @@
     {
       "matchId": "m088",
       "match": "Australia vs Egypt",
-      "sourceType": "official match hub + reported injury watch + bracket context",
-      "title": "Australia-Egypt 補 FIFA 官方 preview 入口：Salah 警報還是核心，Socceroos 要把比賽拖進泥地。",
-      "sorenTake": "FIFA preview 入口補上後，Australia-Egypt 不再只是 Socceroos 單側資訊。Salah availability 仍是最大槓桿；如果他不是滿血，Egypt 的反擊天花板會被削掉一層。",
+      "sourceType": "official match hub + official FIFA match-centre + reported injury/lineup watch + odds reference + bracket context",
+      "title": "Australia-Egypt 加厚 Salah / odds / lineup watch：這場不是只看國旗，是看埃及反擊引擎能開幾成。",
+      "sorenTake": "父層可核讀 ESPN odds、Sports Mole predicted XI 與 Flashscore metadata：Salah 已恢復部分訓練但仍是 fitness watch，Australia 可能的 Lucas Herrington 選擇也只是 reported lineup-watch。Soren 版翻譯：Egypt 的天花板取決於 Salah 油門，Australia 的活路是把節奏拖髒、拖慢、拖到定位球。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
         "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
@@ -6400,7 +6401,10 @@
         "Socceroos 官方 how-to-watch 頁確認 Australia 對 Egypt 的 Round of 32 觀賽資訊與澳洲時間 7/4 04:00 AEST；可作球隊官方賽程/轉播脈絡。",
         "FIFA 搜尋與頁面 URL 指向 Egypt injury worries / Mohamed Salah 主題；父層探針可連線但 metadata 空白，所以只列為官方傷情觀察入口，不寫成已確認缺陣。",
         "Soren 判讀：這張薄卡真正要追的是 Salah 的可用性與 Egypt 是否被迫降低轉換速度；Australia 的任務是把比賽拖進身體對抗與定位球，而不是跟 Salah 打對攻名片戰。",
-        "FIFA Australia-Egypt live-stream/team-news/tickets URL 可連線，搜尋與 URL 指向 Dallas Round-of-32 preview；父層未讀到完整 body，所以列為官方 preview 入口，不寫成已確認先發或傷停。"
+        "FIFA Australia-Egypt live-stream/team-news/tickets URL 可連線，搜尋與 URL 指向 Dallas Round-of-32 preview；父層未讀到完整 body，所以列為官方 preview 入口，不寫成已確認先發或傷停。",
+        "ESPN odds page metadata now gives a public Australia-Egypt market reference; Soren can use it only for PAPER simulation context, not betting advice or a real-money flow.",
+        "Sports Mole page metadata frames a predicted Australia XI around Lucas Herrington; keep it as reported lineup-watch until official team sheets land.",
+        "Flashscore metadata says Salah resumed part of Egypt training while recovering from a hamstring strain; treat as availability-watch, not a confirmed 90-minute green light."
       ],
       "sources": [
         {
@@ -6458,6 +6462,38 @@
           "fetchedAt": "2026-07-01T05:46:27Z",
           "claimType": "confirmed/context",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA official match-centre: Australia v Egypt line-ups / score live page",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021515",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-02T00:38:46Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN odds page: Australia vs Egypt public market reference for paper simulation only",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760499",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-02T00:38:46Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole predicted Australia XI: Lucas Herrington selection watch",
+          "url": "https://www.sportsmole.co.uk/football/egypt/world-cup-2026/predicted-lineups/will-highly-rated-herrington-start-how-australia-could-line-up-against-egypt_600494.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-02T00:38:46Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Flashscore metadata: Mohamed Salah returned to partial training after hamstring strain",
+          "url": "https://www.flashscore.co.ke/news/soccer-world-championship-egypt-s-mohamed-salah-returns-to-training-ahead-of-knockout-round-match/zLTRYIXQ/",
+          "sourceName": "Flashscore",
+          "fetchedAt": "2026-07-02T00:38:46Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -6465,9 +6501,9 @@
     {
       "matchId": "m086",
       "match": "Argentina vs Cape Verde",
-      "sourceType": "official team update + qualification context + bracket context",
-      "title": "Argentina-Cape Verde 補 AFA 與 Guardian：衛冕軍滿血敘事很香，但童話隊不是明信片背景板。",
-      "sorenTake": "AFA 自己把「已在想 Cape Verde」寫進 Jordan 戰報，又另開文確認 16 強對手；Guardian 則把 Cape Verde 0-0 Saudi 後進淘汰賽的脈絡補上。這場紙面差距巨大，但 Soren 不會把 Cape Verde 寫成旅遊景點——能從小組活下來，就有資格被當成對手。",
+      "sourceType": "official team update + official FIFA preview/match-centre + reported lineup watch + odds reference + qualification context",
+      "title": "Argentina-Cape Verde 補 FIFA / ESPN / Sports Mole：梅西劇本很亮，但童話隊專門討厭照劇本走。",
+      "sorenTake": "FIFA official preview/match-centre 補齊官方入口，ESPN odds 給紙上市場參考，Sports Mole 只當 possible lineups / team-news watch。Soren 的保守結論：Argentina 是巨大熱門，但 Cape Verde 若把比賽壓成低比分、定位球、拖到焦躁，這才是童話續命的唯一現實路線。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Argentina vs Cape Verde，22:00 GMT，Miami Stadium。",
         "FOX live score 頁已把此格呈現為 Argentina vs Cape Verde，並標示 July 03, 2026 賽事。",
@@ -6476,7 +6512,10 @@
         "AFA 賽後文寫 Argentina 3-1 Jordan、Messi 狀態火熱，並標題點出已在想 Cape Verde；屬阿根廷官方狀態與對手聚焦。",
         "AFA 另文確認 Argentina 的 16 強對手為 Cape Verde，並把 Cape Verde 描述為小組賽驚奇之一；這是官方對戰實名化，不再只是 FOX/ESPN 賽程殼。",
         "Guardian Cape Verde-Saudi Arabia live report 指出 Cape Verde 0-0 後取得小組第二晉級；提供對手晉級方式與低比分韌性脈絡。",
-        "Soren 判讀：Argentina 的天花板不用多講，真正的 upset path 是 Cape Verde 把節奏鎖低、拖到定位球與焦躁；童話要續命，先得把比賽變難看。"
+        "Soren 判讀：Argentina 的天花板不用多講，真正的 upset path 是 Cape Verde 把節奏鎖低、拖到定位球與焦躁；童話要續命，先得把比賽變難看。",
+        "FIFA match-centre and official preview URLs now provide official Argentina-Cabo Verde entry points; parent probe reached them, but front-end-rendered pages are not treated as confirmed XI.",
+        "ESPN odds page metadata gives a public market reference for Argentina-Cape Verde; use only as paper-bankroll context and keep the no-real-money boundary visible.",
+        "Sports Mole preview metadata mentions prediction/team news/possible lineups; useful as lineup-watch, not official team sheet proof."
       ],
       "sources": [
         {
@@ -6534,6 +6573,38 @@
           "fetchedAt": "2026-06-30T12:19:31Z",
           "claimType": "context/qualification-report",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA official match-centre: Argentina v Cabo Verde live score / line-ups page",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021521",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-02T00:38:46Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA official preview: Argentina v Cabo Verde team-news/tickets hub",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/argentina-cabo-verde-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-02T00:38:46Z",
+          "claimType": "confirmed/match-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN odds page: Argentina vs Cape Verde public market reference for paper simulation only",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760500",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-02T00:38:46Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole preview: Argentina vs Cape Verde prediction, team news and possible lineups",
+          "url": "https://www.sportsmole.co.uk/football/argentina/world-cup-2026/preview/argentina-vs-cape-verde-prediction-team-news-lineups_600481.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-02T00:38:46Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
