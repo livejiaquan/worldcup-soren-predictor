@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T10:53:09Z",
-  "status": "matchday scout refresh: HNS/BBC Portugal-Croatia, RFEF/Reuters Spain-Austria, and BBC Salah fitness watch updated",
-  "headline": "Soren 補了三張臨近卡：Portugal-Croatia 加 HNS Dalić 與 BBC live centre；Spain-Austria 加 RFEF/Reuters 臨場入口；Australia-Egypt 補 BBC Salah fitness watch。",
+  "generatedAt": "2026-07-02T11:59:05Z",
+  "status": "Matchday scout refreshed: official federation context and live-centre rails added for the next knockout wave; lineups remain unconfirmed until FIFA/team sheets land.",
+  "headline": "Soren 補上 Spain-Austria、Portugal-Croatia、Switzerland-Algeria 的臨場來源護欄：官方隊伍動態、BBC/Al Jazeera live rails，先別把 predicted XI 當聖旨。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5954,9 +5954,9 @@
     {
       "matchId": "m083",
       "match": "Portugal vs Croatia",
-      "sourceType": "official FIFA/HNS preview + live-centre + reported tactical/probability/lineup watch + paper-market watch + source alignment",
-      "title": "Portugal-Croatia 補 HNS Dalić 與 BBC live centre：老神仙是海報，少犯錯才是 Croatia 的續命氧氣。",
-      "sorenTake": "HNS 官方賽前文把 Dalić 的重點講得很白：對 Portugal，Croatia 先要把錯誤降到最低。BBC live centre 補上臨場 stats/head-to-head 入口。Soren 的讀法沒變：Portugal 紙面更亮，但如果 Croatia 把 Toronto 晚場磨成低失誤、慢節奏、老骨頭互毆，Ronaldo-Modrić 海報下面會藏著一把鈍刀。",
+      "sourceType": "official FIFA/HNS preview + BBC/Al Jazeera live-centre + reported tactical/probability/lineup watch + paper-market watch + source alignment",
+      "title": "Portugal-Croatia 補 Al Jazeera 淘汰賽 live/context：Ronaldo-Modrić 是海報，低失誤才是真門票。",
+      "sorenTake": "HNS 已把 Croatia 的生存守則講成「少犯錯」，Al Jazeera 又補上淘汰賽當日 live/context。Portugal 的名氣比較大聲；但這種老巨星對撞，誰先把中場丟成公益空間，誰就先把海報撕成告別信。",
       "signals": [
         "FOX Sports m083 頁面列 2K vs 2L 與 2026-07-02T23:00Z 賽程窗口。",
         "Marca 投影與 The Athletic 搜尋片段指向 Portugal-Ghana，但完整對陣需等 K/L 組最後賽果。",
@@ -5978,7 +5978,8 @@
         "FIFA match centre 已作為 Portugal-Croatia 官方 lineups / score / live updates 入口；正式名單未落地前，所有媒體 XI 仍只當 lineup-watch。",
         "GOAL 7/2 公開預覽明示涵蓋 tactics 與 team news；可用來補 Portugal-Croatia 的戰術敘事，但不升格為官方先發。",
         "HNS 官方賽前文可直接核讀，Dalić 將重點放在對 Portugal 必須把 mistakes to a minimum；這是 Croatia 官方教練語境，不是正式先發。",
-        "BBC Portugal-Croatia live centre 可讀，提供 live text、score updates、match stats 與 head-to-head；本站用作臨場資訊入口，不提前宣稱 lineups。"
+        "BBC Portugal-Croatia live centre 可讀，提供 live text、score updates、match stats 與 head-to-head；本站用作臨場資訊入口，不提前宣稱 lineups。",
+        "Al Jazeera 7/2 knockout-day page 可連線，將 Portugal-Croatia 放在當日淘汰賽與 Round-of-16 race 脈絡；可作 live/context rail，不提供官方先發確認。"
       ],
       "sources": [
         {
@@ -6148,6 +6149,14 @@
           "fetchedAt": "2026-07-02T10:53:09Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Portugal-Croatia knockout preview/live context",
+          "url": "https://www.aljazeera.com/news/2026/7/2/fifa-world-cup-portugal-vs-croatia-prediction-schedules-round-of-16-race",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-02T11:59:05Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6155,9 +6164,9 @@
     {
       "matchId": "m084",
       "match": "Spain vs Austria",
-      "sourceType": "official match centre + RFEF/ÖFB official preview + Reuters live-centre + reported tactical/probability/lineup watch + source alignment",
-      "title": "Spain-Austria 補 RFEF 與 Reuters 臨場入口：Spain 要當洛杉磯星光，先別被 Austria 逼成災難片。",
-      "sorenTake": "RFEF 官方預覽把 Spain 的淘汰賽開場寫成洛杉磯星光場，Reuters 則補上可追的 live score / Opta stats 入口。Spain 仍是熱門；但淘汰賽不頒「小組零失球紀念獎」。Austria 的任務很粗暴：讓西班牙從控球詩變成搶第二點的散文。",
+      "sourceType": "official match centre + RFEF/ÖFB official context + Reuters/Al Jazeera live-centre + reported tactical/probability/lineup watch + paper-market watch",
+      "title": "Spain-Austria 補 ÖFB 晉級脈絡與 Al Jazeera live rail：Spain 是熱門，Austria 則剛從 96 分鐘把劇本扯爛。",
+      "sorenTake": "ÖFB 官方把 Austria 對 Algeria 的 96 分鐘追平與晉級寫清楚，Al Jazeera 也補上賽前 live build-up。Spain 還是紙面主角；但 Austria 剛示範過一件很討厭的事：你以為片尾字幕要跑了，他們還會伸手拔電源。",
       "signals": [
         "FIFA Uruguay-Spain 報導指出 Spain 將面對 Group J runners-up，這是比一般媒體投影更硬的官方脈絡。",
         "FOX m084 頁面已顯示 Spain vs 2J，公開時間窗口為 2026-07-02T19:00Z。",
@@ -6186,7 +6195,9 @@
         "ÖFB 7/2 官方 matchday 文可連線，標題為 Last-Minute-Aufstieg beflügelt Nationalteam，metadata 寫明 Austria 對 Spain 仍信任自身強項；這是 Austria 官方賽前心態/備戰更新。",
         "ÖFB Alaba 專題可連線，描述 leadership、life dream 與 setbacks；它補強 Austria 更衣室/領袖語境，但不是正式先發或醫療確認。",
         "RFEF 官方 7/2 preview 可直接核讀，確認 Spain 在 Los Angeles 對 Austria 開啟淘汰賽階段；這是 Spain 官方賽前語境，不是正式 XI。",
-        "Reuters Spain-Austria live match centre 可讀，提供 live scores、stats、commentary/analysis 與 Opta data；本站列為高信心 live-centre，不提前寫先發。"
+        "Reuters Spain-Austria live match centre 可讀，提供 live scores、stats、commentary/analysis 與 Opta data；本站列為高信心 live-centre，不提前寫先發。",
+        "ÖFB 官方賽後文可連線，確認 Austria 靠對 Algeria 的 96 分鐘追平闖進淘汰賽；這強化 Austria 的 resilience/upset-path 語境，但不是 Spain 戰正式先發。",
+        "Al Jazeera 7/2 Spain-Austria preview/live rail 可連線，提供 19:00 GMT 賽程、Los Angeles 場地與 live build-up；本站列為臨場入口與 H2H/context，不宣稱官方 XI。"
       ],
       "sources": [
         {
@@ -6420,6 +6431,14 @@
           "fetchedAt": "2026-07-02T10:53:09Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "ÖFB official qualification context",
+          "url": "https://www.oefb.at/oefb/News/Nationalteam-Match-ALG-AUT",
+          "sourceName": "Österreichischer Fußball-Bund",
+          "fetchedAt": "2026-07-02T11:59:05Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6427,9 +6446,9 @@
     {
       "matchId": "m085",
       "match": "Switzerland vs Algeria",
-      "sourceType": "reported/bracket-actualization + federation lead + lineup-tracker watch + source alignment",
-      "title": "Switzerland-Algeria 補 FIFA 臨場入口：Petković 熟門熟路，但正式先發仍要等官方落槌。",
-      "sorenTake": "這場的主線仍是 Petković 對老東家，但現在補上 FIFA match centre 後，Soren 的臨場校準有了硬入口。Switzerland 的結構性穩定是優勢；Algeria 若要偷走劇本，得把熟悉感變成針對性，而不是賽前故事會。",
+      "sourceType": "official FIFA/FAF match context + BBC live-centre + reported injury/lineup watch + federation logistics + source alignment",
+      "title": "Switzerland-Algeria 補 FAF 抵達與 BBC live rail：Petković 熟門熟路，Algeria 也已把行李搬到 Vancouver。",
+      "sorenTake": "FAF 官方確認 Algeria 已抵達 Vancouver，BBC live rail 補上臨場 stats/head-to-head，101 Great Goals 給出 Widmer/Amoura 傷勢與可能調整線索。Soren 的警告很簡單：Petković 的熟悉度是武器，但正式先發沒出來前，任何 XI 都只是鉛筆稿，不是刻碑。",
       "signals": [
         "FOX Sports m085 頁面顯示 Switzerland vs 3E/3F/3G/3I/3J，時間為 2026-07-03T03:00Z / Vancouver。",
         "AS Group B final standings context 支撐 Switzerland 作為 B 組第一晉級。",
@@ -6449,7 +6468,10 @@
         "WhoScored 可見描述涵蓋 injuries/suspensions、probable line-ups、predictions、facts and odds；只標 reported，不升格 confirmed。",
         "AP 報導 Embolo 稱 Petković 曾提升瑞士國家隊水準，並梳理他 2014–2021 執教瑞士、2018 世界盃十六強與 Euro 2020 八強脈絡；這強化 Algeria 主帥對瑞士結構熟悉的解讀。",
         "FIFA 搜尋索引以「Master v apprentice」包裝 Yakin-Petković 對決，指出 Yakin 曾在 Petković 麾下/身邊學習，屬官方戰術敘事線，不是陣容確認。",
-        "FIFA Switzerland-Algeria match centre 已核對可連線，作為官方 lineups / score / live updates 入口；Yakin-Petković 敘事可寫，正式 XI 仍等官方。"
+        "FIFA Switzerland-Algeria match centre 已核對可連線，作為官方 lineups / score / live updates 入口；Yakin-Petković 敘事可寫，正式 XI 仍等官方。",
+        "FAF 官方 7/2 文可連線，確認 Algeria squad 已抵達 Vancouver 並標示對 Switzerland 的淘汰賽時間；這是隊伍物流/備戰語境，不是陣容確認。",
+        "BBC Switzerland-Algeria live centre 可連線，提供 score updates、match stats 與 head-to-head；作為臨場資訊入口，正式 lineups 仍等 FIFA/隊伍發布。",
+        "101 Great Goals 預覽提出 Widmer doubtful、Jaquez 可能代打以及 Amoura availability-watch；本站以 reported injury/lineup-watch 處理，不升格為官方醫療或先發。"
       ],
       "sources": [
         {
@@ -6611,6 +6633,30 @@
           "fetchedAt": "2026-07-02T08:34:25Z",
           "claimType": "confirmed/match-centre",
           "confidence": "high"
+        },
+        {
+          "label": "FAF official Algeria arrival in Vancouver",
+          "url": "https://www.faf.dz/coupe-du-monde-de-la-fifa-2026-les-verts-sont-arrives-a-vancouver/",
+          "sourceName": "Fédération Algérienne de Football",
+          "fetchedAt": "2026-07-02T11:59:05Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Switzerland-Algeria live stats centre",
+          "url": "https://www.bbc.com/sport/football/live/cyv05me9d6rt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-02T11:59:05Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "101 Great Goals Switzerland-Algeria injury and lineup-watch preview",
+          "url": "https://www.101greatgoals.com/match-previews/world-cup-matches/switzerland-v-algeria-line-ups-stats-preview-tv-channel-live-online-stream-prediction/",
+          "sourceName": "101 Great Goals",
+          "fetchedAt": "2026-07-02T11:59:05Z",
+          "claimType": "reported/availability-lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
