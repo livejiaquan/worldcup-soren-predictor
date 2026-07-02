@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T01:48:44Z",
-  "status": "Live-score correction + sparse-card top-up: ESPN public summary recheck moved USA-Bosnia to 82′ at USA 2-0, completed=false; Colombia-Ghana gained FIFA/Sports Mole scouting anchors, and Portugal-Croatia added an ESPN paper-odds reference. Live ≠ Final.",
-  "headline": "Soren scout: USA-Bosnia 82′ 變 2-0 但仍不是終場；Colombia-Ghana 補官方/隊訊線，Portugal-Croatia 只把 ESPN odds 當紙上市場溫度。",
+  "generatedAt": "2026-07-02T01:55:42Z",
+  "status": "Next-wave Round-of-16 top-up: Paraguay-France gained APF training + Opta France form; Canada-Morocco gained Opta/Al Jazeera context; Brazil-Norway gained BBC/Olympics context; M092 stays bracket-watch while public sources report Mexico-England. USA-Bosnia remains live/non-final per ESPN.",
+  "headline": "Soren scout: 下一波 16 強補官方訓練、Opta/BBC 賽後數據與 Mexico-England bracket-watch；USA-Bosnia 還是 Live ≠ Final。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -6707,15 +6707,17 @@
     {
       "matchId": "m090",
       "match": "Canada vs Morocco",
-      "sourceType": "official pathway + media confirmation + lineup tracker",
-      "title": "Canada-Morocco 補 CBC/FIFA/FotMob：地主光環很亮，但 Morocco 的點球刀口剛磨完。",
+      "sourceType": "official pathway + media confirmation + data/form context + lineup tracker",
+      "title": "Canada-Morocco 補 Opta/Al Jazeera：地主剛偷到 Eustaquio 劇本，Morocco 剛從點球地獄爬出來。",
       "sorenTake": "CBC 可讀 metadata 確認 Canada 16 強碰 Morocco；FIFA Morocco/Netherlands 報告與 Mazraoui 訪談頁可連線，Morocco 是剛從 Netherlands 點球戰活下來的隊伍。Canada 有主場敘事，但 Morocco 的淘汰賽肌肉不是旅遊紀念品，這場要追體能恢復、Mazraoui 側翼對位與正式 XI。",
       "signals": [
         "CBC metadata 直接寫明 Canada 將在 Round of 16 對 Morocco，且 Morocco 於 Netherlands 戰後經點球 3-2 晉級；這是可讀媒體確認，不是模型猜測。",
         "FIFA Morocco-Netherlands review URL 父層核可連線；搜尋片段指出 Morocco 經點球淘汰 Netherlands，作官方晉級脈絡。",
         "FIFA Mazraoui 訪談 URL 父層核可連線；搜尋片段提到 Morocco 即將對 co-host Canada，並引用 Mazraoui 說 Canada 會是 difficult match。",
         "Al Jazeera live blog metadata 顯示 Morocco come from behind to beat Netherlands on penalties；作淘汰賽心理/體能背景，不當成 Canada 戰先發資訊。",
-        "FotMob Canada-Morocco 頁可讀 metadata，提供 2026-07-04T17:00Z live score / predicted lineups / H2H 入口；正式先發仍等官方。"
+        "FotMob Canada-Morocco 頁可讀 metadata，提供 2026-07-04T17:00Z live score / predicted lineups / H2H 入口；正式先發仍等官方。",
+        "Opta Analyst South Africa-Canada stats 頁可讀 metadata：Eustaquio 補時絕殺送 Canada 進 16 強；這補上地主的真實晉級方式，不是只喊主場光環。",
+        "Al Jazeera Morocco-Netherlands 報導 metadata 指向 Morocco 先落後再靠點球淘汰 Netherlands；這是體能、心理與點球韌性的公開脈絡。"
       ],
       "sources": [
         {
@@ -6757,6 +6759,22 @@
           "fetchedAt": "2026-07-01T08:00:47Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Opta Analyst South Africa-Canada stats",
+          "url": "https://theanalyst.com/articles/south-africa-vs-canada-stats-world-cup-2026",
+          "sourceName": "The Analyst / Opta",
+          "fetchedAt": "2026-07-02T01:55:42Z",
+          "claimType": "reported/data-context",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Morocco-Netherlands shootout recap",
+          "url": "https://www.aljazeera.com/sports/2026/6/30/morocco-netherlands-world-cup-knockout-penalty-shootout-saibari-diop-gakpo",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-02T01:55:42Z",
+          "claimType": "context/match-recap",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6764,15 +6782,17 @@
     {
       "matchId": "m089",
       "match": "Paraguay vs France",
-      "sourceType": "official pathway + bracket confirmation + lineup tracker",
-      "title": "Paraguay-France 補 FIFA/CBS/LiveScore：Mbappé 的刀很亮，Paraguay 剛把 Germany 拖進點球泥潭。",
+      "sourceType": "official pathway + official training + data/form context + live trackers",
+      "title": "Paraguay-France 補 APF 訓練與 Opta：Mbappé 刀很亮，但 Paraguay 剛把 Germany 拖進十二碼泥坑。",
       "sorenTake": "FIFA France-Sweden 與 Germany-Paraguay 報告頁都可連線，搜尋片段分別給出 France 3-0 與 Paraguay 點球淘汰 Germany 的路徑。CBS 與 LiveScore/FotMob 補上 Philadelphia 這場的公開賽程/臨場入口。Soren 的警報：France 是熱門，但 Paraguay 的 upset path 很清楚——把節奏打碎、把比賽拖到十二碼恐懼症。",
       "signals": [
         "FIFA France-Sweden review URL 父層核可連線；搜尋片段指出 France 3-0 Sweden 後將在 Philadelphia 對 Paraguay，並提到 Mbappé 淘汰賽進球脈絡。",
         "FIFA Germany-Paraguay review URL 父層核可連線；搜尋片段指出 Paraguay 對 Germany 120 分鐘後點球勝出，這給 France 戰疲勞與點球韌性兩條線索。",
         "CBS Sports bracket metadata 可讀，列出淘汰賽進入 Round of 32/16 路徑；搜尋片段列 July 4 5 p.m. ET Paraguay vs France at Lincoln Financial Field。",
         "FotMob Paraguay-France metadata 可讀，提供 2026-07-04T21:00Z live score / predicted lineups / H2H；正式 XI 仍未確認。",
-        "LiveScore 頁 metadata 可讀，標示 Paraguay vs France R16 live score / line-ups 入口；用作 matchday tracker，不當成賽前結論。"
+        "LiveScore 頁 metadata 可讀，標示 Paraguay vs France R16 live score / line-ups 入口；用作 matchday tracker，不當成賽前結論。",
+        "APF 官方頁可讀 metadata：Paraguay 淘汰 Germany 後已在 Philadelphia 恢復訓練，目標轉向 16 強對 France；這是官方備戰/訓練訊號，不是先發確認。",
+        "Opta Analyst France-Sweden stats 頁可讀 metadata：Mbappé 重新開火、France 3-0 Sweden；作 France 近況與火力脈絡，不把公開模型/數據當本站底層配方。"
       ],
       "sources": [
         {
@@ -6814,6 +6834,22 @@
           "fetchedAt": "2026-07-01T08:00:47Z",
           "claimType": "context/live-centre",
           "confidence": "medium-high"
+        },
+        {
+          "label": "APF Paraguay training before France",
+          "url": "https://www.apf.org.py/noticias/la-ilusion-no-se-detiene-y-ya-mira-hacia-francia",
+          "sourceName": "Asociación Paraguaya de Fútbol",
+          "fetchedAt": "2026-07-02T01:55:42Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "Opta Analyst France-Sweden stats",
+          "url": "https://theanalyst.com/articles/france-vs-sweden-stats-world-cup-round-of-32",
+          "sourceName": "The Analyst / Opta",
+          "fetchedAt": "2026-07-02T01:55:42Z",
+          "claimType": "reported/data-context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6821,15 +6857,17 @@
     {
       "matchId": "m091",
       "match": "Brazil vs Norway",
-      "sourceType": "official pathway + team update + live/market watch",
-      "title": "Brazil-Norway 補 NFF/FIFA/LiveScore：Haaland 不是彩蛋，他是 Brazil 防線的壓力測試。",
+      "sourceType": "official pathway + credible live reports + preview/market watch",
+      "title": "Brazil-Norway 補 BBC/Olympics：Haaland 的晚刀是真的，Brazil 也才剛靠補時把 Japan 按掉。",
       "sorenTake": "Norwegian FA metadata 可讀，寫明 Nusa 與 Haaland 幫 Norway 2-1 過 Ivory Coast，下一戰 New York/New Jersey 對 Brazil；FIFA Norway-Ivory Coast 報告頁也可連線。Brazil 當然有招牌，但 Norway 的 upset path 不玄學：Haaland 拉開第一腳、Nusa 攻轉守縫隙，然後逼 Brazil 先急。",
       "signals": [
         "Norges Fotballforbund 頁面 metadata 可讀，標題為 16 強先發，並由搜尋片段提供 Nusa/Haaland 進球、Norway 2-1 Ivory Coast、下一戰 Brazil 的脈絡。",
         "FIFA Côte d’Ivoire-Norway review URL 父層核可連線；搜尋片段指向 Haaland 進球與 Norway 淘汰賽晉級，作官方路徑資訊。",
         "CBS Sports bracket metadata 可讀，搜尋片段列 Brazil vs Norway 於 2026-07-05 4 p.m. ET / MetLife Stadium；可作賽程交叉驗證。",
         "LiveScore Brazil-Norway metadata 可讀，標示 R16 live score / line-ups 入口；正式先發仍未公布。",
-        "Oddschecker odds 頁父層 403，但搜尋片段顯示 Brazil v Norway winner 市場比較頁存在；只能列為低揭露度 paper-only market lead，不引用價格、不提供投注建議。"
+        "Oddschecker odds 頁父層 403，但搜尋片段顯示 Brazil v Norway winner 市場比較頁存在；只能列為低揭露度 paper-only market lead，不引用價格、不提供投注建議。",
+        "BBC Norway-Ivory Coast live report metadata 確認 Haaland late winner 送 Norway 進 16 強；這是 Norway upset path 的核心，不是粉絲幻想。",
+        "Olympics.com Brazil-Norway preview 搜尋/metadata 指向賽程、可能先發與觀賽資訊；先標 credible preview / lineup-watch，不當 confirmed XI。"
       ],
       "sources": [
         {
@@ -6871,6 +6909,22 @@
           "fetchedAt": "2026-07-01T08:00:47Z",
           "claimType": "odds-reference",
           "confidence": "medium-low"
+        },
+        {
+          "label": "BBC Norway-Ivory Coast live report",
+          "url": "https://www.bbc.com/sport/football/live/c3ryj7r4972t",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-02T01:55:42Z",
+          "claimType": "context/match-recap",
+          "confidence": "high"
+        },
+        {
+          "label": "Olympics.com Brazil-Norway preview",
+          "url": "https://www.olympics.com/pt/noticias/copa-do-mundo-2026-brasil-noruega-escalacoes-horario-assistir",
+          "sourceName": "Olympics.com",
+          "fetchedAt": "2026-07-02T01:55:42Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -6878,14 +6932,16 @@
     {
       "matchId": "m092",
       "match": "W79 vs W80",
-      "sourceType": "reported/bracket-watch + public schedule context",
-      "title": "M092 還是 W79/W80 霧區：別急著把勝者名字刻上去，淘汰賽會專治提前開香檳。",
-      "sorenTake": "Round-of-16 slot is still unresolved: winner of Match 79 versus winner of Match 80. Soren keeps this as bracket-watch only, because turning placeholders into fake certainty is how brackets become comedy props.",
+      "sourceType": "official/reported bracket-watch + public schedule context",
+      "title": "M092 從 W79/W80 霧區露出 Mexico-England 輪廓；等本站資料真正收口前，不把 W80 硬改成鐵板。",
+      "sorenTake": "Official/public pages are starting to show Mexico vs England for M092, including a FIFA suites page and BBC preview. Local tournament data still exposes W80 as the route placeholder, so Soren labels this as bracket actualization watch rather than silently rewriting the bracket before the data layer catches up.",
       "signals": [
         "Current public tournament data keeps M092 as W79 vs W80; this is a route slot, not a confirmed team matchup.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
-        "Kickoff target: 2026-07-06T00:00:00Z at Mexico City Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known."
+        "Kickoff target: 2026-07-06T00:00:00Z at Mexico City Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known.",
+        "FIFA World Cup Suites page metadata/title 顯示 M92: Mexico vs England Suites / Jul 5；這是官方商務頁面的 bracket-actualization lead，但不是本地 worldcup.json 的直接欄位更新。",
+        "BBC Sport preview metadata 寫明 England will face Mexico in the World Cup round of 16；本站先把它列為 credible reported opponent/preview，等資料層收口再做 team-specific deep dive。"
       ],
       "sources": [
         {
@@ -6911,6 +6967,22 @@
           "fetchedAt": "2026-07-01T09:11:44Z",
           "claimType": "context/bracket-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA Suites M92 Mexico vs England page",
+          "url": "https://fifaworldcup26.suites.fifa.com/events/M92-W79-vs-W80-111653/",
+          "sourceName": "FIFA World Cup 26 Suites",
+          "fetchedAt": "2026-07-02T01:55:42Z",
+          "claimType": "confirmed/bracket-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Mexico opponent preview for England",
+          "url": "https://www.bbc.com/sport/football/articles/c8d25v111r6o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-02T01:55:42Z",
+          "claimType": "reported/bracket-actualization",
+          "confidence": "high"
         }
       ],
       "confidence": "medium"
