@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T08:34:25Z",
-  "status": "Scout refresh: added parent-verified Al Jazeera/FIFA/GOAL/Ghana FA/BBC source rails for 7/2-7/6 knockout cards while keeping unresolved W-slot placeholders conservative.",
-  "headline": "Soren scout: 7/2 補臨場護欄——Spain/Austria 加 Al Jazeera，Portugal/Croatia 與 Switzerland/Algeria 補 FIFA match centres，Ghana 官方預覽落地；W-slot 繼續不亂簽名。",
+  "generatedAt": "2026-07-02T09:44:19Z",
+  "status": "matchday scout refresh: official Austria context, Salah/Messi matchup context, and M092 bracket-market watch updated",
+  "headline": "Soren 補了四張臨近卡：ÖFB 讓 Spain-Austria 更有對抗感，Guardian/BBC 補 Salah 與 Pico Lopes 角度，M092 繼續守 W79/W80 但追蹤 Mexico-England 外部敘事。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -6138,8 +6138,8 @@
       "matchId": "m084",
       "match": "Spain vs Austria",
       "sourceType": "official match centre + official preview + reported tactical/probability/lineup watch + source alignment",
-      "title": "Spain-Austria 補 Al Jazeera live build-up：Spain 仍是大熱，但「rough patch」四個字讓 Austria 的偷襲路線更有味道。",
-      "sorenTake": "Al Jazeera 把這場寫成 Spain 走出 rough patch 的考題：La Roja 應該控球、應該壓制，但 Austria 的價值在於逼它把「應該」真的踢出來。Soren 仍看 Spain 佔優；只是淘汰賽不是履歷審查，Rangnick 的壓迫若先咬到失誤，這張大熱門門票會瞬間變皺。",
+      "title": "Spain-Austria 再補 ÖFB 官方賽前聲音：Austria 不是來合照的，Alaba/Rangnick 線讓 Spain 的熱門身份更燙手。",
+      "sorenTake": "ÖFB 的 matchday 文與 Alaba 專題把 Austria 的信心與領袖線補上：Spain 還是大熱，但現在這張卡更像真正的淘汰賽，不是西班牙的品牌展示。Soren 的讀法很簡單：La Roja 要把零失球履歷踢成控制力；Austria 只要把第一波壓迫踢成混亂，冷門路線就有氧氣。",
       "signals": [
         "FIFA Uruguay-Spain 報導指出 Spain 將面對 Group J runners-up，這是比一般媒體投影更硬的官方脈絡。",
         "FOX m084 頁面已顯示 Spain vs 2J，公開時間窗口為 2026-07-02T19:00Z。",
@@ -6164,7 +6164,9 @@
         "Opta/The Analyst Spain-Austria preview 可連線，公開預測把焦點放在 Austria upset path；這是外部模型/數據語境，不寫成本站勝率來源。",
         "SI Spain-Austria preview 可連線，標題/描述明示 predictions and lineups；Arnautović slight knock 只保留為 reported availability-watch，正式先發未確認。",
         "CBS/SportsLine 的公開 FanDuel odds 顯示 Spain 90 分鐘約 -300、Austria 約 +900、和局約 +425；Soren 只把它當紙上市場溫度計，不當投注建議。",
-        "Al Jazeera 7/2 賽前頁確認 Spain-Austria 在 Los Angeles 開打，並提供 live build-up / team-news 入口；頁面標題把 Spain 的 rough patch 與 Austria 淘汰賽考題放在同一框，適合作為非模型、公開敘事校準。"
+        "Al Jazeera 7/2 賽前頁確認 Spain-Austria 在 Los Angeles 開打，並提供 live build-up / team-news 入口；頁面標題把 Spain 的 rough patch 與 Austria 淘汰賽考題放在同一框，適合作為非模型、公開敘事校準。",
+        "ÖFB 7/2 官方 matchday 文可連線，標題為 Last-Minute-Aufstieg beflügelt Nationalteam，metadata 寫明 Austria 對 Spain 仍信任自身強項；這是 Austria 官方賽前心態/備戰更新。",
+        "ÖFB Alaba 專題可連線，描述 leadership、life dream 與 setbacks；它補強 Austria 更衣室/領袖語境，但不是正式先發或醫療確認。"
       ],
       "sources": [
         {
@@ -6366,6 +6368,22 @@
           "fetchedAt": "2026-07-02T08:34:25Z",
           "claimType": "reported/team-news-live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "ÖFB Austria matchday team update",
+          "url": "https://www.oefb.at/oefb/News/Nationalteam-WM-Tag-26/",
+          "sourceName": "Österreichischer Fußball-Bund",
+          "fetchedAt": "2026-07-02T09:44:19Z",
+          "claimType": "confirmed/team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "ÖFB David Alaba leadership feature",
+          "url": "https://www.oefb.at/oefb/News/Alaba-Ein-Anfuehrer-mit-Aura/",
+          "sourceName": "Österreichischer Fußball-Bund",
+          "fetchedAt": "2026-07-02T09:44:19Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6564,9 +6582,9 @@
     {
       "matchId": "m088",
       "match": "Australia vs Egypt",
-      "sourceType": "official match hub + official FIFA match-centre + reported injury/lineup watch + odds reference + bracket context + revenge-context refresh",
-      "title": "Australia-Egypt 補 Ahram 醫療線：Salah 開始復健，Fatouh 可能缺席，這不是海報戰是傷病管理戰。",
-      "sorenTake": "Socceroos 自己也有 Leckie/Italiano 缺口；Egypt 則要管理 Salah、Abdelmonem、Fatouh 的身體狀態。Soren 的翻譯：這場不是單純「Salah 會不會上」的肥皂劇，而是兩隊都在用殘缺零件拼淘汰賽。",
+      "sourceType": "official match hub + official FIFA match-centre + reported injury/lineup watch + odds reference + bracket context + revenge-context refresh + source alignment",
+      "title": "Australia-Egypt 補 Guardian Salah 專題：Socceroos 的問題不是「知道 Salah 很強」，是能不能讓他少碰到舒服球。",
+      "sorenTake": "Ahram 的傷情線之外，Guardian 把 Salah 對 Australia 的威脅寫得很清楚：就算鋒利度有起伏，他仍能把一場平衡戰切開。Soren 仍把這場看成體能、定位球與邊路保護的拉鋸；Australia 若只把防守計畫寫成「盯 Salah」，那就太像賽前 PowerPoint 了。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
         "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
@@ -6583,7 +6601,8 @@
         "Squawka 可見描述提供 Australia vs Egypt team news and predicted lineups；與 Sports Mole 預測陣容互為外部 lineup-watch。",
         "Guardian 6/29 feature 以東京奧運對 Egypt 失利作為 Socceroos motivation context，並明確說明這是 last-32 前的心理/敘事線，不等於戰術或先發確認。",
         "Nine 可見 metadata 把焦點放在 Salah injury concern、Marmoush threat 與澳洲球員信心；作 mainstream media availability/context，不提升為 confirmed XI。",
-        "Ahram Online 引述 Egypt team doctor Mohamed Abu El-Ela：Salah 已開始復健，Mohamed Abdelmonem 同步治療，Ahmed Fatouh 對 Australia 戰前可能缺席；這是 availability watch，不是正式先發。"
+        "Ahram Online 引述 Egypt team doctor Mohamed Abu El-Ela：Salah 已開始復健，Mohamed Abdelmonem 同步治療，Ahmed Fatouh 對 Australia 戰前可能缺席；這是 availability watch，不是正式先發。",
+        "Guardian 7/1 專題可連線，描述 Salah 雖有狀態/國家隊遺憾包袱，但仍預期會給 Australia 製造問題；這是 mainstream tactical/context，不是官方傷停。"
       ],
       "sources": [
         {
@@ -6705,6 +6724,14 @@
           "fetchedAt": "2026-07-02T07:26:00Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Guardian Salah-Australia tactical context",
+          "url": "https://www.theguardian.com/football/2026/jul/01/world-cup-mo-salah-egypt-v-australia-socceroos-match",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-02T09:44:19Z",
+          "claimType": "reported/tactical-context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6713,8 +6740,8 @@
       "matchId": "m086",
       "match": "Argentina vs Cape Verde",
       "sourceType": "official team update + official FIFA preview/match-centre + reported lineup watch + odds reference + qualification context + source alignment",
-      "title": "Argentina-Cape Verde 補 AFA/Al Jazeera：Scaloni 賽前聲音與 Vozinha 童話線，強弱差距別寫成自動通關。",
-      "sorenTake": "Argentina 的紙面優勢很大，但 Cape Verde 不是來拍紀錄片背景的。AFA 的賽前發聲給了官方節奏，Al Jazeera 的 Vozinha / Cape Verde 脈絡提醒一句：淘汰賽裡，門將一旦開神模式，劇本會突然變髒。",
+      "title": "Argentina-Cape Verde 補 BBC Pico Lopes 角度：Messi 是海浪，Cape Verde 至少有一塊敢站著的礁石。",
+      "sorenTake": "BBC 的 Roberto “Pico” Lopes 線讓 Cape Verde 這張童話卡不只剩門將 Vozinha：面對 Messi，低位防線需要有人敢把第一下對抗扛住。Argentina 仍是明顯強隊；但 Soren 會盯 Cape Verde 能否把比賽拖成低比分、低節奏、低氧氣的泥地。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Argentina vs Cape Verde，22:00 GMT，Miami Stadium。",
         "FOX live score 頁已把此格呈現為 Argentina vs Cape Verde，並標示 July 03, 2026 賽事。",
@@ -6729,7 +6756,8 @@
         "Sports Mole preview metadata mentions prediction/team news/possible lineups; useful as lineup-watch, not official team sheet proof.",
         "Squawka 可見描述顯示此頁為 Argentina vs Cape Verde team news and predicted lineups；屬 reported lineup-watch。",
         "AFA 官方頁顯示 Lionel Scaloni 與 Nicolás Tagliafico 賽前記者會；先作官方 press-conference 入口與賽前語境，不從標題推導具體首發。",
-        "Al Jazeera 7/1 專題整理 Cape Verde 對 Argentina 的 Round of 32 背景，聚焦門將 Vozinha 與隊史大賽經驗；這是 credible context，不是戰術內幕。"
+        "Al Jazeera 7/1 專題整理 Cape Verde 對 Argentina 的 Round of 32 背景，聚焦門將 Vozinha 與隊史大賽經驗；這是 credible context，不是戰術內幕。",
+        "BBC Sport 可連線，描述 Cape Verde 後衛 Roberto Lopes 將面對 Messi，並確認 Cape Verde 以 Group H runner-up 身分在 Miami 對 Argentina；屬球員/戰術故事線，不是 confirmed XI。"
       ],
       "sources": [
         {
@@ -6842,6 +6870,14 @@
           "sourceName": "Al Jazeera",
           "fetchedAt": "2026-07-02T05:09:09Z",
           "claimType": "reported/team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Roberto Lopes-Messi matchup context",
+          "url": "https://www.bbc.com/sport/football/articles/c07yjj5j299o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-02T09:44:19Z",
+          "claimType": "reported/tactical-context",
           "confidence": "high"
         }
       ],
@@ -7286,8 +7322,8 @@
       "matchId": "m092",
       "match": "W79 vs W80",
       "sourceType": "official/reported bracket-watch + public schedule context + source alignment",
-      "title": "M092 再補 FOX Mexico-England 公開預覽：世界都在寫 England，但本站資料沒收口前仍叫 W80。",
-      "sorenTake": "FOX 已經把 Mexico-England 當十六強大戲來包裝，BBC/FIFA/Guardian 也指向同一條線；但 Soren 不把「外部都這樣寫」偷換成資料已確認。公開敘事先收，正式 bracket label 等本地 worldcup.json 收口。",
+      "title": "M092 補 BBC Tuchel 與 ESPN odds：Mexico-England 外部敘事越來越實，但本地資料沒 actualize 前，Soren 仍不亂改門牌。",
+      "sorenTake": "BBC 已把 Tuchel 的 Mexico 賽前聲音與時差/觀賽話題寫出來，ESPN 也開了 Mexico-England odds 頁；外部世界基本在按 Mexico-England 準備。但 Soren 的公開卡仍守規矩：資料層一天叫 W79 vs W80，我就一天把它標成 bracket-actualization watch，免得比官方資料還愛演。",
       "signals": [
         "Current public tournament data keeps M092 as W79 vs W80; this is a route slot, not a confirmed team matchup.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
@@ -7298,7 +7334,9 @@
         "FIFA England-Congo DR review 為官方賽後來源，指向 England 進入下一輪；用於 W80 actualization lead。",
         "Guardian liveblog 可見描述明示 England beat DR Congo to set up a last-16 match against Mexico。",
         "BBC Mexico explainer 可見描述明示 England will face Mexico in the World Cup round of 16；仍待本地資料 actualize 後再改 match label。",
-        "FOX Sports 已發布 England vs Mexico Round of 16 explainer，包含 how to watch、favored side、晉級路線與球員焦點；在本地資料仍顯示 W80 時，只標 reported/bracket-actualization。"
+        "FOX Sports 已發布 England vs Mexico Round of 16 explainer，包含 how to watch、favored side、晉級路線與球員焦點；在本地資料仍顯示 W80 時，只標 reported/bracket-actualization。",
+        "BBC 7/2 文章 metadata 明示 England manager Thomas Tuchel 談 England 對 Mexico 的 last-16 比賽；可作可信 media/coach-context lead。",
+        "ESPN odds page metadata 顯示 Mexico vs England (Jul 5, 2026) odds/spread；只作紙上市場參考，不作投注建議，也不取代本地資料 actualization。"
       ],
       "sources": [
         {
@@ -7364,6 +7402,22 @@
           "fetchedAt": "2026-07-02T05:09:09Z",
           "claimType": "reported/bracket-actualization",
           "confidence": "high"
+        },
+        {
+          "label": "BBC Tuchel Mexico-England last-16 context",
+          "url": "https://www.bbc.com/sport/football/articles/cd95g9y8k24o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-02T09:44:19Z",
+          "claimType": "reported/coach-context",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Mexico-England public odds reference",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760505",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-02T09:44:19Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium"
