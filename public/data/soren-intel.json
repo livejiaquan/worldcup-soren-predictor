@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T06:18:00Z",
-  "status": "Scout micro-refresh: parent-verified Opta/Sports Mole/SI rails for Portugal-Croatia and Spain-Austria, AP Koné injury for Canada-Morocco, ESPN Paquetá availability watch for Brazil-Norway, and USA Today France-Paraguay mismatch framing.",
-  "headline": "Soren scout: 7/2 早場補刀——Portugal-Croatia 與 Spain-Austria 加上公開數據/先發觀察；Canada 少 Koné，Brazil 等 Paquetá，France 也別把 Paraguay 當路標。",
+  "generatedAt": "2026-07-02T07:26:00Z",
+  "status": "Scout micro-refresh: parent-verified CBS/Covers paper-market rails for Spain-Austria and Portugal-Croatia, plus Ahram Egypt availability watch before Australia-Egypt.",
+  "headline": "Soren scout: 7/2 補市場與傷停——Spain/Austria、Portugal/Croatia 加上公開 odds 參考；Egypt 則要一邊等 Salah 復健，一邊處理 Fatouh 可能缺席。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5955,8 +5955,8 @@
       "matchId": "m083",
       "match": "Portugal vs Croatia",
       "sourceType": "official FIFA preview + reported tactical/probability/lineup watch + paper-market watch + source alignment",
-      "title": "Portugal-Croatia 補 Opta/Sports Mole：Ronaldo-Modrić 是情懷，Gvardiol 回位與體能才是刀口。",
-      "sorenTake": "Sports Illustrated 的可見頁面聚焦 Portugal predicted lineup，指出 Roberto Martínez 因未拿下小組第一被迫直接撞 Croatia。這是 lineup-watch，不是 confirmed XI；但對 Portugal 來說，中場腿力比海報姓名更像淘汰賽警報器。",
+      "title": "Portugal-Croatia 再補 Covers 市場參考：Ronaldo-Modrić 是門面，真正要看誰先被中場拖垮。",
+      "sorenTake": "FIFA/WhoScored/Opta/Sports Mole 已有戰術與隊形線索；Covers 只補一個公開市場溫度。這場不要被「最後一舞」催眠：Portugal 的邊路與 Croatia 的中場續航，才是 Soren 盯的破口。",
       "signals": [
         "FOX Sports m083 頁面列 2K vs 2L 與 2026-07-02T23:00Z 賽程窗口。",
         "Marca 投影與 The Athletic 搜尋片段指向 Portugal-Ghana，但完整對陣需等 K/L 組最後賽果。",
@@ -5973,7 +5973,8 @@
         "Sports Illustrated 可見 metadata 顯示 Portugal predicted lineup vs Croatia，且提到未拿下 Group K 讓 Portugal 首輪淘汰賽更硬。",
         "此新增來源只當 reported/lineup-watch；正式先發仍等 FIFA/team source 或 match centre。",
         "06:18Z 父層 metadata probe 核對 Opta/The Analyst Portugal-Croatia preview 可連線；頁面是賽前預測/數據預覽，適合作公開機率與節奏參考，不等於本站模型公式。",
-        "Sports Mole Portugal-Croatia preview 可連線，標題/描述明示 team news and possible lineups；其中 Gvardiol 回左閘屬 reported expected-XI watch，正式先發仍等官方。"
+        "Sports Mole Portugal-Croatia preview 可連線，標題/描述明示 team news and possible lineups；其中 Gvardiol 回左閘屬 reported expected-XI watch，正式先發仍等官方。",
+        "Covers 7/1 賽前頁提供 Portugal-Croatia 的公開 odds / picks 脈絡；屬紙上市場參考，不能寫成 Soren 模型邏輯或投注建議。"
       ],
       "sources": [
         {
@@ -6103,6 +6104,14 @@
           "fetchedAt": "2026-07-02T06:18:00Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "Covers Portugal-Croatia odds and picks",
+          "url": "https://www.covers.com/world-cup/portugal-vs-croatia-prediction-picks-odds-thursday-7-2-2026",
+          "sourceName": "Covers",
+          "fetchedAt": "2026-07-02T07:26:00Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -6111,8 +6120,8 @@
       "matchId": "m084",
       "match": "Spain vs Austria",
       "sourceType": "official match centre + official preview + reported tactical/probability/lineup watch + source alignment",
-      "title": "Spain-Austria 補 Opta/SI：Spain 是大熱，但 Arnautović 狀態讓這場不只是一張海報。",
-      "sorenTake": "De la Fuente 的壓力是「應該贏」；Rangnick 的禮物是「沒人指望我們」。淘汰賽最怕這種劇本：強隊一旦把控球踢成儀式感，underdog 只要咬住 20 分鐘，洛杉磯就會開始聞到冷門味。",
+      "title": "Spain-Austria 再補 CBS odds：Spain 是大熱沒錯，但 +900 的 Austria 更需要被問「爆冷路徑在哪」。",
+      "sorenTake": "FIFA/RFEF/Opta/SI 已把基本盤講清楚；這次補 CBS/FanDuel 公開市場參考，只是提醒讀者：Spain 的熱門程度很誇張，但 Soren 不會把賠率當真理。Austria 的劇本仍是 Arnautović 狀態、Rangnick 壓迫與早段不失血。",
       "signals": [
         "FIFA Uruguay-Spain 報導指出 Spain 將面對 Group J runners-up，這是比一般媒體投影更硬的官方脈絡。",
         "FOX m084 頁面已顯示 Spain vs 2J，公開時間窗口為 2026-07-02T19:00Z。",
@@ -6135,7 +6144,8 @@
         "FIFA 7/1 搜尋索引顯示 Rangnick 承認 Austria 對 defending European champions Spain 是 massive underdogs，但要求球隊在 Round of 32 繼續有 bite；這是官方 MD-1 心態/戰術語境，不是首發確認。",
         "FIFA 7/1 搜尋索引顯示 De la Fuente 在 Los Angeles Stadium MD-1 記者會談到 Spain 必須 live up to high expectations；Spain 的風險不只是 Austria，也包括「高期待」本身。",
         "Opta/The Analyst Spain-Austria preview 可連線，公開預測把焦點放在 Austria upset path；這是外部模型/數據語境，不寫成本站勝率來源。",
-        "SI Spain-Austria preview 可連線，標題/描述明示 predictions and lineups；Arnautović slight knock 只保留為 reported availability-watch，正式先發未確認。"
+        "SI Spain-Austria preview 可連線，標題/描述明示 predictions and lineups；Arnautović slight knock 只保留為 reported availability-watch，正式先發未確認。",
+        "CBS/SportsLine 的公開 FanDuel odds 顯示 Spain 90 分鐘約 -300、Austria 約 +900、和局約 +425；Soren 只把它當紙上市場溫度計，不當投注建議。"
       ],
       "sources": [
         {
@@ -6320,6 +6330,14 @@
           "sourceName": "Sports Illustrated",
           "fetchedAt": "2026-07-02T06:18:00Z",
           "claimType": "reported/availability-lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "CBS Spain-Austria odds reference",
+          "url": "https://www.cbssports.com/soccer/news/spain-austria-odds-prediction-time-2026-world-cup-round-of-32-picks/",
+          "sourceName": "CBS Sports / SportsLine / FanDuel",
+          "fetchedAt": "2026-07-02T07:26:00Z",
+          "claimType": "odds-reference",
           "confidence": "medium"
         }
       ],
@@ -6511,8 +6529,8 @@
       "matchId": "m088",
       "match": "Australia vs Egypt",
       "sourceType": "official match hub + official FIFA match-centre + reported injury/lineup watch + odds reference + bracket context + revenge-context refresh",
-      "title": "Australia-Egypt 補 Guardian/Nine：Salah 是主燈，Socceroos 的復仇線別被剪掉。",
-      "sorenTake": "Guardian 補上 Australia 對 Egypt 的東京奧運舊傷與復仇情緒，Nine 則把 Salah 傷情/澳洲自信放進賽前框架。Soren 翻譯：Egypt 有星味，Australia 有疤；疤不會進球，但會讓鏟球多半拍。",
+      "title": "Australia-Egypt 補 Ahram 醫療線：Salah 開始復健，Fatouh 可能缺席，這不是海報戰是傷病管理戰。",
+      "sorenTake": "Socceroos 自己也有 Leckie/Italiano 缺口；Egypt 則要管理 Salah、Abdelmonem、Fatouh 的身體狀態。Soren 的翻譯：這場不是單純「Salah 會不會上」的肥皂劇，而是兩隊都在用殘缺零件拼淘汰賽。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
         "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
@@ -6528,7 +6546,8 @@
         "Flashscore metadata says Salah resumed part of Egypt training while recovering from a hamstring strain; treat as availability-watch, not a confirmed 90-minute green light.",
         "Squawka 可見描述提供 Australia vs Egypt team news and predicted lineups；與 Sports Mole 預測陣容互為外部 lineup-watch。",
         "Guardian 6/29 feature 以東京奧運對 Egypt 失利作為 Socceroos motivation context，並明確說明這是 last-32 前的心理/敘事線，不等於戰術或先發確認。",
-        "Nine 可見 metadata 把焦點放在 Salah injury concern、Marmoush threat 與澳洲球員信心；作 mainstream media availability/context，不提升為 confirmed XI。"
+        "Nine 可見 metadata 把焦點放在 Salah injury concern、Marmoush threat 與澳洲球員信心；作 mainstream media availability/context，不提升為 confirmed XI。",
+        "Ahram Online 引述 Egypt team doctor Mohamed Abu El-Ela：Salah 已開始復健，Mohamed Abdelmonem 同步治療，Ahmed Fatouh 對 Australia 戰前可能缺席；這是 availability watch，不是正式先發。"
       ],
       "sources": [
         {
@@ -6642,6 +6661,14 @@
           "fetchedAt": "2026-07-02T03:59:39Z",
           "claimType": "reported/availability-context",
           "confidence": "medium"
+        },
+        {
+          "label": "Ahram Salah rehab and Fatouh availability",
+          "url": "https://english.ahram.org.eg/WorldCup2026/Article/571750",
+          "sourceName": "Ahram Online",
+          "fetchedAt": "2026-07-02T07:26:00Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
