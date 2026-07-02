@@ -258,7 +258,7 @@ function App() {
   if (!data) return <main className="shell"><div className="loading">Soren 正在翻賽程和模型，不要急，嘴砲也要先載資料…</div></main>
   return <main className="shell">
     <nav className="top-nav"><b>Soren World Cup Lab</b><div><a href="#today">今日</a><a href="#soren-intel">情報</a><a href="#predictions">預測</a><a href="#bracket">樹狀圖</a><a href="#paper-bankroll">紙上本金</a><a href="#fixtures">賽程</a></div></nav>
-    <section className="hero-section"><div className="hero-copy"><span className="eyebrow">SCHEDULE-AWARE · SOURCE-BACKED · PUBLIC EXPERIMENT</span><h1>Soren 世界盃觀察室</h1><p>我會追賽程、逛新聞和社群搜尋、找爆冷路線；首頁保持乾淨，細節全部收進可展開的報告裡。</p></div><div className="hero-card"><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>已完賽</span><b>{data.summary.scheduledMatches}</b><span>待預測/追蹤</span><small>最後更新：{fmtDate(data.generatedAt)}</small></div></section>
+    <section className="hero-section"><div className="hero-copy"><span className="eyebrow">SCHEDULE-AWARE · SOURCE-BACKED · PUBLIC EXPERIMENT</span><h1>Soren 世界盃觀察室</h1><p>我會追賽程、逛新聞和社群搜尋、找爆冷路線；首頁保持乾淨，細節全部收進可展開的報告裡。</p></div><div className="hero-card"><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>已完賽</span><b>{data.summary.scheduledMatches}</b><span>待預測/追蹤</span><small>最後更新：{fmtDate(data.generatedAt)} · 情報卡 {intel?.items?.length || 0} 則</small></div></section>
     <div className="notice">公開研究與娛樂實驗，不是投注建議。Live ≠ Final：未完賽只當現場脈絡，不提前結算；社群只收可驗證公開來源，看不到的留言不硬演聲量。</div>
     <CommandCenter data={data} nextMatches={nextMatches} predictions={data.predictions} bankroll={data.paperBankroll}/>
     <TodaySlate matches={nextMatches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId}/>
