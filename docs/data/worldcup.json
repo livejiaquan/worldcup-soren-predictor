@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T01:59:53.375Z",
+  "generatedAt": "2026-07-02T02:16:15.199Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,8 +7,8 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 81,
-    "scheduledMatches": 23,
+    "finishedMatches": 82,
+    "scheduledMatches": 22,
     "nextWindow": [
       "m084",
       "m083",
@@ -213,13 +213,13 @@
       {
         "team": "Bosnia & Herzegovina",
         "group": "Group B",
-        "played": 3,
+        "played": 4,
         "won": 1,
         "drawn": 1,
-        "lost": 1,
+        "lost": 2,
         "goalsFor": 5,
-        "goalsAgainst": 6,
-        "goalDiff": -1,
+        "goalsAgainst": 8,
+        "goalDiff": -3,
         "points": 4
       },
       {
@@ -289,14 +289,14 @@
       {
         "team": "USA",
         "group": "Group D",
-        "played": 3,
-        "won": 2,
+        "played": 4,
+        "won": 3,
         "drawn": 0,
         "lost": 1,
-        "goalsFor": 8,
+        "goalsFor": 10,
         "goalsAgainst": 4,
-        "goalDiff": 4,
-        "points": 6
+        "goalDiff": 6,
+        "points": 9
       },
       {
         "team": "Paraguay",
@@ -2217,8 +2217,11 @@
       "team1": "USA",
       "team2": "Bosnia & Herzegovina",
       "venue": "San Francisco Bay Area (Santa Clara)",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -2637,57 +2640,57 @@
     },
     "m007": {
       "pick": "Canada",
-      "confidence": 0.610355840074333,
+      "confidence": 0.641232959056493,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.5473841840013727,
-        "draw": 0.25507416573592306,
-        "away": 0.19754165026270437
+        "home": 0.5708672112409947,
+        "draw": 0.24918639871522374,
+        "away": 0.1799463900437816
       },
       "expectedGoals": [
-        1.56,
-        0.82
+        1.6,
+        0.78
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場中等站 Canada，但平局還有 26%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Canada，但平局還有 25%；別急著開香檳，足球最會打臉。",
         "story": "Canada 底牌比較硬；Bosnia & Herzegovina 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "5.7",
+            "value": "7.8",
             "note": "Canada 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.56 : 0.82",
+            "value": "1.60 : 0.78",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "20%",
+            "value": "18%",
             "note": "Bosnia & Herzegovina 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Canada 76.6；Bosnia & Herzegovina 70.9",
-        "預期進球 1.56 : 0.82，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 5.7 分，我暫時站 Canada"
+        "底牌分：Canada 76.6；Bosnia & Herzegovina 68.7",
+        "預期進球 1.60 : 0.78，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 7.8 分，我暫時站 Canada"
       ]
     },
     "m019": {
       "pick": "USA",
-      "confidence": 0.7517598860167348,
+      "confidence": 0.777777804808268,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6556356441818092,
-        "draw": 0.22275227738596856,
-        "away": 0.12161207843222224
+        "home": 0.6757540666751375,
+        "draw": 0.21529041183378303,
+        "away": 0.1089555214910795
       },
       "expectedGoals": [
-        1.77,
-        0.61
+        1.82,
+        0.56
       ],
       "score": "1-0",
       "commentary": {
@@ -2696,25 +2699,25 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "15.9",
+            "value": "17.9",
             "note": "USA 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.77 : 0.61",
+            "value": "1.82 : 0.56",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "12%",
+            "value": "11%",
             "note": "Paraguay 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：USA 85.9；Paraguay 70.0",
-        "預期進球 1.77 : 0.61，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 15.9 分，我暫時站 USA"
+        "底牌分：USA 87.9；Paraguay 70.0",
+        "預期進球 1.82 : 0.56，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 17.9 分，我暫時站 USA"
       ]
     },
     "m008": {
@@ -3580,43 +3583,43 @@
     },
     "m009": {
       "pick": "Switzerland",
-      "confidence": 0.7385844610633998,
+      "confidence": 0.7677634008459006,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6454719220428442,
-        "draw": 0.2263480393618429,
-        "away": 0.128180038595313
+        "home": 0.6680028422175655,
+        "draw": 0.21821964127784174,
+        "away": 0.11377751650459281
       },
       "expectedGoals": [
-        1.75,
-        0.63
+        1.8,
+        0.58
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Switzerland，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Switzerland，但平局還有 22%；別急著開香檳，足球最會打臉。",
         "story": "Switzerland 底牌比較硬；Bosnia & Herzegovina 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "14.9",
+            "value": "17.1",
             "note": "Switzerland 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.75 : 0.63",
+            "value": "1.80 : 0.58",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "13%",
+            "value": "11%",
             "note": "Bosnia & Herzegovina 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Switzerland 85.8；Bosnia & Herzegovina 70.9",
-        "預期進球 1.75 : 0.63，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 14.9 分，我暫時站 Switzerland"
+        "底牌分：Switzerland 85.8；Bosnia & Herzegovina 68.7",
+        "預期進球 1.80 : 0.58，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 17.1 分，我暫時站 Switzerland"
       ]
     },
     "m010": {
@@ -3703,43 +3706,43 @@
     },
     "m021": {
       "pick": "USA",
-      "confidence": 0.7041039090260146,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.7308695249133064,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6189490920749611,
-        "draw": 0.23518413224481957,
-        "away": 0.14586677568021927
+        "home": 0.6395279894115237,
+        "draw": 0.22839699618685677,
+        "away": 0.1320750144016196
       },
       "expectedGoals": [
-        1.7,
-        0.68
+        1.74,
+        0.64
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場中等站 USA，但平局還有 24%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 USA，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "story": "USA 底牌比較硬；Australia 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "12.4",
+            "value": "14.3",
             "note": "USA 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.70 : 0.68",
+            "value": "1.74 : 0.64",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "15%",
+            "value": "13%",
             "note": "Australia 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：USA 85.9；Australia 73.6",
-        "預期進球 1.70 : 0.68，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 12.4 分，我暫時站 USA"
+        "底牌分：USA 87.9；Australia 73.6",
+        "預期進球 1.74 : 0.64，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 14.3 分，我暫時站 USA"
       ]
     },
     "m015": {
@@ -4564,16 +4567,16 @@
     },
     "m012": {
       "pick": "Bosnia & Herzegovina",
-      "confidence": 0.6603692012613455,
+      "confidence": 0.6296645637967362,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.5854641408418273,
-        "draw": 0.24521094286922418,
-        "away": 0.16932491628894852
+        "home": 0.5620589973824163,
+        "draw": 0.2514684853147225,
+        "away": 0.18647251730286127
       },
       "expectedGoals": [
-        1.63,
-        0.75
+        1.59,
+        0.79
       ],
       "score": "1-0",
       "commentary": {
@@ -4582,25 +4585,25 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "9.2",
+            "value": "7.0",
             "note": "Bosnia & Herzegovina 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.63 : 0.75",
+            "value": "1.59 : 0.79",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "17%",
+            "value": "19%",
             "note": "Qatar 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Bosnia & Herzegovina 70.9；Qatar 61.7",
-        "預期進球 1.63 : 0.75，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 9.2 分，我暫時站 Bosnia & Herzegovina"
+        "底牌分：Bosnia & Herzegovina 68.7；Qatar 61.7",
+        "預期進球 1.59 : 0.79，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 7.0 分，我暫時站 Bosnia & Herzegovina"
       ]
     },
     "m017": {
@@ -4933,43 +4936,43 @@
     },
     "m023": {
       "pick": "USA",
-      "confidence": 0.6532824027365871,
+      "confidence": 0.6806613951825341,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.17323311559158774,
-        "draw": 0.24671233903292678,
-        "away": 0.5800545453754855
+        "home": 0.15829909515981386,
+        "draw": 0.24072189440688063,
+        "away": 0.6009790104333056
       },
       "expectedGoals": [
-        0.76,
-        1.62
+        0.72,
+        1.66
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場中等站 USA，但平局還有 25%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 USA，但平局還有 24%；別急著開香檳，足球最會打臉。",
         "story": "USA 底牌比較硬；Turkey 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "11.6",
+            "value": "13.5",
             "note": "USA 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.76 : 1.62",
+            "value": "0.72 : 1.66",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "17%",
+            "value": "16%",
             "note": "Turkey 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Turkey 74.4；USA 85.9",
-        "預期進球 0.76 : 1.62，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 11.6 分，我暫時站 USA"
+        "底牌分：Turkey 74.4；USA 87.9",
+        "預期進球 0.72 : 1.66，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 13.5 分，我暫時站 USA"
       ]
     },
     "m024": {
@@ -5876,43 +5879,43 @@
     },
     "m081": {
       "pick": "USA",
-      "confidence": 0.7400784912125061,
+      "confidence": 0.794930114272623,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6466236275408739,
-        "draw": 0.2259464319828757,
-        "away": 0.12742994047625036
+        "home": 0.6890523002454519,
+        "draw": 0.21010547743782387,
+        "away": 0.10084222231672417
       },
       "expectedGoals": [
-        1.76,
-        0.62
+        1.84,
+        0.54
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 USA，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 USA，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "story": "USA 底牌比較硬；Bosnia & Herzegovina 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "15.0",
+            "value": "19.2",
             "note": "USA 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.76 : 0.62",
+            "value": "1.84 : 0.54",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "13%",
+            "value": "10%",
             "note": "Bosnia & Herzegovina 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：USA 85.9；Bosnia & Herzegovina 70.9",
-        "預期進球 1.76 : 0.62，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 15.0 分，我暫時站 USA"
+        "底牌分：USA 87.9；Bosnia & Herzegovina 68.7",
+        "預期進球 1.84 : 0.54，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 19.2 分，我暫時站 USA"
       ]
     },
     "m084": {
@@ -6800,23 +6803,23 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 71,
-      "correct": 53,
+      "points": 72,
+      "correct": 54,
       "exact": 9,
-      "total": 81,
+      "total": 82,
       "rank": 1,
-      "accuracy": 0.654320987654321
+      "accuracy": 0.6585365853658537
     },
     {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 67,
-      "correct": 49,
+      "points": 68,
+      "correct": 50,
       "exact": 8,
-      "total": 81,
+      "total": 82,
       "rank": 2,
-      "accuracy": 0.6049382716049383
+      "accuracy": 0.6097560975609756
     },
     {
       "id": "draw",
@@ -6825,9 +6828,9 @@
       "points": 44,
       "correct": 22,
       "exact": 11,
-      "total": 81,
+      "total": 82,
       "rank": 3,
-      "accuracy": 0.2716049382716049
+      "accuracy": 0.2682926829268293
     }
   ],
   "paperBankroll": {
@@ -6835,36 +6838,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 195.61,
+    "bankroll": 205.53,
     "openStake": 36.57,
-    "totalValue": 195.61,
-    "roi": 0.956,
+    "totalValue": 205.53,
+    "roi": 1.055,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m066",
-        "kickoffUtc": "2026-06-27T23:30:00.000Z",
-        "stage": "小組 K · Matchday 17",
-        "team1": "Democratic Republic of the Congo",
-        "team2": "Uzbekistan",
-        "pick": "Democratic Republic of the Congo",
-        "outcome": "home",
-        "stake": 8,
-        "decimalOdds": 2.47,
-        "edge": 0.48,
-        "modelProbability": 0.599,
-        "marketProxyProbability": 0.38,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-06-27T22:30:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Democratic Republic of the Congo，但平局還有 24%；別急著開香檳，足球最會打臉。",
-        "status": "won",
-        "score": [
-          3,
-          1
-        ],
-        "profit": 11.76
-      },
       {
         "matchId": "m059",
         "kickoffUtc": "2026-06-28T02:00:00.000Z",
@@ -7128,9 +7107,7 @@
           2
         ],
         "profit": 10.08
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m081",
         "kickoffUtc": "2026-07-02T00:00:00.000Z",
@@ -7141,15 +7118,22 @@
         "outcome": "home",
         "stake": 8,
         "decimalOdds": 2.24,
-        "edge": 0.448,
-        "modelProbability": 0.647,
+        "edge": 0.543,
+        "modelProbability": 0.689,
         "marketProxyProbability": 0.42,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-01T23:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 USA，但平局還有 23%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "reason": "我這場偏明確站 USA，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          2,
+          0
+        ],
+        "profit": 9.92
+      }
+    ],
+    "pending": [
       {
         "matchId": "m084",
         "kickoffUtc": "2026-07-02T19:00:00.000Z",
@@ -7225,6 +7209,25 @@
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 Egypt，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "pending"
+      },
+      {
+        "matchId": "m086",
+        "kickoffUtc": "2026-07-03T22:00:00.000Z",
+        "stage": "Round of 32",
+        "team1": "Argentina",
+        "team2": "Cape Verde",
+        "pick": "Argentina",
+        "outcome": "home",
+        "stake": 8,
+        "decimalOdds": 1.78,
+        "edge": 0.487,
+        "modelProbability": 0.835,
+        "marketProxyProbability": 0.529,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-03T21:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場偏明確站 Argentina，但平局還有 13%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
       }
     ],
     "watchlist": [
@@ -7267,25 +7270,6 @@
         "status": "watchlist"
       },
       {
-        "matchId": "m086",
-        "kickoffUtc": "2026-07-03T22:00:00.000Z",
-        "stage": "Round of 32",
-        "team1": "Argentina",
-        "team2": "Cape Verde",
-        "pick": "Argentina",
-        "outcome": "home",
-        "stake": 8,
-        "decimalOdds": 1.78,
-        "edge": 0.487,
-        "modelProbability": 0.835,
-        "marketProxyProbability": 0.529,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-03T21:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 Argentina，但平局還有 13%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
         "matchId": "m091",
         "kickoffUtc": "2026-07-05T20:00:00.000Z",
         "stage": "Round of 16",
@@ -7321,6 +7305,25 @@
         "lockedAtUtc": "2026-07-04T00:30:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場中等站 Colombia，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m090",
+        "kickoffUtc": "2026-07-04T17:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "Canada",
+        "team2": "Morocco",
+        "pick": "Canada",
+        "outcome": "home",
+        "stake": 1.97,
+        "decimalOdds": 2.92,
+        "edge": 0.089,
+        "modelProbability": 0.373,
+        "marketProxyProbability": 0.322,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-04T16:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 Canada，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
