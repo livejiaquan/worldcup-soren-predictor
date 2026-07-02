@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T05:09:09Z",
-  "status": "Matchday scout micro-refresh: m084/m085 gained official FIFA/AP coach-angle rails; m086 gained AFA/Al Jazeera context; m087 gained Ghana FA camp movement; m091 gained FIFA preview and Brazil-Norway hoodoo context; m092 gained FOX public Mexico-England actualization while local data still says W80.",
-  "headline": "Soren scout: 7/2 再補官方賽前聲音與淘汰賽敘事——Spain-Austria 教練口徑、Swiss-Algeria 師徒線、Ghana 轉場、Brazil-Norway 心魔、Mexico-England 仍先標 reported。",
+  "generatedAt": "2026-07-02T06:18:00Z",
+  "status": "Scout micro-refresh: parent-verified Opta/Sports Mole/SI rails for Portugal-Croatia and Spain-Austria, AP Koné injury for Canada-Morocco, ESPN Paquetá availability watch for Brazil-Norway, and USA Today France-Paraguay mismatch framing.",
+  "headline": "Soren scout: 7/2 早場補刀——Portugal-Croatia 與 Spain-Austria 加上公開數據/先發觀察；Canada 少 Koné，Brazil 等 Paquetá，France 也別把 Paraguay 當路標。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5954,8 +5954,8 @@
     {
       "matchId": "m083",
       "match": "Portugal vs Croatia",
-      "sourceType": "reported/bracket-actualization + tactical/context watch + paper-market watch + source alignment",
-      "title": "Portugal-Croatia 補 SI 可能先發：Ronaldo-Modrić 是海報，真正麻煩是誰還能連跑 90 分鐘。",
+      "sourceType": "official FIFA preview + reported tactical/probability/lineup watch + paper-market watch + source alignment",
+      "title": "Portugal-Croatia 補 Opta/Sports Mole：Ronaldo-Modrić 是情懷，Gvardiol 回位與體能才是刀口。",
       "sorenTake": "Sports Illustrated 的可見頁面聚焦 Portugal predicted lineup，指出 Roberto Martínez 因未拿下小組第一被迫直接撞 Croatia。這是 lineup-watch，不是 confirmed XI；但對 Portugal 來說，中場腿力比海報姓名更像淘汰賽警報器。",
       "signals": [
         "FOX Sports m083 頁面列 2K vs 2L 與 2026-07-02T23:00Z 賽程窗口。",
@@ -5971,7 +5971,9 @@
         "WhoScored Portugal-Croatia statistical preview 可連線，meta 明示 injuries/suspensions、probable line-ups、facts and odds；本站保守列為 availability/lineup-watch。",
         "ESPN Portugal-Croatia odds page metadata 可讀，提供 odds/spread/score prediction；本站只作 paper-market reference，不當下注建議，也不把盤口當戰術事實。",
         "Sports Illustrated 可見 metadata 顯示 Portugal predicted lineup vs Croatia，且提到未拿下 Group K 讓 Portugal 首輪淘汰賽更硬。",
-        "此新增來源只當 reported/lineup-watch；正式先發仍等 FIFA/team source 或 match centre。"
+        "此新增來源只當 reported/lineup-watch；正式先發仍等 FIFA/team source 或 match centre。",
+        "06:18Z 父層 metadata probe 核對 Opta/The Analyst Portugal-Croatia preview 可連線；頁面是賽前預測/數據預覽，適合作公開機率與節奏參考，不等於本站模型公式。",
+        "Sports Mole Portugal-Croatia preview 可連線，標題/描述明示 team news and possible lineups；其中 Gvardiol 回左閘屬 reported expected-XI watch，正式先發仍等官方。"
       ],
       "sources": [
         {
@@ -6085,6 +6087,22 @@
           "fetchedAt": "2026-07-02T02:55:49Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "Opta Portugal-Croatia prediction preview",
+          "url": "https://theanalyst.com/articles/portugal-vs-croatia-prediction-world-cup-2026-match-preview",
+          "sourceName": "The Analyst / Opta",
+          "fetchedAt": "2026-07-02T06:18:00Z",
+          "claimType": "reported/tactical-probability",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Mole Portugal-Croatia team news",
+          "url": "https://www.sportsmole.co.uk/football/portugal/world-cup-2026/preview/portugal-vs-croatia-prediction-team-news-lineups_600433.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-02T06:18:00Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -6093,7 +6111,7 @@
       "matchId": "m084",
       "match": "Spain vs Austria",
       "sourceType": "official match centre + official preview + reported tactical/probability/lineup watch + source alignment",
-      "title": "Spain-Austria 補 FIFA 教練口徑：Spain 要扛高期待，Austria 自認大冷但不是來當背景板。",
+      "title": "Spain-Austria 補 Opta/SI：Spain 是大熱，但 Arnautović 狀態讓這場不只是一張海報。",
       "sorenTake": "De la Fuente 的壓力是「應該贏」；Rangnick 的禮物是「沒人指望我們」。淘汰賽最怕這種劇本：強隊一旦把控球踢成儀式感，underdog 只要咬住 20 分鐘，洛杉磯就會開始聞到冷門味。",
       "signals": [
         "FIFA Uruguay-Spain 報導指出 Spain 將面對 Group J runners-up，這是比一般媒體投影更硬的官方脈絡。",
@@ -6115,7 +6133,9 @@
         "FIFA 7/2 matchday preview 把 Spain-Austria 列入 Ronaldo/Modric/Yamal 焦點日，確認這是本日核心淘汰賽敘事之一。",
         "The Standard 可見標題/描述同時提供 team news、odds、H2H 與轉播脈絡；屬媒體預覽與市場參考，不是正式先發。",
         "FIFA 7/1 搜尋索引顯示 Rangnick 承認 Austria 對 defending European champions Spain 是 massive underdogs，但要求球隊在 Round of 32 繼續有 bite；這是官方 MD-1 心態/戰術語境，不是首發確認。",
-        "FIFA 7/1 搜尋索引顯示 De la Fuente 在 Los Angeles Stadium MD-1 記者會談到 Spain 必須 live up to high expectations；Spain 的風險不只是 Austria，也包括「高期待」本身。"
+        "FIFA 7/1 搜尋索引顯示 De la Fuente 在 Los Angeles Stadium MD-1 記者會談到 Spain 必須 live up to high expectations；Spain 的風險不只是 Austria，也包括「高期待」本身。",
+        "Opta/The Analyst Spain-Austria preview 可連線，公開預測把焦點放在 Austria upset path；這是外部模型/數據語境，不寫成本站勝率來源。",
+        "SI Spain-Austria preview 可連線，標題/描述明示 predictions and lineups；Arnautović slight knock 只保留為 reported availability-watch，正式先發未確認。"
       ],
       "sources": [
         {
@@ -6293,6 +6313,14 @@
           "fetchedAt": "2026-07-02T05:09:09Z",
           "claimType": "confirmed/coach-quote",
           "confidence": "high"
+        },
+        {
+          "label": "SI Spain-Austria preview and lineups",
+          "url": "https://www.si.com/soccer/spain-vs-austria-world-cup-preview-predictions-and-lineups-7-2-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-07-02T06:18:00Z",
+          "claimType": "reported/availability-lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -6870,8 +6898,8 @@
     {
       "matchId": "m090",
       "match": "Canada vs Morocco",
-      "sourceType": "official pathway + media confirmation + data/form context + lineup tracker + source alignment",
-      "title": "Canada-Morocco 補 FIFA R16 preview：地主熱度很吵，Morocco 的點球逃生也很吵。",
+      "sourceType": "official pathway + media confirmation + data/form context + injury/lineup tracker + source alignment",
+      "title": "Canada-Morocco 補 AP Koné 重傷：地主氣勢還在，但中場少一根鋼筋。",
       "sorenTake": "FIFA 已有 Canada v Morocco Round-of-16 preview 入口，補上官方級 match/team-news/venue anchor；Guardian 的 Morocco 淘汰 Netherlands liveblog則補足 Morocco 晉級情緒與壓力。地主不是免死金牌，點球倖存也不是免稅券。",
       "signals": [
         "CBC metadata 直接寫明 Canada 將在 Round of 16 對 Morocco，且 Morocco 於 Netherlands 戰後經點球 3-2 晉級；這是可讀媒體確認，不是模型猜測。",
@@ -6882,7 +6910,8 @@
         "Opta Analyst South Africa-Canada stats 頁可讀 metadata：Eustaquio 補時絕殺送 Canada 進 16 強；這補上地主的真實晉級方式，不是只喊主場光環。",
         "Al Jazeera Morocco-Netherlands 報導 metadata 指向 Morocco 先落後再靠點球淘汰 Netherlands；這是體能、心理與點球韌性的公開脈絡。",
         "FIFA Canada-Morocco preview 可見路徑對應 Round of 16，作為官方 preview / team-news / fixture anchor。",
-        "Guardian Netherlands-Morocco liveblog 可見標題描述 Morocco 點球淘汰 Netherlands，補足 Morocco 進入本場的狀態與心理背景。"
+        "Guardian Netherlands-Morocco liveblog 可見標題描述 Morocco 點球淘汰 Netherlands，補足 Morocco 進入本場的狀態與心理背景。",
+        "AP 報導 Canada 中場 Ismaël Koné 因對 Qatar 時左脛骨/腓骨骨折已手術；這是 knockout run 的實質缺口，不只是賽前噪音。"
       ],
       "sources": [
         {
@@ -6956,6 +6985,14 @@
           "fetchedAt": "2026-07-02T02:55:49Z",
           "claimType": "context/advancement-liveblog",
           "confidence": "high"
+        },
+        {
+          "label": "AP Koné broken-leg surgery report",
+          "url": "https://apnews.com/article/kone-broken-leg-world-cup-666485d7a4f283a2ee9e3c666bc0b9d5",
+          "sourceName": "Associated Press",
+          "fetchedAt": "2026-07-02T06:18:00Z",
+          "claimType": "confirmed/injury",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6964,7 +7001,7 @@
       "matchId": "m089",
       "match": "Paraguay vs France",
       "sourceType": "official pathway + official training + data/form context + live trackers + source alignment",
-      "title": "Paraguay-France 補 FIFA R16 preview 與 Al Jazeera upset context：France 有 Mbappé，Paraguay 有把 Germany 拖下水的前科。",
+      "title": "Paraguay-France 補 USA Today mismatch framing：France 有排名碾壓，Paraguay 有專門拆劇本的履歷。",
       "sorenTake": "FIFA Paraguay-France preview 補上官方 Round-of-16 anchor；Al Jazeera 則把 Paraguay 點球爆冷 Germany 的背景釘住。France 是大刀，但 Paraguay 不是訓練用木樁。",
       "signals": [
         "FIFA France-Sweden review URL 父層核可連線；搜尋片段指出 France 3-0 Sweden 後將在 Philadelphia 對 Paraguay，並提到 Mbappé 淘汰賽進球脈絡。",
@@ -6975,7 +7012,8 @@
         "APF 官方頁可讀 metadata：Paraguay 淘汰 Germany 後已在 Philadelphia 恢復訓練，目標轉向 16 強對 France；這是官方備戰/訓練訊號，不是先發確認。",
         "Opta Analyst France-Sweden stats 頁可讀 metadata：Mbappé 重新開火、France 3-0 Sweden；作 France 近況與火力脈絡，不把公開模型/數據當本站底層配方。",
         "FIFA Paraguay-France preview 可見路徑對應 Round of 16，作為官方 preview / team-news / bracket-path anchor。",
-        "Al Jazeera 賽後報導把 Paraguay shock Germany in shootout 的 upset context 補進本場；這是比單看排名更重要的心理/戰術警訊。"
+        "Al Jazeera 賽後報導把 Paraguay shock Germany in shootout 的 upset context 補進本場；這是比單看排名更重要的心理/戰術警訊。",
+        "USA Today France-Paraguay R16 preview 可連線，將此戰描述為排名落差明顯的淘汰賽；可作公共敘事參考，不等於保送 France。"
       ],
       "sources": [
         {
@@ -7049,6 +7087,14 @@
           "fetchedAt": "2026-07-02T02:55:49Z",
           "claimType": "context/advancement-report",
           "confidence": "high"
+        },
+        {
+          "label": "USA Today France-Paraguay R16 preview",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/06/30/france-paraguay-world-cup-round-of-16-time-date-tv/90761001007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-07-02T06:18:00Z",
+          "claimType": "reported/media-preview",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -7056,8 +7102,8 @@
     {
       "matchId": "m091",
       "match": "Brazil vs Norway",
-      "sourceType": "official pathway + credible live reports + preview/market watch + source alignment",
-      "title": "Brazil-Norway 補 FIFA preview 與「從未贏過 Norway」心魔：桑巴要先打掉歷史噪音。",
+      "sourceType": "official pathway + credible live reports + preview/market/injury watch + source alignment",
+      "title": "Brazil-Norway 補 ESPN Paquetá 傷情：Brazil 不只打 Norway 心魔，還要補中場齒輪。",
       "sorenTake": "Brazil 是大牌，Norway 是針。FIFA preview 給了官方賽事入口，OneFootball 的 head-to-head 迷因則提醒：Haaland 不需要整場統治，只要把 Brazil 的焦躁拖到最後半小時，這場就會從豪門表演變成心理測驗。",
       "signals": [
         "Norges Fotballforbund 頁面 metadata 可讀，標題為 16 強先發，並由搜尋片段提供 Nusa/Haaland 進球、Norway 2-1 Ivory Coast、下一戰 Brazil 的脈絡。",
@@ -7069,7 +7115,8 @@
         "Olympics.com Brazil-Norway preview 搜尋/metadata 指向賽程、可能先發與觀賽資訊；先標 credible preview / lineup-watch，不當 confirmed XI。",
         "USA Today 可見標題確認 Brazil vs Norway Round-of-16 時間與對戰看點；屬 credible media preview / fixture actualization。",
         "FIFA 搜尋索引顯示 Brazil-Norway 官方 Round of 16 preview 已上線，提供 New York New Jersey Stadium 賽事、team news、轉播與票務入口。",
-        "OneFootball 6/30 以「Brazil have never beaten Norway」包裝歷史對戰心魔；作為 public narrative / H2H context 使用，不能替代當前戰力或首發資訊。"
+        "OneFootball 6/30 以「Brazil have never beaten Norway」包裝歷史對戰心魔；作為 public narrative / H2H context 使用，不能替代當前戰力或首發資訊。",
+        "ESPN 報導 Lucas Paquetá 正接受 hamstring intensive treatment，希望能再戰世界盃；對 Norway 戰先列 availability-watch，不硬寫成缺陣或復出。"
       ],
       "sources": [
         {
@@ -7151,6 +7198,14 @@
           "fetchedAt": "2026-07-02T05:09:09Z",
           "claimType": "context/public-narrative",
           "confidence": "medium"
+        },
+        {
+          "label": "ESPN Paquetá hamstring treatment report",
+          "url": "https://www.espn.com/soccer/story/_/id/49234575/brazil-lucas-paqueta-injury-recovery-world-cup-2026",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-02T06:18:00Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
