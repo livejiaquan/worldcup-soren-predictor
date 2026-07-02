@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-02T02:55:49Z",
+  "generatedAt": "2026-07-02T03:59:39Z",
   "status": "Matchday R32/R16 source alignment: m083/m084/m085 gained fresh public preview-lineup/odds rails; m087 gained Colombia official training + FotMob availability; m089/m090/m091 gained FIFA/credible R16 preview anchors; m092 now has official/credible England-to-Mexico actualization while local match data still says W80.",
   "headline": "Soren scout: 7/2 淘汰賽前補官方預覽、lineup-watch、可見市場脈絡；Mexico-England 公開來源已成形，但資料未收口前仍標 W80。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
@@ -6446,9 +6446,9 @@
     {
       "matchId": "m088",
       "match": "Australia vs Egypt",
-      "sourceType": "official match hub + official FIFA match-centre + reported injury/lineup watch + odds reference + bracket context + source alignment",
-      "title": "Australia-Egypt 補 Squawka lineup-watch：Salah 回歸訓練是大字報，Australia 的換人邏輯才是暗線。",
-      "sorenTake": "Squawka 的可見頁面把 Australia-Egypt 包成 team news + predicted lineups，與既有 FIFA/Socceroos/Salah 傷情線互補。這不是正式名單；只是提醒：埃及看 Salah，澳洲看 Popovic 會不會把 Paraguay 戰的調整再翻回來。",
+      "sourceType": "official match hub + official FIFA match-centre + reported injury/lineup watch + odds reference + bracket context + revenge-context refresh",
+      "title": "Australia-Egypt 補 Guardian/Nine：Salah 是主燈，Socceroos 的復仇線別被剪掉。",
+      "sorenTake": "Guardian 補上 Australia 對 Egypt 的東京奧運舊傷與復仇情緒，Nine 則把 Salah 傷情/澳洲自信放進賽前框架。Soren 翻譯：Egypt 有星味，Australia 有疤；疤不會進球，但會讓鏟球多半拍。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
         "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
@@ -6462,7 +6462,9 @@
         "ESPN odds page metadata now gives a public Australia-Egypt market reference; Soren can use it only for PAPER simulation context, not betting advice or a real-money flow.",
         "Sports Mole page metadata frames a predicted Australia XI around Lucas Herrington; keep it as reported lineup-watch until official team sheets land.",
         "Flashscore metadata says Salah resumed part of Egypt training while recovering from a hamstring strain; treat as availability-watch, not a confirmed 90-minute green light.",
-        "Squawka 可見描述提供 Australia vs Egypt team news and predicted lineups；與 Sports Mole 預測陣容互為外部 lineup-watch。"
+        "Squawka 可見描述提供 Australia vs Egypt team news and predicted lineups；與 Sports Mole 預測陣容互為外部 lineup-watch。",
+        "Guardian 6/29 feature 以東京奧運對 Egypt 失利作為 Socceroos motivation context，並明確說明這是 last-32 前的心理/敘事線，不等於戰術或先發確認。",
+        "Nine 可見 metadata 把焦點放在 Salah injury concern、Marmoush threat 與澳洲球員信心；作 mainstream media availability/context，不提升為 confirmed XI。"
       ],
       "sources": [
         {
@@ -6559,6 +6561,22 @@
           "sourceName": "Squawka",
           "fetchedAt": "2026-07-02T02:55:49Z",
           "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Guardian Australia-Egypt revenge context feature",
+          "url": "https://www.theguardian.com/football/2026/jun/29/socceroos-australia-egypt-world-cup-last-32-game",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-02T03:59:39Z",
+          "claimType": "context/motivation-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Nine Australia-Egypt preview: Salah injury concern and Socceroos confidence",
+          "url": "https://www.nine.com.au/sport/football/fifa-world-cup-socceroos-egypt-round-of-32-preview-mo-salah-injury-update-omar-marmoush-skill-team-lists-20260627-p60alg.html",
+          "sourceName": "Nine",
+          "fetchedAt": "2026-07-02T03:59:39Z",
+          "claimType": "reported/availability-context",
           "confidence": "medium"
         }
       ],
