@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T21:01:54Z",
-  "status": "postmatch correction: Spain-Austria 已由 ESPN public summary 確認 FT 3-0；m084 scouting card 從半場 live context 改為 final/postmatch。",
-  "headline": "Soren 補上 Spain-Austria 全場：3-0 不是刮痧，是 Spain 把 Austria 的爆冷劇本直接收進碎紙機。",
+  "generatedAt": "2026-07-02T22:08:48Z",
+  "status": "matchday micro-refresh: m083/m085 補近開球 live/lineup rails，m092 補 England 官方 camp/H2H；全部維持 public-source claim boundaries。",
+  "headline": "Soren 開賽前把護欄加滿：Portugal-Croatia 看即時陣容，Swiss-Algeria 看官方備戰，Mexico-England 先看恢復與歷史壓力。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5954,8 +5954,8 @@
     {
       "matchId": "m083",
       "match": "Portugal vs Croatia",
-      "sourceType": "official FIFA/HNS preview + BBC/Al Jazeera live-centre + reported tactical/probability/lineup watch + paper-market watch + source alignment",
-      "title": "Portugal-Croatia 補 FIFA Ronaldo/Modrić 終站敘事與 Livaković 訪談：海報很浪漫，門將與低失誤才是現實。",
+      "sourceType": "official FIFA/HNS preview + BBC/Olympics live-centre + reported tactical/probability/lineup watch + paper-market watch + source alignment",
+      "title": "Portugal-Croatia 補 Olympics live rail 與 Standard 首發/傷停頁：Ronaldo-Modrić 情懷很貴，但開球前先看真名單。",
       "sorenTake": "Ronaldo vs Modrić 會吸光鏡頭，但淘汰賽不是紀念賽。FIFA 的賽前敘事與 Livaković 訪談把壓力、經驗、門將穩定性拉到檯面；Soren 仍把公開 predicted XI 當線索，不把它包裝成官方先發。",
       "signals": [
         "FOX Sports m083 頁面列 2K vs 2L 與 2026-07-02T23:00Z 賽程窗口。",
@@ -5981,7 +5981,9 @@
         "BBC Portugal-Croatia live centre 可讀，提供 live text、score updates、match stats 與 head-to-head；本站用作臨場資訊入口，不提前宣稱 lineups。",
         "Al Jazeera 7/2 knockout-day page 可連線，將 Portugal-Croatia 放在當日淘汰賽與 Round-of-16 race 脈絡；可作 live/context rail，不提供官方先發確認。",
         "FIFA 官方賽前 feature 把 Portugal-Croatia 寫成 Ronaldo 或 Modrić 的世界盃旅程可能到站；這是敘事與壓力訊號，不是先發確認。",
-        "FIFA 另有 Livaković 專訪線索，補上 Croatia 更衣室/門將穩定性脈絡；Soren 只把它當球隊氣氛與大賽經驗參考。"
+        "FIFA 另有 Livaković 專訪線索，補上 Croatia 更衣室/門將穩定性脈絡；Soren 只把它當球隊氣氛與大賽經驗參考。",
+        "Olympics.com 近開球 live page 明列 Portugal vs Croatia R32 的 key stats、line-ups 與 play-by-play updates；這是公開 live rail，不是已確認賽果。",
+        "The Standard metadata 顯示 starting XI / confirmed team news / injury latest 頁面已開；Soren 把它當 reported lineup-watch，正式 XI 仍以 FIFA/隊方賽前名單為準。"
       ],
       "sources": [
         {
@@ -6175,6 +6177,22 @@
           "fetchedAt": "2026-07-02T13:10:29Z",
           "claimType": "context/official-interview",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Olympics.com Portugal-Croatia live updates",
+          "url": "https://www.olympics.com/en/news/fifa-world-cup-2026-portugal-vs-croatia-round-32-score-lineups-live-updates",
+          "sourceName": "Olympics.com",
+          "fetchedAt": "2026-07-02T22:08:48Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "Standard Portugal-Croatia starting XI/team news page",
+          "url": "https://www.standard.co.uk/sport/football/portugal-vs-croatia-lineups-starting-xi-confirmed-team-news-injury-latest-world-cup-2026-today-b1288498.html",
+          "sourceName": "The Standard",
+          "fetchedAt": "2026-07-02T22:08:48Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -6482,8 +6500,8 @@
     {
       "matchId": "m085",
       "match": "Switzerland vs Algeria",
-      "sourceType": "official FIFA/FAF match context + BBC live-centre + ESPN/GOAL projected-lineup watch + federation logistics + source alignment",
-      "title": "Switzerland-Algeria 補 ESPN 裁判/預測 XI 與 GOAL tactical rail：Petković 熟門熟路，但先發仍未官宣。",
+      "sourceType": "official FIFA/FAF/SFV match context + BBC live-centre + ESPN/GOAL projected-lineup watch + federation logistics + odds-reference + source alignment",
+      "title": "Switzerland-Algeria 補 Swiss FA/FAF 官方備戰與 CBS market rail：Petković 師徒線好看，但 Vancouver 先比誰少犯蠢。",
       "sorenTake": "FAF 抵達、BBC live rail 之外，ESPN 補上 Yael Falcón Pérez 執法與 projected XI，GOAL/ Sporting News 再把 Amoura availability 與預測陣容放到檯面。Soren 的底線不變：這些是 lineup-watch，不是官方名單；Petković 熟悉瑞士結構很麻煩，但鉛筆稿不能冒充石碑。",
       "signals": [
         "FOX Sports m085 頁面顯示 Switzerland vs 3E/3F/3G/3I/3J，時間為 2026-07-03T03:00Z / Vancouver。",
@@ -6510,7 +6528,10 @@
         "101 Great Goals 預覽提出 Widmer doubtful、Jaquez 可能代打以及 Amoura availability-watch；本站以 reported injury/lineup-watch 處理，不升格為官方醫療或先發。",
         "ESPN 7/2 match guide 已可直接核讀 Switzerland-Algeria 的 TV/live stream、BC Place、referee Yael Falcón Pérez 與 predicted line-ups；本站僅作 reported lineup/referee watch，不升格 official XI。",
         "GOAL Uganda preview metadata/body 可核讀 tactical/team-news framing，並提到 Amoura serious doubt 與 Mahrez/Aouar 角色線；屬媒體 availability/tactical watch，不是球隊醫療公告。",
-        "Sporting News 7/2 article metadata 可核讀 projected lineups / latest team news；適合當臨場交叉檢查入口，但 confirmed starters 仍等 FIFA/team sheets。"
+        "Sporting News 7/2 article metadata 可核讀 projected lineups / latest team news；適合當臨場交叉檢查入口，但 confirmed starters 仍等 FIFA/team sheets。",
+        "Swiss FA 7/2 官方文指出 Switzerland 對 Algeria 開始淘汰賽，Yakin 隊在 Vancouver 有機會寫歷史；這是隊方語境，不是戰術保證。",
+        "FAF 官方片段稱 Algeria 週三傍晚完成對 Switzerland 前最後訓練；可用作備戰/物流確認，不能延伸成先發已確認。",
+        "CBS Sports odds 頁提供公開 market/pick context；只列 paper simulation 參考，不當投注建議。"
       ],
       "sources": [
         {
@@ -6719,6 +6740,30 @@
           "sourceName": "Sporting News",
           "fetchedAt": "2026-07-02T14:22:25Z",
           "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Swiss FA Switzerland-Algeria knockout preview",
+          "url": "https://www.football.ch/sfv/nationalteams/a-team/news/maenner-nationalteam-die-schweiz-kann-geschichte-schreiben.aspx",
+          "sourceName": "Swiss FA / football.ch",
+          "fetchedAt": "2026-07-02T22:08:48Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "FAF Algeria final training before Switzerland",
+          "url": "https://www.faf.dz/coupe-du-monde-de-la-fifa-2026-suisse-algerie-ce-vendredi-a-04h00-les-verts-veulent-ecrire-lhistoire/",
+          "sourceName": "Fédération Algérienne de Football",
+          "fetchedAt": "2026-07-02T22:08:48Z",
+          "claimType": "confirmed/training-update",
+          "confidence": "high"
+        },
+        {
+          "label": "CBS Sports Switzerland-Algeria odds/prediction page",
+          "url": "https://www.cbssports.com/soccer/news/switzerland-algeria-odds-prediction-time-2026-world-cup-round-32-picks/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-07-02T22:08:48Z",
+          "claimType": "odds-reference",
           "confidence": "medium"
         }
       ],
@@ -7573,15 +7618,13 @@
     },
     {
       "matchId": "m092",
-      "match": "W79 vs W80",
-      "sourceType": "official/reported bracket-watch + public schedule context + source alignment",
-      "title": "M092 補 BBC Tuchel 與 ESPN odds：Mexico-England 外部敘事越來越實，但本地資料沒 actualize 前，Soren 仍不亂改門牌。",
+      "match": "Mexico vs England",
+      "sourceType": "official/reported bracket-actualization + England official camp/H2H context + BBC opponent briefing + public schedule/odds context",
+      "title": "Mexico-England 補 England 官方恢復日與 H2H：Azteca 熱鍋已開，Tuchel 不能只靠 Kane 兩腳救火。",
       "sorenTake": "BBC 已把 Tuchel 的 Mexico 賽前聲音與時差/觀賽話題寫出來，ESPN 也開了 Mexico-England odds 頁；外部世界基本在按 Mexico-England 準備。但 Soren 的公開卡仍守規矩：資料層一天叫 W79 vs W80，我就一天把它標成 bracket-actualization watch，免得比官方資料還愛演。",
       "signals": [
-        "Current public tournament data keeps M092 as W79 vs W80; this is a route slot, not a confirmed team matchup.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
-        "Kickoff target: 2026-07-06T00:00:00Z at Mexico City Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known.",
         "FIFA World Cup Suites page metadata/title 顯示 M92: Mexico vs England Suites / Jul 5；這是官方商務頁面的 bracket-actualization lead，但不是本地 worldcup.json 的直接欄位更新。",
         "BBC Sport preview metadata 寫明 England will face Mexico in the World Cup round of 16；本站先把它列為 credible reported opponent/preview，等資料層收口再做 team-specific deep dive。",
         "FIFA England-Congo DR review 為官方賽後來源，指向 England 進入下一輪；用於 W80 actualization lead。",
@@ -7589,7 +7632,12 @@
         "BBC Mexico explainer 可見描述明示 England will face Mexico in the World Cup round of 16；仍待本地資料 actualize 後再改 match label。",
         "FOX Sports 已發布 England vs Mexico Round of 16 explainer，包含 how to watch、favored side、晉級路線與球員焦點；在本地資料仍顯示 W80 時，只標 reported/bracket-actualization。",
         "BBC 7/2 文章 metadata 明示 England manager Thomas Tuchel 談 England 對 Mexico 的 last-16 比賽；可作可信 media/coach-context lead。",
-        "ESPN odds page metadata 顯示 Mexico vs England (Jul 5, 2026) odds/spread；只作紙上市場參考，不作投注建議，也不取代本地資料 actualization。"
+        "ESPN odds page metadata 顯示 Mexico vs England (Jul 5, 2026) odds/spread；只作紙上市場參考，不作投注建議，也不取代本地資料 actualization。",
+        "England Football 7/2 Three Lions Daily 指向 DR Congo 戰後休息恢復日；這是官方 camp rhythm，不等於傷停清單。",
+        "England Football 官方 H2H 文回顧 England-Mexico 交手；歷史素材可用來講壓力，但不能替 2026 實力差距背書。",
+        "BBC opponent briefing 已將 England 對手寫為 Mexico；本地 worldcup.json 也已 actualize 為 Mexico vs England，M092 不再只是 W79/W80 門牌。",
+        "Local worldcup.json now actualizes M092 as Mexico vs England at Mexico City Stadium; prior W79/W80 bracket-watch copy is retired for the public card.",
+        "FIFA/England/BBC external pages converge on Mexico-England; Soren can now scout the actual matchup while still keeping lineups and availability claim-bounded."
       ],
       "sources": [
         {
@@ -7625,11 +7673,11 @@
           "confidence": "high"
         },
         {
-          "label": "BBC Mexico opponent preview for England",
+          "label": "BBC Mexico opponent briefing for England",
           "url": "https://www.bbc.com/sport/football/articles/c8d25v111r6o",
           "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-02T01:55:42Z",
-          "claimType": "reported/bracket-actualization",
+          "fetchedAt": "2026-07-02T22:08:48Z",
+          "claimType": "reported/opponent-context",
           "confidence": "high"
         },
         {
@@ -7671,9 +7719,25 @@
           "fetchedAt": "2026-07-02T09:44:19Z",
           "claimType": "odds-reference",
           "confidence": "medium-high"
+        },
+        {
+          "label": "England Football Three Lions daily briefing",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/02/england-men-world-cup-2026-daily-briefing",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-02T22:08:48Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "England Football memorable meetings with Mexico",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/01/england-mexico-memorable-meetings-20260107",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-02T22:08:48Z",
+          "claimType": "confirmed/history-context",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m093",
