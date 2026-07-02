@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T15:56:56Z",
-  "status": "Matchday scout refreshed: AP confirmed Lamine Yamal is fit for full knockout minutes, while Opta/The Analyst rates Australia-Egypt the closest R32 tie; official starters still pending.",
-  "headline": "Soren 補上 Spain-Austria 的 AP Yamal fitness 與 Australia-Egypt 的 Opta closest-tie 模擬：巨星可以上滿，但劇本還是要防翻車。",
+  "generatedAt": "2026-07-02T17:23:32Z",
+  "status": "near-kickoff / next-day scout refresh: Spain-Austria、Portugal-Croatia 已有官方與 live-centre 護欄；本輪加強 Australia-Egypt 的澳洲本地賽前脈絡。",
+  "headline": "Soren 補上 Australia-Egypt 的 ABC/SBS 淘汰賽壓力與 Guardian 點球準備：Salah 是主菜，但十二碼劇本先別裝睡。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -6719,8 +6719,8 @@
       "matchId": "m088",
       "match": "Australia vs Egypt",
       "sourceType": "official match hub + official FIFA match-centre + BBC/reported injury watch + odds reference + bracket context + tactical/motivation refresh + source alignment + Opta public probability context",
-      "title": "Australia-Egypt 補 Opta closest-tie：Salah 是招牌，但這場更像 54/46 的刀口，不是巨星巡演。",
-      "sorenTake": "The Analyst/Opta 的 25,000 次賽前模擬只給 Egypt 38.6% 常規時間勝率、整體晉級 54.0%，Australia 仍有 46.0% 晉級路徑。Salah fitness 還是頭條，但這場真正麻煩的是：紙面強點沒有大到能把澳洲的紀律和定位球風險直接消音。",
+      "title": "Australia-Egypt 補 ABC/SBS 與 Guardian 點球準備：Salah 是主菜，但 Socceroos 的生死局不是觀光團。",
+      "sorenTake": "Australia-Egypt 已經不是「Salah 能不能跑」單題考卷：ABC/SBS 把 Socceroos 的 no-tomorrow 壓力講清楚，Guardian 又補上 Jedinak 點球準備。Soren 的結論：這場常規時間像刀口，若拖進十二碼，心理與例行程序會比名氣更吵。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
         "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
@@ -6743,7 +6743,10 @@
         "Socceroos 官方引述 Alessandro Circati：Australia 想在對 Egypt 的淘汰賽證明自己能做什麼；這是隊內情緒/自信訊號，不等於戰術或先發確認。",
         "埃及足協頁面確認 Uruguay 裁判 Gustavo Tejera 執法 Egypt-Australia；裁判尺度是紙上風險參數，不是比賽結論。",
         "CNA/Reuters 再框定 Salah hamstring watch：EFA 已承認傷勢但未明確保證淘汰賽可用；所以 Egypt 的上限和 Plan B 都要一起看。",
-        "The Analyst/Opta 25,000 次賽前模擬把 Australia-Egypt 標成 Round of 32 最接近對局：Egypt 常規時間勝率 38.6%、總晉級 54.0%，Australia 總晉級 46.0%；本站列為 public probability/context，不當作投注建議。"
+        "The Analyst/Opta 25,000 次賽前模擬把 Australia-Egypt 標成 Round of 32 最接近對局：Egypt 常規時間勝率 38.6%、總晉級 54.0%，Australia 總晉級 46.0%；本站列為 public probability/context，不當作投注建議。",
+        "ABC Australia 7/1 賽前稿把 Socceroos 對 Egypt 定義成「no tomorrow」淘汰賽門檻：不是純熱血標語，而是澳洲若勝將創隊史 World Cup 新高的心理壓力。",
+        "Guardian 7/2 指出 Australia 已把 assistant coach Mile Jedinak 的點球經驗納入準備；本站列為 shootout-context，不代表比賽一定進點球。",
+        "SBS 7/2 再補澳洲本地角度：若擊敗 Egypt，Socceroos 將做到澳洲隊在 World Cup 從未完成的事；這是 motivation/context，不是勝率保證。"
       ],
       "sources": [
         {
@@ -6912,6 +6915,30 @@
           "sourceName": "The Analyst / Opta",
           "fetchedAt": "2026-07-02T15:56:56Z",
           "claimType": "reported/tactical-probability",
+          "confidence": "high"
+        },
+        {
+          "label": "ABC: Socceroos 'no tomorrow' Egypt preview",
+          "url": "https://www.abc.net.au/news/2026-07-01/world-cup-knockout-stage-socceroos-brace-for-date-with-destiny/106859806",
+          "sourceName": "ABC News Australia",
+          "fetchedAt": "2026-07-02T17:23:32Z",
+          "claimType": "reported/context",
+          "confidence": "high"
+        },
+        {
+          "label": "Guardian: Australia penalty-shootout preparation with Mile Jedinak",
+          "url": "https://www.theguardian.com/football/2026/jul/02/world-cup-penalty-shootout-penalties-socceroos-australia-egypt-mile-jedinak-assistant-coach",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-02T17:23:32Z",
+          "claimType": "reported/shootout-context",
+          "confidence": "high"
+        },
+        {
+          "label": "SBS: Socceroos preview for historic Egypt knockout chance",
+          "url": "https://www.sbs.com.au/news/article/socceroos-preview-world-cup-knockout-match/z0ody9sx1",
+          "sourceName": "SBS News",
+          "fetchedAt": "2026-07-02T17:23:32Z",
+          "claimType": "reported/context",
           "confidence": "high"
         }
       ],
