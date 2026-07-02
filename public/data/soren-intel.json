@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T22:08:48Z",
-  "status": "matchday micro-refresh: m083/m085 補近開球 live/lineup rails，m092 補 England 官方 camp/H2H；全部維持 public-source claim boundaries。",
-  "headline": "Soren 開賽前把護欄加滿：Portugal-Croatia 看即時陣容，Swiss-Algeria 看官方備戰，Mexico-England 先看恢復與歷史壓力。",
+  "generatedAt": "2026-07-02T23:21:05Z",
+  "status": "matchday live scout: m083 用 FIFA 官方 live API 補即時比分/確認先發，m085/m086/m087 補近開球官方、Opta 與市場 rails；live 分數明確標為非 final。",
+  "headline": "Soren 開球後不裝睡：Portugal-Croatia 先進入 live-score 模式，Swiss-Algeria 與明日淘汰賽補上官方/Opta/市場護欄。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5954,9 +5954,9 @@
     {
       "matchId": "m083",
       "match": "Portugal vs Croatia",
-      "sourceType": "official FIFA/HNS preview + BBC/Olympics live-centre + reported tactical/probability/lineup watch + paper-market watch + source alignment",
-      "title": "Portugal-Croatia 補 Olympics live rail 與 Standard 首發/傷停頁：Ronaldo-Modrić 情懷很貴，但開球前先看真名單。",
-      "sorenTake": "Ronaldo vs Modrić 會吸光鏡頭，但淘汰賽不是紀念賽。FIFA 的賽前敘事與 Livaković 訪談把壓力、經驗、門將穩定性拉到檯面；Soren 仍把公開 predicted XI 當線索，不把它包裝成官方先發。",
+      "sourceType": "official live-score/confirmed lineup + credible live-centre + injury/team-news context + paper-market watch",
+      "title": "Portugal-Croatia 已開踢：FIFA 官方 live 顯示 21' 0-0，先發牌攤開後才談情懷。",
+      "sorenTake": "這場現在只能當 live context，不是 final。Portugal 把 Cristiano Ronaldo、Rafael Leão、Pedro Neto 一起推上前線，Croatia 讓 Modrić、Kovačić 和 Baturina 同場控節奏；早段 0-0 代表劇本還沒撕開，但雙方中場都沒有要陪老人院散步。",
       "signals": [
         "FOX Sports m083 頁面列 2K vs 2L 與 2026-07-02T23:00Z 賽程窗口。",
         "Marca 投影與 The Athletic 搜尋片段指向 Portugal-Ghana，但完整對陣需等 K/L 組最後賽果。",
@@ -5983,7 +5983,9 @@
         "FIFA 官方賽前 feature 把 Portugal-Croatia 寫成 Ronaldo 或 Modrić 的世界盃旅程可能到站；這是敘事與壓力訊號，不是先發確認。",
         "FIFA 另有 Livaković 專訪線索，補上 Croatia 更衣室/門將穩定性脈絡；Soren 只把它當球隊氣氛與大賽經驗參考。",
         "Olympics.com 近開球 live page 明列 Portugal vs Croatia R32 的 key stats、line-ups 與 play-by-play updates；這是公開 live rail，不是已確認賽果。",
-        "The Standard metadata 顯示 starting XI / confirmed team news / injury latest 頁面已開；Soren 把它當 reported lineup-watch，正式 XI 仍以 FIFA/隊方賽前名單為準。"
+        "The Standard metadata 顯示 starting XI / confirmed team news / injury latest 頁面已開；Soren 把它當 reported lineup-watch，正式 XI 仍以 FIFA/隊方賽前名單為準。",
+        "2026-07-02T23:21:05Z FIFA 官方 live API 顯示 Portugal-Croatia 進行中（21'，0-0，completed=false 語境），這是 live-score context，不是最終賽果/結算依據。",
+        "FIFA 官方 live 資料列出雙方 4-2-3-1：Portugal 先發含 Diogo Costa、Rúben Dias、Nuno Mendes、Bruno Fernandes、Vitinha、Cristiano Ronaldo、Rafael Leão、Pedro Neto；Croatia 先發含 Livaković、Stanišić、Pongračić、Šutalo、Kovačić、Modrić、Baturina、Budimir、Perišić。"
       ],
       "sources": [
         {
@@ -6193,6 +6195,14 @@
           "fetchedAt": "2026-07-02T22:08:48Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA Portugal-Croatia live API",
+          "url": "https://api.fifa.com/api/v3/live/football/17/285023/289287/400021526?language=en",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-02T23:21:05Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6501,8 +6511,8 @@
       "matchId": "m085",
       "match": "Switzerland vs Algeria",
       "sourceType": "official FIFA/FAF/SFV match context + BBC live-centre + ESPN/GOAL projected-lineup watch + federation logistics + odds-reference + source alignment",
-      "title": "Switzerland-Algeria 補 Swiss FA/FAF 官方備戰與 CBS market rail：Petković 師徒線好看，但 Vancouver 先比誰少犯蠢。",
-      "sorenTake": "FAF 抵達、BBC live rail 之外，ESPN 補上 Yael Falcón Pérez 執法與 projected XI，GOAL/ Sporting News 再把 Amoura availability 與預測陣容放到檯面。Soren 的底線不變：這些是 lineup-watch，不是官方名單；Petković 熟悉瑞士結構很麻煩，但鉛筆稿不能冒充石碑。",
+      "title": "Switzerland-Algeria 近開球補 SI/ESPN/Al Jazeera：瑞士小熱，但 Amoura 缺口與 Petković 復仇線都不是裝飾。",
+      "sorenTake": "Swiss 盤面與 Opta/市場都偏瑞士，但 Algeria 不是來拍照的。SI 寫到瑞士無主要傷情、Widmer 回到訓練競爭右閘，Algeria 則仍少 Amoura；Soren 的重點是：瑞士如果只把 Xhaka 當安全帶，Petković 會很樂意把這條安全帶拿來勒節奏。",
       "signals": [
         "FOX Sports m085 頁面顯示 Switzerland vs 3E/3F/3G/3I/3J，時間為 2026-07-03T03:00Z / Vancouver。",
         "AS Group B final standings context 支撐 Switzerland 作為 B 組第一晉級。",
@@ -6531,7 +6541,10 @@
         "Sporting News 7/2 article metadata 可核讀 projected lineups / latest team news；適合當臨場交叉檢查入口，但 confirmed starters 仍等 FIFA/team sheets。",
         "Swiss FA 7/2 官方文指出 Switzerland 對 Algeria 開始淘汰賽，Yakin 隊在 Vancouver 有機會寫歷史；這是隊方語境，不是戰術保證。",
         "FAF 官方片段稱 Algeria 週三傍晚完成對 Switzerland 前最後訓練；可用作備戰/物流確認，不能延伸成先發已確認。",
-        "CBS Sports odds 頁提供公開 market/pick context；只列 paper simulation 參考，不當投注建議。"
+        "CBS Sports odds 頁提供公開 market/pick context；只列 paper simulation 參考，不當投注建議。",
+        "Sports Illustrated 賽前頁列 Switzerland/Algeria predicted XIs，並報導 Yakin 無主要傷情、Widmer 已回到訓練競爭右閘；Algeria 方面 Mohamed Amoura 仍缺陣。這些仍是 predicted/team-news，不是官方先發。",
+        "ESPN odds page 提供 Switzerland-Algeria 公開市場參考；只作紙上模擬溫度，不是下注建議。",
+        "Al Jazeera Round-of-32 日程頁確認 Switzerland vs Algeria 03:00 GMT 於 Vancouver，並引用 Opta 模擬：Switzerland 90 分鐘勝率約 49.5%、Algeria 23.9%、和局 26.6%。"
       ],
       "sources": [
         {
@@ -6765,6 +6778,30 @@
           "fetchedAt": "2026-07-02T22:08:48Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "SI Switzerland-Algeria preview and predicted lineups",
+          "url": "https://www.si.com/soccer/switzerland-vs-algeria-world-cup-preview-predictions-lineups-7-2-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-07-02T23:21:05Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN Switzerland-Algeria odds page",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760498",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-02T23:21:05Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Al Jazeera R32 schedule and Opta simulations",
+          "url": "https://www.aljazeera.com/news/2026/7/2/fifa-world-cup-portugal-vs-croatia-prediction-schedules-round-of-16-race",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-02T23:21:05Z",
+          "claimType": "context/odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -7002,8 +7039,8 @@
       "matchId": "m086",
       "match": "Argentina vs Cape Verde",
       "sourceType": "official team update + official FIFA preview/match-centre + reported lineup watch + odds reference + qualification context + source alignment",
-      "title": "Argentina-Cape Verde 補 CAF squad 背景與總統 1-0 豪語：童話可以吼很大，但 Messi 不會因為童話自動退場。",
-      "sorenTake": "Cape Verde 的 upset path 更像心理戰加速度感：CAF 描述的是一支相信能咬人的新軍，BBC 則記下總統 1-0 的狠話。Soren 喜歡膽子，但膽子不是防守結構；Argentina 仍是大山，藍鯊要先證明自己不是只會寫標語。",
+      "title": "Argentina-Cape Verde 補 AFA Miami 到站與 Opta 天秤：童話夠美，但 81% 模擬不會因童話讓路。",
+      "sorenTake": "AFA 的到站/訓練資訊把 Argentina 的備戰節奏說清楚：Scaloni 已在 Miami 做定位與戰術工作。Opta 給 Argentina 極高勝率，這不是叫 Cape Verde 投降，而是提醒：童話要續集，得先在前 20 分鐘把 Messi 劇本弄髒。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Argentina vs Cape Verde，22:00 GMT，Miami Stadium。",
         "FOX live score 頁已把此格呈現為 Argentina vs Cape Verde，並標示 July 03, 2026 賽事。",
@@ -7021,7 +7058,9 @@
         "Al Jazeera 7/1 專題整理 Cape Verde 對 Argentina 的 Round of 32 背景，聚焦門將 Vozinha 與隊史大賽經驗；這是 credible context，不是戰術內幕。",
         "BBC Sport 可連線，描述 Cape Verde 後衛 Roberto Lopes 將面對 Messi，並確認 Cape Verde 以 Group H runner-up 身分在 Miami 對 Argentina；屬球員/戰術故事線，不是 confirmed XI。",
         "CAF 背景文把 Cape Verde 首次世界盃陣容描述為經驗、速度與相信能衝擊強隊的組合；這補強 underdog upset path，但不是 Argentina 弱點清單。",
-        "BBC 報導 Cape Verde 總統公開預測 1-0 擊敗 Argentina；這是心理戰與國內情緒訊號，不是模型預測或可驗證戰術事實。"
+        "BBC 報導 Cape Verde 總統公開預測 1-0 擊敗 Argentina；這是心理戰與國內情緒訊號，不是模型預測或可驗證戰術事實。",
+        "AFA 官方報導 Argentina 已抵達 Miami/Fort Lauderdale 區域備戰 Cape Verde，Scaloni 帶隊進行約 35 分鐘定位/戰術工作與後續小場對抗。",
+        "The Analyst / Opta 賽前模型給 Argentina 約 81.0% 勝率，並標記 Cape Verde 是近年罕見以 debutant 身分進入淘汰賽的故事線；本站只作公開機率背景，不公開底層模型配方。"
       ],
       "sources": [
         {
@@ -7159,6 +7198,22 @@
           "fetchedAt": "2026-07-02T13:10:29Z",
           "claimType": "context/public-quote",
           "confidence": "medium-high"
+        },
+        {
+          "label": "AFA Argentina arrival and training in Miami",
+          "url": "https://www.afa.com.ar/es/posts/la-seleccion-argentina-llego-a-miami",
+          "sourceName": "Asociación del Fútbol Argentino",
+          "fetchedAt": "2026-07-02T23:21:05Z",
+          "claimType": "confirmed/team-preparation",
+          "confidence": "high"
+        },
+        {
+          "label": "Opta Analyst Argentina-Cape Verde preview",
+          "url": "https://theanalyst.com/articles/argentina-vs-cape-verde-prediction-world-cup-2026-match-preview",
+          "sourceName": "The Analyst / Opta",
+          "fetchedAt": "2026-07-02T23:21:05Z",
+          "claimType": "context/public-probability",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -7167,8 +7222,8 @@
       "matchId": "m087",
       "match": "Colombia vs Ghana",
       "sourceType": "official federation/FIFA preview + reported team-news + odds/bracket watch + source alignment",
-      "title": "Colombia-Ghana 補雙方 Kansas City 抵達線：這不是旅行社公告，是淘汰賽最後備戰的真門檻。",
-      "sorenTake": "FCF 與 Ghana FA 都把球隊帶到 Kansas City 的脈絡補齊了：訓練、移動、落地，代表賽前雜音開始收斂成比賽問題。Colombia 的控球才華和 Ghana 的反擊身體感都還在，但 Soren 先看誰把跨城備戰變成場上節奏，而不是把官方抵達照當勝利宣言。",
+      "title": "Colombia-Ghana 補 GFA 全員可用與 Opta 64.8%：Ghana 有 2010 魂，但 Colombia 不是背景板。",
+      "sorenTake": "GFA 自家 preview 給 Ghana 一個好消息：26 人都已抵達，Semenyo、Opoku、Adjetey、Ati-Zigi 可用。壞消息是 Opta 仍把 Colombia 放在明顯上風；Soren 看這場的 upset path 很窄——Ghana 必須把比賽拖成定位球與二點球肉搏，否則 Colombia 的節奏會把黑星磨成黑咖啡渣。",
       "signals": [
         "Ghana FA 官方對戰文確認 Colombia 以 Group K 頭名對 Ghana，地點為 Kansas City Stadium；Ghana 以 Group L 第三名/淨勝球脈絡晉級。",
         "Ghana FA ticket note 再次確認 Colombia vs Ghana 這張 Round of 32 對戰與 Kansas City 賽事安排；可作官方 logistics 脈絡，不涉及競技預測。",
@@ -7183,7 +7238,9 @@
         "Ghana FA 官方報導 Black Stars 7/1 16:00 離開 Rhode Island 前往 Kansas City，結束三週基地並準備對 Colombia 的 Round of 32；這是 official preparation / travel context。",
         "Ghana FA 7/2 官方預覽確認 Black Stars 對 Colombia 的 Round-of-32 脈絡，並指出勝者將面對 Switzerland-Algeria 勝方；這是比先前 camp-move 更直接的賽前官方來源。",
         "Colombia 足協確認 7/1 完成 Fort Lauderdale 最後訓練後轉往 Kansas City，備戰對 Ghana 的 Round of 32；這是官方 travel/training rail。",
-        "Ghana FA 確認 Black Stars 已抵達 Kansas City，對 Colombia 的淘汰賽時間與場地脈絡明確；雙方都已進入最後備戰，不再只是賽程占位。"
+        "Ghana FA 確認 Black Stars 已抵達 Kansas City，對 Colombia 的淘汰賽時間與場地脈絡明確；雙方都已進入最後備戰，不再只是賽程占位。",
+        "Ghana FA preview 表示 Ghana 26 名球員都已抵達並完成恢復訓練，Jerome Opoku、Jonas Adjetey、Antoine Semenyo、Lawrence Ati-Zigi 均可用；這是官方 availability context，不是正式先發。",
+        "The Analyst / Opta 賽前模型給 Colombia 約 64.8% 勝率、Ghana 約 13.8%、和局約 21.4%，並提示 Colombia 對非洲球隊的世界盃歷史對戰脈絡。"
       ],
       "sources": [
         {
@@ -7296,6 +7353,14 @@
           "sourceName": "Ghana Football Association",
           "fetchedAt": "2026-07-02T13:10:29Z",
           "claimType": "confirmed/travel-training",
+          "confidence": "high"
+        },
+        {
+          "label": "Opta Analyst Colombia-Ghana preview",
+          "url": "https://theanalyst.com/articles/colombia-vs-ghana-prediction-world-cup-2026-match-preview",
+          "sourceName": "The Analyst / Opta",
+          "fetchedAt": "2026-07-02T23:21:05Z",
+          "claimType": "context/public-probability",
           "confidence": "high"
         }
       ],
