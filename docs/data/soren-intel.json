@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T07:26:00Z",
-  "status": "Scout micro-refresh: parent-verified CBS/Covers paper-market rails for Spain-Austria and Portugal-Croatia, plus Ahram Egypt availability watch before Australia-Egypt.",
-  "headline": "Soren scout: 7/2 補市場與傷停——Spain/Austria、Portugal/Croatia 加上公開 odds 參考；Egypt 則要一邊等 Salah 復健，一邊處理 Fatouh 可能缺席。",
+  "generatedAt": "2026-07-02T08:34:25Z",
+  "status": "Scout refresh: added parent-verified Al Jazeera/FIFA/GOAL/Ghana FA/BBC source rails for 7/2-7/6 knockout cards while keeping unresolved W-slot placeholders conservative.",
+  "headline": "Soren scout: 7/2 補臨場護欄——Spain/Austria 加 Al Jazeera，Portugal/Croatia 與 Switzerland/Algeria 補 FIFA match centres，Ghana 官方預覽落地；W-slot 繼續不亂簽名。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -5955,8 +5955,8 @@
       "matchId": "m083",
       "match": "Portugal vs Croatia",
       "sourceType": "official FIFA preview + reported tactical/probability/lineup watch + paper-market watch + source alignment",
-      "title": "Portugal-Croatia 再補 Covers 市場參考：Ronaldo-Modrić 是門面，真正要看誰先被中場拖垮。",
-      "sorenTake": "FIFA/WhoScored/Opta/Sports Mole 已有戰術與隊形線索；Covers 只補一個公開市場溫度。這場不要被「最後一舞」催眠：Portugal 的邊路與 Croatia 的中場續航，才是 Soren 盯的破口。",
+      "title": "Portugal-Croatia 補 FIFA match centre 與 GOAL 戰術頁：Ronaldo-Modrić 是海報，Toronto 的中場耐力才是刀口。",
+      "sorenTake": "FIFA match centre 給了正式臨場入口，GOAL 則把 team news 與 tactics 放到同一張桌上。這場不要只看兩位老神仙的鏡頭量；Portugal 若被 Croatia 把節奏拖慢，紙面優勢會被磨成體力題。Soren 仍偏 Portugal，但爆冷路徑不是玄學，是中場把比賽變老。",
       "signals": [
         "FOX Sports m083 頁面列 2K vs 2L 與 2026-07-02T23:00Z 賽程窗口。",
         "Marca 投影與 The Athletic 搜尋片段指向 Portugal-Ghana，但完整對陣需等 K/L 組最後賽果。",
@@ -5974,7 +5974,9 @@
         "此新增來源只當 reported/lineup-watch；正式先發仍等 FIFA/team source 或 match centre。",
         "06:18Z 父層 metadata probe 核對 Opta/The Analyst Portugal-Croatia preview 可連線；頁面是賽前預測/數據預覽，適合作公開機率與節奏參考，不等於本站模型公式。",
         "Sports Mole Portugal-Croatia preview 可連線，標題/描述明示 team news and possible lineups；其中 Gvardiol 回左閘屬 reported expected-XI watch，正式先發仍等官方。",
-        "Covers 7/1 賽前頁提供 Portugal-Croatia 的公開 odds / picks 脈絡；屬紙上市場參考，不能寫成 Soren 模型邏輯或投注建議。"
+        "Covers 7/1 賽前頁提供 Portugal-Croatia 的公開 odds / picks 脈絡；屬紙上市場參考，不能寫成 Soren 模型邏輯或投注建議。",
+        "FIFA match centre 已作為 Portugal-Croatia 官方 lineups / score / live updates 入口；正式名單未落地前，所有媒體 XI 仍只當 lineup-watch。",
+        "GOAL 7/2 公開預覽明示涵蓋 tactics 與 team news；可用來補 Portugal-Croatia 的戰術敘事，但不升格為官方先發。"
       ],
       "sources": [
         {
@@ -6112,6 +6114,22 @@
           "fetchedAt": "2026-07-02T07:26:00Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA Portugal-Croatia match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021526",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-02T08:34:25Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "GOAL Portugal-Croatia preview",
+          "url": "https://www.goal.com/en-us/news/portugal-croatia-world-cup-preview/blt9fb0907531786204",
+          "sourceName": "GOAL",
+          "fetchedAt": "2026-07-02T08:34:25Z",
+          "claimType": "reported/tactical-lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -6120,8 +6138,8 @@
       "matchId": "m084",
       "match": "Spain vs Austria",
       "sourceType": "official match centre + official preview + reported tactical/probability/lineup watch + source alignment",
-      "title": "Spain-Austria 再補 CBS odds：Spain 是大熱沒錯，但 +900 的 Austria 更需要被問「爆冷路徑在哪」。",
-      "sorenTake": "FIFA/RFEF/Opta/SI 已把基本盤講清楚；這次補 CBS/FanDuel 公開市場參考，只是提醒讀者：Spain 的熱門程度很誇張，但 Soren 不會把賠率當真理。Austria 的劇本仍是 Arnautović 狀態、Rangnick 壓迫與早段不失血。",
+      "title": "Spain-Austria 補 Al Jazeera live build-up：Spain 仍是大熱，但「rough patch」四個字讓 Austria 的偷襲路線更有味道。",
+      "sorenTake": "Al Jazeera 把這場寫成 Spain 走出 rough patch 的考題：La Roja 應該控球、應該壓制，但 Austria 的價值在於逼它把「應該」真的踢出來。Soren 仍看 Spain 佔優；只是淘汰賽不是履歷審查，Rangnick 的壓迫若先咬到失誤，這張大熱門門票會瞬間變皺。",
       "signals": [
         "FIFA Uruguay-Spain 報導指出 Spain 將面對 Group J runners-up，這是比一般媒體投影更硬的官方脈絡。",
         "FOX m084 頁面已顯示 Spain vs 2J，公開時間窗口為 2026-07-02T19:00Z。",
@@ -6145,7 +6163,8 @@
         "FIFA 7/1 搜尋索引顯示 De la Fuente 在 Los Angeles Stadium MD-1 記者會談到 Spain 必須 live up to high expectations；Spain 的風險不只是 Austria，也包括「高期待」本身。",
         "Opta/The Analyst Spain-Austria preview 可連線，公開預測把焦點放在 Austria upset path；這是外部模型/數據語境，不寫成本站勝率來源。",
         "SI Spain-Austria preview 可連線，標題/描述明示 predictions and lineups；Arnautović slight knock 只保留為 reported availability-watch，正式先發未確認。",
-        "CBS/SportsLine 的公開 FanDuel odds 顯示 Spain 90 分鐘約 -300、Austria 約 +900、和局約 +425；Soren 只把它當紙上市場溫度計，不當投注建議。"
+        "CBS/SportsLine 的公開 FanDuel odds 顯示 Spain 90 分鐘約 -300、Austria 約 +900、和局約 +425；Soren 只把它當紙上市場溫度計，不當投注建議。",
+        "Al Jazeera 7/2 賽前頁確認 Spain-Austria 在 Los Angeles 開打，並提供 live build-up / team-news 入口；頁面標題把 Spain 的 rough patch 與 Austria 淘汰賽考題放在同一框，適合作為非模型、公開敘事校準。"
       ],
       "sources": [
         {
@@ -6339,6 +6358,14 @@
           "fetchedAt": "2026-07-02T07:26:00Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "Al Jazeera Spain-Austria preview/live build-up",
+          "url": "https://www.aljazeera.com/sports/2026/7/2/spain-vs-austria-world-cup-round-of-32-preview-predictions-team-news",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-02T08:34:25Z",
+          "claimType": "reported/team-news-live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -6347,8 +6374,8 @@
       "matchId": "m085",
       "match": "Switzerland vs Algeria",
       "sourceType": "reported/bracket-actualization + federation lead + lineup-tracker watch + source alignment",
-      "title": "Switzerland-Algeria 再補 AP/FIFA 師徒線：Petković 熟悉瑞士，不代表他能替 Algeria 直接偷走劇本。",
-      "sorenTake": "Petković 帶過瑞士，Yakin 還有「曾向他學習」的故事，這讓 Algeria 的準備更有針對性；但熟悉不是魔法，真正決定比賽的是瑞士能不能把節奏拉回自己舒服的安全區。",
+      "title": "Switzerland-Algeria 補 FIFA 臨場入口：Petković 熟門熟路，但正式先發仍要等官方落槌。",
+      "sorenTake": "這場的主線仍是 Petković 對老東家，但現在補上 FIFA match centre 後，Soren 的臨場校準有了硬入口。Switzerland 的結構性穩定是優勢；Algeria 若要偷走劇本，得把熟悉感變成針對性，而不是賽前故事會。",
       "signals": [
         "FOX Sports m085 頁面顯示 Switzerland vs 3E/3F/3G/3I/3J，時間為 2026-07-03T03:00Z / Vancouver。",
         "AS Group B final standings context 支撐 Switzerland 作為 B 組第一晉級。",
@@ -6367,7 +6394,8 @@
         "Opta/The Analyst 可見描述：預覽 Switzerland vs Algeria，並以模型概率評估瑞士晉級路徑。",
         "WhoScored 可見描述涵蓋 injuries/suspensions、probable line-ups、predictions、facts and odds；只標 reported，不升格 confirmed。",
         "AP 報導 Embolo 稱 Petković 曾提升瑞士國家隊水準，並梳理他 2014–2021 執教瑞士、2018 世界盃十六強與 Euro 2020 八強脈絡；這強化 Algeria 主帥對瑞士結構熟悉的解讀。",
-        "FIFA 搜尋索引以「Master v apprentice」包裝 Yakin-Petković 對決，指出 Yakin 曾在 Petković 麾下/身邊學習，屬官方戰術敘事線，不是陣容確認。"
+        "FIFA 搜尋索引以「Master v apprentice」包裝 Yakin-Petković 對決，指出 Yakin 曾在 Petković 麾下/身邊學習，屬官方戰術敘事線，不是陣容確認。",
+        "FIFA Switzerland-Algeria match centre 已核對可連線，作為官方 lineups / score / live updates 入口；Yakin-Petković 敘事可寫，正式 XI 仍等官方。"
       ],
       "sources": [
         {
@@ -6520,6 +6548,14 @@
           "sourceName": "FIFA",
           "fetchedAt": "2026-07-02T05:09:09Z",
           "claimType": "confirmed/tactical-context",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Switzerland-Algeria match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021527?gender=2&date=2026-07-03",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-02T08:34:25Z",
+          "claimType": "confirmed/match-centre",
           "confidence": "high"
         }
       ],
@@ -6815,8 +6851,8 @@
       "matchId": "m087",
       "match": "Colombia vs Ghana",
       "sourceType": "official federation/FIFA preview + reported team-news + odds/bracket watch + source alignment",
-      "title": "Colombia-Ghana 補 Ghana FA 轉場：Black Stars 結束 Rhode Island base，現在才是真正的硬仗。",
-      "sorenTake": "Ghana FA 的訊號很清楚：集訓、轉場、Kansas City 落地，這隊不是只靠情緒喊口號。但 Colombia 已經在調刀，Ghana 若開局再慢熱，所謂「we win or we learn」會很快變成「先別被教做人」。",
+      "title": "Colombia-Ghana 補 Ghana FA 官方預覽：Black Stars 不只換城市，是把小組賽劇本整個推進淘汰賽。",
+      "sorenTake": "Ghana FA 把這場寫成 win-or-go-home 的 Kansas City 考題，並明講勝者會接 Switzerland/Algeria。Colombia 的技術上限仍漂亮，但 Ghana 不是來當背景板；如果 Black Stars 把轉場後的身體對抗和反擊第一腳踢乾淨，這場會比牌面更髒、更難看、也更危險。",
       "signals": [
         "Ghana FA 官方對戰文確認 Colombia 以 Group K 頭名對 Ghana，地點為 Kansas City Stadium；Ghana 以 Group L 第三名/淨勝球脈絡晉級。",
         "Ghana FA ticket note 再次確認 Colombia vs Ghana 這張 Round of 32 對戰與 Kansas City 賽事安排；可作官方 logistics 脈絡，不涉及競技預測。",
@@ -6828,7 +6864,8 @@
         "Sports Mole Colombia-Ghana preview 的 metadata 明示 prediction、team news、possible lineups；本站只標 reported/lineup-watch，不寫成 confirmed XI。",
         "FCF 官方 6/30 更新顯示 Colombia 持續針對 Ghana 備戰，並移往 Inter Miami 訓練設施調整。",
         "FotMob 可見描述提供 Colombia-Ghana live score、predicted lineups、H2H、team forms 等；用作 availability/lineup-watch，不寫成官方缺陣。",
-        "Ghana FA 官方報導 Black Stars 7/1 16:00 離開 Rhode Island 前往 Kansas City，結束三週基地並準備對 Colombia 的 Round of 32；這是 official preparation / travel context。"
+        "Ghana FA 官方報導 Black Stars 7/1 16:00 離開 Rhode Island 前往 Kansas City，結束三週基地並準備對 Colombia 的 Round of 32；這是 official preparation / travel context。",
+        "Ghana FA 7/2 官方預覽確認 Black Stars 對 Colombia 的 Round-of-32 脈絡，並指出勝者將面對 Switzerland-Algeria 勝方；這是比先前 camp-move 更直接的賽前官方來源。"
       ],
       "sources": [
         {
@@ -6917,6 +6954,14 @@
           "sourceName": "Ghana Football Association",
           "fetchedAt": "2026-07-02T05:09:09Z",
           "claimType": "confirmed/team-preparation",
+          "confidence": "high"
+        },
+        {
+          "label": "Ghana FA Colombia-Ghana preview",
+          "url": "https://www.ghanafa.org/colombia-and-ghana-face-off-in-fifa-world-cup-round-of-32-preview",
+          "sourceName": "Ghana Football Association",
+          "fetchedAt": "2026-07-02T08:34:25Z",
+          "claimType": "confirmed/official-preview",
           "confidence": "high"
         }
       ],
@@ -7327,13 +7372,15 @@
       "matchId": "m093",
       "match": "W83 vs W84",
       "sourceType": "reported/bracket-watch + public schedule context",
-      "title": "M093 是 W83/W84 續命線：Portugal-Croatia 與 Spain-Austria 的餘震，先看誰少流血。",
-      "sorenTake": "Round-of-16 slot is winner of Match 83 versus winner of Match 84. The public angle is recovery cost: whoever comes through the prior ties may bring minutes, cards and bruises into Dallas.",
+      "title": "M093 仍守 W83/W84：FIFA/BBC 補強 placeholder provenance，別把還沒開的門牌提前換名字。",
+      "sorenTake": "W83/W84 這條線最容易被外部頁面提前腦補，但本地 worldcup.json 還沒 actualize，就不要裝作已經知道。Soren 先把官方賽程與 BBC fixtures 當護欄：等 Portugal-Croatia、Spain-Austria 真的踢完，再把故事寫成名字。",
       "signals": [
         "Current public tournament data keeps M093 as W83 vs W84; this is a route slot, not a confirmed team matchup.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
-        "Kickoff target: 2026-07-06T19:00:00Z at Dallas Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known."
+        "Kickoff target: 2026-07-06T19:00:00Z at Dallas Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known.",
+        "FIFA 官方賽程/fixtures 頁作為 knockout placeholder 與後續 actualization 的最高優先入口；本地資料未更新前，仍保留 W-slot 標籤。",
+        "BBC July fixtures page 可作媒體層 placeholder corroboration；用來防止把 W-slot 搜尋結果過早 actualize。"
       ],
       "sources": [
         {
@@ -7359,6 +7406,22 @@
           "fetchedAt": "2026-07-01T09:11:44Z",
           "claimType": "context/bracket-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA World Cup 2026 schedule and fixtures",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-02T08:34:25Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC World Cup July fixtures",
+          "url": "https://www.bbc.com/sport/football/world-cup/scores-fixtures/2026-07",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-02T08:34:25Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "medium"
@@ -7367,13 +7430,15 @@
       "matchId": "m094",
       "match": "W81 vs W82",
       "sourceType": "reported/bracket-watch + public schedule context",
-      "title": "M094 等 W81/W82 開獎：USA/Bosnia 與 Belgium/Senegal 這條線，不缺戲劇性，只缺最終名字。",
-      "sorenTake": "Round-of-16 slot is winner of Match 81 versus winner of Match 82. Until those Round-of-32 matches settle, this card stays as route context rather than matchup analysis.",
+      "title": "M094 仍守 W81/W82：FIFA/BBC 賽程護欄已補上，USA/Belgium 線也別急著替未完成賽果簽名。",
+      "sorenTake": "外部 bracket 頁會跑得很快，但公共站的可信度靠慢半拍的準確。W81/W82 在本地資料 actualize 前，本站只寫 bracket-watch，不把推測包裝成確認。這不是保守，是防止淘汰賽資訊污染。",
       "signals": [
         "Current public tournament data keeps M094 as W81 vs W82; this is a route slot, not a confirmed team matchup.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
-        "Kickoff target: 2026-07-07T00:00:00Z at Seattle Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known."
+        "Kickoff target: 2026-07-07T00:00:00Z at Seattle Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known.",
+        "FIFA 官方賽程/fixtures 頁作為 knockout placeholder 與後續 actualization 的最高優先入口；本地資料未更新前，仍保留 W-slot 標籤。",
+        "BBC July fixtures page 可作媒體層 placeholder corroboration；用來防止把 W-slot 搜尋結果過早 actualize。"
       ],
       "sources": [
         {
@@ -7399,6 +7464,22 @@
           "fetchedAt": "2026-07-01T09:11:44Z",
           "claimType": "context/bracket-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA World Cup 2026 schedule and fixtures",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-02T08:34:25Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC World Cup July fixtures",
+          "url": "https://www.bbc.com/sport/football/world-cup/scores-fixtures/2026-07",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-02T08:34:25Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "medium"
