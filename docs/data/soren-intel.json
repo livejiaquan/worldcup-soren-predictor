@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-03T07:26:19Z",
-  "status": "matchday scout: m088/m086/m087 臨場 rails 補 BBC/ESPN/Ghana FA；m089/m090/m092/m094 補官方訓練、BBC selection、ESPN odds 與 FIFA 預覽，全部保持公開來源/非投注建議邊界。",
-  "headline": "Soren 早場巡邏：Australia-Egypt、Argentina-Cape Verde、Colombia-Ghana 都補上 live-centre/官方脈絡；下一波 R16 也先把訓練、選人與市場參照鋪好。",
+  "generatedAt": "2026-07-03T13:47:25Z",
+  "status": "matchday scout: m088/m086/m087 在開賽前重查 ESPN public scoreboard，全部仍 scheduled/pre；補 live-status guard，避免把 0-0 placeholder、預測 XI 或傷情猜測當成賽中/正式事實。",
+  "headline": "Soren 13:42Z 賽前巡邏：三場 7/3 knockout 都還沒開球，資料先踩煞車；正式名單與 live state 落地前只保留 verified rails。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -6847,9 +6847,9 @@
     {
       "matchId": "m088",
       "match": "Australia vs Egypt",
-      "sourceType": "official Socceroos/EFA/FIFA + CAF/Ahram injury watch + Opta data preview + credible media tactical/motivation + odds-reference confidence medium-high",
-      "title": "Australia-Egypt 補 BBC live rail：傷停牌已攤開，接下來看 18:00Z 誰先把謹慎變失誤。",
-      "sorenTake": "Leckie/Italiano 缺席、Salah fitness、Opta 機率與官方 match centre 已有；BBC/ESPN live rails 補上後，這張卡的重點不是再猜神話，而是等正式名單和第一段壓迫品質。Soren 的翻譯：這種淘汰賽，浪漫只值半張票，失誤才是全票。",
+      "sourceType": "official Socceroos/EFA/FIFA + CAF/Ahram injury watch + Opta data preview + credible media tactical/motivation + odds-reference confidence medium-high + ESPN public scheduled-status guard",
+      "title": "Australia-Egypt 賽前 4 小時 ESPN 仍是 scheduled：Salah 不是謠言提款機，正式名單前先別把 0-0 寫成劇本。",
+      "sorenTake": "ESPN public scoreboard 13:42Z 仍標 scheduled/pre，未有官方先發或比賽開始訊號；既有 BBC/CAF/Ahram/Socceroos rails 已足夠，現在最重要是等 team sheet。Soren 的翻譯：Salah 的腿筋很重要，但「還沒開踢」四個字更重要。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
         "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
@@ -6880,7 +6880,8 @@
         "EFA 阿語頁 meta 描述確認 Mohamed Hany 表示 Egypt 已準備好面對 Australia、想寫新歷史；屬官方球員聲音/心理狀態，不是戰術配方或先發證據。",
         "Ahram Online 報導 Australia 老將 Mathew Leckie 與 Jacob Italiano 因傷已退出本屆賽事；這會影響 Socceroos 淘汰賽輪換與邊路深度。",
         "Opta Analyst Australia-Egypt 預覽標示 Egypt 可能沒有 Mohamed Salah，並給 Egypt 38.6%、Australia 30.4%、90 分鐘打平 31.0% 的公開模型概率；這是公共概率脈絡，不是 Soren 底層模型。",
-        "BBC live text 已開 Australia-Egypt stats/head-to-head 與即時更新入口；正式先發未出前，只把它當臨場 rails，不把任何預測 XI 寫成事實。"
+        "BBC live text 已開 Australia-Egypt stats/head-to-head 與即時更新入口；正式先發未出前，只把它當臨場 rails，不把任何預測 XI 寫成事實。",
+        "13:42Z 父層重查 ESPN public scoreboard：Australia-Egypt 仍是 STATUS_SCHEDULED / pre / completed=false，0-0 只是賽前 placeholder；正式先發或開賽前，不把比分、Salah 可用性或 Egypt 計畫寫成事實。"
       ],
       "sources": [
         {
@@ -7106,6 +7107,14 @@
           "fetchedAt": "2026-07-03T07:26:19Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN public scoreboard Australia-Egypt scheduled status",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260703",
+          "sourceName": "ESPN public scoreboard API",
+          "fetchedAt": "2026-07-03T13:47:25Z",
+          "claimType": "context/live-status",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -7113,9 +7122,9 @@
     {
       "matchId": "m086",
       "match": "Argentina vs Cape Verde",
-      "sourceType": "official team update + official FIFA preview/match-centre + reported lineup watch + odds reference + qualification context + source alignment",
-      "title": "Argentina-Cape Verde 再補 ESPN live rail：童話隊可以勇敢，但 Messi/Argentina 的錯誤容忍率不是童話級。",
-      "sorenTake": "FIFA/FotMob/Al Jazeera 已經把官方入口、童話敘事與 live hub 補齊；ESPN live page 加進來後，這場等正式陣容與節奏控制。Cape Verde 的勝利路徑仍是低比分、定位球、拖到焦躁；Argentina 若早早進球，故事書會被撕得很快。",
+      "sourceType": "official team update + official FIFA preview/match-centre + reported lineup watch + odds reference + qualification context + source alignment + ESPN public scheduled-status guard",
+      "title": "Argentina-Cape Verde 賽前 ESPN 仍未開球：童話可以熱血，資料欄不能搶跑。",
+      "sorenTake": "ESPN public scoreboard 13:42Z 仍把 Argentina-Cape Verde 標成 scheduled/pre；AFA、FIFA、BBC、Opta 的脈絡已在卡上，下一步只等官方名單與開賽狀態。Soren 的短句：童話要靠草皮，不靠我們替它預支比分。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Argentina vs Cape Verde，22:00 GMT，Miami Stadium。",
         "FOX live score 頁已把此格呈現為 Argentina vs Cape Verde，並標示 July 03, 2026 賽事。",
@@ -7138,7 +7147,8 @@
         "The Analyst / Opta 賽前模型給 Argentina 約 81.0% 勝率，並標記 Cape Verde 是近年罕見以 debutant 身分進入淘汰賽的故事線；本站只作公開機率背景，不公開底層模型配方。",
         "Al Jazeera 專文整理 Cape Verde 這個 50 多萬人口島國闖進 32 強的背景與 Vozinha 門將線索；這是可信故事/心理脈絡，不等於比賽勝負保證。",
         "FotMob Argentina-Cape Verde match hub 已可連線，提供 live score、predicted lineups、H2H 與賽中數據入口；正式名單前仍只當 lineup-watch/live-centre。",
-        "ESPN m086 live page 可連線，提供 live score/highlights/updated stats；先列為臨場統計來源，不當作已確認先發或賽果。"
+        "ESPN m086 live page 可連線，提供 live score/highlights/updated stats；先列為臨場統計來源，不當作已確認先發或賽果。",
+        "13:42Z 父層重查 ESPN public scoreboard：Argentina-Cape Verde 仍是 STATUS_SCHEDULED / pre / completed=false，0-0 是賽前 placeholder；本站維持 lineup-watch/live-centre 標籤，不提前 settle 或宣稱 confirmed XI。"
       ],
       "sources": [
         {
@@ -7308,6 +7318,14 @@
           "fetchedAt": "2026-07-03T07:26:19Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN public scoreboard Argentina-Cape Verde scheduled status",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260703",
+          "sourceName": "ESPN public scoreboard API",
+          "fetchedAt": "2026-07-03T13:47:25Z",
+          "claimType": "context/live-status",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -7315,9 +7333,9 @@
     {
       "matchId": "m087",
       "match": "Colombia vs Ghana",
-      "sourceType": "official federation/FIFA preview + ESPN live hub + local weather context + reported team-news/Opta/odds confidence medium-high",
-      "title": "Colombia-Ghana 補 Ghana FA transcript 與 BBC live rail：Ghana 說不能犯錯，Colombia 會專挑錯誤收租。",
-      "sorenTake": "Ghana FA 的賽前 transcript 把 Carlos Queiroz 的語氣寫得很清楚：90 分鐘要幾乎完美。問題是 Colombia 的壓迫與轉換就靠別人的「幾乎」吃飯；BBC live rail 補上後，這場要盯的不是口號，是第一個中場失位。",
+      "sourceType": "official federation/FIFA preview + ESPN live hub + local weather context + reported team-news/Opta/odds confidence medium-high + ESPN public scheduled-status guard",
+      "title": "Colombia-Ghana 賽前 scoreboard 還在 pre：Queiroz 說不能犯錯，Soren 先不犯資料錯。",
+      "sorenTake": "ESPN public scoreboard 13:42Z 顯示 Colombia-Ghana 仍 scheduled/pre；Ghana FA transcript、BBC live text、KCUR 天氣與 Opta 機率已補齊，接下來只盯正式名單與 Kansas City 熱度如何壓節奏。",
       "signals": [
         "Ghana FA 官方對戰文確認 Colombia 以 Group K 頭名對 Ghana，地點為 Kansas City Stadium；Ghana 以 Group L 第三名/淨勝球脈絡晉級。",
         "Ghana FA ticket note 再次確認 Colombia vs Ghana 這張 Round of 32 對戰與 Kansas City 賽事安排；可作官方 logistics 脈絡，不涉及競技預測。",
@@ -7339,7 +7357,8 @@
         "ESPN match hub 可連線並標示 Colombia vs Ghana Live Score；用作臨場比分/數據入口，正式先發仍等 FIFA/官方或可信 live centre 落地。",
         "Ghana FA 官方預覽確認 Ghana 對 Colombia 是 Kansas City 32 強生死戰，勝者將碰 Switzerland-Algeria 勝方；Ghana 追求自 2010 以來首度重返 16 強。",
         "Ghana FA 賽前 transcript 引述 Carlos Queiroz 稱面對 Colombia「不能犯錯」；這是官方賽前心理/戰術語境，不是先發名單。",
-        "BBC live text 已開 Colombia-Ghana stats/head-to-head 與即時更新入口，可作臨場比分/數據 rails。"
+        "BBC live text 已開 Colombia-Ghana stats/head-to-head 與即時更新入口，可作臨場比分/數據 rails。",
+        "13:42Z 父層重查 ESPN public scoreboard：Colombia-Ghana 仍是 STATUS_SCHEDULED / pre / completed=false，0-0 不是 live score；Ghana「不能犯錯」的教練語境保留為賽前訊號，不升級成賽中結論。"
       ],
       "sources": [
         {
@@ -7492,6 +7511,14 @@
           "sourceName": "BBC Sport",
           "fetchedAt": "2026-07-03T07:26:19Z",
           "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN public scoreboard Colombia-Ghana scheduled status",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260703",
+          "sourceName": "ESPN public scoreboard API",
+          "fetchedAt": "2026-07-03T13:47:25Z",
+          "claimType": "context/live-status",
           "confidence": "high"
         }
       ],
