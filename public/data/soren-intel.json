@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-02T23:21:05Z",
-  "status": "matchday live scout: m083 用 FIFA 官方 live API 補即時比分/確認先發，m085/m086/m087 補近開球官方、Opta 與市場 rails；live 分數明確標為非 final。",
-  "headline": "Soren 開球後不裝睡：Portugal-Croatia 先進入 live-score 模式，Swiss-Algeria 與明日淘汰賽補上官方/Opta/市場護欄。",
+  "generatedAt": "2026-07-03T01:17:50Z",
+  "status": "matchday scout: m085 補 ESPN/live rails 與 beIN 臨場資訊，m088 補 CAF Salah fitness 與 EFA 賽前聲音，m087 補 KC 熱浪與 ESPN live hub；仍全數標為公開來源脈絡/lineup watch，非官方先發。",
+  "headline": "Soren 近開球不亂喊先發：Swiss-Algeria 先架好 live rails，Australia-Egypt 盯 Salah 風險，Colombia-Ghana 加上 Kansas City 熱浪變因。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -6510,8 +6510,8 @@
     {
       "matchId": "m085",
       "match": "Switzerland vs Algeria",
-      "sourceType": "official FIFA/FAF/SFV match context + BBC live-centre + ESPN/GOAL projected-lineup watch + federation logistics + odds-reference + source alignment",
-      "title": "Switzerland-Algeria 近開球補 SI/ESPN/Al Jazeera：瑞士小熱，但 Amoura 缺口與 Petković 復仇線都不是裝飾。",
+      "sourceType": "official FIFA/FAF/SFV + ESPN/beIN live rails + BBC live-centre + reported lineup/availability watch + odds-reference confidence medium-high",
+      "title": "Switzerland-Algeria 臨場補 ESPN/beIN live rails：別只看瑞士小熱，Petković 復仇線已經進入倒數。",
       "sorenTake": "Swiss 盤面與 Opta/市場都偏瑞士，但 Algeria 不是來拍照的。SI 寫到瑞士無主要傷情、Widmer 回到訓練競爭右閘，Algeria 則仍少 Amoura；Soren 的重點是：瑞士如果只把 Xhaka 當安全帶，Petković 會很樂意把這條安全帶拿來勒節奏。",
       "signals": [
         "FOX Sports m085 頁面顯示 Switzerland vs 3E/3F/3G/3I/3J，時間為 2026-07-03T03:00Z / Vancouver。",
@@ -6544,7 +6544,9 @@
         "CBS Sports odds 頁提供公開 market/pick context；只列 paper simulation 參考，不當投注建議。",
         "Sports Illustrated 賽前頁列 Switzerland/Algeria predicted XIs，並報導 Yakin 無主要傷情、Widmer 已回到訓練競爭右閘；Algeria 方面 Mohamed Amoura 仍缺陣。這些仍是 predicted/team-news，不是官方先發。",
         "ESPN odds page 提供 Switzerland-Algeria 公開市場參考；只作紙上模擬溫度，不是下注建議。",
-        "Al Jazeera Round-of-32 日程頁確認 Switzerland vs Algeria 03:00 GMT 於 Vancouver，並引用 Opta 模擬：Switzerland 90 分鐘勝率約 49.5%、Algeria 23.9%、和局 26.6%。"
+        "Al Jazeera Round-of-32 日程頁確認 Switzerland vs Algeria 03:00 GMT 於 Vancouver，並引用 Opta 模擬：Switzerland 90 分鐘勝率約 49.5%、Algeria 23.9%、和局 26.6%。",
+        "01:17Z 父層探針確認 ESPN match hub 可連線，頁面標題為 Switzerland vs. Algeria Live Score；這只作為比分/數據入口與臨場核對，不宣稱正式先發已公布。",
+        "beIN SPORTS 賽前頁可讀到 Switzerland vs Algeria Round of 32 觀看資訊與賽事背景；補強臨場 broadcast/referee/context rails，仍不替代 FIFA 官方 match centre。"
       ],
       "sources": [
         {
@@ -6802,6 +6804,22 @@
           "fetchedAt": "2026-07-02T23:21:05Z",
           "claimType": "context/odds-reference",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN Switzerland-Algeria live hub",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760498/algeria-switzerland",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-03T01:17:50Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "beIN Switzerland-Algeria watch guide",
+          "url": "https://www.beinsports.com/en-us/soccer/fifa-world-cup-2026/articles/how-and-where-to-watch-switzerland-vs-algeria-in-the-round-of-32-of-the-2026-fifa-world-cup-2026-07-02",
+          "sourceName": "beIN SPORTS",
+          "fetchedAt": "2026-07-03T01:17:50Z",
+          "claimType": "context/broadcast-referee",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -6809,8 +6827,8 @@
     {
       "matchId": "m088",
       "match": "Australia vs Egypt",
-      "sourceType": "official match hub + official FIFA match-centre + BBC/reported injury watch + odds reference + bracket context + tactical/motivation refresh + source alignment + Opta public probability context",
-      "title": "Australia-Egypt 補 ABC/SBS 與 Guardian 點球準備：Salah 是主菜，但 Socceroos 的生死局不是觀光團。",
+      "sourceType": "official Socceroos/EFA/FIFA + CAF injury watch + credible media tactical/motivation + odds-reference confidence medium-high",
+      "title": "Australia-Egypt 加碼 CAF/EFA：Salah fitness 是紅燈，不是煙火；Socceroos 要準備打完整逆風局。",
       "sorenTake": "Australia-Egypt 已經不是「Salah 能不能跑」單題考卷：ABC/SBS 把 Socceroos 的 no-tomorrow 壓力講清楚，Guardian 又補上 Jedinak 點球準備。Soren 的結論：這場常規時間像刀口，若拖進十二碼，心理與例行程序會比名氣更吵。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
@@ -6837,7 +6855,9 @@
         "The Analyst/Opta 25,000 次賽前模擬把 Australia-Egypt 標成 Round of 32 最接近對局：Egypt 常規時間勝率 38.6%、總晉級 54.0%，Australia 總晉級 46.0%；本站列為 public probability/context，不當作投注建議。",
         "ABC Australia 7/1 賽前稿把 Socceroos 對 Egypt 定義成「no tomorrow」淘汰賽門檻：不是純熱血標語，而是澳洲若勝將創隊史 World Cup 新高的心理壓力。",
         "Guardian 7/2 指出 Australia 已把 assistant coach Mile Jedinak 的點球經驗納入準備；本站列為 shootout-context，不代表比賽一定進點球。",
-        "SBS 7/2 再補澳洲本地角度：若擊敗 Egypt，Socceroos 將做到澳洲隊在 World Cup 從未完成的事；這是 motivation/context，不是勝率保證。"
+        "SBS 7/2 再補澳洲本地角度：若擊敗 Egypt，Socceroos 將做到澳洲隊在 World Cup 從未完成的事；這是 motivation/context，不是勝率保證。",
+        "CAF 文章父層探針確認：Egypt 對 Australia 賽前有 Salah 等三名球員被醫療團隊監控；這是 confederation injury/fitness lead，未等於正式缺陣。",
+        "EFA 阿語頁 meta 描述確認 Mohamed Hany 表示 Egypt 已準備好面對 Australia、想寫新歷史；屬官方球員聲音/心理狀態，不是戰術配方或先發證據。"
       ],
       "sources": [
         {
@@ -7031,6 +7051,22 @@
           "fetchedAt": "2026-07-02T17:23:32Z",
           "claimType": "reported/context",
           "confidence": "high"
+        },
+        {
+          "label": "CAF Egypt Salah fitness watch",
+          "url": "https://www.cafonline.com/fifa-world-cup/news/egypt-sweat-on-salah-fitness-ahead-of-historic-world-cup-clash-with-australia/",
+          "sourceName": "CAF",
+          "fetchedAt": "2026-07-03T01:17:50Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "EFA Mohamed Hany Australia quote",
+          "url": "https://efa.com.eg/ar/%D8%A7%D9%84%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1/%D9%85%D8%AD%D9%85%D8%AF-%D9%87%D8%A7%D9%86%D9%8A-%D8%AC%D8%A7%D9%87%D8%B2%D9%88%D9%86-%D9%84%D8%A3%D8%B3%D8%AA%D8%B1%D8%A7%D9%84%D9%8A%D8%A7-%D9%88%D9%86%D8%B3%D8%B9%D9%8A-%D9%84%D9%83%D8%AA%D8%A7%D8%A8%D8%A9-%D8%AA%D8%A7%D8%B1%D9%8A%D8%AE-%D8%AC%D8%AF%D9%8A%D8%AF-%D9%84%D9%84%D9%83%D8%B1%D8%A9-%D8%A7%D9%84%D9%85%D8%B5%D8%B1%D9%8A%D8%A9/",
+          "sourceName": "Egyptian Football Association",
+          "fetchedAt": "2026-07-03T01:17:50Z",
+          "claimType": "confirmed/player-quote",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -7221,8 +7257,8 @@
     {
       "matchId": "m087",
       "match": "Colombia vs Ghana",
-      "sourceType": "official federation/FIFA preview + reported team-news + odds/bracket watch + source alignment",
-      "title": "Colombia-Ghana 補 GFA 全員可用與 Opta 64.8%：Ghana 有 2010 魂，但 Colombia 不是背景板。",
+      "sourceType": "official federation/FIFA preview + ESPN live hub + local weather context + reported team-news/Opta/odds confidence medium-high",
+      "title": "Colombia-Ghana 加熱浪與 ESPN live hub：Ghana 要追夢，Kansas City 先把體能條往下剪。",
       "sorenTake": "GFA 自家 preview 給 Ghana 一個好消息：26 人都已抵達，Semenyo、Opoku、Adjetey、Ati-Zigi 可用。壞消息是 Opta 仍把 Colombia 放在明顯上風；Soren 看這場的 upset path 很窄——Ghana 必須把比賽拖成定位球與二點球肉搏，否則 Colombia 的節奏會把黑星磨成黑咖啡渣。",
       "signals": [
         "Ghana FA 官方對戰文確認 Colombia 以 Group K 頭名對 Ghana，地點為 Kansas City Stadium；Ghana 以 Group L 第三名/淨勝球脈絡晉級。",
@@ -7240,7 +7276,9 @@
         "Colombia 足協確認 7/1 完成 Fort Lauderdale 最後訓練後轉往 Kansas City，備戰對 Ghana 的 Round of 32；這是官方 travel/training rail。",
         "Ghana FA 確認 Black Stars 已抵達 Kansas City，對 Colombia 的淘汰賽時間與場地脈絡明確；雙方都已進入最後備戰，不再只是賽程占位。",
         "Ghana FA preview 表示 Ghana 26 名球員都已抵達並完成恢復訓練，Jerome Opoku、Jonas Adjetey、Antoine Semenyo、Lawrence Ati-Zigi 均可用；這是官方 availability context，不是正式先發。",
-        "The Analyst / Opta 賽前模型給 Colombia 約 64.8% 勝率、Ghana 約 13.8%、和局約 21.4%，並提示 Colombia 對非洲球隊的世界盃歷史對戰脈絡。"
+        "The Analyst / Opta 賽前模型給 Colombia 約 64.8% 勝率、Ghana 約 13.8%、和局約 21.4%，並提示 Colombia 對非洲球隊的世界盃歷史對戰脈絡。",
+        "KCUR 父層探針確認 Kansas City 週五晚間 Ghana-Colombia 可能仍受高溫與濕度影響；這是 venue/weather context，會放大輪換、補水與比賽節奏風險。",
+        "ESPN match hub 可連線並標示 Colombia vs Ghana Live Score；用作臨場比分/數據入口，正式先發仍等 FIFA/官方或可信 live centre 落地。"
       ],
       "sources": [
         {
@@ -7361,6 +7399,22 @@
           "sourceName": "The Analyst / Opta",
           "fetchedAt": "2026-07-02T23:21:05Z",
           "claimType": "context/public-probability",
+          "confidence": "high"
+        },
+        {
+          "label": "KCUR Kansas City heat context",
+          "url": "https://www.kcur.org/sports/2026-07-01/world-cups-knockout-rounds-collide-with-a-massive-heat-wave",
+          "sourceName": "KCUR / NPR",
+          "fetchedAt": "2026-07-03T01:17:50Z",
+          "claimType": "context/weather-venue",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN Colombia-Ghana live hub",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760501",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-03T01:17:50Z",
+          "claimType": "context/live-centre",
           "confidence": "high"
         }
       ],
