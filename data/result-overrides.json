@@ -1,4 +1,18 @@
 {
   "note": "Source-backed final-score overrides used when upstream openfootball data lags. The official-results verifier cron may append new entries; remove entries after upstream catches up if desired.",
-  "overrides": []
+  "overrides": [
+    {
+      "date": "2026-07-02",
+      "team1": "Portugal",
+      "team2": "Croatia",
+      "score": [
+        2,
+        1
+      ],
+      "winner": "Portugal",
+      "source": "ESPN final score (summary and scoreboard show Full Time); FIFA match centre URL cross-referenced for fixture identity",
+      "url": "https://www.espn.com/soccer/match/_/gameId/760496/croatia-portugal",
+      "fetchedAt": "2026-07-03T01:11:26.281Z"
+    }
+  ]
 }
