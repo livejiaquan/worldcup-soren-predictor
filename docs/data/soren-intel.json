@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-03T13:47:25Z",
-  "status": "matchday scout: m088/m086/m087 在開賽前重查 ESPN public scoreboard，全部仍 scheduled/pre；補 live-status guard，避免把 0-0 placeholder、預測 XI 或傷情猜測當成賽中/正式事實。",
-  "headline": "Soren 13:42Z 賽前巡邏：三場 7/3 knockout 都還沒開球，資料先踩煞車；正式名單與 live state 落地前只保留 verified rails。",
+  "generatedAt": "2026-07-03T20:00:03Z",
+  "status": "matchday scout: m088 正規時間後仍 1-1、ESPN 標為 end of regulation / ET 且 completed=false；同時補 m086/m087 官方賽事入口、預測 XI/紙盤參考，並為 m097/m098 建立保守 quarterfinal placeholder rails。",
+  "headline": "Soren 20:00Z 巡邏：Australia-Egypt 1-1 進入 ET 但仍非 final；Argentina/Cape Verde、Colombia/Ghana 開賽前只收官方入口與可驗證預覽，QF 卡先掛 W-slot 護欄。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -6847,9 +6847,9 @@
     {
       "matchId": "m088",
       "match": "Australia vs Egypt",
-      "sourceType": "official Socceroos/EFA/FIFA + CAF/Ahram injury watch + Opta data preview + credible media tactical/motivation + odds-reference confidence medium-high + ESPN public scheduled-status guard",
-      "title": "Australia-Egypt 賽前 4 小時 ESPN 仍是 scheduled：Salah 不是謠言提款機，正式名單前先別把 0-0 寫成劇本。",
-      "sorenTake": "ESPN public scoreboard 13:42Z 仍標 scheduled/pre，未有官方先發或比賽開始訊號；既有 BBC/CAF/Ahram/Socceroos rails 已足夠，現在最重要是等 team sheet。Soren 的翻譯：Salah 的腿筋很重要，但「還沒開踢」四個字更重要。",
+      "sourceType": "in-progress live-score + official/live-centre/availability watch",
+      "title": "Australia-Egypt 正規時間後 1-1 進 ET：這是 live-score，不是終場判決；Salah 劇本先別急著蓋棺。",
+      "sorenTake": "ESPN public summary 在 20:00Z 顯示 1-1、end of regulation / ET、completed=false。Soren 可以記錄比賽進入加時，但不能把 1-1 當成結果、不能結算 bracket 或紙上 bankroll；這場真正的資料紀律，是等 full-time 或 penalties 完成再開刀。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
         "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
@@ -6881,7 +6881,9 @@
         "Ahram Online 報導 Australia 老將 Mathew Leckie 與 Jacob Italiano 因傷已退出本屆賽事；這會影響 Socceroos 淘汰賽輪換與邊路深度。",
         "Opta Analyst Australia-Egypt 預覽標示 Egypt 可能沒有 Mohamed Salah，並給 Egypt 38.6%、Australia 30.4%、90 分鐘打平 31.0% 的公開模型概率；這是公共概率脈絡，不是 Soren 底層模型。",
         "BBC live text 已開 Australia-Egypt stats/head-to-head 與即時更新入口；正式先發未出前，只把它當臨場 rails，不把任何預測 XI 寫成事實。",
-        "13:42Z 父層重查 ESPN public scoreboard：Australia-Egypt 仍是 STATUS_SCHEDULED / pre / completed=false，0-0 只是賽前 placeholder；正式先發或開賽前，不把比分、Salah 可用性或 Egypt 計畫寫成事實。"
+        "13:42Z 父層重查 ESPN public scoreboard：Australia-Egypt 仍是 STATUS_SCHEDULED / pre / completed=false，0-0 只是賽前 placeholder；正式先發或開賽前，不把比分、Salah 可用性或 Egypt 計畫寫成事實。",
+        "20:00Z ESPN public summary 顯示 Australia 1-1 Egypt，狀態為 STATUS_END_OF_REGULATION / in，detail ET，completed=false；這只更新 live-score context，不是 full-time 結果。",
+        "Guardian minute-by-minute、BBC live text 與 FIFA match centre 都可作臨場核對入口；若沒有 completed/full-time 標記，本站不寫 override、不結算預測。"
       ],
       "sources": [
         {
@@ -7109,22 +7111,38 @@
           "confidence": "high"
         },
         {
-          "label": "ESPN public scoreboard Australia-Egypt scheduled status",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260703",
-          "sourceName": "ESPN public scoreboard API",
-          "fetchedAt": "2026-07-03T13:47:25Z",
-          "claimType": "context/live-status",
+          "label": "ESPN public summary Australia-Egypt end of regulation ET",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760499",
+          "sourceName": "ESPN public summary API",
+          "fetchedAt": "2026-07-03T20:00:03Z",
+          "claimType": "context/live-score",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN Australia-Egypt live centre",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760499/egypt-australia",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "Guardian Australia-Egypt live blog",
+          "url": "https://www.theguardian.com/football/live/2026/jul/03/australia-v-egypt-world-cup-2026-last-32-live",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m086",
       "match": "Argentina vs Cape Verde",
       "sourceType": "official team update + official FIFA preview/match-centre + reported lineup watch + odds reference + qualification context + source alignment + ESPN public scheduled-status guard",
-      "title": "Argentina-Cape Verde 賽前 ESPN 仍未開球：童話可以熱血，資料欄不能搶跑。",
-      "sorenTake": "ESPN public scoreboard 13:42Z 仍把 Argentina-Cape Verde 標成 scheduled/pre；AFA、FIFA、BBC、Opta 的脈絡已在卡上，下一步只等官方名單與開賽狀態。Soren 的短句：童話要靠草皮，不靠我們替它預支比分。",
+      "title": "Argentina-Cape Verde 補 FIFA 正門與 projected-XI：童話很香，但正式名單前不要把童話寫成首發。",
+      "sorenTake": "FIFA match centre 現在是本場最高優先的 live/lineups 入口；Sporting News 只能當 projected-XI/team-news，BBC 的 Cape Verde 總統 1-0 豪語是敘事燃料，不是模型證據。Argentina 仍是紙面巨獸，但 Soren 更想看的是 Cape Verde 的低位反擊能撐多久。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Argentina vs Cape Verde，22:00 GMT，Miami Stadium。",
         "FOX live score 頁已把此格呈現為 Argentina vs Cape Verde，並標示 July 03, 2026 賽事。",
@@ -7148,7 +7166,10 @@
         "Al Jazeera 專文整理 Cape Verde 這個 50 多萬人口島國闖進 32 強的背景與 Vozinha 門將線索；這是可信故事/心理脈絡，不等於比賽勝負保證。",
         "FotMob Argentina-Cape Verde match hub 已可連線，提供 live score、predicted lineups、H2H 與賽中數據入口；正式名單前仍只當 lineup-watch/live-centre。",
         "ESPN m086 live page 可連線，提供 live score/highlights/updated stats；先列為臨場統計來源，不當作已確認先發或賽果。",
-        "13:42Z 父層重查 ESPN public scoreboard：Argentina-Cape Verde 仍是 STATUS_SCHEDULED / pre / completed=false，0-0 是賽前 placeholder；本站維持 lineup-watch/live-centre 標籤，不提前 settle 或宣稱 confirmed XI。"
+        "13:42Z 父層重查 ESPN public scoreboard：Argentina-Cape Verde 仍是 STATUS_SCHEDULED / pre / completed=false，0-0 是賽前 placeholder；本站維持 lineup-watch/live-centre 標籤，不提前 settle 或宣稱 confirmed XI。",
+        "FIFA match centre 提供 Argentina-Cape Verde 官方 lineups/score/live updates 入口；正式先發以這類官方頁與球隊公告為準。",
+        "Sporting News 賽前頁屬 projected lineups/team news，只能標為 reported/lineup-watch，不能升級成 confirmed XI。",
+        "BBC News 報導 Cape Verde 總統公開預測 1-0 擊敗 Argentina；這是公開士氣/敘事 context，不是可量化賽果來源。"
       ],
       "sources": [
         {
@@ -7326,6 +7347,14 @@
           "fetchedAt": "2026-07-03T13:47:25Z",
           "claimType": "context/live-status",
           "confidence": "high"
+        },
+        {
+          "label": "Sporting News Argentina-Cape Verde projected lineups",
+          "url": "https://www.sportingnews.com/us/soccer/news/argentina-vs-cape-verde-lineups-starting-11-world-cup/a9fddd598aaca402c96ab2aa",
+          "sourceName": "Sporting News",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -7334,8 +7363,8 @@
       "matchId": "m087",
       "match": "Colombia vs Ghana",
       "sourceType": "official federation/FIFA preview + ESPN live hub + local weather context + reported team-news/Opta/odds confidence medium-high + ESPN public scheduled-status guard",
-      "title": "Colombia-Ghana 賽前 scoreboard 還在 pre：Queiroz 說不能犯錯，Soren 先不犯資料錯。",
-      "sorenTake": "ESPN public scoreboard 13:42Z 顯示 Colombia-Ghana 仍 scheduled/pre；Ghana FA transcript、BBC live text、KCUR 天氣與 Opta 機率已補齊，接下來只盯正式名單與 Kansas City 熱度如何壓節奏。",
+      "title": "Colombia-Ghana 補 FIFA 正門、Goal 戰術預覽與 CBS 紙盤：Queiroz 不能犯錯，Soren 也不能把 odds 寫成建議。",
+      "sorenTake": "FIFA/ESPN/BBC 是臨場硬入口；Goal 與 Sporting News 提供戰術與 projected-XI 線索，CBS/SportsLine 只作市場溫度。Ghana 的「no mistakes」口號很好聽，但 Colombia 的轉換壓力如果早段打穿，這句話會變成賽後標題。",
       "signals": [
         "Ghana FA 官方對戰文確認 Colombia 以 Group K 頭名對 Ghana，地點為 Kansas City Stadium；Ghana 以 Group L 第三名/淨勝球脈絡晉級。",
         "Ghana FA ticket note 再次確認 Colombia vs Ghana 這張 Round of 32 對戰與 Kansas City 賽事安排；可作官方 logistics 脈絡，不涉及競技預測。",
@@ -7358,7 +7387,10 @@
         "Ghana FA 官方預覽確認 Ghana 對 Colombia 是 Kansas City 32 強生死戰，勝者將碰 Switzerland-Algeria 勝方；Ghana 追求自 2010 以來首度重返 16 強。",
         "Ghana FA 賽前 transcript 引述 Carlos Queiroz 稱面對 Colombia「不能犯錯」；這是官方賽前心理/戰術語境，不是先發名單。",
         "BBC live text 已開 Colombia-Ghana stats/head-to-head 與即時更新入口，可作臨場比分/數據 rails。",
-        "13:42Z 父層重查 ESPN public scoreboard：Colombia-Ghana 仍是 STATUS_SCHEDULED / pre / completed=false，0-0 不是 live score；Ghana「不能犯錯」的教練語境保留為賽前訊號，不升級成賽中結論。"
+        "13:42Z 父層重查 ESPN public scoreboard：Colombia-Ghana 仍是 STATUS_SCHEDULED / pre / completed=false，0-0 不是 live score；Ghana「不能犯錯」的教練語境保留為賽前訊號，不升級成賽中結論。",
+        "FIFA match centre 補作 Colombia-Ghana 官方 lineups/score/live updates 入口；正式陣容仍等官方或球隊源。",
+        "Goal.com 與 Sporting News 提供 tactics/team-news/projected-XI 角度；標籤維持 reported，不把預測陣容寫成確認先發。",
+        "CBS/SportsLine odds 頁只作紙上市場參考；本站不提供下注建議，也不把 public odds 當作勝負事實。"
       ],
       "sources": [
         {
@@ -7520,6 +7552,30 @@
           "fetchedAt": "2026-07-03T13:47:25Z",
           "claimType": "context/live-status",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA Colombia-Ghana match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289287/400021517",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "Goal.com Colombia-Ghana preview",
+          "url": "https://www.goal.com/en-us/news/colombia-ghana-world-cup-preview/bltc918b39193cee468",
+          "sourceName": "Goal.com",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "reported/tactical-preview",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "CBS Colombia-Ghana odds reference",
+          "url": "https://www.cbssports.com/soccer/news/colombia-ghana-odds-prediction-time-2026-world-cup-round-of-32-picks/",
+          "sourceName": "CBS Sports / SportsLine",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -7991,17 +8047,15 @@
     },
     {
       "matchId": "m093",
-      "match": "W83 vs W84",
-      "sourceType": "reported/bracket-watch + public schedule context",
-      "title": "M093 仍守 W83/W84：FIFA/BBC 補強 placeholder provenance，別把還沒開的門牌提前換名字。",
-      "sorenTake": "W83/W84 這條線最容易被外部頁面提前腦補，但本地 worldcup.json 還沒 actualize，就不要裝作已經知道。Soren 先把官方賽程與 BBC fixtures 當護欄：等 Portugal-Croatia、Spain-Austria 真的踢完，再把故事寫成名字。",
+      "match": "Portugal vs Spain",
+      "sourceType": "local actualization + bracket provenance watch",
+      "title": "Portugal-Spain 已在本地賽程 actualize：先補 bracket provenance，別再讓 W83/W84 的舊門牌搶走 Iberian derby。",
+      "sorenTake": "本地 worldcup.json 已把 M093 寫成 Portugal vs Spain；公開頁仍要保留 bracket-slot 來源，因為 knockout path 需要可追溯。這張卡的重點不是提前炫耀預測，而是提醒讀者：主 bracket 顯示實際進度，Soren 的判讀留在深挖卡裡。",
       "signals": [
-        "Current public tournament data keeps M093 as W83 vs W84; this is a route slot, not a confirmed team matchup.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
-        "Kickoff target: 2026-07-06T19:00:00Z at Dallas Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known.",
-        "FIFA 官方賽程/fixtures 頁作為 knockout placeholder 與後續 actualization 的最高優先入口；本地資料未更新前，仍保留 W-slot 標籤。",
-        "BBC July fixtures page 可作媒體層 placeholder corroboration；用來防止把 W-slot 搜尋結果過早 actualize。"
+        "BBC July fixtures page remains media-layer schedule corroboration; use it to cross-check kickoff/slot context rather than re-placeholdering the resolved local matchup.",
+        "本地賽程已從 W83/W84 actualize 為 Portugal vs Spain；來源呈現仍保留 FIFA/BBC/NBC/Guardian bracket rails，避免把 slot provenance 丟掉。"
       ],
       "sources": [
         {
@@ -8193,6 +8247,82 @@
         }
       ],
       "confidence": "medium"
+    },
+    {
+      "matchId": "m097",
+      "match": "W89 vs W90",
+      "sourceType": "official quarterfinal placeholder + bracket watch",
+      "title": "M097 先掛 W89 vs W90：quarterfinal 還沒 actualize，Soren 不拿未出爐勝者寫同人誌。",
+      "sorenTake": "FIFA schedule / suites 頁把 M097 鎖在 Boston 7/9 20:00 UTC，對陣仍是 W89 vs W90。等 Canada-Morocco 與 Paraguay-France 這條路打完再換名字；現在最專業的做法，是把 placeholder 寫清楚。",
+      "signals": [
+        "FIFA 官方賽程與 hospitality/suites 頁都指向 M097：W89 vs W90，Boston Stadium / Foxborough，2026-07-09 20:00 UTC。",
+        "ESPN/NBC/FOX 類公開 bracket/schedule 可作觀眾導覽，但在勝者未確定前只標為 context/bracket-watch。"
+      ],
+      "sources": [
+        {
+          "label": "FIFA World Cup schedule fixtures",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA M97 suites placeholder",
+          "url": "https://fifaworldcup26.suites.fifa.com/events/M97-W89-vs-W90-111689/",
+          "sourceName": "FIFA World Cup 26 Suites",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN World Cup fixtures and bracket",
+          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium-high"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "matchId": "m098",
+      "match": "W93 vs W94",
+      "sourceType": "official quarterfinal placeholder + bracket watch",
+      "title": "M098 是 W93 vs W94，不是提前官宣豪門大片；等 Portugal/Spain 與 USA/Belgium 路線自己交卷。",
+      "sorenTake": "FIFA schedule / suites 頁把 M098 放在 Los Angeles 7/10 19:00 UTC，placeholder 是 W93 vs W94。它很可能牽出重磅 quarterfinal，但 public bracket 必須先做實況地圖，不把 Soren 的想像塞進主賽程。",
+      "signals": [
+        "FIFA 官方賽程與 hospitality/suites 頁都指向 M098：W93 vs W94，Los Angeles Stadium / Inglewood，2026-07-10 19:00 UTC。",
+        "由於 M093/M094 尚未完成，任何 Portugal/Spain/USA/Belgium 的 quarterfinal 敘事都只能放在 bracket-watch，而不是 confirmed matchup。"
+      ],
+      "sources": [
+        {
+          "label": "FIFA World Cup schedule fixtures",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA M98 suites placeholder",
+          "url": "https://fifaworldcup26.suites.fifa.com/events/M98-W93-vs-W94-111720/",
+          "sourceName": "FIFA World Cup 26 Suites",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
+        },
+        {
+          "label": "NBC Sports 2026 World Cup bracket schedule",
+          "url": "https://www.nbcsports.com/soccer/news/2026-world-cup-schedule-kick-off-times-stadiums-dates-groups-how-to-watch-live-bracket",
+          "sourceName": "NBC Sports",
+          "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium-high"
+        }
+      ],
+      "confidence": "high"
     }
   ]
 }
