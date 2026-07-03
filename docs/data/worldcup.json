@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T04:15:03.215Z",
+  "generatedAt": "2026-07-03T06:48:02.735Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,8 +7,8 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 84,
-    "scheduledMatches": 20,
+    "finishedMatches": 85,
+    "scheduledMatches": 19,
     "nextWindow": [
       "m088",
       "m086",
@@ -187,6 +187,18 @@
     ],
     "Group B": [
       {
+        "team": "Switzerland",
+        "group": "Group B",
+        "played": 4,
+        "won": 3,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 9,
+        "goalsAgainst": 3,
+        "goalDiff": 6,
+        "points": 10
+      },
+      {
         "team": "Canada",
         "group": "Group B",
         "played": 4,
@@ -196,18 +208,6 @@
         "goalsFor": 9,
         "goalsAgainst": 3,
         "goalDiff": 6,
-        "points": 7
-      },
-      {
-        "team": "Switzerland",
-        "group": "Group B",
-        "played": 3,
-        "won": 2,
-        "drawn": 1,
-        "lost": 0,
-        "goalsFor": 7,
-        "goalsAgainst": 3,
-        "goalDiff": 4,
         "points": 7
       },
       {
@@ -599,18 +599,6 @@
         "points": 9
       },
       {
-        "team": "Algeria",
-        "group": "Group J",
-        "played": 3,
-        "won": 1,
-        "drawn": 1,
-        "lost": 1,
-        "goalsFor": 5,
-        "goalsAgainst": 7,
-        "goalDiff": -2,
-        "points": 4
-      },
-      {
         "team": "Austria",
         "group": "Group J",
         "played": 4,
@@ -620,6 +608,18 @@
         "goalsFor": 6,
         "goalsAgainst": 9,
         "goalDiff": -3,
+        "points": 4
+      },
+      {
+        "team": "Algeria",
+        "group": "Group J",
+        "played": 4,
+        "won": 1,
+        "drawn": 1,
+        "lost": 2,
+        "goalsFor": 5,
+        "goalsAgainst": 9,
+        "goalDiff": -4,
         "points": 4
       },
       {
@@ -2270,8 +2270,11 @@
       "team1": "Switzerland",
       "team2": "Algeria",
       "venue": "Vancouver",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        2,
+        0
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -2730,40 +2733,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.0885450819254818,
-        "draw": 0.20157760986965265,
-        "away": 0.7098773082048655
+        "home": 0.07885960196581762,
+        "draw": 0.1942249420768389,
+        "away": 0.7269154559573435
       },
       "expectedGoals": [
-        0.49,
-        1.89
+        0.46,
+        1.92
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 Switzerland，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Switzerland，但平局還有 19%；別急著開香檳，足球最會打臉。",
         "story": "Switzerland 底牌比較硬；Qatar 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "24.1",
+            "value": "25.9",
             "note": "Switzerland 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.49 : 1.89",
+            "value": "0.46 : 1.92",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "9%",
+            "value": "8%",
             "note": "Qatar 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Qatar 61.7；Switzerland 85.8",
-        "預期進球 0.49 : 1.89，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 24.1 分，我暫時站 Switzerland"
+        "底牌分：Qatar 61.7；Switzerland 87.6",
+        "預期進球 0.46 : 1.92，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 25.9 分，我暫時站 Switzerland"
       ]
     },
     "m013": {
@@ -3304,27 +3307,27 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.815487613118031,
-        "draw": 0.15027048696875595,
-        "away": 0.03424189991321308
+        "home": 0.8227338030948497,
+        "draw": 0.1447123434781353,
+        "away": 0.03255385342701494
       },
       "expectedGoals": [
-        2.13,
+        2.17,
         0.25
       ],
       "score": "2-0",
       "commentary": {
-        "headline": "我這場偏明確站 Argentina，但平局還有 15%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Argentina，但平局還有 14%；別急著開香檳，足球最會打臉。",
         "story": "Argentina 底牌比較硬；Algeria 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "32.7",
+            "value": "34.9",
             "note": "Argentina 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.13 : 0.25",
+            "value": "2.17 : 0.25",
             "note": "最像 2-0"
           },
           {
@@ -3335,9 +3338,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Argentina 104.0；Algeria 71.3",
-        "預期進球 2.13 : 0.25，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 32.7 分，我暫時站 Argentina"
+        "底牌分：Argentina 104.0；Algeria 69.1",
+        "預期進球 2.17 : 0.25，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 34.9 分，我暫時站 Argentina"
       ]
     },
     "m056": {
@@ -3588,43 +3591,43 @@
     },
     "m009": {
       "pick": "Switzerland",
-      "confidence": 0.7677634008459006,
+      "confidence": 0.790608905694568,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6680028422175655,
-        "draw": 0.21821964127784174,
-        "away": 0.11377751650459281
+        "home": 0.6856993956281192,
+        "draw": 0.2114318202240323,
+        "away": 0.10286878414784839
       },
       "expectedGoals": [
-        1.8,
-        0.58
+        1.84,
+        0.54
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Switzerland，但平局還有 22%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Switzerland，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "story": "Switzerland 底牌比較硬；Bosnia & Herzegovina 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "17.1",
+            "value": "18.8",
             "note": "Switzerland 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.80 : 0.58",
+            "value": "1.84 : 0.54",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "11%",
+            "value": "10%",
             "note": "Bosnia & Herzegovina 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Switzerland 85.8；Bosnia & Herzegovina 68.7",
-        "預期進球 1.80 : 0.58，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 17.1 分，我暫時站 Switzerland"
+        "底牌分：Switzerland 87.6；Bosnia & Herzegovina 68.7",
+        "預期進球 1.84 : 0.54，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 18.8 分，我暫時站 Switzerland"
       ]
     },
     "m010": {
@@ -4326,43 +4329,43 @@
     },
     "m058": {
       "pick": "Algeria",
-      "confidence": 0.6663883058969796,
+      "confidence": 0.541010048511365,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.1660289117449263,
-        "draw": 0.2439087916355259,
-        "away": 0.5900622966195478
+        "home": 0.23912141313878688,
+        "draw": 0.26591934713549553,
+        "away": 0.4949592397257175
       },
       "expectedGoals": [
-        0.74,
-        1.64
+        0.92,
+        1.46
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場中等站 Algeria，但平局還有 24%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Algeria，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "story": "Algeria 底牌比較硬；Jordan 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "12.5",
+            "value": "10.3",
             "note": "Algeria 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.74 : 1.64",
+            "value": "0.92 : 1.46",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "17%",
+            "value": "24%",
             "note": "Jordan 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Jordan 58.8；Algeria 71.3",
-        "預期進球 0.74 : 1.64，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 12.5 分，我暫時站 Algeria"
+        "底牌分：Jordan 58.8；Algeria 69.1",
+        "預期進球 0.92 : 1.46，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 10.3 分，我暫時站 Algeria"
       ]
     },
     "m063": {
@@ -4531,43 +4534,43 @@
     },
     "m011": {
       "pick": "Switzerland",
-      "confidence": 0.40379847431349125,
-      "tag": "膠著到煩",
+      "confidence": 0.5371623623590134,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.39254799952114194,
-        "draw": 0.27740663869299026,
-        "away": 0.33004536178586785
+        "home": 0.49206326088950286,
+        "draw": 0.266424041940497,
+        "away": 0.2415126971700001
       },
       "expectedGoals": [
-        1.25,
-        1.13
+        1.45,
+        0.93
       ],
-      "score": "1-1",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 Switzerland，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Switzerland，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "story": "Switzerland 底牌比較硬；Canada 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "9.3",
+            "value": "11.0",
             "note": "Switzerland 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.25 : 1.13",
-            "note": "最像 1-1"
+            "value": "1.45 : 0.93",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "33%",
+            "value": "24%",
             "note": "Canada 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Switzerland 85.8；Canada 76.6",
-        "預期進球 1.25 : 1.13，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 9.3 分，我暫時站 Switzerland"
+        "底牌分：Switzerland 87.6；Canada 76.6",
+        "預期進球 1.45 : 0.93，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 11.0 分，我暫時站 Switzerland"
       ]
     },
     "m012": {
@@ -5432,44 +5435,44 @@
       ]
     },
     "m059": {
-      "pick": "Algeria",
-      "confidence": 0.3857099808404637,
-      "tag": "膠著到煩",
+      "pick": "Austria",
+      "confidence": 0.47427560643745365,
+      "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.37918427782358544,
-        "draw": 0.2778853500021528,
-        "away": 0.34293037217426176
+        "home": 0.2818729612505941,
+        "draw": 0.2732009883574054,
+        "away": 0.4449260503920005
       },
       "expectedGoals": [
-        1.23,
-        1.15
+        1.02,
+        1.36
       ],
       "score": "1-1",
       "commentary": {
-        "headline": "我這場保守站 Algeria，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場保守站 Austria，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "story": "Austria 底牌比較硬；Algeria 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "3.5",
-            "note": "誰也別裝大哥"
+            "value": "5.7",
+            "note": "Austria 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.23 : 1.15",
+            "value": "1.02 : 1.36",
             "note": "最像 1-1"
           },
           {
             "label": "翻車率",
-            "value": "34%",
+            "value": "28%",
             "note": "Algeria 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Algeria 71.3；Austria 74.7",
-        "預期進球 1.23 : 1.15，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：Algeria 69.1；Austria 74.7",
+        "預期進球 1.02 : 1.36，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 5.7 分，我暫時站 Austria"
       ]
     },
     "m060": {
@@ -6007,43 +6010,43 @@
     },
     "m085": {
       "pick": "Switzerland",
-      "confidence": 0.7338696929843055,
+      "confidence": 0.78605605974522,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6418387984537175,
-        "draw": 0.2276051504847206,
-        "away": 0.1305560510615618
+        "home": 0.682168701664686,
+        "draw": 0.2128145860069276,
+        "away": 0.10501671232838636
       },
       "expectedGoals": [
-        1.75,
-        0.63
+        1.83,
+        0.55
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Switzerland，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Switzerland，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "story": "Switzerland 底牌比較硬；Algeria 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "14.6",
+            "value": "18.5",
             "note": "Switzerland 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.75 : 0.63",
+            "value": "1.83 : 0.55",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "13%",
+            "value": "11%",
             "note": "Algeria 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Switzerland 85.8；Algeria 71.3",
-        "預期進球 1.75 : 0.63，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 14.6 分，我暫時站 Switzerland"
+        "底牌分：Switzerland 87.6；Algeria 69.1",
+        "預期進球 1.83 : 0.55，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 18.5 分，我暫時站 Switzerland"
       ]
     },
     "m088": {
@@ -6808,23 +6811,23 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 76,
-      "correct": 56,
+      "points": 77,
+      "correct": 57,
       "exact": 10,
-      "total": 84,
+      "total": 85,
       "rank": 1,
-      "accuracy": 0.6666666666666666
+      "accuracy": 0.6705882352941176
     },
     {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 70,
-      "correct": 52,
+      "points": 71,
+      "correct": 53,
       "exact": 8,
-      "total": 84,
+      "total": 85,
       "rank": 2,
-      "accuracy": 0.6190476190476191
+      "accuracy": 0.6235294117647059
     },
     {
       "id": "draw",
@@ -6833,9 +6836,9 @@
       "points": 44,
       "correct": 22,
       "exact": 11,
-      "total": 84,
+      "total": 85,
       "rank": 3,
-      "accuracy": 0.2619047619047619
+      "accuracy": 0.25882352941176473
     }
   ],
   "paperBankroll": {
@@ -6843,36 +6846,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 225.23,
+    "bankroll": 233.3,
     "openStake": 30.58,
-    "totalValue": 225.23,
-    "roi": 1.252,
+    "totalValue": 233.3,
+    "roi": 1.333,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m073",
-        "kickoffUtc": "2026-06-28T19:00:00.000Z",
-        "stage": "Round of 32",
-        "team1": "South Africa",
-        "team2": "Canada",
-        "pick": "Canada",
-        "outcome": "away",
-        "stake": 8,
-        "decimalOdds": 2.65,
-        "edge": 0.498,
-        "modelProbability": 0.565,
-        "marketProxyProbability": 0.355,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-06-28T18:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Canada，但平局還有 25%；別急著開香檳，足球最會打臉。",
-        "status": "won",
-        "score": [
-          0,
-          1
-        ],
-        "profit": 13.2
-      },
       {
         "matchId": "m076",
         "kickoffUtc": "2026-06-29T17:00:00.000Z",
@@ -7136,9 +7115,7 @@
           1
         ],
         "profit": 10.56
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m085",
         "kickoffUtc": "2026-07-03T03:00:00.000Z",
@@ -7149,15 +7126,22 @@
         "outcome": "home",
         "stake": 8,
         "decimalOdds": 2.29,
-        "edge": 0.47,
-        "modelProbability": 0.642,
+        "edge": 0.562,
+        "modelProbability": 0.682,
         "marketProxyProbability": 0.41,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-03T02:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 Switzerland，但平局還有 23%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "reason": "我這場偏明確站 Switzerland，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          2,
+          0
+        ],
+        "profit": 10.32
+      }
+    ],
+    "pending": [
       {
         "matchId": "m088",
         "kickoffUtc": "2026-07-03T18:00:00.000Z",
@@ -7233,9 +7217,7 @@
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 Canada，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "pending"
-      }
-    ],
-    "watchlist": [
+      },
       {
         "matchId": "m089",
         "kickoffUtc": "2026-07-04T21:00:00.000Z",
@@ -7253,8 +7235,10 @@
         "lockedAtUtc": "2026-07-04T20:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 France，但平局還有 16%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
+        "status": "pending"
+      }
+    ],
+    "watchlist": [
       {
         "matchId": "m091",
         "kickoffUtc": "2026-07-05T20:00:00.000Z",
@@ -7329,6 +7313,25 @@
         "lockedAtUtc": "2026-07-06T18:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 W83，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m095",
+        "kickoffUtc": "2026-07-07T16:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "W86",
+        "team2": "W88",
+        "pick": "W86",
+        "outcome": "home",
+        "stake": 1,
+        "decimalOdds": 2.54,
+        "edge": -0.046,
+        "modelProbability": 0.376,
+        "marketProxyProbability": 0.37,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-07T15:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 W86，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
