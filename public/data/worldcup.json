@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T13:58:16.447Z",
+  "generatedAt": "2026-07-03T15:50:17.557Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -2390,8 +2390,8 @@
       "date": "2026-07-06",
       "time": "14:00 UTC-5",
       "kickoffUtc": "2026-07-06T19:00:00.000Z",
-      "team1": "W83",
-      "team2": "W84",
+      "team1": "Portugal",
+      "team2": "Spain",
       "venue": "Dallas (Arlington)",
       "status": "scheduled",
       "score": null,
@@ -2435,7 +2435,7 @@
       "date": "2026-07-07",
       "time": "13:00 UTC-7",
       "kickoffUtc": "2026-07-07T20:00:00.000Z",
-      "team1": "W85",
+      "team1": "Switzerland",
       "team2": "W87",
       "venue": "Vancouver",
       "status": "scheduled",
@@ -6337,44 +6337,44 @@
       ]
     },
     "m093": {
-      "pick": "W83",
-      "confidence": 0.3808352070799772,
-      "tag": "膠著到煩",
+      "pick": "Spain",
+      "confidence": 0.514203151885903,
+      "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.37558853219027716,
-        "draw": 0.27797112945111263,
-        "away": 0.3464403383586102
+        "home": 0.2559675957101495,
+        "draw": 0.2692211169053336,
+        "away": 0.47481128738451694
       },
       "expectedGoals": [
-        1.22,
-        1.16
+        0.96,
+        1.42
       ],
-      "score": "1-1",
+      "score": "0-1",
       "commentary": {
-        "headline": "我這場保守站 W83，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場保守站 Spain，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "story": "Spain 底牌比較硬；Portugal 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "0.0",
-            "note": "誰也別裝大哥"
+            "value": "4.6",
+            "note": "Spain 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.22 : 1.16",
-            "note": "最像 1-1"
+            "value": "0.96 : 1.42",
+            "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "35%",
-            "note": "W84 的偷雞窗口"
+            "value": "26%",
+            "note": "Portugal 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：W83 67.0；W84 67.0",
-        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：Portugal 98.2；Spain 102.9",
+        "預期進球 0.96 : 1.42，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 4.6 分，我暫時站 Spain"
       ]
     },
     "m094": {
@@ -6460,44 +6460,44 @@
       ]
     },
     "m096": {
-      "pick": "W85",
-      "confidence": 0.3808352070799772,
-      "tag": "膠著到煩",
+      "pick": "Switzerland",
+      "confidence": 0.8127038095364697,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.37558853219027716,
-        "draw": 0.27797112945111263,
-        "away": 0.3464403383586102
+        "home": 0.7028622624478713,
+        "draw": 0.20450629226313713,
+        "away": 0.09263144528899146
       },
       "expectedGoals": [
-        1.22,
-        1.16
+        1.87,
+        0.51
       ],
-      "score": "1-1",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 W85，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場偏明確站 Switzerland，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "story": "Switzerland 底牌比較硬；W87 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "0.0",
-            "note": "誰也別裝大哥"
+            "value": "20.6",
+            "note": "Switzerland 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.22 : 1.16",
-            "note": "最像 1-1"
+            "value": "1.87 : 0.51",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "35%",
+            "value": "9%",
             "note": "W87 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：W85 67.0；W87 67.0",
-        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：Switzerland 87.6；W87 67.0",
+        "預期進球 1.87 : 0.51，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 20.6 分，我暫時站 Switzerland"
       ]
     },
     "m097": {
@@ -7240,6 +7240,25 @@
     ],
     "watchlist": [
       {
+        "matchId": "m096",
+        "kickoffUtc": "2026-07-07T20:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "Switzerland",
+        "team2": "W87",
+        "pick": "Switzerland",
+        "outcome": "home",
+        "stake": 8,
+        "decimalOdds": 2.13,
+        "edge": 0.497,
+        "modelProbability": 0.703,
+        "marketProxyProbability": 0.441,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-07T19:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場偏明確站 Switzerland，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
         "matchId": "m091",
         "kickoffUtc": "2026-07-05T20:00:00.000Z",
         "stage": "Round of 16",
@@ -7256,6 +7275,25 @@
         "lockedAtUtc": "2026-07-05T19:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Brazil，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m093",
+        "kickoffUtc": "2026-07-06T19:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "Portugal",
+        "team2": "Spain",
+        "pick": "Spain",
+        "outcome": "away",
+        "stake": 6.1,
+        "decimalOdds": 2.69,
+        "edge": 0.277,
+        "modelProbability": 0.475,
+        "marketProxyProbability": 0.35,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-06T18:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 Spain，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       },
       {
@@ -7294,44 +7332,6 @@
         "lockedAtUtc": "2026-07-06T23:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 USA，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
-        "matchId": "m093",
-        "kickoffUtc": "2026-07-06T19:00:00.000Z",
-        "stage": "Round of 16",
-        "team1": "W83",
-        "team2": "W84",
-        "pick": "W83",
-        "outcome": "home",
-        "stake": 1,
-        "decimalOdds": 2.54,
-        "edge": -0.046,
-        "modelProbability": 0.376,
-        "marketProxyProbability": 0.37,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-06T18:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 W83，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
-        "matchId": "m095",
-        "kickoffUtc": "2026-07-07T16:00:00.000Z",
-        "stage": "Round of 16",
-        "team1": "W86",
-        "team2": "W88",
-        "pick": "W86",
-        "outcome": "home",
-        "stake": 1,
-        "decimalOdds": 2.54,
-        "edge": -0.046,
-        "modelProbability": 0.376,
-        "marketProxyProbability": 0.37,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-07T15:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 W86，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
