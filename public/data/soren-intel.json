@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-03T01:26:34Z",
-  "status": "matchday scout: m085 補 FIFA/FAF/Guardian 臨場脈絡，m088 補 Ahram/Opta 傷停與概率，m086 補 Al Jazeera/FotMob 童話隊脈絡，m087 補 Ghana FA 官方預覽；全數保守標示為公開來源，非官方先發。",
-  "headline": "Soren 倒數盯 m085：Swiss-Algeria 補官方與 live rails；Australia-Egypt 的 Leckie/Italiano 傷停、Salah 風險與 Opta 天秤一起上桌。",
+  "generatedAt": "2026-07-03T07:26:19Z",
+  "status": "matchday scout: m088/m086/m087 臨場 rails 補 BBC/ESPN/Ghana FA；m089/m090/m092/m094 補官方訓練、BBC selection、ESPN odds 與 FIFA 預覽，全部保持公開來源/非投注建議邊界。",
+  "headline": "Soren 早場巡邏：Australia-Egypt、Argentina-Cape Verde、Colombia-Ghana 都補上 live-centre/官方脈絡；下一波 R16 也先把訓練、選人與市場參照鋪好。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -6848,8 +6848,8 @@
       "matchId": "m088",
       "match": "Australia vs Egypt",
       "sourceType": "official Socceroos/EFA/FIFA + CAF/Ahram injury watch + Opta data preview + credible media tactical/motivation + odds-reference confidence medium-high",
-      "title": "Australia-Egypt 傷停更硬了：Leckie/Italiano 出局，Salah fitness 還懸著，這場不是雞血，是細節耗血。",
-      "sorenTake": "Australia-Egypt 已經不是「Salah 能不能跑」單題考卷：ABC/SBS 把 Socceroos 的 no-tomorrow 壓力講清楚，Guardian 又補上 Jedinak 點球準備。Soren 的結論：這場常規時間像刀口，若拖進十二碼，心理與例行程序會比名氣更吵。",
+      "title": "Australia-Egypt 補 BBC live rail：傷停牌已攤開，接下來看 18:00Z 誰先把謹慎變失誤。",
+      "sorenTake": "Leckie/Italiano 缺席、Salah fitness、Opta 機率與官方 match centre 已有；BBC/ESPN live rails 補上後，這張卡的重點不是再猜神話，而是等正式名單和第一段壓迫品質。Soren 的翻譯：這種淘汰賽，浪漫只值半張票，失誤才是全票。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Australia vs 2G，18:00 GMT，Dallas Stadium，說明這格原始仍是 2G slot。",
         "ESPN match page 標題與 meta 已呈現 Australia vs Egypt，並標示 FIFA World Cup Round of 32；這是媒體端 opponent actualization 線索。",
@@ -6879,7 +6879,8 @@
         "CAF 文章父層探針確認：Egypt 對 Australia 賽前有 Salah 等三名球員被醫療團隊監控；這是 confederation injury/fitness lead，未等於正式缺陣。",
         "EFA 阿語頁 meta 描述確認 Mohamed Hany 表示 Egypt 已準備好面對 Australia、想寫新歷史；屬官方球員聲音/心理狀態，不是戰術配方或先發證據。",
         "Ahram Online 報導 Australia 老將 Mathew Leckie 與 Jacob Italiano 因傷已退出本屆賽事；這會影響 Socceroos 淘汰賽輪換與邊路深度。",
-        "Opta Analyst Australia-Egypt 預覽標示 Egypt 可能沒有 Mohamed Salah，並給 Egypt 38.6%、Australia 30.4%、90 分鐘打平 31.0% 的公開模型概率；這是公共概率脈絡，不是 Soren 底層模型。"
+        "Opta Analyst Australia-Egypt 預覽標示 Egypt 可能沒有 Mohamed Salah，並給 Egypt 38.6%、Australia 30.4%、90 分鐘打平 31.0% 的公開模型概率；這是公共概率脈絡，不是 Soren 底層模型。",
+        "BBC live text 已開 Australia-Egypt stats/head-to-head 與即時更新入口；正式先發未出前，只把它當臨場 rails，不把任何預測 XI 寫成事實。"
       ],
       "sources": [
         {
@@ -7097,6 +7098,14 @@
           "fetchedAt": "2026-07-03T01:26:34Z",
           "claimType": "reported/availability-watch",
           "confidence": "high"
+        },
+        {
+          "label": "BBC Australia-Egypt live text",
+          "url": "https://www.bbc.com/sport/football/live/cwy016e9y9jt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-03T07:26:19Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -7105,8 +7114,8 @@
       "matchId": "m086",
       "match": "Argentina vs Cape Verde",
       "sourceType": "official team update + official FIFA preview/match-centre + reported lineup watch + odds reference + qualification context + source alignment",
-      "title": "Argentina-Cape Verde 再補 Al Jazeera/FotMob：童話可以催淚，但 live hub 會冷冰冰地記每一次失誤。",
-      "sorenTake": "AFA 的到站/訓練資訊把 Argentina 的備戰節奏說清楚：Scaloni 已在 Miami 做定位與戰術工作。Opta 給 Argentina 極高勝率，這不是叫 Cape Verde 投降，而是提醒：童話要續集，得先在前 20 分鐘把 Messi 劇本弄髒。",
+      "title": "Argentina-Cape Verde 再補 ESPN live rail：童話隊可以勇敢，但 Messi/Argentina 的錯誤容忍率不是童話級。",
+      "sorenTake": "FIFA/FotMob/Al Jazeera 已經把官方入口、童話敘事與 live hub 補齊；ESPN live page 加進來後，這場等正式陣容與節奏控制。Cape Verde 的勝利路徑仍是低比分、定位球、拖到焦躁；Argentina 若早早進球，故事書會被撕得很快。",
       "signals": [
         "Al Jazeera Round of 32 賽程列出 Argentina vs Cape Verde，22:00 GMT，Miami Stadium。",
         "FOX live score 頁已把此格呈現為 Argentina vs Cape Verde，並標示 July 03, 2026 賽事。",
@@ -7128,7 +7137,8 @@
         "AFA 官方報導 Argentina 已抵達 Miami/Fort Lauderdale 區域備戰 Cape Verde，Scaloni 帶隊進行約 35 分鐘定位/戰術工作與後續小場對抗。",
         "The Analyst / Opta 賽前模型給 Argentina 約 81.0% 勝率，並標記 Cape Verde 是近年罕見以 debutant 身分進入淘汰賽的故事線；本站只作公開機率背景，不公開底層模型配方。",
         "Al Jazeera 專文整理 Cape Verde 這個 50 多萬人口島國闖進 32 強的背景與 Vozinha 門將線索；這是可信故事/心理脈絡，不等於比賽勝負保證。",
-        "FotMob Argentina-Cape Verde match hub 已可連線，提供 live score、predicted lineups、H2H 與賽中數據入口；正式名單前仍只當 lineup-watch/live-centre。"
+        "FotMob Argentina-Cape Verde match hub 已可連線，提供 live score、predicted lineups、H2H 與賽中數據入口；正式名單前仍只當 lineup-watch/live-centre。",
+        "ESPN m086 live page 可連線，提供 live score/highlights/updated stats；先列為臨場統計來源，不當作已確認先發或賽果。"
       ],
       "sources": [
         {
@@ -7290,6 +7300,14 @@
           "fetchedAt": "2026-07-03T01:26:34Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN Argentina-Cape Verde live centre",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760500/cape-verde-argentina",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-03T07:26:19Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -7298,8 +7316,8 @@
       "matchId": "m087",
       "match": "Colombia vs Ghana",
       "sourceType": "official federation/FIFA preview + ESPN live hub + local weather context + reported team-news/Opta/odds confidence medium-high",
-      "title": "Colombia-Ghana 再補 Ghana FA 官方預覽：Ghana 追 2010 後首個 16 強夢，Kansas City 熱浪不會幫任何浪漫加分。",
-      "sorenTake": "GFA 自家 preview 給 Ghana 一個好消息：26 人都已抵達，Semenyo、Opoku、Adjetey、Ati-Zigi 可用。壞消息是 Opta 仍把 Colombia 放在明顯上風；Soren 看這場的 upset path 很窄——Ghana 必須把比賽拖成定位球與二點球肉搏，否則 Colombia 的節奏會把黑星磨成黑咖啡渣。",
+      "title": "Colombia-Ghana 補 Ghana FA transcript 與 BBC live rail：Ghana 說不能犯錯，Colombia 會專挑錯誤收租。",
+      "sorenTake": "Ghana FA 的賽前 transcript 把 Carlos Queiroz 的語氣寫得很清楚：90 分鐘要幾乎完美。問題是 Colombia 的壓迫與轉換就靠別人的「幾乎」吃飯；BBC live rail 補上後，這場要盯的不是口號，是第一個中場失位。",
       "signals": [
         "Ghana FA 官方對戰文確認 Colombia 以 Group K 頭名對 Ghana，地點為 Kansas City Stadium；Ghana 以 Group L 第三名/淨勝球脈絡晉級。",
         "Ghana FA ticket note 再次確認 Colombia vs Ghana 這張 Round of 32 對戰與 Kansas City 賽事安排；可作官方 logistics 脈絡，不涉及競技預測。",
@@ -7319,7 +7337,9 @@
         "The Analyst / Opta 賽前模型給 Colombia 約 64.8% 勝率、Ghana 約 13.8%、和局約 21.4%，並提示 Colombia 對非洲球隊的世界盃歷史對戰脈絡。",
         "KCUR 父層探針確認 Kansas City 週五晚間 Ghana-Colombia 可能仍受高溫與濕度影響；這是 venue/weather context，會放大輪換、補水與比賽節奏風險。",
         "ESPN match hub 可連線並標示 Colombia vs Ghana Live Score；用作臨場比分/數據入口，正式先發仍等 FIFA/官方或可信 live centre 落地。",
-        "Ghana FA 官方預覽確認 Ghana 對 Colombia 是 Kansas City 32 強生死戰，勝者將碰 Switzerland-Algeria 勝方；Ghana 追求自 2010 以來首度重返 16 強。"
+        "Ghana FA 官方預覽確認 Ghana 對 Colombia 是 Kansas City 32 強生死戰，勝者將碰 Switzerland-Algeria 勝方；Ghana 追求自 2010 以來首度重返 16 強。",
+        "Ghana FA 賽前 transcript 引述 Carlos Queiroz 稱面對 Colombia「不能犯錯」；這是官方賽前心理/戰術語境，不是先發名單。",
+        "BBC live text 已開 Colombia-Ghana stats/head-to-head 與即時更新入口，可作臨場比分/數據 rails。"
       ],
       "sources": [
         {
@@ -7457,6 +7477,22 @@
           "fetchedAt": "2026-07-03T01:17:50Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "Ghana FA Colombia-Ghana press transcript",
+          "url": "https://www.ghanafa.org/tomorrow-there-are-no-mistakes-black-stars-ready-for-colombia-knockout-test-transcript",
+          "sourceName": "Ghana Football Association",
+          "fetchedAt": "2026-07-03T07:26:19Z",
+          "claimType": "confirmed/coach-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Colombia-Ghana live text",
+          "url": "https://www.bbc.com/sport/football/live/cnv9g087mzyt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-03T07:26:19Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -7465,8 +7501,8 @@
       "matchId": "m090",
       "match": "Canada vs Morocco",
       "sourceType": "official pathway + media confirmation + data/form context + injury/lineup tracker + source alignment",
-      "title": "Canada-Morocco 補 AP Koné 重傷：地主氣勢還在，但中場少一根鋼筋。",
-      "sorenTake": "FIFA 已有 Canada v Morocco Round-of-16 preview 入口，補上官方級 match/team-news/venue anchor；Guardian 的 Morocco 淘汰 Netherlands liveblog則補足 Morocco 晉級情緒與壓力。地主不是免死金牌，點球倖存也不是免稅券。",
+      "title": "Canada-Morocco 補 ESPN odds reference：Koné 缺口很真，市場溫度也先放到紙上，不放到錢包。",
+      "sorenTake": "AP 的 Koné 重傷已是 Canada 最大結構缺口；ESPN odds page 只作 paper simulation 的市場參照，不是下注建議。Soren 的簡版：Canada 還有主場風，Morocco 還有淘汰賽韌性，少一根中場鋼筋就別假裝房子沒晃。",
       "signals": [
         "CBC metadata 直接寫明 Canada 將在 Round of 16 對 Morocco，且 Morocco 於 Netherlands 戰後經點球 3-2 晉級；這是可讀媒體確認，不是模型猜測。",
         "FIFA Morocco-Netherlands review URL 父層核可連線；搜尋片段指出 Morocco 經點球淘汰 Netherlands，作官方晉級脈絡。",
@@ -7477,7 +7513,8 @@
         "Al Jazeera Morocco-Netherlands 報導 metadata 指向 Morocco 先落後再靠點球淘汰 Netherlands；這是體能、心理與點球韌性的公開脈絡。",
         "FIFA Canada-Morocco preview 可見路徑對應 Round of 16，作為官方 preview / team-news / fixture anchor。",
         "Guardian Netherlands-Morocco liveblog 可見標題描述 Morocco 點球淘汰 Netherlands，補足 Morocco 進入本場的狀態與心理背景。",
-        "AP 報導 Canada 中場 Ismaël Koné 因對 Qatar 時左脛骨/腓骨骨折已手術；這是 knockout run 的實質缺口，不只是賽前噪音。"
+        "AP 報導 Canada 中場 Ismaël Koné 因對 Qatar 時左脛骨/腓骨骨折已手術；這是 knockout run 的實質缺口，不只是賽前噪音。",
+        "ESPN odds page 可連線，作為 Canada-Morocco paper-only 市場參照；不構成投注建議，也不驅動任何真金流。"
       ],
       "sources": [
         {
@@ -7559,6 +7596,14 @@
           "fetchedAt": "2026-07-02T06:18:00Z",
           "claimType": "confirmed/injury",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN Canada-Morocco odds reference",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760502",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-03T07:26:19Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -7567,8 +7612,8 @@
       "matchId": "m089",
       "match": "Paraguay vs France",
       "sourceType": "official pathway + official training + data/form context + live trackers + source alignment",
-      "title": "Paraguay-France 補 USA Today mismatch framing：France 有排名碾壓，Paraguay 有專門拆劇本的履歷。",
-      "sorenTake": "FIFA Paraguay-France preview 補上官方 Round-of-16 anchor；Al Jazeera 則把 Paraguay 點球爆冷 Germany 的背景釘住。France 是大刀，但 Paraguay 不是訓練用木樁。",
+      "title": "Paraguay-France 補 APF 最後訓練：Paraguay 不是來合照的，France 也不能把排名當護身符。",
+      "sorenTake": "APF 最新訓練稿把 Paraguay 對 France 的準備推到最後細節階段；這不改變 France 的硬實力優勢，但提醒一件事：淘汰賽裡最危險的弱隊，是剛把 Germany 拖進泥地又活著爬出來的那種。",
       "signals": [
         "FIFA France-Sweden review URL 父層核可連線；搜尋片段指出 France 3-0 Sweden 後將在 Philadelphia 對 Paraguay，並提到 Mbappé 淘汰賽進球脈絡。",
         "FIFA Germany-Paraguay review URL 父層核可連線；搜尋片段指出 Paraguay 對 Germany 120 分鐘後點球勝出，這給 France 戰疲勞與點球韌性兩條線索。",
@@ -7579,7 +7624,8 @@
         "Opta Analyst France-Sweden stats 頁可讀 metadata：Mbappé 重新開火、France 3-0 Sweden；作 France 近況與火力脈絡，不把公開模型/數據當本站底層配方。",
         "FIFA Paraguay-France preview 可見路徑對應 Round of 16，作為官方 preview / team-news / bracket-path anchor。",
         "Al Jazeera 賽後報導把 Paraguay shock Germany in shootout 的 upset context 補進本場；這是比單看排名更重要的心理/戰術警訊。",
-        "USA Today France-Paraguay R16 preview 可連線，將此戰描述為排名落差明顯的淘汰賽；可作公共敘事參考，不等於保送 France。"
+        "USA Today France-Paraguay R16 preview 可連線，將此戰描述為排名落差明顯的淘汰賽；可作公共敘事參考，不等於保送 France。",
+        "APF 官方報導 Paraguay 在 Philadelphia 完成面向 France 的最後準備與發布會安排；屬官方訓練/備戰訊號。"
       ],
       "sources": [
         {
@@ -7661,6 +7707,14 @@
           "fetchedAt": "2026-07-02T06:18:00Z",
           "claimType": "reported/media-preview",
           "confidence": "medium"
+        },
+        {
+          "label": "APF final France preparation update",
+          "url": "https://www.apf.org.py/noticias/la-albirroja-afina-los-ultimos-detalles-con-francia-en-la-mira",
+          "sourceName": "Asociación Paraguaya de Fútbol",
+          "fetchedAt": "2026-07-03T07:26:19Z",
+          "claimType": "confirmed/team-preparation",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -7780,8 +7834,8 @@
       "matchId": "m092",
       "match": "Mexico vs England",
       "sourceType": "official/reported bracket-actualization + England official camp/H2H context + BBC opponent briefing + public schedule/odds context",
-      "title": "Mexico-England 補 England 官方恢復日與 H2H：Azteca 熱鍋已開，Tuchel 不能只靠 Kane 兩腳救火。",
-      "sorenTake": "BBC 已把 Tuchel 的 Mexico 賽前聲音與時差/觀賽話題寫出來，ESPN 也開了 Mexico-England odds 頁；外部世界基本在按 Mexico-England 準備。但 Soren 的公開卡仍守規矩：資料層一天叫 W79 vs W80，我就一天把它標成 bracket-actualization watch，免得比官方資料還愛演。",
+      "title": "Mexico-England 補 BBC selection debate：Azteca 已夠熱，England 右路與 Saka fitness 不能再含糊。",
+      "sorenTake": "England 官方恢復日與 H2H 已有，BBC selection piece 把選人壓力推到台前：右後衛、Anthony Gordon、Saka fitness 都是公開討論點。Mexico 不需要 England 崩盤，只需要 Tuchel 在高溫與高壓裡慢半拍。",
       "signals": [
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
@@ -7797,7 +7851,8 @@
         "England Football 官方 H2H 文回顧 England-Mexico 交手；歷史素材可用來講壓力，但不能替 2026 實力差距背書。",
         "BBC opponent briefing 已將 England 對手寫為 Mexico；本地 worldcup.json 也已 actualize 為 Mexico vs England，M092 不再只是 W79/W80 門牌。",
         "Local worldcup.json now actualizes M092 as Mexico vs England at Mexico City Stadium; prior W79/W80 bracket-watch copy is retired for the public card.",
-        "FIFA/England/BBC external pages converge on Mexico-England; Soren can now scout the actual matchup while still keeping lineups and availability claim-bounded."
+        "FIFA/England/BBC external pages converge on Mexico-England; Soren can now scout the actual matchup while still keeping lineups and availability claim-bounded.",
+        "BBC 互動選隊文聚焦 England 對 Mexico 的右後衛、Anthony Gordon 與 Bukayo Saka fitness/選擇問題；屬公開選人討論，不是正式 XI。"
       ],
       "sources": [
         {
@@ -7895,6 +7950,14 @@
           "fetchedAt": "2026-07-02T22:08:48Z",
           "claimType": "confirmed/history-context",
           "confidence": "high"
+        },
+        {
+          "label": "BBC England selection debate for Mexico",
+          "url": "https://www.bbc.co.uk/sport/football/articles/cr7x18r0z59o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-03T07:26:19Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -7961,15 +8024,16 @@
       "matchId": "m094",
       "match": "W81 vs W82",
       "sourceType": "reported/bracket-watch + public schedule context",
-      "title": "M094 仍守 W81/W82：FIFA/BBC 賽程護欄已補上，USA/Belgium 線也別急著替未完成賽果簽名。",
-      "sorenTake": "外部 bracket 頁會跑得很快，但公共站的可信度靠慢半拍的準確。W81/W82 在本地資料 actualize 前，本站只寫 bracket-watch，不把推測包裝成確認。這不是保守，是防止淘汰賽資訊污染。",
+      "title": "USA-Belgium 補 FIFA official preview：這張 R16 卡終於有正門入口，別再只靠 bracket 影子判案。",
+      "sorenTake": "m094 已從 placeholder 走向 USA-Belgium，FIFA official preview 補上賽事入口後，接下來要找的是傷停、旅行與正式 live rails。USA 有主場噪音，Belgium 有淘汰賽老狐狸味；Soren 先把門牌釘正，再開始拆屋。",
       "signals": [
         "Current public tournament data keeps M094 as W81 vs W82; this is a route slot, not a confirmed team matchup.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
         "Kickoff target: 2026-07-07T00:00:00Z at Seattle Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known.",
         "FIFA 官方賽程/fixtures 頁作為 knockout placeholder 與後續 actualization 的最高優先入口；本地資料未更新前，仍保留 W-slot 標籤。",
-        "BBC July fixtures page 可作媒體層 placeholder corroboration；用來防止把 W-slot 搜尋結果過早 actualize。"
+        "BBC July fixtures page 可作媒體層 placeholder corroboration；用來防止把 W-slot 搜尋結果過早 actualize。",
+        "FIFA USA-Belgium preview 可連線，提供官方賽事/直播/隊伍資訊入口；先作 official preview，不視為確認先發。"
       ],
       "sources": [
         {
@@ -8010,6 +8074,14 @@
           "sourceName": "BBC Sport",
           "fetchedAt": "2026-07-02T08:34:25Z",
           "claimType": "context/bracket-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA USA-Belgium official preview",
+          "url": "https://www.fifa.com/en/articles/usa-belgium-live-stream-team-news-tickets-and-more",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-03T07:26:19Z",
+          "claimType": "confirmed/official-preview",
           "confidence": "high"
         }
       ],
