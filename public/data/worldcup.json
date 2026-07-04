@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T09:56:38.452Z",
+  "generatedAt": "2026-07-04T12:57:42.214Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -2434,8 +2434,8 @@
       "date": "2026-07-07",
       "time": "12:00 UTC-4",
       "kickoffUtc": "2026-07-07T16:00:00.000Z",
-      "team1": "W86",
-      "team2": "W88",
+      "team1": "Argentina",
+      "team2": "Egypt",
       "venue": "Atlanta",
       "status": "scheduled",
       "score": null,
@@ -2450,7 +2450,7 @@
       "time": "13:00 UTC-7",
       "kickoffUtc": "2026-07-07T20:00:00.000Z",
       "team1": "Switzerland",
-      "team2": "W87",
+      "team2": "Colombia",
       "venue": "Vancouver",
       "status": "scheduled",
       "score": null,
@@ -6433,85 +6433,85 @@
       ]
     },
     "m095": {
-      "pick": "W86",
-      "confidence": 0.3808352070799772,
-      "tag": "膠著到煩",
+      "pick": "Argentina",
+      "confidence": 0.82,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.37558853219027716,
-        "draw": 0.27797112945111263,
-        "away": 0.3464403383586102
+        "home": 0.7978631137042614,
+        "draw": 0.15981963870713453,
+        "away": 0.04231724758860404
       },
       "expectedGoals": [
-        1.22,
-        1.16
+        2.08,
+        0.3
       ],
-      "score": "1-1",
+      "score": "2-0",
       "commentary": {
-        "headline": "我這場保守站 W86，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場偏明確站 Argentina，但平局還有 16%；別急著開香檳，足球最會打臉。",
+        "story": "Argentina 底牌比較硬；Egypt 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "0.0",
-            "note": "誰也別裝大哥"
+            "value": "30.7",
+            "note": "Argentina 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.22 : 1.16",
-            "note": "最像 1-1"
+            "value": "2.08 : 0.30",
+            "note": "最像 2-0"
           },
           {
             "label": "翻車率",
-            "value": "35%",
-            "note": "W88 的偷雞窗口"
+            "value": "4%",
+            "note": "Egypt 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：W86 67.0；W88 67.0",
-        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：Argentina 104.0；Egypt 73.3",
+        "預期進球 2.08 : 0.30，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 30.7 分，我暫時站 Argentina"
       ]
     },
     "m096": {
       "pick": "Switzerland",
-      "confidence": 0.8127038095364697,
-      "tag": "我敢站隊",
+      "confidence": 0.5073900149745744,
+      "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.7028622624478713,
-        "draw": 0.20450629226313713,
-        "away": 0.09263144528899146
+        "home": 0.4697011726340148,
+        "draw": 0.26998011217952367,
+        "away": 0.26031871518646155
       },
       "expectedGoals": [
-        1.87,
-        0.51
+        1.41,
+        0.97
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Switzerland，但平局還有 20%；別急著開香檳，足球最會打臉。",
-        "story": "Switzerland 底牌比較硬；W87 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場保守站 Switzerland，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "20.6",
-            "note": "Switzerland 比較有本錢"
+            "value": "1.3",
+            "note": "誰也別裝大哥"
           },
           {
             "label": "進球味",
-            "value": "1.87 : 0.51",
+            "value": "1.41 : 0.97",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "9%",
-            "note": "W87 的偷雞窗口"
+            "value": "26%",
+            "note": "Colombia 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Switzerland 87.6；W87 67.0",
-        "預期進球 1.87 : 0.51，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 20.6 分，我暫時站 Switzerland"
+        "底牌分：Switzerland 87.6；Colombia 86.3",
+        "預期進球 1.41 : 0.97，先用 Poisson 把嘴砲壓成數字",
+        "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
     "m097": {
@@ -7254,22 +7254,41 @@
     ],
     "watchlist": [
       {
+        "matchId": "m095",
+        "kickoffUtc": "2026-07-07T16:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "Argentina",
+        "team2": "Egypt",
+        "pick": "Argentina",
+        "outcome": "home",
+        "stake": 8,
+        "decimalOdds": 1.89,
+        "edge": 0.508,
+        "modelProbability": 0.798,
+        "marketProxyProbability": 0.498,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-07T15:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場偏明確站 Argentina，但平局還有 16%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
         "matchId": "m096",
         "kickoffUtc": "2026-07-07T20:00:00.000Z",
         "stage": "Round of 16",
         "team1": "Switzerland",
-        "team2": "W87",
+        "team2": "Colombia",
         "pick": "Switzerland",
         "outcome": "home",
-        "stake": 8,
-        "decimalOdds": 2.13,
-        "edge": 0.497,
-        "modelProbability": 0.703,
-        "marketProxyProbability": 0.441,
+        "stake": 4.25,
+        "decimalOdds": 2.54,
+        "edge": 0.193,
+        "modelProbability": 0.47,
+        "marketProxyProbability": 0.37,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-07T19:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 Switzerland，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "reason": "我這場保守站 Switzerland，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       },
       {
@@ -7289,25 +7308,6 @@
         "lockedAtUtc": "2026-07-06T23:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 USA，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
-        "matchId": "m095",
-        "kickoffUtc": "2026-07-07T16:00:00.000Z",
-        "stage": "Round of 16",
-        "team1": "W86",
-        "team2": "W88",
-        "pick": "W86",
-        "outcome": "home",
-        "stake": 1,
-        "decimalOdds": 2.54,
-        "edge": -0.046,
-        "modelProbability": 0.376,
-        "marketProxyProbability": 0.37,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-07T15:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 W86，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       },
       {
