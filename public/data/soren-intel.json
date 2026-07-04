@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-03T20:00:03Z",
-  "status": "matchday scout: m088 正規時間後仍 1-1、ESPN 標為 end of regulation / ET 且 completed=false；同時補 m086/m087 官方賽事入口、預測 XI/紙盤參考，並為 m097/m098 建立保守 quarterfinal placeholder rails。",
-  "headline": "Soren 20:00Z 巡邏：Australia-Egypt 1-1 進入 ET 但仍非 final；Argentina/Cape Verde、Colombia/Ghana 開賽前只收官方入口與可驗證預覽，QF 卡先掛 W-slot 護欄。",
+  "generatedAt": "2026-07-04T20:15:46Z",
+  "status": "matchday scout: ESPN 已確認 Canada-Morocco 0-3 FT，Paraguay-France 仍 scheduled；同時補 USA-Belgium 官方停賽線、Portugal-Spain 官方/RFEF 脈絡，並為 M099/M100 建立保守 QF placeholder rails。",
+  "headline": "Soren 20Z 巡邏：Morocco 3-0 Canada 已是 source-backed FT（scout 層更新，不偷跑結算）；Paraguay-France 開賽前只加 live rails，QF 門牌先守 W-slot。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -7583,9 +7583,9 @@
     {
       "matchId": "m090",
       "match": "Canada vs Morocco",
-      "sourceType": "official pathway + media confirmation + data/form context + injury/lineup tracker + source alignment",
-      "title": "Canada-Morocco 補 ESPN odds reference：Koné 缺口很真，市場溫度也先放到紙上，不放到錢包。",
-      "sorenTake": "AP 的 Koné 重傷已是 Canada 最大結構缺口；ESPN odds page 只作 paper simulation 的市場參照，不是下注建議。Soren 的簡版：Canada 還有主場風，Morocco 還有淘汰賽韌性，少一根中場鋼筋就別假裝房子沒晃。",
+      "sourceType": "postmatch final-score + official pathway + injury/market context",
+      "title": "Canada-Morocco 已成 0-3：Koné 缺口不是藉口，但中場塌洞真的被 Morocco 踩穿。",
+      "sorenTake": "ESPN public scoreboard 已標 Full Time：Morocco 3-0 Canada。這張卡不替 result-verifier 亂結算，但 scouting 層要把語氣從賽前猜拳改成賽後驗屍——Canada 主場聲量救不了中場缺口，Morocco 的淘汰賽韌性也不是 PPT。",
       "signals": [
         "CBC metadata 直接寫明 Canada 將在 Round of 16 對 Morocco，且 Morocco 於 Netherlands 戰後經點球 3-2 晉級；這是可讀媒體確認，不是模型猜測。",
         "FIFA Morocco-Netherlands review URL 父層核可連線；搜尋片段指出 Morocco 經點球淘汰 Netherlands，作官方晉級脈絡。",
@@ -7597,7 +7597,9 @@
         "FIFA Canada-Morocco preview 可見路徑對應 Round of 16，作為官方 preview / team-news / fixture anchor。",
         "Guardian Netherlands-Morocco liveblog 可見標題描述 Morocco 點球淘汰 Netherlands，補足 Morocco 進入本場的狀態與心理背景。",
         "AP 報導 Canada 中場 Ismaël Koné 因對 Qatar 時左脛骨/腓骨骨折已手術；這是 knockout run 的實質缺口，不只是賽前噪音。",
-        "ESPN odds page 可連線，作為 Canada-Morocco paper-only 市場參照；不構成投注建議，也不驅動任何真金流。"
+        "ESPN odds page 可連線，作為 Canada-Morocco paper-only 市場參照；不構成投注建議，也不驅動任何真金流。",
+        "2026-07-04T20Z 父層重查 ESPN public scoreboard：event 760502 為 STATUS_FULL_TIME / completed=true，Canada 0-3 Morocco；這是 postmatch scouting 訊號，正式 bracket/leaderboard 結算仍交給資料更新與 result-verifier。",
+        "NBC Sports 賽後/即時頁搜尋結果同樣描述 Morocco 3-0 Canada 並晉級 quarterfinal；作第二媒體 corroboration，不替代官方資料層。"
       ],
       "sources": [
         {
@@ -7687,16 +7689,32 @@
           "fetchedAt": "2026-07-03T07:26:19Z",
           "claimType": "odds-reference",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN public scoreboard Canada-Morocco FT",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260704",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "confirmed/final-score",
+          "confidence": "high"
+        },
+        {
+          "label": "NBC Canada-Morocco live/postmatch updates",
+          "url": "https://www.nbcsports.com/soccer/live/canada-vs-morocco-live-updates-score-goals-highlights-stats-from-2026-fifa-world-cup",
+          "sourceName": "NBC Sports",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "reported/postmatch-recap",
+          "confidence": "medium-high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m089",
       "match": "Paraguay vs France",
-      "sourceType": "official pathway + official training + data/form context + live trackers + source alignment",
-      "title": "Paraguay-France 補 APF 最後訓練：Paraguay 不是來合照的，France 也不能把排名當護身符。",
-      "sorenTake": "APF 最新訓練稿把 Paraguay 對 France 的準備推到最後細節階段；這不改變 France 的硬實力優勢，但提醒一件事：淘汰賽裡最危險的弱隊，是剛把 Germany 拖進泥地又活著爬出來的那種。",
+      "sourceType": "official pathway + official training + scheduled live rails + data/form context",
+      "title": "Paraguay-France 進入開賽倒數：ESPN 仍是 scheduled，Paraguay 的泥巴戰劇本還沒被 France 踢掉。",
+      "sorenTake": "20Z 父層重查 ESPN：Paraguay-France 還是 scheduled，不是 final。Soren 現在只加 live rails，不偷跑結論；France 有天花板，Paraguay 有剛把 Germany 拖進點球池的膽子，這種比賽最怕豪門先把自己演成受害者。",
       "signals": [
         "FIFA France-Sweden review URL 父層核可連線；搜尋片段指出 France 3-0 Sweden 後將在 Philadelphia 對 Paraguay，並提到 Mbappé 淘汰賽進球脈絡。",
         "FIFA Germany-Paraguay review URL 父層核可連線；搜尋片段指出 Paraguay 對 Germany 120 分鐘後點球勝出，這給 France 戰疲勞與點球韌性兩條線索。",
@@ -7708,7 +7726,9 @@
         "FIFA Paraguay-France preview 可見路徑對應 Round of 16，作為官方 preview / team-news / bracket-path anchor。",
         "Al Jazeera 賽後報導把 Paraguay shock Germany in shootout 的 upset context 補進本場；這是比單看排名更重要的心理/戰術警訊。",
         "USA Today France-Paraguay R16 preview 可連線，將此戰描述為排名落差明顯的淘汰賽；可作公共敘事參考，不等於保送 France。",
-        "APF 官方報導 Paraguay 在 Philadelphia 完成面向 France 的最後準備與發布會安排；屬官方訓練/備戰訊號。"
+        "APF 官方報導 Paraguay 在 Philadelphia 完成面向 France 的最後準備與發布會安排；屬官方訓練/備戰訊號。",
+        "2026-07-04T20Z ESPN public scoreboard 顯示 event 760503 為 STATUS_SCHEDULED / completed=false，0-0 只是賽前 placeholder，不可當成比分或 final。",
+        "Al Jazeera preview 明示 21:00 GMT / Philadelphia kickoff；作 matchday preview 與 public context，不是 lineup confirmation。"
       ],
       "sources": [
         {
@@ -7798,6 +7818,22 @@
           "fetchedAt": "2026-07-03T07:26:19Z",
           "claimType": "confirmed/team-preparation",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN public scoreboard Paraguay-France scheduled",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260704",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "context/live-status",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera France vs Paraguay preview",
+          "url": "https://www.aljazeera.com/sports/2026/7/4/france-vs-paraguay-world-cup-round-of-16-mbappe-prediction-kickoff",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "reported/media-preview",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -8048,14 +8084,16 @@
     {
       "matchId": "m093",
       "match": "Portugal vs Spain",
-      "sourceType": "local actualization + bracket provenance watch",
-      "title": "Portugal-Spain 已在本地賽程 actualize：先補 bracket provenance，別再讓 W83/W84 的舊門牌搶走 Iberian derby。",
-      "sorenTake": "本地 worldcup.json 已把 M093 寫成 Portugal vs Spain；公開頁仍要保留 bracket-slot 來源，因為 knockout path 需要可追溯。這張卡的重點不是提前炫耀預測，而是提醒讀者：主 bracket 顯示實際進度，Soren 的判讀留在深挖卡裡。",
+      "sourceType": "actualized R16 matchup + official preview + federation quote + public odds context",
+      "title": "Portugal-Spain 不只是 Iberian poster：RFEF 先把競爭性喊出來，Soren 等正式 XI 再開刀。",
+      "sorenTake": "Portugal-Spain 已是實名 R16；FIFA preview 給官方入口，RFEF 給教練語境，USA Today/市場頁只作紙面溫度。這種 derby 最容易把「名氣」誤讀成「控制」，所以先把來源擺正，別把預測 XI 畫成聖旨。",
       "signals": [
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
         "BBC July fixtures page remains media-layer schedule corroboration; use it to cross-check kickoff/slot context rather than re-placeholdering the resolved local matchup.",
-        "本地賽程已從 W83/W84 actualize 為 Portugal vs Spain；來源呈現仍保留 FIFA/BBC/NBC/Guardian bracket rails，避免把 slot provenance 丟掉。"
+        "本地賽程已從 W83/W84 actualize 為 Portugal vs Spain；來源呈現仍保留 FIFA/BBC/NBC/Guardian bracket rails，避免把 slot provenance 丟掉。",
+        "FIFA Portugal-Spain official preview 可作官方 match/team-news 入口；正式先發未出前只標 official preview / lineup-watch。",
+        "RFEF De la Fuente quote 屬官方教練/競爭心脈絡，不等於陣容確認；USA Today odds/analysis 僅作 paper-only public market context。"
       ],
       "sources": [
         {
@@ -8097,24 +8135,49 @@
           "fetchedAt": "2026-07-02T08:34:25Z",
           "claimType": "context/bracket-watch",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA Portugal-Spain official preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-portugal-preview-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "confirmed/official-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "RFEF Luis de la Fuente quote",
+          "url": "https://rfef.es/es/noticias/luis-de-la-fuente-somos-unos-competidores-natos",
+          "sourceName": "Real Federación Española de Fútbol",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "confirmed/coach-context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "USA Today Spain-Portugal public odds/analysis",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/07/02/spain-portugal-world-cup-prediction-analysis-odds/90790746007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m094",
-      "match": "W81 vs W82",
-      "sourceType": "reported/bracket-watch + public schedule context",
-      "title": "USA-Belgium 補 FIFA official preview：這張 R16 卡終於有正門入口，別再只靠 bracket 影子判案。",
-      "sorenTake": "m094 已從 placeholder 走向 USA-Belgium，FIFA official preview 補上賽事入口後，接下來要找的是傷停、旅行與正式 live rails。USA 有主場噪音，Belgium 有淘汰賽老狐狸味；Soren 先把門牌釘正，再開始拆屋。",
+      "match": "USA vs Belgium",
+      "sourceType": "actualized R16 matchup + official preview + official suspension/team context",
+      "title": "USA-Belgium 再補官方傷停線：Balogun 禁賽，主場劇本少一把正印刀。",
+      "sorenTake": "本地賽程已是 USA vs Belgium，不再是假裝 W81/W82 的門牌。US Soccer 對 Belgium 的 opponent profile 與 Balogun 禁賽稿把重點釘清楚：主場聲浪可以加壓，但少一個前場支點，USA 不能只靠氣氛足球硬闖。",
       "signals": [
-        "Current public tournament data keeps M094 as W81 vs W82; this is a route slot, not a confirmed team matchup.",
+        "Local worldcup.json now actualizes M094 as USA vs Belgium; this card has retired the stale W81/W82 label and keeps old bracket rails only as provenance.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
         "Kickoff target: 2026-07-07T00:00:00Z at Seattle Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known.",
-        "FIFA 官方賽程/fixtures 頁作為 knockout placeholder 與後續 actualization 的最高優先入口；本地資料未更新前，仍保留 W-slot 標籤。",
         "BBC July fixtures page 可作媒體層 placeholder corroboration；用來防止把 W-slot 搜尋結果過早 actualize。",
-        "FIFA USA-Belgium preview 可連線，提供官方賽事/直播/隊伍資訊入口；先作 official preview，不視為確認先發。"
+        "FIFA USA-Belgium preview 可連線，提供官方賽事/直播/隊伍資訊入口；先作 official preview，不視為確認先發。",
+        "Local worldcup.json 已 actualize M094 為 USA vs Belgium；舊 W81/W82 文案更新為實名 matchup。",
+        "US Soccer 官方資料指向 Belgium opponent profile，另有 Balogun 對 Belgium 戰停賽脈絡；這是 official team context / suspension watch，不是預測先發。"
       ],
       "sources": [
         {
@@ -8164,9 +8227,33 @@
           "fetchedAt": "2026-07-03T07:26:19Z",
           "claimType": "confirmed/official-preview",
           "confidence": "high"
+        },
+        {
+          "label": "US Soccer Belgium opponent profile",
+          "url": "https://www.ussoccer.com/stories/2026/07/usmnt/opponent-profile-belgium-seattle-washington-world-cup-match-preview",
+          "sourceName": "U.S. Soccer",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "confirmed/official-team-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "US Soccer Balogun suspension context",
+          "url": "https://www.ussoccer.com/stories/2026/07/usmmt/folarin-balogun-birthday-world-cup-round-of-16-vs-belgium",
+          "sourceName": "U.S. Soccer",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "reported/suspension",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN USA-Belgium team news/predicted lineups",
+          "url": "https://www.espn.com/soccer/story/_/id/49269414/usa-vs-belgium-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m095",
@@ -8318,6 +8405,92 @@
           "url": "https://www.nbcsports.com/soccer/news/2026-world-cup-schedule-kick-off-times-stadiums-dates-groups-how-to-watch-live-bracket",
           "sourceName": "NBC Sports",
           "fetchedAt": "2026-07-03T19:55:15Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "medium-high"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "matchId": "m099",
+      "match": "W91 vs W92",
+      "sourceType": "confirmed/bracket-watch + official quarterfinal placeholder rails",
+      "title": "M099 先掛 W91 vs W92：Brazil/Norway 與 Mexico/England 還沒交卷，Soren 不替 quarterfinal 寫同人誌。",
+      "sorenTake": "M099 已進入 7 日視窗，但參賽隊仍是 W91/W92。這張卡只做 bracket-watch：掛官方 FIFA 賽程與 suites 門牌，等 R16 結果出來再把真名、傷停與戰術拆開。未出爐勝者不是彩蛋，是資料邊界。",
+      "signals": [
+        "Local worldcup.json lists M099 as quarter-final W91 vs W92 at 2026-07-11T21:00Z; participants remain placeholders until M91/M92 finish.",
+        "FIFA match-centre/schedule and FIFA Suites public pages corroborate M99 / W91 vs W92 placeholder; no team-specific claims are made yet.",
+        "Use this card as public bracket rail only: prediction belongs in match deep-dives after the actual winners are known."
+      ],
+      "sources": [
+        {
+          "label": "FIFA M99 match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289289/400021539",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA World Cup 2026 schedule and fixtures",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Suites M99 W91 vs W92",
+          "url": "https://fifaworldcup26.suites.fifa.com/events/M99-W91-vs-W92-111726/",
+          "sourceName": "FIFA World Cup 26 Suites",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "confirmed/bracket-watch",
+          "confidence": "high"
+        }
+      ],
+      "confidence": "high"
+    },
+    {
+      "matchId": "m100",
+      "match": "W95 vs W96",
+      "sourceType": "confirmed/bracket-watch + official quarterfinal placeholder rails",
+      "title": "M100 還是 W95 vs W96：Argentina/Egypt 與 Switzerland/Colombia 路線先踢，Soren 先守門牌不編劇。",
+      "sorenTake": "M100 也落進 7 日視窗，但它現在只是一張 quarterfinal route card。官方 schedule / suites 可以證明時間與路徑；不能證明誰會來 Kansas City。先把 placeholder 說清楚，比提前押豪門更保護公信力。",
+      "signals": [
+        "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
+        "FIFA schedule/scores fixtures and FIFA Suites public pages support M100 / W95 vs W96 bracket rail; no lineup, odds, or tactical claim is attached while teams are unknown.",
+        "This is a compact homepage placeholder card, with deeper sources behind details/modal rather than method dump."
+      ],
+      "sources": [
+        {
+          "label": "FIFA World Cup 2026 schedule and fixtures",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA scores and fixtures",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/scores-fixtures",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Suites M100 W95 vs W96",
+          "url": "https://fifaworldcup26.suites.fifa.com/events/M100-W95-vs-W96-111712/",
+          "sourceName": "FIFA World Cup 26 Suites",
+          "fetchedAt": "2026-07-04T20:15:46Z",
+          "claimType": "confirmed/bracket-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "NBC World Cup schedule and bracket",
+          "url": "https://www.nbcsports.com/soccer/news/2026-world-cup-schedule-kick-off-times-stadiums-dates-groups-how-to-watch-live-bracket",
+          "sourceName": "NBC Sports",
+          "fetchedAt": "2026-07-04T20:15:46Z",
           "claimType": "context/bracket-watch",
           "confidence": "medium-high"
         }
