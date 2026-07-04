@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T00:53:26.004Z",
+  "generatedAt": "2026-07-04T03:54:29.930Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,10 +7,9 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 87,
-    "scheduledMatches": 17,
+    "finishedMatches": 88,
+    "scheduledMatches": 16,
     "nextWindow": [
-      "m087",
       "m090",
       "m089",
       "m091",
@@ -21,7 +20,8 @@
       "m096",
       "m097",
       "m098",
-      "m099"
+      "m099",
+      "m100"
     ]
   },
   "groups": [
@@ -637,6 +637,18 @@
     ],
     "Group K": [
       {
+        "team": "Colombia",
+        "group": "Group K",
+        "played": 4,
+        "won": 3,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 5,
+        "goalsAgainst": 1,
+        "goalDiff": 4,
+        "points": 10
+      },
+      {
         "team": "Portugal",
         "group": "Group K",
         "played": 4,
@@ -647,18 +659,6 @@
         "goalsAgainst": 2,
         "goalDiff": 6,
         "points": 8
-      },
-      {
-        "team": "Colombia",
-        "group": "Group K",
-        "played": 3,
-        "won": 2,
-        "drawn": 1,
-        "lost": 0,
-        "goalsFor": 4,
-        "goalsAgainst": 1,
-        "goalDiff": 3,
-        "points": 7
       },
       {
         "team": "Democratic Republic of the Congo",
@@ -713,13 +713,13 @@
       {
         "team": "Ghana",
         "group": "Group L",
-        "played": 3,
+        "played": 4,
         "won": 1,
         "drawn": 1,
-        "lost": 1,
+        "lost": 2,
         "goalsFor": 2,
-        "goalsAgainst": 2,
-        "goalDiff": 0,
+        "goalsAgainst": 3,
+        "goalDiff": -1,
         "points": 4
       },
       {
@@ -2329,8 +2329,11 @@
       "team1": "Colombia",
       "team2": "Ghana",
       "venue": "Kansas City",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        0
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -3479,16 +3482,16 @@
     },
     "m068": {
       "pick": "Ghana",
-      "confidence": 0.6872902223911033,
+      "confidence": 0.6659461793114453,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.6060553280801443,
-        "draw": 0.23919431223392804,
-        "away": 0.15475035968592765
+        "home": 0.5897244326628688,
+        "draw": 0.24400528272190955,
+        "away": 0.1662702846152217
       },
       "expectedGoals": [
-        1.67,
-        0.71
+        1.64,
+        0.74
       ],
       "score": "1-0",
       "commentary": {
@@ -3497,25 +3500,25 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "11.2",
+            "value": "9.6",
             "note": "Ghana 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.67 : 0.71",
+            "value": "1.64 : 0.74",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "15%",
+            "value": "17%",
             "note": "Panama 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Ghana 72.6；Panama 61.4",
-        "預期進球 1.67 : 0.71，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 11.2 分，我暫時站 Ghana"
+        "底牌分：Ghana 71.0；Panama 61.4",
+        "預期進球 1.64 : 0.74，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 9.6 分，我暫時站 Ghana"
       ]
     },
     "m062": {
@@ -3523,27 +3526,27 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.07278475372559796,
-        "draw": 0.18929223378781057,
-        "away": 0.7379230124865914
+        "home": 0.06718226161268319,
+        "draw": 0.184501360621125,
+        "away": 0.7483163777661918
       },
       "expectedGoals": [
-        0.43,
-        1.95
+        0.41,
+        1.97
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 Colombia，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Colombia，但平局還有 18%；別急著開香檳，足球最會打臉。",
         "story": "Colombia 底牌比較硬；Uzbekistan 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "27.0",
+            "value": "28.1",
             "note": "Colombia 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.43 : 1.95",
+            "value": "0.41 : 1.97",
             "note": "最像 0-1"
           },
           {
@@ -3554,9 +3557,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Uzbekistan 58.1；Colombia 85.2",
-        "預期進球 0.43 : 1.95，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 27.0 分，我暫時站 Colombia"
+        "底牌分：Uzbekistan 58.1；Colombia 86.3",
+        "預期進球 0.41 : 1.97，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 28.1 分，我暫時站 Colombia"
       ]
     },
     "m003": {
@@ -4425,40 +4428,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.7678885087447291,
-        "draw": 0.1751213395527494,
-        "away": 0.056990151702521495
+        "home": 0.7818810058621446,
+        "draw": 0.16812210050662874,
+        "away": 0.04999689363122671
       },
       "expectedGoals": [
-        2.01,
-        0.37
+        2.05,
+        0.33
       ],
       "score": "2-0",
       "commentary": {
-        "headline": "我這場偏明確站 England，但平局還有 18%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 England，但平局還有 17%；別急著開香檳，足球最會打臉。",
         "story": "England 底牌比較硬；Ghana 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "27.4",
+            "value": "28.9",
             "note": "England 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.01 : 0.37",
+            "value": "2.05 : 0.33",
             "note": "最像 2-0"
           },
           {
             "label": "翻車率",
-            "value": "6%",
+            "value": "5%",
             "note": "Ghana 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：England 99.9；Ghana 72.6",
-        "預期進球 2.01 : 0.37，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 27.4 分，我暫時站 England"
+        "底牌分：England 99.9；Ghana 71.0",
+        "預期進球 2.05 : 0.33，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 28.9 分，我暫時站 England"
       ]
     },
     "m070": {
@@ -4504,16 +4507,16 @@
     },
     "m064": {
       "pick": "Colombia",
-      "confidence": 0.7598196746908148,
+      "confidence": 0.7742771883953696,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6618610803542623,
-        "draw": 0.22049225227232302,
-        "away": 0.11764666737341471
+        "home": 0.6730434816656509,
+        "draw": 0.2163225185004693,
+        "away": 0.11063399983387986
       },
       "expectedGoals": [
-        1.79,
-        0.59
+        1.81,
+        0.57
       ],
       "score": "1-0",
       "commentary": {
@@ -4522,25 +4525,25 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "16.5",
+            "value": "17.6",
             "note": "Colombia 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.79 : 0.59",
+            "value": "1.81 : 0.57",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "12%",
+            "value": "11%",
             "note": "Democratic Republic of the Congo 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Colombia 85.2；Democratic Republic of the Congo 68.7",
-        "預期進球 1.79 : 0.59，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 16.5 分，我暫時站 Colombia"
+        "底牌分：Colombia 86.3；Democratic Republic of the Congo 68.7",
+        "預期進球 1.81 : 0.57，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 17.6 分，我暫時站 Colombia"
       ]
     },
     "m011": {
@@ -5324,84 +5327,84 @@
     },
     "m072": {
       "pick": "Croatia",
-      "confidence": 0.5083324432245668,
-      "tag": "這場有妖氣",
+      "confidence": 0.5847418013519758,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.470407772430742,
-        "draw": 0.2698770706597648,
-        "away": 0.25971515690949315
+        "home": 0.5279692706032687,
+        "draw": 0.259464407397391,
+        "away": 0.21256632199934028
       },
       "expectedGoals": [
-        1.41,
-        0.97
+        1.52,
+        0.86
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 Croatia，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Croatia，但平局還有 26%；別急著開香檳，足球最會打臉。",
         "story": "Croatia 底牌比較硬；Ghana 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "12.8",
+            "value": "14.3",
             "note": "Croatia 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.41 : 0.97",
+            "value": "1.52 : 0.86",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "26%",
+            "value": "21%",
             "note": "Ghana 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Croatia 85.3；Ghana 72.6",
-        "預期進球 1.41 : 0.97，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 12.8 分，我暫時站 Croatia"
+        "底牌分：Croatia 85.3；Ghana 71.0",
+        "預期進球 1.52 : 0.86，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 14.3 分，我暫時站 Croatia"
       ]
     },
     "m065": {
       "pick": "Portugal",
-      "confidence": 0.6741134799748636,
+      "confidence": 0.6187209449703562,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.16183019100330615,
-        "draw": 0.242201237509017,
-        "away": 0.5959685714876769
+        "home": 0.19271908358656392,
+        "draw": 0.25354330623043814,
+        "away": 0.553737610182998
       },
       "expectedGoals": [
-        0.73,
-        1.65
+        0.81,
+        1.57
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場中等站 Portugal，但平局還有 24%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Portugal，但平局還有 25%；別急著開香檳，足球最會打臉。",
         "story": "Portugal 底牌比較硬；Colombia 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "13.1",
+            "value": "12.0",
             "note": "Portugal 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.73 : 1.65",
+            "value": "0.81 : 1.57",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "16%",
+            "value": "19%",
             "note": "Colombia 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Colombia 85.2；Portugal 98.2",
-        "預期進球 0.73 : 1.65，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 13.1 分，我暫時站 Portugal"
+        "底牌分：Colombia 86.3；Portugal 98.2",
+        "預期進球 0.81 : 1.57，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 12.0 分，我暫時站 Portugal"
       ]
     },
     "m066": {
@@ -6144,43 +6147,43 @@
     },
     "m087": {
       "pick": "Colombia",
-      "confidence": 0.7073747765453141,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.7430625642151885,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6214603915513053,
-        "draw": 0.23438135575299432,
-        "away": 0.14415825269570048
+        "home": 0.6489245855454727,
+        "draw": 0.22513959929636443,
+        "away": 0.12593581515816282
       },
       "expectedGoals": [
-        1.7,
-        0.68
+        1.76,
+        0.62
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場中等站 Colombia，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Colombia，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "story": "Colombia 底牌比較硬；Ghana 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "12.6",
+            "value": "15.3",
             "note": "Colombia 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.70 : 0.68",
+            "value": "1.76 : 0.62",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "14%",
+            "value": "13%",
             "note": "Ghana 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Colombia 85.2；Ghana 72.6",
-        "預期進球 1.70 : 0.68，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 12.6 分，我暫時站 Colombia"
+        "底牌分：Colombia 86.3；Ghana 71.0",
+        "預期進球 1.76 : 0.62，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 15.3 分，我暫時站 Colombia"
       ]
     },
     "m090": {
@@ -6822,23 +6825,23 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 78,
-      "correct": 58,
+      "points": 79,
+      "correct": 59,
       "exact": 10,
-      "total": 87,
+      "total": 88,
       "rank": 1,
-      "accuracy": 0.6666666666666666
+      "accuracy": 0.6704545454545454
     },
     {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 75,
-      "correct": 54,
-      "exact": 9,
-      "total": 87,
+      "points": 78,
+      "correct": 55,
+      "exact": 10,
+      "total": 88,
       "rank": 2,
-      "accuracy": 0.6206896551724138
+      "accuracy": 0.625
     },
     {
       "id": "draw",
@@ -6847,9 +6850,9 @@
       "points": 47,
       "correct": 23,
       "exact": 12,
-      "total": 87,
+      "total": 88,
       "rank": 3,
-      "accuracy": 0.26436781609195403
+      "accuracy": 0.26136363636363635
     }
   ],
   "paperBankroll": {
@@ -6857,36 +6860,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 236.17,
-    "openStake": 28.94,
-    "totalValue": 236.17,
-    "roi": 1.362,
+    "bankroll": 250.28,
+    "openStake": 27.04,
+    "totalValue": 250.28,
+    "roi": 1.503,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m075",
-        "kickoffUtc": "2026-06-30T01:00:00.000Z",
-        "stage": "Round of 32",
-        "team1": "Netherlands",
-        "team2": "Morocco",
-        "pick": "Netherlands",
-        "outcome": "home",
-        "stake": 7.57,
-        "decimalOdds": 2.35,
-        "edge": 0.344,
-        "modelProbability": 0.572,
-        "marketProxyProbability": 0.4,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-06-30T00:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Netherlands，但平局還有 25%；別急著開香檳，足球最會打臉。",
-        "status": "lost",
-        "score": [
-          1,
-          1
-        ],
-        "profit": -7.57
-      },
       {
         "matchId": "m078",
         "kickoffUtc": "2026-06-30T17:00:00.000Z",
@@ -7150,9 +7129,7 @@
           2
         ],
         "profit": 6.24
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m087",
         "kickoffUtc": "2026-07-04T01:30:00.000Z",
@@ -7163,15 +7140,22 @@
         "outcome": "home",
         "stake": 8,
         "decimalOdds": 2.29,
-        "edge": 0.423,
-        "modelProbability": 0.621,
+        "edge": 0.486,
+        "modelProbability": 0.649,
         "marketProxyProbability": 0.41,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-04T00:30:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Colombia，但平局還有 23%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "reason": "我這場偏明確站 Colombia，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          1,
+          0
+        ],
+        "profit": 10.32
+      }
+    ],
+    "pending": [
       {
         "matchId": "m090",
         "kickoffUtc": "2026-07-04T17:00:00.000Z",
@@ -7247,6 +7231,25 @@
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 Mexico，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "pending"
+      },
+      {
+        "matchId": "m093",
+        "kickoffUtc": "2026-07-06T19:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "Portugal",
+        "team2": "Spain",
+        "pick": "Spain",
+        "outcome": "away",
+        "stake": 6.1,
+        "decimalOdds": 2.69,
+        "edge": 0.277,
+        "modelProbability": 0.475,
+        "marketProxyProbability": 0.35,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-06T18:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 Spain，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
       }
     ],
     "watchlist": [
@@ -7267,25 +7270,6 @@
         "lockedAtUtc": "2026-07-07T19:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Switzerland，但平局還有 20%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
-        "matchId": "m093",
-        "kickoffUtc": "2026-07-06T19:00:00.000Z",
-        "stage": "Round of 16",
-        "team1": "Portugal",
-        "team2": "Spain",
-        "pick": "Spain",
-        "outcome": "away",
-        "stake": 6.1,
-        "decimalOdds": 2.69,
-        "edge": 0.277,
-        "modelProbability": 0.475,
-        "marketProxyProbability": 0.35,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-06T18:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 Spain，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       },
       {
@@ -7343,6 +7327,25 @@
         "lockedAtUtc": "2026-07-09T19:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 W89，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m098",
+        "kickoffUtc": "2026-07-10T19:00:00.000Z",
+        "stage": "Quarter-final",
+        "team1": "W93",
+        "team2": "W94",
+        "pick": "W93",
+        "outcome": "home",
+        "stake": 1,
+        "decimalOdds": 2.54,
+        "edge": -0.046,
+        "modelProbability": 0.376,
+        "marketProxyProbability": 0.37,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-10T18:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 W93，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
