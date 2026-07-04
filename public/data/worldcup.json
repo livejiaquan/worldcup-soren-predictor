@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T18:59:48.682Z",
+  "generatedAt": "2026-07-04T20:15:59.200Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,8 +7,8 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 88,
-    "scheduledMatches": 16,
+    "finishedMatches": 89,
+    "scheduledMatches": 15,
     "nextWindow": [
       "m089",
       "m091",
@@ -201,13 +201,13 @@
       {
         "team": "Canada",
         "group": "Group B",
-        "played": 4,
+        "played": 5,
         "won": 2,
         "drawn": 1,
-        "lost": 1,
+        "lost": 2,
         "goalsFor": 9,
-        "goalsAgainst": 3,
-        "goalDiff": 6,
+        "goalsAgainst": 6,
+        "goalDiff": 3,
         "points": 7
       },
       {
@@ -237,6 +237,18 @@
     ],
     "Group C": [
       {
+        "team": "Morocco",
+        "group": "Group C",
+        "played": 5,
+        "won": 3,
+        "drawn": 2,
+        "lost": 0,
+        "goalsFor": 10,
+        "goalsAgainst": 4,
+        "goalDiff": 6,
+        "points": 11
+      },
+      {
         "team": "Brazil",
         "group": "Group C",
         "played": 4,
@@ -247,18 +259,6 @@
         "goalsAgainst": 2,
         "goalDiff": 7,
         "points": 10
-      },
-      {
-        "team": "Morocco",
-        "group": "Group C",
-        "played": 4,
-        "won": 2,
-        "drawn": 2,
-        "lost": 0,
-        "goalsFor": 7,
-        "goalsAgainst": 4,
-        "goalDiff": 3,
-        "points": 8
       },
       {
         "team": "Scotland",
@@ -2347,8 +2347,11 @@
       "team1": "Canada",
       "team2": "Morocco",
       "venue": "Houston",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        3
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -2662,43 +2665,43 @@
     },
     "m007": {
       "pick": "Canada",
-      "confidence": 0.641232959056493,
+      "confidence": 0.6005108832666423,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.5708672112409947,
-        "draw": 0.24918639871522374,
-        "away": 0.1799463900437816
+        "home": 0.5399148867289985,
+        "draw": 0.2568146517511352,
+        "away": 0.20327046151986639
       },
       "expectedGoals": [
-        1.6,
-        0.78
+        1.54,
+        0.84
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場中等站 Canada，但平局還有 25%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Canada，但平局還有 26%；別急著開香檳，足球最會打臉。",
         "story": "Canada 底牌比較硬；Bosnia & Herzegovina 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "7.8",
+            "value": "5.0",
             "note": "Canada 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.60 : 0.78",
+            "value": "1.54 : 0.84",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "18%",
+            "value": "20%",
             "note": "Bosnia & Herzegovina 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Canada 76.6；Bosnia & Herzegovina 68.7",
-        "預期進球 1.60 : 0.78，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 7.8 分，我暫時站 Canada"
+        "底牌分：Canada 73.7；Bosnia & Herzegovina 68.7",
+        "預期進球 1.54 : 0.84，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 5.0 分，我暫時站 Canada"
       ]
     },
     "m019": {
@@ -2785,43 +2788,43 @@
     },
     "m013": {
       "pick": "Brazil",
-      "confidence": 0.7253058352985896,
-      "tag": "我敢站隊",
+      "confidence": 0.5979084532294697,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.6352448892879479,
-        "draw": 0.2298488103721141,
-        "away": 0.13490630033993806
+        "home": 0.5379419064464064,
+        "draw": 0.25726366923531696,
+        "away": 0.20479442431827666
       },
       "expectedGoals": [
-        1.73,
-        0.65
+        1.54,
+        0.84
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Brazil，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Brazil，但平局還有 26%；別急著開香檳，足球最會打臉。",
         "story": "Brazil 底牌比較硬；Morocco 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "13.9",
+            "value": "11.5",
             "note": "Brazil 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.73 : 0.65",
+            "value": "1.54 : 0.84",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "13%",
+            "value": "20%",
             "note": "Morocco 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Brazil 101.2；Morocco 87.3",
-        "預期進球 1.73 : 0.65，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 13.9 分，我暫時站 Brazil"
+        "底牌分：Brazil 101.2；Morocco 89.8",
+        "預期進球 1.54 : 0.84，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 11.5 分，我暫時站 Brazil"
       ]
     },
     "m014": {
@@ -3646,43 +3649,43 @@
     },
     "m010": {
       "pick": "Canada",
-      "confidence": 0.7380612387572862,
-      "tag": "我敢站隊",
+      "confidence": 0.6988445372171149,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.6450686337782283,
-        "draw": 0.22648831566053163,
-        "away": 0.12844305056123997
+        "home": 0.6149131131454436,
+        "draw": 0.23645946299617576,
+        "away": 0.14862742385838065
       },
       "expectedGoals": [
-        1.75,
-        0.63
+        1.69,
+        0.69
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Canada，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Canada，但平局還有 24%；別急著開香檳，足球最會打臉。",
         "story": "Canada 底牌比較硬；Qatar 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "14.9",
+            "value": "12.0",
             "note": "Canada 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.75 : 0.63",
+            "value": "1.69 : 0.69",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "13%",
+            "value": "15%",
             "note": "Qatar 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Canada 76.6；Qatar 61.7",
-        "預期進球 1.75 : 0.63，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 14.9 分，我暫時站 Canada"
+        "底牌分：Canada 73.7；Qatar 61.7",
+        "預期進球 1.69 : 0.69，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 12.0 分，我暫時站 Canada"
       ]
     },
     "m004": {
@@ -3769,43 +3772,43 @@
     },
     "m015": {
       "pick": "Morocco",
-      "confidence": 0.7222697803097003,
+      "confidence": 0.7556629874708858,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.13645920039573647,
-        "draw": 0.23063195521364235,
-        "away": 0.6329088443906211
+        "home": 0.11968677066467176,
+        "draw": 0.22166356307217,
+        "away": 0.6586496662631582
       },
       "expectedGoals": [
-        0.65,
-        1.73
+        0.6,
+        1.78
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 Morocco，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Morocco，但平局還有 22%；別急著開香檳，足球最會打臉。",
         "story": "Morocco 底牌比較硬；Scotland 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "16.6",
+            "value": "19.0",
             "note": "Morocco 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.65 : 1.73",
+            "value": "0.60 : 1.78",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "14%",
+            "value": "12%",
             "note": "Scotland 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Scotland 70.7；Morocco 87.3",
-        "預期進球 0.65 : 1.73，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 16.6 分，我暫時站 Morocco"
+        "底牌分：Scotland 70.7；Morocco 89.8",
+        "預期進球 0.60 : 1.78，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 19.0 分，我暫時站 Morocco"
       ]
     },
     "m016": {
@@ -4548,43 +4551,43 @@
     },
     "m011": {
       "pick": "Switzerland",
-      "confidence": 0.5371623623590134,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.7246280022019764,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.49206326088950286,
-        "draw": 0.266424041940497,
-        "away": 0.2415126971700001
+        "home": 0.6347232675997757,
+        "draw": 0.23002421259045305,
+        "away": 0.13525251980977135
       },
       "expectedGoals": [
-        1.45,
-        0.93
+        1.73,
+        0.65
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 Switzerland，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Switzerland，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "story": "Switzerland 底牌比較硬；Canada 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "11.0",
+            "value": "13.9",
             "note": "Switzerland 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.45 : 0.93",
+            "value": "1.73 : 0.65",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "24%",
+            "value": "14%",
             "note": "Canada 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Switzerland 87.6；Canada 76.6",
-        "預期進球 1.45 : 0.93，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 11.0 分，我暫時站 Switzerland"
+        "底牌分：Switzerland 87.6；Canada 73.7",
+        "預期進球 1.73 : 0.65，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 13.9 分，我暫時站 Switzerland"
       ]
     },
     "m012": {
@@ -4674,40 +4677,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.8020814511184655,
-        "draw": 0.15757223159682338,
-        "away": 0.04034631728471107
+        "home": 0.8189221669770232,
+        "draw": 0.1477595132079969,
+        "away": 0.03331831981497987
       },
       "expectedGoals": [
-        2.09,
-        0.29
+        2.15,
+        0.25
       ],
       "score": "2-0",
       "commentary": {
-        "headline": "我這場偏明確站 Morocco，但平局還有 16%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Morocco，但平局還有 15%；別急著開香檳，足球最會打臉。",
         "story": "Morocco 底牌比較硬；Haiti 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "31.2",
+            "value": "33.7",
             "note": "Morocco 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.09 : 0.29",
+            "value": "2.15 : 0.25",
             "note": "最像 2-0"
           },
           {
             "label": "翻車率",
-            "value": "4%",
+            "value": "3%",
             "note": "Haiti 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Morocco 87.3；Haiti 56.1",
-        "預期進球 2.09 : 0.29，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 31.2 分，我暫時站 Morocco"
+        "底牌分：Morocco 89.8；Haiti 56.1",
+        "預期進球 2.15 : 0.25，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 33.7 分，我暫時站 Morocco"
       ]
     },
     "m005": {
@@ -5532,43 +5535,43 @@
     },
     "m073": {
       "pick": "Canada",
-      "confidence": 0.6341022167444956,
+      "confidence": 0.5933087523832459,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.1839597223156896,
-        "draw": 0.2506038651747174,
-        "away": 0.565436412509593
+        "home": 0.2074977988682192,
+        "draw": 0.2580459670813356,
+        "away": 0.5344562340504452
       },
       "expectedGoals": [
-        0.79,
-        1.59
+        0.85,
+        1.53
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場中等站 Canada，但平局還有 25%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Canada，但平局還有 26%；別急著開香檳，足球最會打臉。",
         "story": "Canada 底牌比較硬；South Africa 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "10.2",
+            "value": "7.3",
             "note": "Canada 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.79 : 1.59",
+            "value": "0.85 : 1.53",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "18%",
+            "value": "21%",
             "note": "South Africa 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：South Africa 66.4；Canada 76.6",
-        "預期進球 0.79 : 1.59，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 10.2 分，我暫時站 Canada"
+        "底牌分：South Africa 66.4；Canada 73.7",
+        "預期進球 0.85 : 1.53，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 7.3 分，我暫時站 Canada"
       ]
     },
     "m076": {
@@ -5655,43 +5658,43 @@
     },
     "m075": {
       "pick": "Netherlands",
-      "confidence": 0.6426372129677881,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.4580789319291554,
+      "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.5719372370633385,
-        "draw": 0.24890316978693122,
-        "away": 0.1791595931497302
+        "home": 0.43284607967342553,
+        "draw": 0.2744903531849814,
+        "away": 0.29266356714159303
       },
       "expectedGoals": [
-        1.61,
-        0.77
+        1.33,
+        1.05
       ],
-      "score": "1-0",
+      "score": "1-1",
       "commentary": {
-        "headline": "我這場中等站 Netherlands，但平局還有 25%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Netherlands，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "story": "Netherlands 底牌比較硬；Morocco 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "8.0",
+            "value": "5.5",
             "note": "Netherlands 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.61 : 0.77",
-            "note": "最像 1-0"
+            "value": "1.33 : 1.05",
+            "note": "最像 1-1"
           },
           {
             "label": "翻車率",
-            "value": "18%",
+            "value": "29%",
             "note": "Morocco 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Netherlands 95.2；Morocco 87.3",
-        "預期進球 1.61 : 0.77，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 8.0 分，我暫時站 Netherlands"
+        "底牌分：Netherlands 95.2；Morocco 89.8",
+        "預期進球 1.33 : 1.05，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 5.5 分，我暫時站 Netherlands"
       ]
     },
     "m078": {
@@ -6187,44 +6190,44 @@
       ]
     },
     "m090": {
-      "pick": "Canada",
-      "confidence": 0.3774753642442237,
-      "tag": "膠著到煩",
+      "pick": "Morocco",
+      "confidence": 0.7156963423290933,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.3731116620348084,
-        "draw": 0.27801946598269034,
-        "away": 0.3488688719825013
+        "home": 0.1398404753705841,
+        "draw": 0.23230560268382403,
+        "away": 0.6278539219455919
       },
       "expectedGoals": [
-        1.21,
-        1.17
+        0.66,
+        1.72
       ],
-      "score": "1-1",
+      "score": "0-1",
       "commentary": {
-        "headline": "我這場保守站 Canada，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Morocco，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "story": "Morocco 底牌比較硬；Canada 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "10.7",
+            "value": "16.1",
             "note": "Morocco 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.21 : 1.17",
-            "note": "最像 1-1"
+            "value": "0.66 : 1.72",
+            "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "35%",
+            "value": "14%",
             "note": "Canada 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Canada 76.6；Morocco 87.3",
-        "預期進球 1.21 : 1.17，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 10.7 分，我暫時站 Canada"
+        "底牌分：Canada 73.7；Morocco 89.8",
+        "預期進球 0.66 : 1.72，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 16.1 分，我暫時站 Morocco"
       ]
     },
     "m089": {
@@ -6825,12 +6828,12 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 79,
-      "correct": 59,
+      "points": 80,
+      "correct": 60,
       "exact": 10,
-      "total": 88,
+      "total": 89,
       "rank": 1,
-      "accuracy": 0.6704545454545454
+      "accuracy": 0.6741573033707865
     },
     {
       "id": "soren",
@@ -6839,9 +6842,9 @@
       "points": 78,
       "correct": 55,
       "exact": 10,
-      "total": 88,
+      "total": 89,
       "rank": 2,
-      "accuracy": 0.625
+      "accuracy": 0.6179775280898876
     },
     {
       "id": "draw",
@@ -6850,9 +6853,9 @@
       "points": 47,
       "correct": 23,
       "exact": 12,
-      "total": 88,
+      "total": 89,
       "rank": 3,
-      "accuracy": 0.26136363636363635
+      "accuracy": 0.25842696629213485
     }
   ],
   "paperBankroll": {
@@ -6860,36 +6863,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 250.28,
-    "openStake": 27.04,
-    "totalValue": 250.28,
-    "roi": 1.503,
+    "bankroll": 267.65,
+    "openStake": 26.07,
+    "totalValue": 267.65,
+    "roi": 1.676,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m078",
-        "kickoffUtc": "2026-06-30T17:00:00.000Z",
-        "stage": "Round of 32",
-        "team1": "Ivory Coast",
-        "team2": "Norway",
-        "pick": "Norway",
-        "outcome": "away",
-        "stake": 3.94,
-        "decimalOdds": 2.65,
-        "edge": 0.179,
-        "modelProbability": 0.445,
-        "marketProxyProbability": 0.355,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-06-30T16:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 Norway，但平局還有 27%；別急著開香檳，足球最會打臉。",
-        "status": "won",
-        "score": [
-          1,
-          2
-        ],
-        "profit": 6.5
-      },
       {
         "matchId": "m077",
         "kickoffUtc": "2026-06-30T21:00:00.000Z",
@@ -7153,28 +7132,33 @@
           0
         ],
         "profit": 10.32
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m090",
         "kickoffUtc": "2026-07-04T17:00:00.000Z",
         "stage": "Round of 16",
         "team1": "Canada",
         "team2": "Morocco",
-        "pick": "Canada",
-        "outcome": "home",
-        "stake": 1.97,
-        "decimalOdds": 2.92,
-        "edge": 0.089,
-        "modelProbability": 0.373,
-        "marketProxyProbability": 0.322,
+        "pick": "Morocco",
+        "outcome": "away",
+        "stake": 8,
+        "decimalOdds": 2.35,
+        "edge": 0.475,
+        "modelProbability": 0.628,
+        "marketProxyProbability": 0.4,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-04T16:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 Canada，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "reason": "我這場中等站 Morocco，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          0,
+          3
+        ],
+        "profit": 10.8
+      }
+    ],
+    "pending": [
       {
         "matchId": "m089",
         "kickoffUtc": "2026-07-04T21:00:00.000Z",
@@ -7250,6 +7234,25 @@
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 Spain，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "status": "pending"
+      },
+      {
+        "matchId": "m094",
+        "kickoffUtc": "2026-07-07T00:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "USA",
+        "team2": "Belgium",
+        "pick": "USA",
+        "outcome": "home",
+        "stake": 1,
+        "decimalOdds": 2.72,
+        "edge": -0.003,
+        "modelProbability": 0.367,
+        "marketProxyProbability": 0.346,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-06T23:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 USA，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
       }
     ],
     "watchlist": [
@@ -7292,25 +7295,6 @@
         "status": "watchlist"
       },
       {
-        "matchId": "m094",
-        "kickoffUtc": "2026-07-07T00:00:00.000Z",
-        "stage": "Round of 16",
-        "team1": "USA",
-        "team2": "Belgium",
-        "pick": "USA",
-        "outcome": "home",
-        "stake": 1,
-        "decimalOdds": 2.72,
-        "edge": -0.003,
-        "modelProbability": 0.367,
-        "marketProxyProbability": 0.346,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-06T23:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 USA，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
         "matchId": "m097",
         "kickoffUtc": "2026-07-09T20:00:00.000Z",
         "stage": "Quarter-final",
@@ -7346,6 +7330,25 @@
         "lockedAtUtc": "2026-07-10T18:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 W93，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m099",
+        "kickoffUtc": "2026-07-11T21:00:00.000Z",
+        "stage": "Quarter-final",
+        "team1": "W91",
+        "team2": "W92",
+        "pick": "W91",
+        "outcome": "home",
+        "stake": 1,
+        "decimalOdds": 2.54,
+        "edge": -0.046,
+        "modelProbability": 0.376,
+        "marketProxyProbability": 0.37,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-11T20:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 W91，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
