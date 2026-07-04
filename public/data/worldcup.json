@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T22:00:53.646Z",
+  "generatedAt": "2026-07-04T23:21:59.713Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,8 +7,8 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 89,
-    "scheduledMatches": 15,
+    "finishedMatches": 90,
+    "scheduledMatches": 14,
     "nextWindow": [
       "m091",
       "m092",
@@ -313,13 +313,13 @@
       {
         "team": "Paraguay",
         "group": "Group D",
-        "played": 4,
+        "played": 5,
         "won": 1,
         "drawn": 2,
-        "lost": 1,
+        "lost": 2,
         "goalsFor": 3,
-        "goalsAgainst": 5,
-        "goalDiff": -2,
+        "goalsAgainst": 6,
+        "goalDiff": -3,
         "points": 5
       },
       {
@@ -539,14 +539,14 @@
       {
         "team": "France",
         "group": "Group I",
-        "played": 4,
-        "won": 4,
+        "played": 5,
+        "won": 5,
         "drawn": 0,
         "lost": 0,
-        "goalsFor": 13,
+        "goalsFor": 14,
         "goalsAgainst": 2,
-        "goalDiff": 11,
-        "points": 12
+        "goalDiff": 12,
+        "points": 15
       },
       {
         "team": "Norway",
@@ -2365,8 +2365,11 @@
       "team1": "Paraguay",
       "team2": "France",
       "venue": "Philadelphia",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        1
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -2706,43 +2709,43 @@
     },
     "m019": {
       "pick": "USA",
-      "confidence": 0.777777804808268,
+      "confidence": 0.794930114272623,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6757540666751375,
-        "draw": 0.21529041183378303,
-        "away": 0.1089555214910795
+        "home": 0.6890523002454519,
+        "draw": 0.21010547743782387,
+        "away": 0.10084222231672417
       },
       "expectedGoals": [
-        1.82,
-        0.56
+        1.84,
+        0.54
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 USA，但平局還有 22%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 USA，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "story": "USA 底牌比較硬；Paraguay 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "17.9",
+            "value": "19.2",
             "note": "USA 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.82 : 0.56",
+            "value": "1.84 : 0.54",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "11%",
+            "value": "10%",
             "note": "Paraguay 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：USA 87.9；Paraguay 70.0",
-        "預期進球 1.82 : 0.56，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 17.9 分，我暫時站 USA"
+        "底牌分：USA 87.9；Paraguay 68.7",
+        "預期進球 1.84 : 0.54，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 19.2 分，我暫時站 USA"
       ]
     },
     "m008": {
@@ -3854,43 +3857,43 @@
     },
     "m022": {
       "pick": "Turkey",
-      "confidence": 0.4419544375070689,
+      "confidence": 0.5151229774988814,
       "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.4208450152377993,
-        "draw": 0.2755845376870101,
-        "away": 0.3035704470751905
+        "home": 0.47550152282234526,
+        "draw": 0.26911614700273234,
+        "away": 0.2553823301749225
       },
       "expectedGoals": [
-        1.31,
-        1.07
+        1.42,
+        0.96
       ],
-      "score": "1-1",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 Turkey，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Turkey，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "story": "Turkey 底牌比較硬；Paraguay 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "4.3",
+            "value": "5.6",
             "note": "Turkey 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.31 : 1.07",
-            "note": "最像 1-1"
+            "value": "1.42 : 0.96",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "30%",
+            "value": "26%",
             "note": "Paraguay 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Turkey 74.4；Paraguay 70.0",
-        "預期進球 1.31 : 1.07，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 4.3 分，我暫時站 Turkey"
+        "底牌分：Turkey 74.4；Paraguay 68.7",
+        "預期進球 1.42 : 0.96，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 5.6 分，我暫時站 Turkey"
       ]
     },
     "m033": {
@@ -5002,43 +5005,43 @@
     },
     "m024": {
       "pick": "Australia",
-      "confidence": 0.49512996748680277,
-      "tag": "這場有妖氣",
+      "confidence": 0.5548267840186498,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.2682199829150796,
-        "draw": 0.2712634370751601,
-        "away": 0.46051658000976026
+        "home": 0.23060788641441204,
+        "draw": 0.26402244954046583,
+        "away": 0.5053696640451221
       },
       "expectedGoals": [
-        0.99,
-        1.39
+        0.9,
+        1.48
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場保守站 Australia，但平局還有 27%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場保守站 Australia，但平局還有 26%；別急著開香檳，足球最會打臉。",
+        "story": "Australia 底牌比較硬；Paraguay 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "3.3",
-            "note": "誰也別裝大哥"
+            "value": "4.6",
+            "note": "Australia 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.99 : 1.39",
+            "value": "0.90 : 1.48",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "27%",
+            "value": "23%",
             "note": "Paraguay 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Paraguay 70.0；Australia 73.3",
-        "預期進球 0.99 : 1.39，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：Paraguay 68.7；Australia 73.3",
+        "預期進球 0.90 : 1.48，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 4.6 分，我暫時站 Australia"
       ]
     },
     "m053": {
@@ -5620,40 +5623,40 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.722186766513639,
-        "draw": 0.19629978776061233,
-        "away": 0.08151344572574865
+        "home": 0.7349064515333019,
+        "draw": 0.19065839431127304,
+        "away": 0.07443515415542509
       },
       "expectedGoals": [
-        1.91,
-        0.47
+        1.94,
+        0.44
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Germany，但平局還有 20%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Germany，但平局還有 19%；別急著開香檳，足球最會打臉。",
         "story": "Germany 底牌比較硬；Paraguay 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "22.5",
+            "value": "23.8",
             "note": "Germany 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.91 : 0.47",
+            "value": "1.94 : 0.44",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "8%",
+            "value": "7%",
             "note": "Paraguay 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Germany 92.6；Paraguay 70.0",
-        "預期進球 1.91 : 0.47，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 22.5 分，我暫時站 Germany"
+        "底牌分：Germany 92.6；Paraguay 68.7",
+        "預期進球 1.94 : 0.44，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 23.8 分，我暫時站 Germany"
       ]
     },
     "m075": {
@@ -6235,27 +6238,27 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.04064481078308495,
-        "draw": 0.15791587525429465,
-        "away": 0.8014393139626205
+        "home": 0.0354541059644605,
+        "draw": 0.151763844295306,
+        "away": 0.8127820497402336
       },
       "expectedGoals": [
-        0.29,
-        2.09
+        0.26,
+        2.12
       ],
       "score": "0-2",
       "commentary": {
-        "headline": "我這場偏明確站 France，但平局還有 16%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 France，但平局還有 15%；別急著開香檳，足球最會打臉。",
         "story": "France 底牌比較硬；Paraguay 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "34.0",
+            "value": "35.3",
             "note": "France 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.29 : 2.09",
+            "value": "0.26 : 2.12",
             "note": "最像 0-2"
           },
           {
@@ -6266,9 +6269,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Paraguay 70.0；France 104.0",
-        "預期進球 0.29 : 2.09，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 34.0 分，我暫時站 France"
+        "底牌分：Paraguay 68.7；France 104.0",
+        "預期進球 0.26 : 2.12，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 35.3 分，我暫時站 France"
       ]
     },
     "m091": {
@@ -6828,23 +6831,23 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 80,
-      "correct": 60,
+      "points": 81,
+      "correct": 61,
       "exact": 10,
-      "total": 89,
+      "total": 90,
       "rank": 1,
-      "accuracy": 0.6741573033707865
+      "accuracy": 0.6777777777777778
     },
     {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 78,
-      "correct": 55,
+      "points": 79,
+      "correct": 56,
       "exact": 10,
-      "total": 89,
+      "total": 90,
       "rank": 2,
-      "accuracy": 0.6179775280898876
+      "accuracy": 0.6222222222222222
     },
     {
       "id": "draw",
@@ -6853,9 +6856,9 @@
       "points": 47,
       "correct": 23,
       "exact": 12,
-      "total": 89,
+      "total": 90,
       "rank": 3,
-      "accuracy": 0.25842696629213485
+      "accuracy": 0.25555555555555554
     }
   ],
   "paperBankroll": {
@@ -6863,36 +6866,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 267.65,
+    "bankroll": 275.89,
     "openStake": 26.07,
-    "totalValue": 267.65,
-    "roi": 1.676,
+    "totalValue": 275.89,
+    "roi": 1.759,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m077",
-        "kickoffUtc": "2026-06-30T21:00:00.000Z",
-        "stage": "Round of 32",
-        "team1": "France",
-        "team2": "Sweden",
-        "pick": "France",
-        "outcome": "home",
-        "stake": 8,
-        "decimalOdds": 2.04,
-        "edge": 0.602,
-        "modelProbability": 0.785,
-        "marketProxyProbability": 0.462,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-06-30T20:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 France，但平局還有 17%；別急著開香檳，足球最會打臉。",
-        "status": "won",
-        "score": [
-          3,
-          0
-        ],
-        "profit": 8.32
-      },
       {
         "matchId": "m079",
         "kickoffUtc": "2026-07-01T01:00:00.000Z",
@@ -7156,9 +7135,7 @@
           3
         ],
         "profit": 10.8
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m089",
         "kickoffUtc": "2026-07-04T21:00:00.000Z",
@@ -7169,15 +7146,22 @@
         "outcome": "away",
         "stake": 8,
         "decimalOdds": 2.03,
-        "edge": 0.627,
-        "modelProbability": 0.801,
+        "edge": 0.65,
+        "modelProbability": 0.813,
         "marketProxyProbability": 0.462,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-04T20:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 France，但平局還有 16%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "reason": "我這場偏明確站 France，但平局還有 15%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          0,
+          1
+        ],
+        "profit": 8.24
+      }
+    ],
+    "pending": [
       {
         "matchId": "m091",
         "kickoffUtc": "2026-07-05T20:00:00.000Z",
@@ -7253,9 +7237,7 @@
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 USA，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "pending"
-      }
-    ],
-    "watchlist": [
+      },
       {
         "matchId": "m095",
         "kickoffUtc": "2026-07-07T16:00:00.000Z",
@@ -7273,8 +7255,10 @@
         "lockedAtUtc": "2026-07-07T15:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Argentina，但平局還有 16%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
+        "status": "pending"
+      }
+    ],
+    "watchlist": [
       {
         "matchId": "m096",
         "kickoffUtc": "2026-07-07T20:00:00.000Z",
@@ -7349,6 +7333,25 @@
         "lockedAtUtc": "2026-07-11T20:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 W91，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m100",
+        "kickoffUtc": "2026-07-12T01:00:00.000Z",
+        "stage": "Quarter-final",
+        "team1": "W95",
+        "team2": "W96",
+        "pick": "W95",
+        "outcome": "home",
+        "stake": 1,
+        "decimalOdds": 2.54,
+        "edge": -0.046,
+        "modelProbability": 0.376,
+        "marketProxyProbability": 0.37,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-12T00:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 W95，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
