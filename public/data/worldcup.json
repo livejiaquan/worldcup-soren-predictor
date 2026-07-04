@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03T21:52:22.882Z",
+  "generatedAt": "2026-07-04T00:53:26.004Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,10 +7,9 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 86,
-    "scheduledMatches": 18,
+    "finishedMatches": 87,
+    "scheduledMatches": 17,
     "nextWindow": [
-      "m086",
       "m087",
       "m090",
       "m089",
@@ -21,7 +20,8 @@
       "m095",
       "m096",
       "m097",
-      "m098"
+      "m098",
+      "m099"
     ]
   },
   "groups": [
@@ -501,13 +501,13 @@
       {
         "team": "Cape Verde",
         "group": "Group H",
-        "played": 3,
+        "played": 4,
         "won": 0,
         "drawn": 3,
-        "lost": 0,
-        "goalsFor": 2,
-        "goalsAgainst": 2,
-        "goalDiff": 0,
+        "lost": 1,
+        "goalsFor": 4,
+        "goalsAgainst": 5,
+        "goalDiff": -1,
         "points": 3
       },
       {
@@ -589,14 +589,14 @@
       {
         "team": "Argentina",
         "group": "Group J",
-        "played": 3,
-        "won": 3,
+        "played": 4,
+        "won": 4,
         "drawn": 0,
         "lost": 0,
-        "goalsFor": 8,
-        "goalsAgainst": 1,
-        "goalDiff": 7,
-        "points": 9
+        "goalsFor": 11,
+        "goalsAgainst": 3,
+        "goalDiff": 8,
+        "points": 12
       },
       {
         "team": "Austria",
@@ -2311,8 +2311,11 @@
       "team1": "Argentina",
       "team2": "Cape Verde",
       "venue": "Miami (Miami Gardens)",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        3,
+        2
+      ],
       "source": "openfootball/worldcup.json"
     },
     {
@@ -3069,27 +3072,27 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.8321883314920849,
-        "draw": 0.1371466919352562,
-        "away": 0.030664976572658813
+        "home": 0.8358509367157084,
+        "draw": 0.1342129483279392,
+        "away": 0.029936114956352407
       },
       "expectedGoals": [
-        2.24,
+        2.27,
         0.25
       ],
       "score": "2-0",
       "commentary": {
-        "headline": "我這場偏明確站 Spain，但平局還有 14%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Spain，但平局還有 13%；別急著開香檳，足球最會打臉。",
         "story": "Spain 底牌比較硬；Cape Verde 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "38.2",
+            "value": "39.5",
             "note": "Spain 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.24 : 0.25",
+            "value": "2.27 : 0.25",
             "note": "最像 2-0"
           },
           {
@@ -3100,9 +3103,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Spain 102.9；Cape Verde 64.7",
-        "預期進球 2.24 : 0.25，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 38.2 分，我暫時站 Spain"
+        "底牌分：Spain 102.9；Cape Verde 63.4",
+        "預期進球 2.27 : 0.25，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 39.5 分，我暫時站 Spain"
       ]
     },
     "m037": {
@@ -4132,43 +4135,43 @@
     },
     "m046": {
       "pick": "Uruguay",
-      "confidence": 0.5750318435803654,
+      "confidence": 0.6475694904668248,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.5206248606819125,
-        "draw": 0.26101129473869134,
-        "away": 0.2183638445793962
+        "home": 0.5756969886893433,
+        "draw": 0.24789769916287738,
+        "away": 0.17640531214777944
       },
       "expectedGoals": [
-        1.51,
-        0.87
+        1.61,
+        0.77
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 Uruguay，但平局還有 26%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Uruguay，但平局還有 25%；別急著開香檳，足球最會打臉。",
         "story": "Uruguay 底牌比較硬；Cape Verde 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "17.5",
+            "value": "18.8",
             "note": "Uruguay 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.51 : 0.87",
+            "value": "1.61 : 0.77",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "22%",
+            "value": "18%",
             "note": "Cape Verde 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Uruguay 82.1；Cape Verde 64.7",
-        "預期進球 1.51 : 0.87，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 17.5 分，我暫時站 Uruguay"
+        "底牌分：Uruguay 82.1；Cape Verde 63.4",
+        "預期進球 1.61 : 0.77，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 18.8 分，我暫時站 Uruguay"
       ]
     },
     "m040": {
@@ -5116,16 +5119,16 @@
     },
     "m047": {
       "pick": "Cape Verde",
-      "confidence": 0.536662905194479,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.5178257055682853,
+      "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.49168744194952685,
-        "draw": 0.2664888007951251,
-        "away": 0.24182375725534808
+        "home": 0.4775300995737683,
+        "draw": 0.26880427859978057,
+        "away": 0.2536656218264512
       },
       "expectedGoals": [
-        1.45,
-        0.93
+        1.42,
+        0.96
       ],
       "score": "1-0",
       "commentary": {
@@ -5134,24 +5137,24 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "0.5",
+            "value": "0.8",
             "note": "誰也別裝大哥"
           },
           {
             "label": "進球味",
-            "value": "1.45 : 0.93",
+            "value": "1.42 : 0.96",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "24%",
-            "note": "Saudi Arabia 的偷雞窗口"
+            "value": "25%",
+            "note": "Cape Verde 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Cape Verde 64.7；Saudi Arabia 64.2",
-        "預期進球 1.45 : 0.93，先用 Poisson 把嘴砲壓成數字",
+        "底牌分：Cape Verde 63.4；Saudi Arabia 64.2",
+        "預期進球 1.42 : 0.96，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
@@ -6103,12 +6106,12 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.8353459312340967,
-        "draw": 0.13461755430682992,
-        "away": 0.030036514459073425
+        "home": 0.838937523720331,
+        "draw": 0.1317393208383444,
+        "away": 0.02932315544132455
       },
       "expectedGoals": [
-        2.27,
+        2.29,
         0.25
       ],
       "score": "2-0",
@@ -6118,12 +6121,12 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "39.3",
+            "value": "40.6",
             "note": "Argentina 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.27 : 0.25",
+            "value": "2.29 : 0.25",
             "note": "最像 2-0"
           },
           {
@@ -6134,9 +6137,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Argentina 104.0；Cape Verde 64.7",
-        "預期進球 2.27 : 0.25，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 39.3 分，我暫時站 Argentina"
+        "底牌分：Argentina 104.0；Cape Verde 63.4",
+        "預期進球 2.29 : 0.25，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 40.6 分，我暫時站 Argentina"
       ]
     },
     "m087": {
@@ -6819,23 +6822,23 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 77,
-      "correct": 57,
+      "points": 78,
+      "correct": 58,
       "exact": 10,
-      "total": 86,
+      "total": 87,
       "rank": 1,
-      "accuracy": 0.6627906976744186
+      "accuracy": 0.6666666666666666
     },
     {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 74,
-      "correct": 53,
+      "points": 75,
+      "correct": 54,
       "exact": 9,
-      "total": 86,
+      "total": 87,
       "rank": 2,
-      "accuracy": 0.6162790697674418
+      "accuracy": 0.6206896551724138
     },
     {
       "id": "draw",
@@ -6844,9 +6847,9 @@
       "points": 47,
       "correct": 23,
       "exact": 12,
-      "total": 86,
+      "total": 87,
       "rank": 3,
-      "accuracy": 0.26744186046511625
+      "accuracy": 0.26436781609195403
     }
   ],
   "paperBankroll": {
@@ -6854,36 +6857,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 229.11,
-    "openStake": 33.97,
-    "totalValue": 229.11,
-    "roi": 1.291,
+    "bankroll": 236.17,
+    "openStake": 28.94,
+    "totalValue": 236.17,
+    "roi": 1.362,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m074",
-        "kickoffUtc": "2026-06-29T20:30:00.000Z",
-        "stage": "Round of 32",
-        "team1": "Germany",
-        "team2": "Paraguay",
-        "pick": "Germany",
-        "outcome": "home",
-        "stake": 8,
-        "decimalOdds": 2.08,
-        "edge": 0.502,
-        "modelProbability": 0.722,
-        "marketProxyProbability": 0.451,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-06-29T19:30:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 Germany，但平局還有 20%；別急著開香檳，足球最會打臉。",
-        "status": "lost",
-        "score": [
-          1,
-          1
-        ],
-        "profit": -8
-      },
       {
         "matchId": "m075",
         "kickoffUtc": "2026-06-30T01:00:00.000Z",
@@ -7147,9 +7126,7 @@
           1
         ],
         "profit": -4.46
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m086",
         "kickoffUtc": "2026-07-03T22:00:00.000Z",
@@ -7160,15 +7137,22 @@
         "outcome": "home",
         "stake": 8,
         "decimalOdds": 1.78,
-        "edge": 0.487,
-        "modelProbability": 0.835,
+        "edge": 0.493,
+        "modelProbability": 0.839,
         "marketProxyProbability": 0.529,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-03T21:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Argentina，但平局還有 13%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "status": "won",
+        "score": [
+          3,
+          2
+        ],
+        "profit": 6.24
+      }
+    ],
+    "pending": [
       {
         "matchId": "m087",
         "kickoffUtc": "2026-07-04T01:30:00.000Z",
@@ -7244,6 +7228,25 @@
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Brazil，但平局還有 20%；別急著開香檳，足球最會打臉。",
         "status": "pending"
+      },
+      {
+        "matchId": "m092",
+        "kickoffUtc": "2026-07-06T00:00:00.000Z",
+        "stage": "Round of 16",
+        "team1": "Mexico",
+        "team2": "England",
+        "pick": "Mexico",
+        "outcome": "home",
+        "stake": 2.97,
+        "decimalOdds": 2.96,
+        "edge": 0.135,
+        "modelProbability": 0.383,
+        "marketProxyProbability": 0.318,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-05T23:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 Mexico，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "status": "pending"
       }
     ],
     "watchlist": [
@@ -7286,25 +7289,6 @@
         "status": "watchlist"
       },
       {
-        "matchId": "m092",
-        "kickoffUtc": "2026-07-06T00:00:00.000Z",
-        "stage": "Round of 16",
-        "team1": "Mexico",
-        "team2": "England",
-        "pick": "Mexico",
-        "outcome": "home",
-        "stake": 2.97,
-        "decimalOdds": 2.96,
-        "edge": 0.135,
-        "modelProbability": 0.383,
-        "marketProxyProbability": 0.318,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-05T23:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 Mexico，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
         "matchId": "m094",
         "kickoffUtc": "2026-07-07T00:00:00.000Z",
         "stage": "Round of 16",
@@ -7340,6 +7324,25 @@
         "lockedAtUtc": "2026-07-07T15:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 W86，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
+        "matchId": "m097",
+        "kickoffUtc": "2026-07-09T20:00:00.000Z",
+        "stage": "Quarter-final",
+        "team1": "W89",
+        "team2": "W90",
+        "pick": "W89",
+        "outcome": "home",
+        "stake": 1,
+        "decimalOdds": 2.54,
+        "edge": -0.046,
+        "modelProbability": 0.376,
+        "marketProxyProbability": 0.37,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-09T19:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場保守站 W89，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       }
     ]
