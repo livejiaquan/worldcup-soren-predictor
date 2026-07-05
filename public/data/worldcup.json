@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-05T17:55:01.568Z",
+  "generatedAt": "2026-07-05T19:08:00.349Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -2470,8 +2470,8 @@
       "date": "2026-07-09",
       "time": "16:00 UTC-4",
       "kickoffUtc": "2026-07-09T20:00:00.000Z",
-      "team1": "W89",
-      "team2": "W90",
+      "team1": "France",
+      "team2": "Morocco",
       "venue": "Boston (Foxborough)",
       "status": "scheduled",
       "score": null,
@@ -6521,44 +6521,44 @@
       ]
     },
     "m097": {
-      "pick": "W89",
-      "confidence": 0.3808352070799772,
-      "tag": "膠著到煩",
+      "pick": "France",
+      "confidence": 0.7293675261546592,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.37558853219027716,
-        "draw": 0.27797112945111263,
-        "away": 0.3464403383586102
+        "home": 0.6383714227323664,
+        "draw": 0.22879106243689398,
+        "away": 0.13283751483073963
       },
       "expectedGoals": [
-        1.22,
-        1.16
+        1.74,
+        0.64
       ],
-      "score": "1-1",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 W89，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場偏明確站 France，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "story": "France 底牌比較硬；Morocco 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "0.0",
-            "note": "誰也別裝大哥"
+            "value": "14.2",
+            "note": "France 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.22 : 1.16",
-            "note": "最像 1-1"
+            "value": "1.74 : 0.64",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "35%",
-            "note": "W90 的偷雞窗口"
+            "value": "13%",
+            "note": "Morocco 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：W89 67.0；W90 67.0",
-        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：France 104.0；Morocco 89.8",
+        "預期進球 1.74 : 0.64，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 14.2 分，我暫時站 France"
       ]
     },
     "m098": {
@@ -7260,6 +7260,25 @@
     ],
     "watchlist": [
       {
+        "matchId": "m097",
+        "kickoffUtc": "2026-07-09T20:00:00.000Z",
+        "stage": "Quarter-final",
+        "team1": "France",
+        "team2": "Morocco",
+        "pick": "France",
+        "outcome": "home",
+        "stake": 8,
+        "decimalOdds": 2.18,
+        "edge": 0.392,
+        "modelProbability": 0.638,
+        "marketProxyProbability": 0.431,
+        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
+        "lockedAtUtc": "2026-07-09T19:00:00.000Z",
+        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
+        "reason": "我這場偏明確站 France，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "status": "watchlist"
+      },
+      {
         "matchId": "m096",
         "kickoffUtc": "2026-07-07T20:00:00.000Z",
         "stage": "Round of 16",
@@ -7276,25 +7295,6 @@
         "lockedAtUtc": "2026-07-07T19:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 Switzerland，但平局還有 27%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
-      {
-        "matchId": "m097",
-        "kickoffUtc": "2026-07-09T20:00:00.000Z",
-        "stage": "Quarter-final",
-        "team1": "W89",
-        "team2": "W90",
-        "pick": "W89",
-        "outcome": "home",
-        "stake": 1,
-        "decimalOdds": 2.54,
-        "edge": -0.046,
-        "modelProbability": 0.376,
-        "marketProxyProbability": 0.37,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-09T19:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 W89，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "watchlist"
       },
       {
