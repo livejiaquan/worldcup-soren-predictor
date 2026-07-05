@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-05T02:23:52Z",
-  "status": "matchday scout: Brazil-Norway/Mexico-England 補官方 match centre、CBF/Mexico 官方語境、Azteca 天氣海拔與 next-wave R16 live rails；所有 lineup/odds 仍保持 claim-bounded。",
-  "headline": "Soren 02Z 巡邏：Brazil 有 CBF「最佳狀態」但 Norway 有 Haaland 與歷史鬼故事；Mexico-England 則是 Azteca、海拔、零失球一起上桌。",
+  "generatedAt": "2026-07-05T08:33:30Z",
+  "status": "matchday scout: Brazil-Norway / Mexico-England 補官方臨場 rails、BBC/ESPN 賽程心理噪音、Portugal-Spain Spain XI watch、USA-Belgium USSF match hub；所有 lineup/odds/live rails 仍保持 claim-bounded。",
+  "headline": "Soren 08Z 巡邏：Brazil-Norway 和 Mexico-England 進入臨場模式；Azteca 會咬人，Haaland 也不看 Brazil 履歷表。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -7850,9 +7850,9 @@
     {
       "matchId": "m091",
       "match": "Brazil vs Norway",
-      "sourceType": "official live centre + official Brazil camp + credible preview/market/injury watch + AP/Opta upset context",
-      "title": "Brazil-Norway 補 FIFA/CBF/Opta matchday rails：Brazil 說自己最佳狀態，Soren 只提醒 Haaland 不吃履歷表。",
-      "sorenTake": "FIFA match centre 已開，CBF 官方把 Ancelotti「最佳狀態」語境放上桌；Opta/Analyst 也給 Brazil 優勢概率。但 Norway 的 Haaland、set-piece threat 和 1998 H2H 心魔不是裝飾品——大熱門要先把比賽踢乾淨，別把名氣當防守。",
+      "sourceType": "official/team update + reported lineup/live rail + venue/weather watch",
+      "title": "Brazil-Norway 臨場加料：NFF 名單頁與 ge 賽前 rail 已開，Brazil 的「最佳狀態」要先過 Haaland 空襲測謊機。",
+      "sorenTake": "Brazil 有 CBF/Reuters 的 Raphinha-Paquetá availability watch，也有 ge 的賽前轉播與預計陣容；Norway 端 NFF 名單頁已經把臨場入口打開。這不是「桑巴穩了」的比賽，因為 Haaland/Sørloth 只需要一次空中錯位就能把模型表格撕開。",
       "signals": [
         "Norges Fotballforbund 頁面 metadata 可讀，標題為 16 強先發，並由搜尋片段提供 Nusa/Haaland 進球、Norway 2-1 Ivory Coast、下一戰 Brazil 的脈絡。",
         "FIFA Côte d’Ivoire-Norway review URL 父層核可連線；搜尋片段指向 Haaland 進球與 Norway 淘汰賽晉級，作官方路徑資訊。",
@@ -7870,7 +7870,10 @@
         "FIFA Brazil-Norway match centre parent probe returned 200; use it as official live/lineup/score rail, not as confirmed XI before teamsheets appear.",
         "CBF page title verifies Ancelotti says Brazil are in their “melhor momento” before Norway; official confidence signal, not a lineup confirmation.",
         "Opta Analyst metadata confirms a Brazil-Norway prediction/preview page; use as public probability/context, not proprietary model input.",
-        "Reuters search lead reports Raphinha back-training/bench possibility and Brazil planning for Haaland; parent fetch was 401, so keep as reported availability-watch, not hard confirmed availability."
+        "Reuters search lead reports Raphinha back-training/bench possibility and Brazil planning for Haaland; parent fetch was 401, so keep as reported availability-watch, not hard confirmed availability.",
+        "NFF「Disse starter i 16-delsfinalen」頁面可連線，作為 Norway 對 Brazil 的官方名單/事件入口；目前只把它當官方臨場 rail，不延伸成已讀完整戰術理由。",
+        "ge/Globo 賽前頁已發布 Brazil-Norway 轉播、時間、desfalques、arbitragem 與 escalações 入口；屬巴西主流媒體 lineup-watch，可輔助 CBF/Reuters availability 脈絡。",
+        "East Rutherford 週末天氣仍有高溫/雷雨風險的公開氣象脈絡；Soren 只把它當 venue-condition watch，不拿天氣預報假裝能預測門將出擊。"
       ],
       "sources": [
         {
@@ -8008,6 +8011,22 @@
           "fetchedAt": "2026-07-05T02:23:52Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ge Brazil-Norway matchday preview",
+          "url": "https://ge.globo.com/futebol/copa-do-mundo/noticia/2026/07/05/brasil-x-noruega-onde-assistir-ao-vivo-horario-e-escalacoes.ghtml",
+          "sourceName": "ge / Globo Esporte",
+          "fetchedAt": "2026-07-05T08:33:30Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "AccuWeather East Rutherford forecast",
+          "url": "https://www.accuweather.com/en/us/east-rutherford/07073/weather-forecast/344423",
+          "sourceName": "AccuWeather",
+          "fetchedAt": "2026-07-05T08:33:30Z",
+          "claimType": "context/venue-weather",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -8015,9 +8034,9 @@
     {
       "matchId": "m092",
       "match": "Mexico vs England",
-      "sourceType": "official match centres + official Mexico/FIFA preview + media venue-weather context + lineup/market watch",
-      "title": "Mexico-England 補 FIFA/Mexico/Al Jazeera matchday rails：Azteca 不是中立草皮，是會咬人的海拔。",
-      "sorenTake": "FIFA match centre/preview 與 Mexico 官方賽前稿把對戰放穩，Al Jazeera 把 Azteca 2240m 海拔與天氣風險講清楚。England 紙面能量更厚，但這場要踢的是 Mexico、球場、呼吸和情緒四合一；Soren 不把 expected XI 當正式名單。",
+      "sourceType": "official match centre + coach/player quotes + venue/weather/odds watch",
+      "title": "Mexico-England 再加官方英格蘭 rails：Rashford 說要吃下 Azteca 氣氛，Tuchel 則提醒別被混亂賽程偷走腦袋。",
+      "sorenTake": "Mexico 的主場、海拔與零失球已經夠硬；今天補上 England 官方 match centre、Rashford 賽前訪談，以及 BBC/ESPN 對開球時間風波與 Tuchel 心態管理的脈絡。紙面上 England 不是不能贏，但如果前 20 分鐘被 Azteca 的聲浪和稀薄空氣牽著跑，這場會比賠率表更髒。",
       "signals": [
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
@@ -8042,7 +8061,11 @@
         "FIFA preview URL parent probe returned 200; use as official match/team-news entry point, not as a finished tactical verdict.",
         "Selección Nacional de México page returned 200 and title metadata; official camp-mood source says Mexico approaches England with ambition/illusion, not a confirmed XI.",
         "Al Jazeera metadata explicitly notes Azteca sits around 2,240m and thinner air affects breathing; this upgrades venue/weather context beyond generic home advantage.",
-        "Reuters search lead says Javier Aguirre described Mexico as selfless/ready for England; parent fetch was 401, so keep it as reported coach-context only."
+        "Reuters search lead says Javier Aguirre described Mexico as selfless/ready for England; parent fetch was 401, so keep it as reported coach-context only.",
+        "England Football 官方 match centre 確認 Mexico City / Round of 16 入口與轉播資訊，是非 FIFA 的英格蘭官方臨場 rail。",
+        "Rashford 官方訪談把重點放在吸收 Mexico 氣氛與適應挑戰；這是球員心態語境，不是 lineup confirmation。",
+        "BBC 確認 England-Mexico 仍維持 01:00 BST / 18:00 local 開球，並記錄 FIFA 一度改期再回轉造成的備戰噪音。",
+        "ESPN 引述 Tuchel 要求球員「not lose their heads」；Soren 解讀為：這場最大的敵人之一不是只在對面，也在賽程混亂與 Azteca 壓力裡。"
       ],
       "sources": [
         {
@@ -8212,6 +8235,38 @@
           "fetchedAt": "2026-07-05T02:23:52Z",
           "claimType": "reported/coach-context",
           "confidence": "medium-high"
+        },
+        {
+          "label": "England Football Mexico-England match centre",
+          "url": "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/world-cup/mexico-england-fifa-world-cup-round-of-16-monday-6-july-2026-match-centre",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-05T08:33:30Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "England Football Rashford Mexico interview",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/04/marcus-rashford-pre-mexico-interview-20260407",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-05T08:33:30Z",
+          "claimType": "confirmed/player-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC England-Mexico kickoff unchanged",
+          "url": "https://www.bbc.com/sport/football/articles/cvgmz3jyq9qo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-05T08:33:30Z",
+          "claimType": "context/schedule",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Tuchel Mexico buildup quotes",
+          "url": "https://www.espn.com/soccer/story/_/id/49272640/thomas-tuchel-england-not-lose-your-heads-amid-tricky-mexico-buildup-world-cup",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-05T08:33:30Z",
+          "claimType": "reported/coach-context",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -8219,9 +8274,9 @@
     {
       "matchId": "m093",
       "match": "Portugal vs Spain",
-      "sourceType": "actualized R16 matchup + official/live-centre rails + federation quote + lineup/odds watch",
-      "title": "Portugal-Spain 補 FIFA live rail 與 lineup-watch：Iberian derby 夠辣，但正式 XI 還沒上菜。",
-      "sorenTake": "Portugal-Spain 已有 FIFA match centre 作臨場入口，Sports Mole 只作 possible lineup/team-news 參考。RFEF 的競爭心語境和市場頁能講故事，但這種 derby 最怕把巨星海報誤讀成控制權。",
+      "sourceType": "official preview + reported lineup/tactical watch + public live/odds rail",
+      "title": "Portugal-Spain 補 Spain XI 與 FOX live rail：Iberian derby 不是控球率選美，是 Yamal/Mendes 這種小縫會決定誰先流血。",
+      "sorenTake": "FIFA/RFEF/Sports Mole preview 已有底，今天再補 Spain XI training-watch 與 FOX live/odds rail。Yamal 是否滿油、Olmo/Porro 狀態與兩隊邊路對位，是 Soren 會盯的真戰場；正式 XI 未出前，所有首發都只寫 reported，不裝神。",
       "signals": [
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
@@ -8230,7 +8285,9 @@
         "FIFA Portugal-Spain official preview 可作官方 match/team-news 入口；正式先發未出前只標 official preview / lineup-watch。",
         "RFEF De la Fuente quote 屬官方教練/競爭心脈絡，不等於陣容確認；USA Today odds/analysis 僅作 paper-only public market context。",
         "FIFA Portugal-Spain match centre parent probe returned 200; official live/lineup rail exists, but teamsheets remain pending.",
-        "Sports Mole metadata says prediction/team news/possible lineups; useful lineup-watch, not confirmed selection."
+        "Sports Mole metadata says prediction/team news/possible lineups; useful lineup-watch, not confirmed selection.",
+        "Sports Mole Spain XI 專文把 Lamine Yamal、Dani Olmo、Pedro Porro 狀態列為 Portugal 戰前 training/availability watch；這是 predicted-XI 級別，不是官方名單。",
+        "FOX Sports Portugal-Spain live centre 可作為比賽日比分、統計與公開 odds rail；與 FIFA match centre 互補，仍不替代官方 final verification。"
       ],
       "sources": [
         {
@@ -8312,6 +8369,22 @@
           "fetchedAt": "2026-07-05T02:23:52Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole Spain predicted XI vs Portugal",
+          "url": "https://www.sportsmole.co.uk/football/spain/world-cup-2026/predicted-lineups/yamal-olmo-porro-status-predicted-spain-xi-vs-portugal_600654.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-05T08:33:30Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FOX Sports Portugal-Spain live centre",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-portugal-vs-spain-jul-06-2026-game-boxscore-607923",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-05T08:33:30Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -8319,9 +8392,9 @@
     {
       "matchId": "m094",
       "match": "USA vs Belgium",
-      "sourceType": "actualized R16 matchup + official/live-centre rails + official suspension/team context + public odds/lineup watch",
-      "title": "USA-Belgium 補 FIFA live rail 與 odds/team-news：主場劇本還在，但 Balogun 禁賽讓 USA 少一顆牙。",
-      "sorenTake": "FIFA match centre 已可做臨場 rail；USA Today/Sports Mole 只作公開 odds、team-news 和 possible lineup 背景。Balogun 禁賽是硬訊號，其他 predicted XI 仍只是 reported watch，Soren 不把猜陣容包裝成聖旨。",
+      "sourceType": "official match hub + suspension/mentality context + lineup/odds watch",
+      "title": "USA-Belgium 補 USSF match hub：Balogun 禁賽不是一句註腳，是主場劇本少一顆牙後還要硬笑。",
+      "sorenTake": "USSF match hub 給了非 FIFA 的官方臨場入口，USSF「team of 26」語境也說清楚：美國隊把 Balogun 紅牌後的 surviving 當團隊韌性故事。但淘汰賽不頒精神分，Belgium 的 Lukaku/De Bruyne 問題會逼 Pepi 或替代九號立刻交作業。",
       "signals": [
         "Local worldcup.json now actualizes M094 as USA vs Belgium; this card has retired the stale W81/W82 label and keeps old bracket rails only as provenance.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
@@ -8333,7 +8406,9 @@
         "US Soccer 官方資料指向 Belgium opponent profile，另有 Balogun 對 Belgium 戰停賽脈絡；這是 official team context / suspension watch，不是預測先發。",
         "FIFA USA-Belgium match centre parent probe returned 200; official live/lineup rail exists ahead of kickoff.",
         "USA Today page title verifies expert predictions/picks for USA-Belgium; use only as public paper-market context, never betting advice.",
-        "Sports Mole metadata says prediction/team news/possible lineups for USA-Belgium; keep as reported lineup-watch, not confirmed XI."
+        "Sports Mole metadata says prediction/team news/possible lineups for USA-Belgium; keep as reported lineup-watch, not confirmed XI.",
+        "U.S. Soccer 官方 match hub 已可連線，提供 USA-Belgium live score、lineups、highlights 入口；這是比 FIFA live rail 更貼近主隊的臨場來源。",
+        "U.S. Soccer「A Team of 26」文章把 Balogun 紅牌後的晉級寫成團隊韌性；Soren 只採用為 locker-room/context，不把它轉譯成戰術保證。"
       ],
       "sources": [
         {
@@ -8431,6 +8506,22 @@
           "fetchedAt": "2026-07-05T02:23:52Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "US Soccer USA-Belgium match hub",
+          "url": "https://www.ussoccer.com/competitions/fifa-world-cup-26/matches/united-states-vs-belgium-tickets-live-score-match-hub-lineups-highlights",
+          "sourceName": "U.S. Soccer",
+          "fetchedAt": "2026-07-05T08:33:30Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "US Soccer team-of-26 mentality context",
+          "url": "https://www.ussoccer.com/stories/2026/07/usmnt/a-team-of-26-resolute-mentality-togetherness-drive-world-cup-run",
+          "sourceName": "U.S. Soccer",
+          "fetchedAt": "2026-07-05T08:33:30Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
