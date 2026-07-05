@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-05T14:38:24Z",
-  "status": "matchday scout: Brazil-Norway / Mexico-England 進入最後 10 小時臨場 rails；補 FIFA live updates、CBF final training、Guardian live blog、England official presser，並替 Portugal-Spain / USA-Belgium 加 Opta/RotoWire/天氣與公開市場參考。",
-  "headline": "Soren 14Z 巡邏：Brazil-Norway 開始聞到草皮味；Mexico-England 的 Azteca 噪音升溫，明日兩場也先把戰術/市場 rails 鋪好。",
+  "generatedAt": "2026-07-05T20:44:26Z",
+  "status": "matchday scout: Brazil-Norway live-score rail updated from ESPN public summary (0-0 first half, completed=false); Mexico-England final countdown adds BBC live team-news/weather rail, The Athletic logistics pressure, and Sports Mole injury/lineup watch.",
+  "headline": "Soren 20Z 巡邏：Brazil-Norway 正在踢但不是終場；Mexico-England 的 Azteca 壓力從球場一路延伸到飯店路障。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -7850,9 +7850,9 @@
     {
       "matchId": "m091",
       "match": "Brazil vs Norway",
-      "sourceType": "official live/final-training rail + reported lineup/weather/odds watch",
-      "title": "Brazil-Norway 臨場 rails 再加厚：FIFA 今日即時頁、CBF 最後訓練與 Al Jazeera build-up 都指向同一件事——Haaland 不會因為你叫 Brazil 就自動跪下。",
-      "sorenTake": "FIFA 今日即時頁已開，CBF 也把賽前最後訓練訊號補上；Standard/Al Jazeera/FOX 則提供 lineup、live build-up 與公開市場參考。Raphinha/Paquetá 狀態仍要等正式名單，Soren 不把 predicted XI 當聖旨；但這場已從「資料預覽」切到「臨場風險管理」。",
+      "sourceType": "live score + official/team/live-centre rails + lineup/odds watch",
+      "title": "Brazil-Norway 43 分鐘仍 0-0：ESPN 公開比分確認還在上半場，別把直播緊張感偷換成賽果。",
+      "sorenTake": "Brazil 名牌更亮，但 ESPN public summary 43 分鐘仍是 0-0、completed=false；這只能寫成 Live ≠ Final 的臨場風險，不准提前結算 bracket 或紙上盤。CBS/RTÉ 也已開 live rail，Soren 會盯住下半場而不是靠隊徽腦補。",
       "signals": [
         "Norges Fotballforbund 頁面 metadata 可讀，標題為 16 強先發，並由搜尋片段提供 Nusa/Haaland 進球、Norway 2-1 Ivory Coast、下一戰 Brazil 的脈絡。",
         "FIFA Côte d’Ivoire-Norway review URL 父層核可連線；搜尋片段指向 Haaland 進球與 Norway 淘汰賽晉級，作官方路徑資訊。",
@@ -7878,7 +7878,10 @@
         "CBF final-training URL 可連線；標題 metadata 較弱但路徑明確指向 Seleção 在比賽場地完成對 Norway 賽前準備，作官方備戰 rail 而非先發確認。",
         "Evening Standard 賽前隊訊頁可讀，標題明示 Brazil predicted lineup / confirmed team news / injury latest；作 Raphinha、Paquetá、Casemiro 狀態 watch，不升格為 confirmed XI。",
         "Al Jazeera Brazil-Norway build-up 可讀，摘要重申 Norway 是 Brazil 在世界盃仍未擊敗過的少數對手；這是公開敘事/直播入口，不是模型結論。",
-        "FOX Sports odds/picks 頁可讀，用作 paper-only market reference；不引用投注建議、不給實錢路徑。"
+        "FOX Sports odds/picks 頁可讀，用作 paper-only market reference；不引用投注建議、不給實錢路徑。",
+        "20:43Z 父層直接查 ESPN public summary event 760504：Brazil 0-0 Norway，STATUS_FIRST_HALF，completed=false，displayClock 43'；這是 live-score context，不是 final result 或 override 依據。",
+        "CBS Sports Brazil-Norway live updates 頁可連線，metadata 標示 live score updates / highlights / news；作可信媒體 live rail，仍不替代官方終場核驗。",
+        "RTÉ Sport Brazil v Norway updates 頁可連線，metadata 標示 last-16 live updates；可補歐洲公共媒體 live-centre context。"
       ],
       "sources": [
         {
@@ -8072,16 +8075,40 @@
           "fetchedAt": "2026-07-05T14:38:24Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "ESPN Brazil-Norway public summary",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760504",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-05T20:44:26Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
+        },
+        {
+          "label": "CBS Sports Brazil-Norway live updates",
+          "url": "https://www.cbssports.com/soccer/news/brazil-norway-live-updates-world-cup-2026-score-result/live/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-07-05T20:44:26Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "RTÉ Brazil-Norway live updates",
+          "url": "https://www.rte.ie/sport/world-cup-2026/2026/0705/1581842-world-cup-2026-brazil-v-norway-updates/",
+          "sourceName": "RTÉ Sport",
+          "fetchedAt": "2026-07-05T20:44:26Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m092",
       "match": "Mexico vs England",
-      "sourceType": "official presser + live blog + lineup/altitude/odds watch",
-      "title": "Mexico-England 臨場噪音再升一格：Tuchel 說已準備好「iconic match」，但 Azteca 不會因為英格蘭講得很冷靜就降海拔。",
-      "sorenTake": "England 官方補上 Tuchel 賽前記者會，Guardian live blog 開始滾動追蹤，Standard/RotoWire 把隊訊、天氣/高度與 expected XI rails 鋪好。Mexico 官方信心已在前一輪收錄；現在重點是 England 能不能把節奏拉回自己腳下，而不是被 Azteca 和賽程口水帶著跑。",
+      "sourceType": "official coach quote + injury/logistics/live-centre/lineup/odds watch",
+      "title": "Mexico-England 最後倒數：BBC 開 team-news/weather live rail，The Athletic 連飯店路障都寫進壓力劇本。",
+      "sorenTake": "Tuchel 的「not lose your heads」不是口號，是 Azteca 任務說明書。BBC 盯隊訊與天氣，Sports Mole 補傷停/預測 XI，The Athletic 指出英格蘭飯店周邊預防賽前干擾；Soren 的結論很簡單：英格蘭紙面仍強，但這不是在溫布利散步。",
       "signals": [
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
@@ -8114,7 +8141,10 @@
         "England Football Tuchel presser URL 父層核可，metadata 明示 Tuchel 說 England ready for an iconic match；這是官方 coach quote，不是勝負保證。",
         "Guardian 7/5 live blog 可讀，標題含 Mexico v England buildup；作可信 media live-centre / rolling context。",
         "Evening Standard preview 可讀，標題涵蓋 kick-off、team news、h2h、odds；可補 Azteca/天氣與賽前隊訊，但不當作官方 XI。",
-        "RotoWire preview 可讀，metadata 明示 predicted lineups、team news、tactical breakdown；只標 reported/lineup-watch。"
+        "RotoWire preview 可讀，metadata 明示 predicted lineups、team news、tactical breakdown；只標 reported/lineup-watch。",
+        "BBC Sport England v Mexico live page 可連線，metadata 標示 team news、predictions 與 weather update；正式 XI 未公布前只作 live build-up / team-news rail。",
+        "The Athletic / New York Times logistics piece 可連線，metadata 指出英格蘭在 Mexico City 飯店周邊安排 roadblocks 防賽前干擾；這是場外壓力/睡眠管理脈絡，不是比賽結果訊號。",
+        "Sports Mole Mexico-England injury/suspension/predicted XIs 頁可連線；作 injury/lineup watch，仍不把 predicted XI 寫成 confirmed lineup。"
       ],
       "sources": [
         {
@@ -8348,9 +8378,33 @@
           "fetchedAt": "2026-07-05T14:38:24Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "BBC England-Mexico live build-up",
+          "url": "https://www.bbc.com/sport/football/live/cze9x72rgwlt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-05T20:44:26Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "The Athletic England hotel disruption watch",
+          "url": "https://www.nytimes.com/athletic/7417991/2026/07/02/england-world-cup-hotel-mexico-city/",
+          "sourceName": "The Athletic / New York Times",
+          "fetchedAt": "2026-07-05T20:44:26Z",
+          "claimType": "context/venue-logistics",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Mole Mexico-England injury/suspension watch",
+          "url": "https://www.sportsmole.co.uk/football/england/world-cup-2026/team-news/mexico-vs-england-injury-suspension-list-predicted-xis_600613.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-05T20:44:26Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m093",
