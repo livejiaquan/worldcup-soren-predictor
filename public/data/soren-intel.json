@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-06T01:05:36Z",
-  "status": "matchday scout: Mexico-England is live per ESPN public summary (0-0, early first half, completed=false); Portugal-Spain and USA-Belgium remain scheduled on ESPN scoreboard. Live score is context only, not a final/result settlement.",
-  "headline": "Soren 01Z 巡邏：Mexico-England 已開踢但仍是 0-0 early first half，不是終場；Portugal-Spain、USA-Belgium 還在預熱。",
+  "generatedAt": "2026-07-06T02:56:32Z",
+  "status": "matchday scout: Mexico-England is still live on ESPN at 90+4, England 3-2 Mexico, completed=false; Portugal-Spain and USA-Belgium remain scheduled; m095/m096 sparse placeholders were actualized with official/live-centre anchors.",
+  "headline": "Soren 02:56Z 巡邏：Mexico-England 90+4 還不是終場，England 3-2 只是 live context；Portugal-Spain、USA-Belgium 補上臨場 rails，Argentina-Egypt 與 Switzerland-Colombia 不再裸奔。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -8106,9 +8106,9 @@
     {
       "matchId": "m092",
       "match": "Mexico vs England",
-      "sourceType": "live-score context + official coach quote + injury/logistics/live-centre/lineup/odds watch",
-      "title": "Mexico-England 已進入 live rail：ESPN 公開 summary 顯示 0-0、early first half、completed=false，先盯狀態別急著結算。",
-      "sorenTake": "ESPN public summary 目前只給 0-0、early first half、completed=false；這代表比賽在跑/資料在跑，不代表可結算。Tuchel 的冷頭腦任務、Azteca 高度與墨西哥主場壓力仍是賽前主線，但 Soren 現在第一規則是 Live ≠ Final：沒 FT 就不更新晉級、紙上帳或賽後復盤。",
+      "sourceType": "live-score context + official/team/media/odds rails (not final)",
+      "title": "Mexico-England 已到 90+4：ESPN 公開 summary 顯示 England 3-2 Mexico、completed=false，這是火場直播不是結算單。",
+      "sorenTake": "England 暫時 3-2 領先，但 ESPN 狀態仍是 second half、completed=false；Soren 只把它當 live context，不把 bracket、排行榜或紙上 bankroll 提前蓋章。Mexico City 這種尾段，最怕的不是輸贏，是有人把直播比分當終場截圖。",
       "signals": [
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
@@ -8145,7 +8145,8 @@
         "BBC Sport England v Mexico live page 可連線，metadata 標示 team news、predictions 與 weather update；正式 XI 未公布前只作 live build-up / team-news rail。",
         "The Athletic / New York Times logistics piece 可連線，metadata 指出英格蘭在 Mexico City 飯店周邊安排 roadblocks 防賽前干擾；這是場外壓力/睡眠管理脈絡，不是比賽結果訊號。",
         "Sports Mole Mexico-England injury/suspension/predicted XIs 頁可連線；作 injury/lineup watch，仍不把 predicted XI 寫成 confirmed lineup。",
-        "2026-07-06T01:05Z parent re-query: ESPN public summary event 760505 shows Mexico 0-0 England, STATUS_FIRST_HALF / 4', completed=false; this is live-score context only and must not settle bracket, result, or paper bankroll."
+        "2026-07-06T01:05Z parent re-query: ESPN public summary event 760505 shows Mexico 0-0 England, STATUS_FIRST_HALF / 4', completed=false; this is live-score context only and must not settle bracket, result, or paper bankroll.",
+        "02:56Z ESPN public summary 再核：Mexico 2-3 England，90+4，STATUS_SECOND_HALF，completed=false；不得寫成 final 或更新 result settlement。"
       ],
       "sources": [
         {
@@ -8403,6 +8404,14 @@
           "fetchedAt": "2026-07-05T20:44:26Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "ESPN Mexico-England live summary 90+4",
+          "url": "https://site.web.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760505",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -8410,9 +8419,9 @@
     {
       "matchId": "m093",
       "match": "Portugal vs Spain",
-      "sourceType": "official preview + Opta/RotoWire tactical watch + live/odds/weather rail",
-      "title": "Portugal-Spain 補 Spain XI 與 FOX live rail：Iberian derby 不是控球率選美，是 Yamal/Mendes 這種小縫會決定誰先流血。",
-      "sorenTake": "FIFA/RFEF/Sports Mole preview 已有底，今天再補 Spain XI training-watch 與 FOX live/odds rail。Yamal 是否滿油、Olmo/Porro 狀態與兩隊邊路對位，是 Soren 會盯的真戰場；正式 XI 未出前，所有首發都只寫 reported，不裝神。",
+      "sourceType": "official preview + live centre + player quotes + predicted XI + odds-reference",
+      "title": "Portugal-Spain 補 BBC/AP/GOAL/Yahoo rails：Ronaldo 最後一屆的嘴炮很亮，但 Yamal/Nico availability 與 Dallas 控場才是真刀。",
+      "sorenTake": "Iberian derby 不缺史詩旁白；缺的是誰敢在半空間第一腳就出刀。BBC live page 已掛好，AP 讓 Ronaldo 與 De la Fuente 的互相警戒落地，GOAL/Yahoo 則把 predicted XI、Spain wing fitness 與市場價格放到同一張顯微鏡下。這些都還不是官方先發，別把 preview 當名單石碑。",
       "signals": [
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
@@ -8427,7 +8436,11 @@
         "Opta Analyst Portugal-Spain preview 可讀，metadata 指向 Iberian Derby prediction/preview；作 public probability/context，不暴露本站模型底層。",
         "RotoWire Portugal-Spain preview 可讀，metadata 明示 predicted lineups、team news、tactical breakdown；正式 XI 未公布前只標 reported。",
         "FotMob Portugal-Spain live centre 搜尋/URL 作 lineups/stats 入口；用於臨場 rails，非正式先發來源。",
-        "AccuWeather AT&T Stadium URL 搜尋結果可用但父層 403；保留為低揭露度 venue-weather lead，若前端詳情頁展示需標 context 而非實況天氣結論。"
+        "AccuWeather AT&T Stadium URL 搜尋結果可用但父層 403；保留為低揭露度 venue-weather lead，若前端詳情頁展示需標 context 而非實況天氣結論。",
+        "BBC live page 已啟用 Portugal v Spain 比賽文字、比分與 stats 入口，是臨場追蹤的可靠 live rail。",
+        "AP/FOX Carolina 轉載 Ronaldo 賽前記者會：第六屆世界盃會是他的最後一屆；De la Fuente 也提醒 Spain 仍必須防他在關鍵區域決定比賽。",
+        "GOAL 賽前專題提供雙方 predicted XI 與 team-news framing，但明確仍屬預測/preview，不是 confirmed lineup。",
+        "Yahoo/Covers odds preview 把 Spain 標成市場熱方並列出 Nico Williams、Yeremy Pino doubtful；作為 public odds/availability watch，不是醫療官宣。"
       ],
       "sources": [
         {
@@ -8557,6 +8570,38 @@
           "fetchedAt": "2026-07-05T14:38:24Z",
           "claimType": "context/venue-weather",
           "confidence": "low-medium"
+        },
+        {
+          "label": "BBC Portugal-Spain live text",
+          "url": "https://www.bbc.com/sport/football/live/cze9xg6480gt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "AP Ronaldo last World Cup press conference",
+          "url": "https://www.foxcarolina.com/2026/07/05/cristiano-ronaldo-says-it-again-his-6th-world-cup-with-portugal-will-be-his-last/",
+          "sourceName": "Associated Press via FOX Carolina",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "confirmed/player-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "GOAL Portugal-Spain preview",
+          "url": "https://www.goal.com/en-us/news/portugal-spain-world-cup-preview/bltb67a97e9f9bd403f",
+          "sourceName": "GOAL",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Yahoo/Covers Spain-Portugal odds",
+          "url": "https://sports.yahoo.com/articles/spain-vs-portugal-predictions-odds-110000105.html",
+          "sourceName": "Yahoo Sports / Covers",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "odds-reference",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -8564,9 +8609,9 @@
     {
       "matchId": "m094",
       "match": "USA vs Belgium",
-      "sourceType": "official match hub + suspension/Opta/RotoWire/odds/weather rail",
-      "title": "USA-Belgium 補 USSF match hub：Balogun 禁賽不是一句註腳，是主場劇本少一顆牙後還要硬笑。",
-      "sorenTake": "USSF match hub 給了非 FIFA 的官方臨場入口，USSF「team of 26」語境也說清楚：美國隊把 Balogun 紅牌後的 surviving 當團隊韌性故事。但淘汰賽不頒精神分，Belgium 的 Lukaku/De Bruyne 問題會逼 Pepi 或替代九號立刻交作業。",
+      "sourceType": "official/team preview + Balogun disciplinary update + predicted XI + opponent context + odds-reference",
+      "title": "USA-Belgium 最大翻轉：BBC 指 Balogun 紅牌禁賽被 FIFA 暫緩，主場劇本突然把一顆牙裝回去了。",
+      "sorenTake": "原本的 USA-Belgium 是「主場但少中鋒」；BBC 最新寫法變成 Balogun 可出戰，Belgium 還對判決 astonished。這不是小註腳，是整個壓迫出口與反擊第一點重畫。SI/Yahoo 補上 Belgium 人員與戰術脈絡，OddsShopper 顯示 90 分鐘市場幾乎 coin flip；紙上模擬只看價格，不叫任何人下注。",
       "signals": [
         "Local worldcup.json now actualizes M094 as USA vs Belgium; this card has retired the stale W81/W82 label and keeps old bracket rails only as provenance.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
@@ -8585,7 +8630,11 @@
         "RotoWire USA-Belgium preview 可讀，metadata 明示 Lumen Field、predicted lineups、team news、tactical breakdown；Balogun 禁賽仍需官方/可信來源交叉標註。",
         "CBS Sports/SportsLine USA-Belgium odds頁可讀，摘要提及 Balogun red-card suspension；作 paper-only odds/suspension context，不提供投注建議。",
         "FOX 13 Seattle 本地頁可讀，確認 USA 對 Belgium 於 Seattle Stadium；作 venue/logistics context。",
-        "AccuWeather Seattle forecast 可讀；作場地城市天氣 rail，非精準場內條件。"
+        "AccuWeather Seattle forecast 可讀；作場地城市天氣 rail，非精準場內條件。",
+        "BBC 報導 FIFA 將 Balogun 自動一場紅牌禁賽改為一年 probation 下的 suspended ban，因此他可出戰 Belgium；Belgium FA 對此表示 astonished。",
+        "Sports Illustrated 預測 USA 可能因 Balogun 可用而回到 Balogun-Pulisic 前線組合；Belgium 端仍把 Lukaku/Doku/De Bruyne 當主要威脅，屬 predicted XI/team-news，不是正式先發。",
+        "Yahoo Belgium primer 強調 Belgium 已非舊 golden generation，但 Courtois、Doku、Tielemans、De Bruyne 仍足夠讓 USA 主場劇本失速。",
+        "OddsShopper 7/6 市場 snapshot 顯示 Belgium +160、USA +165、draw +245，90 分鐘盤接近 coin flip；僅作 paper odds reference。"
       ],
       "sources": [
         {
@@ -8739,21 +8788,54 @@
           "fetchedAt": "2026-07-05T14:38:24Z",
           "claimType": "context/venue-weather",
           "confidence": "medium"
+        },
+        {
+          "label": "BBC Balogun ban suspended by FIFA",
+          "url": "https://www.bbc.com/sport/football/articles/cewqq5q8v41o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "confirmed/suspension",
+          "confidence": "high"
+        },
+        {
+          "label": "SI USMNT-Belgium preview",
+          "url": "https://www.si.com/soccer/usmnt-vs-belgium-world-cup-preview-predictions-lineups-7-6-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Yahoo Belgium primer",
+          "url": "https://sports.yahoo.com/soccer/article/2026-world-cup-5-things-to-know-about-belgium-ahead-of-round-of-16-matchup-against-the-usmnt-223001386.html",
+          "sourceName": "Yahoo Sports",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "context/opponent-profile",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "OddsShopper USA-Belgium market snapshot",
+          "url": "https://www.oddsshopper.com/articles/world-cup/united-states-vs-belgium-world-cup",
+          "sourceName": "OddsShopper",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
     },
     {
       "matchId": "m095",
-      "match": "W86 vs W88",
-      "sourceType": "reported/bracket-watch + public schedule context",
-      "title": "M095 是 W86/W88 的晚到拼圖：Argentina/Cape Verde 與 Australia/Egypt 先打完，Soren 再掀桌。",
-      "sorenTake": "Round-of-16 slot is winner of Match 86 versus winner of Match 88. The useful note today is bracket timing, not fantasy lineups for teams that have not qualified into the slot yet.",
+      "match": "Argentina vs Egypt",
+      "sourceType": "official actualized matchup + live centres + team logistics + odds-reference",
+      "title": "Argentina-Egypt 已 actualize：FIFA/ESPN/FOX live rails 到位，Egypt 官方抵達 Atlanta；這不是 W-slot 霧裡看花了。",
+      "sorenTake": "Argentina 對 Egypt 的牌面很像大熱考卷，但淘汰賽不是歷史課。FIFA match centre、ESPN/FOX live hubs 先把真名牌釘上；EFA 官方抵達與球衣/訓練訊息表示 Egypt 至少沒有把自己當旅遊團。Soren 先看 Argentina 如何處理 Egypt 的低位與轉換，不在 preview 階段假裝看到正式 XI。",
       "signals": [
-        "Current public tournament data keeps M095 as W86 vs W88; this is a route slot, not a confirmed team matchup.",
-        "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
-        "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
-        "Kickoff target: 2026-07-07T16:00:00Z at Boston Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known."
+        "NBC Sports and Guardian schedule/wallchart pages remain only historical bracket-context provenance; current card now follows official/live-centre actualized matchup sources.",
+        "FIFA match centre 已把 m095 actualize 為 Argentina vs Egypt，7/7 16:00 UTC，Atlanta Stadium；這是官方 matchup anchor。",
+        "ESPN 與 FOX game pages 已掛 live score/stats/highlights rails，可作臨場狀態入口。",
+        "Egyptian FA 官方 Arabic updates 顯示 Egypt 隊已抵達 Atlanta、完成對 Argentina 的備戰 logistics；這是 team-prep context，不是先發名單。",
+        "RotoWire/Caesars odds snippet 把 Argentina 標為明顯熱方（約 -295）而 Egypt 高賠；僅作 paper simulation 市場背景。"
       ],
       "sources": [
         {
@@ -8778,6 +8860,54 @@
           "sourceName": "The Guardian",
           "fetchedAt": "2026-07-01T09:11:44Z",
           "claimType": "context/bracket-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "FIFA Argentina-Egypt match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289288/400021528",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Argentina-Egypt live centre",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760509/egipto-argentina",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Argentina-Egypt game centre",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-argentina-vs-egypt-jul-07-2026-game-boxscore-607925",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "Egypt FA arrival in Atlanta",
+          "url": "https://efa.com.eg/ar/الأخبار/وصول-بعثة-منتخب-مصر-إلى-أتلانتا-استعدادا-لمواجهة-الأرجنتين/",
+          "sourceName": "Egyptian Football Association",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "confirmed/official-team-update",
+          "confidence": "high"
+        },
+        {
+          "label": "Egypt FA kit logistics vs Argentina",
+          "url": "https://efa.com.eg/ar/الأخبار/منتخب-مصر-بالقميص-الأحمر-والأرجنتين-بالزي-التقليدى-في-دور-ال16-بكأس-العالم/",
+          "sourceName": "Egyptian Football Association",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "RotoWire Argentina-Egypt odds",
+          "url": "https://www.rotowire.com/betting/soccer/game/argentina-vs-egypt-odds-2026-07-07-2608353?book=caesars",
+          "sourceName": "RotoWire / Caesars",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "odds-reference",
           "confidence": "medium"
         }
       ],
@@ -8785,15 +8915,16 @@
     },
     {
       "matchId": "m096",
-      "match": "W85 vs W87",
-      "sourceType": "reported/bracket-watch + public schedule context",
-      "title": "M096 還卡在 W85/W87：Switzerland-Algeria、Colombia-Ghana 先決生死，Vancouver 才有真名單。",
-      "sorenTake": "Round-of-16 slot is winner of Match 85 versus winner of Match 87. Keep it bracket-watch: official lineups, odds and tactical reads wait until the actual teams are known.",
+      "match": "Switzerland vs Colombia",
+      "sourceType": "official actualized matchup + live centres + team logistics + preview/odds watch",
+      "title": "Switzerland-Colombia 已 actualize：FIFA/ESPN live rails 加 Swiss FA logistics，Vancouver 這場不是 placeholder，是風格相撞。",
+      "sorenTake": "Switzerland 的結構感對 Colombia 的垂直爆點，聽起來像戰術教科書撞上街頭鼓隊。FIFA/ESPN/FOX/FotMob 先確認 matchup 與 live rails，Swiss FA 給出 media/fan logistics；ESPN preview 與 Sports Mole 才能進一步看 predicted XI。正式名單未出前，這裡只寫「lineup-watch」，不裝神。",
       "signals": [
-        "Current public tournament data keeps M096 as W85 vs W87; this is a route slot, not a confirmed team matchup.",
-        "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
-        "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
-        "Kickoff target: 2026-07-07T20:00:00Z at Vancouver Stadium. Soren will replace route logic with team-specific scouting once the winners are actually known."
+        "NBC Sports and Guardian schedule/wallchart pages remain only historical bracket-context provenance; current card now follows official/live-centre actualized matchup sources.",
+        "FIFA match centre 已把 m096 actualize 為 Switzerland vs Colombia，7/7 20:00 UTC，BC Place Vancouver；官方 matchup anchor 到位。",
+        "ESPN live centre 與 ESPN preview 已提供比賽入口、觀看資訊與 predicted lineups framing；lineup 部分仍屬 reported/preview。",
+        "Swiss FA media schedule / fan info 提到 Schweiz-Kolumbien 與 Vancouver 相關 logistics，可作官方隊務與場地脈絡。",
+        "FOX/FotMob 提供 live-centre/stat rails；OddsShark/FOX market snippets 顯示 Colombia 可能略熱，但市場內容只作 paper odds reference。"
       ],
       "sources": [
         {
@@ -8818,6 +8949,62 @@
           "sourceName": "The Guardian",
           "fetchedAt": "2026-07-01T09:11:44Z",
           "claimType": "context/bracket-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "FIFA Switzerland-Colombia match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289288/400021535",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Switzerland-Colombia live centre",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760508/colombia-switzerland",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Switzerland-Colombia preview",
+          "url": "https://www.espn.com/soccer/story/_/id/49278663/fifa-world-cup-2026-switzerland-vs-colombia-tv-channel-how-watch-kickoff-live-stream-referee-predicted-lineups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Switzerland-Colombia game centre",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-switzerland-vs-colombia-jul-07-2026-game-boxscore-607926",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "Swiss FA World Cup media schedule",
+          "url": "https://www.football.ch/en/Portaldata/27/Resources/dokumente/nationalteams/a-team/2026/Media_Schedule_World_Cup_2026.pdf",
+          "sourceName": "Swiss Football Association",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole Switzerland-Colombia preview",
+          "url": "https://www.sportsmole.co.uk/football/switzerland/world-cup-2026/preview/switzerland-vs-colombia-prediction-team-news-lineups_600736.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "OddsShark Switzerland-Colombia odds",
+          "url": "https://www.oddsshark.com/soccer/world-cup/switzerland-colombia-odds-july-7-2026-2542689",
+          "sourceName": "OddsShark",
+          "fetchedAt": "2026-07-06T02:56:32Z",
+          "claimType": "odds-reference",
           "confidence": "medium"
         }
       ],
