@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-05T20:44:26Z",
-  "status": "matchday scout: Brazil-Norway live-score rail updated from ESPN public summary (0-0 first half, completed=false); Mexico-England final countdown adds BBC live team-news/weather rail, The Athletic logistics pressure, and Sports Mole injury/lineup watch.",
-  "headline": "Soren 20Z 巡邏：Brazil-Norway 正在踢但不是終場；Mexico-England 的 Azteca 壓力從球場一路延伸到飯店路障。",
+  "generatedAt": "2026-07-06T01:05:36Z",
+  "status": "matchday scout: Mexico-England is live per ESPN public summary (0-0, early first half, completed=false); Portugal-Spain and USA-Belgium remain scheduled on ESPN scoreboard. Live score is context only, not a final/result settlement.",
+  "headline": "Soren 01Z 巡邏：Mexico-England 已開踢但仍是 0-0 early first half，不是終場；Portugal-Spain、USA-Belgium 還在預熱。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -8106,9 +8106,9 @@
     {
       "matchId": "m092",
       "match": "Mexico vs England",
-      "sourceType": "official coach quote + injury/logistics/live-centre/lineup/odds watch",
-      "title": "Mexico-England 最後倒數：BBC 開 team-news/weather live rail，The Athletic 連飯店路障都寫進壓力劇本。",
-      "sorenTake": "Tuchel 的「not lose your heads」不是口號，是 Azteca 任務說明書。BBC 盯隊訊與天氣，Sports Mole 補傷停/預測 XI，The Athletic 指出英格蘭飯店周邊預防賽前干擾；Soren 的結論很簡單：英格蘭紙面仍強，但這不是在溫布利散步。",
+      "sourceType": "live-score context + official coach quote + injury/logistics/live-centre/lineup/odds watch",
+      "title": "Mexico-England 已進入 live rail：ESPN 公開 summary 顯示 0-0、early first half、completed=false，先盯狀態別急著結算。",
+      "sorenTake": "ESPN public summary 目前只給 0-0、early first half、completed=false；這代表比賽在跑/資料在跑，不代表可結算。Tuchel 的冷頭腦任務、Azteca 高度與墨西哥主場壓力仍是賽前主線，但 Soren 現在第一規則是 Live ≠ Final：沒 FT 就不更新晉級、紙上帳或賽後復盤。",
       "signals": [
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
@@ -8144,7 +8144,8 @@
         "RotoWire preview 可讀，metadata 明示 predicted lineups、team news、tactical breakdown；只標 reported/lineup-watch。",
         "BBC Sport England v Mexico live page 可連線，metadata 標示 team news、predictions 與 weather update；正式 XI 未公布前只作 live build-up / team-news rail。",
         "The Athletic / New York Times logistics piece 可連線，metadata 指出英格蘭在 Mexico City 飯店周邊安排 roadblocks 防賽前干擾；這是場外壓力/睡眠管理脈絡，不是比賽結果訊號。",
-        "Sports Mole Mexico-England injury/suspension/predicted XIs 頁可連線；作 injury/lineup watch，仍不把 predicted XI 寫成 confirmed lineup。"
+        "Sports Mole Mexico-England injury/suspension/predicted XIs 頁可連線；作 injury/lineup watch，仍不把 predicted XI 寫成 confirmed lineup。",
+        "2026-07-06T01:05Z parent re-query: ESPN public summary event 760505 shows Mexico 0-0 England, STATUS_FIRST_HALF / 4', completed=false; this is live-score context only and must not settle bracket, result, or paper bankroll."
       ],
       "sources": [
         {
@@ -8268,11 +8269,11 @@
           "confidence": "high"
         },
         {
-          "label": "ESPN Mexico-England live centre",
+          "label": "ESPN Mexico-England live score summary",
           "url": "https://www.espn.com/soccer/match/_/gameId/760505/england-mexico",
           "sourceName": "ESPN",
-          "fetchedAt": "2026-07-05T01:05:36Z",
-          "claimType": "context/live-centre",
+          "fetchedAt": "2026-07-06T01:05:36Z",
+          "claimType": "context/live-score",
           "confidence": "high"
         },
         {
