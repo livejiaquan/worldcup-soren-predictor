@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-06T15:12:46Z",
-  "status": "matchday scout: near-kickoff m093/m094 got extra live-centre/weather/build-up rails; next-day m095/m096 got official federation, Opta/FotMob, and paper-odds context without promoting any predicted XI to confirmed.",
-  "headline": "Soren 15:12Z 巡邏：Portugal-Spain、USA-Belgium 補臨場 rails；Argentina-Egypt、Switzerland-Colombia 補官方與公開機率/lineup-watch，首發未官宣前不演先知。",
+  "generatedAt": "2026-07-06T21:19:26Z",
+  "status": "matchday scout: m093 rewritten as ESPN-confirmed Spain 1-0 Portugal postmatch; m094 got live-centre/US Soccer/FOX odds rails; m095/m096 got official federation and public predicted-XI/probability context.",
+  "headline": "Soren 21:19Z 巡邏：Spain 已 1-0 送走 Portugal；USA-Belgium 仍是賽前狀態，Argentina-Egypt、Switzerland-Colombia 補官方訓練/球衣/機率與 lineup-watch，但不把預測 XI 說成官宣。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -8439,9 +8439,9 @@
     {
       "matchId": "m093",
       "match": "Portugal vs Spain",
-      "sourceType": "official/live-centre + reported lineup/tactical + venue/weather + odds-reference watch",
-      "title": "Portugal-Spain 臨場 rails 再補強：FIFA/BBC 已在，Bundesliga live ticker 與 The Athletic 天氣窗把 Dallas 這場從名場面拉回執行細節。",
-      "sorenTake": "Ronaldo 最後一舞很好賣，但 Soren 不吃海報。AT&T Stadium 外圍高溫、BBC/FIFA/Bundesliga 多重 live rails、Spain 邊路 availability，才是這場會不會從豪門大片變成犯錯比賽的真問題。",
+      "sourceType": "confirmed final score + postmatch report + prior live-centre/weather rails",
+      "title": "Spain 1-0 Portugal：Merino 補時把 Ronaldo 的最後世界盃劇本按掉，這不是「伊比利激情」，是 Spain 熬到最後一刀。",
+      "sorenTake": "ESPN 公開 scoreboard 已顯示 completed=true / Full Time，Portugal 0-1 Spain；ESPN 比賽頁也寫 final score 0-1。Soren 的賽後讀法很簡單：Portugal 撐到幾乎要進加時，但 Merino 補時一腳把敘事從「C羅再續命」剪成「Spain 進八強」。正式 bracket/紙上結算仍等 result-verifier/upstream 資料鏈落地，這裡只作來源確認的賽後 scouting。",
       "signals": [
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
@@ -8462,7 +8462,10 @@
         "GOAL 賽前專題提供雙方 predicted XI 與 team-news framing，但明確仍屬預測/preview，不是 confirmed lineup。",
         "Yahoo/Covers odds preview 把 Spain 標成市場熱方並列出 Nico Williams、Yeremy Pino doubtful；作為 public odds/availability watch，不是醫療官宣。",
         "Bundesliga.com 已開 Portugal-Spain live ticker/line-ups/stats 入口；這是額外臨場 rails，不代表官方首發已公布。",
-        "The Athletic/NYT 天氣頁標題與 metadata 指向 USA-Belgium / Spain-Portugal matchday weather；對 Dallas 只作 venue-weather context，不把天氣寫成戰術定論。"
+        "The Athletic/NYT 天氣頁標題與 metadata 指向 USA-Belgium / Spain-Portugal matchday weather；對 Dallas 只作 venue-weather context，不把天氣寫成戰術定論。",
+        "21:19Z ESPN public scoreboard：event 760506 Portugal-Spain 為 STATUS_FULL_TIME / state=post / completed=true，比分 Portugal 0-1 Spain；USA-Belgium 同日 event 760507 仍是 pre / completed=false。",
+        "ESPN 比賽頁標題與描述均寫 Portugal 0-1 Spain final score；NBC live blog 標題/內文同時指向 Spain late goal/downed Portugal。",
+        "多個公開賽後摘要把關鍵球指向 Mikel Merino 補時進球；本站把這列為 postmatch scouting，不直接替代正式 result-verifier 的比分覆寫流程。"
       ],
       "sources": [
         {
@@ -8640,16 +8643,40 @@
           "fetchedAt": "2026-07-06T15:12:46Z",
           "claimType": "context/venue-weather",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN public scoreboard Portugal-Spain FT",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260706",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "confirmed/final-score",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Portugal-Spain final score page",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760506/spain-portugal",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "confirmed/final-score",
+          "confidence": "high"
+        },
+        {
+          "label": "NBC News Spain downs Portugal live blog",
+          "url": "https://www.nbcnews.com/sports/soccer/live-blog/fifa-world-cup-2026-july-6-usa-live-updates-rcna353164",
+          "sourceName": "NBC News",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "reported/postmatch",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m094",
       "match": "USA vs Belgium",
       "sourceType": "official availability + live-centre + reported lineup/tactical + venue/weather + odds-reference watch",
-      "title": "USA-Belgium 續補 BBC/Al Jazeera/天氣 rails：Balogun 風暴沒退，Seattle 環境倒是很給面子。",
-      "sorenTake": "Balogun 可選與 Belgium 的不滿已經是心理戰；新補的 BBC live page、Al Jazeera build-up 與 The Athletic 天氣窗，讓這場的公開觀察點更完整。重點仍是：可選不等於必爆，Trossard/Belgium transition 才是美國後防的真考卷。",
+      "title": "USA-Belgium 賽前最後 rails：Sky 直播、US Soccer 官方 preview、FOX odds 都到位；Balogun 能踢，但比利時不會因為一張撤銷紅牌就自爆。",
+      "sorenTake": "ESPN scoreboard 仍顯示 USA-Belgium scheduled / completed=false；這場要當 live watch，不准偷跑成結果。新補 Sky live blog 與 US Soccer preview 做臨場入口，FOX odds 只當紙上市場溫度：美國主場與 Balogun 回歸讓市場升溫，但 Belgium 的老狐狸核心還是會專挑情緒縫隙下刀。",
       "signals": [
         "Local worldcup.json now actualizes M094 as USA vs Belgium; this card has retired the stale W81/W82 label and keeps old bracket rails only as provenance.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
@@ -8677,7 +8704,10 @@
         "Al Jazeera 報導 Belgium 對 FIFA 暫緩 Balogun 紅牌禁賽感到 astonished，並引述比利時足協正研究可能選項；這是賽前心理戰/制度爭議，不是技術統計。",
         "BBC 已開 United States vs Belgium live text/stats 頁，作為 kickoff 前後比分、統計與 commentary 的可信 live-centre rails。",
         "Al Jazeera 7/6 match build-up 把 Balogun/FIFA U-turn 與 Trossard 對位拉成主線；屬公開媒體脈絡，不等同官方戰術方案。",
-        "The Athletic/NYT 天氣 metadata 指出 Seattle matchday 暖、晴、微風；這是 venue-weather context，不能誇大成比賽結果因子。"
+        "The Athletic/NYT 天氣 metadata 指出 Seattle matchday 暖、晴、微風；這是 venue-weather context，不能誇大成比賽結果因子。",
+        "21:19Z ESPN 同日 scoreboard 確認 USA-Belgium 仍是 scheduled/pre、completed=false；本站只補賽前/live-centre，不做比分或晉級判定。",
+        "Sky Sports 開 USA-Belgium live blog，標題明示 score/live updates/team news，適合作為臨場 lineups 與事件入口。",
+        "US Soccer 官方 preview 重申 Seattle 開球、轉播與對 Belgium 的 Round-of-16 賽前脈絡；FOX odds 頁以 Balogun back / USA favored 做紙上市場溫度參考，不是投注建議。"
       ],
       "sources": [
         {
@@ -8903,6 +8933,38 @@
           "fetchedAt": "2026-07-06T15:12:46Z",
           "claimType": "context/venue-weather",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN scoreboard USA-Belgium pre-state",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260706",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "context/live-status",
+          "confidence": "high"
+        },
+        {
+          "label": "Sky Sports USA-Belgium live blog",
+          "url": "https://www.skysports.com/football/live-blog/11095/13560110/usa-vs-belgium-live-world-cup-2026-last-16-fixture-score-live-updates-and-team-news",
+          "sourceName": "Sky Sports",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "US Soccer USA-Belgium match preview",
+          "url": "https://www.ussoccer.com/stories/2026/07/usmnt/match-preview-vs-belgium-seattle-washington-fifa-world-cup",
+          "sourceName": "U.S. Soccer",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Sports USA-Belgium odds context",
+          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-how-far-will-team-usa-go",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -8911,7 +8973,7 @@
       "matchId": "m095",
       "match": "Argentina vs Egypt",
       "sourceType": "official/team logistics + live-centre + tactical/public probability + odds-reference watch",
-      "title": "Argentina-Egypt 補 AFA/EFA/Opta/Covers：阿根廷不是只靠冠軍濾鏡，Egypt 的訓練節奏與 upset 任務也得被看見。",
+      "title": "Argentina-Egypt 再補官方細節：AFA 抵達 Atlanta、EFA 球衣/訓練節奏更新；Messi 光環很亮，但 Egypt 的防線傷口也不能靠玄學縫。",
       "sorenTake": "AFA 已把焦點轉向 Egypt，EFA 也有賽前訓練安排；Opta 給 Argentina 明顯優勢，但這正是 Soren 要盯的陷阱——大熱只要前 25 分鐘踢成散步，非洲隊的 quarterfinal 衝動就會開始咬人。",
       "signals": [
         "NBC Sports and Guardian schedule/wallchart pages remain only historical bracket-context provenance; current card now follows official/live-centre actualized matchup sources.",
@@ -8922,7 +8984,10 @@
         "AFA 官方賽前稿確認 Argentina 已把 Cape Verde 硬仗翻頁，備戰 7/7 對 Egypt 的 Round of 16；這是 team-context，不是首發名單。",
         "Egypt FA 賽前訓練/備戰更新提供 Atlanta training logistics；只標為官方準備節奏，不推論成 lineup。",
         "Opta Analyst preview 將 Argentina 設為明顯 90 分鐘優勢方，同時把 Egypt 的 African quarterfinal chase 作為 upset 背景；這是公開機率/戰術脈絡，不是 Soren 模型配方。",
-        "Covers 7/6 odds/picks 頁提供 Argentina-Egypt 市場參照；只用於 paper simulation odds-reference，不是投注建議。"
+        "Covers 7/6 odds/picks 頁提供 Argentina-Egypt 市場參照；只用於 paper simulation odds-reference，不是投注建議。",
+        "AFA 官方更新 Argentina 已抵達 Atlanta，並列出訓練與 Scaloni 記者會節奏；這是 confirmed team-logistics，不是先發名單。",
+        "Egypt FA 官方更新比賽球衣：Egypt 紅衫黑褲黑襪、Argentina 傳統藍白；另有訓練/天氣干擾脈絡，屬賽前準備訊號。",
+        "Sports Mole 分別刊出 Argentina 與 Egypt predicted XI / fitness note；只標 reported/lineup-watch，正式 XI 仍等 FIFA/球隊公布。"
       ],
       "sources": [
         {
@@ -9028,6 +9093,38 @@
           "fetchedAt": "2026-07-06T15:12:46Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "AFA Argentina arrived in Atlanta",
+          "url": "https://www.afa.com.ar/es/posts/el-equipo-de-lionel-scaloni-arribo-a-atlanta",
+          "sourceName": "Argentine Football Association",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA referee assignment Argentina-Egypt",
+          "url": "https://www.afa.com.ar/es/posts/el-frances-fran-ois-letexier-sera-el-arbitro-del-duelo-entre-argentina-y-egipto-por-los-octavos-de-final",
+          "sourceName": "Argentine Football Association",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "confirmed/match-admin",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole Argentina predicted XI vs Egypt",
+          "url": "https://www.sportsmole.co.uk/football/argentina/world-cup-2026/predicted-lineups/triple-fitness-update-martinez-or-alvarez-predicted-argentina-xi-vs-egypt_600706.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Mole Egypt predicted XI vs Argentina",
+          "url": "https://www.sportsmole.co.uk/football/egypt/world-cup-2026/predicted-lineups/a-decimated-defence-predicted-egypt-xi-vs-argentina_600707.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -9036,7 +9133,7 @@
       "matchId": "m096",
       "match": "Switzerland vs Colombia",
       "sourceType": "official/team context + live-centre + reported lineup/tactical + odds-reference watch",
-      "title": "Switzerland-Colombia 補 FCF/FotMob：Colombia 晉級動能有官方脈絡，FotMob 給 live/H2H/預測陣容 rails。",
+      "title": "Switzerland-Colombia 補 Vancouver 訓練與 Opta 機率：Colombia 熱，但 Swiss 不是等著被寫進別人的晉級文案。",
       "sorenTake": "這場不是中立場散步，是 Swiss knockout curse 對 Colombia transition 的壓力測試。FCF 官方晉級稿把 Colombia 進入 R16 的狀態補上，FotMob 提供 live/H2H/lineup rails；等官方首發前，所有 XI 都還只是 reported watch。",
       "signals": [
         "NBC Sports and Guardian schedule/wallchart pages remain only historical bracket-context provenance; current card now follows official/live-centre actualized matchup sources.",
@@ -9045,7 +9142,10 @@
         "Swiss FA media schedule / fan info 提到 Schweiz-Kolumbien 與 Vancouver 相關 logistics，可作官方隊務與場地脈絡。",
         "FOX/FotMob 提供 live-centre/stat rails；OddsShark/FOX market snippets 顯示 Colombia 可能略熱，但市場內容只作 paper odds reference。",
         "Colombia FA 官方 7/3 賽後/晉級稿確認 Néstor Lorenzo 球隊擊敗 Ghana 進入 Round of 16；這補足 Colombia momentum context。",
-        "FotMob Switzerland-Colombia 頁提供 7/7 20:00 UTC live score、H2H、match stats、predicted lineups 等 rails；正式首發未公布前維持 lineup-watch。"
+        "FotMob Switzerland-Colombia 頁提供 7/7 20:00 UTC live score、H2H、match stats、predicted lineups 等 rails；正式首發未公布前維持 lineup-watch。",
+        "FCF 官方「Primer entrenamiento en Vancouver」確認 Colombia 已在加拿大進行場地訓練，包含預防/機動性、傳接與射門工作。",
+        "Opta Analyst 公開模型給 Colombia 90 分鐘勝率 41.9%、Switzerland 28.2%、和局/加時路徑 29.9%；本站只作 public probability context。",
+        "Squawka 提供 Switzerland-Colombia team news / predicted lineups；標為 reported/lineup-watch，不升級為確認先發。"
       ],
       "sources": [
         {
@@ -9143,6 +9243,30 @@
           "fetchedAt": "2026-07-06T15:12:46Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "FCF first training in Vancouver",
+          "url": "https://fcf.com.co/2026/07/05/primer-entrenamiento-en-vancouver/",
+          "sourceName": "Federación Colombiana de Fútbol",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "confirmed/team-logistics",
+          "confidence": "high"
+        },
+        {
+          "label": "Opta Analyst Switzerland-Colombia preview",
+          "url": "https://theanalyst.com/articles/switzerland-vs-colombia-prediction-world-cup-2026-match-preview",
+          "sourceName": "Opta Analyst",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "context/public-probability",
+          "confidence": "high"
+        },
+        {
+          "label": "Squawka Switzerland-Colombia team news",
+          "url": "https://www.squawka.com/en/news/world-cup/switzerland-vs-colombia-team-news-predicted-lineups/",
+          "sourceName": "Squawka",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -9207,11 +9331,12 @@
       "matchId": "m098",
       "match": "W93 vs W94",
       "sourceType": "official quarterfinal placeholder + bracket watch",
-      "title": "M098 是 W93 vs W94，不是提前官宣豪門大片；等 Portugal/Spain 與 USA/Belgium 路線自己交卷。",
-      "sorenTake": "FIFA schedule / suites 頁把 M098 放在 Los Angeles 7/10 19:00 UTC，placeholder 是 W93 vs W94。它很可能牽出重磅 quarterfinal，但 public bracket 必須先做實況地圖，不把 Soren 的想像塞進主賽程。",
+      "title": "M098 半邊亮了：Spain 已拿 W93，另一半等 USA-Belgium；別急著把四強海報先印出來。",
+      "sorenTake": "ESPN 已把 Portugal-Spain 記為 Full Time、Spain 1-0 晉級；但 USA-Belgium 在同一份 scoreboard 仍是 scheduled/pre。Soren 先把 W93 actualization 當高信心 bracket-watch，等 m094 結束再把 M098 從「W93 vs W94」翻成完整對戰。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M098：W93 vs W94，Los Angeles Stadium / Inglewood，2026-07-10 19:00 UTC。",
-        "由於 M093/M094 尚未完成，任何 Portugal/Spain/USA/Belgium 的 quarterfinal 敘事都只能放在 bracket-watch，而不是 confirmed matchup。"
+        "由於 M093/M094 尚未完成，任何 Portugal/Spain/USA/Belgium 的 quarterfinal 敘事都只能放在 bracket-watch，而不是 confirmed matchup。",
+        "ESPN 2026-07-06 scoreboard：m093 Spain 1-0 Portugal completed=true；m094 USA-Belgium still scheduled/completed=false，因此 M098 現階段只能寫 Spain vs W94。"
       ],
       "sources": [
         {
@@ -9237,6 +9362,14 @@
           "fetchedAt": "2026-07-03T19:55:15Z",
           "claimType": "context/bracket-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN scoreboard W93 actualization watch",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260706",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-06T21:19:26Z",
+          "claimType": "confirmed/bracket-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
