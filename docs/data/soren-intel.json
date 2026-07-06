@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-06T02:56:32Z",
-  "status": "matchday scout: Mexico-England is still live on ESPN at 90+4, England 3-2 Mexico, completed=false; Portugal-Spain and USA-Belgium remain scheduled; m095/m096 sparse placeholders were actualized with official/live-centre anchors.",
-  "headline": "Soren 02:56Z 巡邏：Mexico-England 90+4 還不是終場，England 3-2 只是 live context；Portugal-Spain、USA-Belgium 補上臨場 rails，Argentina-Egypt 與 Switzerland-Colombia 不再裸奔。",
+  "generatedAt": "2026-07-06T09:05:39Z",
+  "status": "matchday scout: stale live cards for Brazil-Norway and Mexico-England were corrected to official postmatch; m097 France-Morocco actualized; m099 kept as W91/W92 with Norway/England upstream-result watch; USA-Belgium Balogun source upgraded to U.S. Soccer plus Belgium reaction.",
+  "headline": "Soren 09:05Z 巡邏：Brazil-Norway、Mexico-England 直播卡補成賽後；France-Morocco 八強落地；USA-Belgium 的 Balogun 轉彎從火星塞變成心理戰。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -7850,9 +7850,9 @@
     {
       "matchId": "m091",
       "match": "Brazil vs Norway",
-      "sourceType": "live score + official/team/live-centre rails + lineup/odds watch",
-      "title": "Brazil-Norway 43 分鐘仍 0-0：ESPN 公開比分確認還在上半場，別把直播緊張感偷換成賽果。",
-      "sorenTake": "Brazil 名牌更亮，但 ESPN public summary 43 分鐘仍是 0-0、completed=false；這只能寫成 Live ≠ Final 的臨場風險，不准提前結算 bracket 或紙上盤。CBS/RTÉ 也已開 live rail，Soren 會盯住下半場而不是靠隊徽腦補。",
+      "sourceType": "confirmed final-score + postmatch scouting correction",
+      "title": "Brazil-Norway 已從 0-0 直播翻成挪威 2-1 爆門：Haaland 79、90 分鐘連捅，Neymar 90+10 點球只是止血，不是救命。",
+      "sorenTake": "這張卡原本抓的是上半場 live context；現在官方比分已結算，Soren 要把帳補乾淨：Norway 靠 Haaland 雙響把 Brazil 送回家，Brazil 到補時才靠 Neymar 點球破蛋。這種局面是淘汰賽最冷酷的提醒——控球與名氣不能替你防住第 90 分鐘。",
       "signals": [
         "Norges Fotballforbund 頁面 metadata 可讀，標題為 16 強先發，並由搜尋片段提供 Nusa/Haaland 進球、Norway 2-1 Ivory Coast、下一戰 Brazil 的脈絡。",
         "FIFA Côte d’Ivoire-Norway review URL 父層核可連線；搜尋片段指向 Haaland 進球與 Norway 淘汰賽晉級，作官方路徑資訊。",
@@ -7881,7 +7881,9 @@
         "FOX Sports odds/picks 頁可讀，用作 paper-only market reference；不引用投注建議、不給實錢路徑。",
         "20:43Z 父層直接查 ESPN public summary event 760504：Brazil 0-0 Norway，STATUS_FIRST_HALF，completed=false，displayClock 43'；這是 live-score context，不是 final result 或 override 依據。",
         "CBS Sports Brazil-Norway live updates 頁可連線，metadata 標示 live score updates / highlights / news；作可信媒體 live rail，仍不替代官方終場核驗。",
-        "RTÉ Sport Brazil v Norway updates 頁可連線，metadata 標示 last-16 live updates；可補歐洲公共媒體 live-centre context。"
+        "RTÉ Sport Brazil v Norway updates 頁可連線，metadata 標示 last-16 live updates；可補歐洲公共媒體 live-centre context。",
+        "FIFA 官方賽後報告確認 Brazil 1-2 Norway：Haaland 79、90 分鐘進球，Neymar 90+10 點球；原本的 0-0 直播卡已改為 postmatch。",
+        "本地 worldcup.json 已有 m091 finished、Norway winner；這次 intel 修正是公開敘事/首頁卡片除舊，不是新增賽果 override。"
       ],
       "sources": [
         {
@@ -8099,6 +8101,14 @@
           "fetchedAt": "2026-07-05T20:44:26Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA Brazil-Norway match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-norway-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-06T09:05:39Z",
+          "claimType": "confirmed/final-score",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -8106,9 +8116,9 @@
     {
       "matchId": "m092",
       "match": "Mexico vs England",
-      "sourceType": "live-score context + official/team/media/odds rails (not final)",
-      "title": "Mexico-England 已到 90+4：ESPN 公開 summary 顯示 England 3-2 Mexico、completed=false，這是火場直播不是結算單。",
-      "sorenTake": "England 暫時 3-2 領先，但 ESPN 狀態仍是 second half、completed=false；Soren 只把它當 live context，不把 bracket、排行榜或紙上 bankroll 提前蓋章。Mexico City 這種尾段，最怕的不是輸贏，是有人把直播比分當終場截圖。",
+      "sourceType": "confirmed final-score + postmatch scouting correction",
+      "title": "Mexico-England 終場 2-3：Bellingham 雙響把 Azteca 嗓門按靜音，Mexico 的 late chaos 只差一口氣。",
+      "sorenTake": "02:56Z 這張卡還只能標成 90+4 live context；現在 FIFA 官方賽後頁已確認 England 3-2 Mexico。重點不是「英格蘭穩」——他們是在 co-host 主場火山口裡靠 Bellingham 的雙擊與最後防線熬過去。這種勝法會讓下一輪更有故事，也更有疲勞帳。",
       "signals": [
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
         "NBC Sports and Guardian schedule/wallchart pages provide public bracket/schedule context; they are used for route framing, not for predicted winners.",
@@ -8146,7 +8156,9 @@
         "The Athletic / New York Times logistics piece 可連線，metadata 指出英格蘭在 Mexico City 飯店周邊安排 roadblocks 防賽前干擾；這是場外壓力/睡眠管理脈絡，不是比賽結果訊號。",
         "Sports Mole Mexico-England injury/suspension/predicted XIs 頁可連線；作 injury/lineup watch，仍不把 predicted XI 寫成 confirmed lineup。",
         "2026-07-06T01:05Z parent re-query: ESPN public summary event 760505 shows Mexico 0-0 England, STATUS_FIRST_HALF / 4', completed=false; this is live-score context only and must not settle bracket, result, or paper bankroll.",
-        "02:56Z ESPN public summary 再核：Mexico 2-3 England，90+4，STATUS_SECOND_HALF，completed=false；不得寫成 final 或更新 result settlement。"
+        "02:56Z ESPN public summary 再核：Mexico 2-3 England，90+4，STATUS_SECOND_HALF，completed=false；不得寫成 final 或更新 result settlement。",
+        "FIFA 官方賽後報告確認 Mexico 2-3 England，並描述 Bellingham quick-fire double 逆轉比賽走向；原 live-score 卡已轉 postmatch。",
+        "本地 worldcup.json 已有 m092 finished、England winner；此次只修正 scouting feed 的過時直播語氣。"
       ],
       "sources": [
         {
@@ -8412,6 +8424,14 @@
           "fetchedAt": "2026-07-06T02:56:32Z",
           "claimType": "context/live-score",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA Mexico-England match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/mexico-england-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-06T09:05:39Z",
+          "claimType": "confirmed/final-score",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -8610,8 +8630,8 @@
       "matchId": "m094",
       "match": "USA vs Belgium",
       "sourceType": "official/team preview + Balogun disciplinary update + predicted XI + opponent context + odds-reference",
-      "title": "USA-Belgium 最大翻轉：BBC 指 Balogun 紅牌禁賽被 FIFA 暫緩，主場劇本突然把一顆牙裝回去了。",
-      "sorenTake": "原本的 USA-Belgium 是「主場但少中鋒」；BBC 最新寫法變成 Balogun 可出戰，Belgium 還對判決 astonished。這不是小註腳，是整個壓迫出口與反擊第一點重畫。SI/Yahoo 補上 Belgium 人員與戰術脈絡，OddsShopper 顯示 90 分鐘市場幾乎 coin flip；紙上模擬只看價格，不叫任何人下注。",
+      "title": "USA-Belgium 臨場火藥升級：U.S. Soccer 正式確認 Balogun 可選，Belgium 對 FIFA 轉彎「astonished」——這不是小插曲，是心理戰。",
+      "sorenTake": "Balogun availability 從 BBC 報導升級到 U.S. Soccer 官方確認，等於美國鋒線突然把缺牙補回去；但 Belgium 方面公開不滿 FIFA 轉彎，這場會帶著制度爭議和主場噪音一起開踢。Soren 的標籤：USA 得到火力，Belgium 得到怒氣，兩邊都別假裝自己很冷靜。",
       "signals": [
         "Local worldcup.json now actualizes M094 as USA vs Belgium; this card has retired the stale W81/W82 label and keeps old bracket rails only as provenance.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
@@ -8634,7 +8654,9 @@
         "BBC 報導 FIFA 將 Balogun 自動一場紅牌禁賽改為一年 probation 下的 suspended ban，因此他可出戰 Belgium；Belgium FA 對此表示 astonished。",
         "Sports Illustrated 預測 USA 可能因 Balogun 可用而回到 Balogun-Pulisic 前線組合；Belgium 端仍把 Lukaku/Doku/De Bruyne 當主要威脅，屬 predicted XI/team-news，不是正式先發。",
         "Yahoo Belgium primer 強調 Belgium 已非舊 golden generation，但 Courtois、Doku、Tielemans、De Bruyne 仍足夠讓 USA 主場劇本失速。",
-        "OddsShopper 7/6 市場 snapshot 顯示 Belgium +160、USA +165、draw +245，90 分鐘盤接近 coin flip；僅作 paper odds reference。"
+        "OddsShopper 7/6 市場 snapshot 顯示 Belgium +160、USA +165、draw +245，90 分鐘盤接近 coin flip；僅作 paper odds reference。",
+        "U.S. Soccer 官方確認 Folarin Balogun will be available for selection against Belgium；原本 BBC suspension reversal 角度補上 primary source。",
+        "Al Jazeera 報導 Belgium 對 FIFA 暫緩 Balogun 紅牌禁賽感到 astonished，並引述比利時足協正研究可能選項；這是賽前心理戰/制度爭議，不是技術統計。"
       ],
       "sources": [
         {
@@ -8820,6 +8842,22 @@
           "fetchedAt": "2026-07-06T02:56:32Z",
           "claimType": "odds-reference",
           "confidence": "medium-high"
+        },
+        {
+          "label": "U.S. Soccer Balogun available",
+          "url": "https://www.ussoccer.com/stories/2026/07/usmnt/folarin-balogun-available-for-selection-against-belgium-monday-seattle",
+          "sourceName": "U.S. Soccer",
+          "fetchedAt": "2026-07-06T09:05:39Z",
+          "claimType": "confirmed/availability",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Belgium reaction to Balogun decision",
+          "url": "https://www.aljazeera.com/sports/2026/7/6/belgium-astonished-at-fifas-u-turn-on-balogun-red-card-for-usa-match",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-06T09:05:39Z",
+          "claimType": "reported/suspension-reaction",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -9012,13 +9050,15 @@
     },
     {
       "matchId": "m097",
-      "match": "W89 vs W90",
-      "sourceType": "official quarterfinal placeholder + bracket watch",
-      "title": "M097 先掛 W89 vs W90：quarterfinal 還沒 actualize，Soren 不拿未出爐勝者寫同人誌。",
-      "sorenTake": "FIFA schedule / suites 頁把 M097 鎖在 Boston 7/9 20:00 UTC，對陣仍是 W89 vs W90。等 Canada-Morocco 與 Paraguay-France 這條路打完再換名字；現在最專業的做法，是把 placeholder 寫清楚。",
+      "match": "France vs Morocco",
+      "sourceType": "confirmed bracket actualization + quarterfinal preview rails",
+      "title": "M097 已不是 W89 vs W90 霧牌：France-Morocco quarterfinal 落地，法國火力很亮，摩洛哥 3-0 Canada 的刀也很乾淨。",
+      "sorenTake": "France 對 Morocco 不是可以偷懶寫成「強隊 vs 黑馬」的老梗。FIFA 賽後線索已把路線釘牢：France 過 Paraguay、Morocco 過 Canada，而且 Morocco 是連續第二屆進八強。Soren 先把 bracket actualization 補上，深度戰術等臨近開球再加碼。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M097：W89 vs W90，Boston Stadium / Foxborough，2026-07-09 20:00 UTC。",
-        "ESPN/NBC/FOX 類公開 bracket/schedule 可作觀眾導覽，但在勝者未確定前只標為 context/bracket-watch。"
+        "ESPN/NBC/FOX 類公開 bracket/schedule 可作觀眾導覽，但在勝者未確定前只標為 context/bracket-watch。",
+        "FIFA France-Paraguay 賽後報告指出 France set up a quarter-final meeting with Morocco；m097 本地資料也已顯示 France vs Morocco。",
+        "FIFA Canada-Morocco 賽後報告確認 Morocco 3-0 Canada，連續第二屆打進 quarter-finals；這是 m097 actualization 的官方對照來源。"
       ],
       "sources": [
         {
@@ -9044,6 +9084,22 @@
           "fetchedAt": "2026-07-03T19:55:15Z",
           "claimType": "context/bracket-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Paraguay-France match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/paraguay-france-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-06T09:05:39Z",
+          "claimType": "confirmed/bracket-actualization",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Canada-Morocco match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/canada-morocco-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-06T09:05:39Z",
+          "claimType": "confirmed/bracket-actualization",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -9089,13 +9145,15 @@
     {
       "matchId": "m099",
       "match": "W91 vs W92",
-      "sourceType": "confirmed/bracket-watch + official quarterfinal placeholder rails",
-      "title": "M099 先掛 W91 vs W92：Brazil/Norway 與 Mexico/England 還沒交卷，Soren 不替 quarterfinal 寫同人誌。",
-      "sorenTake": "M099 已進入 7 日視窗，但參賽隊仍是 W91/W92。這張卡只做 bracket-watch：掛官方 FIFA 賽程與 suites 門牌，等 R16 結果出來再把真名、傷停與戰術拆開。未出爐勝者不是彩蛋，是資料邊界。",
+      "sourceType": "confirmed upstream result watch + local placeholder guard",
+      "title": "M099 本地仍寫 W91 vs W92，但上游路線已亮燈：Norway 淘汰 Brazil、England 淘汰 Mexico；等資料 actualize 前先別裝正式海報。",
+      "sorenTake": "Soren 先把兩個上游事實分開寫：m091/m092 已在本地結算為 Norway、England 晉級；但 m099 match field 還是 W91 vs W92，所以首頁不硬改隊名當官宣。這是 bracket-watch，不是同人海報。",
       "signals": [
         "Local worldcup.json lists M099 as quarter-final W91 vs W92 at 2026-07-11T21:00Z; participants remain placeholders until M91/M92 finish.",
         "FIFA match-centre/schedule and FIFA Suites public pages corroborate M99 / W91 vs W92 placeholder; no team-specific claims are made yet.",
-        "Use this card as public bracket rail only: prediction belongs in match deep-dives after the actual winners are known."
+        "Use this card as public bracket rail only: prediction belongs in match deep-dives after the actual winners are known.",
+        "FIFA Brazil-Norway 賽後報告與本地 m091 winner 都指向 Norway；這是 W91 路線的高信心 bracket-watch。",
+        "FIFA Mexico-England 賽後報告與本地 m092 winner 都指向 England；但 m099 欄位尚未 actualize，先保留 placeholder guard。"
       ],
       "sources": [
         {
@@ -9120,6 +9178,22 @@
           "sourceName": "FIFA World Cup 26 Suites",
           "fetchedAt": "2026-07-04T20:15:46Z",
           "claimType": "confirmed/bracket-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Brazil-Norway match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/brazil-norway-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-06T09:05:39Z",
+          "claimType": "confirmed/upstream-result-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Mexico-England match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/mexico-england-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-06T09:05:39Z",
+          "claimType": "confirmed/upstream-result-watch",
           "confidence": "high"
         }
       ],
