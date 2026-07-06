@@ -1,4 +1,18 @@
 {
   "note": "Source-backed final-score overrides used when upstream openfootball data lags. The official-results verifier cron may append new entries; remove entries after upstream catches up if desired.",
-  "overrides": []
+  "overrides": [
+    {
+      "date": "2026-07-05",
+      "team1": "Mexico",
+      "team2": "England",
+      "score": [
+        2,
+        3
+      ],
+      "winner": "England",
+      "source": "BBC Sport live match page",
+      "url": "https://www.bbc.com/sport/football/live/cr5j14eyzm8t",
+      "fetchedAt": "2026-07-06T03:03:15Z"
+    }
+  ]
 }
