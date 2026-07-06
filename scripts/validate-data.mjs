@@ -13,6 +13,12 @@ for (const match of data.matches || []) {
   if (!match.id || !match.team1 || !match.team2) errors.push(`bad match identity ${JSON.stringify(match)}`)
   const pred = data.predictions?.[match.id]
   if (!pred || !pred.probabilities || typeof pred.confidence !== 'number') errors.push(`bad prediction for ${match.id}`)
+  const needsWinner = match.status === 'finished'
+    && !match.group
+    && Array.isArray(match.score)
+    && match.score.length === 2
+    && Number(match.score[0]) !== Number(match.score[1])
+  if (needsWinner && !match.winner) errors.push(`missing knockout winner for ${match.id}`)
 }
 if (errors.length) {
   console.error(errors.join('\n'))
