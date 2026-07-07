@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-07T03:26:51Z",
-  "status": "matchday scout: m094 rewritten from halftime live context to confirmed USA 1-4 Belgium postmatch; m098 actualized as Spain vs Belgium bracket-watch while local fixture placeholders remain source-labeled.",
-  "headline": "Soren 03:25Z 巡邏：Belgium 4-1 淘汰 USA，現在才是 final；M098 實名化為 Spain vs Belgium。Argentina-Egypt、Switzerland-Colombia 仍是今晚賽前 watch。",
+  "generatedAt": "2026-07-07T09:35:48Z",
+  "status": "matchday scout: m095/m096 near-kickoff official press/training rails added; m097 quarterfinal preview context refreshed; m099 actualized locally as Norway vs England after upstream catch-up.",
+  "headline": "Soren 09:35Z 巡邏：Argentina-Egypt、Switzerland-Colombia 進入賽前倒數，新增官方記者會/最後訓練與 BBC/FIFA rails；Norway-England 八強對戰已在本地資料落地。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -9009,9 +9009,9 @@
     {
       "matchId": "m095",
       "match": "Argentina vs Egypt",
-      "sourceType": "official/team logistics + live-centre + tactical/public probability + odds-reference watch",
-      "title": "Argentina-Egypt 再補官方細節：AFA 抵達 Atlanta、EFA 球衣/訓練節奏更新；Messi 光環很亮，但 Egypt 的防線傷口也不能靠玄學縫。",
-      "sorenTake": "AFA 已把焦點轉向 Egypt，EFA 也有賽前訓練安排；Opta 給 Argentina 明顯優勢，但這正是 Soren 要盯的陷阱——大熱只要前 25 分鐘踢成散步，非洲隊的 quarterfinal 衝動就會開始咬人。",
+      "sourceType": "official/team press + final training + live-centre + tactical/public probability + odds-reference watch",
+      "title": "Argentina-Egypt 賽前倒數：Scaloni 說準備好任何劇本，Egypt 也喊不是來當世界冠軍的練習樁。",
+      "sorenTake": "AFA 的 Scaloni 記者會與最後訓練，把 Argentina 的臨場節奏補齊；Egypt FA 則用 Hassan 口徑提醒大家：對 Messi 不是朝聖，是生存戰。BBC live text 已開，正式先發仍只等 FIFA/官方入口，Soren 不把 predicted XI 包裝成天啟。",
       "signals": [
         "NBC Sports and Guardian schedule/wallchart pages remain only historical bracket-context provenance; current card now follows official/live-centre actualized matchup sources.",
         "FIFA match centre 已把 m095 actualize 為 Argentina vs Egypt，7/7 16:00 UTC，Atlanta Stadium；這是官方 matchup anchor。",
@@ -9024,7 +9024,12 @@
         "Covers 7/6 odds/picks 頁提供 Argentina-Egypt 市場參照；只用於 paper simulation odds-reference，不是投注建議。",
         "AFA 官方更新 Argentina 已抵達 Atlanta，並列出訓練與 Scaloni 記者會節奏；這是 confirmed team-logistics，不是先發名單。",
         "Egypt FA 官方更新比賽球衣：Egypt 紅衫黑褲黑襪、Argentina 傳統藍白；另有訓練/天氣干擾脈絡，屬賽前準備訊號。",
-        "Sports Mole 分別刊出 Argentina 與 Egypt predicted XI / fitness note；只標 reported/lineup-watch，正式 XI 仍等 FIFA/球隊公布。"
+        "Sports Mole 分別刊出 Argentina 與 Egypt predicted XI / fitness note；只標 reported/lineup-watch，正式 XI 仍等 FIFA/球隊公布。",
+        "AFA 官方 Scaloni 記者會稿標題為「Estamos preparados para lo que sea」；這是 confirmed coach-quote/press context，不等於首發名單。",
+        "AFA 最後訓練稿確認 Argentina completed final rehearsal before Egypt；用作 team-logistics / matchday rhythm。",
+        "FIFA Egypt run feature 提供 Egypt Round-of-16 路線與對 Argentina 前的官方背景；這補的是 upset-path context，不是模型配方。",
+        "Egypt FA Hassan 賽前口徑稱面對大對手與「活著的傳奇」，但 Egypt 不會是世界冠軍 easy prey；官方 coach-quote 可用，語氣要保持 source-aware。",
+        "BBC Sport 已開 Argentina-Egypt stats/head-to-head live page；它是臨場入口，正式比分/先發仍要等 completed 或官方 lineup 後才升級。"
       ],
       "sources": [
         {
@@ -9162,6 +9167,46 @@
           "fetchedAt": "2026-07-06T21:19:26Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "AFA Scaloni pre-match press conference",
+          "url": "https://www.afa.com.ar/es/posts/lionel-scaloni-estamos-preparados-para-lo-que-sea",
+          "sourceName": "Argentine Football Association",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/coach-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA final training before Egypt",
+          "url": "https://www.afa.com.ar/es/posts/ultimo-ensayo-de-cara-al-partido-con-egipto",
+          "sourceName": "Argentine Football Association",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/team-training",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Egypt run foundations preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/egypt-run-foundations-preview-argentina",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Egypt FA Hassan press conference vs Argentina",
+          "url": "https://efa.com.eg/ar/الأخبار/حسام-حسن-نواجه-منافسا-كبيرا-وأسطورة-حية-ومنتخب-مصر-لن-يكون-صيدا-سهلا-لبطل-العالم/",
+          "sourceName": "Egyptian Football Association",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/coach-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Argentina-Egypt live text",
+          "url": "https://www.bbc.com/sport/football/live/cdr4m2122lgt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -9169,9 +9214,9 @@
     {
       "matchId": "m096",
       "match": "Switzerland vs Colombia",
-      "sourceType": "official/team context + live-centre + reported lineup/tactical + odds-reference watch",
-      "title": "Switzerland-Colombia 補 Vancouver 訓練與 Opta 機率：Colombia 熱，但 Swiss 不是等著被寫進別人的晉級文案。",
-      "sorenTake": "這場不是中立場散步，是 Swiss knockout curse 對 Colombia transition 的壓力測試。FCF 官方晉級稿把 Colombia 進入 R16 的狀態補上，FotMob 提供 live/H2H/lineup rails；等官方首發前，所有 XI 都還只是 reported watch。",
+      "sourceType": "official FIFA/SFA/FCF preview + team press/training + live-centre + lineup/odds-reference watch",
+      "title": "Switzerland-Colombia 賽前加碼：FIFA 預覽、Ndoye 訪談與 Lorenzo 最後訓練都上桌；這不是 Colombia 單方面拍晉級照。",
+      "sorenTake": "Swiss FA 的「八強詛咒」敘事、FIFA 的 Ndoye 訪談、FCF 的 Lorenzo/最後訓練更新，讓這張卡從市場熱度變成真 knockout tension。Colombia 可以更漂亮，Switzerland 可以更煩；正式 XI 沒出前，Soren 只講壓力點，不冒充更衣室。",
       "signals": [
         "NBC Sports and Guardian schedule/wallchart pages remain only historical bracket-context provenance; current card now follows official/live-centre actualized matchup sources.",
         "FIFA match centre 已把 m096 actualize 為 Switzerland vs Colombia，7/7 20:00 UTC，BC Place Vancouver；官方 matchup anchor 到位。",
@@ -9182,7 +9227,11 @@
         "FotMob Switzerland-Colombia 頁提供 7/7 20:00 UTC live score、H2H、match stats、predicted lineups 等 rails；正式首發未公布前維持 lineup-watch。",
         "FCF 官方「Primer entrenamiento en Vancouver」確認 Colombia 已在加拿大進行場地訓練，包含預防/機動性、傳接與射門工作。",
         "Opta Analyst 公開模型給 Colombia 90 分鐘勝率 41.9%、Switzerland 28.2%、和局/加時路徑 29.9%；本站只作 public probability context。",
-        "Squawka 提供 Switzerland-Colombia team news / predicted lineups；標為 reported/lineup-watch，不升級為確認先發。"
+        "Squawka 提供 Switzerland-Colombia team news / predicted lineups；標為 reported/lineup-watch，不升級為確認先發。",
+        "FIFA Switzerland-Colombia preview 提供官方 team-news/watch/stadium context；若文中提及 team news 也仍需區分 preview 與 confirmed XI。",
+        "FIFA Dan Ndoye 訪談把 Switzerland 對 Colombia 的自我要求與對手評價補進來；屬 official player-quote。",
+        "Swiss FA 7/6 官方稿聚焦 Switzerland 要衝破 World Cup knockout curse；這是 team-narrative context，不是戰術公式。",
+        "FCF Lorenzo 7/6 官方稿確認 Colombia 完成 Killarney Park 最後訓練，內容包含 tactical plan / passing circuits / small-sided work；這是 official training/coach context。"
       ],
       "sources": [
         {
@@ -9304,6 +9353,38 @@
           "fetchedAt": "2026-07-06T21:19:26Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Switzerland-Colombia preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/switzerland-colombia-preview-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/official-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Dan Ndoye Switzerland-Colombia preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/dan-ndoye-switzerland-colombia-preview",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/player-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "Swiss FA Round-of-16 curse preview",
+          "url": "https://www.football.ch/sfv/nationalteams/a-team/news/maenner-a-nationalteam-die-schweiz-gegen-den-achtelfinalfluch.aspx",
+          "sourceName": "Swiss Football Association",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/team-preview",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FCF Néstor Lorenzo before Switzerland",
+          "url": "https://fcf.com.co/2026/07/06/nestor-lorenzo-todos-estamos-pensando-en-suiza-creo-que-la-gente-esta-disfrutando-cada-momento-del-equipo-y-del-mundial/",
+          "sourceName": "Federación Colombiana de Fútbol",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/coach-quote",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -9311,14 +9392,18 @@
     {
       "matchId": "m097",
       "match": "France vs Morocco",
-      "sourceType": "confirmed bracket actualization + quarterfinal preview rails",
-      "title": "M097 已不是 W89 vs W90 霧牌：France-Morocco quarterfinal 落地，法國火力很亮，摩洛哥 3-0 Canada 的刀也很乾淨。",
-      "sorenTake": "France 對 Morocco 不是可以偷懶寫成「強隊 vs 黑馬」的老梗。FIFA 賽後線索已把路線釘牢：France 過 Paraguay、Morocco 過 Canada，而且 Morocco 是連續第二屆進八強。Soren 先把 bracket actualization 補上，深度戰術等臨近開球再加碼。",
+      "sourceType": "confirmed bracket actualization + official quarterfinal preview/context rails",
+      "title": "France-Morocco 八強預覽補強：FIFA 已開正式 preview，還把 2022 舊傷疤搬回 Boston 桌面。",
+      "sorenTake": "這場不是只看 Mbappé highlight 的懶人包。FIFA preview 與 2022 rematch context 同時提醒：France 防線夠硬，但 Morocco 的敘事不是「來參觀八強」。Soren 先補官方/可信 rails，臨近開球再盯 lineup 與身體狀態。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M097：W89 vs W90，Boston Stadium / Foxborough，2026-07-09 20:00 UTC。",
         "ESPN/NBC/FOX 類公開 bracket/schedule 可作觀眾導覽，但在勝者未確定前只標為 context/bracket-watch。",
         "FIFA France-Paraguay 賽後報告指出 France set up a quarter-final meeting with Morocco；m097 本地資料也已顯示 France vs Morocco。",
-        "FIFA Canada-Morocco 賽後報告確認 Morocco 3-0 Canada，連續第二屆打進 quarter-finals；這是 m097 actualization 的官方對照來源。"
+        "FIFA Canada-Morocco 賽後報告確認 Morocco 3-0 Canada，連續第二屆打進 quarter-finals；這是 m097 actualization 的官方對照來源。",
+        "FIFA France-Morocco quarterfinal preview 已上線，提供 watch/team-news/stadium context；正式 XI 未公布前不升級成 confirmed lineup。",
+        "FIFA 2022 rematch feature 把 Morocco-France 的 Qatar 2022 半決賽背景接回 2026 Boston quarterfinal；這是 official historical context。",
+        "FIFA France defence feature 指出 France 對 Paraguay 再零封，防守穩定性是八強前的官方形態訊號。",
+        "Olympics.com France-Morocco guide 提供賽程、場地與 head-to-head 公眾導覽；屬 credible schedule/context，不是內部情報。"
       ],
       "sources": [
         {
@@ -9360,6 +9445,38 @@
           "fetchedAt": "2026-07-06T09:05:39Z",
           "claimType": "confirmed/bracket-actualization",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA France-Morocco quarterfinal preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-morocco-preview-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/official-preview",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA France-Morocco 2022 rematch context",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/how-close-were-morocco-to-beating-france-at-qatar-2022",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/historical-context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA France defensive trend after Paraguay",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-defence-paraguay",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/team-form",
+          "confidence": "high"
+        },
+        {
+          "label": "Olympics.com France-Morocco quarterfinal guide",
+          "url": "https://www.olympics.com/en/news/fifa-world-cup-2026-watch-france-vs-morocco-quarter-finals-head-to-head-full-schedule",
+          "sourceName": "Olympics.com",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "context/schedule-preview",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -9377,7 +9494,8 @@
         "01:02Z ESPN summary 曾顯示 halftime / completed=false；03:26Z full-time 複核後才把 W94 actualize 為 Belgium，沒有用半場比分偷跑。",
         "03:25Z local worldcup.json 已確認 m093 winner=Spain、m094 winner=Belgium；M098 bracket rail 可從 W93/W94 actualize 為 Spain vs Belgium，但 fixture 原始欄位仍保留 placeholder。",
         "FIFA USA-Belgium match report 指向 Belgium 勝出並設立 last-eight meeting；搭配既有 Spain 1-0 Portugal result，M098 的實際路線已完整。",
-        "ESPN 20260706 scoreboard shows Portugal 0-1 Spain and USA 1-4 Belgium both STATUS_FULL_TIME/completed=true；這是 bracket actualization 的 machine-check source。"
+        "ESPN 20260706 scoreboard shows Portugal 0-1 Spain and USA 1-4 Belgium both STATUS_FULL_TIME/completed=true；這是 bracket actualization 的 machine-check source。",
+        "BBC live/postmatch report confirms Belgium 4-1 USA set up a quarter-final tie with Spain; this independently backs the Spain-Belgium route while local fixture placeholders may lag."
       ],
       "sources": [
         {
@@ -9435,22 +9553,32 @@
           "fetchedAt": "2026-07-07T03:26:51Z",
           "claimType": "confirmed/bracket-actualization",
           "confidence": "high"
+        },
+        {
+          "label": "BBC USA-Belgium postmatch route to Spain",
+          "url": "https://www.bbc.com/sport/football/live/c24y8ded80vt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/bracket-actualization",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
     },
     {
       "matchId": "m099",
-      "match": "W91 vs W92",
-      "sourceType": "confirmed upstream result watch + local placeholder guard",
-      "title": "M099 本地仍寫 W91 vs W92，但上游路線已亮燈：Norway 淘汰 Brazil、England 淘汰 Mexico；等資料 actualize 前先別裝正式海報。",
-      "sorenTake": "Soren 先把兩個上游事實分開寫：m091/m092 已在本地結算為 Norway、England 晉級；但 m099 match field 還是 W91 vs W92，所以首頁不硬改隊名當官宣。這是 bracket-watch，不是同人海報。",
+      "match": "Norway vs England",
+      "sourceType": "confirmed local bracket actualization + official upstream result watch + quarterfinal placeholder rails",
+      "title": "M099 霧牌收掉：Norway vs England 已在本地 worldcup.json actualize；Haaland 路線撞上 England，這不是 W-slot 填字遊戲了。",
+      "sorenTake": "上輪事實鏈已完整：Norway 過 Brazil、England 過 Mexico，而且 09:35Z update-data 已把 m099 本地 fixture 改成 Norway vs England。Soren 現在可以實名化八強，但仍不偷跑 lineup；接下來要盯的是 England 後防能不能把 Haaland 變成孤島，而不是把他當海報背景。",
       "signals": [
         "Local worldcup.json lists M099 as quarter-final W91 vs W92 at 2026-07-11T21:00Z; participants remain placeholders until M91/M92 finish.",
         "FIFA match-centre/schedule and FIFA Suites public pages corroborate M99 / W91 vs W92 placeholder; no team-specific claims are made yet.",
         "Use this card as public bracket rail only: prediction belongs in match deep-dives after the actual winners are known.",
         "FIFA Brazil-Norway 賽後報告與本地 m091 winner 都指向 Norway；這是 W91 路線的高信心 bracket-watch。",
-        "FIFA Mexico-England 賽後報告與本地 m092 winner 都指向 England；但 m099 欄位尚未 actualize，先保留 placeholder guard。"
+        "FIFA Mexico-England 賽後報告與本地 m092 winner 都指向 England；但 m099 欄位尚未 actualize，先保留 placeholder guard。",
+        "2026-07-07T09:35Z npm run update-data 後，local worldcup.json 已把 M099 actualize 為 Norway vs England；先前 W91/W92 placeholder guard 已完成使命。",
+        "M099 kickoff remains 2026-07-11T21:00Z at Miami Gardens；official upstream match reports still anchor W91=Norway and W92=England until dedicated quarterfinal preview pages appear."
       ],
       "sources": [
         {
@@ -9491,6 +9619,14 @@
           "sourceName": "FIFA",
           "fetchedAt": "2026-07-06T09:05:39Z",
           "claimType": "confirmed/upstream-result-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "Local worldcup data actualized Norway-England",
+          "url": "https://worldcup.kyasen.com/data/worldcup.json",
+          "sourceName": "Soren public worldcup data",
+          "fetchedAt": "2026-07-07T09:35:48Z",
+          "claimType": "confirmed/bracket-actualization",
           "confidence": "high"
         }
       ],
