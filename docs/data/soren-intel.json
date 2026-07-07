@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-07T09:35:48Z",
-  "status": "matchday scout: m095/m096 near-kickoff official press/training rails added; m097 quarterfinal preview context refreshed; m099 actualized locally as Norway vs England after upstream catch-up.",
-  "headline": "Soren 09:35Z 巡邏：Argentina-Egypt、Switzerland-Colombia 進入賽前倒數，新增官方記者會/最後訓練與 BBC/FIFA rails；Norway-England 八強對戰已在本地資料落地。",
+  "generatedAt": "2026-07-07T15:52:43Z",
+  "status": "matchday scout: m095 official FIFA lineups landed; m096 still pre-kickoff lineup watch; prior official press/training rails remain in place.",
+  "headline": "Soren 近開球巡邏：Argentina-Egypt 官方先發已由 FIFA live API 亮牌；Messi/Salah 都先發，m096 繼續守 lineup watch。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -9009,9 +9009,9 @@
     {
       "matchId": "m095",
       "match": "Argentina vs Egypt",
-      "sourceType": "official/team press + final training + live-centre + tactical/public probability + odds-reference watch",
-      "title": "Argentina-Egypt 賽前倒數：Scaloni 說準備好任何劇本，Egypt 也喊不是來當世界冠軍的練習樁。",
-      "sorenTake": "AFA 的 Scaloni 記者會與最後訓練，把 Argentina 的臨場節奏補齊；Egypt FA 則用 Hassan 口徑提醒大家：對 Messi 不是朝聖，是生存戰。BBC live text 已開，正式先發仍只等 FIFA/官方入口，Soren 不把 predicted XI 包裝成天啟。",
+      "sourceType": "official lineup + team press + live-centre + tactical/public probability + odds-reference watch",
+      "title": "Argentina-Egypt 官方先發亮牌：Messi 與 Salah 都在場，這下不是 predicted XI，是 FIFA live API 的白紙黑字。",
+      "sorenTake": "FIFA live API 已放出官方先發與陣型：Argentina 4-1-3-2，Egypt 4-2-3-1。這把賽前猜謎收掉，但比分/晉級還沒收；Soren 只把 lineup 升級，不把開球前的任何氣味寫成結局。",
       "signals": [
         "NBC Sports and Guardian schedule/wallchart pages remain only historical bracket-context provenance; current card now follows official/live-centre actualized matchup sources.",
         "FIFA match centre 已把 m095 actualize 為 Argentina vs Egypt，7/7 16:00 UTC，Atlanta Stadium；這是官方 matchup anchor。",
@@ -9029,7 +9029,8 @@
         "AFA 最後訓練稿確認 Argentina completed final rehearsal before Egypt；用作 team-logistics / matchday rhythm。",
         "FIFA Egypt run feature 提供 Egypt Round-of-16 路線與對 Argentina 前的官方背景；這補的是 upset-path context，不是模型配方。",
         "Egypt FA Hassan 賽前口徑稱面對大對手與「活著的傳奇」，但 Egypt 不會是世界冠軍 easy prey；官方 coach-quote 可用，語氣要保持 source-aware。",
-        "BBC Sport 已開 Argentina-Egypt stats/head-to-head live page；它是臨場入口，正式比分/先發仍要等 completed 或官方 lineup 後才升級。"
+        "BBC Sport 已開 Argentina-Egypt stats/head-to-head live page；它是臨場入口，正式比分/先發仍要等 completed 或官方 lineup 後才升級。",
+        "FIFA public live API 已放出 m095 官方先發：Argentina 4-1-3-2 with Emiliano MARTINEZ, Nicolas TAGLIAFICO, Lisandro MARTINEZ, Cristian ROMERO, Nahuel MOLINA, Leandro PAREDES, Rodrigo DE PAUL, Alexis MAC ALLISTER, Enzo FERNANDEZ, Julian ALVAREZ, Lionel MESSI; Egypt 4-2-3-1 with MOSTAFA SHOUBIR, YASSER IBRAHIM, MOHAMED HANY, RAMY RABIA, KARIM HAFEZ, EMAM ASHOUR, MOSTAFA ZICO, MOHANAD LASHIN, MARAWAN ATTIA, MOHAMED SALAH, Haissem HASSAN. Referee: François Letexier。這是 confirmed lineup；後續比分仍要等 completed=true/FT，Live ≠ Final。"
       ],
       "sources": [
         {
@@ -9207,9 +9208,17 @@
           "fetchedAt": "2026-07-07T09:35:48Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA official live lineup Argentina-Egypt",
+          "url": "https://api.fifa.com/api/v3/live/football/400021528?language=en",
+          "sourceName": "FIFA public live API",
+          "fetchedAt": "2026-07-07T15:52:43Z",
+          "claimType": "confirmed/lineup",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m096",
