@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T19:21:05.750Z",
+  "generatedAt": "2026-07-07T21:56:51.384Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -10,7 +10,6 @@
     "finishedMatches": 95,
     "scheduledMatches": 9,
     "nextWindow": [
-      "m096",
       "m097",
       "m098",
       "m099",

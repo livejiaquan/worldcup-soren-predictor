@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-07T15:52:43Z",
-  "status": "matchday scout: m095 official FIFA lineups landed; m096 still pre-kickoff lineup watch; prior official press/training rails remain in place.",
-  "headline": "Soren 近開球巡邏：Argentina-Egypt 官方先發已由 FIFA live API 亮牌；Messi/Salah 都先發，m096 繼續守 lineup watch。",
+  "generatedAt": "2026-07-07T21:56:46Z",
+  "status": "matchday scout: m096 Switzerland-Colombia 已進延長賽但 ESPN completed=false；只更新 live-score intel，不結算 bracket 或紙上盤。",
+  "headline": "Soren 現場巡邏：Switzerland-Colombia 90 分鐘 0-0 進 ET；Live ≠ Final，W96 先別亂填。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -9223,9 +9223,9 @@
     {
       "matchId": "m096",
       "match": "Switzerland vs Colombia",
-      "sourceType": "official FIFA/SFA/FCF preview + team press/training + live-centre + lineup/odds-reference watch",
-      "title": "Switzerland-Colombia 賽前加碼：FIFA 預覽、Ndoye 訪談與 Lorenzo 最後訓練都上桌；這不是 Colombia 單方面拍晉級照。",
-      "sorenTake": "Swiss FA 的「八強詛咒」敘事、FIFA 的 Ndoye 訪談、FCF 的 Lorenzo/最後訓練更新，讓這張卡從市場熱度變成真 knockout tension。Colombia 可以更漂亮，Switzerland 可以更煩；正式 XI 沒出前，Soren 只講壓力點，不冒充更衣室。",
+      "sourceType": "live-score context + official match centre + preview/lineup/odds watch",
+      "title": "Switzerland-Colombia 進延長賽：ESPN 公開 API 顯示 90 分鐘 0-0、completed=false；這張 W96 還不能蓋章。",
+      "sorenTake": "這就是淘汰賽最討厭也最誠實的樣子：Colombia 比賽面更主動，Switzerland 把節奏拖成拆彈課，但 ESPN 狀態仍是 End of Regulation / ET、completed=false。Soren 現在只發布 live context，不把 0-0 當 final，也不提前替 M100 填隊名。",
       "signals": [
         "NBC Sports and Guardian schedule/wallchart pages remain only historical bracket-context provenance; current card now follows official/live-centre actualized matchup sources.",
         "FIFA match centre 已把 m096 actualize 為 Switzerland vs Colombia，7/7 20:00 UTC，BC Place Vancouver；官方 matchup anchor 到位。",
@@ -9240,7 +9240,8 @@
         "FIFA Switzerland-Colombia preview 提供官方 team-news/watch/stadium context；若文中提及 team news 也仍需區分 preview 與 confirmed XI。",
         "FIFA Dan Ndoye 訪談把 Switzerland 對 Colombia 的自我要求與對手評價補進來；屬 official player-quote。",
         "Swiss FA 7/6 官方稿聚焦 Switzerland 要衝破 World Cup knockout curse；這是 team-narrative context，不是戰術公式。",
-        "FCF Lorenzo 7/6 官方稿確認 Colombia 完成 Killarney Park 最後訓練，內容包含 tactical plan / passing circuits / small-sided work；這是 official training/coach context。"
+        "FCF Lorenzo 7/6 官方稿確認 Colombia 完成 Killarney Park 最後訓練，內容包含 tactical plan / passing circuits / small-sided work；這是 official training/coach context。",
+        "21:55Z 父層重查 ESPN summary/scoreboard：Switzerland 0-0 Colombia，狀態 STATUS_END_OF_REGULATION / ET，completed=false；這是 in-progress live-score，不是正式賽果、bracket actualization 或紙上盤結算依據。"
       ],
       "sources": [
         {
@@ -9394,9 +9395,17 @@
           "fetchedAt": "2026-07-07T09:35:48Z",
           "claimType": "confirmed/coach-quote",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN public summary live ET state",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-07T21:56:46Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m097",
@@ -9645,12 +9654,13 @@
       "matchId": "m100",
       "match": "W95 vs W96",
       "sourceType": "confirmed/bracket-watch + official quarterfinal placeholder rails",
-      "title": "M100 還是 W95 vs W96：Argentina/Egypt 與 Switzerland/Colombia 路線先踢，Soren 先守門牌不編劇。",
-      "sorenTake": "M100 也落進 7 日視窗，但它現在只是一張 quarterfinal route card。官方 schedule / suites 可以證明時間與路徑；不能證明誰會來 Kansas City。先把 placeholder 說清楚，比提前押豪門更保護公信力。",
+      "title": "M100 仍是 Argentina vs W96 的半張真牌：Argentina 已過關，Switzerland-Colombia 還在 ET，別把 live score 當晉級名單。",
+      "sorenTake": "M095 已把 Argentina 送進 Kansas City 路線；M096 目前 ESPN 顯示 ET、completed=false，所以 W96 仍未官方落地。Soren 可以更新路徑壓力，但不會把 0-0 直播狀態包裝成 final。",
       "signals": [
         "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
         "FIFA schedule/scores fixtures and FIFA Suites public pages support M100 / W95 vs W96 bracket rail; no lineup, odds, or tactical claim is attached while teams are unknown.",
-        "This is a compact homepage placeholder card, with deeper sources behind details/modal rather than method dump."
+        "This is a compact homepage placeholder card, with deeper sources behind details/modal rather than method dump.",
+        "M095 已由本地 worldcup.json 記為 Argentina 3-2 Egypt；M096 於 21:55Z ESPN 公開 API 仍 completed=false，因此 M100 只可寫成 Argentina vs W96 / W95 路線半實名化。"
       ],
       "sources": [
         {
@@ -9684,6 +9694,14 @@
           "fetchedAt": "2026-07-04T20:15:46Z",
           "claimType": "context/bracket-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN W96 live-state guard",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-07T21:56:46Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
