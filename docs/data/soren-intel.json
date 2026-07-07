@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-07T01:02:34Z",
-  "status": "matchday scout: m094 updated as ESPN-confirmed halftime live-score context; USA-Belgium is 1-2 at HT, completed=false, so no result/bracket/bankroll settlement.",
-  "headline": "Soren 01:02Z 巡邏：USA-Belgium 半場 1-2；這是 live context，不是 final。Argentina-Egypt、Switzerland-Colombia 仍按賽前情報追蹤。",
+  "generatedAt": "2026-07-07T03:26:51Z",
+  "status": "matchday scout: m094 rewritten from halftime live context to confirmed USA 1-4 Belgium postmatch; m098 actualized as Spain vs Belgium bracket-watch while local fixture placeholders remain source-labeled.",
+  "headline": "Soren 03:25Z 巡邏：Belgium 4-1 淘汰 USA，現在才是 final；M098 實名化為 Spain vs Belgium。Argentina-Egypt、Switzerland-Colombia 仍是今晚賽前 watch。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -8674,9 +8674,9 @@
     {
       "matchId": "m094",
       "match": "USA vs Belgium",
-      "sourceType": "official availability + ESPN live-score + live-centre + reported lineup/tactical + venue/weather + odds-reference watch",
-      "title": "USA-Belgium 已進入半場現實檢查：ESPN 顯示 Belgium 2-1 領先，但 completed=false，誰現在結算誰就是把 Live 當 Final。",
-      "sorenTake": "ESPN summary 01:02Z 顯示 USA-Belgium 半場 USA 1-2 Belgium、STATUS_HALFTIME / completed=false。這只能更新臨場脈絡：美國主場熱度被比利時效率先割一刀；但還沒 full time，不能更新結果、晉級、紙上本金或 M098 對戰。",
+      "sourceType": "confirmed final score + official/media postmatch + bracket actualization + prior availability/odds context",
+      "title": "USA-Belgium 從半場警報變成正式淘汰：Belgium 4-1 把共同主辦國踢出局，Soren 的紅線是——現在才可以結算。",
+      "sorenTake": "ESPN public API 已從 halftime/completed=false 翻成 STATUS_FULL_TIME/completed=true，openfootball 也在 update-data 後落地 USA 1-4 Belgium。De Ketelaere 上半場雙響只是開刀，Vanaken 與 Lukaku 把傷口縫成比分牌；美國的主場敘事沒有死於氣氛，而是死於禁區管理。這已是 final，可以進入 bracket / postmortem / paper-bankroll 檢討。",
       "signals": [
         "Local worldcup.json now actualizes M094 as USA vs Belgium; this card has retired the stale W81/W82 label and keeps old bracket rails only as provenance.",
         "WorldCupPass Round-of-16 schedule states team names remain bracket placeholders until Round-of-32 winners are decided, so this card is deliberately labeled bracket-watch.",
@@ -8708,7 +8708,11 @@
         "21:19Z ESPN 同日 scoreboard 確認 USA-Belgium 仍是 scheduled/pre、completed=false；本站只補賽前/live-centre，不做比分或晉級判定。",
         "Sky Sports 開 USA-Belgium live blog，標題明示 score/live updates/team news，適合作為臨場 lineups 與事件入口。",
         "US Soccer 官方 preview 重申 Seattle 開球、轉播與對 Belgium 的 Round-of-16 賽前脈絡；FOX odds 頁以 Balogun back / USA favored 做紙上市場溫度參考，不是投注建議。",
-        "01:02Z ESPN summary 顯示 USA-Belgium 為 STATUS_HALFTIME / completed=false，比分 USA 1-2 Belgium；此為 context/live-score，不是 confirmed final，不得結算 bracket 或紙上盤。"
+        "01:02Z ESPN summary 曾顯示 halftime / completed=false；03:26Z 複核已轉為 STATUS_FULL_TIME / completed=true，比分 USA 1-4 Belgium，因此這張卡從 live context 升級為 postmatch。",
+        "03:25Z update-data 後 local worldcup.json 已把 m094 寫成 finished：USA 1-4 Belgium，winner=Belgium；ESPN scoreboard 同步為 STATUS_FULL_TIME / completed=true。",
+        "FIFA match report 標題與摘要確認 USA 1-4 Belgium；Charles De Ketelaere brace、Hans Vanaken、Romelu Lukaku 進球讓 Belgium 進八強。",
+        "Al Jazeera liveblog 與 CBS 賽後報導均指向 USA 1-4 Belgium / USMNT eliminated；作為媒體層 postmatch corroboration。",
+        "CBS postmatch headline says USMNT eliminated after a 4-1 defeat; this is credible media corroboration, not a separate official source."
       ],
       "sources": [
         {
@@ -8968,15 +8972,39 @@
           "confidence": "medium-high"
         },
         {
-          "label": "ESPN summary USA-Belgium halftime live score",
+          "label": "ESPN summary USA-Belgium final score",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760507",
           "sourceName": "ESPN public API",
-          "fetchedAt": "2026-07-07T01:02:34Z",
-          "claimType": "context/live-score",
+          "fetchedAt": "2026-07-07T03:27:20Z",
+          "claimType": "confirmed/final-score",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA USA-Belgium match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-belgium-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-07T03:26:51Z",
+          "claimType": "confirmed/final-score",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera USA-Belgium liveblog final",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/7/6/usa-belgium-live-fifa-world-cup-2026-round-of-16",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-07T03:26:51Z",
+          "claimType": "reported/final-score",
+          "confidence": "high"
+        },
+        {
+          "label": "CBS Sports USA-Belgium postmatch",
+          "url": "https://www.cbssports.com/soccer/news/usmnt-belgium-live-updates-world-cup-2026-score-result/live/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-07-07T03:26:51Z",
+          "claimType": "reported/final-score",
           "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m095",
@@ -9338,15 +9366,18 @@
     },
     {
       "matchId": "m098",
-      "match": "W93 vs W94",
-      "sourceType": "official quarterfinal placeholder + bracket watch",
-      "title": "M098 半邊亮了：Spain 已拿 W93；W94 仍卡在 USA-Belgium live state，別把半場領先印成晉級海報。",
-      "sorenTake": "Spain 已從 W93 出線；W94 仍要等 USA-Belgium full time。ESPN 01:02Z 顯示 Belgium 半場 2-1 領先且 completed=false，所以 M098 只做 bracket-watch，不做對戰 actualization。",
+      "match": "Spain vs Belgium",
+      "sourceType": "confirmed upstream winners + quarterfinal bracket actualization + official schedule rail",
+      "title": "M098 終於亮牌：Spain vs Belgium。美國主場夢碎後，Inglewood 這張變成控球王朝對效率刀隊。",
+      "sorenTake": "M093 已是 Spain 1-0 Portugal，M094 也由 ESPN / FIFA / openfootball 確認 Belgium 4-1 USA；所以 W93 vs W94 的公共敘事可以實名化為 Spain vs Belgium。注意：local fixture 欄位仍保留 W93/W94 placeholder，本站用來源鏈做 bracket actualization，不把預測樹混進官方 bracket。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M098：W93 vs W94，Los Angeles Stadium / Inglewood，2026-07-10 19:00 UTC。",
-        "由於 M093/M094 尚未完成，任何 Portugal/Spain/USA/Belgium 的 quarterfinal 敘事都只能放在 bracket-watch，而不是 confirmed matchup。",
-        "ESPN 2026-07-06 scoreboard：m093 Spain 1-0 Portugal completed=true；m094 USA-Belgium still scheduled/completed=false，因此 M098 現階段只能寫 Spain vs W94。",
-        "01:02Z ESPN summary 顯示 USA-Belgium 仍為 halftime / completed=false；M098 的 W94 不能因半場比分被提前 actualize。"
+        "早前因 M093/M094 未完成，Portugal/Spain/USA/Belgium 敘事只能 bracket-watch；現在 M093/M094 都已 finished，本文保留此句作 provenance 並以下方 actualization 為準。",
+        "ESPN 2026-07-06 scoreboard 早段曾顯示 m094 尚未完成；03:26Z 複核後 m093 Spain 1-0 Portugal、m094 USA 1-4 Belgium 均 completed=true，M098 可寫 Spain vs Belgium。",
+        "01:02Z ESPN summary 曾顯示 halftime / completed=false；03:26Z full-time 複核後才把 W94 actualize 為 Belgium，沒有用半場比分偷跑。",
+        "03:25Z local worldcup.json 已確認 m093 winner=Spain、m094 winner=Belgium；M098 bracket rail 可從 W93/W94 actualize 為 Spain vs Belgium，但 fixture 原始欄位仍保留 placeholder。",
+        "FIFA USA-Belgium match report 指向 Belgium 勝出並設立 last-eight meeting；搭配既有 Spain 1-0 Portugal result，M098 的實際路線已完整。",
+        "ESPN 20260706 scoreboard shows Portugal 0-1 Spain and USA 1-4 Belgium both STATUS_FULL_TIME/completed=true；這是 bracket actualization 的 machine-check source。"
       ],
       "sources": [
         {
@@ -9382,11 +9413,27 @@
           "confidence": "high"
         },
         {
-          "label": "ESPN summary W94 live-state watch",
+          "label": "ESPN summary W94 final actualization",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760507",
           "sourceName": "ESPN public API",
-          "fetchedAt": "2026-07-07T01:02:34Z",
-          "claimType": "context/live-score",
+          "fetchedAt": "2026-07-07T03:27:20Z",
+          "claimType": "confirmed/bracket-actualization",
+          "confidence": "high"
+        },
+        {
+          "label": "Local worldcup data winners m093/m094",
+          "url": "https://worldcup.kyasen.com/data/worldcup.json",
+          "sourceName": "Soren public worldcup data",
+          "fetchedAt": "2026-07-07T03:26:51Z",
+          "claimType": "confirmed/bracket-actualization",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA USA-Belgium quarterfinal route",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/usa-belgium-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-07T03:26:51Z",
+          "claimType": "confirmed/bracket-actualization",
           "confidence": "high"
         }
       ],
