@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-08T04:01:57Z",
-  "status": "matchday scout: 八強前 48 小時補上 France-Morocco、Spain-Belgium 官方/媒體 team-news 線，並為 7 天內首場準決賽 m101 建立 bracket-watch。",
-  "headline": "Soren 八強前哨：France-Morocco 有 Saibari 傷情與 Mbappé 火力，Spain-Belgium 官方預覽上線；準決賽先畫路線，不假裝知道未來。",
+  "generatedAt": "2026-07-08T10:08:35Z",
+  "status": "matchday scout: 八強前 48 小時加固 France-Morocco / Spain-Belgium 官方 match-centre 與 paper odds rails，並為 7 天內第二場準決賽 m102 建立 bracket-watch。",
+  "headline": "Soren 八強雷達更新：France-Morocco、Spain-Belgium 補上官方即時入口與市場參考；m102 準決賽先畫 W99 vs W100 路線，不把未知隊名寫成玄學。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -9429,7 +9429,7 @@
     {
       "matchId": "m097",
       "match": "France vs Morocco",
-      "sourceType": "official preview + media team-news/injury watch + bracket actualization",
+      "sourceType": "official match-centre + official preview + media team-news/injury watch + paper odds reference",
       "title": "France-Morocco 倒數：Mbappé 火力線很亮，但 Morocco 的 Saibari 腿筋疑雲讓「復仇劇本」先被醫療室剪了一刀。",
       "sorenTake": "FIFA 已把這場正式端上八強桌，Goal/Sports Mole 補到 team-news 與預測 XI 脈絡：France 仍是更完整的進攻機器，Morocco 則靠 Bounou、Hakimi 與中場韌性活著。關鍵提醒：Saibari 傷情只按 reported fitness watch 處理，別把預測 XI 當官方名單。",
       "signals": [
@@ -9443,7 +9443,9 @@
         "Olympics.com France-Morocco guide 提供賽程、場地與 head-to-head 公眾導覽；屬 credible schedule/context，不是內部情報。",
         "Goal.com 八強預覽確認本場在 Foxborough，並把焦點放在 tactics、team news 與 France-Morocco 2022 rematch；可作媒體賽前框架，不是確認先發。",
         "Goal.com 文內提到 Morocco 前場 Ismael Saibari 因 hamstring injury 成為 major doubt；這是 reported injury watch，正式缺陣仍等官方/球隊名單。",
-        "Sports Mole 八強預覽同樣列 team news / possible lineups，並提到 Saibari 早早退場後是 Morocco 主要 fitness doubt；France 端則維持 Mbappé、Dembélé、Olise、Barcola 火力敘事。"
+        "Sports Mole 八強預覽同樣列 team news / possible lineups，並提到 Saibari 早早退場後是 Morocco 主要 fitness doubt；France 端則維持 Mbappé、Dembélé、Olise、Barcola 火力敘事。",
+        "FIFA match-centre 已可連線作為 France-Morocco 臨場官方入口；正式先發未發布前，它只證明賽事/比分/之後 lineups 來源，不替任何 predicted XI 背書。",
+        "ESPN odds 頁提供 France-Morocco 的公開市場參考；Soren 只把它當 paper-simulation price check，不能變成下注建議，也不代表模型底層邏輯。"
       ],
       "sources": [
         {
@@ -9533,6 +9535,22 @@
           "fetchedAt": "2026-07-08T04:01:57Z",
           "claimType": "reported/lineup-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA France-Morocco match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289289/400021536",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-08T10:08:35Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN France-Morocco odds reference",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760510",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-08T10:08:35Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -9540,7 +9558,7 @@
     {
       "matchId": "m098",
       "match": "Spain vs Belgium",
-      "sourceType": "official preview + bracket actualization + media team-news watch",
+      "sourceType": "official match-centre + official preview + squad baseline + bracket actualization + media team-news watch",
       "title": "Spain-Belgium 官方預覽補上線：Yamal/Spain 控球刀法撞 De Bruyne/Lukaku 效率拳，這不是美麗足球展覽，是誰先犯錯誰被收屍。",
       "sorenTake": "FIFA 已開 Spain-Belgium 八強 preview，UEFA 賽程頁確認 Spain 晉級路線與 7/10 Los Angeles 對 Belgium。Belgium 對 USA 前的 team-news 線索顯示 Rudi Garcia 當時沒有重大傷停焦慮；但這仍是上一輪/賽前媒體訊號，本站只當 availability watch，不當最終首發。",
       "signals": [
@@ -9554,7 +9572,9 @@
         "BBC live/postmatch report confirms Belgium 4-1 USA set up a quarter-final tie with Spain; this independently backs the Spain-Belgium route while local fixture placeholders may lag.",
         "FIFA Spain-Belgium 八強 preview 已上線，標題明示 live stream、team news、tickets and more；這是本場官方賽前入口。",
         "UEFA Spain World Cup page 列出 Spain 7/2 3-0 Austria、7/6 1-0 Portugal，並確認 7/10 quarter-finals Spain vs Belgium at Los Angeles。",
-        "Evening Standard 對 Belgium-USA 賽前 team news 曾稱 Rudi Garcia 無 injury concerns；此訊號只能延伸為 Belgium availability watch，不能替代 Spain-Belgium 正式名單。"
+        "Evening Standard 對 Belgium-USA 賽前 team news 曾稱 Rudi Garcia 無 injury concerns；此訊號只能延伸為 Belgium availability watch，不能替代 Spain-Belgium 正式名單。",
+        "FIFA match-centre 已可連線作為 Spain-Belgium 官方臨場入口；真正 confirmed XI 要等 FIFA/隊伍發布，現在只當 match-centre rail。",
+        "FIFA Belgium squad baseline 可補 Rudi Garcia / Lukaku 名單背景；這是 tournament roster，不是 7/10 對 Spain 的傷停或先發確認。"
       ],
       "sources": [
         {
@@ -9644,6 +9664,22 @@
           "fetchedAt": "2026-07-08T04:01:57Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA Spain-Belgium match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289289/400021538",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-08T10:08:35Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Belgium squad baseline",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/belgium-squad-garcia-lukaku-named",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-08T10:08:35Z",
+          "claimType": "confirmed/squad-baseline",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -9853,6 +9889,62 @@
           "fetchedAt": "2026-07-08T04:01:57Z",
           "claimType": "context/bracket-watch",
           "confidence": "medium-high"
+        }
+      ],
+      "confidence": "medium-high"
+    },
+    {
+      "matchId": "m102",
+      "match": "W99 vs W100",
+      "sourceType": "confirmed schedule + bracket-watch",
+      "title": "M102 準決賽先佈線：W99 vs W100 會從 Norway/England 與 Argentina/Switzerland 路線長出來，隊名未落地前別裝通靈。",
+      "sorenTake": "這場在 Atlanta，距離現在不到 7 天，但 local worldcup.json 仍是 W99 vs W100。Soren 先補官方/主流 bracket rails：m099 與 m100 的勝者才會進來。現在最專業的動作不是亂押人名，而是把路線、場地與後續 final/third-place 連動講清楚。",
+      "signals": [
+        "本地 worldcup.json nextWindow 已列 m102，kickoffUtc 為 2026-07-15T19:00:00Z，場地 Atlanta，對戰仍是 W99 vs W100。",
+        "W99 來自 m099 Norway vs England；W100 來自 m100 Argentina vs Switzerland。八強未踢完前，m102 只能是 bracket-watch，不可提前實名化。",
+        "ESPN bracket/schedule 與 FIFA 官方 tournament/schedule/host-city pages 可作公開導覽；若與本地資料衝突，官方與本地已驗證 worldcup.json 優先。",
+        "這張卡只服務首頁 compact public viewpoint；預測、paper bankroll 與戰術細節要等 m099/m100 完場後再寫進對應 deep-dive。"
+      ],
+      "sources": [
+        {
+          "label": "Soren public worldcup data",
+          "url": "https://worldcup.kyasen.com/data/worldcup.json",
+          "sourceName": "Soren public data",
+          "fetchedAt": "2026-07-08T10:08:35Z",
+          "claimType": "confirmed/bracket-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA World Cup official tournament hub",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-08T10:08:35Z",
+          "claimType": "confirmed/tournament-context",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN World Cup bracket",
+          "url": "https://www.espn.com/soccer/bracket/_/league/fifa.world/season/2026",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-08T10:08:35Z",
+          "claimType": "context/bracket-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN match schedule and knockout bracket explainer",
+          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-08T10:08:35Z",
+          "claimType": "context/schedule",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Atlanta host-city page",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/destination/atlanta",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-08T10:08:35Z",
+          "claimType": "context/venue",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
