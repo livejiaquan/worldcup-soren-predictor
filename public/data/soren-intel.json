@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-08T16:16:05Z",
-  "status": "matchday scout: 八強前 28–81 小時加固 France-Morocco / Spain-Belgium 臨場入口、紙上市場與社群搜尋線索，並替 Norway-England、Argentina-Switzerland 與兩場準決賽補官方路線。",
-  "headline": "Soren 八強雷達更新：m097/m098 補上 FotMob/ESPN/Yahoo/CBS 等即時與市場參考，m099–m102 補官方 match-centre / 球隊路線；社群裁判噪音只當公開討論線索，不當民意結論。",
+  "generatedAt": "2026-07-08T22:24:29Z",
+  "status": "matchday scout: 八強前 21–75 小時選擇性補強 m097–m100，新增 Tchouaméni 復訓、Onana ACL 缺陣、England suspension watch 與 Yakin vulnerability quote 等非重複臨場線索。",
+  "headline": "Soren 八強雷達微更新：France-Morocco 看 Tchouaméni 能否回到中場，Spain-Belgium 因 Onana ACL 少一塊防線，Norway-England 多了 Quansah suspension watch，Argentina-Switzerland 則有 Yakin 公開喊「Argentina 可被打」。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -9430,8 +9430,8 @@
       "matchId": "m097",
       "match": "France vs Morocco",
       "sourceType": "official match-centre + media team-news/injury watch + live-centre/odds/social-search rails",
-      "title": "France-Morocco 進入倒數：官方入口已夠，現在多加臨場數據、CBS 市場溫度與裁判社群噪音——但噪音不是證據。",
-      "sorenTake": "FIFA 已把這場正式端上八強桌，Goal/Sports Mole 補到 team-news 與預測 XI 脈絡：France 仍是更完整的進攻機器，Morocco 則靠 Bounou、Hakimi 與中場韌性活著。關鍵提醒：Saibari 傷情只按 reported fitness watch 處理，別把預測 XI 當官方名單。",
+      "title": "France-Morocco 臨場溫度升高：Tchouaméni 復訓讓法國中場回魂，但 Morocco 的 Saibari fitness watch 仍是反擊路線的問號。",
+      "sorenTake": "FIFA/Goal/Sports Mole 已給足官方與媒體框架，新增 Eurosport/法媒搜尋線索顯示 Tchouaméni 從 adductor 問題回到集體訓練、Deschamps 說「他好多了」。Soren 的解讀很簡單：France 若拿回 Tchouaméni 的屏障，Morocco 不能只靠懷舊半決賽劇本；但這還不是確認先發，正式 XI 仍等 FIFA/球隊。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M097：W89 vs W90，Boston Stadium / Foxborough，2026-07-09 20:00 UTC。",
         "ESPN/NBC/FOX 類公開 bracket/schedule 可作觀眾導覽，但在勝者未確定前只標為 context/bracket-watch。",
@@ -9448,7 +9448,8 @@
         "ESPN odds 頁提供 France-Morocco 的公開市場參考；Soren 只把它當 paper-simulation price check，不能變成下注建議，也不代表模型底層邏輯。",
         "FotMob 已開 France-Morocco 即時頁，列明 2026-07-09 20:00 UTC，提供 live results、H2H、lineups、player ratings、shotmap 等臨場資料入口；正式先發仍等官方/賽事頁確認。",
         "CBS Sports 賽前 odds/prediction 頁把 France-Morocco 定位為八強市場熱點；這只作 paper simulation 的公開市場溫度，不是下注建議。",
-        "HITC 報導社群對 FIFA 任命阿根廷裁判組吹 France-Morocco 有反應；Soren 只把它列為 social-search / public-buzz 線索，不假裝讀完留言或推論整體民意。"
+        "HITC 報導社群對 FIFA 任命阿根廷裁判組吹 France-Morocco 有反應；Soren 只把它列為 social-search / public-buzz 線索，不假裝讀完留言或推論整體民意。",
+        "Eurosport / 法媒搜尋結果顯示 Aurélien Tchouaméni 因 adductor issue 缺席 Paraguay 戰後，已在 France-Morocco 前參與集體訓練；Deschamps 表示「il va mieux」。這是 reported fitness-return，不是 confirmed XI。"
       ],
       "sources": [
         {
@@ -9578,6 +9579,14 @@
           "fetchedAt": "2026-07-08T16:16:05Z",
           "claimType": "social-search/context",
           "confidence": "medium"
+        },
+        {
+          "label": "Eurosport Tchouaméni fitness-return report",
+          "url": "https://www.eurosport.fr/football/coupe-du-monde/2026/france-maroc-coupe-du-monde-2026-aurelien-tchouameni-vers-un-retour-contre-les-lions-de-latlas-il-va-mieux-annonce-didier-deschamps_sto23317670/story.shtml",
+          "sourceName": "Eurosport",
+          "fetchedAt": "2026-07-08T22:24:29Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -9586,8 +9595,8 @@
       "matchId": "m098",
       "match": "Spain vs Belgium",
       "sourceType": "official match-centre + official/team page + media team-news watch + live-centre/odds rails",
-      "title": "Spain-Belgium 從美學變肉搏：RFEF 確認西班牙回到洛杉磯備戰，ESPN/FotMob/Yahoo 把市場與臨場入口也擺上桌。",
-      "sorenTake": "FIFA 已開 Spain-Belgium 八強 preview，UEFA 賽程頁確認 Spain 晉級路線與 7/10 Los Angeles 對 Belgium。Belgium 對 USA 前的 team-news 線索顯示 Rudi Garcia 當時沒有重大傷停焦慮；但這仍是上一輪/賽前媒體訊號，本站只當 availability watch，不當最終首發。",
+      "title": "Spain-Belgium 不只是美學對撞：Belgium 失去 Amadou Onana，西班牙的控球刀要直接切中場肋骨。",
+      "sorenTake": "FIFA/RFEF/FotMob/ESPN 已把賽事入口與市場溫度鋪好，BBC 新增的硬傷停訊號更有殺傷力：Amadou Onana ACL rupture，Belgium 中場防守少一台絞肉機。這不等於 Spain 躺贏，但若比賽變成長時間控球與二點球回收，Belgium 的缺口會很刺眼。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M098：W93 vs W94，Los Angeles Stadium / Inglewood，2026-07-10 19:00 UTC。",
         "早前因 M093/M094 未完成，Portugal/Spain/USA/Belgium 敘事只能 bracket-watch；現在 M093/M094 都已 finished，本文保留此句作 provenance 並以下方 actualization 為準。",
@@ -9605,7 +9614,8 @@
         "RFEF 官方頁以「Spain Always Wanted to Return to L.A.」更新西班牙回到洛杉磯準備對 Belgium 的八強；這是球隊行程/備戰脈絡，不是首發確認。",
         "Sports Mole 新增 Spain-Belgium 八強 prediction/team news/possible lineups；屬媒體預測與隊聞觀察，不能升格為 confirmed XI。",
         "FotMob 已開 Spain-Belgium 即時頁，列明 2026-07-10 19:00 UTC，提供 live results、H2H、lineups、ratings、shotmap 等臨場入口。",
-        "ESPN odds 頁與 Yahoo Sports best-bets 頁提供 Spain-Belgium 的公開市場參考；本站只用於 paper simulation calibration，不導向真金流。"
+        "ESPN odds 頁與 Yahoo Sports best-bets 頁提供 Spain-Belgium 的公開市場參考；本站只用於 paper simulation calibration，不導向真金流。",
+        "BBC Sport 報導 Belgium / Aston Villa midfielder Amadou Onana 在世界盃期間 ACL rupture；這是 Spain-Belgium 前的 confirmed availability blow，直接影響 Belgium 中場對抗與輪換。"
       ],
       "sources": [
         {
@@ -9751,6 +9761,14 @@
           "fetchedAt": "2026-07-08T16:16:05Z",
           "claimType": "odds-reference/context",
           "confidence": "medium"
+        },
+        {
+          "label": "BBC Onana ACL injury report",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c862nw2xj0jo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-08T22:24:29Z",
+          "claimType": "confirmed/availability",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -9759,8 +9777,8 @@
       "matchId": "m099",
       "match": "Norway vs England",
       "sourceType": "official preview + official team match-centre + bracket actualization + paper odds watch",
-      "title": "Norway-England 補上英格蘭官方路線：Haaland vs Kane 是海報，England Football 的 Miami match-centre 才是硬入口。",
-      "sorenTake": "FIFA 已把 Norway-England 八強 preview 放出來，Yahoo/社群索引也都在炒 Haaland 對 England 的劇本。Soren 只把 Facebook/Instagram 搜尋結果當 public buzz，不假裝讀完留言；硬事實仍是 FIFA match centre 與本地 bracket actualization。",
+      "title": "Norway-England 還沒開踢先有懸念：Haaland vs Kane 是海報，Quansah 停賽與英格蘭黃牌風險才是髒活。",
+      "sorenTake": "England Football 的 match-centre 仍是硬入口；新增 Standard team-news 線索顯示 Jarell Quansah suspended，且還有球員背負潛在準決賽停賽風險。Soren 不會把 predicted XI 當官方名單，但這種 suspension math 會改變 England 後場冒險程度。",
       "signals": [
         "Local worldcup.json lists M099 as quarter-final W91 vs W92 at 2026-07-11T21:00Z; participants remain placeholders until M91/M92 finish.",
         "FIFA match-centre/schedule and FIFA Suites public pages corroborate M99 / W91 vs W92 placeholder; no team-specific claims are made yet.",
@@ -9773,7 +9791,8 @@
         "Yahoo Sports 賽程文確認 England 在 Azteca 3-2 擊敗 Mexico 後，將對上 Norway 與 Erling Haaland。",
         "公開 Facebook/Instagram 搜尋結果顯示 Norway-England 被包裝成 Haaland/Kane/Haaland vs England 話題；只作 social-search buzz，不推論完整民意。",
         "England Football 已開 Norway-England 八強 match centre，描述 Three Lions 將在 Miami 對 Norway，並把 fixture 細節落到 7 月 11 日。",
-        "England Football knockout-stage fixture article確認 England 3-2 Mexico 後八強對 Norway；這是官方球隊路線，非第三方 bracket 猜測。"
+        "England Football knockout-stage fixture article確認 England 3-2 Mexico 後八強對 Norway；這是官方球隊路線，非第三方 bracket 猜測。",
+        "Evening Standard 的 Norway-England team-news / predicted-lineup 頁明示 Jarell Quansah suspended，且多名 England 球員有潛在準決賽停賽風險；正式首發仍等官方，但 suspension watch 已是賽前結構風險。"
       ],
       "sources": [
         {
@@ -9855,6 +9874,14 @@
           "fetchedAt": "2026-07-08T16:16:05Z",
           "claimType": "confirmed/bracket-actualization",
           "confidence": "high"
+        },
+        {
+          "label": "Standard England team-news and suspension watch",
+          "url": "https://www.standard.co.uk/sport/football/england-xi-vs-norway-confirmed-team-news-predicted-lineup-injury-latest-world-cup-2026-b1289292.html",
+          "sourceName": "Evening Standard",
+          "fetchedAt": "2026-07-08T22:24:29Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -9863,8 +9890,8 @@
       "matchId": "m100",
       "match": "Argentina vs Switzerland",
       "sourceType": "official match-centre + official squad baseline + bracket actualization + odds/context watch",
-      "title": "Argentina-Switzerland 不只 Messi farewell tour：FIFA match-centre 與 AFA 名單補上硬底，Yahoo 市場文只當紙上溫度。",
-      "sorenTake": "FOX round-up 把同一天的兩條線講清楚：Messi/Argentina 晉級，Switzerland 繼續製造驚喜。這對 m100 的價值不是預測首發，而是公開敘事：Argentina 帶著戲劇性反撲光環，Swiss 帶著低比分耐心與十二碼自信。",
+      "title": "Argentina-Switzerland 的劇本開始變尖：Messi 光環之外，Yakin 公開把 Argentina 標成「可被打」。",
+      "sorenTake": "AFA/FIFA/Yahoo 給了基本盤，新增 Unanimo / 公開搜尋索引補到 Murat Yakin 的心理戰語境：Argentina vulnerable, not invincible。這不是模型答案，也不是瑞士必勝宣言；它提醒 Soren，Swiss 的低比分、十二碼與耐心路線不是裝飾品，是真能讓冠軍隊不舒服的打法。",
       "signals": [
         "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
         "FIFA schedule/scores fixtures and FIFA Suites public pages support M100 / W95 vs W96 bracket rail; no lineup, odds, or tactical claim is attached while teams are unknown.",
@@ -9876,7 +9903,8 @@
         "FOX Sports round-up 標題直接把 Messi moves on 與 Switzerland continues surprise 並列，提供 Argentina-Switzerland 八強的主流敘事背景。",
         "FIFA match centre 已可連到 Argentina-Switzerland 八強頁，作為 Kansas City 臨場比分/陣容官方入口。",
         "AFA 官方 26 人名單頁提供 Argentina 世界盃陣容底稿；這是 roster grounding，不代表八強先發。",
-        "Yahoo Sports Argentina-Switzerland prediction/best-bets 頁把 defending champions 與 Switzerland 韌性列為市場敘事；只作 paper odds/context 參考。"
+        "Yahoo Sports Argentina-Switzerland prediction/best-bets 頁把 defending champions 與 Switzerland 韌性列為市場敘事；只作 paper odds/context 參考。",
+        "Unanimo Deportes / 公開搜尋索引報導 Switzerland coach Murat Yakin 賽前稱 Argentina「vulnerable / not invincible」；這是 reported coach-quote / tactical-psychology context，不是賽果預測。"
       ],
       "sources": [
         {
@@ -9966,6 +9994,14 @@
           "fetchedAt": "2026-07-08T16:16:05Z",
           "claimType": "odds-reference/context",
           "confidence": "medium"
+        },
+        {
+          "label": "Unanimo Deportes Yakin Argentina vulnerable quote",
+          "url": "https://unanimodeportes.com/deportes/futbol/mundial2026/murat-yakin-entrenador-suizo-argentina-demostro-que-es-vulnerable/",
+          "sourceName": "Unanimo Deportes",
+          "fetchedAt": "2026-07-08T22:24:29Z",
+          "claimType": "reported/coach-player-quote",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
