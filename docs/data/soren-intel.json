@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-07T21:56:46Z",
-  "status": "matchday scout: m096 Switzerland-Colombia 已進延長賽但 ESPN completed=false；只更新 live-score intel，不結算 bracket 或紙上盤。",
-  "headline": "Soren 現場巡邏：Switzerland-Colombia 90 分鐘 0-0 進 ET；Live ≠ Final，W96 先別亂填。",
+  "generatedAt": "2026-07-08T01:02:02Z",
+  "status": "matchday scout: m096 Switzerland-Colombia 已由 ESPN/public API 與 openfootball 確認完場；Switzerland 0-0、PK 4-3 晉級，m100 先以 Argentina-Switzerland bracket actualization 呈現。",
+  "headline": "Soren 賽後巡邏：Switzerland 點球 4-3 淘汰 Colombia；0-0 不是無聊，是把 Argentina 的八強對手拖進十二碼才亮刀。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -9223,9 +9223,9 @@
     {
       "matchId": "m096",
       "match": "Switzerland vs Colombia",
-      "sourceType": "live-score context + official match centre + preview/lineup/odds watch",
-      "title": "Switzerland-Colombia 進延長賽：ESPN 公開 API 顯示 90 分鐘 0-0、completed=false；這張 W96 還不能蓋章。",
-      "sorenTake": "這就是淘汰賽最討厭也最誠實的樣子：Colombia 比賽面更主動，Switzerland 把節奏拖成拆彈課，但 ESPN 狀態仍是 End of Regulation / ET、completed=false。Soren 現在只發布 live context，不把 0-0 當 final，也不提前替 M100 填隊名。",
+      "sourceType": "confirmed final-score/postmatch + official match centre + bracket actualization",
+      "title": "Switzerland-Colombia 已完場：0-0 後 Switzerland PK 4-3 過關；前一張 ET 警報現在正式收工。",
+      "sorenTake": "這場從「不要把 0-0 ET 當 final」變成「點球才是真刀」。ESPN summary 顯示 STATUS_FINAL_PEN / completed=true，openfootball 也已落地 Switzerland 0-0 Colombia、shootout 4-3、winner=Switzerland。Colombia 控了半天，最後被 Switzerland 拖進十二碼冷庫；M100 可以寫 Argentina vs Switzerland，但紙上盤與 bracket 只按已確認 final 更新。",
       "signals": [
         "NBC Sports and Guardian schedule/wallchart pages remain only historical bracket-context provenance; current card now follows official/live-centre actualized matchup sources.",
         "FIFA match centre 已把 m096 actualize 為 Switzerland vs Colombia，7/7 20:00 UTC，BC Place Vancouver；官方 matchup anchor 到位。",
@@ -9241,7 +9241,10 @@
         "FIFA Dan Ndoye 訪談把 Switzerland 對 Colombia 的自我要求與對手評價補進來；屬 official player-quote。",
         "Swiss FA 7/6 官方稿聚焦 Switzerland 要衝破 World Cup knockout curse；這是 team-narrative context，不是戰術公式。",
         "FCF Lorenzo 7/6 官方稿確認 Colombia 完成 Killarney Park 最後訓練，內容包含 tactical plan / passing circuits / small-sided work；這是 official training/coach context。",
-        "21:55Z 父層重查 ESPN summary/scoreboard：Switzerland 0-0 Colombia，狀態 STATUS_END_OF_REGULATION / ET，completed=false；這是 in-progress live-score，不是正式賽果、bracket actualization 或紙上盤結算依據。"
+        "21:55Z 父層重查 ESPN summary/scoreboard：Switzerland 0-0 Colombia，狀態 STATUS_END_OF_REGULATION / ET，completed=false；這是 in-progress live-score，不是正式賽果、bracket actualization 或紙上盤結算依據。",
+        "01:01Z npm run update-data 後，本地 worldcup.json 已把 m096 記為 finished：Switzerland 0-0 Colombia，shootoutScore 4-3，winner=Switzerland；finishedMatches 從 95 升到 96。",
+        "ESPN public summary event 760508 顯示 STATUS_FINAL_PEN / state=post / completed=true；competitors 欄位為 Switzerland winner=true、shootoutScore 4.0，Colombia shootoutScore 3.0。",
+        "FIFA 搜尋索引的賽後報告標題為 Switzerland 0-0 (4-3 PSO) Colombia，描述指 Switzerland 將在八強對 Argentina；因父層只驗到搜尋摘要，列為 search-indexed corroboration，不把未讀內文當全文事實。"
       ],
       "sources": [
         {
@@ -9397,12 +9400,28 @@
           "confidence": "high"
         },
         {
-          "label": "ESPN public summary live ET state",
+          "label": "ESPN public summary final penalties state",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508",
           "sourceName": "ESPN public API",
-          "fetchedAt": "2026-07-07T21:56:46Z",
-          "claimType": "context/live-score",
+          "fetchedAt": "2026-07-08T01:02:02Z",
+          "claimType": "confirmed/final-score",
           "confidence": "high"
+        },
+        {
+          "label": "ESPN scoreboard 20260707 final state",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260707",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-08T01:02:02Z",
+          "claimType": "confirmed/final-score",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Switzerland-Colombia match report search result",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/switzerland-colombia-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-08T01:02:02Z",
+          "claimType": "reported/search-indexed-final-score",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -9652,15 +9671,18 @@
     },
     {
       "matchId": "m100",
-      "match": "W95 vs W96",
-      "sourceType": "confirmed/bracket-watch + official quarterfinal placeholder rails",
-      "title": "M100 仍是 Argentina vs W96 的半張真牌：Argentina 已過關，Switzerland-Colombia 還在 ET，別把 live score 當晉級名單。",
-      "sorenTake": "M095 已把 Argentina 送進 Kansas City 路線；M096 目前 ESPN 顯示 ET、completed=false，所以 W96 仍未官方落地。Soren 可以更新路徑壓力，但不會把 0-0 直播狀態包裝成 final。",
+      "match": "Argentina vs Switzerland",
+      "sourceType": "confirmed/bracket-actualization + official quarterfinal placeholder rails",
+      "title": "M100 實名化：Argentina vs Switzerland。埃及沒把 Messi 路線拆掉，Colombia 則被 Swiss PK 冷凍。",
+      "sorenTake": "M095 已是 Argentina 3-2 Egypt；M096 經 ESPN completed=true 與 openfootball 本地資料確認 Switzerland PK 4-3 過 Colombia。雖然原始 fixture 欄位仍是 W95 vs W96，公開情報卡可把八強觀眾敘事實名化為 Argentina vs Switzerland；這是來源鏈 actualization，不是把預測樹硬塞進 bracket。",
       "signals": [
         "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
         "FIFA schedule/scores fixtures and FIFA Suites public pages support M100 / W95 vs W96 bracket rail; no lineup, odds, or tactical claim is attached while teams are unknown.",
         "This is a compact homepage placeholder card, with deeper sources behind details/modal rather than method dump.",
-        "M095 已由本地 worldcup.json 記為 Argentina 3-2 Egypt；M096 於 21:55Z ESPN 公開 API 仍 completed=false，因此 M100 只可寫成 Argentina vs W96 / W95 路線半實名化。"
+        "M095 已由本地 worldcup.json 記為 Argentina 3-2 Egypt；M096 於 21:55Z ESPN 公開 API 仍 completed=false，因此 M100 只可寫成 Argentina vs W96 / W95 路線半實名化。",
+        "Local worldcup.json still stores M100 as W95 vs W96 placeholder, but its feeders are now finished: m095 winner=Argentina and m096 winner=Switzerland.",
+        "ESPN summary/scoreboard confirms m096 completed=true with Switzerland 0-0 Colombia, penalties 4-3; this upgrades prior W96 live-state guard into bracket actualization.",
+        "FIFA search-indexed match report says Switzerland will take on Argentina in the last eight after edging Colombia on penalties; treated as corroborating public-facing route language."
       ],
       "sources": [
         {
@@ -9696,12 +9718,28 @@
           "confidence": "medium-high"
         },
         {
-          "label": "ESPN W96 live-state guard",
+          "label": "ESPN W96 final penalties actualization",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/summary?event=760508",
           "sourceName": "ESPN public API",
-          "fetchedAt": "2026-07-07T21:56:46Z",
-          "claimType": "context/live-score",
+          "fetchedAt": "2026-07-08T01:02:02Z",
+          "claimType": "confirmed/bracket-actualization",
           "confidence": "high"
+        },
+        {
+          "label": "Soren public worldcup data m095/m096 winners",
+          "url": "https://worldcup.kyasen.com/data/worldcup.json",
+          "sourceName": "Soren public worldcup data",
+          "fetchedAt": "2026-07-08T01:02:02Z",
+          "claimType": "confirmed/bracket-actualization",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Switzerland-Colombia route to Argentina search result",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/switzerland-colombia-match-report-highlights",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-08T01:02:02Z",
+          "claimType": "reported/search-indexed-bracket-actualization",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-07T22:21:13.745Z",
+  "generatedAt": "2026-07-08T01:02:54.784Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,8 +7,8 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 95,
-    "scheduledMatches": 9,
+    "finishedMatches": 96,
+    "scheduledMatches": 8,
     "nextWindow": [
       "m097",
       "m098",
@@ -185,14 +185,14 @@
       {
         "team": "Switzerland",
         "group": "Group B",
-        "played": 4,
+        "played": 5,
         "won": 3,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 0,
         "goalsFor": 9,
         "goalsAgainst": 3,
         "goalDiff": 6,
-        "points": 10
+        "points": 11
       },
       {
         "team": "Canada",
@@ -635,14 +635,14 @@
       {
         "team": "Colombia",
         "group": "Group K",
-        "played": 4,
+        "played": 5,
         "won": 3,
-        "drawn": 1,
+        "drawn": 2,
         "lost": 0,
         "goalsFor": 5,
         "goalsAgainst": 1,
         "goalDiff": 4,
-        "points": 10
+        "points": 11
       },
       {
         "team": "Portugal",
@@ -2489,9 +2489,17 @@
       "team1": "Switzerland",
       "team2": "Colombia",
       "venue": "Vancouver",
-      "status": "scheduled",
-      "score": null,
-      "source": "openfootball/worldcup.json"
+      "status": "finished",
+      "score": [
+        0,
+        0
+      ],
+      "source": "openfootball/worldcup.json",
+      "shootoutScore": [
+        4,
+        3
+      ],
+      "winner": "Switzerland"
     },
     {
       "id": "m097",
@@ -2784,27 +2792,27 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.07885960196581762,
-        "draw": 0.1942249420768389,
-        "away": 0.7269154559573435
+        "home": 0.08323753647192277,
+        "draw": 0.19762283212131024,
+        "away": 0.719139631406767
       },
       "expectedGoals": [
-        0.46,
-        1.92
+        0.47,
+        1.91
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 Switzerland，但平局還有 19%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Switzerland，但平局還有 20%；別急著開香檳，足球最會打臉。",
         "story": "Switzerland 底牌比較硬；Qatar 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "25.9",
+            "value": "25.1",
             "note": "Switzerland 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.46 : 1.92",
+            "value": "0.47 : 1.91",
             "note": "最像 0-1"
           },
           {
@@ -2815,9 +2823,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Qatar 61.7；Switzerland 87.6",
-        "預期進球 0.46 : 1.92，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 25.9 分，我暫時站 Switzerland"
+        "底牌分：Qatar 61.7；Switzerland 86.8",
+        "預期進球 0.47 : 1.91，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 25.1 分，我暫時站 Switzerland"
       ]
     },
     "m013": {
@@ -3563,27 +3571,27 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.06718226161268319,
-        "draw": 0.184501360621125,
-        "away": 0.7483163777661918
+        "home": 0.07125759885380666,
+        "draw": 0.18801015229206144,
+        "away": 0.7407322488541319
       },
       "expectedGoals": [
-        0.41,
-        1.97
+        0.43,
+        1.95
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 Colombia，但平局還有 18%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Colombia，但平局還有 19%；別急著開香檳，足球最會打臉。",
         "story": "Colombia 底牌比較硬；Uzbekistan 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "28.1",
+            "value": "27.3",
             "note": "Colombia 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.41 : 1.97",
+            "value": "0.43 : 1.95",
             "note": "最像 0-1"
           },
           {
@@ -3594,9 +3602,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Uzbekistan 58.1；Colombia 86.3",
-        "預期進球 0.41 : 1.97，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 28.1 分，我暫時站 Colombia"
+        "底牌分：Uzbekistan 58.1；Colombia 85.5",
+        "預期進球 0.43 : 1.95，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 27.3 分，我暫時站 Colombia"
       ]
     },
     "m003": {
@@ -3642,16 +3650,16 @@
     },
     "m009": {
       "pick": "Switzerland",
-      "confidence": 0.790608905694568,
+      "confidence": 0.7801793464049168,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6856993956281192,
-        "draw": 0.2114318202240323,
-        "away": 0.10286878414784839
+        "home": 0.6776142942288348,
+        "draw": 0.21457725696500832,
+        "away": 0.10780844880615692
       },
       "expectedGoals": [
-        1.84,
-        0.54
+        1.82,
+        0.56
       ],
       "score": "1-0",
       "commentary": {
@@ -3660,25 +3668,25 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "18.8",
+            "value": "18.0",
             "note": "Switzerland 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.84 : 0.54",
+            "value": "1.82 : 0.56",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "10%",
+            "value": "11%",
             "note": "Bosnia & Herzegovina 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Switzerland 87.6；Bosnia & Herzegovina 68.7",
-        "預期進球 1.84 : 0.54，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 18.8 分，我暫時站 Switzerland"
+        "底牌分：Switzerland 86.8；Bosnia & Herzegovina 68.7",
+        "預期進球 1.82 : 0.56，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 18.0 分，我暫時站 Switzerland"
       ]
     },
     "m010": {
@@ -4544,16 +4552,16 @@
     },
     "m064": {
       "pick": "Colombia",
-      "confidence": 0.7742771883953696,
+      "confidence": 0.7637233049847328,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6730434816656509,
-        "draw": 0.2163225185004693,
-        "away": 0.11063399983387986
+        "home": 0.6648784635497216,
+        "draw": 0.21938108087284175,
+        "away": 0.11574045557743663
       },
       "expectedGoals": [
-        1.81,
-        0.57
+        1.79,
+        0.59
       ],
       "score": "1-0",
       "commentary": {
@@ -4562,53 +4570,53 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "17.6",
+            "value": "16.8",
             "note": "Colombia 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.81 : 0.57",
+            "value": "1.79 : 0.59",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "11%",
+            "value": "12%",
             "note": "Democratic Republic of the Congo 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Colombia 86.3；Democratic Republic of the Congo 68.7",
-        "預期進球 1.81 : 0.57，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 17.6 分，我暫時站 Colombia"
+        "底牌分：Colombia 85.5；Democratic Republic of the Congo 68.7",
+        "預期進球 1.79 : 0.59，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 16.8 分，我暫時站 Colombia"
       ]
     },
     "m011": {
       "pick": "Switzerland",
-      "confidence": 0.7246280022019764,
-      "tag": "我敢站隊",
+      "confidence": 0.7137491244504958,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.6347232675997757,
-        "draw": 0.23002421259045305,
-        "away": 0.13525251980977135
+        "home": 0.6263572887336053,
+        "draw": 0.23279562095995873,
+        "away": 0.140847090306436
       },
       "expectedGoals": [
-        1.73,
-        0.65
+        1.71,
+        0.67
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Switzerland，但平局還有 23%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場中等站 Switzerland，但平局還有 23%；別急著開香檳，足球最會打臉。",
         "story": "Switzerland 底牌比較硬；Canada 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "13.9",
+            "value": "13.1",
             "note": "Switzerland 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.73 : 0.65",
+            "value": "1.71 : 0.67",
             "note": "最像 1-0"
           },
           {
@@ -4619,9 +4627,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Switzerland 87.6；Canada 73.7",
-        "預期進球 1.73 : 0.65，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 13.9 分，我暫時站 Switzerland"
+        "底牌分：Switzerland 86.8；Canada 73.7",
+        "預期進球 1.71 : 0.67，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 13.1 分，我暫時站 Switzerland"
       ]
     },
     "m012": {
@@ -5405,43 +5413,43 @@
     },
     "m065": {
       "pick": "Portugal",
-      "confidence": 0.5400567100250674,
+      "confidence": 0.5514930142538702,
       "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.23971306871521592,
-        "draw": 0.2660453529849483,
-        "away": 0.49424157829983584
+        "home": 0.23265158213868772,
+        "draw": 0.26449223223518176,
+        "away": 0.5028561856261305
       },
       "expectedGoals": [
-        0.92,
-        1.46
+        0.91,
+        1.47
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場保守站 Portugal，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Portugal，但平局還有 26%；別急著開香檳，足球最會打臉。",
         "story": "Portugal 底牌比較硬；Colombia 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "10.3",
+            "value": "11.0",
             "note": "Portugal 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.92 : 1.46",
+            "value": "0.91 : 1.47",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "24%",
+            "value": "23%",
             "note": "Colombia 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Colombia 86.3；Portugal 96.5",
-        "預期進球 0.92 : 1.46，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 10.3 分，我暫時站 Portugal"
+        "底牌分：Colombia 85.5；Portugal 96.5",
+        "預期進球 0.91 : 1.47，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 11.0 分，我暫時站 Portugal"
       ]
     },
     "m066": {
@@ -6061,30 +6069,30 @@
     },
     "m085": {
       "pick": "Switzerland",
-      "confidence": 0.78605605974522,
+      "confidence": 0.7755909506390768,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.682168701664686,
-        "draw": 0.2128145860069276,
-        "away": 0.10501671232838636
+        "home": 0.6740606129170454,
+        "draw": 0.215936205954972,
+        "away": 0.1100031811279826
       },
       "expectedGoals": [
-        1.83,
-        0.55
+        1.81,
+        0.57
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Switzerland，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Switzerland，但平局還有 22%；別急著開香檳，足球最會打臉。",
         "story": "Switzerland 底牌比較硬；Algeria 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "18.5",
+            "value": "17.7",
             "note": "Switzerland 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.83 : 0.55",
+            "value": "1.81 : 0.57",
             "note": "最像 1-0"
           },
           {
@@ -6095,9 +6103,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Switzerland 87.6；Algeria 69.1",
-        "預期進球 1.83 : 0.55，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 18.5 分，我暫時站 Switzerland"
+        "底牌分：Switzerland 86.8；Algeria 69.1",
+        "預期進球 1.81 : 0.57，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 17.7 分，我暫時站 Switzerland"
       ]
     },
     "m088": {
@@ -6184,16 +6192,16 @@
     },
     "m087": {
       "pick": "Colombia",
-      "confidence": 0.7430625642151885,
+      "confidence": 0.732295244181401,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6489245855454727,
-        "draw": 0.22513959929636443,
-        "away": 0.12593581515816282
+        "home": 0.6406260123945993,
+        "draw": 0.2280214851374776,
+        "away": 0.13135250246792318
       },
       "expectedGoals": [
-        1.76,
-        0.62
+        1.74,
+        0.64
       ],
       "score": "1-0",
       "commentary": {
@@ -6202,12 +6210,12 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "15.3",
+            "value": "14.5",
             "note": "Colombia 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.76 : 0.62",
+            "value": "1.74 : 0.64",
             "note": "最像 1-0"
           },
           {
@@ -6218,9 +6226,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Colombia 86.3；Ghana 71.0",
-        "預期進球 1.76 : 0.62，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 15.3 分，我暫時站 Colombia"
+        "底牌分：Colombia 85.5；Ghana 71.0",
+        "預期進球 1.74 : 0.64，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 14.5 分，我暫時站 Colombia"
       ]
     },
     "m090": {
@@ -6546,7 +6554,7 @@
         ]
       },
       "reasons": [
-        "底牌分：Switzerland 87.6；Colombia 86.3",
+        "底牌分：Switzerland 86.8；Colombia 85.5",
         "預期進球 1.41 : 0.97，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
@@ -6862,12 +6870,12 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 85,
-      "correct": 65,
+      "points": 86,
+      "correct": 66,
       "exact": 10,
-      "total": 95,
+      "total": 96,
       "rank": 1,
-      "accuracy": 0.6842105263157895
+      "accuracy": 0.6875
     },
     {
       "id": "soren",
@@ -6876,20 +6884,20 @@
       "points": 83,
       "correct": 58,
       "exact": 11,
-      "total": 95,
+      "total": 96,
       "rank": 2,
-      "accuracy": 0.6105263157894737
+      "accuracy": 0.6041666666666666
     },
     {
       "id": "draw",
       "name": "Draw Baseline",
       "desc": "保守押平局",
-      "points": 47,
-      "correct": 23,
+      "points": 48,
+      "correct": 24,
       "exact": 12,
-      "total": 95,
+      "total": 96,
       "rank": 3,
-      "accuracy": 0.24210526315789474
+      "accuracy": 0.25
     }
   ],
   "paperBankroll": {
@@ -6897,36 +6905,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 316.74,
-    "openStake": 25.2,
-    "totalValue": 316.74,
-    "roi": 2.167,
+    "bankroll": 312.04,
+    "openStake": 21.95,
+    "totalValue": 312.04,
+    "roi": 2.12,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m083",
-        "kickoffUtc": "2026-07-02T23:00:00.000Z",
-        "stage": "Round of 32",
-        "team1": "Portugal",
-        "team2": "Croatia",
-        "pick": "Portugal",
-        "outcome": "home",
-        "stake": 8,
-        "decimalOdds": 2.32,
-        "edge": 0.406,
-        "modelProbability": 0.606,
-        "marketProxyProbability": 0.405,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-02T22:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Portugal，但平局還有 24%；別急著開香檳，足球最會打臉。",
-        "status": "won",
-        "score": [
-          2,
-          1
-        ],
-        "profit": 10.56
-      },
       {
         "matchId": "m085",
         "kickoffUtc": "2026-07-03T03:00:00.000Z",
@@ -6937,13 +6921,13 @@
         "outcome": "home",
         "stake": 8,
         "decimalOdds": 2.29,
-        "edge": 0.562,
-        "modelProbability": 0.682,
+        "edge": 0.544,
+        "modelProbability": 0.674,
         "marketProxyProbability": 0.41,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-03T02:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 Switzerland，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "reason": "我這場偏明確站 Switzerland，但平局還有 22%；別急著開香檳，足球最會打臉。",
         "status": "won",
         "score": [
           2,
@@ -7009,8 +6993,8 @@
         "outcome": "home",
         "stake": 8,
         "decimalOdds": 2.29,
-        "edge": 0.486,
-        "modelProbability": 0.649,
+        "edge": 0.467,
+        "modelProbability": 0.641,
         "marketProxyProbability": 0.41,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-04T00:30:00.000Z",
@@ -7190,9 +7174,7 @@
           2
         ],
         "profit": 7.12
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m096",
         "kickoffUtc": "2026-07-07T20:00:00.000Z",
@@ -7210,8 +7192,15 @@
         "lockedAtUtc": "2026-07-07T19:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 Switzerland，但平局還有 27%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
-      },
+        "status": "lost",
+        "score": [
+          0,
+          0
+        ],
+        "profit": -4.25
+      }
+    ],
+    "pending": [
       {
         "matchId": "m097",
         "kickoffUtc": "2026-07-09T20:00:00.000Z",
@@ -7287,9 +7276,7 @@
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 W95，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "status": "pending"
-      }
-    ],
-    "watchlist": [
+      },
       {
         "matchId": "m101",
         "kickoffUtc": "2026-07-14T19:00:00.000Z",
@@ -7307,8 +7294,10 @@
         "lockedAtUtc": "2026-07-14T18:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場保守站 W97，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "status": "watchlist"
-      },
+        "status": "pending"
+      }
+    ],
+    "watchlist": [
       {
         "matchId": "m102",
         "kickoffUtc": "2026-07-15T19:00:00.000Z",
