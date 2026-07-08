@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-08T10:08:35Z",
-  "status": "matchday scout: 八強前 48 小時加固 France-Morocco / Spain-Belgium 官方 match-centre 與 paper odds rails，並為 7 天內第二場準決賽 m102 建立 bracket-watch。",
-  "headline": "Soren 八強雷達更新：France-Morocco、Spain-Belgium 補上官方即時入口與市場參考；m102 準決賽先畫 W99 vs W100 路線，不把未知隊名寫成玄學。",
+  "generatedAt": "2026-07-08T16:16:05Z",
+  "status": "matchday scout: 八強前 28–81 小時加固 France-Morocco / Spain-Belgium 臨場入口、紙上市場與社群搜尋線索，並替 Norway-England、Argentina-Switzerland 與兩場準決賽補官方路線。",
+  "headline": "Soren 八強雷達更新：m097/m098 補上 FotMob/ESPN/Yahoo/CBS 等即時與市場參考，m099–m102 補官方 match-centre / 球隊路線；社群裁判噪音只當公開討論線索，不當民意結論。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -9429,8 +9429,8 @@
     {
       "matchId": "m097",
       "match": "France vs Morocco",
-      "sourceType": "official match-centre + official preview + media team-news/injury watch + paper odds reference",
-      "title": "France-Morocco 倒數：Mbappé 火力線很亮，但 Morocco 的 Saibari 腿筋疑雲讓「復仇劇本」先被醫療室剪了一刀。",
+      "sourceType": "official match-centre + media team-news/injury watch + live-centre/odds/social-search rails",
+      "title": "France-Morocco 進入倒數：官方入口已夠，現在多加臨場數據、CBS 市場溫度與裁判社群噪音——但噪音不是證據。",
       "sorenTake": "FIFA 已把這場正式端上八強桌，Goal/Sports Mole 補到 team-news 與預測 XI 脈絡：France 仍是更完整的進攻機器，Morocco 則靠 Bounou、Hakimi 與中場韌性活著。關鍵提醒：Saibari 傷情只按 reported fitness watch 處理，別把預測 XI 當官方名單。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M097：W89 vs W90，Boston Stadium / Foxborough，2026-07-09 20:00 UTC。",
@@ -9445,7 +9445,10 @@
         "Goal.com 文內提到 Morocco 前場 Ismael Saibari 因 hamstring injury 成為 major doubt；這是 reported injury watch，正式缺陣仍等官方/球隊名單。",
         "Sports Mole 八強預覽同樣列 team news / possible lineups，並提到 Saibari 早早退場後是 Morocco 主要 fitness doubt；France 端則維持 Mbappé、Dembélé、Olise、Barcola 火力敘事。",
         "FIFA match-centre 已可連線作為 France-Morocco 臨場官方入口；正式先發未發布前，它只證明賽事/比分/之後 lineups 來源，不替任何 predicted XI 背書。",
-        "ESPN odds 頁提供 France-Morocco 的公開市場參考；Soren 只把它當 paper-simulation price check，不能變成下注建議，也不代表模型底層邏輯。"
+        "ESPN odds 頁提供 France-Morocco 的公開市場參考；Soren 只把它當 paper-simulation price check，不能變成下注建議，也不代表模型底層邏輯。",
+        "FotMob 已開 France-Morocco 即時頁，列明 2026-07-09 20:00 UTC，提供 live results、H2H、lineups、player ratings、shotmap 等臨場資料入口；正式先發仍等官方/賽事頁確認。",
+        "CBS Sports 賽前 odds/prediction 頁把 France-Morocco 定位為八強市場熱點；這只作 paper simulation 的公開市場溫度，不是下注建議。",
+        "HITC 報導社群對 FIFA 任命阿根廷裁判組吹 France-Morocco 有反應；Soren 只把它列為 social-search / public-buzz 線索，不假裝讀完留言或推論整體民意。"
       ],
       "sources": [
         {
@@ -9551,6 +9554,30 @@
           "fetchedAt": "2026-07-08T10:08:35Z",
           "claimType": "odds-reference",
           "confidence": "high"
+        },
+        {
+          "label": "FotMob France-Morocco live centre",
+          "url": "https://www.fotmob.com/matches/morocco-vs-france/1e78fs",
+          "sourceName": "FotMob",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "CBS Sports France-Morocco odds reference",
+          "url": "https://www.cbssports.com/soccer/news/france-morocco-odds-prediction-line-time-2026-world-cup-quarterfinals-picks/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "HITC referee social-search coverage",
+          "url": "https://www.hitc.com/france-vs-morocco-referee-appointment-sparks-backlash-as-fans-spot-confusing-detail/",
+          "sourceName": "HITC",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "social-search/context",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -9558,8 +9585,8 @@
     {
       "matchId": "m098",
       "match": "Spain vs Belgium",
-      "sourceType": "official match-centre + official preview + squad baseline + bracket actualization + media team-news watch",
-      "title": "Spain-Belgium 官方預覽補上線：Yamal/Spain 控球刀法撞 De Bruyne/Lukaku 效率拳，這不是美麗足球展覽，是誰先犯錯誰被收屍。",
+      "sourceType": "official match-centre + official/team page + media team-news watch + live-centre/odds rails",
+      "title": "Spain-Belgium 從美學變肉搏：RFEF 確認西班牙回到洛杉磯備戰，ESPN/FotMob/Yahoo 把市場與臨場入口也擺上桌。",
       "sorenTake": "FIFA 已開 Spain-Belgium 八強 preview，UEFA 賽程頁確認 Spain 晉級路線與 7/10 Los Angeles 對 Belgium。Belgium 對 USA 前的 team-news 線索顯示 Rudi Garcia 當時沒有重大傷停焦慮；但這仍是上一輪/賽前媒體訊號，本站只當 availability watch，不當最終首發。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M098：W93 vs W94，Los Angeles Stadium / Inglewood，2026-07-10 19:00 UTC。",
@@ -9574,7 +9601,11 @@
         "UEFA Spain World Cup page 列出 Spain 7/2 3-0 Austria、7/6 1-0 Portugal，並確認 7/10 quarter-finals Spain vs Belgium at Los Angeles。",
         "Evening Standard 對 Belgium-USA 賽前 team news 曾稱 Rudi Garcia 無 injury concerns；此訊號只能延伸為 Belgium availability watch，不能替代 Spain-Belgium 正式名單。",
         "FIFA match-centre 已可連線作為 Spain-Belgium 官方臨場入口；真正 confirmed XI 要等 FIFA/隊伍發布，現在只當 match-centre rail。",
-        "FIFA Belgium squad baseline 可補 Rudi Garcia / Lukaku 名單背景；這是 tournament roster，不是 7/10 對 Spain 的傷停或先發確認。"
+        "FIFA Belgium squad baseline 可補 Rudi Garcia / Lukaku 名單背景；這是 tournament roster，不是 7/10 對 Spain 的傷停或先發確認。",
+        "RFEF 官方頁以「Spain Always Wanted to Return to L.A.」更新西班牙回到洛杉磯準備對 Belgium 的八強；這是球隊行程/備戰脈絡，不是首發確認。",
+        "Sports Mole 新增 Spain-Belgium 八強 prediction/team news/possible lineups；屬媒體預測與隊聞觀察，不能升格為 confirmed XI。",
+        "FotMob 已開 Spain-Belgium 即時頁，列明 2026-07-10 19:00 UTC，提供 live results、H2H、lineups、ratings、shotmap 等臨場入口。",
+        "ESPN odds 頁與 Yahoo Sports best-bets 頁提供 Spain-Belgium 的公開市場參考；本站只用於 paper simulation calibration，不導向真金流。"
       ],
       "sources": [
         {
@@ -9680,6 +9711,46 @@
           "fetchedAt": "2026-07-08T10:08:35Z",
           "claimType": "confirmed/squad-baseline",
           "confidence": "high"
+        },
+        {
+          "label": "RFEF Spain returns to LA",
+          "url": "https://rfef.es/en/noticias/Spain-Always-Wanted-to-Return-to-LA",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "Sports Mole Spain-Belgium team news",
+          "url": "https://www.sportsmole.co.uk/football/spain/world-cup-2026/preview/spain-vs-belgium-prediction-team-news-lineups_600878.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "FotMob Spain-Belgium live centre",
+          "url": "https://www.fotmob.com/matches/spain-vs-belgium/1uu52b",
+          "sourceName": "FotMob",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Spain-Belgium odds reference",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760511",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
+        },
+        {
+          "label": "Yahoo Sports Spain-Belgium odds context",
+          "url": "https://sports.yahoo.com/articles/world-cup-2026-quarter-final-121500044.html?fr=sycsrp_catchall",
+          "sourceName": "Yahoo Sports",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "odds-reference/context",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -9687,8 +9758,8 @@
     {
       "matchId": "m099",
       "match": "Norway vs England",
-      "sourceType": "official preview + bracket actualization + public/social search watch",
-      "title": "Norway-England 官方 preview 到位：Haaland vs Kane 是海報，真正問題是 England 能不能把挪威的第一腳反擊拔掉插頭。",
+      "sourceType": "official preview + official team match-centre + bracket actualization + paper odds watch",
+      "title": "Norway-England 補上英格蘭官方路線：Haaland vs Kane 是海報，England Football 的 Miami match-centre 才是硬入口。",
       "sorenTake": "FIFA 已把 Norway-England 八強 preview 放出來，Yahoo/社群索引也都在炒 Haaland 對 England 的劇本。Soren 只把 Facebook/Instagram 搜尋結果當 public buzz，不假裝讀完留言；硬事實仍是 FIFA match centre 與本地 bracket actualization。",
       "signals": [
         "Local worldcup.json lists M099 as quarter-final W91 vs W92 at 2026-07-11T21:00Z; participants remain placeholders until M91/M92 finish.",
@@ -9700,7 +9771,9 @@
         "M099 kickoff remains 2026-07-11T21:00Z at Miami Gardens；official upstream match reports still anchor W91=Norway and W92=England until dedicated quarterfinal preview pages appear.",
         "FIFA Norway-England quarter-final preview 已上線，明示 Miami 八強、team news/where to watch/tickets 等官方賽前資訊。",
         "Yahoo Sports 賽程文確認 England 在 Azteca 3-2 擊敗 Mexico 後，將對上 Norway 與 Erling Haaland。",
-        "公開 Facebook/Instagram 搜尋結果顯示 Norway-England 被包裝成 Haaland/Kane/Haaland vs England 話題；只作 social-search buzz，不推論完整民意。"
+        "公開 Facebook/Instagram 搜尋結果顯示 Norway-England 被包裝成 Haaland/Kane/Haaland vs England 話題；只作 social-search buzz，不推論完整民意。",
+        "England Football 已開 Norway-England 八強 match centre，描述 Three Lions 將在 Miami 對 Norway，並把 fixture 細節落到 7 月 11 日。",
+        "England Football knockout-stage fixture article確認 England 3-2 Mexico 後八強對 Norway；這是官方球隊路線，非第三方 bracket 猜測。"
       ],
       "sources": [
         {
@@ -9766,6 +9839,22 @@
           "fetchedAt": "2026-07-08T04:01:57Z",
           "claimType": "reported/bracket-actualization",
           "confidence": "medium-high"
+        },
+        {
+          "label": "England Football Norway-England match centre",
+          "url": "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/World-Cup/norway-england-fifa-world-cup-quarter-final-saturday-11-july-2026-match-centre",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "confirmed/team-match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "England Football quarterfinal fixture details",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/06/england-fixture-details-knockout-stage-20260706",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "confirmed/bracket-actualization",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -9773,8 +9862,8 @@
     {
       "matchId": "m100",
       "match": "Argentina vs Switzerland",
-      "sourceType": "bracket actualization + postmatch route context + public buzz watch",
-      "title": "Argentina-Switzerland 路線確認：Messi 又活過一關，Swiss 也不是來當背景板——他們剛把 Colombia 拖進 PK 冰箱。",
+      "sourceType": "official match-centre + official squad baseline + bracket actualization + odds/context watch",
+      "title": "Argentina-Switzerland 不只 Messi farewell tour：FIFA match-centre 與 AFA 名單補上硬底，Yahoo 市場文只當紙上溫度。",
       "sorenTake": "FOX round-up 把同一天的兩條線講清楚：Messi/Argentina 晉級，Switzerland 繼續製造驚喜。這對 m100 的價值不是預測首發，而是公開敘事：Argentina 帶著戲劇性反撲光環，Swiss 帶著低比分耐心與十二碼自信。",
       "signals": [
         "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
@@ -9784,7 +9873,10 @@
         "Local worldcup.json still stores M100 as W95 vs W96 placeholder, but its feeders are now finished: m095 winner=Argentina and m096 winner=Switzerland.",
         "ESPN summary/scoreboard confirms m096 completed=true with Switzerland 0-0 Colombia, penalties 4-3; this upgrades prior W96 live-state guard into bracket actualization.",
         "FIFA search-indexed match report says Switzerland will take on Argentina in the last eight after edging Colombia on penalties; treated as corroborating public-facing route language.",
-        "FOX Sports round-up 標題直接把 Messi moves on 與 Switzerland continues surprise 並列，提供 Argentina-Switzerland 八強的主流敘事背景。"
+        "FOX Sports round-up 標題直接把 Messi moves on 與 Switzerland continues surprise 並列，提供 Argentina-Switzerland 八強的主流敘事背景。",
+        "FIFA match centre 已可連到 Argentina-Switzerland 八強頁，作為 Kansas City 臨場比分/陣容官方入口。",
+        "AFA 官方 26 人名單頁提供 Argentina 世界盃陣容底稿；這是 roster grounding，不代表八強先發。",
+        "Yahoo Sports Argentina-Switzerland prediction/best-bets 頁把 defending champions 與 Switzerland 韌性列為市場敘事；只作 paper odds/context 參考。"
       ],
       "sources": [
         {
@@ -9850,6 +9942,30 @@
           "fetchedAt": "2026-07-08T04:01:57Z",
           "claimType": "context/bracket-actualization",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Argentina-Switzerland match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289289/400021537",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA Argentina 26-player squad",
+          "url": "https://www.afa.com.ar/es/posts/lista-de-los-26-jugadores-de-la-seleccion-argentina-para-defender-el-titulo-en-la-copa-del-mundo-2026",
+          "sourceName": "AFA",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "confirmed/squad-baseline",
+          "confidence": "high"
+        },
+        {
+          "label": "Yahoo Sports Argentina-Switzerland odds context",
+          "url": "https://sports.yahoo.com/articles/world-cup-2026-quarter-final-123000383.html?fr=sycsrp_catchall",
+          "sourceName": "Yahoo Sports",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "odds-reference/context",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -9857,13 +9973,14 @@
     {
       "matchId": "m101",
       "match": "W97 vs W98",
-      "sourceType": "confirmed schedule + bracket-watch",
+      "sourceType": "confirmed schedule + official match-centre + bracket-watch",
       "title": "M101 準決賽先開雷達：W97 vs W98 會從 France/Morocco 與 Spain/Belgium 兩條八強路線中長出來，現在只能畫路線，不能裝先知。",
       "sorenTake": "這張準決賽離現在不到 7 天，但對手仍未決。Soren 先把公開 bracket rails 補上：m097 贏家對 m098 贏家，可能是 France/Morocco/Spain/Belgium 任兩隊。等八強落地再實名化；現在若寫成固定對戰，就是拿水晶球冒充資料庫。",
       "signals": [
         "本地 worldcup.json nextWindow 已列 m101，kickoffUtc 為 2026-07-14T19:00:00Z，主客仍是 W97 vs W98。",
         "FIFA/NBC/ESPN bracket sources 提供淘汰賽路線與賽程；m101 只能確認準決賽槽位，不能確認隊名。",
-        "m097/m098 已實名為 France-Morocco 與 Spain-Belgium，因此 m101 是這兩場勝者的公開 bracket-watch。"
+        "m097/m098 已實名為 France-Morocco 與 Spain-Belgium，因此 m101 是這兩場勝者的公開 bracket-watch。",
+        "FIFA Match 101 semi-final match-centre 已可連線；隊名仍是 W97 vs W98，先守住 placeholder，不把 France/Morocco/Spain/Belgium 的任何一方寫成已晉級。"
       ],
       "sources": [
         {
@@ -9889,6 +10006,14 @@
           "fetchedAt": "2026-07-08T04:01:57Z",
           "claimType": "context/bracket-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA M101 semi-final match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289290/400021541",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -9896,14 +10021,15 @@
     {
       "matchId": "m102",
       "match": "W99 vs W100",
-      "sourceType": "confirmed schedule + bracket-watch",
+      "sourceType": "confirmed schedule + official match-centre + bracket-watch",
       "title": "M102 準決賽先佈線：W99 vs W100 會從 Norway/England 與 Argentina/Switzerland 路線長出來，隊名未落地前別裝通靈。",
       "sorenTake": "這場在 Atlanta，距離現在不到 7 天，但 local worldcup.json 仍是 W99 vs W100。Soren 先補官方/主流 bracket rails：m099 與 m100 的勝者才會進來。現在最專業的動作不是亂押人名，而是把路線、場地與後續 final/third-place 連動講清楚。",
       "signals": [
         "本地 worldcup.json nextWindow 已列 m102，kickoffUtc 為 2026-07-15T19:00:00Z，場地 Atlanta，對戰仍是 W99 vs W100。",
         "W99 來自 m099 Norway vs England；W100 來自 m100 Argentina vs Switzerland。八強未踢完前，m102 只能是 bracket-watch，不可提前實名化。",
         "ESPN bracket/schedule 與 FIFA 官方 tournament/schedule/host-city pages 可作公開導覽；若與本地資料衝突，官方與本地已驗證 worldcup.json 優先。",
-        "這張卡只服務首頁 compact public viewpoint；預測、paper bankroll 與戰術細節要等 m099/m100 完場後再寫進對應 deep-dive。"
+        "這張卡只服務首頁 compact public viewpoint；預測、paper bankroll 與戰術細節要等 m099/m100 完場後再寫進對應 deep-dive。",
+        "FIFA Match 102 semi-final match-centre 已可連線；隊名仍是 W99 vs W100，等 Norway/England 與 Argentina/Switzerland 打完再 actualize。"
       ],
       "sources": [
         {
@@ -9945,6 +10071,14 @@
           "fetchedAt": "2026-07-08T10:08:35Z",
           "claimType": "context/venue",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA M102 semi-final match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289290/400021540",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-08T16:16:05Z",
+          "claimType": "confirmed/schedule-placeholder",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
