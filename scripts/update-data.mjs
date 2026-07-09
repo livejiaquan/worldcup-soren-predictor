@@ -7,6 +7,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const root = path.resolve(__dirname, '..')
 const MATCHES_URL = 'https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json'
 const GROUPS_URL = 'https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json'
+const FINAL_RESULT_GRACE_MINUTES = 150
 
 const RESULT_OVERRIDES = new Map()
 
@@ -46,8 +47,23 @@ function parseKickoff(date, time) {
   const utcMs = Date.UTC(Number(date.slice(0, 4)), Number(date.slice(5, 7)) - 1, Number(date.slice(8, 10)), Number(hh) - offset, Number(mm), 0)
   return new Date(utcMs).toISOString()
 }
+function classifyLifecycle(match, nowMs) {
+  if (match.status === 'finished' || Array.isArray(match.score)) return 'final'
+  const kickoffMs = Date.parse(match.kickoffUtc || '')
+  if (!Number.isFinite(kickoffMs)) return 'unscheduled'
+  if (nowMs >= kickoffMs + FINAL_RESULT_GRACE_MINUTES * 60 * 1000) return 'result-pending'
+  if (nowMs >= kickoffMs) return 'live-window'
+  return 'pre-match'
+}
+function resultTrustLabel(match, hasOverride) {
+  if (match.lifecycle === 'final') return hasOverride ? 'manual-source-override final' : 'upstream-final-score'
+  if (match.lifecycle === 'pre-match') return 'pre-match fixture'
+  if (match.lifecycle === 'live-window') return 'kickoff-started; final score not trusted yet'
+  if (match.lifecycle === 'result-pending') return 'awaiting source-backed final score'
+  return 'kickoff-time unavailable'
+}
 function stageLabel(match) { return match.group ? `${match.group.replace('Group ', '小組 ')} · ${match.round || '小組賽'}` : (match.round || '淘汰賽') }
-function normalizeMatch(match, index) {
+function normalizeMatch(match, index, nowMs) {
   const overrideKey = `${match.date}|${canonicalTeam(match.team1)}|${canonicalTeam(match.team2)}`
   const override = RESULT_OVERRIDES.get(overrideKey)
   const upstreamFinalScore = match.score?.et || match.score?.ft
@@ -63,6 +79,8 @@ function normalizeMatch(match, index) {
     : null
   const winner = override?.winner || (match.winner ? canonicalTeam(match.winner) : null) || shootoutWinner || scoreWinner
   const normalized = { id: `m${String(index + 1).padStart(3, '0')}`, round: match.round || '', stage: stageLabel(match), group: match.group || null, date: match.date, time: match.time || '', kickoffUtc: parseKickoff(match.date, match.time), team1: canonicalTeam(match.team1), team2: canonicalTeam(match.team2), venue: match.ground || '待定', status: hasScore ? 'finished' : 'scheduled', score: hasScore ? ft : null, source: override ? `openfootball/worldcup.json + override: ${override.source}` : 'openfootball/worldcup.json' }
+  normalized.lifecycle = classifyLifecycle(normalized, nowMs)
+  normalized.resultTrust = resultTrustLabel(normalized, Boolean(override))
   if (hasScore && shootoutScore) normalized.shootoutScore = shootoutScore
   if (hasScore && !normalized.group && winner) normalized.winner = winner
   return normalized
@@ -100,8 +118,8 @@ function buildLeaderboard(groups, matches) {
 }
 function fixtureWindow(matches) {
   const now = Date.now()
-  const upcoming = matches.filter((m) => m.status !== 'finished' && m.kickoffUtc && new Date(m.kickoffUtc).getTime() >= now).slice(0, 12)
-  return upcoming.length ? upcoming : matches.filter((m) => m.status !== 'finished').slice(0, 12)
+  const upcoming = matches.filter((m) => m.status !== 'finished' && m.lifecycle === 'pre-match' && m.kickoffUtc && new Date(m.kickoffUtc).getTime() >= now).slice(0, 12)
+  return upcoming.length ? upcoming : matches.filter((m) => m.status !== 'finished' && m.lifecycle === 'pre-match').slice(0, 12)
 }
 
 const PAPER_BANKROLL_START = '2026-06-26T08:00:00.000Z'
@@ -168,7 +186,7 @@ function buildPaperBankroll(matches, predictions) {
       bankroll = Number((bankroll + profit).toFixed(2))
       settled.push({ ...bet, status: won ? 'won' : 'lost', score: match.score, profit })
     } else if (edge > -0.08 && pending.length < 5) {
-      pending.push({ ...bet, status: 'pending' })
+      pending.push({ ...bet, status: match.lifecycle === 'pre-match' ? 'pending' : 'awaiting-final' })
     } else {
       candidates.push({ ...bet, status: 'watchlist' })
     }
@@ -190,14 +208,69 @@ function buildPaperBankroll(matches, predictions) {
   }
 }
 
+function buildDataQuality({ generatedAt, groups, matches, predictions, leaderboard, paperBankroll }) {
+  const errors = []
+  const warnings = []
+  const matchIds = new Set()
+  for (const match of matches) {
+    if (matchIds.has(match.id)) errors.push(`duplicate match id ${match.id}`)
+    matchIds.add(match.id)
+    if (match.status === 'finished' && !Array.isArray(match.score)) errors.push(`${match.id} is finished without a score`)
+    if (match.status !== 'finished' && Array.isArray(match.score)) errors.push(`${match.id} has a score but is not finished`)
+  }
+  const predictionIds = Object.keys(predictions || {})
+  if (predictionIds.length !== matches.length) errors.push(`prediction count ${predictionIds.length} does not match match count ${matches.length}`)
+  const lifecycleCounts = matches.reduce((acc, match) => {
+    acc[match.lifecycle] = (acc[match.lifecycle] || 0) + 1
+    return acc
+  }, {})
+  const pendingFinal = matches.filter((m) => m.lifecycle === 'live-window' || m.lifecycle === 'result-pending')
+  if (pendingFinal.length) warnings.push(`${pendingFinal.length} match(es) have kicked off but do not have source-backed final scores yet`)
+  const finishedMatches = matches.filter((m) => m.status === 'finished').length
+  const scheduledMatches = matches.length - finishedMatches
+  return {
+    status: errors.length ? 'fail' : warnings.length ? 'watch' : 'pass',
+    checkedAt: generatedAt,
+    thresholds: { finalResultGraceMinutes: FINAL_RESULT_GRACE_MINUTES },
+    counts: {
+      totalMatches: matches.length,
+      groups: groups.length,
+      teams: new Set(groups.flatMap((g) => g.teams || [])).size,
+      finishedMatches,
+      scheduledMatches,
+      predictions: predictionIds.length,
+      leaderboardRows: leaderboard.length,
+      paperSettled: paperBankroll.settled.length,
+      paperPending: paperBankroll.pending.length,
+      resultOverrides: RESULT_OVERRIDES.size,
+      groupStageMatches: matches.filter((m) => m.group).length,
+      lifecycle: lifecycleCounts,
+    },
+    labels: [
+      { key: 'feed', label: 'Open fixture feed parsed', status: errors.length ? 'fail' : 'pass', detail: `${matches.length} matches from openfootball/worldcup.json` },
+      { key: 'settlement', label: 'Final-only settlement guard', status: 'pass', detail: 'Leaderboards, paper bankroll, and public postmortems settle only when a score exists.' },
+      { key: 'liveGuard', label: 'Live is not final', status: pendingFinal.length ? 'watch' : 'pass', detail: pendingFinal.length ? `${pendingFinal.length} match(es) hidden behind final-score pending labels.` : 'No kicked-off match is waiting for a final result.' },
+      { key: 'overrides', label: 'Manual score overrides', status: RESULT_OVERRIDES.size ? 'watch' : 'pass', detail: RESULT_OVERRIDES.size ? `${RESULT_OVERRIDES.size} source-backed override(s) applied.` : 'No manual result overrides applied.' },
+    ],
+    pendingFinalMatchIds: pendingFinal.map((m) => m.id),
+    warnings,
+    errors,
+  }
+}
+
 await loadResultOverrides()
 const [rawMatches, rawGroups] = await Promise.all([getJson(MATCHES_URL), getJson(GROUPS_URL)])
+const generatedAt = new Date().toISOString()
+const generatedAtMs = Date.parse(generatedAt)
 const groups = (rawGroups.groups || []).map((g) => ({ name: g.name, teams: g.teams.map(canonicalTeam) }))
-const matches = (rawMatches.matches || []).map(normalizeMatch).sort((a, b) => String(a.kickoffUtc).localeCompare(String(b.kickoffUtc)))
-const standings = computeStandingsFromNormalized(groups, matches)
-const predictions = Object.fromEntries(matches.map((match) => [match.id, predictMatch(match, standings)]))
+const matches = (rawMatches.matches || []).map((match, index) => normalizeMatch(match, index, generatedAtMs)).sort((a, b) => String(a.kickoffUtc).localeCompare(String(b.kickoffUtc)))
+const predictionStandings = computeStandingsFromNormalized(groups, matches)
+const groupStandings = computeStandingsFromNormalized(groups, matches.filter((m) => m.group))
+const predictions = Object.fromEntries(matches.map((match) => [match.id, predictMatch(match, predictionStandings)]))
 const paperBankroll = buildPaperBankroll(matches, predictions)
-const data = { generatedAt: new Date().toISOString(), source: { matches: MATCHES_URL, groups: GROUPS_URL, note: 'Public openfootball data; predictions are deterministic research/entertainment estimates, not betting advice.' }, summary: { totalMatches: matches.length, finishedMatches: matches.filter((m) => m.status === 'finished').length, scheduledMatches: matches.filter((m) => m.status !== 'finished').length, nextWindow: fixtureWindow(matches).map((m) => m.id) }, groups, standings, matches, predictions, leaderboard: buildLeaderboard(groups, matches), paperBankroll }
+const leaderboard = buildLeaderboard(groups, matches)
+const dataQuality = buildDataQuality({ generatedAt, groups, matches, predictions, leaderboard, paperBankroll })
+const data = { generatedAt, source: { matches: MATCHES_URL, groups: GROUPS_URL, note: 'Public openfootball data; predictions are deterministic research/entertainment estimates, not betting advice.' }, summary: { totalMatches: matches.length, finishedMatches: matches.filter((m) => m.status === 'finished').length, scheduledMatches: matches.filter((m) => m.status !== 'finished').length, finalPendingMatches: dataQuality.pendingFinalMatchIds.length, nextWindow: fixtureWindow(matches).map((m) => m.id) }, dataQuality, groups, standings: groupStandings, matches, predictions, leaderboard, paperBankroll }
 await mkdir(path.join(root, 'public/data'), { recursive: true })
 await writeFile(path.join(root, 'public/data/worldcup.json'), JSON.stringify(data, null, 2), 'utf8')
 console.log(`Generated public/data/worldcup.json with ${matches.length} matches at ${data.generatedAt}`)

@@ -69,7 +69,37 @@ const leaderDesc = (row, lang) => {
   }[row.id] || row.desc
 }
 const scoreLabel = (match) => match?.shootoutScore ? `${match.score[0]}-${match.score[1]} (PK ${match.shootoutScore[0]}-${match.shootoutScore[1]})` : match?.score ? `${match.score[0]}-${match.score[1]}` : ''
-const resultText = (bet, lang = 'zh') => bet?.status === 'won' ? `${lang === 'en' ? 'Won' : '贏'} ${money(bet.profit)}` : bet?.status === 'lost' ? `${lang === 'en' ? 'Lost' : '輸'} ${money(Math.abs(bet.profit))}` : (lang === 'en' ? 'Pending' : '未結算')
+const FINAL_RESULT_GRACE_MINUTES = 150
+const HOUR_MS = 60 * 60 * 1000
+function runtimeLifecycle(match, nowMs = Date.now()) {
+  if (match?.status === 'finished' || Array.isArray(match?.score)) return 'final'
+  const kickoffMs = Date.parse(match?.kickoffUtc || '')
+  if (!Number.isFinite(kickoffMs)) return 'unscheduled'
+  if (nowMs >= kickoffMs + FINAL_RESULT_GRACE_MINUTES * 60 * 1000) return 'result-pending'
+  if (nowMs >= kickoffMs) return 'live-window'
+  return 'pre-match'
+}
+function scoreDisplay(match, prediction, lang, nowMs) {
+  const lifecycle = runtimeLifecycle(match, nowMs)
+  if (lifecycle === 'final') return scoreLabel(match)
+  if (lifecycle === 'pre-match') return prediction?.score || '—'
+  return lang === 'en' ? 'Final pending' : '等終場'
+}
+function scoreSubLabel(match, lang, t, nowMs) {
+  const lifecycle = runtimeLifecycle(match, nowMs)
+  if (lifecycle === 'final') return match?.shootoutScore ? 'FT+PK' : 'FT'
+  if (lifecycle === 'pre-match') return t.predict
+  return lang === 'en' ? 'not final' : '非終場'
+}
+function lifecycleText(match, lang, nowMs) {
+  const lifecycle = runtimeLifecycle(match, nowMs)
+  if (lifecycle === 'final') return lang === 'en' ? 'Final' : '已完賽'
+  if (lifecycle === 'pre-match') return lang === 'en' ? 'Pre-match' : '賽前'
+  if (lifecycle === 'live-window') return lang === 'en' ? 'Started, not final' : '已開賽，未終場'
+  if (lifecycle === 'result-pending') return lang === 'en' ? 'Awaiting final score' : '等待終場比分'
+  return lang === 'en' ? 'Time TBD' : '時間待定'
+}
+const resultText = (bet, lang = 'zh') => bet?.status === 'won' ? `${lang === 'en' ? 'Won' : '贏'} ${money(bet.profit)}` : bet?.status === 'lost' ? `${lang === 'en' ? 'Lost' : '輸'} ${money(Math.abs(bet.profit))}` : bet?.status === 'awaiting-final' ? (lang === 'en' ? 'Awaiting final' : '等終場') : (lang === 'en' ? 'Pending' : '未結算')
 const stageLabel = (stage, lang) => lang === 'en' ? String(stage || '').replace('小組 ', 'Group ') : stage
 const tagLabel = (tag, lang) => {
   if (lang !== 'en') return tag
@@ -112,8 +142,46 @@ function ProbBar({ prediction }) { const p = prediction.probabilities; return <d
 function SectionHead({ kicker, title, meta, children }) { return <div className="section-head"><div><p>{kicker}</p><h2>{title}</h2>{children}</div>{meta && <span>{meta}</span>}</div> }
 function StatCard({ label, value, sub, tone = 'neutral' }) { return <article className={`stat-card ${tone}`}><p>{label}</p><b>{value}</b><span>{sub}</span></article> }
 
+function DataQualityBadge({ data, lang, nowMs }) {
+  const diagnostics = data.dataQuality || {}
+  const generatedMs = Date.parse(data.generatedAt || '')
+  const ageHours = Number.isFinite(generatedMs) ? Math.max(0, (nowMs - generatedMs) / HOUR_MS) : null
+  const stale = ageHours === null || ageHours > 6
+  const dynamicPending = (data.matches || []).filter((match) => {
+    const lifecycle = runtimeLifecycle(match, nowMs)
+    return lifecycle === 'live-window' || lifecycle === 'result-pending'
+  })
+  const copy = lang === 'en'
+    ? {
+        kicker: 'DATA QUALITY', ok: 'Source-backed feed is healthy', watch: 'Data needs a final-score check',
+        age: ageHours === null ? 'age unknown' : `${ageHours < 1 ? '<1' : ageHours.toFixed(1)}h old`,
+        final: 'Final-only settlement', live: 'Live is not final', overrides: 'Overrides',
+        pending: `${dynamicPending.length} pending final`, clean: 'no live/final conflict',
+      }
+    : {
+        kicker: 'DATA QUALITY', ok: '公開來源資料正常', watch: '需要終場比分巡檢',
+        age: ageHours === null ? '時間未知' : `${ageHours < 1 ? '<1' : ageHours.toFixed(1)} 小時前生成`,
+        final: '只用終場結算', live: 'Live 不是 Final', overrides: '人工覆核',
+        pending: `${dynamicPending.length} 場等終場`, clean: '沒有 live/final 衝突',
+      }
+  const status = stale || dynamicPending.length || diagnostics.status === 'watch' || diagnostics.status === 'fail' ? 'watch' : 'pass'
+  const labelByKey = Object.fromEntries((diagnostics.labels || []).map((label) => [label.key, label]))
+  return <section className={`trust-strip ${status}`}>
+    <div>
+      <span>{copy.kicker}</span>
+      <b>{status === 'pass' ? copy.ok : copy.watch}</b>
+      <small>{copy.age} · {dynamicPending.length ? copy.pending : copy.clean}</small>
+    </div>
+    <div className="trust-pills">
+      <span>{copy.final}<em>{labelByKey.settlement?.status || 'pass'}</em></span>
+      <span>{copy.live}<em>{dynamicPending.length ? 'watch' : (labelByKey.liveGuard?.status || 'pass')}</em></span>
+      <span>{copy.overrides}<em>{data.dataQuality?.counts?.resultOverrides || 0}</em></span>
+    </div>
+  </section>
+}
 
-function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, lang }) {
+
+function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, lang, nowMs }) {
   const [activeId, setActiveId] = useState(nextMatches[0]?.id || data.summary.nextWindow?.[0])
   const active = nextMatches.find((m) => m.id === activeId) || nextMatches[0]
   const prediction = active ? predictions[active.id] : null
@@ -145,7 +213,7 @@ function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, 
       <div className="match-orbit">{nextMatches.slice(0, 8).map((m, idx) => <button type="button" key={m.id} className={m.id === active?.id ? 'active' : ''} style={{ '--i': idx }} onClick={() => setActiveId(m.id)}><span>{fmtDay(m.kickoffUtc, lang)}</span><b>{m.team1.split(' ')[0]} / {m.team2.split(' ')[0]}</b></button>)}</div>
       {active && prediction && <div className="arena-card">
         <div className="arena-card-head"><span>{stageLabel(active.stage, lang)}</span><button type="button" onClick={() => onSelect(active.id)}>{copy.inspect}</button></div>
-        <div className="arena-versus"><Team name={active.team1}/><strong>{prediction.score}</strong><Team name={active.team2}/></div>
+        <div className="arena-versus"><Team name={active.team1}/><strong className={runtimeLifecycle(active, nowMs) === 'pre-match' ? '' : 'guarded-score'}>{scoreDisplay(active, prediction, lang, nowMs)}</strong><Team name={active.team2}/></div>
         <div className="probability-portrait" style={{ '--home': `${Math.round(p.home * 100)}%`, '--draw': `${Math.round(p.draw * 100)}%`, '--away': `${Math.round(p.away * 100)}%` }}>
           {outcome.map((o) => <div key={o.key} className={`prob-lane ${o.tone}`}><span>{o.label}</span><b>{pct(o.value)}</b><i style={{ width: pct(o.value) }}/></div>)}
         </div>
@@ -157,7 +225,7 @@ function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, 
   </section>
 }
 
-function CommandCenter({ data, nextMatches, predictions, bankroll, lang, t }) {
+function CommandCenter({ data, nextMatches, predictions, bankroll, lang, t, nowMs }) {
   const next = nextMatches[0]
   const sharp = [...nextMatches].sort((a, b) => (predictions[b.id]?.confidence || 0) - (predictions[a.id]?.confidence || 0))[0]
   const trap = [...nextMatches].sort((a, b) => {
@@ -166,18 +234,19 @@ function CommandCenter({ data, nextMatches, predictions, bankroll, lang, t }) {
     return Math.min(pb.home || 0, pb.away || 0) - Math.min(pa.home || 0, pa.away || 0)
   })[0]
   const soren = data.leaderboard?.find((r) => r.id === 'soren')
+  const nextLifecycle = runtimeLifecycle(next, nowMs)
   return <section className="command-grid" id="today">
-    <StatCard label={t.nextCut} value={next ? `${next.team1} vs ${next.team2}` : t.TBD} sub={next ? `${fmtDate(next.kickoffUtc, lang)} · ${lang === 'en' ? 'pick' : '我站'} ${pickLabel(predictions[next.id]?.pick, lang)}` : t.waiting} tone="blue" />
+    <StatCard label={t.nextCut} value={next ? `${next.team1} vs ${next.team2}` : t.TBD} sub={next ? `${fmtDate(next.kickoffUtc, lang)} · ${nextLifecycle === 'pre-match' ? `${lang === 'en' ? 'pick' : '我站'} ${pickLabel(predictions[next.id]?.pick, lang)}` : lifecycleText(next, lang, nowMs)}` : t.waiting} tone="blue" />
     <StatCard label={t.strongest} value={sharp ? pickLabel(predictions[sharp.id]?.pick, lang) : '—'} sub={sharp ? `${sharp.team1} vs ${sharp.team2} · ${t.confidence} ${pct(predictions[sharp.id]?.confidence)}` : '—'} tone="green" />
     <StatCard label={t.trap} value={trap ? `${trap.team1} vs ${trap.team2}` : '—'} sub={trap ? `${t.trapRate} ${pct(Math.min(predictions[trap.id]?.probabilities?.home || 0, predictions[trap.id]?.probabilities?.away || 0))}` : '—'} tone="amber" />
     <StatCard label={t.bankroll} value={money(bankroll?.bankroll)} sub={`${t.roi} ${pct(bankroll?.roi)} · ${t.unsettled} ${money(bankroll?.openStake)}`} tone="violet" />
     <StatCard label={t.modelForm} value={`${soren?.points ?? 0} ${t.points}`} sub={`${t.hit} ${pct(soren?.accuracy)}，${t.noSwagger}`} />
   </section>
 }
-function CompactMatchCard({ match, prediction, paperBet, intel, onSelect, featured = false, lang, t }) {
+function CompactMatchCard({ match, prediction, paperBet, intel, onSelect, featured = false, lang, t, nowMs }) {
   return <article className={`match-card ${featured ? 'featured-card' : ''}`}>
     <div className="match-top"><span>{stageLabel(match.stage, lang)}</span><span>{fmtDate(match.kickoffUtc, lang)}</span></div>
-    <div className="teams-row"><Team name={match.team1}/><div className="score-pill">{match.status === 'finished' ? scoreLabel(match) : prediction.score}<small>{match.status === 'finished' ? (match.shootoutScore ? 'FT+PK' : 'FT') : t.predict}</small></div><Team name={match.team2}/></div>
+    <div className="teams-row"><Team name={match.team1}/><div className={`score-pill ${runtimeLifecycle(match, nowMs) === 'pre-match' || runtimeLifecycle(match, nowMs) === 'final' ? '' : 'guarded-score'}`}>{scoreDisplay(match, prediction, lang, nowMs)}<small>{scoreSubLabel(match, lang, t, nowMs)}</small></div><Team name={match.team2}/></div>
     <ProbBar prediction={prediction}/>
     <div className="pick-row"><b>{lang === 'en' ? 'Pick' : '我站'} {pickLabel(prediction.pick, lang)}</b><span>{tagLabel(prediction.tag, lang)} · {pct(prediction.confidence)}</span></div>
     <p className="verdict">{narrative(match, prediction, lang)}</p>
@@ -189,13 +258,13 @@ function CompactMatchCard({ match, prediction, paperBet, intel, onSelect, featur
     <button className="deep-dive" type="button" onClick={() => onSelect(match.id)}>{t.detail}</button>
   </article>
 }
-function TodaySlate({ matches, predictions, paperBetsByMatch, intelByMatch, onSelect, lang, t }) {
+function TodaySlate({ matches, predictions, paperBetsByMatch, intelByMatch, onSelect, lang, t, nowMs }) {
   const featured = matches.slice(0, 3)
   const rest = matches.slice(3, 9)
   return <section className="panel" id="predictions">
     <SectionHead kicker="NEXT WINDOW" title={t.nextWindow} meta={`${matches.length} ${lang === 'en' ? 'matches' : '場'}`}><small>{t.homeNote}</small></SectionHead>
-    <div className="featured-grid">{featured.map((m) => <CompactMatchCard featured key={m.id} match={m} prediction={predictions[m.id]} paperBet={paperBetsByMatch[m.id]} intel={intelByMatch[m.id]} onSelect={onSelect} lang={lang} t={t}/>)}</div>
-    <div className="upcoming-strip">{rest.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDay(m.kickoffUtc, lang)}</span><b><InlineTeam name={m.team1}/> vs <InlineTeam name={m.team2}/></b><em>{pickLabel(predictions[m.id]?.pick, lang)}</em></button>)}</div>
+    <div className="featured-grid">{featured.map((m) => <CompactMatchCard featured key={m.id} match={m} prediction={predictions[m.id]} paperBet={paperBetsByMatch[m.id]} intel={intelByMatch[m.id]} onSelect={onSelect} lang={lang} t={t} nowMs={nowMs}/>)}</div>
+    <div className="upcoming-strip">{rest.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDay(m.kickoffUtc, lang)}</span><b><InlineTeam name={m.team1}/> vs <InlineTeam name={m.team2}/></b><em>{runtimeLifecycle(m, nowMs) === 'pre-match' ? pickLabel(predictions[m.id]?.pick, lang) : lifecycleText(m, lang, nowMs)}</em></button>)}</div>
   </section>
 }
 function IntelBrief({ intel, matches = [], onSelect, lang, t }) {
@@ -349,9 +418,9 @@ function BracketSnapshot({ matches, onSelect, lang, t }) {
 }
 function Leaderboard({ rows, t, lang }) { return <section className="panel slim" id="model"><SectionHead kicker="MODEL FORM" title={t.leaderboardTitle} meta={t.publicLedger}/><div className="leader-list">{rows.map((row) => <div className="leader" key={row.id}><div className="rank">#{row.rank}</div><div><b>{row.name}</b><p>{leaderDesc(row, lang)}</p></div><div className="leader-score"><b>{row.points}</b><span>{pct(row.accuracy)} hit</span></div></div>)}</div><p className="self-own">{t.selfOwn}</p></section> }
 function StandingsPreview({ standings, nextMatches, lang, t }) { const groups = Array.from(new Set(nextMatches.map((m) => m.group).filter(Boolean))).slice(0, 4); const entries = groups.length ? groups.map((g) => [g, standings[g]]).filter(([, rows]) => rows) : Object.entries(standings || {}).slice(0, 4); return <section className="panel" id="standings"><SectionHead kicker="GROUP SURVIVAL MAP" title={t.standingsTitle} meta={`${entries.length} groups`} /><div className="tables compact-tables">{entries.map(([name, rows]) => <div className="table-card" key={name}><h3>{lang === 'en' ? name : name.replace('Group ', '小組 ')}</h3><table><thead><tr><th>{lang === 'en' ? 'Team' : '隊伍'}</th><th>{lang === 'en' ? 'P' : '賽'}</th><th>{lang === 'en' ? 'GD' : '淨'}</th><th>{lang === 'en' ? 'Pts' : '分'}</th></tr></thead><tbody>{rows.map((r, idx) => <tr key={r.team} className={idx < 2 ? 'qualified' : ''}><td><InlineTeam name={r.team}/></td><td>{r.played}</td><td>{r.goalDiff}</td><td><b>{r.points}</b></td></tr>)}</tbody></table></div>)}</div></section> }
-function FixtureExplorer({ matches, predictions, onSelect, lang, t }) { const [showAll, setShowAll] = useState(false); const list = showAll ? matches : matches.filter((m) => m.status !== 'finished').slice(0, 12); return <section className="panel" id="fixtures"><SectionHead kicker="FIXTURE EXPLORER" title={t.fixturesTitle} meta={showAll ? t.all : t.recentOnly} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc, lang)}</span><b><InlineTeam name={m.team1}/> vs <InlineTeam name={m.team2}/></b><em>{m.status === 'finished' ? scoreLabel(m) : pickLabel(predictions[m.id]?.pick, lang)}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? t.hideAll : t.showAll}</button></section> }
+function FixtureExplorer({ matches, predictions, onSelect, lang, t, nowMs }) { const [showAll, setShowAll] = useState(false); const list = showAll ? matches : matches.filter((m) => m.status !== 'finished').slice(0, 12); return <section className="panel" id="fixtures"><SectionHead kicker="FIXTURE EXPLORER" title={t.fixturesTitle} meta={showAll ? t.all : t.recentOnly} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc, lang)}</span><b><InlineTeam name={m.team1}/> vs <InlineTeam name={m.team2}/></b><em>{runtimeLifecycle(m, nowMs) === 'final' ? scoreLabel(m) : runtimeLifecycle(m, nowMs) === 'pre-match' ? pickLabel(predictions[m.id]?.pick, lang) : lifecycleText(m, lang, nowMs)}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? t.hideAll : t.showAll}</button></section> }
 function TacticalBoard({ match, prediction, intel, lang }) { const favorite = prediction.probabilities.home >= prediction.probabilities.away ? match.team1 : match.team2; const underdog = favorite === match.team1 ? match.team2 : match.team1; const lanes = [{ top:'18%', left:'18%', label:`${flag(favorite)} ${lang === 'en' ? 'press high' : '高位壓迫'}`, note: lang === 'en' ? 'first 30 minutes decide tempo' : '前 30 分鐘搶節奏' }, { top:'48%', left:'50%', label: lang === 'en' ? 'Midfield fault line' : '中場斷點', note: lang === 'en' ? 'first turnover hurts' : '誰先掉球誰先挨打' }, { top:'72%', left:'78%', label:`${flag(underdog)} ${lang === 'en' ? 'counter outlet' : '反擊出口'}`, note: lang === 'en' ? 'upsets start here' : '爆冷通常從這裡長出來' }]; return <section className="tactical-board"><div className="pitch"><div className="half-line"/><div className="center-circle"/>{lanes.map((lane) => <div className="position-node" key={lane.label} style={{ top: lane.top, left: lane.left }}><b>{lane.label}</b><span>{lane.note}</span></div>)}</div><div className="tactical-notes"><b>{lang === 'en' ? 'Tactical note' : '站位 / 對位筆記'}</b><p>{intel ? (lang === 'en' ? 'Verified availability, rotation and tactical signals are folded into this card when sources are clean.' : '我會把確認過的傷停、預測先發、輪換與戰術線索放進這裡；沒有來源就不裝懂。') : (lang === 'en' ? 'No clean source-backed tactical card yet; this is the model map until scouting improves it.' : '目前先用模型對位圖，等 scout 抓到可信先發/站位來源後再補細節。')}</p><small>{lang === 'en' ? 'Source-backed only: expected XI, official lineups and tactical previews.' : '不是幻想陣型：之後只接有來源的 expected XI、官方先發與戰術 preview。'}</small></div></section> }
-function MatchDeepDive({ match, prediction, paperBet, intel, onClose, lang, t }) {
+function MatchDeepDive({ match, prediction, paperBet, intel, onClose, lang, t, nowMs }) {
   if (!match || !prediction) return null
   const p = prediction.probabilities
   const upset = p.home < p.away ? match.team1 : match.team2
@@ -359,7 +428,7 @@ function MatchDeepDive({ match, prediction, paperBet, intel, onClose, lang, t })
   const actual = actualPick(match)
   const predictionHit = actual && (prediction.pick === actual || (prediction.pick === '平手' && actual === '平手'))
   const postmortem = match.status === 'finished' ? (predictionHit ? (lang === 'en' ? `Direction was right: Soren picked ${pickLabel(prediction.pick, lang)} and the actual result matched. Next check: score error and whether the win was signal or variance.` : `這場方向有抓到：我站 ${prediction.pick}，實際也是 ${actual}。下一步要檢查的是比分誤差與是不是被偶發事件灌水。`) : (lang === 'en' ? `Missed call: Soren picked ${pickLabel(prediction.pick, lang)}, actual was ${pickLabel(actual, lang)}. The review focuses on overrated priors, draw risk or upset paths.` : `這場被賽果打臉：我站 ${prediction.pick}，實際是 ${actual}。復盤重點放在我高估哪一邊、低估平局/爆冷路線，不能裝沒事。`)) : (lang === 'en' ? 'Match is not final yet; post-match review will compare pick, score, intel and paper P&L.' : '比賽還沒踢完；這裡會在賽後補上預測 vs 實際、紙上損益與錯因。')
-  return <div className="modal-backdrop" onClick={onClose}><article className="deep-modal" onClick={(e) => e.stopPropagation()}><button className="modal-close" type="button" onClick={onClose}>×</button><p className="modal-kicker">{t.modalKicker}</p><h2>{match.team1} vs {match.team2}</h2><div className="modal-scoreline"><Team name={match.team1}/><div className="score-pill big">{match.status === 'finished' ? scoreLabel(match) : prediction.score}<small>{match.status === 'finished' ? (match.shootoutScore ? 'FT+PK' : 'FT') : t.predictedScore}</small></div><Team name={match.team2}/></div><div className="soren-roast"><b>{t.roast}</b>{narrative(match, prediction, lang)} {narrativeStory(match, prediction, lang)}</div><TacticalBoard match={match} prediction={prediction} intel={intel} lang={lang}/><div className="deep-grid"><div><b>{t.balance}</b><p>{match.team1} {pct(p.home)} · {lang === 'en' ? 'Draw' : '平'} {pct(p.draw)} · {match.team2} {pct(p.away)}</p></div><div><b>{t.upsetPath}</b><p>{lang === 'en' ? `${upset} must survive the opening pressure from ${favorite} and keep the match within one moment.` : `${upset} 要活下來，第一任務不是踢漂亮，是把 ${favorite} 的前 30 分鐘熬過去。`}</p></div><div><b>{t.infoImpact}</b><p>{intel ? intel.sorenTake : (lang === 'en' ? 'No sufficiently clean source-backed intel yet; better empty than invented.' : '這場暫時沒有足夠乾淨的情報；我寧可空著，也不亂編社群情緒。')}</p></div><div><b>{t.paperBattle}</b><p>{paperBet ? (lang === 'en' ? `Paper market: ${marketLabel(paperBet.marketReference, lang) || '1X2 proxy'}. Locked: ${paperBet.lockedAtUtc ? fmtDate(paperBet.lockedAtUtc, lang) : 'pre-match'}; pick ${pickLabel(paperBet.pick, lang)}, stake ${money(paperBet.stake)}, odds ${paperBet.decimalOdds}. ${paperBet.profit !== undefined ? `Settlement: ${resultText(paperBet, lang)}.` : ''}` : `紙上盤：${paperBet.marketReference || '主流 1X2 賽前盤'}。鎖單：${paperBet.lockedAtUtc ? fmtDate(paperBet.lockedAtUtc, lang) : '開賽前'}；押 ${paperBet.pick}，投入 ${money(paperBet.stake)}，模擬賠率 ${paperBet.decimalOdds}。${paperBet.profit !== undefined ? `結算：${resultText(paperBet, lang)}。` : ''}`) : (lang === 'en' ? 'No paper stake here; no edge means sit out.' : '這場我先不丟紙上籌碼；沒邊際就坐旁邊喝水。')}</p></div></div><section className="match-postmortem"><b>{t.postmortem}</b><p>{postmortem}</p>{match.status === 'finished' && <div className="compare-grid"><span>{lang === 'en' ? 'Prediction' : '預測'}：{pickLabel(prediction.pick, lang)} / {prediction.score}</span><span>{lang === 'en' ? 'Actual' : '實際'}：{pickLabel(actual, lang)} / {scoreLabel(match)}</span><span>{t.paper}：{paperBet ? resultText(paperBet, lang) : (lang === 'en' ? 'no bet' : '未下注')}</span></div>}</section><ul className="reasons modal-reasons">{reasonList(match, prediction, lang).map((r) => <li key={r}>{r}</li>)}</ul>{intel && <details className="source-drawer modal-sources"><summary>{t.modalSources}</summary><ul>{intel.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{intel.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></details>}<p className="modal-disclaimer">{t.disclaimer}</p></article></div>
+  return <div className="modal-backdrop" onClick={onClose}><article className="deep-modal" onClick={(e) => e.stopPropagation()}><button className="modal-close" type="button" onClick={onClose}>×</button><p className="modal-kicker">{t.modalKicker}</p><h2>{match.team1} vs {match.team2}</h2><div className="modal-scoreline"><Team name={match.team1}/><div className={`score-pill big ${runtimeLifecycle(match, nowMs) === 'pre-match' || runtimeLifecycle(match, nowMs) === 'final' ? '' : 'guarded-score'}`}>{scoreDisplay(match, prediction, lang, nowMs)}<small>{scoreSubLabel(match, lang, { ...t, predict: t.predictedScore }, nowMs)}</small></div><Team name={match.team2}/></div><div className="soren-roast"><b>{t.roast}</b>{narrative(match, prediction, lang)} {narrativeStory(match, prediction, lang)}</div><TacticalBoard match={match} prediction={prediction} intel={intel} lang={lang}/><div className="deep-grid"><div><b>{t.balance}</b><p>{match.team1} {pct(p.home)} · {lang === 'en' ? 'Draw' : '平'} {pct(p.draw)} · {match.team2} {pct(p.away)}</p></div><div><b>{t.upsetPath}</b><p>{lang === 'en' ? `${upset} must survive the opening pressure from ${favorite} and keep the match within one moment.` : `${upset} 要活下來，第一任務不是踢漂亮，是把 ${favorite} 的前 30 分鐘熬過去。`}</p></div><div><b>{t.infoImpact}</b><p>{intel ? intel.sorenTake : (lang === 'en' ? 'No sufficiently clean source-backed intel yet; better empty than invented.' : '這場暫時沒有足夠乾淨的情報；我寧可空著，也不亂編社群情緒。')}</p></div><div><b>{t.paperBattle}</b><p>{paperBet ? (lang === 'en' ? `Paper market: ${marketLabel(paperBet.marketReference, lang) || '1X2 proxy'}. Locked: ${paperBet.lockedAtUtc ? fmtDate(paperBet.lockedAtUtc, lang) : 'pre-match'}; pick ${pickLabel(paperBet.pick, lang)}, stake ${money(paperBet.stake)}, odds ${paperBet.decimalOdds}. ${paperBet.profit !== undefined ? `Settlement: ${resultText(paperBet, lang)}.` : ''}` : `紙上盤：${paperBet.marketReference || '主流 1X2 賽前盤'}。鎖單：${paperBet.lockedAtUtc ? fmtDate(paperBet.lockedAtUtc, lang) : '開賽前'}；押 ${paperBet.pick}，投入 ${money(paperBet.stake)}，模擬賠率 ${paperBet.decimalOdds}。${paperBet.profit !== undefined ? `結算：${resultText(paperBet, lang)}。` : ''}`) : (lang === 'en' ? 'No paper stake here; no edge means sit out.' : '這場我先不丟紙上籌碼；沒邊際就坐旁邊喝水。')}</p></div></div><section className="match-postmortem"><b>{t.postmortem}</b><p>{postmortem}</p>{match.status === 'finished' && <div className="compare-grid"><span>{lang === 'en' ? 'Prediction' : '預測'}：{pickLabel(prediction.pick, lang)} / {prediction.score}</span><span>{lang === 'en' ? 'Actual' : '實際'}：{pickLabel(actual, lang)} / {scoreLabel(match)}</span><span>{t.paper}：{paperBet ? resultText(paperBet, lang) : (lang === 'en' ? 'no bet' : '未下注')}</span></div>}</section><ul className="reasons modal-reasons">{reasonList(match, prediction, lang).map((r) => <li key={r}>{r}</li>)}</ul>{intel && <details className="source-drawer modal-sources"><summary>{t.modalSources}</summary><ul>{intel.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{intel.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></details>}<p className="modal-disclaimer">{t.disclaimer}</p></article></div>
 }
 function App() {
   const [data, setData] = useState(null)
@@ -377,24 +446,26 @@ function App() {
   const paperBetsByMatch = useMemo(() => data?.paperBankroll ? Object.fromEntries([...(data.paperBankroll.pending || []), ...(data.paperBankroll.settled || []), ...(data.paperBankroll.watchlist || [])].map((b) => [b.matchId, b])) : {}, [data])
   const intelByMatch = useMemo(() => intel?.items ? Object.fromEntries(intel.items.map((item) => [item.matchId, item])) : {}, [intel])
   const selectedMatch = selectedId && data ? data.matches.find((m) => m.id === selectedId) : null
+  const nowMs = Date.now()
   if (error) return <main className="shell"><div className="panel"><h1>{t.loadFail}</h1><p>{error}</p></div></main>
   if (!data) return <main className="shell"><div className="loading">{t.loading}</div></main>
   return <main className="shell" lang={lang === 'en' ? 'en' : 'zh-Hant'}>
     <nav className="top-nav"><b>Soren World Cup Lab</b><div><a href="#today">{t.navToday}</a><a href="#soren-intel">{t.navIntel}</a><a href="#predictions">{t.navPred}</a><a href="#bracket">{t.navBracket}</a><a href="#paper-bankroll">{t.navBankroll}</a><a href="#review">{t.navReview}</a><a href="#fixtures">{t.navFixtures}</a><button className="lang-toggle" type="button" onClick={switchLang}>{t.lang}</button></div></nav>
     <section className="hero-section"><div className="hero-copy"><span className="eyebrow">{t.heroKicker}</span><h1>{t.heroTitle}</h1><p>{t.heroBody}</p><div className="hero-actions"><a href="https://stair-ai.com/arena" target="_blank" rel="noreferrer">Stair AI Arena</a><a href="https://github.com/livejiaquan/worldcup-soren-predictor" target="_blank" rel="noreferrer">GitHub</a></div></div><div className="hero-card agent-profile"><span className="agent-label">PUBLIC AGENT PROFILE</span><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>{t.finished}</span><b>{data.summary.scheduledMatches}</b><span>{t.pending}</span><small>{t.lastUpdate}：{fmtDate(data.generatedAt, lang)} · {t.intelCards} {intel?.items?.length || 0}</small></div></section>
     <div className="notice">{t.notice}</div>
-    <KineticArena data={data} nextMatches={nextMatches} predictions={data.predictions} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t}/>
-    <CommandCenter data={data} nextMatches={nextMatches} predictions={data.predictions} bankroll={data.paperBankroll} lang={lang} t={t}/>
+    <DataQualityBadge data={data} lang={lang} nowMs={nowMs}/>
+    <KineticArena data={data} nextMatches={nextMatches} predictions={data.predictions} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t} nowMs={nowMs}/>
+    <CommandCenter data={data} nextMatches={nextMatches} predictions={data.predictions} bankroll={data.paperBankroll} lang={lang} t={t} nowMs={nowMs}/>
     <LearningLoop data={data} onSelect={setSelectedId} lang={lang} t={t}/>
     <CalibrationAudit data={data} onSelect={setSelectedId} lang={lang}/>
-    <TodaySlate matches={nextMatches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t}/>
+    <TodaySlate matches={nextMatches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t} nowMs={nowMs}/>
     <BracketSnapshot matches={data.matches} predictions={data.predictions} onSelect={setSelectedId} lang={lang} t={t}/>
     <IntelBrief intel={intel} matches={data.matches} onSelect={setSelectedId} lang={lang} t={t}/>
     <PaperBankroll bankroll={data.paperBankroll} onSelect={setSelectedId} lang={lang} t={t}/>
     <Leaderboard rows={data.leaderboard} t={t} lang={lang}/>
     <StandingsPreview standings={data.standings} nextMatches={nextMatches} lang={lang} t={t}/>
-    <FixtureExplorer matches={data.matches} predictions={data.predictions} onSelect={setSelectedId} lang={lang} t={t}/>
-    {selectedMatch && <MatchDeepDive match={selectedMatch} prediction={data.predictions[selectedMatch.id]} paperBet={paperBetsByMatch[selectedMatch.id]} intel={intelByMatch[selectedMatch.id]} onClose={() => setSelectedId(null)} lang={lang} t={t}/>}<footer>{t.footer}</footer>
+    <FixtureExplorer matches={data.matches} predictions={data.predictions} onSelect={setSelectedId} lang={lang} t={t} nowMs={nowMs}/>
+    {selectedMatch && <MatchDeepDive match={selectedMatch} prediction={data.predictions[selectedMatch.id]} paperBet={paperBetsByMatch[selectedMatch.id]} intel={intelByMatch[selectedMatch.id]} onClose={() => setSelectedId(null)} lang={lang} t={t} nowMs={nowMs}/>}<footer>{t.footer}</footer>
   </main>
 }
 export default App
