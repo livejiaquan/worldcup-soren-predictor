@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-09T04:31:16Z",
-  "status": "matchday scout: 八強前 15–69 小時微刷新 m098/m099，新增 Reuters Spain-Belgium live tracker、England Football Rogers 官方訪談與 Stats Zone Norway-England team-news/prediction rail；跳過未能親核的 401/403 線索與重複來源。",
-  "headline": "Soren 八強雷達更新：Spain-Belgium 補上 Reuters 可信即時軌；Norway-England 加入 Rogers 官方球員聲音與一條保守 team-news preview。社群/搜尋片段仍只當線索，confirmed XI 等官方。",
+  "generatedAt": "2026-07-09T10:39:28Z",
+  "status": "matchday scout: M097 France-Morocco 開賽前 9 小時親核，Saibari 缺席由可信媒體報導教練確認；補 Reuters 戰術壓力、FFF/FRMF 官方脈絡、公開 odds 與裁判社群搜尋線索。",
+  "headline": "Soren 八強雷達：France-Morocco 最大新硬訊號是 Saibari out；Morocco 仍是 France 第一場真正壓力測，正式 XI 等 FIFA。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -9429,9 +9429,9 @@
     {
       "matchId": "m097",
       "match": "France vs Morocco",
-      "sourceType": "official match-centre + media team-news/injury watch + live-centre/odds/social-search rails",
-      "title": "France-Morocco 倒數進入官方 live-centre 模式：Tchouaméni 復訓是法國中場回血，Morocco 還要盯關鍵球員 fitness watch。",
-      "sorenTake": "France-Morocco 不能只靠 2022 情懷重播。法國中場健康度回升，但 Morocco 的可用人手與官方先發仍要等 match centre；任何搜尋片段都先降噪，開賽前只認官方/可信媒體。",
+      "sourceType": "official match-centre + confirmed availability watch + credible tactical/odds/social-search rails",
+      "title": "France-Morocco 開賽前 9 小時升級：Saibari 已被教練確認缺席，Morocco 少一把刀；France 仍要過真正壓力測。",
+      "sorenTake": "這張卡現在的硬訊號不是「法國穩了」，而是 Morocco 的 Saibari hamstring 缺口已由 ESPN/Al Jazeera/France24 報導教練確認；同時 Reuters 把 Morocco 定義成 France 本屆第一場完整考試。Soren 會把市場偏 France 只當紙上溫度，正式 XI 仍等 FIFA match centre。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M097：W89 vs W90，Boston Stadium / Foxborough，2026-07-09 20:00 UTC。",
         "ESPN/NBC/FOX 類公開 bracket/schedule 可作觀眾導覽，但在勝者未確定前只標為 context/bracket-watch。",
@@ -9451,7 +9451,13 @@
         "HITC 報導社群對 FIFA 任命阿根廷裁判組吹 France-Morocco 有反應；Soren 只把它列為 social-search / public-buzz 線索，不假裝讀完留言或推論整體民意。",
         "Eurosport / 法媒搜尋結果顯示 Aurélien Tchouaméni 因 adductor issue 缺席 Paraguay 戰後，已在 France-Morocco 前參與集體訓練；Deschamps 表示「il va mieux」。這是 reported fitness-return，不是 confirmed XI。",
         "01:04Z 親核 The Standard Morocco-France team-news 頁：標題/metadata 指向「confirmed team news, predicted lineup, injury latest」，並明確說 Morocco 正在等一名關鍵球員健康狀態；本站只把它列為 availability / expected-XI watch，不升格成官方先發。",
-        "FIFA 今日賽事 live updates hub 已可連線；France-Morocco 開賽前後以官方 match centre / live hub 優先校正先發與比分，搜尋片段不直接當事實。"
+        "FIFA 今日賽事 live updates hub 已可連線；France-Morocco 開賽前後以官方 match centre / live hub 優先校正先發與比分，搜尋片段不直接當事實。",
+        "2026-07-09T10:39Z 開賽前巡檢：FIFA match centre / official preview 仍是先發與比分最高優先入口；目前只確認 fixture/live-centre rails，不把任何 projected XI 寫成 confirmed XI。",
+        "ESPN 與 Al Jazeera/France24 均報導 Morocco 教練 Mohamed Ouahbi 確認 Ismael Saibari 因 hamstring injury 缺席對 France 的八強；這已從「fitness doubt」升級成 reported/confirmed-by-coach availability hit。",
+        "Reuters 將本場定義為 France 本屆第一場真正完整考試：Morocco 的組織、技術與轉換會比法國前幾輪更能測出冠軍相。",
+        "FFF 官方頁重申 France 於 Boston 對 Morocco 的八強賽程；FRMF 官方頁同樣確認 Morocco 3-0 Canada 後晉級與 France 交手。",
+        "Oddstrader/Betmonitor 等公開市場頁顯示 France 仍是明顯熱門（例：France 約 -170、Morocco 約 +561；或 1.66/4.15/7.00 區間），但這只是 paper simulation 的即時價格參考，非 closing line、非下注建議。",
+        "NDTV/HITC/Times of India/Yahoo 類搜尋索引顯示 all-Argentine referee crew / Facundo Tello 任命引發公開討論；本站只標 social-search/context，不聲稱讀過封閉留言或代表整體民意。"
       ],
       "sources": [
         {
@@ -9605,6 +9611,78 @@
           "claimType": "official/live-centre",
           "confidence": "high",
           "fetchedAt": "2026-07-09T01:04:22Z"
+        },
+        {
+          "label": "ESPN Saibari ruled out",
+          "url": "https://www.espn.com/soccer/story/_/id/49310007/morocco-ismael-saibari-injury-france-world-cup-2026-quarterfinal",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-09T10:39:28Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Saibari injury report",
+          "url": "https://www.aljazeera.com/sports/2026/7/9/morocco-dealt-huge-blow-as-injured-saibari-out-of-world-cup-quarterfinal",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-09T10:39:28Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "France24 Saibari out confirmation",
+          "url": "https://www.france24.com/en/live-news/20260708-morocco-s-saibari-out-of-france-world-cup-quarter-final",
+          "sourceName": "France24 / AFP-style live news",
+          "fetchedAt": "2026-07-09T10:39:28Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Reuters France-Morocco tactical test",
+          "url": "https://www.reuters.com/sports/soccer/morocco-offer-france-first-real-test-world-cup-credentials-2026-07-07/",
+          "sourceName": "Reuters",
+          "fetchedAt": "2026-07-09T10:39:28Z",
+          "claimType": "reported/tactical",
+          "confidence": "high"
+        },
+        {
+          "label": "FFF France-Morocco official context",
+          "url": "https://www.fff.fr/article/17067-et-maintenant-le-maroc-acte-2.html",
+          "sourceName": "Fédération Française de Football",
+          "fetchedAt": "2026-07-09T10:39:28Z",
+          "claimType": "confirmed/official-team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "FRMF France-Morocco quarterfinal context",
+          "url": "https://frmf.ma/fr/articles/coupe-du-monde-fifa-2026-quarts-de-finales",
+          "sourceName": "FRMF",
+          "fetchedAt": "2026-07-09T10:39:28Z",
+          "claimType": "confirmed/official-team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "Oddstrader France-Morocco odds reference",
+          "url": "https://www.oddstrader.com/world-cup/matchups/france-vs-morocco-2026-07-09-e4788719/",
+          "sourceName": "OddsTrader",
+          "fetchedAt": "2026-07-09T10:39:28Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Betmonitor France-Morocco odds comparison",
+          "url": "https://www.betmonitor.com/odds-comparison/football/fifa-world-cup/france-morocco/109630915",
+          "sourceName": "Betmonitor",
+          "fetchedAt": "2026-07-09T10:39:28Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "NDTV referee controversy social-search lead",
+          "url": "https://sports.ndtv.com/fifa-world-cup-2026/fifas-all-argentine-referee-appointment-for-france-vs-morocco-sparks-rigged-allegations-but-the-rebuttal-is-stronger-11744172",
+          "sourceName": "NDTV Sports",
+          "fetchedAt": "2026-07-09T10:39:28Z",
+          "claimType": "social-search/context",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
