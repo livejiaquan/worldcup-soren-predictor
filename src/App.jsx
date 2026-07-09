@@ -12,7 +12,7 @@ function FlagIcon({ name, className = '' }) {
 
 const I18N = {
   zh: {
-    navToday:'今日', navIntel:'情報', navPred:'預測', navBracket:'樹狀圖', navBankroll:'紙上本金', navReview:'復盤', navFixtures:'賽程', lang:'EN',
+    navToday:'今日', navIntel:'情報', navRadar:'爆冷雷達', navPred:'預測', navBracket:'樹狀圖', navBankroll:'紙上本金', navReview:'復盤', navFixtures:'賽程', lang:'EN',
     loading:'Soren 正在翻賽程和模型，不要急，嘴砲也要先載資料…', loadFail:'資料載入失敗',
     heroKicker:'SCHEDULE-AWARE · SOURCE-BACKED · PUBLIC EXPERIMENT', heroTitle:'Soren 世界盃觀察室', heroBody:'我會追賽程、逛新聞和社群搜尋、找爆冷路線；首頁只留判斷，證據、來源和翻車復盤都收進可展開報告。',
     finished:'已完賽', pending:'待預測/追蹤', lastUpdate:'最後更新', intelCards:'情報卡',
@@ -28,7 +28,7 @@ const I18N = {
     modalKicker:'SOREN MATCH AUTOPSY', roast:'銳評：', predictedScore:'我先押這個比分', balance:'這場天秤怎麼歪', upsetPath:'弱隊偷雞路線', infoImpact:'情報影響', paperBattle:'紙上戰局', reasons:'模型理由', modalSources:'這場情報來源', disclaimer:'公開研究與娛樂展示，不是投注建議。我會贏、會翻車、也會被賽果打臉；重點是每一筆都要留下理由。', footer:'資料來源：openfootball/worldcup.json · scouting feed 需附來源 · 自動部署於 GitHub Pages · Soren 親自扛鍋',
   },
   en: {
-    navToday:'Today', navIntel:'Intel', navPred:'Predictions', navBracket:'Bracket', navBankroll:'Paper Bankroll', navReview:'Review', navFixtures:'Fixtures', lang:'中',
+    navToday:'Today', navIntel:'Intel', navRadar:'Upset Radar', navPred:'Predictions', navBracket:'Bracket', navBankroll:'Paper Bankroll', navReview:'Review', navFixtures:'Fixtures', lang:'中',
     loading:'Soren is loading match data and model outputs…', loadFail:'Data load failed',
     heroKicker:'SCHEDULE-AWARE · SOURCE-BACKED · PUBLIC EXPERIMENT', heroTitle:'Soren World Cup Lab', heroBody:'A public World Cup prediction agent: schedule-aware picks, source-backed scouting, paper bankroll accounting, and post-match autopsies that show where the model was right or wrong.',
     finished:'finished', pending:'remaining / tracked', lastUpdate:'Updated', intelCards:'intel cards',
@@ -111,6 +111,15 @@ const sourceTrustLabel = (item, lang) => {
   const claim = first.claimType || 'context'
   const confidence = first.confidence || item.confidence || 'medium'
   return lang === 'en' ? `${claim} · ${confidence} confidence` : `${claim} · 信心 ${confidence}`
+}
+const clamp01 = (value) => Math.max(0, Math.min(1, Number(value) || 0))
+const isRouteToken = (team) => /^[WL]\d+$/.test(String(team || ''))
+const dangerBand = (score, lang) => {
+  if (score == null) return lang === 'en' ? 'route pending' : '路線未落地'
+  if (score >= 0.52) return lang === 'en' ? 'red alert' : '紅色警報'
+  if (score >= 0.44) return lang === 'en' ? 'live trap' : '高危陷阱'
+  if (score >= 0.36) return lang === 'en' ? 'watch closely' : '需要盯緊'
+  return lang === 'en' ? 'favorite cushion' : '熱門有緩衝'
 }
 function narrative(match, prediction, lang) {
   if (lang !== 'en') return prediction.commentary?.headline
@@ -405,6 +414,148 @@ function resolveActualBracketTeam(token, matchByNumber, depth = 0) {
   const right = resolveActualBracketTeam(source.team2, matchByNumber, depth + 1)
   return `${left} / ${right}`
 }
+function actualLoser(match) {
+  const winner = actualPick(match)
+  if (winner === match?.team1) return match.team2
+  if (winner === match?.team2) return match.team1
+  return null
+}
+function resolveBracketRouteTeam(token, matchByNumber, depth = 0) {
+  if (!token || depth > 8) return token || '待定'
+  const route = String(token).match(/^([WL])(\d+)$/)
+  if (!route) return token
+  const source = matchByNumber[route[2].padStart(3, '0')]
+  if (!source) return token
+  if (source.status === 'finished') {
+    const resolved = route[1] === 'W' ? actualPick(source) : actualLoser(source)
+    return resolved ? resolveBracketRouteTeam(resolved, matchByNumber, depth + 1) : token
+  }
+  const left = resolveBracketRouteTeam(source.team1, matchByNumber, depth + 1)
+  const right = resolveBracketRouteTeam(source.team2, matchByNumber, depth + 1)
+  return `${left} / ${right}`
+}
+const radarPoint = (value, index, total, radius = 88) => {
+  const angle = -Math.PI / 2 + (index / total) * Math.PI * 2
+  return [Math.cos(angle) * radius * value, Math.sin(angle) * radius * value]
+}
+function KnockoutUpsetRadar({ matches, predictions, paperBetsByMatch, intelByMatch, onSelect, lang }) {
+  const copy = lang === 'en'
+    ? {
+        kicker: 'KNOCKOUT UPSET RADAR', title: 'Where the favorite can still bleed.',
+        note: 'Danger corridor = underdog 90-minute win probability + draw/extra-time drag from Soren probabilities. Route-only slots stay labeled until feeder matches finish.',
+        tracked: 'knockout slots', formula: 'danger corridor', routeOnly: 'route-only slot', open: 'Open match',
+        favorite: 'Favorite', underdog: 'Upset side', draw: 'Draw drag', xg: 'Expected goals', intel: 'source cards', paper: 'Paper signal',
+        noPaper: 'sit out', pending: 'No team-specific upset call yet; this route depends on unresolved feeders.',
+        axes: { underdog: 'Underdog win', draw: 'Draw drag', narrow: 'Narrow gap', lowGoal: 'Low-score volatility', intel: 'Intel heat' },
+      }
+    : {
+        kicker: 'KNOCKOUT UPSET RADAR', title: '熱門會在哪裡流血。',
+        note: '危險走廊 = 弱隊 90 分鐘勝率 + 平局/加時拖拽機率，全部來自 Soren 既有機率；路線位會明確標成未實名，不裝隊名預言。',
+        tracked: '個淘汰賽槽位', formula: '危險走廊', routeOnly: '路線未落地', open: '打開這場',
+        favorite: '熱門邊', underdog: '爆冷邊', draw: '平局拖拽', xg: '預期進球', intel: '來源卡', paper: '紙上訊號',
+        noPaper: '坐旁邊', pending: '這格還沒有實名對戰；等上游比賽完場後才做隊伍級爆冷判斷。',
+        axes: { underdog: '弱隊勝率', draw: '平局拖拽', narrow: '差距接近', lowGoal: '低比分亂流', intel: '情報熱度' },
+      }
+  const items = useMemo(() => {
+    const matchByNumber = Object.fromEntries(matches.map((m) => [m.id.replace('m', ''), m]))
+    return matches
+      .filter((m) => !m.group && m.status === 'scheduled')
+      .map((match) => {
+        const prediction = predictions[match.id]
+        const p = prediction?.probabilities || {}
+        const home = clamp01(p.home)
+        const draw = clamp01(p.draw)
+        const away = clamp01(p.away)
+        const routeOnly = isRouteToken(match.team1) || isRouteToken(match.team2) || prediction?.pick === '待定'
+        const favoriteIsHome = home >= away
+        const favorite = favoriteIsHome ? match.team1 : match.team2
+        const underdog = favoriteIsHome ? match.team2 : match.team1
+        const favoriteProb = favoriteIsHome ? home : away
+        const underdogProb = favoriteIsHome ? away : home
+        const expectedGoals = prediction?.expectedGoals || []
+        const totalXg = expectedGoals.reduce((sum, n) => sum + (Number(n) || 0), 0)
+        const lowGoalVolatility = totalXg ? clamp01((3.15 - totalXg) / 1.65) : 0
+        const intel = intelByMatch[match.id]
+        const sourceCount = intel?.sources?.length || 0
+        const paper = paperBetsByMatch[match.id]
+        const danger = routeOnly ? null : clamp01(underdogProb + draw)
+        const axes = [
+          { key: 'underdog', label: copy.axes.underdog, value: underdogProb },
+          { key: 'draw', label: copy.axes.draw, value: draw },
+          { key: 'narrow', label: copy.axes.narrow, value: clamp01(1 - Math.max(0, favoriteProb - underdogProb)) },
+          { key: 'lowGoal', label: copy.axes.lowGoal, value: lowGoalVolatility },
+          { key: 'intel', label: copy.axes.intel, value: clamp01(sourceCount / 12) },
+        ]
+        return {
+          id: match.id,
+          match,
+          prediction,
+          routeOnly,
+          displayTeam1: resolveBracketRouteTeam(match.team1, matchByNumber),
+          displayTeam2: resolveBracketRouteTeam(match.team2, matchByNumber),
+          favorite,
+          underdog,
+          favoriteProb,
+          underdogProb,
+          draw,
+          totalXg,
+          sourceCount,
+          paper,
+          danger,
+          axes,
+        }
+      })
+      .sort((a, b) => (b.danger ?? -1) - (a.danger ?? -1) || new Date(a.match.kickoffUtc) - new Date(b.match.kickoffUtc))
+  }, [matches, predictions, paperBetsByMatch, intelByMatch, copy.axes])
+  const [activeId, setActiveId] = useState('')
+  useEffect(() => {
+    if (items.length && !items.some((item) => item.id === activeId)) setActiveId(items[0].id)
+  }, [items, activeId])
+  if (!items.length) return null
+  const active = items.find((item) => item.id === activeId) || items[0]
+  const polygon = active.axes.map((axis, index) => radarPoint(axis.value, index, active.axes.length).join(',')).join(' ')
+  const paperText = active.paper?.stake ? money(active.paper.stake) : active.paper?.edge != null ? signedPct(active.paper.edge) : copy.noPaper
+  const narrativeText = active.routeOnly
+    ? copy.pending
+    : lang === 'en'
+      ? `${active.underdog} carries a ${pct(active.underdogProb)} 90-minute upset lane, while the draw lane adds ${pct(active.draw)} of knockout drag.`
+      : `${active.underdog} 的 90 分鐘偷走窗口是 ${pct(active.underdogProb)}，再加上 ${pct(active.draw)} 的平局拖拽，熱門不能把這格當保送。`
+  return <section className="panel upset-radar" id="upset-radar">
+    <SectionHead kicker={copy.kicker} title={copy.title} meta={`${items.length} ${copy.tracked}`}><small>{copy.note}</small></SectionHead>
+    <div className="upset-layout">
+      <div className="upset-board">
+        <div className="radar-graphic">
+          <svg viewBox="-126 -126 252 252" role="img" aria-label={copy.title}>
+            {[0.25, 0.5, 0.75, 1].map((ring) => <polygon key={ring} className="radar-ring" points={active.axes.map((_, index) => radarPoint(ring, index, active.axes.length).join(',')).join(' ')} />)}
+            {active.axes.map((axis, index) => {
+              const [x, y] = radarPoint(1, index, active.axes.length, 97)
+              const [lx, ly] = radarPoint(1, index, active.axes.length, 116)
+              return <g key={axis.key}><line className="radar-axis" x1="0" y1="0" x2={x} y2={y}/><text x={lx} y={ly} textAnchor={lx > 8 ? 'start' : lx < -8 ? 'end' : 'middle'} dominantBaseline="middle">{axis.label}</text></g>
+            })}
+            <polygon className="radar-fill" points={polygon}/>
+            <polygon className="radar-stroke" points={polygon}/>
+          </svg>
+          <div className="radar-core"><span>{copy.formula}</span><b>{active.danger == null ? '—' : pct(active.danger)}</b><em>{dangerBand(active.danger, lang)}</em></div>
+        </div>
+        <div className="upset-story">
+          <span>{stageLabel(active.match.stage, lang)} · {fmtDate(active.match.kickoffUtc, lang)}</span>
+          <h3><InlineTeam name={active.displayTeam1}/> vs <InlineTeam name={active.displayTeam2}/></h3>
+          <p>{narrativeText}</p>
+          <div className="upset-facts">
+            <b>{copy.favorite}<em>{active.routeOnly ? copy.routeOnly : `${active.favorite} ${pct(active.favoriteProb)}`}</em></b>
+            <b>{copy.underdog}<em>{active.routeOnly ? copy.routeOnly : `${active.underdog} ${pct(active.underdogProb)}`}</em></b>
+            <b>{copy.draw}<em>{pct(active.draw)}</em></b>
+            <b>{copy.xg}<em>{active.totalXg ? active.totalXg.toFixed(2) : '—'}</em></b>
+            <b>{copy.intel}<em>{active.sourceCount}</em></b>
+            <b>{copy.paper}<em>{paperText}</em></b>
+          </div>
+          <button type="button" onClick={() => onSelect(active.match.id)}>{copy.open}</button>
+        </div>
+      </div>
+      <div className="upset-list">{items.map((item) => <button type="button" key={item.id} className={item.id === active.id ? 'active' : ''} onClick={() => setActiveId(item.id)}><span>{item.danger == null ? copy.routeOnly : pct(item.danger)}</span><b><InlineTeam name={item.displayTeam1}/> vs <InlineTeam name={item.displayTeam2}/></b><em>{dangerBand(item.danger, lang)} · {fmtDay(item.match.kickoffUtc, lang)}</em></button>)}</div>
+    </div>
+  </section>
+}
 function BracketSnapshot({ matches, onSelect, lang, t }) {
   const knockouts = matches.filter((m) => !m.group)
   if (!knockouts.length) return null
@@ -450,12 +601,14 @@ function App() {
   if (error) return <main className="shell"><div className="panel"><h1>{t.loadFail}</h1><p>{error}</p></div></main>
   if (!data) return <main className="shell"><div className="loading">{t.loading}</div></main>
   return <main className="shell" lang={lang === 'en' ? 'en' : 'zh-Hant'}>
-    <nav className="top-nav"><b>Soren World Cup Lab</b><div><a href="#today">{t.navToday}</a><a href="#soren-intel">{t.navIntel}</a><a href="#predictions">{t.navPred}</a><a href="#bracket">{t.navBracket}</a><a href="#paper-bankroll">{t.navBankroll}</a><a href="#review">{t.navReview}</a><a href="#fixtures">{t.navFixtures}</a><button className="lang-toggle" type="button" onClick={switchLang}>{t.lang}</button></div></nav>
+    <nav className="top-nav"><b>Soren World Cup Lab</b><div><a href="#today">{t.navToday}</a><a href="#soren-intel">{t.navIntel}</a><a href="#upset-radar">{t.navRadar}</a><a href="#predictions">{t.navPred}</a><a href="#bracket">{t.navBracket}</a><a href="#paper-bankroll">{t.navBankroll}</a><a href="#review">{t.navReview}</a><a href="#fixtures">{t.navFixtures}</a><button className="lang-toggle" type="button" onClick={switchLang}>{t.lang}</button></div></nav>
     <section className="hero-section"><div className="hero-copy"><span className="eyebrow">{t.heroKicker}</span><h1>{t.heroTitle}</h1><p>{t.heroBody}</p><div className="hero-actions"><a href="https://stair-ai.com/arena" target="_blank" rel="noreferrer">Stair AI Arena</a><a href="https://github.com/livejiaquan/worldcup-soren-predictor" target="_blank" rel="noreferrer">GitHub</a></div></div><div className="hero-card agent-profile"><span className="agent-label">PUBLIC AGENT PROFILE</span><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>{t.finished}</span><b>{data.summary.scheduledMatches}</b><span>{t.pending}</span><small>{t.lastUpdate}：{fmtDate(data.generatedAt, lang)} · {t.intelCards} {intel?.items?.length || 0}</small></div></section>
     <div className="notice">{t.notice}</div>
     <DataQualityBadge data={data} lang={lang} nowMs={nowMs}/>
     <KineticArena data={data} nextMatches={nextMatches} predictions={data.predictions} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t} nowMs={nowMs}/>
     <CommandCenter data={data} nextMatches={nextMatches} predictions={data.predictions} bankroll={data.paperBankroll} lang={lang} t={t} nowMs={nowMs}/>
+    <KnockoutUpsetRadar matches={data.matches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang}/>
+
     <LearningLoop data={data} onSelect={setSelectedId} lang={lang} t={t}/>
     <CalibrationAudit data={data} onSelect={setSelectedId} lang={lang}/>
     <TodaySlate matches={nextMatches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t} nowMs={nowMs}/>
