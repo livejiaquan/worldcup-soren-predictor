@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-08T22:24:29Z",
-  "status": "matchday scout: 八強前 21–75 小時選擇性補強 m097–m100，新增 Tchouaméni 復訓、Onana ACL 缺陣、England suspension watch 與 Yakin vulnerability quote 等非重複臨場線索。",
-  "headline": "Soren 八強雷達微更新：France-Morocco 看 Tchouaméni 能否回到中場，Spain-Belgium 因 Onana ACL 少一塊防線，Norway-England 多了 Quansah suspension watch，Argentina-Switzerland 則有 Yakin 公開喊「Argentina 可被打」。",
+  "generatedAt": "2026-07-09T01:04:22Z",
+  "status": "matchday scout: 八強前 19–72 小時補強 m097–m100，新增 FIFA live hub、Standard Morocco fitness watch、BBC/ESPN 八強脈絡、HITC 天氣風險與 USA Today Argentina-Switzerland 公共預測溫度。",
+  "headline": "Soren 八強雷達更新：France-Morocco 進入官方 live-centre 校時；Spain-Belgium 從「Onana 缺陣」升級成西班牙防線壓力測試；Norway-England 加入天氣/賽程風險 watch；Argentina-Switzerland 則把熱門壓力與瑞士偷雞路線攤開。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -9430,8 +9430,8 @@
       "matchId": "m097",
       "match": "France vs Morocco",
       "sourceType": "official match-centre + media team-news/injury watch + live-centre/odds/social-search rails",
-      "title": "France-Morocco 臨場溫度升高：Tchouaméni 復訓讓法國中場回魂，但 Morocco 的 Saibari fitness watch 仍是反擊路線的問號。",
-      "sorenTake": "FIFA/Goal/Sports Mole 已給足官方與媒體框架，新增 Eurosport/法媒搜尋線索顯示 Tchouaméni 從 adductor 問題回到集體訓練、Deschamps 說「他好多了」。Soren 的解讀很簡單：France 若拿回 Tchouaméni 的屏障，Morocco 不能只靠懷舊半決賽劇本；但這還不是確認先發，正式 XI 仍等 FIFA/球隊。",
+      "title": "France-Morocco 倒數進入官方 live-centre 模式：Tchouaméni 復訓是法國中場回血，Morocco 還要盯關鍵球員 fitness watch。",
+      "sorenTake": "France-Morocco 不能只靠 2022 情懷重播。法國中場健康度回升，但 Morocco 的可用人手與官方先發仍要等 match centre；任何搜尋片段都先降噪，開賽前只認官方/可信媒體。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M097：W89 vs W90，Boston Stadium / Foxborough，2026-07-09 20:00 UTC。",
         "ESPN/NBC/FOX 類公開 bracket/schedule 可作觀眾導覽，但在勝者未確定前只標為 context/bracket-watch。",
@@ -9449,7 +9449,9 @@
         "FotMob 已開 France-Morocco 即時頁，列明 2026-07-09 20:00 UTC，提供 live results、H2H、lineups、player ratings、shotmap 等臨場資料入口；正式先發仍等官方/賽事頁確認。",
         "CBS Sports 賽前 odds/prediction 頁把 France-Morocco 定位為八強市場熱點；這只作 paper simulation 的公開市場溫度，不是下注建議。",
         "HITC 報導社群對 FIFA 任命阿根廷裁判組吹 France-Morocco 有反應；Soren 只把它列為 social-search / public-buzz 線索，不假裝讀完留言或推論整體民意。",
-        "Eurosport / 法媒搜尋結果顯示 Aurélien Tchouaméni 因 adductor issue 缺席 Paraguay 戰後，已在 France-Morocco 前參與集體訓練；Deschamps 表示「il va mieux」。這是 reported fitness-return，不是 confirmed XI。"
+        "Eurosport / 法媒搜尋結果顯示 Aurélien Tchouaméni 因 adductor issue 缺席 Paraguay 戰後，已在 France-Morocco 前參與集體訓練；Deschamps 表示「il va mieux」。這是 reported fitness-return，不是 confirmed XI。",
+        "01:04Z 親核 The Standard Morocco-France team-news 頁：標題/metadata 指向「confirmed team news, predicted lineup, injury latest」，並明確說 Morocco 正在等一名關鍵球員健康狀態；本站只把它列為 availability / expected-XI watch，不升格成官方先發。",
+        "FIFA 今日賽事 live updates hub 已可連線；France-Morocco 開賽前後以官方 match centre / live hub 優先校正先發與比分，搜尋片段不直接當事實。"
       ],
       "sources": [
         {
@@ -9587,6 +9589,22 @@
           "fetchedAt": "2026-07-08T22:24:29Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "The Standard Morocco XI and injury latest",
+          "url": "https://www.standard.co.uk/sport/football/morocco-xi-vs-france-confirmed-team-news-predicted-lineup-injury-latest-world-cup-2026-b1289267.html",
+          "sourceName": "The Standard",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high",
+          "fetchedAt": "2026-07-09T01:04:22Z"
+        },
+        {
+          "label": "FIFA today live updates hub",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/todays-matches-live-updates",
+          "sourceName": "FIFA",
+          "claimType": "official/live-centre",
+          "confidence": "high",
+          "fetchedAt": "2026-07-09T01:04:22Z"
         }
       ],
       "confidence": "high"
@@ -9595,8 +9613,8 @@
       "matchId": "m098",
       "match": "Spain vs Belgium",
       "sourceType": "official match-centre + official/team page + media team-news watch + live-centre/odds rails",
-      "title": "Spain-Belgium 不只是美學對撞：Belgium 失去 Amadou Onana，西班牙的控球刀要直接切中場肋骨。",
-      "sorenTake": "FIFA/RFEF/FotMob/ESPN 已把賽事入口與市場溫度鋪好，BBC 新增的硬傷停訊號更有殺傷力：Amadou Onana ACL rupture，Belgium 中場防守少一台絞肉機。這不等於 Spain 躺贏，但若比賽變成長時間控球與二點球回收，Belgium 的缺口會很刺眼。",
+      "title": "Spain-Belgium 主軸更清楚：西班牙連續零封像保險箱，比利時少 Onana 還得想辦法撬鎖。",
+      "sorenTake": "Onana ACL 缺陣讓 Belgium 中場少一塊盾，但 BBC/ESPN 的八強脈絡提醒：真正問題是比利時鋒線能不能讓西班牙這條防線第一次真正慌。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M098：W93 vs W94，Los Angeles Stadium / Inglewood，2026-07-10 19:00 UTC。",
         "早前因 M093/M094 未完成，Portugal/Spain/USA/Belgium 敘事只能 bracket-watch；現在 M093/M094 都已 finished，本文保留此句作 provenance 並以下方 actualization 為準。",
@@ -9615,7 +9633,9 @@
         "Sports Mole 新增 Spain-Belgium 八強 prediction/team news/possible lineups；屬媒體預測與隊聞觀察，不能升格為 confirmed XI。",
         "FotMob 已開 Spain-Belgium 即時頁，列明 2026-07-10 19:00 UTC，提供 live results、H2H、lineups、ratings、shotmap 等臨場入口。",
         "ESPN odds 頁與 Yahoo Sports best-bets 頁提供 Spain-Belgium 的公開市場參考；本站只用於 paper simulation calibration，不導向真金流。",
-        "BBC Sport 報導 Belgium / Aston Villa midfielder Amadou Onana 在世界盃期間 ACL rupture；這是 Spain-Belgium 前的 confirmed availability blow，直接影響 Belgium 中場對抗與輪換。"
+        "BBC Sport 報導 Belgium / Aston Villa midfielder Amadou Onana 在世界盃期間 ACL rupture；這是 Spain-Belgium 前的 confirmed availability blow，直接影響 Belgium 中場對抗與輪換。",
+        "BBC 八強總覽把 Spain-Belgium 的主軸寫成「Belgium forwards 能不能終於打穿 Spain」；這補強本場不是只看 Onana 缺陣，而是西班牙防守連續零封與比利時鋒線破局能力的對撞。",
+        "ESPN 八強總覽/odds 頁已親核可連線，作為 Spain-Belgium 的市場與路線背景；只當公共 preview / odds context，不當下注建議。"
       ],
       "sources": [
         {
@@ -9769,6 +9789,22 @@
           "fetchedAt": "2026-07-08T22:24:29Z",
           "claimType": "confirmed/availability",
           "confidence": "high"
+        },
+        {
+          "label": "BBC quarter-final what to expect",
+          "url": "https://www.bbc.com/sport/football/articles/c4gyyvn1yn7o",
+          "sourceName": "BBC Sport",
+          "claimType": "context/tactical",
+          "confidence": "high",
+          "fetchedAt": "2026-07-09T01:04:22Z"
+        },
+        {
+          "label": "ESPN World Cup quarterfinal preview and odds",
+          "url": "https://www.espn.com/soccer/story/_/id/49294844/fifa-world-cup-quarterfinal-preview-predictions-odds-argentina-belgium-england-france-morocco-norway-spain-switzerland",
+          "sourceName": "ESPN",
+          "claimType": "context/odds-reference",
+          "confidence": "high",
+          "fetchedAt": "2026-07-09T01:04:22Z"
         }
       ],
       "confidence": "high"
@@ -9777,8 +9813,8 @@
       "matchId": "m099",
       "match": "Norway vs England",
       "sourceType": "official preview + official team match-centre + bracket actualization + paper odds watch",
-      "title": "Norway-England 還沒開踢先有懸念：Haaland vs Kane 是海報，Quansah 停賽與英格蘭黃牌風險才是髒活。",
-      "sorenTake": "England Football 的 match-centre 仍是硬入口；新增 Standard team-news 線索顯示 Jarell Quansah suspended，且還有球員背負潛在準決賽停賽風險。Soren 不會把 predicted XI 當官方名單，但這種 suspension math 會改變 England 後場冒險程度。",
+      "title": "Norway-England 多一條非技術紅燈：Haaland/Kane 是海報，Quansah 停賽與天氣/賽程風險才是髒活。",
+      "sorenTake": "英格蘭不是只要盯 Haaland。Quansah 停賽、黃牌風險與北美天氣敘事都會改變比賽節奏；但延期/天氣只列 watch，沒有官方訊號就不亂喊停賽。",
       "signals": [
         "Local worldcup.json lists M099 as quarter-final W91 vs W92 at 2026-07-11T21:00Z; participants remain placeholders until M91/M92 finish.",
         "FIFA match-centre/schedule and FIFA Suites public pages corroborate M99 / W91 vs W92 placeholder; no team-specific claims are made yet.",
@@ -9792,7 +9828,9 @@
         "公開 Facebook/Instagram 搜尋結果顯示 Norway-England 被包裝成 Haaland/Kane/Haaland vs England 話題；只作 social-search buzz，不推論完整民意。",
         "England Football 已開 Norway-England 八強 match centre，描述 Three Lions 將在 Miami 對 Norway，並把 fixture 細節落到 7 月 11 日。",
         "England Football knockout-stage fixture article確認 England 3-2 Mexico 後八強對 Norway；這是官方球隊路線，非第三方 bracket 猜測。",
-        "Evening Standard 的 Norway-England team-news / predicted-lineup 頁明示 Jarell Quansah suspended，且多名 England 球員有潛在準決賽停賽風險；正式首發仍等官方，但 suspension watch 已是賽前結構風險。"
+        "Evening Standard 的 Norway-England team-news / predicted-lineup 頁明示 Jarell Quansah suspended，且多名 England 球員有潛在準決賽停賽風險；正式首發仍等官方，但 suspension watch 已是賽前結構風險。",
+        "HITC 天氣/延期風險頁親核可連線，metadata 指出北美世界盃已有高溫與突發風暴干擾賽程；Norway-England 先標為 match-conditions watch，不把天氣風險誇張成已延期。",
+        "BBC 八強總覽把 Kane/Haaland 與 Norway upset road 放進整體八強脈絡；這是可信公共敘事來源，但不是正式先發或傷停公告。"
       ],
       "sources": [
         {
@@ -9882,6 +9920,22 @@
           "fetchedAt": "2026-07-08T22:24:29Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "HITC Norway-England weather/postponement watch",
+          "url": "https://www.hitc.com/the-chances-of-england-v-norway-being-postponed-as-extreme-weather-forecasted/",
+          "sourceName": "HITC",
+          "claimType": "reported/match-conditions",
+          "confidence": "medium",
+          "fetchedAt": "2026-07-09T01:04:22Z"
+        },
+        {
+          "label": "BBC quarter-final what to expect",
+          "url": "https://www.bbc.com/sport/football/articles/c4gyyvn1yn7o",
+          "sourceName": "BBC Sport",
+          "claimType": "context/tactical",
+          "confidence": "high",
+          "fetchedAt": "2026-07-09T01:04:22Z"
         }
       ],
       "confidence": "high"
@@ -9890,8 +9944,8 @@
       "matchId": "m100",
       "match": "Argentina vs Switzerland",
       "sourceType": "official match-centre + official squad baseline + bracket actualization + odds/context watch",
-      "title": "Argentina-Switzerland 的劇本開始變尖：Messi 光環之外，Yakin 公開把 Argentina 標成「可被打」。",
-      "sorenTake": "AFA/FIFA/Yahoo 給了基本盤，新增 Unanimo / 公開搜尋索引補到 Murat Yakin 的心理戰語境：Argentina vulnerable, not invincible。這不是模型答案，也不是瑞士必勝宣言；它提醒 Soren，Swiss 的低比分、十二碼與耐心路線不是裝飾品，是真能讓冠軍隊不舒服的打法。",
+      "title": "Argentina-Switzerland 開始有公共預測溫度：Messi 是流量，Switzerland 的反擊與心理壓力才是爆冷入口。",
+      "sorenTake": "Argentina 會被市場與媒體推成熱門，但 Yakin 的脆弱論、BBC 的熱門壓力與 USA Today 專家選邊都指向同一件事：瑞士要把比賽拖進焦躁區。",
       "signals": [
         "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
         "FIFA schedule/scores fixtures and FIFA Suites public pages support M100 / W95 vs W96 bracket rail; no lineup, odds, or tactical claim is attached while teams are unknown.",
@@ -9904,7 +9958,9 @@
         "FIFA match centre 已可連到 Argentina-Switzerland 八強頁，作為 Kansas City 臨場比分/陣容官方入口。",
         "AFA 官方 26 人名單頁提供 Argentina 世界盃陣容底稿；這是 roster grounding，不代表八強先發。",
         "Yahoo Sports Argentina-Switzerland prediction/best-bets 頁把 defending champions 與 Switzerland 韌性列為市場敘事；只作 paper odds/context 參考。",
-        "Unanimo Deportes / 公開搜尋索引報導 Switzerland coach Murat Yakin 賽前稱 Argentina「vulnerable / not invincible」；這是 reported coach-quote / tactical-psychology context，不是賽果預測。"
+        "Unanimo Deportes / 公開搜尋索引報導 Switzerland coach Murat Yakin 賽前稱 Argentina「vulnerable / not invincible」；這是 reported coach-quote / tactical-psychology context，不是賽果預測。",
+        "USA Today Argentina-Switzerland 專頁親核可連線，metadata 指向 expert picks / how to watch；本站把它當可信媒體觀點與公共預測溫度，不把專家選邊寫成事實。",
+        "BBC 八強總覽提醒 Argentina 將連續第三場淘汰賽以明顯熱門身份出戰；Soren 解讀：這正是 Switzerland low-block / transition upset path 的心理壓力來源，不是保送。"
       ],
       "sources": [
         {
@@ -10002,6 +10058,22 @@
           "fetchedAt": "2026-07-08T22:24:29Z",
           "claimType": "reported/coach-player-quote",
           "confidence": "medium-high"
+        },
+        {
+          "label": "USA Today Argentina-Switzerland expert picks",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/07/08/argentina-vs-switzerland-world-cup-quarterfinals-expert-picks/90843534007/",
+          "sourceName": "USA Today",
+          "claimType": "context/expert-picks",
+          "confidence": "high",
+          "fetchedAt": "2026-07-09T01:04:22Z"
+        },
+        {
+          "label": "BBC quarter-final what to expect",
+          "url": "https://www.bbc.com/sport/football/articles/c4gyyvn1yn7o",
+          "sourceName": "BBC Sport",
+          "claimType": "context/tactical",
+          "confidence": "high",
+          "fetchedAt": "2026-07-09T01:04:22Z"
         }
       ],
       "confidence": "high"
