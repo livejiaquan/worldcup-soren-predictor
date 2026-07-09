@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T15:40:34.556Z",
+  "generatedAt": "2026-07-09T16:09:33.264Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -9,6 +9,7 @@
     "totalMatches": 104,
     "finishedMatches": 96,
     "scheduledMatches": 8,
+    "finalPendingMatches": 0,
     "nextWindow": [
       "m097",
       "m098",
@@ -19,6 +20,59 @@
       "m103",
       "m104"
     ]
+  },
+  "dataQuality": {
+    "status": "pass",
+    "checkedAt": "2026-07-09T16:09:33.264Z",
+    "thresholds": {
+      "finalResultGraceMinutes": 150
+    },
+    "counts": {
+      "totalMatches": 104,
+      "groups": 12,
+      "teams": 48,
+      "finishedMatches": 96,
+      "scheduledMatches": 8,
+      "predictions": 104,
+      "leaderboardRows": 3,
+      "paperSettled": 12,
+      "paperPending": 5,
+      "resultOverrides": 0,
+      "groupStageMatches": 72,
+      "lifecycle": {
+        "final": 96,
+        "pre-match": 8
+      }
+    },
+    "labels": [
+      {
+        "key": "feed",
+        "label": "Open fixture feed parsed",
+        "status": "pass",
+        "detail": "104 matches from openfootball/worldcup.json"
+      },
+      {
+        "key": "settlement",
+        "label": "Final-only settlement guard",
+        "status": "pass",
+        "detail": "Leaderboards, paper bankroll, and public postmortems settle only when a score exists."
+      },
+      {
+        "key": "liveGuard",
+        "label": "Live is not final",
+        "status": "pass",
+        "detail": "No kicked-off match is waiting for a final result."
+      },
+      {
+        "key": "overrides",
+        "label": "Manual score overrides",
+        "status": "pass",
+        "detail": "No manual result overrides applied."
+      }
+    ],
+    "pendingFinalMatchIds": [],
+    "warnings": [],
+    "errors": []
   },
   "groups": [
     {
@@ -135,25 +189,25 @@
       {
         "team": "Mexico",
         "group": "Group A",
-        "played": 5,
-        "won": 4,
+        "played": 3,
+        "won": 3,
         "drawn": 0,
-        "lost": 1,
-        "goalsFor": 10,
-        "goalsAgainst": 3,
-        "goalDiff": 7,
-        "points": 12
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 0,
+        "goalDiff": 6,
+        "points": 9
       },
       {
         "team": "South Africa",
         "group": "Group A",
-        "played": 4,
+        "played": 3,
         "won": 1,
         "drawn": 1,
-        "lost": 2,
+        "lost": 1,
         "goalsFor": 2,
-        "goalsAgainst": 4,
-        "goalDiff": -2,
+        "goalsAgainst": 3,
+        "goalDiff": -1,
         "points": 4
       },
       {
@@ -185,37 +239,37 @@
       {
         "team": "Switzerland",
         "group": "Group B",
-        "played": 5,
-        "won": 3,
-        "drawn": 2,
+        "played": 3,
+        "won": 2,
+        "drawn": 1,
         "lost": 0,
-        "goalsFor": 9,
+        "goalsFor": 7,
         "goalsAgainst": 3,
-        "goalDiff": 6,
-        "points": 11
+        "goalDiff": 4,
+        "points": 7
       },
       {
         "team": "Canada",
         "group": "Group B",
-        "played": 5,
-        "won": 2,
+        "played": 3,
+        "won": 1,
         "drawn": 1,
-        "lost": 2,
-        "goalsFor": 9,
-        "goalsAgainst": 6,
-        "goalDiff": 3,
-        "points": 7
+        "lost": 1,
+        "goalsFor": 8,
+        "goalsAgainst": 3,
+        "goalDiff": 5,
+        "points": 4
       },
       {
         "team": "Bosnia & Herzegovina",
         "group": "Group B",
-        "played": 4,
+        "played": 3,
         "won": 1,
         "drawn": 1,
-        "lost": 2,
+        "lost": 1,
         "goalsFor": 5,
-        "goalsAgainst": 8,
-        "goalDiff": -3,
+        "goalsAgainst": 6,
+        "goalDiff": -1,
         "points": 4
       },
       {
@@ -233,28 +287,28 @@
     ],
     "Group C": [
       {
-        "team": "Morocco",
-        "group": "Group C",
-        "played": 5,
-        "won": 3,
-        "drawn": 2,
-        "lost": 0,
-        "goalsFor": 10,
-        "goalsAgainst": 4,
-        "goalDiff": 6,
-        "points": 11
-      },
-      {
         "team": "Brazil",
         "group": "Group C",
-        "played": 5,
-        "won": 3,
+        "played": 3,
+        "won": 2,
         "drawn": 1,
-        "lost": 1,
-        "goalsFor": 10,
-        "goalsAgainst": 4,
+        "lost": 0,
+        "goalsFor": 7,
+        "goalsAgainst": 1,
         "goalDiff": 6,
-        "points": 10
+        "points": 7
+      },
+      {
+        "team": "Morocco",
+        "group": "Group C",
+        "played": 3,
+        "won": 2,
+        "drawn": 1,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 3,
+        "goalDiff": 3,
+        "points": 7
       },
       {
         "team": "Scotland",
@@ -285,38 +339,38 @@
       {
         "team": "USA",
         "group": "Group D",
-        "played": 5,
-        "won": 3,
+        "played": 3,
+        "won": 2,
         "drawn": 0,
-        "lost": 2,
-        "goalsFor": 11,
-        "goalsAgainst": 8,
-        "goalDiff": 3,
-        "points": 9
+        "lost": 1,
+        "goalsFor": 8,
+        "goalsAgainst": 4,
+        "goalDiff": 4,
+        "points": 6
       },
       {
         "team": "Australia",
         "group": "Group D",
-        "played": 4,
+        "played": 3,
         "won": 1,
-        "drawn": 2,
+        "drawn": 1,
         "lost": 1,
-        "goalsFor": 3,
-        "goalsAgainst": 3,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
         "goalDiff": 0,
-        "points": 5
+        "points": 4
       },
       {
         "team": "Paraguay",
         "group": "Group D",
-        "played": 5,
+        "played": 3,
         "won": 1,
-        "drawn": 2,
-        "lost": 2,
-        "goalsFor": 3,
-        "goalsAgainst": 6,
-        "goalDiff": -3,
-        "points": 5
+        "drawn": 1,
+        "lost": 1,
+        "goalsFor": 2,
+        "goalsAgainst": 4,
+        "goalDiff": -2,
+        "points": 4
       },
       {
         "team": "Turkey",
@@ -335,37 +389,37 @@
       {
         "team": "Germany",
         "group": "Group E",
-        "played": 4,
+        "played": 3,
         "won": 2,
-        "drawn": 1,
+        "drawn": 0,
         "lost": 1,
-        "goalsFor": 11,
-        "goalsAgainst": 5,
+        "goalsFor": 10,
+        "goalsAgainst": 4,
         "goalDiff": 6,
-        "points": 7
+        "points": 6
       },
       {
         "team": "Ivory Coast",
         "group": "Group E",
-        "played": 4,
+        "played": 3,
         "won": 2,
         "drawn": 0,
-        "lost": 2,
-        "goalsFor": 5,
-        "goalsAgainst": 4,
-        "goalDiff": 1,
+        "lost": 1,
+        "goalsFor": 4,
+        "goalsAgainst": 2,
+        "goalDiff": 2,
         "points": 6
       },
       {
         "team": "Ecuador",
         "group": "Group E",
-        "played": 4,
+        "played": 3,
         "won": 1,
         "drawn": 1,
-        "lost": 2,
+        "lost": 1,
         "goalsFor": 2,
-        "goalsAgainst": 4,
-        "goalDiff": -2,
+        "goalsAgainst": 2,
+        "goalDiff": 0,
         "points": 4
       },
       {
@@ -385,37 +439,37 @@
       {
         "team": "Netherlands",
         "group": "Group F",
-        "played": 4,
+        "played": 3,
         "won": 2,
-        "drawn": 2,
+        "drawn": 1,
         "lost": 0,
-        "goalsFor": 11,
-        "goalsAgainst": 5,
+        "goalsFor": 10,
+        "goalsAgainst": 4,
         "goalDiff": 6,
-        "points": 8
+        "points": 7
       },
       {
         "team": "Japan",
         "group": "Group F",
-        "played": 4,
+        "played": 3,
         "won": 1,
         "drawn": 2,
-        "lost": 1,
-        "goalsFor": 8,
-        "goalsAgainst": 5,
-        "goalDiff": 3,
+        "lost": 0,
+        "goalsFor": 7,
+        "goalsAgainst": 3,
+        "goalDiff": 4,
         "points": 5
       },
       {
         "team": "Sweden",
         "group": "Group F",
-        "played": 4,
+        "played": 3,
         "won": 1,
         "drawn": 1,
-        "lost": 2,
+        "lost": 1,
         "goalsFor": 7,
-        "goalsAgainst": 10,
-        "goalDiff": -3,
+        "goalsAgainst": 7,
+        "goalDiff": 0,
         "points": 4
       },
       {
@@ -435,26 +489,26 @@
       {
         "team": "Belgium",
         "group": "Group G",
-        "played": 5,
-        "won": 3,
+        "played": 3,
+        "won": 1,
         "drawn": 2,
         "lost": 0,
-        "goalsFor": 13,
-        "goalsAgainst": 5,
-        "goalDiff": 8,
-        "points": 11
+        "goalsFor": 6,
+        "goalsAgainst": 2,
+        "goalDiff": 4,
+        "points": 5
       },
       {
         "team": "Egypt",
         "group": "Group G",
-        "played": 5,
+        "played": 3,
         "won": 1,
-        "drawn": 3,
-        "lost": 1,
-        "goalsFor": 8,
-        "goalsAgainst": 7,
-        "goalDiff": 1,
-        "points": 6
+        "drawn": 2,
+        "lost": 0,
+        "goalsFor": 5,
+        "goalsAgainst": 3,
+        "goalDiff": 2,
+        "points": 5
       },
       {
         "team": "Iran",
@@ -485,25 +539,25 @@
       {
         "team": "Spain",
         "group": "Group H",
-        "played": 5,
-        "won": 4,
+        "played": 3,
+        "won": 2,
         "drawn": 1,
         "lost": 0,
-        "goalsFor": 9,
+        "goalsFor": 5,
         "goalsAgainst": 0,
-        "goalDiff": 9,
-        "points": 13
+        "goalDiff": 5,
+        "points": 7
       },
       {
         "team": "Cape Verde",
         "group": "Group H",
-        "played": 4,
+        "played": 3,
         "won": 0,
         "drawn": 3,
-        "lost": 1,
-        "goalsFor": 4,
-        "goalsAgainst": 5,
-        "goalDiff": -1,
+        "lost": 0,
+        "goalsFor": 2,
+        "goalsAgainst": 2,
+        "goalDiff": 0,
         "points": 3
       },
       {
@@ -535,37 +589,37 @@
       {
         "team": "France",
         "group": "Group I",
-        "played": 5,
-        "won": 5,
+        "played": 3,
+        "won": 3,
         "drawn": 0,
         "lost": 0,
-        "goalsFor": 14,
+        "goalsFor": 10,
         "goalsAgainst": 2,
-        "goalDiff": 12,
-        "points": 15
+        "goalDiff": 8,
+        "points": 9
       },
       {
         "team": "Norway",
         "group": "Group I",
-        "played": 5,
-        "won": 4,
+        "played": 3,
+        "won": 2,
         "drawn": 0,
         "lost": 1,
-        "goalsFor": 12,
-        "goalsAgainst": 9,
-        "goalDiff": 3,
-        "points": 12
+        "goalsFor": 8,
+        "goalsAgainst": 7,
+        "goalDiff": 1,
+        "points": 6
       },
       {
         "team": "Senegal",
         "group": "Group I",
-        "played": 4,
+        "played": 3,
         "won": 1,
         "drawn": 0,
-        "lost": 3,
-        "goalsFor": 10,
-        "goalsAgainst": 9,
-        "goalDiff": 1,
+        "lost": 2,
+        "goalsFor": 8,
+        "goalsAgainst": 6,
+        "goalDiff": 2,
         "points": 3
       },
       {
@@ -585,37 +639,37 @@
       {
         "team": "Argentina",
         "group": "Group J",
-        "played": 5,
-        "won": 5,
+        "played": 3,
+        "won": 3,
         "drawn": 0,
         "lost": 0,
-        "goalsFor": 14,
-        "goalsAgainst": 5,
-        "goalDiff": 9,
-        "points": 15
+        "goalsFor": 8,
+        "goalsAgainst": 1,
+        "goalDiff": 7,
+        "points": 9
       },
       {
         "team": "Austria",
         "group": "Group J",
-        "played": 4,
+        "played": 3,
         "won": 1,
         "drawn": 1,
-        "lost": 2,
+        "lost": 1,
         "goalsFor": 6,
-        "goalsAgainst": 9,
-        "goalDiff": -3,
+        "goalsAgainst": 6,
+        "goalDiff": 0,
         "points": 4
       },
       {
         "team": "Algeria",
         "group": "Group J",
-        "played": 4,
+        "played": 3,
         "won": 1,
         "drawn": 1,
-        "lost": 2,
+        "lost": 1,
         "goalsFor": 5,
-        "goalsAgainst": 9,
-        "goalDiff": -4,
+        "goalsAgainst": 7,
+        "goalDiff": -2,
         "points": 4
       },
       {
@@ -635,37 +689,37 @@
       {
         "team": "Colombia",
         "group": "Group K",
-        "played": 5,
-        "won": 3,
-        "drawn": 2,
+        "played": 3,
+        "won": 2,
+        "drawn": 1,
         "lost": 0,
-        "goalsFor": 5,
+        "goalsFor": 4,
         "goalsAgainst": 1,
-        "goalDiff": 4,
-        "points": 11
+        "goalDiff": 3,
+        "points": 7
       },
       {
         "team": "Portugal",
         "group": "Group K",
-        "played": 5,
-        "won": 2,
+        "played": 3,
+        "won": 1,
         "drawn": 2,
-        "lost": 1,
-        "goalsFor": 8,
-        "goalsAgainst": 3,
+        "lost": 0,
+        "goalsFor": 6,
+        "goalsAgainst": 1,
         "goalDiff": 5,
-        "points": 8
+        "points": 5
       },
       {
         "team": "Democratic Republic of the Congo",
         "group": "Group K",
-        "played": 4,
+        "played": 3,
         "won": 1,
         "drawn": 1,
-        "lost": 2,
-        "goalsFor": 5,
-        "goalsAgainst": 5,
-        "goalDiff": 0,
+        "lost": 1,
+        "goalsFor": 4,
+        "goalsAgainst": 3,
+        "goalDiff": 1,
         "points": 4
       },
       {
@@ -685,37 +739,37 @@
       {
         "team": "England",
         "group": "Group L",
-        "played": 5,
-        "won": 4,
+        "played": 3,
+        "won": 2,
         "drawn": 1,
         "lost": 0,
-        "goalsFor": 11,
-        "goalsAgainst": 5,
-        "goalDiff": 6,
-        "points": 13
+        "goalsFor": 6,
+        "goalsAgainst": 2,
+        "goalDiff": 4,
+        "points": 7
       },
       {
         "team": "Croatia",
         "group": "Group L",
-        "played": 4,
+        "played": 3,
         "won": 2,
         "drawn": 0,
-        "lost": 2,
-        "goalsFor": 6,
-        "goalsAgainst": 7,
-        "goalDiff": -1,
+        "lost": 1,
+        "goalsFor": 5,
+        "goalsAgainst": 5,
+        "goalDiff": 0,
         "points": 6
       },
       {
         "team": "Ghana",
         "group": "Group L",
-        "played": 4,
+        "played": 3,
         "won": 1,
         "drawn": 1,
-        "lost": 2,
+        "lost": 1,
         "goalsFor": 2,
-        "goalsAgainst": 3,
-        "goalDiff": -1,
+        "goalsAgainst": 2,
+        "goalDiff": 0,
         "points": 4
       },
       {
@@ -749,7 +803,9 @@
         2,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m002",
@@ -767,7 +823,9 @@
         2,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m007",
@@ -785,7 +843,9 @@
         1,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m019",
@@ -803,7 +863,9 @@
         4,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m008",
@@ -821,7 +883,9 @@
         1,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m013",
@@ -839,7 +903,9 @@
         1,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m014",
@@ -857,7 +923,9 @@
         0,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m020",
@@ -875,7 +943,9 @@
         2,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m025",
@@ -893,7 +963,9 @@
         7,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m031",
@@ -911,7 +983,9 @@
         2,
         2
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m026",
@@ -929,7 +1003,9 @@
         1,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m032",
@@ -947,7 +1023,9 @@
         5,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m043",
@@ -965,7 +1043,9 @@
         0,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m037",
@@ -983,7 +1063,9 @@
         1,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m044",
@@ -1001,7 +1083,9 @@
         1,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m038",
@@ -1019,7 +1103,9 @@
         2,
         2
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m049",
@@ -1037,7 +1123,9 @@
         3,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m050",
@@ -1055,7 +1143,9 @@
         1,
         4
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m055",
@@ -1073,7 +1163,9 @@
         3,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m056",
@@ -1091,7 +1183,9 @@
         3,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m061",
@@ -1109,7 +1203,9 @@
         1,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m067",
@@ -1127,7 +1223,9 @@
         4,
         2
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m068",
@@ -1145,7 +1243,9 @@
         1,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m062",
@@ -1163,7 +1263,9 @@
         1,
         3
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m003",
@@ -1181,7 +1283,9 @@
         1,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m009",
@@ -1199,7 +1303,9 @@
         4,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m010",
@@ -1217,7 +1323,9 @@
         6,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m004",
@@ -1235,7 +1343,9 @@
         1,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m021",
@@ -1253,7 +1363,9 @@
         2,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m015",
@@ -1271,7 +1383,9 @@
         0,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m016",
@@ -1289,7 +1403,9 @@
         3,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m022",
@@ -1307,7 +1423,9 @@
         0,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m033",
@@ -1325,7 +1443,9 @@
         5,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m027",
@@ -1343,7 +1463,9 @@
         2,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m028",
@@ -1361,7 +1483,9 @@
         0,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m034",
@@ -1379,7 +1503,9 @@
         0,
         4
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m045",
@@ -1397,7 +1523,9 @@
         4,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m039",
@@ -1415,7 +1543,9 @@
         0,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m046",
@@ -1433,7 +1563,9 @@
         2,
         2
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m040",
@@ -1451,7 +1583,9 @@
         1,
         3
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m057",
@@ -1469,7 +1603,9 @@
         2,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m051",
@@ -1487,7 +1623,9 @@
         3,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m052",
@@ -1505,7 +1643,9 @@
         3,
         2
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m058",
@@ -1523,7 +1663,9 @@
         1,
         2
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m063",
@@ -1541,7 +1683,9 @@
         5,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m069",
@@ -1559,7 +1703,9 @@
         0,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m070",
@@ -1577,7 +1723,9 @@
         0,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m064",
@@ -1595,7 +1743,9 @@
         1,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m011",
@@ -1613,7 +1763,9 @@
         2,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m012",
@@ -1631,7 +1783,9 @@
         3,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m017",
@@ -1649,7 +1803,9 @@
         0,
         3
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m018",
@@ -1667,7 +1823,9 @@
         4,
         2
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m005",
@@ -1685,7 +1843,9 @@
         0,
         3
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m006",
@@ -1703,7 +1863,9 @@
         1,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m029",
@@ -1721,7 +1883,9 @@
         0,
         2
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m030",
@@ -1739,7 +1903,9 @@
         2,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m035",
@@ -1757,7 +1923,9 @@
         1,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m036",
@@ -1775,7 +1943,9 @@
         1,
         3
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m023",
@@ -1793,7 +1963,9 @@
         3,
         2
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m024",
@@ -1811,7 +1983,9 @@
         0,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m053",
@@ -1829,7 +2003,9 @@
         1,
         4
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m054",
@@ -1847,7 +2023,9 @@
         5,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m047",
@@ -1865,7 +2043,9 @@
         0,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m048",
@@ -1883,7 +2063,9 @@
         0,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m041",
@@ -1901,7 +2083,9 @@
         1,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m042",
@@ -1919,7 +2103,9 @@
         1,
         5
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m071",
@@ -1937,7 +2123,9 @@
         0,
         2
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m072",
@@ -1955,7 +2143,9 @@
         2,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m065",
@@ -1973,7 +2163,9 @@
         0,
         0
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m066",
@@ -1991,7 +2183,9 @@
         3,
         1
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m059",
@@ -2009,7 +2203,9 @@
         3,
         3
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m060",
@@ -2027,7 +2223,9 @@
         1,
         3
       ],
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score"
     },
     {
       "id": "m073",
@@ -2046,6 +2244,8 @@
         1
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Canada"
     },
     {
@@ -2065,6 +2265,8 @@
         1
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Brazil"
     },
     {
@@ -2084,6 +2286,8 @@
         1
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "shootoutScore": [
         3,
         4
@@ -2107,6 +2311,8 @@
         1
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "shootoutScore": [
         2,
         3
@@ -2130,6 +2336,8 @@
         2
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Norway"
     },
     {
@@ -2149,6 +2357,8 @@
         0
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "France"
     },
     {
@@ -2168,6 +2378,8 @@
         0
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Mexico"
     },
     {
@@ -2187,6 +2399,8 @@
         1
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "England"
     },
     {
@@ -2206,6 +2420,8 @@
         2
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Belgium"
     },
     {
@@ -2225,6 +2441,8 @@
         0
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "USA"
     },
     {
@@ -2244,6 +2462,8 @@
         0
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Spain"
     },
     {
@@ -2263,6 +2483,8 @@
         1
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Portugal"
     },
     {
@@ -2282,6 +2504,8 @@
         0
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Switzerland"
     },
     {
@@ -2301,6 +2525,8 @@
         1
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "shootoutScore": [
         2,
         4
@@ -2324,6 +2550,8 @@
         2
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Argentina"
     },
     {
@@ -2343,6 +2571,8 @@
         0
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Colombia"
     },
     {
@@ -2362,6 +2592,8 @@
         3
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Morocco"
     },
     {
@@ -2381,6 +2613,8 @@
         1
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "France"
     },
     {
@@ -2400,6 +2634,8 @@
         2
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Norway"
     },
     {
@@ -2419,6 +2655,8 @@
         3
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "England"
     },
     {
@@ -2438,6 +2676,8 @@
         1
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Spain"
     },
     {
@@ -2457,6 +2697,8 @@
         4
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Belgium"
     },
     {
@@ -2476,6 +2718,8 @@
         2
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "winner": "Argentina"
     },
     {
@@ -2495,6 +2739,8 @@
         0
       ],
       "source": "openfootball/worldcup.json",
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
       "shootoutScore": [
         4,
         3
@@ -2514,7 +2760,9 @@
       "venue": "Boston (Foxborough)",
       "status": "scheduled",
       "score": null,
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "pre-match",
+      "resultTrust": "pre-match fixture"
     },
     {
       "id": "m098",
@@ -2529,7 +2777,9 @@
       "venue": "Los Angeles (Inglewood)",
       "status": "scheduled",
       "score": null,
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "pre-match",
+      "resultTrust": "pre-match fixture"
     },
     {
       "id": "m099",
@@ -2544,7 +2794,9 @@
       "venue": "Miami (Miami Gardens)",
       "status": "scheduled",
       "score": null,
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "pre-match",
+      "resultTrust": "pre-match fixture"
     },
     {
       "id": "m100",
@@ -2559,7 +2811,9 @@
       "venue": "Kansas City",
       "status": "scheduled",
       "score": null,
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "pre-match",
+      "resultTrust": "pre-match fixture"
     },
     {
       "id": "m101",
@@ -2574,7 +2828,9 @@
       "venue": "Dallas (Arlington)",
       "status": "scheduled",
       "score": null,
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "pre-match",
+      "resultTrust": "pre-match fixture"
     },
     {
       "id": "m102",
@@ -2589,7 +2845,9 @@
       "venue": "Atlanta",
       "status": "scheduled",
       "score": null,
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "pre-match",
+      "resultTrust": "pre-match fixture"
     },
     {
       "id": "m103",
@@ -2604,7 +2862,9 @@
       "venue": "Miami (Miami Gardens)",
       "status": "scheduled",
       "score": null,
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "pre-match",
+      "resultTrust": "pre-match fixture"
     },
     {
       "id": "m104",
@@ -2619,7 +2879,9 @@
       "venue": "New York/New Jersey (East Rutherford)",
       "status": "scheduled",
       "score": null,
-      "source": "openfootball/worldcup.json"
+      "source": "openfootball/worldcup.json",
+      "lifecycle": "pre-match",
+      "resultTrust": "pre-match fixture"
     }
   ],
   "predictions": {
