@@ -49,6 +49,7 @@ const fmt = (iso, lang = 'zh', opts) => iso ? new Intl.DateTimeFormat(lang === '
 const fmtDate = (iso, lang = 'zh') => fmt(iso, lang, { month:'numeric', day:'numeric', weekday:'short', hour:'2-digit', minute:'2-digit', hour12:false })
 const fmtDay = (iso, lang = 'zh') => fmt(iso, lang, { month:'numeric', day:'numeric', weekday:'short' })
 const pct = (v) => `${Math.round((v || 0) * 100)}%`
+const signedPct = (v) => `${Number(v || 0) >= 0 ? '+' : ''}${pct(v)}`
 const money = (v) => `$${Number(v || 0).toFixed(2)}`
 const signedMoney = (v) => `${Number(v || 0) >= 0 ? '+' : ''}${money(v)}`
 const actualPick = (match) => !match?.score ? null : match.winner || (match.score[0] > match.score[1] ? match.team1 : match.score[1] > match.score[0] ? match.team2 : '平手')
@@ -229,17 +230,26 @@ function PaperBankroll({ bankroll, onSelect, lang, t }) {
     <div className="ledger">{pending.slice(0, 4).map((b) => <button type="button" key={b.matchId} onClick={() => onSelect(b.matchId)}><b>{b.team1} vs {b.team2}</b><span>{pickLabel(b.pick, lang)} · {money(b.stake)} · {fmtDate(b.kickoffUtc, lang)}</span></button>)}</div>
   </section>
 }
-function analyzeModel(data) {
-  const finished = data.matches.filter((m) => m.status === 'finished')
-  const rows = finished.map((m) => {
+function buildAuditRows(data) {
+  return data.matches.filter((m) => m.status === 'finished').map((m) => {
     const p = data.predictions[m.id]
     const actual = actualPick(m)
     const hit = actual && (p.pick === actual || (p.pick === '平手' && actual === '平手'))
     const [a, b] = m.score || [0, 0]
     const [pa, pb] = String(p.score || '0-0').split('-').map((n) => Number(n) || 0)
-    const goalError = Math.abs(a - pa) + Math.abs(b - pb)
-    return { match: m, p, actual, hit, exact: p.score === `${a}-${b}`, goalError }
+    return { match: m, p, actual, hit, exact: p.score === `${a}-${b}`, goalError: Math.abs(a - pa) + Math.abs(b - pb), confidence: p.confidence || 0, tag: p.tag || 'untagged' }
   })
+}
+function summarizeAuditRows(rows) {
+  const count = rows.length
+  const hits = rows.filter((r) => r.hit).length
+  const exact = rows.filter((r) => r.exact).length
+  const avgConfidence = count ? rows.reduce((sum, r) => sum + r.confidence, 0) / count : 0
+  const avgGoalError = count ? rows.reduce((sum, r) => sum + r.goalError, 0) / count : 0
+  return { count, hits, misses: count - hits, exact, accuracy: count ? hits / count : 0, exactRate: count ? exact / count : 0, avgConfidence, avgGoalError, gap: count ? hits / count - avgConfidence : 0, rows }
+}
+function analyzeModel(data) {
+  const rows = buildAuditRows(data)
   const soren = data.leaderboard?.find((r) => r.id === 'soren')
   const baseline = data.leaderboard?.find((r) => r.id === 'rating')
   const paper = data.paperBankroll || {}
@@ -258,6 +268,61 @@ function LearningLoop({ data, onSelect, lang, t }) {
     <SectionHead kicker={t.labKicker} title={t.labTitle} meta={t.labMeta}><small>{t.labNote}</small></SectionHead>
     <div className="bankroll-grid review-stats"><StatCard label={t.accuracy} value={pct(a.soren?.accuracy)} sub={`${a.soren?.correct || 0}/${a.finished} ${lang === 'en' ? 'finished picks' : '場方向'}`} tone="green" /><StatCard label={t.exact} value={`${a.exact}`} sub={lang === 'en' ? 'exact score hits' : '比分全中'} tone="blue" /><StatCard label={t.avgError} value={a.avgGoalError.toFixed(2)} sub={lang === 'en' ? 'lower is better' : '越低越好'} tone="amber" /><StatCard label={t.paperRoi} value={pct(a.paper?.roi)} sub={`${money(a.paper?.bankroll)} bankroll`} tone="violet" /><StatCard label={t.vsBaseline} value={`${delta >= 0 ? '+' : ''}${delta}`} sub={`${a.soren?.points || 0} vs ${a.baseline?.points || 0} pts`} /></div>
     <div className="review-grid"><div><h3>{t.bestRead}</h3>{a.wins.map((r) => <button key={r.match.id} type="button" onClick={() => onSelect(r.match.id)}><b>{r.match.team1} vs {r.match.team2}</b><span>{lang === 'en' ? 'Pick' : '預測'} {pickLabel(r.p.pick, lang)} · {lang === 'en' ? 'Actual' : '實際'} {pickLabel(r.actual, lang)} · {scoreLabel(r.match)}</span></button>)}</div><div><h3>{t.misses}</h3>{a.misses.map((r) => <button key={r.match.id} type="button" onClick={() => onSelect(r.match.id)}><b>{r.match.team1} vs {r.match.team2}</b><span>{lang === 'en' ? 'Pick' : '預測'} {pickLabel(r.p.pick, lang)} · {lang === 'en' ? 'Actual' : '實際'} {pickLabel(r.actual, lang)} · error {r.goalError}</span></button>)}</div><div><h3>{t.lessons}</h3><ul>{lessonCopy.map((l) => <li key={l}>{l}</li>)}</ul></div></div>
+  </section>
+}
+const CONFIDENCE_BANDS = [
+  { id: 'sub-50', min: 0, max: 0.5, label: '<50%' },
+  { id: '50s', min: 0.5, max: 0.6, label: '50-59%' },
+  { id: '60s', min: 0.6, max: 0.7, label: '60-69%' },
+  { id: '70-plus', min: 0.7, max: 1.01, label: '70%+' },
+]
+function auditTone(group) {
+  if (!group?.count) return 'empty'
+  if (group.gap <= -0.08) return 'overstated'
+  if (group.gap >= 0.08) return 'understated'
+  return 'calibrated'
+}
+function CalibrationAudit({ data, onSelect, lang }) {
+  const copy = lang === 'en'
+    ? {
+        kicker: 'PUBLIC CALIBRATION LENS', title: 'Confidence gets audited, not worshipped.', settled: 'settled picks',
+        note: 'Every finished prediction is grouped by stated confidence and public tag. The bars compare what Soren claimed before kickoff with what actually happened.',
+        finding: 'Live readout', overall: 'overall hit rate', bands: 'Confidence bands', tags: 'Tag reliability', matches: 'matches',
+        stated: 'stated', actual: 'actual', gap: 'gap', exact: 'exact', error: 'goal error', sample: 'Evidence drawer',
+        sampleHint: 'Misses float first; open any match for the full autopsy.', predicted: 'Pick', actualResult: 'Actual',
+        hit: 'hit', miss: 'miss', empty: 'No settled evidence in this slice yet.', tagAudit: 'tag audit',
+      }
+    : {
+        kicker: 'PUBLIC CALIBRATION LENS', title: '信心不是拿來膜拜，是拿來被審計。', settled: '場已結算',
+        note: '每場已完賽預測都按賽前信心與公開標籤分桶；這裡直接比 Soren 當時講多滿，賽後實際命中多少。',
+        finding: '即時校準讀數', overall: '整體命中率', bands: '信心分桶', tags: '標籤可靠度', matches: '場',
+        stated: '賽前信心', actual: '實際命中', gap: '落差', exact: '比分全中', error: '進球誤差', sample: '證據抽屜',
+        sampleHint: '翻車樣本排前面；點任何一場看完整驗屍報告。', predicted: '預測', actualResult: '實際',
+        hit: '抓到', miss: '翻車', empty: '這一格還沒有已結算樣本。', tagAudit: '標籤審計',
+      }
+  const rows = useMemo(() => buildAuditRows(data), [data])
+  const overall = useMemo(() => summarizeAuditRows(rows), [rows])
+  const bandGroups = useMemo(() => CONFIDENCE_BANDS.map((band) => ({ ...summarizeAuditRows(rows.filter((r) => r.confidence >= band.min && r.confidence < band.max)), key: `band:${band.id}`, label: band.label, sub: copy.bands })), [rows, copy.bands])
+  const tagGroups = useMemo(() => Object.entries(rows.reduce((acc, row) => { acc[row.tag] = [...(acc[row.tag] || []), row]; return acc }, {})).map(([tag, tagRows]) => ({ ...summarizeAuditRows(tagRows), key: `tag:${tag}`, label: tagLabel(tag, lang), sub: copy.tagAudit })).sort((a, b) => b.count - a.count || b.accuracy - a.accuracy), [rows, lang, copy.tagAudit])
+  const groups = [...bandGroups, ...tagGroups]
+  const [activeKey, setActiveKey] = useState('band:70-plus')
+  const active = groups.find((g) => g.key === activeKey && g.count) || groups.find((g) => g.count)
+  const sample = [...(active?.rows || [])].sort((a, b) => Number(a.hit) - Number(b.hit) || b.confidence - a.confidence || new Date(b.match.kickoffUtc) - new Date(a.match.kickoffUtc)).slice(0, 6)
+  const comparedBands = bandGroups.filter((g) => g.count)
+  const coldest = [...comparedBands].sort((a, b) => a.gap - b.gap)[0]
+  const warmest = [...comparedBands].sort((a, b) => b.gap - a.gap)[0]
+  const finding = lang === 'en'
+    ? `${coldest?.label || '-'} has the biggest actual-vs-stated gap at ${signedPct(coldest?.gap)}; ${warmest?.label || '-'} is at ${signedPct(warmest?.gap)}.`
+    : `${coldest?.label || '-'} 目前校準落差最大：實際命中比平均信心 ${signedPct(coldest?.gap)}；${warmest?.label || '-'} 是 ${signedPct(warmest?.gap)}。`
+  if (!rows.length) return null
+  return <section className="panel calibration-audit" id="calibration">
+    <SectionHead kicker={copy.kicker} title={copy.title} meta={`${rows.length} ${copy.settled || 'settled'}`}><small>{copy.note}</small></SectionHead>
+    <div className="audit-readout"><div><span>{copy.finding}</span><b>{finding}</b></div><div className="audit-score"><span>{copy.overall}</span><b>{pct(overall.accuracy)}</b><em>{overall.hits}/{overall.count}</em></div></div>
+    <div className="audit-layout">
+      <div className="calibration-stack"><h3>{copy.bands}</h3>{bandGroups.map((group) => <button type="button" key={group.key} className={`calibration-band ${active?.key === group.key ? 'active' : ''} ${auditTone(group)}`} onClick={() => setActiveKey(group.key)}><span className="audit-band-head"><b>{group.label}</b><em>{group.count} {copy.matches}</em></span><span className="audit-band-stats"><i>{copy.stated} <b>{pct(group.avgConfidence)}</b></i><i>{copy.actual} <b>{pct(group.accuracy)}</b></i><strong>{copy.gap} {signedPct(group.gap)}</strong></span><span className="calibration-bars"><i className="stated" style={{ width: pct(group.avgConfidence) }}/><i className="actual" style={{ width: pct(group.accuracy) }}/></span><span className="audit-band-foot">{copy.exact} {group.exact}/{group.count || 0} · {copy.error} {group.avgGoalError.toFixed(2)}</span></button>)}</div>
+      <div className="tag-audit"><h3>{copy.tags}</h3><div className="tag-audit-grid">{tagGroups.map((group) => <button type="button" key={group.key} className={`${active?.key === group.key ? 'active' : ''} ${auditTone(group)}`} onClick={() => setActiveKey(group.key)}><b>{group.label}</b><span>{group.hits}/{group.count} · {copy.actual} {pct(group.accuracy)}</span><em>{copy.stated} {pct(group.avgConfidence)} · {copy.error} {group.avgGoalError.toFixed(2)}</em></button>)}</div></div>
+      <div className="audit-sample"><div className="mini-head"><b>{copy.sample}{active ? ` · ${active.label}` : ''}</b><span>{copy.sampleHint}</span></div>{sample.length ? <div className="audit-match-list">{sample.map((row) => <button type="button" key={row.match.id} className={row.hit ? 'hit' : 'miss'} onClick={() => onSelect(row.match.id)}><strong>{row.hit ? copy.hit : copy.miss}</strong><b><InlineTeam name={row.match.team1}/> vs <InlineTeam name={row.match.team2}/></b><span>{copy.predicted} {pickLabel(row.p.pick, lang)} · {copy.actualResult} {pickLabel(row.actual, lang)}</span><em>{pct(row.confidence)} · {scoreLabel(row.match)} · {copy.error} {row.goalError}</em></button>)}</div> : <p>{copy.empty}</p>}</div>
+    </div>
   </section>
 }
 function resolveActualBracketTeam(token, matchByNumber, depth = 0) {
@@ -321,6 +386,7 @@ function App() {
     <KineticArena data={data} nextMatches={nextMatches} predictions={data.predictions} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t}/>
     <CommandCenter data={data} nextMatches={nextMatches} predictions={data.predictions} bankroll={data.paperBankroll} lang={lang} t={t}/>
     <LearningLoop data={data} onSelect={setSelectedId} lang={lang} t={t}/>
+    <CalibrationAudit data={data} onSelect={setSelectedId} lang={lang}/>
     <TodaySlate matches={nextMatches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t}/>
     <BracketSnapshot matches={data.matches} predictions={data.predictions} onSelect={setSelectedId} lang={lang} t={t}/>
     <IntelBrief intel={intel} matches={data.matches} onSelect={setSelectedId} lang={lang} t={t}/>
