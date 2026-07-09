@@ -106,11 +106,15 @@ const tagLabel = (tag, lang) => {
   return { '我敢站隊':'High conviction', '膠著到煩':'Annoyingly close', '這場有妖氣':'Trap warning', '有邊但不裝穩':'Edge, not a lock' }[tag] || tag
 }
 const sourceTrustLabel = (item, lang) => {
-  const first = item?.sources?.[0]
-  if (!first) return lang === 'en' ? 'No source attached yet' : '尚未附來源'
-  const claim = first.claimType || 'context'
-  const confidence = first.confidence || item.confidence || 'medium'
-  return lang === 'en' ? `${claim} · ${confidence} confidence` : `${claim} · 信心 ${confidence}`
+  const sources = item?.sources || []
+  if (!sources.length) return lang === 'en' ? 'No source attached yet' : '尚未附來源'
+  const directSources = sources.filter((src) => /confirmed|official/i.test(`${src.claimType || ''} ${src.sourceName || ''}`))
+  const highConfidence = sources.filter((src) => (src.confidence || item.confidence) === 'high').length
+  const strongest = directSources[0] || sources.find((src) => src.confidence === 'high') || sources[0]
+  const claim = strongest.claimType || 'context'
+  const confidence = strongest.confidence || item.confidence || 'medium'
+  if (lang === 'en') return `${claim} · ${confidence} confidence · ${sources.length} source${sources.length === 1 ? '' : 's'} (${highConfidence} high)`
+  return `${claim} · 信心 ${confidence} · ${sources.length} 來源（${highConfidence} 高信心）`
 }
 const clamp01 = (value) => Math.max(0, Math.min(1, Number(value) || 0))
 const isRouteToken = (team) => /^[WL]\d+$/.test(String(team || ''))
