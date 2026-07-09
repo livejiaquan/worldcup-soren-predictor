@@ -104,6 +104,51 @@ function ProbBar({ prediction }) { const p = prediction.probabilities; return <d
 function SectionHead({ kicker, title, meta, children }) { return <div className="section-head"><div><p>{kicker}</p><h2>{title}</h2>{children}</div>{meta && <span>{meta}</span>}</div> }
 function StatCard({ label, value, sub, tone = 'neutral' }) { return <article className={`stat-card ${tone}`}><p>{label}</p><b>{value}</b><span>{sub}</span></article> }
 
+
+function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, lang }) {
+  const [activeId, setActiveId] = useState(nextMatches[0]?.id || data.summary.nextWindow?.[0])
+  const active = nextMatches.find((m) => m.id === activeId) || nextMatches[0]
+  const prediction = active ? predictions[active.id] : null
+  const p = prediction?.probabilities || { home: 0.33, draw: 0.34, away: 0.33 }
+  const finished = data.summary.finishedMatches || 0
+  const total = data.summary.totalMatches || 1
+  const soren = data.leaderboard?.find((r) => r.id === 'soren')
+  const baseline = data.leaderboard?.find((r) => r.id === 'rating')
+  const scoreDelta = (soren?.points || 0) - (baseline?.points || 0)
+  const outcome = active ? [
+    { key: 'home', label: active.team1, value: p.home, tone: 'home' },
+    { key: 'draw', label: lang === 'en' ? 'Draw' : '平手', value: p.draw, tone: 'draw' },
+    { key: 'away', label: active.team2, value: p.away, tone: 'away' },
+  ].sort((a, b) => b.value - a.value) : []
+  const copy = lang === 'en'
+    ? {
+        kicker: 'INTERACTIVE AGENT COCKPIT', title: 'Not a dashboard. A live prediction organism.',
+        body: 'Pick a match and watch Soren expose its probability spine: conviction, trap risk, public intel density and the self-audit ledger all in one arena-style portrait.',
+        progress: 'tournament parsed', edge: 'model vs baseline', sources: 'source cards', inspect: 'Inspect match', lead: 'Soren leans', uncertainty: 'Uncertainty field', signal: 'Signal stack', noIntel: 'No verified intel card yet',
+      }
+    : {
+        kicker: 'INTERACTIVE AGENT COCKPIT', title: '不是儀表板，是一台會自我辯論的預測機。',
+        body: '點一場比賽，看 Soren 把勝率骨架、陷阱風險、情報密度和翻車復盤同時攤開；不要再像被動搜尋頁，要像一個正在運作的 agent。',
+        progress: '賽事已解析', edge: '模型 vs 基準', sources: '情報卡', inspect: '檢查這場', lead: 'Soren 目前站', uncertainty: '不確定性力場', signal: '訊號堆疊', noIntel: '這場還沒有驗證情報卡',
+      }
+  return <section className="kinetic-arena" id="arena-cockpit">
+    <div className="arena-copy"><p>{copy.kicker}</p><h2>{copy.title}</h2><span>{copy.body}</span><div className="arena-metrics"><b>{Math.round(finished / total * 100)}%<em>{copy.progress}</em></b><b>{scoreDelta >= 0 ? '+' : ''}{scoreDelta}<em>{copy.edge}</em></b><b>{intelByMatch ? Object.keys(intelByMatch).length : 0}<em>{copy.sources}</em></b></div></div>
+    <div className="arena-stage">
+      <div className="match-orbit">{nextMatches.slice(0, 8).map((m, idx) => <button type="button" key={m.id} className={m.id === active?.id ? 'active' : ''} style={{ '--i': idx }} onClick={() => setActiveId(m.id)}><span>{fmtDay(m.kickoffUtc, lang)}</span><b>{m.team1.split(' ')[0]} / {m.team2.split(' ')[0]}</b></button>)}</div>
+      {active && prediction && <div className="arena-card">
+        <div className="arena-card-head"><span>{stageLabel(active.stage, lang)}</span><button type="button" onClick={() => onSelect(active.id)}>{copy.inspect}</button></div>
+        <div className="arena-versus"><Team name={active.team1}/><strong>{prediction.score}</strong><Team name={active.team2}/></div>
+        <div className="probability-portrait" style={{ '--home': `${Math.round(p.home * 100)}%`, '--draw': `${Math.round(p.draw * 100)}%`, '--away': `${Math.round(p.away * 100)}%` }}>
+          {outcome.map((o) => <div key={o.key} className={`prob-lane ${o.tone}`}><span>{o.label}</span><b>{pct(o.value)}</b><i style={{ width: pct(o.value) }}/></div>)}
+        </div>
+        <div className="arena-take"><small>{copy.lead}</small><b>{pickLabel(prediction.pick, lang)} · {pct(prediction.confidence)}</b><p>{narrative(active, prediction, lang)}</p></div>
+        <div className="signal-stack"><b>{copy.signal}</b><span>{intelByMatch[active.id]?.title || copy.noIntel}</span></div>
+      </div>}
+      <div className="uncertainty-ring"><span>{copy.uncertainty}</span><b>{pct(1 - (prediction?.confidence || 0))}</b></div>
+    </div>
+  </section>
+}
+
 function CommandCenter({ data, nextMatches, predictions, bankroll, lang, t }) {
   const next = nextMatches[0]
   const sharp = [...nextMatches].sort((a, b) => (predictions[b.id]?.confidence || 0) - (predictions[a.id]?.confidence || 0))[0]
@@ -266,6 +311,7 @@ function App() {
     <nav className="top-nav"><b>Soren World Cup Lab</b><div><a href="#today">{t.navToday}</a><a href="#soren-intel">{t.navIntel}</a><a href="#predictions">{t.navPred}</a><a href="#bracket">{t.navBracket}</a><a href="#paper-bankroll">{t.navBankroll}</a><a href="#review">{t.navReview}</a><a href="#fixtures">{t.navFixtures}</a><button className="lang-toggle" type="button" onClick={switchLang}>{t.lang}</button></div></nav>
     <section className="hero-section"><div className="hero-copy"><span className="eyebrow">{t.heroKicker}</span><h1>{t.heroTitle}</h1><p>{t.heroBody}</p><div className="hero-actions"><a href="https://stair-ai.com/arena" target="_blank" rel="noreferrer">Stair AI Arena</a><a href="https://github.com/livejiaquan/worldcup-soren-predictor" target="_blank" rel="noreferrer">GitHub</a></div></div><div className="hero-card agent-profile"><span className="agent-label">PUBLIC AGENT PROFILE</span><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>{t.finished}</span><b>{data.summary.scheduledMatches}</b><span>{t.pending}</span><small>{t.lastUpdate}：{fmtDate(data.generatedAt, lang)} · {t.intelCards} {intel?.items?.length || 0}</small></div></section>
     <div className="notice">{t.notice}</div>
+    <KineticArena data={data} nextMatches={nextMatches} predictions={data.predictions} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t}/>
     <CommandCenter data={data} nextMatches={nextMatches} predictions={data.predictions} bankroll={data.paperBankroll} lang={lang} t={t}/>
     <LearningLoop data={data} onSelect={setSelectedId} lang={lang} t={t}/>
     <TodaySlate matches={nextMatches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t}/>
