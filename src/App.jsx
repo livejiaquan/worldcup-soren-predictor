@@ -74,6 +74,13 @@ const tagLabel = (tag, lang) => {
   if (lang !== 'en') return tag
   return { '我敢站隊':'High conviction', '膠著到煩':'Annoyingly close', '這場有妖氣':'Trap warning', '有邊但不裝穩':'Edge, not a lock' }[tag] || tag
 }
+const sourceTrustLabel = (item, lang) => {
+  const first = item?.sources?.[0]
+  if (!first) return lang === 'en' ? 'No source attached yet' : '尚未附來源'
+  const claim = first.claimType || 'context'
+  const confidence = first.confidence || item.confidence || 'medium'
+  return lang === 'en' ? `${claim} · ${confidence} confidence` : `${claim} · 信心 ${confidence}`
+}
 function narrative(match, prediction, lang) {
   if (lang !== 'en') return prediction.commentary?.headline
   if (!prediction) return ''
@@ -205,7 +212,7 @@ function IntelBrief({ intel, matches = [], onSelect, lang, t }) {
   const updatedLabel = intel.generatedAt ? `${t.updated} ${fmtDate(intel.generatedAt, lang)}` : `${intel.items.length}`
   return <section className="panel intel-feed compact-intel" id="soren-intel">
     <SectionHead kicker="SOREN SCOUTING BRIEF" title={t.scoutTitle} meta={updatedLabel}><small>{intel.items.length} {t.scoutNote}</small></SectionHead>
-    <div className="intel-compact-list">{prioritized.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row"><span>{item.match}</span><b>{item.title}</b><em>{item.confidence} · {item.sources?.length || 0} sources · {t.viewDetail}</em></button>)}</div>
+    <div className="intel-compact-list">{prioritized.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row"><span>{item.match}</span><b>{item.title}</b><em>{item.confidence} · {item.sources?.length || 0} sources · {t.viewDetail}</em><small className="intel-trust">{sourceTrustLabel(item, lang)}</small></button>)}</div>
     <details className="source-drawer compact-sources"><summary>{t.sources}</summary>{prioritized.map((item) => <div key={item.matchId} className="source-block"><b>{item.match}</b><ul>{item.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{item.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></div>)}</details>
     <p className="intel-note compact-note">{t.sourceNote}</p>
   </section>
