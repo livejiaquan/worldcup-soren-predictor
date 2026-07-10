@@ -193,18 +193,26 @@ function DataQualityBadge({ data, lang, nowMs }) {
     const lifecycle = runtimeLifecycle(match, nowMs)
     return lifecycle === 'live-window' || lifecycle === 'result-pending'
   })
+  const latestFinal = [...(data.matches || [])]
+    .filter((match) => match.status === 'finished' && Array.isArray(match.score))
+    .sort((a, b) => new Date(b.kickoffUtc) - new Date(a.kickoffUtc))[0]
+  const latestFinalText = latestFinal
+    ? lang === 'en'
+      ? `latest final: ${latestFinal.team1} ${latestFinal.score[0]}-${latestFinal.score[1]} ${latestFinal.team2}`
+      : `最新終場：${latestFinal.team1} ${latestFinal.score[0]}-${latestFinal.score[1]} ${latestFinal.team2}`
+    : ''
   const copy = lang === 'en'
     ? {
         kicker: 'DATA QUALITY', ok: 'Source-backed feed is healthy', watch: 'Data needs a final-score check',
         age: ageHours === null ? 'age unknown' : `${ageHours < 1 ? '<1' : ageHours.toFixed(1)}h old`,
         final: 'Final-only settlement', live: 'Live is not final', overrides: 'Overrides',
-        pending: `${dynamicPending.length} pending final`, clean: 'no live/final conflict · scouting cards show claim type + source count',
+        pending: `${dynamicPending.length} pending final`, clean: latestFinalText || 'no live/final conflict · readable trust labels on source cards',
       }
     : {
         kicker: 'DATA QUALITY', ok: '公開來源資料正常', watch: '需要終場比分巡檢',
         age: ageHours === null ? '時間未知' : `${ageHours < 1 ? '<1' : ageHours.toFixed(1)} 小時前生成`,
         final: '只用終場結算', live: 'Live 不是 Final', overrides: '人工覆核',
-        pending: `${dynamicPending.length} 場等終場`, clean: '沒有 live/final 衝突 · 情報卡標出 claim 與來源數',
+        pending: `${dynamicPending.length} 場等終場`, clean: latestFinalText || '沒有 live/final 衝突 · 來源卡使用可讀信任標籤',
       }
   const status = stale || dynamicPending.length || diagnostics.status === 'watch' || diagnostics.status === 'fail' ? 'watch' : 'pass'
   const labelByKey = Object.fromEntries((diagnostics.labels || []).map((label) => [label.key, label]))
