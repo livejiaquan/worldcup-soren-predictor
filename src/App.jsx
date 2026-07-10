@@ -105,16 +105,44 @@ const tagLabel = (tag, lang) => {
   if (lang !== 'en') return tag
   return { '我敢站隊':'High conviction', '膠著到煩':'Annoyingly close', '這場有妖氣':'Trap warning', '有邊但不裝穩':'Edge, not a lock' }[tag] || tag
 }
+const claimLabel = (claim = 'context', lang = 'zh') => {
+  const normalized = String(claim || 'context')
+  if (lang === 'en') {
+    if (/confirmed|official/i.test(normalized)) return 'verified claim'
+    if (/lineup/i.test(normalized)) return 'lineup watch'
+    if (/availability|injur|fitness/i.test(normalized)) return 'availability watch'
+    if (/live-score/i.test(normalized)) return 'live-score context'
+    if (/live-centre|live center/i.test(normalized)) return 'live-centre context'
+    if (/odds/i.test(normalized)) return 'paper-market reference'
+    if (/tactical|preview/i.test(normalized)) return 'tactical preview'
+    if (/reported/i.test(normalized)) return 'reported lead'
+    return 'context note'
+  }
+  if (/confirmed|official/i.test(normalized)) return '已核實訊號'
+  if (/lineup/i.test(normalized)) return '先發觀察'
+  if (/availability|injur|fitness/i.test(normalized)) return '可用性觀察'
+  if (/live-score/i.test(normalized)) return '即時比分脈絡'
+  if (/live-centre|live center/i.test(normalized)) return '即時中心入口'
+  if (/odds/i.test(normalized)) return '紙上市場參照'
+  if (/tactical|preview/i.test(normalized)) return '戰術預覽'
+  if (/reported/i.test(normalized)) return '媒體線索'
+  return '背景脈絡'
+}
+const confidenceLabel = (confidence = 'medium', lang = 'zh') => {
+  const normalized = String(confidence || 'medium').toLowerCase()
+  if (lang === 'en') return `${normalized.replace('-', '–')} confidence`
+  return { high:'高信心', 'medium-high':'中高信心', medium:'中信心', 'medium-low':'中低信心', low:'低信心' }[normalized] || `信心 ${confidence}`
+}
 const sourceTrustLabel = (item, lang) => {
   const sources = item?.sources || []
   if (!sources.length) return lang === 'en' ? 'No source attached yet' : '尚未附來源'
   const directSources = sources.filter((src) => /confirmed|official/i.test(`${src.claimType || ''} ${src.sourceName || ''}`))
   const highConfidence = sources.filter((src) => (src.confidence || item.confidence) === 'high').length
   const strongest = directSources[0] || sources.find((src) => src.confidence === 'high') || sources[0]
-  const claim = strongest.claimType || 'context'
-  const confidence = strongest.confidence || item.confidence || 'medium'
-  if (lang === 'en') return `${claim} · ${confidence} confidence · ${sources.length} source${sources.length === 1 ? '' : 's'} (${highConfidence} high)`
-  return `${claim} · 信心 ${confidence} · ${sources.length} 來源（${highConfidence} 高信心）`
+  const claim = claimLabel(strongest.claimType, lang)
+  const confidence = confidenceLabel(strongest.confidence || item.confidence || 'medium', lang)
+  if (lang === 'en') return `${claim} · ${confidence} · ${sources.length} source${sources.length === 1 ? '' : 's'} (${highConfidence} high)`
+  return `${claim} · ${confidence} · ${sources.length} 來源（${highConfidence} 高信心）`
 }
 const clamp01 = (value) => Math.max(0, Math.min(1, Number(value) || 0))
 const isRouteToken = (team) => /^[WL]\d+$/.test(String(team || ''))
@@ -295,7 +323,7 @@ function IntelBrief({ intel, matches = [], onSelect, lang, t }) {
   const updatedLabel = intel.generatedAt ? `${t.updated} ${fmtDate(intel.generatedAt, lang)}` : `${intel.items.length}`
   return <section className="panel intel-feed compact-intel" id="soren-intel">
     <SectionHead kicker="SOREN SCOUTING BRIEF" title={t.scoutTitle} meta={updatedLabel}><small>{intel.items.length} {t.scoutNote}</small></SectionHead>
-    <div className="intel-compact-list">{prioritized.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row"><span>{item.match}</span><b>{item.title}</b><em>{item.confidence} · {item.sources?.length || 0} sources · {t.viewDetail}</em><small className="intel-trust">{sourceTrustLabel(item, lang)}</small></button>)}</div>
+    <div className="intel-compact-list">{prioritized.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row"><span>{item.match}</span><b>{item.title}</b><em>{confidenceLabel(item.confidence, lang)} · {item.sources?.length || 0} {lang === 'en' ? 'sources' : '來源'} · {t.viewDetail}</em><small className="intel-trust">{sourceTrustLabel(item, lang)}</small></button>)}</div>
     <details className="source-drawer compact-sources"><summary>{t.sources}</summary>{prioritized.map((item) => <div key={item.matchId} className="source-block"><b>{item.match}</b><ul>{item.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{item.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.label}</a>)}</div></div>)}</details>
     <p className="intel-note compact-note">{t.sourceNote}</p>
   </section>
