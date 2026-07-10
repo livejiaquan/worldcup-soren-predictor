@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-10T05:06:38Z",
-  "status": "matchday scout: M098 Spain-Belgium 開賽前巡檢；親核 RFEF 官方備戰、BBC Onana ACL、ESPN/FOX live-centre 與 ESPN scoreboard scheduled。首頁資料品管文案同步收緊。",
-  "headline": "八強偵察更新：Spain-Belgium 進入 14 小時窗，England/Norway 與 Argentina/Swiss 的傷停與裁判雷達同步加密。",
+  "generatedAt": "2026-07-10T11:15:02Z",
+  "status": "matchday scout: M098 Spain-Belgium 開賽前 8 小時官方賽日/發布會補強；M099 FIFA/England 官方備戰與 Haaland 心理戰補強；M100 FIFA 官方預覽補強。",
+  "headline": "八強偵察更新：Spain-Belgium 進入賽日倒數，Norway-England 與 Argentina-Switzerland 的官方預覽/傷停雷達同步補強。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -9715,9 +9715,9 @@
     {
       "matchId": "m098",
       "match": "Spain vs Belgium",
-      "sourceType": "official match-centre + official/team page + media team-news watch + live-centre/odds rails",
-      "title": "Spain-Belgium 14 小時倒數：Olmo 官方放話像決賽，比利時少 Onana 但 KDB/Doku 已回訓；先發仍未官宣。",
-      "sorenTake": "Spain 的牌面完整度還是漂亮，但淘汰賽不頒控球獎。RFEF 新增 Olmo 賽前發言，明講每場都當決賽；Belgium 的硬傷仍是 Onana ACL 報銷，不過 TSN/AP 補到 Doku、De Bruyne 已參與訓練、沒有其他重大傷情。Soren 的紅線不變：FIFA/ESPN/FOX live-centre 只是雷達，confirmed XI 沒落地前不偷跑。",
+      "sourceType": "official match-centre + RFEF matchday/press context + media team-news watch + live-centre/odds rails",
+      "title": "Spain-Belgium 8 小時倒數：RFEF 賽日文與 De la Fuente 發布會補上火藥味；Onana 確定缺席，先發仍等官方。",
+      "sorenTake": "Spain 的官方訊號更密了：RFEF 賽日文把 Belgium 的 Lukaku、De Bruyne、Doku、Tielemans 都點名，De la Fuente 也在發布會強調完全信任全隊。比利時最大硬傷仍是 Onana ACL 報銷；Al Jazeera 補到無西班牙傷情與預測陣容，但那仍是預測，不是 confirmed XI。淘汰賽不頒控球獎，Soren 只等官方名單落地再開刀。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M098：W93 vs W94，Los Angeles Stadium / Inglewood，2026-07-10 19:00 UTC。",
         "早前因 M093/M094 未完成，Portugal/Spain/USA/Belgium 敘事只能 bracket-watch；現在 M093/M094 都已 finished，本文保留此句作 provenance 並以下方 actualization 為準。",
@@ -9749,7 +9749,10 @@
         "01:18Z 親核 ESPN 與 FOX Spain-Belgium live pages：兩者都提供 live score/highlights/stats/odds 入口；目前只列為臨場監控 rail，confirmed XI 仍等 FIFA/隊伍正式名單。",
         "2026-07-10T05:06:38Z 親核 RFEF Dani Olmo press conference：Olmo 在 Spain 回到 Los Angeles 後受訪，稱每場都當決賽，並點名 Belgium 有 Courtois 與各線世界級球員；這是官方賽前心理/對手尊重訊號，不是先發名單。",
         "2026-07-10T05:06:38Z 親核 TSN/AP Onana 更新：Amadou Onana ACL 報銷仍是比利時中場硬缺口；同篇補充 Belgium 沒有其他重大傷情，Doku 與 De Bruyne 參與訓練，屬 high-confidence availability context。",
-        "2026-07-10T05:06:38Z 再核：未找到可公開抽取的官方 confirmed XI；FIFA match-centre 可連，但目前只當 lineup-monitoring 入口。"
+        "2026-07-10T05:06:38Z 再核：未找到可公開抽取的官方 confirmed XI；FIFA match-centre 可連，但目前只當 lineup-monitoring 入口。",
+        "2026-07-10T11:15:02Z 親核 RFEF 賽日文「España quiere dejar su huella en el Paseo de la Fama」：官方把 Spain-Belgium 包成 Los Angeles 八強，點名 Belgium 的 Lukaku、De Bruyne、Doku、Tielemans 與兩隊 23 次交手背景；這是 matchday/opponent context，不是先發確認。",
+        "2026-07-10T11:15:02Z 親核 RFEF Luis de la Fuente 發布會頁：西班牙主帥稱對全隊有完全信任，屬官方賽前心理/教練訊號；仍未提供 confirmed XI。",
+        "2026-07-10T11:15:02Z 親核 Al Jazeera Spain-Belgium preview：重申 Belgium 的 Amadou Onana 因右膝 ACL 缺席餘下世界盃，並稱 Spain camp 未回報傷情；頁面列的是 predicted lineups / live-text rail，不能升格成官方先發。"
       ],
       "sources": [
         {
@@ -10079,6 +10082,30 @@
           "fetchedAt": "2026-07-10T05:06:38Z",
           "claimType": "context/live-centre",
           "confidence": "high"
+        },
+        {
+          "label": "RFEF Spain-Belgium matchday opponent context",
+          "url": "https://rfef.es/es/noticias/espana-quiere-dejar-su-sello-en-el-paseo-de-la-fama",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-10T11:15:02Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "RFEF Luis de la Fuente pre-match press conference",
+          "url": "https://rfef.es/es/noticias/luis-de-la-fuente-tengo-confianza-plena-en-mi-equipo",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-10T11:15:02Z",
+          "claimType": "confirmed/coach-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera Spain-Belgium preview and live text rail",
+          "url": "https://www.aljazeera.com/sports/2026/7/10/spain-vs-belgium-world-cup-quarterfinal-prediction-start-time-lineups",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-10T11:15:02Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -10086,9 +10113,9 @@
     {
       "matchId": "m099",
       "match": "Norway vs England",
-      "sourceType": "official preview + official team match-centre + availability/injury watch + bracket actualization + paper odds watch",
-      "title": "Norway-England 40 小時窗：Guehi 週五再評估、Rice 病毒續缺訓；挪威也傳腸胃 bug，這場先比誰的身體表少漏水。",
-      "sorenTake": "Kane 對 Haaland 是海報，真正會改盤面的卻是醫療室。BBC 已把 Guehi slight hamstring、Rice sickness bug、James 回訓但仍待觀察寫清楚；CNA/隊方脈絡延續週三個人課表。挪威端也有 sickness-bug 報導，但目前只能標 availability risk，不把它寫成誰一定缺陣。",
+      "sourceType": "official FIFA/England preview + official team match-centre + availability/injury watch + bracket actualization + paper odds watch",
+      "title": "Norway-England 34 小時窗：FIFA 補上挪威可能先發，England 官方日報續盯備戰；Haaland 把壓力丟回英格蘭。",
+      "sorenTake": "這場海報寫 Kane vs Haaland，但賽前真正要盯的是兩邊可用人手與心理槓桿。FIFA preview 已把 Norway 的可能先發輪廓放出來；England Football 7/10 日報確認備戰還在推進；BBC 則補到 Haaland 明說壓力在 England 身上。Guehi/Rice/James 的健康問號仍要等官方更硬的名單證據，Soren 不把預測陣容當聖旨。",
       "signals": [
         "Local worldcup.json lists M099 as quarter-final W91 vs W92 at 2026-07-11T21:00Z; participants remain placeholders until M91/M92 finish.",
         "FIFA match-centre/schedule and FIFA Suites public pages corroborate M99 / W91 vs W92 placeholder; no team-specific claims are made yet.",
@@ -10110,7 +10137,10 @@
         "22:48Z 親核 England Football 官方訓練更新：英格蘭大部隊在 Swope Soccer Village 回到草皮；Marc Guehi、Reece James、Declan Rice 缺席早上團練並做 individual programmes，Jordan Henderson 手臂手術成功後在飯店恢復。這是官方 availability watch，不等於三人已缺賽。",
         "2026-07-10T05:06:38Z 親核 BBC：Marc Guehi 有 slight hamstring injury，週五再評估能否出戰 Norway；Declan Rice 因 sickness bug 再度未訓，Reece James 回到訓練並進入競爭名單。這是 high-confidence availability watch。",
         "2026-07-10T05:06:38Z 親核 CNA：Rice、Guehi、Reece James 週三未跟大隊合練、走 individual programmes；文章補 James hamstring 與 Rice neural problem 管理背景。仍非缺賽官宣。",
-        "2026-07-10T05:06:38Z 公開媒體報導 Norway camp 有 sickness bug 風險；來源為二手報導引用 Dagbladet，先保守列為 reported availability risk，不推定任何 Norway 球員缺席。"
+        "2026-07-10T05:06:38Z 公開媒體報導 Norway camp 有 sickness bug 風險；來源為二手報導引用 Dagbladet，先保守列為 reported availability risk，不推定任何 Norway 球員缺席。",
+        "2026-07-10T11:15:02Z 親核 FIFA Norway-England 官方 preview 搜尋摘要：FIFA 列出 Norway possible XI（Nyland; Ryerson, Ajer, Heggem, Moller Wolfe; Berg, Berge, Odegaard; Sorloth, Haaland, Nusa）並標明兩隊世界盃首次交手；這是 official preview / probable-XI rail，不是 confirmed lineup。",
+        "2026-07-10T11:15:02Z 親核 England Football 7/10 Three Lions Daily：官方日報稱 England camp 繼續準備週六八強，屬官方備戰節奏來源；摘要未給出新傷停結論。",
+        "2026-07-10T11:15:02Z 親核 BBC Haaland 訪談：Haaland 稱八強壓力都在 England 身上，這是可信心理戰/敘事 context，不改變傷停或先發狀態。"
       ],
       "sources": [
         {
@@ -10264,6 +10294,22 @@
           "fetchedAt": "2026-07-10T05:06:38Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "England Football Three Lions Daily 10 July",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/10/england-men-world-cup-2026-daily-briefing",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-10T11:15:02Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Haaland says pressure is on England",
+          "url": "https://www.bbc.com/sport/football/articles/cj3gd8rg628o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-10T11:15:02Z",
+          "claimType": "context/coach-player-quote",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -10271,9 +10317,9 @@
     {
       "matchId": "m100",
       "match": "Argentina vs Switzerland",
-      "sourceType": "official match-centre + official squad/referee baseline + bracket actualization + odds/context watch",
-      "title": "Argentina-Switzerland 補上裁判與媒體日程：AFA 確認 João Pinheiro 執法，Scaloni 賽前發布會排定；熱門也要先過瑞士鐵門。",
-      "sorenTake": "Argentina 的明星光環很吵，但這種八強最怕把細節當背景音。AFA 新增裁判任命與賽前行程：João Pinheiro 執法、Scaloni 發布會與正式訓練排定；Sports Mole 等媒體再把瑞士幾名傷情疑問拉上桌。這些都還是賽前雷達，不是先發，也不是保送。",
+      "sourceType": "official FIFA/AFA match-centre + official squad/referee baseline + bracket actualization + predicted-XI/injury watch + odds/context watch",
+      "title": "Argentina-Switzerland 38 小時窗：FIFA 官方預覽補上瑞士韌性敘事；Sports Mole 傷情仍只能當 predicted-XI 雷達。",
+      "sorenTake": "Argentina 的光環很亮，但 Switzerland 這條線不是觀光團。FIFA preview 把本場框成衛冕軍對上耐打瑞士，AFA 的裁判與賽程訊號仍是硬底板；Sports Mole 提到 Manzambi 膝傷脈絡與雙方可能陣容，但這只能提醒 Soren 盯深度與輪換，不能當官方傷停公告。",
       "signals": [
         "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
         "FIFA schedule/scores fixtures and FIFA Suites public pages support M100 / W95 vs W96 bracket rail; no lineup, odds, or tactical claim is attached while teams are unknown.",
@@ -10292,7 +10338,9 @@
         "22:48Z 親核 AFA 官方文確認 Argentina 將在八強對 Switzerland（Colombia 戰 0-0 後 PK 4-3 晉級），開球為阿根廷時間週六 22:00；Swiss FA 官方對手檔案則列出 Argentina / Messi 歷史背景與瑞士對戰劣勢，屬 official opponent-scouting context。",
         "2026-07-10T05:06:38Z 親核 AFA：FIFA 指派葡萄牙裁判 João Pinheiro 執法 Argentina vs Switzerland 八強，屬 official match-officials context。",
         "2026-07-10T05:06:38Z 親核 AFA Cronograma：Argentina 週五安排官方訓練、mixed zone 與 Scaloni 在 Kansas City 賽前發布會；這是官方備戰時程，不暴露先發。",
-        "2026-07-10T05:06:38Z 媒體 preview 提到 Scaloni 應有完整陣容、Switzerland 端 Aebischer/Jaquez/Manzambi 有疑問；先列 reported injury/expected-XI synthesis，等官方名單驗證。"
+        "2026-07-10T05:06:38Z 媒體 preview 提到 Scaloni 應有完整陣容、Switzerland 端 Aebischer/Jaquez/Manzambi 有疑問；先列 reported injury/expected-XI synthesis，等官方名單驗證。",
+        "2026-07-10T11:15:02Z 親核 FIFA Argentina-Switzerland 官方 preview URL 可連：官方把 Kansas City 八強框成 Argentina title defence 對 durable Switzerland；這補強 public match narrative，但未提供 confirmed XI。",
+        "2026-07-10T11:15:02Z 親核 Sports Mole Argentina-Switzerland preview：Manzambi 曾因膝傷缺席對 Colombia，Aebischer/Jaquez/Manzambi 狀態仍只能保守列為媒體 injury/lineup watch；雙方可能陣容皆非官方名單。"
       ],
       "sources": [
         {
@@ -10446,6 +10494,14 @@
           "fetchedAt": "2026-07-10T05:06:38Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA Argentina-Switzerland quarter-final preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/argentina-switzerland-preview-live-stream-team-news-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-10T11:15:02Z",
+          "claimType": "context/tactical-preview",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
