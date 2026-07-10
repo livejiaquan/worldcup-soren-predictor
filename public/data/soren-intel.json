@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-09T22:55:55Z",
-  "status": "matchday scout: M097 France-Morocco 開賽前約 3 小時再核，未把 projected XI 升級；補 Reuters Saibari/教練脈絡。M098 Spain-Belgium 26 小時窗補 RFEF/RBFA 官方、Reuters 戰術框架、Onana ACL 與紙上市場參考。",
-  "headline": "八強倒數：Spain-Belgium 傷停再收緊，England 訓練名單亮黃燈，Argentina-Switzerland 官方對手檔案補齊。",
+  "generatedAt": "2026-07-10T01:18:00Z",
+  "status": "matchday scout: M098 Spain-Belgium 開賽前巡檢；親核 RFEF 官方備戰、BBC Onana ACL、ESPN/FOX live-centre 與 ESPN scoreboard scheduled。首頁資料品管文案同步收緊。",
+  "headline": "France 2-0 Morocco 已進四強；下一刀轉向 Spain-Belgium：西班牙回 LA 全員備戰，比利時少 Onana，live-centre 只當臨場入口不當終場。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -9716,8 +9716,8 @@
       "matchId": "m098",
       "match": "Spain vs Belgium",
       "sourceType": "official match-centre + official/team page + media team-news watch + live-centre/odds rails",
-      "title": "Spain-Belgium 20 小時倒數：Nico 還在 fitness watch，Onana 確定報銷，KDB 也不是自動召回鍵。",
-      "sorenTake": "Spain 仍是較完整的答案，但這不是紅毯。Nico Williams 若繼續缺陣，西班牙左路少一把直刀；Belgium 這邊 Onana ACL 報銷是硬傷，De Bruyne 是否回先發還是 Garcia 的風險選擇。Soren 的紙上盤口只拿市場當溫度計，不把它當方向盤。",
+      "title": "Spain-Belgium 18 小時倒數：西班牙回 LA 全員備戰，比利時少 Onana；live-centre 開了，但先發還沒落槌。",
+      "sorenTake": "Spain 仍是較完整的答案，但別把控球漂亮誤讀成自動通關。RFEF 親自說全 26 人在 LA 回訓，這讓西班牙的備戰訊號乾淨；Belgium 則要帶著 Onana ACL 報銷的中場缺口去硬扛。ESPN/FOX/FIFA live-centre 都只是臨場入口——開賽前我只收訊號，不偷寫 confirmed XI。",
       "signals": [
         "FIFA 官方賽程與 hospitality/suites 頁都指向 M098：W93 vs W94，Los Angeles Stadium / Inglewood，2026-07-10 19:00 UTC。",
         "早前因 M093/M094 未完成，Portugal/Spain/USA/Belgium 敘事只能 bracket-watch；現在 M093/M094 都已 finished，本文保留此句作 provenance 並以下方 actualization 為準。",
@@ -9741,7 +9741,12 @@
         "ESPN 八強總覽/odds 頁已親核可連線，作為 Spain-Belgium 的市場與路線背景；只當公共 preview / odds context，不當下注建議。",
         "Reuters Graphics 已開 Spain-Belgium live match tracker，metadata 指向 live scores、stats、commentary and analysis；這是可信臨場資料入口，不是提前確認先發。",
         "16:42Z 補強 Spain-Belgium：RFEF 官方確認 Spain 回訓且 Dallas 高溫約 37°C；RBFA 已發布本場球迷實務資訊。Reuters 把對戰框成 Spain well-oiled machine 對 Belgium blast，另文指出 Belgium 在少大牌/新方法下贏 USA 取得回報；但 Onana ACL 報銷讓比利時中場抗壓少一塊硬骨頭。",
-        "22:48Z 親核 Evening Standard 兩篇 team-news：Spain 可能再次沒有 Nico Williams（abductor injury，自 Uruguay 戰後缺席兩場淘汰賽）；Belgium 則確認 Amadou Onana ACL 報銷，且 Kevin De Bruyne 不保證被召回先發。這些仍是賽前 availability / predicted-XI watch，confirmed XI 要等 FIFA/隊伍名單。"
+        "22:48Z 親核 Evening Standard 兩篇 team-news：Spain 可能再次沒有 Nico Williams（abductor injury，自 Uruguay 戰後缺席兩場淘汰賽）；Belgium 則確認 Amadou Onana ACL 報銷，且 Kevin De Bruyne 不保證被召回先發。這些仍是賽前 availability / predicted-XI watch，confirmed XI 要等 FIFA/隊伍名單。",
+        "01:18Z 親核 RFEF Los Angeles, Chapter Two：Spain 回到 Carson / Dignity Health Sports Park 備戰 Belgium，頁面明示 all 26 players available；這是官方備戰與可用性背景，不是正式先發。",
+        "01:18Z 親核 RFEF Spain Turns Its Attention to the Quarter-finals：西班牙在 Dallas 37°C 高溫後進行恢復、技戰術與射門訓練，準備週五對 Belgium；這強化備戰節奏，不等於戰術板已公開。",
+        "01:18Z 親核 BBC：Amadou Onana 在 Belgium 4-1 USA 戰中右膝 ACL rupture，Belgium 表示他會留隊但缺席 Spain quarter-final；這是 high-confidence availability blow。",
+        "01:18Z 親核 ESPN public scoreboard：20260710 只有 Belgium at Spain，STATUS_SCHEDULED / state=pre / completed=false；因此本站不把任何 live-centre 頁面當終場或先發證據。",
+        "01:18Z 親核 ESPN 與 FOX Spain-Belgium live pages：兩者都提供 live score/highlights/stats/odds 入口；目前只列為臨場監控 rail，confirmed XI 仍等 FIFA/隊伍正式名單。"
       ],
       "sources": [
         {
@@ -9999,6 +10004,54 @@
           "fetchedAt": "2026-07-09T22:55:55Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "RFEF Los Angeles Chapter Two",
+          "url": "https://rfef.es/en/noticias/Los-Angeles-Chapter-Two",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-10T01:18:00Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "RFEF quarter-final training update",
+          "url": "https://rfef.es/en/noticias/Spain-Turns-Its-Attention-to-the-Quarter-finals",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-10T01:18:00Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Amadou Onana ACL report",
+          "url": "https://www.bbc.com/sport/football/articles/c862nw2xj0jo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-10T01:18:00Z",
+          "claimType": "confirmed/availability",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Spain-Belgium live score",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760511/belgium-spain",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-10T01:18:00Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Spain-Belgium boxscore",
+          "url": "https://www.foxsports.com/soccer/fifa-world-cup-men-spain-vs-belgium-jul-10-2026-game-boxscore-607928",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-10T01:18:00Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN public scoreboard 20260710",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260710",
+          "sourceName": "ESPN public API",
+          "fetchedAt": "2026-07-10T01:18:00Z",
+          "claimType": "confirmed/scheduled-status",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
