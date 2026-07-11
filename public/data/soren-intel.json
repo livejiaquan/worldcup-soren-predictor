@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-11T01:06:29Z",
-  "status": "quarter-final scout: M099 補 BBC Solbakken 壓力脈絡與 Norway sickness-bug availability watch；M100 補瑞士傷情 watch、Khel Now predicted XI 與 Pinheiro 裁判噪音脈絡。",
-  "headline": "八強偵察更新：Norway-England 的熱門壓力被 BBC/Solbakken 說破，Argentina-Switzerland 則補上瑞士傷情與裁判脈絡；全部保守標籤，不把搜尋線索寫成事實。",
+  "generatedAt": "2026-07-11T05:39:47Z",
+  "status": "quarter-final scout: M099 補 England 官方 Tuchel/Kane 賽前記者會與 BBC Miami 高溫/availability watch；M100 補 FIFA/AFA 實名路線與 Reuters rivalry context，全部保守標籤。",
+  "headline": "八強偵察更新：Norway-England 進入 15 小時官方賽前模式，Miami 高溫成關鍵變數；Argentina-Switzerland 則補上 FIFA/AFA 路線與瑞士韌性脈絡。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -10150,9 +10150,9 @@
     {
       "matchId": "m099",
       "match": "Norway vs England",
-      "sourceType": "official FIFA/England preview + eve-of-match availability/suspension watch + tactical analytics + paper odds watch",
-      "title": "Norway-England 20 小時窗：Solbakken 也承認 England 是熱門，但挪威病毒風波讓這場更像壓力測試。",
-      "sorenTake": "BBC 親核到 Solbakken 直接把熱門帽子扣回 England 頭上，這是心理戰也是現實；Standard 的 Norway sickness-bug team-news 頁則提醒：Haaland 線不是唯一變數。Soren 仍站 England 較有邊，但 Quansah 停賽、多人黃牌風險和挪威身體狀態雜訊，讓它不是乾淨的熱門局。",
+      "sourceType": "official FIFA/England eve-of-match press + BBC heat/availability watch + tactical analytics + paper odds watch",
+      "title": "Norway-England 15 小時窗：Tuchel/Kane 官方賽前語氣轉硬，Miami 露天高溫才是真正第三隊。",
+      "sorenTake": "England Football 連發 Tuchel 與 Kane 賽前記者會：不是只喊口號，而是在把「bite, hunger, grit」與大賽經驗壓成執行標準。BBC 另一條線提醒 Miami 露天熱度會把節奏拖慢；加上 Guehi/Rice/James availability watch 與 Quansah 停賽，Soren 仍給 England 邊，但這場的陷阱不是 Haaland 一個人，是高溫、停賽與挪威低位反擊一起上桌。",
       "signals": [
         "Local worldcup.json lists M099 as quarter-final W91 vs W92 at 2026-07-11T21:00Z; participants remain placeholders until M91/M92 finish.",
         "FIFA match-centre/schedule and FIFA Suites public pages corroborate M99 / W91 vs W92 placeholder; no team-specific claims are made yet.",
@@ -10184,7 +10184,11 @@
         "2026-07-10T23:28Z 親核 BBC 早前傷情頁：Guehi/Rice 預期可出戰，James 仍有希望；與最新訓練頁合併後，England availability 風險下降但未歸零。",
         "2026-07-10T23:28Z 公開 odds/search lead：FanDuel/Lines/VegasInsider 等頁已把 England 定為市場小熱門；只作 paper closing-line 觀察，不作投注執行。",
         "2026-07-11T01:06:29Z 親核 BBC：Norway 主帥 Ståle Solbakken 告訴 BBC Sport，England 是晉級四強熱門；這是高可信賽前心理/壓力脈絡，不是先發或傷停確認。",
-        "2026-07-11T01:06:29Z 親核 The Standard Norway XI team-news 頁 metadata：Norway camp 賽前有 sickness bug 議題，頁面標題為 predicted lineup / injury latest；先保守列為 availability watch，不把它寫成確定缺席。"
+        "2026-07-11T01:06:29Z 親核 The Standard Norway XI team-news 頁 metadata：Norway camp 賽前有 sickness bug 議題，頁面標題為 predicted lineup / injury latest；先保守列為 availability watch，不把它寫成確定缺席。",
+        "England Football 7/11 官方 Tuchel press conference 指向 quarter-final mentality：「bite, hunger and grit」是英格蘭賽前主旋律；這是官方心態訊號，不是首發內線。",
+        "England Football 7/11 官方 Kane press conference 稱 England 仍有 levels to reach，並把過往大賽經驗放進四強門檻；作為 captain/mentality context。",
+        "BBC 7/11 open-air Miami heat 分析把 Norway-England 的比賽條件拉到檯面：England 前面多在控溫球場，Miami 露天高溫可能影響壓迫與換人節奏。",
+        "BBC live/team-news rail 仍把 Guehi/Rice/James 狀態與 Quansah 停賽放在賽前監控；正式 lineup 未出前只作 availability watch，不升級成 confirmed XI。"
       ],
       "sources": [
         {
@@ -10410,6 +10414,38 @@
           "fetchedAt": "2026-07-11T01:06:29Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "England Football Tuchel pre-match press conference",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/11/thomas-tuchel-norway-england-pre-match-press-conference-20261007",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-11T05:39:47Z",
+          "claimType": "confirmed/team-press-conference",
+          "confidence": "high"
+        },
+        {
+          "label": "England Football Harry Kane pre-match press conference",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/11/harry-kane-norway-england-pre-match-press-conference-20261007",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-11T05:39:47Z",
+          "claimType": "confirmed/team-press-conference",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Miami open-air heat analysis",
+          "url": "https://www.bbc.com/sport/football/articles/cx2jzl3zxpzo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-11T05:39:47Z",
+          "claimType": "context/venue-weather",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Norway-England live team-news rail",
+          "url": "https://www.bbc.com/sport/football/live/c1ky14v0xmgt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-11T05:39:47Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -10417,9 +10453,9 @@
     {
       "matchId": "m100",
       "match": "Argentina vs Switzerland",
-      "sourceType": "official FIFA/AFA/SFV context + referee baseline + late injury/predicted-XI watch + paper odds watch",
-      "title": "Argentina-Switzerland 24 小時窗：Manzambi/Aebischer/Jaquez 傷情仍卡著，Pinheiro 裁判線也變成場邊噪音。",
-      "sorenTake": "ESPN 與 Khel Now 都把 Switzerland 的 Manzambi、Aebischer、Jaquez 放進 availability 疑問區；這不是正式缺陣單，但會壓縮瑞士中後場輪換。João Pinheiro 已由 AFA/FIFA 指派，NBC DFW 把裁判爭議脈絡拉出來——Soren 會記錄噪音，但不讓裁判話題蓋過 Argentina 對瑞士韌性的真正解題。",
+      "sourceType": "official FIFA/AFA/SFV route context + referee baseline + late injury/predicted-XI watch + paper odds watch",
+      "title": "Argentina-Switzerland 19 小時窗：Argentina 路線已被 FIFA/AFA 定錨，瑞士仍靠 120 分鐘+PK 後的韌性講故事。",
+      "sorenTake": "FIFA 的 Argentina road 與 AFA 對手確認把這場從 bracket 口徑拉回實名八強；Swiss FA/ESPN 的線索仍提醒 Switzerland 是剛踢完 120 分鐘加點球的韌性隊，不是單純陪 Messi 上鏡。Soren 仍把 Argentina 當盤面主軸，但會盯瑞士傷情、體能與 Pinheiro 裁判噪音，避免把熱門敘事寫成保送劇本。",
       "signals": [
         "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
         "FIFA schedule/scores fixtures and FIFA Suites public pages support M100 / W95 vs W96 bracket rail; no lineup, odds, or tactical claim is attached while teams are unknown.",
@@ -10449,7 +10485,10 @@
         "2026-07-10T23:28Z Swiss FA 相關賽前頁受 403 限制未能全文親核，只保留可搜尋/既有官方來源為瑞士語境，不新增未驗證細節。",
         "2026-07-11T01:06:29Z 親核 ESPN Argentina-Switzerland preview：頁面明示 quarterfinal 賽事資訊，且內文 metadata 可見 Manzambi 膝傷、Aebischer/Jaquez injury doubts；保守標為 reported availability watch。",
         "2026-07-11T01:06:29Z 親核 Khel Now preview：列出 Switzerland 的 Johan Manzambi、Michel Aebischer、Luca Jaquez 仍有疑問，並提供 predicted XI；這是媒體 team-news，不是官方先發。",
-        "2026-07-11T01:06:29Z 親核 NBC DFW：João Pinheiro 執法 Argentina-Switzerland 的選派引發裁判爭議脈絡討論；本站只作 context，不把裁判敘事寫成賽果因果。"
+        "2026-07-11T01:06:29Z 親核 NBC DFW：João Pinheiro 執法 Argentina-Switzerland 的選派引發裁判爭議脈絡討論；本站只作 context，不把裁判敘事寫成賽果因果。",
+        "FIFA Argentina road-to-quarter-finals page 把 defending champions 的小組/淘汰賽路線與 Kansas City 八強對 Switzerland 串起來；這是官方 form/context grounding。",
+        "AFA 官方文已確認 Argentina 週六 22:00（阿根廷時間）對 Switzerland，且瑞士是 0-0 後 PK 4-3 淘汰 Colombia；體能與心理韌性列為 context，不當作結果預測。",
+        "Reuters preview/search-indexed lead 把 Argentina-Switzerland knockout rivalry 拉回 2014 記憶；因 Reuters 本頁 401，本站只保守列為 credible media context lead。"
       ],
       "sources": [
         {
@@ -10682,6 +10721,22 @@
           "sourceName": "NBC DFW",
           "fetchedAt": "2026-07-11T01:06:29Z",
           "claimType": "context/referee-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "FIFA Argentina road to quarter-finals",
+          "url": "https://www.fifa.com/en/articles/argentinas-road-quarter-finals-messi",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-11T05:39:47Z",
+          "claimType": "confirmed/team-route-context",
+          "confidence": "high"
+        },
+        {
+          "label": "Reuters Argentina-Switzerland rivalry preview",
+          "url": "https://www.reuters.com/sports/soccer/argentina-switzerland-renew-world-cup-rivalry-12-years-after-thriller-2026-07-09/",
+          "sourceName": "Reuters",
+          "fetchedAt": "2026-07-11T05:39:47Z",
+          "claimType": "reported/search-indexed-media-context",
           "confidence": "medium"
         }
       ],
