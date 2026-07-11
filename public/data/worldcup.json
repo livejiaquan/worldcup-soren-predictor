@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T13:46:17.549Z",
+  "generatedAt": "2026-07-11T14:56:42.938Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -21,7 +21,7 @@
   },
   "dataQuality": {
     "status": "pass",
-    "checkedAt": "2026-07-11T13:46:17.549Z",
+    "checkedAt": "2026-07-11T14:56:42.938Z",
     "thresholds": {
       "finalResultGraceMinutes": 150
     },
@@ -2829,8 +2829,8 @@
       "date": "2026-07-14",
       "time": "14:00 UTC-5",
       "kickoffUtc": "2026-07-14T19:00:00.000Z",
-      "team1": "W97",
-      "team2": "W98",
+      "team1": "France",
+      "team2": "Spain",
       "venue": "Dallas (Arlington)",
       "status": "scheduled",
       "score": null,
@@ -6992,21 +6992,21 @@
       ]
     },
     "m101": {
-      "pick": "W97",
-      "confidence": 0.3808352070799772,
-      "tag": "膠著到煩",
+      "pick": "France",
+      "confidence": 0.5296694785024256,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.37558853219027716,
-        "draw": 0.27797112945111263,
-        "away": 0.3464403383586102
+        "home": 0.4864276170793836,
+        "draw": 0.2673773293025774,
+        "away": 0.24619505361803892
       },
       "expectedGoals": [
-        1.22,
-        1.16
+        1.44,
+        0.94
       ],
-      "score": "1-1",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 W97，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 France，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
@@ -7016,19 +7016,19 @@
           },
           {
             "label": "進球味",
-            "value": "1.22 : 1.16",
-            "note": "最像 1-1"
+            "value": "1.44 : 0.94",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "35%",
-            "note": "W98 的偷雞窗口"
+            "value": "25%",
+            "note": "Spain 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：W97 67.0；W98 67.0",
-        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
+        "底牌分：France 104.0；Spain 104.0",
+        "預期進球 1.44 : 0.94，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
@@ -7174,7 +7174,7 @@
     "currency": "USD-paper",
     "initialBankroll": 100,
     "bankroll": 323.84,
-    "openStake": 19,
+    "openStake": 22.86,
     "totalValue": 323.84,
     "roi": 2.238,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
@@ -7511,19 +7511,19 @@
         "matchId": "m101",
         "kickoffUtc": "2026-07-14T19:00:00.000Z",
         "stage": "Semi-final",
-        "team1": "W97",
-        "team2": "W98",
-        "pick": "W97",
+        "team1": "France",
+        "team2": "Spain",
+        "pick": "France",
         "outcome": "home",
-        "stake": 1,
-        "decimalOdds": 2.54,
-        "edge": -0.046,
-        "modelProbability": 0.376,
-        "marketProxyProbability": 0.37,
+        "stake": 4.86,
+        "decimalOdds": 2.51,
+        "edge": 0.221,
+        "modelProbability": 0.486,
+        "marketProxyProbability": 0.375,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-14T18:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 W97，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "reason": "我這場保守站 France，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "status": "pending"
       },
       {
