@@ -144,6 +144,15 @@ const sourceTrustLabel = (item, lang) => {
   if (lang === 'en') return `${claim} · ${confidence} · ${sources.length} source${sources.length === 1 ? '' : 's'} (${highConfidence} high)`
   return `${claim} · ${confidence} · ${sources.length} 來源（${highConfidence} 高信心）`
 }
+const latestSourceAt = (item) => (item?.sources || [])
+  .map((src) => Date.parse(src.fetchedAt || ''))
+  .filter(Number.isFinite)
+  .sort((a, b) => b - a)[0]
+const latestSourceLabel = (item, lang) => {
+  const ms = latestSourceAt(item)
+  if (!ms) return lang === 'en' ? 'source time TBD' : '來源時間待核'
+  return lang === 'en' ? `latest source ${fmtDate(new Date(ms).toISOString(), lang)}` : `最新來源 ${fmtDate(new Date(ms).toISOString(), lang)}`
+}
 const sourceMetaLabel = (src, lang) => `${claimLabel(src?.claimType, lang)} · ${confidenceLabel(src?.confidence, lang)}`
 const clamp01 = (value) => Math.max(0, Math.min(1, Number(value) || 0))
 const isRouteToken = (team) => /^[WL]\d+$/.test(String(team || ''))
@@ -332,7 +341,7 @@ function IntelBrief({ intel, matches = [], onSelect, lang, t }) {
   const updatedLabel = intel.generatedAt ? `${t.updated} ${fmtDate(intel.generatedAt, lang)}` : `${intel.items.length}`
   return <section className="panel intel-feed compact-intel" id="soren-intel">
     <SectionHead kicker="SOREN SCOUTING BRIEF" title={t.scoutTitle} meta={updatedLabel}><small>{intel.items.length} {t.scoutNote}</small></SectionHead>
-    <div className="intel-compact-list">{prioritized.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row"><span>{item.match}</span><b>{item.title}</b><em>{confidenceLabel(item.confidence, lang)} · {item.sources?.length || 0} {lang === 'en' ? 'sources' : '來源'} · {t.viewDetail}</em><small className="intel-trust">{sourceTrustLabel(item, lang)}</small></button>)}</div>
+    <div className="intel-compact-list">{prioritized.slice(0, 4).map((item) => <button type="button" key={item.matchId} onClick={() => onSelect(item.matchId)} className="intel-compact-row"><span>{item.match}</span><b>{item.title}</b><em>{confidenceLabel(item.confidence, lang)} · {item.sources?.length || 0} {lang === 'en' ? 'sources' : '來源'} · {latestSourceLabel(item, lang)} · {t.viewDetail}</em><small className="intel-trust">{sourceTrustLabel(item, lang)}</small></button>)}</div>
     <details className="source-drawer compact-sources"><summary>{t.sources}</summary>{prioritized.map((item) => <div key={item.matchId} className="source-block"><b>{item.match}</b><ul>{item.signals.map((s) => <li key={s}>{s}</li>)}</ul><div>{item.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer"><span>{src.label}</span><small>{sourceMetaLabel(src, lang)}</small></a>)}</div></div>)}</details>
     <p className="intel-note compact-note">{t.sourceNote}</p>
   </section>

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-10T23:28:21Z",
-  "status": "late quarter-final scout: M099 補 England 賽前回訓與 Quansah confirmed suspension；M100 補裁判/瑞士傷停 watch 與公開 odds closing-line 參考。",
-  "headline": "八強偵察更新：Norway-England 進入 21 小時窗，England 傷情轉好但 Quansah 停賽；Argentina-Switzerland 補裁判、瑞士 availability 與紙上盤口監測。",
+  "generatedAt": "2026-07-11T01:06:29Z",
+  "status": "quarter-final scout: M099 補 BBC Solbakken 壓力脈絡與 Norway sickness-bug availability watch；M100 補瑞士傷情 watch、Khel Now predicted XI 與 Pinheiro 裁判噪音脈絡。",
+  "headline": "八強偵察更新：Norway-England 的熱門壓力被 BBC/Solbakken 說破，Argentina-Switzerland 則補上瑞士傷情與裁判脈絡；全部保守標籤，不把搜尋線索寫成事實。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -10151,8 +10151,8 @@
       "matchId": "m099",
       "match": "Norway vs England",
       "sourceType": "official FIFA/England preview + eve-of-match availability/suspension watch + tactical analytics + paper odds watch",
-      "title": "Norway-England 21 小時窗：Rice/Guehi/James 回訓，Quansah 停賽坐實；Haaland 局仍是英格蘭後防壓測。",
-      "sorenTake": "英格蘭的好消息是 Rice、Guehi、Reece James 都在賽前一日回到訓練；壞消息是 Quansah 兩場停賽已不是傳聞，而 Norway 這種 Haaland 直線壓迫局最愛測後防縫線。Soren 先把英格蘭列小優，但這不是巡航，是防線健康與黃牌風險管理考。",
+      "title": "Norway-England 20 小時窗：Solbakken 也承認 England 是熱門，但挪威病毒風波讓這場更像壓力測試。",
+      "sorenTake": "BBC 親核到 Solbakken 直接把熱門帽子扣回 England 頭上，這是心理戰也是現實；Standard 的 Norway sickness-bug team-news 頁則提醒：Haaland 線不是唯一變數。Soren 仍站 England 較有邊，但 Quansah 停賽、多人黃牌風險和挪威身體狀態雜訊，讓它不是乾淨的熱門局。",
       "signals": [
         "Local worldcup.json lists M099 as quarter-final W91 vs W92 at 2026-07-11T21:00Z; participants remain placeholders until M91/M92 finish.",
         "FIFA match-centre/schedule and FIFA Suites public pages corroborate M99 / W91 vs W92 placeholder; no team-specific claims are made yet.",
@@ -10182,7 +10182,9 @@
         "2026-07-10T23:28Z 親核 BBC：Declan Rice、Marc Guehi、Reece James 在 Norway 八強前一日都隨 England 訓練；這把早前 fitness watch 往正面修正，但仍等官方首發。",
         "2026-07-10T23:28Z 親核 AP：Jarell Quansah 因 Mexico 戰紅牌被停賽兩場，會缺席 Norway 八強；這是 confirmed suspension，不再只是 lineup speculation。",
         "2026-07-10T23:28Z 親核 BBC 早前傷情頁：Guehi/Rice 預期可出戰，James 仍有希望；與最新訓練頁合併後，England availability 風險下降但未歸零。",
-        "2026-07-10T23:28Z 公開 odds/search lead：FanDuel/Lines/VegasInsider 等頁已把 England 定為市場小熱門；只作 paper closing-line 觀察，不作投注執行。"
+        "2026-07-10T23:28Z 公開 odds/search lead：FanDuel/Lines/VegasInsider 等頁已把 England 定為市場小熱門；只作 paper closing-line 觀察，不作投注執行。",
+        "2026-07-11T01:06:29Z 親核 BBC：Norway 主帥 Ståle Solbakken 告訴 BBC Sport，England 是晉級四強熱門；這是高可信賽前心理/壓力脈絡，不是先發或傷停確認。",
+        "2026-07-11T01:06:29Z 親核 The Standard Norway XI team-news 頁 metadata：Norway camp 賽前有 sickness bug 議題，頁面標題為 predicted lineup / injury latest；先保守列為 availability watch，不把它寫成確定缺席。"
       ],
       "sources": [
         {
@@ -10392,6 +10394,22 @@
           "fetchedAt": "2026-07-10T23:28:21Z",
           "claimType": "odds-reference/paper-simulation",
           "confidence": "medium-high"
+        },
+        {
+          "label": "BBC Solbakken England favourites quote",
+          "url": "https://www.bbc.com/sport/football/articles/cq61n2gqqv0o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-11T01:06:29Z",
+          "claimType": "context/coach-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "The Standard Norway XI sickness-bug watch",
+          "url": "https://www.standard.co.uk/sport/football/norway-xi-vs-england-confirmed-team-news-predicted-lineup-injury-latest-world-cup-2026-b1289520.html",
+          "sourceName": "The Standard",
+          "fetchedAt": "2026-07-11T01:06:29Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
@@ -10400,8 +10418,8 @@
       "matchId": "m100",
       "match": "Argentina vs Switzerland",
       "sourceType": "official FIFA/AFA/SFV context + referee baseline + late injury/predicted-XI watch + paper odds watch",
-      "title": "Argentina-Switzerland 26 小時窗：João Pinheiro 執法坐實，瑞士傷兵名單仍卡著；Argentina 是熱門但不是免檢。",
-      "sorenTake": "Argentina 的招牌和市場價格都更硬，但 Switzerland 的賽前劇本很清楚：把比分拖低、把 Messi 光環變成耐心壓力。AFA 已確認 João Pinheiro 執法；ESPN/媒體傷停線索仍盯著 Aebischer、Jaquez、Manzambi，這張卡先守住「報導級 watch」，不把預測 XI 包裝成內線。",
+      "title": "Argentina-Switzerland 24 小時窗：Manzambi/Aebischer/Jaquez 傷情仍卡著，Pinheiro 裁判線也變成場邊噪音。",
+      "sorenTake": "ESPN 與 Khel Now 都把 Switzerland 的 Manzambi、Aebischer、Jaquez 放進 availability 疑問區；這不是正式缺陣單，但會壓縮瑞士中後場輪換。João Pinheiro 已由 AFA/FIFA 指派，NBC DFW 把裁判爭議脈絡拉出來——Soren 會記錄噪音，但不讓裁判話題蓋過 Argentina 對瑞士韌性的真正解題。",
       "signals": [
         "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
         "FIFA schedule/scores fixtures and FIFA Suites public pages support M100 / W95 vs W96 bracket rail; no lineup, odds, or tactical claim is attached while teams are unknown.",
@@ -10428,7 +10446,10 @@
         "2026-07-10T23:28Z 親核 AFA：FIFA 指派葡萄牙裁判 João Pinheiro 執法 Argentina-Switzerland 八強；match-officials baseline 維持高信心。",
         "2026-07-10T23:28Z 親核 ESPN preview metadata：Argentina-Switzerland 頁列出賽事觀看、裁判、line-ups 與 injury context；頁內含 Aebischer/Jaquez/Manzambi 等瑞士 availability 關鍵字，仍標為 reported watch。",
         "2026-07-10T23:28Z 搜尋/市場來源 Lines.com、VegasInsider、CBS/SportsLine 皆把 Argentina 放在明顯熱門區；這只餵 paper simulation closing-line watch，不對外變成投注建議。",
-        "2026-07-10T23:28Z Swiss FA 相關賽前頁受 403 限制未能全文親核，只保留可搜尋/既有官方來源為瑞士語境，不新增未驗證細節。"
+        "2026-07-10T23:28Z Swiss FA 相關賽前頁受 403 限制未能全文親核，只保留可搜尋/既有官方來源為瑞士語境，不新增未驗證細節。",
+        "2026-07-11T01:06:29Z 親核 ESPN Argentina-Switzerland preview：頁面明示 quarterfinal 賽事資訊，且內文 metadata 可見 Manzambi 膝傷、Aebischer/Jaquez injury doubts；保守標為 reported availability watch。",
+        "2026-07-11T01:06:29Z 親核 Khel Now preview：列出 Switzerland 的 Johan Manzambi、Michel Aebischer、Luca Jaquez 仍有疑問，並提供 predicted XI；這是媒體 team-news，不是官方先發。",
+        "2026-07-11T01:06:29Z 親核 NBC DFW：João Pinheiro 執法 Argentina-Switzerland 的選派引發裁判爭議脈絡討論；本站只作 context，不把裁判敘事寫成賽果因果。"
       ],
       "sources": [
         {
@@ -10645,6 +10666,22 @@
           "sourceName": "Swiss FA",
           "fetchedAt": "2026-07-10T23:28:21Z",
           "claimType": "reported/search-indexed-team-context",
+          "confidence": "medium"
+        },
+        {
+          "label": "Khel Now Argentina-Switzerland preview",
+          "url": "https://khelnow.com/football/argentina-vs-switzerland-preview-fifa-world-cup-2026",
+          "sourceName": "Khel Now",
+          "fetchedAt": "2026-07-11T01:06:29Z",
+          "claimType": "reported/lineup-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "NBC DFW João Pinheiro scrutiny context",
+          "url": "https://www.nbcdfw.com/world-cup/referee-with-controversial-history-on-argentina-switzerland-2026-fifa-world-cup-match/4047663/",
+          "sourceName": "NBC DFW",
+          "fetchedAt": "2026-07-11T01:06:29Z",
+          "claimType": "context/referee-watch",
           "confidence": "medium"
         }
       ],
