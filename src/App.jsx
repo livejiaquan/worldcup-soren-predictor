@@ -316,7 +316,7 @@ function CompactMatchCard({ match, prediction, paperBet, intel, onSelect, featur
     <div className="chip-row">
       {prediction.commentary?.keyFactors?.map((f) => <span key={f.label}><b>{lang === 'en' ? ({'底牌差':'Rating gap','進球味':'Goal profile','翻車率':'Upset window'}[f.label] || f.label) : f.label}</b>{f.value}</span>)}
       {paperBet && <span className="paper-chip"><b>{t.paper}</b>{money(paperBet.stake)}</span>}
-      {intel && <span className="intel-chip" title={sourceTrustLabel(intel, lang)}><b>{t.intel}</b>{confidenceLabel(intel.confidence, lang)} · {intel.sources?.length || 0} {lang === 'en' ? 'sources' : '來源'}</span>}
+      {intel && <span className="intel-chip" title={`${sourceTrustLabel(intel, lang)} · ${latestSourceLabel(intel, lang)}`}><b>{t.intel}</b>{confidenceLabel(intel.confidence, lang)} · {intel.sources?.length || 0} {lang === 'en' ? 'sources' : '來源'} · {latestSourceLabel(intel, lang)}</span>}
     </div>
     <button className="deep-dive" type="button" onClick={() => onSelect(match.id)}>{t.detail}</button>
   </article>
