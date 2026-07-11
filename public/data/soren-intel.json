@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-11T05:39:47Z",
-  "status": "quarter-final scout: M099 補 England 官方 Tuchel/Kane 賽前記者會與 BBC Miami 高溫/availability watch；M100 補 FIFA/AFA 實名路線與 Reuters rivalry context，全部保守標籤。",
-  "headline": "八強偵察更新：Norway-England 進入 15 小時官方賽前模式，Miami 高溫成關鍵變數；Argentina-Switzerland 則補上 FIFA/AFA 路線與瑞士韌性脈絡。",
+  "generatedAt": "2026-07-11T11:51:42Z",
+  "status": "quarter-final scout: M099 補 England 官方 matchday briefing、BBC availability 正向更新與 CBS paper odds；M100 補 Manzambi 缺陣高信心傷停訊號，全部保守標籤。",
+  "headline": "八強偵察更新：Norway-England 進入 9 小時 matchday 模式，England 小熱門但 Miami 高溫/Haaland 仍是陷阱；Argentina-Switzerland 則因 Manzambi 缺陣讓瑞士冷門路徑變窄。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -10150,9 +10150,9 @@
     {
       "matchId": "m099",
       "match": "Norway vs England",
-      "sourceType": "official FIFA/England eve-of-match press + BBC heat/availability watch + tactical analytics + paper odds watch",
-      "title": "Norway-England 15 小時窗：Tuchel/Kane 官方賽前語氣轉硬，Miami 露天高溫才是真正第三隊。",
-      "sorenTake": "England Football 連發 Tuchel 與 Kane 賽前記者會：不是只喊口號，而是在把「bite, hunger, grit」與大賽經驗壓成執行標準。BBC 另一條線提醒 Miami 露天熱度會把節奏拖慢；加上 Guehi/Rice/James availability watch 與 Quansah 停賽，Soren 仍給 England 邊，但這場的陷阱不是 Haaland 一個人，是高溫、停賽與挪威低位反擊一起上桌。",
+      "sourceType": "official England matchday briefing + BBC availability + CBS paper odds + existing FIFA/team/media context",
+      "title": "Norway-England 9 小時窗：England 官方 matchday briefing 落地，健康風險降溫但 Miami 高溫與 Haaland 反擊還在桌上。",
+      "sorenTake": "England Football 的 Three Lions Daily 已把 matchday 流程、Miami Stadium 與 22:00 BST/17:00 local 開球講清楚；BBC 訓練更新則讓 Rice/Guehi/James 的 availability watch 往正面修正。市場端 CBS/FanDuel 仍把 England 當小熱門，但 Soren 不把 -110 寫成保送：Quansah 停賽、Miami 露天熱度、Haaland 的第一腳轉換，還是這場的三個炸點。",
       "signals": [
         "Local worldcup.json lists M099 as quarter-final W91 vs W92 at 2026-07-11T21:00Z; participants remain placeholders until M91/M92 finish.",
         "FIFA match-centre/schedule and FIFA Suites public pages corroborate M99 / W91 vs W92 placeholder; no team-specific claims are made yet.",
@@ -10188,7 +10188,10 @@
         "England Football 7/11 官方 Tuchel press conference 指向 quarter-final mentality：「bite, hunger and grit」是英格蘭賽前主旋律；這是官方心態訊號，不是首發內線。",
         "England Football 7/11 官方 Kane press conference 稱 England 仍有 levels to reach，並把過往大賽經驗放進四強門檻；作為 captain/mentality context。",
         "BBC 7/11 open-air Miami heat 分析把 Norway-England 的比賽條件拉到檯面：England 前面多在控溫球場，Miami 露天高溫可能影響壓迫與換人節奏。",
-        "BBC live/team-news rail 仍把 Guehi/Rice/James 狀態與 Quansah 停賽放在賽前監控；正式 lineup 未出前只作 availability watch，不升級成 confirmed XI。"
+        "BBC live/team-news rail 仍把 Guehi/Rice/James 狀態與 Quansah 停賽放在賽前監控；正式 lineup 未出前只作 availability watch，不升級成 confirmed XI。",
+        "2026-07-11T11:51:42Z 親核 England Football Three Lions Daily：官方 matchday briefing 確認 England 今晚 22:00 BST／Miami 當地 17:00 對 Norway，並描述比賽日準備流程；這是官方賽程/備戰節奏，不是首發名單。",
+        "2026-07-11T11:51:42Z 親核 BBC 獨立訓練頁標題與搜尋摘要：Rice、Guehi、Reece James 在 Norway 八強前夕均參與訓練；availability 風險降溫，但正式 XI 仍等官方。",
+        "2026-07-11T11:51:42Z 親核 CBS Sports odds 頁與搜尋摘要：FanDuel 90 分鐘盤 England -110、Norway +280、draw +270；只作 PAPER closing-line watch，不作投注建議。"
       ],
       "sources": [
         {
@@ -10446,6 +10449,30 @@
           "fetchedAt": "2026-07-11T05:39:47Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "England Football Three Lions Daily matchday briefing",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/11/england-men-world-cup-2026-daily-briefing",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-11T11:51:42Z",
+          "claimType": "confirmed/team-matchday-briefing",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Guehi/Rice/James training update",
+          "url": "https://www.bbc.co.uk/sport/football/articles/c3eyqdwq392o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-11T11:51:42Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "CBS/FanDuel Norway-England paper odds reference",
+          "url": "https://www.cbssports.com/soccer/news/england-norway-odds-prediction-line-time-2026-world-cup-quarterfinal-picks/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-07-11T11:51:42Z",
+          "claimType": "odds-reference/paper-closing-line",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -10453,9 +10480,9 @@
     {
       "matchId": "m100",
       "match": "Argentina vs Switzerland",
-      "sourceType": "official FIFA/AFA/SFV route context + referee baseline + late injury/predicted-XI watch + paper odds watch",
-      "title": "Argentina-Switzerland 19 小時窗：Argentina 路線已被 FIFA/AFA 定錨，瑞士仍靠 120 分鐘+PK 後的韌性講故事。",
-      "sorenTake": "FIFA 的 Argentina road 與 AFA 對手確認把這場從 bracket 口徑拉回實名八強；Swiss FA/ESPN 的線索仍提醒 Switzerland 是剛踢完 120 分鐘加點球的韌性隊，不是單純陪 Messi 上鏡。Soren 仍把 Argentina 當盤面主軸，但會盯瑞士傷情、體能與 Pinheiro 裁判噪音，避免把熱門敘事寫成保送劇本。",
+      "sourceType": "USA Today/Reuters injury confirmation + official FIFA/AFA/SFV route context + paper odds watch",
+      "title": "Argentina-Switzerland 13 小時窗：Manzambi 缺陣把瑞士 upset path 砍掉一把刀，Argentina 熱門但不能偷懶。",
+      "sorenTake": "USA Today 已把 Johan Manzambi 缺席 Argentina 戰寫成賽前主訊號，Reuters 系列報導也指向 Yakin 親口確認；這比昨天「疑問」更硬。Argentina 仍是盤面主軸，但 Switzerland 剛靠 120 分鐘與 PK 活下來，會把比賽拖進低比分、定位球、門將與裁判噪音。Soren 的更新：瑞士反擊火力少一個變速器，冷門路徑更窄，不是歸零。",
       "signals": [
         "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
         "FIFA schedule/scores fixtures and FIFA Suites public pages support M100 / W95 vs W96 bracket rail; no lineup, odds, or tactical claim is attached while teams are unknown.",
@@ -10488,7 +10515,10 @@
         "2026-07-11T01:06:29Z 親核 NBC DFW：João Pinheiro 執法 Argentina-Switzerland 的選派引發裁判爭議脈絡討論；本站只作 context，不把裁判敘事寫成賽果因果。",
         "FIFA Argentina road-to-quarter-finals page 把 defending champions 的小組/淘汰賽路線與 Kansas City 八強對 Switzerland 串起來；這是官方 form/context grounding。",
         "AFA 官方文已確認 Argentina 週六 22:00（阿根廷時間）對 Switzerland，且瑞士是 0-0 後 PK 4-3 淘汰 Colombia；體能與心理韌性列為 context，不當作結果預測。",
-        "Reuters preview/search-indexed lead 把 Argentina-Switzerland knockout rivalry 拉回 2014 記憶；因 Reuters 本頁 401，本站只保守列為 credible media context lead。"
+        "Reuters preview/search-indexed lead 把 Argentina-Switzerland knockout rivalry 拉回 2014 記憶；因 Reuters 本頁 401，本站只保守列為 credible media context lead。",
+        "2026-07-11T11:51:42Z 親核 USA Today 頁面標題與搜尋摘要：Switzerland midfielder Johan Manzambi 將缺席對 Argentina 的八強，描述為膝傷並已缺席 Colombia 戰；這把先前 injury doubt 升級為 high-confidence absence watch。",
+        "2026-07-11T11:51:42Z Reuters/Stadium Astro 搜尋摘要稱 Switzerland coach Murat Yakin 週五表示 Manzambi 將因傷缺席 Argentina 八強；因頁面全文驗證受限，與 USA Today 合併作高信心但仍非官方隊表。",
+        "2026-07-11T11:51:42Z Al Jazeera 同日 preview 把 Messi/Golden Boot 與 Manzambi 缺席放入賽前敘事；作 mainstream context，不把球星敘事寫成賽果。"
       ],
       "sources": [
         {
@@ -10738,6 +10768,30 @@
           "fetchedAt": "2026-07-11T05:39:47Z",
           "claimType": "reported/search-indexed-media-context",
           "confidence": "medium"
+        },
+        {
+          "label": "USA Today Manzambi out vs Argentina",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/07/11/johan-manzambi-injury-out-switzerland-argentina/90877519007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-07-11T11:51:42Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "Reuters via Stadium Astro Manzambi absence/Yakin quote",
+          "url": "https://english.stadiumastro.com/sports/fifa-world-cup-swiss-without-injured-manzambi-argentina-quarter-final-yakin-says",
+          "sourceName": "Reuters / Stadium Astro",
+          "fetchedAt": "2026-07-11T11:51:42Z",
+          "claimType": "reported/coach-quote-availability",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Al Jazeera Argentina-Switzerland Messi/Manzambi preview",
+          "url": "https://www.aljazeera.com/sports/2026/7/11/argentina-switzerland-fifa-world-cup-quarterfinal-messi-prediction-news",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-11T11:51:42Z",
+          "claimType": "context/mainstream-preview",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
