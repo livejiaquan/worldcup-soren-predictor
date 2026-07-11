@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-11T11:51:42Z",
-  "status": "quarter-final scout: M099 補 England 官方 matchday briefing、BBC availability 正向更新與 CBS paper odds；M100 補 Manzambi 缺陣高信心傷停訊號，全部保守標籤。",
-  "headline": "八強偵察更新：Norway-England 進入 9 小時 matchday 模式，England 小熱門但 Miami 高溫/Haaland 仍是陷阱；Argentina-Switzerland 則因 Manzambi 缺陣讓瑞士冷門路徑變窄。",
+  "generatedAt": "2026-07-11T17:58:32Z",
+  "status": "quarter-final scout: M099 補 BBC/NWS Miami 熱警報與雷暴風險、BBC live rail、ESPN paper odds；M100 補 CBS/Covers paper odds 並重整 Al Jazeera availability context，全部保守標籤。",
+  "headline": "八強偵察更新：Norway-England 進入 3 小時臨場窗，Miami 熱警報與雷暴風險是第三隊；Argentina-Switzerland 7 小時窗則是 Messi 熱門盤對瑞士低比分陷阱。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
   "items": [
     {
@@ -10150,9 +10150,9 @@
     {
       "matchId": "m099",
       "match": "Norway vs England",
-      "sourceType": "official England matchday briefing + BBC availability + CBS paper odds + existing FIFA/team/media context",
-      "title": "Norway-England 9 小時窗：England 官方 matchday briefing 落地，健康風險降溫但 Miami 高溫與 Haaland 反擊還在桌上。",
-      "sorenTake": "England Football 的 Three Lions Daily 已把 matchday 流程、Miami Stadium 與 22:00 BST/17:00 local 開球講清楚；BBC 訓練更新則讓 Rice/Guehi/James 的 availability watch 往正面修正。市場端 CBS/FanDuel 仍把 England 當小熱門，但 Soren 不把 -110 寫成保送：Quansah 停賽、Miami 露天熱度、Haaland 的第一腳轉換，還是這場的三個炸點。",
+      "sourceType": "BBC/NWS Miami weather + BBC live rail + ESPN odds + official/team/media context",
+      "title": "Norway-England 3 小時窗：Miami 變成第三隊，熱警報加雷暴風險把 Haaland/Kane 對決變成體能棋。",
+      "sorenTake": "BBC 親核到 Miami 開球時段不只熱，還有雷暴風險；NWS Miami 同步掛 heat advisory。這不改寫 England 小熱門底色，但會偷走高位壓迫的電量，讓 Haaland 的第一腳轉換更毒。Soren 更新：正式 XI 未出，Guehi/Rice/James 仍看官方隊表；紙上盤只用 ESPN/Vegas 類公開線做娛樂參照，不是下注指令。",
       "signals": [
         "Local worldcup.json lists M099 as quarter-final W91 vs W92 at 2026-07-11T21:00Z; participants remain placeholders until M91/M92 finish.",
         "FIFA match-centre/schedule and FIFA Suites public pages corroborate M99 / W91 vs W92 placeholder; no team-specific claims are made yet.",
@@ -10191,7 +10191,11 @@
         "BBC live/team-news rail 仍把 Guehi/Rice/James 狀態與 Quansah 停賽放在賽前監控；正式 lineup 未出前只作 availability watch，不升級成 confirmed XI。",
         "2026-07-11T11:51:42Z 親核 England Football Three Lions Daily：官方 matchday briefing 確認 England 今晚 22:00 BST／Miami 當地 17:00 對 Norway，並描述比賽日準備流程；這是官方賽程/備戰節奏，不是首發名單。",
         "2026-07-11T11:51:42Z 親核 BBC 獨立訓練頁標題與搜尋摘要：Rice、Guehi、Reece James 在 Norway 八強前夕均參與訓練；availability 風險降溫，但正式 XI 仍等官方。",
-        "2026-07-11T11:51:42Z 親核 CBS Sports odds 頁與搜尋摘要：FanDuel 90 分鐘盤 England -110、Norway +280、draw +270；只作 PAPER closing-line watch，不作投注建議。"
+        "2026-07-11T11:51:42Z 親核 CBS Sports odds 頁與搜尋摘要：FanDuel 90 分鐘盤 England -110、Norway +280、draw +270；只作 PAPER closing-line watch，不作投注建議。",
+        "2026-07-11T17:58:32Z 親核 BBC Sport：Norway-England Miami 八強除高溫外，開球附近有 thunderstorm risk；BBC 引述實感溫度約 41C/106F 與 NWS heat advisory。這是 confirmed match-conditions context，不是延期或結果推論。",
+        "2026-07-11T17:58:32Z 親核 NWS Miami：South Florida 頁面仍顯示 Heat Advisory；用作官方天氣風險底線，避免只靠體育媒體形容詞。",
+        "2026-07-11T17:58:32Z 親核 BBC live rail：賽前主敘事已進入 England v Norway / Kane v Haaland 互動與 live build-up；正式首發未出前只作 lineup-watch 入口。",
+        "2026-07-11T17:58:32Z 親核 ESPN odds endpoint 可連（202 Accepted 動態頁）：作 Norway-England 紙上 closing-line 公開參照；不作投注建議、不寫成模型內部真值。"
       ],
       "sources": [
         {
@@ -10473,6 +10477,30 @@
           "fetchedAt": "2026-07-11T11:51:42Z",
           "claimType": "odds-reference/paper-closing-line",
           "confidence": "medium-high"
+        },
+        {
+          "label": "NWS Miami Heat Advisory",
+          "url": "https://www.weather.gov/mfl/",
+          "sourceName": "National Weather Service Miami",
+          "fetchedAt": "2026-07-11T17:58:32Z",
+          "claimType": "confirmed/weather-advisory",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC live Norway-England build-up",
+          "url": "https://www.bbc.co.uk/sport/football/live/cn59dydd5lzt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-11T17:58:32Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Norway-England public odds page",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760512",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-11T17:58:32Z",
+          "claimType": "odds-reference/paper-closing-line",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -10480,9 +10508,9 @@
     {
       "matchId": "m100",
       "match": "Argentina vs Switzerland",
-      "sourceType": "USA Today/Reuters injury confirmation + official FIFA/AFA/SFV route context + paper odds watch",
-      "title": "Argentina-Switzerland 13 小時窗：Manzambi 缺陣把瑞士 upset path 砍掉一把刀，Argentina 熱門但不能偷懶。",
-      "sorenTake": "USA Today 已把 Johan Manzambi 缺席 Argentina 戰寫成賽前主訊號，Reuters 系列報導也指向 Yakin 親口確認；這比昨天「疑問」更硬。Argentina 仍是盤面主軸，但 Switzerland 剛靠 120 分鐘與 PK 活下來，會把比賽拖進低比分、定位球、門將與裁判噪音。Soren 的更新：瑞士反擊火力少一個變速器，冷門路徑更窄，不是歸零。",
+      "sourceType": "Al Jazeera availability context + CBS/Covers paper odds + official FIFA/AFA/SFV route context",
+      "title": "Argentina-Switzerland 7 小時窗：Messi 熱門盤很亮，但瑞士傷停與低比分陷阱要分開看。",
+      "sorenTake": "Al Jazeera 同日預覽把 Argentina 無明顯傷兵、Switzerland 的 Manzambi/Jaquez 缺陣與 Aebischer doubt 放到同一張賽前圖；CBS/Covers 則把市場溫度推向 Messi/Argentina。Soren 的銳評：這是「熱門但不免費」——瑞士少一把反擊刀，卻還能用低位、Xhaka 節奏與定位球把比賽拖進泥地。",
       "signals": [
         "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
         "FIFA schedule/scores fixtures and FIFA Suites public pages support M100 / W95 vs W96 bracket rail; no lineup, odds, or tactical claim is attached while teams are unknown.",
@@ -10518,7 +10546,10 @@
         "Reuters preview/search-indexed lead 把 Argentina-Switzerland knockout rivalry 拉回 2014 記憶；因 Reuters 本頁 401，本站只保守列為 credible media context lead。",
         "2026-07-11T11:51:42Z 親核 USA Today 頁面標題與搜尋摘要：Switzerland midfielder Johan Manzambi 將缺席對 Argentina 的八強，描述為膝傷並已缺席 Colombia 戰；這把先前 injury doubt 升級為 high-confidence absence watch。",
         "2026-07-11T11:51:42Z Reuters/Stadium Astro 搜尋摘要稱 Switzerland coach Murat Yakin 週五表示 Manzambi 將因傷缺席 Argentina 八強；因頁面全文驗證受限，與 USA Today 合併作高信心但仍非官方隊表。",
-        "2026-07-11T11:51:42Z Al Jazeera 同日 preview 把 Messi/Golden Boot 與 Manzambi 缺席放入賽前敘事；作 mainstream context，不把球星敘事寫成賽果。"
+        "2026-07-11T11:51:42Z Al Jazeera 同日 preview 把 Messi/Golden Boot 與 Manzambi 缺席放入賽前敘事；作 mainstream context，不把球星敘事寫成賽果。",
+        "2026-07-11T17:58:32Z 親核 Al Jazeera：Argentina-Switzerland 同日 preview 可連，metadata 明示 Messi/Switzerland 四強門票敘事；搜尋摘要提供 Argentina 無新增傷兵、Swiss Manzambi/Jaquez out、Aebischer doubtful 的 availability lead，保守標為 mainstream reported team-news。",
+        "2026-07-11T17:58:32Z 親核 CBS Sports：Argentina-Switzerland odds/preview 頁可連，metadata 以 Messi 與 FanDuel 公開 odds 包裝；只作 paper simulation odds-reference，不提供下注流程。",
+        "2026-07-11T17:58:32Z 親核 Covers：Argentina-Switzerland predictions/odds 頁可連，metadata 將 Messi 與 Kansas City Saturday night 場景列為主敘事；作 secondary public odds context。"
       ],
       "sources": [
         {
@@ -10791,6 +10822,22 @@
           "sourceName": "Al Jazeera",
           "fetchedAt": "2026-07-11T11:51:42Z",
           "claimType": "context/mainstream-preview",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "CBS Argentina-Switzerland odds preview",
+          "url": "https://www.cbssports.com/soccer/news/argentina-vs-switzerland-odds-prediction-preview-picks-start-time-for-world-cup-match-on-saturday/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-07-11T17:58:32Z",
+          "claimType": "odds-reference/paper-closing-line",
+          "confidence": "high"
+        },
+        {
+          "label": "Covers Argentina-Switzerland odds preview",
+          "url": "https://www.covers.com/world-cup/argentina-vs-switzerland-prediction-picks-odds-saturday-7-11-2026",
+          "sourceName": "Covers",
+          "fetchedAt": "2026-07-11T17:58:32Z",
+          "claimType": "odds-reference/paper-closing-line",
           "confidence": "medium-high"
         }
       ],
