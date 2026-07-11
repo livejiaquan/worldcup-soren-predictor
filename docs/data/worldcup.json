@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T19:48:26.837Z",
+  "generatedAt": "2026-07-11T21:03:06.320Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -9,9 +9,8 @@
     "totalMatches": 104,
     "finishedMatches": 98,
     "scheduledMatches": 6,
-    "finalPendingMatches": 0,
+    "finalPendingMatches": 1,
     "nextWindow": [
-      "m099",
       "m100",
       "m101",
       "m102",
@@ -20,8 +19,8 @@
     ]
   },
   "dataQuality": {
-    "status": "pass",
-    "checkedAt": "2026-07-11T19:48:26.837Z",
+    "status": "watch",
+    "checkedAt": "2026-07-11T21:03:06.320Z",
     "thresholds": {
       "finalResultGraceMinutes": 150
     },
@@ -39,7 +38,8 @@
       "groupStageMatches": 72,
       "lifecycle": {
         "final": 98,
-        "pre-match": 6
+        "live-window": 1,
+        "pre-match": 5
       }
     },
     "labels": [
@@ -58,8 +58,8 @@
       {
         "key": "liveGuard",
         "label": "Live is not final",
-        "status": "pass",
-        "detail": "No kicked-off match is waiting for a final result."
+        "status": "watch",
+        "detail": "1 match(es) hidden behind final-score pending labels."
       },
       {
         "key": "overrides",
@@ -68,8 +68,12 @@
         "detail": "No manual result overrides applied."
       }
     ],
-    "pendingFinalMatchIds": [],
-    "warnings": [],
+    "pendingFinalMatchIds": [
+      "m099"
+    ],
+    "warnings": [
+      "1 match(es) have kicked off but do not have source-backed final scores yet"
+    ],
     "errors": []
   },
   "groups": [
@@ -2801,8 +2805,8 @@
       "status": "scheduled",
       "score": null,
       "source": "openfootball/worldcup.json",
-      "lifecycle": "pre-match",
-      "resultTrust": "pre-match fixture"
+      "lifecycle": "live-window",
+      "resultTrust": "kickoff-started; final score not trusted yet"
     },
     {
       "id": "m100",
@@ -7486,7 +7490,7 @@
         "lockedAtUtc": "2026-07-11T20:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 England，但平局還有 22%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
+        "status": "awaiting-final"
       },
       {
         "matchId": "m100",
