@@ -423,6 +423,7 @@ function CalibrationAudit({ data, onSelect, lang }) {
         stated: 'stated', actual: 'actual', gap: 'gap', exact: 'exact', error: 'goal error', sample: 'Evidence drawer',
         sampleHint: 'Misses float first; open any match for the full autopsy.', predicted: 'Pick', actualResult: 'Actual',
         hit: 'hit', miss: 'miss', empty: 'No settled evidence in this slice yet.', tagAudit: 'tag audit',
+        calibrated: 'calibrated', overstated: 'overstated', understated: 'understated', emptyTone: 'needs sample',
       }
     : {
         kicker: 'PUBLIC CALIBRATION LENS', title: '信心不是拿來膜拜，是拿來被審計。', settled: '場已結算',
@@ -431,6 +432,7 @@ function CalibrationAudit({ data, onSelect, lang }) {
         stated: '賽前信心', actual: '實際命中', gap: '落差', exact: '比分全中', error: '進球誤差', sample: '證據抽屜',
         sampleHint: '翻車樣本排前面；點任何一場看完整驗屍報告。', predicted: '預測', actualResult: '實際',
         hit: '抓到', miss: '翻車', empty: '這一格還沒有已結算樣本。', tagAudit: '標籤審計',
+        calibrated: '校準正常', overstated: '講太滿', understated: '太保守', emptyTone: '樣本不足',
       }
   const rows = useMemo(() => buildAuditRows(data), [data])
   const overall = useMemo(() => summarizeAuditRows(rows), [rows])
@@ -446,13 +448,17 @@ function CalibrationAudit({ data, onSelect, lang }) {
   const finding = lang === 'en'
     ? `${coldest?.label || '-'} has the biggest actual-vs-stated gap at ${signedPct(coldest?.gap)}; ${warmest?.label || '-'} is at ${signedPct(warmest?.gap)}.`
     : `${coldest?.label || '-'} 目前校準落差最大：實際命中比平均信心 ${signedPct(coldest?.gap)}；${warmest?.label || '-'} 是 ${signedPct(warmest?.gap)}。`
+  const toneCopy = (group) => {
+    const tone = auditTone(group)
+    return tone === 'empty' ? copy.emptyTone : copy[tone]
+  }
   if (!rows.length) return null
   return <section className="panel calibration-audit" id="calibration">
     <SectionHead kicker={copy.kicker} title={copy.title} meta={`${rows.length} ${copy.settled || 'settled'}`}><small>{copy.note}</small></SectionHead>
     <div className="audit-readout"><div><span>{copy.finding}</span><b>{finding}</b></div><div className="audit-score"><span>{copy.overall}</span><b>{pct(overall.accuracy)}</b><em>{overall.hits}/{overall.count}</em></div></div>
     <div className="audit-layout">
-      <div className="calibration-stack"><h3>{copy.bands}</h3>{bandGroups.map((group) => <button type="button" key={group.key} className={`calibration-band ${active?.key === group.key ? 'active' : ''} ${auditTone(group)}`} onClick={() => setActiveKey(group.key)}><span className="audit-band-head"><b>{group.label}</b><em>{group.count} {copy.matches}</em></span><span className="audit-band-stats"><i>{copy.stated} <b>{pct(group.avgConfidence)}</b></i><i>{copy.actual} <b>{pct(group.accuracy)}</b></i><strong>{copy.gap} {signedPct(group.gap)}</strong></span><span className="calibration-bars"><i className="stated" style={{ width: pct(group.avgConfidence) }}/><i className="actual" style={{ width: pct(group.accuracy) }}/></span><span className="audit-band-foot">{copy.exact} {group.exact}/{group.count || 0} · {copy.error} {group.avgGoalError.toFixed(2)}</span></button>)}</div>
-      <div className="tag-audit"><h3>{copy.tags}</h3><div className="tag-audit-grid">{tagGroups.map((group) => <button type="button" key={group.key} className={`${active?.key === group.key ? 'active' : ''} ${auditTone(group)}`} onClick={() => setActiveKey(group.key)}><b>{group.label}</b><span>{group.hits}/{group.count} · {copy.actual} {pct(group.accuracy)}</span><em>{copy.stated} {pct(group.avgConfidence)} · {copy.error} {group.avgGoalError.toFixed(2)}</em></button>)}</div></div>
+      <div className="calibration-stack"><h3>{copy.bands}</h3>{bandGroups.map((group) => <button type="button" key={group.key} className={`calibration-band ${active?.key === group.key ? 'active' : ''} ${auditTone(group)}`} onClick={() => setActiveKey(group.key)}><span className="audit-band-head"><b>{group.label}</b><em>{group.count} {copy.matches}</em></span><span className="audit-band-stats"><i>{copy.stated} <b>{pct(group.avgConfidence)}</b></i><i>{copy.actual} <b>{pct(group.accuracy)}</b></i><strong>{copy.gap} {signedPct(group.gap)}</strong></span><span className="calibration-bars"><i className="stated" style={{ width: pct(group.avgConfidence) }}/><i className="actual" style={{ width: pct(group.accuracy) }}/></span><span className="audit-band-foot">{copy.exact} {group.exact}/{group.count || 0} · {copy.error} {group.avgGoalError.toFixed(2)} · {toneCopy(group)}</span></button>)}</div>
+      <div className="tag-audit"><h3>{copy.tags}</h3><div className="tag-audit-grid">{tagGroups.map((group) => <button type="button" key={group.key} className={`${active?.key === group.key ? 'active' : ''} ${auditTone(group)}`} onClick={() => setActiveKey(group.key)}><b>{group.label}</b><span>{group.hits}/{group.count} · {copy.actual} {pct(group.accuracy)}</span><em>{copy.stated} {pct(group.avgConfidence)} · {copy.error} {group.avgGoalError.toFixed(2)} · {toneCopy(group)}</em></button>)}</div></div>
       <div className="audit-sample"><div className="mini-head"><b>{copy.sample}{active ? ` · ${active.label}` : ''}</b><span>{copy.sampleHint}</span></div>{sample.length ? <div className="audit-match-list">{sample.map((row) => <button type="button" key={row.match.id} className={row.hit ? 'hit' : 'miss'} onClick={() => onSelect(row.match.id)}><strong>{row.hit ? copy.hit : copy.miss}</strong><b><InlineTeam name={row.match.team1}/> vs <InlineTeam name={row.match.team2}/></b><span>{copy.predicted} {pickLabel(row.p.pick, lang)} · {copy.actualResult} {pickLabel(row.actual, lang)}</span><em>{pct(row.confidence)} · {scoreLabel(row.match)} · {copy.error} {row.goalError}</em></button>)}</div> : <p>{copy.empty}</p>}</div>
     </div>
   </section>
