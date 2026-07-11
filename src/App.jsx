@@ -153,7 +153,11 @@ const latestSourceLabel = (item, lang) => {
   if (!ms) return lang === 'en' ? 'source time TBD' : '來源時間待核'
   return lang === 'en' ? `latest source ${fmtDate(new Date(ms).toISOString(), lang)}` : `最新來源 ${fmtDate(new Date(ms).toISOString(), lang)}`
 }
-const sourceMetaLabel = (src, lang) => `${claimLabel(src?.claimType, lang)} · ${confidenceLabel(src?.confidence, lang)}`
+const sourceMetaLabel = (src, lang) => {
+  const fetched = src?.fetchedAt ? fmtDate(src.fetchedAt, lang) : null
+  const fetchedLabel = fetched ? (lang === 'en' ? `checked ${fetched}` : `核對 ${fetched}`) : (lang === 'en' ? 'check time TBD' : '核對時間待核')
+  return `${claimLabel(src?.claimType, lang)} · ${confidenceLabel(src?.confidence, lang)} · ${fetchedLabel}`
+}
 const clamp01 = (value) => Math.max(0, Math.min(1, Number(value) || 0))
 const isRouteToken = (team) => /^[WL]\d+$/.test(String(team || ''))
 const dangerBand = (score, lang) => {
