@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-12T06:06:20Z",
-  "status": "matchday scout: M101 補 France-Spain 傷停/天氣/紙上市場溫度；M102 從 W99/W100 實名化為 England-Argentina，加入官方與主流賽後脈絡。",
-  "headline": "偵察更新：France-Spain 進入 Mbappé/Tchouaméni availability 與 Dallas 天氣/盤口監控；England-Argentina 已落地，Bellingham 熱潮對上 Argentina 延長賽韌性。",
+  "generatedAt": "2026-07-12T12:25:00Z",
+  "status": "matchday scout: M101 補 France-Spain 官方西班牙/RFEF 與中立 preview；M102 實名化為 England-Argentina，加入 AFA 抵達 Atlanta 與 Rice 病後體能監控。",
+  "headline": "準決賽情報更新：France-Spain 補上 RFEF/Yamal 官方脈絡；England-Argentina 補上 AFA 抵達 Atlanta 與 Rice 病後體能監控。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -10867,8 +10867,8 @@
       "matchId": "m101",
       "match": "France vs Spain",
       "sourceType": "official route + tactical/recent-form + availability/weather/odds watch",
-      "title": "France-Spain 準決賽升溫：Mbappé/Tchouaméni 被報可用，Spain 的控球刀口要碰 Dallas 熱浪與法國轉換火力。",
-      "sorenTake": "France-Spain 現在的重點不是誰名氣更大，而是可用性與比賽節奏：L’Équipe 標題給 Mbappé、Tchouaméni 綠燈，但腳踝負荷仍要看賽前訓練；Spain 靠晚段耐心過關，若 Dallas 高溫和雷陣雨把節奏切碎，這場會變成控球耐心對反擊效率的壓力測試。",
+      "title": "France-Spain 準決賽補上西班牙官方與中立 preview：Yamal 狀態發亮，De la Fuente 先把心理戰講滿，Mbappé 腳踝仍只列監控。",
+      "sorenTake": "這張卡從「路線確認」升級成真正的戰術溫度計：RFEF 官方把 Lamine Yamal 的 MVP 與 De la Fuente 的「可以擊敗任何對手」語氣放上檯面，Al Jazeera 則把 Mbappé-Yamal 對位寫成半決賽主軸。Soren 的判讀：Spain 的控球刀口很亮，但 France 只要 Mbappé/Tchouaméni 可用，轉換速度仍會逼西班牙每一次丟球都像踩到捕獸夾。",
       "signals": [
         "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
         "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
@@ -10877,7 +10877,11 @@
         "CBS Sports 搜尋摘要顯示 Mbappé 賽後淡化 ankle injury；這只列為 availability-watch，正式狀態仍等 France/FFF/FIFA 賽前更新。",
         "L’Équipe 可讀標題確認 Kylian Mbappé 與 Aurélien Tchouaméni 被列為「aptes pour la demi-finale」；Soren 仍保留 Mbappé 腳踝負荷監控，不把 fit 寫成完全無風險。",
         "CBS Sports/FanDuel 賽前盤把 France 約 +135、Spain 約 +220、和局約 +210；只作紙上市場溫度，不能當下注建議或模型秘密。",
-        "NWS Arlington/Tarrant County 7/14 仍有雷陣雨機率與高溫（約 90°F 以上）脈絡；Dallas/Arlington 半決賽的節奏可能受熱與天氣管理影響。"
+        "NWS Arlington/Tarrant County 7/14 仍有雷陣雨機率與高溫（約 90°F 以上）脈絡；Dallas/Arlington 半決賽的節奏可能受熱與天氣管理影響。",
+        "FIFA knockout bracket/fixture page可連線確認 Match 101 為 France v Spain，Dallas Stadium，7/14 15:00 當地開球；公開頁面不應再露出 W97/W98。",
+        "RFEF 官方賽後稿確認 Spain 2-1 Belgium 後進入隊史第二次世界盃四強，De la Fuente 表示「Podemos ganar a cualquier equipo」；這是官方心理/信心脈絡，不是勝率保證。",
+        "RFEF 官方稿把 Lamine Yamal 列為對 Belgium 的 MVP 與最具決定性球員，支撐 Spain 進攻焦點從純控球轉向右路決斷。",
+        "Al Jazeera 可讀 meta/標題把 France-Spain 定位成歐洲兩大強權與 Mbappé-Yamal blockbuster；可作中立 preview/敘事熱度，不替代官方隊訊。"
       ],
       "sources": [
         {
@@ -10943,6 +10947,38 @@
           "fetchedAt": "2026-07-12T06:06:20Z",
           "claimType": "context/weather-watch",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA knockout bracket Match 101",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-12T12:25:00Z",
+          "claimType": "confirmed/official-fixture",
+          "confidence": "high"
+        },
+        {
+          "label": "RFEF De la Fuente post-Belgium quotes",
+          "url": "https://rfef.es/es/noticias/luis-de-la-fuente-podemos-ganar-cualquier-equipo",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-12T12:25:00Z",
+          "claimType": "confirmed/official-team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "RFEF Lamine Yamal MVP note",
+          "url": "https://rfef.es/es/noticias/lamine-yamal-se-aduena-del-mvp",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-12T12:25:00Z",
+          "claimType": "confirmed/player-form",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera France-Spain semi-final preview",
+          "url": "https://www.aljazeera.com/sports/2026/7/12/france-spain-fifa-world-cup-semifinals-mbappe-yamal-prediction-stats-venue",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-12T12:25:00Z",
+          "claimType": "reported/tactical-preview",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -10951,16 +10987,20 @@
       "matchId": "m102",
       "match": "England vs Argentina",
       "sourceType": "official route actualized + post-quarterfinal reports + venue/weather/odds watch",
-      "title": "England-Argentina 準決賽落地：Bellingham 連環救主撞上 Argentina 延長賽三刀，Atlanta 這場不是路線占位，是歷史恩怨開戰。",
-      "sorenTake": "W99/W100 已經不用裝盲：本地結果給出 England 2-1 Norway、Argentina 3-1 Switzerland。England 的球敘事被 Bellingham 一個人拉到傳奇比較區，Argentina 則靠 Mac Allister、Alvarez、Lautaro 在延長賽把韌性打滿。Soren 先把這場標成高壓 blockbuster；社群情緒和盤口只能當噪音溫度，硬事實仍以 FIFA/FA/主流賽報為準。",
+      "title": "England-Argentina 準決賽變成官方敘事戰：AFA 已抵 Atlanta，Rice 病後狀態要盯，Bellingham 劇本撞上 Messi 歷史線。",
+      "sorenTake": "這場已經不是路線佔位，而是 England vs Argentina 的高壓公開審判。England Football/FIFA 把對戰實名化，AFA 官方把 Scaloni 全隊抵達 Atlanta 與訓練節奏放出來；BBC 補上一個細節：Declan Rice 對 Norway 前病倒三天、半場被換下。Soren 先把它列成「中場體能與情緒敘事」雙警報：Bellingham 能改劇本，但如果 Rice 不滿格，英格蘭的控場會比海報上難看。",
       "signals": [
-        "本地 worldcup.json 已顯示 m099 Norway 1-2 England、winner England；m100 Argentina 3-1 Switzerland、winner Argentina，因此 m102 應在公開敘事實名化為 England vs Argentina。",
+        "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
         "The Guardian 賽報確認 Bellingham extra-time winner 幫 England 2-1 逆轉 Norway，進入世界盃準決賽。",
         "Al Jazeera 與 Sky Sports 均確認 Argentina 3-1（AET）淘汰 Switzerland，準決賽將對 England；Sky meta 指出 Mac Allister、Julian Alvarez、Lautaro Martinez 進球。",
         "BBC 分析把 Bellingham 近期狀態放進 Messi/Maradona/Ronaldo 級別敘事；這是媒體敘事熱度，不等於保證英格蘭勝率。",
-        "Atlanta FWC26 官方賽程頁列 7/15 3:00PM ET semi-final，現頁仍顯示 England v W100；結合 m100 結果與 England Football，可實名化為 England-Argentina。",
-        "NWS Atlanta 目前 7 日預報有陣雨/雷陣雨脈絡；Mercedes-Benz Stadium 屋頂與室內條件可能降低天氣干擾，但進出場和賽前節奏仍需觀察。"
+        "Atlanta FWC26 官方賽程頁列 7/15 3:00PM ET semi-final；結合 Argentina 已晉級與 England Football，可實名化為 England-Argentina。",
+        "NWS Atlanta 目前 7 日預報有陣雨/雷陣雨脈絡；Mercedes-Benz Stadium 屋頂與室內條件可能降低天氣干擾，但進出場和賽前節奏仍需觀察。",
+        "FIFA 已有 England v Argentina 官方半決賽 match hub；結合 England Football 官方 fixture，公開端可直接寫 England vs Argentina，不再使用路線佔位。",
+        "AFA 官方稿顯示 Scaloni 的 Argentina 已在 Inter Miami 基地訓練後前往 Atlanta；這是準備節奏/旅程脈絡，不是陣容確認。",
+        "BBC Sport 報導 Tuchel 說 Declan Rice 在對 Norway 前三天大多臥床病休，雖然先發但半場被換下；對 Argentina 前需列為 midfield availability/fitness watch。",
+        "FOX Sports 與 France 24 等主流 preview 把 England-Argentina 放進 2002 後首次世界盃交手、Maradona/Messi/Bellingham 歷史敘事；這是情緒溫度，不等於代表性社群民意。"
       ],
       "sources": [
         {
@@ -11034,6 +11074,38 @@
           "fetchedAt": "2026-07-12T06:06:20Z",
           "claimType": "odds-reference/search-indexed",
           "confidence": "medium"
+        },
+        {
+          "label": "FIFA England-Argentina semi-final hub",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/england-v-argentina-live-stream-team-news-tickets-and-more",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-12T12:25:00Z",
+          "claimType": "confirmed/official-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA Argentina arrive in Atlanta",
+          "url": "https://www.afa.com.ar/es/posts/el-equipo-de-lionel-scaloni-arribo-a-atlanta",
+          "sourceName": "AFA",
+          "fetchedAt": "2026-07-12T12:25:00Z",
+          "claimType": "confirmed/official-team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Declan Rice illness watch",
+          "url": "https://www.bbc.com/sport/football/articles/cpd3wv3v1eeo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-12T12:25:00Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX England-Argentina semi-final preview",
+          "url": "https://www.foxsports.com/stories/soccer/england-vs-argentina-confirmed-semifinals-heres-what-know",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-12T12:25:00Z",
+          "claimType": "reported/rivalry-context",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
