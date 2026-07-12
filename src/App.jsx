@@ -249,15 +249,18 @@ function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, 
   const active = nextMatches.find((m) => m.id === activeId) || nextMatches[0]
   const prediction = active ? predictions[active.id] : null
   const p = prediction?.probabilities || { home: 0.33, draw: 0.34, away: 0.33 }
+  const matchByNumber = buildMatchByNumber(data.matches || [])
+  const activeTeam1 = active ? displayRouteTeam(active.team1, matchByNumber) : ''
+  const activeTeam2 = active ? displayRouteTeam(active.team2, matchByNumber) : ''
   const finished = data.summary.finishedMatches || 0
   const total = data.summary.totalMatches || 1
   const soren = data.leaderboard?.find((r) => r.id === 'soren')
   const baseline = data.leaderboard?.find((r) => r.id === 'rating')
   const scoreDelta = (soren?.points || 0) - (baseline?.points || 0)
   const outcome = active ? [
-    { key: 'home', label: active.team1, value: p.home, tone: 'home' },
+    { key: 'home', label: activeTeam1, value: p.home, tone: 'home' },
     { key: 'draw', label: lang === 'en' ? 'Draw' : '平手', value: p.draw, tone: 'draw' },
-    { key: 'away', label: active.team2, value: p.away, tone: 'away' },
+    { key: 'away', label: activeTeam2, value: p.away, tone: 'away' },
   ].sort((a, b) => b.value - a.value) : []
   const copy = lang === 'en'
     ? {
@@ -273,14 +276,14 @@ function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, 
   return <section className="kinetic-arena" id="arena-cockpit">
     <div className="arena-copy"><p>{copy.kicker}</p><h2>{copy.title}</h2><span>{copy.body}</span><div className="arena-metrics"><b>{Math.round(finished / total * 100)}%<em>{copy.progress}</em></b><b>{scoreDelta >= 0 ? '+' : ''}{scoreDelta}<em>{copy.edge}</em></b><b>{intelByMatch ? Object.keys(intelByMatch).length : 0}<em>{copy.sources}</em></b></div></div>
     <div className="arena-stage">
-      <div className="match-orbit">{nextMatches.slice(0, 8).map((m, idx) => <button type="button" key={m.id} className={m.id === active?.id ? 'active' : ''} style={{ '--i': idx }} onClick={() => setActiveId(m.id)}><span>{fmtDay(m.kickoffUtc, lang)}</span><b>{m.team1.split(' ')[0]} / {m.team2.split(' ')[0]}</b></button>)}</div>
+      <div className="match-orbit">{nextMatches.slice(0, 8).map((m, idx) => { const team1 = displayRouteTeam(m.team1, matchByNumber); const team2 = displayRouteTeam(m.team2, matchByNumber); return <button type="button" key={m.id} className={m.id === active?.id ? 'active' : ''} style={{ '--i': idx }} onClick={() => setActiveId(m.id)}><span>{fmtDay(m.kickoffUtc, lang)}</span><b>{team1.split(' ')[0]} / {team2.split(' ')[0]}</b></button> })}</div>
       {active && prediction && <div className="arena-card">
         <div className="arena-card-head"><span>{stageLabel(active.stage, lang)}</span><button type="button" onClick={() => onSelect(active.id)}>{copy.inspect}</button></div>
-        <div className="arena-versus"><Team name={active.team1}/><strong className={runtimeLifecycle(active, nowMs) === 'pre-match' ? '' : 'guarded-score'}>{scoreDisplay(active, prediction, lang, nowMs)}</strong><Team name={active.team2}/></div>
+        <div className="arena-versus"><Team name={activeTeam1}/><strong className={runtimeLifecycle(active, nowMs) === 'pre-match' ? '' : 'guarded-score'}>{scoreDisplay(active, prediction, lang, nowMs)}</strong><Team name={activeTeam2}/></div>
         <div className="probability-portrait" style={{ '--home': `${Math.round(p.home * 100)}%`, '--draw': `${Math.round(p.draw * 100)}%`, '--away': `${Math.round(p.away * 100)}%` }}>
           {outcome.map((o) => <div key={o.key} className={`prob-lane ${o.tone}`}><span>{o.label}</span><b>{pct(o.value)}</b><i style={{ width: pct(o.value) }}/></div>)}
         </div>
-        <div className="arena-take"><small>{copy.lead}</small><b>{pickLabel(prediction.pick, lang)} · {pct(prediction.confidence)}</b><p>{narrative(active, prediction, lang)}</p></div>
+        <div className="arena-take"><small>{copy.lead}</small><b>{displayRoutePick(prediction.pick, lang, matchByNumber)} · {pct(prediction.confidence)}</b><p>{narrative({ ...active, team1: activeTeam1, team2: activeTeam2 }, prediction, lang)}</p></div>
         <div className="signal-stack"><b>{copy.signal}</b><span>{intelByMatch[active.id]?.title || copy.noIntel}</span>{intelByMatch[active.id] && <small>{sourceTrustLabel(intelByMatch[active.id], lang)} · {latestSourceLabel(intelByMatch[active.id], lang)}</small>}</div>
       </div>}
       <div className="uncertainty-ring"><span>{copy.uncertainty}</span><b>{pct(1 - (prediction?.confidence || 0))}</b></div>
@@ -289,6 +292,7 @@ function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, 
 }
 
 function CommandCenter({ data, nextMatches, predictions, bankroll, lang, t, nowMs }) {
+  const matchByNumber = buildMatchByNumber(data.matches || [])
   const next = nextMatches[0]
   const sharp = [...nextMatches].sort((a, b) => (predictions[b.id]?.confidence || 0) - (predictions[a.id]?.confidence || 0))[0]
   const trap = [...nextMatches].sort((a, b) => {
@@ -299,20 +303,22 @@ function CommandCenter({ data, nextMatches, predictions, bankroll, lang, t, nowM
   const soren = data.leaderboard?.find((r) => r.id === 'soren')
   const nextLifecycle = runtimeLifecycle(next, nowMs)
   return <section className="command-grid" id="today">
-    <StatCard label={t.nextCut} value={next ? `${next.team1} vs ${next.team2}` : t.TBD} sub={next ? `${fmtDate(next.kickoffUtc, lang)} · ${nextLifecycle === 'pre-match' ? `${lang === 'en' ? 'pick' : '我站'} ${pickLabel(predictions[next.id]?.pick, lang)}` : lifecycleText(next, lang, nowMs)}` : t.waiting} tone="blue" />
-    <StatCard label={t.strongest} value={sharp ? pickLabel(predictions[sharp.id]?.pick, lang) : '—'} sub={sharp ? `${sharp.team1} vs ${sharp.team2} · ${t.confidence} ${pct(predictions[sharp.id]?.confidence)}` : '—'} tone="green" />
-    <StatCard label={t.trap} value={trap ? `${trap.team1} vs ${trap.team2}` : '—'} sub={trap ? `${t.trapRate} ${pct(Math.min(predictions[trap.id]?.probabilities?.home || 0, predictions[trap.id]?.probabilities?.away || 0))}` : '—'} tone="amber" />
+    <StatCard label={t.nextCut} value={next ? `${displayRouteTeam(next.team1, matchByNumber)} vs ${displayRouteTeam(next.team2, matchByNumber)}` : t.TBD} sub={next ? `${fmtDate(next.kickoffUtc, lang)} · ${nextLifecycle === 'pre-match' ? `${lang === 'en' ? 'pick' : '我站'} ${displayRoutePick(predictions[next.id]?.pick, lang, matchByNumber)}` : lifecycleText(next, lang, nowMs)}` : t.waiting} tone="blue" />
+    <StatCard label={t.strongest} value={sharp ? displayRoutePick(predictions[sharp.id]?.pick, lang, matchByNumber) : '—'} sub={sharp ? `${displayRouteTeam(sharp.team1, matchByNumber)} vs ${displayRouteTeam(sharp.team2, matchByNumber)} · ${t.confidence} ${pct(predictions[sharp.id]?.confidence)}` : '—'} tone="green" />
+    <StatCard label={t.trap} value={trap ? `${displayRouteTeam(trap.team1, matchByNumber)} vs ${displayRouteTeam(trap.team2, matchByNumber)}` : '—'} sub={trap ? `${t.trapRate} ${pct(Math.min(predictions[trap.id]?.probabilities?.home || 0, predictions[trap.id]?.probabilities?.away || 0))}` : '—'} tone="amber" />
     <StatCard label={t.bankroll} value={money(bankroll?.bankroll)} sub={`${t.roi} ${pct(bankroll?.roi)} · ${t.unsettled} ${money(bankroll?.openStake)}`} tone="violet" />
     <StatCard label={t.modelForm} value={`${soren?.points ?? 0} ${t.points}`} sub={`${t.hit} ${pct(soren?.accuracy)}，${t.noSwagger}`} />
   </section>
 }
-function CompactMatchCard({ match, prediction, paperBet, intel, onSelect, featured = false, lang, t, nowMs }) {
+function CompactMatchCard({ match, prediction, paperBet, intel, onSelect, featured = false, lang, t, nowMs, matchByNumber }) {
+  const team1 = displayRouteTeam(match.team1, matchByNumber)
+  const team2 = displayRouteTeam(match.team2, matchByNumber)
   return <article className={`match-card ${featured ? 'featured-card' : ''}`}>
     <div className="match-top"><span>{stageLabel(match.stage, lang)}</span><span>{fmtDate(match.kickoffUtc, lang)}</span></div>
-    <div className="teams-row"><Team name={match.team1}/><div className={`score-pill ${runtimeLifecycle(match, nowMs) === 'pre-match' || runtimeLifecycle(match, nowMs) === 'final' ? '' : 'guarded-score'}`}>{scoreDisplay(match, prediction, lang, nowMs)}<small>{scoreSubLabel(match, lang, t, nowMs)}</small></div><Team name={match.team2}/></div>
+    <div className="teams-row"><Team name={team1}/><div className={`score-pill ${runtimeLifecycle(match, nowMs) === 'pre-match' || runtimeLifecycle(match, nowMs) === 'final' ? '' : 'guarded-score'}`}>{scoreDisplay(match, prediction, lang, nowMs)}<small>{scoreSubLabel(match, lang, t, nowMs)}</small></div><Team name={team2}/></div>
     <ProbBar prediction={prediction}/>
-    <div className="pick-row"><b>{lang === 'en' ? 'Pick' : '我站'} {pickLabel(prediction.pick, lang)}</b><span>{tagLabel(prediction.tag, lang)} · {pct(prediction.confidence)}</span></div>
-    <p className="verdict">{narrative(match, prediction, lang)}</p>
+    <div className="pick-row"><b>{lang === 'en' ? 'Pick' : '我站'} {displayRoutePick(prediction.pick, lang, matchByNumber)}</b><span>{tagLabel(prediction.tag, lang)} · {pct(prediction.confidence)}</span></div>
+    <p className="verdict">{narrative({ ...match, team1, team2 }, prediction, lang)}</p>
     <div className="chip-row">
       {prediction.commentary?.keyFactors?.map((f) => <span key={f.label}><b>{lang === 'en' ? ({'底牌差':'Rating gap','進球味':'Goal profile','翻車率':'Upset window'}[f.label] || f.label) : f.label}</b>{f.value}</span>)}
       {paperBet && <span className="paper-chip"><b>{t.paper}</b>{money(paperBet.stake)}</span>}
@@ -321,13 +327,14 @@ function CompactMatchCard({ match, prediction, paperBet, intel, onSelect, featur
     <button className="deep-dive" type="button" onClick={() => onSelect(match.id)}>{t.detail}</button>
   </article>
 }
-function TodaySlate({ matches, predictions, paperBetsByMatch, intelByMatch, onSelect, lang, t, nowMs }) {
+function TodaySlate({ matches, predictions, paperBetsByMatch, intelByMatch, onSelect, lang, t, nowMs, allMatches = matches }) {
+  const matchByNumber = buildMatchByNumber(allMatches)
   const featured = matches.slice(0, 3)
   const rest = matches.slice(3, 9)
   return <section className="panel" id="predictions">
     <SectionHead kicker="NEXT WINDOW" title={t.nextWindow} meta={`${matches.length} ${lang === 'en' ? 'matches' : '場'}`}><small>{t.homeNote}</small></SectionHead>
-    <div className="featured-grid">{featured.map((m) => <CompactMatchCard featured key={m.id} match={m} prediction={predictions[m.id]} paperBet={paperBetsByMatch[m.id]} intel={intelByMatch[m.id]} onSelect={onSelect} lang={lang} t={t} nowMs={nowMs}/>)}</div>
-    <div className="upcoming-strip">{rest.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDay(m.kickoffUtc, lang)}</span><b><InlineTeam name={m.team1}/> vs <InlineTeam name={m.team2}/></b><em>{runtimeLifecycle(m, nowMs) === 'pre-match' ? pickLabel(predictions[m.id]?.pick, lang) : lifecycleText(m, lang, nowMs)}</em></button>)}</div>
+    <div className="featured-grid">{featured.map((m) => <CompactMatchCard featured key={m.id} match={m} prediction={predictions[m.id]} paperBet={paperBetsByMatch[m.id]} intel={intelByMatch[m.id]} onSelect={onSelect} lang={lang} t={t} nowMs={nowMs} matchByNumber={matchByNumber}/>)}</div>
+    <div className="upcoming-strip">{rest.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDay(m.kickoffUtc, lang)}</span><b><InlineTeam name={displayRouteTeam(m.team1, matchByNumber)}/> vs <InlineTeam name={displayRouteTeam(m.team2, matchByNumber)}/></b><em>{runtimeLifecycle(m, nowMs) === 'pre-match' ? displayRoutePick(predictions[m.id]?.pick, lang, matchByNumber) : lifecycleText(m, lang, nowMs)}</em></button>)}</div>
   </section>
 }
 function IntelBrief({ intel, matches = [], onSelect, lang, t }) {
@@ -494,6 +501,9 @@ function resolveBracketRouteTeam(token, matchByNumber, depth = 0) {
   const right = resolveBracketRouteTeam(source.team2, matchByNumber, depth + 1)
   return `${left} / ${right}`
 }
+const buildMatchByNumber = (matches = []) => Object.fromEntries(matches.map((m) => [m.id.replace('m', ''), m]))
+const displayRouteTeam = (team, matchByNumber) => resolveBracketRouteTeam(team, matchByNumber)
+const displayRoutePick = (pick, lang, matchByNumber) => pickLabel(displayRouteTeam(pick, matchByNumber), lang)
 const radarPoint = (value, index, total, radius = 88) => {
   const angle = -Math.PI / 2 + (index / total) * Math.PI * 2
   return [Math.cos(angle) * radius * value, Math.sin(angle) * radius * value]
@@ -629,7 +639,7 @@ function BracketSnapshot({ matches, onSelect, lang, t }) {
 }
 function Leaderboard({ rows, t, lang }) { return <section className="panel slim" id="model"><SectionHead kicker="MODEL FORM" title={t.leaderboardTitle} meta={t.publicLedger}/><div className="leader-list">{rows.map((row) => <div className="leader" key={row.id}><div className="rank">#{row.rank}</div><div><b>{row.name}</b><p>{leaderDesc(row, lang)}</p></div><div className="leader-score"><b>{row.points}</b><span>{pct(row.accuracy)} hit</span></div></div>)}</div><p className="self-own">{t.selfOwn}</p></section> }
 function StandingsPreview({ standings, nextMatches, lang, t }) { const groups = Array.from(new Set(nextMatches.map((m) => m.group).filter(Boolean))).slice(0, 4); const entries = groups.length ? groups.map((g) => [g, standings[g]]).filter(([, rows]) => rows) : Object.entries(standings || {}).slice(0, 4); return <section className="panel" id="standings"><SectionHead kicker="GROUP SURVIVAL MAP" title={t.standingsTitle} meta={`${entries.length} groups`} /><div className="tables compact-tables">{entries.map(([name, rows]) => <div className="table-card" key={name}><h3>{lang === 'en' ? name : name.replace('Group ', '小組 ')}</h3><table><thead><tr><th>{lang === 'en' ? 'Team' : '隊伍'}</th><th>{lang === 'en' ? 'P' : '賽'}</th><th>{lang === 'en' ? 'GD' : '淨'}</th><th>{lang === 'en' ? 'Pts' : '分'}</th></tr></thead><tbody>{rows.map((r, idx) => <tr key={r.team} className={idx < 2 ? 'qualified' : ''}><td><InlineTeam name={r.team}/></td><td>{r.played}</td><td>{r.goalDiff}</td><td><b>{r.points}</b></td></tr>)}</tbody></table></div>)}</div></section> }
-function FixtureExplorer({ matches, predictions, onSelect, lang, t, nowMs }) { const [showAll, setShowAll] = useState(false); const list = showAll ? matches : matches.filter((m) => m.status !== 'finished').slice(0, 12); return <section className="panel" id="fixtures"><SectionHead kicker="FIXTURE EXPLORER" title={t.fixturesTitle} meta={showAll ? t.all : t.recentOnly} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc, lang)}</span><b><InlineTeam name={m.team1}/> vs <InlineTeam name={m.team2}/></b><em>{runtimeLifecycle(m, nowMs) === 'final' ? scoreLabel(m) : runtimeLifecycle(m, nowMs) === 'pre-match' ? pickLabel(predictions[m.id]?.pick, lang) : lifecycleText(m, lang, nowMs)}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? t.hideAll : t.showAll}</button></section> }
+function FixtureExplorer({ matches, predictions, onSelect, lang, t, nowMs }) { const [showAll, setShowAll] = useState(false); const matchByNumber = buildMatchByNumber(matches); const list = showAll ? matches : matches.filter((m) => m.status !== 'finished').slice(0, 12); return <section className="panel" id="fixtures"><SectionHead kicker="FIXTURE EXPLORER" title={t.fixturesTitle} meta={showAll ? t.all : t.recentOnly} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc, lang)}</span><b><InlineTeam name={displayRouteTeam(m.team1, matchByNumber)}/> vs <InlineTeam name={displayRouteTeam(m.team2, matchByNumber)}/></b><em>{runtimeLifecycle(m, nowMs) === 'final' ? scoreLabel(m) : runtimeLifecycle(m, nowMs) === 'pre-match' ? displayRoutePick(predictions[m.id]?.pick, lang, matchByNumber) : lifecycleText(m, lang, nowMs)}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? t.hideAll : t.showAll}</button></section> }
 function TacticalBoard({ match, prediction, intel, lang }) { const favorite = prediction.probabilities.home >= prediction.probabilities.away ? match.team1 : match.team2; const underdog = favorite === match.team1 ? match.team2 : match.team1; const lanes = [{ top:'18%', left:'18%', label:`${flag(favorite)} ${lang === 'en' ? 'press high' : '高位壓迫'}`, note: lang === 'en' ? 'first 30 minutes decide tempo' : '前 30 分鐘搶節奏' }, { top:'48%', left:'50%', label: lang === 'en' ? 'Midfield fault line' : '中場斷點', note: lang === 'en' ? 'first turnover hurts' : '誰先掉球誰先挨打' }, { top:'72%', left:'78%', label:`${flag(underdog)} ${lang === 'en' ? 'counter outlet' : '反擊出口'}`, note: lang === 'en' ? 'upsets start here' : '爆冷通常從這裡長出來' }]; return <section className="tactical-board"><div className="pitch"><div className="half-line"/><div className="center-circle"/>{lanes.map((lane) => <div className="position-node" key={lane.label} style={{ top: lane.top, left: lane.left }}><b>{lane.label}</b><span>{lane.note}</span></div>)}</div><div className="tactical-notes"><b>{lang === 'en' ? 'Tactical note' : '站位 / 對位筆記'}</b><p>{intel ? (lang === 'en' ? 'Verified availability, rotation and tactical signals are folded into this card when sources are clean.' : '我會把確認過的傷停、預測先發、輪換與戰術線索放進這裡；沒有來源就不裝懂。') : (lang === 'en' ? 'No clean source-backed tactical card yet; this is the model map until scouting improves it.' : '目前先用模型對位圖，等 scout 抓到可信先發/站位來源後再補細節。')}</p><small>{lang === 'en' ? 'Source-backed only: expected XI, official lineups and tactical previews.' : '不是幻想陣型：之後只接有來源的 expected XI、官方先發與戰術 preview。'}</small></div></section> }
 function MatchDeepDive({ match, prediction, paperBet, intel, onClose, lang, t, nowMs }) {
   if (!match || !prediction) return null
@@ -657,6 +667,8 @@ function App() {
   const paperBetsByMatch = useMemo(() => data?.paperBankroll ? Object.fromEntries([...(data.paperBankroll.pending || []), ...(data.paperBankroll.settled || []), ...(data.paperBankroll.watchlist || [])].map((b) => [b.matchId, b])) : {}, [data])
   const intelByMatch = useMemo(() => intel?.items ? Object.fromEntries(intel.items.map((item) => [item.matchId, item])) : {}, [intel])
   const selectedMatch = selectedId && data ? data.matches.find((m) => m.id === selectedId) : null
+  const matchByNumber = useMemo(() => data ? buildMatchByNumber(data.matches) : {}, [data])
+  const selectedDisplayMatch = selectedMatch ? { ...selectedMatch, team1: displayRouteTeam(selectedMatch.team1, matchByNumber), team2: displayRouteTeam(selectedMatch.team2, matchByNumber) } : null
   const nowMs = Date.now()
   if (error) return <main className="shell"><div className="panel"><h1>{t.loadFail}</h1><p>{error}</p></div></main>
   if (!data) return <main className="shell"><div className="loading">{t.loading}</div></main>
@@ -671,14 +683,14 @@ function App() {
 
     <LearningLoop data={data} onSelect={setSelectedId} lang={lang} t={t}/>
     <CalibrationAudit data={data} onSelect={setSelectedId} lang={lang}/>
-    <TodaySlate matches={nextMatches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t} nowMs={nowMs}/>
+    <TodaySlate matches={nextMatches} allMatches={data.matches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t} nowMs={nowMs}/>
     <BracketSnapshot matches={data.matches} predictions={data.predictions} onSelect={setSelectedId} lang={lang} t={t}/>
     <IntelBrief intel={intel} matches={data.matches} onSelect={setSelectedId} lang={lang} t={t}/>
     <PaperBankroll bankroll={data.paperBankroll} onSelect={setSelectedId} lang={lang} t={t}/>
     <Leaderboard rows={data.leaderboard} t={t} lang={lang}/>
     <StandingsPreview standings={data.standings} nextMatches={nextMatches} lang={lang} t={t}/>
     <FixtureExplorer matches={data.matches} predictions={data.predictions} onSelect={setSelectedId} lang={lang} t={t} nowMs={nowMs}/>
-    {selectedMatch && <MatchDeepDive match={selectedMatch} prediction={data.predictions[selectedMatch.id]} paperBet={paperBetsByMatch[selectedMatch.id]} intel={intelByMatch[selectedMatch.id]} onClose={() => setSelectedId(null)} lang={lang} t={t} nowMs={nowMs}/>}<footer>{t.footer}</footer>
+    {selectedDisplayMatch && <MatchDeepDive match={selectedDisplayMatch} prediction={data.predictions[selectedDisplayMatch.id]} paperBet={paperBetsByMatch[selectedDisplayMatch.id]} intel={intelByMatch[selectedDisplayMatch.id]} onClose={() => setSelectedId(null)} lang={lang} t={t} nowMs={nowMs}/>}<footer>{t.footer}</footer>
   </main>
 }
 export default App
