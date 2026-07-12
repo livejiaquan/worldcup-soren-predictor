@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-11T22:49:32.492Z",
+  "generatedAt": "2026-07-12T01:04:30.018Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,11 +7,10 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 98,
-    "scheduledMatches": 6,
+    "finishedMatches": 99,
+    "scheduledMatches": 5,
     "finalPendingMatches": 1,
     "nextWindow": [
-      "m100",
       "m101",
       "m102",
       "m103",
@@ -20,7 +19,7 @@
   },
   "dataQuality": {
     "status": "watch",
-    "checkedAt": "2026-07-11T22:49:32.492Z",
+    "checkedAt": "2026-07-12T01:04:30.018Z",
     "thresholds": {
       "finalResultGraceMinutes": 150
     },
@@ -28,18 +27,18 @@
       "totalMatches": 104,
       "groups": 12,
       "teams": 48,
-      "finishedMatches": 98,
-      "scheduledMatches": 6,
+      "finishedMatches": 99,
+      "scheduledMatches": 5,
       "predictions": 104,
       "leaderboardRows": 3,
       "paperSettled": 12,
-      "paperPending": 5,
+      "paperPending": 4,
       "resultOverrides": 0,
       "groupStageMatches": 72,
       "lifecycle": {
-        "final": 98,
+        "final": 99,
         "live-window": 1,
-        "pre-match": 5
+        "pre-match": 4
       }
     },
     "labels": [
@@ -69,7 +68,7 @@
       }
     ],
     "pendingFinalMatchIds": [
-      "m099"
+      "m100"
     ],
     "warnings": [
       "1 match(es) have kicked off but do not have source-backed final scores yet"
@@ -2802,11 +2801,15 @@
       "team1": "Norway",
       "team2": "England",
       "venue": "Miami (Miami Gardens)",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        1,
+        2
+      ],
       "source": "openfootball/worldcup.json",
-      "lifecycle": "live-window",
-      "resultTrust": "kickoff-started; final score not trusted yet"
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
+      "winner": "England"
     },
     {
       "id": "m100",
@@ -2822,8 +2825,8 @@
       "status": "scheduled",
       "score": null,
       "source": "openfootball/worldcup.json",
-      "lifecycle": "pre-match",
-      "resultTrust": "pre-match fixture"
+      "lifecycle": "live-window",
+      "resultTrust": "kickoff-started; final score not trusted yet"
     },
     {
       "id": "m101",
@@ -3594,16 +3597,16 @@
     },
     "m050": {
       "pick": "Norway",
-      "confidence": 0.82,
+      "confidence": 0.8172798801080556,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.08091348318176868,
-        "draw": 0.19583482635698143,
-        "away": 0.7232516904612499
+        "home": 0.09055022940809779,
+        "draw": 0.20302695584485705,
+        "away": 0.7064228147470452
       },
       "expectedGoals": [
-        0.46,
-        1.92
+        0.5,
+        1.88
       ],
       "score": "0-1",
       "commentary": {
@@ -3612,25 +3615,25 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "25.5",
+            "value": "23.8",
             "note": "Norway 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.46 : 1.92",
+            "value": "0.50 : 1.88",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "8%",
+            "value": "9%",
             "note": "Iraq 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Iraq 54.9；Norway 80.3",
-        "預期進球 0.46 : 1.92，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 25.5 分，我暫時站 Norway"
+        "底牌分：Iraq 54.9；Norway 78.6",
+        "預期進球 0.50 : 1.88，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 23.8 分，我暫時站 Norway"
       ]
     },
     "m055": {
@@ -3758,16 +3761,16 @@
     },
     "m067": {
       "pick": "England",
-      "confidence": 0.7461900569690957,
+      "confidence": 0.7572362599760746,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6513370206679766,
-        "draw": 0.22428727144804156,
-        "away": 0.12437570788398178
+        "home": 0.659864969840227,
+        "draw": 0.22122167218536545,
+        "away": 0.1189133579744075
       },
       "expectedGoals": [
-        1.77,
-        0.61
+        1.78,
+        0.6
       ],
       "score": "1-0",
       "commentary": {
@@ -3776,12 +3779,12 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "15.5",
+            "value": "16.3",
             "note": "England 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.77 : 0.61",
+            "value": "1.78 : 0.60",
             "note": "最像 1-0"
           },
           {
@@ -3792,9 +3795,9 @@
         ]
       },
       "reasons": [
-        "底牌分：England 100.8；Croatia 85.3",
-        "預期進球 1.77 : 0.61，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 15.5 分，我暫時站 England"
+        "底牌分：England 101.7；Croatia 85.3",
+        "預期進球 1.78 : 0.60，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 16.3 分，我暫時站 England"
       ]
     },
     "m068": {
@@ -4619,42 +4622,42 @@
     },
     "m052": {
       "pick": "Norway",
-      "confidence": 0.5274212660305269,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.44848705412962026,
+      "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.48473767231505555,
-        "draw": 0.2676557315669519,
-        "away": 0.24760659611799257
+        "home": 0.42570404714366905,
+        "draw": 0.2751641667457241,
+        "away": 0.2991317861106068
       },
       "expectedGoals": [
-        1.44,
-        0.94
+        1.32,
+        1.06
       ],
-      "score": "1-0",
+      "score": "1-1",
       "commentary": {
-        "headline": "我這場保守站 Norway，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Norway，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "2.7",
+            "value": "1.0",
             "note": "誰也別裝大哥"
           },
           {
             "label": "進球味",
-            "value": "1.44 : 0.94",
-            "note": "最像 1-0"
+            "value": "1.32 : 1.06",
+            "note": "最像 1-1"
           },
           {
             "label": "翻車率",
-            "value": "25%",
+            "value": "30%",
             "note": "Senegal 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Norway 80.3；Senegal 77.7",
-        "預期進球 1.44 : 0.94，先用 Poisson 把嘴砲壓成數字",
+        "底牌分：Norway 78.6；Senegal 77.7",
+        "預期進球 1.32 : 1.06，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
@@ -4745,13 +4748,13 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.7900730648778737,
-        "draw": 0.16390807078484437,
-        "away": 0.04601886433728197
+        "home": 0.7973762323407995,
+        "draw": 0.16007751148402632,
+        "away": 0.04254625617517432
       },
       "expectedGoals": [
-        2.07,
-        0.31
+        2.08,
+        0.3
       ],
       "score": "2-0",
       "commentary": {
@@ -4760,25 +4763,25 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "29.8",
+            "value": "30.6",
             "note": "England 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.07 : 0.31",
+            "value": "2.08 : 0.30",
             "note": "最像 2-0"
           },
           {
             "label": "翻車率",
-            "value": "5%",
+            "value": "4%",
             "note": "Ghana 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：England 100.8；Ghana 71.0",
-        "預期進球 2.07 : 0.31，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 29.8 分，我暫時站 England"
+        "底牌分：England 101.7；Ghana 71.0",
+        "預期進球 2.08 : 0.30，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 30.6 分，我暫時站 England"
       ]
     },
     "m070": {
@@ -5357,16 +5360,16 @@
     },
     "m053": {
       "pick": "France",
-      "confidence": 0.8155849210593998,
+      "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.09131952924095922,
-        "draw": 0.20357671116347092,
-        "away": 0.7051037595955699
+        "home": 0.08164414058337639,
+        "draw": 0.19640075988771613,
+        "away": 0.7219550995289076
       },
       "expectedGoals": [
-        0.5,
-        1.88
+        0.47,
+        1.91
       ],
       "score": "0-1",
       "commentary": {
@@ -5375,25 +5378,25 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "23.7",
+            "value": "25.4",
             "note": "France 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.50 : 1.88",
+            "value": "0.47 : 1.91",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "9%",
+            "value": "8%",
             "note": "Norway 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Norway 80.3；France 104.0",
-        "預期進球 0.50 : 1.88，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 23.7 分，我暫時站 France"
+        "底牌分：Norway 78.6；France 104.0",
+        "預期進球 0.47 : 1.91，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 25.4 分，我暫時站 France"
       ]
     },
     "m054": {
@@ -5606,13 +5609,13 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.03158928944379349,
-        "draw": 0.1408555203028921,
-        "away": 0.8275551902533144
+        "home": 0.031114542184288517,
+        "draw": 0.13895219026360256,
+        "away": 0.8299332675521088
       },
       "expectedGoals": [
         0.25,
-        2.21
+        2.23
       ],
       "score": "0-2",
       "commentary": {
@@ -5621,12 +5624,12 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "39.4",
+            "value": "40.3",
             "note": "England 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.25 : 2.21",
+            "value": "0.25 : 2.23",
             "note": "最像 0-2"
           },
           {
@@ -5637,9 +5640,9 @@
         ]
       },
       "reasons": [
-        "底牌分：Panama 61.4；England 100.8",
-        "預期進球 0.25 : 2.21，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 39.4 分，我暫時站 England"
+        "底牌分：Panama 61.4；England 101.7",
+        "預期進球 0.25 : 2.23，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 40.3 分，我暫時站 England"
       ]
     },
     "m072": {
@@ -6013,43 +6016,43 @@
     },
     "m078": {
       "pick": "Norway",
-      "confidence": 0.5437676318715362,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.4647640618935296,
+      "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.23741309716802914,
-        "draw": 0.26555131862707126,
-        "away": 0.49703558420489957
+        "home": 0.28818983401551135,
+        "draw": 0.2739811558011652,
+        "away": 0.43782901018332343
       },
       "expectedGoals": [
-        0.92,
-        1.46
+        1.04,
+        1.34
       ],
-      "score": "0-1",
+      "score": "1-1",
       "commentary": {
         "headline": "我這場保守站 Norway，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "story": "Norway 底牌比較硬；Ivory Coast 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "6.7",
+            "value": "5.0",
             "note": "Norway 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.92 : 1.46",
-            "note": "最像 0-1"
+            "value": "1.04 : 1.34",
+            "note": "最像 1-1"
           },
           {
             "label": "翻車率",
-            "value": "24%",
+            "value": "29%",
             "note": "Ivory Coast 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Ivory Coast 73.7；Norway 80.3",
-        "預期進球 0.92 : 1.46，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 6.7 分，我暫時站 Norway"
+        "底牌分：Ivory Coast 73.7；Norway 78.6",
+        "預期進球 1.04 : 1.34，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 5.0 分，我暫時站 Norway"
       ]
     },
     "m077": {
@@ -6139,13 +6142,13 @@
       "confidence": 0.82,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.8105652745433323,
-        "draw": 0.1529799130368413,
-        "away": 0.03645481241982651
+        "home": 0.8168653208167074,
+        "draw": 0.14940314373388433,
+        "away": 0.03373153544940835
       },
       "expectedGoals": [
-        2.12,
-        0.26
+        2.13,
+        0.25
       ],
       "score": "2-0",
       "commentary": {
@@ -6154,25 +6157,25 @@
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "32.2",
+            "value": "33.0",
             "note": "England 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "2.12 : 0.26",
+            "value": "2.13 : 0.25",
             "note": "最像 2-0"
           },
           {
             "label": "翻車率",
-            "value": "4%",
+            "value": "3%",
             "note": "Democratic Republic of the Congo 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：England 100.8；Democratic Republic of the Congo 68.7",
-        "預期進球 2.12 : 0.26，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 32.2 分，我暫時站 England"
+        "底牌分：England 101.7；Democratic Republic of the Congo 68.7",
+        "預期進球 2.13 : 0.25，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 33.0 分，我暫時站 England"
       ]
     },
     "m082": {
@@ -6587,84 +6590,84 @@
     },
     "m091": {
       "pick": "Brazil",
-      "confidence": 0.791041681524163,
+      "confidence": 0.8131288458010424,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.6860351132801048,
-        "draw": 0.21129959701789106,
-        "away": 0.1026652897020041
+        "home": 0.703192888264186,
+        "draw": 0.20436954312083036,
+        "away": 0.09243756861498369
       },
       "expectedGoals": [
-        1.84,
-        0.54
+        1.87,
+        0.51
       ],
       "score": "1-0",
       "commentary": {
-        "headline": "我這場偏明確站 Brazil，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 Brazil，但平局還有 20%；別急著開香檳，足球最會打臉。",
         "story": "Brazil 底牌比較硬；Norway 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "18.9",
+            "value": "20.6",
             "note": "Brazil 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.84 : 0.54",
+            "value": "1.87 : 0.51",
             "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "10%",
+            "value": "9%",
             "note": "Norway 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Brazil 99.2；Norway 80.3",
-        "預期進球 1.84 : 0.54，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 18.9 分，我暫時站 Brazil"
+        "底牌分：Brazil 99.2；Norway 78.6",
+        "預期進球 1.87 : 0.51，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 20.6 分，我暫時站 Brazil"
       ]
     },
     "m092": {
       "pick": "England",
-      "confidence": 0.4687711857450889,
-      "tag": "這場有妖氣",
+      "confidence": 0.5350736510425503,
+      "tag": "有邊但不裝穩",
       "probabilities": {
-        "home": 0.2855216948884097,
-        "draw": 0.2736604315310794,
-        "away": 0.4408178735805107
+        "home": 0.24281454006332828,
+        "draw": 0.2666937071790875,
+        "away": 0.4904917527575842
       },
       "expectedGoals": [
-        1.03,
-        1.35
+        0.93,
+        1.45
       ],
-      "score": "1-1",
+      "score": "0-1",
       "commentary": {
         "headline": "我這場保守站 England，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "story": "England 底牌比較硬；Mexico 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "12.9",
+            "value": "13.7",
             "note": "England 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.03 : 1.35",
-            "note": "最像 1-1"
+            "value": "0.93 : 1.45",
+            "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "29%",
+            "value": "24%",
             "note": "Mexico 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Mexico 88.0；England 100.8",
-        "預期進球 1.03 : 1.35，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 12.9 分，我暫時站 England"
+        "底牌分：Mexico 88.0；England 101.7",
+        "預期進球 0.93 : 1.45，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 13.7 分，我暫時站 England"
       ]
     },
     "m093": {
@@ -6915,43 +6918,43 @@
     },
     "m099": {
       "pick": "England",
-      "confidence": 0.7746213881187,
+      "confidence": 0.8076421310418822,
       "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.11046862433361541,
-        "draw": 0.21622142609117215,
-        "away": 0.6733099495752125
+        "home": 0.09494920559911905,
+        "draw": 0.20612453334179304,
+        "away": 0.6989262610590878
       },
       "expectedGoals": [
-        0.57,
-        1.81
+        0.52,
+        1.86
       ],
       "score": "0-1",
       "commentary": {
-        "headline": "我這場偏明確站 England，但平局還有 22%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場偏明確站 England，但平局還有 21%；別急著開香檳，足球最會打臉。",
         "story": "England 底牌比較硬；Norway 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "20.5",
+            "value": "23.0",
             "note": "England 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "0.57 : 1.81",
+            "value": "0.52 : 1.86",
             "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "11%",
+            "value": "9%",
             "note": "Norway 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：Norway 80.3；England 100.8",
-        "預期進球 0.57 : 1.81，先用 Poisson 把嘴砲壓成數字",
-        "底牌差約 20.5 分，我暫時站 England"
+        "底牌分：Norway 78.6；England 101.7",
+        "預期進球 0.52 : 1.86，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 23.0 分，我暫時站 England"
       ]
     },
     "m100": {
@@ -7142,23 +7145,23 @@
       "id": "rating",
       "name": "Rating Baseline",
       "desc": "只看隊伍強度先驗",
-      "points": 90,
-      "correct": 68,
-      "exact": 11,
-      "total": 98,
+      "points": 93,
+      "correct": 69,
+      "exact": 12,
+      "total": 99,
       "rank": 1,
-      "accuracy": 0.6938775510204082
+      "accuracy": 0.696969696969697
     },
     {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 85,
-      "correct": 60,
+      "points": 86,
+      "correct": 61,
       "exact": 11,
-      "total": 98,
+      "total": 99,
       "rank": 2,
-      "accuracy": 0.6122448979591837
+      "accuracy": 0.6161616161616161
     },
     {
       "id": "draw",
@@ -7167,9 +7170,9 @@
       "points": 48,
       "correct": 24,
       "exact": 12,
-      "total": 98,
+      "total": 99,
       "rank": 3,
-      "accuracy": 0.24489795918367346
+      "accuracy": 0.24242424242424243
     }
   ],
   "paperBankroll": {
@@ -7177,36 +7180,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 323.84,
-    "openStake": 22.86,
-    "totalValue": 323.84,
-    "roi": 2.238,
+    "bankroll": 330.26,
+    "openStake": 14.86,
+    "totalValue": 330.26,
+    "roi": 2.303,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m086",
-        "kickoffUtc": "2026-07-03T22:00:00.000Z",
-        "stage": "Round of 32",
-        "team1": "Argentina",
-        "team2": "Cape Verde",
-        "pick": "Argentina",
-        "outcome": "home",
-        "stake": 8,
-        "decimalOdds": 1.78,
-        "edge": 0.493,
-        "modelProbability": 0.839,
-        "marketProxyProbability": 0.529,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-03T21:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 Argentina，但平局還有 13%；別急著開香檳，足球最會打臉。",
-        "status": "won",
-        "score": [
-          3,
-          2
-        ],
-        "profit": 6.24
-      },
       {
         "matchId": "m087",
         "kickoffUtc": "2026-07-04T01:30:00.000Z",
@@ -7289,13 +7268,13 @@
         "outcome": "home",
         "stake": 8,
         "decimalOdds": 2.04,
-        "edge": 0.4,
-        "modelProbability": 0.686,
+        "edge": 0.435,
+        "modelProbability": 0.703,
         "marketProxyProbability": 0.462,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-05T19:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 Brazil，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "reason": "我這場偏明確站 Brazil，但平局還有 20%；別急著開香檳，足球最會打臉。",
         "status": "lost",
         "score": [
           1,
@@ -7311,10 +7290,10 @@
         "team2": "England",
         "pick": "England",
         "outcome": "away",
-        "stake": 1,
+        "stake": 3.03,
         "decimalOdds": 2.32,
-        "edge": 0.023,
-        "modelProbability": 0.441,
+        "edge": 0.138,
+        "modelProbability": 0.49,
         "marketProxyProbability": 0.405,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-05T23:00:00.000Z",
@@ -7325,7 +7304,7 @@
           2,
           3
         ],
-        "profit": 1.32
+        "profit": 4
       },
       {
         "matchId": "m093",
@@ -7470,9 +7449,7 @@
           1
         ],
         "profit": 10.56
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m099",
         "kickoffUtc": "2026-07-11T21:00:00.000Z",
@@ -7483,15 +7460,22 @@
         "outcome": "away",
         "stake": 8,
         "decimalOdds": 2.18,
-        "edge": 0.468,
-        "modelProbability": 0.673,
+        "edge": 0.524,
+        "modelProbability": 0.699,
         "marketProxyProbability": 0.431,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-11T20:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場偏明確站 England，但平局還有 22%；別急著開香檳，足球最會打臉。",
-        "status": "awaiting-final"
-      },
+        "reason": "我這場偏明確站 England，但平局還有 21%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          1,
+          2
+        ],
+        "profit": 9.44
+      }
+    ],
+    "pending": [
       {
         "matchId": "m100",
         "kickoffUtc": "2026-07-12T01:00:00.000Z",
@@ -7509,7 +7493,7 @@
         "lockedAtUtc": "2026-07-12T00:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
         "reason": "我這場偏明確站 Argentina，但平局還有 22%；別急著開香檳，足球最會打臉。",
-        "status": "pending"
+        "status": "awaiting-final"
       },
       {
         "matchId": "m101",

@@ -281,7 +281,7 @@ function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, 
           {outcome.map((o) => <div key={o.key} className={`prob-lane ${o.tone}`}><span>{o.label}</span><b>{pct(o.value)}</b><i style={{ width: pct(o.value) }}/></div>)}
         </div>
         <div className="arena-take"><small>{copy.lead}</small><b>{pickLabel(prediction.pick, lang)} · {pct(prediction.confidence)}</b><p>{narrative(active, prediction, lang)}</p></div>
-        <div className="signal-stack"><b>{copy.signal}</b><span>{intelByMatch[active.id]?.title || copy.noIntel}</span></div>
+        <div className="signal-stack"><b>{copy.signal}</b><span>{intelByMatch[active.id]?.title || copy.noIntel}</span>{intelByMatch[active.id] && <small>{sourceTrustLabel(intelByMatch[active.id], lang)} · {latestSourceLabel(intelByMatch[active.id], lang)}</small>}</div>
       </div>}
       <div className="uncertainty-ring"><span>{copy.uncertainty}</span><b>{pct(1 - (prediction?.confidence || 0))}</b></div>
     </div>
