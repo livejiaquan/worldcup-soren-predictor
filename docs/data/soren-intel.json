@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-07-11T17:58:32Z",
-  "status": "quarter-final scout: M099 補 BBC/NWS Miami 熱警報與雷暴風險、BBC live rail、ESPN paper odds；M100 補 CBS/Covers paper odds 並重整 Al Jazeera availability context，全部保守標籤。",
-  "headline": "八強偵察更新：Norway-England 進入 3 小時臨場窗，Miami 熱警報與雷暴風險是第三隊；Argentina-Switzerland 7 小時窗則是 Messi 熱門盤對瑞士低比分陷阱。",
-  "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與首發以可信媒體/官方更新為準。看不到的留言不會假裝看過。",
+  "generatedAt": "2026-07-12T01:05:43Z",
+  "status": "matchday scout: M100 補官方 live centre、Kansas City 天氣/先發觀察；M101 從路線占位更新為 France-Spain 準決賽官方/媒體偵察。",
+  "headline": "偵察更新：Argentina-Switzerland 開球窗只當 live context；France-Spain 準決賽已落地，Mbappé 腳踝與 Spain late-goal momentum 是第一輪監控。",
+  "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
       "matchId": "m054",
@@ -10508,9 +10508,9 @@
     {
       "matchId": "m100",
       "match": "Argentina vs Switzerland",
-      "sourceType": "Al Jazeera availability context + CBS/Covers paper odds + official FIFA/AFA/SFV route context",
-      "title": "Argentina-Switzerland 7 小時窗：Messi 熱門盤很亮，但瑞士傷停與低比分陷阱要分開看。",
-      "sorenTake": "Al Jazeera 同日預覽把 Argentina 無明顯傷兵、Switzerland 的 Manzambi/Jaquez 缺陣與 Aebischer doubt 放到同一張賽前圖；CBS/Covers 則把市場溫度推向 Messi/Argentina。Soren 的銳評：這是「熱門但不免費」——瑞士少一把反擊刀，卻還能用低位、Xhaka 節奏與定位球把比賽拖進泥地。",
+      "sourceType": "official match centre + live-centre/weather/lineup watch",
+      "title": "Argentina-Switzerland 已進入開球窗：先看 FIFA/Olympics live rail 與 Kansas City 天氣，終場前不結算。",
+      "sorenTake": "這場現在最重要的不是把即時片段當答案，而是把「官方比分入口、live rail、天氣與先發線索」分開看。Argentina 仍是熱門，但 Switzerland 的低比分陷阱和 Kansas City 比賽環境會讓這場更像耐心測試；沒有 full-time 之前，Soren 不把任何 live score 寫成結果。",
       "signals": [
         "Local worldcup.json lists M100 as quarter-final W95 vs W96 at 2026-07-12T01:00Z; participants remain placeholders until M95/M96 finish.",
         "FIFA schedule/scores fixtures and FIFA Suites public pages support M100 / W95 vs W96 bracket rail; no lineup, odds, or tactical claim is attached while teams are unknown.",
@@ -10549,7 +10549,11 @@
         "2026-07-11T11:51:42Z Al Jazeera 同日 preview 把 Messi/Golden Boot 與 Manzambi 缺席放入賽前敘事；作 mainstream context，不把球星敘事寫成賽果。",
         "2026-07-11T17:58:32Z 親核 Al Jazeera：Argentina-Switzerland 同日 preview 可連，metadata 明示 Messi/Switzerland 四強門票敘事；搜尋摘要提供 Argentina 無新增傷兵、Swiss Manzambi/Jaquez out、Aebischer doubtful 的 availability lead，保守標為 mainstream reported team-news。",
         "2026-07-11T17:58:32Z 親核 CBS Sports：Argentina-Switzerland odds/preview 頁可連，metadata 以 Messi 與 FanDuel 公開 odds 包裝；只作 paper simulation odds-reference，不提供下注流程。",
-        "2026-07-11T17:58:32Z 親核 Covers：Argentina-Switzerland predictions/odds 頁可連，metadata 將 Messi 與 Kansas City Saturday night 場景列為主敘事；作 secondary public odds context。"
+        "2026-07-11T17:58:32Z 親核 Covers：Argentina-Switzerland predictions/odds 頁可連，metadata 將 Messi 與 Kansas City Saturday night 場景列為主敘事；作 secondary public odds context。",
+        "01Z 補核：FIFA Match Centre 已確認 Match 100 Argentina vs Switzerland、Kansas City Stadium、line-ups/score/live updates 入口；這是官方臨場硬入口，但不是終場證據。",
+        "Olympics.com 已開 Argentina-Switzerland quarter-final score/lineups/live updates 頁，可作 live-centre 追蹤；本站只把它當現場脈絡，completed 前不結算。",
+        "AccuWeather 搜尋索引出現 Kansas City 本場專屬天氣更新，提示 heat/storms 可能影響球迷與球員；因頁面 403/未讀全文，標為 weather-watch，不升格成確定賽中條件。",
+        "ESPN 賽前導覽提供裁判、轉播、傷停與 predicted line-ups 脈絡；正式先發仍以 FIFA/球隊/可信 live centre 為最高優先。"
       ],
       "sources": [
         {
@@ -10839,54 +10843,79 @@
           "fetchedAt": "2026-07-11T17:58:32Z",
           "claimType": "odds-reference/paper-closing-line",
           "confidence": "medium-high"
+        },
+        {
+          "label": "Olympics.com Argentina-Switzerland live updates",
+          "url": "https://www.olympics.com/en/news/fifa-world-cup-2026-argentina-vs-switzerland-quarter-final-score-lineups-live-updates",
+          "sourceName": "Olympics.com",
+          "fetchedAt": "2026-07-12T01:05:43Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "AccuWeather World Cup weather live updates",
+          "url": "https://www.accuweather.com/en/sports/live-news/world-cup-2026-weather-updates-fan-players-endure-dangerous-heat-and-storms/1898671",
+          "sourceName": "AccuWeather",
+          "fetchedAt": "2026-07-12T01:05:43Z",
+          "claimType": "reported/weather-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "high"
     },
     {
       "matchId": "m101",
-      "match": "W97 vs W98",
-      "sourceType": "confirmed schedule + official match-centre + bracket-watch",
-      "title": "M101 準決賽先開雷達：W97 vs W98 會從 France/Morocco 與 Spain/Belgium 兩條八強路線中長出來，現在只能畫路線，不能裝先知。",
-      "sorenTake": "這張準決賽離現在不到 7 天，但對手仍未決。Soren 先把公開 bracket rails 補上：m097 贏家對 m098 贏家，可能是 France/Morocco/Spain/Belgium 任兩隊。等八強落地再實名化；現在若寫成固定對戰，就是拿水晶球冒充資料庫。",
+      "match": "France vs Spain",
+      "sourceType": "official route + tactical/recent-form + availability watch",
+      "title": "France-Spain 準決賽落地：法國連三屆決賽線在眼前，西班牙靠 Merino 晚刀過 Belgium，Mbappé 腳踝列入監控。",
+      "sorenTake": "這場不再是 W97/W98 路線占位，而是 France vs Spain 的高壓準決賽。France 的主線是連續三屆決賽的歷史壓力與 Mbappé 狀態；Spain 的主線是淘汰 Belgium 後的控球耐心和晚段殺傷。Soren 會先把 Mbappé ankle 當 availability-watch，不把「downplays injury」寫成完全無傷。",
       "signals": [
-        "本地 worldcup.json nextWindow 已列 m101，kickoffUtc 為 2026-07-14T19:00:00Z，主客仍是 W97 vs W98。",
-        "FIFA/NBC/ESPN bracket sources 提供淘汰賽路線與賽程；m101 只能確認準決賽槽位，不能確認隊名。",
-        "m097/m098 已實名為 France-Morocco 與 Spain-Belgium，因此 m101 是這兩場勝者的公開 bracket-watch。",
-        "FIFA Match 101 semi-final match-centre 已可連線；隊名仍是 W97 vs W98，先守住 placeholder，不把 France/Morocco/Spain/Belgium 的任何一方寫成已晉級。"
+        "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
+        "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
+        "FIFA France-Morocco match report 搜尋摘要指出 France 2-0 淘汰 Morocco，Mbappé 雖錯失上半場點球仍帶隊進入連三屆準決賽。",
+        "The Guardian 可讀 meta/標題確認 Spain 2-1 淘汰 Belgium，Mikel Merino late goal 送西班牙進準決賽對 France。",
+        "CBS Sports 搜尋摘要顯示 Mbappé 賽後淡化 ankle injury；這只列為 availability-watch，正式狀態仍等 France/FFF/FIFA 賽前更新。"
       ],
       "sources": [
         {
-          "label": "Soren public worldcup data m101 placeholder",
-          "url": "https://worldcup.kyasen.com/data/worldcup.json",
-          "sourceName": "Soren public worldcup data",
-          "fetchedAt": "2026-07-08T04:01:57Z",
-          "claimType": "confirmed/bracket-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA World Cup schedule fixtures",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/match-schedule-fixtures-results-teams-stadiums",
+          "label": "FIFA France-Spain semi-final preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-v-spain-live-stream-team-news-tickets-and-more",
           "sourceName": "FIFA",
-          "fetchedAt": "2026-07-08T04:01:57Z",
-          "claimType": "confirmed/schedule-placeholder",
+          "fetchedAt": "2026-07-12T01:05:43Z",
+          "claimType": "confirmed/official-preview",
           "confidence": "high"
         },
         {
-          "label": "NBC Sports World Cup bracket schedule",
-          "url": "https://www.nbcsports.com/soccer/news/2026-world-cup-schedule-kick-off-times-stadiums-dates-groups-how-to-watch-live-bracket",
-          "sourceName": "NBC Sports",
-          "fetchedAt": "2026-07-08T04:01:57Z",
-          "claimType": "context/bracket-watch",
+          "label": "FFF France-Spain semi-final route note",
+          "url": "https://www.fff.fr/",
+          "sourceName": "Fédération Française de Football",
+          "fetchedAt": "2026-07-12T01:05:43Z",
+          "claimType": "official/search-indexed-context",
           "confidence": "medium-high"
         },
         {
-          "label": "FIFA M101 semi-final match centre",
-          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289290/400021541",
+          "label": "FIFA France-Morocco match report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-morocco-match-report-highlights",
           "sourceName": "FIFA",
-          "fetchedAt": "2026-07-08T16:16:05Z",
-          "claimType": "confirmed/schedule-placeholder",
+          "fetchedAt": "2026-07-12T01:05:43Z",
+          "claimType": "confirmed/recent-form",
           "confidence": "high"
+        },
+        {
+          "label": "Guardian Spain-Belgium match report",
+          "url": "https://www.theguardian.com/football/2026/jul/10/spain-belgium-world-cup-2026-quarter-final-match-report",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-12T01:05:43Z",
+          "claimType": "reported/recent-form",
+          "confidence": "high"
+        },
+        {
+          "label": "CBS Mbappé ankle injury watch",
+          "url": "https://www.cbssports.com/soccer/news/kylian-mbappe-downplays-ankle-injury-france-advance-to-world-cup-semifinals/",
+          "sourceName": "CBS Sports",
+          "fetchedAt": "2026-07-12T01:05:43Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
