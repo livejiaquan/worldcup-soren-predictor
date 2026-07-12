@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-12T15:22:31.944Z",
+  "generatedAt": "2026-07-12T16:54:05.135Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -19,7 +19,7 @@
   },
   "dataQuality": {
     "status": "pass",
-    "checkedAt": "2026-07-12T15:22:31.944Z",
+    "checkedAt": "2026-07-12T16:54:05.135Z",
     "thresholds": {
       "finalResultGraceMinutes": 150
     },
