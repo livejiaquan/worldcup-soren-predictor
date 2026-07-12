@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-12T12:25:00Z",
-  "status": "matchday scout: M101 補 France-Spain 官方西班牙/RFEF 與中立 preview；M102 實名化為 England-Argentina，加入 AFA 抵達 Atlanta 與 Rice 病後體能監控。",
-  "headline": "準決賽情報更新：France-Spain 補上 RFEF/Yamal 官方脈絡；England-Argentina 補上 AFA 抵達 Atlanta 與 Rice 病後體能監控。",
+  "generatedAt": "2026-07-12T18:22:01Z",
+  "status": "semifinal scout: M101 補 FIFA power-ranking/reinvention 與 BBC 四強總覽；M102 補 BBC 四強總覽、England XI public selector 與 Atlanta 官方天氣更新。",
+  "headline": "四強情報加溫：France-Spain 從明星對撞升級成 Rodri/Olise/Mbappé 的結構戰；England-Argentina 補上 BBC 公開選陣與 Atlanta 雷雨風險。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -10867,8 +10867,8 @@
       "matchId": "m101",
       "match": "France vs Spain",
       "sourceType": "official route + tactical/recent-form + availability/weather/odds watch",
-      "title": "France-Spain 準決賽補上西班牙官方與中立 preview：Yamal 狀態發亮，De la Fuente 先把心理戰講滿，Mbappé 腳踝仍只列監控。",
-      "sorenTake": "這張卡從「路線確認」升級成真正的戰術溫度計：RFEF 官方把 Lamine Yamal 的 MVP 與 De la Fuente 的「可以擊敗任何對手」語氣放上檯面，Al Jazeera 則把 Mbappé-Yamal 對位寫成半決賽主軸。Soren 的判讀：Spain 的控球刀口很亮，但 France 只要 Mbappé/Tchouaméni 可用，轉換速度仍會逼西班牙每一次丟球都像踩到捕獸夾。",
+      "title": "France-Spain 四強再補官方戰術溫度：FIFA power rankings 把 Olise/Mbappé 與 Rodri 拉上檯面，BBC 也把這場定義成 Yamal-Mbappé 的 heavyweight。",
+      "sorenTake": "Spain 不是只靠控球好看，Rodri/防守結構已被 FIFA power rankings 點名；France 也不是只靠 Mbappé 海報，Olise 的創造力正在變成第二條刀。Soren 的銳評：這場真正危險的是「誰先失去耐心」——西班牙若被迫追轉換，會被法國打成高速公路；法國若只等 Mbappé 單點神蹟，會被 Rodri 把節奏鎖到缺氧。",
       "signals": [
         "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
         "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
@@ -10881,7 +10881,10 @@
         "FIFA knockout bracket/fixture page可連線確認 Match 101 為 France v Spain，Dallas Stadium，7/14 15:00 當地開球；公開頁面不應再露出 W97/W98。",
         "RFEF 官方賽後稿確認 Spain 2-1 Belgium 後進入隊史第二次世界盃四強，De la Fuente 表示「Podemos ganar a cualquier equipo」；這是官方心理/信心脈絡，不是勝率保證。",
         "RFEF 官方稿把 Lamine Yamal 列為對 Belgium 的 MVP 與最具決定性球員，支撐 Spain 進攻焦點從純控球轉向右路決斷。",
-        "Al Jazeera 可讀 meta/標題把 France-Spain 定位成歐洲兩大強權與 Mbappé-Yamal blockbuster；可作中立 preview/敘事熱度，不替代官方隊訊。"
+        "Al Jazeera 可讀 meta/標題把 France-Spain 定位成歐洲兩大強權與 Mbappé-Yamal blockbuster；可作中立 preview/敘事熱度，不替代官方隊訊。",
+        "FIFA 搜尋索引新增 France-Spain power rankings：Mbappé 與 Olise 分別領跑 attacking/creativity 指標，Rodri 則代表 Spain 的 defending 優勢；這是官方資料視角的球員型態訊號，不是本站模型公式。",
+        "FIFA 另有「How Spain pushed France」戰術脈絡頁，將這場放在 Euro 2024 後 France 集體耐心/重塑的路線中；Soren 把它視為 France 不只靠爆點、也能等局面裂開的官方敘事。",
+        "BBC 四強總覽可讀全文：France-Spain 被寫成 Mbappé/Yamal 星味與兩支歐洲強隊的 classic 候選，並提到 Olise 以 5 次助攻提供 France 創造力。"
       ],
       "sources": [
         {
@@ -10979,6 +10982,30 @@
           "fetchedAt": "2026-07-12T12:25:00Z",
           "claimType": "reported/tactical-preview",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA France-Spain power rankings leaders",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-v-spain-power-rankings-leaders-olise-rodri-mbappe",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-12T18:22:01Z",
+          "claimType": "official/search-indexed-player-form",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA how Spain pushed France",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/how-spain-pushed-france",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-12T18:22:01Z",
+          "claimType": "official/search-indexed-tactical-context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "BBC semifinal storylines",
+          "url": "https://www.bbc.com/sport/football/articles/cd6ed5x95ygo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-12T18:22:01Z",
+          "claimType": "reported/tactical-narrative",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -10987,8 +11014,8 @@
       "matchId": "m102",
       "match": "England vs Argentina",
       "sourceType": "official route actualized + post-quarterfinal reports + venue/weather/odds watch",
-      "title": "England-Argentina 準決賽變成官方敘事戰：AFA 已抵 Atlanta，Rice 病後狀態要盯，Bellingham 劇本撞上 Messi 歷史線。",
-      "sorenTake": "這場已經不是路線佔位，而是 England vs Argentina 的高壓公開審判。England Football/FIFA 把對戰實名化，AFA 官方把 Scaloni 全隊抵達 Atlanta 與訓練節奏放出來；BBC 補上一個細節：Declan Rice 對 Norway 前病倒三天、半場被換下。Soren 先把它列成「中場體能與情緒敘事」雙警報：Bellingham 能改劇本，但如果 Rice 不滿格，英格蘭的控場會比海報上難看。",
+      "title": "England-Argentina 補上 BBC 四強溫度與公開選陣：Bellingham/Messi 敘事很亮，但 Rice 半場被換與 Atlanta 雷雨仍是賽前風險。",
+      "sorenTake": "BBC 把這場寫成 40 年情緒包袱加上 Bellingham/Messi 當代主角，熱度夠大；但 Soren 不吃純海報。真正要盯的是 England 中場：Rice 病後/神經痛警報還沒完全解除，若他只能半格油門，Argentina 會把英格蘭的每一次出球都問成申論題。Atlanta 週三雷雨機率則主要影響進出場與賽前節奏，球場條件仍需臨場核對。",
       "signals": [
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
@@ -11000,7 +11027,10 @@
         "FIFA 已有 England v Argentina 官方半決賽 match hub；結合 England Football 官方 fixture，公開端可直接寫 England vs Argentina，不再使用路線佔位。",
         "AFA 官方稿顯示 Scaloni 的 Argentina 已在 Inter Miami 基地訓練後前往 Atlanta；這是準備節奏/旅程脈絡，不是陣容確認。",
         "BBC Sport 報導 Tuchel 說 Declan Rice 在對 Norway 前三天大多臥床病休，雖然先發但半場被換下；對 Argentina 前需列為 midfield availability/fitness watch。",
-        "FOX Sports 與 France 24 等主流 preview 把 England-Argentina 放進 2002 後首次世界盃交手、Maradona/Messi/Bellingham 歷史敘事；這是情緒溫度，不等於代表性社群民意。"
+        "FOX Sports 與 France 24 等主流 preview 把 England-Argentina 放進 2002 後首次世界盃交手、Maradona/Messi/Bellingham 歷史敘事；這是情緒溫度，不等於代表性社群民意。",
+        "BBC 四強總覽可讀全文：England-Argentina 被放進 1986/1998/2002 歷史對戰與 Bellingham vs Messi 敘事，並確認 Atlanta Stadium、週三 20:00 BST。",
+        "BBC 另開 England semifinal XI selector，顯示英格蘭公開討論已轉向 Tuchel 該如何排首發；這是 public lineup-context，不等於確認先發。",
+        "NWS Atlanta 週三預報更新為高溫約 87°F、午後有雷陣雨機率；Mercedes-Benz Stadium 內場可能降低比賽干擾，但進出場、熱身與賽前節奏仍列 weather watch。"
       ],
       "sources": [
         {
@@ -11106,6 +11136,30 @@
           "fetchedAt": "2026-07-12T12:25:00Z",
           "claimType": "reported/rivalry-context",
           "confidence": "medium-high"
+        },
+        {
+          "label": "BBC semifinal storylines",
+          "url": "https://www.bbc.com/sport/football/articles/cd6ed5x95ygo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-12T18:22:01Z",
+          "claimType": "reported/rivalry-tactical-context",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC England semifinal XI selector",
+          "url": "https://www.bbc.com/sport/football/articles/cz75x4jgddpo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-12T18:22:01Z",
+          "claimType": "reported/lineup-public-context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "NWS Atlanta point forecast update",
+          "url": "https://forecast.weather.gov/MapClick.php?lat=33.749&lon=-84.388",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-12T18:22:01Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
