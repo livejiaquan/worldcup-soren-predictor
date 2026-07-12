@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-12T01:05:43Z",
-  "status": "matchday scout: M100 補官方 live centre、Kansas City 天氣/先發觀察；M101 從路線占位更新為 France-Spain 準決賽官方/媒體偵察。",
-  "headline": "偵察更新：Argentina-Switzerland 開球窗只當 live context；France-Spain 準決賽已落地，Mbappé 腳踝與 Spain late-goal momentum 是第一輪監控。",
+  "generatedAt": "2026-07-12T06:06:20Z",
+  "status": "matchday scout: M101 補 France-Spain 傷停/天氣/紙上市場溫度；M102 從 W99/W100 實名化為 England-Argentina，加入官方與主流賽後脈絡。",
+  "headline": "偵察更新：France-Spain 進入 Mbappé/Tchouaméni availability 與 Dallas 天氣/盤口監控；England-Argentina 已落地，Bellingham 熱潮對上 Argentina 延長賽韌性。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -10866,15 +10866,18 @@
     {
       "matchId": "m101",
       "match": "France vs Spain",
-      "sourceType": "official route + tactical/recent-form + availability watch",
-      "title": "France-Spain 準決賽落地：法國連三屆決賽線在眼前，西班牙靠 Merino 晚刀過 Belgium，Mbappé 腳踝列入監控。",
-      "sorenTake": "這場不再是 W97/W98 路線占位，而是 France vs Spain 的高壓準決賽。France 的主線是連續三屆決賽的歷史壓力與 Mbappé 狀態；Spain 的主線是淘汰 Belgium 後的控球耐心和晚段殺傷。Soren 會先把 Mbappé ankle 當 availability-watch，不把「downplays injury」寫成完全無傷。",
+      "sourceType": "official route + tactical/recent-form + availability/weather/odds watch",
+      "title": "France-Spain 準決賽升溫：Mbappé/Tchouaméni 被報可用，Spain 的控球刀口要碰 Dallas 熱浪與法國轉換火力。",
+      "sorenTake": "France-Spain 現在的重點不是誰名氣更大，而是可用性與比賽節奏：L’Équipe 標題給 Mbappé、Tchouaméni 綠燈，但腳踝負荷仍要看賽前訓練；Spain 靠晚段耐心過關，若 Dallas 高溫和雷陣雨把節奏切碎，這場會變成控球耐心對反擊效率的壓力測試。",
       "signals": [
         "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
         "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
         "FIFA France-Morocco match report 搜尋摘要指出 France 2-0 淘汰 Morocco，Mbappé 雖錯失上半場點球仍帶隊進入連三屆準決賽。",
         "The Guardian 可讀 meta/標題確認 Spain 2-1 淘汰 Belgium，Mikel Merino late goal 送西班牙進準決賽對 France。",
-        "CBS Sports 搜尋摘要顯示 Mbappé 賽後淡化 ankle injury；這只列為 availability-watch，正式狀態仍等 France/FFF/FIFA 賽前更新。"
+        "CBS Sports 搜尋摘要顯示 Mbappé 賽後淡化 ankle injury；這只列為 availability-watch，正式狀態仍等 France/FFF/FIFA 賽前更新。",
+        "L’Équipe 可讀標題確認 Kylian Mbappé 與 Aurélien Tchouaméni 被列為「aptes pour la demi-finale」；Soren 仍保留 Mbappé 腳踝負荷監控，不把 fit 寫成完全無風險。",
+        "CBS Sports/FanDuel 賽前盤把 France 約 +135、Spain 約 +220、和局約 +210；只作紙上市場溫度，不能當下注建議或模型秘密。",
+        "NWS Arlington/Tarrant County 7/14 仍有雷陣雨機率與高溫（約 90°F 以上）脈絡；Dallas/Arlington 半決賽的節奏可能受熱與天氣管理影響。"
       ],
       "sources": [
         {
@@ -10916,74 +10919,124 @@
           "fetchedAt": "2026-07-12T01:05:43Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium"
+        },
+        {
+          "label": "L’Équipe Mbappé/Tchouaméni availability",
+          "url": "https://www.lequipe.fr/Football/Actualites/Coupe-du-monde-kylian-mbappe-et-aurelien-tchouameni-aptes-pour-la-demi-finale/1703387",
+          "sourceName": "L'Équipe",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "CBS/FanDuel France-Spain odds reference",
+          "url": "https://www.cbssports.com/soccer/news/france-spain-odds-prediction-time-2026-world-cup-semifinal-picks/",
+          "sourceName": "CBS Sports / FanDuel",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "NWS Arlington point forecast",
+          "url": "https://forecast.weather.gov/MapClick.php?CityName=Arlington&state=TX&site=FWD&lat=32.6945&lon=-97.1275",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "context/weather-watch",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
     },
     {
       "matchId": "m102",
-      "match": "W99 vs W100",
-      "sourceType": "confirmed schedule + official match-centre + bracket-watch",
-      "title": "M102 準決賽先佈線：W99 vs W100 會從 Norway/England 與 Argentina/Switzerland 路線長出來，隊名未落地前別裝通靈。",
-      "sorenTake": "這場在 Atlanta，距離現在不到 7 天，但 local worldcup.json 仍是 W99 vs W100。Soren 先補官方/主流 bracket rails：m099 與 m100 的勝者才會進來。現在最專業的動作不是亂押人名，而是把路線、場地與後續 final/third-place 連動講清楚。",
+      "match": "England vs Argentina",
+      "sourceType": "official route actualized + post-quarterfinal reports + venue/weather/odds watch",
+      "title": "England-Argentina 準決賽落地：Bellingham 連環救主撞上 Argentina 延長賽三刀，Atlanta 這場不是路線占位，是歷史恩怨開戰。",
+      "sorenTake": "W99/W100 已經不用裝盲：本地結果給出 England 2-1 Norway、Argentina 3-1 Switzerland。England 的球敘事被 Bellingham 一個人拉到傳奇比較區，Argentina 則靠 Mac Allister、Alvarez、Lautaro 在延長賽把韌性打滿。Soren 先把這場標成高壓 blockbuster；社群情緒和盤口只能當噪音溫度，硬事實仍以 FIFA/FA/主流賽報為準。",
       "signals": [
-        "本地 worldcup.json nextWindow 已列 m102，kickoffUtc 為 2026-07-15T19:00:00Z，場地 Atlanta，對戰仍是 W99 vs W100。",
-        "W99 來自 m099 Norway vs England；W100 來自 m100 Argentina vs Switzerland。八強未踢完前，m102 只能是 bracket-watch，不可提前實名化。",
-        "ESPN bracket/schedule 與 FIFA 官方 tournament/schedule/host-city pages 可作公開導覽；若與本地資料衝突，官方與本地已驗證 worldcup.json 優先。",
-        "這張卡只服務首頁 compact public viewpoint；預測、paper bankroll 與戰術細節要等 m099/m100 完場後再寫進對應 deep-dive。",
-        "FIFA Match 102 semi-final match-centre 已可連線；隊名仍是 W99 vs W100，等 Norway/England 與 Argentina/Switzerland 打完再 actualize。"
+        "本地 worldcup.json 已顯示 m099 Norway 1-2 England、winner England；m100 Argentina 3-1 Switzerland、winner Argentina，因此 m102 應在公開敘事實名化為 England vs Argentina。",
+        "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
+        "The Guardian 賽報確認 Bellingham extra-time winner 幫 England 2-1 逆轉 Norway，進入世界盃準決賽。",
+        "Al Jazeera 與 Sky Sports 均確認 Argentina 3-1（AET）淘汰 Switzerland，準決賽將對 England；Sky meta 指出 Mac Allister、Julian Alvarez、Lautaro Martinez 進球。",
+        "BBC 分析把 Bellingham 近期狀態放進 Messi/Maradona/Ronaldo 級別敘事；這是媒體敘事熱度，不等於保證英格蘭勝率。",
+        "Atlanta FWC26 官方賽程頁列 7/15 3:00PM ET semi-final，現頁仍顯示 England v W100；結合 m100 結果與 England Football，可實名化為 England-Argentina。",
+        "NWS Atlanta 目前 7 日預報有陣雨/雷陣雨脈絡；Mercedes-Benz Stadium 屋頂與室內條件可能降低天氣干擾，但進出場和賽前節奏仍需觀察。"
       ],
       "sources": [
         {
           "label": "Soren public worldcup data",
           "url": "https://worldcup.kyasen.com/data/worldcup.json",
           "sourceName": "Soren public data",
-          "fetchedAt": "2026-07-08T10:08:35Z",
-          "claimType": "confirmed/bracket-watch",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "confirmed/bracket-actualized",
           "confidence": "high"
         },
         {
-          "label": "FIFA World Cup official tournament hub",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-08T10:08:35Z",
-          "claimType": "confirmed/tournament-context",
+          "label": "England Football semi-final fixture details",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/11/england-fixture-details-knockout-stage-20261107",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "confirmed/official-team",
           "confidence": "high"
         },
         {
-          "label": "ESPN World Cup bracket",
-          "url": "https://www.espn.com/soccer/bracket/_/league/fifa.world/season/2026",
-          "sourceName": "ESPN",
-          "fetchedAt": "2026-07-08T10:08:35Z",
-          "claimType": "context/bracket-watch",
+          "label": "Guardian Norway-England match report",
+          "url": "https://www.theguardian.com/football/2026/jul/12/norway-england-world-cup-quarter-final-match-report",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "reported/recent-form",
           "confidence": "high"
         },
         {
-          "label": "ESPN match schedule and knockout bracket explainer",
-          "url": "https://www.espn.com/soccer/story/_/id/48939282/2026-fifa-world-cup-fixtures-results-match-schedule-group-stage-knockout-rounds-bracket",
-          "sourceName": "ESPN",
-          "fetchedAt": "2026-07-08T10:08:35Z",
-          "claimType": "context/schedule",
+          "label": "Al Jazeera Argentina-Switzerland report",
+          "url": "https://www.aljazeera.com/sports/2026/7/12/argentina-defeat-switzerland-to-set-up-england-semifinal-at-world-cup-2026",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "reported/recent-form",
           "confidence": "high"
         },
         {
-          "label": "FIFA Atlanta host-city page",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/destination/atlanta",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-08T10:08:35Z",
-          "claimType": "context/venue",
+          "label": "Sky Sports Argentina-Switzerland report",
+          "url": "https://www.skysports.com/football/news/11095/13561909/world-cup-2026-argentina-xx-switzerland",
+          "sourceName": "Sky Sports",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "reported/recent-form",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Bellingham analysis",
+          "url": "https://www.bbc.com/sport/football/articles/cy5v6544ypxo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "reported/tactical-narrative",
+          "confidence": "high"
+        },
+        {
+          "label": "Atlanta FWC26 match schedule",
+          "url": "https://atlantafwc26.com/match-schedule/",
+          "sourceName": "Atlanta FWC26",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "confirmed/venue-schedule",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "NWS Atlanta point forecast",
+          "url": "https://forecast.weather.gov/MapClick.php?lat=33.76&lon=-84.43",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "context/weather-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "The Athletic England-Argentina odds reference",
+          "url": "https://www.nytimes.com/athletic/7439554/2026/07/12/england-argentina-world-cup-semifinal-odds/",
+          "sourceName": "The Athletic / NYT",
+          "fetchedAt": "2026-07-12T06:06:20Z",
+          "claimType": "odds-reference/search-indexed",
           "confidence": "medium"
-        },
-        {
-          "label": "FIFA M102 semi-final match centre",
-          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289290/400021540",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-08T16:16:05Z",
-          "claimType": "confirmed/schedule-placeholder",
-          "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     }
   ]
 }
