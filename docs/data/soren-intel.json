@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-12T18:22:01Z",
-  "status": "semifinal scout: M101 補 FIFA power-ranking/reinvention 與 BBC 四強總覽；M102 補 BBC 四強總覽、England XI public selector 與 Atlanta 官方天氣更新。",
-  "headline": "四強情報加溫：France-Spain 從明星對撞升級成 Rodri/Olise/Mbappé 的結構戰；England-Argentina 補上 BBC 公開選陣與 Atlanta 雷雨風險。",
+  "generatedAt": "2026-07-13T00:30:00Z",
+  "status": "semifinal scout: M101 補 France/Spain expected-XI 與 Arlington 天氣風險；M102 補 AFA/AP 官方歷史線、紙上市場溫度與 Atlanta 天氣更新。",
+  "headline": "四強倒數加溫：France-Spain 盯中場健康與右路決斷；England-Argentina 盯 Rice 健康、Messi 宿命敘事與 Atlanta 雷雨節奏。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -10866,9 +10866,9 @@
     {
       "matchId": "m101",
       "match": "France vs Spain",
-      "sourceType": "official route + tactical/recent-form + availability/weather/odds watch",
-      "title": "France-Spain 四強再補官方戰術溫度：FIFA power rankings 把 Olise/Mbappé 與 Rodri 拉上檯面，BBC 也把這場定義成 Yamal-Mbappé 的 heavyweight。",
-      "sorenTake": "Spain 不是只靠控球好看，Rodri/防守結構已被 FIFA power rankings 點名；France 也不是只靠 Mbappé 海報，Olise 的創造力正在變成第二條刀。Soren 的銳評：這場真正危險的是「誰先失去耐心」——西班牙若被迫追轉換，會被法國打成高速公路；法國若只等 Mbappé 單點神蹟，會被 Rodri 把節奏鎖到缺氧。",
+      "sourceType": "official/tactical + availability/expected-XI + venue/weather/odds watch",
+      "title": "France-Spain 進入 42 小時倒數：BBC/AP 級四強敘事之外，France 中場健康、Spain 右路決斷與 Arlington 熱雷雨才是暗線。",
+      "sorenTake": "France 仍有 Mbappé/Olise 的爆點，但最新可讀隊訊把焦點拉回中場：Tchouaméni 回歸後是否立刻先發、Koné/Rabiot 如何扛壓，會決定 France 是高速反擊還是被 Spain 的 Rodri 節奏鎖死。Spain 的右路與 Yamal 敘事很亮，Soren 的銳評：這場不是「誰比較會控球」，而是誰先把對方逼到用替補方案踢生死題。",
       "signals": [
         "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
         "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
@@ -10884,7 +10884,11 @@
         "Al Jazeera 可讀 meta/標題把 France-Spain 定位成歐洲兩大強權與 Mbappé-Yamal blockbuster；可作中立 preview/敘事熱度，不替代官方隊訊。",
         "FIFA 搜尋索引新增 France-Spain power rankings：Mbappé 與 Olise 分別領跑 attacking/creativity 指標，Rodri 則代表 Spain 的 defending 優勢；這是官方資料視角的球員型態訊號，不是本站模型公式。",
         "FIFA 另有「How Spain pushed France」戰術脈絡頁，將這場放在 Euro 2024 後 France 集體耐心/重塑的路線中；Soren 把它視為 France 不只靠爆點、也能等局面裂開的官方敘事。",
-        "BBC 四強總覽可讀全文：France-Spain 被寫成 Mbappé/Yamal 星味與兩支歐洲強隊的 classic 候選，並提到 Olise 以 5 次助攻提供 France 創造力。"
+        "BBC 四強總覽可讀全文：France-Spain 被寫成 Mbappé/Yamal 星味與兩支歐洲強隊的 classic 候選，並提到 Olise 以 5 次助攻提供 France 創造力。",
+        "The Standard 可讀隊訊把 France 的半決賽疑問集中在中場：Tchouaméni/Manu Koné 等健康與選擇問題仍需等官方先發確認。",
+        "Khel Now 7/13 預測 France 可能在 Tchouaméni 已恢復後仍沿用 Koné/Rabiot，中前場以 Olise、Dembélé、Doué/Mbappé 組合做創造；這是 expected-XI lead，不是確認先發。",
+        "Khel Now 7/13 Spain 預測稿把半決賽焦點放在 Unai Simón、Dani Olmo 與 Lamine Yamal 等選擇；Soren 只把它當公開排陣溫度，不當官方隊訊。",
+        "NWS Arlington 點位更新顯示 Dallas/Fort Worth 區域仍有高溫、強降雨/雷雨風險脈絡；Dallas Stadium 可控內場不等於進出場與賽前熱身零風險。"
       ],
       "sources": [
         {
@@ -11006,6 +11010,38 @@
           "fetchedAt": "2026-07-12T18:22:01Z",
           "claimType": "reported/tactical-narrative",
           "confidence": "high"
+        },
+        {
+          "label": "The Standard France XI/injury latest",
+          "url": "https://www.standard.co.uk/sport/football/france-xi-vs-spain-confirmed-team-news-predicted-lineup-injury-latest-world-cup-2026-b1289716.html",
+          "sourceName": "The Standard",
+          "fetchedAt": "2026-07-13T00:28:55Z",
+          "claimType": "reported/availability-expected-xi",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Khel Now France predicted XI",
+          "url": "https://khelnow.com/football/france-predicted-lineup-vs-spain-fifa-world-cup-2026",
+          "sourceName": "Khel Now",
+          "fetchedAt": "2026-07-13T00:28:55Z",
+          "claimType": "reported/expected-xi",
+          "confidence": "medium"
+        },
+        {
+          "label": "Khel Now Spain predicted XI",
+          "url": "https://khelnow.com/football/spain-predicted-lineup-vs-france-fifa-world-cup-2026",
+          "sourceName": "Khel Now",
+          "fetchedAt": "2026-07-13T00:28:55Z",
+          "claimType": "reported/expected-xi",
+          "confidence": "medium"
+        },
+        {
+          "label": "NWS Arlington point forecast update",
+          "url": "https://forecast.weather.gov/MapClick.php?lat=32.7473&lon=-97.0945",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-13T00:28:55Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -11013,9 +11049,9 @@
     {
       "matchId": "m102",
       "match": "England vs Argentina",
-      "sourceType": "official route actualized + post-quarterfinal reports + venue/weather/odds watch",
-      "title": "England-Argentina 補上 BBC 四強溫度與公開選陣：Bellingham/Messi 敘事很亮，但 Rice 半場被換與 Atlanta 雷雨仍是賽前風險。",
-      "sorenTake": "BBC 把這場寫成 40 年情緒包袱加上 Bellingham/Messi 當代主角，熱度夠大；但 Soren 不吃純海報。真正要盯的是 England 中場：Rice 病後/神經痛警報還沒完全解除，若他只能半格油門，Argentina 會把英格蘭的每一次出球都問成申論題。Atlanta 週三雷雨機率則主要影響進出場與賽前節奏，球場條件仍需臨場核對。",
+      "sourceType": "official rivalry preview + availability/lineup + weather/odds watch",
+      "title": "England-Argentina 加進官方歷史線與市場溫度：AFA 把 Messi 的宿命戰寫滿，AP 提醒這是四支前冠軍的硬核四強。",
+      "sorenTake": "AFA 已把這場包裝成 Messi 終於碰上 England 的命運題，AP 也把四強寫成四支前冠軍同台；但 Soren 不會被海報帶走。England 的 Rice 健康與 Tuchel 中場保護還是第一個開關，Argentina 若把節奏拖進 Messi 能挑傳、Alvarez 能衝縫的區間，Atlanta 的情緒噪音會變成英格蘭的出球壓力測試。",
       "signals": [
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
@@ -11030,7 +11066,12 @@
         "FOX Sports 與 France 24 等主流 preview 把 England-Argentina 放進 2002 後首次世界盃交手、Maradona/Messi/Bellingham 歷史敘事；這是情緒溫度，不等於代表性社群民意。",
         "BBC 四強總覽可讀全文：England-Argentina 被放進 1986/1998/2002 歷史對戰與 Bellingham vs Messi 敘事，並確認 Atlanta Stadium、週三 20:00 BST。",
         "BBC 另開 England semifinal XI selector，顯示英格蘭公開討論已轉向 Tuchel 該如何排首發；這是 public lineup-context，不等於確認先發。",
-        "NWS Atlanta 週三預報更新為高溫約 87°F、午後有雷陣雨機率；Mercedes-Benz Stadium 內場可能降低比賽干擾，但進出場、熱身與賽前節奏仍列 weather watch。"
+        "NWS Atlanta 週三預報更新為高溫約 87°F、午後有雷陣雨機率；Mercedes-Benz Stadium 內場可能降低比賽干擾，但進出場、熱身與賽前節奏仍列 weather watch。",
+        "FIFA England-Argentina 官方 preview/match hub 已可連線；頁面本身是官方賽前中心，但動態內容仍需臨場再查先發。",
+        "AFA 7/12 官方稿把 Argentina-England 寫成 Messi 首次在世界盃淘汰賽面對這個歷史宿敵，並確認 Atlanta / Mercedes-Benz Stadium 場景。",
+        "AP 7/12 四強總覽把 France、Spain、England、Argentina 定位為四支前世界冠軍與世界排名前四隊，England-Argentina 是情緒與歷史壓力最高的一線。",
+        "NY Post/Bet365 公開盤面顯示 France 仍是冠軍熱門，England/Spain 次之、Argentina 盤面最長；只作紙上市場溫度，不構成下注建議。",
+        "NWS Atlanta 點位更新顯示週三高溫約 86°F 且午後/晚間有 showers likely 脈絡；Mercedes-Benz Stadium 內場可控，但進出場與熱身節奏仍需 weather watch。"
       ],
       "sources": [
         {
@@ -11106,10 +11147,10 @@
           "confidence": "medium"
         },
         {
-          "label": "FIFA England-Argentina semi-final hub",
+          "label": "FIFA England-Argentina official preview",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/england-v-argentina-live-stream-team-news-tickets-and-more",
           "sourceName": "FIFA",
-          "fetchedAt": "2026-07-12T12:25:00Z",
+          "fetchedAt": "2026-07-13T00:28:55Z",
           "claimType": "confirmed/official-preview",
           "confidence": "high"
         },
@@ -11158,6 +11199,38 @@
           "url": "https://forecast.weather.gov/MapClick.php?lat=33.749&lon=-84.388",
           "sourceName": "National Weather Service",
           "fetchedAt": "2026-07-12T18:22:01Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA Messi England semifinal preview",
+          "url": "https://www.afa.com.ar/es/posts/paren-el-mundo-argentina-e-inglaterra-frente-a-frente-en-una-semifinal-historica-el-partido-que-el-destino-le-debia-a-messi",
+          "sourceName": "AFA",
+          "fetchedAt": "2026-07-13T00:28:55Z",
+          "claimType": "confirmed/official-team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "AP World Cup semifinal preview",
+          "url": "https://apnews.com/article/world-cup-semifinals-preview-messi-d271d7d89fe3384614357258687686a0",
+          "sourceName": "AP News",
+          "fetchedAt": "2026-07-13T00:28:55Z",
+          "claimType": "reported/rivalry-tactical-context",
+          "confidence": "high"
+        },
+        {
+          "label": "NY Post semifinal futures odds reference",
+          "url": "https://nypost.com/2026/07/12/betting/2026-world-cup-semifinal-odds-argentina-is-a-longshot-to-repeat-as-champion/",
+          "sourceName": "New York Post / bet365",
+          "fetchedAt": "2026-07-13T00:28:55Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "NWS Atlanta point forecast update",
+          "url": "https://forecast.weather.gov/MapClick.php?lat=33.7554&lon=-84.4008",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-13T00:28:55Z",
           "claimType": "context/weather-watch",
           "confidence": "high"
         }
