@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-13T12:52:41Z",
-  "status": "semifinal scout: M101 補 RFEF Dallas/Cotton Bowl 官方訓練與 Guardian/Rodri 賽前脈絡；M102 補 BBC Rice 病況再核與 NY Post/bet365 精確公開盤面。",
-  "headline": "四強倒數更新：Spain 已回 Dallas 練兵，France-Spain 進入星味與中場控制對撞；England-Argentina 的宿敵熱度不降，但 Rice 健康與盤面溫度仍是 Soren 的紅筆。",
+  "generatedAt": "2026-07-13T19:00:39Z",
+  "status": "semifinal scout: M101 補 FOX 公開盤面；M102 補 BBC 球衣確認與 FOX/CBS-FanDuel 盤面。",
+  "headline": "四強倒數更新：France-Spain 已進 24 小時內，France 仍是市場微熱門；England-Argentina 的球衣與盤面更清楚，但 Rice 健康與 Argentina 半空間仍是 Soren 的紅筆。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -10867,8 +10867,8 @@
       "matchId": "m101",
       "match": "France vs Spain",
       "sourceType": "official/tactical + availability/suspension + expected-XI + venue/weather/odds watch",
-      "title": "France-Spain 30 小時倒數：Spain 已回 Dallas/Cotton Bowl 練兵，Mbappé-Yamal 海報很吵；Soren 盯的是中場耐熱與右路一刀。",
-      "sorenTake": "RFEF 已確認 Spain 回到 Dallas，Cotton Bowl 完成首堂訓練；FIFA 把 Mbappé-Yamal 第 11 次交手寫成海報中心，Guardian live 又把 Rodri 對 France 的控制題拉出來。Soren 的銳評：這不是誰的明星照比較亮，而是 France 中場能不能壓住 Rodri/Olmo 的節奏、Spain 右路能不能讓 Yamal 的一對一變成真正殺傷。",
+      "title": "France-Spain 24 小時倒數：FOX 公開盤仍給 France 微熱，Dallas 天氣與中場耐心比海報明星更難藏。",
+      "sorenTake": "FIFA/RFEF 先前已把 France-Spain 鎖進 Dallas 半決賽敘事；最新可讀 FOX odds 文章把 France 寫成晉級與 90 分鐘盤面微熱門（FRA -150 to advance、90 分鐘 +135），Spain 仍有 +130 晉級反咬空間。Soren 的銳評：這場不是 Mbappé-Yamal 海報誰比較會發光，而是 France 能不能把 Olise/Mbappé 的爆點接到中場保護，Spain 能不能在 Dallas 熱與節奏管理裡讓控球變成刀。",
       "signals": [
         "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
         "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
@@ -10894,7 +10894,9 @@
         "Sports Mole 可讀 meta/標題新增 France、Spain 傷停/停賽清單；France 端聚焦 Mbappé、Tchouaméni、Koné，Spain 端聚焦 Pino、Nico Williams、Víctor Muñoz，正式先發前仍標為 reported availability watch。",
         "RFEF 7/12 22:00 官方稿確認 Spain 回到 Dallas 後在 Cotton Bowl 進行首堂訓練，準備週二對 France 的世界盃準決賽；這是官方備戰節奏，不是先發確認。",
         "Guardian 7/13 live build-up 以 Sid Lowe 採訪/脈絡把 Spain 的 Rodri 控制題拉回 France-Spain：Soren 讀作中場耐心與節奏管理訊號，而不是單純 Mbappé-Yamal 海報戰。",
-        "FIFA Mbappé-Yamal 專題頁可連線，但主要是官方 star-matchup heat；公開端保留「星味很高、戰術仍看中場與右路」的分界。"
+        "FIFA Mbappé-Yamal 專題頁可連線，但主要是官方 star-matchup heat；公開端保留「星味很高、戰術仍看中場與右路」的分界。",
+        "FOX Sports 7/13 可讀 odds 總覽更新 France-Spain：France to advance -150、Spain +130，90 分鐘盤 France +135、draw +220、Spain +210；這只作紙上市場溫度，不是下注建議。",
+        "FOX 同篇把 France 寫成目前世界盃冠軍盤熱門、Spain 第二熱門，並點出 France 目前進失球 16-2、Spain 11-1；Soren 把它視為 public market/narrative heat，而非本站模型公式。"
       ],
       "sources": [
         {
@@ -11104,6 +11106,14 @@
           "fetchedAt": "2026-07-13T12:51:10Z",
           "claimType": "official/search-indexed-star-matchup",
           "confidence": "medium-high"
+        },
+        {
+          "label": "FOX Sports World Cup semifinal odds overview",
+          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-which-nations-favored-reach-semifinals",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-13T19:00:39Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -11112,8 +11122,8 @@
       "matchId": "m102",
       "match": "England vs Argentina",
       "sourceType": "official match hub + team-camp/rivalry profile + availability/lineup + weather/odds watch",
-      "title": "England-Argentina 54 小時倒數：BBC 再把 Rice 病況釘上白板，盤面給 England 微熱；Soren 不讓宿敵情緒遮住中場警報。",
-      "sorenTake": "England Football 的 Argentina 檔案把 21 年未交手、Messi/Bellingham 敘事拉滿；BBC 可讀全文再確認 Rice 對 Norway 前病到臥床近三天，NY Post/bet365 則把 England 寫成三路盤 +155 微熱門、Argentina/和局 +200。Soren 的銳評：這場不是懷舊紀念品，是 Tuchel 中場保護與 Argentina 半空間反擊的壓力測試。",
+      "title": "England-Argentina 48 小時倒數：BBC 確認球衣色差，FOX/FanDuel 仍給 England 微熱；Soren 盯 Rice 與 Messi 半空間。",
+      "sorenTake": "BBC 可讀全文確認 England 將穿全白、Argentina 穿 navy away kit；FOX/CBS/FanDuel 公開盤面把 England 寫成微熱門（約 ENG -124/-122 to advance，90 分鐘 +165），Argentina 仍在 +100 晉級與 +200 90 分鐘附近。Soren 的銳評：球衣換色不是戰術，但它提醒這場會被歷史濾鏡放大；真正的紅筆還是 Rice 健康、Tuchel 中場保護，以及 Messi/Argentina 反擊能不能鑽進半空間。",
       "signals": [
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
@@ -11139,7 +11149,10 @@
         "The Standard 可讀 meta/內文摘要繼續把 Declan Rice 半場被換與賽前病況列為 team-news 焦點；Tuchel 稱換人是戰術，但公開端仍應保留 midfield fitness watch。",
         "BBC 7/12 可讀全文確認 Tuchel 說 Declan Rice 在 Norway 戰前三天大多因 sickness 臥床，雖然先發但半場被換下；對 Argentina 前仍是 midfield fitness watch。",
         "NY Post/bet365 7/12 公開盤面顯示 England vs Argentina 三路盤 England +155、Argentina +200、draw +200；同篇把冠軍盤列 France +150、Spain/England +333、Argentina +400，僅供紙上市場溫度。",
-        "Guardian 7/13 live build-up 引述 Reece James 準備四強與 Tuchel 球隊情緒，和 England Football 官方 Lions Den 一致屬 team-camp mood；仍不是 confirmed XI。"
+        "Guardian 7/13 live build-up 引述 Reece James 準備四強與 Tuchel 球隊情緒，和 England Football 官方 Lions Den 一致屬 team-camp mood；仍不是 confirmed XI。",
+        "BBC Sport 7/13 可讀全文確認 England 作為 Atlanta 指定主隊將穿全白，Argentina 將穿 navy away strip、黑短褲與黑襪；這是 match-operations/視覺識別訊號，不是戰術或勝率。",
+        "FOX Sports 7/13 odds 總覽把 England-Argentina 寫成 England to advance -124、Argentina +106，90 分鐘盤 England +165、draw +190、Argentina +200；只作紙上市場溫度，不構成下注建議。",
+        "CBS Sports/FanDuel 可讀頁面亦列 England 90 分鐘 +165、Argentina +200、draw +190、England to advance -122、Argentina +100；與 FOX 同向確認 public market 微傾 England，但差距不大。"
       ],
       "sources": [
         {
@@ -11341,6 +11354,30 @@
           "fetchedAt": "2026-07-13T12:51:10Z",
           "claimType": "reported/team-camp-build-up",
           "confidence": "medium-high"
+        },
+        {
+          "label": "BBC England-Argentina kit confirmation",
+          "url": "https://www.bbc.com/sport/football/articles/czx5v2p7qkgo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-13T19:00:39Z",
+          "claimType": "reported/match-operations-kit",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Sports World Cup semifinal odds overview",
+          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-which-nations-favored-reach-semifinals",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-13T19:00:39Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
+        },
+        {
+          "label": "CBS/FanDuel Argentina-England odds reference",
+          "url": "https://www.cbssports.com/soccer/news/argentina-england-odds-prediction-time-2026-world-cup-semifinal-picks/",
+          "sourceName": "CBS Sports / FanDuel",
+          "fetchedAt": "2026-07-13T19:00:39Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
