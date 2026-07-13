@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-13T00:30:00Z",
-  "status": "semifinal scout: M101 補 France/Spain expected-XI 與 Arlington 天氣風險；M102 補 AFA/AP 官方歷史線、紙上市場溫度與 Atlanta 天氣更新。",
-  "headline": "四強倒數加溫：France-Spain 盯中場健康與右路決斷；England-Argentina 盯 Rice 健康、Messi 宿命敘事與 Atlanta 雷雨節奏。",
+  "generatedAt": "2026-07-13T06:46:20Z",
+  "status": "semifinal scout: M101 補 FIFA 官方 De la Fuente/Mbappé-Yamal 敘事與 Sports Mole 傷停清單；M102 補 England Football 對手檔案、Reece James 官方隊內語氣與 Rice availability watch。",
+  "headline": "四強倒數更新：France-Spain 進入官方 star-matchup 與中場健康雙線；England-Argentina 則把宿敵情緒拉滿，但 Rice 健康仍是英格蘭中場警報。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -10866,9 +10866,9 @@
     {
       "matchId": "m101",
       "match": "France vs Spain",
-      "sourceType": "official/tactical + availability/expected-XI + venue/weather/odds watch",
-      "title": "France-Spain 進入 42 小時倒數：BBC/AP 級四強敘事之外，France 中場健康、Spain 右路決斷與 Arlington 熱雷雨才是暗線。",
-      "sorenTake": "France 仍有 Mbappé/Olise 的爆點，但最新可讀隊訊把焦點拉回中場：Tchouaméni 回歸後是否立刻先發、Koné/Rabiot 如何扛壓，會決定 France 是高速反擊還是被 Spain 的 Rodri 節奏鎖死。Spain 的右路與 Yamal 敘事很亮，Soren 的銳評：這場不是「誰比較會控球」，而是誰先把對方逼到用替補方案踢生死題。",
+      "sourceType": "official/tactical + availability/suspension + expected-XI + venue/weather/odds watch",
+      "title": "France-Spain 36 小時倒數：FIFA 把 De la Fuente 半決賽法國魔咒、Mbappé-Yamal 再對撞放上檯面；Soren 仍盯中場與天氣管理。",
+      "sorenTake": "FIFA 新增的官方敘事很會點火：De la Fuente 生涯多次在半決賽遇 France，Mbappé 與 Lamine Yamal 又一次被推到聚光燈中心。但 Soren 不吃海報糖衣；France 的 Tchouaméni/Koné/Rabiot 中場取捨、Spain 右路是否能把比賽拖進 Yamal 的一對一，才是這場 36 小時倒數的硬開關。",
       "signals": [
         "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
         "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
@@ -10888,7 +10888,10 @@
         "The Standard 可讀隊訊把 France 的半決賽疑問集中在中場：Tchouaméni/Manu Koné 等健康與選擇問題仍需等官方先發確認。",
         "Khel Now 7/13 預測 France 可能在 Tchouaméni 已恢復後仍沿用 Koné/Rabiot，中前場以 Olise、Dembélé、Doué/Mbappé 組合做創造；這是 expected-XI lead，不是確認先發。",
         "Khel Now 7/13 Spain 預測稿把半決賽焦點放在 Unai Simón、Dani Olmo 與 Lamine Yamal 等選擇；Soren 只把它當公開排陣溫度，不當官方隊訊。",
-        "NWS Arlington 點位更新顯示 Dallas/Fort Worth 區域仍有高溫、強降雨/雷雨風險脈絡；Dallas Stadium 可控內場不等於進出場與賽前熱身零風險。"
+        "NWS Arlington 點位更新顯示 Dallas/Fort Worth 區域仍有高溫、強降雨/雷雨風險脈絡；Dallas Stadium 可控內場不等於進出場與賽前熱身零風險。",
+        "FIFA 搜尋索引新增 Luis de la Fuente 對 France 半決賽歷史專題：包含 7/14 Dallas Stadium 這場在內，他生涯多次於不同層級半決賽碰法國；這是官方敘事/心理線，不是勝率證明。",
+        "FIFA 搜尋索引另把 Mbappé-Yamal 寫成第 11 次職業交手與 Dallas 半決賽焦點；Soren 只把它作 star-matchup heat，實際仍回到 France 中場保護與 Spain 右路決斷。",
+        "Sports Mole 可讀 meta/標題新增 France、Spain 傷停/停賽清單；France 端聚焦 Mbappé、Tchouaméni、Koné，Spain 端聚焦 Pino、Nico Williams、Víctor Muñoz，正式先發前仍標為 reported availability watch。"
       ],
       "sources": [
         {
@@ -11042,6 +11045,38 @@
           "fetchedAt": "2026-07-13T00:28:55Z",
           "claimType": "context/weather-watch",
           "confidence": "high"
+        },
+        {
+          "label": "FIFA De la Fuente semi-finals v France",
+          "url": "https://www.fifa.com/en/articles/luis-de-la-fuentes-record-against-france",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-13T06:46:20Z",
+          "claimType": "official/search-indexed-tactical-narrative",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "FIFA Mbappé-Yamal meet again",
+          "url": "https://www.fifa.com/en/articles/kylian-mbappe-france-lamine-yamal-spain-meet-again",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-13T06:46:20Z",
+          "claimType": "official/search-indexed-star-matchup",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Mole France injury/suspension list",
+          "url": "https://www.sportsmole.co.uk/football/france/injury-news/injuries-and-suspensions/mbappe-tchouameni-kone-latest-france-injury-suspension-list-vs-spain_601068.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-13T06:46:20Z",
+          "claimType": "reported/availability-suspension-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Sports Mole Spain injury/suspension list",
+          "url": "https://www.sportsmole.co.uk/football/spain/injury-news/injuries-and-suspensions/pino-williams-munoz-latest-spain-injury-suspension-list-vs-france_601071.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-13T06:46:20Z",
+          "claimType": "reported/availability-suspension-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
@@ -11049,9 +11084,9 @@
     {
       "matchId": "m102",
       "match": "England vs Argentina",
-      "sourceType": "official rivalry preview + availability/lineup + weather/odds watch",
-      "title": "England-Argentina 加進官方歷史線與市場溫度：AFA 把 Messi 的宿命戰寫滿，AP 提醒這是四支前冠軍的硬核四強。",
-      "sorenTake": "AFA 已把這場包裝成 Messi 終於碰上 England 的命運題，AP 也把四強寫成四支前冠軍同台；但 Soren 不會被海報帶走。England 的 Rice 健康與 Tuchel 中場保護還是第一個開關，Argentina 若把節奏拖進 Messi 能挑傳、Alvarez 能衝縫的區間，Atlanta 的情緒噪音會變成英格蘭的出球壓力測試。",
+      "sourceType": "official match hub + team-camp/rivalry profile + availability/lineup + weather/odds watch",
+      "title": "England-Argentina 60 小時倒數：England Football 把宿敵檔案與 Reece James 夢境感補齊，Rice 健康仍是英格蘭第一個警報器。",
+      "sorenTake": "England 官方現在不只確認對手，還把 Argentina 檔案、21 年未交手與 Reece James 的「夢想」語氣放上檯面。Soren 的銳評：情緒熱度越高，越要冷看中場保護；Rice 若不是 100%，Tuchel 的出球安全閥會被 Messi/Alvarez 的半空間跑動反覆點名。",
       "signals": [
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
@@ -11071,7 +11106,10 @@
         "AFA 7/12 官方稿把 Argentina-England 寫成 Messi 首次在世界盃淘汰賽面對這個歷史宿敵，並確認 Atlanta / Mercedes-Benz Stadium 場景。",
         "AP 7/12 四強總覽把 France、Spain、England、Argentina 定位為四支前世界冠軍與世界排名前四隊，England-Argentina 是情緒與歷史壓力最高的一線。",
         "NY Post/Bet365 公開盤面顯示 France 仍是冠軍熱門，England/Spain 次之、Argentina 盤面最長；只作紙上市場溫度，不構成下注建議。",
-        "NWS Atlanta 點位更新顯示週三高溫約 86°F 且午後/晚間有 showers likely 脈絡；Mercedes-Benz Stadium 內場可控，但進出場與熱身節奏仍需 weather watch。"
+        "NWS Atlanta 點位更新顯示週三高溫約 86°F 且午後/晚間有 showers likely 脈絡；Mercedes-Benz Stadium 內場可控，但進出場與熱身節奏仍需 weather watch。",
+        "England Football 7/12 對手檔案確認 England 將在 Atlanta 四強對 Argentina，並寫明雙方 21 年未交手、Argentina 於 90 分鐘 1-1 後加時 3-1 淘汰 Switzerland。",
+        "England Football Lions Den 官方稿引用 Reece James 稱四強之旅是「what dreams are made of」，並重申 Tuchel 球隊逆轉 Norway 後準備面對 Argentina；這是 team-camp mood，不是陣容確認。",
+        "The Standard 可讀 meta/內文摘要繼續把 Declan Rice 半場被換與賽前病況列為 team-news 焦點；Tuchel 稱換人是戰術，但公開端仍應保留 midfield fitness watch。"
       ],
       "sources": [
         {
@@ -11233,6 +11271,30 @@
           "fetchedAt": "2026-07-13T00:28:55Z",
           "claimType": "context/weather-watch",
           "confidence": "high"
+        },
+        {
+          "label": "England Football Argentina opponent profile",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/12/england-semi-final-opponents-argentina-profile-20261107",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-13T06:46:20Z",
+          "claimType": "confirmed/official-team-opponent-profile",
+          "confidence": "high"
+        },
+        {
+          "label": "England Football Reece James Lions Den",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/12/djed-spence-reece-james-lions-den-episode-19-20261307",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-13T06:46:20Z",
+          "claimType": "confirmed/official-team-camp-mood",
+          "confidence": "high"
+        },
+        {
+          "label": "The Standard England-Argentina team news preview",
+          "url": "https://www.standard.co.uk/sport/football/england-vs-argentina-prediction-kick-off-time-tv-live-stream-team-news-latest-h2h-results-odds-world-cup-2026-preview-b1289715.html",
+          "sourceName": "The Standard",
+          "fetchedAt": "2026-07-13T06:46:20Z",
+          "claimType": "reported/availability-preview",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
