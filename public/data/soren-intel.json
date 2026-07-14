@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-14T14:09:06Z",
-  "status": "Semifinal scout refreshed: France-Spain kickoff-window and England-Argentina public-pressure/availability watch updated.",
-  "headline": "準決賽情資更新：France-Spain 進入開球窗；England-Argentina 仍是 Rice/壓力場雙重監控。",
+  "generatedAt": "2026-07-14T20:17:41Z",
+  "status": "Semifinal scout refreshed: France-Spain live-score context added; England-Argentina late team-news and market watch updated.",
+  "headline": "準決賽情資更新：France-Spain 只進 live-score 警報不結算；England-Argentina 進入 Rice/Messi late-call 與市場微熱監控。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -10866,9 +10866,9 @@
     {
       "matchId": "m101",
       "match": "France vs Spain",
-      "sourceType": "official/tactical + availability/suspension + expected-XI + referee/venue-weather/odds watch",
-      "title": "France-Spain 開球窗更新：Sports Mole 最新隊訊仍把 Tchouaméni/Koné/Thuram 列 doubtful，FIFA live centre 才是先發真相。",
-      "sorenTake": "距離 Dallas 準決賽只剩數小時，Soren 把雜訊收成兩條線：Sports Mole 7/14 仍把 France 中場/鋒線健康寫成 doubtful list，RFEF 官方則把 Spain 這場包成「通往夢想的最後挑戰」。所以本站不偷跑 confirmed XI；France 微熱可以留，但 Tchouaméni 是否真的先發，必須等 FIFA/高可信 live centre。",
+      "sourceType": "live-score context + official live-centre + availability/lineup/odds watch",
+      "title": "France-Spain 進入下半場：ESPN 記分板顯示 Spain 1-0 France，但 completed=false；Soren 只開 live-score 警報，不偷結算。",
+      "sorenTake": "M101 已從賽前隊訊切到現場狀態：ESPN 公開 scoreboard 顯示 Spain 靠 Oyarzabal 點球領先，The Athletic 標題/內文也對上這條線；但 ESPN 狀態仍是 Second Half、completed=false。這種時候最容易犯的錯是把「像快贏了」寫成 final。Soren 現在只更新 live context，等 FIFA/ESPN/BBC 出 full-time 或 source-backed final 才動 bracket/紙上結算。",
       "signals": [
         "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
         "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
@@ -10911,7 +10911,10 @@
         "Sports Mole 7/14 更新的 France-Spain team-news 頁仍把 Tchouaméni（thigh）、Manu Koné（knee）、Marcus Thuram（calf）列為 France doubtful，並預測 Tchouaméni 先發；這是最新 expected-XI/availability lead，不是 confirmed XI。",
         "同頁把 Spain 端標為無 confirmed out，但 Yeremy Pino、Víctor Muñoz 仍在 doubtful watch；Spain 核心 Rodri/Yamal/Olmo 線不因此自動降級，但替補寬度要留一點尾部風險。",
         "RFEF 7/14 官方預熱〈Último desafío hacia nuestro gran sueño〉把 France-Spain 描述成「價值一張決賽門票」的歷史對撞，並回顧 2006 世界盃交手；這是官方敘事熱度，不是陣容或勝率證據。",
-        "FOX Sports 7/14 odds/書商稿提到 Mbappé anytime goalscorer 市場資金高度集中；Soren 只把它當 public betting heat，紙上模擬不能把熱門投注誤讀成進球保證。"
+        "FOX Sports 7/14 odds/書商稿提到 Mbappé anytime goalscorer 市場資金高度集中；Soren 只把它當 public betting heat，紙上模擬不能把熱門投注誤讀成進球保證。",
+        "ESPN scoreboard 2026-07-14T20:17:41Z 再核：France 0 - 1 Spain，狀態 Second Half / 56'，completed=False; 這只能放 live-score context，不能結算 final。",
+        "ESPN live story 可讀標題確認 France-Spain 下半場進行中，Oyarzabal 的點球仍是差距；這和 ESPN scoreboard live state 對齊，但不等於完場。",
+        "The Athletic 可讀 metadata/內文片段顯示 52 分鐘 France 0-1 Spain、Yamal 仍在衝擊防線；此為可信 live text context，不作 final-result evidence。"
       ],
       "sources": [
         {
@@ -11241,6 +11244,30 @@
           "fetchedAt": "2026-07-14T14:09:06Z",
           "claimType": "odds-reference",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN public scoreboard France-Spain live state",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260714",
+          "sourceName": "ESPN public scoreboard API",
+          "fetchedAt": "2026-07-14T20:17:41Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN France-Spain live updates",
+          "url": "https://www.espn.com/soccer/story/_/id/49359957/france-spain-live-world-cup-2026-latest-updates-commentary-score-result",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-14T20:17:41Z",
+          "claimType": "context/live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "The Athletic France-Spain live blog",
+          "url": "https://www.nytimes.com/athletic/live-blogs/france-vs-spain-live-updates-world-cup-2026-score-result/plapFicMu6eN/",
+          "sourceName": "The Athletic / New York Times",
+          "fetchedAt": "2026-07-14T20:17:41Z",
+          "claimType": "context/live-score",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -11248,9 +11275,9 @@
     {
       "matchId": "m102",
       "match": "England vs Argentina",
-      "sourceType": "official match hub + team-camp/rivalry profile + Rice/Argentina availability + tactical/venue/odds watch",
-      "title": "England-Argentina 新壓力訊號：Madueke 說對手會更怕英格蘭，Al Jazeera/Reuters 則把歷史火藥味和票價熱度拉進賽前。",
-      "sorenTake": "England-Argentina 還沒到正式先發時間，不能把 Rice 或 Messi/Romero 的狀態寫死。新訊號比較像壓力場：England Football 讓 Madueke/Eze/Saka 出面談信心與改進，Al Jazeera/Reuters 則提醒這場的歷史情緒、票價與安全敘事會很吵。Soren 的處理方式很簡單：情緒算噪音，先發與體能才算硬訊號。",
+      "sourceType": "official match hub + late team-news/availability + public market/venue watch",
+      "title": "England-Argentina 倒數 23 小時：FIFA match centre 已開，Rice/Messi 都還是 late-fitness watch，FanDuel 公開盤只顯示微熱不是答案。",
+      "sorenTake": "M102 的新訊號不是「誰一定先發」，而是 late-call 風險更集中：Yahoo/Standard 的隊訊把 England 端 Rice、Argentina 端 Messi knock 都放回 spotlight；FIFA match centre 已是正式比分/lineups 入口。市場面 CBS/FanDuel 顯示 England 90 分鐘略熱、Argentina 也沒被打成冷門，Soren 只拿來校準紙上溫度，不把賠率當模型。",
       "signals": [
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
@@ -11294,7 +11321,12 @@
         "England Football 7/14 Lions Den 稿確認 Noni Madueke 在 Argentina 準決賽前談到「other teams will be more worried about us」，Eze 也談到半場替換 Rice 後的情緒與改進空間；這是官方 team-camp mood，不是 confirmed XI。",
         "Al Jazeera/Reuters 7/14 稿確認阿根廷退伍軍人團體呼籲球迷把焦點放在足球，並把 England-Argentina 描述為本屆準決賽的高情緒 rivalry；公開端可列壓力/安全敘事，但不能把它變成球場民意結論。",
         "同篇提到 Argentina-England 票價三天內上漲 34% 的公開需求訊號；Soren 只把它當 public-interest heat，不把票價當勝率或主客場優勢公式。",
-        "Sports Mole Argentina 傷停頁 7/13 更新：Messi/Romero 被列為關注點但 Argentina 無停賽；搭配先前 Rice late-call，m102 仍是「等官方 live centre/先發」的雙向 availability watch。"
+        "Sports Mole Argentina 傷停頁 7/13 更新：Messi/Romero 被列為關注點但 Argentina 無停賽；搭配先前 Rice late-call，m102 仍是「等官方 live centre/先發」的雙向 availability watch。",
+        "FIFA match centre 搜尋/直連確認 M102 England-Argentina 官方比分、lineups、live updates 入口已開；正式先發仍等該入口或高可信現場頁落地。",
+        "Yahoo Sports UK / Evening Standard 7/14 17:16 UTC 賽前隊訊把 England 的 Declan Rice fitness 寫成主要疑問；這延續 BBC late-call，仍不是 confirmed absence。",
+        "The Standard Argentina 隊訊摘要稱 Messi 預期可出戰 England，雖然對 Switzerland 後有 knock；Soren 把它標為 reported availability watch，不寫成滿血保證。",
+        "CBS Sports/FanDuel 最新公開盤面把 England 90 分鐘約 +175、Argentina +200、draw +185；只作紙上 public-market 參考，不是下注建議也不是內部模型公式。",
+        "Sports Illustrated Betting 指出 England-Argentina 盤面小幅往 Messi/衛冕軍方向移動；這表示市場分歧仍小，不能把 England 微熱解讀成穩膽。"
       ],
       "sources": [
         {
@@ -11615,6 +11647,46 @@
           "sourceName": "Sports Mole",
           "fetchedAt": "2026-07-14T14:09:06Z",
           "claimType": "reported/availability-suspension-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "FIFA England-Argentina match centre",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289290/400021540?gender=2&date=2026-07-15",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-14T20:17:41Z",
+          "claimType": "confirmed/official-live-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "Yahoo Sports UK England XI team news",
+          "url": "https://uk.sports.yahoo.com/news/england-xi-vs-argentina-confirmed-064857130.html",
+          "sourceName": "Yahoo Sports UK / Evening Standard",
+          "fetchedAt": "2026-07-14T20:17:41Z",
+          "claimType": "reported/availability-expected-xi",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "The Standard Argentina XI team news",
+          "url": "https://www.standard.co.uk/sport/football/argentina-xi-vs-england-confirmed-team-news-predicted-lineup-injury-latest-world-cup-2026-b1289723.html",
+          "sourceName": "The Standard",
+          "fetchedAt": "2026-07-14T20:17:41Z",
+          "claimType": "reported/availability-expected-xi",
+          "confidence": "medium"
+        },
+        {
+          "label": "CBS Sports FanDuel England-Argentina odds",
+          "url": "https://www.cbssports.com/soccer/news/england-argentina-odds-prediction-time-2026-world-cup-semifinal-picks/",
+          "sourceName": "CBS Sports / FanDuel",
+          "fetchedAt": "2026-07-14T20:17:41Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Illustrated England-Argentina odds shift",
+          "url": "https://www.si.com/betting/england-vs-argentina-odds-make-small-shift-towards-lionel-messi-and-defending-champs",
+          "sourceName": "Sports Illustrated Betting",
+          "fetchedAt": "2026-07-14T20:17:41Z",
+          "claimType": "odds-reference",
           "confidence": "medium"
         }
       ],
