@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-14T01:39:00Z",
-  "status": "semifinal scout: M101 補 Guardian/BBC/Al Jazeera 賽前發布會與直播入口；M102 補 AFA 官方移師 Atlanta、ESPN/Al Jazeera 賽前入口。",
-  "headline": "四強比賽日更新：France-Spain 已進當日窗口，Dallas 這場從海報巨星戰收斂到 Tchouaméni 健康、France 復仇情緒與 Spain 控球耐心；England-Argentina 則新增 AFA 官方訓練/移動脈絡，Atlanta 的歷史恩怨不能壓過 Rice 健康與 Argentina 定位球。",
+  "generatedAt": "2026-07-14T01:44:58Z",
+  "status": "semifinal scout: M101 補 Ivan Barton 裁判、Dallas 天氣/屋頂與 SI/FOX 賽前 rail；M102 補 Rice late call、Pickford 官方受訪、AFA/Opta/Atlanta 場館脈絡。",
+  "headline": "四強比賽日更新：France-Spain 從巨星海報收斂到 Tchouaméni、Ivan Barton 哨音與 Dallas 濕熱管理；England-Argentina 則由 Rice late call、Pickford 對 Messi 的壓力測試與 Opta 52.9% 硬幣邊緣提醒主導。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -10866,9 +10866,9 @@
     {
       "matchId": "m101",
       "match": "France vs Spain",
-      "sourceType": "official/tactical + availability/suspension + expected-XI + venue/weather/odds watch",
-      "title": "France-Spain 比賽日：BBC/Guardian 都把焦點拉回 France 中場健康與復仇情緒，Al Jazeera/FIFA 給直播與 Dallas 入口；Soren 不只看 Mbappé-Yamal 海報。",
-      "sorenTake": "France 仍帶著市場微熱與復仇敘事進 Dallas，但 Guardian/BBC 的賽前訊號都指向同一個硬點：如果 Tchouaméni 能進先發，France 中場保護會把 Spain 的控球耐心拉進肉搏；若不行，這場就不是巨星海報，是中場防火牆壓力測試。",
+      "sourceType": "official/tactical + availability/suspension + expected-XI + referee/venue-weather/odds watch",
+      "title": "France-Spain 比賽日升溫：Tchouaméni 是中場防火牆，Ivan Barton 與 Dallas 降溫/濕度則把節奏管理拉進同一張紅筆。",
+      "sorenTake": "這場不只 Mbappé 對 Yamal。最新可驗證訊號把重點壓到三條線：France 是否讓 Tchouaméni 回先發穩住禁區前，Spain 能不能用控球耐心避開 Barton 哨音下的情緒球，以及 Dallas 雖降溫但仍有濕度/雷陣雨機率的比賽日負荷。Soren 仍看 France 微熱，但這是細節會偷分的準決賽。",
       "signals": [
         "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
         "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
@@ -10900,7 +10900,11 @@
         "FIFA match centre 可連線，確認 M101 France-Spain 為 7/14 Dallas Stadium 準決賽官方比分/lineups/live updates 入口；正式先發仍以該入口或高可信現場頁為準。",
         "Guardian 7/14 賽前稿標題/摘要確認 France 將 Euro 2024 半決賽輸給 Spain 視為復仇燃料，並指出 Deschamps 若 Tchouaméni fit 會考慮把他帶回先發；這是 credible media team-news，不是官方先發。",
         "BBC 7/14 賽前稿確認 Deschamps 預期 Dallas 的 France-Spain 會是「spectacular」半決賽；Soren 讀作高開放度敘事，但不把教練形容詞當勝率。",
-        "Al Jazeera 7/13 France-Spain 預覽確認 Dallas/Arlington 場地與 Mbappé-Yamal 版面焦點，並提供賽前直播文字入口；可作臨場追蹤 rail。"
+        "Al Jazeera 7/13 France-Spain 預覽確認 Dallas/Arlington 場地與 Mbappé-Yamal 版面焦點，並提供賽前直播文字入口；可作臨場追蹤 rail。",
+        "NBC DFW 7/13 直接可讀頁確認 France-Spain 準決賽裁判組焦點為 El Salvador 裁判 Ivan Barton；這補上比賽日判罰/情緒管理脈絡，但不改寫勝率。",
+        "Dallas Morning News 7/13 天氣稿確認 Dallas Stadium/AT&T Stadium 本場前氣溫較前幾戰降溫，NWS 預測高溫約 91°F、體感約 98°F，仍有濕度與零星雷雨機率；屋頂過往賽事保持關閉，場外移動仍是熱負荷。",
+        "Sports Illustrated 7/14 賽前稿把 Ivan Barton、Arlington 15:00 ET 開球、Tchouaméni 回歸預測 XI 與 Mbappé 腳踝狀態放在同一篇；本站只採作 predicted lineup / availability watch，不把預測陣容寫成 confirmed XI。",
+        "FOX 直播頁可讀 metadata 確認 France-Spain 於 Dallas Stadium 7/14 15:00 ET / 19:00 UTC 開球並提供轉播入口；此為觀賽 rail，不是賽果或陣容證據。"
       ],
       "sources": [
         {
@@ -11150,6 +11154,38 @@
           "claimType": "reported/live-centre-preview",
           "confidence": "medium-high",
           "fetchedAt": "2026-07-14T01:39:00Z"
+        },
+        {
+          "label": "NBC DFW France-Spain referee preview",
+          "url": "https://www.nbcdfw.com/world-cup/meet-the-referees-for-the-france-spain-2026-fifa-world-cup-semifinal-at-dallas-stadium/4048623/",
+          "sourceName": "NBC DFW",
+          "fetchedAt": "2026-07-14T01:44:58Z",
+          "claimType": "reported/match-officials",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Dallas Morning News France-Spain weather",
+          "url": "https://www.dallasnews.com/world-cup/article/temperatures-cool-dallas-final-world-cup-match-22338954.php",
+          "sourceName": "Dallas Morning News",
+          "fetchedAt": "2026-07-14T01:44:58Z",
+          "claimType": "context/venue-weather",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Illustrated France-Spain preview",
+          "url": "https://www.si.com/soccer/france-vs-spain-world-cup-preview-predictions-lineups-7-14-26",
+          "sourceName": "Sports Illustrated",
+          "fetchedAt": "2026-07-14T01:44:58Z",
+          "claimType": "reported/lineup-availability-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "FOX France-Spain live rail",
+          "url": "https://www.fox.com/soccer/fifa-world-cup/france-vs-spain-jul-14-2026",
+          "sourceName": "FOX",
+          "fetchedAt": "2026-07-14T01:44:58Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -11157,9 +11193,9 @@
     {
       "matchId": "m102",
       "match": "England vs Argentina",
-      "sourceType": "official match hub + team-camp/rivalry profile + availability/lineup + weather/odds watch",
-      "title": "England-Argentina 倒數：AFA 官方確認 Argentina 已完成 Kansas 最後訓練並移師 Atlanta；ESPN/Al Jazeera 補上賽前入口，Rice 與定位球仍是紅筆。",
-      "sorenTake": "這場的社群記憶會自動放大成歷史恩怨，但新訊號比較務實：Argentina 已結束 Kansas 訓練飛 Atlanta，ESPN 把 injury / predicted line-ups / referee 打包成賽前入口，Al Jazeera 把第六次世界盃交手脈絡擺上檯面。Soren 的紅筆不變：England 的 Rice 健康與 Argentina 定位球、Messi 半空間，會比梗圖更像勝負開關。",
+      "sourceType": "official match hub + team-camp/rivalry profile + Rice/Argentina availability + tactical/venue/odds watch",
+      "title": "England-Argentina 倒數再收斂：Rice 仍是 late call，Pickford 把 Messi 壓力講明，Opta 只給 England 52.9% 晉級。",
+      "sorenTake": "歷史恩怨很吵，但最新訊號沒有把它吹成單邊劇本：BBC 說 Rice 是否先發還要晚點決定；England 官方由 Pickford 把對 Messi 的專注講成守門員壓力測試；AFA 則把 Messi 首次世界盃碰 England 包成官方敘事。Opta 的 52.9% 更像提醒：這場是硬幣邊緣，不是梗圖巡遊。",
       "signals": [
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
@@ -11192,7 +11228,12 @@
         "FIFA match centre 可連線，確認 M102 England-Argentina 為 7/15 Atlanta Stadium 準決賽官方比分/lineups/live updates 入口；正式名單未出前不把預測先發寫成 confirmed XI。",
         "AFA 官方稿確認 Argentina 在 Kansas 完成最後訓練，內容包含控球、反搶恢復、進攻推進與小場對抗，隨後啟程前往 Atlanta 準備對 England；這是 official team logistics/training 訊號。",
         "ESPN 7/14 England-Argentina 賽前頁提供 how to watch、kick-off、referee 與 line-ups 入口；可作 injury/predicted line-ups 的高可信媒體 rail，但正式陣容仍需等 match centre。",
-        "Al Jazeera 7/13 預覽確認 Argentina 與 England 將第六次在世界盃交手、地點 Atlanta；屬可信賽前脈絡，不等於社群情緒結論。"
+        "Al Jazeera 7/13 預覽確認 Argentina 與 England 將第六次在世界盃交手、地點 Atlanta；屬可信賽前脈絡，不等於社群情緒結論。",
+        "BBC Sport 7/14 直接可讀稿確認 England 將晚點決定 Declan Rice 是否能先發對 Argentina；Rice 病後狀態明顯改善但尚未完全恢復，這比單純「可出賽」更接近真風險。",
+        "England Football 7/13 官方 Pickford 賽前稿確認他在 Kansas City 媒體日談到 Argentina/Messi；此為官方 team-camp mood 與心理壓力脈絡，不是 confirmed XI。",
+        "AFA 官方 7/12 長文把 Argentina-England 描述為 Messi 首次在世界盃面對 England、Mercedes-Benz Stadium 16:00 當地時間開踢的歷史半決賽；本站採作官方敘事，不把情緒包裝當戰術事實。",
+        "Opta Analyst 7/14 賽前模型稿寫明兩隊幾乎難分，England 在 supercomputer 模擬中 52.9% 晉級；這是公開基準/市場溫度參考，不替代 Soren 內部判讀。",
+        "Mercedes-Benz Stadium 官方活動頁確認 7/15 England vs Argentina 準決賽；用作 Atlanta 場館/營運 anchor，避免複製錯誤時區日期。"
       ],
       "sources": [
         {
@@ -11324,11 +11365,11 @@
           "confidence": "high"
         },
         {
-          "label": "AFA Messi England semifinal preview",
+          "label": "AFA Argentina-England historic semifinal preview",
           "url": "https://www.afa.com.ar/es/posts/paren-el-mundo-argentina-e-inglaterra-frente-a-frente-en-una-semifinal-historica-el-partido-que-el-destino-le-debia-a-messi",
           "sourceName": "AFA",
-          "fetchedAt": "2026-07-13T00:28:55Z",
-          "claimType": "confirmed/official-team-context",
+          "fetchedAt": "2026-07-14T01:44:58Z",
+          "claimType": "confirmed/official-team-narrative",
           "confidence": "high"
         },
         {
@@ -11450,6 +11491,38 @@
           "claimType": "reported/tactical-history-preview",
           "confidence": "medium-high",
           "fetchedAt": "2026-07-14T01:39:00Z"
+        },
+        {
+          "label": "BBC Rice late-call update",
+          "url": "https://www.bbc.com/sport/football/articles/ce8m996g9g1o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-14T01:44:58Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "England Football Pickford pre-Argentina presser",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/13/jordan-pickford-pre-argentina-presser-20261307",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-14T01:44:58Z",
+          "claimType": "confirmed/official-team-camp-mood",
+          "confidence": "high"
+        },
+        {
+          "label": "Opta Analyst England-Argentina preview",
+          "url": "https://theanalyst.com/articles/england-vs-argentina-prediction-world-cup-2026-match-preview",
+          "sourceName": "Opta Analyst",
+          "fetchedAt": "2026-07-14T01:44:58Z",
+          "claimType": "reported/tactical-model-preview",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Mercedes-Benz Stadium semifinal event page",
+          "url": "https://www.mercedesbenzstadium.com/events/fifa-world-cup-26-tm---semi-final",
+          "sourceName": "Mercedes-Benz Stadium",
+          "fetchedAt": "2026-07-14T01:44:58Z",
+          "claimType": "confirmed/venue-operations",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
