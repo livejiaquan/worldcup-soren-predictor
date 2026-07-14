@@ -265,12 +265,12 @@ function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, 
   const copy = lang === 'en'
     ? {
         kicker: 'INTERACTIVE AGENT COCKPIT', title: 'Not a dashboard. A live prediction organism.',
-        body: 'Pick a match and watch Soren expose its probability spine: conviction, trap risk, public intel density and the self-audit ledger all in one arena-style portrait.',
+        body: 'Pick a match and watch Soren expose its probability spine: conviction, trap risk, public intel density and the self-audit ledger. Claims stay clickable; social buzz stays labeled, not invented.',
         progress: 'tournament parsed', edge: 'model vs baseline', sources: 'source cards', inspect: 'Inspect match', lead: 'Soren leans', uncertainty: 'Uncertainty field', signal: 'Signal stack', noIntel: 'No verified intel card yet',
       }
     : {
         kicker: 'INTERACTIVE AGENT COCKPIT', title: '不是儀表板，是一台會自我辯論的預測機。',
-        body: '點一場比賽，看 Soren 把勝率骨架、陷阱風險、情報密度和翻車復盤同時攤開；不要再像被動搜尋頁，要像一個正在運作的 agent。',
+        body: '點一場比賽，看 Soren 把勝率骨架、陷阱風險、情報密度和翻車復盤同時攤開；公開主張要能點來源，社群聲量只標註、不腦補。',
         progress: '賽事已解析', edge: '模型 vs 基準', sources: '情報卡', inspect: '檢查這場', lead: 'Soren 目前站', uncertainty: '不確定性力場', signal: '訊號堆疊', noIntel: '這場還沒有驗證情報卡',
       }
   return <section className="kinetic-arena" id="arena-cockpit">
