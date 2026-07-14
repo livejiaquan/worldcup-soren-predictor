@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-14T20:29:57.022Z",
+  "generatedAt": "2026-07-14T23:12:07.991Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,9 +7,9 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 100,
-    "scheduledMatches": 4,
-    "finalPendingMatches": 1,
+    "finishedMatches": 101,
+    "scheduledMatches": 3,
+    "finalPendingMatches": 0,
     "nextWindow": [
       "m102",
       "m103",
@@ -17,8 +17,8 @@
     ]
   },
   "dataQuality": {
-    "status": "watch",
-    "checkedAt": "2026-07-14T20:29:57.022Z",
+    "status": "pass",
+    "checkedAt": "2026-07-14T23:12:07.991Z",
     "thresholds": {
       "finalResultGraceMinutes": 150
     },
@@ -26,17 +26,16 @@
       "totalMatches": 104,
       "groups": 12,
       "teams": 48,
-      "finishedMatches": 100,
-      "scheduledMatches": 4,
+      "finishedMatches": 101,
+      "scheduledMatches": 3,
       "predictions": 104,
       "leaderboardRows": 3,
       "paperSettled": 12,
-      "paperPending": 3,
+      "paperPending": 2,
       "resultOverrides": 0,
       "groupStageMatches": 72,
       "lifecycle": {
-        "final": 100,
-        "live-window": 1,
+        "final": 101,
         "pre-match": 3
       }
     },
@@ -56,8 +55,8 @@
       {
         "key": "liveGuard",
         "label": "Live is not final",
-        "status": "watch",
-        "detail": "1 match(es) hidden behind final-score pending labels."
+        "status": "pass",
+        "detail": "No kicked-off match is waiting for a final result."
       },
       {
         "key": "overrides",
@@ -66,12 +65,8 @@
         "detail": "No manual result overrides applied."
       }
     ],
-    "pendingFinalMatchIds": [
-      "m101"
-    ],
-    "warnings": [
-      "1 match(es) have kicked off but do not have source-backed final scores yet"
-    ],
+    "pendingFinalMatchIds": [],
+    "warnings": [],
     "errors": []
   },
   "groups": [
@@ -2842,11 +2837,15 @@
       "team1": "France",
       "team2": "Spain",
       "venue": "Dallas (Arlington)",
-      "status": "scheduled",
-      "score": null,
+      "status": "finished",
+      "score": [
+        0,
+        2
+      ],
       "source": "openfootball/worldcup.json",
-      "lifecycle": "live-window",
-      "resultTrust": "kickoff-started; final score not trusted yet"
+      "lifecycle": "final",
+      "resultTrust": "upstream-final-score",
+      "winner": "Spain"
     },
     {
       "id": "m102",
@@ -7003,20 +7002,20 @@
     },
     "m101": {
       "pick": "France",
-      "confidence": 0.5296694785024256,
-      "tag": "有邊但不裝穩",
+      "confidence": 0.3808352070799772,
+      "tag": "膠著到煩",
       "probabilities": {
-        "home": 0.4864276170793836,
-        "draw": 0.2673773293025774,
-        "away": 0.24619505361803892
+        "home": 0.37558853219027716,
+        "draw": 0.27797112945111263,
+        "away": 0.3464403383586102
       },
       "expectedGoals": [
-        1.44,
-        0.94
+        1.22,
+        1.16
       ],
-      "score": "1-0",
+      "score": "1-1",
       "commentary": {
-        "headline": "我這場保守站 France，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 France，但平局還有 28%；別急著開香檳，足球最會打臉。",
         "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
@@ -7026,19 +7025,19 @@
           },
           {
             "label": "進球味",
-            "value": "1.44 : 0.94",
-            "note": "最像 1-0"
+            "value": "1.22 : 1.16",
+            "note": "最像 1-1"
           },
           {
             "label": "翻車率",
-            "value": "25%",
+            "value": "35%",
             "note": "Spain 的偷雞窗口"
           }
         ]
       },
       "reasons": [
         "底牌分：France 104.0；Spain 104.0",
-        "預期進球 1.44 : 0.94，先用 Poisson 把嘴砲壓成數字",
+        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
@@ -7151,9 +7150,9 @@
       "points": 94,
       "correct": 70,
       "exact": 12,
-      "total": 100,
+      "total": 101,
       "rank": 1,
-      "accuracy": 0.7
+      "accuracy": 0.693069306930693
     },
     {
       "id": "soren",
@@ -7162,9 +7161,9 @@
       "points": 87,
       "correct": 62,
       "exact": 11,
-      "total": 100,
+      "total": 101,
       "rank": 2,
-      "accuracy": 0.62
+      "accuracy": 0.6138613861386139
     },
     {
       "id": "draw",
@@ -7173,9 +7172,9 @@
       "points": 48,
       "correct": 24,
       "exact": 12,
-      "total": 100,
+      "total": 101,
       "rank": 3,
-      "accuracy": 0.24
+      "accuracy": 0.2376237623762376
     }
   ],
   "paperBankroll": {
@@ -7183,36 +7182,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 342.15,
-    "openStake": 11.89,
-    "totalValue": 342.15,
-    "roi": 2.421,
+    "bankroll": 341.15,
+    "openStake": 7.03,
+    "totalValue": 341.15,
+    "roi": 2.411,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m090",
-        "kickoffUtc": "2026-07-04T17:00:00.000Z",
-        "stage": "Round of 16",
-        "team1": "Canada",
-        "team2": "Morocco",
-        "pick": "Morocco",
-        "outcome": "away",
-        "stake": 5.53,
-        "decimalOdds": 2.35,
-        "edge": 0.251,
-        "modelProbability": 0.533,
-        "marketProxyProbability": 0.4,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-04T16:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 Morocco，但平局還有 26%；別急著開香檳，足球最會打臉。",
-        "status": "won",
-        "score": [
-          0,
-          3
-        ],
-        "profit": 7.47
-      },
       {
         "matchId": "m089",
         "kickoffUtc": "2026-07-04T21:00:00.000Z",
@@ -7476,9 +7451,7 @@
           1
         ],
         "profit": 8.64
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m101",
         "kickoffUtc": "2026-07-14T19:00:00.000Z",
@@ -7487,17 +7460,24 @@
         "team2": "Spain",
         "pick": "France",
         "outcome": "home",
-        "stake": 4.86,
+        "stake": 1,
         "decimalOdds": 2.51,
-        "edge": 0.221,
-        "modelProbability": 0.486,
+        "edge": -0.057,
+        "modelProbability": 0.376,
         "marketProxyProbability": 0.375,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-14T18:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 France，但平局還有 27%；別急著開香檳，足球最會打臉。",
-        "status": "awaiting-final"
-      },
+        "reason": "我這場保守站 France，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "status": "lost",
+        "score": [
+          0,
+          2
+        ],
+        "profit": -1
+      }
+    ],
+    "pending": [
       {
         "matchId": "m102",
         "kickoffUtc": "2026-07-15T19:00:00.000Z",
