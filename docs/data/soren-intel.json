@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-14T01:44:58Z",
-  "status": "semifinal scout: M101 補 Ivan Barton 裁判、Dallas 天氣/屋頂與 SI/FOX 賽前 rail；M102 補 Rice late call、Pickford 官方受訪、AFA/Opta/Atlanta 場館脈絡。",
-  "headline": "四強比賽日更新：France-Spain 從巨星海報收斂到 Tchouaméni、Ivan Barton 哨音與 Dallas 濕熱管理；England-Argentina 則由 Rice late call、Pickford 對 Messi 的壓力測試與 Opta 52.9% 硬幣邊緣提醒主導。",
+  "generatedAt": "2026-07-14T07:53:15Z",
+  "status": "semifinal scout: M101 補 RFEF 最後訓練/De la Fuente 與 TF1 France 全員訓練、Tchouaméni available；M102 補 England Football 7/14 最後訓練與飛往 Atlanta 行程，並把 Opta 標成公開模型。",
+  "headline": "四強臨場更新：France-Spain 已從海報戰收斂到最後訓練、Tchouaméni 是否回先發、Barton 裁判組與 Dallas 濕熱；England-Argentina 則進入 England 最後訓練/轉場 Atlanta、Rice late call 與 Opta 公開模型 52.9% 的硬幣邊緣。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -10867,8 +10867,8 @@
       "matchId": "m101",
       "match": "France vs Spain",
       "sourceType": "official/tactical + availability/suspension + expected-XI + referee/venue-weather/odds watch",
-      "title": "France-Spain 比賽日升溫：Tchouaméni 是中場防火牆，Ivan Barton 與 Dallas 降溫/濕度則把節奏管理拉進同一張紅筆。",
-      "sorenTake": "這場不只 Mbappé 對 Yamal。最新可驗證訊號把重點壓到三條線：France 是否讓 Tchouaméni 回先發穩住禁區前，Spain 能不能用控球耐心避開 Barton 哨音下的情緒球，以及 Dallas 雖降溫但仍有濕度/雷陣雨機率的比賽日負荷。Soren 仍看 France 微熱，但這是細節會偷分的準決賽。",
+      "title": "France-Spain 比賽日收斂：Tchouaméni 若回先發是中場防火牆，Barton 裁判組與 Dallas 濕熱把節奏管理拉進同一張紅筆。",
+      "sorenTake": "這場不只 Mbappé 對 Yamal。最新可驗證訊號把重點壓到三條線：RFEF 確認 Spain 雨中完成最後訓練、TF1/Deschamps 指出 France 全員訓練且 Tchouaméni available 但未確認先發，以及 Barton 裁判組/Dallas 濕度讓情緒與節奏管理更值錢。Soren 仍看 France 微熱，但這是細節會偷分的準決賽。",
       "signals": [
         "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
         "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
@@ -10878,7 +10878,7 @@
         "L’Équipe 可讀標題確認 Kylian Mbappé 與 Aurélien Tchouaméni 被列為「aptes pour la demi-finale」；Soren 仍保留 Mbappé 腳踝負荷監控，不把 fit 寫成完全無風險。",
         "CBS Sports/FanDuel 賽前盤把 France 約 +135、Spain 約 +220、和局約 +210；只作紙上市場溫度，不能當下注建議或模型秘密。",
         "NWS Arlington/Tarrant County 7/14 仍有雷陣雨機率與高溫（約 90°F 以上）脈絡；Dallas/Arlington 半決賽的節奏可能受熱與天氣管理影響。",
-        "FIFA knockout bracket/fixture page可連線確認 Match 101 為 France v Spain，Dallas Stadium，7/14 15:00 當地開球；公開頁面不應再露出 W97/W98。",
+        "FIFA knockout bracket/fixture page可連線確認 Match 101 為 France v Spain，Dallas Stadium，7/14 15:00 當地開球；公開頁面應維持 France v Spain 實名化，不再露出路線佔位。",
         "RFEF 官方賽後稿確認 Spain 2-1 Belgium 後進入隊史第二次世界盃四強，De la Fuente 表示「Podemos ganar a cualquier equipo」；這是官方心理/信心脈絡，不是勝率保證。",
         "RFEF 官方稿把 Lamine Yamal 列為對 Belgium 的 MVP 與最具決定性球員，支撐 Spain 進攻焦點從純控球轉向右路決斷。",
         "Al Jazeera 可讀 meta/標題把 France-Spain 定位成歐洲兩大強權與 Mbappé-Yamal blockbuster；可作中立 preview/敘事熱度，不替代官方隊訊。",
@@ -10904,7 +10904,10 @@
         "NBC DFW 7/13 直接可讀頁確認 France-Spain 準決賽裁判組焦點為 El Salvador 裁判 Ivan Barton；這補上比賽日判罰/情緒管理脈絡，但不改寫勝率。",
         "Dallas Morning News 7/13 天氣稿確認 Dallas Stadium/AT&T Stadium 本場前氣溫較前幾戰降溫，NWS 預測高溫約 91°F、體感約 98°F，仍有濕度與零星雷雨機率；屋頂過往賽事保持關閉，場外移動仍是熱負荷。",
         "Sports Illustrated 7/14 賽前稿把 Ivan Barton、Arlington 15:00 ET 開球、Tchouaméni 回歸預測 XI 與 Mbappé 腳踝狀態放在同一篇；本站只採作 predicted lineup / availability watch，不把預測陣容寫成 confirmed XI。",
-        "FOX 直播頁可讀 metadata 確認 France-Spain 於 Dallas Stadium 7/14 15:00 ET / 19:00 UTC 開球並提供轉播入口；此為觀賽 rail，不是賽果或陣容證據。"
+        "FOX 直播頁可讀 metadata 確認 France-Spain 於 Dallas Stadium 7/14 15:00 ET / 19:00 UTC 開球並提供轉播入口；此為觀賽 rail，不是賽果或陣容證據。",
+        "RFEF 7/13 官方稿確認 Spain 在 Arlington/Cotton Bowl 於雨中完成賽前最後訓練；這是官方備戰節奏，不是先發確認。",
+        "RFEF 7/13 De la Fuente 賽前稿標題確認「Lo daremos todo por estar en la final」，並把四強形容為高度均勢；Soren 採作官方心理/臨場語氣，不當勝率證明。",
+        "TF1 Info 7/14 可讀 meta 確認 France 週一全員訓練，Deschamps 說 Aurélien Tchouaméni 重新 available，但未說他是否先發；這把中場風險從「能不能踢」推進到「會不會回先發」。"
       ],
       "sources": [
         {
@@ -11186,6 +11189,30 @@
           "fetchedAt": "2026-07-14T01:44:58Z",
           "claimType": "context/live-centre",
           "confidence": "medium-high"
+        },
+        {
+          "label": "RFEF Spain final pre-match training",
+          "url": "https://rfef.es/es/noticias/llego-la-hora-la-final-esta-en-juego",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-14T07:53:15Z",
+          "claimType": "confirmed/official-team-training",
+          "confidence": "high"
+        },
+        {
+          "label": "RFEF De la Fuente final-place presser",
+          "url": "https://rfef.es/es/noticias/luis-de-la-fuente-lo-daremos-todo-por-estar-en-la-final",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-14T07:53:15Z",
+          "claimType": "confirmed/official-coach-quote",
+          "confidence": "high"
+        },
+        {
+          "label": "TF1 Info Tchouaméni available update",
+          "url": "https://www.tf1info.fr/sport/coupe-du-monde-2026-aurelien-tchouameni-est-de-nouveau-disponible-pour-la-demi-finale-contre-l-espagne-annonce-didier-deschamps-2452985.html",
+          "sourceName": "TF1 Info",
+          "fetchedAt": "2026-07-14T07:53:15Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
@@ -11194,8 +11221,8 @@
       "matchId": "m102",
       "match": "England vs Argentina",
       "sourceType": "official match hub + team-camp/rivalry profile + Rice/Argentina availability + tactical/venue/odds watch",
-      "title": "England-Argentina 倒數再收斂：Rice 仍是 late call，Pickford 把 Messi 壓力講明，Opta 只給 England 52.9% 晉級。",
-      "sorenTake": "歷史恩怨很吵，但最新訊號沒有把它吹成單邊劇本：BBC 說 Rice 是否先發還要晚點決定；England 官方由 Pickford 把對 Messi 的專注講成守門員壓力測試；AFA 則把 Messi 首次世界盃碰 England 包成官方敘事。Opta 的 52.9% 更像提醒：這場是硬幣邊緣，不是梗圖巡遊。",
+      "title": "England-Argentina 賽前訊號收斂：Rice 仍是 late call，England 完成最後訓練後轉場 Atlanta，Opta 公開模型只給 England 52.9% 晉級。",
+      "sorenTake": "歷史恩怨很吵，但最新訊號沒有把它吹成單邊劇本：BBC 說 Rice 是否先發還要晚點決定；England Football 7/14 官方 daily briefing 確認最後訓練、恢復與飛往 Atlanta；AFA 早已把 Messi 首次世界盃碰 England 包成官方敘事。Opta 公開模型的 52.9% 更像提醒：這場是硬幣邊緣，不是梗圖巡遊。",
       "signals": [
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
@@ -11233,7 +11260,9 @@
         "England Football 7/13 官方 Pickford 賽前稿確認他在 Kansas City 媒體日談到 Argentina/Messi；此為官方 team-camp mood 與心理壓力脈絡，不是 confirmed XI。",
         "AFA 官方 7/12 長文把 Argentina-England 描述為 Messi 首次在世界盃面對 England、Mercedes-Benz Stadium 16:00 當地時間開踢的歷史半決賽；本站採作官方敘事，不把情緒包裝當戰術事實。",
         "Opta Analyst 7/14 賽前模型稿寫明兩隊幾乎難分，England 在 supercomputer 模擬中 52.9% 晉級；這是公開基準/市場溫度參考，不替代 Soren 內部判讀。",
-        "Mercedes-Benz Stadium 官方活動頁確認 7/15 England vs Argentina 準決賽；用作 Atlanta 場館/營運 anchor，避免複製錯誤時區日期。"
+        "Mercedes-Benz Stadium 官方活動頁確認 7/15 England vs Argentina 準決賽；用作 Atlanta 場館/營運 anchor，避免複製錯誤時區日期。",
+        "England Football 7/14 官方 Three Lions Daily 確認 England 在 Kansas City 的 Swope Soccer Village 進行對 Argentina 前最後訓練，之後恢復、用餐並飛往 Atlanta；這是官方轉場/備戰節奏，不是 confirmed XI。",
+        "同一 England Football daily briefing 把 7/15 對 Argentina 稱為 tomorrow’s semi-final in Atlanta，補強 m102 時區/城市 anchor；正式名單仍等 FIFA/高可信 match centre。"
       ],
       "sources": [
         {
@@ -11522,6 +11551,14 @@
           "sourceName": "Mercedes-Benz Stadium",
           "fetchedAt": "2026-07-14T01:44:58Z",
           "claimType": "confirmed/venue-operations",
+          "confidence": "high"
+        },
+        {
+          "label": "England Football Three Lions Daily final training",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/14/england-men-world-cup-2026-daily-briefing",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-14T07:53:15Z",
+          "claimType": "confirmed/official-team-training",
           "confidence": "high"
         }
       ],
