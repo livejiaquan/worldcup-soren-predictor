@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-14T07:53:15Z",
-  "status": "semifinal scout: M101 補 RFEF 最後訓練/De la Fuente 與 TF1 France 全員訓練、Tchouaméni available；M102 補 England Football 7/14 最後訓練與飛往 Atlanta 行程，並把 Opta 標成公開模型。",
-  "headline": "四強臨場更新：France-Spain 已從海報戰收斂到最後訓練、Tchouaméni 是否回先發、Barton 裁判組與 Dallas 濕熱；England-Argentina 則進入 England 最後訓練/轉場 Atlanta、Rice late call 與 Opta 公開模型 52.9% 的硬幣邊緣。",
+  "generatedAt": "2026-07-14T14:09:06Z",
+  "status": "Semifinal scout refreshed: France-Spain kickoff-window and England-Argentina public-pressure/availability watch updated.",
+  "headline": "準決賽情資更新：France-Spain 進入開球窗；England-Argentina 仍是 Rice/壓力場雙重監控。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -10867,8 +10867,8 @@
       "matchId": "m101",
       "match": "France vs Spain",
       "sourceType": "official/tactical + availability/suspension + expected-XI + referee/venue-weather/odds watch",
-      "title": "France-Spain 比賽日收斂：Tchouaméni 若回先發是中場防火牆，Barton 裁判組與 Dallas 濕熱把節奏管理拉進同一張紅筆。",
-      "sorenTake": "這場不只 Mbappé 對 Yamal。最新可驗證訊號把重點壓到三條線：RFEF 確認 Spain 雨中完成最後訓練、TF1/Deschamps 指出 France 全員訓練且 Tchouaméni available 但未確認先發，以及 Barton 裁判組/Dallas 濕度讓情緒與節奏管理更值錢。Soren 仍看 France 微熱，但這是細節會偷分的準決賽。",
+      "title": "France-Spain 開球窗更新：Sports Mole 最新隊訊仍把 Tchouaméni/Koné/Thuram 列 doubtful，FIFA live centre 才是先發真相。",
+      "sorenTake": "距離 Dallas 準決賽只剩數小時，Soren 把雜訊收成兩條線：Sports Mole 7/14 仍把 France 中場/鋒線健康寫成 doubtful list，RFEF 官方則把 Spain 這場包成「通往夢想的最後挑戰」。所以本站不偷跑 confirmed XI；France 微熱可以留，但 Tchouaméni 是否真的先發，必須等 FIFA/高可信 live centre。",
       "signals": [
         "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
         "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
@@ -10907,7 +10907,11 @@
         "FOX 直播頁可讀 metadata 確認 France-Spain 於 Dallas Stadium 7/14 15:00 ET / 19:00 UTC 開球並提供轉播入口；此為觀賽 rail，不是賽果或陣容證據。",
         "RFEF 7/13 官方稿確認 Spain 在 Arlington/Cotton Bowl 於雨中完成賽前最後訓練；這是官方備戰節奏，不是先發確認。",
         "RFEF 7/13 De la Fuente 賽前稿標題確認「Lo daremos todo por estar en la final」，並把四強形容為高度均勢；Soren 採作官方心理/臨場語氣，不當勝率證明。",
-        "TF1 Info 7/14 可讀 meta 確認 France 週一全員訓練，Deschamps 說 Aurélien Tchouaméni 重新 available，但未說他是否先發；這把中場風險從「能不能踢」推進到「會不會回先發」。"
+        "TF1 Info 7/14 可讀 meta 確認 France 週一全員訓練，Deschamps 說 Aurélien Tchouaméni 重新 available，但未說他是否先發；這把中場風險從「能不能踢」推進到「會不會回先發」。",
+        "Sports Mole 7/14 更新的 France-Spain team-news 頁仍把 Tchouaméni（thigh）、Manu Koné（knee）、Marcus Thuram（calf）列為 France doubtful，並預測 Tchouaméni 先發；這是最新 expected-XI/availability lead，不是 confirmed XI。",
+        "同頁把 Spain 端標為無 confirmed out，但 Yeremy Pino、Víctor Muñoz 仍在 doubtful watch；Spain 核心 Rodri/Yamal/Olmo 線不因此自動降級，但替補寬度要留一點尾部風險。",
+        "RFEF 7/14 官方預熱〈Último desafío hacia nuestro gran sueño〉把 France-Spain 描述成「價值一張決賽門票」的歷史對撞，並回顧 2006 世界盃交手；這是官方敘事熱度，不是陣容或勝率證據。",
+        "FOX Sports 7/14 odds/書商稿提到 Mbappé anytime goalscorer 市場資金高度集中；Soren 只把它當 public betting heat，紙上模擬不能把熱門投注誤讀成進球保證。"
       ],
       "sources": [
         {
@@ -11213,6 +11217,30 @@
           "fetchedAt": "2026-07-14T07:53:15Z",
           "claimType": "reported/availability-watch",
           "confidence": "high"
+        },
+        {
+          "label": "Sports Mole France-Spain team news predicted XIs",
+          "url": "https://www.sportsmole.co.uk/football/france/world-cup-2026/team-news/france-vs-spain-injury-suspension-list-predicted-xis--world-cup-2026_601095.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-14T14:09:06Z",
+          "claimType": "reported/availability-expected-xi",
+          "confidence": "medium"
+        },
+        {
+          "label": "RFEF France-Spain last challenge preview",
+          "url": "https://rfef.es/es/noticias/francia-espana-el-ultimo-desafio-hacia-nuestro-gran-sueno",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-14T14:09:06Z",
+          "claimType": "confirmed/official-team-narrative",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Sports books hoping Spain-England title match",
+          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-books-hoping-spain-england-title-match",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-14T14:09:06Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -11221,8 +11249,8 @@
       "matchId": "m102",
       "match": "England vs Argentina",
       "sourceType": "official match hub + team-camp/rivalry profile + Rice/Argentina availability + tactical/venue/odds watch",
-      "title": "England-Argentina 賽前訊號收斂：Rice 仍是 late call，England 完成最後訓練後轉場 Atlanta，Opta 公開模型只給 England 52.9% 晉級。",
-      "sorenTake": "歷史恩怨很吵，但最新訊號沒有把它吹成單邊劇本：BBC 說 Rice 是否先發還要晚點決定；England Football 7/14 官方 daily briefing 確認最後訓練、恢復與飛往 Atlanta；AFA 早已把 Messi 首次世界盃碰 England 包成官方敘事。Opta 公開模型的 52.9% 更像提醒：這場是硬幣邊緣，不是梗圖巡遊。",
+      "title": "England-Argentina 新壓力訊號：Madueke 說對手會更怕英格蘭，Al Jazeera/Reuters 則把歷史火藥味和票價熱度拉進賽前。",
+      "sorenTake": "England-Argentina 還沒到正式先發時間，不能把 Rice 或 Messi/Romero 的狀態寫死。新訊號比較像壓力場：England Football 讓 Madueke/Eze/Saka 出面談信心與改進，Al Jazeera/Reuters 則提醒這場的歷史情緒、票價與安全敘事會很吵。Soren 的處理方式很簡單：情緒算噪音，先發與體能才算硬訊號。",
       "signals": [
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
@@ -11262,7 +11290,11 @@
         "Opta Analyst 7/14 賽前模型稿寫明兩隊幾乎難分，England 在 supercomputer 模擬中 52.9% 晉級；這是公開基準/市場溫度參考，不替代 Soren 內部判讀。",
         "Mercedes-Benz Stadium 官方活動頁確認 7/15 England vs Argentina 準決賽；用作 Atlanta 場館/營運 anchor，避免複製錯誤時區日期。",
         "England Football 7/14 官方 Three Lions Daily 確認 England 在 Kansas City 的 Swope Soccer Village 進行對 Argentina 前最後訓練，之後恢復、用餐並飛往 Atlanta；這是官方轉場/備戰節奏，不是 confirmed XI。",
-        "同一 England Football daily briefing 把 7/15 對 Argentina 稱為 tomorrow’s semi-final in Atlanta，補強 m102 時區/城市 anchor；正式名單仍等 FIFA/高可信 match centre。"
+        "同一 England Football daily briefing 把 7/15 對 Argentina 稱為 tomorrow’s semi-final in Atlanta，補強 m102 時區/城市 anchor；正式名單仍等 FIFA/高可信 match centre。",
+        "England Football 7/14 Lions Den 稿確認 Noni Madueke 在 Argentina 準決賽前談到「other teams will be more worried about us」，Eze 也談到半場替換 Rice 後的情緒與改進空間；這是官方 team-camp mood，不是 confirmed XI。",
+        "Al Jazeera/Reuters 7/14 稿確認阿根廷退伍軍人團體呼籲球迷把焦點放在足球，並把 England-Argentina 描述為本屆準決賽的高情緒 rivalry；公開端可列壓力/安全敘事，但不能把它變成球場民意結論。",
+        "同篇提到 Argentina-England 票價三天內上漲 34% 的公開需求訊號；Soren 只把它當 public-interest heat，不把票價當勝率或主客場優勢公式。",
+        "Sports Mole Argentina 傷停頁 7/13 更新：Messi/Romero 被列為關注點但 Argentina 無停賽；搭配先前 Rice late-call，m102 仍是「等官方 live centre/先發」的雙向 availability watch。"
       ],
       "sources": [
         {
@@ -11560,6 +11592,30 @@
           "fetchedAt": "2026-07-14T07:53:15Z",
           "claimType": "confirmed/official-team-training",
           "confidence": "high"
+        },
+        {
+          "label": "England Football Madueke Lions Den Argentina build-up",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/14/bukayo-saka-eberechi-eze-noni-madueke-lions-den-20261407",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-14T14:09:06Z",
+          "claimType": "confirmed/official-team-camp-mood",
+          "confidence": "high"
+        },
+        {
+          "label": "Al Jazeera/Reuters Argentina war vets England semifinal focus",
+          "url": "https://www.aljazeera.com/sports/2026/7/14/argentina-war-vets-urge-focus-on-football-for-england-world-cup-semifinal",
+          "sourceName": "Al Jazeera / Reuters",
+          "fetchedAt": "2026-07-14T14:09:06Z",
+          "claimType": "reported/rivalry-security-public-interest",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Sports Mole Argentina injury suspension list vs England",
+          "url": "https://www.sportsmole.co.uk/football/argentina/injury-news/injuries-and-suspensions/messi-romero-latest-argentina-injury-suspension-list-vs-england_601110.html",
+          "sourceName": "Sports Mole",
+          "fetchedAt": "2026-07-14T14:09:06Z",
+          "claimType": "reported/availability-suspension-watch",
+          "confidence": "medium"
         }
       ],
       "confidence": "medium-high"
