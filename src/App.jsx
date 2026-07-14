@@ -5,16 +5,20 @@ const FLAG = { Argentina:'🇦🇷', France:'🇫🇷', Spain:'🇪🇸', Englan
 const FLAG_CODE = { Argentina:'ar', France:'fr', Spain:'es', England:'gb-eng', Brazil:'br', Portugal:'pt', Netherlands:'nl', Belgium:'be', Germany:'de', Croatia:'hr', Uruguay:'uy', Morocco:'ma', USA:'us', Mexico:'mx', Switzerland:'ch', Colombia:'co', Japan:'jp', Senegal:'sn', Austria:'at', Sweden:'se', Turkey:'tr', Ecuador:'ec', Iran:'ir', Australia:'au', Scotland:'gb-sct', 'South Korea':'kr', Norway:'no', Ghana:'gh', 'Ivory Coast':'ci', Algeria:'dz', Qatar:'qa', Tunisia:'tn', Egypt:'eg', Paraguay:'py', 'South Africa':'za', 'Saudi Arabia':'sa', 'Czech Republic':'cz', Canada:'ca', Panama:'pa', Uzbekistan:'uz', Jordan:'jo', Iraq:'iq', Haiti:'ht', 'New Zealand':'nz', 'Bosnia & Herzegovina':'ba', Curaçao:'cw', 'Democratic Republic of the Congo':'cd', 'Cape Verde':'cv' }
 const flag = (team) => FLAG[team] || '⚽'
 function FlagIcon({ name, className = '' }) {
-  const code = FLAG_CODE[name]
-  if (!code) return <span className={`flag-emoji ${className}`.trim()}>{flag(name)}</span>
-  return <img className={`flag-img ${className}`.trim()} src={`https://flagcdn.com/w40/${code}.png`} srcSet={`https://flagcdn.com/w80/${code}.png 2x`} alt={`${name} flag`} decoding="async" />
+  const label = String(name || '')
+  if (label.includes(' / ') || isRouteToken(label)) {
+    return <span className={`route-flag ${className}`.trim()} aria-label={`${label} route slot`}>ROUTE</span>
+  }
+  const code = FLAG_CODE[label]
+  if (!code) return <span className={`flag-emoji ${className}`.trim()}>{flag(label)}</span>
+  return <img className={`flag-img ${className}`.trim()} src={`https://flagcdn.com/w40/${code}.png`} srcSet={`https://flagcdn.com/w80/${code}.png 2x`} alt={`${label} flag`} decoding="async" />
 }
 
 const I18N = {
   zh: {
     navToday:'今日', navIntel:'情報', navRadar:'爆冷雷達', navPred:'預測', navBracket:'樹狀圖', navBankroll:'紙上本金', navReview:'復盤', navFixtures:'賽程', lang:'EN',
     loading:'Soren 正在翻賽程和模型，不要急，嘴砲也要先載資料…', loadFail:'資料載入失敗',
-    heroKicker:'SCHEDULE-AWARE · SOURCE-BACKED · PUBLIC EXPERIMENT', heroTitle:'Soren 世界盃觀察室', heroBody:'我會追賽程、逛新聞和社群搜尋、找爆冷路線；首頁只留判斷，證據、來源和翻車復盤都收進可展開報告。',
+    heroKicker:'SCHEDULE-AWARE · SOURCE-BACKED · PUBLIC EXPERIMENT', heroTitle:'Soren 世界盃戰情室', heroBody:'把賽程、公開來源、模型勝率與賽後復盤整理成一個清楚的戰情頁；首頁先給結論，證據與風險都能展開查。',
     finished:'已完賽', pending:'待預測/追蹤', lastUpdate:'最後更新', intelCards:'情報卡',
     notice:'公開研究與娛樂實驗，不是投注建議。Live ≠ Final：半場、加時、補時都只當現場脈絡，不提前結算；社群只收可驗證公開來源，看不到的留言不硬演聲量。',
     nextCut:'下一場開刀', strongest:'最敢站隊', trap:'最像陷阱', bankroll:'紙上本金', modelForm:'模型戰績', TBD:'待定', waiting:'等賽程', confidence:'信心', trapRate:'翻車率', roi:'ROI', unsettled:'未結算', points:'分', hit:'目前命中', noSwagger:'還不能跩',
@@ -269,8 +273,8 @@ function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, 
         progress: 'tournament parsed', edge: 'model vs baseline', sources: 'source cards', inspect: 'Inspect match', lead: 'Soren leans', uncertainty: 'Uncertainty field', signal: 'Signal stack', noIntel: 'No verified intel card yet',
       }
     : {
-        kicker: 'INTERACTIVE AGENT COCKPIT', title: '不是儀表板，是一台會自我辯論的預測機。',
-        body: '點一場比賽，看 Soren 把勝率骨架、陷阱風險、情報密度和翻車復盤同時攤開；公開主張要能點來源，社群聲量只標註、不腦補。',
+        kicker: 'INTERACTIVE AGENT COCKPIT', title: '把預測、情報、翻車風險放在同一張戰術板。',
+        body: '點一場比賽，看 Soren 把勝率、陷阱風險、情報密度和復盤線索同時攤開；公開主張要能點來源，社群聲量只標註、不腦補。',
         progress: '賽事已解析', edge: '模型 vs 基準', sources: '情報卡', inspect: '檢查這場', lead: 'Soren 目前站', uncertainty: '不確定性力場', signal: '訊號堆疊', noIntel: '這場還沒有驗證情報卡',
       }
   return <section className="kinetic-arena" id="arena-cockpit">
