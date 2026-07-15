@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-15T20:46:21Z",
-  "status": "England-Argentina live watch: ESPN shows England 1-0 Argentina at 85' but not completed; no final settlement yet.",
-  "headline": "England-Argentina live watch: ESPN 85' 仍是 completed=false，Soren 只更新現場警報，不偷結算。",
+  "generatedAt": "2026-07-15T20:48:02Z",
+  "status": "England-Argentina live watch: ESPN now shows England 1–1 Argentina at 86', completed=False; no final settlement yet.",
+  "headline": "England-Argentina live watch: ESPN 86' 顯示 England 1–1 Argentina，completed=false；先別把 W102 寫死。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -11276,9 +11276,12 @@
       "matchId": "m102",
       "match": "England vs Argentina",
       "sourceType": "official match hub + official availability + live-score context + tactical/rivalry context + public market watch",
-      "title": "England-Argentina 85 分鐘警報：ESPN 顯示 England 1-0，但 completed=false；Soren 只升級 live-score，不提前開香檳。",
-      "sorenTake": "硬訊號現在從賽前轉成現場：ESPN 公開 scoreboard 在 85' 顯示 England 1-0 Argentina、狀態仍是 Second Half / completed=false。這代表壓力盤已經完全換邊——Argentina 必須追、England 必須守住 Kane/Bellingham 後面的二球線；但終場哨前，本站不結算晉級、不改決賽對手，只把它當 live-score context。",
+      "title": "England-Argentina 又翻盤成拉鋸：ESPN 86' 顯示 England 1–1 Argentina、completed=false；終場前全部都只是 live context。",
+      "sorenTake": "剛才 1-0 的警報已過期，現場變成 England 1–1 Argentina：ESPN scoreboard 顯示 86'、狀態 STATUS_SECOND_HALF / completed=false。這種半決賽就是為了懲罰提前結算的人存在；Soren 只更新現場狀態，決賽 Spain vs W102、三四名 France vs L102 仍維持路線佔位，等 completed/post/final 才改。",
       "signals": [
+        "7/15 20:48 UTC 再補核：ESPN 公開 scoreboard 已從 England 1-0 變為 England 1–1 Argentina、86'、STATUS_SECOND_HALF，completed=false；上一筆 85' 1-0 只能視為過期 live context。",
+        "BBC live 搜尋片段同步顯示 E. Fernández 85' goal；此為賽中進球脈絡，仍需 ESPN/FIFA final 狀態才可結算。",
+        "The Athletic/NBC 搜尋片段仍保留 England leading 的較舊現場敘事，說明 live snippets 會互相追不上；公開端必須優先採用剛查到的 scoreboard state。",
         "7/15 20:45 UTC 補核：ESPN 公開 scoreboard 顯示 England 1-0 Argentina、85'、STATUS_SECOND_HALF，completed=false；這是現場比分脈絡，不是終場結果。",
         "同一 ESPN API event 仍列 state=in、period=2；Soren 因此不更新 bracket、不結算紙上盤，也不把 Spain 的決賽對手從 W102 改名。",
         "搜尋索引同時出現 Metro 與 Al Jazeera live rails，可作賽中追蹤入口；但 snippet/live blog 不是 final-score evidence，若與 ESPN/FIFA 終場狀態衝突，以 completed/post/final 狀態為準。",
@@ -11347,12 +11350,28 @@
       ],
       "sources": [
         {
-          "label": "ESPN public scoreboard England-Argentina live state",
+          "label": "ESPN public scoreboard England-Argentina live state (refreshed)",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260715",
           "sourceName": "ESPN public scoreboard API",
-          "fetchedAt": "2026-07-15T20:46:21Z",
+          "fetchedAt": "2026-07-15T20:48:02Z",
           "claimType": "context/live-score",
           "confidence": "high"
+        },
+        {
+          "label": "The Athletic England-Argentina live updates search-indexed rail",
+          "url": "https://www.nytimes.com/athletic/live-blogs/england-vs-argentina-live-updates-world-cup-2026-score-result-messi/tuuzBVEioXgR/",
+          "sourceName": "The Athletic / NYT",
+          "fetchedAt": "2026-07-15T20:48:02Z",
+          "claimType": "context/live-centre/search-indexed",
+          "confidence": "medium"
+        },
+        {
+          "label": "BBC Sport England-Argentina live text search-indexed goal context",
+          "url": "https://www.bbc.com/sport/football/live/c77yp11e4r6t",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-15T20:48:02Z",
+          "claimType": "context/live-score/search-indexed",
+          "confidence": "medium"
         },
         {
           "label": "ESPN England-Argentina live match page",
