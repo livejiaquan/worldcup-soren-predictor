@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-15T08:15:16.809Z",
+  "generatedAt": "2026-07-15T08:47:44.675Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -18,7 +18,7 @@
   },
   "dataQuality": {
     "status": "pass",
-    "checkedAt": "2026-07-15T08:15:16.809Z",
+    "checkedAt": "2026-07-15T08:47:44.675Z",
     "thresholds": {
       "finalResultGraceMinutes": 150
     },
@@ -2872,7 +2872,7 @@
       "date": "2026-07-18",
       "time": "17:00 UTC-4",
       "kickoffUtc": "2026-07-18T21:00:00.000Z",
-      "team1": "L101",
+      "team1": "France",
       "team2": "L102",
       "venue": "Miami (Miami Gardens)",
       "status": "scheduled",
@@ -2889,7 +2889,7 @@
       "date": "2026-07-19",
       "time": "15:00 UTC-4",
       "kickoffUtc": "2026-07-19T19:00:00.000Z",
-      "team1": "W101",
+      "team1": "Spain",
       "team2": "W102",
       "venue": "New York/New Jersey (East Rutherford)",
       "status": "scheduled",
@@ -7101,44 +7101,44 @@
       ]
     },
     "m104": {
-      "pick": "W101",
-      "confidence": 0.3808352070799772,
-      "tag": "膠著到煩",
+      "pick": "Spain",
+      "confidence": 0.82,
+      "tag": "我敢站隊",
       "probabilities": {
-        "home": 0.37558853219027716,
-        "draw": 0.27797112945111263,
-        "away": 0.3464403383586102
+        "home": 0.8287769708386649,
+        "draw": 0.13987773375285464,
+        "away": 0.031345295408480446
       },
       "expectedGoals": [
-        1.22,
-        1.16
+        2.22,
+        0.25
       ],
-      "score": "1-1",
+      "score": "2-0",
       "commentary": {
-        "headline": "我這場保守站 W101，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
+        "headline": "我這場偏明確站 Spain，但平局還有 14%；別急著開香檳，足球最會打臉。",
+        "story": "Spain 底牌比較硬；W102 想偷走比賽，前 30 分鐘不能先自爆。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
             "label": "底牌差",
-            "value": "0.0",
-            "note": "誰也別裝大哥"
+            "value": "37.0",
+            "note": "Spain 比較有本錢"
           },
           {
             "label": "進球味",
-            "value": "1.22 : 1.16",
-            "note": "最像 1-1"
+            "value": "2.22 : 0.25",
+            "note": "最像 2-0"
           },
           {
             "label": "翻車率",
-            "value": "35%",
+            "value": "3%",
             "note": "W102 的偷雞窗口"
           }
         ]
       },
       "reasons": [
-        "底牌分：W101 67.0；W102 67.0",
-        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
-        "兩邊差距薄，平局和一球差都很有戲"
+        "底牌分：Spain 104.0；W102 67.0",
+        "預期進球 2.22 : 0.25，先用 Poisson 把嘴砲壓成數字",
+        "底牌差約 37.0 分，我暫時站 Spain"
       ]
     }
   },
@@ -7183,7 +7183,7 @@
     "currency": "USD-paper",
     "initialBankroll": 100,
     "bankroll": 341.15,
-    "openStake": 7.03,
+    "openStake": 14.03,
     "totalValue": 341.15,
     "roi": 2.411,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
@@ -7501,19 +7501,19 @@
         "matchId": "m104",
         "kickoffUtc": "2026-07-19T19:00:00.000Z",
         "stage": "Final",
-        "team1": "W101",
+        "team1": "Spain",
         "team2": "W102",
-        "pick": "W101",
+        "pick": "Spain",
         "outcome": "home",
-        "stake": 1,
-        "decimalOdds": 2.54,
-        "edge": -0.046,
-        "modelProbability": 0.376,
-        "marketProxyProbability": 0.37,
+        "stake": 8,
+        "decimalOdds": 1.83,
+        "edge": 0.517,
+        "modelProbability": 0.829,
+        "marketProxyProbability": 0.514,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-19T18:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 W101，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "reason": "我這場偏明確站 Spain，但平局還有 14%；別急著開香檳，足球最會打臉。",
         "status": "pending"
       }
     ],
