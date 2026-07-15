@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-15T01:02:00Z",
+  "generatedAt": "2026-07-15T02:32:11Z",
   "status": "Semifinal scout refreshed: England-Argentina referee confirmed; Rice/Messi availability upgraded from late-watch to reported fit/ready, still awaiting official XI.",
-  "headline": "準決賽情資更新：England-Argentina 裁判組已確認；Rice/Messi 從 late-watch 升級為可出賽訊號，但正式先發仍等 FIFA/高可信現場頁。",
+  "headline": "England-Argentina kickoff-day card refreshed with official venue, roof/weather, and rivalry-pressure context; no official XI yet.",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -11275,9 +11275,9 @@
     {
       "matchId": "m102",
       "match": "England vs Argentina",
-      "sourceType": "official match hub + confirmed referee + reported availability + public market/venue watch",
-      "title": "England-Argentina 開球日：Elfath 裁判組落定，Rice/Messi 都有可出賽訊號；Soren 還是等正式 XI，不拿熱搜當陣容表。",
-      "sorenTake": "最新硬訊號是裁判與可用性：U.S. Soccer/BBC/ESPN 都指向 Ismail Elfath 執法，Tuchel 端的 Rice 已被 The Independent 寫成 ready to start，Argentina 端 Messi/Romero/Paredes 也有 Football365/TyC 脈絡稱 passed fit。這讓「缺席恐慌」降溫，但不等於滿血保證；正式先發仍等 FIFA/現場頁。市場仍只微傾 England，Soren 不把賠率當答案。",
+      "sourceType": "official match hub + venue/weather + rivalry context + confirmed referee + reported availability + public market watch",
+      "title": "England-Argentina 開球日再補核：場館/天氣與火藥味都進雷達；屋頂能降天氣變數，但 rivalry 會把每次犯規都放大。",
+      "sorenTake": "最新補核不是改答案，而是改風險地圖：Mercedes-Benz Stadium 官方頁確認 Atlanta 這場 semifinal；Yahoo/Standard 天氣稿提醒場館有可關閉屋頂，所以雷雨更像賽務/交通變數，不該被誇成草皮末日。Guardian 把 England-Argentina 的歷史火藥重新拉回台面，Scaloni 也呼籲焦點放在足球；Soren 會把它當情緒/判罰壓力，不當成模型捷徑。Elfath 裁判、Rice ready-to-start、Messi/Romero/Paredes reported fit 仍維持：正式 XI 前不把傳聞寫成先發表。",
       "signals": [
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
@@ -11330,7 +11330,11 @@
         "7/15 開球日補核：U.S. Soccer 官方稿、BBC 與 ESPN 都確認 American referee Ismail Elfath 將執法 England-Argentina；Corey Parker、Kyle Atkins 為助理裁判。這是 match-operations 硬訊號，不是勝率訊號。",
         "The Independent 可讀稿寫 Tuchel 確認 Declan Rice 在賽前訓練後「ready to start」；Soren 將 Rice 從 late-fitness alarm 降級為 reported fit/ready，但正式 XI 仍等臨場。",
         "Football365 引述 Argentina 端脈絡稱 Messi、Cristian Romero、Leandro Paredes passed fit；這降低 Argentina availability panic，但 knock/疲勞仍不是可忽略項。",
-        "CBS/FanDuel 7/15 最新 odds 頁仍把 England 微幅偏熱、Argentina 沒被打成冷門；紙上市場只用來校準 public temperature，不構成投注建議。"
+        "CBS/FanDuel 7/15 最新 odds 頁仍把 England 微幅偏熱、Argentina 沒被打成冷門；紙上市場只用來校準 public temperature，不構成投注建議。",
+        "FIFA 官方 England-Argentina semifinal preview/fixtures rail 已上線；這是賽程與 team-news 監控入口，但目前未見可核驗的正式 XI。",
+        "Mercedes-Benz Stadium 官方活動頁確認 7/15 Atlanta semifinal 為 England vs Argentina；這補強場館/賽務來源，不是勝率訊號。",
+        "Yahoo Sports / Evening Standard 天氣稿指出 Mercedes-Benz Stadium 有 fully enclosed retractable roof、預期可關閉；雷雨風險更偏交通與賽務節奏，不應被誇成比賽內容確定性。",
+        "Guardian 7/14 長文把 England-Argentina rivalry 的 Falklands/Malvinas、1986/1998/2002 脈絡重新整理，並引用 Scaloni 呼籲只談足球；Soren 將其標為 public-pressure context，不當社群民調。"
       ],
       "sources": [
         {
@@ -11739,6 +11743,22 @@
           "sourceName": "CBS Sports / FanDuel",
           "fetchedAt": "2026-07-15T01:02:00Z",
           "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Yahoo Sports / Evening Standard roof and weather context",
+          "url": "https://sports.yahoo.com/articles/england-vs-argentina-weather-forecast-122250083.html",
+          "sourceName": "Yahoo Sports / Evening Standard",
+          "fetchedAt": "2026-07-15T02:32:11Z",
+          "claimType": "context/venue-weather",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Guardian rivalry and public-pressure context",
+          "url": "https://www.theguardian.com/football/2026/jul/14/england-argentina-world-cup-2026-rivalry",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-15T02:32:11Z",
+          "claimType": "context/public-pressure",
           "confidence": "medium-high"
         }
       ],
