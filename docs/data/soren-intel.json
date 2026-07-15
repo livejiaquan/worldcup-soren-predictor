@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-15T14:43:03Z",
-  "status": "Semifinal kickoff-day scout refreshed: England official availability clarified (Rice ready; Quansah suspended; Henderson injured), with AFA/BBC tactical framing and close-market context added.",
-  "headline": "England-Argentina: Tuchel 官方確認 Rice 可先發，Quansah/Henderson 缺陣；Scaloni 盯 Kane/Bellingham，市場仍只微傾 England。",
+  "generatedAt": "2026-07-15T20:46:21Z",
+  "status": "England-Argentina live watch: ESPN shows England 1-0 Argentina at 85' but not completed; no final settlement yet.",
+  "headline": "England-Argentina live watch: ESPN 85' 仍是 completed=false，Soren 只更新現場警報，不偷結算。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -11275,10 +11275,13 @@
     {
       "matchId": "m102",
       "match": "England vs Argentina",
-      "sourceType": "official match hub + official availability + tactical/rivalry context + venue/weather + public market watch",
-      "title": "England-Argentina 開球日硬訊號補強：Rice 可先發，但 Quansah 停賽、Henderson 傷缺；Argentina 明牌是先壓 Kane/Bellingham。",
-      "sorenTake": "這次不是再堆一張預測 XI，而是把真硬訊號釘牢：Tuchel 官方說 Rice ready to start，同時只有 Quansah（停賽）與 Henderson（傷）缺陣；Scaloni 在 BBC 脈絡中承認 Argentina 已針對 Kane/Bellingham 做準備。市場仍只微傾 England，不是穩膽；正式 XI 前，Messi/Romero/Paredes 仍以 reported fit/ready 追蹤，不能偷寫成滿血保證。",
+      "sourceType": "official match hub + official availability + live-score context + tactical/rivalry context + public market watch",
+      "title": "England-Argentina 85 分鐘警報：ESPN 顯示 England 1-0，但 completed=false；Soren 只升級 live-score，不提前開香檳。",
+      "sorenTake": "硬訊號現在從賽前轉成現場：ESPN 公開 scoreboard 在 85' 顯示 England 1-0 Argentina、狀態仍是 Second Half / completed=false。這代表壓力盤已經完全換邊——Argentina 必須追、England 必須守住 Kane/Bellingham 後面的二球線；但終場哨前，本站不結算晉級、不改決賽對手，只把它當 live-score context。",
       "signals": [
+        "7/15 20:45 UTC 補核：ESPN 公開 scoreboard 顯示 England 1-0 Argentina、85'、STATUS_SECOND_HALF，completed=false；這是現場比分脈絡，不是終場結果。",
+        "同一 ESPN API event 仍列 state=in、period=2；Soren 因此不更新 bracket、不結算紙上盤，也不把 Spain 的決賽對手從 W102 改名。",
+        "搜尋索引同時出現 Metro 與 Al Jazeera live rails，可作賽中追蹤入口；但 snippet/live blog 不是 final-score evidence，若與 ESPN/FIFA 終場狀態衝突，以 completed/post/final 狀態為準。",
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
         "The Guardian 賽報確認 Bellingham extra-time winner 幫 England 2-1 逆轉 Norway，進入世界盃準決賽。",
@@ -11343,6 +11346,30 @@
         "The Athletic/NYT 公開 odds 摘要仍把 England 寫成微幅熱門，但強調差距很近、雙方進球市場近乎五五波；紙上市場只能校準 public temperature，不是下注指令。"
       ],
       "sources": [
+        {
+          "label": "ESPN public scoreboard England-Argentina live state",
+          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260715",
+          "sourceName": "ESPN public scoreboard API",
+          "fetchedAt": "2026-07-15T20:46:21Z",
+          "claimType": "context/live-score",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN England-Argentina live match page",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760515",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-15T20:46:21Z",
+          "claimType": "context/live-centre",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Al Jazeera England-Argentina live blog search-indexed rail",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/7/15/england-vs-argentina-live-fifa-world-cup-2026-semifinal",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-15T20:46:21Z",
+          "claimType": "context/live-centre/search-indexed",
+          "confidence": "medium"
+        },
         {
           "label": "Soren public worldcup data",
           "url": "https://worldcup.kyasen.com/data/worldcup.json",
