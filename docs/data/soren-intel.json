@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-14T20:17:41Z",
-  "status": "Semifinal scout refreshed: France-Spain live-score context added; England-Argentina late team-news and market watch updated.",
-  "headline": "準決賽情資更新：France-Spain 只進 live-score 警報不結算；England-Argentina 進入 Rice/Messi late-call 與市場微熱監控。",
+  "generatedAt": "2026-07-15T01:02:00Z",
+  "status": "Semifinal scout refreshed: England-Argentina referee confirmed; Rice/Messi availability upgraded from late-watch to reported fit/ready, still awaiting official XI.",
+  "headline": "準決賽情資更新：England-Argentina 裁判組已確認；Rice/Messi 從 late-watch 升級為可出賽訊號，但正式先發仍等 FIFA/高可信現場頁。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -11275,9 +11275,9 @@
     {
       "matchId": "m102",
       "match": "England vs Argentina",
-      "sourceType": "official match hub + late team-news/availability + public market/venue watch",
-      "title": "England-Argentina 倒數 23 小時：FIFA match centre 已開，Rice/Messi 都還是 late-fitness watch，FanDuel 公開盤只顯示微熱不是答案。",
-      "sorenTake": "M102 的新訊號不是「誰一定先發」，而是 late-call 風險更集中：Yahoo/Standard 的隊訊把 England 端 Rice、Argentina 端 Messi knock 都放回 spotlight；FIFA match centre 已是正式比分/lineups 入口。市場面 CBS/FanDuel 顯示 England 90 分鐘略熱、Argentina 也沒被打成冷門，Soren 只拿來校準紙上溫度，不把賠率當模型。",
+      "sourceType": "official match hub + confirmed referee + reported availability + public market/venue watch",
+      "title": "England-Argentina 開球日：Elfath 裁判組落定，Rice/Messi 都有可出賽訊號；Soren 還是等正式 XI，不拿熱搜當陣容表。",
+      "sorenTake": "最新硬訊號是裁判與可用性：U.S. Soccer/BBC/ESPN 都指向 Ismail Elfath 執法，Tuchel 端的 Rice 已被 The Independent 寫成 ready to start，Argentina 端 Messi/Romero/Paredes 也有 Football365/TyC 脈絡稱 passed fit。這讓「缺席恐慌」降溫，但不等於滿血保證；正式先發仍等 FIFA/現場頁。市場仍只微傾 England，Soren 不把賠率當答案。",
       "signals": [
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
@@ -11326,7 +11326,11 @@
         "Yahoo Sports UK / Evening Standard 7/14 17:16 UTC 賽前隊訊把 England 的 Declan Rice fitness 寫成主要疑問；這延續 BBC late-call，仍不是 confirmed absence。",
         "The Standard Argentina 隊訊摘要稱 Messi 預期可出戰 England，雖然對 Switzerland 後有 knock；Soren 把它標為 reported availability watch，不寫成滿血保證。",
         "CBS Sports/FanDuel 最新公開盤面把 England 90 分鐘約 +175、Argentina +200、draw +185；只作紙上 public-market 參考，不是下注建議也不是內部模型公式。",
-        "Sports Illustrated Betting 指出 England-Argentina 盤面小幅往 Messi/衛冕軍方向移動；這表示市場分歧仍小，不能把 England 微熱解讀成穩膽。"
+        "Sports Illustrated Betting 指出 England-Argentina 盤面小幅往 Messi/衛冕軍方向移動；這表示市場分歧仍小，不能把 England 微熱解讀成穩膽。",
+        "7/15 開球日補核：U.S. Soccer 官方稿、BBC 與 ESPN 都確認 American referee Ismail Elfath 將執法 England-Argentina；Corey Parker、Kyle Atkins 為助理裁判。這是 match-operations 硬訊號，不是勝率訊號。",
+        "The Independent 可讀稿寫 Tuchel 確認 Declan Rice 在賽前訓練後「ready to start」；Soren 將 Rice 從 late-fitness alarm 降級為 reported fit/ready，但正式 XI 仍等臨場。",
+        "Football365 引述 Argentina 端脈絡稱 Messi、Cristian Romero、Leandro Paredes passed fit；這降低 Argentina availability panic，但 knock/疲勞仍不是可忽略項。",
+        "CBS/FanDuel 7/15 最新 odds 頁仍把 England 微幅偏熱、Argentina 沒被打成冷門；紙上市場只用來校準 public temperature，不構成投注建議。"
       ],
       "sources": [
         {
@@ -11688,6 +11692,54 @@
           "fetchedAt": "2026-07-14T20:17:41Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "U.S. Soccer all-American referee crew",
+          "url": "https://www.ussoccer.com/stories/2026/07/federation/all-american-referee-crew-argentina-england-fifa-world-cup-semifinal-atlanta",
+          "sourceName": "U.S. Soccer",
+          "fetchedAt": "2026-07-15T01:02:00Z",
+          "claimType": "confirmed/match-operations-referee",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Ismail Elfath referee confirmation",
+          "url": "https://www.bbc.com/sport/football/articles/c2lylenekjpo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-15T01:02:00Z",
+          "claimType": "reported/match-operations-referee",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Elfath semifinal referee report",
+          "url": "https://www.espn.com/soccer/story/_/id/49354566/american-ref-elfath-oversee-england-argentina-semifinal",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-15T01:02:00Z",
+          "claimType": "reported/match-operations-referee",
+          "confidence": "high"
+        },
+        {
+          "label": "Independent Tuchel Rice ready-to-start update",
+          "url": "https://www.independent.co.uk/sport/football/thomas-tuchel-declan-rice-injury-update-illness-england-argentina-world-cup-b3014995.html",
+          "sourceName": "The Independent",
+          "fetchedAt": "2026-07-15T01:02:00Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "Football365 Messi/Romero/Paredes fitness update",
+          "url": "https://www.football365.com/news/argentina-lionel-messi-fitness-update-world-cup-semi-final-england",
+          "sourceName": "Football365",
+          "fetchedAt": "2026-07-15T01:02:00Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "CBS Sports FanDuel latest semifinal odds",
+          "url": "https://www.cbssports.com/soccer/news/argentina-england-odds-prediction-time-2026-world-cup-semifinal-picks-best-bets/",
+          "sourceName": "CBS Sports / FanDuel",
+          "fetchedAt": "2026-07-15T01:02:00Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
