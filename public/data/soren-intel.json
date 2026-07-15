@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-15T02:32:11Z",
-  "status": "Semifinal scout refreshed: England-Argentina referee confirmed; Rice/Messi availability upgraded from late-watch to reported fit/ready, still awaiting official XI.",
-  "headline": "England-Argentina kickoff-day card refreshed with official venue, roof/weather, and rivalry-pressure context; no official XI yet.",
+  "generatedAt": "2026-07-15T14:43:03Z",
+  "status": "Semifinal kickoff-day scout refreshed: England official availability clarified (Rice ready; Quansah suspended; Henderson injured), with AFA/BBC tactical framing and close-market context added.",
+  "headline": "England-Argentina: Tuchel 官方確認 Rice 可先發，Quansah/Henderson 缺陣；Scaloni 盯 Kane/Bellingham，市場仍只微傾 England。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final。",
   "items": [
     {
@@ -11275,9 +11275,9 @@
     {
       "matchId": "m102",
       "match": "England vs Argentina",
-      "sourceType": "official match hub + venue/weather + rivalry context + confirmed referee + reported availability + public market watch",
-      "title": "England-Argentina 開球日再補核：場館/天氣與火藥味都進雷達；屋頂能降天氣變數，但 rivalry 會把每次犯規都放大。",
-      "sorenTake": "最新補核不是改答案，而是改風險地圖：Mercedes-Benz Stadium 官方頁確認 Atlanta 這場 semifinal；Yahoo/Standard 天氣稿提醒場館有可關閉屋頂，所以雷雨更像賽務/交通變數，不該被誇成草皮末日。Guardian 把 England-Argentina 的歷史火藥重新拉回台面，Scaloni 也呼籲焦點放在足球；Soren 會把它當情緒/判罰壓力，不當成模型捷徑。Elfath 裁判、Rice ready-to-start、Messi/Romero/Paredes reported fit 仍維持：正式 XI 前不把傳聞寫成先發表。",
+      "sourceType": "official match hub + official availability + tactical/rivalry context + venue/weather + public market watch",
+      "title": "England-Argentina 開球日硬訊號補強：Rice 可先發，但 Quansah 停賽、Henderson 傷缺；Argentina 明牌是先壓 Kane/Bellingham。",
+      "sorenTake": "這次不是再堆一張預測 XI，而是把真硬訊號釘牢：Tuchel 官方說 Rice ready to start，同時只有 Quansah（停賽）與 Henderson（傷）缺陣；Scaloni 在 BBC 脈絡中承認 Argentina 已針對 Kane/Bellingham 做準備。市場仍只微傾 England，不是穩膽；正式 XI 前，Messi/Romero/Paredes 仍以 reported fit/ready 追蹤，不能偷寫成滿血保證。",
       "signals": [
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
@@ -11334,7 +11334,13 @@
         "FIFA 官方 England-Argentina semifinal preview/fixtures rail 已上線；這是賽程與 team-news 監控入口，但目前未見可核驗的正式 XI。",
         "Mercedes-Benz Stadium 官方活動頁確認 7/15 Atlanta semifinal 為 England vs Argentina；這補強場館/賽務來源，不是勝率訊號。",
         "Yahoo Sports / Evening Standard 天氣稿指出 Mercedes-Benz Stadium 有 fully enclosed retractable roof、預期可關閉；雷雨風險更偏交通與賽務節奏，不應被誇成比賽內容確定性。",
-        "Guardian 7/14 長文把 England-Argentina rivalry 的 Falklands/Malvinas、1986/1998/2002 脈絡重新整理，並引用 Scaloni 呼籲只談足球；Soren 將其標為 public-pressure context，不當社群民調。"
+        "Guardian 7/14 長文把 England-Argentina rivalry 的 Falklands/Malvinas、1986/1998/2002 脈絡重新整理，並引用 Scaloni 呼籲只談足球；Soren 將其標為 public-pressure context，不當社群民調。",
+        "7/15 官方賽前記者會補強：England Football 直文確認 Tuchel 說 Declan Rice 已 ready to start；England 只有 Jarell Quansah（停賽）與 Jordan Henderson（傷）不可用，這比先前單純 Rice late-call 更接近硬名單狀態。",
+        "Sky Sports 同日 meta/導語交叉確認 England 幾乎全員可用，Quansah 停賽、Henderson 手腕傷缺，Rice 與 Nico O’Reilly 已克服疑慮；本站仍等官方 XI，不把 predicted XI 當 confirmed。",
+        "England Football 7/15 Three Lions Daily 確認比賽日流程：15:00 local / 20:00 BST 開球，球隊上午以補給與最後準備為主，再從酒店前往 Atlanta Stadium；這是官方 matchday rhythm，不是戰術祕密。",
+        "AFA 7/15 官方賽前稿確認 Argentina 今日在 Mercedes-Benz Stadium 對 England 爭決賽席位，並把 Kane/Bellingham 火力與歷史宿敵脈絡列為主要賽前敘事。",
+        "BBC 7/15 Scaloni 記者會稿指出他不想把政治與足球混在一起，並表示已針對 Harry Kane 與 Jude Bellingham 做準備；這是 Argentina 官方口徑的壓力管理與防守焦點，不是社群民調。",
+        "The Athletic/NYT 公開 odds 摘要仍把 England 寫成微幅熱門，但強調差距很近、雙方進球市場近乎五五波；紙上市場只能校準 public temperature，不是下注指令。"
       ],
       "sources": [
         {
@@ -11759,6 +11765,54 @@
           "sourceName": "The Guardian",
           "fetchedAt": "2026-07-15T02:32:11Z",
           "claimType": "context/public-pressure",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "England Football Tuchel Argentina press conference",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/14/thomas-tuchel-argentina-world-cup-press-conference-20261507",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-15T14:43:03Z",
+          "claimType": "confirmed/official-team-availability",
+          "confidence": "high"
+        },
+        {
+          "label": "Sky Sports England squad availability update",
+          "url": "https://www.skysports.com/football/news/11095/13563231/england-vs-argentina-declan-rice-fit-for-world-cup-semi-final-as-thomas-tuchels-squad-issues-begin-to-ease",
+          "sourceName": "Sky Sports",
+          "fetchedAt": "2026-07-15T14:43:03Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "England Football matchday daily briefing",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/15/england-men-world-cup-2026-daily-briefing",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-15T14:43:03Z",
+          "claimType": "confirmed/official-team-matchday",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA Argentina-England matchday preview",
+          "url": "https://www.afa.com.ar/es/posts/argentina-e-inglaterra-frente-a-frente-por-un-lugar-en-la-final-del-mundial-2026",
+          "sourceName": "AFA",
+          "fetchedAt": "2026-07-15T14:43:03Z",
+          "claimType": "confirmed/official-team-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Scaloni England semifinal press conference",
+          "url": "https://www.bbc.com/sport/football/articles/cn8q8n6973xo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-15T14:43:03Z",
+          "claimType": "reported/tactical-rivalry-context",
+          "confidence": "high"
+        },
+        {
+          "label": "The Athletic England-Argentina semifinal odds",
+          "url": "https://www.nytimes.com/athletic/7439554/2026/07/14/england-argentina-world-cup-semifinal-odds/",
+          "sourceName": "The Athletic / NYT",
+          "fetchedAt": "2026-07-15T14:43:03Z",
+          "claimType": "odds-reference",
           "confidence": "medium-high"
         }
       ],
