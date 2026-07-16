@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-16T09:05:27Z",
+  "generatedAt": "2026-07-16T15:14:52Z",
   "status": "final-weekend-scouting-refresh",
-  "headline": "季軍戰與決賽進入 60–82 小時倒數：公開盤、官方訓練與開球窗天氣已刷新。",
+  "headline": "季軍戰與決賽進入最後週末雷達：官方 fixture、開球窗天氣、公開盤與 postmatch 來源已去重更新。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -9,561 +9,46 @@
       "match": "England vs Argentina",
       "sourceType": "confirmed final + postmatch context",
       "title": "Argentina 2–1 England 已終場：Lautaro 補時把英格蘭送去 Miami，決賽變成 Spain vs Argentina。",
-      "sorenTake": "這場不能再停在 86 分鐘 1–1：NPR 與 Al Jazeera 都報導 Argentina 2–1 擊敗 England、晉級對 Spain 的決賽。Soren 的公開狀態同步切換：England 去 Miami 和 France 踢季軍戰，Argentina 進 New York/New Jersey 決賽。",
+      "sorenTake": "這張卡已收斂成 final archive：Argentina 2–1 擊敗 England，England 轉往 Miami 對 France 踢季軍戰，Argentina 去 New York/New Jersey 對 Spain 爭冠。舊的開賽前隊訊只保留為背景，不再放在公開主訊號裡假裝還在等先發。",
       "signals": [
         "NPR 報導 Argentina 2–1 擊敗 England，將在週日決賽對 Spain；Lautaro Martínez 的第二球是關鍵終場脈絡。",
         "Al Jazeera 同步報導 Argentina 2–1 逆轉 England 晉級 2026 World Cup final，並指出 England 接下來將在 Miami 對 France 踢第三名戰。",
-        "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
-        "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
-        "The Guardian 賽報確認 Bellingham extra-time winner 幫 England 2-1 逆轉 Norway，進入世界盃準決賽。",
-        "Al Jazeera 與 Sky Sports 均確認 Argentina 3-1（AET）淘汰 Switzerland，準決賽將對 England；Sky meta 指出 Mac Allister、Julian Alvarez、Lautaro Martinez 進球。",
-        "BBC 分析把 Bellingham 近期狀態放進 Messi/Maradona/Ronaldo 級別敘事；這是媒體敘事熱度，不等於保證英格蘭勝率。",
-        "Atlanta FWC26 官方賽程頁列 7/15 3:00PM ET semi-final；結合 Argentina 已晉級與 England Football，可實名化為 England-Argentina。",
-        "NWS Atlanta 目前 7 日預報有陣雨/雷陣雨脈絡；Mercedes-Benz Stadium 屋頂與室內條件可能降低天氣干擾，但進出場和賽前節奏仍需觀察。",
-        "FIFA 已有 England v Argentina 官方半決賽 match hub；結合 England Football 官方 fixture，公開端可直接寫 England vs Argentina，不再使用路線佔位。",
-        "AFA 官方稿顯示 Scaloni 的 Argentina 已在 Inter Miami 基地訓練後前往 Atlanta；這是準備節奏/旅程脈絡，不是陣容確認。",
-        "BBC Sport 報導 Tuchel 說 Declan Rice 在對 Norway 前三天大多臥床病休，雖然先發但半場被換下；對 Argentina 前需列為 midfield availability/fitness watch。",
-        "FOX Sports 與 France 24 等主流 preview 把 England-Argentina 放進 2002 後首次世界盃交手、Maradona/Messi/Bellingham 歷史敘事；這是情緒溫度，不等於代表性社群民意。",
-        "BBC 四強總覽可讀全文：England-Argentina 被放進 1986/1998/2002 歷史對戰與 Bellingham vs Messi 敘事，並確認 Atlanta Stadium、週三 20:00 BST。",
-        "BBC 另開 England semifinal XI selector，顯示英格蘭公開討論已轉向 Tuchel 該如何排首發；這是 public lineup-context，不等於確認先發。",
-        "NWS Atlanta 週三預報更新為高溫約 87°F、午後有雷陣雨機率；Mercedes-Benz Stadium 內場可能降低比賽干擾，但進出場、熱身與賽前節奏仍列 weather watch。",
-        "FIFA England-Argentina 官方 preview/match hub 已可連線；頁面本身是官方賽前中心，但動態內容仍需臨場再查先發。",
-        "AFA 7/12 官方稿把 Argentina-England 寫成 Messi 首次在世界盃淘汰賽面對這個歷史宿敵，並確認 Atlanta / Mercedes-Benz Stadium 場景。",
-        "AP 7/12 四強總覽把 France、Spain、England、Argentina 定位為四支前世界冠軍與世界排名前四隊，England-Argentina 是情緒與歷史壓力最高的一線。",
-        "NY Post/Bet365 公開盤面顯示 France 仍是冠軍熱門，England/Spain 次之、Argentina 盤面最長；只作紙上市場溫度，不構成下注建議。",
-        "NWS Atlanta 點位更新顯示週三高溫約 86°F 且午後/晚間有 showers likely 脈絡；Mercedes-Benz Stadium 內場可控，但進出場與熱身節奏仍需 weather watch。",
-        "England Football 7/12 對手檔案確認 England 將在 Atlanta 四強對 Argentina，並寫明雙方 21 年未交手、Argentina 於 90 分鐘 1-1 後加時 3-1 淘汰 Switzerland。",
-        "England Football Lions Den 官方稿引用 Reece James 稱四強之旅是「what dreams are made of」，並重申 Tuchel 球隊逆轉 Norway 後準備面對 Argentina；這是 team-camp mood，不是陣容確認。",
-        "The Standard 可讀 meta/內文摘要繼續把 Declan Rice 半場被換與賽前病況列為 team-news 焦點；Tuchel 稱換人是戰術，但公開端仍應保留 midfield fitness watch。",
-        "BBC 7/12 可讀全文確認 Tuchel 說 Declan Rice 在 Norway 戰前三天大多因 sickness 臥床，雖然先發但半場被換下；對 Argentina 前仍是 midfield fitness watch。",
-        "NY Post/bet365 7/12 公開盤面顯示 England vs Argentina 三路盤 England +155、Argentina +200、draw +200；同篇把冠軍盤列 France +150、Spain/England +333、Argentina +400，僅供紙上市場溫度。",
-        "Guardian 7/13 live build-up 引述 Reece James 準備四強與 Tuchel 球隊情緒，和 England Football 官方 Lions Den 一致屬 team-camp mood；仍不是 confirmed XI。",
-        "BBC Sport 7/13 可讀全文確認 England 作為 Atlanta 指定主隊將穿全白，Argentina 將穿 navy away strip、黑短褲與黑襪；這是 match-operations/視覺識別訊號，不是戰術或勝率。",
-        "FOX Sports 7/13 odds 總覽把 England-Argentina 寫成 England to advance -124、Argentina +106，90 分鐘盤 England +165、draw +190、Argentina +200；只作紙上市場溫度，不構成下注建議。",
-        "CBS Sports/FanDuel 可讀頁面亦列 England 90 分鐘 +165、Argentina +200、draw +190、England to advance -122、Argentina +100；與 FOX 同向確認 public market 微傾 England，但差距不大。",
-        "FIFA match centre 可連線，確認 M102 England-Argentina 為 7/15 Atlanta Stadium 準決賽官方比分/lineups/live updates 入口；正式名單未出前不把預測先發寫成 confirmed XI。",
-        "AFA 官方稿確認 Argentina 在 Kansas 完成最後訓練，內容包含控球、反搶恢復、進攻推進與小場對抗，隨後啟程前往 Atlanta 準備對 England；這是 official team logistics/training 訊號。",
-        "ESPN 7/14 England-Argentina 賽前頁提供 how to watch、kick-off、referee 與 line-ups 入口；可作 injury/predicted line-ups 的高可信媒體 rail，但正式陣容仍需等 match centre。",
-        "Al Jazeera 7/13 預覽確認 Argentina 與 England 將第六次在世界盃交手、地點 Atlanta；屬可信賽前脈絡，不等於社群情緒結論。",
-        "BBC Sport 7/14 直接可讀稿確認 England 將晚點決定 Declan Rice 是否能先發對 Argentina；Rice 病後狀態明顯改善但尚未完全恢復，這比單純「可出賽」更接近真風險。",
-        "England Football 7/13 官方 Pickford 賽前稿確認他在 Kansas City 媒體日談到 Argentina/Messi；此為官方 team-camp mood 與心理壓力脈絡，不是 confirmed XI。",
-        "AFA 官方 7/12 長文把 Argentina-England 描述為 Messi 首次在世界盃面對 England、Mercedes-Benz Stadium 16:00 當地時間開踢的歷史半決賽；本站採作官方敘事，不把情緒包裝當戰術事實。",
-        "Opta Analyst 7/14 賽前模型稿寫明兩隊幾乎難分，England 在 supercomputer 模擬中 52.9% 晉級；這是公開基準/市場溫度參考，不替代 Soren 內部判讀。",
-        "Mercedes-Benz Stadium 官方活動頁確認 7/15 England vs Argentina 準決賽；用作 Atlanta 場館/營運 anchor，避免複製錯誤時區日期。",
-        "England Football 7/14 官方 Three Lions Daily 確認 England 在 Kansas City 的 Swope Soccer Village 進行對 Argentina 前最後訓練，之後恢復、用餐並飛往 Atlanta；這是官方轉場/備戰節奏，不是 confirmed XI。",
-        "同一 England Football daily briefing 把 7/15 對 Argentina 稱為 tomorrow’s semi-final in Atlanta，補強 m102 時區/城市 anchor；正式名單仍等 FIFA/高可信 match centre。",
-        "England Football 7/14 Lions Den 稿確認 Noni Madueke 在 Argentina 準決賽前談到「other teams will be more worried about us」，Eze 也談到半場替換 Rice 後的情緒與改進空間；這是官方 team-camp mood，不是 confirmed XI。",
-        "Al Jazeera/Reuters 7/14 稿確認阿根廷退伍軍人團體呼籲球迷把焦點放在足球，並把 England-Argentina 描述為本屆準決賽的高情緒 rivalry；公開端可列壓力/安全敘事，但不能把它變成球場民意結論。",
-        "同篇提到 Argentina-England 票價三天內上漲 34% 的公開需求訊號；Soren 只把它當 public-interest heat，不把票價當勝率或主客場優勢公式。",
-        "Sports Mole Argentina 傷停頁 7/13 更新：Messi/Romero 被列為關注點但 Argentina 無停賽；搭配先前 Rice late-call，m102 仍是「等官方 live centre/先發」的雙向 availability watch。",
-        "FIFA match centre 搜尋/直連確認 M102 England-Argentina 官方比分、lineups、live updates 入口已開；正式先發仍等該入口或高可信現場頁落地。",
-        "Yahoo Sports UK / Evening Standard 7/14 17:16 UTC 賽前隊訊把 England 的 Declan Rice fitness 寫成主要疑問；這延續 BBC late-call，仍不是 confirmed absence。",
-        "The Standard Argentina 隊訊摘要稱 Messi 預期可出戰 England，雖然對 Switzerland 後有 knock；Soren 把它標為 reported availability watch，不寫成滿血保證。",
-        "CBS Sports/FanDuel 最新公開盤面把 England 90 分鐘約 +175、Argentina +200、draw +185；只作紙上 public-market 參考，不是下注建議也不是內部模型公式。",
-        "Sports Illustrated Betting 指出 England-Argentina 盤面小幅往 Messi/衛冕軍方向移動；這表示市場分歧仍小，不能把 England 微熱解讀成穩膽。",
-        "7/15 開球日補核：U.S. Soccer 官方稿、BBC 與 ESPN 都確認 American referee Ismail Elfath 將執法 England-Argentina；Corey Parker、Kyle Atkins 為助理裁判。這是 match-operations 硬訊號，不是勝率訊號。",
-        "The Independent 可讀稿寫 Tuchel 確認 Declan Rice 在賽前訓練後「ready to start」；Soren 將 Rice 從 late-fitness alarm 降級為 reported fit/ready，但正式 XI 仍等臨場。",
-        "Football365 引述 Argentina 端脈絡稱 Messi、Cristian Romero、Leandro Paredes passed fit；這降低 Argentina availability panic，但 knock/疲勞仍不是可忽略項。",
-        "CBS/FanDuel 7/15 最新 odds 頁仍把 England 微幅偏熱、Argentina 沒被打成冷門；紙上市場只用來校準 public temperature，不構成投注建議。",
-        "FIFA 官方 England-Argentina semifinal preview/fixtures rail 已上線；這是賽程與 team-news 監控入口，但目前未見可核驗的正式 XI。",
-        "Mercedes-Benz Stadium 官方活動頁確認 7/15 Atlanta semifinal 為 England vs Argentina；這補強場館/賽務來源，不是勝率訊號。",
-        "Yahoo Sports / Evening Standard 天氣稿指出 Mercedes-Benz Stadium 有 fully enclosed retractable roof、預期可關閉；雷雨風險更偏交通與賽務節奏，不應被誇成比賽內容確定性。",
-        "Guardian 7/14 長文把 England-Argentina rivalry 的 Falklands/Malvinas、1986/1998/2002 脈絡重新整理，並引用 Scaloni 呼籲只談足球；Soren 將其標為 public-pressure context，不當社群民調。",
-        "7/15 官方賽前記者會補強：England Football 直文確認 Tuchel 說 Declan Rice 已 ready to start；England 只有 Jarell Quansah（停賽）與 Jordan Henderson（傷）不可用，這比先前單純 Rice late-call 更接近硬名單狀態。",
-        "Sky Sports 同日 meta/導語交叉確認 England 幾乎全員可用，Quansah 停賽、Henderson 手腕傷缺，Rice 與 Nico O’Reilly 已克服疑慮；本站仍等官方 XI，不把 predicted XI 當 confirmed。",
-        "England Football 7/15 Three Lions Daily 確認比賽日流程：15:00 local / 20:00 BST 開球，球隊上午以補給與最後準備為主，再從酒店前往 Atlanta Stadium；這是官方 matchday rhythm，不是戰術祕密。",
-        "AFA 7/15 官方賽前稿確認 Argentina 今日在 Mercedes-Benz Stadium 對 England 爭決賽席位，並把 Kane/Bellingham 火力與歷史宿敵脈絡列為主要賽前敘事。",
-        "BBC 7/15 Scaloni 記者會稿指出他不想把政治與足球混在一起，並表示已針對 Harry Kane 與 Jude Bellingham 做準備；這是 Argentina 官方口徑的壓力管理與防守焦點，不是社群民調。",
-        "The Athletic/NYT 公開 odds 摘要仍把 England 寫成微幅熱門，但強調差距很近、雙方進球市場近乎五五波；紙上市場只能校準 public temperature，不是下注指令。"
+        "England Football 賽後稿引用 Tuchel 稱球隊對 Argentina「gave everything」；這是轉入季軍戰前的體能/情緒消耗線索。",
+        "AFA 官方頁面把 Argentina 的任務切到「España será el último desafío」：週日 16:00 New Jersey 對 Spain 爭第四顆星。",
+        "本地 worldcup.json 已確認 m102 狀態 finished、England 1–2 Argentina；m103/m104 也已實名化為 France-England 與 Spain-Argentina。"
       ],
       "sources": [
         {
           "label": "NPR Argentina-England semifinal report",
           "url": "https://www.npr.org/2026/07/15/nx-s1-5893895/2026-world-cup-fifa-argentina-england-semifinal",
           "sourceName": "NPR",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "confirmed/final-result",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "confirmed/postmatch-context",
           "confidence": "high"
         },
         {
           "label": "Al Jazeera Argentina comeback report",
           "url": "https://www.aljazeera.com/sports/2026/7/15/argentina-stun-england-in-2-1-comeback-win-to-reach-2026-world-cup-final",
           "sourceName": "Al Jazeera",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "confirmed/final-result",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "confirmed/postmatch-context",
           "confidence": "high"
         },
         {
-          "label": "Soren public worldcup data",
-          "url": "https://worldcup.kyasen.com/data/worldcup.json",
-          "sourceName": "Soren public data",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "confirmed/bracket-actualized",
-          "confidence": "high"
-        },
-        {
-          "label": "England Football semi-final fixture details",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/11/england-fixture-details-knockout-stage-20261107",
+          "label": "England Football Tuchel postmatch reaction",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/15/thomas-tuchel-england-v-argentina-world-cup-semi-final-match-reaction-20261507",
           "sourceName": "England Football",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "confirmed/official-team",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "confirmed/team-reaction",
           "confidence": "high"
         },
         {
-          "label": "Guardian Norway-England match report",
-          "url": "https://www.theguardian.com/football/2026/jul/12/norway-england-world-cup-quarter-final-match-report",
-          "sourceName": "The Guardian",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "reported/recent-form",
-          "confidence": "high"
-        },
-        {
-          "label": "Al Jazeera Argentina-Switzerland report",
-          "url": "https://www.aljazeera.com/sports/2026/7/12/argentina-defeat-switzerland-to-set-up-england-semifinal-at-world-cup-2026",
-          "sourceName": "Al Jazeera",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "reported/recent-form",
-          "confidence": "high"
-        },
-        {
-          "label": "Sky Sports Argentina-Switzerland report",
-          "url": "https://www.skysports.com/football/news/11095/13561909/world-cup-2026-argentina-xx-switzerland",
-          "sourceName": "Sky Sports",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "reported/recent-form",
-          "confidence": "high"
-        },
-        {
-          "label": "BBC Bellingham analysis",
-          "url": "https://www.bbc.com/sport/football/articles/cy5v6544ypxo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "reported/tactical-narrative",
-          "confidence": "high"
-        },
-        {
-          "label": "Atlanta FWC26 match schedule",
-          "url": "https://atlantafwc26.com/match-schedule/",
-          "sourceName": "Atlanta FWC26",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "confirmed/venue-schedule",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "NWS Atlanta point forecast",
-          "url": "https://forecast.weather.gov/MapClick.php?lat=33.76&lon=-84.43",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "context/weather-watch",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "The Athletic England-Argentina odds reference",
-          "url": "https://www.nytimes.com/athletic/7439554/2026/07/12/england-argentina-world-cup-semifinal-odds/",
-          "sourceName": "The Athletic / NYT",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "odds-reference/search-indexed",
-          "confidence": "medium"
-        },
-        {
-          "label": "FIFA England-Argentina official preview",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/england-v-argentina-live-stream-team-news-tickets-and-more",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-13T00:28:55Z",
-          "claimType": "confirmed/official-preview",
-          "confidence": "high"
-        },
-        {
-          "label": "AFA Argentina arrive in Atlanta",
-          "url": "https://www.afa.com.ar/es/posts/el-equipo-de-lionel-scaloni-arribo-a-atlanta",
+          "label": "AFA Argentina final opponent official note",
+          "url": "https://www.afa.com.ar/es/posts/argentina-va-por-la-copa-del-mundo-espana-sera-el-ultimo-desafio-el-proximo-domingo-a-las-16-en-nueva-jersey",
           "sourceName": "AFA",
-          "fetchedAt": "2026-07-12T12:25:00Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "confirmed/official-team-context",
           "confidence": "high"
-        },
-        {
-          "label": "BBC Declan Rice illness watch",
-          "url": "https://www.bbc.com/sport/football/articles/cpd3wv3v1eeo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-12T12:25:00Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "FOX England-Argentina semi-final preview",
-          "url": "https://www.foxsports.com/stories/soccer/england-vs-argentina-confirmed-semifinals-heres-what-know",
-          "sourceName": "FOX Sports",
-          "fetchedAt": "2026-07-12T12:25:00Z",
-          "claimType": "reported/rivalry-context",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "BBC semifinal storylines",
-          "url": "https://www.bbc.com/sport/football/articles/cd6ed5x95ygo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-12T18:22:01Z",
-          "claimType": "reported/rivalry-tactical-context",
-          "confidence": "high"
-        },
-        {
-          "label": "BBC England semifinal XI selector",
-          "url": "https://www.bbc.com/sport/football/articles/cz75x4jgddpo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-12T18:22:01Z",
-          "claimType": "reported/lineup-public-context",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "NWS Atlanta point forecast update",
-          "url": "https://forecast.weather.gov/MapClick.php?lat=33.749&lon=-84.388",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-12T18:22:01Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "AFA Argentina-England historic semifinal preview",
-          "url": "https://www.afa.com.ar/es/posts/paren-el-mundo-argentina-e-inglaterra-frente-a-frente-en-una-semifinal-historica-el-partido-que-el-destino-le-debia-a-messi",
-          "sourceName": "AFA",
-          "fetchedAt": "2026-07-14T01:44:58Z",
-          "claimType": "confirmed/official-team-narrative",
-          "confidence": "high"
-        },
-        {
-          "label": "AP World Cup semifinal preview",
-          "url": "https://apnews.com/article/world-cup-semifinals-preview-messi-d271d7d89fe3384614357258687686a0",
-          "sourceName": "AP News",
-          "fetchedAt": "2026-07-13T00:28:55Z",
-          "claimType": "reported/rivalry-tactical-context",
-          "confidence": "high"
-        },
-        {
-          "label": "NY Post semifinal futures odds reference",
-          "url": "https://nypost.com/2026/07/12/betting/2026-world-cup-semifinal-odds-argentina-is-a-longshot-to-repeat-as-champion/",
-          "sourceName": "New York Post / bet365",
-          "fetchedAt": "2026-07-13T00:28:55Z",
-          "claimType": "odds-reference",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "NWS Atlanta point forecast update",
-          "url": "https://forecast.weather.gov/MapClick.php?lat=33.7554&lon=-84.4008",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-13T00:28:55Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "England Football Argentina opponent profile",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/12/england-semi-final-opponents-argentina-profile-20261107",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-13T06:46:20Z",
-          "claimType": "confirmed/official-team-opponent-profile",
-          "confidence": "high"
-        },
-        {
-          "label": "England Football Reece James Lions Den",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/12/djed-spence-reece-james-lions-den-episode-19-20261307",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-13T06:46:20Z",
-          "claimType": "confirmed/official-team-camp-mood",
-          "confidence": "high"
-        },
-        {
-          "label": "The Standard England-Argentina team news preview",
-          "url": "https://www.standard.co.uk/sport/football/england-vs-argentina-prediction-kick-off-time-tv-live-stream-team-news-latest-h2h-results-odds-world-cup-2026-preview-b1289715.html",
-          "sourceName": "The Standard",
-          "fetchedAt": "2026-07-13T06:46:20Z",
-          "claimType": "reported/availability-preview",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "BBC Declan Rice illness full report",
-          "url": "https://www.bbc.co.uk/sport/football/articles/cpd3wv3v1eeo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-13T12:51:10Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "Guardian World Cup semifinal live build-up",
-          "url": "https://www.theguardian.com/football/live/2026/jul/13/world-cup-2026-buildup-to-blockbuster-semi-finals-infantino-hints-at-64-team-expansion-live",
-          "sourceName": "The Guardian",
-          "fetchedAt": "2026-07-13T12:51:10Z",
-          "claimType": "reported/team-camp-build-up",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "BBC England-Argentina kit confirmation",
-          "url": "https://www.bbc.com/sport/football/articles/czx5v2p7qkgo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-13T19:00:39Z",
-          "claimType": "reported/match-operations-kit",
-          "confidence": "high"
-        },
-        {
-          "label": "FOX Sports World Cup semifinal odds overview",
-          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-which-nations-favored-reach-semifinals",
-          "sourceName": "FOX Sports",
-          "fetchedAt": "2026-07-13T19:00:39Z",
-          "claimType": "odds-reference",
-          "confidence": "high"
-        },
-        {
-          "label": "CBS/FanDuel Argentina-England odds reference",
-          "url": "https://www.cbssports.com/soccer/news/argentina-england-odds-prediction-time-2026-world-cup-semifinal-picks/",
-          "sourceName": "CBS Sports / FanDuel",
-          "fetchedAt": "2026-07-13T19:00:39Z",
-          "claimType": "odds-reference",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA England-Argentina match centre",
-          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289290/400021540",
-          "sourceName": "FIFA",
-          "claimType": "confirmed/official-live-centre",
-          "confidence": "high",
-          "fetchedAt": "2026-07-14T01:39:00Z"
-        },
-        {
-          "label": "AFA Argentina final Kansas practice and Atlanta departure",
-          "url": "https://www.afa.com.ar/es/posts/ultima-practica-en-kansas-y-partida-hacia-atlanta",
-          "sourceName": "AFA",
-          "claimType": "confirmed/official-team-training",
-          "confidence": "high",
-          "fetchedAt": "2026-07-14T01:39:00Z"
-        },
-        {
-          "label": "ESPN England-Argentina semifinal guide",
-          "url": "https://www.espn.com/soccer/story/_/id/49349303/england-vs-argentina-fifa-world-cup-2026-tv-channel-how-watch-kick-live-stream-injury-predicted-line-ups",
-          "sourceName": "ESPN",
-          "claimType": "reported/lineup-availability-preview",
-          "confidence": "medium-high",
-          "fetchedAt": "2026-07-14T01:39:00Z"
-        },
-        {
-          "label": "Al Jazeera England-Argentina semifinal preview",
-          "url": "https://www.aljazeera.com/sports/2026/7/13/argentina-england-fifa-world-cup-semifinal-prediction-messi-kane-venue",
-          "sourceName": "Al Jazeera",
-          "claimType": "reported/tactical-history-preview",
-          "confidence": "medium-high",
-          "fetchedAt": "2026-07-14T01:39:00Z"
-        },
-        {
-          "label": "BBC Rice late-call update",
-          "url": "https://www.bbc.com/sport/football/articles/ce8m996g9g1o",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-14T01:44:58Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "England Football Pickford pre-Argentina presser",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/13/jordan-pickford-pre-argentina-presser-20261307",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-14T01:44:58Z",
-          "claimType": "confirmed/official-team-camp-mood",
-          "confidence": "high"
-        },
-        {
-          "label": "Opta Analyst England-Argentina preview",
-          "url": "https://theanalyst.com/articles/england-vs-argentina-prediction-world-cup-2026-match-preview",
-          "sourceName": "Opta Analyst",
-          "fetchedAt": "2026-07-14T01:44:58Z",
-          "claimType": "reported/tactical-model-preview",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Mercedes-Benz Stadium semifinal event page",
-          "url": "https://www.mercedesbenzstadium.com/events/fifa-world-cup-26-tm---semi-final",
-          "sourceName": "Mercedes-Benz Stadium",
-          "fetchedAt": "2026-07-14T01:44:58Z",
-          "claimType": "confirmed/venue-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "England Football Three Lions Daily final training",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/14/england-men-world-cup-2026-daily-briefing",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-14T07:53:15Z",
-          "claimType": "confirmed/official-team-training",
-          "confidence": "high"
-        },
-        {
-          "label": "England Football Madueke Lions Den Argentina build-up",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/14/bukayo-saka-eberechi-eze-noni-madueke-lions-den-20261407",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-14T14:09:06Z",
-          "claimType": "confirmed/official-team-camp-mood",
-          "confidence": "high"
-        },
-        {
-          "label": "Al Jazeera/Reuters Argentina war vets England semifinal focus",
-          "url": "https://www.aljazeera.com/sports/2026/7/14/argentina-war-vets-urge-focus-on-football-for-england-world-cup-semifinal",
-          "sourceName": "Al Jazeera / Reuters",
-          "fetchedAt": "2026-07-14T14:09:06Z",
-          "claimType": "reported/rivalry-security-public-interest",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Sports Mole Argentina injury suspension list vs England",
-          "url": "https://www.sportsmole.co.uk/football/argentina/injury-news/injuries-and-suspensions/messi-romero-latest-argentina-injury-suspension-list-vs-england_601110.html",
-          "sourceName": "Sports Mole",
-          "fetchedAt": "2026-07-14T14:09:06Z",
-          "claimType": "reported/availability-suspension-watch",
-          "confidence": "medium"
-        },
-        {
-          "label": "FIFA England-Argentina match centre",
-          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289290/400021540?gender=2&date=2026-07-15",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-14T20:17:41Z",
-          "claimType": "confirmed/official-live-centre",
-          "confidence": "high"
-        },
-        {
-          "label": "Yahoo Sports UK England XI team news",
-          "url": "https://uk.sports.yahoo.com/news/england-xi-vs-argentina-confirmed-064857130.html",
-          "sourceName": "Yahoo Sports UK / Evening Standard",
-          "fetchedAt": "2026-07-14T20:17:41Z",
-          "claimType": "reported/availability-expected-xi",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "The Standard Argentina XI team news",
-          "url": "https://www.standard.co.uk/sport/football/argentina-xi-vs-england-confirmed-team-news-predicted-lineup-injury-latest-world-cup-2026-b1289723.html",
-          "sourceName": "The Standard",
-          "fetchedAt": "2026-07-14T20:17:41Z",
-          "claimType": "reported/availability-expected-xi",
-          "confidence": "medium"
-        },
-        {
-          "label": "CBS Sports FanDuel England-Argentina odds",
-          "url": "https://www.cbssports.com/soccer/news/england-argentina-odds-prediction-time-2026-world-cup-semifinal-picks/",
-          "sourceName": "CBS Sports / FanDuel",
-          "fetchedAt": "2026-07-14T20:17:41Z",
-          "claimType": "odds-reference",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Sports Illustrated England-Argentina odds shift",
-          "url": "https://www.si.com/betting/england-vs-argentina-odds-make-small-shift-towards-lionel-messi-and-defending-champs",
-          "sourceName": "Sports Illustrated Betting",
-          "fetchedAt": "2026-07-14T20:17:41Z",
-          "claimType": "odds-reference",
-          "confidence": "medium"
-        },
-        {
-          "label": "U.S. Soccer all-American referee crew",
-          "url": "https://www.ussoccer.com/stories/2026/07/federation/all-american-referee-crew-argentina-england-fifa-world-cup-semifinal-atlanta",
-          "sourceName": "U.S. Soccer",
-          "fetchedAt": "2026-07-15T01:02:00Z",
-          "claimType": "confirmed/match-operations-referee",
-          "confidence": "high"
-        },
-        {
-          "label": "BBC Ismail Elfath referee confirmation",
-          "url": "https://www.bbc.com/sport/football/articles/c2lylenekjpo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-15T01:02:00Z",
-          "claimType": "reported/match-operations-referee",
-          "confidence": "high"
-        },
-        {
-          "label": "ESPN Elfath semifinal referee report",
-          "url": "https://www.espn.com/soccer/story/_/id/49354566/american-ref-elfath-oversee-england-argentina-semifinal",
-          "sourceName": "ESPN",
-          "fetchedAt": "2026-07-15T01:02:00Z",
-          "claimType": "reported/match-operations-referee",
-          "confidence": "high"
-        },
-        {
-          "label": "Independent Tuchel Rice ready-to-start update",
-          "url": "https://www.independent.co.uk/sport/football/thomas-tuchel-declan-rice-injury-update-illness-england-argentina-world-cup-b3014995.html",
-          "sourceName": "The Independent",
-          "fetchedAt": "2026-07-15T01:02:00Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "Football365 Messi/Romero/Paredes fitness update",
-          "url": "https://www.football365.com/news/argentina-lionel-messi-fitness-update-world-cup-semi-final-england",
-          "sourceName": "Football365",
-          "fetchedAt": "2026-07-15T01:02:00Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "CBS Sports FanDuel latest semifinal odds",
-          "url": "https://www.cbssports.com/soccer/news/argentina-england-odds-prediction-time-2026-world-cup-semifinal-picks-best-bets/",
-          "sourceName": "CBS Sports / FanDuel",
-          "fetchedAt": "2026-07-15T01:02:00Z",
-          "claimType": "odds-reference",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Yahoo Sports / Evening Standard roof and weather context",
-          "url": "https://sports.yahoo.com/articles/england-vs-argentina-weather-forecast-122250083.html",
-          "sourceName": "Yahoo Sports / Evening Standard",
-          "fetchedAt": "2026-07-15T02:32:11Z",
-          "claimType": "context/venue-weather",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Guardian rivalry and public-pressure context",
-          "url": "https://www.theguardian.com/football/2026/jul/14/england-argentina-world-cup-2026-rivalry",
-          "sourceName": "The Guardian",
-          "fetchedAt": "2026-07-15T02:32:11Z",
-          "claimType": "context/public-pressure",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "England Football Tuchel Argentina press conference",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/14/thomas-tuchel-argentina-world-cup-press-conference-20261507",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-15T14:43:03Z",
-          "claimType": "confirmed/official-team-availability",
-          "confidence": "high"
-        },
-        {
-          "label": "Sky Sports England squad availability update",
-          "url": "https://www.skysports.com/football/news/11095/13563231/england-vs-argentina-declan-rice-fit-for-world-cup-semi-final-as-thomas-tuchels-squad-issues-begin-to-ease",
-          "sourceName": "Sky Sports",
-          "fetchedAt": "2026-07-15T14:43:03Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "England Football matchday daily briefing",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/15/england-men-world-cup-2026-daily-briefing",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-15T14:43:03Z",
-          "claimType": "confirmed/official-team-matchday",
-          "confidence": "high"
-        },
-        {
-          "label": "AFA Argentina-England matchday preview",
-          "url": "https://www.afa.com.ar/es/posts/argentina-e-inglaterra-frente-a-frente-por-un-lugar-en-la-final-del-mundial-2026",
-          "sourceName": "AFA",
-          "fetchedAt": "2026-07-15T14:43:03Z",
-          "claimType": "confirmed/official-team-preview",
-          "confidence": "high"
-        },
-        {
-          "label": "BBC Scaloni England semifinal press conference",
-          "url": "https://www.bbc.com/sport/football/articles/cn8q8n6973xo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-15T14:43:03Z",
-          "claimType": "reported/tactical-rivalry-context",
-          "confidence": "high"
-        },
-        {
-          "label": "The Athletic England-Argentina semifinal odds",
-          "url": "https://www.nytimes.com/athletic/7439554/2026/07/14/england-argentina-world-cup-semifinal-odds/",
-          "sourceName": "The Athletic / NYT",
-          "fetchedAt": "2026-07-15T14:43:03Z",
-          "claimType": "odds-reference",
-          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -571,32 +56,45 @@
     {
       "matchId": "m103",
       "match": "France vs England",
-      "sourceType": "third-place match + post-semi management/weather/market watch",
-      "title": "France–England 季軍戰：Tuchel 續航、Deschamps 告別、Mbappé 金靴線與 Miami 濕熱同場開打。",
-      "sorenTake": "這場仍不是垃圾時間：BBC 最新稿寫明 Tuchel 仍獲 FA 支持，England 若贏會拿到 1966 後男子世界盃最佳名次；France 這邊則是 Deschamps 告別戰與 Mbappé 金靴線。FOX/FanDuel 盤面仍給 France 讓位，但 Miami 開球窗 90°F、雷陣雨約 38% 才是會把節奏切碎的硬變數。",
+      "sourceType": "third-place match + official fixture/weather/market/rotation watch",
+      "title": "France–England 季軍戰刷新：FIFA bronze final hub 已開，Miami 90°F＋雷雨 38%，rotation 問題比口號更硬。",
+      "sorenTake": "這場仍不是垃圾時間：FIFA 官方 bronze-final hub / match centre 已到位，FOX 5 NY 把焦點放在球星是否出賽與 Golden Boot 追逐；ESPN/DraftKings 盤面顯示 France 90 分鐘約 -115、England 約 +285，但 NWS Miami 開球窗 90→87°F、雷雨機率 38% 才是會把節奏切碎的硬變數。Soren 把它當季軍戰管理題，不把紙上盤當下注指令。",
       "signals": [
+        "FIFA bronze-final preview / match-centre 已可連線，Match 103 是 France vs England，7/18 21:00 UTC，Miami Stadium；正式 lineup/live updates 仍以官方入口或高可信 match centre 為準。",
         "England Football 官方確認 England 將在 7/18 22:00 BST / 21:00 UTC 於 Miami 對 France 踢世界盃第三名戰；這是賽程硬錨點。",
         "BBC Sport 最新賽後脈絡寫明 Thomas Tuchel 仍獲 FA 支持，England 對 France 的銅牌戰若取勝，將是 1966 後英格蘭男足世界盃最佳成績；這讓季軍戰多了管理層與士氣檢驗，不只是安慰賽。",
         "BBC Sport 把 France 季軍戰定位成 Didier Deschamps 法國任期告別戰；心理線不只「銅牌安慰獎」，也是一段國家隊時代收尾。",
         "AP 指出 Mbappé 雖無緣第三次連進世界盃決賽，但仍在與 Messi 等人競逐 Golden Boot；季軍戰的個人獎項誘因需要納入輪換判讀。",
-        "FOX Sports / FanDuel 7/15 盤面：晉級/奪第三名 France -188、England +152；90 分鐘 moneyline France +100、Draw +260、England +260。Soren 只把它當紙上市場溫度，絕不當下注指令。",
-        "NWS Miami Gardens 小時預報刷新：7/18 17:00 ET 開球窗約 90°F、南風 10 mph、雷陣雨機率 38%，到 19:00 ET 約 87°F；濕熱與可能延誤比「誰比較想踢銅牌戰」更硬。",
-        "FOX Sports / FanDuel 公開盤面列 France to advance 約 -188、England +152；Soren 只把它作紙上市場溫度，不提供下注建議。",
-        "NWS Miami Gardens hourly forecast 在 7/18 17:00–19:00 ET 附近約 90→87°F、南風 8–10 mph、雷陣雨機率約 35%；濕熱與可能延誤比「誰更想踢」更實際。",
-        "FOX 賽事頁把本場列為 FIFA World Cup 2026 Match 103 / Bronze Final，France vs England，7/18 21:00 UTC，Miami Stadium。",
+        "FOX 5 NY 可讀 metadata 把 France-England bronze final 寫成「real rotation questions」與 Golden Boot contenders；Soren 只採作公開敘事/輪換雷達，不推定球星必先發。",
+        "ESPN/DraftKings odds API 7/16 複核：France 90 分鐘約 -115、England 約 +285、總分 3.5；這是紙上市場溫度，不是下注建議。",
+        "NWS Miami Gardens 小時預報 7/18 17:00–19:00 ET：90→87°F、南風約 9–10 mph、雷陣雨機率 38%；濕熱與可能延誤比「誰比較想踢銅牌戰」更硬。",
         "Guardian 賽報確認 France 0–2 不敵 Spain，Oyarzabal 與 Pedro Porro 進球；France 進攻被限制，季軍戰不能只靠隊徽回血。",
         "USA Today 報導 William Saliba 在 France-Spain 準決賽上半場傷退；季軍戰前列為 France 中衛可用性風險，未有官方確認前不寫死缺陣。",
-        "England Football 賽後稿引用 Tuchel 稱球隊對 Argentina「gave everything」；這是體能/情緒消耗線索，不是先發名單。",
         "Al Jazeera 報導 England 輸給 Argentina 後將在 Miami 對 France 踢第三名戰；這也把 m103 對戰從路線位落成實名。",
-        "FOX Golden Boot tracker 顯示 Messi、Mbappé 仍在金靴敘事中心；季軍戰可能有個人獎項誘因，但不能因此推定 Mbappé 必先發。",
         "FIFA Miami host-city / stadium 資訊確認 Miami Stadium 場地脈絡；南佛州高溫濕熱與雷雨風險需賽前再用天氣源覆核。"
       ],
       "sources": [
         {
+          "label": "FIFA France-England bronze final preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-v-england-live-stream-team-news-tickets-and-more",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "confirmed/official-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Match Centre M103",
+          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289291/400021542",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "confirmed/match-centre",
+          "confidence": "high"
+        },
+        {
           "label": "England Football France third-place fixture",
           "url": "https://www.englandfootball.com/articles/2026/Jul/15/england-fixture-details-knockout-stage-20261107",
           "sourceName": "England Football",
-          "fetchedAt": "2026-07-16T02:56:39Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "confirmed/official-team-fixture",
           "confidence": "high"
         },
@@ -604,7 +102,7 @@
           "label": "BBC Deschamps France era third-place context",
           "url": "https://www.bbc.co.uk/sport/football/articles/czx5x14v5w2o",
           "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-16T02:56:39Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "reported/team-context",
           "confidence": "high"
         },
@@ -612,15 +110,23 @@
           "label": "AP Mbappe Golden Boot third-place context",
           "url": "https://apnews.com/article/world-cup-kylian-mbappe-faab7b8800224ceb2ce34e02125af7c5",
           "sourceName": "AP News",
-          "fetchedAt": "2026-07-16T02:56:39Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "reported/player-award-watch",
           "confidence": "high"
         },
         {
-          "label": "FOX Sports France-England third-place odds",
-          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-third-place-odds-france-england",
-          "sourceName": "FOX Sports / FanDuel",
-          "fetchedAt": "2026-07-16T02:56:39Z",
+          "label": "FOX 5 NY bronze final rotation preview",
+          "url": "https://www.fox5ny.com/news/france-vs-england-bronze-final-preview-will-stars-play-third-place-game",
+          "sourceName": "FOX 5 NY",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "reported/rotation-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "ESPN/DraftKings France-England odds API",
+          "url": "https://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760516/competitions/760516/odds?lang=en&region=us",
+          "sourceName": "ESPN / DraftKings",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "odds-reference",
           "confidence": "medium-high"
         },
@@ -628,23 +134,15 @@
           "label": "NWS Miami Gardens hourly kickoff-window forecast",
           "url": "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-16T02:56:39Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "context/weather-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "FOX France-England bronze final",
-          "url": "https://www.fox.com/soccer/fifa-world-cup/watch-france-vs-england-third-place-bronze-final-jul-18-2026",
-          "sourceName": "FOX",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "confirmed/fixture-context",
           "confidence": "high"
         },
         {
           "label": "Guardian France-Spain semifinal report",
           "url": "https://www.theguardian.com/football/2026/jul/14/france-spain-world-cup-semi-final-match-report",
           "sourceName": "The Guardian",
-          "fetchedAt": "2026-07-16T01:07:21Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "confirmed/postmatch-context",
           "confidence": "high"
         },
@@ -652,100 +150,128 @@
           "label": "USA Today Saliba injury update",
           "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/07/14/william-saliba-injury-update-substitution-france-spain/90908173007/",
           "sourceName": "USA Today",
-          "fetchedAt": "2026-07-16T01:07:21Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
-        },
-        {
-          "label": "England Football Tuchel postmatch reaction",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/15/thomas-tuchel-england-v-argentina-world-cup-semi-final-match-reaction-20261507",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "confirmed/team-reaction",
-          "confidence": "high"
         },
         {
           "label": "Al Jazeera Argentina comeback / England third-place note",
           "url": "https://www.aljazeera.com/sports/2026/7/15/argentina-stun-england-in-2-1-comeback-win-to-reach-2026-world-cup-final",
           "sourceName": "Al Jazeera",
-          "fetchedAt": "2026-07-16T01:07:21Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "confirmed/fixture-context",
           "confidence": "high"
-        },
-        {
-          "label": "FOX Golden Boot tracker",
-          "url": "https://www.foxsports.com/stories/soccer/2026-fifa-world-cup-golden-boot-tracker",
-          "sourceName": "FOX Sports",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "context/player-award-watch",
-          "confidence": "medium-high"
         },
         {
           "label": "FIFA Miami host city",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/usa/miami",
           "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T01:07:21Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "context/venue-weather",
           "confidence": "high"
-        },
-        {
-          "label": "BBC Tuchel retains FA backing before bronze match",
-          "url": "https://www.bbc.com/sport/football/articles/cly5ljl414xo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-16T09:02:57Z",
-          "claimType": "reported/management-context",
-          "confidence": "medium-high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m104",
       "match": "Spain vs Argentina",
       "sourceType": "final fixture + official operations/weather/market/narrative watch",
-      "title": "Spain vs Argentina 決賽：Spain 變公開盤熱門，Argentina 帶 Messi–Yamal 敘事與官方移防 New Jersey。",
-      "sorenTake": "決賽主線更尖了：FIFA/AP 把它寫成 Messi 的 Argentina 對 Yamal 的 Spain，AFA 公布 7/16 仍在 Atlanta United Training Ground 做媒體開放訓練、傍晚移防 New Jersey。公開市場也同步轉向 Spain：ESPN 引 DK 開 Spain -164 捧盃、90 分鐘 Spain +125 / 和局 +200 / Argentina +260。Soren 的處理：把盤口當外部溫度，把官方訓練/移動與 NWS 開球窗天氣當賽務風險，不把童話敘事直接折成勝率。",
+      "title": "Spain vs Argentina 決賽：FIFA showpiece hub＋閉幕式節奏到位，NWS 開球窗暫偏可控，Messi–Yamal 噪音別當勝率。",
+      "sorenTake": "FIFA 已把 7/19 New York/New Jersey 決賽包成官方 showpiece hub，閉幕式 13:30 local、Post Malone headline 會把賽前節奏拉長；AFA 也正式寫明 Argentina 週日 16:00 對 Spain 爭第四顆星。最新 NWS Meadowlands 開球窗約 83→82°F、降雨機率 8%、西北風 10 mph，暫比早期雨勢標題可控。Soren 的處理：官方營運與天氣先分清，Messi vs Yamal 是全球噪音，不是模型答案。",
       "signals": [
-        "FIFA 官方 final preview 已上線，把 Spain v Argentina 定位為 European champions 對 defending world and South American champions；這是決賽敘事硬來源。",
-        "AFA 官方首頁確認 Argentina 2–1 逆轉 England，將在週日 16:00 New Jersey 對 Spain 爭世界盃；官方隊端敘事已從四強切到決賽。",
-        "AFA 官方日程列出 Argentina 7/16 11:30 在 Atlanta United Training Ground 訓練，前 15 分鐘對認證媒體開放，並註記傍晚移動前往 New Jersey；這是決賽備戰/旅行節奏，不是先發或傷停確認。",
+        "FIFA final hub 確認 Spain meet Argentina in New York New Jersey on 19 July，並提供轉播、票務與 match-centre 資訊；這是決賽官方入口。",
+        "FIFA Spain-Argentina preview 把第 104 場定位為 European champions Spain 對 defending world and South American champions Argentina；這是決賽敘事硬來源。",
+        "FIFA 閉幕式稿確認 New York New Jersey Stadium 7/19 13:30 local 開始閉幕式，Post Malone headline；賽前儀式、人流與熱身節奏需要和比賽本身分開看。",
+        "AFA 官方頁面確認 Argentina 2–1 逆轉 England 後，將在週日 16:00 New Jersey 對 Spain 爭第四顆星；這是隊端決賽敘事。",
+        "AFA 官方日程先前列出 7/16 仍在 Atlanta United Training Ground 開放訓練、傍晚移防 New Jersey；這是備戰/旅行節奏，不是先發或傷停確認。",
         "ESPN/DK 公開盤：Spain 開為捧盃 -164 熱門、Argentina +134；90 分鐘盤 Spain +125、Draw +200、Argentina +260。市場現在尊重 Spain 控場，但 Soren 只把它列為紙上模擬參考。",
-        "AP 的決賽預覽把輿論敘事壓到「Messi and Argentina vs Yamal and Spain」；這是全球關注度與心理噪音，不是可靠的勝率公式。",
-        "NWS Meadowlands 小時預報刷新：7/19 15:00 ET 開球約 81°F、Mostly Sunny、降雨機率約 9%、西北風 10 mph；與較早媒體雨勢標題相比，官方小時窗目前偏向可控。",
+        "NWS Meadowlands 小時預報 7/19 15:00–17:00 ET：83→82°F、Mostly Sunny/Sunny、降雨機率 8%、西北風 10 mph；與早期媒體雨勢標題相比，官方小時窗目前偏向可控。",
+        "FOX 13 Seattle 可讀 metadata 把 final 寫成 legacy、youth、defense、late goals 與 Messi 最後機會；這是 public narrative heat，不是社群留言代表性結論。",
         "Yahoo Sports 早期決賽預覽把 Argentina 的 comeback pattern 對上 Spain 的 impenetrable defense，並點出 Rodri 作為中場抹除器；這是公開戰術線索，不是 Soren 內部公式。",
         "Opta Analyst 寫 Argentina 多次接近淘汰仍復活晉級，將面對已追平歐洲國家最長不敗紀錄的 Spain；決賽風險不該被簡化成 Messi 童話。",
-        "USA Today 場地稿提醒 Spain 與 Argentina 本屆都尚未在 MetLife 踢過，球場臨時草皮且無屋頂；NWS Meadowlands 附近 7/19 15:00–19:00 ET 約 84–85°F、雷陣雨機率約 17%，天氣是賽務風險不是勝率神諭。",
-        "FOX / FIFA 賽程線索確認 Spain vs Argentina 將於 7/19 19:00 UTC 在 New York New Jersey Stadium 踢 2026 World Cup Final。",
         "FIFA 賽報指出 Spain 2–0 擊敗 France 晉級決賽，防守端限制 France、進攻端由 Oyarzabal 與 Pedro Porro 懲罰對手。",
-        "Reuters 搜尋摘要稱 Rodri 對 France 打出 midfield masterclass、支撐 Spain 進決賽；列為高可信中場狀態線索，但全文目前對直接抓取有 401 限制。",
-        "NPR 報導 Argentina 2–1 擊敗 England，將在週日決賽對 Spain；Lautaro Martínez 的關鍵進球讓 Argentina 的替補/末段火力成為硬訊號。",
-        "Al Jazeera 報導 Argentina 逆轉 England 晉級，並稱決賽將對 Spain；Soren 把這列為 late-game resilience，不寫成命運論。",
-        "FOX Spain-Argentina 決賽頁與 FIFA New York/New Jersey stadium 頁共同確認場地；大型決賽日人流、草皮、天氣與閉幕典禮都要分開看。",
-        "NorthJersey.com 搜尋索引指出決賽日前後仍有雨/雷暴威脅討論；賽前 24–48 小時需再用 NWS/天氣源更新，不提前誇大成比賽必受影響。",
-        "早盤 odds 線索（VegasInsider / BetMGM 媒體摘要）偏 Spain、低比分傾向；只作紙上市場溫度，不提供下注建議。"
+        "NPR 與 Al Jazeera 報導 Argentina 2–1 擊敗 England 晉級；Lautaro Martínez 的末段火力讓 Argentina 的 late-game resilience 成為硬訊號。",
+        "Financial Express / Free Press Journal 搜尋可見舊社群貼文因 Spain-Argentina 決賽成真而 viral；這只標為 social-search/public-buzz，不能拿來代表球迷整體民意或預言。"
       ],
       "sources": [
+        {
+          "label": "FIFA Final live / watch / teams / tickets hub",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-live-watch-teams-tickets",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "confirmed/official-final-hub",
+          "confidence": "high"
+        },
         {
           "label": "FIFA Spain-Argentina final preview",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-v-argentina-live-stream-team-news-tickets-and-more",
           "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T02:56:39Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "confirmed/official-preview",
           "confidence": "high"
         },
         {
+          "label": "FIFA Post Malone closing ceremony note",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/post-malone-to-headline-closing-ceremony",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "context/event-operations",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA closing ceremony timing",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/closing-ceremony-to-celebrate-historic-tournament-ahead-of-the-final",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "context/event-operations",
+          "confidence": "high"
+        },
+        {
           "label": "AFA Argentina final opponent official note",
-          "url": "https://www.afa.com.ar/?lang=en",
+          "url": "https://www.afa.com.ar/es/posts/argentina-va-por-la-copa-del-mundo-espana-sera-el-ultimo-desafio-el-proximo-domingo-a-las-16-en-nueva-jersey",
           "sourceName": "AFA",
-          "fetchedAt": "2026-07-16T02:56:39Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "confirmed/official-team-context",
           "confidence": "high"
+        },
+        {
+          "label": "AFA Argentina daily activity schedule",
+          "url": "https://www.afa.com.ar/es/posts/cronograma-de-actividades-de-la-seleccion-argentina1-6",
+          "sourceName": "AFA",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "confirmed/official-team-logistics",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN / DraftKings Spain-Argentina final odds",
+          "url": "https://www.espn.com/soccer/odds/_/gameId/760517",
+          "sourceName": "ESPN / DraftKings",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "NWS Meadowlands hourly final-window forecast",
+          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX 13 Seattle final preview",
+          "url": "https://www.fox13seattle.com/news/spain-vs-argentina-final-preview-messi-lamine-yamal-collide-world-cup-title",
+          "sourceName": "FOX 13 Seattle",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "reported/public-narrative",
+          "confidence": "medium"
         },
         {
           "label": "Yahoo Sports Spain-Argentina early final preview",
           "url": "https://sports.yahoo.com/soccer/article/world-cup-final-early-preview-argentinas-comebacks-meet-spains-impenetrable-defense-214251519.html",
           "sourceName": "Yahoo Sports",
-          "fetchedAt": "2026-07-16T02:56:39Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "reported/tactical-context",
           "confidence": "medium-high"
         },
@@ -753,55 +279,23 @@
           "label": "Opta Analyst Argentina powers of recovery final context",
           "url": "https://theanalyst.com/articles/argentina-powers-of-recovery-world-cup-final",
           "sourceName": "Opta Analyst",
-          "fetchedAt": "2026-07-16T02:56:39Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "reported/tactical-context",
           "confidence": "medium-high"
-        },
-        {
-          "label": "USA Today MetLife final venue and weather-risk context",
-          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/07/15/where-is-the-world-cup-final-spain-vs-argentina-game-location-time/90929570007/",
-          "sourceName": "USA Today",
-          "fetchedAt": "2026-07-16T02:56:39Z",
-          "claimType": "reported/venue-weather-context",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "NWS Meadowlands hourly final-window forecast",
-          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-16T02:56:39Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "FOX Spain-Argentina final page",
-          "url": "https://www.fox.com/soccer/fifa-world-cup/watch-spain-vs-argentina-world-cup-final-jul-19-2026",
-          "sourceName": "FOX",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "confirmed/fixture-context",
-          "confidence": "high"
         },
         {
           "label": "FIFA Spain-France semifinal report",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-spain-match-report-highlights",
           "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T01:07:21Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "confirmed/postmatch-context",
-          "confidence": "high"
-        },
-        {
-          "label": "Reuters Rodri midfield report",
-          "url": "https://www.reuters.com/sports/soccer/masterful-rodri-rolls-back-years-anchor-spains-march-into-final-2026-07-14/",
-          "sourceName": "Reuters",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "reported/tactical-context",
           "confidence": "high"
         },
         {
           "label": "NPR Argentina-England semifinal report",
           "url": "https://www.npr.org/2026/07/15/nx-s1-5893895/2026-world-cup-fifa-argentina-england-semifinal",
           "sourceName": "NPR",
-          "fetchedAt": "2026-07-16T01:07:21Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "confirmed/postmatch-context",
           "confidence": "high"
         },
@@ -809,84 +303,28 @@
           "label": "Al Jazeera Argentina comeback report",
           "url": "https://www.aljazeera.com/sports/2026/7/15/argentina-stun-england-in-2-1-comeback-win-to-reach-2026-world-cup-final",
           "sourceName": "Al Jazeera",
-          "fetchedAt": "2026-07-16T01:07:21Z",
+          "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "confirmed/postmatch-context",
           "confidence": "high"
         },
         {
-          "label": "FIFA New York/New Jersey stadium",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/stadiums/new-york-new-jersey",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "confirmed/venue-context",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA closing ceremony final-day context",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/closing-ceremony-to-celebrate-historic-tournament-ahead-of-the-final",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "context/event-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "NorthJersey final weather watch",
-          "url": "https://www.northjersey.com/story/news/2026/07/15/is-rain-storm-still-threatening-sundays-fifa-final-in-nj/90929352007/",
-          "sourceName": "NorthJersey.com",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "reported/venue-weather",
+          "label": "Financial Express viral old-post public buzz",
+          "url": "https://www.financialexpress.com/sports/5-year-old-post-goes-viral-for-accurately-predicting-argentina-vs-spain-fifa-world-cup-final-guess-who-is-the-winner/4293141/",
+          "sourceName": "Financial Express",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "social-search/public-buzz",
           "confidence": "medium"
         },
         {
-          "label": "VegasInsider Spain-Argentina odds",
-          "url": "https://www.vegasinsider.com/soccer/spain-argentina-odds-world-cup-2026/",
-          "sourceName": "VegasInsider",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "odds-reference",
+          "label": "Free Press Journal Dhoni old-post public buzz",
+          "url": "https://www.freepressjournal.in/sports/thala-for-a-reason-did-ms-dhoni-predict-argentina-vs-spain-fifa-world-cup-2026-final-10-years-ago-old-post-goes-viral",
+          "sourceName": "Free Press Journal",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "social-search/public-buzz",
           "confidence": "medium"
-        },
-        {
-          "label": "AZCentral / BetMGM final odds",
-          "url": "https://www.azcentral.com/story/sports/soccer/worldcup/2026/07/15/world-cup-final-2026-odds-argentina-spain-betting/90936259007/",
-          "sourceName": "AZCentral / BetMGM",
-          "fetchedAt": "2026-07-16T01:07:21Z",
-          "claimType": "odds-reference",
-          "confidence": "medium"
-        },
-        {
-          "label": "AFA Argentina final-week training and travel schedule",
-          "url": "https://www.afa.com.ar/es/posts/cronograma-de-la-seleccion-argentina-manana-se-realizara-un-entrenamiento-abierto",
-          "sourceName": "AFA",
-          "fetchedAt": "2026-07-16T09:02:57Z",
-          "claimType": "confirmed/official-team-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "ESPN/DK Spain-Argentina final odds",
-          "url": "https://www.espn.com/espn/betting/story/_/id/48386952/espn-soccer-futbol-world-cup-betting-odds-championship-groups",
-          "sourceName": "ESPN / DK Sports",
-          "fetchedAt": "2026-07-16T09:02:57Z",
-          "claimType": "odds-reference",
-          "confidence": "high"
-        },
-        {
-          "label": "AP Messi-Argentina vs Yamal-Spain final narrative",
-          "url": "https://apnews.com/article/argentina-messi-spain-yamal-world-cup-final-55077ce5c4728c4207a39cc4aa8a41a1",
-          "sourceName": "AP News",
-          "fetchedAt": "2026-07-16T09:02:57Z",
-          "claimType": "reported/public-narrative-context",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA hospitality M104 final event listing",
-          "url": "https://fifaworldcup26.suites.fifa.com/events/m104-final-111735/",
-          "sourceName": "FIFA / On Location",
-          "fetchedAt": "2026-07-16T09:02:57Z",
-          "claimType": "confirmed/official-event-listing",
-          "confidence": "high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     },
     {
       "matchId": "m054",
@@ -11750,411 +11188,51 @@
     {
       "matchId": "m101",
       "match": "France vs Spain",
-      "sourceType": "live-score context + official live-centre + availability/lineup/odds watch",
-      "title": "France-Spain 進入下半場：ESPN 記分板顯示 Spain 1-0 France，但 completed=false；Soren 只開 live-score 警報，不偷結算。",
-      "sorenTake": "M101 已從賽前隊訊切到現場狀態：ESPN 公開 scoreboard 顯示 Spain 靠 Oyarzabal 點球領先，The Athletic 標題/內文也對上這條線；但 ESPN 狀態仍是 Second Half、completed=false。這種時候最容易犯的錯是把「像快贏了」寫成 final。Soren 現在只更新 live context，等 FIFA/ESPN/BBC 出 full-time 或 source-backed final 才動 bracket/紙上結算。",
+      "sourceType": "confirmed final-score + postmatch context",
+      "title": "Spain 2–0 France 已終場：Oyarzabal＋Pedro Porro 把 Spain 送進決賽，舊 live 警報已收掉。",
+      "sorenTake": "這張卡已收斂成終場 archive：本地 worldcup.json、FIFA 賽報與 Guardian 賽報都確認 Spain 2–0 France。Soren 的公開讀法：Spain 不是靠單一童星劇本，而是用防守限制 France，再用 Oyarzabal 與 Pedro Porro 把決賽門票鎖死；France 轉入 Miami 季軍戰，Spain 轉入 New York/New Jersey 決賽。",
       "signals": [
-        "FIFA 搜尋索引/可連線頁面顯示 France v Spain 官方準決賽 preview；法國有機會成為西德後第二支連三屆世界盃決賽的歐洲隊。",
-        "FFF 官方搜尋摘要確認 Spain 在 2-1 淘汰 Belgium 後，將於 7/14 21:00（法國時間）在 Dallas 對 Didier Deschamps 的 France。",
-        "FIFA France-Morocco match report 搜尋摘要指出 France 2-0 淘汰 Morocco，Mbappé 雖錯失上半場點球仍帶隊進入連三屆準決賽。",
-        "The Guardian 可讀 meta/標題確認 Spain 2-1 淘汰 Belgium，Mikel Merino late goal 送西班牙進準決賽對 France。",
-        "CBS Sports 搜尋摘要顯示 Mbappé 賽後淡化 ankle injury；這只列為 availability-watch，正式狀態仍等 France/FFF/FIFA 賽前更新。",
-        "L’Équipe 可讀標題確認 Kylian Mbappé 與 Aurélien Tchouaméni 被列為「aptes pour la demi-finale」；Soren 仍保留 Mbappé 腳踝負荷監控，不把 fit 寫成完全無風險。",
-        "CBS Sports/FanDuel 賽前盤把 France 約 +135、Spain 約 +220、和局約 +210；只作紙上市場溫度，不能當下注建議或模型秘密。",
-        "NWS Arlington/Tarrant County 7/14 仍有雷陣雨機率與高溫（約 90°F 以上）脈絡；Dallas/Arlington 半決賽的節奏可能受熱與天氣管理影響。",
-        "FIFA knockout bracket/fixture page可連線確認 Match 101 為 France v Spain，Dallas Stadium，7/14 15:00 當地開球；公開頁面應維持 France v Spain 實名化，不再露出路線佔位。",
-        "RFEF 官方賽後稿確認 Spain 2-1 Belgium 後進入隊史第二次世界盃四強，De la Fuente 表示「Podemos ganar a cualquier equipo」；這是官方心理/信心脈絡，不是勝率保證。",
-        "RFEF 官方稿把 Lamine Yamal 列為對 Belgium 的 MVP 與最具決定性球員，支撐 Spain 進攻焦點從純控球轉向右路決斷。",
-        "Al Jazeera 可讀 meta/標題把 France-Spain 定位成歐洲兩大強權與 Mbappé-Yamal blockbuster；可作中立 preview/敘事熱度，不替代官方隊訊。",
-        "FIFA 搜尋索引新增 France-Spain power rankings：Mbappé 與 Olise 分別領跑 attacking/creativity 指標，Rodri 則代表 Spain 的 defending 優勢；這是官方資料視角的球員型態訊號，不是本站模型公式。",
-        "FIFA 另有「How Spain pushed France」戰術脈絡頁，將這場放在 Euro 2024 後 France 集體耐心/重塑的路線中；Soren 把它視為 France 不只靠爆點、也能等局面裂開的官方敘事。",
-        "BBC 四強總覽可讀全文：France-Spain 被寫成 Mbappé/Yamal 星味與兩支歐洲強隊的 classic 候選，並提到 Olise 以 5 次助攻提供 France 創造力。",
-        "The Standard 可讀隊訊把 France 的半決賽疑問集中在中場：Tchouaméni/Manu Koné 等健康與選擇問題仍需等官方先發確認。",
-        "Khel Now 7/13 預測 France 可能在 Tchouaméni 已恢復後仍沿用 Koné/Rabiot，中前場以 Olise、Dembélé、Doué/Mbappé 組合做創造；這是 expected-XI lead，不是確認先發。",
-        "Khel Now 7/13 Spain 預測稿把半決賽焦點放在 Unai Simón、Dani Olmo 與 Lamine Yamal 等選擇；Soren 只把它當公開排陣溫度，不當官方隊訊。",
-        "NWS Arlington 點位更新顯示 Dallas/Fort Worth 區域仍有高溫、強降雨/雷雨風險脈絡；Dallas Stadium 可控內場不等於進出場與賽前熱身零風險。",
-        "FIFA 搜尋索引新增 Luis de la Fuente 對 France 半決賽歷史專題：包含 7/14 Dallas Stadium 這場在內，他生涯多次於不同層級半決賽碰法國；這是官方敘事/心理線，不是勝率證明。",
-        "FIFA 搜尋索引另把 Mbappé-Yamal 寫成第 11 次職業交手與 Dallas 半決賽焦點；Soren 只把它作 star-matchup heat，實際仍回到 France 中場保護與 Spain 右路決斷。",
-        "Sports Mole 可讀 meta/標題新增 France、Spain 傷停/停賽清單；France 端聚焦 Mbappé、Tchouaméni、Koné，Spain 端聚焦 Pino、Nico Williams、Víctor Muñoz，正式先發前仍標為 reported availability watch。",
-        "RFEF 7/12 22:00 官方稿確認 Spain 回到 Dallas 後在 Cotton Bowl 進行首堂訓練，準備週二對 France 的世界盃準決賽；這是官方備戰節奏，不是先發確認。",
-        "Guardian 7/13 live build-up 以 Sid Lowe 採訪/脈絡把 Spain 的 Rodri 控制題拉回 France-Spain：Soren 讀作中場耐心與節奏管理訊號，而不是單純 Mbappé-Yamal 海報戰。",
-        "FIFA Mbappé-Yamal 專題頁可連線，但主要是官方 star-matchup heat；公開端保留「星味很高、戰術仍看中場與右路」的分界。",
-        "FOX Sports 7/13 可讀 odds 總覽更新 France-Spain：France to advance -150、Spain +130，90 分鐘盤 France +135、draw +220、Spain +210；這只作紙上市場溫度，不是下注建議。",
-        "FOX 同篇把 France 寫成目前世界盃冠軍盤熱門、Spain 第二熱門，並點出 France 目前進失球 16-2、Spain 11-1；Soren 把它視為 public market/narrative heat，而非本站模型公式。",
-        "FIFA match centre 可連線，確認 M101 France-Spain 為 7/14 Dallas Stadium 準決賽官方比分/lineups/live updates 入口；正式先發仍以該入口或高可信現場頁為準。",
-        "Guardian 7/14 賽前稿標題/摘要確認 France 將 Euro 2024 半決賽輸給 Spain 視為復仇燃料，並指出 Deschamps 若 Tchouaméni fit 會考慮把他帶回先發；這是 credible media team-news，不是官方先發。",
-        "BBC 7/14 賽前稿確認 Deschamps 預期 Dallas 的 France-Spain 會是「spectacular」半決賽；Soren 讀作高開放度敘事，但不把教練形容詞當勝率。",
-        "Al Jazeera 7/13 France-Spain 預覽確認 Dallas/Arlington 場地與 Mbappé-Yamal 版面焦點，並提供賽前直播文字入口；可作臨場追蹤 rail。",
-        "NBC DFW 7/13 直接可讀頁確認 France-Spain 準決賽裁判組焦點為 El Salvador 裁判 Ivan Barton；這補上比賽日判罰/情緒管理脈絡，但不改寫勝率。",
-        "Dallas Morning News 7/13 天氣稿確認 Dallas Stadium/AT&T Stadium 本場前氣溫較前幾戰降溫，NWS 預測高溫約 91°F、體感約 98°F，仍有濕度與零星雷雨機率；屋頂過往賽事保持關閉，場外移動仍是熱負荷。",
-        "Sports Illustrated 7/14 賽前稿把 Ivan Barton、Arlington 15:00 ET 開球、Tchouaméni 回歸預測 XI 與 Mbappé 腳踝狀態放在同一篇；本站只採作 predicted lineup / availability watch，不把預測陣容寫成 confirmed XI。",
-        "FOX 直播頁可讀 metadata 確認 France-Spain 於 Dallas Stadium 7/14 15:00 ET / 19:00 UTC 開球並提供轉播入口；此為觀賽 rail，不是賽果或陣容證據。",
-        "RFEF 7/13 官方稿確認 Spain 在 Arlington/Cotton Bowl 於雨中完成賽前最後訓練；這是官方備戰節奏，不是先發確認。",
-        "RFEF 7/13 De la Fuente 賽前稿標題確認「Lo daremos todo por estar en la final」，並把四強形容為高度均勢；Soren 採作官方心理/臨場語氣，不當勝率證明。",
-        "TF1 Info 7/14 可讀 meta 確認 France 週一全員訓練，Deschamps 說 Aurélien Tchouaméni 重新 available，但未說他是否先發；這把中場風險從「能不能踢」推進到「會不會回先發」。",
-        "Sports Mole 7/14 更新的 France-Spain team-news 頁仍把 Tchouaméni（thigh）、Manu Koné（knee）、Marcus Thuram（calf）列為 France doubtful，並預測 Tchouaméni 先發；這是最新 expected-XI/availability lead，不是 confirmed XI。",
-        "同頁把 Spain 端標為無 confirmed out，但 Yeremy Pino、Víctor Muñoz 仍在 doubtful watch；Spain 核心 Rodri/Yamal/Olmo 線不因此自動降級，但替補寬度要留一點尾部風險。",
-        "RFEF 7/14 官方預熱〈Último desafío hacia nuestro gran sueño〉把 France-Spain 描述成「價值一張決賽門票」的歷史對撞，並回顧 2006 世界盃交手；這是官方敘事熱度，不是陣容或勝率證據。",
-        "FOX Sports 7/14 odds/書商稿提到 Mbappé anytime goalscorer 市場資金高度集中；Soren 只把它當 public betting heat，紙上模擬不能把熱門投注誤讀成進球保證。",
-        "ESPN scoreboard 2026-07-14T20:17:41Z 再核：France 0 - 1 Spain，狀態 Second Half / 56'，completed=False; 這只能放 live-score context，不能結算 final。",
-        "ESPN live story 可讀標題確認 France-Spain 下半場進行中，Oyarzabal 的點球仍是差距；這和 ESPN scoreboard live state 對齊，但不等於完場。",
-        "The Athletic 可讀 metadata/內文片段顯示 52 分鐘 France 0-1 Spain、Yamal 仍在衝擊防線；此為可信 live text context，不作 final-result evidence。"
+        "本地 worldcup.json 已確認 m101 狀態 finished、France 0–2 Spain；m103/m104 已由此實名化為 France-England 與 Spain-Argentina。",
+        "FIFA Spain-France 賽報確認 Spain 2–0 擊敗 France 晉級決賽，Oyarzabal 與 Pedro Porro 進球，Spain 防守端限制 France。",
+        "Guardian 賽報同樣確認 France 0–2 Spain；這是 postmatch/context，不再是 live-score 警報。",
+        "RFEF 對 Belgium 後的官方信心/備戰脈絡仍可作 Spain 決賽前背景，但 m101 公開主卡現在只保留終場與轉場訊號。",
+        "France 端 Mbappé/Tchouaméni 等賽前 availability watch 已結束本場用途；後續只在 m103 季軍戰卡片重估。"
       ],
       "sources": [
         {
-          "label": "FIFA France-Spain semi-final preview",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-v-spain-live-stream-team-news-tickets-and-more",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-12T01:05:43Z",
-          "claimType": "confirmed/official-preview",
+          "label": "Soren public worldcup data",
+          "url": "https://worldcup.kyasen.com/data/worldcup.json",
+          "sourceName": "Soren public data",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "confirmed/upstream-final-score",
           "confidence": "high"
         },
         {
-          "label": "FFF France-Spain semi-final route note",
-          "url": "https://www.fff.fr/",
-          "sourceName": "Fédération Française de Football",
-          "fetchedAt": "2026-07-12T01:05:43Z",
-          "claimType": "official/search-indexed-context",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "FIFA France-Morocco match report",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-morocco-match-report-highlights",
+          "label": "FIFA Spain-France semifinal report",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-spain-match-report-highlights",
           "sourceName": "FIFA",
-          "fetchedAt": "2026-07-12T01:05:43Z",
-          "claimType": "confirmed/recent-form",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "confirmed/postmatch-context",
           "confidence": "high"
         },
         {
-          "label": "Guardian Spain-Belgium match report",
-          "url": "https://www.theguardian.com/football/2026/jul/10/spain-belgium-world-cup-2026-quarter-final-match-report",
+          "label": "Guardian France-Spain semifinal report",
+          "url": "https://www.theguardian.com/football/2026/jul/14/france-spain-world-cup-semi-final-match-report",
           "sourceName": "The Guardian",
-          "fetchedAt": "2026-07-12T01:05:43Z",
-          "claimType": "reported/recent-form",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "confirmed/postmatch-context",
           "confidence": "high"
         },
         {
-          "label": "CBS Mbappé ankle injury watch",
-          "url": "https://www.cbssports.com/soccer/news/kylian-mbappe-downplays-ankle-injury-france-advance-to-world-cup-semifinals/",
-          "sourceName": "CBS Sports",
-          "fetchedAt": "2026-07-12T01:05:43Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "medium"
-        },
-        {
-          "label": "L’Équipe Mbappé/Tchouaméni availability",
-          "url": "https://www.lequipe.fr/Football/Actualites/Coupe-du-monde-kylian-mbappe-et-aurelien-tchouameni-aptes-pour-la-demi-finale/1703387",
-          "sourceName": "L'Équipe",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "CBS/FanDuel France-Spain odds reference",
-          "url": "https://www.cbssports.com/soccer/news/france-spain-odds-prediction-time-2026-world-cup-semifinal-picks/",
-          "sourceName": "CBS Sports / FanDuel",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "odds-reference",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "NWS Arlington point forecast",
-          "url": "https://forecast.weather.gov/MapClick.php?CityName=Arlington&state=TX&site=FWD&lat=32.6945&lon=-97.1275",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-12T06:06:20Z",
-          "claimType": "context/weather-watch",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "FIFA knockout bracket Match 101",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/knockout-stage-match-schedule-bracket",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-12T12:25:00Z",
-          "claimType": "confirmed/official-fixture",
-          "confidence": "high"
-        },
-        {
-          "label": "RFEF De la Fuente post-Belgium quotes",
-          "url": "https://rfef.es/es/noticias/luis-de-la-fuente-podemos-ganar-cualquier-equipo",
+          "label": "RFEF Spain-Belgium postmatch confidence context",
+          "url": "https://rfef.es/es/noticias/de-la-fuente-podemos-ganar-a-cualquier-equipo",
           "sourceName": "RFEF",
-          "fetchedAt": "2026-07-12T12:25:00Z",
-          "claimType": "confirmed/official-team-context",
-          "confidence": "high"
-        },
-        {
-          "label": "RFEF Lamine Yamal MVP note",
-          "url": "https://rfef.es/es/noticias/lamine-yamal-se-aduena-del-mvp",
-          "sourceName": "RFEF",
-          "fetchedAt": "2026-07-12T12:25:00Z",
-          "claimType": "confirmed/player-form",
-          "confidence": "high"
-        },
-        {
-          "label": "Al Jazeera France-Spain semi-final preview",
-          "url": "https://www.aljazeera.com/sports/2026/7/12/france-spain-fifa-world-cup-semifinals-mbappe-yamal-prediction-stats-venue",
-          "sourceName": "Al Jazeera",
-          "fetchedAt": "2026-07-12T12:25:00Z",
-          "claimType": "reported/tactical-preview",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "FIFA France-Spain power rankings leaders",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-v-spain-power-rankings-leaders-olise-rodri-mbappe",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-12T18:22:01Z",
-          "claimType": "official/search-indexed-player-form",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "FIFA how Spain pushed France",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/how-spain-pushed-france",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-12T18:22:01Z",
-          "claimType": "official/search-indexed-tactical-context",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "BBC semifinal storylines",
-          "url": "https://www.bbc.com/sport/football/articles/cd6ed5x95ygo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-12T18:22:01Z",
-          "claimType": "reported/tactical-narrative",
-          "confidence": "high"
-        },
-        {
-          "label": "The Standard France XI/injury latest",
-          "url": "https://www.standard.co.uk/sport/football/france-xi-vs-spain-confirmed-team-news-predicted-lineup-injury-latest-world-cup-2026-b1289716.html",
-          "sourceName": "The Standard",
-          "fetchedAt": "2026-07-13T00:28:55Z",
-          "claimType": "reported/availability-expected-xi",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Khel Now France predicted XI",
-          "url": "https://khelnow.com/football/france-predicted-lineup-vs-spain-fifa-world-cup-2026",
-          "sourceName": "Khel Now",
-          "fetchedAt": "2026-07-13T00:28:55Z",
-          "claimType": "reported/expected-xi",
-          "confidence": "medium"
-        },
-        {
-          "label": "Khel Now Spain predicted XI",
-          "url": "https://khelnow.com/football/spain-predicted-lineup-vs-france-fifa-world-cup-2026",
-          "sourceName": "Khel Now",
-          "fetchedAt": "2026-07-13T00:28:55Z",
-          "claimType": "reported/expected-xi",
-          "confidence": "medium"
-        },
-        {
-          "label": "NWS Arlington point forecast update",
-          "url": "https://forecast.weather.gov/MapClick.php?lat=32.7473&lon=-97.0945",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-13T00:28:55Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA De la Fuente semi-finals v France",
-          "url": "https://www.fifa.com/en/articles/luis-de-la-fuentes-record-against-france",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-13T06:46:20Z",
-          "claimType": "official/search-indexed-tactical-narrative",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "FIFA Mbappé-Yamal meet again",
-          "url": "https://www.fifa.com/en/articles/kylian-mbappe-france-lamine-yamal-spain-meet-again",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-13T06:46:20Z",
-          "claimType": "official/search-indexed-star-matchup",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Sports Mole France injury/suspension list",
-          "url": "https://www.sportsmole.co.uk/football/france/injury-news/injuries-and-suspensions/mbappe-tchouameni-kone-latest-france-injury-suspension-list-vs-spain_601068.html",
-          "sourceName": "Sports Mole",
-          "fetchedAt": "2026-07-13T06:46:20Z",
-          "claimType": "reported/availability-suspension-watch",
-          "confidence": "medium"
-        },
-        {
-          "label": "Sports Mole Spain injury/suspension list",
-          "url": "https://www.sportsmole.co.uk/football/spain/injury-news/injuries-and-suspensions/pino-williams-munoz-latest-spain-injury-suspension-list-vs-france_601071.html",
-          "sourceName": "Sports Mole",
-          "fetchedAt": "2026-07-13T06:46:20Z",
-          "claimType": "reported/availability-suspension-watch",
-          "confidence": "medium"
-        },
-        {
-          "label": "RFEF Spain training in Dallas",
-          "url": "https://rfef.es/es/noticias/el-trabajo-no-se-detiene",
-          "sourceName": "RFEF",
-          "fetchedAt": "2026-07-13T12:51:10Z",
-          "claimType": "confirmed/official-team-training",
-          "confidence": "high"
-        },
-        {
-          "label": "Guardian World Cup semifinal live build-up",
-          "url": "https://www.theguardian.com/football/live/2026/jul/13/world-cup-2026-buildup-to-blockbuster-semi-finals-infantino-hints-at-64-team-expansion-live",
-          "sourceName": "The Guardian",
-          "fetchedAt": "2026-07-13T12:51:10Z",
-          "claimType": "reported/tactical-build-up",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "FIFA Mbappé-Yamal meet again canonical",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/kylian-mbappe-france-lamine-yamal-spain-meet-again",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-13T12:51:10Z",
-          "claimType": "official/search-indexed-star-matchup",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "FOX Sports World Cup semifinal odds overview",
-          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-which-nations-favored-reach-semifinals",
-          "sourceName": "FOX Sports",
-          "fetchedAt": "2026-07-13T19:00:39Z",
-          "claimType": "odds-reference",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA France-Spain match centre",
-          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289290/400021541",
-          "sourceName": "FIFA",
-          "claimType": "confirmed/official-live-centre",
-          "confidence": "high",
-          "fetchedAt": "2026-07-14T01:39:00Z"
-        },
-        {
-          "label": "Guardian France revenge and Tchouaméni team news",
-          "url": "https://www.theguardian.com/football/2026/jul/14/france-team-news-spain-world-cup-semi-final-euro-revenge",
-          "sourceName": "The Guardian",
-          "claimType": "reported/team-news-build-up",
-          "confidence": "medium-high",
-          "fetchedAt": "2026-07-14T01:39:00Z"
-        },
-        {
-          "label": "BBC Deschamps spectacular semifinal preview",
-          "url": "https://www.bbc.com/sport/football/articles/c79y29l32gxo",
-          "sourceName": "BBC Sport",
-          "claimType": "reported/coach-quote-preview",
-          "confidence": "high",
-          "fetchedAt": "2026-07-14T01:39:00Z"
-        },
-        {
-          "label": "Al Jazeera France-Spain semifinal preview",
-          "url": "https://www.aljazeera.com/sports/2026/7/13/france-spain-world-cup-semifinal-mbappe-yamal-predictions-kickoff",
-          "sourceName": "Al Jazeera",
-          "claimType": "reported/live-centre-preview",
-          "confidence": "medium-high",
-          "fetchedAt": "2026-07-14T01:39:00Z"
-        },
-        {
-          "label": "NBC DFW France-Spain referee preview",
-          "url": "https://www.nbcdfw.com/world-cup/meet-the-referees-for-the-france-spain-2026-fifa-world-cup-semifinal-at-dallas-stadium/4048623/",
-          "sourceName": "NBC DFW",
-          "fetchedAt": "2026-07-14T01:44:58Z",
-          "claimType": "reported/match-officials",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Dallas Morning News France-Spain weather",
-          "url": "https://www.dallasnews.com/world-cup/article/temperatures-cool-dallas-final-world-cup-match-22338954.php",
-          "sourceName": "Dallas Morning News",
-          "fetchedAt": "2026-07-14T01:44:58Z",
-          "claimType": "context/venue-weather",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Sports Illustrated France-Spain preview",
-          "url": "https://www.si.com/soccer/france-vs-spain-world-cup-preview-predictions-lineups-7-14-26",
-          "sourceName": "Sports Illustrated",
-          "fetchedAt": "2026-07-14T01:44:58Z",
-          "claimType": "reported/lineup-availability-watch",
-          "confidence": "medium"
-        },
-        {
-          "label": "FOX France-Spain live rail",
-          "url": "https://www.fox.com/soccer/fifa-world-cup/france-vs-spain-jul-14-2026",
-          "sourceName": "FOX",
-          "fetchedAt": "2026-07-14T01:44:58Z",
-          "claimType": "context/live-centre",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "RFEF Spain final pre-match training",
-          "url": "https://rfef.es/es/noticias/llego-la-hora-la-final-esta-en-juego",
-          "sourceName": "RFEF",
-          "fetchedAt": "2026-07-14T07:53:15Z",
-          "claimType": "confirmed/official-team-training",
-          "confidence": "high"
-        },
-        {
-          "label": "RFEF De la Fuente final-place presser",
-          "url": "https://rfef.es/es/noticias/luis-de-la-fuente-lo-daremos-todo-por-estar-en-la-final",
-          "sourceName": "RFEF",
-          "fetchedAt": "2026-07-14T07:53:15Z",
-          "claimType": "confirmed/official-coach-quote",
-          "confidence": "high"
-        },
-        {
-          "label": "TF1 Info Tchouaméni available update",
-          "url": "https://www.tf1info.fr/sport/coupe-du-monde-2026-aurelien-tchouameni-est-de-nouveau-disponible-pour-la-demi-finale-contre-l-espagne-annonce-didier-deschamps-2452985.html",
-          "sourceName": "TF1 Info",
-          "fetchedAt": "2026-07-14T07:53:15Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "Sports Mole France-Spain team news predicted XIs",
-          "url": "https://www.sportsmole.co.uk/football/france/world-cup-2026/team-news/france-vs-spain-injury-suspension-list-predicted-xis--world-cup-2026_601095.html",
-          "sourceName": "Sports Mole",
-          "fetchedAt": "2026-07-14T14:09:06Z",
-          "claimType": "reported/availability-expected-xi",
-          "confidence": "medium"
-        },
-        {
-          "label": "RFEF France-Spain last challenge preview",
-          "url": "https://rfef.es/es/noticias/francia-espana-el-ultimo-desafio-hacia-nuestro-gran-sueno",
-          "sourceName": "RFEF",
-          "fetchedAt": "2026-07-14T14:09:06Z",
-          "claimType": "confirmed/official-team-narrative",
-          "confidence": "high"
-        },
-        {
-          "label": "FOX Sports books hoping Spain-England title match",
-          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-odds-books-hoping-spain-england-title-match",
-          "sourceName": "FOX Sports",
-          "fetchedAt": "2026-07-14T14:09:06Z",
-          "claimType": "odds-reference",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "ESPN public scoreboard France-Spain live state",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260714",
-          "sourceName": "ESPN public scoreboard API",
-          "fetchedAt": "2026-07-14T20:17:41Z",
-          "claimType": "context/live-score",
-          "confidence": "high"
-        },
-        {
-          "label": "ESPN France-Spain live updates",
-          "url": "https://www.espn.com/soccer/story/_/id/49359957/france-spain-live-world-cup-2026-latest-updates-commentary-score-result",
-          "sourceName": "ESPN",
-          "fetchedAt": "2026-07-14T20:17:41Z",
-          "claimType": "context/live-centre",
-          "confidence": "high"
-        },
-        {
-          "label": "The Athletic France-Spain live blog",
-          "url": "https://www.nytimes.com/athletic/live-blogs/france-vs-spain-live-updates-world-cup-2026-score-result/plapFicMu6eN/",
-          "sourceName": "The Athletic / New York Times",
-          "fetchedAt": "2026-07-14T20:17:41Z",
-          "claimType": "context/live-score",
+          "fetchedAt": "2026-07-16T15:14:52Z",
+          "claimType": "confirmed/team-context",
           "confidence": "medium-high"
         }
       ],
-      "confidence": "medium-high"
+      "confidence": "high"
     }
   ]
 }
