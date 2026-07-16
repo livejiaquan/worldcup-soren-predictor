@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-16T01:07:21Z",
-  "status": "Final weekend scout: m102 is final (Argentina 2–1 England); m103 France-England and m104 Spain-Argentina now have source-backed cards.",
-  "headline": "決賽週落地：Argentina 2–1 England 已終場；接下來是 France–England 季軍戰與 Spain–Argentina 決賽。",
+  "generatedAt": "2026-07-16T02:56:39Z",
+  "status": "Final weekend scout refresh: m102 final card cleaned; m103 France-England and m104 Spain-Argentina received official/weather/odds/tactical top-ups.",
+  "headline": "決賽週偵察更新：France–England 季軍戰補上官方賽程、Miami 天氣與盤面；Spain–Argentina 決賽補上 FIFA/AFA、戰術與 MetLife 天氣脈絡。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -13,12 +13,6 @@
       "signals": [
         "NPR 報導 Argentina 2–1 擊敗 England，將在週日決賽對 Spain；Lautaro Martínez 的第二球是關鍵終場脈絡。",
         "Al Jazeera 同步報導 Argentina 2–1 逆轉 England 晉級 2026 World Cup final，並指出 England 接下來將在 Miami 對 France 踢第三名戰。",
-        "7/15 20:48 UTC 再補核：ESPN 公開 scoreboard 已從 England 1-0 變為 England 1–1 Argentina、86'、STATUS_SECOND_HALF，completed=false；上一筆 85' 1-0 只能視為過期 live context。",
-        "BBC live 搜尋片段同步顯示 E. Fernández 85' goal；此為賽中進球脈絡，仍需 ESPN/FIFA final 狀態才可結算。",
-        "The Athletic/NBC 搜尋片段仍保留 England leading 的較舊現場敘事，說明 live snippets 會互相追不上；公開端必須優先採用剛查到的 scoreboard state。",
-        "7/15 20:45 UTC 補核：ESPN 公開 scoreboard 顯示 England 1-0 Argentina、85'、STATUS_SECOND_HALF，completed=false；這是現場比分脈絡，不是終場結果。",
-        "同一 ESPN API event 仍列 state=in、period=2；Soren 因此不更新 bracket、不結算紙上盤，也不把 Spain 的決賽對手從 W102 改名。",
-        "搜尋索引同時出現 Metro 與 Al Jazeera live rails，可作賽中追蹤入口；但 snippet/live blog 不是 final-score evidence，若與 ESPN/FIFA 終場狀態衝突，以 completed/post/final 狀態為準。",
         "本地資料與 England Football/主流賽報一致確認 Norway 1-2 England、Argentina 3-1 Switzerland；公開敘事應實名化為 England vs Argentina。",
         "England Football 官方頁確認 England 會在世界盃準決賽對 Argentina；Jude Bellingham 對 Norway 梅開二度，包括延長賽 winner。",
         "The Guardian 賽報確認 Bellingham extra-time winner 幫 England 2-1 逆轉 Norway，進入世界盃準決賽。",
@@ -98,46 +92,6 @@
           "fetchedAt": "2026-07-16T01:07:21Z",
           "claimType": "confirmed/final-result",
           "confidence": "high"
-        },
-        {
-          "label": "ESPN public scoreboard England-Argentina live state (refreshed)",
-          "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260715",
-          "sourceName": "ESPN public scoreboard API",
-          "fetchedAt": "2026-07-15T20:48:02Z",
-          "claimType": "context/live-score",
-          "confidence": "high"
-        },
-        {
-          "label": "The Athletic England-Argentina live updates search-indexed rail",
-          "url": "https://www.nytimes.com/athletic/live-blogs/england-vs-argentina-live-updates-world-cup-2026-score-result-messi/tuuzBVEioXgR/",
-          "sourceName": "The Athletic / NYT",
-          "fetchedAt": "2026-07-15T20:48:02Z",
-          "claimType": "context/live-centre/search-indexed",
-          "confidence": "medium"
-        },
-        {
-          "label": "BBC Sport England-Argentina live text search-indexed goal context",
-          "url": "https://www.bbc.com/sport/football/live/c77yp11e4r6t",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-15T20:48:02Z",
-          "claimType": "context/live-score/search-indexed",
-          "confidence": "medium"
-        },
-        {
-          "label": "ESPN England-Argentina live match page",
-          "url": "https://www.espn.com/soccer/match/_/gameId/760515",
-          "sourceName": "ESPN",
-          "fetchedAt": "2026-07-15T20:46:21Z",
-          "claimType": "context/live-centre",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Al Jazeera England-Argentina live blog search-indexed rail",
-          "url": "https://www.aljazeera.com/sports/liveblog/2026/7/15/england-vs-argentina-live-fifa-world-cup-2026-semifinal",
-          "sourceName": "Al Jazeera",
-          "fetchedAt": "2026-07-15T20:46:21Z",
-          "claimType": "context/live-centre/search-indexed",
-          "confidence": "medium"
         },
         {
           "label": "Soren public worldcup data",
@@ -618,9 +572,14 @@
       "matchId": "m103",
       "match": "France vs England",
       "sourceType": "third-place match + post-semi availability/weather/market watch",
-      "title": "France–England 季軍戰：兩支剛被半決賽打臉的豪門，要在 Miami 把面子撿回來。",
-      "sorenTake": "這不是「沒人在乎」的銅牌局，這是兩個巨星隊把心理殘血和輪換風險攤在陽光底下。France 0–2 輸 Spain 後還要看 Saliba 傷情；England 1–2 被 Argentina 補時刺穿後，Tuchel 說球隊已經全力輸出。Miami 的濕熱與可能雷雨，會把節奏管理變成真正的第三對手。",
+      "title": "France–England 季軍戰：Deschamps 告別戰、Mbappé 金靴線、Miami 濕熱全擠在一場銅牌局。",
+      "sorenTake": "這場不是垃圾時間，是兩個剛被半決賽刺穿的豪門把尊嚴、輪換和個人獎項一起攤開。England 官方已把對 France 的季軍戰落在 Miami；BBC 把它寫成 Deschamps 法國時代的最後一戰；AP 提醒 Mbappé 仍在追 Golden Boot。Soren 的警報不是玄學，是 Miami 開球窗 89–90°F、雷陣雨約 35% 的節奏風險。",
       "signals": [
+        "England Football 官方確認 England 將在 7/18 22:00 BST / 21:00 UTC 於 Miami 對 France 踢世界盃第三名戰；這是賽程硬錨點。",
+        "BBC Sport 把 France 季軍戰定位成 Didier Deschamps 法國任期告別戰；心理線不只「銅牌安慰獎」，也是一段國家隊時代收尾。",
+        "AP 指出 Mbappé 雖無緣第三次連進世界盃決賽，但仍在與 Messi 等人競逐 Golden Boot；季軍戰的個人獎項誘因需要納入輪換判讀。",
+        "FOX Sports / FanDuel 公開盤面列 France to advance 約 -188、England +152；Soren 只把它作紙上市場溫度，不提供下注建議。",
+        "NWS Miami Gardens hourly forecast 在 7/18 17:00–19:00 ET 附近約 90→87°F、南風 8–10 mph、雷陣雨機率約 35%；濕熱與可能延誤比「誰更想踢」更實際。",
         "FOX 賽事頁把本場列為 FIFA World Cup 2026 Match 103 / Bronze Final，France vs England，7/18 21:00 UTC，Miami Stadium。",
         "Guardian 賽報確認 France 0–2 不敵 Spain，Oyarzabal 與 Pedro Porro 進球；France 進攻被限制，季軍戰不能只靠隊徽回血。",
         "USA Today 報導 William Saliba 在 France-Spain 準決賽上半場傷退；季軍戰前列為 France 中衛可用性風險，未有官方確認前不寫死缺陣。",
@@ -630,6 +589,46 @@
         "FIFA Miami host-city / stadium 資訊確認 Miami Stadium 場地脈絡；南佛州高溫濕熱與雷雨風險需賽前再用天氣源覆核。"
       ],
       "sources": [
+        {
+          "label": "England Football France third-place fixture",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/15/england-fixture-details-knockout-stage-20261107",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-16T02:56:39Z",
+          "claimType": "confirmed/official-team-fixture",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Deschamps France era third-place context",
+          "url": "https://www.bbc.co.uk/sport/football/articles/czx5x14v5w2o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-16T02:56:39Z",
+          "claimType": "reported/team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "AP Mbappe Golden Boot third-place context",
+          "url": "https://apnews.com/article/world-cup-kylian-mbappe-faab7b8800224ceb2ce34e02125af7c5",
+          "sourceName": "AP News",
+          "fetchedAt": "2026-07-16T02:56:39Z",
+          "claimType": "reported/player-award-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Sports France-England third-place odds",
+          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-third-place-odds-france-england",
+          "sourceName": "FOX Sports / FanDuel",
+          "fetchedAt": "2026-07-16T02:56:39Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "NWS Miami Gardens hourly kickoff-window forecast",
+          "url": "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-16T02:56:39Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
         {
           "label": "FOX France-England bronze final",
           "url": "https://www.fox.com/soccer/fifa-world-cup/watch-france-vs-england-third-place-bronze-final-jul-18-2026",
@@ -687,15 +686,20 @@
           "confidence": "high"
         }
       ],
-      "confidence": "high"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m104",
       "match": "Spain vs Argentina",
       "sourceType": "final fixture + semifinal form + venue/weather/market watch",
-      "title": "Spain vs Argentina 決賽：Rodri 的控制力撞上 Messi/Lautaro 的補時刀。",
-      "sorenTake": "這場決賽的第一層不是童話，是節奏權。FIFA/Guardian 都把 Spain 2–0 France 的壓制寫得很清楚，Reuters 線索指 Rodri 又像中場地基；另一邊 Argentina 剛靠 Lautaro 補時刺穿 England。Soren 先把 Spain 的控場列為主敘事，把 Argentina 的 late-game cruelty 列為最大反咬路線。",
+      "title": "Spain vs Argentina 決賽：FIFA 官宣 heavyweight final，Spain 控場硬度撞上 Argentina 復活術。",
+      "sorenTake": "這場的主線更清楚了：FIFA 已把它包成 European champions 對 defending world/South American champions，AFA 官方也寫明 Argentina 逆轉 England 後週日 16:00 在 New Jersey 對 Spain。Yahoo/Opta 的公開分析都指向同一個問題：Spain 的防守與 Rodri 中場地基，能不能封住 Argentina 連續逆境回血與 Messi/Lautaro 的末段刀。",
       "signals": [
+        "FIFA 官方 final preview 已上線，把 Spain v Argentina 定位為 European champions 對 defending world and South American champions；這是決賽敘事硬來源。",
+        "AFA 官方首頁確認 Argentina 2–1 逆轉 England，將在週日 16:00 New Jersey 對 Spain 爭世界盃；官方隊端敘事已從四強切到決賽。",
+        "Yahoo Sports 早期決賽預覽把 Argentina 的 comeback pattern 對上 Spain 的 impenetrable defense，並點出 Rodri 作為中場抹除器；這是公開戰術線索，不是 Soren 內部公式。",
+        "Opta Analyst 寫 Argentina 多次接近淘汰仍復活晉級，將面對已追平歐洲國家最長不敗紀錄的 Spain；決賽風險不該被簡化成 Messi 童話。",
+        "USA Today 場地稿提醒 Spain 與 Argentina 本屆都尚未在 MetLife 踢過，球場臨時草皮且無屋頂；NWS Meadowlands 附近 7/19 15:00–19:00 ET 約 84–85°F、雷陣雨機率約 17%，天氣是賽務風險不是勝率神諭。",
         "FOX / FIFA 賽程線索確認 Spain vs Argentina 將於 7/19 19:00 UTC 在 New York New Jersey Stadium 踢 2026 World Cup Final。",
         "FIFA 賽報指出 Spain 2–0 擊敗 France 晉級決賽，防守端限制 France、進攻端由 Oyarzabal 與 Pedro Porro 懲罰對手。",
         "Reuters 搜尋摘要稱 Rodri 對 France 打出 midfield masterclass、支撐 Spain 進決賽；列為高可信中場狀態線索，但全文目前對直接抓取有 401 限制。",
@@ -706,6 +710,54 @@
         "早盤 odds 線索（VegasInsider / BetMGM 媒體摘要）偏 Spain、低比分傾向；只作紙上市場溫度，不提供下注建議。"
       ],
       "sources": [
+        {
+          "label": "FIFA Spain-Argentina final preview",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-v-argentina-live-stream-team-news-tickets-and-more",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-16T02:56:39Z",
+          "claimType": "confirmed/official-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA Argentina final opponent official note",
+          "url": "https://www.afa.com.ar/?lang=en",
+          "sourceName": "AFA",
+          "fetchedAt": "2026-07-16T02:56:39Z",
+          "claimType": "confirmed/official-team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "Yahoo Sports Spain-Argentina early final preview",
+          "url": "https://sports.yahoo.com/soccer/article/world-cup-final-early-preview-argentinas-comebacks-meet-spains-impenetrable-defense-214251519.html",
+          "sourceName": "Yahoo Sports",
+          "fetchedAt": "2026-07-16T02:56:39Z",
+          "claimType": "reported/tactical-context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Opta Analyst Argentina powers of recovery final context",
+          "url": "https://theanalyst.com/articles/argentina-powers-of-recovery-world-cup-final",
+          "sourceName": "Opta Analyst",
+          "fetchedAt": "2026-07-16T02:56:39Z",
+          "claimType": "reported/tactical-context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "USA Today MetLife final venue and weather-risk context",
+          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/07/15/where-is-the-world-cup-final-spain-vs-argentina-game-location-time/90929570007/",
+          "sourceName": "USA Today",
+          "fetchedAt": "2026-07-16T02:56:39Z",
+          "claimType": "reported/venue-weather-context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "NWS Meadowlands hourly final-window forecast",
+          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-16T02:56:39Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
         {
           "label": "FOX Spain-Argentina final page",
           "url": "https://www.fox.com/soccer/fifa-world-cup/watch-spain-vs-argentina-world-cup-final-jul-19-2026",
@@ -787,7 +839,7 @@
           "confidence": "medium"
         }
       ],
-      "confidence": "high"
+      "confidence": "medium-high"
     },
     {
       "matchId": "m054",
