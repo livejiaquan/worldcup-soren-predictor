@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-16T15:14:52Z",
-  "status": "final-weekend-scouting-refresh",
-  "headline": "季軍戰與決賽進入最後週末雷達：官方 fixture、開球窗天氣、公開盤與 postmatch 來源已去重更新。",
+  "generatedAt": "2026-07-16T21:24:13Z",
+  "status": "final-weekend-source-refresh",
+  "headline": "季軍戰與決賽進入最後 72 小時：Spain 官方訓練、Yamal/Porro 可用性、England match-centre、NWS 天氣與紙上市場已更新。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -56,10 +56,16 @@
     {
       "matchId": "m103",
       "match": "France vs England",
-      "sourceType": "third-place match + official fixture/weather/market/rotation watch",
-      "title": "France–England 季軍戰刷新：FIFA bronze final hub 已開，Miami 90°F＋雷雨 38%，rotation 問題比口號更硬。",
-      "sorenTake": "這場仍不是垃圾時間：FIFA 官方 bronze-final hub / match centre 已到位，FOX 5 NY 把焦點放在球星是否出賽與 Golden Boot 追逐；ESPN/DraftKings 盤面顯示 France 90 分鐘約 -115、England 約 +285，但 NWS Miami 開球窗 90→87°F、雷雨機率 38% 才是會把節奏切碎的硬變數。Soren 把它當季軍戰管理題，不把紙上盤當下注指令。",
+      "sourceType": "third-place match + official match-centre/weather/market/rotation watch",
+      "title": "France–England 季軍戰 48h 內刷新：England 官方 match-centre 補 H2H，Miami 90°F＋34% 雷雨，Golden Boot/輪換壓力都還沒收工。",
+      "sorenTake": "這場不是「誰比較想趕快回家」而已：England 官方 match-centre 已補上 France 對 England 的世界盃交手與 BBC 轉播資訊，BBC/RFI 把焦點放在英格蘭 1966 後最佳名次、Mbappé 與 Messi 的金靴拉鋸，以及兩隊半決賽傷口。NWS 最新小時預報把 Miami 開球窗寫成 90→88°F、雷雨機率 34%；Soren 仍把 lineup/rotation 當 watch，不把第三方 predicted XI 或紙上盤當確認。",
       "signals": [
+        "England Football match-centre 7/16 更新 France v England 資訊：這是雙方第四次世界盃交手，England 贏過 1966/1982，France 贏過 2022；官方 team-sheet 仍需等賽前。",
+        "BBC Sport 的「why you should still care」把銅牌戰拆成 England 可能創 1966 後最佳世界盃成績、Mbappé 與 Messi 金靴同 8 球但助攻差距等可驗證敘事。",
+        "RFI/AFP 7/16 報導把 France/England 描述為帶著半決賽自傷感去 Miami 告別；這是 mood/context，不是 lineup 證據。",
+        "Guardian 評論 Tuchel 對 Argentina 的保守換人讓 England 後段被動；Soren 只採作季軍戰 tactical carryover，不寫成官方戰術宣告。",
+        "NWS Miami Gardens 小時預報 7/18 16:00–18:00 ET：90→88°F、Scattered Showers And Thunderstorms、降雨機率 34%、SE 10 mph；濕熱與午後雷雨仍是硬環境變數。",
+        "FOX Sports 7/16 odds 頁與 ESPN/DraftKings 盤面一致：France 是第三名戰熱門；這只列為 paper market temperature，不是下注建議。",
         "FIFA bronze-final preview / match-centre 已可連線，Match 103 是 France vs England，7/18 21:00 UTC，Miami Stadium；正式 lineup/live updates 仍以官方入口或高可信 match centre 為準。",
         "England Football 官方確認 England 將在 7/18 22:00 BST / 21:00 UTC 於 Miami 對 France 踢世界盃第三名戰；這是賽程硬錨點。",
         "BBC Sport 最新賽後脈絡寫明 Thomas Tuchel 仍獲 FA 支持，England 對 France 的銅牌戰若取勝，將是 1966 後英格蘭男足世界盃最佳成績；這讓季軍戰多了管理層與士氣檢驗，不只是安慰賽。",
@@ -67,7 +73,6 @@
         "AP 指出 Mbappé 雖無緣第三次連進世界盃決賽，但仍在與 Messi 等人競逐 Golden Boot；季軍戰的個人獎項誘因需要納入輪換判讀。",
         "FOX 5 NY 可讀 metadata 把 France-England bronze final 寫成「real rotation questions」與 Golden Boot contenders；Soren 只採作公開敘事/輪換雷達，不推定球星必先發。",
         "ESPN/DraftKings odds API 7/16 複核：France 90 分鐘約 -115、England 約 +285、總分 3.5；這是紙上市場溫度，不是下注建議。",
-        "NWS Miami Gardens 小時預報 7/18 17:00–19:00 ET：90→87°F、南風約 9–10 mph、雷陣雨機率 38%；濕熱與可能延誤比「誰比較想踢銅牌戰」更硬。",
         "Guardian 賽報確認 France 0–2 不敵 Spain，Oyarzabal 與 Pedro Porro 進球；France 進攻被限制，季軍戰不能只靠隊徽回血。",
         "USA Today 報導 William Saliba 在 France-Spain 準決賽上半場傷退；季軍戰前列為 France 中衛可用性風險，未有官方確認前不寫死缺陣。",
         "Al Jazeera 報導 England 輸給 Argentina 後將在 Miami 對 France 踢第三名戰；這也把 m103 對戰從路線位落成實名。",
@@ -131,10 +136,10 @@
           "confidence": "medium-high"
         },
         {
-          "label": "NWS Miami Gardens hourly kickoff-window forecast",
+          "label": "NWS Miami Gardens hourly refreshed forecast",
           "url": "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-16T15:14:52Z",
+          "fetchedAt": "2026-07-16T21:24:13Z",
           "claimType": "context/weather-watch",
           "confidence": "high"
         },
@@ -169,6 +174,46 @@
           "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "context/venue-weather",
           "confidence": "high"
+        },
+        {
+          "label": "England Football France v England match centre",
+          "url": "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/world-cup/france-england-fifa-world-cup-bronze-medal-match-saturday-18-july-2026-match-centre",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-16T21:24:13Z",
+          "claimType": "confirmed/official-match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC why care about third-place play-off",
+          "url": "https://www.bbc.com/sport/football/articles/cly5we2lgq4o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-16T21:24:13Z",
+          "claimType": "reported/storyline-context",
+          "confidence": "high"
+        },
+        {
+          "label": "RFI/AFP gloomy World Cup send-off report",
+          "url": "https://www.rfi.fr/en/sports/20260716-france-england-prepare-for-gloomy-world-cup-send-off",
+          "sourceName": "RFI / AFP",
+          "fetchedAt": "2026-07-16T21:24:13Z",
+          "claimType": "reported/team-mood-context",
+          "confidence": "high"
+        },
+        {
+          "label": "Guardian Tuchel semifinal tactical fallout",
+          "url": "https://www.theguardian.com/football/2026/jul/15/thomas-tuchel-england-argentina-semi-final-world-cup",
+          "sourceName": "The Guardian",
+          "fetchedAt": "2026-07-16T21:24:13Z",
+          "claimType": "reported/tactical-context",
+          "confidence": "high"
+        },
+        {
+          "label": "FOX Sports France-England third-place odds",
+          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-third-place-odds-france-england",
+          "sourceName": "FOX Sports",
+          "fetchedAt": "2026-07-16T21:24:13Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -176,17 +221,21 @@
     {
       "matchId": "m104",
       "match": "Spain vs Argentina",
-      "sourceType": "final fixture + official operations/weather/market/narrative watch",
-      "title": "Spain vs Argentina 決賽：FIFA showpiece hub＋閉幕式節奏到位，NWS 開球窗暫偏可控，Messi–Yamal 噪音別當勝率。",
-      "sorenTake": "FIFA 已把 7/19 New York/New Jersey 決賽包成官方 showpiece hub，閉幕式 13:30 local、Post Malone headline 會把賽前節奏拉長；AFA 也正式寫明 Argentina 週日 16:00 對 Spain 爭第四顆星。最新 NWS Meadowlands 開球窗約 83→82°F、降雨機率 8%、西北風 10 mph，暫比早期雨勢標題可控。Soren 的處理：官方營運與天氣先分清，Messi vs Yamal 是全球噪音，不是模型答案。",
+      "sourceType": "final fixture + official training/availability/weather/market/operations watch",
+      "title": "Spain–Argentina 決賽刷新：RFEF 已在 New Jersey 開練，Yamal/Porro 分組訓練但 ESPN 稱預期可上，MetLife 天氣暫降到 2% 雨率。",
+      "sorenTake": "決賽噪音很大，但今天最有用的是可驗證的三件事：RFEF 官方確認 Spain 已在 New Jersey 11:00 local 開始決賽備戰；ESPN 報導 Yamal 與 Pedro Porro 週四分開訓練、但預期可對 Argentina 出賽；NWS 最新 Meadowlands 小時窗把 15:00–17:00 ET 寫成 82→83°F、Sunny、降雨機率 2%。FIFA 閉幕式 13:30 local 是營運節奏，不是勝率訊號；Soren 把 Messi/Yamal 巨星故事留在敘事層，不拿來冒充模型答案。",
       "signals": [
+        "RFEF 官方 7/16 報導 Spain 已在 New Jersey 11:00 local 進行第一堂決賽備戰訓練；這補上 Spain 端 operations 錨點。",
+        "ESPN 7/16 報導 Lamine Yamal 與 Pedro Porro 週四分開訓練，但 Spain 預期兩人都能對 Argentina 出賽；這是 availability watch，不是 confirmed XI。",
+        "FIFA/Inside FIFA 閉幕式稿確認 New York New Jersey Stadium 7/19 13:30 local 開始 closing ceremony；把人流/熱身節奏與足球判讀分開處理。",
+        "NWS Meadowlands 小時預報 7/19 14:00–16:00 ET：81→83°F、Mostly Sunny/Sunny、降雨機率 2%、NW 12–13 mph；目前比早期地方天氣標題更可控，但仍需 matchday 再覆核。",
+        "紙上市場若更新為 Spain 更熱，只保留為 snapshot：lines move，不是 betting advice，也不替任何真金流下注。",
         "FIFA final hub 確認 Spain meet Argentina in New York New Jersey on 19 July，並提供轉播、票務與 match-centre 資訊；這是決賽官方入口。",
         "FIFA Spain-Argentina preview 把第 104 場定位為 European champions Spain 對 defending world and South American champions Argentina；這是決賽敘事硬來源。",
         "FIFA 閉幕式稿確認 New York New Jersey Stadium 7/19 13:30 local 開始閉幕式，Post Malone headline；賽前儀式、人流與熱身節奏需要和比賽本身分開看。",
         "AFA 官方頁面確認 Argentina 2–1 逆轉 England 後，將在週日 16:00 New Jersey 對 Spain 爭第四顆星；這是隊端決賽敘事。",
         "AFA 官方日程先前列出 7/16 仍在 Atlanta United Training Ground 開放訓練、傍晚移防 New Jersey；這是備戰/旅行節奏，不是先發或傷停確認。",
         "ESPN/DK 公開盤：Spain 開為捧盃 -164 熱門、Argentina +134；90 分鐘盤 Spain +125、Draw +200、Argentina +260。市場現在尊重 Spain 控場，但 Soren 只把它列為紙上模擬參考。",
-        "NWS Meadowlands 小時預報 7/19 15:00–17:00 ET：83→82°F、Mostly Sunny/Sunny、降雨機率 8%、西北風 10 mph；與早期媒體雨勢標題相比，官方小時窗目前偏向可控。",
         "FOX 13 Seattle 可讀 metadata 把 final 寫成 legacy、youth、defense、late goals 與 Messi 最後機會；這是 public narrative heat，不是社群留言代表性結論。",
         "Yahoo Sports 早期決賽預覽把 Argentina 的 comeback pattern 對上 Spain 的 impenetrable defense，並點出 Rodri 作為中場抹除器；這是公開戰術線索，不是 Soren 內部公式。",
         "Opta Analyst 寫 Argentina 多次接近淘汰仍復活晉級，將面對已追平歐洲國家最長不敗紀錄的 Spain；決賽風險不該被簡化成 Messi 童話。",
@@ -322,6 +371,38 @@
           "fetchedAt": "2026-07-16T15:14:52Z",
           "claimType": "social-search/public-buzz",
           "confidence": "medium"
+        },
+        {
+          "label": "RFEF Spain first New Jersey final training",
+          "url": "https://rfef.es/es/noticias/espana-ya-entrena-pensando-en-la-final-de-la-copa-del-mundo",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-16T21:24:13Z",
+          "claimType": "confirmed/official-team-operations",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN Yamal and Porro train apart but expected fit",
+          "url": "https://www.espn.com/soccer/story/_/id/49378610/spain-lamine-yamal-pedro-porro-train-apart-fit-argentina-world-cup-final",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-16T21:24:13Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA closing ceremony operations note",
+          "url": "https://inside.fifa.com/organisation/media-releases/world-cup-2026-closing-ceremony-celebrate-historic-tournament-ahead-final",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-16T21:24:13Z",
+          "claimType": "context/event-operations",
+          "confidence": "high"
+        },
+        {
+          "label": "NWS Meadowlands hourly refreshed forecast",
+          "url": "https://api.weather.gov/gridpoints/OKX/33,37/forecast/hourly",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-16T21:24:13Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
