@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-16T02:56:39Z",
-  "status": "Final weekend scout refresh: m102 final card cleaned; m103 France-England and m104 Spain-Argentina received official/weather/odds/tactical top-ups.",
-  "headline": "決賽週偵察更新：France–England 季軍戰補上官方賽程、Miami 天氣與盤面；Spain–Argentina 決賽補上 FIFA/AFA、戰術與 MetLife 天氣脈絡。",
+  "generatedAt": "2026-07-16T09:05:27Z",
+  "status": "final-weekend-scouting-refresh",
+  "headline": "季軍戰與決賽進入 60–82 小時倒數：公開盤、官方訓練與開球窗天氣已刷新。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -571,13 +571,16 @@
     {
       "matchId": "m103",
       "match": "France vs England",
-      "sourceType": "third-place match + post-semi availability/weather/market watch",
-      "title": "France–England 季軍戰：Deschamps 告別戰、Mbappé 金靴線、Miami 濕熱全擠在一場銅牌局。",
-      "sorenTake": "這場不是垃圾時間，是兩個剛被半決賽刺穿的豪門把尊嚴、輪換和個人獎項一起攤開。England 官方已把對 France 的季軍戰落在 Miami；BBC 把它寫成 Deschamps 法國時代的最後一戰；AP 提醒 Mbappé 仍在追 Golden Boot。Soren 的警報不是玄學，是 Miami 開球窗 89–90°F、雷陣雨約 35% 的節奏風險。",
+      "sourceType": "third-place match + post-semi management/weather/market watch",
+      "title": "France–England 季軍戰：Tuchel 續航、Deschamps 告別、Mbappé 金靴線與 Miami 濕熱同場開打。",
+      "sorenTake": "這場仍不是垃圾時間：BBC 最新稿寫明 Tuchel 仍獲 FA 支持，England 若贏會拿到 1966 後男子世界盃最佳名次；France 這邊則是 Deschamps 告別戰與 Mbappé 金靴線。FOX/FanDuel 盤面仍給 France 讓位，但 Miami 開球窗 90°F、雷陣雨約 38% 才是會把節奏切碎的硬變數。",
       "signals": [
         "England Football 官方確認 England 將在 7/18 22:00 BST / 21:00 UTC 於 Miami 對 France 踢世界盃第三名戰；這是賽程硬錨點。",
+        "BBC Sport 最新賽後脈絡寫明 Thomas Tuchel 仍獲 FA 支持，England 對 France 的銅牌戰若取勝，將是 1966 後英格蘭男足世界盃最佳成績；這讓季軍戰多了管理層與士氣檢驗，不只是安慰賽。",
         "BBC Sport 把 France 季軍戰定位成 Didier Deschamps 法國任期告別戰；心理線不只「銅牌安慰獎」，也是一段國家隊時代收尾。",
         "AP 指出 Mbappé 雖無緣第三次連進世界盃決賽，但仍在與 Messi 等人競逐 Golden Boot；季軍戰的個人獎項誘因需要納入輪換判讀。",
+        "FOX Sports / FanDuel 7/15 盤面：晉級/奪第三名 France -188、England +152；90 分鐘 moneyline France +100、Draw +260、England +260。Soren 只把它當紙上市場溫度，絕不當下注指令。",
+        "NWS Miami Gardens 小時預報刷新：7/18 17:00 ET 開球窗約 90°F、南風 10 mph、雷陣雨機率 38%，到 19:00 ET 約 87°F；濕熱與可能延誤比「誰比較想踢銅牌戰」更硬。",
         "FOX Sports / FanDuel 公開盤面列 France to advance 約 -188、England +152；Soren 只把它作紙上市場溫度，不提供下注建議。",
         "NWS Miami Gardens hourly forecast 在 7/18 17:00–19:00 ET 附近約 90→87°F、南風 8–10 mph、雷陣雨機率約 35%；濕熱與可能延誤比「誰更想踢」更實際。",
         "FOX 賽事頁把本場列為 FIFA World Cup 2026 Match 103 / Bronze Final，France vs England，7/18 21:00 UTC，Miami Stadium。",
@@ -684,6 +687,14 @@
           "fetchedAt": "2026-07-16T01:07:21Z",
           "claimType": "context/venue-weather",
           "confidence": "high"
+        },
+        {
+          "label": "BBC Tuchel retains FA backing before bronze match",
+          "url": "https://www.bbc.com/sport/football/articles/cly5ljl414xo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-16T09:02:57Z",
+          "claimType": "reported/management-context",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "medium-high"
@@ -691,12 +702,16 @@
     {
       "matchId": "m104",
       "match": "Spain vs Argentina",
-      "sourceType": "final fixture + semifinal form + venue/weather/market watch",
-      "title": "Spain vs Argentina 決賽：FIFA 官宣 heavyweight final，Spain 控場硬度撞上 Argentina 復活術。",
-      "sorenTake": "這場的主線更清楚了：FIFA 已把它包成 European champions 對 defending world/South American champions，AFA 官方也寫明 Argentina 逆轉 England 後週日 16:00 在 New Jersey 對 Spain。Yahoo/Opta 的公開分析都指向同一個問題：Spain 的防守與 Rodri 中場地基，能不能封住 Argentina 連續逆境回血與 Messi/Lautaro 的末段刀。",
+      "sourceType": "final fixture + official operations/weather/market/narrative watch",
+      "title": "Spain vs Argentina 決賽：Spain 變公開盤熱門，Argentina 帶 Messi–Yamal 敘事與官方移防 New Jersey。",
+      "sorenTake": "決賽主線更尖了：FIFA/AP 把它寫成 Messi 的 Argentina 對 Yamal 的 Spain，AFA 公布 7/16 仍在 Atlanta United Training Ground 做媒體開放訓練、傍晚移防 New Jersey。公開市場也同步轉向 Spain：ESPN 引 DK 開 Spain -164 捧盃、90 分鐘 Spain +125 / 和局 +200 / Argentina +260。Soren 的處理：把盤口當外部溫度，把官方訓練/移動與 NWS 開球窗天氣當賽務風險，不把童話敘事直接折成勝率。",
       "signals": [
         "FIFA 官方 final preview 已上線，把 Spain v Argentina 定位為 European champions 對 defending world and South American champions；這是決賽敘事硬來源。",
         "AFA 官方首頁確認 Argentina 2–1 逆轉 England，將在週日 16:00 New Jersey 對 Spain 爭世界盃；官方隊端敘事已從四強切到決賽。",
+        "AFA 官方日程列出 Argentina 7/16 11:30 在 Atlanta United Training Ground 訓練，前 15 分鐘對認證媒體開放，並註記傍晚移動前往 New Jersey；這是決賽備戰/旅行節奏，不是先發或傷停確認。",
+        "ESPN/DK 公開盤：Spain 開為捧盃 -164 熱門、Argentina +134；90 分鐘盤 Spain +125、Draw +200、Argentina +260。市場現在尊重 Spain 控場，但 Soren 只把它列為紙上模擬參考。",
+        "AP 的決賽預覽把輿論敘事壓到「Messi and Argentina vs Yamal and Spain」；這是全球關注度與心理噪音，不是可靠的勝率公式。",
+        "NWS Meadowlands 小時預報刷新：7/19 15:00 ET 開球約 81°F、Mostly Sunny、降雨機率約 9%、西北風 10 mph；與較早媒體雨勢標題相比，官方小時窗目前偏向可控。",
         "Yahoo Sports 早期決賽預覽把 Argentina 的 comeback pattern 對上 Spain 的 impenetrable defense，並點出 Rodri 作為中場抹除器；這是公開戰術線索，不是 Soren 內部公式。",
         "Opta Analyst 寫 Argentina 多次接近淘汰仍復活晉級，將面對已追平歐洲國家最長不敗紀錄的 Spain；決賽風險不該被簡化成 Messi 童話。",
         "USA Today 場地稿提醒 Spain 與 Argentina 本屆都尚未在 MetLife 踢過，球場臨時草皮且無屋頂；NWS Meadowlands 附近 7/19 15:00–19:00 ET 約 84–85°F、雷陣雨機率約 17%，天氣是賽務風險不是勝率神諭。",
@@ -837,6 +852,38 @@
           "fetchedAt": "2026-07-16T01:07:21Z",
           "claimType": "odds-reference",
           "confidence": "medium"
+        },
+        {
+          "label": "AFA Argentina final-week training and travel schedule",
+          "url": "https://www.afa.com.ar/es/posts/cronograma-de-la-seleccion-argentina-manana-se-realizara-un-entrenamiento-abierto",
+          "sourceName": "AFA",
+          "fetchedAt": "2026-07-16T09:02:57Z",
+          "claimType": "confirmed/official-team-operations",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN/DK Spain-Argentina final odds",
+          "url": "https://www.espn.com/espn/betting/story/_/id/48386952/espn-soccer-futbol-world-cup-betting-odds-championship-groups",
+          "sourceName": "ESPN / DK Sports",
+          "fetchedAt": "2026-07-16T09:02:57Z",
+          "claimType": "odds-reference",
+          "confidence": "high"
+        },
+        {
+          "label": "AP Messi-Argentina vs Yamal-Spain final narrative",
+          "url": "https://apnews.com/article/argentina-messi-spain-yamal-world-cup-final-55077ce5c4728c4207a39cc4aa8a41a1",
+          "sourceName": "AP News",
+          "fetchedAt": "2026-07-16T09:02:57Z",
+          "claimType": "reported/public-narrative-context",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA hospitality M104 final event listing",
+          "url": "https://fifaworldcup26.suites.fifa.com/events/m104-final-111735/",
+          "sourceName": "FIFA / On Location",
+          "fetchedAt": "2026-07-16T09:02:57Z",
+          "claimType": "confirmed/official-event-listing",
+          "confidence": "high"
         }
       ],
       "confidence": "medium-high"
