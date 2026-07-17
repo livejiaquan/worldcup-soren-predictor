@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-17T15:51:10Z",
-  "status": "final-weekend-late-availability-weather-transport-refresh",
-  "headline": "最後週末 29–51 小時窗：France–England 補 Al Jazeera/BBC 傷停與重輪換警戒；Spain–Argentina 複查 NWS 開球窗仍晴、但 NJ.com 雨雷與 NJ Transit 早班運輸列入賽前監控。",
+  "generatedAt": "2026-07-17T22:04:43Z",
+  "status": "final-weekend-matchday-minus-one-official-weather-referee-refresh",
+  "headline": "最後週末 23–45 小時窗：France–England 補官方 match-centre/BBC 銅牌戰敘事並下修 Miami 雷雨風險；Spain–Argentina 以 AP/AFA 確認 Vinčić 執法，NWS 決賽窗仍晴。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -56,25 +56,22 @@
     {
       "matchId": "m103",
       "match": "France vs England",
-      "sourceType": "third-place match + official match-centre/weather/market/availability/rotation watch",
-      "title": "France–England 季軍戰 29 小時窗：Al Jazeera/BBC 補強 Saliba/Samba/Henderson/James 傷停線，Miami 仍是濕熱＋短雷雨測驗。",
-      "sorenTake": "季軍戰剩約 29 小時，Soren 仍把這場當「疲勞＋輪換＋悶熱」測驗，不把任何 predicted XI 當官方先發。Al Jazeera 7/17 直接列 William Saliba（背）、Brice Samba（小腿）France 不可用，Jordan Henderson（手腕）England 受傷、Reece James（肌肉）存疑；BBC 也補 Saliba 背傷需回 Arsenal 評估。NWS 15:51Z 再查 Miami 開球前 16:00–18:00 ET 仍是 90→91→89°F、23→28→8% 降雨/雷雨機率，悶熱是真的，雷雨是節奏偷襲，不是終場劇本。",
+      "sourceType": "third-place match + official match-centre/weather/availability/rotation/motivation watch",
+      "title": "France–England 季軍戰 23 小時窗：官方入口可監控先發，Miami 從雷雨警戒降回濕熱管理。",
+      "sorenTake": "季軍戰剩約 23 小時，Soren 仍把這場當「疲勞＋輪換＋濕熱」測驗，不把任何 predicted XI 當官方先發。England Football match-centre 已可讀，賽前 team sheet 要盯這類官方入口；BBC 的銅牌戰稿把 England 1966 後最佳名次、Mbappé 金靴與 Deschamps 告別線拉回動機面。NWS 22:04Z 再查 Miami 開球前 16:00–18:00 ET 為 88→89→87°F、Sunny/Mostly Sunny/Partly Cloudy、降雨率 7→7→4%、S 12–13 mph；濕熱仍是體能稅，但雷雨目前不該被寫成主劇本。",
       "signals": [
+        "NWS Miami Gardens hourly API 7/17 22:04Z 再核：7/18 16:00–18:00 ET 88→89→87°F、Sunny/Mostly Sunny/Partly Cloudy，降雨機率 7→7→4%、S 12–13 mph；相較 15:51Z，雷雨風險明顯降級，濕熱才是主風險。",
+        "England Football match-centre 7/17 22:04Z parent-verified meta：France v England 是 Miami 決定世界盃第三名的官方 England 入口，頁面描述為「all of the news and information ahead」；team sheet 仍需等賽前。",
+        "BBC Sport 7/16 銅牌戰解釋稿 parent-verified：這場不是純安慰賽，England 若拿第三會是 1966 後最佳男足世界盃名次，Mbappé/金靴與 Deschamps 告別也讓輪換判讀不能只看疲勞。",
         "Al Jazeera 7/17 France–England preview 直接列 William Saliba（back）與 Brice Samba（calf）France 不可用，Jordan Henderson（wrist）England 受傷、Reece James（muscle）存疑；同文預期兩隊會重輪換。Soren 標為 credible reported availability，不當官方 XI。",
         "BBC Sport 7/17 寫 Arsenal 將在 Saliba 世界盃任務後評估他的背傷、甚至列 surgery as an option；這補強 Saliba 不是單一 predicted-XI 傳聞，但仍不等於 France 官方賽前名單。",
-        "NWS Miami Gardens hourly API 7/17 15:51Z 再核：7/18 16:00–18:00 ET 90→91→89°F、Slight/Chance Showers And Thunderstorms 後轉 Partly Cloudy，降雨機率 23→28→8%、SE/S 10–12 mph；與 09:42Z 幾乎一致，濕熱主風險不變。",
-        "NWS Miami Gardens hourly API 7/17 09:42Z 再核：7/18 16:00–18:00 ET 90→91→89°F、Slight/Chance Thunderstorms 後轉 Partly Cloudy，降雨機率 23→28→8%、SE/S 10–12 mph；雷雨風險較 03:32Z 的 34% 低，但濕熱仍在。",
         "Sports Mole 7/16 10:41 predicted XI 把 William Saliba 背傷升成「almost certainly」缺陣投影，並推 Maxence Lacroix/多處輪換；Soren 只採作 reported availability + rotation watch，不當官方 team sheet。",
         "England Football 7/16 Stat Pack 補官方脈絡：Olise 以 5 次助攻領跑本屆、Anthony Gordon 近 4 場世界盃每 66 分鐘參與一球；這是對位/威脅背景，不代表 Tuchel 先發選擇。",
         "Hard Rock Stadium HRS Express 頁面確認 matchday shuttle / Lot 70 服務入口仍可讀；Miami 交通只列 event-ops context，不進模型勝率。",
-        "England Football match-centre 7/17 直接可讀 meta：France v England 是 Miami 決定第三名的官方 England 入口；team sheet 仍需等賽前，不把頁面當先發名單。",
         "Sports Mole 7/16 10:40 報導 Reece James 在對 Argentina 準決賽最後 10 分鐘因新肌肉問題退場，並預期很難出戰 France；Soren 標為 reported availability，不升格成官方缺陣。",
-        "NWS Miami Gardens hourly API 7/17 03:32Z 再核：7/18 16:00–18:00 ET 90→88°F、Scattered Showers And Thunderstorms、降雨機率 34%、SE 10 mph；與前次一致，濕熱＋雷雨仍是比賽節奏風險。",
         "England Football match-centre 7/16 更新 France v England 資訊：這是雙方第四次世界盃交手，England 贏過 1966/1982，France 贏過 2022；官方 team-sheet 仍需等賽前。",
-        "BBC Sport 的「why you should still care」把銅牌戰拆成 England 可能創 1966 後最佳世界盃成績、Mbappé 與 Messi 金靴同 8 球但助攻差距等可驗證敘事。",
         "RFI/AFP 7/16 報導把 France/England 描述為帶著半決賽自傷感去 Miami 告別；這是 mood/context，不是 lineup 證據。",
         "Guardian 評論 Tuchel 對 Argentina 的保守換人讓 England 後段被動；Soren 只採作季軍戰 tactical carryover，不寫成官方戰術宣告。",
-        "NWS Miami Gardens 小時預報 7/18 16:00–18:00 ET：90→88°F、Scattered Showers And Thunderstorms、降雨機率 34%、SE 10 mph；濕熱與午後雷雨仍是硬環境變數。",
         "FOX Sports 7/16 odds 頁與 ESPN/DraftKings 盤面一致：France 是第三名戰熱門；這只列為 paper market temperature，不是下注建議。",
         "FIFA bronze-final preview / match-centre 已可連線，Match 103 是 France vs England，7/18 21:00 UTC，Miami Stadium；正式 lineup/live updates 仍以官方入口或高可信 match centre 為準。",
         "England Football 官方確認 England 將在 7/18 22:00 BST / 21:00 UTC 於 Miami 對 France 踢世界盃第三名戰；這是賽程硬錨點。",
@@ -88,10 +85,33 @@
         "Al Jazeera 報導 England 輸給 Argentina 後將在 Miami 對 France 踢第三名戰；這也把 m103 對戰從路線位落成實名。",
         "FIFA Miami host-city / stadium 資訊確認 Miami Stadium 場地脈絡；南佛州高溫濕熱與雷雨風險需賽前再用天氣源覆核。",
         "ESPN 7/17 France-England bronze-playoff preview 已可讀 metadata；頁面主題含 injury / predicted lineups，Soren 只採作賽前可用性與輪換觀察，不當官方名單。",
-        "BBC Sport 7/17 William Saliba 傷情稿確認 Arsenal 將在他世界盃任務後評估背傷，手術是選項之一；季軍戰前列為 France 中衛可用性硬風險。",
-        "NWS Miami Gardens hourly API 7/17 再核：7/18 16:00–18:00 ET 90→88°F、Scattered Showers And Thunderstorms、降雨機率 34%、SE 10 mph；天氣沒有惡化成取消訊號，但仍是比賽節奏風險。"
+        "BBC Sport 7/17 William Saliba 傷情稿確認 Arsenal 將在他世界盃任務後評估背傷，手術是選項之一；季軍戰前列為 France 中衛可用性硬風險。"
       ],
       "sources": [
+        {
+          "label": "NWS Miami Gardens hourly forecast 22:04Z recheck",
+          "url": "https://api.weather.gov/gridpoints/MFL/109,49/forecast/hourly",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-17T22:04:43Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "England Football France v England match centre 22:04Z recheck",
+          "url": "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/world-cup/france-england-fifa-world-cup-bronze-medal-match-saturday-18-july-2026-match-centre",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-17T22:04:43Z",
+          "claimType": "confirmed/official-match-centre",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC why care about third-place play-off 22:04Z recheck",
+          "url": "https://www.bbc.com/sport/football/articles/cly5we2lgq4o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-17T22:04:43Z",
+          "claimType": "reported/storyline-context",
+          "confidence": "high"
+        },
         {
           "label": "Al Jazeera France-England bronze playoff team news",
           "url": "https://www.aljazeera.com/sports/2026/7/17/france-england-fifa-world-cup-third-place-playoff-predictions-kickoff",
@@ -107,14 +127,6 @@
           "fetchedAt": "2026-07-17T15:51:10Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium-high"
-        },
-        {
-          "label": "NWS Miami Gardens hourly forecast 15:51Z recheck",
-          "url": "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-17T15:51:10Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
         },
         {
           "label": "Sports Mole France predicted XI / Saliba availability projection",
@@ -138,14 +150,6 @@
           "sourceName": "Hard Rock Stadium",
           "fetchedAt": "2026-07-17T09:44:44Z",
           "claimType": "context/event-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "England Football France v England match centre direct recheck",
-          "url": "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/world-cup/france-england-fifa-world-cup-bronze-medal-match-saturday-18-july-2026-match-centre",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-17T03:34:40Z",
-          "claimType": "confirmed/official-match-centre",
           "confidence": "high"
         },
         {
@@ -245,14 +249,6 @@
           "confidence": "high"
         },
         {
-          "label": "BBC why care about third-place play-off",
-          "url": "https://www.bbc.com/sport/football/articles/cly5we2lgq4o",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-16T21:24:13Z",
-          "claimType": "reported/storyline-context",
-          "confidence": "high"
-        },
-        {
           "label": "RFI/AFP gloomy World Cup send-off report",
           "url": "https://www.rfi.fr/en/sports/20260716-france-england-prepare-for-gloomy-world-cup-send-off",
           "sourceName": "RFI / AFP",
@@ -290,28 +286,25 @@
     {
       "matchId": "m104",
       "match": "Spain vs Argentina",
-      "sourceType": "final fixture + official tactical/event/weather/air-quality/availability/transport/market watch",
-      "title": "Spain–Argentina 決賽 51 小時窗：NWS 開球窗仍晴，但 NJ.com 雨雷預警與 NJ Transit 早班運輸要賽前再核。",
-      "sorenTake": "決賽剩約 51 小時，Soren 把 NY/NJ 風險拆開：NWS 15:51Z 對 7/19 14:00–16:00 ET 仍給 81→82°F、Sunny、0% 降雨、NW 10–12 mph，所以目前開球窗不是雨戰；但 NJ.com 7/17 標題/摘要提醒週日 New Jersey 仍有 rain showers / possible thunderstorms 的不確定性，賽前要再核雷達與短臨。交通面，Daily Record/NorthJersey 搜尋摘要列 NJ Transit 10:30 起開往球場、官方 shuttle 9:30–12:30、停車場 10:00 開；這是 event-ops context，不進勝率。",
+      "sourceType": "final fixture + official referee/tactical/event/weather/air-quality/availability/transport/market watch",
+      "title": "Spain–Argentina 決賽 45 小時窗：AP/AFA 確認 Vinčić 執法，NWS 開球窗仍晴但空品/交通保留監控。",
+      "sorenTake": "決賽剩約 45 小時，Soren 把硬訊號分三層：AP 7/17 與 AFA 官方都確認 FIFA 指派 Slovenian referee Slavko Vinčić 執法 Spain–Argentina；RFEF 7/16 已確認 Spain 在 New Jersey 進行第一堂決賽備戰；NWS 22:04Z 對 7/19 14:00–16:00 ET 仍給 81→82°F、Sunny、0% 降雨、NW 10 mph，所以目前開球窗不是雨戰。NJ.com 的區域雨雷、BBC/AP 的煙霾空品、NJ Transit 人流都保留賽前監控，但不混進勝率結論。",
       "signals": [
-        "NWS Meadowlands hourly API 7/17 15:51Z 再核：決賽日 7/19 14:00–16:00 ET 81→82°F、Sunny、降雨機率 0%、NW 10–12 mph；開球窗官方小時預報仍偏乾爽，雨戰暫不升級。",
+        "AP News 7/17 10:56Z（modified 15:53Z）parent-verified：FIFA announced late Thursday，Slovenia 的 Slavko Vinčić 將執法 Argentina–Spain 決賽；這是 confirmed match-official，不是戰術或停賽訊號。",
+        "AFA 官方頁面 7/17 22:04Z parent-verified title：El árbitro esloveno Slavko Vinčić dirigirá la final entre Argentina y España；隊端也把裁判任命列為官方脈絡。",
+        "NWS Meadowlands hourly API 7/17 22:04Z 再核：決賽日 7/19 14:00–16:00 ET 81→82→82°F、Sunny、降雨機率 0%、NW 10 mph；開球窗仍偏乾爽，雨戰暫不升級。",
+        "RFEF 7/16 18:30 官方稿 parent-verified：Spain 已於 New Jersey 11:00 local 進行第一堂決賽備戰，對手為 Argentina；這是 team-ops context，不是先發名單。",
         "NJ.com 7/17 天氣稿標題/摘要稱 World Cup Final 週日 MetLife Stadium 仍有 rain showers / possible thunderstorms 威脅；因與 NWS 開球窗 0% rain 有張力，Soren 只列為 weather uncertainty lead，要求賽前再查短臨。",
         "Daily Record/NorthJersey 7/16 搜尋摘要列 MetLife 決賽交通：NJ Transit train service 10:30 起、官方 shuttle buses 9:30–12:30 連續運行、parking lots 10:00 開；這是觀眾動線/開幕式時間壓力，不是競技因素。",
         "The Athletic/NYT 7/15 odds 摘要：Kalshi 列 Spain 58% 奪冠、DraftKings Spain -178 lift cup / Argentina +154；只作 paper-market temperature，不是下注建議。",
         "BBC Sport 7/16 報導 New York / New Jersey 因加拿大野火煙霾發布 air quality health alert；Spain 週四仍在戶外訓練，Argentina 預計週五下午到 New Jersey 開始訓練，決賽前需再查 AQI。",
         "AP 7/16 以 Spain practice outside before the World Cup final as smoke fills the air 為題確認煙霾脈絡；這是 context/weather-health watch，不是延期或競賽結論。",
-        "NWS Meadowlands hourly API 7/17 09:42Z 再核：7/19 14:00–16:00 ET 81→82°F、Sunny、降雨機率 0%、NW 10–12 mph；雨/雷雨不在主風險，空品才是賽前複查點。",
         "Moneycontrol/Reuters 7/17 報導 Yamal、Porro 週四在 New Jersey 與大隊分開訓練；RFEF 對 Reuters 表示兩人預期可在決賽出賽，分開訓練屬 workload precaution，Porro hamstring strain 不被視為嚴重。",
-        "RFEF 7/16 官方確認 Spain 抵達 Newark 後於 New Jersey 11:00 local 進行第一堂決賽備戰，地點為 Red Bull New York 的 Melanie Lane Training Grounds；這是 team-ops context，不是先發名單。",
-        "AFA 7/16 官方寫明 FIFA 指派 Slovenian referee Slavko Vinčić 執法 Argentina–Spain 決賽，週日 16:00 Argentina time / MetLife Stadium；Soren 只列為裁判與比賽節奏背景。",
         "Sports Mole 7/16 傷停表把 Lamine Yamal 標為 knock/minor doubt、Pedro Porro 標為 muscle/minor doubt，兩人 possible return date 皆為 7/19；這與 ESPN「預期可出賽」一致，但仍不是 official XI。",
         "Sports Mole 7/16 Argentina 傷停表把 Cristian Romero 與 Leandro Paredes 標為 available：Romero 抽筋後已踢滿對 England 的 90 分鐘，Paredes 也列入決賽可用；Soren 只採作可用性雷達。",
-        "NWS Meadowlands hourly API 7/17 03:32Z 再核：7/19 14:00–16:00 ET 83→85°F、Mostly Sunny/Sunny、降雨機率 2%、NW 12 mph；空品事件需賽前再看，但降雨/雷雨目前不是主風險。",
         "NJ Transit 官方決賽日公告：7/19 10:24–14:14 PSNY/Secaucus 候車與服務限縮給前往 NYNJ Stadium 乘客，賽後 17:15–21:29 東向列車將改終點；這是球迷動線與入場節奏脈絡。",
-        "RFEF 官方 7/16 報導 Spain 已在 New Jersey 11:00 local 進行第一堂決賽備戰訓練；這補上 Spain 端 operations 錨點。",
         "ESPN 7/16 報導 Lamine Yamal 與 Pedro Porro 週四分開訓練，但 Spain 預期兩人都能對 Argentina 出賽；這是 availability watch，不是 confirmed XI。",
         "FIFA/Inside FIFA 閉幕式稿確認 New York New Jersey Stadium 7/19 13:30 local 開始 closing ceremony；把人流/熱身節奏與足球判讀分開處理。",
-        "NWS Meadowlands 小時預報 7/19 14:00–16:00 ET：81→83°F、Mostly Sunny/Sunny、降雨機率 2%、NW 12–13 mph；目前比早期地方天氣標題更可控，但仍需 matchday 再覆核。",
         "紙上市場若更新為 Spain 更熱，只保留為 snapshot：lines move，不是 betting advice，也不替任何真金流下注。",
         "FIFA final hub 確認 Spain meet Argentina in New York New Jersey on 19 July，並提供轉播、票務與 match-centre 資訊；這是決賽官方入口。",
         "FIFA Spain-Argentina preview 把第 104 場定位為 European champions Spain 對 defending world and South American champions Argentina；這是決賽敘事硬來源。",
@@ -327,17 +320,40 @@
         "Financial Express / Free Press Journal 搜尋可見舊社群貼文因 Spain-Argentina 決賽成真而 viral；這只標為 social-search/public-buzz，不能拿來代表球迷整體民意或預言。",
         "FIFA 7/17 官方 key-duels 預覽把 Spain-Argentina 決賽拆成 Messi vs Laporte、Rodri vs Enzo Fernández、Lamine Yamal vs Nicolás Tagliafico；這是戰術敘事來源，不是先發保證。",
         "BBC Sport 7/17 報導 FIFA 正在 assessing match reports，判斷 Argentina 球員賽後 Falklands/Malvinas 橫幅是否需處分；目前只是紀律待評估，不寫成禁賽或出場變動。",
-        "BBC Sport 7/17 另報導 New York/New Jersey 因加拿大野火煙霧發布空氣品質健康提醒；NWS Meadowlands 小時 API 仍把決賽窗寫成晴朗、2% 雨率，空品需賽前再覆核。",
         "NJ Transit 官方 FIFA 2026 頁確認 match ticket 含 Secaucus Junction 至 NYNJ Stadium 轉乘，賽前約 4 小時開始、約 10–20 分鐘一班；這是球迷/人流營運脈絡，不是模型勝率訊號。",
         "MetLife Stadium 官方事件頁列出 FIFA World Cup 2026 Final，7/19 event starts 3:00 PM；閉幕式、入場與熱身節奏要和足球判讀分開。"
       ],
       "sources": [
         {
-          "label": "NWS Meadowlands hourly forecast 15:51Z recheck",
+          "label": "AP Slavko Vinčić final referee confirmation",
+          "url": "https://apnews.com/article/world-cup-final-slovenia-referee-vincic-argentina-83fca515639ed6cc70723f08ba2bb027",
+          "sourceName": "AP News",
+          "fetchedAt": "2026-07-17T22:04:43Z",
+          "claimType": "confirmed/match-official",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA Slavko Vinčić final referee official note",
+          "url": "https://www.afa.com.ar/es/posts/el-arbitro-esloveno-slavko-vin-i-dirigira-la-final-entre-argentina-y-espana",
+          "sourceName": "AFA",
+          "fetchedAt": "2026-07-17T22:04:43Z",
+          "claimType": "confirmed/match-official",
+          "confidence": "high"
+        },
+        {
+          "label": "NWS Meadowlands hourly forecast 22:04Z recheck",
           "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-17T15:51:10Z",
+          "fetchedAt": "2026-07-17T22:04:43Z",
           "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "RFEF Spain first New Jersey training session 22:04Z recheck",
+          "url": "https://rfef.es/es/noticias/espana-ya-entrena-pensando-en-la-final-de-la-copa-del-mundo",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-17T22:04:43Z",
+          "claimType": "confirmed/team-operations",
           "confidence": "high"
         },
         {
@@ -386,22 +402,6 @@
           "sourceName": "Reuters / Moneycontrol",
           "fetchedAt": "2026-07-17T09:44:44Z",
           "claimType": "reported/availability-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "RFEF Spain first New Jersey training session",
-          "url": "https://rfef.es/es/noticias/espana-ya-entrena-pensando-en-la-final-de-la-copa-del-mundo",
-          "sourceName": "RFEF",
-          "fetchedAt": "2026-07-17T09:44:44Z",
-          "claimType": "confirmed/team-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "AFA final referee Slavko Vinčić confirmation",
-          "url": "https://www.afa.com.ar/es/posts/el-arbitro-esloveno-slavko-vin-i-dirigira-la-final-entre-argentina-y-espana",
-          "sourceName": "AFA",
-          "fetchedAt": "2026-07-17T09:44:44Z",
-          "claimType": "confirmed/match-official",
           "confidence": "high"
         },
         {
@@ -562,14 +562,6 @@
           "sourceName": "FIFA",
           "fetchedAt": "2026-07-16T21:24:13Z",
           "claimType": "context/event-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Meadowlands hourly forecast recheck",
-          "url": "https://api.weather.gov/gridpoints/OKX/33,37/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-17T01:05:27Z",
-          "claimType": "context/weather-watch",
           "confidence": "high"
         },
         {
