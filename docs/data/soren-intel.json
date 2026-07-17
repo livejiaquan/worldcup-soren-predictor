@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-17T09:44:44Z",
-  "status": "final-weekend-air-quality-refresh",
-  "headline": "最後週末 35–57 小時窗：France–England 補 Miami 天氣與 Saliba 輪換雷達；Spain–Argentina 補 NY/NJ 空品警示、Yamal/Porro 分開訓練與決賽主裁。",
+  "generatedAt": "2026-07-17T15:51:10Z",
+  "status": "final-weekend-late-availability-weather-transport-refresh",
+  "headline": "最後週末 29–51 小時窗：France–England 補 Al Jazeera/BBC 傷停與重輪換警戒；Spain–Argentina 複查 NWS 開球窗仍晴、但 NJ.com 雨雷與 NJ Transit 早班運輸列入賽前監控。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -57,9 +57,12 @@
       "matchId": "m103",
       "match": "France vs England",
       "sourceType": "third-place match + official match-centre/weather/market/availability/rotation watch",
-      "title": "France–England 季軍戰 35 小時窗：Miami 雷雨機率回落但仍悶熱，Saliba 缺陣投影加深輪換味。",
-      "sorenTake": "季軍戰剩約 35 小時，Soren 把這場當「疲勞＋輪換＋濕熱」測驗，不把 predicted XI 當官方先發。NWS 09:42Z 將 Miami 開球前 16:00–18:00 ET 更新為 90→91→89°F、23→28→8% 雷雨/降雨機率、SE/S 10–12 mph；比前一版 34% 雷雨略收斂，但熱與短時雷雨還是會偷節奏。Sports Mole 進一步把 Saliba 背傷投影成幾乎缺陣、Lacroix/輪換線升溫；這是 reported availability，不是 Deschamps 已交名單。",
+      "title": "France–England 季軍戰 29 小時窗：Al Jazeera/BBC 補強 Saliba/Samba/Henderson/James 傷停線，Miami 仍是濕熱＋短雷雨測驗。",
+      "sorenTake": "季軍戰剩約 29 小時，Soren 仍把這場當「疲勞＋輪換＋悶熱」測驗，不把任何 predicted XI 當官方先發。Al Jazeera 7/17 直接列 William Saliba（背）、Brice Samba（小腿）France 不可用，Jordan Henderson（手腕）England 受傷、Reece James（肌肉）存疑；BBC 也補 Saliba 背傷需回 Arsenal 評估。NWS 15:51Z 再查 Miami 開球前 16:00–18:00 ET 仍是 90→91→89°F、23→28→8% 降雨/雷雨機率，悶熱是真的，雷雨是節奏偷襲，不是終場劇本。",
       "signals": [
+        "Al Jazeera 7/17 France–England preview 直接列 William Saliba（back）與 Brice Samba（calf）France 不可用，Jordan Henderson（wrist）England 受傷、Reece James（muscle）存疑；同文預期兩隊會重輪換。Soren 標為 credible reported availability，不當官方 XI。",
+        "BBC Sport 7/17 寫 Arsenal 將在 Saliba 世界盃任務後評估他的背傷、甚至列 surgery as an option；這補強 Saliba 不是單一 predicted-XI 傳聞，但仍不等於 France 官方賽前名單。",
+        "NWS Miami Gardens hourly API 7/17 15:51Z 再核：7/18 16:00–18:00 ET 90→91→89°F、Slight/Chance Showers And Thunderstorms 後轉 Partly Cloudy，降雨機率 23→28→8%、SE/S 10–12 mph；與 09:42Z 幾乎一致，濕熱主風險不變。",
         "NWS Miami Gardens hourly API 7/17 09:42Z 再核：7/18 16:00–18:00 ET 90→91→89°F、Slight/Chance Thunderstorms 後轉 Partly Cloudy，降雨機率 23→28→8%、SE/S 10–12 mph；雷雨風險較 03:32Z 的 34% 低，但濕熱仍在。",
         "Sports Mole 7/16 10:41 predicted XI 把 William Saliba 背傷升成「almost certainly」缺陣投影，並推 Maxence Lacroix/多處輪換；Soren 只採作 reported availability + rotation watch，不當官方 team sheet。",
         "England Football 7/16 Stat Pack 補官方脈絡：Olise 以 5 次助攻領跑本屆、Anthony Gordon 近 4 場世界盃每 66 分鐘參與一球；這是對位/威脅背景，不代表 Tuchel 先發選擇。",
@@ -90,10 +93,26 @@
       ],
       "sources": [
         {
-          "label": "NWS Miami Gardens hourly forecast 09:42Z recheck",
+          "label": "Al Jazeera France-England bronze playoff team news",
+          "url": "https://www.aljazeera.com/sports/2026/7/17/france-england-fifa-world-cup-third-place-playoff-predictions-kickoff",
+          "sourceName": "Al Jazeera",
+          "fetchedAt": "2026-07-17T15:51:10Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Saliba back injury assessment 15:51Z recheck",
+          "url": "https://www.bbc.com/sport/football/articles/cp87np4282po",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-17T15:51:10Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "NWS Miami Gardens hourly forecast 15:51Z recheck",
           "url": "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-17T09:44:44Z",
+          "fetchedAt": "2026-07-17T15:51:10Z",
           "claimType": "context/weather-watch",
           "confidence": "high"
         },
@@ -136,14 +155,6 @@
           "fetchedAt": "2026-07-17T03:34:40Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium"
-        },
-        {
-          "label": "NWS Miami Gardens hourly forecast 03:32Z recheck",
-          "url": "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-17T03:34:40Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
         },
         {
           "label": "FIFA France-England bronze final preview",
@@ -272,14 +283,6 @@
           "fetchedAt": "2026-07-17T01:05:27Z",
           "claimType": "reported/availability-lineup-watch",
           "confidence": "medium-high"
-        },
-        {
-          "label": "BBC Saliba back injury assessment",
-          "url": "https://www.bbc.com/sport/football/articles/cp87np4282po",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-17T01:05:27Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -287,10 +290,14 @@
     {
       "matchId": "m104",
       "match": "Spain vs Argentina",
-      "sourceType": "final fixture + official tactical/event/weather/air-quality/availability/market watch",
-      "title": "Spain–Argentina 決賽 57 小時窗：NY/NJ 煙霾進入 air-quality watch，Yamal/Porro 分開訓練但 RFEF 仍預期可用。",
-      "sorenTake": "決賽剩約 57 小時，Soren 現在把 NY/NJ 空氣品質放到主雷達：BBC/AP 都確認加拿大野火煙霾觸發健康警示、Spain 週四仍戶外訓練；NWS 09:42Z 的 Meadowlands 開球窗則是 81→82°F、Sunny、0% 雨率、NW 10–12 mph，所以目前不是雨戰，是「煙霾是否被冷鋒清乾淨」的賽前複查。Reuters/Moneycontrol 寫 RFEF 預期 Yamal、Porro 可出賽，但兩人分開訓練、Porro hamstring 需保守標籤；AFA 確認決賽主裁 Slavko Vinčić，這是節奏/判罰背景，不是陰謀論材料。",
+      "sourceType": "final fixture + official tactical/event/weather/air-quality/availability/transport/market watch",
+      "title": "Spain–Argentina 決賽 51 小時窗：NWS 開球窗仍晴，但 NJ.com 雨雷預警與 NJ Transit 早班運輸要賽前再核。",
+      "sorenTake": "決賽剩約 51 小時，Soren 把 NY/NJ 風險拆開：NWS 15:51Z 對 7/19 14:00–16:00 ET 仍給 81→82°F、Sunny、0% 降雨、NW 10–12 mph，所以目前開球窗不是雨戰；但 NJ.com 7/17 標題/摘要提醒週日 New Jersey 仍有 rain showers / possible thunderstorms 的不確定性，賽前要再核雷達與短臨。交通面，Daily Record/NorthJersey 搜尋摘要列 NJ Transit 10:30 起開往球場、官方 shuttle 9:30–12:30、停車場 10:00 開；這是 event-ops context，不進勝率。",
       "signals": [
+        "NWS Meadowlands hourly API 7/17 15:51Z 再核：決賽日 7/19 14:00–16:00 ET 81→82°F、Sunny、降雨機率 0%、NW 10–12 mph；開球窗官方小時預報仍偏乾爽，雨戰暫不升級。",
+        "NJ.com 7/17 天氣稿標題/摘要稱 World Cup Final 週日 MetLife Stadium 仍有 rain showers / possible thunderstorms 威脅；因與 NWS 開球窗 0% rain 有張力，Soren 只列為 weather uncertainty lead，要求賽前再查短臨。",
+        "Daily Record/NorthJersey 7/16 搜尋摘要列 MetLife 決賽交通：NJ Transit train service 10:30 起、官方 shuttle buses 9:30–12:30 連續運行、parking lots 10:00 開；這是觀眾動線/開幕式時間壓力，不是競技因素。",
+        "The Athletic/NYT 7/15 odds 摘要：Kalshi 列 Spain 58% 奪冠、DraftKings Spain -178 lift cup / Argentina +154；只作 paper-market temperature，不是下注建議。",
         "BBC Sport 7/16 報導 New York / New Jersey 因加拿大野火煙霾發布 air quality health alert；Spain 週四仍在戶外訓練，Argentina 預計週五下午到 New Jersey 開始訓練，決賽前需再查 AQI。",
         "AP 7/16 以 Spain practice outside before the World Cup final as smoke fills the air 為題確認煙霾脈絡；這是 context/weather-health watch，不是延期或競賽結論。",
         "NWS Meadowlands hourly API 7/17 09:42Z 再核：7/19 14:00–16:00 ET 81→82°F、Sunny、降雨機率 0%、NW 10–12 mph；雨/雷雨不在主風險，空品才是賽前複查點。",
@@ -326,6 +333,38 @@
       ],
       "sources": [
         {
+          "label": "NWS Meadowlands hourly forecast 15:51Z recheck",
+          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-17T15:51:10Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "NJ.com World Cup Final weather forecast rain/thunderstorm watch",
+          "url": "https://www.nj.com/weather/2026/07/world-cup-final-weather-forecast-for-sunday-at-metlife-stadium-in-nj-calls-for-threat-of-rain.html",
+          "sourceName": "NJ.com",
+          "fetchedAt": "2026-07-17T15:51:10Z",
+          "claimType": "context/weather-watch",
+          "confidence": "medium"
+        },
+        {
+          "label": "Daily Record / NorthJersey final transportation schedule search-visible summary",
+          "url": "https://www.dailyrecord.com/story/news/new-jersey/2026/07/16/world-cup-2026-finals-start-time-schedule-metlife-stadium/90930031007/",
+          "sourceName": "Daily Record / NorthJersey",
+          "fetchedAt": "2026-07-17T15:51:10Z",
+          "claimType": "context/event-operations",
+          "confidence": "medium"
+        },
+        {
+          "label": "The Athletic Spain-Argentina final odds summary",
+          "url": "https://www.nytimes.com/athletic/7447828/2026/07/15/world-cup-final-odds-spain-argentina/",
+          "sourceName": "The Athletic / NYT",
+          "fetchedAt": "2026-07-17T15:51:10Z",
+          "claimType": "odds-reference/paper-market",
+          "confidence": "medium"
+        },
+        {
           "label": "BBC New York/New Jersey air quality alert before final",
           "url": "https://www.bbc.com/sport/football/articles/c9w0jen8x90o",
           "sourceName": "BBC Sport",
@@ -339,14 +378,6 @@
           "sourceName": "AP News",
           "fetchedAt": "2026-07-17T09:44:44Z",
           "claimType": "context/air-quality-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Meadowlands hourly forecast 09:42Z recheck",
-          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-17T09:44:44Z",
-          "claimType": "context/weather-watch",
           "confidence": "high"
         },
         {
@@ -388,14 +419,6 @@
           "fetchedAt": "2026-07-17T03:34:40Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium"
-        },
-        {
-          "label": "NWS Meadowlands hourly forecast 03:32Z recheck",
-          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-17T03:34:40Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
         },
         {
           "label": "NJ Transit final-day rail service advisory",
@@ -526,14 +549,6 @@
           "confidence": "medium"
         },
         {
-          "label": "RFEF Spain first New Jersey final training",
-          "url": "https://rfef.es/es/noticias/espana-ya-entrena-pensando-en-la-final-de-la-copa-del-mundo",
-          "sourceName": "RFEF",
-          "fetchedAt": "2026-07-16T21:24:13Z",
-          "claimType": "confirmed/official-team-operations",
-          "confidence": "high"
-        },
-        {
           "label": "ESPN Yamal and Porro train apart but expected fit",
           "url": "https://www.espn.com/soccer/story/_/id/49378610/spain-lamine-yamal-pedro-porro-train-apart-fit-argentina-world-cup-final",
           "sourceName": "ESPN",
@@ -571,14 +586,6 @@
           "sourceName": "BBC Sport",
           "fetchedAt": "2026-07-17T01:05:27Z",
           "claimType": "reported/discipline-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "BBC New York air quality alert before final",
-          "url": "https://www.bbc.com/sport/football/articles/c9w0jen8x90o",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-17T01:05:27Z",
-          "claimType": "context/weather-operations-watch",
           "confidence": "high"
         },
         {
