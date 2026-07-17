@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-16T21:24:13Z",
+  "generatedAt": "2026-07-17T01:05:27Z",
   "status": "final-weekend-source-refresh",
-  "headline": "季軍戰與決賽進入最後 72 小時：Spain 官方訓練、Yamal/Porro 可用性、England match-centre、NWS 天氣與紙上市場已更新。",
+  "headline": "季軍戰與決賽進入最後 48 小時：Saliba 背傷、Miami 雷雨、FIFA 決賽對位、Argentina 紀律待評估與 NYNJ 營運/空品脈絡已補上。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -56,9 +56,9 @@
     {
       "matchId": "m103",
       "match": "France vs England",
-      "sourceType": "third-place match + official match-centre/weather/market/rotation watch",
-      "title": "France–England 季軍戰 48h 內刷新：England 官方 match-centre 補 H2H，Miami 90°F＋34% 雷雨，Golden Boot/輪換壓力都還沒收工。",
-      "sorenTake": "這場不是「誰比較想趕快回家」而已：England 官方 match-centre 已補上 France 對 England 的世界盃交手與 BBC 轉播資訊，BBC/RFI 把焦點放在英格蘭 1966 後最佳名次、Mbappé 與 Messi 的金靴拉鋸，以及兩隊半決賽傷口。NWS 最新小時預報把 Miami 開球窗寫成 90→88°F、雷雨機率 34%；Soren 仍把 lineup/rotation 當 watch，不把第三方 predicted XI 或紙上盤當確認。",
+      "sourceType": "third-place match + official match-centre/weather/market/availability watch",
+      "title": "France–England 季軍戰再核：ESPN/BBC 把 Saliba 背傷列成硬風險，Miami 開球窗仍是 90°F＋34% 雷雨。",
+      "sorenTake": "季軍戰最怕的是大家嘴上說職業、身體卻已經在退房。新一輪核對把重點收斂到兩條：ESPN/BBC 都把 William Saliba 背傷列為 France 防線風險；NWS Miami 7/18 16:00–18:00 ET 仍是 90→88°F、34% 雷雨機率。Soren 只把 predicted XI 和紙上盤當 watch，不把輪換傳聞寫成官方先發。",
       "signals": [
         "England Football match-centre 7/16 更新 France v England 資訊：這是雙方第四次世界盃交手，England 贏過 1966/1982，France 贏過 2022；官方 team-sheet 仍需等賽前。",
         "BBC Sport 的「why you should still care」把銅牌戰拆成 England 可能創 1966 後最佳世界盃成績、Mbappé 與 Messi 金靴同 8 球但助攻差距等可驗證敘事。",
@@ -76,7 +76,10 @@
         "Guardian 賽報確認 France 0–2 不敵 Spain，Oyarzabal 與 Pedro Porro 進球；France 進攻被限制，季軍戰不能只靠隊徽回血。",
         "USA Today 報導 William Saliba 在 France-Spain 準決賽上半場傷退；季軍戰前列為 France 中衛可用性風險，未有官方確認前不寫死缺陣。",
         "Al Jazeera 報導 England 輸給 Argentina 後將在 Miami 對 France 踢第三名戰；這也把 m103 對戰從路線位落成實名。",
-        "FIFA Miami host-city / stadium 資訊確認 Miami Stadium 場地脈絡；南佛州高溫濕熱與雷雨風險需賽前再用天氣源覆核。"
+        "FIFA Miami host-city / stadium 資訊確認 Miami Stadium 場地脈絡；南佛州高溫濕熱與雷雨風險需賽前再用天氣源覆核。",
+        "ESPN 7/17 France-England bronze-playoff preview 已可讀 metadata；頁面主題含 injury / predicted lineups，Soren 只採作賽前可用性與輪換觀察，不當官方名單。",
+        "BBC Sport 7/17 William Saliba 傷情稿確認 Arsenal 將在他世界盃任務後評估背傷，手術是選項之一；季軍戰前列為 France 中衛可用性硬風險。",
+        "NWS Miami Gardens hourly API 7/17 再核：7/18 16:00–18:00 ET 90→88°F、Scattered Showers And Thunderstorms、降雨機率 34%、SE 10 mph；天氣沒有惡化成取消訊號，但仍是比賽節奏風險。"
       ],
       "sources": [
         {
@@ -136,10 +139,10 @@
           "confidence": "medium-high"
         },
         {
-          "label": "NWS Miami Gardens hourly refreshed forecast",
+          "label": "NWS Miami Gardens hourly forecast recheck",
           "url": "https://api.weather.gov/gridpoints/MFL/107,58/forecast/hourly",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-16T21:24:13Z",
+          "fetchedAt": "2026-07-17T01:05:27Z",
           "claimType": "context/weather-watch",
           "confidence": "high"
         },
@@ -214,6 +217,22 @@
           "fetchedAt": "2026-07-16T21:24:13Z",
           "claimType": "odds-reference",
           "confidence": "medium-high"
+        },
+        {
+          "label": "ESPN France-England bronze playoff preview",
+          "url": "https://www.espn.com/soccer/story/_/id/49373987/france-vs-england-fifa-world-cup-2026-tv-channel-how-watch-kickoff-live-stream-injury-predicted-lineups",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-17T01:05:27Z",
+          "claimType": "reported/availability-lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "BBC Saliba back injury assessment",
+          "url": "https://www.bbc.com/sport/football/articles/cp87np4282po",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-17T01:05:27Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
         }
       ],
       "confidence": "high"
@@ -221,9 +240,9 @@
     {
       "matchId": "m104",
       "match": "Spain vs Argentina",
-      "sourceType": "final fixture + official training/availability/weather/market/operations watch",
-      "title": "Spain–Argentina 決賽刷新：RFEF 已在 New Jersey 開練，Yamal/Porro 分組訓練但 ESPN 稱預期可上，MetLife 天氣暫降到 2% 雨率。",
-      "sorenTake": "決賽噪音很大，但今天最有用的是可驗證的三件事：RFEF 官方確認 Spain 已在 New Jersey 11:00 local 開始決賽備戰；ESPN 報導 Yamal 與 Pedro Porro 週四分開訓練、但預期可對 Argentina 出賽；NWS 最新 Meadowlands 小時窗把 15:00–17:00 ET 寫成 82→83°F、Sunny、降雨機率 2%。FIFA 閉幕式 13:30 local 是營運節奏，不是勝率訊號；Soren 把 Messi/Yamal 巨星故事留在敘事層，不拿來冒充模型答案。",
+      "sourceType": "final fixture + official tactical/event/weather/availability/market watch",
+      "title": "Spain–Argentina 決賽再核：FIFA 新增三組關鍵對位，BBC 提醒 Argentina 橫幅仍待 FIFA 評估，NJ Transit/MetLife 營運入口已補上。",
+      "sorenTake": "決賽前一天最有價值的不是再堆神話，而是把可驗證噪音分層：FIFA 新稿把 Messi-Laporte、Rodri-Enzo、Yamal-Tagliafico 拆成三條對位；BBC 報導 FIFA 正評估 Argentina 球員賽後橫幅事件，還不是禁賽結論；NWS Meadowlands 7/19 14:00–16:00 ET 仍是 81→83°F、2% 雨率。NJ Transit 與 MetLife 只作營運/人流錨點，不拿來改勝率。",
       "signals": [
         "RFEF 官方 7/16 報導 Spain 已在 New Jersey 11:00 local 進行第一堂決賽備戰訓練；這補上 Spain 端 operations 錨點。",
         "ESPN 7/16 報導 Lamine Yamal 與 Pedro Porro 週四分開訓練，但 Spain 預期兩人都能對 Argentina 出賽；這是 availability watch，不是 confirmed XI。",
@@ -241,7 +260,12 @@
         "Opta Analyst 寫 Argentina 多次接近淘汰仍復活晉級，將面對已追平歐洲國家最長不敗紀錄的 Spain；決賽風險不該被簡化成 Messi 童話。",
         "FIFA 賽報指出 Spain 2–0 擊敗 France 晉級決賽，防守端限制 France、進攻端由 Oyarzabal 與 Pedro Porro 懲罰對手。",
         "NPR 與 Al Jazeera 報導 Argentina 2–1 擊敗 England 晉級；Lautaro Martínez 的末段火力讓 Argentina 的 late-game resilience 成為硬訊號。",
-        "Financial Express / Free Press Journal 搜尋可見舊社群貼文因 Spain-Argentina 決賽成真而 viral；這只標為 social-search/public-buzz，不能拿來代表球迷整體民意或預言。"
+        "Financial Express / Free Press Journal 搜尋可見舊社群貼文因 Spain-Argentina 決賽成真而 viral；這只標為 social-search/public-buzz，不能拿來代表球迷整體民意或預言。",
+        "FIFA 7/17 官方 key-duels 預覽把 Spain-Argentina 決賽拆成 Messi vs Laporte、Rodri vs Enzo Fernández、Lamine Yamal vs Nicolás Tagliafico；這是戰術敘事來源，不是先發保證。",
+        "BBC Sport 7/17 報導 FIFA 正在 assessing match reports，判斷 Argentina 球員賽後 Falklands/Malvinas 橫幅是否需處分；目前只是紀律待評估，不寫成禁賽或出場變動。",
+        "BBC Sport 7/17 另報導 New York/New Jersey 因加拿大野火煙霧發布空氣品質健康提醒；NWS Meadowlands 小時 API 仍把決賽窗寫成晴朗、2% 雨率，空品需賽前再覆核。",
+        "NJ Transit 官方 FIFA 2026 頁確認 match ticket 含 Secaucus Junction 至 NYNJ Stadium 轉乘，賽前約 4 小時開始、約 10–20 分鐘一班；這是球迷/人流營運脈絡，不是模型勝率訊號。",
+        "MetLife Stadium 官方事件頁列出 FIFA World Cup 2026 Final，7/19 event starts 3:00 PM；閉幕式、入場與熱身節奏要和足球判讀分開。"
       ],
       "sources": [
         {
@@ -397,11 +421,51 @@
           "confidence": "high"
         },
         {
-          "label": "NWS Meadowlands hourly refreshed forecast",
+          "label": "NWS Meadowlands hourly forecast recheck",
           "url": "https://api.weather.gov/gridpoints/OKX/33,37/forecast/hourly",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-16T21:24:13Z",
+          "fetchedAt": "2026-07-17T01:05:27Z",
           "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "FIFA Spain-Argentina key duels",
+          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/duels-messi-laporte-rodri-fernandez-yamal-tagliafico",
+          "sourceName": "FIFA",
+          "fetchedAt": "2026-07-17T01:05:27Z",
+          "claimType": "confirmed/official-tactical-preview",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC FIFA assessing Argentina banner reports",
+          "url": "https://www.bbc.com/sport/football/articles/c75gnkl30vlo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-17T01:05:27Z",
+          "claimType": "reported/discipline-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC New York air quality alert before final",
+          "url": "https://www.bbc.com/sport/football/articles/c9w0jen8x90o",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-17T01:05:27Z",
+          "claimType": "context/weather-operations-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "NJ Transit FIFA 2026 final travel page",
+          "url": "https://www.njtransit.com/fifa2026",
+          "sourceName": "NJ TRANSIT",
+          "fetchedAt": "2026-07-17T01:05:27Z",
+          "claimType": "context/event-operations",
+          "confidence": "high"
+        },
+        {
+          "label": "MetLife Stadium FIFA World Cup 2026 Final event",
+          "url": "https://www.metlifestadium.com/events/detail/fifa-world-cup-2026-final",
+          "sourceName": "MetLife Stadium",
+          "fetchedAt": "2026-07-17T01:05:27Z",
+          "claimType": "context/event-operations",
           "confidence": "high"
         }
       ],
