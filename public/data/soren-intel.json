@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-18T04:13:27Z",
-  "status": "final-weekend-17-39h-referee-weather-transport-refresh",
-  "headline": "最後週末 17–39 小時窗：France–England 補 FIFA 官方 Valenzuela 執法與 Miami 無天氣警報；Spain–Argentina 再核 Meadowlands 空品警報、決賽窗晴朗與 NJ TRANSIT American Dream 限制。",
+  "generatedAt": "2026-07-18T10:21:38Z",
+  "status": "final-weekend-10-33h-weather-official-availability-refresh",
+  "headline": "最後週末 10–33 小時窗：France–England 更新 Miami 無警報濕熱、Tuchel/Guardian/PA 賽前心態與 Mbappé 可用；Spain–Argentina 決賽補 Meadowlands Flood Watch/AQI、BBC/Reuters 可用性與決賽裁判/紙上市場。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -56,10 +56,14 @@
     {
       "matchId": "m103",
       "match": "France vs England",
-      "sourceType": "third-place match + official referee/weather/availability/rotation/motivation watch",
-      "title": "France–England 季軍戰 17 小時窗：FIFA 確認 Valenzuela 執法，Miami 開球窗仍是濕熱、無 active NWS alert。",
-      "sorenTake": "季軍戰剩約 17 小時，這張卡補上真正的賽事硬訊號：FIFA/Inside FIFA 已確認委內瑞拉 Jesús Valenzuela 執法 France–England，Miami Gardens 04:12Z 再查 16:00–18:00 ET 仍是 88→89→87°F、Sunny/Mostly Sunny/Partly Cloudy、降雨率 7→7→4%、S 12–13 mph，active alerts 為 0。Soren 繼續把這場視為「輪換＋濕熱＋金靴/告別動機」測驗；任何 predicted XI 都還不是官方先發。",
+      "sourceType": "third-place match + official referee/weather/team-news/rotation/motivation watch",
+      "title": "France–England 季軍戰 10 小時窗：Miami 仍是 88–89°F 濕熱、無 active NWS alert；Tuchel 說不停止追獵，Mbappé 可用。",
+      "sorenTake": "季軍戰剩約 10 小時，Soren 把最新硬訊號整理成三件事：Miami 16:00–18:00 ET 仍是 88→89→87°F、降雨率 5→5→3%、active alerts 為 0；England 官方賽前稿讓 Tuchel 把這場包成「we will not stop hunting」而不是純安慰賽；Guardian/PA 賽前脈絡引述 Deschamps 確認 Mbappé 可用且 France 會有調整。輪換會重，但這不是無腦放假局；任何 predicted XI 仍等官方 team sheet。",
       "signals": [
+        "NWS Miami Gardens hourly API 7/18 10:18Z 再核：7/18 16:00–18:00 ET 88→89→87°F、Mostly Sunny/Mostly Sunny/Mostly Cloudy，降雨機率 5→5→3%、S 13→12 mph；active alerts endpoint 為 0，主風險仍是濕熱而不是雷雨警報。",
+        "England Football 7/18 官方賽前稿 parent-verified：Tuchel 在 France 銅牌戰前說「We will not stop hunting」，官方描述為他回顧 England 世界盃旅程；這是 confirmed team-context，不是先發名單。",
+        "Guardian live / PA 7/18 parent-verified：Konaté 承認銅牌戰「far from easy」但要尊重球衣；Deschamps 確認 Kylian Mbappé available 並預告 France 會有 changes。Soren 標成 availability + rotation/motivation context，不寫成官方 XI。",
+        "AP 7/18 再核 France–England 銅牌戰情緒線：兩隊都不想在這裡，但 France 原是奪冠熱門、Mbappé/Deschamps 告別仍給這場壓力與動機。",
         "FIFA/Inside FIFA 7/18 parent-verified：France–England 季軍戰由委內瑞拉 Jesús Valenzuela 執法，Jorge Urrego、Tulio Moreno 任助理，Jalal Jayed 第四官員，Zakaria Brinsi reserve assistant referee；這是 confirmed match-official。",
         "NWS Miami Gardens hourly API 7/18 04:12Z 再核：7/18 16:00–18:00 ET 88→89→87°F、Sunny/Mostly Sunny/Partly Cloudy，降雨機率 7→7→4%、S 12–13 mph；active alerts endpoint 為 0，濕熱仍是主風險。",
         "FIFA 官方 France bronze-final preview 7/18 可連線；Match 103 是 France vs England，France 可追隊史第七面世界盃獎牌。",
@@ -93,6 +97,46 @@
         "BBC Sport 7/17 William Saliba 傷情稿確認 Arsenal 將在他世界盃任務後評估背傷，手術是選項之一；季軍戰前列為 France 中衛可用性硬風險。"
       ],
       "sources": [
+        {
+          "label": "NWS Miami Gardens hourly forecast and active-alert recheck 10:18Z",
+          "url": "https://api.weather.gov/gridpoints/MFL/109,49/forecast/hourly",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "NWS Miami Gardens active alerts 10:18Z",
+          "url": "https://api.weather.gov/alerts/active?point=25.958,-80.239",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "context/weather-alert-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "England Football Tuchel pre-France press conference",
+          "url": "https://www.englandfootball.com/articles/2026/Jul/18/thomas-tuchel-pre-france-press-conference-20261807",
+          "sourceName": "England Football",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "confirmed/team-context",
+          "confidence": "high"
+        },
+        {
+          "label": "Guardian final-weekend live / France-England PA context",
+          "url": "https://www.theguardian.com/football/live/2026/jul/17/world-cup-2026-spain-v-argentina-countdown-trump-to-attend-final-england-news-live",
+          "sourceName": "The Guardian / PA",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "reported/availability-rotation-context",
+          "confidence": "high"
+        },
+        {
+          "label": "AP France-England third-place recheck",
+          "url": "https://apnews.com/article/world-cup-england-france-third-place-mbappe-38628353a4903f1d5baf1f6129a97726",
+          "sourceName": "AP News",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "reported/storyline-context",
+          "confidence": "high"
+        },
         {
           "label": "FIFA Inside bronze-final referee appointment",
           "url": "https://inside.fifa.com/refereeing/news/slavko-vincic-world-cup-2026-final-referee-spain-argentina",
@@ -323,10 +367,16 @@
     {
       "matchId": "m104",
       "match": "Spain vs Argentina",
-      "sourceType": "final + official referee/weather/transport/availability/tactical watch",
-      "title": "Spain–Argentina 決賽 39 小時窗：Meadowlands 空品警報仍在，但決賽開球窗 NWS 維持 Sunny / 0% rain。",
-      "sorenTake": "決賽剩約 39 小時，Soren 把「煙霾警報」和「比賽窗天氣」分開：NWS Meadowlands 04:12Z active alerts 有 4 則 Air Quality Alert，但 7/19 14:00–17:00 ET 仍是 81→82→82→82°F、Sunny、降雨 0%、NW 10 mph。NJ TRANSIT 官方 American Dream 頁也確認世界盃比賽日 355 不往返 American Dream，多條 bus route 在賽前/賽後 5 小時受限；這是球迷動線與入場節奏，不是競技勝率。",
+      "sourceType": "World Cup final + official referee/weather/air-quality/availability/tactical/odds watch",
+      "title": "Spain–Argentina 決賽 33 小時窗：Meadowlands 今天有 Flood Watch/AQI 警報，但決賽開球窗仍 Sunny / 0% rain。",
+      "sorenTake": "決賽剩約 33 小時，最該公開講清楚的是「今天的警報」和「明天決賽窗」分開看：NWS 10:18Z 對 East Rutherford 顯示 7/18 下午有 Patchy Smoke、Thunderstorms 與 Flood Watch/Air Quality Alert，但 7/19 15:00–17:00 ET 仍是 82→83→82°F、Sunny、0% rain、NW 10 mph。競技面則補 BBC 的 Laporte/De la Fuente 裁判與身體對抗語境、Reuters 系列 Yamal/Porro 分開訓練但 Spain expect both fit，以及 FIFA/RFEF/AFA 確認 Slavko Vinčić 執法；紙上市場只當外部溫度，不是下注建議。",
       "signals": [
+        "NWS Meadowlands hourly API 7/18 10:18Z 再核：7/18 16:00–18:00 ET 是 Patchy Smoke / Showers And Thunderstorms、降雨率 94→92→92%，但決賽日 7/19 15:00–17:00 ET 維持 82→83→82°F、Sunny、0% rain、NW 10 mph。",
+        "NWS active alerts 7/18 10:18Z 對 East Rutherford 顯示 4 則 active features：Flood Watch 至 7/19 02:00 EDT，以及多則 Air Quality Alert（部分下午到期、其中一則至 7/19 00:00 EDT）。Soren 在公開文案中把「賽前一天警報」與「決賽開球窗預報」分開，避免把今天的風險誤寫成明天開球時必然狀態。",
+        "BBC 7/18 parent-verified：Laporte 稱 Argentina「likes to leave a mark on opponents」，De la Fuente 也談到裁判會支援比賽管理；這是身體對抗/裁判尺度語境，不是控訴或模型內幕。",
+        "Reuters via Cyprus Mail 7/17 parent-verified：Lamine Yamal 與 Pedro Porro 週四在 New Jersey 分開訓練，但 Spain expect both fit for Sunday final；Soren 標為 reported availability recheck，不升格成官方 XI。",
+        "RFEF 與 AFA 官方頁面均確認 Slavko Vinčić 將執法 Spain–Argentina 決賽；這補強 FIFA 裁判公告，屬 confirmed match-official。",
+        "ESPN betting 7/18 parent-verified：公開冠軍賠率頁寫 Spain 是決賽對 Argentina 的 favorite；Soren 只把它當 paper-market temperature，不提供下注建議。",
         "NWS Meadowlands active-alert API 7/18 04:12Z 再核：venue point 有 4 則 Air Quality Alert；同時 hourly forecast 顯示決賽日 7/19 14:00–17:00 ET 81→82→82→82°F、Sunny、降雨機率 0%、NW 10 mph。空品仍要監控，但雨戰暫不升級。",
         "NJ TRANSIT American Dream 官方頁 parent-verified：FIFA World Cup 2026 match days 355 bus 不往返 American Dream；85/703/772 等路線在每場前 5 小時到賽後 5 小時受限。這是決賽日人流/交通脈絡，不進模型勝率。",
         "NJ TRANSIT FIFA2026 官方頁 7/18 可連線，列 New York New Jersey Stadium 世界盃交通入口；決賽日移動風險以官方 transit/venue 更新為準。",
@@ -367,6 +417,62 @@
         "MetLife Stadium 官方事件頁列出 FIFA World Cup 2026 Final，7/19 event starts 3:00 PM；閉幕式、入場與熱身節奏要和足球判讀分開。"
       ],
       "sources": [
+        {
+          "label": "NWS Meadowlands hourly forecast and active-alert recheck 10:18Z",
+          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "NWS Meadowlands active flood/air-quality alerts 10:18Z",
+          "url": "https://api.weather.gov/alerts/active?point=40.8135,-74.0745",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "context/weather-air-quality-alert-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "BBC Laporte Argentina physicality/referee context",
+          "url": "https://www.bbc.com/sport/football/articles/cj63e8l0kjjo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "reported/tactical-referee-context",
+          "confidence": "high"
+        },
+        {
+          "label": "Reuters via Cyprus Mail Yamal and Porro availability recheck",
+          "url": "https://cyprus-mail.com/2026/07/17/yamal-and-porro-train-apart-but-spain-expect-both-fit-for-world-cup-final",
+          "sourceName": "Reuters / Cyprus Mail",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "reported/availability-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "RFEF Vinčić final referee confirmation",
+          "url": "https://rfef.es/es/noticias/slavko-vincic-arbitro-de-la-gran-final-del-mundial",
+          "sourceName": "RFEF",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "confirmed/match-official",
+          "confidence": "high"
+        },
+        {
+          "label": "AFA Vinčić final referee confirmation",
+          "url": "https://www.afa.com.ar/es/posts/el-arbitro-esloveno-slavko-vin-i-dirigira-la-final-entre-argentina-y-espana",
+          "sourceName": "AFA",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "confirmed/match-official",
+          "confidence": "high"
+        },
+        {
+          "label": "ESPN World Cup final championship odds",
+          "url": "https://www.espn.com/espn/betting/story/_/id/48386952/espn-soccer-futbol-world-cup-betting-odds-championship-groups",
+          "sourceName": "ESPN Betting",
+          "fetchedAt": "2026-07-18T10:21:38Z",
+          "claimType": "odds-reference",
+          "confidence": "medium-high"
+        },
         {
           "label": "NWS Meadowlands hourly forecast and active-alert recheck 04:12Z",
           "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
