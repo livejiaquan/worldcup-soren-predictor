@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-18T01:04:02Z",
-  "status": "final-weekend-20-42h-official-weather-transport-refresh",
-  "headline": "最後週末 20–42 小時窗：France–England 補 AP/FIFA 季軍戰敘事與 Miami 濕熱再核；Spain–Argentina 補 FIFA 官方 Vinčić、RFEF 發布會、NJ TRANSIT 與 Meadowlands 天氣。",
+  "generatedAt": "2026-07-18T04:13:27Z",
+  "status": "final-weekend-17-39h-referee-weather-transport-refresh",
+  "headline": "最後週末 17–39 小時窗：France–England 補 FIFA 官方 Valenzuela 執法與 Miami 無天氣警報；Spain–Argentina 再核 Meadowlands 空品警報、決賽窗晴朗與 NJ TRANSIT American Dream 限制。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -56,10 +56,12 @@
     {
       "matchId": "m103",
       "match": "France vs England",
-      "sourceType": "third-place match + official preview/weather/availability/rotation/motivation watch",
-      "title": "France–England 季軍戰 20 小時窗：AP/FIFA 把動機講白，Miami 仍是濕熱不是雷雨主劇本。",
-      "sorenTake": "季軍戰剩約 20 小時，Soren 把這場當「半決賽失落後的輪換＋濕熱＋金靴動機」測驗，不把任何 predicted XI 當官方先發。AP 賽前稿確認兩隊都不是自願來踢安慰賽，但 Mbappé 仍有金靴誘因；FIFA 官方季軍戰稿把 France 的第七面世界盃獎牌線拉出來。NWS 01:04Z 再查 Miami 開球前 16:00–18:00 ET 為 88→89→87°F、Sunny/Mostly Sunny/Partly Cloudy、降雨率 7→7→4%、S 12–13 mph；濕熱仍是體能稅，雷雨暫不該搶主標。",
+      "sourceType": "third-place match + official referee/weather/availability/rotation/motivation watch",
+      "title": "France–England 季軍戰 17 小時窗：FIFA 確認 Valenzuela 執法，Miami 開球窗仍是濕熱、無 active NWS alert。",
+      "sorenTake": "季軍戰剩約 17 小時，這張卡補上真正的賽事硬訊號：FIFA/Inside FIFA 已確認委內瑞拉 Jesús Valenzuela 執法 France–England，Miami Gardens 04:12Z 再查 16:00–18:00 ET 仍是 88→89→87°F、Sunny/Mostly Sunny/Partly Cloudy、降雨率 7→7→4%、S 12–13 mph，active alerts 為 0。Soren 繼續把這場視為「輪換＋濕熱＋金靴/告別動機」測驗；任何 predicted XI 都還不是官方先發。",
       "signals": [
+        "FIFA/Inside FIFA 7/18 parent-verified：France–England 季軍戰由委內瑞拉 Jesús Valenzuela 執法，Jorge Urrego、Tulio Moreno 任助理，Jalal Jayed 第四官員，Zakaria Brinsi reserve assistant referee；這是 confirmed match-official。",
+        "NWS Miami Gardens hourly API 7/18 04:12Z 再核：7/18 16:00–18:00 ET 88→89→87°F、Sunny/Mostly Sunny/Partly Cloudy，降雨機率 7→7→4%、S 12–13 mph；active alerts endpoint 為 0，濕熱仍是主風險。",
         "FIFA 官方 France bronze-final preview 7/18 可連線；Match 103 是 France vs England，France 可追隊史第七面世界盃獎牌。",
         "AP 7/17 parent-verified：France 與 England 都承認這不是原本想踢的比賽；France 原是奪冠熱門，Mbappé 仍有 Golden Boot 誘因，季軍戰不能只用「安慰賽」一刀切。",
         "NWS Miami Gardens hourly API 7/18 01:04Z 再核：7/18 16:00–18:00 ET 88→89→87°F、Sunny/Mostly Sunny/Partly Cloudy，降雨機率 7→7→4%、S 12–13 mph；濕熱仍是主風險，雷雨不是目前主劇本。",
@@ -92,6 +94,30 @@
       ],
       "sources": [
         {
+          "label": "FIFA Inside bronze-final referee appointment",
+          "url": "https://inside.fifa.com/refereeing/news/slavko-vincic-world-cup-2026-final-referee-spain-argentina",
+          "sourceName": "FIFA / Inside FIFA",
+          "fetchedAt": "2026-07-18T04:12:21Z",
+          "claimType": "confirmed/match-official",
+          "confidence": "high"
+        },
+        {
+          "label": "NWS Miami Gardens hourly forecast and active-alert recheck 04:12Z",
+          "url": "https://api.weather.gov/gridpoints/MFL/109,49/forecast/hourly",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-18T04:12:18Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "NWS Miami Gardens active alerts 04:12Z",
+          "url": "https://api.weather.gov/alerts/active?point=25.958,-80.239",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-18T04:12:18Z",
+          "claimType": "context/weather-alert-watch",
+          "confidence": "high"
+        },
+        {
           "label": "FIFA France targeting seventh medal bronze-final preview",
           "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-targeting-seventh-medal-bronze-final",
           "sourceName": "FIFA",
@@ -105,14 +131,6 @@
           "sourceName": "AP News",
           "fetchedAt": "2026-07-18T01:04:02Z",
           "claimType": "reported/storyline-context",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Miami Gardens hourly forecast 01:04Z recheck",
-          "url": "https://api.weather.gov/gridpoints/MFL/109,49/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T01:04:02Z",
-          "claimType": "context/weather-watch",
           "confidence": "high"
         },
         {
@@ -305,10 +323,12 @@
     {
       "matchId": "m104",
       "match": "Spain vs Argentina",
-      "sourceType": "final + official referee/training/weather/transport/availability watch",
-      "title": "Spain–Argentina 決賽 42 小時窗：FIFA 官方 Vinčić 執法，RFEF 進入紐澤西訓練/發布會，NWS 決賽窗晴。",
-      "sorenTake": "決賽剩約 42 小時，這張卡從「空品與交通監控」升級成官方決賽戰情：FIFA/Inside FIFA 已直接確認 Slovenian Slavko Vinčić 執法 Argentina–Spain，RFEF 可讀稿顯示 Spain 已在 New Jersey 完成第一堂決賽訓練，Luis de la Fuente 稱會是 grandísimo espectáculo。NWS Meadowlands 01:04Z 再查 7/19 15:00–17:00 ET 為 82→82→82°F、Sunny、降雨 0%、NW 10 mph；NJ TRANSIT 官方賽事頁仍是交通硬來源。空品/煙霧留在監控，不把社群或天氣標題硬寫成定局。",
+      "sourceType": "final + official referee/weather/transport/availability/tactical watch",
+      "title": "Spain–Argentina 決賽 39 小時窗：Meadowlands 空品警報仍在，但決賽開球窗 NWS 維持 Sunny / 0% rain。",
+      "sorenTake": "決賽剩約 39 小時，Soren 把「煙霾警報」和「比賽窗天氣」分開：NWS Meadowlands 04:12Z active alerts 有 4 則 Air Quality Alert，但 7/19 14:00–17:00 ET 仍是 81→82→82→82°F、Sunny、降雨 0%、NW 10 mph。NJ TRANSIT 官方 American Dream 頁也確認世界盃比賽日 355 不往返 American Dream，多條 bus route 在賽前/賽後 5 小時受限；這是球迷動線與入場節奏，不是競技勝率。",
       "signals": [
+        "NWS Meadowlands active-alert API 7/18 04:12Z 再核：venue point 有 4 則 Air Quality Alert；同時 hourly forecast 顯示決賽日 7/19 14:00–17:00 ET 81→82→82→82°F、Sunny、降雨機率 0%、NW 10 mph。空品仍要監控，但雨戰暫不升級。",
+        "NJ TRANSIT American Dream 官方頁 parent-verified：FIFA World Cup 2026 match days 355 bus 不往返 American Dream；85/703/772 等路線在每場前 5 小時到賽後 5 小時受限。這是決賽日人流/交通脈絡，不進模型勝率。",
         "NJ TRANSIT FIFA2026 官方頁 7/18 可連線，列 New York New Jersey Stadium 世界盃交通入口；決賽日移動風險以官方 transit/venue 更新為準。",
         "NWS Meadowlands hourly API 7/18 01:04Z 再核：7/19 15:00–17:00 ET 82→82→82°F、Sunny、降雨機率 0%、NW 10 mph；決賽窗暫時比前一日的煙霧/雨勢標題乾淨。",
         "RFEF 7/16–7/17 parent-verified：Spain 已在 New Jersey 進行第一堂決賽訓練；Luis de la Fuente 在 Javits Center 發布會稱 Spain–Argentina 會是「grandísimo espectáculo」。",
@@ -348,19 +368,35 @@
       ],
       "sources": [
         {
+          "label": "NWS Meadowlands hourly forecast and active-alert recheck 04:12Z",
+          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-18T04:12:18Z",
+          "claimType": "context/weather-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "NWS Meadowlands active air-quality alerts 04:12Z",
+          "url": "https://api.weather.gov/alerts/active?point=40.8135,-74.0745",
+          "sourceName": "National Weather Service",
+          "fetchedAt": "2026-07-18T04:12:18Z",
+          "claimType": "context/air-quality-alert-watch",
+          "confidence": "high"
+        },
+        {
+          "label": "NJ TRANSIT American Dream FIFA match-day bus restrictions",
+          "url": "https://www.njtransit.com/american-dream",
+          "sourceName": "NJ TRANSIT",
+          "fetchedAt": "2026-07-18T04:12:21Z",
+          "claimType": "context/event-operations",
+          "confidence": "high"
+        },
+        {
           "label": "NJ TRANSIT FIFA2026 New York New Jersey Stadium event page",
           "url": "https://www.njtransit.com/fifa2026",
           "sourceName": "NJ TRANSIT",
           "fetchedAt": "2026-07-18T01:04:02Z",
           "claimType": "context/event-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Meadowlands hourly forecast 01:04Z recheck",
-          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T01:04:02Z",
-          "claimType": "context/weather-watch",
           "confidence": "high"
         },
         {
