@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-18T16:28:16Z",
-  "status": "final-weekend-4-27h-lineup-weather-odds-transport-refresh",
-  "headline": "最後週末 4–27 小時窗：France–England 仍未有官方先發，Miami 開球窗 89°F 濕熱、Standard/Opta 補輪換與紙上市場；Spain–Argentina 決賽更新 Meadowlands 今日洪水/AQI 警報但明日開球窗晴朗，NJ Transit 決賽散場改點與 Opta 市場基準已補。",
+  "generatedAt": "2026-07-18T22:34:32Z",
+  "status": "final-weekend-live-third-place-and-final-weather-refresh",
+  "headline": "最後週末 live/20 小時窗：France–England 已進入下半場，ESPN 22:33Z 顯示 England 4–3 France 但 completed=false；Spain–Argentina 決賽仍 scheduled，Meadowlands 明日開球窗 Sunny / 81°F / 0% rain，Flood Watch/AQI 只列城市營運尾風險。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -56,11 +56,11 @@
     {
       "matchId": "m103",
       "match": "France vs England",
-      "sourceType": "third-place match + official match-centre/weather/lineup-watch/rotation/odds watch",
-      "title": "France–England 季軍戰 4 小時窗：ESPN 仍是 scheduled、無官方先發；Miami 17:00 ET 89°F 濕熱，輪換與 Saliba/James 風險升溫。",
-      "sorenTake": "季軍戰剩約 4.5 小時，Soren 先把「能確認」和「不能確認」切乾淨：ESPN scoreboard 16:27Z 仍是 STATUS_SCHEDULED / completed=false，0–0 是賽前佔位、不是 live score，官方先發未出；NWS Miami 17:00 ET 開球窗 89°F、Mostly Sunny、降雨 5%、S 12 mph 且 active alerts 為 0。輪換面，Standard 的 predicted XI 把 England 寫成大幅 freshen up、Reece James doubtful/Jordan Henderson injured，France 端列 Saliba injured、Mbappé 仍可能為金靴與 Deschamps 告別出場；Opta 紙上市場只給 France 90 分鐘 50.7%，不是下注指令。",
+      "sourceType": "third-place live-score context + official match-centre/weather/lineup-watch/rotation/odds watch",
+      "title": "France–England 季軍戰 live 70'：ESPN 顯示 England 4–3 France，仍是 second half / completed=false；只能當 live context，不可結算。",
+      "sorenTake": "季軍戰已進入下半場，Soren 先把警報線拉粗：ESPN public scoreboard 22:34Z 顯示 France 3–4 England、70'、STATUS_SECOND_HALF、completed=false。這是可發布的 live-score context，但不是 final，不能更新 bracket、leaderboard 或紙上 bankroll。賽前那些 Saliba/Reece James/輪換風險現在變成比賽劇情背景；真正能結算只等 ESPN/FIFA/高可信來源轉成 full-time/post/final。",
       "signals": [
-        "ESPN scoreboard 7/18 16:27Z 再核 m103：France vs England 仍是 STATUS_SCHEDULED / state=pre / completed=false；0–0 是賽前佔位，官方先發未出，不能當 live score 或 final。",
+        "ESPN scoreboard 7/18 22:34Z live 再核 m103：France 3–4 England，70'，STATUS_SECOND_HALF / state=in / completed=false；這是 live-score context，不是 final，不結算季軍/紙上 bankroll。",
         "NWS Miami Gardens hourly API 7/18 16:27Z 再核：比賽 17:00 ET 開球窗 89°F、Mostly Sunny、降雨 5%、S 12 mph；18:00 ET 87°F Mostly Cloudy、降雨 3%。active alerts endpoint 為 0，濕熱仍是主風險。",
         "The Standard 7/18 賽前 predicted XI / team-news 重新整理：England projected XI 大幅 freshen up，Reece James 列 doubt、Jordan Henderson injured；這是 reported lineup-watch，不是官方 team sheet。",
         "The Standard 7/18 France team-news 重新整理：France predicted XI 仍有 Mbappé，William Saliba 列 injured，Deschamps expected to make changes；這是 reported availability/rotation watch，不寫成 confirmed XI。",
@@ -99,17 +99,17 @@
         "USA Today 報導 William Saliba 在 France-Spain 準決賽上半場傷退；季軍戰前列為 France 中衛可用性風險，未有官方確認前不寫死缺陣。",
         "Al Jazeera 報導 England 輸給 Argentina 後將在 Miami 對 France 踢第三名戰；這也把 m103 對戰從路線位落成實名。",
         "FIFA Miami host-city / stadium 資訊確認 Miami Stadium 場地脈絡；南佛州高溫濕熱與雷雨風險需賽前再用天氣源覆核。",
-        "ESPN 7/17 France-England bronze-playoff preview 已可讀 metadata；頁面主題含 injury / predicted lineups，Soren 只採作賽前可用性與輪換觀察，不當官方名單。",
-        "BBC Sport 7/17 William Saliba 傷情稿確認 Arsenal 將在他世界盃任務後評估背傷，手術是選項之一；季軍戰前列為 France 中衛可用性硬風險。"
+        "ESPN 7/17 France-England bronze-playoff preview 已可讀 metadata；頁面主題含 injury / predicted lineups，Soren 只採作賽前可用性與輪換觀察，不當官方名單。"
       ],
       "sources": [
         {
-          "label": "ESPN scoreboard m103 scheduled / no lineup recheck 16:27Z",
+          "label": "ESPN live scoreboard m103 70' France 3-4 England",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260718",
           "sourceName": "ESPN public scoreboard API",
-          "fetchedAt": "2026-07-18T16:27:39Z",
-          "claimType": "context/match-centre-lineup-watch",
-          "confidence": "high"
+          "fetchedAt": "2026-07-18T22:34:32Z",
+          "claimType": "context/live-score",
+          "confidence": "high",
+          "completed": false
         },
         {
           "label": "NWS Miami Gardens hourly forecast recheck 16:27Z",
@@ -430,12 +430,14 @@
       "matchId": "m104",
       "match": "Spain vs Argentina",
       "sourceType": "final + official weather/transport/referee/availability/odds watch",
-      "title": "Spain–Argentina 決賽 27 小時窗：今天 Meadowlands 有洪水/AQI 警報，但明天 15:00 ET 開球窗仍 Sunny / 82°F / 0% rain。",
-      "sorenTake": "決賽剩約 27 小時，Soren 更新兩條不該混在一起的線：今天 East Rutherford 仍有 Flash Flood Warning/Flood Advisory/Flood Watch 與 Air Quality Alert，NWS hourly 顯示 7/18 下午雷雨機率 92% 左右；但 7/19 決賽 15:00–17:00 ET 仍是 82→83→82°F、Sunny、0% rain、NW 10 mph。ESPN 16:27Z 仍是 STATUS_SCHEDULED / completed=false、官方先發未出。場外營運面，NJ Transit 決賽服務公告提示賽後往 PSNY 的 eastbound trains 約 5:15–9:29 PM 會終止於 Newark Penn 或 Newark Broad；紙上市場則用 Opta Spain 59.6% / Argentina 40.4% 當公開基準，不碰真金下注。",
+      "title": "Spain–Argentina 決賽 20 小時窗：ESPN 仍 scheduled；NWS 開球窗 Sunny 81°F、0% rain，但 Flood Watch/AQI alert 仍是城市營運風險。",
+      "sorenTake": "決賽剩約 20.5 小時，Soren 重新校正天氣與先發邊界：ESPN 22:31Z 仍是 STATUS_SCHEDULED / completed=false，0–0 不可當 live；NWS Meadowlands 7/19 15:00 ET 開球窗 81°F、Sunny、0% rain、NW 12 mph，16:00 ET 82°F、0% rain。active alerts 仍有 Flood Watch 與 Air Quality Alert，所以重點不是明天球場下雨，而是今天到明天的城市/交通/空品尾巴。The Standard/Goal/Sports Mole 都只能算 reported team-news：Spain 大致健康、Argentina 未見明確停賽傷停，官方 XI 未出。",
       "signals": [
-        "ESPN scoreboard 7/18 16:27Z 再核 m104：Spain vs Argentina 仍是 STATUS_SCHEDULED / state=pre / completed=false；0–0 是賽前佔位，官方先發未出。",
-        "NWS Meadowlands hourly API 7/18 16:27Z 再核：7/18 下午仍有 Patchy Smoke / Thunderstorms，16:00–19:00 ET 降雨機率 94→92→92→92%；但決賽 7/19 15:00–17:00 ET 仍是 82→83→82°F、Sunny、0% rain、NW 10 mph。",
-        "NWS active alerts 7/18 16:27Z 對 East Rutherford 周邊仍列 6 則 active alerts，含 Flash Flood Warning、Flood Advisory、Flood Watch 與 Air Quality Alert；這是「今天」的進場/訓練/城市營運風險，不等於明天開球窗會下雨。",
+        "ESPN scoreboard 7/18 22:31Z 再核 m104：Spain vs Argentina 仍是 STATUS_SCHEDULED / state=pre / completed=false；0–0 是賽前佔位，官方先發未出。",
+        "NWS Meadowlands hourly API 7/18 22:33Z 再核：7/19 15:00–17:00 ET 決賽窗 81→82→81°F，Sunny，降雨 0%，NW 12 mph；開球天氣比今天警報乾淨。",
+        "NWS active alerts 7/18 22:33Z 對 East Rutherford 周邊仍列 Flood Watch 與 Air Quality Alert；Soren 標為城市營運/空品尾風險，不把今天洪水警報誤寫成明天開球暴雨。",
+        "The Standard 7/18 可讀 team-news：Spain 對 France 後 largely unscathed、clean bill of health，Nico Williams 可能競爭先發；這是 reported lineup-watch，不是官方 XI。",
+        "Goal / Sports Mole 7/18 賽前 preview 均把 Spain–Argentina 定位為決賽 team-news/tactical watch；Goal meta 明說 no confirmed injuries/suspensions/probable lineup released，Whoscored search snippet稱兩隊無新增傷停但原頁 403，故只作低權重 reported/search-indexed lead。",
         "NJ Transit 決賽服務公告 7/18 parent-verified title：FIFA World Cup 26 Final on Sunday, July 19 at NYNJ Stadium 期間調整時刻；賽後約 5:15–9:29 PM 往 PSNY 的 eastbound trains 將終止於 Newark Penn 或 Newark Broad，球迷交通是營運風險線。",
         "Opta Analyst 7/18 parent-verified：Spain 在 25,000 次 final 模擬中奪冠 59.6%、Argentina 40.4%；這只是公開 benchmark / paper-market temperature，不是下注建議。",
         "NWS Meadowlands hourly API 7/18 10:18Z 再核：7/18 16:00–18:00 ET 是 Patchy Smoke / Showers And Thunderstorms、降雨率 94→92→92%，但決賽日 7/19 15:00–17:00 ET 維持 82→83→82°F、Sunny、0% rain、NW 10 mph。",
@@ -470,43 +472,56 @@
         "FIFA Spain-Argentina preview 把第 104 場定位為 European champions Spain 對 defending world and South American champions Argentina；這是決賽敘事硬來源。",
         "FIFA 閉幕式稿確認 New York New Jersey Stadium 7/19 13:30 local 開始閉幕式，Post Malone headline；賽前儀式、人流與熱身節奏需要和比賽本身分開看。",
         "AFA 官方頁面確認 Argentina 2–1 逆轉 England 後，將在週日 16:00 New Jersey 對 Spain 爭第四顆星；這是隊端決賽敘事。",
-        "AFA 官方日程先前列出 7/16 仍在 Atlanta United Training Ground 開放訓練、傍晚移防 New Jersey；這是備戰/旅行節奏，不是先發或傷停確認。",
-        "ESPN/DK 公開盤：Spain 開為捧盃 -164 熱門、Argentina +134；90 分鐘盤 Spain +125、Draw +200、Argentina +260。市場現在尊重 Spain 控場，但 Soren 只把它列為紙上模擬參考。",
-        "FOX 13 Seattle 可讀 metadata 把 final 寫成 legacy、youth、defense、late goals 與 Messi 最後機會；這是 public narrative heat，不是社群留言代表性結論。",
-        "Yahoo Sports 早期決賽預覽把 Argentina 的 comeback pattern 對上 Spain 的 impenetrable defense，並點出 Rodri 作為中場抹除器；這是公開戰術線索，不是 Soren 內部公式。",
-        "Opta Analyst 寫 Argentina 多次接近淘汰仍復活晉級，將面對已追平歐洲國家最長不敗紀錄的 Spain；決賽風險不該被簡化成 Messi 童話。",
-        "FIFA 賽報指出 Spain 2–0 擊敗 France 晉級決賽，防守端限制 France、進攻端由 Oyarzabal 與 Pedro Porro 懲罰對手。",
-        "NPR 與 Al Jazeera 報導 Argentina 2–1 擊敗 England 晉級；Lautaro Martínez 的末段火力讓 Argentina 的 late-game resilience 成為硬訊號。",
-        "Financial Express / Free Press Journal 搜尋可見舊社群貼文因 Spain-Argentina 決賽成真而 viral；這只標為 social-search/public-buzz，不能拿來代表球迷整體民意或預言。",
-        "FIFA 7/17 官方 key-duels 預覽把 Spain-Argentina 決賽拆成 Messi vs Laporte、Rodri vs Enzo Fernández、Lamine Yamal vs Nicolás Tagliafico；這是戰術敘事來源，不是先發保證。",
-        "BBC Sport 7/17 報導 FIFA 正在 assessing match reports，判斷 Argentina 球員賽後 Falklands/Malvinas 橫幅是否需處分；目前只是紀律待評估，不寫成禁賽或出場變動。",
-        "NJ Transit 官方 FIFA 2026 頁確認 match ticket 含 Secaucus Junction 至 NYNJ Stadium 轉乘，賽前約 4 小時開始、約 10–20 分鐘一班；這是球迷/人流營運脈絡，不是模型勝率訊號。",
-        "MetLife Stadium 官方事件頁列出 FIFA World Cup 2026 Final，7/19 event starts 3:00 PM；閉幕式、入場與熱身節奏要和足球判讀分開。"
+        "AFA 官方日程先前列出 7/16 仍在 Atlanta United Training Ground 開放訓練、傍晚移防 New Jersey；這是備戰/旅行節奏，不是先發或傷停確認。"
       ],
       "sources": [
         {
-          "label": "ESPN scoreboard m104 scheduled / no lineup recheck 16:27Z",
+          "label": "ESPN scoreboard m104 scheduled / no lineup recheck 22:31Z",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260719",
           "sourceName": "ESPN public scoreboard API",
-          "fetchedAt": "2026-07-18T16:27:39Z",
+          "fetchedAt": "2026-07-18T22:31:32Z",
           "claimType": "context/match-centre-lineup-watch",
           "confidence": "high"
         },
         {
-          "label": "NWS Meadowlands hourly forecast recheck 16:27Z",
+          "label": "NWS Meadowlands hourly forecast recheck 22:33Z",
           "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T16:27:39Z",
+          "fetchedAt": "2026-07-18T22:33:15Z",
           "claimType": "context/weather-watch",
           "confidence": "high"
         },
         {
-          "label": "NWS Meadowlands active alerts recheck 16:27Z",
+          "label": "NWS Meadowlands active alerts recheck 22:33Z",
           "url": "https://api.weather.gov/alerts/active?point=40.8135,-74.0745",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T16:27:39Z",
-          "claimType": "context/weather-air-quality-alert-watch",
+          "fetchedAt": "2026-07-18T22:33:15Z",
+          "claimType": "context/weather-alert-watch",
           "confidence": "high"
+        },
+        {
+          "label": "Standard Spain-Argentina final team-news preview",
+          "url": "https://www.standard.co.uk/sport/football/spain-vs-argentina-prediction-kick-off-time-tv-live-stream-team-news-latest-h2h-results-odds-world-cup-final-2026-preview-b1290127.html",
+          "sourceName": "The Standard",
+          "fetchedAt": "2026-07-18T22:33:15Z",
+          "claimType": "reported/team-news-lineup-watch",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "Goal Spain-Argentina final preview metadata",
+          "url": "https://www.goal.com/en-sa/news/spain-argentina-world-cup-preview/blt6ba073f5ae018b3f",
+          "sourceName": "Goal.com",
+          "fetchedAt": "2026-07-18T22:33:15Z",
+          "claimType": "reported/team-news-preview",
+          "confidence": "medium"
+        },
+        {
+          "label": "WhoScored search-indexed Spain-Argentina injury snippet",
+          "url": "https://www.whoscored.com/matches/2007644/preview/international-fifa-world-cup-2026-spain-argentina",
+          "sourceName": "WhoScored (search-indexed snippet; page 403)",
+          "fetchedAt": "2026-07-18T22:33:15Z",
+          "claimType": "reported/search-indexed-availability-watch",
+          "confidence": "low-medium"
         },
         {
           "label": "NJ Transit final-day adjusted schedules advisory",
@@ -522,22 +537,6 @@
           "sourceName": "Opta Analyst",
           "fetchedAt": "2026-07-18T16:28:16Z",
           "claimType": "odds-reference/public-benchmark",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Meadowlands hourly forecast and active-alert recheck 10:18Z",
-          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Meadowlands active flood/air-quality alerts 10:18Z",
-          "url": "https://api.weather.gov/alerts/active?point=40.8135,-74.0745",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "context/weather-air-quality-alert-watch",
           "confidence": "high"
         },
         {
@@ -579,22 +578,6 @@
           "fetchedAt": "2026-07-18T10:21:38Z",
           "claimType": "odds-reference",
           "confidence": "medium-high"
-        },
-        {
-          "label": "NWS Meadowlands hourly forecast and active-alert recheck 04:12Z",
-          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T04:12:18Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Meadowlands active air-quality alerts 04:12Z",
-          "url": "https://api.weather.gov/alerts/active?point=40.8135,-74.0745",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T04:12:18Z",
-          "claimType": "context/air-quality-alert-watch",
-          "confidence": "high"
         },
         {
           "label": "NJ TRANSIT American Dream FIFA match-day bus restrictions",
