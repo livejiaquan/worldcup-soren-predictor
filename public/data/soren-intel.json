@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-18T22:34:32Z",
-  "status": "final-weekend-live-third-place-and-final-weather-refresh",
-  "headline": "最後週末 live/20 小時窗：France–England 已進入下半場，ESPN 22:33Z 顯示 England 4–3 France 但 completed=false；Spain–Argentina 決賽仍 scheduled，Meadowlands 明日開球窗 Sunny / 81°F / 0% rain，Flood Watch/AQI 只列城市營運尾風險。",
+  "generatedAt": "2026-07-19T01:01:03Z",
+  "status": "final-weekend-third-place-finalized-and-final-countdown",
+  "headline": "季軍戰已結案：England 6–4 France 拿第三，ESPN/England Football/Guardian/BBC/Al Jazeera 均指向 full-time；Spain–Argentina 決賽仍 scheduled，NWS 決賽窗 81–82°F Sunny / 0% rain，但場外 Flood/AQI 警報還要當交通與健康尾風險。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -56,372 +56,57 @@
     {
       "matchId": "m103",
       "match": "France vs England",
-      "sourceType": "third-place live-score context + official match-centre/weather/lineup-watch/rotation/odds watch",
-      "title": "France–England 季軍戰 live 70'：ESPN 顯示 England 4–3 France，仍是 second half / completed=false；只能當 live context，不可結算。",
-      "sorenTake": "季軍戰已進入下半場，Soren 先把警報線拉粗：ESPN public scoreboard 22:34Z 顯示 France 3–4 England、70'、STATUS_SECOND_HALF、completed=false。這是可發布的 live-score context，但不是 final，不能更新 bracket、leaderboard 或紙上 bankroll。賽前那些 Saliba/Reece James/輪換風險現在變成比賽劇情背景；真正能結算只等 ESPN/FIFA/高可信來源轉成 full-time/post/final。",
+      "sourceType": "confirmed final + postmatch context",
+      "title": "England 6–4 France 已終場：Saka hat-trick，把一場「季軍安慰賽」打成十球失控劇。",
+      "sorenTake": "這張卡從 live context 收斂成 final archive：ESPN 已是 STATUS_FULL_TIME / completed=true，England Football 官方 match centre 也寫 France 4–6 England。英格蘭拿到 1966 後男足世界盃最佳名次；France 的 late comeback 很吵，但 Saka 帽子戲法與 Bellingham 補時收刀才是最後結論。舊的 70 分鐘 live snapshot 已移除，避免公開頁同時像現場與終場兩種宇宙。",
       "signals": [
-        "ESPN scoreboard 7/18 22:34Z live 再核 m103：France 3–4 England，70'，STATUS_SECOND_HALF / state=in / completed=false；這是 live-score context，不是 final，不結算季軍/紙上 bankroll。",
-        "NWS Miami Gardens hourly API 7/18 16:27Z 再核：比賽 17:00 ET 開球窗 89°F、Mostly Sunny、降雨 5%、S 12 mph；18:00 ET 87°F Mostly Cloudy、降雨 3%。active alerts endpoint 為 0，濕熱仍是主風險。",
-        "The Standard 7/18 賽前 predicted XI / team-news 重新整理：England projected XI 大幅 freshen up，Reece James 列 doubt、Jordan Henderson injured；這是 reported lineup-watch，不是官方 team sheet。",
-        "The Standard 7/18 France team-news 重新整理：France predicted XI 仍有 Mbappé，William Saliba 列 injured，Deschamps expected to make changes；這是 reported availability/rotation watch，不寫成 confirmed XI。",
-        "FIFA 官方新 preview 把 France–England 定位成 Deschamps farewell：France eyeing bronze to send coach off at Miami Stadium；這補強 France motivation context，但不等於先發承諾。",
-        "Opta Analyst 7/17 preview 給紙上市場基準：France 90 分鐘在 25,000 次模擬中勝出 50.7%；Soren 只把它當 public benchmark / paper temperature，不是下注建議。",
-        "NWS Miami Gardens hourly API 7/18 10:18Z 再核：7/18 16:00–18:00 ET 88→89→87°F、Mostly Sunny/Mostly Sunny/Mostly Cloudy，降雨機率 5→5→3%、S 13→12 mph；active alerts endpoint 為 0，主風險仍是濕熱而不是雷雨警報。",
-        "England Football 7/18 官方賽前稿 parent-verified：Tuchel 在 France 銅牌戰前說「We will not stop hunting」，官方描述為他回顧 England 世界盃旅程；這是 confirmed team-context，不是先發名單。",
-        "Guardian live / PA 7/18 parent-verified：Konaté 承認銅牌戰「far from easy」但要尊重球衣；Deschamps 確認 Kylian Mbappé available 並預告 France 會有 changes。Soren 標成 availability + rotation/motivation context，不寫成官方 XI。",
-        "AP 7/18 再核 France–England 銅牌戰情緒線：兩隊都不想在這裡，但 France 原是奪冠熱門、Mbappé/Deschamps 告別仍給這場壓力與動機。",
-        "FIFA/Inside FIFA 7/18 parent-verified：France–England 季軍戰由委內瑞拉 Jesús Valenzuela 執法，Jorge Urrego、Tulio Moreno 任助理，Jalal Jayed 第四官員，Zakaria Brinsi reserve assistant referee；這是 confirmed match-official。",
-        "NWS Miami Gardens hourly API 7/18 04:12Z 再核：7/18 16:00–18:00 ET 88→89→87°F、Sunny/Mostly Sunny/Partly Cloudy，降雨機率 7→7→4%、S 12–13 mph；active alerts endpoint 為 0，濕熱仍是主風險。",
-        "FIFA 官方 France bronze-final preview 7/18 可連線；Match 103 是 France vs England，France 可追隊史第七面世界盃獎牌。",
-        "AP 7/17 parent-verified：France 與 England 都承認這不是原本想踢的比賽；France 原是奪冠熱門，Mbappé 仍有 Golden Boot 誘因，季軍戰不能只用「安慰賽」一刀切。",
-        "NWS Miami Gardens hourly API 7/18 01:04Z 再核：7/18 16:00–18:00 ET 88→89→87°F、Sunny/Mostly Sunny/Partly Cloudy，降雨機率 7→7→4%、S 12–13 mph；濕熱仍是主風險，雷雨不是目前主劇本。",
-        "NWS Miami Gardens hourly API 7/17 22:04Z 再核：7/18 16:00–18:00 ET 88→89→87°F、Sunny/Mostly Sunny/Partly Cloudy，降雨機率 7→7→4%、S 12–13 mph；相較 15:51Z，雷雨風險明顯降級，濕熱才是主風險。",
-        "England Football match-centre 7/17 22:04Z parent-verified meta：France v England 是 Miami 決定世界盃第三名的官方 England 入口，頁面描述為「all of the news and information ahead」；team sheet 仍需等賽前。",
-        "BBC Sport 7/16 銅牌戰解釋稿 parent-verified：這場不是純安慰賽，England 若拿第三會是 1966 後最佳男足世界盃名次，Mbappé/金靴與 Deschamps 告別也讓輪換判讀不能只看疲勞。",
-        "Al Jazeera 7/17 France–England preview 直接列 William Saliba（back）與 Brice Samba（calf）France 不可用，Jordan Henderson（wrist）England 受傷、Reece James（muscle）存疑；同文預期兩隊會重輪換。Soren 標為 credible reported availability，不當官方 XI。",
-        "BBC Sport 7/17 寫 Arsenal 將在 Saliba 世界盃任務後評估他的背傷、甚至列 surgery as an option；這補強 Saliba 不是單一 predicted-XI 傳聞，但仍不等於 France 官方賽前名單。",
-        "Sports Mole 7/16 10:41 predicted XI 把 William Saliba 背傷升成「almost certainly」缺陣投影，並推 Maxence Lacroix/多處輪換；Soren 只採作 reported availability + rotation watch，不當官方 team sheet。",
-        "England Football 7/16 Stat Pack 補官方脈絡：Olise 以 5 次助攻領跑本屆、Anthony Gordon 近 4 場世界盃每 66 分鐘參與一球；這是對位/威脅背景，不代表 Tuchel 先發選擇。",
-        "Hard Rock Stadium HRS Express 頁面確認 matchday shuttle / Lot 70 服務入口仍可讀；Miami 交通只列 event-ops context，不進模型勝率。",
-        "Sports Mole 7/16 10:40 報導 Reece James 在對 Argentina 準決賽最後 10 分鐘因新肌肉問題退場，並預期很難出戰 France；Soren 標為 reported availability，不升格成官方缺陣。",
-        "England Football match-centre 7/16 更新 France v England 資訊：這是雙方第四次世界盃交手，England 贏過 1966/1982，France 贏過 2022；官方 team-sheet 仍需等賽前。",
-        "RFI/AFP 7/16 報導把 France/England 描述為帶著半決賽自傷感去 Miami 告別；這是 mood/context，不是 lineup 證據。",
-        "Guardian 評論 Tuchel 對 Argentina 的保守換人讓 England 後段被動；Soren 只採作季軍戰 tactical carryover，不寫成官方戰術宣告。",
-        "FOX Sports 7/16 odds 頁與 ESPN/DraftKings 盤面一致：France 是第三名戰熱門；這只列為 paper market temperature，不是下注建議。",
-        "FIFA bronze-final preview / match-centre 已可連線，Match 103 是 France vs England，7/18 21:00 UTC，Miami Stadium；正式 lineup/live updates 仍以官方入口或高可信 match centre 為準。",
-        "England Football 官方確認 England 將在 7/18 22:00 BST / 21:00 UTC 於 Miami 對 France 踢世界盃第三名戰；這是賽程硬錨點。",
-        "BBC Sport 最新賽後脈絡寫明 Thomas Tuchel 仍獲 FA 支持，England 對 France 的銅牌戰若取勝，將是 1966 後英格蘭男足世界盃最佳成績；這讓季軍戰多了管理層與士氣檢驗，不只是安慰賽。",
-        "BBC Sport 把 France 季軍戰定位成 Didier Deschamps 法國任期告別戰；心理線不只「銅牌安慰獎」，也是一段國家隊時代收尾。",
-        "AP 指出 Mbappé 雖無緣第三次連進世界盃決賽，但仍在與 Messi 等人競逐 Golden Boot；季軍戰的個人獎項誘因需要納入輪換判讀。",
-        "FOX 5 NY 可讀 metadata 把 France-England bronze final 寫成「real rotation questions」與 Golden Boot contenders；Soren 只採作公開敘事/輪換雷達，不推定球星必先發。",
-        "ESPN/DraftKings odds API 7/16 複核：France 90 分鐘約 -115、England 約 +285、總分 3.5；這是紙上市場溫度，不是下注建議。",
-        "Guardian 賽報確認 France 0–2 不敵 Spain，Oyarzabal 與 Pedro Porro 進球；France 進攻被限制，季軍戰不能只靠隊徽回血。",
-        "USA Today 報導 William Saliba 在 France-Spain 準決賽上半場傷退；季軍戰前列為 France 中衛可用性風險，未有官方確認前不寫死缺陣。",
-        "Al Jazeera 報導 England 輸給 Argentina 後將在 Miami 對 France 踢第三名戰；這也把 m103 對戰從路線位落成實名。",
-        "FIFA Miami host-city / stadium 資訊確認 Miami Stadium 場地脈絡；南佛州高溫濕熱與雷雨風險需賽前再用天氣源覆核。",
-        "ESPN 7/17 France-England bronze-playoff preview 已可讀 metadata；頁面主題含 injury / predicted lineups，Soren 只採作賽前可用性與輪換觀察，不當官方名單。"
+        "ESPN scoreboard 7/19 01:01Z 再核 m103：France 4–6 England，STATUS_FULL_TIME / state=post / completed=true；這才可作 final/postmatch context。",
+        "England Football 官方 match centre 標題為 France 4–6 England，頁面摘要稱 Three Lions 在 Miami thrilling bronze medal match 後取得 1966 後最佳男足世界盃成績。",
+        "Guardian match report 標題/摘要：Saka hat-trick seals 6-4 England win；England 半場 4–0，但最後靠 Saka 點球與 Bellingham breakaway 收住 France 反撲。",
+        "BBC live page 標題寫 England 6–4 France、Bukayo Saka hat-trick、Three Lions finish third；Al Jazeera live archive 也記錄 England beat France 6–4 to win the Bronze Final。",
+        "本地 worldcup.json 已確認 m103 status=finished、score=[4,6]、winner=England；m104 Spain–Argentina 仍是唯一 scheduled 決賽。"
       ],
       "sources": [
         {
-          "label": "ESPN live scoreboard m103 70' France 3-4 England",
+          "label": "ESPN final scoreboard m103 France 4-6 England",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260718",
           "sourceName": "ESPN public scoreboard API",
-          "fetchedAt": "2026-07-18T22:34:32Z",
-          "claimType": "context/live-score",
+          "fetchedAt": "2026-07-19T01:01:03Z",
+          "claimType": "confirmed/final-score",
           "confidence": "high",
-          "completed": false
+          "completed": true
         },
         {
-          "label": "NWS Miami Gardens hourly forecast recheck 16:27Z",
-          "url": "https://api.weather.gov/gridpoints/MFL/109,49/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T16:27:39Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Miami Gardens active alerts recheck 16:27Z",
-          "url": "https://api.weather.gov/alerts/active?point=25.958,-80.239",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T16:27:39Z",
-          "claimType": "context/weather-alert-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "Standard England predicted XI / James-Henderson availability",
-          "url": "https://www.standard.co.uk/sport/football/england-xi-vs-france-confirmed-team-news-predicted-lineup-injury-latest-world-cup-2026-bronze-final-b1290352.html",
-          "sourceName": "The Standard",
-          "fetchedAt": "2026-07-18T16:28:16Z",
-          "claimType": "reported/lineup-availability-watch",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Standard France predicted XI / Saliba availability",
-          "url": "https://www.standard.co.uk/sport/football/france-xi-vs-england-confirmed-team-news-predicted-lineup-injury-latest-world-cup-b1290284.html",
-          "sourceName": "The Standard",
-          "fetchedAt": "2026-07-18T16:28:16Z",
-          "claimType": "reported/lineup-availability-watch",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "FIFA France eye bronze on Deschamps farewell",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-eye-bronze-on-deschamps-farewell",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-18T16:28:16Z",
-          "claimType": "confirmed/official-preview",
-          "confidence": "high"
-        },
-        {
-          "label": "Opta Analyst France-England benchmark simulations",
-          "url": "https://theanalyst.com/articles/france-vs-england-prediction-world-cup-2026-match-preview",
-          "sourceName": "Opta Analyst",
-          "fetchedAt": "2026-07-18T16:28:16Z",
-          "claimType": "odds-reference/public-benchmark",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Miami Gardens hourly forecast and active-alert recheck 10:18Z",
-          "url": "https://api.weather.gov/gridpoints/MFL/109,49/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Miami Gardens active alerts 10:18Z",
-          "url": "https://api.weather.gov/alerts/active?point=25.958,-80.239",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "context/weather-alert-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "England Football Tuchel pre-France press conference",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/18/thomas-tuchel-pre-france-press-conference-20261807",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "confirmed/team-context",
-          "confidence": "high"
-        },
-        {
-          "label": "Guardian final-weekend live / France-England PA context",
-          "url": "https://www.theguardian.com/football/live/2026/jul/17/world-cup-2026-spain-v-argentina-countdown-trump-to-attend-final-england-news-live",
-          "sourceName": "The Guardian / PA",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "reported/availability-rotation-context",
-          "confidence": "high"
-        },
-        {
-          "label": "AP France-England third-place recheck",
-          "url": "https://apnews.com/article/world-cup-england-france-third-place-mbappe-38628353a4903f1d5baf1f6129a97726",
-          "sourceName": "AP News",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "reported/storyline-context",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA Inside bronze-final referee appointment",
-          "url": "https://inside.fifa.com/refereeing/news/slavko-vincic-world-cup-2026-final-referee-spain-argentina",
-          "sourceName": "FIFA / Inside FIFA",
-          "fetchedAt": "2026-07-18T04:12:21Z",
-          "claimType": "confirmed/match-official",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Miami Gardens hourly forecast and active-alert recheck 04:12Z",
-          "url": "https://api.weather.gov/gridpoints/MFL/109,49/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T04:12:18Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Miami Gardens active alerts 04:12Z",
-          "url": "https://api.weather.gov/alerts/active?point=25.958,-80.239",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T04:12:18Z",
-          "claimType": "context/weather-alert-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA France targeting seventh medal bronze-final preview",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-targeting-seventh-medal-bronze-final",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-18T01:04:02Z",
-          "claimType": "confirmed/official-preview",
-          "confidence": "high"
-        },
-        {
-          "label": "AP France-England third-place preview",
-          "url": "https://apnews.com/article/world-cup-england-france-third-place-mbappe-38628353a4903f1d5baf1f6129a97726",
-          "sourceName": "AP News",
-          "fetchedAt": "2026-07-18T01:04:02Z",
-          "claimType": "reported/storyline-context",
-          "confidence": "high"
-        },
-        {
-          "label": "England Football France v England match centre 22:04Z recheck",
+          "label": "England Football official match centre France 4-6 England",
           "url": "https://www.englandfootball.com/england/mens-senior-team/fixtures-results/2025-26/world-cup/france-england-fifa-world-cup-bronze-medal-match-saturday-18-july-2026-match-centre",
           "sourceName": "England Football",
-          "fetchedAt": "2026-07-17T22:04:43Z",
+          "fetchedAt": "2026-07-19T01:01:03Z",
           "claimType": "confirmed/official-match-centre",
           "confidence": "high"
         },
         {
-          "label": "BBC why care about third-place play-off 22:04Z recheck",
-          "url": "https://www.bbc.com/sport/football/articles/cly5we2lgq4o",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-17T22:04:43Z",
-          "claimType": "reported/storyline-context",
-          "confidence": "high"
-        },
-        {
-          "label": "Al Jazeera France-England bronze playoff team news",
-          "url": "https://www.aljazeera.com/sports/2026/7/17/france-england-fifa-world-cup-third-place-playoff-predictions-kickoff",
-          "sourceName": "Al Jazeera",
-          "fetchedAt": "2026-07-17T15:51:10Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "BBC Saliba back injury assessment 15:51Z recheck",
-          "url": "https://www.bbc.com/sport/football/articles/cp87np4282po",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-17T15:51:10Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Sports Mole France predicted XI / Saliba availability projection",
-          "url": "https://www.sportsmole.co.uk/football/france/world-cup-2026/predicted-lineups/saliba-out-cherki-in-predicted-france-xi-vs-england_601255.html",
-          "sourceName": "Sports Mole",
-          "fetchedAt": "2026-07-17T09:44:44Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "medium"
-        },
-        {
-          "label": "England Football France v England Stat Pack",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/16/app-england-france-world-cup-stat-pack-20261607",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-17T09:44:44Z",
-          "claimType": "confirmed/official-context",
-          "confidence": "high"
-        },
-        {
-          "label": "Hard Rock Stadium HRS Express shuttle page",
-          "url": "https://www.hardrockstadium.com/parking/hrs-express/",
-          "sourceName": "Hard Rock Stadium",
-          "fetchedAt": "2026-07-17T09:44:44Z",
-          "claimType": "context/event-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "Sports Mole Reece James bronze-final availability watch",
-          "url": "https://www.sportsmole.co.uk/football/england/world-cup-2026/predicted-lineups/who-replaces-reece-james-predicted-england-xi-vs-france_601292.html",
-          "sourceName": "Sports Mole",
-          "fetchedAt": "2026-07-17T03:34:40Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "medium"
-        },
-        {
-          "label": "FIFA France-England bronze final preview",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-v-england-live-stream-team-news-tickets-and-more",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "confirmed/official-preview",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA Match Centre M103",
-          "url": "https://www.fifa.com/en/match-centre/match/17/285023/289291/400021542",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "confirmed/match-centre",
-          "confidence": "high"
-        },
-        {
-          "label": "England Football France third-place fixture",
-          "url": "https://www.englandfootball.com/articles/2026/Jul/15/england-fixture-details-knockout-stage-20261107",
-          "sourceName": "England Football",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "confirmed/official-team-fixture",
-          "confidence": "high"
-        },
-        {
-          "label": "BBC Deschamps France era third-place context",
-          "url": "https://www.bbc.co.uk/sport/football/articles/czx5x14v5w2o",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "reported/team-context",
-          "confidence": "high"
-        },
-        {
-          "label": "AP Mbappe Golden Boot third-place context",
-          "url": "https://apnews.com/article/world-cup-kylian-mbappe-faab7b8800224ceb2ce34e02125af7c5",
-          "sourceName": "AP News",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "reported/player-award-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "FOX 5 NY bronze final rotation preview",
-          "url": "https://www.fox5ny.com/news/france-vs-england-bronze-final-preview-will-stars-play-third-place-game",
-          "sourceName": "FOX 5 NY",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "reported/rotation-watch",
-          "confidence": "medium"
-        },
-        {
-          "label": "ESPN/DraftKings France-England odds API",
-          "url": "https://sports.core.api.espn.com/v2/sports/soccer/leagues/fifa.world/events/760516/competitions/760516/odds?lang=en&region=us",
-          "sourceName": "ESPN / DraftKings",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "odds-reference",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Guardian France-Spain semifinal report",
-          "url": "https://www.theguardian.com/football/2026/jul/14/france-spain-world-cup-semi-final-match-report",
+          "label": "Guardian France 4-6 England match report",
+          "url": "https://www.theguardian.com/football/2026/jul/19/england-france-world-cup-third-place-playoff-match-report",
           "sourceName": "The Guardian",
-          "fetchedAt": "2026-07-16T15:14:52Z",
+          "fetchedAt": "2026-07-19T01:01:03Z",
           "claimType": "confirmed/postmatch-context",
           "confidence": "high"
         },
         {
-          "label": "USA Today Saliba injury update",
-          "url": "https://www.usatoday.com/story/sports/soccer/worldcup/2026/07/14/william-saliba-injury-update-substitution-france-spain/90908173007/",
-          "sourceName": "USA Today",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "medium-high"
+          "label": "BBC England 6-4 France live archive",
+          "url": "https://www.bbc.com/sport/football/live/cly5lj1nqdxt",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-19T01:01:03Z",
+          "claimType": "confirmed/postmatch-context",
+          "confidence": "high"
         },
         {
-          "label": "Al Jazeera Argentina comeback / England third-place note",
-          "url": "https://www.aljazeera.com/sports/2026/7/15/argentina-stun-england-in-2-1-comeback-win-to-reach-2026-world-cup-final",
+          "label": "Al Jazeera England 6-4 France live archive",
+          "url": "https://www.aljazeera.com/sports/liveblog/2026/7/18/france-vs-england-live-fifa-world-cup-2026-third-place-playoff",
           "sourceName": "Al Jazeera",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "confirmed/fixture-context",
+          "fetchedAt": "2026-07-19T01:01:03Z",
+          "claimType": "confirmed/postmatch-context",
           "confidence": "high"
-        },
-        {
-          "label": "FIFA Miami host city",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/usa/miami",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "context/venue-weather",
-          "confidence": "high"
-        },
-        {
-          "label": "RFI/AFP gloomy World Cup send-off report",
-          "url": "https://www.rfi.fr/en/sports/20260716-france-england-prepare-for-gloomy-world-cup-send-off",
-          "sourceName": "RFI / AFP",
-          "fetchedAt": "2026-07-16T21:24:13Z",
-          "claimType": "reported/team-mood-context",
-          "confidence": "high"
-        },
-        {
-          "label": "Guardian Tuchel semifinal tactical fallout",
-          "url": "https://www.theguardian.com/football/2026/jul/15/thomas-tuchel-england-argentina-semi-final-world-cup",
-          "sourceName": "The Guardian",
-          "fetchedAt": "2026-07-16T21:24:13Z",
-          "claimType": "reported/tactical-context",
-          "confidence": "high"
-        },
-        {
-          "label": "FOX Sports France-England third-place odds",
-          "url": "https://www.foxsports.com/stories/soccer/2026-world-cup-third-place-odds-france-england",
-          "sourceName": "FOX Sports",
-          "fetchedAt": "2026-07-16T21:24:13Z",
-          "claimType": "odds-reference",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "ESPN France-England bronze playoff preview",
-          "url": "https://www.espn.com/soccer/story/_/id/49373987/france-vs-england-fifa-world-cup-2026-tv-channel-how-watch-kickoff-live-stream-injury-predicted-lineups",
-          "sourceName": "ESPN",
-          "fetchedAt": "2026-07-17T01:05:27Z",
-          "claimType": "reported/availability-lineup-watch",
-          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
@@ -430,12 +115,12 @@
       "matchId": "m104",
       "match": "Spain vs Argentina",
       "sourceType": "final + official weather/transport/referee/availability/odds watch",
-      "title": "Spain–Argentina 決賽 20 小時窗：ESPN 仍 scheduled；NWS 開球窗 Sunny 81°F、0% rain，但 Flood Watch/AQI alert 仍是城市營運風險。",
-      "sorenTake": "決賽剩約 20.5 小時，Soren 重新校正天氣與先發邊界：ESPN 22:31Z 仍是 STATUS_SCHEDULED / completed=false，0–0 不可當 live；NWS Meadowlands 7/19 15:00 ET 開球窗 81°F、Sunny、0% rain、NW 12 mph，16:00 ET 82°F、0% rain。active alerts 仍有 Flood Watch 與 Air Quality Alert，所以重點不是明天球場下雨，而是今天到明天的城市/交通/空品尾巴。The Standard/Goal/Sports Mole 都只能算 reported team-news：Spain 大致健康、Argentina 未見明確停賽傷停，官方 XI 未出。",
+      "title": "Spain–Argentina 決賽日倒數約 18 小時：ESPN 仍 scheduled；NWS 開球窗 Sunny 81–82°F、0% rain，場外 Flood/AQI 尾風險另列。",
+      "sorenTake": "決賽日進入最後倒數，Soren 先把邊界寫清楚：ESPN 01:01Z 仍是 STATUS_SCHEDULED / completed=false，0–0 只是賽前佔位；NWS Meadowlands 15:00–17:00 ET 是 81→82→81°F、Sunny、0% rain、NW 12 mph。場外仍有 Flash Flood Warning / Flood Watch / Air Quality Alert 這種城市營運與健康尾風險，但不能把它誤翻成「開球必雨戰」。官方 XI 未出前，所有 predicted lineup 仍只是觀察。",
       "signals": [
-        "ESPN scoreboard 7/18 22:31Z 再核 m104：Spain vs Argentina 仍是 STATUS_SCHEDULED / state=pre / completed=false；0–0 是賽前佔位，官方先發未出。",
-        "NWS Meadowlands hourly API 7/18 22:33Z 再核：7/19 15:00–17:00 ET 決賽窗 81→82→81°F，Sunny，降雨 0%，NW 12 mph；開球天氣比今天警報乾淨。",
-        "NWS active alerts 7/18 22:33Z 對 East Rutherford 周邊仍列 Flood Watch 與 Air Quality Alert；Soren 標為城市營運/空品尾風險，不把今天洪水警報誤寫成明天開球暴雨。",
+        "ESPN scoreboard 7/19 01:01Z 再核 m104：Spain vs Argentina 仍是 STATUS_SCHEDULED / state=pre / completed=false；0–0 是賽前佔位，官方先發未出。",
+        "NWS Meadowlands hourly API 7/19 01:01Z 再核：7/19 15:00–17:00 ET 決賽窗 81→82→81°F，Sunny，降雨 0%，NW 12 mph。",
+        "NWS active alerts 7/19 01:01Z 對 East Rutherford 周邊仍列 Flash Flood Warning（至 23:30 ET）、Flood Watch（至 02:00 ET）與 Air Quality Alert；Soren 標為城市營運/空品尾風險，不把它寫成開球窗暴雨。",
         "The Standard 7/18 可讀 team-news：Spain 對 France 後 largely unscathed、clean bill of health，Nico Williams 可能競爭先發；這是 reported lineup-watch，不是官方 XI。",
         "Goal / Sports Mole 7/18 賽前 preview 均把 Spain–Argentina 定位為決賽 team-news/tactical watch；Goal meta 明說 no confirmed injuries/suspensions/probable lineup released，Whoscored search snippet稱兩隊無新增傷停但原頁 403，故只作低權重 reported/search-indexed lead。",
         "NJ Transit 決賽服務公告 7/18 parent-verified title：FIFA World Cup 26 Final on Sunday, July 19 at NYNJ Stadium 期間調整時刻；賽後約 5:15–9:29 PM 往 PSNY 的 eastbound trains 將終止於 Newark Penn 或 Newark Broad，球迷交通是營運風險線。",
@@ -476,26 +161,27 @@
       ],
       "sources": [
         {
-          "label": "ESPN scoreboard m104 scheduled / no lineup recheck 22:31Z",
+          "label": "ESPN scoreboard m104 scheduled / no lineup recheck 01:01Z",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260719",
           "sourceName": "ESPN public scoreboard API",
-          "fetchedAt": "2026-07-18T22:31:32Z",
+          "fetchedAt": "2026-07-19T01:01:03Z",
           "claimType": "context/match-centre-lineup-watch",
-          "confidence": "high"
+          "confidence": "high",
+          "completed": false
         },
         {
-          "label": "NWS Meadowlands hourly forecast recheck 22:33Z",
+          "label": "NWS Meadowlands hourly forecast recheck 01:01Z",
           "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T22:33:15Z",
+          "fetchedAt": "2026-07-19T01:01:03Z",
           "claimType": "context/weather-watch",
           "confidence": "high"
         },
         {
-          "label": "NWS Meadowlands active alerts recheck 22:33Z",
+          "label": "NWS Meadowlands active alerts recheck 01:01Z",
           "url": "https://api.weather.gov/alerts/active?point=40.8135,-74.0745",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-18T22:33:15Z",
+          "fetchedAt": "2026-07-19T01:01:03Z",
           "claimType": "context/weather-alert-watch",
           "confidence": "high"
         },
