@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-19T01:01:03Z",
-  "status": "final-weekend-third-place-finalized-and-final-countdown",
-  "headline": "季軍戰已結案：England 6–4 France 拿第三，ESPN/England Football/Guardian/BBC/Al Jazeera 均指向 full-time；Spain–Argentina 決賽仍 scheduled，NWS 決賽窗 81–82°F Sunny / 0% rain，但場外 Flood/AQI 警報還要當交通與健康尾風險。",
+  "generatedAt": "2026-07-19T04:41:32Z",
+  "status": "final-day-lineup-weather-transport-watch",
+  "headline": "決賽日再校準：m104 Spain–Argentina 距開球約 14 小時，ESPN 仍 scheduled / completed=false；NWS 開球窗維持 81–82°F Sunny、0% rain，場館點 active alerts 目前清零。最新風險改成 Spain 因雷暴取消最後訓練、NJ Transit 決賽日限流與官方先發尚未釋出。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -114,13 +114,19 @@
     {
       "matchId": "m104",
       "match": "Spain vs Argentina",
-      "sourceType": "final + official weather/transport/referee/availability/odds watch",
-      "title": "Spain–Argentina 決賽日倒數約 18 小時：ESPN 仍 scheduled；NWS 開球窗 Sunny 81–82°F、0% rain，場外 Flood/AQI 尾風險另列。",
-      "sorenTake": "決賽日進入最後倒數，Soren 先把邊界寫清楚：ESPN 01:01Z 仍是 STATUS_SCHEDULED / completed=false，0–0 只是賽前佔位；NWS Meadowlands 15:00–17:00 ET 是 81→82→81°F、Sunny、0% rain、NW 12 mph。場外仍有 Flash Flood Warning / Flood Watch / Air Quality Alert 這種城市營運與健康尾風險，但不能把它誤翻成「開球必雨戰」。官方 XI 未出前，所有 predicted lineup 仍只是觀察。",
+      "sourceType": "final-day official status + weather/transport/referee/preparation watch",
+      "title": "Spain–Argentina 決賽日倒數約 14 小時：ESPN 仍 scheduled；NWS 開球窗 Sunny 81–82°F、active alerts 清零，但 Spain 最後訓練被雷暴取消。",
+      "sorenTake": "最後半天不要自己加戲：ESPN 04:36Z 仍是 STATUS_SCHEDULED / completed=false，官方 XI 還沒出；NWS 15:00–17:00 ET 維持 Sunny、81→82→81°F、0% rain，且 East Rutherford 場館點 active alerts 目前為 0。真正要盯的是三條線：Spain 因雷暴取消最後訓練（備戰節奏，不是傷停）、Vinčić 執法後的身體對抗尺度，以及 NJ Transit / venue 人流。紙上市場可以當溫度計，不能當下注指令。",
       "signals": [
-        "ESPN scoreboard 7/19 01:01Z 再核 m104：Spain vs Argentina 仍是 STATUS_SCHEDULED / state=pre / completed=false；0–0 是賽前佔位，官方先發未出。",
-        "NWS Meadowlands hourly API 7/19 01:01Z 再核：7/19 15:00–17:00 ET 決賽窗 81→82→81°F，Sunny，降雨 0%，NW 12 mph。",
-        "NWS active alerts 7/19 01:01Z 對 East Rutherford 周邊仍列 Flash Flood Warning（至 23:30 ET）、Flood Watch（至 02:00 ET）與 Air Quality Alert；Soren 標為城市營運/空品尾風險，不把它寫成開球窗暴雨。",
+        "ESPN scoreboard 7/19 04:36Z 再核 m104：Spain vs Argentina 仍是 STATUS_SCHEDULED / state=pre / completed=false；0–0 仍是賽前佔位，官方 XI 尚未釋出。",
+        "NWS Meadowlands hourly API 7/19 04:36Z 再核：15:00–17:00 ET 決賽窗 81→82→81°F，Sunny，降雨 0%，NW 12 mph；雨戰仍不升級。",
+        "NWS active-alert API 7/19 04:36Z 對 East Rutherford venue point 回傳 0 active alerts；上一輪 Flood/AQI 尾風險已降級為持續監控，不再寫成當下 active 警報。",
+        "BBC Sport 搜尋摘要 7/19 再核：Spain 最後一堂決賽訓練因 New York / New Jersey 週六 heavy thunderstorms 取消；這是 preparation/weather-disruption，不是傷停或先發確認。",
+        "Inside FIFA / FIFA Refereeing 搜尋摘要確認 Slovenian Slavko Vinčić 將執法 Spain v Argentina，地點 New York New Jersey Stadium，日期 7/19；裁判尺度敘事可保留為 confirmed match-official。",
+        "NJ Transit 決賽日公告 parent-verified title 並由搜尋摘要補強：7/19 10:24 AM–2:14 PM，PSNY 與 Secaucus 候車/列車服務限縮給前往 NYNJ Stadium 旅客；場外人流是實際風險線，不進勝率黑箱。",
+        "MetLife Stadium 官方 final event page 可連線；和 FIFA final hub 一起作為 venue/event rails，開球前若出現入場、禁帶物或時間異動再更新。",
+        "Reuters / Guardian / BBC 的新戰術線索集中在「如何壓 Spain、是否盯 Messi、Rodri 節奏」；部分 Reuters/Guardian 正文無法在本環境抽取，只保守作 search-indexed tactical leads，等可讀正文或官方記者會再升級。",
+        "NBC Sports / USA Today 等公開賠率頁仍可作 paper-market temperature；Soren 只做紙上模擬與市場溫度，不提供下注建議，也不替任何真金流執行。",
         "The Standard 7/18 可讀 team-news：Spain 對 France 後 largely unscathed、clean bill of health，Nico Williams 可能競爭先發；這是 reported lineup-watch，不是官方 XI。",
         "Goal / Sports Mole 7/18 賽前 preview 均把 Spain–Argentina 定位為決賽 team-news/tactical watch；Goal meta 明說 no confirmed injuries/suspensions/probable lineup released，Whoscored search snippet稱兩隊無新增傷停但原頁 403，故只作低權重 reported/search-indexed lead。",
         "NJ Transit 決賽服務公告 7/18 parent-verified title：FIFA World Cup 26 Final on Sunday, July 19 at NYNJ Stadium 期間調整時刻；賽後約 5:15–9:29 PM 往 PSNY 的 eastbound trains 將終止於 Newark Penn 或 Newark Broad，球迷交通是營運風險線。",
@@ -161,29 +167,77 @@
       ],
       "sources": [
         {
-          "label": "ESPN scoreboard m104 scheduled / no lineup recheck 01:01Z",
+          "label": "ESPN scoreboard m104 scheduled / no lineup recheck 04:36Z",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260719",
           "sourceName": "ESPN public scoreboard API",
-          "fetchedAt": "2026-07-19T01:01:03Z",
+          "fetchedAt": "2026-07-19T04:41:32Z",
           "claimType": "context/match-centre-lineup-watch",
           "confidence": "high",
           "completed": false
         },
         {
-          "label": "NWS Meadowlands hourly forecast recheck 01:01Z",
+          "label": "NWS Meadowlands hourly forecast recheck 04:36Z",
           "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-19T01:01:03Z",
+          "fetchedAt": "2026-07-19T04:41:32Z",
           "claimType": "context/weather-watch",
           "confidence": "high"
         },
         {
-          "label": "NWS Meadowlands active alerts recheck 01:01Z",
+          "label": "NWS Meadowlands active alerts cleared 04:36Z",
           "url": "https://api.weather.gov/alerts/active?point=40.8135,-74.0745",
           "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-19T01:01:03Z",
+          "fetchedAt": "2026-07-19T04:41:32Z",
           "claimType": "context/weather-alert-watch",
           "confidence": "high"
+        },
+        {
+          "label": "BBC Spain final training cancelled before World Cup final",
+          "url": "https://www.bbc.com/sport/football/articles/cly878gpgrlo",
+          "sourceName": "BBC Sport",
+          "fetchedAt": "2026-07-19T04:41:32Z",
+          "claimType": "reported/preparation-weather-disruption",
+          "confidence": "high"
+        },
+        {
+          "label": "Inside FIFA Vinčić final referee appointment",
+          "url": "https://inside.fifa.com/refereeing/news/slavko-vincic-world-cup-2026-final-referee-spain-argentina",
+          "sourceName": "Inside FIFA",
+          "fetchedAt": "2026-07-19T04:41:32Z",
+          "claimType": "confirmed/match-official",
+          "confidence": "high"
+        },
+        {
+          "label": "NJ TRANSIT final-day PSNY/Secaucus stadium-travel restriction",
+          "url": "https://www.njtransit.com/service-advisory/2134563",
+          "sourceName": "NJ Transit",
+          "fetchedAt": "2026-07-19T04:41:32Z",
+          "claimType": "confirmed/transport-operations",
+          "confidence": "high"
+        },
+        {
+          "label": "MetLife Stadium official World Cup final event page",
+          "url": "https://www.metlifestadium.com/events/detail/fifa-world-cup-2026-final",
+          "sourceName": "MetLife Stadium",
+          "fetchedAt": "2026-07-19T04:41:32Z",
+          "claimType": "confirmed/venue-event",
+          "confidence": "high"
+        },
+        {
+          "label": "Reuters tactical lead: pressing Spain is simple in theory, painful in practice",
+          "url": "https://www.reuters.com/sports/soccer/pressing-spain-is-simple-theory-painful-practice-says-lopetegui-2026-07-18/",
+          "sourceName": "Reuters (search-indexed lead)",
+          "fetchedAt": "2026-07-19T04:41:32Z",
+          "claimType": "reported/search-indexed-tactical-context",
+          "confidence": "medium-high"
+        },
+        {
+          "label": "NBC Sports public World Cup final odds reference",
+          "url": "https://www.nbcsports.com/soccer/world-cup/news/2026-world-cup-final-argentina-vs-spain-prediction-odds-trends-and-best-bet",
+          "sourceName": "NBC Sports",
+          "fetchedAt": "2026-07-19T04:41:32Z",
+          "claimType": "odds-reference/paper-market-temperature",
+          "confidence": "medium-high"
         },
         {
           "label": "Standard Spain-Argentina final team-news preview",
@@ -208,14 +262,6 @@
           "fetchedAt": "2026-07-18T22:33:15Z",
           "claimType": "reported/search-indexed-availability-watch",
           "confidence": "low-medium"
-        },
-        {
-          "label": "NJ Transit final-day adjusted schedules advisory",
-          "url": "https://www.njtransit.com/service-advisory/2134563",
-          "sourceName": "NJ Transit",
-          "fetchedAt": "2026-07-18T16:28:16Z",
-          "claimType": "confirmed/transport-operations",
-          "confidence": "high"
         },
         {
           "label": "Opta Analyst Spain-Argentina final benchmark simulations",
@@ -298,14 +344,6 @@
           "confidence": "high"
         },
         {
-          "label": "FIFA Inside Vinčić final referee appointment",
-          "url": "https://inside.fifa.com/refereeing/news/slavko-vincic-world-cup-2026-final-referee-spain-argentina",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-18T01:04:02Z",
-          "claimType": "confirmed/match-official",
-          "confidence": "high"
-        },
-        {
           "label": "AP Slavko Vinčić final referee confirmation",
           "url": "https://apnews.com/article/world-cup-final-slovenia-referee-vincic-argentina-83fca515639ed6cc70723f08ba2bb027",
           "sourceName": "AP News",
@@ -384,14 +422,6 @@
           "fetchedAt": "2026-07-17T03:34:40Z",
           "claimType": "reported/availability-watch",
           "confidence": "medium"
-        },
-        {
-          "label": "NJ Transit final-day rail service advisory",
-          "url": "https://www.njtransit.com/service-advisory/2134563",
-          "sourceName": "NJ TRANSIT",
-          "fetchedAt": "2026-07-17T03:34:40Z",
-          "claimType": "context/event-operations",
-          "confidence": "high"
         },
         {
           "label": "FIFA Final live / watch / teams / tickets hub",
@@ -543,14 +573,6 @@
           "sourceName": "BBC Sport",
           "fetchedAt": "2026-07-17T01:05:27Z",
           "claimType": "reported/discipline-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "MetLife Stadium FIFA World Cup 2026 Final event",
-          "url": "https://www.metlifestadium.com/events/detail/fifa-world-cup-2026-final",
-          "sourceName": "MetLife Stadium",
-          "fetchedAt": "2026-07-17T01:05:27Z",
-          "claimType": "context/event-operations",
           "confidence": "high"
         }
       ],
