@@ -10,7 +10,9 @@
         0
       ],
       "winner": "Spain",
-      "source": "ESPN scoreboard STATUS_FINAL_AET completed=true plus FIFA/AP/ESPN match reports, verified 2026-07-19T23:03Z"
+      "source": "ESPN scoreboard STATUS_FINAL_AET completed=true; Guardian and Sporting News match reports also list Spain 1-0 Argentina after extra time, verified 2026-07-19T23:09Z",
+      "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260719",
+      "fetchedAt": "2026-07-19T23:09:07.145Z"
     }
   ]
 }
