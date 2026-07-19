@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-19T20:53:51.907Z",
+  "generatedAt": "2026-07-19T23:05:35.966Z",
   "source": {
     "matches": "https://raw.githubusercontent.com/openfootball/worldcup.json/refs/heads/master/2026/worldcup.json",
     "groups": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.groups.json",
@@ -7,14 +7,14 @@
   },
   "summary": {
     "totalMatches": 104,
-    "finishedMatches": 103,
-    "scheduledMatches": 1,
-    "finalPendingMatches": 1,
+    "finishedMatches": 104,
+    "scheduledMatches": 0,
+    "finalPendingMatches": 0,
     "nextWindow": []
   },
   "dataQuality": {
-    "status": "watch",
-    "checkedAt": "2026-07-19T20:53:51.907Z",
+    "status": "pass",
+    "checkedAt": "2026-07-19T23:05:35.966Z",
     "thresholds": {
       "finalResultGraceMinutes": 150
     },
@@ -22,17 +22,16 @@
       "totalMatches": 104,
       "groups": 12,
       "teams": 48,
-      "finishedMatches": 103,
-      "scheduledMatches": 1,
+      "finishedMatches": 104,
+      "scheduledMatches": 0,
       "predictions": 104,
       "leaderboardRows": 3,
       "paperSettled": 12,
-      "paperPending": 1,
-      "resultOverrides": 0,
+      "paperPending": 0,
+      "resultOverrides": 1,
       "groupStageMatches": 72,
       "lifecycle": {
-        "final": 103,
-        "live-window": 1
+        "final": 104
       }
     },
     "labels": [
@@ -51,22 +50,18 @@
       {
         "key": "liveGuard",
         "label": "Live is not final",
-        "status": "watch",
-        "detail": "1 match(es) hidden behind final-score pending labels."
+        "status": "pass",
+        "detail": "No kicked-off match is waiting for a final result."
       },
       {
         "key": "overrides",
         "label": "Manual score overrides",
-        "status": "pass",
-        "detail": "No manual result overrides applied."
+        "status": "watch",
+        "detail": "1 source-backed override(s) applied."
       }
     ],
-    "pendingFinalMatchIds": [
-      "m104"
-    ],
-    "warnings": [
-      "1 match(es) have kicked off but do not have source-backed final scores yet"
-    ],
+    "pendingFinalMatchIds": [],
+    "warnings": [],
     "errors": []
   },
   "groups": [
@@ -2900,11 +2895,15 @@
       "team1": "Spain",
       "team2": "Argentina",
       "venue": "New York/New Jersey (East Rutherford)",
-      "status": "scheduled",
-      "score": null,
-      "source": "openfootball/worldcup.json",
-      "lifecycle": "live-window",
-      "resultTrust": "kickoff-started; final score not trusted yet"
+      "status": "finished",
+      "score": [
+        1,
+        0
+      ],
+      "source": "openfootball/worldcup.json + override: ESPN scoreboard STATUS_FINAL_AET completed=true plus FIFA/AP/ESPN match reports, verified 2026-07-19T23:03Z",
+      "lifecycle": "final",
+      "resultTrust": "manual-source-override final",
+      "winner": "Spain"
     }
   ],
   "predictions": {
@@ -7010,20 +7009,20 @@
     },
     "m101": {
       "pick": "Spain",
-      "confidence": 0.4480467972557531,
+      "confidence": 0.48879862815034214,
       "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.2994300700982923,
-        "draw": 0.2751934808564146,
-        "away": 0.425376449045293
+        "home": 0.27233654483037295,
+        "draw": 0.27188446684775486,
+        "away": 0.45577898832187225
       },
       "expectedGoals": [
-        1.06,
-        1.32
+        1,
+        1.38
       ],
-      "score": "1-1",
+      "score": "0-1",
       "commentary": {
-        "headline": "我這場保守站 Spain，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Spain，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
@@ -7033,19 +7032,19 @@
           },
           {
             "label": "進球味",
-            "value": "1.06 : 1.32",
-            "note": "最像 1-1"
+            "value": "1.00 : 1.38",
+            "note": "最像 0-1"
           },
           {
             "label": "翻車率",
-            "value": "30%",
+            "value": "27%",
             "note": "Spain 的偷雞窗口"
           }
         ]
       },
       "reasons": [
         "底牌分：France 104.0；Spain 104.0",
-        "預期進球 1.06 : 1.32，先用 Poisson 把嘴砲壓成數字",
+        "預期進球 1.00 : 1.38，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     },
@@ -7133,20 +7132,20 @@
     },
     "m104": {
       "pick": "Spain",
-      "confidence": 0.3808352070799772,
-      "tag": "膠著到煩",
+      "confidence": 0.48879862815034214,
+      "tag": "這場有妖氣",
       "probabilities": {
-        "home": 0.37558853219027716,
-        "draw": 0.27797112945111263,
-        "away": 0.3464403383586102
+        "home": 0.45577898832187225,
+        "draw": 0.2718844668477548,
+        "away": 0.2723365448303729
       },
       "expectedGoals": [
-        1.22,
-        1.16
+        1.38,
+        1
       ],
-      "score": "1-1",
+      "score": "1-0",
       "commentary": {
-        "headline": "我這場保守站 Spain，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "headline": "我這場保守站 Spain，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "story": "兩隊底牌差不多，誰先犯蠢誰就把方向盤交出去。 進球期望偏低，大概率是一球差、低比分、看誰先失手。",
         "keyFactors": [
           {
@@ -7156,19 +7155,19 @@
           },
           {
             "label": "進球味",
-            "value": "1.22 : 1.16",
-            "note": "最像 1-1"
+            "value": "1.38 : 1.00",
+            "note": "最像 1-0"
           },
           {
             "label": "翻車率",
-            "value": "35%",
+            "value": "27%",
             "note": "Argentina 的偷雞窗口"
           }
         ]
       },
       "reasons": [
         "底牌分：Spain 104.0；Argentina 104.0",
-        "預期進球 1.22 : 1.16，先用 Poisson 把嘴砲壓成數字",
+        "預期進球 1.38 : 1.00，先用 Poisson 把嘴砲壓成數字",
         "兩邊差距薄，平局和一球差都很有戲"
       ]
     }
@@ -7181,20 +7180,20 @@
       "points": 97,
       "correct": 71,
       "exact": 13,
-      "total": 103,
+      "total": 104,
       "rank": 1,
-      "accuracy": 0.6893203883495146
+      "accuracy": 0.6826923076923077
     },
     {
       "id": "soren",
       "name": "Soren Poisson",
       "desc": "強度先驗 × 即時戰績 × Poisson 進球分布",
-      "points": 88,
-      "correct": 63,
+      "points": 89,
+      "correct": 64,
       "exact": 11,
-      "total": 103,
+      "total": 104,
       "rank": 2,
-      "accuracy": 0.6116504854368932
+      "accuracy": 0.6153846153846154
     },
     {
       "id": "draw",
@@ -7203,9 +7202,9 @@
       "points": 48,
       "correct": 24,
       "exact": 12,
-      "total": 103,
+      "total": 104,
       "rank": 3,
-      "accuracy": 0.23300970873786409
+      "accuracy": 0.23076923076923078
     }
   ],
   "paperBankroll": {
@@ -7213,36 +7212,12 @@
     "startedAt": "2026-06-26T08:00:00.000Z",
     "currency": "USD-paper",
     "initialBankroll": 100,
-    "bankroll": 358.27,
-    "openStake": 1,
-    "totalValue": 358.27,
-    "roi": 2.583,
+    "bankroll": 368.16,
+    "openStake": 0,
+    "totalValue": 368.16,
+    "roi": 2.682,
     "rules": "Soren 只用紙上本金 100 美金；以模型機率對比主流 1X2 賽前盤紙上代理價格挑選少量標的；單筆約 1–8 美金；90 分鐘勝平負口徑；開賽前 60 分鐘鎖單，賽後公開結算與復盤。",
     "settled": [
-      {
-        "matchId": "m092",
-        "kickoffUtc": "2026-07-06T00:00:00.000Z",
-        "stage": "Round of 16",
-        "team1": "Mexico",
-        "team2": "England",
-        "pick": "England",
-        "outcome": "away",
-        "stake": 5.06,
-        "decimalOdds": 2.32,
-        "edge": 0.23,
-        "modelProbability": 0.53,
-        "marketProxyProbability": 0.405,
-        "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
-        "lockedAtUtc": "2026-07-05T23:00:00.000Z",
-        "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場中等站 England，但平局還有 26%；別急著開香檳，足球最會打臉。",
-        "status": "won",
-        "score": [
-          2,
-          3
-        ],
-        "profit": 6.68
-      },
       {
         "matchId": "m093",
         "kickoffUtc": "2026-07-06T19:00:00.000Z",
@@ -7443,21 +7418,21 @@
         "team2": "Spain",
         "pick": "Spain",
         "outcome": "away",
-        "stake": 4.2,
+        "stake": 6.08,
         "decimalOdds": 2.8,
-        "edge": 0.191,
-        "modelProbability": 0.425,
+        "edge": 0.276,
+        "modelProbability": 0.456,
         "marketProxyProbability": 0.336,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-14T18:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 Spain，但平局還有 28%；別急著開香檳，足球最會打臉。",
+        "reason": "我這場保守站 Spain，但平局還有 27%；別急著開香檳，足球最會打臉。",
         "status": "won",
         "score": [
           0,
           2
         ],
-        "profit": 7.56
+        "profit": 10.94
       },
       {
         "matchId": "m102",
@@ -7506,9 +7481,7 @@
           6
         ],
         "profit": -4.2
-      }
-    ],
-    "pending": [
+      },
       {
         "matchId": "m104",
         "kickoffUtc": "2026-07-19T19:00:00.000Z",
@@ -7517,18 +7490,24 @@
         "team2": "Argentina",
         "pick": "Spain",
         "outcome": "home",
-        "stake": 1,
+        "stake": 4.07,
         "decimalOdds": 2.6,
-        "edge": -0.023,
-        "modelProbability": 0.376,
+        "edge": 0.185,
+        "modelProbability": 0.456,
         "marketProxyProbability": 0.362,
         "marketReference": "主流 1X2 賽前盤紙上模擬（FanDuel/DraftKings/Bet365 類型，不導流）",
         "lockedAtUtc": "2026-07-19T18:00:00.000Z",
         "cutoffRule": "開賽前 60 分鐘鎖單；若官方先發/重大傷停晚於鎖單才出現，記入復盤不追改。",
-        "reason": "我這場保守站 Spain，但平局還有 28%；別急著開香檳，足球最會打臉。",
-        "status": "awaiting-final"
+        "reason": "我這場保守站 Spain，但平局還有 27%；別急著開香檳，足球最會打臉。",
+        "status": "won",
+        "score": [
+          1,
+          0
+        ],
+        "profit": 6.51
       }
     ],
+    "pending": [],
     "watchlist": []
   }
 }

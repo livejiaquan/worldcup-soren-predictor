@@ -1,4 +1,16 @@
 {
   "note": "Source-backed final-score overrides used when upstream openfootball data lags. The official-results verifier cron may append new entries; remove entries after upstream catches up if desired.",
-  "overrides": []
+  "overrides": [
+    {
+      "date": "2026-07-19",
+      "team1": "Spain",
+      "team2": "Argentina",
+      "score": [
+        1,
+        0
+      ],
+      "winner": "Spain",
+      "source": "ESPN scoreboard STATUS_FINAL_AET completed=true plus FIFA/AP/ESPN match reports, verified 2026-07-19T23:03Z"
+    }
+  ]
 }
