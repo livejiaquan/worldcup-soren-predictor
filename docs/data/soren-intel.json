@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-07-19T17:01:10Z",
+  "generatedAt": "2026-07-19T23:05:35Z",
   "status": "updated",
-  "headline": "決賽日前最後情報：Spain–Argentina 官方 XI 未出；MetLife 天氣穩，NJ Transit 入場規則要盯。",
+  "headline": "Spain 1–0 Argentina AET：Ferran Torres 106’ 把 2026 決賽收成西班牙第二顆星；Soren 已把決賽卡改成終場檔案。",
   "disclaimer": "此區是公開來源觀察與社群搜尋摘要。社群內容只代表可見討論，不等於事實；傷停與先發以可信媒體/官方更新為準。看不到的留言不會假裝看過；live score 不是 final，只有官方/高可信終場才結算。",
   "items": [
     {
@@ -114,456 +114,66 @@
     {
       "matchId": "m104",
       "match": "Spain vs Argentina",
-      "sourceType": "final-day official status + lineup/weather/transport/market watch",
-      "title": "Spain–Argentina 決賽倒數約 2 小時：FIFA/ESPN 仍 pre-match、官方 XI 未出；MetLife 天氣清爽，NJ Transit 才是真正場外雷區。",
-      "sorenTake": "17:00Z 再核，Soren 先把決賽日最後兩小時分成三條線：FIFA live API 與 ESPN 都仍是 scheduled/pre，球員名單與陣型欄位空白，正式 XI 還不能偷跑；NWS MetLife 開球窗 81°F、Sunny、降雨 0%、active alerts 0，雨戰/空品警報暫不升級；NJ Transit 決賽日頁面則把人流風險寫得很硬：往 NYNJ Stadium 服務限持票旅客、40,000 張 rail ticket cap、$98 round trip、手機預購，開球前最後一小時不賣票。場內劇本可以 Messi vs Yamal，場外劇本是誰能準時進場；紙上市場只當溫度計，不是下注建議。",
+      "sourceType": "confirmed final + postmatch archive",
+      "title": "Spain 1–0 Argentina AET 已終場：Ferran Torres 106’ 破門，西班牙第二次捧起世界盃。",
+      "sorenTake": "這張卡已從「官方 XI / 天氣 / 交通 watch」收斂成 final archive：ESPN scoreboard 是 STATUS_FINAL_AET、state=post、completed=true，FIFA/API 與 AP/ESPN 報導同向確認 Spain 1–0 Argentina。Ferran Torres 106 分鐘打破僵局；Argentina 的衛冕劇本停在 MetLife，Soren 的公開頁現在用 source-backed override 暫時補上 openfootball lag，等上游追上後可移除。",
       "signals": [
-        "17:00Z parent-verified FIFA live API：m104 MatchStatus=1、Period=0、MatchTime=0'、Date=2026-07-19T19:00:00Z；Spain/Argentina Players=[]、Tactics=null，官方 XI 尚未釋出。",
-        "17:00Z ESPN public scoreboard：Argentina at Spain 仍是 STATUS_SCHEDULED / state=pre / completed=false，MetLife Stadium、East Rutherford；competitors 仍沒有 lineup/formation 欄位。",
-        "17:00Z NWS Meadowlands hourly：15:00–18:00 ET 為 81→81→81→80°F、Sunny/Clear、降雨機率 0%、NW 12→8 mph；active-alert API 對場館點回傳 0 active alerts。",
-        "NJ Transit World Cup final-day matchday/ticket pages parent-verified：7/19 服務經 PSNY、Secaucus Junction、Hoboken Terminal；往 NYNJ Stadium rail tickets 限 40,000/比賽日、$98 round trip、mobile app 預購，開球前最後一小時不售票。",
-        "The Athletic 17:00Z parent-verified odds/public benchmark：Kalshi 與 The Athletic forecast 均給 Spain 59%，DraftKings cup-lift Spain -178 / Argentina +154；這只作 paper-market temperature，不是投注建議。",
-        "FIFA match centre 搜尋摘要已列 Match 104 Spain v Argentina 的 line-ups / live updates 官方入口；目前只能作官方賽前 rail，不可自行宣稱先發。",
-        "FIFA preview 搜尋摘要確認第 104 場是 European champions Spain 對 defending world and South American champions Argentina；硬敘事來源保留給公開卡片，不用更多自嗨形容詞。",
-        "RFEF 搜尋摘要稱 Casa España 會是 Spain 球迷決賽前聚點；這是 fan/venue operations context，不是競技或傷停訊號。",
-        "Sports Illustrated / NBC / Khel Now 等同日 expected-XI 只屬 predicted lineup leads；Yamal / Porro / Argentina availability 在官方 XI 前仍維持 reported lineup-watch，不升級成 confirmed。",
-        "BBC Sport 搜尋摘要 7/19 再核：Spain 最後一堂決賽訓練因 New York / New Jersey 週六 heavy thunderstorms 取消；這是 preparation/weather-disruption，不是傷停或先發確認。",
-        "Inside FIFA / FIFA Refereeing 搜尋摘要確認 Slovenian Slavko Vinčić 將執法 Spain v Argentina，地點 New York New Jersey Stadium，日期 7/19；裁判尺度敘事可保留為 confirmed match-official。",
-        "NJ Transit 決賽日公告 parent-verified title 並由搜尋摘要補強：7/19 10:24 AM–2:14 PM，PSNY 與 Secaucus 候車/列車服務限縮給前往 NYNJ Stadium 旅客；場外人流是實際風險線，不進勝率黑箱。",
-        "MetLife Stadium 官方 final event page 可連線；和 FIFA final hub 一起作為 venue/event rails，開球前若出現入場、禁帶物或時間異動再更新。",
-        "Reuters / Guardian / BBC 的新戰術線索集中在「如何壓 Spain、是否盯 Messi、Rodri 節奏」；部分 Reuters/Guardian 正文無法在本環境抽取，只保守作 search-indexed tactical leads，等可讀正文或官方記者會再升級。",
-        "NBC Sports / USA Today 等公開賠率頁仍可作 paper-market temperature；Soren 只做紙上模擬與市場溫度，不提供下注建議，也不替任何真金流執行。",
-        "The Standard 7/18 可讀 team-news：Spain 對 France 後 largely unscathed、clean bill of health，Nico Williams 可能競爭先發；這是 reported lineup-watch，不是官方 XI。",
-        "Goal / Sports Mole 7/18 賽前 preview 均把 Spain–Argentina 定位為決賽 team-news/tactical watch；Goal meta 明說 no confirmed injuries/suspensions/probable lineup released，Whoscored search snippet稱兩隊無新增傷停但原頁 403，故只作低權重 reported/search-indexed lead。",
-        "NJ Transit 決賽服務公告 7/18 parent-verified title：FIFA World Cup 26 Final on Sunday, July 19 at NYNJ Stadium 期間調整時刻；賽後約 5:15–9:29 PM 往 PSNY 的 eastbound trains 將終止於 Newark Penn 或 Newark Broad，球迷交通是營運風險線。",
-        "Opta Analyst 7/18 parent-verified：Spain 在 25,000 次 final 模擬中奪冠 59.6%、Argentina 40.4%；這只是公開 benchmark / paper-market temperature，不是下注建議。",
-        "NWS Meadowlands hourly API 7/18 10:18Z 再核：7/18 16:00–18:00 ET 是 Patchy Smoke / Showers And Thunderstorms、降雨率 94→92→92%，但決賽日 7/19 15:00–17:00 ET 維持 82→83→82°F、Sunny、0% rain、NW 10 mph。",
-        "NWS active alerts 7/18 10:18Z 對 East Rutherford 顯示 4 則 active features：Flood Watch 至 7/19 02:00 EDT，以及多則 Air Quality Alert（部分下午到期、其中一則至 7/19 00:00 EDT）。Soren 在公開文案中把「賽前一天警報」與「決賽開球窗預報」分開，避免把今天的風險誤寫成明天開球時必然狀態。",
-        "BBC 7/18 parent-verified：Laporte 稱 Argentina「likes to leave a mark on opponents」，De la Fuente 也談到裁判會支援比賽管理；這是身體對抗/裁判尺度語境，不是控訴或模型內幕。",
-        "Reuters via Cyprus Mail 7/17 parent-verified：Lamine Yamal 與 Pedro Porro 週四在 New Jersey 分開訓練，但 Spain expect both fit for Sunday final；Soren 標為 reported availability recheck，不升格成官方 XI。",
-        "RFEF 與 AFA 官方頁面均確認 Slavko Vinčić 將執法 Spain–Argentina 決賽；這補強 FIFA 裁判公告，屬 confirmed match-official。",
-        "ESPN betting 7/18 parent-verified：公開冠軍賠率頁寫 Spain 是決賽對 Argentina 的 favorite；Soren 只把它當 paper-market temperature，不提供下注建議。",
-        "NWS Meadowlands active-alert API 7/18 04:12Z 再核：venue point 有 4 則 Air Quality Alert；同時 hourly forecast 顯示決賽日 7/19 14:00–17:00 ET 81→82→82→82°F、Sunny、降雨機率 0%、NW 10 mph。空品仍要監控，但雨戰暫不升級。",
-        "NJ TRANSIT American Dream 官方頁 parent-verified：FIFA World Cup 2026 match days 355 bus 不往返 American Dream；85/703/772 等路線在每場前 5 小時到賽後 5 小時受限。這是決賽日人流/交通脈絡，不進模型勝率。",
-        "NJ TRANSIT FIFA2026 官方頁 7/18 可連線，列 New York New Jersey Stadium 世界盃交通入口；決賽日移動風險以官方 transit/venue 更新為準。",
-        "NWS Meadowlands hourly API 7/18 01:04Z 再核：7/19 15:00–17:00 ET 82→82→82°F、Sunny、降雨機率 0%、NW 10 mph；決賽窗暫時比前一日的煙霧/雨勢標題乾淨。",
-        "RFEF 7/16–7/17 parent-verified：Spain 已在 New Jersey 進行第一堂決賽訓練；Luis de la Fuente 在 Javits Center 發布會稱 Spain–Argentina 會是「grandísimo espectáculo」。",
-        "FIFA/Inside FIFA 7/18 parent-verified：Slovenian Slavko Vinčić 將執法 7/19 New York New Jersey Stadium 的 Argentina vs Spain 決賽；這比 AP/AFA 轉述更適合當裁判主來源。",
-        "AP News 7/17 10:56Z（modified 15:53Z）parent-verified：FIFA announced late Thursday，Slovenia 的 Slavko Vinčić 將執法 Argentina–Spain 決賽；這是 confirmed match-official，不是戰術或停賽訊號。",
-        "AFA 官方頁面 7/17 22:04Z parent-verified title：El árbitro esloveno Slavko Vinčić dirigirá la final entre Argentina y España；隊端也把裁判任命列為官方脈絡。",
-        "NWS Meadowlands hourly API 7/17 22:04Z 再核：決賽日 7/19 14:00–16:00 ET 81→82→82°F、Sunny、降雨機率 0%、NW 10 mph；開球窗仍偏乾爽，雨戰暫不升級。",
-        "RFEF 7/16 18:30 官方稿 parent-verified：Spain 已於 New Jersey 11:00 local 進行第一堂決賽備戰，對手為 Argentina；這是 team-ops context，不是先發名單。",
-        "NJ.com 7/17 天氣稿標題/摘要稱 World Cup Final 週日 MetLife Stadium 仍有 rain showers / possible thunderstorms 威脅；因與 NWS 開球窗 0% rain 有張力，Soren 只列為 weather uncertainty lead，要求賽前再查短臨。",
-        "Daily Record/NorthJersey 7/16 搜尋摘要列 MetLife 決賽交通：NJ Transit train service 10:30 起、官方 shuttle buses 9:30–12:30 連續運行、parking lots 10:00 開；這是觀眾動線/開幕式時間壓力，不是競技因素。"
+        "ESPN public scoreboard 23:03Z 再核 m104：Spain 1–0 Argentina，STATUS_FINAL_AET / state=post / completed=true；這符合可結算 final-score 門檻。",
+        "ESPN match page正文/metadata 顯示 Spain v Argentina Final、Spain 1 AET Argentina 0，Ferran Torres 106'；Enzo Fernández 90+3' 紅牌是加時賽劇本轉折。",
+        "FIFA live API 23:03Z 回傳 MatchNumber=104、ResultType=3、HomeTeam.Score=1、AwayTeam.Score=0、Period=10；FIFA match-centre 搜尋結果亦列 Spain v Argentina 1-0 / Full Time。",
+        "AP 報導 Spain substitute Ferran Torres scored in the 106th minute to beat defending champion Argentina 1-0 in the World Cup final；這提供高可信 postmatch 文字脈絡。",
+        "本地資料已加入 source-backed result override：m104 Spain 1–0 Argentina、winner=Spain；leaderboard、bracket、paper bankroll 與 postmortem 可先按終場更新，不再讓公開頁卡在 pre-match。",
+        "舊的官方 XI、NJ Transit、NWS 與 odds/expected-XI 訊號已從公開主卡移除；它們是賽前背景，不該在冠軍產生後繼續壓過終場事實。"
       ],
       "sources": [
         {
-          "label": "FIFA official live API m104 no-lineup recheck 17:00Z",
-          "url": "https://api.fifa.com/api/v3/live/football/17/285023/289292/400021543?language=en",
-          "sourceName": "FIFA live API",
-          "fetchedAt": "2026-07-19T17:01:10Z",
-          "claimType": "confirmed/match-centre-lineup-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "ESPN scoreboard m104 scheduled / pre-match 17:00Z",
+          "label": "ESPN scoreboard m104 Spain 1-0 Argentina AET",
           "url": "https://site.api.espn.com/apis/site/v2/sports/soccer/fifa.world/scoreboard?dates=20260719",
           "sourceName": "ESPN public scoreboard API",
-          "fetchedAt": "2026-07-19T17:01:10Z",
-          "claimType": "context/match-centre-lineup-watch",
+          "fetchedAt": "2026-07-19T23:05:35Z",
+          "claimType": "confirmed/final-score-aet",
+          "confidence": "high",
+          "completed": true
+        },
+        {
+          "label": "FIFA live API Match 104 final score probe",
+          "url": "https://api.fifa.com/api/v3/live/football/17/285023/289292/400021543?language=en",
+          "sourceName": "FIFA live API",
+          "fetchedAt": "2026-07-19T23:05:35Z",
+          "claimType": "confirmed/final-score-aet",
           "confidence": "high"
         },
         {
-          "label": "NWS Meadowlands hourly forecast 17:00Z",
-          "url": "https://api.weather.gov/gridpoints/OKX/30,46/forecast/hourly",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-19T17:01:10Z",
-          "claimType": "context/weather-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "NWS Meadowlands active alerts clear 17:00Z",
-          "url": "https://api.weather.gov/alerts/active?point=40.8135,-74.0745",
-          "sourceName": "National Weather Service",
-          "fetchedAt": "2026-07-19T17:01:10Z",
-          "claimType": "context/weather-alert-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "NJ Transit July 19 final matchday timetables",
-          "url": "https://njtworldcup.com/nynj/matchday/",
-          "sourceName": "NJ TRANSIT World Cup",
-          "fetchedAt": "2026-07-19T17:01:10Z",
-          "claimType": "confirmed/transport-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "NJ Transit World Cup ticketing cap and purchase rules",
-          "url": "https://njtworldcup.com/ticket/",
-          "sourceName": "NJ TRANSIT World Cup",
-          "fetchedAt": "2026-07-19T17:01:10Z",
-          "claimType": "confirmed/transport-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "The Athletic / DraftKings public final odds snapshot",
-          "url": "https://www.nytimes.com/athletic/7447828/2026/07/18/world-cup-final-odds-spain-argentina/",
-          "sourceName": "The Athletic / DraftKings",
-          "fetchedAt": "2026-07-19T17:01:10Z",
-          "claimType": "odds-reference/paper-market-temperature",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA official Match 104 line-ups/live updates rail",
+          "label": "FIFA Match Centre Spain v Argentina 1-0 result rail",
           "url": "https://www.fifa.com/en/match-centre/match/17/285023/289292/400021543",
-          "sourceName": "FIFA Match Centre (search-indexed lead)",
-          "fetchedAt": "2026-07-19T10:48:29Z",
-          "claimType": "official/search-indexed-match-centre-lineup-watch",
+          "sourceName": "FIFA Match Centre (search-indexed/result rail)",
+          "fetchedAt": "2026-07-19T23:05:35Z",
+          "claimType": "confirmed/search-indexed-final-score",
           "confidence": "medium-high"
         },
         {
-          "label": "FIFA Spain v Argentina final preview",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/spain-v-argentina-live-stream-team-news-tickets-and-more",
-          "sourceName": "FIFA (search-indexed lead)",
-          "fetchedAt": "2026-07-19T10:48:29Z",
-          "claimType": "official/search-indexed-preview",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "FanDuel public cup-lift odds snapshot Spain -156 / Argentina +136",
-          "url": "https://www.fanduel.com/research/spain-vs-argentina-world-cup-final-prediction-odds-preview-lineups-and-best-bets",
-          "sourceName": "FanDuel (search-indexed public odds lead)",
-          "fetchedAt": "2026-07-19T10:48:29Z",
-          "claimType": "odds-reference/paper-market-temperature",
-          "confidence": "medium"
-        },
-        {
-          "label": "RFEF Casa España final fan hub lead",
-          "url": "https://rfef.es/es/noticias/espana-esta-lista",
-          "sourceName": "RFEF (search-indexed lead)",
-          "fetchedAt": "2026-07-19T10:48:29Z",
-          "claimType": "official/search-indexed-fan-operations",
-          "confidence": "medium"
-        },
-        {
-          "label": "BBC Spain final training cancelled before World Cup final",
-          "url": "https://www.bbc.com/sport/football/articles/cly878gpgrlo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-19T04:41:32Z",
-          "claimType": "reported/preparation-weather-disruption",
-          "confidence": "high"
-        },
-        {
-          "label": "Inside FIFA Vinčić final referee appointment",
-          "url": "https://inside.fifa.com/refereeing/news/slavko-vincic-world-cup-2026-final-referee-spain-argentina",
-          "sourceName": "Inside FIFA",
-          "fetchedAt": "2026-07-19T04:41:32Z",
-          "claimType": "confirmed/match-official",
-          "confidence": "high"
-        },
-        {
-          "label": "NJ TRANSIT final-day PSNY/Secaucus stadium-travel restriction",
-          "url": "https://www.njtransit.com/service-advisory/2134563",
-          "sourceName": "NJ Transit",
-          "fetchedAt": "2026-07-19T04:41:32Z",
-          "claimType": "confirmed/transport-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "MetLife Stadium official World Cup final event page",
-          "url": "https://www.metlifestadium.com/events/detail/fifa-world-cup-2026-final",
-          "sourceName": "MetLife Stadium",
-          "fetchedAt": "2026-07-19T04:41:32Z",
-          "claimType": "confirmed/venue-event",
-          "confidence": "high"
-        },
-        {
-          "label": "Reuters tactical lead: pressing Spain is simple in theory, painful in practice",
-          "url": "https://www.reuters.com/sports/soccer/pressing-spain-is-simple-theory-painful-practice-says-lopetegui-2026-07-18/",
-          "sourceName": "Reuters (search-indexed lead)",
-          "fetchedAt": "2026-07-19T04:41:32Z",
-          "claimType": "reported/search-indexed-tactical-context",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "NBC Sports public World Cup final odds reference",
-          "url": "https://www.nbcsports.com/soccer/world-cup/news/2026-world-cup-final-argentina-vs-spain-prediction-odds-trends-and-best-bet",
-          "sourceName": "NBC Sports",
-          "fetchedAt": "2026-07-19T04:41:32Z",
-          "claimType": "odds-reference/paper-market-temperature",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Standard Spain-Argentina final team-news preview",
-          "url": "https://www.standard.co.uk/sport/football/spain-vs-argentina-prediction-kick-off-time-tv-live-stream-team-news-latest-h2h-results-odds-world-cup-final-2026-preview-b1290127.html",
-          "sourceName": "The Standard",
-          "fetchedAt": "2026-07-18T22:33:15Z",
-          "claimType": "reported/team-news-lineup-watch",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Goal Spain-Argentina final preview metadata",
-          "url": "https://www.goal.com/en-sa/news/spain-argentina-world-cup-preview/blt6ba073f5ae018b3f",
-          "sourceName": "Goal.com",
-          "fetchedAt": "2026-07-18T22:33:15Z",
-          "claimType": "reported/team-news-preview",
-          "confidence": "medium"
-        },
-        {
-          "label": "WhoScored search-indexed Spain-Argentina injury snippet",
-          "url": "https://www.whoscored.com/matches/2007644/preview/international-fifa-world-cup-2026-spain-argentina",
-          "sourceName": "WhoScored (search-indexed snippet; page 403)",
-          "fetchedAt": "2026-07-18T22:33:15Z",
-          "claimType": "reported/search-indexed-availability-watch",
-          "confidence": "low-medium"
-        },
-        {
-          "label": "Opta Analyst Spain-Argentina final benchmark simulations",
-          "url": "https://theanalyst.com/articles/spain-vs-argentina-prediction-world-cup-final-2026-match-preview",
-          "sourceName": "Opta Analyst",
-          "fetchedAt": "2026-07-18T16:28:16Z",
-          "claimType": "odds-reference/public-benchmark",
-          "confidence": "high"
-        },
-        {
-          "label": "BBC Laporte Argentina physicality/referee context",
-          "url": "https://www.bbc.com/sport/football/articles/cj63e8l0kjjo",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "reported/tactical-referee-context",
-          "confidence": "high"
-        },
-        {
-          "label": "Reuters via Cyprus Mail Yamal and Porro availability recheck",
-          "url": "https://cyprus-mail.com/2026/07/17/yamal-and-porro-train-apart-but-spain-expect-both-fit-for-world-cup-final",
-          "sourceName": "Reuters / Cyprus Mail",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "RFEF Vinčić final referee confirmation",
-          "url": "https://rfef.es/es/noticias/slavko-vincic-arbitro-de-la-gran-final-del-mundial",
-          "sourceName": "RFEF",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "confirmed/match-official",
-          "confidence": "high"
-        },
-        {
-          "label": "AFA Vinčić final referee confirmation",
-          "url": "https://www.afa.com.ar/es/posts/el-arbitro-esloveno-slavko-vin-i-dirigira-la-final-entre-argentina-y-espana",
-          "sourceName": "AFA",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "confirmed/match-official",
-          "confidence": "high"
-        },
-        {
-          "label": "ESPN World Cup final championship odds",
-          "url": "https://www.espn.com/espn/betting/story/_/id/48386952/espn-soccer-futbol-world-cup-betting-odds-championship-groups",
-          "sourceName": "ESPN Betting",
-          "fetchedAt": "2026-07-18T10:21:38Z",
-          "claimType": "odds-reference",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "NJ TRANSIT American Dream FIFA match-day bus restrictions",
-          "url": "https://www.njtransit.com/american-dream",
-          "sourceName": "NJ TRANSIT",
-          "fetchedAt": "2026-07-18T04:12:21Z",
-          "claimType": "context/event-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "NJ TRANSIT FIFA2026 New York New Jersey Stadium event page",
-          "url": "https://www.njtransit.com/fifa2026",
-          "sourceName": "NJ TRANSIT",
-          "fetchedAt": "2026-07-18T01:04:02Z",
-          "claimType": "context/event-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "RFEF Luis de la Fuente final press conference",
-          "url": "https://rfef.es/es/noticias/luis-de-la-fuente-5",
-          "sourceName": "RFEF",
-          "fetchedAt": "2026-07-18T01:04:02Z",
-          "claimType": "confirmed/official-team-context",
-          "confidence": "high"
-        },
-        {
-          "label": "RFEF Spain first New Jersey final training session",
-          "url": "https://rfef.es/es/noticias/espana-ya-entrena-pensando-en-la-final-de-la-copa-del-mundo",
-          "sourceName": "RFEF",
-          "fetchedAt": "2026-07-18T01:04:02Z",
-          "claimType": "confirmed/team-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "AP Slavko Vinčić final referee confirmation",
-          "url": "https://apnews.com/article/world-cup-final-slovenia-referee-vincic-argentina-83fca515639ed6cc70723f08ba2bb027",
-          "sourceName": "AP News",
-          "fetchedAt": "2026-07-17T22:04:43Z",
-          "claimType": "confirmed/match-official",
-          "confidence": "high"
-        },
-        {
-          "label": "NJ.com World Cup Final weather forecast rain/thunderstorm watch",
-          "url": "https://www.nj.com/weather/2026/07/world-cup-final-weather-forecast-for-sunday-at-metlife-stadium-in-nj-calls-for-threat-of-rain.html",
-          "sourceName": "NJ.com",
-          "fetchedAt": "2026-07-17T15:51:10Z",
-          "claimType": "context/weather-watch",
-          "confidence": "medium"
-        },
-        {
-          "label": "Daily Record / NorthJersey final transportation schedule search-visible summary",
-          "url": "https://www.dailyrecord.com/story/news/new-jersey/2026/07/16/world-cup-2026-finals-start-time-schedule-metlife-stadium/90930031007/",
-          "sourceName": "Daily Record / NorthJersey",
-          "fetchedAt": "2026-07-17T15:51:10Z",
-          "claimType": "context/event-operations",
-          "confidence": "medium"
-        },
-        {
-          "label": "The Athletic Spain-Argentina final odds summary",
-          "url": "https://www.nytimes.com/athletic/7447828/2026/07/15/world-cup-final-odds-spain-argentina/",
-          "sourceName": "The Athletic / NYT",
-          "fetchedAt": "2026-07-17T15:51:10Z",
-          "claimType": "odds-reference/paper-market",
-          "confidence": "medium"
-        },
-        {
-          "label": "BBC New York/New Jersey air quality alert before final",
-          "url": "https://www.bbc.com/sport/football/articles/c9w0jen8x90o",
-          "sourceName": "BBC Sport",
-          "fetchedAt": "2026-07-17T09:44:44Z",
-          "claimType": "context/air-quality-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "AP Spain outdoor practice amid wildfire smoke",
-          "url": "https://apnews.com/article/spain-wildfires-smoke-world-cup-c2fc1c37a64bb6514708052dc5e42d28",
-          "sourceName": "AP News",
-          "fetchedAt": "2026-07-17T09:44:44Z",
-          "claimType": "context/air-quality-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "Reuters via Moneycontrol Yamal / Porro separate training availability update",
-          "url": "https://www.moneycontrol.com/sports/football/fifa-world-cup-2026/lamine-yamal-and-pedro-porro-train-apart-but-spain-expect-both-fit-for-world-cup-final-article-13976444.html",
-          "sourceName": "Reuters / Moneycontrol",
-          "fetchedAt": "2026-07-17T09:44:44Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "high"
-        },
-        {
-          "label": "Sports Mole Spain final injury/suspension list",
-          "url": "https://www.sportsmole.co.uk/football/spain/world-cup-2026/injuries-and-suspensions/yamal-porro-latest-spain-injury-suspension-list-vs-argentina_601315.html",
-          "sourceName": "Sports Mole",
-          "fetchedAt": "2026-07-17T03:34:40Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "medium"
-        },
-        {
-          "label": "Sports Mole Argentina final injury/suspension list",
-          "url": "https://www.sportsmole.co.uk/football/argentina/world-cup-2026/injuries-and-suspensions/romero-paredes-latest-argentina-injury-suspension-list-for-world-cup-final_601316.html",
-          "sourceName": "Sports Mole",
-          "fetchedAt": "2026-07-17T03:34:40Z",
-          "claimType": "reported/availability-watch",
-          "confidence": "medium"
-        },
-        {
-          "label": "FIFA Final live / watch / teams / tickets hub",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/final-live-watch-teams-tickets",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "confirmed/official-final-hub",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA Post Malone closing ceremony note",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/post-malone-to-headline-closing-ceremony",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "context/event-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "FIFA closing ceremony timing",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/closing-ceremony-to-celebrate-historic-tournament-ahead-of-the-final",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "context/event-operations",
-          "confidence": "high"
-        },
-        {
-          "label": "AFA Argentina final opponent official note",
-          "url": "https://www.afa.com.ar/es/posts/argentina-va-por-la-copa-del-mundo-espana-sera-el-ultimo-desafio-el-proximo-domingo-a-las-16-en-nueva-jersey",
-          "sourceName": "AFA",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "confirmed/official-team-context",
-          "confidence": "high"
-        },
-        {
-          "label": "AFA Argentina daily activity schedule",
-          "url": "https://www.afa.com.ar/es/posts/cronograma-de-actividades-de-la-seleccion-argentina1-6",
-          "sourceName": "AFA",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "confirmed/official-team-logistics",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "ESPN / DraftKings Spain-Argentina final odds",
-          "url": "https://www.espn.com/soccer/odds/_/gameId/760517",
-          "sourceName": "ESPN / DraftKings",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "odds-reference",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "FOX 13 Seattle final preview",
-          "url": "https://www.fox13seattle.com/news/spain-vs-argentina-final-preview-messi-lamine-yamal-collide-world-cup-title",
-          "sourceName": "FOX 13 Seattle",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "reported/public-narrative",
-          "confidence": "medium"
-        },
-        {
-          "label": "Yahoo Sports Spain-Argentina early final preview",
-          "url": "https://sports.yahoo.com/soccer/article/world-cup-final-early-preview-argentinas-comebacks-meet-spains-impenetrable-defense-214251519.html",
-          "sourceName": "Yahoo Sports",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "reported/tactical-context",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "Opta Analyst Argentina powers of recovery final context",
-          "url": "https://theanalyst.com/articles/argentina-powers-of-recovery-world-cup-final",
-          "sourceName": "Opta Analyst",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "reported/tactical-context",
-          "confidence": "medium-high"
-        },
-        {
-          "label": "FIFA Spain-France semifinal report",
-          "url": "https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/france-spain-match-report-highlights",
-          "sourceName": "FIFA",
-          "fetchedAt": "2026-07-16T15:14:52Z",
+          "label": "AP Spain beats Argentina 1-0 on Ferran Torres goal",
+          "url": "https://apnews.com/article/argentina-spain-world-cup-final-score-messi-fccc26aa12d9226e63d06b601b770617",
+          "sourceName": "Associated Press",
+          "fetchedAt": "2026-07-19T23:05:35Z",
           "claimType": "confirmed/postmatch-context",
           "confidence": "high"
         },
         {
-          "label": "NPR Argentina-England semifinal report",
-          "url": "https://www.npr.org/2026/07/15/nx-s1-5893895/2026-world-cup-fifa-argentina-england-semifinal",
-          "sourceName": "NPR",
-          "fetchedAt": "2026-07-16T15:14:52Z",
+          "label": "ESPN match summary Spain 1-0 Argentina",
+          "url": "https://www.espn.com/soccer/match/_/gameId/760517/argentina-spain",
+          "sourceName": "ESPN",
+          "fetchedAt": "2026-07-19T23:05:35Z",
           "claimType": "confirmed/postmatch-context",
           "confidence": "high"
         },
         {
-          "label": "Al Jazeera Argentina comeback report",
-          "url": "https://www.aljazeera.com/sports/2026/7/15/argentina-stun-england-in-2-1-comeback-win-to-reach-2026-world-cup-final",
-          "sourceName": "Al Jazeera",
-          "fetchedAt": "2026-07-16T15:14:52Z",
-          "claimType": "confirmed/postmatch-context",
-          "confidence": "high"
+          "label": "Guardian live archive Spain beat Argentina 1-0 after extra time",
+          "url": "https://www.theguardian.com/football/live/2026/jul/19/spain-v-argentina-world-cup-2026-final-live-updates",
+          "sourceName": "The Guardian (search-indexed live archive)",
+          "fetchedAt": "2026-07-19T23:05:35Z",
+          "claimType": "confirmed/search-indexed-postmatch-context",
+          "confidence": "medium-high"
         }
       ],
       "confidence": "high"
