@@ -16,9 +16,9 @@ function FlagIcon({ name, className = '' }) {
 
 const I18N = {
   zh: {
-    navToday:'今日', navIntel:'情報', navRadar:'爆冷雷達', navPred:'預測', navBracket:'樹狀圖', navBankroll:'紙上本金', navReview:'復盤', navFixtures:'賽程', lang:'EN',
+    navToday:'總覽', navIntel:'情報', navRadar:'總結', navPred:'終場', navBracket:'樹狀圖', navBankroll:'紙上本金', navReview:'復盤', navFixtures:'賽程', lang:'EN',
     loading:'Soren 正在翻賽程和模型，不要急，嘴砲也要先載資料…', loadFail:'資料載入失敗',
-    heroKicker:'SCHEDULE-AWARE · SOURCE-BACKED · PUBLIC EXPERIMENT', heroTitle:'Soren 世界盃戰情室', heroBody:'把賽程、公開來源、模型勝率與賽後復盤整理成一個清楚的戰情頁；首頁先給結論，證據與風險都能展開查。',
+    heroKicker:'FINAL ARCHIVE · SOURCE-BACKED · PUBLIC RECEIPTS', heroTitle:'Soren 世界盃封存報告', heroBody:'世界盃已完結，這裡不再假裝即時追賽：首頁改成最終成績、模型戰績、紙上本金、來源證據與失手復盤，一頁看完整個專案留下什麼。',
     finished:'已完賽', pending:'封存狀態', lastUpdate:'最後封存', intelCards:'情報卡',
     notice:'公開研究與娛樂實驗，不是投注建議。賽事已完結封存：只用官方/高可信終場來源結算；來源、風險和社群訊號都收在細節裡，不硬演。',
     nextCut:'決賽封存', strongest:'最敢站隊', trap:'最像陷阱', bankroll:'紙上本金', modelForm:'模型戰績', TBD:'待定', waiting:'已封存', confidence:'信心', trapRate:'翻車率', roi:'ROI', unsettled:'未結算', points:'分', hit:'最終命中', noSwagger:'封存可複盤',
@@ -28,13 +28,13 @@ const I18N = {
     bankrollTitle:'100 美金紙上生存戰', bankrollNote:'純娛樂紙上模擬，不是真錢、不導流投注、不構成建議；賽後會公開結算與復盤。', alive:'目前還活著', ledgerOpen:'輸贏都攤開，不躲帳', settledPnl:'已結算損益', reviewed:'筆已復盤', openPositions:'未結算部位', onField:'筆還在場上', postmortem:'賽後復盤', clickReview:'點進去看預測 vs 實際', bet:'押', result:'賽果',
     labKicker:'SOREN FINAL ARCHIVE', labTitle:'全賽事預測復盤：封存版', labMeta:'最終自評', labNote:'每場已完賽的預測、比分誤差、紙上損益和基準模型已整理成封存復盤；之後不再做例行更新，只保留為可回看的公開戰績。',
     accuracy:'勝平負命中', exact:'比分全中', avgError:'平均進球誤差', paperRoi:'紙上 ROI', vsBaseline:'相對基準', bestRead:'抓對的最近幾場', misses:'被打臉的最近幾場', lessons:'下一輪自我修正',
-    leaderboardTitle:'模型記分板：誰在裸泳', publicLedger:'公開記帳', selfOwn:'目前 baseline 還壓我一點，這就是為什麼我不賣神話，只攤帳。', standingsTitle:'小組生存表：先看有壓力的組', fixturesTitle:'完整賽程：先收起來，不要砸你臉上', recentOnly:'只看近期', all:'全部', showAll:'打開完整賽程', hideAll:'收起完整賽程',
+    leaderboardTitle:'模型記分板：誰在裸泳', publicLedger:'公開記帳', selfOwn:'Rating baseline 最後仍領先 Soren，這就是為什麼封存頁要攤帳，不賣神話。', standingsTitle:'小組賽最終表', fixturesTitle:'完整賽程封存庫', recentOnly:'近期終場', all:'全部', showAll:'打開完整賽程', hideAll:'收起完整賽程',
     modalKicker:'SOREN MATCH AUTOPSY', roast:'銳評：', predictedScore:'我先押這個比分', balance:'這場天秤怎麼歪', upsetPath:'弱隊偷雞路線', infoImpact:'情報影響', paperBattle:'紙上戰局', reasons:'模型理由', modalSources:'這場情報來源', disclaimer:'公開研究與娛樂展示，不是投注建議。我會贏、會翻車、也會被賽果打臉；重點是每一筆都要留下理由。', footer:'資料來源：openfootball/worldcup.json · scouting feed 需附來源 · 自動部署於 GitHub Pages · Soren 親自扛鍋',
   },
   en: {
-    navToday:'Today', navIntel:'Intel', navRadar:'Upset Radar', navPred:'Predictions', navBracket:'Bracket', navBankroll:'Paper Bankroll', navReview:'Review', navFixtures:'Fixtures', lang:'中',
+    navToday:'Overview', navIntel:'Intel', navRadar:'Report', navPred:'Finals', navBracket:'Bracket', navBankroll:'Paper Bankroll', navReview:'Review', navFixtures:'Fixtures', lang:'中',
     loading:'Soren is loading match data and model outputs…', loadFail:'Data load failed',
-    heroKicker:'SCHEDULE-AWARE · SOURCE-BACKED · PUBLIC EXPERIMENT', heroTitle:'Soren World Cup Lab', heroBody:'A public World Cup prediction agent: schedule-aware picks, source-backed scouting, paper bankroll accounting, and post-match autopsies that show where the model was right or wrong.',
+    heroKicker:'FINAL ARCHIVE · SOURCE-BACKED · PUBLIC RECEIPTS', heroTitle:'Soren World Cup Archive', heroBody:'The tournament is over, so the site now reads as a final report: tournament outcome, model record, paper-bankroll ledger, source receipts, and visible misses in one reviewable archive.',
     finished:'finished', pending:'archived', lastUpdate:'Archived', intelCards:'intel cards',
     notice:'Public research and entertainment only — not betting advice. Tournament archived: settlements use official/high-confidence final sources, with sources, risks and social signals kept in the details.',
     nextCut:'Final archive', strongest:'Highest conviction', trap:'Likeliest trap', bankroll:'Paper bankroll', modelForm:'Final model form', TBD:'TBD', waiting:'archived', confidence:'confidence', trapRate:'upset window', roi:'ROI', unsettled:'open stake', points:'pts', hit:'final accuracy', noSwagger:'archived receipts',
@@ -44,7 +44,7 @@ const I18N = {
     bankrollTitle:'$100 paper-bankroll survival test', bankrollNote:'Entertainment-only paper simulation: no real money, no betting referral, no financial advice. Settlements and autopsies are public after matches finish.', alive:'Bankroll alive', ledgerOpen:'wins and losses stay visible', settledPnl:'Settled P&L', reviewed:'settled reviews', openPositions:'Open positions', onField:'still live', postmortem:'Post-match autopsy', clickReview:'open to compare prediction vs actual', bet:'bet', result:'result',
     labKicker:'SOREN FINAL ARCHIVE', labTitle:'Prediction review: archived record', labMeta:'final self-audit', labNote:'Every finished pick, score miss, paper P&L and baseline comparison is now preserved as a public archive. Routine updates are stopped; the page remains as a reviewable track record.',
     accuracy:'1X2 accuracy', exact:'Exact scores', avgError:'Avg goal error', paperRoi:'Paper ROI', vsBaseline:'vs baseline', bestRead:'Recent good reads', misses:'Recent misses', lessons:'Next self-corrections',
-    leaderboardTitle:'Model leaderboard: no hiding', publicLedger:'public ledger', selfOwn:'The baseline can still beat me sometimes. That is why this site sells a track record, not mythology.', standingsTitle:'Group survival map', fixturesTitle:'Full fixture explorer', recentOnly:'recent only', all:'all', showAll:'Show all fixtures', hideAll:'Collapse fixtures',
+    leaderboardTitle:'Model leaderboard: no hiding', publicLedger:'public ledger', selfOwn:'The rating baseline still finished ahead of Soren, so this archive sells receipts, not mythology.', standingsTitle:'Final group tables', fixturesTitle:'Full fixture archive', recentOnly:'recent finals', all:'all', showAll:'Show all fixtures', hideAll:'Collapse fixtures',
     modalKicker:'SOREN MATCH AUTOPSY', roast:'Take: ', predictedScore:'projected score', balance:'Probability balance', upsetPath:'Underdog path', infoImpact:'Intel impact', paperBattle:'Paper position', reasons:'Model reasons', modalSources:'Intel sources for this match', disclaimer:'Public research and entertainment only, not betting advice. Wins, misses and model mistakes all stay on the ledger.', footer:'Sources: openfootball/worldcup.json · scouting feed requires links · deployed with GitHub Pages · Soren owns the receipts',
   },
 }
@@ -316,24 +316,84 @@ function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, 
   </section>
 }
 
+function FinalReport({ data, intel, onSelect, lang }) {
+  const rows = buildAuditRows(data)
+  const audit = summarizeAuditRows(rows)
+  const soren = data.leaderboard?.find((r) => r.id === 'soren') || {}
+  const baseline = data.leaderboard?.find((r) => r.id === 'rating') || {}
+  const drawBase = data.leaderboard?.find((r) => r.id === 'draw') || {}
+  const paper = data.paperBankroll || {}
+  const finalMatch = [...(data.matches || [])].filter((m) => m.round === 'Final').sort((a, b) => new Date(b.kickoffUtc) - new Date(a.kickoffUtc))[0]
+  const champion = finalMatch ? actualPick(finalMatch) : null
+  const sourceCount = (intel?.items || []).reduce((sum, item) => sum + (item.sources?.length || 0), 0)
+  const highConfidenceSources = (intel?.items || []).reduce((sum, item) => sum + (item.sources || []).filter((src) => src.confidence === 'high').length, 0)
+  const best = rows.filter((r) => r.hit).sort((a, b) => b.confidence - a.confidence || new Date(b.match.kickoffUtc) - new Date(a.match.kickoffUtc)).slice(0, 3)
+  const worst = rows.filter((r) => !r.hit).sort((a, b) => b.confidence - a.confidence || b.goalError - a.goalError).slice(0, 3)
+  const copy = lang === 'en'
+    ? {
+        kicker: 'FINAL PROJECT REPORT', title: 'What the project actually produced', meta: 'archive complete', champion: 'Champion', final: 'Final score', model: 'Soren hit rate', baseline: 'Rating baseline', paper: 'Paper bankroll', sources: 'Source receipts', exact: 'Exact scores', finished: 'Matches settled',
+        claimTitle: 'Final read', claim: 'Soren picked Spain in the final and the archive keeps both the correct calls and the misses visible. The model did beat the draw baseline, but the rating baseline still finished ahead — useful, not mythical.',
+        modelTitle: 'Model audit', sourceTitle: 'Source audit', ledgerTitle: 'Ledger audit', good: 'High-confidence hits', bad: 'High-confidence misses', open: 'Open autopsy',
+        rows: ['All 104 matches are settled; no routine cron updates remain.', 'Public source cards remain attached to the match autopsies instead of floating as random materials.', 'The site is now a final report: outcome → record → evidence → detailed archive.']
+      }
+    : {
+        kicker: 'FINAL PROJECT REPORT', title: '這個專案最後交出了什麼', meta: '封存完成', champion: '冠軍', final: '決賽比分', model: 'Soren 命中率', baseline: 'Rating 基準', paper: '紙上本金', sources: '來源證據', exact: '比分全中', finished: '已結算賽事',
+        claimTitle: '最後讀數', claim: 'Soren 決賽站 Spain 並命中方向；封存頁同時保留抓對與翻車的場次。模型有贏過平局基準，但仍輸給 Rating baseline：這是可複盤的公開戰績，不是神話包裝。',
+        modelTitle: '模型審計', sourceTitle: '來源審計', ledgerTitle: '帳本審計', good: '高信心命中', bad: '高信心翻車', open: '展開驗屍',
+        rows: ['104 場全部結算；世界盃例行更新排程已停止。', '情報卡不再像亂貼素材：來源、信心與核對時間都留在單場復盤。', '資訊架構改成最終報告：結果 → 戰績 → 證據 → 全量封存。']
+      }
+  const metrics = [
+    { label: copy.champion, value: champion || '—', sub: finalMatch ? `${finalMatch.team1} ${scoreLabel(finalMatch)} ${finalMatch.team2}` : '—', tone: 'gold' },
+    { label: copy.model, value: pct(soren.accuracy), sub: `${soren.correct || audit.hits}/${audit.count} · ${soren.points || 0} pts`, tone: 'blue' },
+    { label: copy.baseline, value: pct(baseline.accuracy), sub: `${baseline.correct || 0}/${baseline.total || audit.count} · ${baseline.points || 0} pts`, tone: 'slate' },
+    { label: copy.paper, value: money(paper.bankroll), sub: `${signedMoney((paper.bankroll || 0) - (paper.initialBankroll || 0))} · ROI ${pct(paper.roi)}`, tone: 'green' },
+    { label: copy.sources, value: `${sourceCount}`, sub: `${intel?.items?.length || 0} cards · ${highConfidenceSources} high-confidence`, tone: 'violet' },
+    { label: copy.exact, value: `${audit.exact}`, sub: `${copy.finished} ${audit.count}`, tone: 'amber' },
+  ]
+  const bars = [
+    { label: 'Soren', value: soren.accuracy || 0, points: soren.points || 0 },
+    { label: 'Rating', value: baseline.accuracy || 0, points: baseline.points || 0 },
+    { label: 'Draw', value: drawBase.accuracy || 0, points: drawBase.points || 0 },
+  ]
+  return <section className="panel final-report" id="final-report">
+    <SectionHead kicker={copy.kicker} title={copy.title} meta={copy.meta}><small>{copy.claim}</small></SectionHead>
+    <div className="final-report-grid">
+      <div className="final-score-card"><span>{copy.claimTitle}</span><h3>{champion || '—'}</h3><b>{finalMatch ? `${finalMatch.team1} ${scoreLabel(finalMatch)} ${finalMatch.team2}` : '—'}</b><p>{copy.rows[0]}</p><button type="button" onClick={() => finalMatch && onSelect(finalMatch.id)}>{copy.open}</button></div>
+      <div className="final-metric-wall">{metrics.map((m) => <article key={m.label} className={`final-metric ${m.tone}`}><span>{m.label}</span><b>{m.value}</b><em>{m.sub}</em></article>)}</div>
+    </div>
+    <div className="report-columns">
+      <article><h3>{copy.modelTitle}</h3>{bars.map((bar) => <div className="report-bar" key={bar.label}><span><b>{bar.label}</b><em>{bar.points} pts · {pct(bar.value)}</em></span><i style={{ width: pct(bar.value) }}/></div>)}</article>
+      <article><h3>{copy.sourceTitle}</h3><p>{copy.rows[1]}</p><div className="source-stack"><b>{intel?.items?.length || 0}<small>cards</small></b><b>{sourceCount}<small>sources</small></b><b>{highConfidenceSources}<small>high</small></b></div></article>
+      <article><h3>{copy.ledgerTitle}</h3><p>{copy.rows[2]}</p><div className="ledger-mini"><span>Soren − Rating <b>{(soren.points || 0) - (baseline.points || 0)}</b></span><span>Soren − Draw <b>{(soren.points || 0) - (drawBase.points || 0)}</b></span></div></article>
+    </div>
+    <div className="report-evidence"><div><h3>{copy.good}</h3>{best.map((r) => <button type="button" key={r.match.id} onClick={() => onSelect(r.match.id)}><b>{r.match.team1} vs {r.match.team2}</b><span>{pickLabel(r.p.pick, lang)} · {pct(r.confidence)} · {scoreLabel(r.match)}</span></button>)}</div><div><h3>{copy.bad}</h3>{worst.map((r) => <button type="button" key={r.match.id} onClick={() => onSelect(r.match.id)}><b>{r.match.team1} vs {r.match.team2}</b><span>{pickLabel(r.p.pick, lang)} → {pickLabel(r.actual, lang)} · {pct(r.confidence)} · error {r.goalError}</span></button>)}</div></div>
+  </section>
+}
+
 function CommandCenter({ data, nextMatches, predictions, bankroll, lang, t, nowMs }) {
   const matchByNumber = buildMatchByNumber(data.matches || [])
   const next = nextMatches[0]
+  const rows = buildAuditRows(data)
   const recentFinals = [...(data.matches || [])].filter((m) => m.status === 'finished').sort((a, b) => new Date(b.kickoffUtc) - new Date(a.kickoffUtc))
   const finalMatch = recentFinals.find((m) => m.round === 'Final') || recentFinals[0]
   const champion = finalMatch ? actualPick(finalMatch) : null
-  const sharp = [...nextMatches].sort((a, b) => (predictions[b.id]?.confidence || 0) - (predictions[a.id]?.confidence || 0))[0]
-  const trap = [...nextMatches].sort((a, b) => {
-    const pa = predictions[a.id]?.probabilities || {}
-    const pb = predictions[b.id]?.probabilities || {}
-    return Math.min(pb.home || 0, pb.away || 0) - Math.min(pa.home || 0, pa.away || 0)
-  })[0]
+  const sharp = next
+    ? [...nextMatches].sort((a, b) => (predictions[b.id]?.confidence || 0) - (predictions[a.id]?.confidence || 0))[0]
+    : [...rows].filter((r) => r.hit).sort((a, b) => b.confidence - a.confidence)[0]?.match
+  const trap = next
+    ? [...nextMatches].sort((a, b) => {
+        const pa = predictions[a.id]?.probabilities || {}
+        const pb = predictions[b.id]?.probabilities || {}
+        return Math.min(pb.home || 0, pb.away || 0) - Math.min(pa.home || 0, pa.away || 0)
+      })[0]
+    : [...rows].filter((r) => !r.hit).sort((a, b) => b.confidence - a.confidence || b.goalError - a.goalError)[0]?.match
+  const trapRow = trap ? rows.find((r) => r.match.id === trap.id) : null
   const soren = data.leaderboard?.find((r) => r.id === 'soren')
   const nextLifecycle = runtimeLifecycle(next, nowMs)
   return <section className="command-grid" id="today">
-    <StatCard label={next ? t.nextCut : (lang === 'en' ? 'Tournament settled' : '冠軍已落地')} value={next ? `${displayRouteTeam(next.team1, matchByNumber)} vs ${displayRouteTeam(next.team2, matchByNumber)}` : (champion || t.TBD)} sub={next ? `${fmtDate(next.kickoffUtc, lang)} · ${nextLifecycle === 'pre-match' ? `${lang === 'en' ? 'pick' : '我站'} ${displayRoutePick(predictions[next.id]?.pick, lang, matchByNumber)}` : lifecycleText(next, lang, nowMs)}` : (finalMatch ? `${displayRouteTeam(finalMatch.team1, matchByNumber)} ${scoreLabel(finalMatch)} ${displayRouteTeam(finalMatch.team2, matchByNumber)} · ${lang === 'en' ? 'open final autopsy below' : '下方可看決賽復盤'}` : t.waiting)} tone="blue" />
-    <StatCard label={t.strongest} value={sharp ? displayRoutePick(predictions[sharp.id]?.pick, lang, matchByNumber) : '—'} sub={sharp ? `${displayRouteTeam(sharp.team1, matchByNumber)} vs ${displayRouteTeam(sharp.team2, matchByNumber)} · ${t.confidence} ${pct(predictions[sharp.id]?.confidence)}` : '—'} tone="green" />
-    <StatCard label={t.trap} value={trap ? `${displayRouteTeam(trap.team1, matchByNumber)} vs ${displayRouteTeam(trap.team2, matchByNumber)}` : '—'} sub={trap ? `${t.trapRate} ${pct(Math.min(predictions[trap.id]?.probabilities?.home || 0, predictions[trap.id]?.probabilities?.away || 0))}` : '—'} tone="amber" />
+    <StatCard label={next ? t.nextCut : (lang === 'en' ? 'Tournament settled' : '冠軍已落地')} value={next ? `${displayRouteTeam(next.team1, matchByNumber)} vs ${displayRouteTeam(next.team2, matchByNumber)}` : (champion || t.TBD)} sub={next ? `${fmtDate(next.kickoffUtc, lang)} · ${nextLifecycle === 'pre-match' ? `${lang === 'en' ? 'pick' : '我站'} ${displayRoutePick(predictions[next.id]?.pick, lang, matchByNumber)}` : lifecycleText(next, lang, nowMs)}` : (finalMatch ? `${displayRouteTeam(finalMatch.team1, matchByNumber)} ${scoreLabel(finalMatch)} ${displayRouteTeam(finalMatch.team2, matchByNumber)} · ${lang === 'en' ? 'final autopsy ready' : '決賽復盤已整理'}` : t.waiting)} tone="blue" />
+    <StatCard label={next ? t.strongest : (lang === 'en' ? 'Best high-confidence hit' : '高信心抓對')} value={sharp ? displayRoutePick(predictions[sharp.id]?.pick, lang, matchByNumber) : '—'} sub={sharp ? `${displayRouteTeam(sharp.team1, matchByNumber)} vs ${displayRouteTeam(sharp.team2, matchByNumber)} · ${t.confidence} ${pct(predictions[sharp.id]?.confidence)}` : '—'} tone="green" />
+    <StatCard label={next ? t.trap : (lang === 'en' ? 'Worst high-confidence miss' : '高信心翻車')} value={trap ? `${displayRouteTeam(trap.team1, matchByNumber)} vs ${displayRouteTeam(trap.team2, matchByNumber)}` : '—'} sub={trapRow ? `${lang === 'en' ? 'picked' : '預測'} ${pickLabel(trapRow.p.pick, lang)} · ${lang === 'en' ? 'actual' : '實際'} ${pickLabel(trapRow.actual, lang)} · ${t.confidence} ${pct(trapRow.confidence)}` : (trap ? `${t.trapRate} ${pct(Math.min(predictions[trap.id]?.probabilities?.home || 0, predictions[trap.id]?.probabilities?.away || 0))}` : '—')} tone="amber" />
     <StatCard label={t.bankroll} value={money(bankroll?.bankroll)} sub={`${t.roi} ${pct(bankroll?.roi)} · ${t.unsettled} ${money(bankroll?.openStake)}`} tone="violet" />
     <StatCard label={t.modelForm} value={`${soren?.points ?? 0} ${t.points}`} sub={`${t.hit} ${pct(soren?.accuracy)}，${t.noSwagger}`} />
   </section>
@@ -681,7 +741,7 @@ function BracketSnapshot({ matches, onSelect, lang, t }) {
 }
 function Leaderboard({ rows, t, lang }) { return <section className="panel slim" id="model"><SectionHead kicker="MODEL FORM" title={t.leaderboardTitle} meta={t.publicLedger}/><div className="leader-list">{rows.map((row) => <div className="leader" key={row.id}><div className="rank">#{row.rank}</div><div><b>{row.name}</b><p>{leaderDesc(row, lang)}</p></div><div className="leader-score"><b>{row.points}</b><span>{pct(row.accuracy)} hit</span></div></div>)}</div><p className="self-own">{t.selfOwn}</p></section> }
 function StandingsPreview({ standings, nextMatches, lang, t }) { const groups = Array.from(new Set(nextMatches.map((m) => m.group).filter(Boolean))).slice(0, 4); const entries = groups.length ? groups.map((g) => [g, standings[g]]).filter(([, rows]) => rows) : Object.entries(standings || {}).slice(0, 4); return <section className="panel" id="standings"><SectionHead kicker="GROUP SURVIVAL MAP" title={t.standingsTitle} meta={`${entries.length} groups`} /><div className="tables compact-tables">{entries.map(([name, rows]) => <div className="table-card" key={name}><h3>{lang === 'en' ? name : name.replace('Group ', '小組 ')}</h3><table><thead><tr><th>{lang === 'en' ? 'Team' : '隊伍'}</th><th>{lang === 'en' ? 'P' : '賽'}</th><th>{lang === 'en' ? 'GD' : '淨'}</th><th>{lang === 'en' ? 'Pts' : '分'}</th></tr></thead><tbody>{rows.map((r, idx) => <tr key={r.team} className={idx < 2 ? 'qualified' : ''}><td><InlineTeam name={r.team}/></td><td>{r.played}</td><td>{r.goalDiff}</td><td><b>{r.points}</b></td></tr>)}</tbody></table></div>)}</div></section> }
-function FixtureExplorer({ matches, predictions, onSelect, lang, t, nowMs }) { const [showAll, setShowAll] = useState(false); const matchByNumber = buildMatchByNumber(matches); const list = showAll ? matches : matches.filter((m) => m.status !== 'finished').slice(0, 12); return <section className="panel" id="fixtures"><SectionHead kicker="FIXTURE EXPLORER" title={t.fixturesTitle} meta={showAll ? t.all : t.recentOnly} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc, lang)}</span><b><InlineTeam name={displayRouteTeam(m.team1, matchByNumber)}/> vs <InlineTeam name={displayRouteTeam(m.team2, matchByNumber)}/></b><em>{runtimeLifecycle(m, nowMs) === 'final' ? scoreLabel(m) : runtimeLifecycle(m, nowMs) === 'pre-match' ? displayRoutePick(predictions[m.id]?.pick, lang, matchByNumber) : lifecycleText(m, lang, nowMs)}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? t.hideAll : t.showAll}</button></section> }
+function FixtureExplorer({ matches, predictions, onSelect, lang, t, nowMs }) { const [showAll, setShowAll] = useState(false); const matchByNumber = buildMatchByNumber(matches); const unfinished = matches.filter((m) => m.status !== 'finished'); const archiveMode = unfinished.length === 0; const list = showAll ? matches : archiveMode ? [...matches].filter((m) => m.status === 'finished').sort((a, b) => new Date(b.kickoffUtc) - new Date(a.kickoffUtc)).slice(0, 12) : unfinished.slice(0, 12); return <section className="panel" id="fixtures"><SectionHead kicker={archiveMode ? 'FIXTURE ARCHIVE' : 'FIXTURE EXPLORER'} title={t.fixturesTitle} meta={showAll ? t.all : t.recentOnly} /><div className="fixture-list">{list.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDate(m.kickoffUtc, lang)}</span><b><InlineTeam name={displayRouteTeam(m.team1, matchByNumber)}/> vs <InlineTeam name={displayRouteTeam(m.team2, matchByNumber)}/></b><em>{runtimeLifecycle(m, nowMs) === 'final' ? scoreLabel(m) : runtimeLifecycle(m, nowMs) === 'pre-match' ? displayRoutePick(predictions[m.id]?.pick, lang, matchByNumber) : lifecycleText(m, lang, nowMs)}</em></button>)}</div><button className="show-more" type="button" onClick={() => setShowAll(!showAll)}>{showAll ? t.hideAll : t.showAll}</button></section> }
 function TacticalBoard({ match, prediction, intel, lang }) { const favorite = prediction.probabilities.home >= prediction.probabilities.away ? match.team1 : match.team2; const underdog = favorite === match.team1 ? match.team2 : match.team1; const lanes = [{ top:'18%', left:'18%', label:`${flag(favorite)} ${lang === 'en' ? 'press high' : '高位壓迫'}`, note: lang === 'en' ? 'first 30 minutes decide tempo' : '前 30 分鐘搶節奏' }, { top:'48%', left:'50%', label: lang === 'en' ? 'Midfield fault line' : '中場斷點', note: lang === 'en' ? 'first turnover hurts' : '誰先掉球誰先挨打' }, { top:'72%', left:'78%', label:`${flag(underdog)} ${lang === 'en' ? 'counter outlet' : '反擊出口'}`, note: lang === 'en' ? 'upsets start here' : '爆冷通常從這裡長出來' }]; return <section className="tactical-board"><div className="pitch"><div className="half-line"/><div className="center-circle"/>{lanes.map((lane) => <div className="position-node" key={lane.label} style={{ top: lane.top, left: lane.left }}><b>{lane.label}</b><span>{lane.note}</span></div>)}</div><div className="tactical-notes"><b>{lang === 'en' ? 'Tactical note' : '站位 / 對位筆記'}</b><p>{intel ? (lang === 'en' ? 'Verified availability, rotation and tactical signals are folded into this card when sources are clean.' : '我會把確認過的傷停、預測先發、輪換與戰術線索放進這裡；沒有來源就不裝懂。') : (lang === 'en' ? 'No clean source-backed tactical card yet; this is the model map until scouting improves it.' : '目前先用模型對位圖，等 scout 抓到可信先發/站位來源後再補細節。')}</p><small>{lang === 'en' ? 'Source-backed only: expected XI, official lineups and tactical previews.' : '不是幻想陣型：之後只接有來源的 expected XI、官方先發與戰術 preview。'}</small></div></section> }
 function MatchDeepDive({ match, prediction, paperBet, intel, onClose, lang, t, nowMs, matchByNumber = {} }) {
   if (!match || !prediction) return null
@@ -717,12 +777,13 @@ function App() {
   if (error) return <main className="shell"><div className="panel"><h1>{t.loadFail}</h1><p>{error}</p></div></main>
   if (!data) return <main className="shell"><div className="loading">{t.loading}</div></main>
   return <main className="shell" lang={lang === 'en' ? 'en' : 'zh-Hant'}>
-    <nav className="top-nav"><b>Soren World Cup Lab</b><div><a href="#today">{t.navToday}</a><a href="#soren-intel">{t.navIntel}</a><a href="#upset-radar">{t.navRadar}</a><a href="#predictions">{t.navPred}</a><a href="#bracket">{t.navBracket}</a><a href="#paper-bankroll">{t.navBankroll}</a><a href="#review">{t.navReview}</a><a href="#fixtures">{t.navFixtures}</a><button className="lang-toggle" type="button" onClick={switchLang}>{t.lang}</button></div></nav>
+    <nav className="top-nav"><b>Soren World Cup Archive</b><div><a href="#today">{t.navToday}</a><a href="#final-report">{t.navRadar}</a><a href="#review">{t.navReview}</a><a href="#predictions">{t.navPred}</a><a href="#bracket">{t.navBracket}</a><a href="#soren-intel">{t.navIntel}</a><a href="#paper-bankroll">{t.navBankroll}</a><a href="#fixtures">{t.navFixtures}</a><button className="lang-toggle" type="button" onClick={switchLang}>{t.lang}</button></div></nav>
     <section className="hero-section"><div className="hero-copy"><span className="eyebrow">{t.heroKicker}</span><h1>{t.heroTitle}</h1><p>{t.heroBody}</p><div className="hero-actions"><a href="https://stair-ai.com/arena" target="_blank" rel="noreferrer">Stair AI Arena</a><a href="https://github.com/livejiaquan/worldcup-soren-predictor" target="_blank" rel="noreferrer">GitHub</a></div></div><div className="hero-card agent-profile"><span className="agent-label">PUBLIC AGENT PROFILE</span><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>{t.finished}</span><b>{data.summary.scheduledMatches}</b><span>{t.pending}</span><small>{t.lastUpdate}：{fmtDate(data.generatedAt, lang)} · {t.intelCards} {intel?.items?.length || 0}</small></div></section>
     <div className="notice">{t.notice}</div>
     <DataQualityBadge data={data} lang={lang} nowMs={nowMs}/>
     <KineticArena data={data} nextMatches={nextMatches} predictions={data.predictions} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t} nowMs={nowMs}/>
     <CommandCenter data={data} nextMatches={nextMatches} predictions={data.predictions} bankroll={data.paperBankroll} lang={lang} t={t} nowMs={nowMs}/>
+    <FinalReport data={data} intel={intel} onSelect={setSelectedId} lang={lang}/>
     <KnockoutUpsetRadar matches={data.matches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang}/>
 
     <LearningLoop data={data} onSelect={setSelectedId} lang={lang} t={t}/>
