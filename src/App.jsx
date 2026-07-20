@@ -249,8 +249,17 @@ function DataQualityBadge({ data, lang, nowMs }) {
 
 
 function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, lang, nowMs }) {
-  const [activeId, setActiveId] = useState(nextMatches[0]?.id || data.summary.nextWindow?.[0])
-  const active = nextMatches.find((m) => m.id === activeId) || nextMatches[0]
+  const recentFinals = [...(data.matches || [])]
+    .filter((m) => m.status === 'finished')
+    .sort((a, b) => new Date(b.kickoffUtc) - new Date(a.kickoffUtc))
+    .slice(0, 8)
+  const spotlightMatches = nextMatches.length ? nextMatches : recentFinals
+  const archiveMode = !nextMatches.length && recentFinals.length > 0
+  const [activeId, setActiveId] = useState(spotlightMatches[0]?.id || data.summary.nextWindow?.[0])
+  useEffect(() => {
+    if (spotlightMatches.length && !spotlightMatches.some((m) => m.id === activeId)) setActiveId(spotlightMatches[0].id)
+  }, [spotlightMatches, activeId])
+  const active = spotlightMatches.find((m) => m.id === activeId) || spotlightMatches[0]
   const prediction = active ? predictions[active.id] : null
   const p = prediction?.probabilities || { home: 0.33, draw: 0.34, away: 0.33 }
   const matchByNumber = buildMatchByNumber(data.matches || [])
@@ -267,20 +276,32 @@ function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, 
     { key: 'away', label: activeTeam2, value: p.away, tone: 'away' },
   ].sort((a, b) => b.value - a.value) : []
   const copy = lang === 'en'
-    ? {
-        kicker: 'INTERACTIVE AGENT COCKPIT', title: 'Next-match cockpit: pick, risk, receipts.',
-        body: 'Pick a match to see Soren’s lean, trap risk, source-backed intel and audit trail. Receipts stay clickable; hype stays labeled.',
-        progress: 'tournament parsed', edge: 'model vs baseline', sources: 'source cards', inspect: 'Inspect match', lead: 'Soren leans', uncertainty: 'Uncertainty field', signal: 'Signal stack', noIntel: 'No verified intel card yet',
-      }
-    : {
-        kicker: 'INTERACTIVE AGENT COCKPIT', title: '下一場戰術板：站哪邊、怕哪裡、證據在哪。',
-        body: '點一場比賽，看 Soren 的勝率、翻車風險、公開情報和復盤線索；有來源才講，沒證據不裝懂。',
-        progress: '賽事已解析', edge: '模型 vs 基準', sources: '情報卡', inspect: '檢查這場', lead: 'Soren 目前站', uncertainty: '不確定性力場', signal: '訊號堆疊', noIntel: '這場還沒有驗證情報卡',
-      }
+    ? archiveMode
+      ? {
+          kicker: 'INTERACTIVE AGENT COCKPIT', title: 'Champion archive: final calls, misses, receipts.',
+          body: 'The tournament is settled, so the cockpit now opens recent finals first: prediction, final score, source-backed intel and the audit trail remain clickable.',
+          progress: 'tournament parsed', edge: 'model vs baseline', sources: 'source cards', inspect: 'Inspect autopsy', lead: 'Soren picked', uncertainty: 'Review gap', signal: 'Receipt stack', noIntel: 'No verified intel card attached',
+        }
+      : {
+          kicker: 'INTERACTIVE AGENT COCKPIT', title: 'Next-match cockpit: pick, risk, receipts.',
+          body: 'Pick a match to see Soren’s lean, trap risk, source-backed intel and audit trail. Receipts stay clickable; hype stays labeled.',
+          progress: 'tournament parsed', edge: 'model vs baseline', sources: 'source cards', inspect: 'Inspect match', lead: 'Soren leans', uncertainty: 'Uncertainty field', signal: 'Signal stack', noIntel: 'No verified intel card yet',
+        }
+    : archiveMode
+      ? {
+          kicker: 'INTERACTIVE AGENT COCKPIT', title: '冠軍檔案室：決賽、失手、證據都攤著。',
+          body: '賽事已結束，首頁改先打開最近終場：預測、實際比分、公開情報與復盤線索都能點，不再假裝還有下一場。',
+          progress: '賽事已解析', edge: '模型 vs 基準', sources: '情報卡', inspect: '看復盤', lead: 'Soren 當時站', uncertainty: '復盤缺口', signal: '證據堆疊', noIntel: '這場沒有驗證情報卡',
+        }
+      : {
+          kicker: 'INTERACTIVE AGENT COCKPIT', title: '下一場戰術板：站哪邊、怕哪裡、證據在哪。',
+          body: '點一場比賽，看 Soren 的勝率、翻車風險、公開情報和復盤線索；有來源才講，沒證據不裝懂。',
+          progress: '賽事已解析', edge: '模型 vs 基準', sources: '情報卡', inspect: '檢查這場', lead: 'Soren 目前站', uncertainty: '不確定性力場', signal: '訊號堆疊', noIntel: '這場還沒有驗證情報卡',
+        }
   return <section className="kinetic-arena" id="arena-cockpit">
     <div className="arena-copy"><p>{copy.kicker}</p><h2>{copy.title}</h2><span>{copy.body}</span><div className="arena-metrics"><b>{Math.round(finished / total * 100)}%<em>{copy.progress}</em></b><b>{scoreDelta >= 0 ? '+' : ''}{scoreDelta}<em>{copy.edge}</em></b><b>{intelByMatch ? Object.keys(intelByMatch).length : 0}<em>{copy.sources}</em></b></div></div>
     <div className="arena-stage">
-      <div className="match-orbit">{nextMatches.slice(0, 8).map((m, idx) => { const team1 = displayRouteTeam(m.team1, matchByNumber); const team2 = displayRouteTeam(m.team2, matchByNumber); return <button type="button" key={m.id} className={m.id === active?.id ? 'active' : ''} style={{ '--i': idx }} onClick={() => setActiveId(m.id)}><span>{fmtDay(m.kickoffUtc, lang)}</span><b>{team1.split(' ')[0]} / {team2.split(' ')[0]}</b></button> })}</div>
+      <div className="match-orbit">{spotlightMatches.slice(0, 8).map((m, idx) => { const team1 = displayRouteTeam(m.team1, matchByNumber); const team2 = displayRouteTeam(m.team2, matchByNumber); return <button type="button" key={m.id} className={m.id === active?.id ? 'active' : ''} style={{ '--i': idx }} onClick={() => setActiveId(m.id)}><span>{fmtDay(m.kickoffUtc, lang)}</span><b>{team1.split(' ')[0]} / {team2.split(' ')[0]}</b></button> })}</div>
       {active && prediction && <div className="arena-card">
         <div className="arena-card-head"><span>{stageLabel(active.stage, lang)}</span><button type="button" onClick={() => onSelect(active.id)}>{copy.inspect}</button></div>
         <div className="arena-versus"><Team name={activeTeam1}/><strong className={runtimeLifecycle(active, nowMs) === 'pre-match' ? '' : 'guarded-score'}>{scoreDisplay(active, prediction, lang, nowMs)}</strong><Team name={activeTeam2}/></div>
@@ -298,6 +319,9 @@ function KineticArena({ data, nextMatches, predictions, intelByMatch, onSelect, 
 function CommandCenter({ data, nextMatches, predictions, bankroll, lang, t, nowMs }) {
   const matchByNumber = buildMatchByNumber(data.matches || [])
   const next = nextMatches[0]
+  const recentFinals = [...(data.matches || [])].filter((m) => m.status === 'finished').sort((a, b) => new Date(b.kickoffUtc) - new Date(a.kickoffUtc))
+  const finalMatch = recentFinals.find((m) => m.round === 'Final') || recentFinals[0]
+  const champion = finalMatch ? actualPick(finalMatch) : null
   const sharp = [...nextMatches].sort((a, b) => (predictions[b.id]?.confidence || 0) - (predictions[a.id]?.confidence || 0))[0]
   const trap = [...nextMatches].sort((a, b) => {
     const pa = predictions[a.id]?.probabilities || {}
@@ -307,7 +331,7 @@ function CommandCenter({ data, nextMatches, predictions, bankroll, lang, t, nowM
   const soren = data.leaderboard?.find((r) => r.id === 'soren')
   const nextLifecycle = runtimeLifecycle(next, nowMs)
   return <section className="command-grid" id="today">
-    <StatCard label={t.nextCut} value={next ? `${displayRouteTeam(next.team1, matchByNumber)} vs ${displayRouteTeam(next.team2, matchByNumber)}` : t.TBD} sub={next ? `${fmtDate(next.kickoffUtc, lang)} · ${nextLifecycle === 'pre-match' ? `${lang === 'en' ? 'pick' : '我站'} ${displayRoutePick(predictions[next.id]?.pick, lang, matchByNumber)}` : lifecycleText(next, lang, nowMs)}` : t.waiting} tone="blue" />
+    <StatCard label={next ? t.nextCut : (lang === 'en' ? 'Tournament settled' : '冠軍已落地')} value={next ? `${displayRouteTeam(next.team1, matchByNumber)} vs ${displayRouteTeam(next.team2, matchByNumber)}` : (champion || t.TBD)} sub={next ? `${fmtDate(next.kickoffUtc, lang)} · ${nextLifecycle === 'pre-match' ? `${lang === 'en' ? 'pick' : '我站'} ${displayRoutePick(predictions[next.id]?.pick, lang, matchByNumber)}` : lifecycleText(next, lang, nowMs)}` : (finalMatch ? `${displayRouteTeam(finalMatch.team1, matchByNumber)} ${scoreLabel(finalMatch)} ${displayRouteTeam(finalMatch.team2, matchByNumber)} · ${lang === 'en' ? 'open final autopsy below' : '下方可看決賽復盤'}` : t.waiting)} tone="blue" />
     <StatCard label={t.strongest} value={sharp ? displayRoutePick(predictions[sharp.id]?.pick, lang, matchByNumber) : '—'} sub={sharp ? `${displayRouteTeam(sharp.team1, matchByNumber)} vs ${displayRouteTeam(sharp.team2, matchByNumber)} · ${t.confidence} ${pct(predictions[sharp.id]?.confidence)}` : '—'} tone="green" />
     <StatCard label={t.trap} value={trap ? `${displayRouteTeam(trap.team1, matchByNumber)} vs ${displayRouteTeam(trap.team2, matchByNumber)}` : '—'} sub={trap ? `${t.trapRate} ${pct(Math.min(predictions[trap.id]?.probabilities?.home || 0, predictions[trap.id]?.probabilities?.away || 0))}` : '—'} tone="amber" />
     <StatCard label={t.bankroll} value={money(bankroll?.bankroll)} sub={`${t.roi} ${pct(bankroll?.roi)} · ${t.unsettled} ${money(bankroll?.openStake)}`} tone="violet" />
@@ -333,10 +357,19 @@ function CompactMatchCard({ match, prediction, paperBet, intel, onSelect, featur
 }
 function TodaySlate({ matches, predictions, paperBetsByMatch, intelByMatch, onSelect, lang, t, nowMs, allMatches = matches }) {
   const matchByNumber = buildMatchByNumber(allMatches)
-  const featured = matches.slice(0, 3)
-  const rest = matches.slice(3, 9)
+  const archiveMode = !matches.length
+  const displayMatches = archiveMode
+    ? [...allMatches].filter((m) => m.status === 'finished').sort((a, b) => new Date(b.kickoffUtc) - new Date(a.kickoffUtc)).slice(0, 9)
+    : matches
+  const featured = displayMatches.slice(0, 3)
+  const rest = displayMatches.slice(3, 9)
+  const headCopy = archiveMode
+    ? lang === 'en'
+      ? { kicker: 'FINAL ARCHIVE', title: 'Recent finals and postmortems', note: 'No more upcoming fixtures: this section now keeps the latest final scores, picks, source cards and paper results one tap away.' }
+      : { kicker: 'FINAL ARCHIVE', title: '最近終場與復盤檔案', note: '沒有下一場了：這區改保留最新終場、當時預測、來源卡與紙上結算，一點就能查帳。' }
+    : { kicker: 'NEXT WINDOW', title: t.nextWindow, note: t.homeNote }
   return <section className="panel" id="predictions">
-    <SectionHead kicker="NEXT WINDOW" title={t.nextWindow} meta={`${matches.length} ${lang === 'en' ? 'matches' : '場'}`}><small>{t.homeNote}</small></SectionHead>
+    <SectionHead kicker={headCopy.kicker} title={headCopy.title} meta={`${displayMatches.length} ${lang === 'en' ? 'matches' : '場'}`}><small>{headCopy.note}</small></SectionHead>
     <div className="featured-grid">{featured.map((m) => <CompactMatchCard featured key={m.id} match={m} prediction={predictions[m.id]} paperBet={paperBetsByMatch[m.id]} intel={intelByMatch[m.id]} onSelect={onSelect} lang={lang} t={t} nowMs={nowMs} matchByNumber={matchByNumber}/>)}</div>
     <div className="upcoming-strip">{rest.map((m) => <button type="button" key={m.id} onClick={() => onSelect(m.id)}><span>{fmtDay(m.kickoffUtc, lang)}</span><b><InlineTeam name={displayRouteTeam(m.team1, matchByNumber)}/> vs <InlineTeam name={displayRouteTeam(m.team2, matchByNumber)}/></b><em>{runtimeLifecycle(m, nowMs) === 'pre-match' ? displayRoutePick(predictions[m.id]?.pick, lang, matchByNumber) : lifecycleText(m, lang, nowMs)}</em></button>)}</div>
   </section>
