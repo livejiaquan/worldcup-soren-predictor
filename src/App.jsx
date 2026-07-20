@@ -18,7 +18,7 @@ const I18N = {
   zh: {
     navToday:'總覽', navIntel:'情報', navRadar:'總結', navPred:'終場', navBracket:'樹狀圖', navBankroll:'紙上本金', navReview:'復盤', navFixtures:'賽程', lang:'EN',
     loading:'Soren 正在翻賽程和模型，不要急，嘴砲也要先載資料…', loadFail:'資料載入失敗',
-    heroKicker:'FINAL ARCHIVE · SOURCE-BACKED · PUBLIC RECEIPTS', heroTitle:'Soren 世界盃封存報告', heroBody:'世界盃已完結，這裡不再假裝即時追賽：首頁改成最終成績、模型戰績、紙上本金、來源證據與失手復盤，一頁看完整個專案留下什麼。',
+    heroKicker:'FINAL ARCHIVE · SOURCE-BACKED · PUBLIC RECEIPTS', heroTitle:'2026 世界盃封存報告', heroBody:'賽事已完結。這裡只留下最終成績、模型戰績、紙上本金、來源證據與失手復盤；不再追即時、不再堆素材，一頁看完整個 Soren 專案。',
     finished:'已完賽', pending:'封存狀態', lastUpdate:'最後封存', intelCards:'情報卡',
     notice:'公開研究與娛樂實驗，不是投注建議。賽事已完結封存：只用官方/高可信終場來源結算；來源、風險和社群訊號都收在細節裡，不硬演。',
     nextCut:'決賽封存', strongest:'最敢站隊', trap:'最像陷阱', bankroll:'紙上本金', modelForm:'模型戰績', TBD:'待定', waiting:'已封存', confidence:'信心', trapRate:'翻車率', roi:'ROI', unsettled:'未結算', points:'分', hit:'最終命中', noSwagger:'封存可複盤',
@@ -34,7 +34,7 @@ const I18N = {
   en: {
     navToday:'Overview', navIntel:'Intel', navRadar:'Report', navPred:'Finals', navBracket:'Bracket', navBankroll:'Paper Bankroll', navReview:'Review', navFixtures:'Fixtures', lang:'中',
     loading:'Soren is loading match data and model outputs…', loadFail:'Data load failed',
-    heroKicker:'FINAL ARCHIVE · SOURCE-BACKED · PUBLIC RECEIPTS', heroTitle:'Soren World Cup Archive', heroBody:'The tournament is over, so the site now reads as a final report: tournament outcome, model record, paper-bankroll ledger, source receipts, and visible misses in one reviewable archive.',
+    heroKicker:'FINAL ARCHIVE · SOURCE-BACKED · PUBLIC RECEIPTS', heroTitle:'2026 World Cup Archive', heroBody:'The tournament is over. This archive keeps the final outcome, model record, paper-bankroll ledger, source receipts, and visible misses — no live chase, no decorative clutter.',
     finished:'finished', pending:'archived', lastUpdate:'Archived', intelCards:'intel cards',
     notice:'Public research and entertainment only — not betting advice. Tournament archived: settlements use official/high-confidence final sources, with sources, risks and social signals kept in the details.',
     nextCut:'Final archive', strongest:'Highest conviction', trap:'Likeliest trap', bankroll:'Paper bankroll', modelForm:'Final model form', TBD:'TBD', waiting:'archived', confidence:'confidence', trapRate:'upset window', roi:'ROI', unsettled:'open stake', points:'pts', hit:'final accuracy', noSwagger:'archived receipts',
@@ -777,14 +777,14 @@ function App() {
   if (error) return <main className="shell"><div className="panel"><h1>{t.loadFail}</h1><p>{error}</p></div></main>
   if (!data) return <main className="shell"><div className="loading">{t.loading}</div></main>
   return <main className="shell" lang={lang === 'en' ? 'en' : 'zh-Hant'}>
-    <nav className="top-nav"><b>Soren World Cup Archive</b><div><a href="#today">{t.navToday}</a><a href="#final-report">{t.navRadar}</a><a href="#review">{t.navReview}</a><a href="#predictions">{t.navPred}</a><a href="#bracket">{t.navBracket}</a><a href="#soren-intel">{t.navIntel}</a><a href="#paper-bankroll">{t.navBankroll}</a><a href="#fixtures">{t.navFixtures}</a><button className="lang-toggle" type="button" onClick={switchLang}>{t.lang}</button></div></nav>
+    <nav className="top-nav"><b>Soren World Cup Archive</b><div><a href="#today">{t.navToday}</a><a href="#final-report">{t.navRadar}</a><a href="#review">{t.navReview}</a><a href="#predictions">{t.navPred}</a><a href="#soren-intel">{t.navIntel}</a><a href="#paper-bankroll">{t.navBankroll}</a><a href="#fixtures">{t.navFixtures}</a><button className="lang-toggle" type="button" onClick={switchLang}>{t.lang}</button></div></nav>
     <section className="hero-section"><div className="hero-copy"><span className="eyebrow">{t.heroKicker}</span><h1>{t.heroTitle}</h1><p>{t.heroBody}</p><div className="hero-actions"><a href="https://stair-ai.com/arena" target="_blank" rel="noreferrer">Stair AI Arena</a><a href="https://github.com/livejiaquan/worldcup-soren-predictor" target="_blank" rel="noreferrer">GitHub</a></div></div><div className="hero-card agent-profile"><span className="agent-label">PUBLIC AGENT PROFILE</span><b>{data.summary.finishedMatches}/{data.summary.totalMatches}</b><span>{t.finished}</span><b>{data.summary.scheduledMatches}</b><span>{t.pending}</span><small>{t.lastUpdate}：{fmtDate(data.generatedAt, lang)} · {t.intelCards} {intel?.items?.length || 0}</small></div></section>
     <div className="notice">{t.notice}</div>
     <DataQualityBadge data={data} lang={lang} nowMs={nowMs}/>
-    <KineticArena data={data} nextMatches={nextMatches} predictions={data.predictions} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t} nowMs={nowMs}/>
     <CommandCenter data={data} nextMatches={nextMatches} predictions={data.predictions} bankroll={data.paperBankroll} lang={lang} t={t} nowMs={nowMs}/>
     <FinalReport data={data} intel={intel} onSelect={setSelectedId} lang={lang}/>
-    <KnockoutUpsetRadar matches={data.matches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang}/>
+    {nextMatches.length > 0 && <KineticArena data={data} nextMatches={nextMatches} predictions={data.predictions} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang} t={t} nowMs={nowMs}/>}
+    {nextMatches.length > 0 && <KnockoutUpsetRadar matches={data.matches} predictions={data.predictions} paperBetsByMatch={paperBetsByMatch} intelByMatch={intelByMatch} onSelect={setSelectedId} lang={lang}/>}
 
     <LearningLoop data={data} onSelect={setSelectedId} lang={lang} t={t}/>
     <CalibrationAudit data={data} onSelect={setSelectedId} lang={lang}/>
