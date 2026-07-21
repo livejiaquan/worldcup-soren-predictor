@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "vite",
     "update-data": "node scripts/update-data.mjs",
+    "archive-summary": "node scripts/archive-summary.mjs",
     "validate": "node scripts/validate-data.mjs",
     "build": "npm run validate && GITHUB_REPOSITORY=livejiaquan/worldcup-soren-predictor vite build",
     "lint": "oxlint src scripts vite.config.js",
