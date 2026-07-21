@@ -10,9 +10,12 @@
 npm install
 npm run update-data
 npm run validate
+npm run archive-summary
 npm run build
 npm run dev
 ```
+
+`npm run archive-summary` 會從 `public/data/worldcup.json` 產生封存摘要：冠軍、模型榜、紙上本金、高信心命中／翻車與最大比分誤差，方便收尾報告或檢查公開頁文案是否和資料一致。
 
 ## Method
 
