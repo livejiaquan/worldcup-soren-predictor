@@ -205,7 +205,10 @@ function DataQualityBadge({ data, lang, nowMs }) {
   const diagnostics = data.dataQuality || {}
   const generatedMs = Date.parse(data.generatedAt || '')
   const ageHours = Number.isFinite(generatedMs) ? Math.max(0, (nowMs - generatedMs) / HOUR_MS) : null
-  const stale = ageHours === null || ageHours > 6
+  const archiveComplete = data.summary?.totalMatches > 0
+    && data.summary.finishedMatches === data.summary.totalMatches
+    && data.summary.scheduledMatches === 0
+  const stale = !archiveComplete && (ageHours === null || ageHours > 6)
   const dynamicPending = (data.matches || []).filter((match) => {
     const lifecycle = runtimeLifecycle(match, nowMs)
     return lifecycle === 'live-window' || lifecycle === 'result-pending'
@@ -220,14 +223,22 @@ function DataQualityBadge({ data, lang, nowMs }) {
     : ''
   const copy = lang === 'en'
     ? {
-        kicker: 'DATA QUALITY', ok: 'Source-backed feed is healthy', watch: 'Data needs a final-score check',
-        age: ageHours === null ? 'age unknown' : `${ageHours < 1 ? '<1' : ageHours.toFixed(1)}h old`,
+        kicker: 'DATA QUALITY',
+        ok: archiveComplete ? 'Final archive verified' : 'Source-backed feed is healthy',
+        watch: archiveComplete ? 'Archive data needs review' : 'Data needs a final-score check',
+        age: archiveComplete
+          ? `archive snapshot · ${data.summary.finishedMatches}/${data.summary.totalMatches} final`
+          : ageHours === null ? 'age unknown' : `${ageHours < 1 ? '<1' : ageHours.toFixed(1)}h old`,
         final: 'Final-only settlement', live: 'Live is not final', overrides: 'Overrides',
         pending: `${dynamicPending.length} pending final`, clean: latestFinalText || 'no live/final conflict · readable trust labels on source cards',
       }
     : {
-        kicker: 'DATA QUALITY', ok: '公開來源資料正常', watch: '需要終場比分巡檢',
-        age: ageHours === null ? '時間未知' : `${ageHours < 1 ? '<1' : ageHours.toFixed(1)} 小時前生成`,
+        kicker: 'DATA QUALITY',
+        ok: archiveComplete ? '封存資料已驗證' : '公開來源資料正常',
+        watch: archiveComplete ? '封存資料需要覆核' : '需要終場比分巡檢',
+        age: archiveComplete
+          ? `封存快照 · ${data.summary.finishedMatches}/${data.summary.totalMatches} 場已完賽`
+          : ageHours === null ? '時間未知' : `${ageHours < 1 ? '<1' : ageHours.toFixed(1)} 小時前生成`,
         final: '只用終場結算', live: 'Live 不是 Final', overrides: '人工覆核',
         pending: `${dynamicPending.length} 場等終場`, clean: latestFinalText || '沒有 live/final 衝突 · 來源卡使用可讀信任標籤',
       }
