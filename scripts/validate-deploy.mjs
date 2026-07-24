@@ -3,7 +3,8 @@ import { readdir, readFile, stat } from 'node:fs/promises'
 import path from 'node:path'
 
 const deployDir = 'docs'
-const requiredFiles = ['index.html', 'CNAME', '.nojekyll', 'data/worldcup.json']
+const requiredFiles = ['index.html', 'CNAME', '.nojekyll', 'data/worldcup.json', 'data/soren-intel.json']
+const mirroredDataFiles = ['worldcup.json', 'soren-intel.json']
 const errors = []
 
 async function exists(file) {
@@ -26,13 +27,17 @@ for (const relativePath of requiredFiles) {
   }
 }
 
-if (await exists('public/data/worldcup.json') && await exists('docs/data/worldcup.json')) {
-  const [sourceData, deployData] = await Promise.all([
-    readFile('public/data/worldcup.json'),
-    readFile('docs/data/worldcup.json'),
-  ])
-  if (sha256(sourceData) !== sha256(deployData)) {
-    errors.push('docs/data/worldcup.json does not match public/data/worldcup.json')
+for (const file of mirroredDataFiles) {
+  const sourcePath = path.join('public/data', file)
+  const deployPath = path.join(deployDir, 'data', file)
+  if (await exists(sourcePath) && await exists(deployPath)) {
+    const [sourceData, deployData] = await Promise.all([
+      readFile(sourcePath),
+      readFile(deployPath),
+    ])
+    if (sha256(sourceData) !== sha256(deployData)) {
+      errors.push(`${deployPath} does not match ${sourcePath}`)
+    }
   }
 }
 
