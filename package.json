@@ -10,7 +10,8 @@
     "archive-summary": "node scripts/archive-summary.mjs",
     "validate": "node scripts/validate-data.mjs",
     "validate:deploy": "node scripts/validate-deploy.mjs",
-    "build": "npm run validate && GITHUB_REPOSITORY=livejiaquan/worldcup-soren-predictor vite build && npm run validate:deploy",
+    "test": "node --test scripts/*.test.mjs",
+    "build": "npm test && npm run validate && GITHUB_REPOSITORY=livejiaquan/worldcup-soren-predictor vite build && npm run validate:deploy",
     "lint": "oxlint src scripts vite.config.js",
     "preview": "vite preview"
   },

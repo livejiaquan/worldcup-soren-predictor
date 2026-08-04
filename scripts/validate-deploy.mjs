@@ -41,6 +41,35 @@ for (const file of mirroredDataFiles) {
   }
 }
 
+const indexPath = path.join(deployDir, 'index.html')
+if (await exists(indexPath)) {
+  const indexHtml = await readFile(indexPath, 'utf8')
+  const localReferences = [...indexHtml.matchAll(/\b(?:src|href)\s*=\s*(?:"([^"]*)"|'([^']*)'|([^\s"'=<>`]+))/gi)]
+    .map((match) => match.slice(1).find((value) => value !== undefined))
+    .filter(Boolean)
+    .filter((reference) => !/^(?:[a-z]+:|\/\/|#)/i.test(reference))
+    .map((reference) => reference.split(/[?#]/, 1)[0])
+
+  for (const reference of localReferences) {
+    if (reference.startsWith('/')) {
+      errors.push(`root-relative asset reference is not portable: ${reference}`)
+      continue
+    }
+    const deployRoot = path.resolve(deployDir)
+    const referencedPath = path.resolve(deployRoot, reference)
+    if (referencedPath !== deployRoot && !referencedPath.startsWith(`${deployRoot}${path.sep}`)) {
+      errors.push(`referenced asset escapes deploy directory: ${reference}`)
+      continue
+    }
+    const displayPath = path.relative(process.cwd(), referencedPath)
+    if (!await exists(referencedPath)) {
+      errors.push(`missing referenced asset: ${displayPath}`)
+    } else if (!(await stat(referencedPath)).isFile()) {
+      errors.push(`referenced asset is not a file: ${displayPath}`)
+    }
+  }
+}
+
 if (await exists('docs/assets')) {
   const assets = await readdir('docs/assets')
   if (!assets.some((file) => file.endsWith('.js'))) errors.push('deploy assets missing JavaScript bundle')
