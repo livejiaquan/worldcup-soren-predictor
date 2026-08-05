@@ -1,6 +1,7 @@
 import { readFile } from 'node:fs/promises'
 
-const data = JSON.parse(await readFile('public/data/worldcup.json', 'utf8'))
+const dataPath = process.argv[2] || 'public/data/worldcup.json'
+const data = JSON.parse(await readFile(dataPath, 'utf8'))
 
 const matches = Array.isArray(data.matches) ? data.matches : []
 const predictions = data.predictions || {}
@@ -39,6 +40,10 @@ function scoreError(match, prediction) {
 }
 
 const finished = matches.filter((match) => match.status === 'finished')
+if (!matches.length || finished.length !== matches.length) {
+  console.error(`archive is incomplete: ${finished.length}/${matches.length} matches finished`)
+  process.exit(1)
+}
 const final = [...finished].reverse().find((match) => match.stage === 'Final')
 const soren = leaderboard.find((row) => row.id === 'soren')
 const rating = leaderboard.find((row) => row.id === 'rating')
