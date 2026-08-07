@@ -25,7 +25,7 @@ function outcomeFor(match) {
   if (!Array.isArray(match.score)) return null
   if (match.score[0] > match.score[1]) return match.team1
   if (match.score[1] > match.score[0]) return match.team2
-  return match.winner || 'Draw'
+  return '平手'
 }
 
 function pickedCorrect(match, prediction) {
