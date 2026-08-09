@@ -3,7 +3,8 @@ import { readFile } from 'node:fs/promises'
 const FINAL_RESULT_GRACE_MINUTES = 150
 const SCORE_TOLERANCE = 0.02
 
-const data = JSON.parse(await readFile('public/data/worldcup.json', 'utf8'))
+const dataPath = process.argv[2] || 'public/data/worldcup.json'
+const data = JSON.parse(await readFile(dataPath, 'utf8'))
 const errors = []
 const warnings = []
 
@@ -63,6 +64,7 @@ for (const match of matches) {
   assert(/^m\d{3}$/.test(match.id || ''), `bad match id ${match.id}`)
   assert(!matchIds.has(match.id), `duplicate match id ${match.id}`)
   matchIds.add(match.id)
+  assert(['scheduled', 'finished'].includes(match.status), `bad match status ${match.status} for ${match.id}`)
   assert(match.team1 && match.team2, `bad match identity ${JSON.stringify(match)}`)
   assert(match.team1 !== match.team2, `match has identical teams ${match.id}`)
   assert(match.source && String(match.source).includes('openfootball/worldcup.json'), `missing source attribution for ${match.id}`)
