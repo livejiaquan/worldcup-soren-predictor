@@ -101,6 +101,10 @@ for (const match of matches) {
   const pred = predictions[match.id]
   assert(pred && pred.probabilities && typeof pred.confidence === 'number', `bad prediction for ${match.id}`)
   if (pred?.probabilities) {
+    for (const outcome of ['home', 'draw', 'away']) {
+      const probability = pred.probabilities[outcome]
+      assert(typeof probability === 'number' && Number.isFinite(probability) && probability >= 0 && probability <= 1, `prediction probability ${outcome} out of range for ${match.id}: ${probability}`)
+    }
     const sum = probabilitySum(pred)
     assert(Math.abs(sum - 1) <= SCORE_TOLERANCE, `prediction probabilities do not sum to 1 for ${match.id}: ${sum}`)
     assert(pred.confidence >= 0 && pred.confidence <= 1, `prediction confidence out of range for ${match.id}`)
