@@ -65,3 +65,45 @@ test('rejects a non-numeric prediction probability even when coercion preserves 
     await rm(root, { recursive: true, force: true })
   }
 })
+
+test('rejects null values in a finished match score', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const match = data.matches.find((item) => item.status === 'finished')
+  assert.ok(match, 'fixture must contain a finished match')
+  match.score = [null, 1]
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`finished match ${match.id} is missing a valid score`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
+test('rejects a malformed non-null score on a scheduled match', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const match = data.matches[0]
+  match.status = 'scheduled'
+  match.score = [null, 1]
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`scheduled match ${match.id} has a malformed score`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
