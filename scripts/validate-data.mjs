@@ -11,7 +11,7 @@ const warnings = []
 function isFiniteScore(score) {
   return Array.isArray(score)
     && score.length === 2
-    && score.every((value) => Number.isInteger(Number(value)) && Number(value) >= 0)
+    && score.every((value) => typeof value === 'number' && Number.isInteger(value) && value >= 0)
 }
 
 function lifecycleFor(match, generatedMs) {
@@ -83,7 +83,7 @@ for (const match of matches) {
     assert(hasScore, `finished match ${match.id} is missing a valid score`)
   } else {
     scheduledMatches += 1
-    assert(!hasScore, `scheduled match ${match.id} already has a score`)
+    assert(match.score == null, `scheduled match ${match.id} has a malformed score`)
   }
 
   const expectedLifecycle = Number.isFinite(generatedMs) ? lifecycleFor(match, generatedMs) : match.lifecycle
