@@ -66,6 +66,27 @@ test('rejects a non-numeric prediction probability even when coercion preserves 
   }
 })
 
+test('rejects an unknown prediction id even when the prediction count matches', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  data.predictions.m999 = data.predictions.m001
+  delete data.predictions.m001
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.match(result.stderr, /bad prediction for m001/)
+    assert.match(result.stderr, /prediction references unknown match m999/)
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
 test('rejects null values in a finished match score', async () => {
   const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
   const fixture = path.join(root, 'worldcup.json')

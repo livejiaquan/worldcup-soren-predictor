@@ -111,6 +111,10 @@ for (const match of matches) {
   }
 }
 
+for (const predictionId of Object.keys(predictions)) {
+  assert(matchIds.has(predictionId), `prediction references unknown match ${predictionId}`)
+}
+
 assert(data.summary?.totalMatches === matches.length, 'summary totalMatches mismatch')
 assert(data.summary?.finishedMatches === finishedMatches, 'summary finishedMatches mismatch')
 assert(data.summary?.scheduledMatches === scheduledMatches, 'summary scheduledMatches mismatch')
