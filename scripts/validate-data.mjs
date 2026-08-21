@@ -96,7 +96,10 @@ for (const match of matches) {
     && !match.group
     && hasScore
     && (Number(match.score[0]) !== Number(match.score[1]) || isFiniteScore(match.shootoutScore))
-  if (needsWinner) assert(match.winner, `missing knockout winner for ${match.id}`)
+  if (needsWinner) {
+    assert(match.winner, `missing knockout winner for ${match.id}`)
+    assert([match.team1, match.team2].includes(match.winner), `invalid knockout winner for ${match.id}: ${match.winner}`)
+  }
 
   const pred = predictions[match.id]
   assert(pred && pred.probabilities && typeof pred.confidence === 'number', `bad prediction for ${match.id}`)
