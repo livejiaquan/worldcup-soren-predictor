@@ -99,6 +99,13 @@ for (const match of matches) {
   if (needsWinner) {
     assert(match.winner, `missing knockout winner for ${match.id}`)
     assert([match.team1, match.team2].includes(match.winner), `invalid knockout winner for ${match.id}: ${match.winner}`)
+    if (Number(match.score[0]) !== Number(match.score[1])) {
+      const scoreWinner = Number(match.score[0]) > Number(match.score[1]) ? match.team1 : match.team2
+      assert(match.winner === scoreWinner, `knockout winner contradicts score for ${match.id}: ${match.winner}`)
+    } else if (isFiniteScore(match.shootoutScore) && match.shootoutScore[0] !== match.shootoutScore[1]) {
+      const shootoutWinner = match.shootoutScore[0] > match.shootoutScore[1] ? match.team1 : match.team2
+      assert(match.winner === shootoutWinner, `knockout winner contradicts shootout score for ${match.id}: ${match.winner}`)
+    }
   }
 
   const pred = predictions[match.id]
