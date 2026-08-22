@@ -149,3 +149,52 @@ test('rejects a knockout winner that is not a match participant', async () => {
     await rm(root, { recursive: true, force: true })
   }
 })
+
+test('rejects a knockout winner that contradicts the final score', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const match = data.matches.find((item) => item.status === 'finished'
+    && !item.group
+    && item.score?.[0] !== item.score?.[1]
+    && item.winner)
+  assert.ok(match, 'fixture must contain a decided knockout match')
+  match.winner = match.winner === match.team1 ? match.team2 : match.team1
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`knockout winner contradicts score for ${match.id}: ${match.winner}`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
+test('rejects a knockout winner that contradicts the shootout score', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const match = data.matches.find((item) => item.status === 'finished'
+    && !item.group
+    && item.score?.[0] === item.score?.[1]
+    && Array.isArray(item.shootoutScore)
+    && item.winner)
+  assert.ok(match, 'fixture must contain a shootout-decided knockout match')
+  match.winner = match.winner === match.team1 ? match.team2 : match.team1
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`knockout winner contradicts shootout score for ${match.id}: ${match.winner}`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
