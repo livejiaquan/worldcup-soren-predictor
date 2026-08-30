@@ -92,9 +92,14 @@ for (const match of matches) {
   if (expectedLifecycle === 'live-window' || expectedLifecycle === 'result-pending') expectedPendingFinal.push(match.id)
   if (match.status === 'finished') assert(match.lifecycle === 'final', `finished match ${match.id} is not lifecycle=final`)
 
-  const needsWinner = match.status === 'finished'
-    && !match.group
-    && hasScore
+  const isFinishedKnockout = match.status === 'finished' && !match.group && hasScore
+  if (isFinishedKnockout && Number(match.score[0]) === Number(match.score[1])) {
+    assert(
+      isFiniteScore(match.shootoutScore) && match.shootoutScore[0] !== match.shootoutScore[1],
+      `tied knockout match ${match.id} is missing a valid shootout score`,
+    )
+  }
+  const needsWinner = isFinishedKnockout
     && (Number(match.score[0]) !== Number(match.score[1]) || isFiniteScore(match.shootoutScore))
   if (needsWinner) {
     assert(match.winner, `missing knockout winner for ${match.id}`)
