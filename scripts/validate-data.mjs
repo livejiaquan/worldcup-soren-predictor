@@ -150,8 +150,11 @@ for (const group of groups) {
   }
   const rows = data.standings?.[group.name]
   assert(Array.isArray(rows) && rows.length === group.teams.length, `bad standings rows for ${group.name}`)
+  const standingsTeams = new Set()
   for (const row of rows || []) {
     assert(group.teams.includes(row.team), `standings row ${row.team} is not in ${group.name}`)
+    assert(!standingsTeams.has(row.team), `duplicate standings row for ${row.team} in ${group.name}`)
+    standingsTeams.add(row.team)
     assert(row.played === row.won + row.drawn + row.lost, `played total mismatch for ${row.team}`)
     assert(row.played <= 3, `group standings include non-group matches for ${row.team}`)
     assert(row.points === row.won * 3 + row.drawn, `points mismatch for ${row.team}`)

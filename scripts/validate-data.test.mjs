@@ -222,3 +222,24 @@ test('rejects a tied knockout match without a valid shootout score', async () =>
     await rm(root, { recursive: true, force: true })
   }
 })
+
+test('rejects duplicate teams in group standings', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const group = data.groups[0]
+  const rows = data.standings[group.name]
+  rows[1] = { ...rows[0] }
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`duplicate standings row for ${rows[0].team} in ${group.name}`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
