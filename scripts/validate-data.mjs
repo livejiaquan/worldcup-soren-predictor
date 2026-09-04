@@ -163,8 +163,11 @@ for (const group of groups) {
 }
 assert(seenTeams.size === 48, `expected 48 unique group teams, got ${seenTeams.size}`)
 
+const leaderboardIds = new Set()
 for (const row of leaderboard) {
   assert(row.id && typeof row.points === 'number' && typeof row.accuracy === 'number', `bad leaderboard row ${JSON.stringify(row)}`)
+  assert(!leaderboardIds.has(row.id), `duplicate leaderboard entry ${row.id}`)
+  leaderboardIds.add(row.id)
   assert(row.total === finishedMatches, `leaderboard total mismatch for ${row.id}`)
 }
 
