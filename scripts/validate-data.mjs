@@ -168,6 +168,7 @@ for (const row of leaderboard) {
   assert(row.id && typeof row.points === 'number' && typeof row.accuracy === 'number', `bad leaderboard row ${JSON.stringify(row)}`)
   assert(!leaderboardIds.has(row.id), `duplicate leaderboard entry ${row.id}`)
   leaderboardIds.add(row.id)
+  assert(row.accuracy >= 0 && row.accuracy <= 1, `leaderboard accuracy out of range for ${row.id}: ${row.accuracy}`)
   assert(row.total === finishedMatches, `leaderboard total mismatch for ${row.id}`)
 }
 
