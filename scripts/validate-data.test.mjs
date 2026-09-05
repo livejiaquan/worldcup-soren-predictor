@@ -262,3 +262,22 @@ test('rejects duplicate leaderboard entries', async () => {
     await rm(root, { recursive: true, force: true })
   }
 })
+
+test('rejects leaderboard accuracy outside the probability range', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  data.leaderboard[0].accuracy = 1.01
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`leaderboard accuracy out of range for ${data.leaderboard[0].id}: 1.01`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
