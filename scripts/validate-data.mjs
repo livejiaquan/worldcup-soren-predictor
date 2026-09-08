@@ -144,6 +144,46 @@ const seenTeams = new Set()
 for (const group of groups) {
   assert(group.name && /^Group [A-L]$/.test(group.name), `bad group name ${group.name}`)
   assert(Array.isArray(group.teams) && group.teams.length === 4, `expected 4 teams in ${group.name}`)
+  const expectedStandings = new Map((group.teams || []).map((team) => [team, {
+    played: 0,
+    won: 0,
+    drawn: 0,
+    lost: 0,
+    goalsFor: 0,
+    goalsAgainst: 0,
+    goalDiff: 0,
+    points: 0,
+  }]))
+  for (const match of matches.filter((item) => item.group === group.name && item.status === 'finished')) {
+    const hasValidParticipants = expectedStandings.has(match.team1) && expectedStandings.has(match.team2)
+    assert(isFiniteScore(match.score), `finished group match ${match.id} is missing a valid score`)
+    assert(hasValidParticipants, `finished group match ${match.id} has a team outside ${group.name}`)
+    if (!isFiniteScore(match.score) || !hasValidParticipants) continue
+    const home = expectedStandings.get(match.team1)
+    const away = expectedStandings.get(match.team2)
+    home.played += 1
+    away.played += 1
+    home.goalsFor += match.score[0]
+    home.goalsAgainst += match.score[1]
+    away.goalsFor += match.score[1]
+    away.goalsAgainst += match.score[0]
+    if (match.score[0] > match.score[1]) {
+      home.won += 1
+      away.lost += 1
+      home.points += 3
+    } else if (match.score[0] < match.score[1]) {
+      away.won += 1
+      home.lost += 1
+      away.points += 3
+    } else {
+      home.drawn += 1
+      away.drawn += 1
+      home.points += 1
+      away.points += 1
+    }
+    home.goalDiff = home.goalsFor - home.goalsAgainst
+    away.goalDiff = away.goalsFor - away.goalsAgainst
+  }
   for (const team of group.teams || []) {
     assert(!seenTeams.has(team), `team appears in multiple groups: ${team}`)
     seenTeams.add(team)
@@ -159,6 +199,10 @@ for (const group of groups) {
     assert(row.played <= 3, `group standings include non-group matches for ${row.team}`)
     assert(row.points === row.won * 3 + row.drawn, `points mismatch for ${row.team}`)
     assert(row.goalDiff === row.goalsFor - row.goalsAgainst, `goalDiff mismatch for ${row.team}`)
+    const expected = expectedStandings.get(row.team)
+    for (const field of ['played', 'won', 'drawn', 'lost', 'goalsFor', 'goalsAgainst', 'goalDiff', 'points']) {
+      assert(row[field] === expected?.[field], `standings ${field} does not match group results for ${row.team}: expected ${expected?.[field]}, got ${row[field]}`)
+    }
   }
 }
 assert(seenTeams.size === 48, `expected 48 unique group teams, got ${seenTeams.size}`)

@@ -244,6 +244,48 @@ test('rejects duplicate teams in group standings', async () => {
   }
 })
 
+test('rejects internally consistent standings that contradict group results', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const row = data.standings[data.groups[0].name][0]
+  row.goalsFor += 1
+  row.goalDiff += 1
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`standings goalsFor does not match group results for ${row.team}`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
+test('rejects a finished group match whose participant is outside the group', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const match = data.matches.find((item) => item.group === data.groups[0].name && item.status === 'finished')
+  assert.ok(match, 'fixture must contain a finished group match')
+  match.team1 = data.groups[1].teams[0]
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`finished group match ${match.id} has a team outside ${match.group}`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
 test('rejects duplicate leaderboard entries', async () => {
   const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
   const fixture = path.join(root, 'worldcup.json')
