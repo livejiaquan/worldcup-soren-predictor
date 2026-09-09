@@ -219,6 +219,11 @@ for (const row of leaderboard) {
 for (const bet of data.paperBankroll?.settled || []) {
   const match = matches.find((item) => item.id === bet.matchId)
   assert(match?.status === 'finished', `settled paper bet points to unfinished match ${bet.matchId}`)
+  assert(
+    isFiniteScore(bet.score) && isFiniteScore(match?.score)
+      && bet.score[0] === match.score[0] && bet.score[1] === match.score[1],
+    `settled paper bet score mismatch for ${bet.matchId}`,
+  )
 }
 for (const bet of [...(data.paperBankroll?.pending || []), ...(data.paperBankroll?.watchlist || [])]) {
   const match = matches.find((item) => item.id === bet.matchId)
