@@ -323,3 +323,23 @@ test('rejects leaderboard accuracy outside the probability range', async () => {
     await rm(root, { recursive: true, force: true })
   }
 })
+
+test('rejects a settled paper bet whose score contradicts the match result', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const bet = data.paperBankroll.settled[0]
+  bet.score = [99, 98]
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`settled paper bet score mismatch for ${bet.matchId}`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
