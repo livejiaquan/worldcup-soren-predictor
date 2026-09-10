@@ -213,6 +213,8 @@ for (const row of leaderboard) {
   assert(!leaderboardIds.has(row.id), `duplicate leaderboard entry ${row.id}`)
   leaderboardIds.add(row.id)
   assert(row.accuracy >= 0 && row.accuracy <= 1, `leaderboard accuracy out of range for ${row.id}: ${row.accuracy}`)
+  const expectedAccuracy = row.total ? row.correct / row.total : 0
+  assert(Math.abs(row.accuracy - expectedAccuracy) <= Number.EPSILON, `leaderboard accuracy mismatch for ${row.id}`)
   assert(row.total === finishedMatches, `leaderboard total mismatch for ${row.id}`)
 }
 
