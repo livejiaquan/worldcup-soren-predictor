@@ -218,6 +218,13 @@ for (const row of leaderboard) {
   assert(row.total === finishedMatches, `leaderboard total mismatch for ${row.id}`)
 }
 
+const rankedLeaderboard = [...leaderboard].sort((a, b) => b.points - a.points || b.correct - a.correct)
+for (const [index, row] of leaderboard.entries()) {
+  const expected = rankedLeaderboard[index]
+  assert(row.rank === index + 1, `leaderboard rank mismatch for ${row.id}: expected ${index + 1}, got ${row.rank}`)
+  assert(row.id === expected?.id, `leaderboard order mismatch at rank ${index + 1}: expected ${expected?.id}, got ${row.id}`)
+}
+
 for (const bet of data.paperBankroll?.settled || []) {
   const match = matches.find((item) => item.id === bet.matchId)
   assert(match?.status === 'finished', `settled paper bet points to unfinished match ${bet.matchId}`)

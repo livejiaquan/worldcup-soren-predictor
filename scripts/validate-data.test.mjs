@@ -343,6 +343,26 @@ test('rejects leaderboard accuracy inconsistent with correct and total counts', 
   }
 })
 
+test('rejects leaderboard order that contradicts points and correct picks', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  ;[data.leaderboard[0], data.leaderboard[1]] = [data.leaderboard[1], data.leaderboard[0]]
+  data.leaderboard.forEach((row, index) => { row.rank = index + 1 })
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.match(result.stderr, /leaderboard order mismatch at rank 1: expected rating, got soren/)
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
 test('rejects a settled paper bet whose score contradicts the match result', async () => {
   const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
   const fixture = path.join(root, 'worldcup.json')
