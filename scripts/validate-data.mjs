@@ -1,4 +1,10 @@
 import { readFile } from 'node:fs/promises'
+import {
+  TEAM_PRIORS,
+  computeStandings,
+  predictMatch,
+  scorePrediction,
+} from '../src/lib/predictionEngine.js'
 
 const FINAL_RESULT_GRACE_MINUTES = 150
 const SCORE_TOLERANCE = 0.02
@@ -30,6 +36,48 @@ function probabilitySum(prediction) {
 
 function assert(condition, message) {
   if (!condition) errors.push(message)
+}
+
+function ratingBaseline(match) {
+  const rating1 = TEAM_PRIORS[match.team1] ?? 67
+  const rating2 = TEAM_PRIORS[match.team2] ?? 67
+  if (Math.abs(rating1 - rating2) < 2) return { pick: '平手', score: '1-1' }
+  return rating1 > rating2
+    ? { pick: match.team1, score: '2-1' }
+    : { pick: match.team2, score: '1-2' }
+}
+
+function replayLeaderboard(groups, matches) {
+  const rows = new Map([
+    ['soren', { points: 0, correct: 0, exact: 0, total: 0 }],
+    ['rating', { points: 0, correct: 0, exact: 0, total: 0 }],
+    ['draw', { points: 0, correct: 0, exact: 0, total: 0 }],
+  ])
+  const finishedSoFar = []
+  for (const match of matches) {
+    if (match.status !== 'finished') continue
+    const standings = computeStandings(groups, finishedSoFar.map((item) => ({
+      team1: item.team1,
+      team2: item.team2,
+      score: { ft: item.score },
+    })))
+    const candidates = [
+      ['soren', predictMatch(match, standings)],
+      ['rating', ratingBaseline(match)],
+      ['draw', { pick: '平手', score: '1-1' }],
+    ]
+    for (const [id, prediction] of candidates) {
+      const result = scorePrediction(prediction, match)
+      if (!result) continue
+      const row = rows.get(id)
+      row.total += 1
+      row.points += result.points
+      if (result.pick) row.correct += 1
+      if (result.exact) row.exact += 1
+    }
+    finishedSoFar.push(match)
+  }
+  return rows
 }
 
 const generatedMs = Date.parse(data.generatedAt || '')
@@ -208,6 +256,12 @@ for (const group of groups) {
 assert(seenTeams.size === 48, `expected 48 unique group teams, got ${seenTeams.size}`)
 
 const leaderboardIds = new Set()
+let replayedLeaderboard = null
+try {
+  replayedLeaderboard = replayLeaderboard(groups, matches)
+} catch (error) {
+  errors.push(`could not replay leaderboard: ${error.message}`)
+}
 for (const row of leaderboard) {
   assert(row.id && typeof row.points === 'number' && typeof row.accuracy === 'number', `bad leaderboard row ${JSON.stringify(row)}`)
   assert(!leaderboardIds.has(row.id), `duplicate leaderboard entry ${row.id}`)
@@ -216,6 +270,13 @@ for (const row of leaderboard) {
   const expectedAccuracy = row.total ? row.correct / row.total : 0
   assert(Math.abs(row.accuracy - expectedAccuracy) <= Number.EPSILON, `leaderboard accuracy mismatch for ${row.id}`)
   assert(row.total === finishedMatches, `leaderboard total mismatch for ${row.id}`)
+  const replayed = replayedLeaderboard?.get(row.id)
+  assert(replayed, `unknown leaderboard model ${row.id}`)
+  for (const field of ['points', 'correct', 'exact', 'total']) {
+    if (replayed) {
+      assert(row[field] === replayed[field], `leaderboard ${field} does not match deterministic replay for ${row.id}: expected ${replayed[field]}, got ${row[field]}`)
+    }
+  }
 }
 
 const rankedLeaderboard = [...leaderboard].sort((a, b) => b.points - a.points || b.correct - a.correct)
