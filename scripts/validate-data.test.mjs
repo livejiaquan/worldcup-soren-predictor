@@ -363,6 +363,26 @@ test('rejects leaderboard order that contradicts points and correct picks', asyn
   }
 })
 
+test('rejects leaderboard scores that do not match deterministic replay', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const row = data.leaderboard.find((item) => item.id === 'rating')
+  row.points += 1
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.match(result.stderr, /leaderboard points does not match deterministic replay for rating: expected 97, got 98/)
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
 test('rejects a settled paper bet whose score contradicts the match result', async () => {
   const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
   const fixture = path.join(root, 'worldcup.json')
