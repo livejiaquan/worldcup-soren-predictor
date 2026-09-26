@@ -402,3 +402,108 @@ test('rejects a settled paper bet whose score contradicts the match result', asy
     await rm(root, { recursive: true, force: true })
   }
 })
+
+test('rejects a settled paper bet whose status contradicts the match outcome', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const bet = data.paperBankroll.settled.find((item) => item.status === 'won')
+  assert.ok(bet, 'fixture must contain a winning settled paper bet')
+  bet.status = 'lost'
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`settled paper bet status mismatch for ${bet.matchId}: expected won, got lost`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
+test('rejects a settled paper bet whose profit contradicts stake and odds', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const bet = data.paperBankroll.settled.find((item) => item.status === 'won')
+  assert.ok(bet, 'fixture must contain a winning settled paper bet')
+  bet.profit += 1
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`settled paper bet profit mismatch for ${bet.matchId}`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
+test('rejects a settled paper bet with an unknown outcome', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const bet = data.paperBankroll.settled.find((item) => item.status === 'lost')
+  assert.ok(bet, 'fixture must contain a losing settled paper bet')
+  bet.outcome = 'HOME'
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`settled paper bet has invalid outcome for ${bet.matchId}: HOME`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
+test('rejects a settled paper bet with a non-numeric stake', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const bet = data.paperBankroll.settled[0]
+  bet.stake = String(bet.stake)
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`settled paper bet has invalid stake for ${bet.matchId}`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
+test('rejects a settled paper bet with odds outside the producer range', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const bet = data.paperBankroll.settled.find((item) => item.status === 'won')
+  assert.ok(bet, 'fixture must contain a winning settled paper bet')
+  bet.decimalOdds = 0.5
+  bet.profit = Number((bet.stake * (bet.decimalOdds - 1)).toFixed(2))
+  await writeFile(fixture, JSON.stringify(data))
+
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], {
+      cwd: projectRoot,
+      encoding: 'utf8',
+    })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`settled paper bet has invalid decimal odds for ${bet.matchId}: 0.5`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})

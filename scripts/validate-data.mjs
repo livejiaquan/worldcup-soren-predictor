@@ -34,6 +34,13 @@ function probabilitySum(prediction) {
   return Number(probabilities.home || 0) + Number(probabilities.draw || 0) + Number(probabilities.away || 0)
 }
 
+function actualOutcome(match) {
+  if (!isFiniteScore(match?.score)) return null
+  if (match.score[0] > match.score[1]) return 'home'
+  if (match.score[1] > match.score[0]) return 'away'
+  return 'draw'
+}
+
 function assert(condition, message) {
   if (!condition) errors.push(message)
 }
@@ -294,6 +301,19 @@ for (const bet of data.paperBankroll?.settled || []) {
       && bet.score[0] === match.score[0] && bet.score[1] === match.score[1],
     `settled paper bet score mismatch for ${bet.matchId}`,
   )
+  const validOutcome = ['home', 'draw', 'away'].includes(bet.outcome)
+  assert(validOutcome, `settled paper bet has invalid outcome for ${bet.matchId}: ${bet.outcome}`)
+  const expectedStatus = validOutcome && actualOutcome(match) === bet.outcome ? 'won' : 'lost'
+  assert(bet.status === expectedStatus, `settled paper bet status mismatch for ${bet.matchId}: expected ${expectedStatus}, got ${bet.status}`)
+  const validStake = typeof bet.stake === 'number' && Number.isFinite(bet.stake) && bet.stake >= 1 && bet.stake <= 8
+  assert(validStake, `settled paper bet has invalid stake for ${bet.matchId}: ${bet.stake}`)
+  const validOdds = typeof bet.decimalOdds === 'number' && Number.isFinite(bet.decimalOdds)
+    && bet.decimalOdds >= 1.25 && bet.decimalOdds <= 7.5
+  assert(validOdds, `settled paper bet has invalid decimal odds for ${bet.matchId}: ${bet.decimalOdds}`)
+  const expectedProfit = Number((expectedStatus === 'won'
+    ? bet.stake * (bet.decimalOdds - 1)
+    : -bet.stake).toFixed(2))
+  assert(bet.profit === expectedProfit, `settled paper bet profit mismatch for ${bet.matchId}: expected ${expectedProfit}, got ${bet.profit}`)
 }
 for (const bet of [...(data.paperBankroll?.pending || []), ...(data.paperBankroll?.watchlist || [])]) {
   const match = matches.find((item) => item.id === bet.matchId)
