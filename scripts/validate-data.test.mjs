@@ -507,3 +507,41 @@ test('rejects a settled paper bet with odds outside the producer range', async (
     await rm(root, { recursive: true, force: true })
   }
 })
+
+for (const [field, mutate, message] of [
+  ['totalValue', (paper) => { paper.totalValue += 1 }, /paper totalValue mismatch/],
+  ['roi', (paper) => { paper.roi += 0.1 }, /paper ROI mismatch/],
+  ['openStake', (paper) => { paper.openStake += 1 }, /paper openStake mismatch/],
+  ['initialBankroll', (paper) => { paper.initialBankroll = 0 }, /paper initialBankroll must be positive/],
+]) {
+  test(`rejects inconsistent paper bankroll ${field}`, async () => {
+    const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+    const fixture = path.join(root, 'worldcup.json')
+    const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+    mutate(data.paperBankroll)
+    await writeFile(fixture, JSON.stringify(data))
+    try {
+      const result = spawnSync(process.execPath, [validator, fixture], { cwd: projectRoot, encoding: 'utf8' })
+      assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+      assert.match(result.stderr, message)
+    } finally {
+      await rm(root, { recursive: true, force: true })
+    }
+  })
+}
+
+test('rejects duplicate paper bets across settled and pending lists', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const bet = data.paperBankroll.settled[0]
+  data.paperBankroll.pending.push({ ...bet, status: 'pending' })
+  await writeFile(fixture, JSON.stringify(data))
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], { cwd: projectRoot, encoding: 'utf8' })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`duplicate paper bet for ${bet.matchId}`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
