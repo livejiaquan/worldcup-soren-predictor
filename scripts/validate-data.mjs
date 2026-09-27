@@ -293,6 +293,30 @@ for (const [index, row] of leaderboard.entries()) {
   assert(row.id === expected?.id, `leaderboard order mismatch at rank ${index + 1}: expected ${expected?.id}, got ${row.id}`)
 }
 
+const paper = data.paperBankroll
+if (paper) {
+  const validInitial = typeof paper.initialBankroll === 'number' && Number.isFinite(paper.initialBankroll) && paper.initialBankroll > 0
+  const validBankroll = typeof paper.bankroll === 'number' && Number.isFinite(paper.bankroll)
+  assert(validInitial, 'paper initialBankroll must be positive and finite')
+  assert(validBankroll, 'paper bankroll must be finite')
+  if (validInitial && validBankroll) {
+    assert(paper.totalValue === Number(paper.bankroll.toFixed(2)), 'paper totalValue mismatch')
+    assert(paper.roi === Number(((paper.bankroll - paper.initialBankroll) / paper.initialBankroll).toFixed(3)), 'paper ROI mismatch')
+  }
+  const pending = paper.pending || []
+  const validPendingStakes = Array.isArray(pending) && pending.every((bet) =>
+    typeof bet.stake === 'number' && Number.isFinite(bet.stake) && bet.stake >= 1 && bet.stake <= 8)
+  assert(validPendingStakes, 'paper pending stakes invalid')
+  if (validPendingStakes) {
+    assert(paper.openStake === Number(pending.reduce((sum, bet) => sum + bet.stake, 0).toFixed(2)), 'paper openStake mismatch')
+  }
+  const betIds = new Set()
+  for (const bet of [...(paper.settled || []), ...pending, ...(paper.watchlist || [])]) {
+    assert(!betIds.has(bet.matchId), `duplicate paper bet for ${bet.matchId}`)
+    betIds.add(bet.matchId)
+  }
+}
+
 for (const bet of data.paperBankroll?.settled || []) {
   const match = matches.find((item) => item.id === bet.matchId)
   assert(match?.status === 'finished', `settled paper bet points to unfinished match ${bet.matchId}`)
