@@ -87,6 +87,51 @@ test('rejects an unknown prediction id even when the prediction count matches', 
   }
 })
 
+test('rejects a prediction pick that is not a match outcome', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  data.predictions.m001.pick = 'Not a participant'
+  await writeFile(fixture, JSON.stringify(data))
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], { cwd: projectRoot, encoding: 'utf8' })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.match(result.stderr, /invalid prediction pick for m001: Not a participant/)
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
+test('rejects a malformed predicted score', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  data.predictions.m001.score = 'unknown'
+  await writeFile(fixture, JSON.stringify(data))
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], { cwd: projectRoot, encoding: 'utf8' })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.match(result.stderr, /invalid predicted score for m001: unknown/)
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
+test('rejects a predicted score with a trailing newline', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  data.predictions.m001.score = '1-0\n'
+  await writeFile(fixture, JSON.stringify(data))
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], { cwd: projectRoot, encoding: 'utf8' })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.match(result.stderr, /invalid predicted score for m001/)
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
 test('rejects null values in a finished match score', async () => {
   const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
   const fixture = path.join(root, 'worldcup.json')

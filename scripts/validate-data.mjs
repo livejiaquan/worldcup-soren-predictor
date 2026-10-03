@@ -170,6 +170,10 @@ for (const match of matches) {
 
   const pred = predictions[match.id]
   assert(pred && pred.probabilities && typeof pred.confidence === 'number', `bad prediction for ${match.id}`)
+  if (pred) {
+    assert([match.team1, match.team2, '平手'].includes(pred.pick), `invalid prediction pick for ${match.id}: ${pred.pick}`)
+    assert(typeof pred.score === 'string' && /^\d+-\d+$/.test(pred.score), `invalid predicted score for ${match.id}: ${pred.score}`)
+  }
   if (pred?.probabilities) {
     for (const outcome of ['home', 'draw', 'away']) {
       const probability = pred.probabilities[outcome]
