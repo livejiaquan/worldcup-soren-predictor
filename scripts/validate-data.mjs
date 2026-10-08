@@ -98,6 +98,7 @@ const groups = Array.isArray(data.groups) ? data.groups : []
 const predictions = data.predictions && typeof data.predictions === 'object' ? data.predictions : {}
 const leaderboard = Array.isArray(data.leaderboard) ? data.leaderboard : []
 const dataQuality = data.dataQuality && typeof data.dataQuality === 'object' ? data.dataQuality : null
+const groupTeams = new Map(groups.map((group) => [group.name, group.teams]))
 
 assert(matches.length >= 100, `expected at least 100 matches, got ${matches.length}`)
 assert(groups.length === 12, `expected 12 groups, got ${groups.length}`)
@@ -122,6 +123,12 @@ for (const match of matches) {
   assert(['scheduled', 'finished'].includes(match.status), `bad match status ${match.status} for ${match.id}`)
   assert(match.team1 && match.team2, `bad match identity ${JSON.stringify(match)}`)
   assert(match.team1 !== match.team2, `match has identical teams ${match.id}`)
+  if (match.group) {
+    const teams = groupTeams.get(match.group)
+    assert(teams, `unknown group ${match.group} for ${match.id}`)
+    assert(Array.isArray(teams) && teams.includes(match.team1) && teams.includes(match.team2),
+      `${match.status} group match ${match.id} has a team outside ${match.group}`)
+  }
   assert(match.source && String(match.source).includes('openfootball/worldcup.json'), `missing source attribution for ${match.id}`)
   assert(match.resultTrust, `missing resultTrust for ${match.id}`)
 
