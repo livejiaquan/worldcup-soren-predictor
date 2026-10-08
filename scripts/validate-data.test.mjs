@@ -331,6 +331,40 @@ test('rejects a finished group match whose participant is outside the group', as
   }
 })
 
+test('rejects a group fixture assigned to an unknown group', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const match = data.matches.find((item) => item.group)
+  match.group = 'Group Z'
+  await writeFile(fixture, JSON.stringify(data))
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], { cwd: projectRoot, encoding: 'utf8' })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`unknown group Group Z for ${match.id}`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
+test('rejects a scheduled group fixture with a participant outside its group', async () => {
+  const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
+  const fixture = path.join(root, 'worldcup.json')
+  const data = JSON.parse(await readFile(path.join(projectRoot, 'public/data/worldcup.json'), 'utf8'))
+  const match = data.matches.find((item) => item.group)
+  match.status = 'scheduled'
+  match.score = null
+  match.team1 = data.groups.find((group) => group.name !== match.group).teams[0]
+  await writeFile(fixture, JSON.stringify(data))
+  try {
+    const result = spawnSync(process.execPath, [validator, fixture], { cwd: projectRoot, encoding: 'utf8' })
+    assert.notEqual(result.status, 0, `validator unexpectedly passed:\n${result.stdout}`)
+    assert.ok(result.stderr.includes(`scheduled group match ${match.id} has a team outside ${match.group}`))
+  } finally {
+    await rm(root, { recursive: true, force: true })
+  }
+})
+
 test('rejects duplicate leaderboard entries', async () => {
   const root = await mkdtemp(path.join(tmpdir(), 'worldcup-validation-'))
   const fixture = path.join(root, 'worldcup.json')
