@@ -110,6 +110,7 @@ if (data.paperBankroll && data.paperBankroll.disclaimer && !data.paperBankroll.d
 }
 
 const matchIds = new Set()
+const groupPairings = new Map()
 let finishedMatches = 0
 let scheduledMatches = 0
 const lifecycleCounts = {}
@@ -128,6 +129,11 @@ for (const match of matches) {
     assert(teams, `unknown group ${match.group} for ${match.id}`)
     assert(Array.isArray(teams) && teams.includes(match.team1) && teams.includes(match.team2),
       `${match.status} group match ${match.id} has a team outside ${match.group}`)
+    const pair = [match.team1, match.team2].sort().join(' / ')
+    const seen = groupPairings.get(match.group) || new Set()
+    assert(!seen.has(pair), `duplicate group pairing ${pair} in ${match.group}`)
+    seen.add(pair)
+    groupPairings.set(match.group, seen)
   }
   assert(match.source && String(match.source).includes('openfootball/worldcup.json'), `missing source attribution for ${match.id}`)
   assert(match.resultTrust, `missing resultTrust for ${match.id}`)
@@ -210,6 +216,7 @@ const seenTeams = new Set()
 for (const group of groups) {
   assert(group.name && /^Group [A-L]$/.test(group.name), `bad group name ${group.name}`)
   assert(Array.isArray(group.teams) && group.teams.length === 4, `expected 4 teams in ${group.name}`)
+  assert(groupPairings.get(group.name)?.size === 6, `expected 6 unique pairings in ${group.name}`)
   const expectedStandings = new Map((group.teams || []).map((team) => [team, {
     played: 0,
     won: 0,
