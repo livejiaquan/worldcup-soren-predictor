@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict'
-import { mkdtemp, rm, writeFile } from 'node:fs/promises'
+import { mkdtemp, readFile, rm, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import path from 'node:path'
 import { spawnSync } from 'node:child_process'
@@ -7,6 +7,18 @@ import test from 'node:test'
 import { fileURLToPath } from 'node:url'
 
 const reporter = fileURLToPath(new URL('./archive-summary.mjs', import.meta.url))
+
+test('labels the archived settled list as a recent sample, not a tournament total', async () => {
+  const projectRoot = fileURLToPath(new URL('..', import.meta.url))
+  const archive = path.join(projectRoot, 'public/data/worldcup.json')
+  const data = JSON.parse(await readFile(archive, 'utf8'))
+  assert.equal(data.paperBankroll.settled.length, 12, 'fixture should contain the capped recent list')
+
+  const result = spawnSync(process.execPath, [reporter, archive], { cwd: projectRoot, encoding: 'utf8' })
+  assert.equal(result.status, 0, result.stderr)
+  assert.match(result.stdout, /Recent settled bets shown: 12; open stake:/)
+  assert.doesNotMatch(result.stdout, /\n- Settled bets: 12;/)
+})
 
 test('rejects an incomplete tournament archive', async () => {
   const root = await mkdtemp(path.join(tmpdir(), 'worldcup-archive-'))

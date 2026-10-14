@@ -22,7 +22,7 @@ npm run build
 npm run dev
 ```
 
-`npm run archive-summary` 會從 `public/data/worldcup.json` 產生封存摘要：冠軍、模型榜、紙上本金、高信心命中／翻車與最大比分誤差，方便收尾報告或檢查公開頁文案是否和資料一致。
+`npm run archive-summary` 會從 `public/data/worldcup.json` 產生封存摘要：冠軍、模型榜、紙上本金、高信心命中／翻車與最大比分誤差，方便收尾報告或檢查公開頁文案是否和資料一致。紙上投注明細只保留最近 12 筆結算，摘要顯示的是保留筆數，不代表整屆總下注數；本金與 ROI 是產生資料時累計的結果。
 
 `npm run update-data` 會重新抓取上游資料並重算預測；封存期請只在需要處理官方更正時執行。
 
