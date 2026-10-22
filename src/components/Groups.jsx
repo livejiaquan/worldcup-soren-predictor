@@ -19,7 +19,7 @@ export default function Groups({ data, archive, lang, t }) {
           const groupRows = archive.rows.filter((r) => r.match.group === name)
           const hits = groupRows.filter((r) => r.hit).length
           return (
-            <section key={name} className="card group" aria-labelledby={`g-${letter}`}>
+            <section key={name} className="boxed group" aria-labelledby={`g-${letter}`}>
               <header className="group-head">
                 <h2 id={`g-${letter}`}>{t('groupName', { g: letter })}</h2>
                 <span className="muted num">{t('groupHits', { hits, n: groupRows.length })}</span>
