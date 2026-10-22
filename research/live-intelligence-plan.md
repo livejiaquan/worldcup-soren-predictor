@@ -4,7 +4,7 @@ Soren 的世界盃預測不能只靠靜態強弱與 Poisson。爆冷通常來自
 
 ## YouTube reference takeaways
 
-來源：`Fd4t35xAaGQ` transcript snapshot in `research/youtube/Fd4t35xAaGQ-transcript.txt`.
+來源：[YouTube `Fd4t35xAaGQ`](https://www.youtube.com/watch?v=Fd4t35xAaGQ)；連結與自行改寫的摘要見 `research/youtube/Fd4t35xAaGQ.md`（不保存逐字稿）。
 
 1. **naive LLM 會偏向傳統強隊**：沒有資料與 prompt design 時，模型多半只猜強隊，爆冷抓不到。
 2. **球員才是核心**：應追蹤球員能力、近 10 場狀態、位置對比、傷停、首發可能性。
