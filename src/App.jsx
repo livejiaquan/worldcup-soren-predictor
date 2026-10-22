@@ -51,7 +51,7 @@ function Skeleton({ t }) {
 
 function ErrorState({ t, message, onRetry }) {
   return (
-    <div className="card empty error" role="alert">
+    <div className="boxed empty error" role="alert">
       <Icon name="info" size={28} />
       <h1>{t('loadFail')}</h1>
       <p className="muted">{t('loadFailBody')}</p>

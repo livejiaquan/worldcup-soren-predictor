@@ -133,7 +133,7 @@ export default function Record({ data, archive, intel, lang, t, onOpen }) {
         <Leaderboard archive={archive} t={t} />
       </Section>
       <Section id="prob" title={t('probTitle')} sub={t('probSub')}>
-        <dl className="card kpis kpis-3">
+        <dl className="kpi-strip">
           <Stat label={t('rps')} value={num(s.rps, 3)} sub={t('rpsSub', { u: num(s.uniformRps, 3) })} tone="accent" />
           <Stat label={t('brier')} value={num(s.brier, 3)} sub={t('brierSub')} />
           <Stat label={t('goalError')} value={num(s.avgGoalError, 2)} sub={t('goalErrorSub')} />
