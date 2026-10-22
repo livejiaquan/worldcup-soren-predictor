@@ -29,6 +29,7 @@ export default function Matches({ archive, lang, t, onOpen, filters, setFilters 
         <h1>{t('tabs.matches')}</h1>
         <p className="lede">{t('matchesSub')}</p>
       </header>
+      <div className="matches-body">
       <div className="toolbar" role="search">
         <label className="field field-search">
           <span className="sr-only">{t('searchLabel')}</span>
@@ -53,7 +54,7 @@ export default function Matches({ archive, lang, t, onOpen, filters, setFilters 
       <p className="result-count" aria-live="polite">{t('showing', { n: rows.length })}</p>
 
       {rows.length === 0 ? (
-        <div className="card empty">
+        <div className="boxed empty">
           <Icon name="search" size={28} />
           <h2>{t('noResults')}</h2>
           <p className="muted">{t('noResultsBody')}</p>
@@ -71,6 +72,7 @@ export default function Matches({ archive, lang, t, onOpen, filters, setFilters 
           ))}
         </div>
       )}
+      </div>
     </>
   )
 }

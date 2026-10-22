@@ -1,46 +1,40 @@
 import { Icon, Meter, ProbBar, Section, Stat, Team, Verdict } from './ui.jsx'
-import { MatchRow, ScoreBox } from './MatchRow.jsx'
-import { pickText } from '../lib/view.js'
+import { MatchRow } from './MatchRow.jsx'
+import { pickText, wentToExtraTime } from '../lib/view.js'
 import { teamName } from '../lib/teams.js'
 import { STAGES } from '../lib/archive.js'
 import { fmtDateTime, fmtDay, money, pct, signedPct } from '../lib/format.js'
 
-function ChampionCard({ archive, lang, t, onOpen }) {
-  const { final, champion, runnerUp } = archive
+/** Supporting column of the hero: who won, and what Soren said before the final. */
+function Champion({ archive, lang, t, onOpen }) {
+  const { final, champion } = archive
   if (!final || !champion) return null
   const row = archive.rowById[final.id]
   const labels = [teamName(final.team1, lang), t('draw'), teamName(final.team2, lang)]
+  const loser = champion === final.team1 ? final.team2 : final.team1
+  const note = wentToExtraTime(final) ? ` · ${t('aet')}` : ''
+  const score = champion === final.team1 ? `${final.score[0]}–${final.score[1]}` : `${final.score[1]}–${final.score[0]}`
   return (
-    <article className="card champion" aria-labelledby="champion-title">
-      <div className="champion-top">
-        <span className="champion-badge"><Icon name="trophy" size={16} />{t('champion')}</span>
-        <span className="champion-date">{t('finalLabel')} · {fmtDay(final.kickoffUtc, lang)}</span>
-      </div>
+    <aside className="hero-side" aria-labelledby="champion-title">
+      <p className="champion-label"><Icon name="trophy" size={18} />{t('champion')}<span className="muted"> · {t('finalLabel')} {fmtDay(final.kickoffUtc, lang)}</span></p>
       <h2 id="champion-title" className="champion-name"><Team team={champion} lang={lang} size="lg" /></h2>
-      <div className="champion-final">
-        <Team team={final.team1} lang={lang} size="sm" winner={champion === final.team1} />
-        <ScoreBox match={final} t={t} size="sm" />
-        <Team team={final.team2} lang={lang} size="sm" align="end" winner={champion === final.team2} />
-      </div>
+      <p className="champion-final">{t('championLine', { score, loser: teamName(loser, lang) })}{note}</p>
       {row && (
         <div className="champion-call">
-          <div className="champion-call-head">
+          <p className="champion-call-head">
             <span>{t('sorenCall')}：<b>{pickText(row, lang)}</b> <span className="num">{pct(row.pickProb)}</span></span>
             <Verdict row={row} t={t} />
-          </div>
+          </p>
           <ProbBar probs={row.pred.probabilities} outcome={row.outcome} labels={labels} size="md" />
-          <div className="probbar-legend" aria-hidden="true">
+          <p className="probbar-legend" aria-hidden="true">
             <span>{labels[0]} {pct(row.pred.probabilities.home)}</span>
             <span>{labels[1]} {pct(row.pred.probabilities.draw)}</span>
             <span>{labels[2]} {pct(row.pred.probabilities.away)}</span>
-          </div>
+          </p>
         </div>
       )}
-      <div className="champion-foot">
-        <span className="muted">{t('runnerUp')}：{teamName(runnerUp, lang)}</span>
-        <button type="button" className="btn btn-secondary" onClick={() => onOpen(final.id)}>{t('viewMatch')}<Icon name="right" size={16} /></button>
-      </div>
-    </article>
+      <button type="button" className="btn btn-secondary" onClick={() => onOpen(final.id)}>{t('viewFinal')}<Icon name="right" size={16} /></button>
+    </aside>
   )
 }
 
@@ -49,11 +43,10 @@ function Kpis({ archive, t }) {
   const soren = archive.leaderboard.find((r) => r.id === 'soren')
   const l = archive.ledger
   return (
-    <dl className="card kpis">
-      <Stat label={t('kpiAccuracy')} value={pct(s.accuracy, 1)} sub={t('kpiAccuracySub', { hits: s.hits, n: s.n })} tone="accent" />
+    <dl className="kpi-strip">
       <Stat label={t('kpiExact')} value={s.exact} sub={t('kpiExactSub', { p: pct(s.exactRate, 1) })} />
       <Stat label={t('kpiPoints')} value={s.points} sub={t('kpiPointsSub', { rank: soren?.rank ?? '–' })} />
-      <Stat label={t('kpiBankroll')} value={money(l.bankroll)} sub={t('kpiBankrollSub', { roi: signedPct(l.roi) })} tone={l.pnl >= 0 ? 'hit' : 'miss'} />
+      <Stat label={t('kpiBankroll')} value={money(l.bankroll)} sub={t('kpiBankrollSub', { roi: signedPct(l.roi) })} />
     </dl>
   )
 }
@@ -142,19 +135,26 @@ function Notables({ archive, lang, t, onOpen }) {
   )
 }
 
-export function Hero({ data, archive, lang, t }) {
+/** First screen: one focal answer (the hit rate), the conclusion as h1, then supporting facts. */
+export function Hero({ data, archive, lang, t, onOpen }) {
   const ok = data.dataQuality?.status === 'pass'
+  const s = archive.summary
   return (
     <header className="hero">
-      <p className="eyebrow">{t('eyebrow')}</p>
-      <h1>{t('heroTitle', { n: archive.summary.n, hits: archive.summary.hits })}</h1>
-      <p className="lede">{t('heroLede')}</p>
-      <ul className="status-line">
-        <li className={ok ? 'status-ok' : 'status-warn'}><Icon name={ok ? 'check' : 'info'} size={15} />{ok ? t('verified') : t('needsReview')}</li>
-        <li>{t('finishedCount', { f: data.summary.finishedMatches, t: data.summary.totalMatches })}</li>
-        <li><time dateTime={data.generatedAt}>{t('snapshot', { time: fmtDateTime(data.generatedAt, lang) })}</time></li>
-        <li className="muted">{t('tzNote')}</li>
-      </ul>
+      <div className="hero-main">
+        <p className="eyebrow">{t('eyebrow')}</p>
+        <p className="focal">
+          <span className="focal-value num">{pct(s.accuracy, 1)}</span>
+          <span className="focal-label">{t('kpiAccuracy')}<span className="muted num">{t('kpiAccuracySub', { hits: s.hits, n: s.n })}</span></span>
+        </p>
+        <h1>{t('heroTitle', { n: s.n, hits: s.hits })}</h1>
+        <p className="lede">{t('heroLede')}</p>
+        <ul className="status-line">
+          <li className={ok ? 'status-ok' : 'status-warn'}><Icon name={ok ? 'check' : 'info'} size={16} />{ok ? t('verified') : t('needsReview')}</li>
+          <li><time dateTime={data.generatedAt}>{t('snapshot', { time: fmtDateTime(data.generatedAt, lang) })}</time></li>
+        </ul>
+      </div>
+      <Champion archive={archive} lang={lang} t={t} onOpen={onOpen} />
     </header>
   )
 }
@@ -162,18 +162,15 @@ export function Hero({ data, archive, lang, t }) {
 export default function Overview({ data, archive, lang, t, onOpen, onNavigate }) {
   return (
     <>
-      <Hero data={data} archive={archive} lang={lang} t={t} />
-      <div className="overview-top">
-        <ChampionCard archive={archive} lang={lang} t={t} onOpen={onOpen} />
-        <Kpis archive={archive} t={t} />
-      </div>
-      <ResultGrid archive={archive} lang={lang} t={t} onBrowse={() => onNavigate('matches')} />
+      <Hero data={data} archive={archive} lang={lang} t={t} onOpen={onOpen} />
+      <Kpis archive={archive} t={t} />
       <div className="two-col">
         <StageAccuracy archive={archive} t={t} />
         <Section id="models" title={t('modelsTitle')} sub={t('modelsSub')}>
           <Leaderboard archive={archive} t={t} />
         </Section>
       </div>
+      <ResultGrid archive={archive} lang={lang} t={t} onBrowse={() => onNavigate('matches')} />
       <Notables archive={archive} lang={lang} t={t} onOpen={onOpen} />
     </>
   )
