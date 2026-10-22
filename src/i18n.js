@@ -15,8 +15,10 @@ const zh = {
 
   eyebrow: '2026 FIFA 世界盃 · 賽事已結束',
   heroTitle: 'Soren 賽前預測了全部 {n} 場，猜中 {hits} 場勝負',
-  heroLede: '這是一個公開的 Poisson 進球模型實驗。每場預測都只用「開賽前已知的資料」重算，再和實際結果逐場對照，猜錯的也一併留下。',
-  snapshot: '資料快照 {time}',
+  championLine: '決賽 {score} 擊敗{loser}',
+  viewFinal: '看決賽細節',
+  heroLede: '每場預測只用開賽前已知的資料重算，再和實際比分逐場對照，猜錯的也留著。',
+  snapshot: '資料快照 {time}（台北時間）',
   tzNote: '時間皆為台北時間',
   verified: '資料驗證通過',
   needsReview: '資料需要覆核',
@@ -34,7 +36,7 @@ const zh = {
   viewMatch: '看這場細節',
 
   kpiAccuracy: '勝負命中率',
-  kpiAccuracySub: '{hits}/{n} 場',
+  kpiAccuracySub: '{hits} / {n} 場',
   kpiExact: '比分全中',
   kpiExactSub: '佔 {p}',
   kpiPoints: '積分',
@@ -181,8 +183,10 @@ const en = {
 
   eyebrow: 'FIFA World Cup 2026 · Tournament complete',
   heroTitle: 'Soren predicted all {n} matches before kickoff and called {hits} results',
-  heroLede: 'A public Poisson goal-model experiment. Every prediction is replayed using only what was known before kickoff, then compared with the real result — misses included.',
-  snapshot: 'Data snapshot {time}',
+  championLine: 'Beat {loser} {score} in the final',
+  viewFinal: 'Open the final',
+  heroLede: 'Every prediction is replayed with only pre-kickoff data, then checked against the real score — misses included.',
+  snapshot: 'Data snapshot {time} (Taipei)',
   tzNote: 'All times in Taipei (UTC+8)',
   verified: 'Data validated',
   needsReview: 'Data needs review',
@@ -200,7 +204,7 @@ const en = {
   viewMatch: 'Match details',
 
   kpiAccuracy: 'Result accuracy',
-  kpiAccuracySub: '{hits}/{n} matches',
+  kpiAccuracySub: '{hits} / {n} matches',
   kpiExact: 'Exact scores',
   kpiExactSub: '{p} of matches',
   kpiPoints: 'Points',
