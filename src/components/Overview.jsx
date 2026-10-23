@@ -55,7 +55,7 @@ function ChampionPane({ archive, lang, t, onOpen }) {
   const score = champion === final.team1 ? `${final.score[0]}–${final.score[1]}` : `${final.score[1]}–${final.score[0]}`
   return (
     <div className="champ">
-      <p className="champ-label"><Icon name="trophy" size={18} />{t('champion')}<span className="muted"> · {t('finalLabel')} {fmtDay(final.kickoffUtc, lang)}</span></p>
+      <p className="champ-label"><Icon name="trophy" size={20} />{t('champion')}<span className="muted"> · {t('finalLabel')} {fmtDay(final.kickoffUtc, lang)}</span></p>
       <p className="champ-name"><Team team={champion} lang={lang} size="lg" /></p>
       <p className="champ-line">{t('championLine', { score, loser: teamName(runnerUp, lang) })}{wentToExtraTime(final) ? ` · ${t('aet')}` : ''}</p>
       {row && (

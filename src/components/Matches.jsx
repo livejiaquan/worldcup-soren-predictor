@@ -33,7 +33,7 @@ export default function Matches({ archive, lang, t, onOpen, filters, setFilters 
       <div className="toolbar" role="search">
         <label className="field field-search">
           <span className="sr-only">{t('searchLabel')}</span>
-          <Icon name="search" size={18} />
+          <Icon name="search" size={20} />
           <input type="search" value={draft} placeholder={t('searchPlaceholder')} autoComplete="off" enterKeyHint="search"
             onChange={(e) => { setDraft(e.target.value); update({ query: e.target.value }) }} />
         </label>
@@ -55,7 +55,7 @@ export default function Matches({ archive, lang, t, onOpen, filters, setFilters 
 
       {rows.length === 0 ? (
         <div className="boxed empty">
-          <Icon name="search" size={28} />
+          <Icon name="search" size={24} />
           <h2>{t('noResults')}</h2>
           <p className="muted">{t('noResultsBody')}</p>
           {dirty && <button type="button" className="btn btn-primary" onClick={clear}>{t('clearFilters')}</button>}
