@@ -8,7 +8,7 @@
 
 - 104 / 104 場賽事已完賽
 - 冠軍：Spain（決賽 1–0 Argentina）
-- 公開封存站：<https://worldcup.kyasen.com/>
+- 線上 demo：<https://worldcup.kyasen.com/>
 - 封存資料快照：2026-07-20
 
 ## 網站介面
@@ -17,7 +17,21 @@
 
 頁面上的每場預測都是**賽前重放**：只用該場開賽前已完賽的結果重算（與 `buildLeaderboard` 和 `validate-data` 相同的流程），所以命中數與記分板一致（64/104）。`worldcup.json` 裡的 `predictions` 與 `paperBankroll` 是用終局戰績重算的版本，帶有後見之明，介面不直接使用；`scripts/archive-view.test.mjs` 會檢查這兩件事。
 
-設計與研究文件：[`docs/ux-research.md`](docs/ux-research.md)、[`docs/design-research.md`](docs/design-research.md)、截圖在 [`docs/screenshots/`](docs/screenshots/)。版面參考 Opta Analyst 世界盃 hub：參考截圖、量到的 token 與並排對照圖在 [`docs/references/`](docs/references/)。
+![桌面版首屏](docs/screenshots/first-screen-1440-light.png)
+
+<img src="docs/screenshots/first-screen-390-light.png" alt="手機版首屏" width="320">
+
+設計與研究筆記：[`docs/ux-research.md`](docs/ux-research.md)（使用者分析）、[`docs/design-research.md`](docs/design-research.md)（同類產品、視覺標準、icon 與品牌）。
+
+## 專案結構
+
+```
+src/        React 前端（components/、lib/ 含預測引擎與封存檢視邏輯）
+scripts/    資料更新、驗證、封存摘要與其測試
+data/       人工結果更正（result-overrides.json）
+public/     靜態資源與資料來源檔
+docs/       建置輸出（GitHub Pages）、設計筆記與截圖
+```
 
 ## Local commands
 
@@ -55,4 +69,4 @@ git status --short
 
 ## License
 
-程式碼以 [MIT](LICENSE) 授權。賽程資料來自 openfootball（CC0）；`research/` 中引用的外部影片只保留連結與自行撰寫的摘要。
+程式碼以 [MIT](LICENSE) 授權。賽程資料來自 openfootball（CC0）。

@@ -1,9 +1,16 @@
 {
   "name": "worldcup-soren-predictor",
+  "description": "World Cup 2026 prediction dashboard: a Poisson-model forecast scored against actual results (archived read-only).",
+  "author": "Lim Jia Quan",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/livejiaquan/worldcup-soren-predictor.git"
+  },
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://livejiaquan.github.io/worldcup-soren-predictor/",
+  "homepage": "https://worldcup.kyasen.com/",
   "scripts": {
     "dev": "vite",
     "update-data": "node scripts/update-data.mjs",
