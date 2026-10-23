@@ -81,18 +81,18 @@ export function ProbBar({ probs, outcome, labels, size = 'sm', showValues = fals
   )
 }
 
-export function Section({ id, title, sub, action, children, className = '' }) {
+export function Section({ id, title, sub, action, children, className = '', tone = '' }) {
   const headingId = id ? `${id}-title` : undefined
   return (
-    <section className={`section ${className}`.trim()} aria-labelledby={headingId}>
-      <header className="section-head">
-        <div>
-          <h2 id={headingId}>{title}</h2>
-          {sub && <p className="section-sub">{sub}</p>}
-        </div>
+    <section className={`ocard ${tone ? `ocard-${tone}` : ''} ${className}`.trim()} aria-labelledby={headingId}>
+      <header className="ocard-head">
+        <h2 id={headingId}>{title}</h2>
         {action}
       </header>
-      {children}
+      <div className="ocard-body">
+        {sub && <p className="section-sub">{sub}</p>}
+        {children}
+      </div>
     </section>
   )
 }

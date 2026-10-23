@@ -3,6 +3,7 @@ import './styles.css'
 import { translator } from './i18n.js'
 import { buildArchive } from './lib/archive.js'
 import { Icon } from './components/ui.jsx'
+import { fmtDateTime } from './lib/format.js'
 import Overview from './components/Overview.jsx'
 import Matches from './components/Matches.jsx'
 import { filterRows } from './lib/view.js'
@@ -40,7 +41,8 @@ function Skeleton({ t }) {
       <div className="sk sk-eyebrow" />
       <div className="sk sk-title" />
       <div className="sk sk-line" />
-      <div className="overview-top">
+      <div className="three-col">
+        <div className="sk sk-card" />
         <div className="sk sk-card" />
         <div className="sk sk-card" />
       </div>
@@ -142,30 +144,45 @@ export default function App() {
   return (
     <>
       <a className="skip-link" href="#main">{t('skip')}</a>
-      <header className="topbar">
-        <div className="topbar-inner">
-          <a className="brand" href="#/overview" aria-label={t('brand')}>
-            <svg className="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" /><circle cx="16" cy="16" r="8.5" /><path d="M16 11.2l4.3 3.1-1.6 5h-5.4l-1.6-5z" /></svg>
+      <header className="site-head">
+        <div className="navbar">
+          <a className="brand" href="#/overview">
+            <svg className="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" /><circle cx="16" cy="16" r="8.5" /><path d="M16 11.2l4.3 3.1-1.6 5h-5.4l-1.6-5z" /></svg>
             <span className="brand-text"><b>{t('brand')}</b><span>{t('brandSub')}</span></span>
           </a>
-          <div className="topbar-actions">
-            <button type="button" className="icon-btn" onClick={() => setLang(lang === 'zh' ? 'en' : 'zh')} aria-label={t('langLabel')}>
-              <span className="lang-label">{t('langToggle')}</span>
-            </button>
-            <button type="button" className="icon-btn" onClick={cycleTheme} aria-label={t('theme.label', { mode: t(`theme.${theme}`) })} title={t(`theme.${theme}`)}>
-              <Icon name={themeIcon} size={20} />
-            </button>
+          <ul className="navbar-links">
+            <li><a href="#/record">{t('navMethod')}</a></li>
+            <li><a href="https://github.com/livejiaquan/worldcup-soren-predictor" target="_blank" rel="noreferrer">GitHub</a></li>
+          </ul>
+          <div className="navbar-actions">
+            <button type="button" className="icon-btn" onClick={() => setLang(lang === 'zh' ? 'en' : 'zh')} aria-label={`${t('langToggle')} · ${t('langLabel')}`}><span className="lang-label">{t('langToggle')}</span></button>
+            <button type="button" className="icon-btn" onClick={cycleTheme} aria-label={t('theme.label', { mode: t(`theme.${theme}`) })} title={t(`theme.${theme}`)}><Icon name={themeIcon} size={20} /></button>
           </div>
         </div>
-        <nav className="tabs" aria-label={t('brand')}>
-          <ul className="tabs-inner">
-            {TABS.map((tab) => (
-              <li key={tab}>
-                <a href={`#/${tab}`} className={route.tab === tab ? 'is-active' : ''} aria-current={route.tab === tab ? 'page' : undefined}>{t(`tabs.${tab}`)}</a>
-              </li>
-            ))}
-          </ul>
-        </nav>
+        <ul className="strip" aria-live="polite">
+          {state.status === 'ready' && state.data ? (
+            <>
+              <li className={state.data.dataQuality?.status === 'pass' ? 'strip-ok' : 'strip-warn'}><span className="pill">{state.data.dataQuality?.status === 'pass' ? t('verified') : t('needsReview')}</span></li>
+              <li>{t('finishedCount', { f: state.data.summary.finishedMatches, t: state.data.summary.totalMatches })}</li>
+              <li><time dateTime={state.data.generatedAt}>{t('snapshot', { time: fmtDateTime(state.data.generatedAt, lang) })}</time></li>
+            </>
+          ) : (
+            <li><span className="pill pill-muted">{state.status === 'error' ? t('loadFail') : t('loading')}</span></li>
+          )}
+        </ul>
+        <div className="hub">
+          <div className="hub-title">
+            <span className="hub-badge" aria-hidden="true">2026</span>
+            <div><p className="hub-h1" role="heading" aria-level="1">{t('hubTitle')}</p><p className="hub-sub muted">{t('hubSub')}</p></div>
+          </div>
+          <nav className="tabs" aria-label={t('brand')}>
+            <ul className="tabs-inner">
+              {TABS.map((tab) => (
+                <li key={tab}><a href={`#/${tab}`} className={route.tab === tab ? 'is-active' : ''} aria-current={route.tab === tab ? 'page' : undefined}>{t(`tabs.${tab}`)}</a></li>
+              ))}
+            </ul>
+          </nav>
+        </div>
       </header>
 
       <main id="main" ref={mainRef} tabIndex={-1} className="page">
@@ -183,8 +200,10 @@ export default function App() {
       </main>
 
       <footer className="site-footer">
-        <p>{t('disclaimer')}</p>
-        <p className="muted">{t('footer')} · <a href="https://github.com/livejiaquan/worldcup-soren-predictor" target="_blank" rel="noreferrer">GitHub</a></p>
+        <div className="site-footer-inner">
+          <p>{t('disclaimer')}</p>
+          <p className="muted">{t('footer')} · <a href="https://github.com/livejiaquan/worldcup-soren-predictor" target="_blank" rel="noreferrer">GitHub</a></p>
+        </div>
       </footer>
 
       {archive && (

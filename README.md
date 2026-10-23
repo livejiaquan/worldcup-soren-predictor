@@ -17,7 +17,7 @@
 
 頁面上的每場預測都是**賽前重放**：只用該場開賽前已完賽的結果重算（與 `buildLeaderboard` 和 `validate-data` 相同的流程），所以命中數與記分板一致（64/104）。`worldcup.json` 裡的 `predictions` 與 `paperBankroll` 是用終局戰績重算的版本，帶有後見之明，介面不直接使用；`scripts/archive-view.test.mjs` 會檢查這兩件事。
 
-設計與研究文件：[`docs/ux-research.md`](docs/ux-research.md)、[`docs/design-research.md`](docs/design-research.md)、截圖在 [`docs/screenshots/`](docs/screenshots/)。
+設計與研究文件：[`docs/ux-research.md`](docs/ux-research.md)、[`docs/design-research.md`](docs/design-research.md)、截圖在 [`docs/screenshots/`](docs/screenshots/)。版面參考 Opta Analyst 世界盃 hub：參考截圖、量到的 token 與並排對照圖在 [`docs/references/`](docs/references/)。
 
 ## Local commands
 
