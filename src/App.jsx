@@ -54,7 +54,7 @@ function Skeleton({ t }) {
 function ErrorState({ t, message, onRetry }) {
   return (
     <div className="boxed empty error" role="alert">
-      <Icon name="info" size={28} />
+      <Icon name="info" size={24} />
       <h1>{t('loadFail')}</h1>
       <p className="muted">{t('loadFailBody')}</p>
       <p className="muted small"><code>{message}</code></p>
@@ -147,12 +147,11 @@ export default function App() {
       <header className="site-head">
         <div className="navbar">
           <a className="brand" href="#/overview">
-            <svg className="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="6" /><circle cx="16" cy="16" r="8.5" /><path d="M16 11.2l4.3 3.1-1.6 5h-5.4l-1.6-5z" /></svg>
+            <img className="brand-mark" src={`${import.meta.env.BASE_URL}brand/mark.svg`} width="32" height="32" alt="" />
             <span className="brand-text"><b>{t('brand')}</b><span>{t('brandSub')}</span></span>
           </a>
           <ul className="navbar-links">
             <li><a href="#/record">{t('navMethod')}</a></li>
-            <li><a href="https://github.com/livejiaquan/worldcup-soren-predictor" target="_blank" rel="noreferrer">GitHub</a></li>
           </ul>
           <div className="navbar-actions">
             <button type="button" className="icon-btn" onClick={() => setLang(lang === 'zh' ? 'en' : 'zh')} aria-label={`${t('langToggle')} · ${t('langLabel')}`}><span className="lang-label">{t('langToggle')}</span></button>
@@ -202,7 +201,7 @@ export default function App() {
       <footer className="site-footer">
         <div className="site-footer-inner">
           <p>{t('disclaimer')}</p>
-          <p className="muted">{t('footer')} · <a href="https://github.com/livejiaquan/worldcup-soren-predictor" target="_blank" rel="noreferrer">GitHub</a></p>
+          <p className="muted">{t('footer')}</p>
         </div>
       </footer>
 

@@ -59,7 +59,7 @@ export default function Bracket({ archive, lang, t, onOpen }) {
               <div className="final-extras">
                 {champion && (
                   <div className="trophy-card">
-                    <Icon name="trophy" size={28} />
+                    <Icon name="trophy" size={24} />
                     <span className="muted">{t('champion')}</span>
                     <b><Flag team={champion} />{teamName(champion, lang)}</b>
                   </div>
