@@ -43,7 +43,7 @@ function Intel({ intel, matchId, t }) {
           <ul className="sources">
             {item.sources.map((src) => (
               <li key={src.url}>
-                <a href={src.url} target="_blank" rel="noreferrer">{src.label}<Icon name="external" size={13} /></a>
+                <a href={src.url} target="_blank" rel="noreferrer">{src.label}<Icon name="external" size={16} /></a>
                 <span className="muted">{src.sourceName || hostOf(src.url)}{src.confidence ? ` · ${src.confidence}` : ''}</span>
               </li>
             ))}
@@ -165,7 +165,7 @@ export default function MatchSheet({ matchId, archive, intel, lang, t, onClose, 
                 {bet ? (
                   <p className={`paper ${bet.won ? 'pos' : 'neg'}`}>
                     <span>{t('sheet.paperBet', { pick: teamName(bet.pick, lang), odds: num(bet.odds), stake: money(bet.stake) })}</span>
-                    <b className="num"><Icon name={bet.won ? 'check' : 'x'} size={14} /> {bet.won ? t('sheet.paperWon', { p: signedMoney(bet.profit) }) : t('sheet.paperLost', { p: signedMoney(bet.profit) })}</b>
+                    <b className="num"><Icon name={bet.won ? 'check' : 'x'} size={16} /> {bet.won ? t('sheet.paperWon', { p: signedMoney(bet.profit) }) : t('sheet.paperLost', { p: signedMoney(bet.profit) })}</b>
                   </p>
                 ) : <p className="muted">{t('sheet.paperNone')}</p>}
               </section>

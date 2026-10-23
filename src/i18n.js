@@ -142,10 +142,9 @@ const zh = {
     '結算：只用 90 分鐘（含延長賽）比分判定勝平負；PK 大戰視為平手。',
   ],
   sourcesTitle: '資料來源',
-  sourceFixtures: '賽程與比分：openfootball/worldcup.json（CC0 公眾領域）',
+  sourceFixtures: '賽程與比分：openfootball 公開資料集 worldcup.json（CC0 公眾領域）',
   sourceOverrides: '人工覆核：{n} 場比分以多家媒體終場報導覆核',
   sourceIntel: '賽前情報：{n} 張情報卡，附原始連結與核對時間',
-  repo: 'GitHub 原始碼（MIT）',
   disclaimer: '本站為公開研究與娛樂交流，不構成投注、投資或任何保證建議；反對非法博彩。',
 
   sheet: {
@@ -323,10 +322,9 @@ const en = {
     'Settlement: the 90-minute (or extra-time) score decides the result; shoot-outs count as draws.',
   ],
   sourcesTitle: 'Sources',
-  sourceFixtures: 'Fixtures & scores: openfootball/worldcup.json (CC0 public domain)',
+  sourceFixtures: 'Fixtures & scores: the openfootball worldcup.json open dataset (CC0 public domain)',
   sourceOverrides: 'Manual review: {n} score(s) cross-checked against final match reports',
   sourceIntel: 'Pre-match intel: {n} cards with original links and check times',
-  repo: 'Source on GitHub (MIT)',
   disclaimer: 'Research and entertainment only. Not betting, investment or any other advice. We oppose illegal gambling.',
 
   sheet: {
