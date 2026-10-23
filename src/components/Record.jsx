@@ -43,7 +43,7 @@ function Ledger({ data, archive, lang, t, onOpen }) {
                   <td className="num hide-sm">{num(b.odds)}</td>
                   <td className="num hide-sm">{money(b.stake)}</td>
                   <td className={`num ${b.won ? 'pos' : 'neg'}`}>
-                    <Icon name={b.won ? 'check' : 'x'} size={14} /> {signedMoney(b.profit)}
+                    <Icon name={b.won ? 'check' : 'x'} size={16} /> {signedMoney(b.profit)}
                   </td>
                   <td className="num hide-sm">{money(b.bankroll)}</td>
                 </tr>
@@ -97,10 +97,9 @@ export default function Record({ data, archive, intel, lang, t, onOpen }) {
           <ol className="method">{t('method').map((m) => <li key={m}>{m}</li>)}</ol>
           <h3>{t('sourcesTitle')}</h3>
           <ul>
-            <li><a href="https://github.com/openfootball/worldcup.json" target="_blank" rel="noreferrer">{t('sourceFixtures')}<Icon name="external" size={14} /></a></li>
+            <li>{t('sourceFixtures')}</li>
             <li>{t('sourceOverrides', { n: overrides })}</li>
             <li>{t('sourceIntel', { n: intel?.items?.length ?? '—' })}</li>
-            <li><a href="https://github.com/livejiaquan/worldcup-soren-predictor" target="_blank" rel="noreferrer">{t('repo')}<Icon name="external" size={14} /></a></li>
           </ul>
           <p className="note"><Icon name="info" size={16} />{t('disclaimer')}</p>
         </div>

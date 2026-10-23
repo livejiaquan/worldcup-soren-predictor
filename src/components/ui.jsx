@@ -1,30 +1,16 @@
+import { Check, ChevronLeft, ChevronRight, ExternalLink, Info, Monitor, Moon, Search, Star, Sun, Trophy, X } from 'lucide-react'
 import { flagUrl, teamName } from '../lib/teams.js'
 import { pct } from '../lib/format.js'
 
-const ICONS = {
-  check: <path d="M4 10.5l3.5 3.5L16 5.5" />,
-  x: <path d="M5.5 5.5l9 9m0-9l-9 9" />,
-  star: <path d="M10 2.8l2.2 4.6 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L2.8 8.1l5-.7z" />,
-  sun: <><circle cx="10" cy="10" r="3.4" /><path d="M10 2.5v1.8M10 15.7v1.8M2.5 10h1.8M15.7 10h1.8M4.7 4.7l1.3 1.3M14 14l1.3 1.3M4.7 15.3L6 14M14 6l1.3-1.3" /></>,
-  moon: <path d="M16.2 12.4A6.6 6.6 0 0 1 7.6 3.8a6.6 6.6 0 1 0 8.6 8.6z" />,
-  monitor: <><rect x="2.8" y="3.5" width="14.4" height="10" rx="1.6" /><path d="M7 17h6M10 13.5V17" /></>,
-  search: <><circle cx="8.8" cy="8.8" r="5.3" /><path d="M12.8 12.8l4 4" /></>,
-  close: <path d="M5 5l10 10M15 5L5 15" />,
-  left: <path d="M12.5 4.5L7 10l5.5 5.5" />,
-  right: <path d="M7.5 4.5L13 10l-5.5 5.5" />,
-  external: <path d="M8 4.5H4.5v11h11V12M11 3.5h5.5V9M16.5 3.5L9 11" />,
-  trophy: <path d="M6 3.5h8v4a4 4 0 0 1-8 0zM6 5H3.5v1a3 3 0 0 0 3 3M14 5h2.5v1a3 3 0 0 1-3 3M10 11.5v3M7 16.5h6M8 14.5h4" />,
-  info: <><circle cx="10" cy="10" r="7.2" /><path d="M10 9v4.5M10 6.4v.1" /></>,
-}
+// Single icon set: Lucide (MIT). Sizes are 16 / 20 / 24 only; stroke 1.75, round caps and joins.
+const ICONS = { check: Check, x: X, close: X, star: Star, sun: Sun, moon: Moon, monitor: Monitor, search: Search, left: ChevronLeft, right: ChevronRight, external: ExternalLink, trophy: Trophy, info: Info }
+const SIZES = { 16: 16, 20: 20, 24: 24 }
 
-export function Icon({ name, size = 18, className = '', title }) {
-  return (
-    <svg className={`icon ${className}`.trim()} width={size} height={size} viewBox="0 0 20 20" fill="none" stroke="currentColor"
-      strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" aria-hidden={title ? undefined : 'true'} role={title ? 'img' : undefined}>
-      {title && <title>{title}</title>}
-      {ICONS[name]}
-    </svg>
-  )
+export function Icon({ name, size = 16, className = '', title }) {
+  const Cmp = ICONS[name]
+  if (!Cmp) return null
+  const px = SIZES[size] || (size >= 24 ? 24 : size >= 20 ? 20 : 16)
+  return <Cmp className={`icon ${className}`.trim()} size={px} strokeWidth={1.75} absoluteStrokeWidth aria-hidden={title ? undefined : 'true'} role={title ? 'img' : undefined}>{title && <title>{title}</title>}</Cmp>
 }
 
 export function Flag({ team, size = 'md' }) {
@@ -52,7 +38,7 @@ export function Verdict({ row, t, compact = false }) {
   const label = row.exact ? t('exactHit') : row.hit ? t('hit') : t('miss')
   return (
     <span className={`verdict verdict-${kind} ${compact ? 'verdict-compact' : ''}`.trim()} title={compact ? label : undefined}>
-      <Icon name={kind === 'exact' ? 'star' : kind === 'hit' ? 'check' : 'x'} size={compact ? 14 : 15} />
+      <Icon name={kind === 'exact' ? 'star' : kind === 'hit' ? 'check' : 'x'} size={16} />
       <span className={compact ? 'sr-only' : ''}>{label}</span>
     </span>
   )
