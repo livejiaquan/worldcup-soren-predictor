@@ -19,12 +19,13 @@ export default function Groups({ data, archive, lang, t }) {
           const groupRows = archive.rows.filter((r) => r.match.group === name)
           const hits = groupRows.filter((r) => r.hit).length
           return (
-            <section key={name} className="boxed group" aria-labelledby={`g-${letter}`}>
-              <header className="group-head">
+            <section key={name} className="ocard group" aria-labelledby={`g-${letter}`}>
+              <header className="ocard-head">
                 <h2 id={`g-${letter}`}>{t('groupName', { g: letter })}</h2>
-                <span className="muted num">{t('groupHits', { hits, n: groupRows.length })}</span>
+                <span className="muted num ocard-meta">{t('groupHits', { hits, n: groupRows.length })}</span>
               </header>
-              <table className="table">
+              <div className="ocard-body ocard-body-flush">
+              <table className="dtable">
                 <thead>
                   <tr>
                     <th scope="col" className="col-team">{t('cols.team')}</th>
@@ -60,6 +61,7 @@ export default function Groups({ data, archive, lang, t }) {
                   })}
                 </tbody>
               </table>
+              </div>
             </section>
           )
         })}
