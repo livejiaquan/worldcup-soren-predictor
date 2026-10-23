@@ -1,6 +1,6 @@
 // Overview: three-column hub layout (focal card · predictions table · tabbed champion/groups),
 // a dark full-width band of four ranked-list cards, the 104-cell grid card and two half cards.
-// Column proportions, card chrome and rhythm follow docs/references/tokens.md.
+// Column proportions, card chrome and rhythm are documented in docs/design-research.md.
 import { useState } from 'react'
 import { Flag, Icon, ProbBar, Section, Stat, Team, Verdict } from './ui.jsx'
 import { BankrollChart, Calibration, LeaderboardTable, RankList, StageTable } from './charts.jsx'

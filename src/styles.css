@@ -1,7 +1,6 @@
 /* ==========================================================================
-   Design tokens. Layout, chrome and type families are copied from the
-   reference page measured in docs/references/tokens.md (Opta Analyst hub):
-   1400px container · 20px gutter · 3 equal columns · 24px gaps · 6px radius ·
+   Design tokens. Layout proportions follow a data-hub style dashboard
+   (see docs/design-research.md): 1400px container · 20px gutter · 3 equal columns · 24px gaps · 6px radius ·
    hard 3px bottom shadow · grey header bands · zebra mono tables · a dark
    full-width band · condensed display font for headings and numbers.
    Colours keep that structure but use our own palette (navy / blue / cyan).
